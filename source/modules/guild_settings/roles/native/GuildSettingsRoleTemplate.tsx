@@ -1,10 +1,10 @@
-// Module ID: 16175
-// Function ID: 124923
+// Module ID: 16183
+// Function ID: 124984
 // Name: width
 // Dependencies: []
 // Exports: default
 
-// Module 16175 (width)
+// Module 16183 (width)
 let Dimensions;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -24,21 +24,21 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
 obj.carousel = { flex: 1 };
-obj.cardWrapper = { -926844321: true, 1381477602: true };
-const obj1 = { "Bool(false)": "<string:1123024898>", "Bool(false)": "<string:3493986306>", "Bool(false)": "<string:301990511>", "Bool(false)": "<string:1107296832>", "Bool(false)": "M49.6737 65.2838C49.4877 65.9355 49.3947 66.3312 49.3947 66.3312C34.9565 77.3872 48.5577 96.939 48.5577 96.939C51.2315 93.7502 54.4865 90.701 58.4855 88.42C60.6942 68.9614 54.6492 65.2605 49.6737 65.2838Z", "Bool(false)": "#FF78B7", "Bool(false)": "<string:40855874>", "Bool(false)": "<string:27545088>", "Bool(false)": "<string:1870152192>", "Bool(false)": "<string:1123024898>", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.card = obj1;
+obj.cardWrapper = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, padding: -57609758622971150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+const tmp5 = arg1(dependencyMap[7]);
+obj.card = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.templateTitle = {};
 obj.templateSubtitle = { paddingBottom: 16 };
-obj.templateContentWrapper = { markAsSpoilerTitle: "guildFallbackImage", keyboardAppearance: "MAX_AGE" };
+obj.templateContentWrapper = {};
 obj.templateContent = {};
-obj.templateContentText = { flexDirection: false, paddingHorizontal: false };
+obj.templateContentText = { disableFocus: "y", preventsDisplaySleepDuringVideoPlayback: "isArray" };
 obj.templateButton = {};
 obj.sliderContainer = { alignItems: "center" };
-obj.slider = {};
-obj.sliderLabels = { "Bool(false)": "313337", "Bool(false)": null, "Bool(false)": "0000", "Bool(false)": false, "Bool(false)": "Add Role Members", "Bool(false)": "Role Settings", "Bool(false)": "Members" };
+obj.slider = { "Bool(false)": 4, "Bool(false)": 0, "Bool(false)": -4 };
+obj.sliderLabels = { textInput: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778310296355388, GiftCardStack3dIllustration: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010687, TimeStampProducer: 6701222723586, MIN_HEADER_HEIGHT: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001940246852204425, FITNESS: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000099411258832273, handleRewardClaimThenView: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015979878120062223, marginHorizontal: "Array" };
 obj.sliderLabel = {};
 let closure_19 = obj.createStyles(obj);
-const tmp5 = arg1(dependencyMap[7]);
+const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx");
 
 export default function GuildSettingsRoleTemplate(arg0) {
@@ -90,7 +90,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     }
   };
   obj = { style: tmp.sliderContainer };
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  obj = { handleRewardClaimThenView: false, Wp9bEl: false, PremiumSKUPreview: false, children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
   const items = [callback2(first, obj), ];
   const obj1 = { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   const tmp12 = callback3;

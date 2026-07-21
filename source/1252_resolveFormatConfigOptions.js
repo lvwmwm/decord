@@ -1,5 +1,5 @@
 // Module ID: 1252
-// Function ID: 14087
+// Function ID: 14091
 // Name: resolveFormatConfigOptions
 // Dependencies: []
 
@@ -18,4 +18,4 @@ arg5.resolveFormatConfigOptions = function resolveFormatConfigOptions(list, form
     return format;
   }
 };
-arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, medium: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, long: {}, full: {} }, time: { short: { CONVERSATIONS_EXTRACTION_PROCESSING: false, CREATOR_STORE_PAGE_VIEWED: false }, medium: {}, long: {}, full: {} } };
+arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { <string:3478312518>: false, <string:4217799105>: false, <string:1449286816>: false }, medium: { <string:3478312518>: true, <string:4217799105>: true, <string:1449286816>: true }, long: {}, full: {} }, time: { short: { state: false, sk: false }, medium: {}, long: {}, full: {} } };

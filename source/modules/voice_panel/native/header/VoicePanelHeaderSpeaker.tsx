@@ -1,9 +1,9 @@
-// Module ID: 15672
-// Function ID: 119712
+// Module ID: 15675
+// Function ID: 119751
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15672 (_createForOfIteratorHelperLoose)
+// Module 15675 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -352,7 +352,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
         obj = {};
         obj = { targetRef: ref, canShowTooltip: isConnectedToVoiceChannel };
         const items8 = [tmp8(closure_18, obj), ];
-        obj1 = { "Null": "<string:83707277>", "Null": "<string:1125533521>", "Null": "100%", menuItems: memo, onRequestOpen: callback, onRequestClose: tmp.unlock, children: renderButton };
+        obj1 = { menuItems: memo, onRequestOpen: callback, onRequestClose: tmp.unlock, children: renderButton };
         items8[1] = tmp8(arg1(dependencyMap[32]).MenuPopout, obj1);
         obj.children = items8;
         let renderButtonResult = stateFromStores2(closure_15, obj);

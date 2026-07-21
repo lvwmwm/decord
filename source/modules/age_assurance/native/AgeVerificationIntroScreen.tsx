@@ -1,10 +1,10 @@
-// Module ID: 7553
-// Function ID: 60448
+// Module ID: 7554
+// Function ID: 60460
 // Name: GetStartedScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7553 (GetStartedScreen)
+// Module 7554 (GetStartedScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
@@ -48,11 +48,11 @@ export default function GetStartedScreen(onComplete) {
   const obj2 = { style: tmp.getStartedHeaderContainer };
   const isManualAgeVerificationHidden = obj1.useIsManualAgeVerificationHidden("age_verification_get_started_modal");
   const items = [callback3(arg1(dependencyMap[12]).ShieldSpotIllustration, {}), , ];
-  const obj3 = { style: tmp.getStartedHeaderText };
+  const obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.getStartedHeaderText };
   let obj7 = arg1(dependencyMap[10]);
   obj3.children = obj7.getAgeVerificationGetStartedTitle(entryPoint);
   items[1] = callback3(arg1(dependencyMap[13]).Text, obj3);
-  const obj4 = { style: tmp.getStartedHeaderText };
+  const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/images/native/icons/voice_calls/dark_theme", style: tmp.getStartedHeaderText };
   let obj9 = arg1(dependencyMap[10]);
   obj4.children = obj9.getAgeVerificationGetStartedSubtitle(entryPoint);
   items[2] = callback3(arg1(dependencyMap[13]).Text, obj4);
@@ -74,7 +74,7 @@ export default function GetStartedScreen(onComplete) {
   };
   items1[1] = callback3(arg1(dependencyMap[14]).TableRowGroup, obj5);
   const obj6 = { style: tmp.ageGroupLearnMoreContainer };
-  obj7 = {};
+  obj7 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
   const intl = arg1(dependencyMap[16]).intl;
   obj7.children = intl.format(arg1(dependencyMap[16]).t.L+FgkZ, {
     handleOnHelpUrlHook() {
@@ -94,7 +94,7 @@ export default function GetStartedScreen(onComplete) {
   let tmp7 = !isManualAgeVerificationHidden;
   if (tmp7) {
     const obj10 = { style: tmp.getStartedRequestTextContainer };
-    const obj11 = { style: tmp.getStartedRequestText };
+    const obj11 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.getStartedRequestText };
     const intl2 = arg1(dependencyMap[16]).intl;
     const obj12 = {
       handleOnRequestHook() {
@@ -109,7 +109,7 @@ export default function GetStartedScreen(onComplete) {
   }
   const items4 = [tmp7, ];
   const obj13 = { style: tmp.getStartedFooterButtonsContainer };
-  const obj14 = {};
+  const obj14 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
   const intl3 = arg1(dependencyMap[16]).intl;
   obj14.text = intl3.string(arg1(dependencyMap[16]).t.SJMnkX);
   obj14.onPress = callback(async () => {

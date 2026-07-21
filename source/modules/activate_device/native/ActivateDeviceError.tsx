@@ -1,16 +1,16 @@
-// Module ID: 12770
-// Function ID: 97868
+// Module ID: 12772
+// Function ID: 97890
 // Name: ActivateDeviceError
 // Dependencies: []
 // Exports: ActivateDeviceError
 
-// Module 12770 (ActivateDeviceError)
+// Module 12772 (ActivateDeviceError)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { "Null": false, "Null": false, "Null": false } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ image: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 

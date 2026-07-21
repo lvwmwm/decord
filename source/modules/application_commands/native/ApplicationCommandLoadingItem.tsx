@@ -1,5 +1,5 @@
 // Module ID: 11431
-// Function ID: 88957
+// Function ID: 88969
 // Name: ApplicationCommandLoadingItem
 // Dependencies: []
 // Exports: default
@@ -12,9 +12,9 @@ const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[2]).AUTOCOMPLETE_ROW_HEIGHT;
 const tmp3 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
   let obj = {};
-  obj = { userId: true, bottom: true, marginTop: true, flex: true, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandLoadingItem = obj;
-  obj.applicationCommandLoadingLeftWrapper = {};
+  obj.applicationCommandLoadingLeftWrapper = { 0: null, 0: 0, 9223372036854775807: 150, 9223372036854775807: 0 };
   obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
   obj.applicationCommandLoadingName = obj;
   obj.applicationCommandLoadingDescription = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };

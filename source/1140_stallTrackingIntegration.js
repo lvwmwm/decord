@@ -1,5 +1,5 @@
 // Module ID: 1140
-// Function ID: 12991
+// Function ID: 12995
 // Name: stallTrackingIntegration
 // Dependencies: []
 // Exports: stallTrackingIntegration
@@ -99,7 +99,7 @@ export const stallTrackingIntegration = function stallTrackingIntegration() {
           debug.error("[StallTracking] Tried to start stall tracking on a transaction already being tracked. Measurements might be lost.");
         } else {
           _startTracking();
-          obj = { atStart: _getCurrentStats(activeSpan) };
+          obj = { "Null": 180, "Null": null, atStart: _getCurrentStats(activeSpan) };
           const result = map.set(activeSpan, obj);
           _flushLeakedTransactions();
         }

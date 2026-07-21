@@ -1,5 +1,5 @@
 // Module ID: 4486
-// Function ID: 39580
+// Function ID: 39588
 // Name: isSearchBarAvailableForCurrentPlatform
 // Dependencies: []
 // Exports: executeNativeBackPress, parseBooleanToOptionalBooleanNativeProp
@@ -8,7 +8,7 @@
 let Platform;
 const _module = require(dependencyMap[0]);
 ({ BackHandler: closure_0, Platform } = _module);
-const items = ["<string:1644749393>", "<string:2622564565>"];
+const items = [];
 
 export const isSearchBarAvailableForCurrentPlatform = items.includes("android");
 export const isHeaderBarButtonsAvailableForCurrentPlatform = false;

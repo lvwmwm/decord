@@ -1,5 +1,5 @@
 // Module ID: 666
-// Function ID: 8047
+// Function ID: 8051
 // Name: t
 // Dependencies: []
 
@@ -266,12 +266,12 @@ const fn = function t() {
     }
     name() {
       tmp = rgb2hex$2(this._rgb, "rgb");
-      keys = Object.keys(f8122);
+      keys = Object.keys(f8126);
       num = 0;
       if (0 < keys.length) {
         str = keys[num];
-        tmp2 = f8122;
-        while (f8122[str] !== tmp) {
+        tmp2 = f8126;
+        while (f8126[str] !== tmp) {
           num = num + 1;
         }
         return str.toLowerCase();
@@ -431,7 +431,7 @@ const fn = function t() {
           if (0 === arg0) {
             tmp23 = Color;
             num4 = 3;
-            items = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
+            items = [null, null, null];
             items[3] = self._rgb[3];
             prototype5 = Color.prototype;
             tmp24 = new.target;
@@ -481,7 +481,7 @@ const fn = function t() {
                 prototype2 = Color.prototype;
                 tmp8 = new.target;
                 tmp9 = new.target;
-                tmp10 = new Color(["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"]);
+                tmp10 = new Color([null, null, null]);
                 tmp11 = tmp10;
                 isMatch = test(tmp10, self);
               } else {
@@ -719,7 +719,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [true]));
+    let applyResult = bind.apply(Color, items1.concat(items, [427697983247262640000000000000000000000000000000000000000000000000000000000000000000000]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -742,7 +742,7 @@ const fn = function t() {
       num = arr2[4];
     }
     if (1 === arr2[3]) {
-      const items1 = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI", num];
+      const items1 = [null, null, null, num];
       let items2 = items1;
     } else {
       let num2 = 0;
@@ -905,8 +905,8 @@ const fn = function t() {
         return items2;
       }
     } else {
-      const items3 = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
-      const items4 = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
+      const items3 = [null, null, null];
+      const items4 = [null, null, null];
       if (tmp4 < 0.5) {
         let result1 = tmp4 * (1 + num2);
       } else {
@@ -1121,7 +1121,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.814]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["memo"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1182,7 +1182,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["CountryCodesSets"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [true]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1243,7 +1243,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [null]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["successRedirect"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1457,7 +1457,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.0004869728088378906]));
+    let applyResult = bind.apply(Color, items1.concat(items, [0.907]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1539,7 +1539,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["DCDAccessibilityManager"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [-697050769076513100000000000000000000000000000000000000000000000000000000]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1640,7 +1640,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["<string:1408749273>"]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["<string:3819299667>"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1731,7 +1731,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["height"]));
+    let applyResult = bind.apply(Color, items1.concat(items, [1279000806]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2117,7 +2117,7 @@ const fn = function t() {
     }
     return lch2rgb$1.apply(undefined, unpack(items, "hcl").reverse());
   };
-  const items1 = [];
+  const items1 = [null, null];
   const item = items1.forEach((arg0) => {
     const limit$2 = arg0;
     const autodetect = obj.autodetect;
@@ -2211,7 +2211,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["userIp"]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["settingsFromServer"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2268,7 +2268,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013702098478339486]));
+    let applyResult = bind.apply(Color, items1.concat(items, [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014224785586748537]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2388,7 +2388,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["<string:73445632>"]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["<string:73487360>"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2466,7 +2466,7 @@ const fn = function t() {
       } while (tmp3);
     }
     const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [16598116354412882000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]));
+    let applyResult = bind.apply(Color, items1.concat(items, ["isBoostOnly"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2830,7 +2830,7 @@ const fn = function t() {
   atan2 = Math.atan2;
   function _average_lrgb(mapped1, arg1) {
     let length;
-    const items = ["<string:1010630658>", "<string:1246494722>", "<string:3003122491>", "<string:352322212>"];
+    const items = ["<string:1014759426>", "<string:340852738>", "<string:1612335631>", "<string:1612447746>"];
     let num = 0;
     if (0 < mapped1.length) {
       do {
@@ -2861,9 +2861,9 @@ const fn = function t() {
     let closure_0 = "rgb";
     let closure_1 = chroma$k("#ccc");
     let closure_2 = 0;
-    let closure_3 = ["Text", "lc"];
+    let closure_3 = ["replace", "then"];
     let closure_4 = [];
-    let closure_5 = [];
+    let closure_5 = ["<string:53040003>", "<string:806589490>"];
     let closure_6 = false;
     let closure_7 = [];
     let closure_8 = false;
@@ -3644,7 +3644,7 @@ const fn = function t() {
   cos = Math.cos;
   sin = Math.sin;
   PI = Math.PI;
-  const obj19 = { OrRd: [true, true, true, true, true, true, true, true, true], PuBu: [], BuPu: [], Oranges: [], BuGn: [], YlOrBr: [127473266121234240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 42411676899571790000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 110592.14079952241, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006822851948962583, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002560406198609385, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240532466933127, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003157232657898877, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003148447595514026, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003140532551267154], YlGn: [], Reds: ["r", "isArray", "accessibilityRole", "enabled", "k", "defineProperty", "__packager_asset", "r", "isArray"], RdPu: [-1947402239, -1957625854, 21003593, 38262528, 38216960, 18135808, 38065920, 24946176, 29048320], Greens: [119734273, -1957625854, 38385225, 22998528, 21963008, 38310400, 38302464, 26621696, 17663232], YlGnBu: [-472711167, -1957625855, 38279497, 30933248, 19044608, 31017728, 38233088, 26617088, 38189056], Purples: [], GnBu: [], Greys: [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008808142091069394, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000055567463911964385, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008040999401234933, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010585076025552842, 141529128210507810000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001234249572199227, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003157175233331417, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002527509187216353, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000303861309335193], YlOrRd: [], PuRd: ["co", "containerXLarge", "ng", "AVATAR_DECORATIONS", "JPEGInterchangeFormatLength", "getHeaderTextForInvite", "USE_JPEG", "orbsButtonLabel", "WISHLIST_ITEM"], Blues: [], PuBuGn: [452985414, -1191181766, -2046820056, -805305784, -1744830103, -1207958969, -1593835052, 1996489000, 905969967], Viridis: [false, false, false, false, false, false, false, false, false], Spectral: [], RdYlGn: [], RdBu: [], PiYG: ["r", "akHScA", "Array", "MESSAGES", "all", "isForGroupSetupModal", "num", "PurchaseTypeToAnalyticsPaymentType", "%DatePrototype%", "headMetaSocial", "rice"], PRGn: [], RdYlBu: ["<string:1209401346>", "<string:1158217730>", "<string:1532035074>", "<string:38051660>", "<string:38382592>", "<string:26870528>", "<string:21728256>", "<string:38022912>", "<string:38302976>", "<string:30970880>", "<string:22756864>"], BrBG: [], RdGy: [], PuOr: [false, false, false, "Array", "getVoiceChannelIdChangedAuthorIds", "r", "ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE", "r", "plugins", null, null], Set2: ["<string:1175912450>", "<string:3131965442>", "<string:2637496321>", "<string:1218183169>", "<string:1236664322>", "<string:1392377858>", "<string:2607022081>", "<string:3542810625>"], Accent: [], Set1: [], Set3: [], Dark2: [], Paired: [3, 4, 5, 6, 7, 8, 9, "hsi", "hogesnelheidstrein", "hsl", "shinkansen", "snelheid"], Pastel2: [], Pastel1: [null, null, null, null, null, null, null, null, null] };
+  const obj19 = { OrRd: [], PuBu: [false, false, false, false, false, false, false, false, false], BuPu: [], Oranges: ["r", "isArray", "replace", "__packager_asset", "r", "isArray", "marginTop", "__packager_asset", "r"], BuGn: [], YlOrBr: [], YlGn: ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"], Reds: [], RdPu: [], Greens: [], YlGnBu: ["Array", "Lq9Set", "r", "getQuestUrl", "r", "LOG10E", "GiftCardLeft3dIllustration", "mi", "AccountAgeTier6LargeBadge"], Purples: [false, false, false, false, false, false, false, false, false], GnBu: ["<string:4127195400>", "<string:973079103>", "<string:1224737175>", "#440154", "#482777", "#3f4a8a", "#31678e", "#26838f", null], Greys: [], YlOrRd: [], PuRd: [], Blues: [], PuBuGn: [], Viridis: [true, true, true, true, true, true, true, "<string:1204682753>", "<string:3572367362>"], Spectral: [true, true, true, true, true, true, true, true, true, true, "<string:1184563202>"], RdYlGn: [], RdBu: ["<string:822280194>", "<string:3635412993>", "<string:1055719425>", "<string:1229324290>", false, false, false, false, false, false, false], PiYG: ["<string:594739202>", "<string:1149370370>", "<string:1629945858>", "<string:83820545>", "<string:2722496514>", "<string:2315256201>", "<string:3388997911>", null, null, null, null], PRGn: [], RdYlBu: ["<string:3042330712>", "<string:1218838529>", "<string:1152450562>", "<string:1204944898>", "<string:209584130>", "<string:144113665>", "<string:1203634177>", "<string:3050700802>", "<string:2017525761>", "<string:1375732058>", "<string:1213757925>"], BrBG: [], RdGy: [], PuOr: [], Set2: [], Accent: [], Set1: [], Set3: [true, true, true, true, true, true, true, true, true, true, true, true], Dark2: [], Paired: ["<string:36133191>", "<string:18246656>", "<string:29002752>", "<string:33302016>", "<string:33415424>", "<string:30052352>", "<string:25937664>", "<string:1465663744>", "<string:122748929>", "<string:1135632645>", "left-pointing", "magnifying"], Pastel2: ["num", "rgb", "temp", "oklab", "oklch", 255, 255, 255], Pastel1: [] };
   const keys = Object.keys(obj19);
   let num2 = 0;
   if (0 < keys.length) {
@@ -3798,7 +3798,7 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [true, true, true];
+            items = [];
             tmp = new closure_205(items.map((arg0) => arg0[arg0] + arg0 * (closure_1[arg0] - arg0[arg0])), "lab");
             return tmp;
           }
@@ -3810,7 +3810,7 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [true, true, true];
+            items = [];
             tmp = new closure_205(items.map((arg0) => (1 - arg0) * (1 - arg0) * arg0[arg0] + 2 * (1 - arg0) * arg0 * closure_1[arg0] + arg0 * arg0 * closure_2[arg0]), "lab");
             return tmp;
           }
@@ -3822,7 +3822,7 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [true, true, true];
+            items = [];
             tmp = new closure_205(items.map((arg0) => (1 - arg0) * (1 - arg0) * (1 - arg0) * arg0[arg0] + 3 * (1 - arg0) * (1 - arg0) * arg0 * closure_1[arg0] + 3 * (1 - arg0) * arg0 * arg0 * closure_2[arg0] + arg0 * arg0 * arg0 * closure_3[arg0]), "lab");
             return tmp;
           }
@@ -3835,7 +3835,7 @@ const fn = function t() {
           constructor(arg0) {
             closure_0 = arr;
             closure_1 = 1 - arr;
-            items = [true, true, true];
+            items = [];
             tmp = new closure_205(items.map((arg0) => closure_4.reduce((arg0, arg1, exponent) => {
               const result = closure_5[exponent] * Math.pow(closure_1, closure_6 - exponent);
               return arg0 + result * Math.pow(arg0, exponent) * arg1[closure_0];
@@ -3849,7 +3849,7 @@ const fn = function t() {
           constructor(arg0) {
             closure_0 = arr;
             closure_1 = 1 - arr;
-            items = [true, true, true];
+            items = [];
             tmp = new closure_205(items.map((arg0) => closure_4.reduce((arg0, arg1, exponent) => {
               const result = closure_5[exponent] * Math.pow(closure_1, closure_6 - exponent);
               return arg0 + result * Math.pow(arg0, exponent) * arg1[closure_0];
@@ -3885,7 +3885,7 @@ const fn = function t() {
       closure_3 = 1;
     }
     if (undefined === items) {
-      items = ["Text", "lc"];
+      items = ["replace", "then"];
     }
     let closure_6 = 0;
     if ("array" === callback37(items)) {
@@ -4136,7 +4136,7 @@ const fn = function t() {
       return scale$2(items);
     },
     hot() {
-      return scale$2([null, null, null, null]).mode("rgb");
+      return scale$2([]).mode("rgb");
     }
   };
   chroma$k.colors = obj10;

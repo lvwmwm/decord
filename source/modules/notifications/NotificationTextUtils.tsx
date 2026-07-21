@@ -1,5 +1,5 @@
 // Module ID: 10211
-// Function ID: 78892
+// Function ID: 78903
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications

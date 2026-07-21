@@ -1,5 +1,5 @@
 // Module ID: 8505
-// Function ID: 67850
+// Function ID: 67861
 // Name: getStyleConfig
 // Dependencies: []
 // Exports: default
@@ -79,7 +79,7 @@ class DisplayName {
         tmp3 = arg1;
         tmp4 = dependencyMap;
         num = 13;
-        showChevron = jsx(arg1(dependencyMap[13]).ChevronSmallDownIcon, { flex: "png", flexGrow: true });
+        showChevron = jsx(arg1(dependencyMap[13]).ChevronSmallDownIcon, { accessibilityRole: "png", "": true });
       }
       items1[2] = showChevron;
       obj.children = items1;
@@ -125,7 +125,7 @@ class UserTagAndPronouns {
       if (null == userTag) {
         return null;
       } else {
-        let obj = { -9223372036854775808: "isArray", 0: "accessibilityRole", 0: "value", variant: textVariant, children: userTag };
+        let obj = { <string:1643205302>: "isArray", <string:1415816450>: "accessibilityRole", <string:4283523744>: "hasDiversityParent", variant: textVariant, children: userTag };
         const tmp15 = callback(userTag(onPressUserTag[14]).Text, obj);
         if (null != onPressUserTag) {
           obj = { onPress: onPressUserTag, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp15 };
@@ -480,19 +480,19 @@ const GuildTagBadgeSize = arg1(dependencyMap[5]).GuildTagBadgeSize;
 const tmp5 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { flexDirection: "column" }, displayName: { 9223372036854775807: "safety_user_sentiment_notice_dismissed_at", 9223372036854775807: "message", 0: null }, details: {}, detailsText: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, botTag: { marginLeft: 4 } };
-obj = { RESPONDER_INACTIVE_PRESS_OUT: "DIS_Nitro_Gifcard_001_Gift_Loop", RESPONDER_ACTIVE_PRESS_IN: 0, RESPONDER_ACTIVE_PRESS_OUT: 183.333, RESPONDER_ACTIVE_LONG_PRESS_IN: 3, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj = { container: { flexDirection: "column" }, displayName: { 9223372036854775807: true, 9223372036854775807: true, 0: true }, details: {}, detailsText: {}, botTag: { marginLeft: 4 } };
+obj = { <string:140796457>: "DIS_Nitro_Gifcard_001_Gift_Loop", <string:1401660094>: 0, <string:3283472837>: 183.333, <string:979439826>: 3, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.guildTag = obj;
 obj.transparentBackground = { backgroundColor: "transparent" };
 obj.badge = { resizeMode: "contain" };
 obj.badges = {};
-const obj1 = { "Bool(false)": -0.0000000000001207922650915279, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255182, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000067606868790614, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026618315203386, "Bool(false)": 17311091029112627000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 145578.1535054913, borderRadius: importDefault(dependencyMap[8]).radii.sm };
-obj.badgeRow = obj1;
+const tmp6 = arg1(dependencyMap[6]);
+obj.badgeRow = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 let closure_16 = obj.createStyles(obj);
 let closure_17 = { guildTagBadgeSize: GuildTagBadgeSize.SIZE_16 };
-const obj2 = { speakingIndicatorUnderlay: false, SSO_TOKEN: false, alignSelf: false, margin: false, briefcase: false, STREAM_WATCH: false, objectFit: false, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12 };
+const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12 };
 let closure_18 = { [UserProfileThemeTypes.PREVIEW]: obj2 };
-const tmp6 = arg1(dependencyMap[6]);
+const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryInfo.tsx");
 
 export default function UserProfilePrimaryInfo(arg0) {

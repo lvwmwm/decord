@@ -1,5 +1,5 @@
 // Module ID: 10246
-// Function ID: 79193
+// Function ID: 79204
 // Name: defaultReactFn
 // Dependencies: []
 // Exports: default
@@ -26,35 +26,35 @@ function createMessagePreviewReactRules(iconColor) {
   let obj = { [closure_0(closure_2[7]).AST_KEY.TEXT]: obj };
   obj = { react: defaultReactFn };
   obj = {};
-  const merged = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.STRIKETHROUGH]);
+  const merged = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.STRIKETHROUGH]);
   obj["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.STRIKETHROUGH] = obj;
   const obj1 = {};
-  const merged1 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.UNDERLINE]);
+  const merged1 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.UNDERLINE]);
   obj1["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.UNDERLINE] = obj1;
   const obj2 = {};
-  const merged2 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.ITALICS]);
+  const merged2 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.ITALICS]);
   obj2["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.ITALICS] = obj2;
   const obj3 = {};
-  const merged3 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.STRONG]);
+  const merged3 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.STRONG]);
   obj3["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.STRONG] = obj3;
   const obj4 = {};
-  const merged4 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.LINK]);
+  const merged4 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.LINK]);
   obj4["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.LINK] = obj4;
   const obj5 = {};
-  const merged5 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.URL]);
+  const merged5 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.URL]);
   obj5["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.URL] = obj5;
   const obj6 = {};
-  const merged6 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.AUTOLINK]);
+  const merged6 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.AUTOLINK]);
   obj6["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.AUTOLINK] = obj6;
   const obj7 = {};
-  const merged7 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.LINE_BREAK]);
+  const merged7 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.LINE_BREAK]);
   obj7["react"] = function react() {
     return "\n";
   };
@@ -68,11 +68,11 @@ function createMessagePreviewReactRules(iconColor) {
     }
   };
   const obj8 = {};
-  const merged8 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.BLOCK_QUOTE]);
+  const merged8 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.BLOCK_QUOTE]);
   obj8["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.BLOCK_QUOTE] = obj8;
   const obj9 = {};
-  const merged9 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.PARAGRAPH]);
+  const merged9 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.PARAGRAPH]);
   obj9["order"] = 600;
   obj9["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.PARAGRAPH] = obj9;
@@ -134,13 +134,13 @@ function createMessagePreviewReactRules(iconColor) {
     }
   };
   const obj10 = {};
-  const merged10 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.INLINE_CODE]);
+  const merged10 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.INLINE_CODE]);
   obj10["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.INLINE_CODE] = obj10;
   const obj11 = {};
-  const merged11 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.CODE_BLOCK]);
+  const merged11 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.CODE_BLOCK]);
   obj11["parse"] = function parse(arg0, arg1, arg2) {
-    const parsed = iconColor(customEmojiSize[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.CODE_BLOCK].parse(arg0, arg1, arg2);
+    const parsed = callback(customEmojiSize[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.CODE_BLOCK].parse(arg0, arg1, arg2);
     if ("ansi" === str.toLowerCase()) {
       const content = parsed.content;
       parsed.content = content.replaceAll(closure_6, "");
@@ -150,15 +150,15 @@ function createMessagePreviewReactRules(iconColor) {
   obj11["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.CODE_BLOCK] = obj11;
   const obj12 = {};
-  const merged12 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.MENTION]);
+  const merged12 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.MENTION]);
   obj12["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.MENTION] = obj12;
   const obj13 = {};
-  const merged13 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.CHANNEL_MENTION]);
+  const merged13 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.CHANNEL_MENTION]);
   obj13["react"] = arg1(dependencyMap[13]).inlineChannelMentionReact;
   obj[arg1(dependencyMap[7]).AST_KEY.CHANNEL_MENTION] = obj13;
   const obj14 = {};
-  const merged14 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.ATTACHMENT_LINK]);
+  const merged14 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.ATTACHMENT_LINK]);
   obj14["react"] = function react(node, output, key) {
     let obj = {};
     let str = "\u{1F4CE} ";
@@ -175,7 +175,7 @@ function createMessagePreviewReactRules(iconColor) {
   };
   obj[arg1(dependencyMap[7]).AST_KEY.ATTACHMENT_LINK] = obj14;
   const obj15 = {};
-  const merged15 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.SOUNDBOARD]);
+  const merged15 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.SOUNDBOARD]);
   obj15["react"] = defaultReactFn;
   obj[arg1(dependencyMap[7]).AST_KEY.SOUNDBOARD] = obj15;
   obj[arg1(dependencyMap[7]).AST_KEY.GUILD] = { react: defaultReactFn };
@@ -190,22 +190,22 @@ function createMessagePreviewReactRules(iconColor) {
   obj16.react = obj19.createInlineChannelReact(str);
   obj[arg1(dependencyMap[7]).AST_KEY.CHANNEL] = obj16;
   const obj18 = {};
-  const merged16 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.COMMAND_MENTION]);
+  const merged16 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.COMMAND_MENTION]);
   obj18["react"] = function react(node, output, key) {
     const obj = {};
-    const items = [true, iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
+    const items = [, iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
     obj.children = items;
     return callback3(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
   };
   obj[arg1(dependencyMap[7]).AST_KEY.COMMAND_MENTION] = obj18;
   obj19 = {};
-  const merged17 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.TIMESTAMP]);
+  const merged17 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.TIMESTAMP]);
   obj19["react"] = function react(node, arg1, key) {
     return callback2(callback(customEmojiSize[18]), { node, style: null }, key.key);
   };
   obj[arg1(dependencyMap[7]).AST_KEY.TIMESTAMP] = obj19;
   obj20 = {};
-  const merged18 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.LIST]);
+  const merged18 = Object.assign(importDefault(dependencyMap[8]).RULES[closure_0(undefined, closure_2[7]).AST_KEY.LIST]);
   obj20["react"] = function react(arg0, output, state) {
     const first = arg0.items[0];
     let first1 = first;

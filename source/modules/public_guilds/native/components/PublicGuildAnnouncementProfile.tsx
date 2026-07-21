@@ -1,5 +1,5 @@
 // Module ID: 10878
-// Function ID: 84568
+// Function ID: 84579
 // Name: PublicGuildAnnouncementProfile
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = { content: { padding: 16 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.avatar = obj;
-obj.nameWrapper = {};
+obj.nameWrapper = { "Null": 7, "Null": 370 };
 obj.headerText = { marginLeft: 8 };
 obj.description = { marginTop: 8 };
 let closure_6 = obj.createStyles(obj);

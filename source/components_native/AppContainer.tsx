@@ -1,9 +1,9 @@
-// Module ID: 13353
-// Function ID: 101568
+// Module ID: 13355
+// Function ID: 101590
 // Name: GestureWrapper
 // Dependencies: []
 
-// Module 13353 (GestureWrapper)
+// Module 13355 (GestureWrapper)
 function GestureWrapper(children) {
   const tmp = callback4();
   const global = tmp;
@@ -51,7 +51,7 @@ function AppNavigationContainer(children) {
           if (tmp17 !== channelId.getChannelId()) {
             const coerceChannelRouteResult = ref2(closure_3[20]).coerceChannelRoute(currentRoute);
             if (!tmp21) {
-              ref2(closure_3[21]).transitionTo(closure_11.CHANNEL(tmp16, tmp17), { textContentType: true, autoCapitalize: true });
+              ref2(closure_3[21]).transitionTo(closure_11.CHANNEL(tmp16, tmp17), { textContentType: null, autoCapitalize: null });
               const obj7 = ref2(closure_3[21]);
             }
             const obj6 = ref2(closure_3[20]);

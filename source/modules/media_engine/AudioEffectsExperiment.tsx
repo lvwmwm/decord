@@ -1,13 +1,12 @@
-// Module ID: 12706
-// Function ID: 97559
+// Module ID: 12708
+// Function ID: 97581
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12706 (apexExperiment)
+// Module 12708 (apexExperiment)
 let obj = { probeAudioEffects: false };
 const _module = require(dependencyMap[0]);
-obj = { 9223372036854775807: "borderRadius", 0: "r" };
-obj.defaultConfig = obj;
+obj = { defaultConfig: obj };
 obj = {};
 const obj1 = {};
 const merged = Object.assign(obj);

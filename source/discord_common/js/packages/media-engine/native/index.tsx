@@ -1,5 +1,5 @@
 // Module ID: 4224
-// Function ID: 36854
+// Function ID: 36862
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -51,9 +51,9 @@ const tmp5 = (arg0) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      f37032 = tmp2Result;
-      tmp2Result.Video = f37029(f37024[10]);
-      tmp2Result.Camera = f37029(f37024[11]);
+      f37040 = tmp2Result;
+      tmp2Result.Video = f37037(f37032[10]);
+      tmp2Result.Camera = f37037(f37032[11]);
       tmp2Result.audioInputDeviceId = closure_20;
       tmp2Result.audioOutputDeviceId = closure_20;
       tmp2Result.videoInputDeviceId = closure_20;
@@ -65,9 +65,9 @@ const tmp5 = (arg0) => {
       tmp2Result.deviceChangeGeneration = 0;
       tmp2Result.consecutiveWatchdogFailures = 0;
       tmp2Result.codecSurvey = null;
-      tmp2Result.clipsRecordingEventContext = { limit: 24, exclude_unpaid_statuses: 8, name: 3 };
+      tmp2Result.clipsRecordingEventContext = { "Null": "r", "Null": "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", "Null": "Array" };
       tmp2Result.clipsRecordingEventHandlerRegistered = false;
-      logger = new f37032(f37024[12]).Logger("MediaEngineNative");
+      logger = new f37040(f37032[12]).Logger("MediaEngineNative");
       tmp2Result.logger = logger;
       tmp2Result.handleDeviceChange = (items, items, items) => {
         let items1 = items;
@@ -185,7 +185,7 @@ const tmp5 = (arg0) => {
       };
       logger = tmp2Result.logger;
       enableNativeLoggerResult = logger.enableNativeLogger(true);
-      obj3 = f37032(f37024[15]);
+      obj3 = f37040(f37032[15]);
       voiceEngine = obj3.getVoiceEngine();
       result = voiceEngine.setDeviceChangeCallback(tmp2Result.handleDeviceChange);
       result1 = voiceEngine.setVolumeChangeCallback(tmp2Result.handleVolumeChange);
@@ -199,7 +199,7 @@ const tmp5 = (arg0) => {
       if (null != voiceEngine.setAudioDeviceModuleErrorCallback) {
         result4 = voiceEngine.setAudioDeviceModuleErrorCallback(tmp2Result.handleAudioDeviceModuleErrorCallback);
       }
-      setTransportOptionsResult = voiceEngine.setTransportOptions({ "Bool(false)": true, "Bool(false)": true });
+      setTransportOptionsResult = voiceEngine.setTransportOptions({ 0: null, "Null": null });
       if (null != voiceEngine.setNativeScreenSharePickerCallbacks) {
         result5 = voiceEngine.setNativeScreenSharePickerCallbacks(tmp2Result.handleNativeScreenSharePickerUpdate, tmp2Result.handleNativeScreenSharePickerCancel, tmp2Result.handleNativeScreenSharePickerError);
       }
@@ -217,24 +217,24 @@ const tmp5 = (arg0) => {
       }
       onResult = tmp2Result.on("removeListener", tmp2Result.handleRemoveListener);
       onResult1 = tmp2Result.on("newListener", tmp2Result.handleNewListener);
-      obj5 = f37032(f37024[15]);
+      obj5 = f37040(f37032[15]);
       if (null != obj5.getVoiceEngine().getAudioSubsystem) {
-        tmp28 = f37032;
-        tmp29 = f37024;
-        obj9 = f37032(f37024[15]);
+        tmp28 = f37040;
+        tmp29 = f37032;
+        obj9 = f37040(f37032[15]);
         voiceEngine1 = obj9.getVoiceEngine();
         audioSubsystem = voiceEngine1.getAudioSubsystem((audioSubsystem, audioLayer) => {
           tmp2Result.audioSubsystem = audioSubsystem;
           tmp2Result.audioLayer = audioLayer;
         });
       } else {
-        tmp23 = f37032;
-        tmp24 = f37024;
-        obj6 = f37032(f37024[15]);
+        tmp23 = f37040;
+        tmp24 = f37032;
+        obj6 = f37040(f37032[15]);
         if (null != obj6.getVoiceEngine().getUseLegacyAudioDevice) {
-          tmp25 = f37032;
-          tmp26 = f37024;
-          obj7 = f37032(f37024[15]);
+          tmp25 = f37040;
+          tmp26 = f37032;
+          obj7 = f37040(f37032[15]);
           voiceEngine2 = obj7.getVoiceEngine();
           tmp27 = closure_16;
           tmp2Result.audioSubsystem = voiceEngine2.getUseLegacyAudioDevice() ? tmp27.LEGACY : tmp27.STANDARD;
@@ -253,7 +253,7 @@ const tmp5 = (arg0) => {
           }
         });
       }
-      tmp34 = f37029(f37024[16])(tmp2Result);
+      tmp34 = f37037(f37032[16])(tmp2Result);
       tmp35 = function pollQueueMetrics(tmp2Result) {
         function pollMetrics() {
           return _pollMetrics(...arguments);
@@ -975,7 +975,7 @@ const tmp5 = (arg0) => {
               if (null != id) {
                 let parts = id.split(":");
               } else {
-                parts = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001833, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266183152018684];
+                parts = [];
               }
               const tmp6 = callback4(parts, 2);
               let num7 = 0;
@@ -987,7 +987,7 @@ const tmp5 = (arg0) => {
               obj1.soundshareId = num7;
               voiceEngine.setClipsSource(obj1);
             } else {
-              voiceEngine.setClipsSource({ name: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200383510955, version: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023685209983894134 });
+              voiceEngine.setClipsSource({ "Null": false, "Null": false });
             }
           }
         }

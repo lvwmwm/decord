@@ -1,9 +1,9 @@
-// Module ID: 7538
-// Function ID: 60338
+// Module ID: 7539
+// Function ID: 60350
 // Name: ContentIdType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7538 (ContentIdType)
+// Module 7539 (ContentIdType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
 

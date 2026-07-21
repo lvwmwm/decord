@@ -1,10 +1,10 @@
-// Module ID: 16355
-// Function ID: 126219
+// Module ID: 16363
+// Function ID: 126280
 // Name: AdvancedInstantInviteScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16355 (AdvancedInstantInviteScreen)
+// Module 16363 (AdvancedInstantInviteScreen)
 function AdvancedInstantInviteScreen() {
   let channel;
   let guild;

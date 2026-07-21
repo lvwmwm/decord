@@ -1,5 +1,5 @@
 // Module ID: 9899
-// Function ID: 76578
+// Function ID: 76589
 // Name: FailedGroupDMRow
 // Dependencies: []
 // Exports: default
@@ -134,11 +134,11 @@ let obj = arg1(dependencyMap[9]);
 obj = {};
 obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[10]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.lg, paddingVertical: importDefault(dependencyMap[10]).space.PX_8 };
 obj.container = obj;
-const obj1 = { <string:3075930939>: null, <string:1654717284>: null, <string:2572247734>: "center", <string:1399742892>: "center", <string:102062176>: 8, gap: importDefault(dependencyMap[10]).space.PX_12, marginHorizontal: importDefault(dependencyMap[10]).space.PX_16 };
-obj.row = obj1;
+const tmp3 = arg1(dependencyMap[8]);
+obj.row = { gap: importDefault(dependencyMap[10]).space.PX_12, marginHorizontal: importDefault(dependencyMap[10]).space.PX_16 };
 obj.label = { flexShrink: 1 };
 let closure_13 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[8]);
+const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_12, marginHorizontal: importDefault(dependencyMap[10]).space.PX_16 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/share/native/DestinationFailedAlertModal.tsx");
 
 export default function DestinationFailedAlertModal(arg0) {

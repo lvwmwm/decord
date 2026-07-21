@@ -1,13 +1,14 @@
 // Module ID: 6047
-// Function ID: 49984
+// Function ID: 49992
 // Name: FamilyShieldSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: FamilyShieldSpotIllustration
 
 // Module 6047 (FamilyShieldSpotIllustration)
-import { jsx } from "__exportStarResult1";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/FamilyShieldSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/FamilyShieldSpotIllustration.native.tsx");
 
 export const FamilyShieldSpotIllustration = function FamilyShieldSpotIllustration(width) {
   let accessibilityLabel;

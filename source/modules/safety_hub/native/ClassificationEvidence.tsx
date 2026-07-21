@@ -1,5 +1,5 @@
 // Module ID: 11023
-// Function ID: 85818
+// Function ID: 85829
 // Name: ClassificationEvidence
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ export default function ClassificationEvidence(flaggedContent) {
   let tmp2 = null;
   if (0 !== flaggedContent.length) {
     let obj = { style: tmp.sectionContainer };
-    obj = {};
+    obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
     const intl = arg1(dependencyMap[7]).intl;
     obj.children = intl.string(arg1(dependencyMap[7]).t.s64CMg);
     const items = [callback(arg1(dependencyMap[6]).Text, obj), ];

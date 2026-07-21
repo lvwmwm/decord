@@ -1,10 +1,10 @@
-// Module ID: 7005
-// Function ID: 56155
+// Module ID: 7006
+// Function ID: 56167
 // Name: getForumChannelSessionId
 // Dependencies: []
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
-// Module 7005 (getForumChannelSessionId)
+// Module 7006 (getForumChannelSessionId)
 function getForumChannelSessionId(channelId) {
   return importDefault(dependencyMap[12]).getForumChannelSessionId(channelId);
 }

@@ -1,5 +1,5 @@
 // Module ID: 8643
-// Function ID: 68405
+// Function ID: 68416
 // Name: getExtendedInviteType
 // Dependencies: []
 // Exports: default

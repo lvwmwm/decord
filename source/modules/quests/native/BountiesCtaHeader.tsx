@@ -1,14 +1,14 @@
-// Module ID: 13859
-// Function ID: 104813
+// Module ID: 13862
+// Function ID: 104845
 // Name: BountiesCtaDescription
 // Dependencies: []
 
-// Module 13859 (BountiesCtaDescription)
+// Module 13862 (BountiesCtaDescription)
 let StyleSheet;
 function BountiesCtaDescription(isEmptyOrCompleted) {
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   const t = arg1(dependencyMap[8]).t;
-  let obj = {};
+  let obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(isEmptyOrCompleted ? t.q4wlOE : t.AZGGo1);
   const tmp3 = callback(arg1(dependencyMap[9]).Text, obj);
@@ -72,7 +72,7 @@ function BountiesCtaHeaderInner(bounties) {
   }
   const items5 = [tmp11, ];
   obj2 = { style: tmp.headerTextBox };
-  const obj3 = {};
+  const obj3 = { hasMaxConnections: "<string:3704409292>", isBoostOnlySubscription: "<string:32796991>" };
   const intl = arg1(dependencyMap[8]).intl;
   obj3.children = intl.string(arg1(dependencyMap[8]).t.qetVDw);
   const items6 = [callback(arg1(dependencyMap[9]).Text, obj3), , ];
@@ -80,7 +80,7 @@ function BountiesCtaHeaderInner(bounties) {
   items6[1] = callback(BountiesCtaDescription, obj4);
   let tmp17 = !flag;
   if (tmp17) {
-    const obj5 = {};
+    const obj5 = { "Null": null, "Null": "e535ea871b8155df08d1e92a6b532c6c", "Null": "GroupArrowDownIcon" };
     const intl2 = arg1(dependencyMap[8]).intl;
     obj5.text = intl2.string(arg1(dependencyMap[8]).t.1kkbKw);
     obj5.onPress = callback;
@@ -105,7 +105,7 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[5]);
 let closure_11 = arg1(dependencyMap[6]).createStyles(() => {
   let obj = {};
-  obj = { p: "center", y: 0, isArray: 8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xxl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xxl, overflow: "hidden" };
+  obj = { "Bool(true)": "shouldPressibilityUseW3CPointerEventsForHover", "Bool(true)": "%Float64Array%", "Bool(true)": "_headers", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xxl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xxl, overflow: "hidden" };
   obj.container = obj;
   obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
   obj.header = obj;
@@ -117,11 +117,11 @@ let closure_11 = arg1(dependencyMap[6]).createStyles(() => {
   const obj3 = { color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
   obj.headerTextBox = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_20, gap: importDefault(dependencyMap[7]).space.PX_8 };
   obj.description = { marginBottom: 16 };
-  const obj5 = { "Bool(true)": null, "Bool(true)": null, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xl };
+  const obj5 = { "Null": true, "Null": true, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xl };
   obj.bottomSection = obj5;
   const obj4 = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_20, gap: importDefault(dependencyMap[7]).space.PX_8 };
   obj.bottomContent = { gap: importDefault(dependencyMap[7]).space.PX_12 };
-  const obj7 = { <string:1400504324>: true, <string:2707095556>: true, borderRadius: importDefault(dependencyMap[7]).radii.md, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+  const obj7 = { "Bool(true)": "column", "Bool(true)": 1, borderRadius: importDefault(dependencyMap[7]).radii.md, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
   obj.placeholderCards = obj7;
   return obj;
 });

@@ -1,10 +1,10 @@
-// Module ID: 13665
-// Function ID: 103475
+// Module ID: 13667
+// Function ID: 103497
 // Name: FamilyCenterFeatureRows
 // Dependencies: []
 // Exports: default
 
-// Module 13665 (FamilyCenterFeatureRows)
+// Module 13667 (FamilyCenterFeatureRows)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -51,7 +51,7 @@ export default function FamilyCenterFeatureRows() {
   items[2] = obj1;
   obj2 = { style: tmp.tableGroup };
   const obj3 = { spacing: 8 };
-  const obj4 = { alignItems: "r", justifyContent: 320.5, backgroundColor: 175 };
+  const obj4 = { USER_REGISTRATION: "r", borderColor: 320.5, borderWidth: 175 };
   const intl10 = arg1(dependencyMap[6]).intl;
   obj4.children = intl10.string(importDefault(dependencyMap[7]).6JkHSg);
   const items1 = [callback(arg1(dependencyMap[15]).Text, obj4), ];

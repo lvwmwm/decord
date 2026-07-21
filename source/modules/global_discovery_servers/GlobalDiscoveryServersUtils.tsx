@@ -1,10 +1,10 @@
-// Module ID: 16389
-// Function ID: 126632
+// Module ID: 16397
+// Function ID: 126693
 // Name: _navigateToGuild
 // Dependencies: []
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 16389 (_navigateToGuild)
+// Module 16397 (_navigateToGuild)
 function _navigateToGuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

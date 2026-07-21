@@ -1,7 +1,7 @@
 // Module ID: 6761
-// Function ID: 52969
+// Function ID: 52977
 // Name: ChannelListGuildActionRow
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6761 (ChannelListGuildActionRow)
 const _module = require(dependencyMap[0]);

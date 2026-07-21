@@ -1,5 +1,5 @@
 // Module ID: 11872
-// Function ID: 91891
+// Function ID: 91903
 // Name: GuildProfileCTA
 // Dependencies: []
 // Exports: default
@@ -96,7 +96,7 @@ export default function GuildProfileCTA(profile) {
     obj = { object: callback1.GUILD_PROFILE };
     profile(validInviteKey[14]).startLurking(guildId, obj);
   }, items4);
-  const memo = React.useMemo(() => ({}), []);
+  const memo = React.useMemo(() => ({ "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000617657258412965, "Null": 0.000000000000000015616120495956806, "Null": 131072.029296875 }), []);
   if (flag) {
     obj = { guildId, joinSource: tmp5.GUILD_PROFILE_LURKER };
     return jsx(importDefault(dependencyMap[15]), obj);

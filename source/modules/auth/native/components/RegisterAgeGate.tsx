@@ -1,10 +1,10 @@
-// Module ID: 14641
-// Function ID: 110399
+// Module ID: 14644
+// Function ID: 110431
 // Name: RegisterAgeGate
 // Dependencies: []
 // Exports: default
 
-// Module 14641 (RegisterAgeGate)
+// Module 14644 (RegisterAgeGate)
 import subtractResult from "module_100";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -18,7 +18,7 @@ const AuthStates = arg1(dependencyMap[6]).AuthStates;
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { inputGroup: {}, flexGrow: { flexGrow: 1 }, button: { <string:2698835749>: false, <string:3429211292>: false, <string:4221622371>: false, <string:2578216786>: false } };
+obj = { inputGroup: {}, flexGrow: { flexGrow: 1 }, button: {} };
 obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.datePickerButton = obj;
 obj.page = { flex: 1 };

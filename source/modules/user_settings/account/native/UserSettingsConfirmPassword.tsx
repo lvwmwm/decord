@@ -1,5 +1,5 @@
 // Module ID: 9225
-// Function ID: 72134
+// Function ID: 72145
 // Name: UserSettingsConfirmPasswordWrapped
 // Dependencies: []
 // Exports: UserSettingsConfirmPasswordWrapped
@@ -17,9 +17,9 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { flex: "<string:2236743682>", display: "<string:1941427526>" };
+obj.container = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon" };
 obj.title = { textAlign: "center" };
-obj.prompt = { action: null, messageReference: null, medium: null };
+obj.prompt = {};
 obj.input = { marginTop: 24 };
 obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.redesignInput = obj1;
@@ -71,7 +71,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   }, []);
   let tmp11Result = null;
   if (null != stateFromStores) {
-    obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+    obj = {};
     const items1 = [tmp.background, style];
     obj.style = items1;
     let tmp13 = null;
@@ -80,7 +80,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     const items2 = [tmp13, ];
     obj = { style: tmp.container };
-    const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.x+d9t3);
     const items3 = [callback2(arg1(dependencyMap[16]).Text, obj1), , , , ];
@@ -88,7 +88,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     const intl2 = arg1(dependencyMap[14]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[14]).t.vaZmAx);
     items3[1] = callback2(arg1(dependencyMap[16]).Text, obj2);
-    const obj3 = {};
+    const obj3 = { "Bool(false)": "<string:1124139010>", "Bool(false)": "2fb9c35271fa129262898470e22001e7", "Bool(false)": "de.messages.2fb9c35271fa129262898470e22001e7.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "<string:2061584433>", "Bool(false)": "<string:3846680084>" };
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
     const intl3 = arg1(dependencyMap[14]).intl;
     obj3.label = intl3.string(arg1(dependencyMap[14]).t.CIGa+7);
@@ -114,7 +114,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     items3[3] = tmp25;
     const obj5 = { style: tmp.button };
-    const obj6 = {};
+    const obj6 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
     const intl4 = arg1(dependencyMap[14]).intl;
     obj6.text = intl4.string(arg1(dependencyMap[14]).t.i4jeWR);
     obj6.onPress = handleSubmit;

@@ -1,10 +1,10 @@
-// Module ID: 13689
-// Function ID: 103620
+// Module ID: 13691
+// Function ID: 103642
 // Name: getSpendingLimitDisplayState
 // Dependencies: []
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 13689 (getSpendingLimitDisplayState)
+// Module 13691 (getSpendingLimitDisplayState)
 function getSpendingLimitDisplayState(amount) {
   if (null == amount) {
     let obj = { kind: "off" };

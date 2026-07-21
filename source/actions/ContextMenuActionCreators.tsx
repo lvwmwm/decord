@@ -1,10 +1,12 @@
-// Module ID: 5401
-// Function ID: 46043
+// Module ID: 5400
+// Function ID: 46050
 // Name: open
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4120, 5261, 1852]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5401 (open)
+// Module 5400 (open)
+import { AppContext } from "_slicedToArray";
+
 function open(contextMenu) {
   let obj = importDefault(dependencyMap[1]);
   obj = { type: "CONTEXT_MENU_OPEN", contextMenu };
@@ -142,9 +144,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const currentTarget = stopPropagation.currentTarget;
   }
 }
-const AppContext = require(dependencyMap[0]).AppContext;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
 
 export function closeContextMenu() {
 

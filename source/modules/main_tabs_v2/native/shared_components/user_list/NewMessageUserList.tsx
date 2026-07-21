@@ -1,7 +1,7 @@
 // Module ID: 11400
-// Function ID: 88676
+// Function ID: 88688
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4138, 4321, 4322, 566, 8448, 4616, 9137, 8358, 4096, 11409, 1934, 1212, 11413, 2, 31, 27, 1838, 4321, 4322, 33, 4126]
+// Dependencies: [31, 4138, 4321, 4322, 566, 8448, 4615, 9137, 8358, 4096, 11409, 1934, 1212, 11413, 2, 31, 27, 1838, 4321, 4322, 33, 4126]
 // Exports: default
 
 // Module 11400 (_createForOfIteratorHelperLoose)
@@ -417,7 +417,7 @@ export default function NewMessageUserList(selectedUserIds) {
           let TOGGLE = ref.TOGGLE;
         }
         obj.mode = TOGGLE;
-        const obj1 = { children: disabledUserIds(onSelectUser[11]).getUserTag(user) };
+        const obj1 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: disabledUserIds(onSelectUser[11]).getUserTag(user) };
         obj.subLabel = callback2(selectedUserIds(onSelectUser[16]).Text, obj1);
         obj.arrow = !tmp7.isFriend(user.id);
         obj.start = tmp2;

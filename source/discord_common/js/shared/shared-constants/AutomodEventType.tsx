@@ -1,7 +1,7 @@
 // Module ID: 10998
-// Function ID: 85559
+// Function ID: 85570
 // Name: AutomodEventType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10998 (AutomodEventType)
 const _module = require(dependencyMap[0]);

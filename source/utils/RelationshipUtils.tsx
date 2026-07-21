@@ -1,13 +1,13 @@
-// Module ID: 16030
-// Function ID: 123088
+// Module ID: 16038
+// Function ID: 123149
 // Name: showNotification
 // Dependencies: []
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16030 (showNotification)
+// Module 16038 (showNotification)
 function showNotification(id, arg1, onClick) {
   let obj = importDefault(dependencyMap[1]);
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, tag: id.id, onClick };
+  obj = { tag: id.id, onClick };
   obj.showNotification(importDefault(dependencyMap[2]).getUserAvatarURL(id), id.username, arg1, {}, obj);
 }
 const FriendsSections = require(dependencyMap[0]).FriendsSections;

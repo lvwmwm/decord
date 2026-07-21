@@ -1,9 +1,9 @@
-// Module ID: 14987
-// Function ID: 112861
+// Module ID: 14990
+// Function ID: 112895
 // Name: AvatarDefault
 // Dependencies: []
 
-// Module 14987 (AvatarDefault)
+// Module 14990 (AvatarDefault)
 function AvatarDefault() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[7]);
@@ -30,7 +30,7 @@ function AvatarDefault() {
   obj3.children = items2;
   obj2.children = callback2(View, obj3);
   const items3 = [callback(importDefault(dependencyMap[9]), obj2), ];
-  const obj5 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, size: num, status: StatusTypes.OFFLINE, style: { position: "absolute", right: closure_6, bottom: closure_6 } };
+  const obj5 = { size: num, status: StatusTypes.OFFLINE, style: { position: "absolute", right: closure_6, bottom: closure_6 } };
   items3[1] = callback(arg1(dependencyMap[8]).Status, obj5);
   obj.children = items3;
   return callback2(View, obj);
@@ -63,9 +63,7 @@ function AvatarDefaultLarge() {
   items3[1] = callback(arg1(dependencyMap[10]).ReactionIcon, obj7);
   obj5.children = items3;
   obj4.children = callback2(View, obj5);
-  const items4 = [callback(importDefault(dependencyMap[9]), obj4), ];
-  const obj9 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, size: closure_8, status: StatusTypes.OFFLINE, style: { position: "absolute", right: closure_6 - closure_10, bottom: closure_6 - closure_10 } };
-  items4[1] = callback(arg1(dependencyMap[8]).Status, obj9);
+  const items4 = [callback(importDefault(dependencyMap[9]), obj4), callback(arg1(dependencyMap[8]).Status, { size: closure_8, status: StatusTypes.OFFLINE, style: obj10 })];
   obj2.children = items4;
   obj.children = callback2(View, obj2);
   return callback(View, obj);
@@ -78,9 +76,9 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { 1108365732: true, -816651167: true, 1640773638: true, -868724231: true, 357685089: true, borderRadius: importDefault(dependencyMap[6]).radii.round, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { lj: "r", apply: "nxl", __d: "r", index: "emptyImage", body: "%TypeError%", borderRadius: importDefault(dependencyMap[6]).radii.round, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.placeholderAvatar = obj;
-obj1 = { o: "center", concat: null, o: 4, borderRadius: importDefault(dependencyMap[6]).radii.round, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[6]).radii.round, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
 obj.placeholderAvatarBackground = obj1;
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_MEDIUM);
 obj.avatarShadow = {};

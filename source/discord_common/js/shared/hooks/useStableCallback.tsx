@@ -1,5 +1,5 @@
 // Module ID: 8385
-// Function ID: 66733
+// Function ID: 66744
 // Name: useStableCallback
 // Dependencies: []
 // Exports: default

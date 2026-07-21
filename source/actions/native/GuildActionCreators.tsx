@@ -1,10 +1,10 @@
-// Module ID: 16178
-// Function ID: 124972
+// Module ID: 16186
+// Function ID: 125033
 // Name: batchChannelUpdate
 // Dependencies: []
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 16178 (batchChannelUpdate)
+// Module 16186 (batchChannelUpdate)
 function batchChannelUpdate(closure_0, body) {
   function onEnd() {
     return callback(closure_2[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });

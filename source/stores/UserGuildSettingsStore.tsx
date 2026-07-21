@@ -1,5 +1,5 @@
 // Module ID: 4321
-// Function ID: 37854
+// Function ID: 37862
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -258,7 +258,7 @@ let importDefaultResult = importDefault(dependencyMap[15]);
 importDefaultResult = new importDefaultResult();
 let importDefaultResult1 = importDefault(dependencyMap[15]);
 importDefaultResult1 = new importDefaultResult1();
-let obj = { message_notifications: UserNotificationSettings.ALL_MESSAGES, channel_overrides: {}, notify_highlights: tmp3.HighlightSettings.NULL };
+let obj = { "Null": "shouldPressibilityUseW3CPointerEventsForHover", "Null": "%Float64Array%", "Null": "_headers", "Null": "transparent", "Null": "%MapPrototype%", "Null": "isArray", "Null": "NATIVE_REQUIRED_ASSETS", "Null": "mismatchesByLastAction", "Null": "Array", "Null": "container", "Null": "isArray", "Null": "STICKER_PACK_VIEW_ALL", message_notifications: UserNotificationSettings.ALL_MESSAGES, channel_overrides: {}, notify_highlights: tmp3.HighlightSettings.NULL };
 obj = {};
 obj = {};
 const merged = Object.assign(obj);

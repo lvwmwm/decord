@@ -1,7 +1,7 @@
 // Module ID: 123
 // Function ID: 2096
 // Name: setUpDefaltReactNativeEnvironment
-// Dependencies: [30067, 34816, 35072, 2375962880, 488034, 393216, 3881238528, 1007930634, 1665443597, 2770824483, 14195, 12288, 12544]
+// Dependencies: []
 
 // Module 123 (setUpDefaltReactNativeEnvironment)
 let closure_2 = false;

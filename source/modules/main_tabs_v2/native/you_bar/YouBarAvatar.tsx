@@ -1,9 +1,9 @@
-// Module ID: 14988
-// Function ID: 112865
+// Module ID: 14991
+// Function ID: 112899
 // Name: YouBarAvatarLarge
 // Dependencies: []
 
-// Module 14988 (YouBarAvatarLarge)
+// Module 14991 (YouBarAvatarLarge)
 function YouBarAvatarLarge(transitionState) {
   transitionState = transitionState.transitionState;
   const arg1 = transitionState;

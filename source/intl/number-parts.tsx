@@ -1,42 +1,42 @@
-// Module ID: 8178
-// Function ID: 64586
+// Module ID: 8179
+// Function ID: 64599
 // Name: numberParts
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8178 (numberParts)
+// Module 8179 (numberParts)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("intl/number-parts.tsx");
 const obj = Object.create(null);
-obj.bg = { "Null": true, "Null": true };
-obj.cs = { "Null": true, "Null": true };
-obj.da = {};
-obj.de = {};
-obj.el = {};
-obj.en-GB = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.en-US = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.es-ES = {};
-obj.es-419 = {};
-obj.fi = { "Null": true, "Null": true };
-obj.fr = { "Null": null, "Null": null };
-obj.hi = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.hr = {};
-obj.hu = { "Null": true, "Null": true };
-obj.it = {};
-obj.ja = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.ko = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.lt = { "Null": true, "Null": true };
-obj.nl = {};
-obj.no = { "Null": true, "Null": true };
-obj.pl = { "Null": true, "Null": true };
-obj.pt-BR = {};
-obj.ro = {};
-obj.ru = { "Null": true, "Null": true };
-obj.sv-SE = { "Null": true, "Null": true };
-obj.th = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.tr = {};
-obj.uk = { "Null": true, "Null": true };
-obj.vi = {};
-obj.zh-CN = { "Null": "label_from", "Null": "accessibleDismiss" };
-obj.zh-TW = { "Null": "label_from", "Null": "accessibleDismiss" };
+obj.bg = {};
+obj.cs = {};
+obj.da = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.de = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.el = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.en-GB = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.en-US = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.es-ES = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.es-419 = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.fi = {};
+obj.fr = {};
+obj.hi = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.hr = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.hu = {};
+obj.it = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.ja = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.ko = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.lt = {};
+obj.nl = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.no = {};
+obj.pl = {};
+obj.pt-BR = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.ro = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.ru = {};
+obj.sv-SE = {};
+obj.th = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.tr = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.uk = {};
+obj.vi = { <string:1703863650>: null, <string:3639390412>: "f3301101be61d91e0c3888cee5854bbe" };
+obj.zh-CN = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
+obj.zh-TW = { <string:1703863650>: "lag", <string:3639390412>: "paddingVertical" };
 
 export const numberParts = obj;

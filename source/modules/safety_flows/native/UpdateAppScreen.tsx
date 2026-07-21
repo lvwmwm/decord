@@ -1,10 +1,10 @@
-// Module ID: 16436
-// Function ID: 126961
+// Module ID: 16444
+// Function ID: 127022
 // Name: UpdateAppScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16436 (UpdateAppScreen)
+// Module 16444 (UpdateAppScreen)
 const _module = require(dependencyMap[0]);
 ({ NativeModules: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);

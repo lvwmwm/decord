@@ -1,10 +1,10 @@
-// Module ID: 13401
-// Function ID: 101857
+// Module ID: 13403
+// Function ID: 101879
 // Name: CompassIcon
 // Dependencies: []
 // Exports: CompassIcon
 
-// Module 13401 (CompassIcon)
+// Module 13403 (CompassIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CompassIcon.tsx");

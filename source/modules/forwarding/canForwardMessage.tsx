@@ -1,5 +1,5 @@
 // Module ID: 9526
-// Function ID: 74207
+// Function ID: 74218
 // Name: canForwardMessage
 // Dependencies: []
 // Exports: useCanForwardMessage

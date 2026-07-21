@@ -1,10 +1,10 @@
-// Module ID: 7086
-// Function ID: 56814
+// Module ID: 7087
+// Function ID: 56826
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
 // Dependencies: []
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 7086 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+// Module 7087 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 

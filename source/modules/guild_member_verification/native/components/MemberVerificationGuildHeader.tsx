@@ -1,5 +1,5 @@
 // Module ID: 9161
-// Function ID: 71790
+// Function ID: 71801
 // Name: AVATAR_SIZE
 // Dependencies: []
 // Exports: default
@@ -14,14 +14,14 @@ const tmp3 = arg1(dependencyMap[2]);
 const useBannerHeight = tmp3.useBannerHeight;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { header: {}, headerContent: { 2130673151: "isArray", -2097184513: "key", -2030074625: "Array", -2113961985: "construct", -2046852097: "Date" }, linearGradient: { style: null, textInputStyle: null, label: true, error: "bottom", value: 8 } };
+obj = { header: {}, headerContent: {}, linearGradient: { -374555566: 128815952621150340000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -1676979032: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000518728505263, 38996652: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000233755030271201, -413028618: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008416235351852934, 1671032657: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321053053 } };
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 0, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE, width: AVATAR_SIZE, margin: 0, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SCRIM };
 obj.avatar = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.avatarContainer = { borderRadius: 20, borderWidth: AVATAR_BORDER_WIDTH, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, width: AVATAR_SIZE + 2 * AVATAR_BORDER_WIDTH, marginBottom: 16, marginTop: -16, marginLeft: -4, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
-obj.featureIcon = { "Null": "isArray", "Null": "isArray", "Null": "Array" };
-obj.headerTitle = { collapsable: "absolute", preventClipping: 0 };
-obj.headerDescription = { "Bool(false)": null, "Bool(false)": null };
+obj.featureIcon = {};
+obj.headerTitle = {};
+obj.headerDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function MemberVerificationGuildHeaderTsx1(){const{scrollTop}=this.__closure;return scrollTop.get()*-1;}" };
 let closure_10 = { code: "function MemberVerificationGuildHeaderTsx2(){const{height,interpolate,scrollTop,safeAreaTop,scrollTopNegative}=this.__closure;return{width:'100%',height:height,opacity:interpolate(scrollTop.get(),[0,height-safeAreaTop],[1,0],'clamp'),transform:[{translateY:interpolate(scrollTopNegative.get(),[0,height],[0,-height],'clamp')},{scale:interpolate(scrollTopNegative.get(),[0,height],[1,1.08],'clamp')}]};}" };
@@ -64,7 +64,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
       obj2 = scrollTop(top[9]);
       items = [0.229];
       items[1] = closure_1 - top;
-      obj.opacity = obj2.interpolate(scrollTop.get(), items, ["<string:3813229678>", "<string:153900714>"], "clamp");
+      obj.opacity = obj2.interpolate(scrollTop.get(), items, [], "clamp");
       obj = {};
       obj4 = scrollTop(top[9]);
       items1 = [0.229];
@@ -78,7 +78,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
       obj6 = scrollTop(top[9]);
       items4 = [0.229];
       items4[1] = closure_1;
-      obj1.scale = obj6.interpolate(closure_3.get(), items4, ["containerRefreshMedium", "THUMBNAIL_MAX_WIDTH"], "clamp");
+      obj1.scale = obj6.interpolate(closure_3.get(), items4, [1401310690170916000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1405342991284294500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], "clamp");
       items3[1] = obj1;
       obj.transform = items3;
       return obj;
@@ -100,7 +100,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
     obj = {};
     const obj3 = scrollTop(top[9]);
     const items3 = [0.229, closure_4];
-    const items4 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, 1.20225424859375];
+    const items4 = [null, 1.20225424859375];
     obj.scale = scrollTop(top[9]).interpolate(derivedValue.get(), items3, items4, "clamp");
     items2[1] = obj;
     obj.transform = items2;
@@ -115,7 +115,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
   obj2 = { style: animatedStyle };
   const obj3 = { style: { width: "100%", height: tmp7 }, source: guildBannerSource };
   const items = [callback(importDefault(dependencyMap[9]).Image, obj3), ];
-  obj4 = { start: { max: -536870861, guildId: -299892737 }, end: {}, style: tmp.linearGradient, colors: [] };
+  obj4 = { start: {}, end: {}, style: tmp.linearGradient, colors: [] };
   items[1] = callback(importDefault(dependencyMap[10]), obj4);
   obj2.children = items;
   const items1 = [callback2(importDefault(dependencyMap[9]).View, obj2), ];

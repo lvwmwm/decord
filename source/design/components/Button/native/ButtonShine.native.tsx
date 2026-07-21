@@ -1,5 +1,5 @@
 // Module ID: 4549
-// Function ID: 39869
+// Function ID: 39877
 // Name: useShineEffectStyles
 // Dependencies: []
 // Exports: ButtonShine
@@ -53,11 +53,11 @@ function useShineEffectStyles(width, variant) {
   obj = {};
   const animatedStyle = variant(dependencyMap[6]).useAnimatedStyle(fn);
   const obj4 = variant(dependencyMap[6]);
-  obj1 = { "Null": null, "Null": "\u{1F9D4}\u200D\u2640\uFE0F", "Null": true, "Null": 13.1, "Null": 69, "Null": null };
+  obj1 = { soundshare_unique_pids: null, soundshare_first_session: "\u{1F9D4}\u200D\u2640\uFE0F", soundshare_last_session: true, pointerEvents: 13.1, horizontalOffset: 69, "Bool(false)": null };
   const items = [{ rotate: "30deg" }];
   obj1.transform = items;
   obj1.backgroundColor = hexResult;
-  obj.shineStyles = variant(dependencyMap[8]).createStyles({ shineContainer: { "Bool(false)": "displayName", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "key" }, shine: obj1, shineInner: { backgroundColor: hexResult } })();
+  obj.shineStyles = variant(dependencyMap[8]).createStyles({ shineContainer: {}, shine: obj1, shineInner: { backgroundColor: hexResult } })();
   obj.shineAnimatedStyle = animatedStyle;
   return obj;
 }

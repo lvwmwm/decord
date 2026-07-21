@@ -1,5 +1,5 @@
 // Module ID: 10793
-// Function ID: 83799
+// Function ID: 83810
 // Name: matchPathToRoutes
 // Dependencies: []
 // Exports: cleanupRouteManager, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
@@ -8,7 +8,7 @@
 let Routes;
 function matchPathToRoutes(pathname, items) {
   let obj = items(dependencyMap[11]);
-  obj = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", path: items };
+  obj = { paddingLeft: "absolute", alignItems: -1, flexDirection: -1, path: items };
   return obj.matchPath(pathname, obj);
 }
 function extractParamsFromVoiceModalRoute(location) {
@@ -250,7 +250,7 @@ function extractParams(arg0) {
   let match;
   ({ match, location: _location } = arg0);
   if (null == match) {
-    let obj = { onPress: null, start: null, end: "<string:1153327360>", time: "name-middle", pauseInvites: "name-family", guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
+    let obj = { count: false, alignButton: false, align: false, label: false, isDestructive: false, guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
     return obj;
   } else {
     const params = match.params;
@@ -280,7 +280,7 @@ function extractParams(arg0) {
 function logRouteChange(pathname) {
   importDefaultResult.log("Navigated to: " + pathname.pathname);
 }
-let closure_3 = [null, null];
+let closure_3 = [967407828, 1889808960];
 let closure_4 = importDefault(dependencyMap[0]);
 const setVoiceChatDrawerState = arg1(dependencyMap[1]).setVoiceChatDrawerState;
 let closure_6 = arg1(dependencyMap[2]).isGuildSelectableChannelType;

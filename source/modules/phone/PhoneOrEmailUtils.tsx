@@ -1,7 +1,7 @@
 // Module ID: 9207
-// Function ID: 72056
+// Function ID: 72067
 // Name: PhoneOrEmailSelectorForceMode
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
 // Module 9207 (PhoneOrEmailSelectorForceMode)

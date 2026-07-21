@@ -1,5 +1,5 @@
 // Module ID: 9727
-// Function ID: 75655
+// Function ID: 75666
 // Name: HeroMedia
 // Dependencies: []
 // Exports: default
@@ -50,7 +50,7 @@ function HeroMedia(mediaItem) {
   return tmp7;
 }
 function InGameItemTag() {
-  const obj = {};
+  const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.V91tvy);
   return callback2(arg1(dependencyMap[16]).Text, obj);
@@ -65,7 +65,7 @@ function ProductPriceSection(sku) {
     obj = { style: tmp.priceSection };
     const items = [callback2(InGameItemTag, {}), ];
     const obj1 = { style: tmp.priceRow };
-    const obj2 = { children: userPrice };
+    const obj2 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: userPrice };
     obj1.children = callback2(arg1(dependencyMap[16]).Text, obj2);
     items[1] = callback2(closure_7, obj1);
     obj.children = items;
@@ -88,13 +88,13 @@ function BundleThumbnailRow(trackPDPClick) {
     onSelectIndex(arg0);
   }, items);
   let obj = { style: tmp.section };
-  obj = {};
+  obj = { hasMaxConnections: 15, isBoostOnlySubscription: "center" };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.U7DAV9);
   const items1 = [callback2(arg1(dependencyMap[16]).Text, obj), ];
   obj = {
-    <string:3603769293>: true,
-    <string:3453288331>: true,
+    1644319569: null,
+    -2041488286: null,
     contentContainerStyle: tmp.bundleThumbnailRow,
     children: mediaItems.map((thumbnailSrc) => {
       let thumbnailInnerSelected = arg1 === callback;
@@ -155,7 +155,7 @@ function SKUNameAndDescriptionSection(sku) {
   let tmp3Result = null;
   if (!obj.isNullOrEmpty(sku.name)) {
     obj = { style: tmp.section };
-    obj = { children: sku.name };
+    obj = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, children: sku.name };
     const items = [callback2(arg1(dependencyMap[16]).Heading, obj), ];
     let tmp8 = !arg1(dependencyMap[20]).isNullOrEmpty(sku.description);
     if (tmp8) {
@@ -220,7 +220,7 @@ function ItemDetailsSection(selectedItem) {
       tmp22 = callback2(importDefault(dependencyMap[15]), obj2);
     }
     const items1 = [tmp22, ];
-    const obj4 = { children: trimmed1 };
+    const obj4 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: trimmed1 };
     items1[1] = callback2(arg1(dependencyMap[16]).Text, obj4);
     obj1.children = items1;
     tmp20Result = closure_16(closure_7, obj1);
@@ -680,7 +680,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     const obj21 = { style: result.buyButton };
     result = arg1;
     result = dependencyMap;
-    const obj22 = { text: result, loading: tmp33 };
+    const obj22 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null, text: result, loading: tmp33 };
     result = tmp33;
     if (!tmp33) {
       result = !result;
@@ -692,7 +692,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     result = arg1;
     result = dependencyMap;
     result = callback1;
-    const obj23 = { <string:1454006884>: "RBTree", <string:3620889915>: "currentEmbeddedApplication", <string:1388749051>: "SyntaxError" };
+    const obj23 = { -9223372036854775808: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", 9223372036854775807: null };
     result = importDefault;
     obj23.icon = importDefault(dependencyMap[46]);
     obj23.disabled = tmp33;
@@ -780,7 +780,7 @@ const obj2 = { alignItems: "stretch", gap: importDefault(dependencyMap[10]).spac
 obj.section = { width: "100%", paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj4 = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_4 };
 obj.bundleThumbnailRow = obj4;
-const obj5 = { "Bool(false)": 15177100833591720000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -231585282754047900000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026919904682564, "Bool(false)": 8084363890119254000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004447009584007632, borderRadius: importDefault(dependencyMap[10]).radii.md };
+const obj5 = { "Bool(true)": 1102668032, "Bool(true)": 65707, "Bool(true)": 3962113, "Bool(true)": 131072, "Bool(true)": 5308416, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.thumbnail = obj5;
 const obj3 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.thumbnailSelected = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_STRONG };
@@ -789,21 +789,21 @@ obj.thumbnailInner = { borderRadius: importDefault(dependencyMap[10]).radii.sm }
 const obj7 = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
 obj.thumbnailInnerSelected = { margin: 2, borderRadius: importDefault(dependencyMap[10]).radii.sm };
 obj.thumbnailImage = {};
+const obj9 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[10]).space.PX_4 };
+obj.labelRow = obj9;
 const obj8 = { margin: 2, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-obj.labelRow = { gap: importDefault(dependencyMap[10]).space.PX_4 };
-const obj9 = { gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.labelIcon = { width: importDefault(dependencyMap[10]).space.PX_16, height: importDefault(dependencyMap[10]).space.PX_16 };
+const obj11 = { <string:3635438572>: null, <string:1408024149>: null, <string:1708473420>: null, gap: importDefault(dependencyMap[10]).space.PX_8 };
+obj.priceRow = obj11;
 const obj10 = { width: importDefault(dependencyMap[10]).space.PX_16, height: importDefault(dependencyMap[10]).space.PX_16 };
-obj.priceRow = { gap: importDefault(dependencyMap[10]).space.PX_8 };
-const obj11 = { gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.footer = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
-const obj12 = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
-obj.footerButtonRow = { gap: importDefault(dependencyMap[10]).space.PX_8 };
+const obj13 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[10]).space.PX_8 };
+obj.footerButtonRow = obj13;
 obj.buyButton = { flex: 1 };
 obj.availabilityCopy = { textAlign: "center" };
-const obj13 = { gap: importDefault(dependencyMap[10]).space.PX_8 };
-obj.legalCopy = { gap: importDefault(dependencyMap[10]).space.PX_4 };
-const obj14 = { gap: importDefault(dependencyMap[10]).space.PX_4 };
+const obj14 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[10]).space.PX_4 };
+obj.legalCopy = obj14;
+const obj12 = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
 obj.hero = { marginHorizontal: importDefault(dependencyMap[10]).space.PX_16, height: arg1(dependencyMap[13]).MOBILE_HERO_HEIGHT_PX, borderRadius: importDefault(dependencyMap[10]).radii.md, overflow: "hidden", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 const obj15 = { marginHorizontal: importDefault(dependencyMap[10]).space.PX_16, height: arg1(dependencyMap[13]).MOBILE_HERO_HEIGHT_PX, borderRadius: importDefault(dependencyMap[10]).radii.md, overflow: "hidden", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 obj.priceSection = { width: "100%", gap: importDefault(dependencyMap[10]).space.PX_8 };

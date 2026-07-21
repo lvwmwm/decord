@@ -1,13 +1,13 @@
-// Module ID: 13883
-// Function ID: 105006
+// Module ID: 13886
+// Function ID: 105038
 // Name: QuestDockDismissalNotification
 // Dependencies: []
 // Exports: displayQuestDismissalToast
 
-// Module 13883 (QuestDockDismissalNotification)
+// Module 13886 (QuestDockDismissalNotification)
 function QuestDockDismissalNotification() {
   const callback = callback2();
-  let obj = {};
+  let obj = { "Null": "header", "Null": 40 };
   const intl = callback(dependencyMap[6]).intl;
   obj = {
     arrowHook() {
@@ -25,7 +25,7 @@ importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp3 = arg1(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[3]).createStyles(() => {
-  let obj = { toastArrowForwardIconContainer: { <string:1632221346>: null, <string:2722977214>: "\u{1F61E}" } };
+  let obj = { toastArrowForwardIconContainer: { y: null, isArray: "\u{1F61E}" } };
   obj = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_ACTIVE, transform: items };
   const items = [{ translateY: -10 }];
   obj.toastArrowForwardIcon = obj;

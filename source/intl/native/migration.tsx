@@ -1,5 +1,5 @@
 // Module ID: 5458
-// Function ID: 46614
+// Function ID: 46622
 // Name: IntlLink
 // Dependencies: []
 
@@ -9,7 +9,7 @@ class IntlLink {
     target = global.target;
     arg1 = target;
     tmp2 = typeof target;
-    tmp = f46617(importAll.useContext(arg1(dependencyMap[4]).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+    tmp = f46625(importAll.useContext(arg1(dependencyMap[4]).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
     if ("string" === tmp2) {
       fn = () => {
         const obj = callback(closure_2[5]);

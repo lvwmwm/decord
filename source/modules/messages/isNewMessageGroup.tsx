@@ -1,5 +1,5 @@
 // Module ID: 9474
-// Function ID: 73796
+// Function ID: 73807
 // Name: isNewMessageGroup
 // Dependencies: []
 // Exports: isNewGroupItem

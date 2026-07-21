@@ -1,11 +1,12 @@
 // Module ID: 11268
-// Function ID: 87665
+// Function ID: 87677
 // Name: isValidRoleMention
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 11268 (isValidRoleMention)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
 
 function isValidRoleMention(applicationCommandOption) {
   let tmp = "roleMention" === applicationCommandOption.type;
@@ -49,7 +50,9 @@ function validateNumericOptionRange(NumberResult, minValue, 8Y5zsp, CyRLmH, VD3Q
 function localeNumberFormat(minLength) {
   return minLength.toLocaleString(arg1(dependencyMap[5]).intl.currentLocale, { useGrouping: false });
 }
-const obj = {
+result = result.fileFinishedImporting("modules/application_commands/ApplicationCommandValidators.tsx");
+
+export default {
   [arg1(dependencyMap[2]).ApplicationCommandOptionType.SUB_COMMAND]: () => ({ success: false }),
   [arg1(dependencyMap[2]).ApplicationCommandOptionType.SUB_COMMAND_GROUP]: () => ({ success: false }),
   [arg1(dependencyMap[2]).ApplicationCommandOptionType.BOOLEAN]: (type) => {
@@ -162,7 +165,7 @@ const obj = {
           }
           const _Number = Number;
           let obj1 = importAll(dependencyMap[6]);
-          const NumberResult = Number(obj1.normalizeNumericString(__exportStarResult1.locale, trimmed));
+          const NumberResult = Number(obj1.normalizeNumericString(closure_4.locale, trimmed));
           if (null != NumberResult) {
             const _isNaN = isNaN;
             if (!isNaN(NumberResult)) {
@@ -205,7 +208,7 @@ const obj = {
           }
           const _Number = Number;
           let obj1 = importAll(dependencyMap[6]);
-          const NumberResult = Number(obj1.normalizeNumericString(__exportStarResult1.locale, trimmed));
+          const NumberResult = Number(obj1.normalizeNumericString(closure_4.locale, trimmed));
           const _isNaN = isNaN;
           if (!isNaN(NumberResult)) {
             const _Number2 = Number;
@@ -333,6 +336,3 @@ const obj = {
     }
   }
 };
-const result = require("__exportStarResult1").fileFinishedImporting("modules/application_commands/ApplicationCommandValidators.tsx");
-
-export default obj;

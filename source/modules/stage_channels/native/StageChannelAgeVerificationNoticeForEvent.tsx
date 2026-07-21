@@ -1,5 +1,5 @@
 // Module ID: 8430
-// Function ID: 67149
+// Function ID: 67160
 // Name: StageChannelAgeVerificationNoticeContent
 // Dependencies: []
 // Exports: default
@@ -70,7 +70,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const items = [Text(WarningIcon, obj), ];
     tmp12 = callback;
     Text = arg1(dependencyMap[8]).Text;
-    const obj1 = { style: tmp.contentText };
+    const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.contentText };
     tmp13 = callback;
     tmp = StageChannelAgeVerificationNoticeContent;
     const obj2 = { onConfirmPress };
@@ -101,14 +101,14 @@ const tmp3 = arg1(dependencyMap[3]);
 obj.containerWithDivider = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.noticeContainer = { gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.noticeContainer = obj3;
 obj.icon = { flexShrink: 0 };
 obj.linkText = { textDecorationLine: "underline" };
 obj.contentText = { flex: 1 };
 let closure_8 = obj.createStyles(obj);
 const obj4 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
-const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNoticeForEvent.tsx");
 
 export default function StageChannelAgeVerificationNoticeForEvent(divider) {

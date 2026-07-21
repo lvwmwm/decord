@@ -1,10 +1,10 @@
-// Module ID: 7511
-// Function ID: 60158
+// Module ID: 7512
+// Function ID: 60170
 // Name: FormRadioRow
 // Dependencies: []
 // Exports: default
 
-// Module 7511 (FormRadioRow)
+// Module 7512 (FormRadioRow)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
@@ -21,7 +21,7 @@ export default function FormRadioRow(arg0) {
     align = "left";
   }
   ({ leading, onPress } = arg0);
-  let obj = { maxFontSizeMultiplier: true, accessibilityRole: true, variant: true, color: true, tintColor: true, marginRight: true };
+  let obj = { masonryAndHorizontalIncompatible: true, processColorStrings: true, GuildOnboardingStatus: true, unstable_shouldYield: true, MAX_VISUAL_ROLE_LENGTH: true, tintColor: true };
   ({ value, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

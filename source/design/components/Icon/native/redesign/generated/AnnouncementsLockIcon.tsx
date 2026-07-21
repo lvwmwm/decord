@@ -1,10 +1,10 @@
-// Module ID: 4647
-// Function ID: 40299
+// Module ID: 4646
+// Function ID: 40306
 // Name: AnnouncementsLockIcon
 // Dependencies: []
 // Exports: AnnouncementsLockIcon
 
-// Module 4647 (AnnouncementsLockIcon)
+// Module 4646 (AnnouncementsLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AnnouncementsLockIcon.tsx");

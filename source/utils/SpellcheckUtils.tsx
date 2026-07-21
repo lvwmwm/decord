@@ -1,10 +1,13 @@
-// Module ID: 5405
-// Function ID: 46076
+// Module ID: 5404
+// Function ID: 46083
 // Name: isElectronBuiltInSpellcheckerSupported
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5405 (isElectronBuiltInSpellcheckerSupported)
+// Module 5404 (isElectronBuiltInSpellcheckerSupported)
+import closure_3 from "result";
+import result from "result";
+
 function isElectronBuiltInSpellcheckerSupported() {
   let spellCheck;
   if (null != importDefault(dependencyMap[1])) {
@@ -105,13 +108,12 @@ async function _setAppLocale(arg0, arg1) {
     obj.setAppLocale(arg0);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
 let installResult = null;
 if (isSupported()) {
-  installResult = arg1(dependencyMap[3]).install();
-  const obj = arg1(dependencyMap[3]);
+  installResult = require("result").install();
+  const obj = require("result");
 }
-const result = arg1(dependencyMap[4]).fileFinishedImporting("utils/SpellcheckUtils.tsx");
+result = result.fileFinishedImporting("utils/SpellcheckUtils.tsx");
 
 export { isSupported };
 export const setEnabled = function setEnabled() {

@@ -1,5 +1,5 @@
 // Module ID: 10511
-// Function ID: 82055
+// Function ID: 82066
 // Name: _handleJoinEmbeddedActivityInternal
 // Dependencies: []
 // Exports: default

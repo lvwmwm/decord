@@ -1,10 +1,13 @@
 // Module ID: 1872
-// Function ID: 20857
+// Function ID: 20862
 // Name: isPremiumAtLeast
-// Dependencies: []
+// Dependencies: [1889, 2]
 // Exports: isPremium, isPremiumAtMost, isPremiumExactly
 
 // Module 1872 (isPremiumAtLeast)
+import { PremiumTypeOrder } from "TableId";
+import result2 from "result2";
+
 function isPremiumAtLeast(premiumType, TIER_2) {
   let tmp = null == TIER_2;
   if (!tmp) {
@@ -30,9 +33,7 @@ function isPremiumExactly(currentUser, TIER_2) {
   }
   return tmp;
 }
-const PremiumTypeOrder = require(dependencyMap[0]).PremiumTypeOrder;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/PremiumTypeUtils.tsx");
+const result = result2.fileFinishedImporting("utils/PremiumTypeUtils.tsx");
 
 export default { isPremiumAtLeast, isPremium, isPremiumExactly };
 export { isPremiumAtLeast };

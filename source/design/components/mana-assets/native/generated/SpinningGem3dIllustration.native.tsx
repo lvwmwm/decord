@@ -1,5 +1,5 @@
 // Module ID: 6527
-// Function ID: 50704
+// Function ID: 50712
 // Name: SpinningGem3dIllustration
 // Dependencies: []
 // Exports: SpinningGem3dIllustration

@@ -1,5 +1,5 @@
 // Module ID: 840
-// Function ID: 9326
+// Function ID: 9330
 // Name: forEachEnvelopeItem
 // Dependencies: []
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
@@ -34,7 +34,7 @@ function encodeUTF8(arg0) {
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = { text: true, isArrayBuffer: true, useActionBarPrimaryButton: true, accessibleDismiss: true, tc: true, notifyTaskRetry: true, <string:1486639616>: 0, <string:1650563719>: 0, <string:1677919057>: 0, <string:1414965920>: 0, <string:929436691>: "name", <string:993612120>: null, <string:1372509538>: true, <string:1360945613>: "arguments", <string:3244359985>: "press", <string:123128930>: "settings_button", <string:1189148849>: "open", <string:3958525958>: null };
+let closure_4 = {};
 
 export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
   const tmp = callback2(arg0, 2);

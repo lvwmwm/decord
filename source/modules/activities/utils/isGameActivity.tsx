@@ -1,5 +1,5 @@
 // Module ID: 9065
-// Function ID: 71129
+// Function ID: 71140
 // Name: isGameActivity
 // Dependencies: []
 // Exports: default

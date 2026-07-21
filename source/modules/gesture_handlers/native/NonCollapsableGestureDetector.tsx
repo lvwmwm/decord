@@ -1,11 +1,11 @@
-// Module ID: 14682
-// Function ID: 110715
+// Module ID: 14685
+// Function ID: 110749
 // Name: NonCollapsableGestureDetector
 // Dependencies: []
 // Exports: NonCollapsableGestureDetector
 
-// Module 14682 (NonCollapsableGestureDetector)
-let closure_2 = [null];
+// Module 14685 (NonCollapsableGestureDetector)
+let closure_2 = [906643286];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

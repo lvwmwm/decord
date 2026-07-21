@@ -1,9 +1,9 @@
-// Module ID: 14262
-// Function ID: 107780
+// Module ID: 14265
+// Function ID: 107812
 // Name: getClientInfoString
 // Dependencies: []
 
-// Module 14262 (getClientInfoString)
+// Module 14265 (getClientInfoString)
 function getClientInfoString(ReleaseChannel) {
   let str = "N/A";
   if (null != ReleaseChannel) {

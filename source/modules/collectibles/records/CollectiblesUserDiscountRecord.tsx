@@ -1,5 +1,5 @@
 // Module ID: 6791
-// Function ID: 53626
+// Function ID: 53634
 // Name: CollectiblesUserDiscountRecord
 // Dependencies: []
 

@@ -1,10 +1,10 @@
-// Module ID: 15353
-// Function ID: 116925
+// Module ID: 15356
+// Function ID: 116964
 // Name: trackYouTabAvatarPress
 // Dependencies: [670, 2, 6]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 15353 (trackYouTabAvatarPress)
+// Module 15356 (trackYouTabAvatarPress)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

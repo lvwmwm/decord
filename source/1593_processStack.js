@@ -1,5 +1,5 @@
 // Module ID: 1593
-// Function ID: 17767
+// Function ID: 17772
 // Name: processStack
 // Dependencies: []
 // Exports: registerWorkletStackDetails, reportFatalErrorOnJS
@@ -28,7 +28,7 @@ function processStack(stack) {
           }
         }
         if (!first) {
-          let items = [false, false, false];
+          let items = ["swh", "sw", null];
           const tmp12 = callback(items, 3);
           const sum = tmp2 + tmp12[2] + replace;
           tmp2 = str;

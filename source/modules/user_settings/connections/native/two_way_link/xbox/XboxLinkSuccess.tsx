@@ -1,5 +1,5 @@
 // Module ID: 9024
-// Function ID: 70930
+// Function ID: 70941
 // Name: XboxLinkDiscordSuccess
 // Dependencies: []
 // Exports: default
@@ -14,12 +14,12 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { image: {} };
+obj = { image: { <string:651579779>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000631241836204346, <string:4249959009>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122671433504, <string:1446732419>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019027229372176472 } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.getApp = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.appLogoBox = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
-obj.appLogo = { bhk: "boolean", bic: "string" };
+obj.appLogo = { "Null": false, "Null": false };
 obj.getAppTitle = { flex: 1 };
 obj.icon = { marginLeft: 8 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
@@ -68,14 +68,14 @@ export default function XboxLinkDiscordSuccess() {
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.aGRPVq);
   items2[1] = callback2(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = { style: twoWayLinkStyles.body };
+  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: twoWayLinkStyles.body };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[13]).t.m3mBYE);
   items2[2] = callback2(arg1(dependencyMap[12]).Text, obj3);
   const obj4 = { onPress: callback, style: tmp.getApp };
   const obj5 = { style: tmp.appLogoBox, children: callback2(closure_5, { source: importDefault(dependencyMap[14]), style: tmp.appLogo }) };
   const items3 = [callback2(closure_6, obj5), , ];
-  const obj7 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.getAppTitle };
+  const obj7 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.getAppTitle };
   const intl3 = arg1(dependencyMap[13]).intl;
   const string = intl3.string;
   const t = arg1(dependencyMap[13]).t;
@@ -100,7 +100,7 @@ export default function XboxLinkDiscordSuccess() {
   const items4 = [closure_14(closure_6, obj), ];
   const obj10 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj11 = { style: twoWayLinkStyles.footerButton };
-  const obj12 = {};
+  const obj12 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj12.text = intl4.string(arg1(dependencyMap[13]).t.3PatSz);
   obj12.onPress = callback1;

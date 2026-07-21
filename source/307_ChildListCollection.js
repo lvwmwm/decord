@@ -1,17 +1,16 @@
 // Module ID: 307
 // Function ID: 4733
 // Name: ChildListCollection
-// Dependencies: [29, 5, 31]
+// Dependencies: []
 
 // Module 307 (ChildListCollection)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import asyncGeneratorStep from "asyncGeneratorStep";
-
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
 
 export default () => {
   class ChildListCollection {
     constructor() {
-      tmp = _objectWithoutProperties(this, ChildListCollection);
+      tmp = closure_2(this, ChildListCollection);
       map = new Map();
       this._cellKeyToChildren = map;
       map1 = new Map();

@@ -1,10 +1,10 @@
-// Module ID: 4644
-// Function ID: 40293
+// Module ID: 4643
+// Function ID: 40300
 // Name: AtIcon
 // Dependencies: []
 // Exports: AtIcon
 
-// Module 4644 (AtIcon)
+// Module 4643 (AtIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AtIcon.tsx");

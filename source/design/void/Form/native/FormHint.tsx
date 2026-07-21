@@ -1,16 +1,16 @@
-// Module ID: 7496
-// Function ID: 60107
+// Module ID: 7497
+// Function ID: 60119
 // Name: FormHint
 // Dependencies: []
 // Exports: default
 
-// Module 7496 (FormHint)
+// Module 7497 (FormHint)
 let closure_2 = importAll(dependencyMap[0]);
 const Platform = arg1(dependencyMap[1]).Platform;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { ref: false, allowsInlineMediaPlayback: false, color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+obj = { ks: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045878958144705, backgroundColor: -0.000000000000000001843567209700661, color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
 obj.formHintText = obj;
 obj.redesignHorizontalPadding = { paddingHorizontal: 12 };
 obj.horizonatalPadding = { paddingHorizontal: 16 };
@@ -27,7 +27,7 @@ export default function FormHint(inset) {
   ({ style, children } = inset);
   const tmp = callback();
   if (React.useContext(arg1(dependencyMap[5]).RedesignCompatContext)) {
-    let obj = {};
+    let obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
     let redesignHorizontalPadding = !flag;
     if (redesignHorizontalPadding) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;

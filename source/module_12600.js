@@ -1,9 +1,9 @@
 // Module ID: 12600
-// Function ID: 96853
+// Function ID: 96873
 // Dependencies: []
 
 // Module 12600
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "2026-04-disable-hook-frame-pacer", isInternetReachable: "user", details: "2026-04-video-hook-dx12", reachabilityUrl: "user", reachabilityMethod: "2026-06-upscale-small-captured-frames", reachabilityHeaders: "user", reachabilityTest: 130, reachabilityShortTimeout: 130, scales: [] };
+const obj = { "Bool(false)": true, "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": true, "Bool(false)": null, "Bool(false)": 0.65, "Bool(false)": true, "Bool(false)": null, scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

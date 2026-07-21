@@ -1,5 +1,5 @@
 // Module ID: 11982
-// Function ID: 92611
+// Function ID: 92623
 // Name: useUserProfileGameFriendApplicationIds
 // Dependencies: []
 // Exports: useUserProfileGameFriendApplicationIds

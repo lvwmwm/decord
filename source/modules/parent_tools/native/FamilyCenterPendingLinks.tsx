@@ -1,10 +1,10 @@
-// Module ID: 13704
-// Function ID: 103673
+// Module ID: 13706
+// Function ID: 103695
 // Name: FamilyCenterPendingLinkRow
 // Dependencies: []
 // Exports: default
 
-// Module 13704 (FamilyCenterPendingLinkRow)
+// Module 13706 (FamilyCenterPendingLinkRow)
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const arg1 = str;
@@ -97,7 +97,7 @@ const UserLinkStatus = arg1(dependencyMap[2]).UserLinkStatus;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { marginTop: 24 } };
-obj = { "Null": true, "Null": true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { 1979675647: true, 1895788287: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.content = obj;
 obj.header = { marginBottom: 10 };
 let closure_8 = obj.createStyles(obj);

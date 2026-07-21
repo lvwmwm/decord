@@ -1,11 +1,11 @@
-// Module ID: 14562
-// Function ID: 109721
+// Module ID: 14565
+// Function ID: 109753
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 14562 (__INTERNAL_VIEW_CONFIG)
+// Module 14565 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "TextDisplayComponentView", directEventTypes: { topTapLink: { registrationName: "onTapLink" }, topLongPressLink: { registrationName: "onLongPressLink" }, topTapAttachmentLink: { registrationName: "onTapAttachmentLink" }, topLongPressAttachmentLink: { registrationName: "onLongPressAttachmentLink" }, topTapMention: { registrationName: "onTapMention" }, topTapTimestamp: { registrationName: "onTapTimestamp" }, topTapInlineCode: { registrationName: "onTapInlineCode" }, topTapEmoji: { registrationName: "onTapEmoji" } } };
-obj = { -866014589: null, -845062830: null };
+obj = { "Null": null, "Null": null };
 const _module = require(dependencyMap[0]);
 const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
 obj.validAttributes = obj;

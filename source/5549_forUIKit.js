@@ -1,5 +1,5 @@
 // Module ID: 5549
-// Function ID: 47100
+// Function ID: 47108
 // Name: forUIKit
 // Dependencies: []
 // Exports: forFade, forNoAnimation, forSlideLeft, forSlideRight, forSlideUp, forUIKit
@@ -26,16 +26,16 @@ export const forUIKit = function forUIKit(current) {
   let num7 = 0;
   if (next) {
     const progress2 = next.progress;
-    let obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    let obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num7 = progress2.interpolate(obj);
   }
-  const tmp2Result = add(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num7);
+  const tmp2Result = add(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num7);
   obj = {};
   obj = { opacity: tmp2Result.interpolate({ inputRange: [], outputRange: [15400960, 14090240, 292749312] }) };
   obj.leftButtonStyle = obj;
   const obj1 = {};
   const obj2 = {};
-  const obj3 = { inputRange: [true, true, true] };
+  const obj3 = { inputRange: [] };
   const items = [, , ];
   if (I18nManager.getConstants().isRTL) {
     items[0] = tmp4;
@@ -53,12 +53,12 @@ export const forUIKit = function forUIKit(current) {
   const items1 = [obj2];
   obj1.transform = items1;
   obj.leftLabelStyle = obj1;
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp2 = add;
   obj.rightButtonStyle = { opacity: tmp2Result.interpolate({ inputRange: [], outputRange: [15400960, 14090240, 292749312] }) };
-  const obj5 = { opacity: tmp2Result.interpolate({ inputRange: [1079741169, -1683627215, 1517297860, 1511862848], outputRange: [] }) };
+  const obj5 = { opacity: tmp2Result.interpolate({ inputRange: [0, 0.3, 1, 1], outputRange: [] }) };
   const obj6 = {};
-  const obj7 = { inputRange: ["r", "w", "Boolean"] };
+  const obj7 = { inputRange: [] };
   const items2 = [, , ];
   if (I18nManager.getConstants().isRTL) {
     items2[0] = tmp6;
@@ -78,7 +78,7 @@ export const forUIKit = function forUIKit(current) {
   obj.titleStyle = obj5;
   const obj8 = {};
   const obj9 = {};
-  const obj10 = { inputRange: [true, true, true] };
+  const obj10 = { inputRange: [] };
   const width = layouts.screen.width;
   const items4 = [, , ];
   if (I18nManager.getConstants().isRTL) {
@@ -105,13 +105,13 @@ export const forFade = function forFade(next) {
   let num = 0;
   if (next) {
     const progress2 = next.progress;
-    let obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    let obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num = progress2.interpolate(obj);
   }
-  const tmpResult = add(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num);
-  const interpolateResult1 = tmpResult.interpolate({ inputRange: [true, true, true], outputRange: [15400960, 14090240, 292749312] });
+  const tmpResult = add(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num);
+  const interpolateResult1 = tmpResult.interpolate({ inputRange: [], outputRange: [15400960, 14090240, 292749312] });
   obj = { leftButtonStyle: { opacity: interpolateResult1 }, rightButtonStyle: { opacity: interpolateResult1 }, titleStyle: { opacity: interpolateResult1 } };
-  obj = { opacity: tmpResult.interpolate({ inputRange: [-260898816, -16777216, -16777216, 1929379840], outputRange: [15400960, 13434880, 7536640, 0] }) };
+  obj = { opacity: tmpResult.interpolate({ inputRange: [2138243072, -16777216, -738197504, 1929379840], outputRange: [14942208, 12845056, -9240576, -352321536] }) };
   obj.backgroundStyle = obj;
   return obj;
 };
@@ -123,12 +123,12 @@ export const forSlideLeft = function forSlideLeft(next) {
   let num = 0;
   if (next) {
     const progress2 = next.progress;
-    obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num = progress2.interpolate(obj);
   }
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp = add;
-  obj = { inputRange: [true, true, true] };
+  obj = { inputRange: [] };
   const width = screen.width;
   const items = [, , ];
   if (I18nManager.getConstants().isRTL) {
@@ -143,7 +143,7 @@ export const forSlideLeft = function forSlideLeft(next) {
     tmp3 = items;
   }
   obj.outputRange = tmp3;
-  obj.translateX = add(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num).interpolate(obj);
+  obj.translateX = add(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num).interpolate(obj);
   const transform = [obj];
   return { leftButtonStyle: { transform }, rightButtonStyle: { transform }, titleStyle: { transform }, backgroundStyle: { transform } };
 };
@@ -155,12 +155,12 @@ export const forSlideRight = function forSlideRight(next) {
   let num = 0;
   if (next) {
     const progress2 = next.progress;
-    obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num = progress2.interpolate(obj);
   }
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp = add;
-  obj = { inputRange: [true, true, true] };
+  obj = { inputRange: [] };
   const width = screen.width;
   const items = [, , ];
   if (I18nManager.getConstants().isRTL) {
@@ -175,7 +175,7 @@ export const forSlideRight = function forSlideRight(next) {
     tmp3 = items;
   }
   obj.outputRange = tmp3;
-  obj.translateX = add(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num).interpolate(obj);
+  obj.translateX = add(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num).interpolate(obj);
   const transform = [obj];
   return { leftButtonStyle: { transform }, rightButtonStyle: { transform }, titleStyle: { transform }, backgroundStyle: { transform } };
 };
@@ -187,13 +187,13 @@ export const forSlideUp = function forSlideUp(next) {
   let num = 0;
   if (next) {
     const progress2 = next.progress;
-    obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num = progress2.interpolate(obj);
   }
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp = add;
   const items = [-header.height, 0, -header.height];
-  obj.translateY = add(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num).interpolate({ inputRange: [true, true, true], outputRange: items });
+  obj.translateY = add(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num).interpolate({ inputRange: [], outputRange: items });
   const transform = [obj];
   return { leftButtonStyle: { transform }, rightButtonStyle: { transform }, titleStyle: { transform }, backgroundStyle: { transform } };
 };

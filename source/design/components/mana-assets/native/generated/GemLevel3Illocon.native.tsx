@@ -1,12 +1,14 @@
 // Module ID: 6173
-// Function ID: 50173
+// Function ID: 50181
 // Name: GemLevel3Illocon
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: GemLevel3Illocon
 
 // Module 6173 (GemLevel3Illocon)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel3Illocon.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel3Illocon.native.tsx");
 
 export const GemLevel3Illocon = function GemLevel3Illocon(size) {
   let accessibilityLabel;

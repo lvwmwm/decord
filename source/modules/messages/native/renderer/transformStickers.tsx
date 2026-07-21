@@ -1,5 +1,5 @@
 // Module ID: 12198
-// Function ID: 93726
+// Function ID: 93738
 // Name: transformStickers
 // Dependencies: []
 // Exports: default

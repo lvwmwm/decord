@@ -1,5 +1,5 @@
 // Module ID: 12265
-// Function ID: 94040
+// Function ID: 94052
 // Name: useYouBarSettingsOutsideSafeAreaTop
 // Dependencies: []
 // Exports: useYouBarSettingsCustomHeaderPaddingTop

@@ -1,5 +1,5 @@
 // Module ID: 11354
-// Function ID: 88302
+// Function ID: 88314
 // Name: useChatInputFloatingWidth
 // Dependencies: []
 // Exports: default

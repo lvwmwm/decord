@@ -1,10 +1,10 @@
-// Module ID: 15099
-// Function ID: 113872
+// Module ID: 15102
+// Function ID: 113906
 // Name: thumbHashToRGBA
 // Dependencies: []
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 15099 (thumbHashToRGBA)
+// Module 15102 (thumbHashToRGBA)
 function thumbHashToRGBA(arg0) {
   let obj = arg1;
   const require = arg0;

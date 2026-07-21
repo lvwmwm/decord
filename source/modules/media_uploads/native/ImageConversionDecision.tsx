@@ -1,10 +1,10 @@
-// Module ID: 4693
-// Function ID: 40858
+// Module ID: 4692
+// Function ID: 40865
 // Name: isPhotoKitAsset
 // Dependencies: []
 // Exports: shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 4693 (isPhotoKitAsset)
+// Module 4692 (isPhotoKitAsset)
 function isPhotoKitAsset(uri, filename) {
   let tmp = null != uri.match(/^ph:\/\//i);
   if (tmp) {

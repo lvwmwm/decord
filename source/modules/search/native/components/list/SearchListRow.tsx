@@ -1,16 +1,16 @@
-// Module ID: 15219
-// Function ID: 114912
+// Module ID: 15222
+// Function ID: 114946
 // Name: SearchListRow
 // Dependencies: []
 
-// Module 15219 (SearchListRow)
+// Module 15222 (SearchListRow)
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[4]).createStyles((marginLeft) => {
-  let obj = { pressable: obj, body: {}, labels: {} };
+  let obj = { pressable: obj, body: { "Null": 7, "Null": 370 }, labels: { "Bool(true)": null, "Bool(false)": null } };
   obj = { paddingHorizontal: 16, paddingVertical: closure_4 };
   obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
   obj.underlayColor = obj;
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo((accessibilityRole) => {
   obj = { style: tmpResult.labels };
   let tmp5 = label;
   if ("string" === typeof label) {
-    const obj1 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, style: tmpResult.text, children: label };
+    const obj1 = { "Null": true, "Null": 15.1, "Null": 253, style: tmpResult.text, children: label };
     tmp5 = callback(arg1(dependencyMap[7]).Text, obj1);
   }
   const items5 = [tmp5, subLabel];

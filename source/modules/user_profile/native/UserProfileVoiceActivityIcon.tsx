@@ -1,5 +1,5 @@
 // Module ID: 9076
-// Function ID: 71152
+// Function ID: 71163
 // Name: UserProfileVoiceActivityIcon
 // Dependencies: []
 // Exports: default

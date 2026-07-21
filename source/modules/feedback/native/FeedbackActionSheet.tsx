@@ -1,5 +1,5 @@
 // Module ID: 9513
-// Function ID: 74035
+// Function ID: 74046
 // Name: closeActionSheet
 // Dependencies: []
 // Exports: default
@@ -179,7 +179,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
   items3[2] = tmp31;
   let tmp36 = null;
   if (!hideDontShowAgainCheckbox) {
-    const obj6 = { 0: null, 0: null, checked: first2 };
+    const obj6 = { bind: null, cursor: null, checked: first2 };
     const intl = arg1(dependencyMap[25]).intl;
     obj6.label = intl.string(arg1(dependencyMap[25]).t.5E9SB9);
     obj6.onPress = function onPress() {

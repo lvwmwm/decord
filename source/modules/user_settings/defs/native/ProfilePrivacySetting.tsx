@@ -1,9 +1,9 @@
-// Module ID: 13630
-// Function ID: 103266
+// Module ID: 13632
+// Function ID: 103288
 // Name: radio
 // Dependencies: []
 
-// Module 13630 (radio)
+// Module 13632 (radio)
 const _module = require(dependencyMap[9]);
 const radio = _module.createRadio({
   useTitle() {

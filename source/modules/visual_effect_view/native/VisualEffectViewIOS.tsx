@@ -1,5 +1,5 @@
 // Module ID: 4531
-// Function ID: 39776
+// Function ID: 39784
 // Name: BLUR_EFFECT_NAMES
 // Dependencies: []
 
@@ -13,5 +13,5 @@ const _module1 = require(dependencyMap[3]);
 const result = _module1.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewIOS.tsx");
 
 export default importDefault(dependencyMap[1])(obj);
-export const BLUR_EFFECT_NAMES = [true, true, true, true, true, "isArray", "Text", "bottom", "Array", "isArray", "accessibilityRole", "y", ""];
+export const BLUR_EFFECT_NAMES = [];
 export const MODERN_IOS_BLURS_EFFECTS_AVAILABLE = tmp2;

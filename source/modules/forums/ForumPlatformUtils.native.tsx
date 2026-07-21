@@ -1,8 +1,8 @@
-// Module ID: 7480
-// Function ID: 60038
+// Module ID: 7481
+// Function ID: 60050
 // Dependencies: []
 
-// Module 7480
+// Module 7481
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
 

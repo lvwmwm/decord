@@ -1,5 +1,5 @@
 // Module ID: 10873
-// Function ID: 84552
+// Function ID: 84563
 // Name: useAppLauncherChatInputRefDummy
 // Dependencies: []
 // Exports: useAppLauncherContext, useRequiredAppLauncherContext

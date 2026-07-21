@@ -1,10 +1,10 @@
-// Module ID: 14095
-// Function ID: 107005
+// Module ID: 14098
+// Function ID: 107037
 // Name: useOfficialMessageStyleSettingValue
 // Dependencies: []
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14095 (useOfficialMessageStyleSettingValue)
+// Module 14098 (useOfficialMessageStyleSettingValue)
 function useOfficialMessageStyleSettingValue() {
   const items = [closure_3];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);

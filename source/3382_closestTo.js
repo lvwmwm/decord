@@ -1,17 +1,16 @@
 // Module ID: 3382
-// Function ID: 26531
+// Function ID: 26536
 // Name: closestTo
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3382 (closestTo)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function closestTo(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
+  closure_1.default(2, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   if (isNaN(Number(defaultResult1))) {
     const _Date = Date;
     const _NaN = NaN;
@@ -47,7 +46,7 @@ export default function closestTo(defaultResult1) {
         }
       }
     });
-    return startOfWeek;
+    return closure_0;
   }
 };
 export default exports.default;

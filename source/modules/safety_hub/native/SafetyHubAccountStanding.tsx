@@ -1,10 +1,10 @@
-// Module ID: 13533
-// Function ID: 102657
+// Module ID: 13535
+// Function ID: 102679
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 13533 (items)
+// Module 13535 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -37,7 +37,7 @@ let obj9 = arg1(dependencyMap[9]);
 const obj7 = {};
 const tmp2 = arg1(dependencyMap[6]);
 obj7.container = { backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[10]).radii.md };
-obj9 = { padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round };
+obj9 = { 1879049349: true, "Null": true, "Null": true, padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round };
 obj7.avatarBackground = obj9;
 const obj8 = { backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj7.good = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
@@ -48,14 +48,14 @@ const obj11 = { color: importDefault(dependencyMap[10]).colors.STATUS_WARNING };
 obj7.atRisk = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_CRITICAL };
 const obj12 = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_CRITICAL };
 obj7.suspended = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_CRITICAL };
-obj7.body = { alignItems: false, justifyContent: false, text: false };
+obj7.body = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 const obj13 = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_CRITICAL };
 obj7.bodyText = { rowGap: importDefault(dependencyMap[10]).space.PX_8 };
-obj7.health = {};
-const obj14 = { rowGap: importDefault(dependencyMap[10]).space.PX_8 };
-obj7.line = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj7.health = { 189485765: 536871614, -110975931: 285213168, 67064279: 19394881, -1599449499: 6058496 };
+const obj15 = { <string:3623445156>: "<string:1895908546>", <string:1694760785>: "Array", <string:4221610582>: "<string:1106640721>", <string:2843234652>: "currentColor", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj7.line = obj15;
 obj7.subwayMarker = { position: "absolute" };
-const obj15 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+const obj14 = { rowGap: importDefault(dependencyMap[10]).space.PX_8 };
 obj7.icon = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 let closure_12 = obj9.createStyles(obj7);
 const obj16 = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
@@ -179,21 +179,23 @@ export default function SafetyHubAccountStanding() {
   const items4 = [callback2(View, obj), ];
   const obj2 = { style: tmp4.body };
   const obj3 = { style: tmp4.bodyText };
-  const obj4 = { style: { textAlign: "center" } };
+  const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: { textAlign: "center" } };
   const intl = arg1(closure_2[11]).intl;
   obj4.children = intl.format(title, {
     hook(children) {
       return callback(accountStanding(closure_2[21]).Text, { style, variant: "heading-lg/bold", children }, arg1);
     }
   });
-  const items5 = [callback2(arg1(closure_2[21]).Text, obj4), callback2(arg1(closure_2[21]).Text, { style: { textAlign: "center" }, children: description })];
+  const items5 = [callback2(arg1(closure_2[21]).Text, obj4), ];
+  const obj6 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: { textAlign: "center" }, children: description };
+  items5[1] = callback2(arg1(closure_2[21]).Text, obj6);
   obj3.children = items5;
   const items6 = [callback3(View, obj3), ];
-  const obj6 = { style: items7 };
+  const obj7 = { style: items7 };
   const items7 = [tmp4.health, { height: first }];
   const items8 = [callback2(View, { style: tmp4.line }), memo1];
-  obj6.children = items8;
-  items6[1] = callback3(View, obj6);
+  obj7.children = items8;
+  items6[1] = callback3(View, obj7);
   obj2.children = items6;
   items4[1] = callback3(View, obj2);
   obj.children = items4;

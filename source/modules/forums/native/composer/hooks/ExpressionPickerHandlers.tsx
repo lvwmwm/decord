@@ -1,5 +1,5 @@
 // Module ID: 9547
-// Function ID: 74414
+// Function ID: 74425
 // Name: usePressEmojiHandler
 // Dependencies: []
 // Exports: usePressEmojiHandler, usePressGIFHandler

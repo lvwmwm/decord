@@ -1,16 +1,16 @@
-// Module ID: 15683
-// Function ID: 119786
+// Module ID: 15686
+// Function ID: 119825
 // Name: VoicePanelHeaderChatButton
 // Dependencies: []
 // Exports: default
 
-// Module 15683 (VoicePanelHeaderChatButton)
+// Module 15686 (VoicePanelHeaderChatButton)
 let closure_3 = importAll(dependencyMap[0]);
 const ComponentActions = arg1(dependencyMap[1]).ComponentActions;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { badgeContainer: { "Null": 6, "Null": 85, "Null": null } };
-obj = { bhk: 800, bic: 16, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { badgeContainer: { "Bool(false)": 6, "Bool(false)": 85, "Bool(false)": null } };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.badge = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.redBG = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };

@@ -1,14 +1,10 @@
 // Module ID: 9767
-// Function ID: 75951
+// Function ID: 75962
 // Name: getMidpointColor
-// Dependencies: [2, 9779, 9789, 9787, 9790, 31]
+// Dependencies: []
 // Exports: default
 
 // Module 9767 (getMidpointColor)
-import result2 from "result2";
-import BalanceWidgetPill from "BalanceWidgetPill";
-import module_31 from "module_31";
-
 function getMidpointColor(toRgb, toRgb2) {
   let tmp4;
   let tmp5;
@@ -67,13 +63,15 @@ function desaturate(toHsl) {
   ({ h, s, l } = toHsl.toHsl());
   return importDefault(dependencyMap[3])({ h, s: s * arg1, l });
 }
-const result = module_31.fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
 
 export default function createUseCollectiblesShopStyles(arg0) {
   const arg1 = arg0;
   return (backgroundColors) => {
     let obj = backgroundColors(closure_2[4]);
-    const items = [BalanceWidgetPill];
+    const items = [closure_4];
     const stateFromStores = obj.useStateFromStores(items, () => saturation.saturation);
     backgroundColors = stateFromStores;
     if (null == backgroundColors) {

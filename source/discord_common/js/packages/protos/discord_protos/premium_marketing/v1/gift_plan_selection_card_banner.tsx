@@ -1,9 +1,9 @@
-// Module ID: 7140
-// Function ID: 57535
+// Module ID: 7141
+// Function ID: 57547
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7140 (_isNativeReflectConstruct)
+// Module 7141 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,16 +26,16 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftPlanSelectionCardBanner$Type);
       items = [, , , , , , , , , , , , , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: "y", 0: "isArray", 9223372036854775807: "Reflect", no: "container" };
+      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
+      items[1] = { 1347510942: false, 1678385745: false, 1364379111: false, 140698458: false };
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      items[4] = { 9223372036854775807: 626, 0: 2304, 9223372036854775807: -1448787712, no: null };
-      items[5] = { 9223372036854775807: "enum", 0: "ars", 9223372036854775807: "isArray", no: "isArrayBuffer" };
+      items[4] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      items[5] = { 1347510942: 1, 1678385745: "source", 1364379111: "enum", 140698458: 1 };
       items[6] = {};
       items[7] = {
         T() {
@@ -57,7 +57,7 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      obj = { "Null": true, "Null": null, "Null": 12 };
+      obj = { 9223372036854775807: true, 9223372036854775807: null, 0: 12 };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
@@ -67,23 +67,23 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj = { "Null": true, "Null": null, "Null": 14 };
+      obj = { 9223372036854775807: true, 9223372036854775807: null, 0: 14 };
       obj.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
       items[13] = obj;
-      obj1 = { "Null": null, "Null": null, "Null": null };
+      obj1 = { 9223372036854775807: "<string:19702528>", 9223372036854775807: "<string:23941376>", 0: "<string:69691458>" };
       obj1.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
       items[14] = obj1;
-      obj2 = { "Null": "isArray", "Null": "key", "Null": "Array" };
+      obj2 = { 9223372036854775807: "isArray", 9223372036854775807: "key", 0: "Array" };
       obj2.T = function T() {
-        const items = [true, closure_8, "ASSET_VARIANT_"];
+        const items = [null, closure_8, "ASSET_VARIANT_"];
         return items;
       };
       items[15] = obj2;
-      items1 = [false];
+      items1 = [232422335];
       items1[1] = items;
       obj5 = closure_6(GiftPlanSelectionCardBanner$Type);
       tmp2 = closure_5;
@@ -103,7 +103,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Null": null, "Null": 1, "Null": 892, "Null": -9, "Null": 0, 0: 0, 0: 16 };
+      let obj = { createInteractionStatus: null, timingInstant: 1, "Bool(true)": 892, "Bool(true)": -9, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 16 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftPlanSelectionCardBanner$Type(closure_1[9]).MESSAGE_TYPE, obj);

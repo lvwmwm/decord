@@ -1,10 +1,10 @@
-// Module ID: 6822
-// Function ID: 53764
+// Module ID: 6823
+// Function ID: 53776
 // Name: getActivityTypeTextConfigs
 // Dependencies: []
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6822 (getActivityTypeTextConfigs)
+// Module 6823 (getActivityTypeTextConfigs)
 function getActivityTypeTextConfigs() {
   return new Map(closure_4);
 }

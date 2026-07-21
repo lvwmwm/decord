@@ -1,5 +1,5 @@
 // Module ID: 11952
-// Function ID: 92388
+// Function ID: 92400
 // Name: isUserProfileVoiceActivityForChannel
 // Dependencies: []
 // Exports: default

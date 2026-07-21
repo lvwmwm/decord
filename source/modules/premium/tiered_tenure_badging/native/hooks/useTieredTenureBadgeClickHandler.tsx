@@ -1,5 +1,5 @@
 // Module ID: 8520
-// Function ID: 67907
+// Function ID: 67918
 // Name: useTieredTenureBadgeClickHandler
 // Dependencies: []
 // Exports: useTieredTenureBadgeClickHandler

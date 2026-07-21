@@ -1,5 +1,5 @@
 // Module ID: 10554
-// Function ID: 82437
+// Function ID: 82448
 // Name: useVideoStreamErrorContext
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10893
-// Function ID: 84689
+// Function ID: 84700
 // Name: _getMetadata
 // Dependencies: []
 // Exports: getMetadata, play, sync

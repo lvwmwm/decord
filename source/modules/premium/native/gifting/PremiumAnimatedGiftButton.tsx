@@ -1,5 +1,5 @@
 // Module ID: 11344
-// Function ID: 88195
+// Function ID: 88207
 // Name: PremiumAnimatedGiftButton
 // Dependencies: []
 // Exports: PremiumAnimatedGiftButton
@@ -15,8 +15,8 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((width, marginHorizontal) =>
   obj.container = obj;
   obj = { width, height: width, borderRadius: importDefault(dependencyMap[4]).radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj.containerRefresh = obj;
-  obj.animation = {};
-  obj.animationRefresh = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+  obj.animation = { "Null": 1, "Null": 1 };
+  obj.animationRefresh = {};
   return obj;
 });
 const obj = arg1(dependencyMap[3]);

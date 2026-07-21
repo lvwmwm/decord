@@ -1,9 +1,9 @@
-// Module ID: 7495
-// Function ID: 60104
+// Module ID: 7496
+// Function ID: 60116
 // Name: getCTAButtonColor
 // Dependencies: []
 
-// Module 7495 (getCTAButtonColor)
+// Module 7496 (getCTAButtonColor)
 let Platform;
 let StyleSheet;
 function getCTAButtonColor(BRAND, textBrand) {
@@ -118,7 +118,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const Fonts = arg1(dependencyMap[3]).Fonts;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { "Bool(false)": "custom_search_url", "Bool(false)": "message" }, text: {} };
+obj = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { enableGameUpdateNotifications: "custom_search_url", EXPERIMENT_GUILD_EVALUATION_EXPOSED: "message" }, text: {} };
 obj = {};
 const tmp3 = arg1(dependencyMap[2]);
 const merged = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[7]).colors.CONTROL_BRAND_FOREGROUND, 16));

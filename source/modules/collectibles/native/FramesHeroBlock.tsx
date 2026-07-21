@@ -1,10 +1,10 @@
-// Module ID: 14357
-// Function ID: 108403
+// Module ID: 14360
+// Function ID: 108435
 // Name: SkeletonLoading
 // Dependencies: []
 // Exports: default
 
-// Module 14357 (SkeletonLoading)
+// Module 14360 (SkeletonLoading)
 function SkeletonLoading(accessibilityLabel) {
   const obj = {
     style: callback3().skeletonContainer,
@@ -30,40 +30,39 @@ const tmp3 = arg1(dependencyMap[4]);
 const result = 0.75 * arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_WIDTH;
 let obj = arg1(dependencyMap[7]);
 obj = { heroContainer: { width: "100%" } };
-obj = { <string:1673349053>: "created", <string:1364605754>: "MemberListRowTypes", <string:2691024909>: "a", <string:995535458>: "isArray", <string:4082282081>: "disableHeaderAnimation", <string:1671814473>: "LevelCardPosition", "Bool(false)": "isDiscordCdnUrl", top: importDefault(dependencyMap[8]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { "Bool(false)": "encodingVideoBitRate", "Bool(false)": "include_google_sku_ids", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "integrationCategoryLabel", "Bool(false)": "GameDiversityTier3LargeBadge", "Bool(false)": "messageBackground", top: importDefault(dependencyMap[8]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.framesBadgeContainer = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.framesBannerWrapper = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+const obj2 = { 0: null, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001068, 0: NaN, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026859827852369935, -9223372036854775808: -0.0000000000000000000000000000000000000000000000000000000000000000012611300912586197, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015661112332700963, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+obj.framesBannerBackgroundImage = obj2;
 const obj1 = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-obj.framesBannerBackgroundImage = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
-const obj2 = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.framesBannerTextContainer = { flex: 1, paddingRight: importDefault(dependencyMap[8]).space.PX_4, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 const obj3 = { flex: 1, paddingRight: importDefault(dependencyMap[8]).space.PX_4, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 obj.framesBannerTitle = { marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
-const obj5 = {};
+const obj5 = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24 };
 const obj4 = { marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
 const items = [{ translateY: importDefault(dependencyMap[8]).space.PX_16 }];
 obj5.transform = items;
 obj.framesBannerForegroundImage = obj5;
-const obj7 = { <string:1454006944>: true, <string:1387159867>: true, <string:2782743027>: true, <string:3321474659>: true, <string:1638260049>: true, <string:3173733384>: true, maxHeight: 240 + result };
-obj.heroBannerContainer = obj7;
-obj.heroBannerImage = {};
-obj.orbsBackgroundGradient = { description: "center", imageUploadSize: null, image: 4, setImage: 4, disabled: "rgba(0, 0, 0, 0.75)" };
-obj.heroInfoContainer = { -1369201187: "<string:141856787>", -581843463: "<string:134217728>", 1409835429: "<string:134217728>", -404701909: "<string:134217728>", -304622757: "<string:1912602624>", -2129023389: "Array" };
-const obj8 = { custom_id: "isArray", max_values: "message", min_values: "textAlign", placeholder: "r", label: "isArray", value: "message", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
-obj.innerContainer = obj8;
-obj.heroLogoContainer = { <string:4266911585>: 132, <string:597500170>: 182, <string:3850199709>: 132 };
-obj.heroLogo = { "Null": true, "Null": 16, "Null": 0.194, "Null": 0 };
+obj.heroBannerContainer = { maxHeight: 240 + result };
+obj.heroBannerImage = { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" };
+obj.orbsBackgroundGradient = { enableQualityMetrics: "<string:408361903>", enableOriginDetection: "<string:2920093709>", enabled: "<string:1058778651>", threshold: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, enabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
+obj.heroInfoContainer = { "Null": "<string:141856807>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:285212672>", "Null": "<string:38822721>" };
+const obj7 = { "Null": "y", "Null": "isArray", "Null": "Text", "Null": "Object", "Null": "Reflect", "Null": "r", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj.innerContainer = obj7;
+obj.heroLogoContainer = { "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132 };
+obj.heroLogo = {};
 const obj6 = { translateY: importDefault(dependencyMap[8]).space.PX_16 };
 obj.heroViewAllIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
-const obj9 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.orbsInnerContainer = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.orbsTitle = { PX_16: null, ix: null };
+obj.orbsTitle = { 9223372036854775807: null, 0: null };
 obj.productCardsContainer = { zIndex: 1 };
-const obj10 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
+const obj9 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.skeletonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 let closure_14 = obj.createStyles(obj);
-const obj11 = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+const obj10 = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 const result1 = arg1(dependencyMap[38]).fileFinishedImporting("modules/collectibles/native/FramesHeroBlock.tsx");
 
 export default function _default(heroBlock) {
@@ -112,7 +111,7 @@ export default function _default(heroBlock) {
       obj = { value: tmp8(importDefault(closure_2[19]).COLLECTIBLES_SHOP_HERO).analyticsLocations };
       obj = { onChange: obj4.useTrackProductCardImpression(heroBlock.categoryStoreListingId, "mobile_home", "hero_block").handleCardVisibilityChange, resetKey: heroBlock.categoryStoreListingId };
       obj1 = { style: tmp4.heroContainer };
-      obj2 = { style: tmp4.framesBadgeContainer, children: callback(importDefault(closure_2[26]), { shiny: null, -66258199: "2ff551fd13d804bd9c7d9ec79677a248" }) };
+      obj2 = { style: tmp4.framesBadgeContainer, children: callback(importDefault(closure_2[26]), { "Bool(false)": null, "Bool(false)": "02378056fc9012d1e43edae8cf439ac3" }) };
       const items3 = [callback(tmp5, obj2), , , , ];
       obj3 = { style: tmp4.heroBannerContainer };
       let tmp33Result = null != heroBannerUrl;
@@ -120,7 +119,7 @@ export default function _default(heroBlock) {
         obj4 = {};
         let tmp35 = tmp2;
         if (tmp2) {
-          obj5 = { colors: ["durationMillis", "GUILD_ITEM_BADGE_SIZE"] };
+          obj5 = { colors: [true, true] };
           ({ START: obj14.start, END: obj14.end } = closure_10);
           obj5.style = tmp4.orbsBackgroundGradient;
           tmp35 = callback(importDefault(closure_2[27]), obj5);
@@ -174,7 +173,7 @@ export default function _default(heroBlock) {
         const tmp62 = tmp5;
         const tmp63 = tmp5;
       } else {
-        const obj14 = { byteSwap32: true, STREAM_UPSELL_MODAL: "/assets/images/native/icons", analytics: 16, otherUsernameOnClick: 16, showIconSparkle: null, model: "cb49d7446dbcac5ce6ba16b6a9b83961" };
+        const obj14 = {};
         const intl = arg1(closure_2[30]).intl;
         const obj15 = { category: stateFromStores.name };
         obj14.accessibilityLabel = intl.formatToPlainString(arg1(closure_2[30]).t.FNtLb3, obj15);
@@ -224,7 +223,7 @@ export default function _default(heroBlock) {
           tmp50 = callback(tmp5, obj18);
         }
         const items8 = [tmp50, ];
-        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[34]).ChevronSmallRightIcon, {}) };
+        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[34]).ChevronSmallRightIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
         items8[1] = callback(tmp5, obj21);
         obj17.children = items8;
         obj14.children = callback2(tmp5, obj17);
@@ -313,10 +312,10 @@ export default function _default(heroBlock) {
       stateFromStores = callback;
       stateFromStores = arg1;
       stateFromStores = closure_2;
-      const obj35 = { style: tmp4.framesBannerTitle, children: bannerBlock.title };
+      const obj35 = { hasMaxConnections: 141688834, isBoostOnlySubscription: 33554432, style: tmp4.framesBannerTitle, children: bannerBlock.title };
       const items10 = [callback(arg1(closure_2[28]).Text, obj35), ];
       stateFromStores = callback;
-      const obj36 = { children: bannerBlock.body };
+      const obj36 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: bannerBlock.body };
       items10[1] = callback(arg1(closure_2[28]).Text, obj36);
       obj34.children = items10;
       items9[1] = callback2(tmp5, obj34);

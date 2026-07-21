@@ -1,5 +1,5 @@
 // Module ID: 4399
-// Function ID: 38816
+// Function ID: 38824
 // Name: isArguments
 // Dependencies: []
 

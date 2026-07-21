@@ -1,7 +1,7 @@
 // Module ID: 1864
-// Function ID: 20528
+// Function ID: 20533
 // Name: parseServerPremiumState
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: parseServerPremiumState
 
 // Module 1864 (parseServerPremiumState)

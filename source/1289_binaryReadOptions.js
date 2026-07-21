@@ -1,5 +1,5 @@
 // Module ID: 1289
-// Function ID: 15057
+// Function ID: 15062
 // Name: binaryReadOptions
 // Dependencies: []
 // Exports: binaryReadOptions
@@ -34,7 +34,7 @@ const tmp2 = () => {
         tmp4 = new.target;
         str = "utf-8";
         tmp5 = new.target;
-        textDecoder = new TextDecoder("utf-8", { shownFatigableCandidate: null, prevFatigableCandidate: null });
+        textDecoder = new TextDecoder("utf-8", { "Null": null, "Null": null });
       }
       this.textDecoder = textDecoder;
       return;

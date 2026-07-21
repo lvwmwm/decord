@@ -1,10 +1,10 @@
-// Module ID: 13424
-// Function ID: 101927
+// Module ID: 13426
+// Function ID: 101949
 // Name: PaintPaletteIcon
 // Dependencies: []
 // Exports: PaintPaletteIcon
 
-// Module 13424 (PaintPaletteIcon)
+// Module 13426 (PaintPaletteIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PaintPaletteIcon.tsx");

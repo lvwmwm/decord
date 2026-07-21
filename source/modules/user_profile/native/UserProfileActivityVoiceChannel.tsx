@@ -1,5 +1,5 @@
 // Module ID: 11934
-// Function ID: 92275
+// Function ID: 92287
 // Name: UserProfileActivityVoiceChannel
 // Dependencies: []
 // Exports: default
@@ -11,8 +11,8 @@ const Permissions = require(dependencyMap[2]).Permissions;
 const _module = require(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = _module);
 const _module1 = require(dependencyMap[4]);
-let obj = { container: { contentContainerStyle: true, showsHorizontalScrollIndicator: "/assets/images/native", horizontal: 18, width: 18 }, channelButton: {} };
-obj = { 9223372036854775807: 10, 9223372036854775807: 10 };
+let obj = { container: { -9223372036854775808: true, 33490952505578: "/assets/images/native", 9223372036854775807: 18, 9223372036854775807: 18 }, channelButton: {} };
+obj = { Č: 10, accessibilityDismiss: 10 };
 const _module2 = require(dependencyMap[5]);
 let num = -1;
 if (_module2.isAndroid()) {

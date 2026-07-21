@@ -1,10 +1,10 @@
-// Module ID: 13531
-// Function ID: 102651
+// Module ID: 13533
+// Function ID: 102673
 // Name: useSafetyHubFetchError
 // Dependencies: []
 // Exports: useSafetyHubFetchError
 
-// Module 13531 (useSafetyHubFetchError)
+// Module 13533 (useSafetyHubFetchError)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
 

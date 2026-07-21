@@ -1,10 +1,10 @@
-// Module ID: 7539
-// Function ID: 60339
+// Module ID: 7540
+// Function ID: 60351
 // Name: AgeVerificationWebViewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7539 (AgeVerificationWebViewScreen)
+// Module 7540 (AgeVerificationWebViewScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,7 +18,7 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-const obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+const obj1 = { contentInset: false, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false, searchResultsQuery: false, isEntryLive: false, doughnut: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingOverlay = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.webView = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
@@ -26,12 +26,12 @@ let closure_13 = obj.createStyles(obj);
 const obj2 = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationWebViewScreen.tsx");
 
-export default function AgeVerificationWebViewScreen(webviewUrl) {
-  webviewUrl = webviewUrl.webviewUrl;
+export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeContentLoaded) {
+  const webviewUrl = injectedJavaScriptBeforeContentLoaded.webviewUrl;
   const arg1 = webviewUrl;
-  const onComplete = webviewUrl.onComplete;
+  const onComplete = injectedJavaScriptBeforeContentLoaded.onComplete;
   const importDefault = onComplete;
-  const onClose = webviewUrl.onClose;
+  const onClose = injectedJavaScriptBeforeContentLoaded.onClose;
   const dependencyMap = onClose;
   const ref = React.useRef(null);
   let callback = ref;
@@ -169,10 +169,6 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
   const tmp13 = callback2();
   obj = { style: tmp13.container };
   obj = {
-    "Bool(false)": null,
-    "Bool(false)": null,
-    "Bool(false)": null,
-    "Bool(false)": null,
     ref,
     source: { uri: webviewUrl },
     onShouldStartLoadWithRequest: callback5,
@@ -184,9 +180,10 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
     onLoadEnd() {
       callback();
     },
-    injectedJavaScriptBeforeContentLoaded: webviewUrl.injectedJavaScriptBeforeContentLoaded
+    injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded,
+    style: tmp13.webView,
+    containerStyle: tmp13.webView
   };
-  ({ webView: obj3.style, webView: obj3.containerStyle } = tmp13);
   const items6 = [memo(importDefault(dependencyMap[13]), obj), ];
   if (first) {
     const obj1 = { style: tmp13.loadingOverlay, children: memo(arg1(dependencyMap[14]).ActivityIndicator, {}) };

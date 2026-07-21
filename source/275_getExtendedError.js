@@ -1,12 +1,10 @@
 // Module ID: 275
 // Function ID: 3429
 // Name: getExtendedError
-// Dependencies: [261, 157]
+// Dependencies: []
 // Exports: onCaughtError, onRecoverableError, onUncaughtError
 
 // Module 275 (getExtendedError)
-import "get BatchedBridge";
-
 function getExtendedError(value, componentStack) {
   if (value instanceof Error) {
     value.componentStack = componentStack.componentStack;
@@ -21,6 +19,7 @@ function getExtendedError(value, componentStack) {
     syntheticError2 = new SyntheticError("Unspecified error");
   }
 }
+importAll(dependencyMap[0]);
 
 export const onUncaughtError = function onUncaughtError(value, componentStack) {
   const tmp = getExtendedError(value, componentStack);

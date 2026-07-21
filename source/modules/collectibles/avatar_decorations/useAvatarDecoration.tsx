@@ -1,5 +1,5 @@
 // Module ID: 9080
-// Function ID: 71161
+// Function ID: 71172
 // Name: getAvatarDecoration
 // Dependencies: []
 // Exports: useAvatarDecoration

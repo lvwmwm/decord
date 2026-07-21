@@ -1,5 +1,5 @@
 // Module ID: 10408
-// Function ID: 80159
+// Function ID: 80170
 // Name: StrangerDangerWarningBanner
 // Dependencies: []
 
@@ -52,7 +52,7 @@ class StrangerDangerWarningBanner {
         obj.trackCtaEvent(obj);
       };
     }, items4);
-    f80164 = callback1;
+    f80175 = callback1;
     items5 = [, , , , ];
     items5[0] = callback1;
     items5[1] = callback;
@@ -83,7 +83,7 @@ class StrangerDangerWarningBanner {
     }, items5);
     defineProperty = callback2;
     tmp6 = jsx;
-    obj = { channelId, warningId, senderId, warningType: f80164.STRANGER_DANGER };
+    obj = { channelId, warningId, senderId, warningType: f80175.STRANGER_DANGER };
     tmp7 = importDefault(dependencyMap[17]);
     intl = arg1(dependencyMap[18]).intl;
     obj.header = intl.string(arg1(dependencyMap[18]).t.iOkDpM);

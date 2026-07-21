@@ -1,10 +1,10 @@
-// Module ID: 13403
-// Function ID: 101860
+// Module ID: 13405
+// Function ID: 101882
 // Name: CarIcon
 // Dependencies: []
 // Exports: CarIcon
 
-// Module 13403 (CarIcon)
+// Module 13405 (CarIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CarIcon.tsx");

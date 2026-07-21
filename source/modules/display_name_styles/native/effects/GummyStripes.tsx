@@ -1,10 +1,10 @@
-// Module ID: 13465
-// Function ID: 102217
+// Module ID: 13467
+// Function ID: 102239
 // Name: GummyStripes
 // Dependencies: []
 // Exports: default
 
-// Module 13465 (GummyStripes)
+// Module 13467 (GummyStripes)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, Fragment: closure_4 } = arg1(dependencyMap[2]));

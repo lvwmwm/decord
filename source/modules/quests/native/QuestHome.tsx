@@ -1,9 +1,9 @@
-// Module ID: 13781
-// Function ID: 104129
+// Module ID: 13783
+// Function ID: 104151
 // Name: EmptyStateNoQuestsAvailable
 // Dependencies: []
 
-// Module 13781 (EmptyStateNoQuestsAvailable)
+// Module 13783 (EmptyStateNoQuestsAvailable)
 function EmptyStateNoQuestsAvailable() {
   let obj = arg1(dependencyMap[13]);
   const navigation = obj.useNavigation();
@@ -42,7 +42,7 @@ function HeaderPreviewButton() {
   let tmp3 = null;
   if (obj.useShouldShowPreviewToolTab()) {
     obj = { style: tmp.previewButton };
-    obj = { onPress: callback };
+    obj = { overflow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009449513826, padding: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017312833159537916, flexGrow: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111253692928598, onPress: callback };
     const intl = arg1(dependencyMap[20]).intl;
     obj.text = intl.string(arg1(dependencyMap[20]).t.tx5Ax5);
     obj.children = callback2(arg1(dependencyMap[19]).Button, obj);
@@ -66,7 +66,7 @@ function HeaderWithBounties(arg0) {
     const items1 = [, ];
     ({ sectionHeader: arr2[0], sectionHeaderRow: arr2[1] } = tmp);
     obj.style = items1;
-    const obj1 = {};
+    const obj1 = { hasMaxConnections: "<string:3704409292>", isBoostOnlySubscription: "<string:32796991>" };
     const intl = arg1(dependencyMap[20]).intl;
     obj1.children = intl.string(arg1(dependencyMap[20]).t.qetVDw);
     const items2 = [callback2(arg1(dependencyMap[25]).Text, obj1), ];
@@ -85,7 +85,7 @@ function HeaderWithBounties(arg0) {
   const obj4 = { style: items3 };
   const items3 = [, ];
   ({ sectionHeader: arr4[0], sectionHeaderWithTag: arr4[1] } = tmp);
-  const obj5 = {};
+  const obj5 = { hasMaxConnections: "<string:3704409292>", isBoostOnlySubscription: "<string:32796991>" };
   const intl3 = arg1(dependencyMap[20]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[20]).t.JALI2K);
   obj4.children = callback2(arg1(dependencyMap[25]).Text, obj5);
@@ -114,9 +114,9 @@ obj["alignItems"] = "center";
 obj.loadingContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16 };
 obj.sectionHeader = obj1;
+const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[11]).space.PX_4 };
+obj.sectionHeaderRow = obj2;
 const tmp4 = arg1(dependencyMap[9]);
-obj.sectionHeaderRow = { gap: importDefault(dependencyMap[11]).space.PX_4 };
-const obj2 = { gap: importDefault(dependencyMap[11]).space.PX_4 };
 obj.previewButton = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, backgroundColor: "transparent" };
 const obj3 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, backgroundColor: "transparent" };
 obj.sectionHeaderWithTag = { gap: importDefault(dependencyMap[11]).space.PX_4 };
@@ -343,7 +343,7 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
   const effect3 = importAllResult.useEffect(() => {
     if (tmp) {
       const current = scrollViewRef.current;
-      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
     }
   }, items6);
   let obj5 = arg1(dependencyMap[23]);

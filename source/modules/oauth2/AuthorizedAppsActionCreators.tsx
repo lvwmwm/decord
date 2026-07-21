@@ -1,5 +1,5 @@
 // Module ID: 5470
-// Function ID: 46721
+// Function ID: 46729
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -124,7 +124,7 @@ async function _fetchAuthorizedApps(applicationIds, arg1) {
   obj.request = obj1;
   obj.dispatch(obj);
   const HTTP = applicationIds(closure_2[5]).HTTP;
-  const obj2 = { lc: null, type: null, end: null, url: OAUTH2_TOKENS.OAUTH2_TOKENS, query: { application_ids: applicationIds } };
+  const obj2 = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: OAUTH2_TOKENS.OAUTH2_TOKENS, query: { application_ids: applicationIds } };
   const value = HTTP.get(obj2);
   yield value.then((body) => {
     let obj = callback(closure_2[4]);
@@ -164,7 +164,7 @@ export default {
   delete(arg0) {
     const arg1 = this;
     const HTTP = arg1(dependencyMap[5]).HTTP;
-    const obj = { lc: null, type: null, end: null, url: Endpoints.OAUTH2_TOKEN(arg0) };
+    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.OAUTH2_TOKEN(arg0) };
     HTTP.del(obj).then(() => {
       const response = self.fetch();
     });

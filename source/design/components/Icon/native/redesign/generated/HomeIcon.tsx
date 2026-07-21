@@ -1,10 +1,10 @@
-// Module ID: 16107
-// Function ID: 124196
+// Module ID: 16115
+// Function ID: 124257
 // Name: HomeIcon
 // Dependencies: []
 // Exports: HomeIcon
 
-// Module 16107 (HomeIcon)
+// Module 16115 (HomeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HomeIcon.tsx");

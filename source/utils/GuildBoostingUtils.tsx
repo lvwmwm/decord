@@ -1,5 +1,5 @@
 // Module ID: 4020
-// Function ID: 33430
+// Function ID: 33435
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getMaxEmojiSlots, getNextGuildTierFromGuild, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTierName, getTiers, getUserLevel, isAppliedGuildBoostActive, isInGracePeriod, isTierUnlocked
@@ -618,7 +618,7 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
       numCanceledGuildBoostSlots.numAvailableGuildBoostSlots = numCanceledGuildBoostSlots.numAvailableGuildBoostSlots + 1;
     }
     return numCanceledGuildBoostSlots;
-  }, { "Bool(false)": -536870861, "Bool(false)": -299892737 });
+  }, { "Null": -536870861, "Null": -299892737 });
   if (null != premiumTypeSubscription) {
     if (reduced.numAvailableGuildBoostSlots <= 0) {
       if (premiumTypeSubscription.status === constants2.PAST_DUE) {
@@ -688,7 +688,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, g
     const diff = found.length - tmp;
     if (diff < 0) {
       let obj = importDefault(dependencyMap[18]);
-      obj = { panelHeader: "navigate", discount: "guild" };
+      obj = {};
       obj = { subscriptionLength: arr.length, subscriptionsNeededForPremiumTier: AppliedGuildBoostsRequiredForBoostedGuildTier[closure_38(undefined, guildId)], endingSubscriptionLength: found.length };
       obj.data = obj;
       obj.addBreadcrumb(obj);

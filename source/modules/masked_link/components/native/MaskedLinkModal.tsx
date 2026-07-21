@@ -1,5 +1,5 @@
 // Module ID: 12107
-// Function ID: 93293
+// Function ID: 93305
 // Name: MaskedLinkModal
 // Dependencies: []
 // Exports: default
@@ -68,7 +68,7 @@ export default function MaskedLinkModal(isProtocol) {
   obj.actions = closure_5(require(dependencyMap[7]).AlertActions, obj);
   const obj3 = { spacing: 16 };
   const obj4 = { style: tmp.emphasis };
-  const obj5 = { 0: null, 0: null };
+  const obj5 = { bind: null, cursor: null };
   const obj6 = { style: tmp.linkCalloutContainer };
   const obj7 = { variant: "text-md/normal" };
   const obj8 = {};
@@ -105,8 +105,8 @@ export default function MaskedLinkModal(isProtocol) {
   obj4.children = callback(require(dependencyMap[9]).FormRow, obj5);
   const items3 = [callback(closure_2, obj4), ];
   const obj10 = {
-    0: null,
-    0: null,
+    bind: null,
+    cursor: null,
     selected: shouldTrustUrl,
     onPress() {
       return setShouldTrustUrl(!shouldTrustUrl);

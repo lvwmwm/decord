@@ -1,5 +1,5 @@
 // Module ID: 904
-// Function ID: 9938
+// Function ID: 9942
 // Name: addConsoleBreadcrumb
 // Dependencies: []
 

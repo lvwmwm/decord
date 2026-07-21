@@ -1,5 +1,5 @@
 // Module ID: 10394
-// Function ID: 80100
+// Function ID: 80111
 // Name: useIsMessageRequest
 // Dependencies: []
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest

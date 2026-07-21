@@ -1,11 +1,11 @@
 // Module ID: 1031
-// Function ID: 11102
+// Function ID: 11106
 // Name: items
 // Dependencies: []
 
 // Module 1031 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["Array", "checkpoint"];
+const items = [null, null];
 arg5.INPThresholds = items;
 arg5.onINP = function onINP(arg0) {
   const arg1 = arg0;
@@ -53,7 +53,7 @@ arg5.onINP = function onINP(arg0) {
           const obj4 = callback(closure_1[7]);
           const callback = callback(closure_1[8]).bindReporter(callback, metric, closure_2, closure_1.reportAllChanges);
           if (observeResult) {
-            observeResult.observe({ accessibilityRole: "<string:2905166080>", intl: "<string:2689302354>" });
+            observeResult.observe({ 9223372036854775807: "<string:3343974401>", 0: "<string:1995449>" });
             closure_2.onHidden(() => {
               handleEntries(observeResult.takeRecords());
               callback(true);

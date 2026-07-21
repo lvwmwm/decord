@@ -11,7 +11,7 @@ function reject(arg0) {
   }, 0);
 }
 arg5.default = {
-  Events: { 0: "filter", 9223372036854775807: "h" },
+  Events: {},
   runAfterInteractions(arg0) {
     const arg1 = arg0;
     const promise = new Promise((arg0) => {

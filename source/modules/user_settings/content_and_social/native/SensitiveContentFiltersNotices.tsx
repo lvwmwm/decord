@@ -1,10 +1,10 @@
-// Module ID: 13597
-// Function ID: 103031
+// Module ID: 13599
+// Function ID: 103053
 // Name: SensitiveContentFiltersTeenNotice
 // Dependencies: []
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 13597 (SensitiveContentFiltersTeenNotice)
+// Module 13599 (SensitiveContentFiltersTeenNotice)
 importAll(dependencyMap[0]);
 const SafetySettingsNoticeType = arg1(dependencyMap[1]).SafetySettingsNoticeType;
 const jsx = arg1(dependencyMap[2]).jsx;

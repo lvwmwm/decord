@@ -1,5 +1,5 @@
 // Module ID: 6627
-// Function ID: 50854
+// Function ID: 50862
 // Name: WumpusGearSpotIllustration
 // Dependencies: []
 // Exports: WumpusGearSpotIllustration

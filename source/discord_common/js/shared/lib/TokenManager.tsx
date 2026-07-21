@@ -1,7 +1,7 @@
 // Module ID: 684
-// Function ID: 8444
+// Function ID: 8448
 // Name: fromEntries
-// Dependencies: [4294967295, 4294967295, 0]
+// Dependencies: []
 // Exports: getAnalyticsToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
 // Module 684 (fromEntries)
@@ -132,7 +132,8 @@ let closure_9 = {};
 let closure_10 = {};
 let closure_11 = false;
 let closure_12 = false;
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
+const _module1 = require(dependencyMap[2]);
+const result = _module1.fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
 
 export const init = function init() {
   if (!closure_12) {

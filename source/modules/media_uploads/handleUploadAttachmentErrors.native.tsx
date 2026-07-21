@@ -1,10 +1,10 @@
-// Module ID: 7932
-// Function ID: 63339
+// Module ID: 7933
+// Function ID: 63352
 // Name: handleUploadMessageAttachmentsErrors
 // Dependencies: []
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 7932 (handleUploadMessageAttachmentsErrors)
+// Module 7933 (handleUploadMessageAttachmentsErrors)
 const _module = require(dependencyMap[0]);
 ({ AbortCodes: closure_3, MAX_UPLOAD_COUNT: closure_4 } = _module);
 const _module1 = require(dependencyMap[7]);

@@ -1,9 +1,9 @@
-// Module ID: 7359
-// Function ID: 59288
+// Module ID: 7360
+// Function ID: 59300
 // Name: APBRequestOperations
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7359 (APBRequestOperations)
+// Module 7360 (APBRequestOperations)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/APBRequestOperations.tsx");
 

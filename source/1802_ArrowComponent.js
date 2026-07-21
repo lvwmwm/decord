@@ -1,5 +1,5 @@
 // Module ID: 1802
-// Function ID: 19911
+// Function ID: 19916
 // Name: ArrowComponent
 // Dependencies: []
 // Exports: default
@@ -11,8 +11,8 @@ const useMemo = arg1(dependencyMap[0]).useMemo;
 ({ Animated: closure_3, StyleSheet, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = { "Bool(true)": 2023489539, "Bool(true)": 2023489539, "Bool(true)": 2023489539 };
-obj = { y: -234160125, getConnectionPrerequisites: -234160126, y: -234160126, de-IT: -234160126, y: -234160126 };
+let obj = { 2018655073: null, 1669594568: null, 1045670548: null };
+obj = { 2113895679: -133955581, -2130739457: -133955582, -2063629569: -133955582, 2147452671: -133955582, -2080407041: -133955582 };
 obj = { arrowUpContainer: obj, arrowDownContainer: Object.assign({}, obj, { transform: items }), arrow: {}, arrowLeftLine: Object.assign({}, obj, { transform: items1, left: -0.5 }), arrowRightLine: Object.assign({}, obj, { transform: items2, left: -5.5 }) };
 const items = [{ rotate: "180deg" }];
 const items1 = [{ rotate: "-45deg" }];

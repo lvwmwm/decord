@@ -1,5 +1,5 @@
 // Module ID: 11494
-// Function ID: 89507
+// Function ID: 89519
 // Name: useGuildChannelCreated
 // Dependencies: []
 // Exports: useCompletedStates, usePermissions

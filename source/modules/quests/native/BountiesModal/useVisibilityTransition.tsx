@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 104256
+// Module ID: 13788
+// Function ID: 104278
 // Name: useVisibilityTransition
 // Dependencies: []
 // Exports: useVisibilityTransition
 
-// Module 13786 (useVisibilityTransition)
+// Module 13788 (useVisibilityTransition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = { code: "function useVisibilityTransitionTsx1(){const{withTiming,visibility,visible,entranceTiming,exitTiming,runOnJS,animationCallbackJSThread}=this.__closure;return{opacity:withTiming(visibility,visible?entranceTiming:exitTiming,'respect-motion-settings',function(){'worklet';runOnJS(animationCallbackJSThread)();})};}" };

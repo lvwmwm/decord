@@ -1,5 +1,5 @@
 // Module ID: 9403
-// Function ID: 73246
+// Function ID: 73257
 // Name: FoodIcon
 // Dependencies: []
 // Exports: FoodIcon

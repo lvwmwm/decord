@@ -1,5 +1,5 @@
 // Module ID: 11098
-// Function ID: 86344
+// Function ID: 86355
 // Name: getChatInputMaxHeight
 // Dependencies: []
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight

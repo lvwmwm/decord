@@ -1,5 +1,5 @@
 // Module ID: 10314
-// Function ID: 79615
+// Function ID: 79626
 // Name: serializePushNotificationLogs
 // Dependencies: []
 // Exports: default

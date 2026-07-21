@@ -1,9 +1,9 @@
-// Module ID: 15074
-// Function ID: 113482
+// Module ID: 15077
+// Function ID: 113516
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15074 (metadata)
+// Module 15077 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/icymi/header-image-dark-3x.png.js");
 

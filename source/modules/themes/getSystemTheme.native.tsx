@@ -1,5 +1,5 @@
 // Module ID: 1315
-// Function ID: 15339
+// Function ID: 15344
 // Name: getSystemTheme
 // Dependencies: []
 // Exports: default

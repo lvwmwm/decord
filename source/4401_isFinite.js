@@ -1,7 +1,7 @@
 // Module ID: 4401
-// Function ID: 38820
+// Function ID: 38828
 // Name: isFinite
-// Dependencies: [0]
+// Dependencies: []
 
 // Module 4401 (isFinite)
 

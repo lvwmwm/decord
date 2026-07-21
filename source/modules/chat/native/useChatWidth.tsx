@@ -1,5 +1,5 @@
 // Module ID: 10838
-// Function ID: 84101
+// Function ID: 84112
 // Name: useChatWidth
 // Dependencies: []
 // Exports: default, getChatWidth

@@ -1,10 +1,10 @@
-// Module ID: 13494
-// Function ID: 102392
+// Module ID: 13496
+// Function ID: 102414
 // Name: GuildSelectComponentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13494 (GuildSelectComponentActionSheet)
+// Module 13496 (GuildSelectComponentActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,7 +12,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ guildIdentity: {}, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ guildIdentity: { "Null": 7, "Null": 370 }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
 
@@ -40,7 +40,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   } else {
     items1 = [];
   }
-  obj = {};
+  obj = { "Bool(false)": null, "Bool(false)": null };
   const intl = arg1(dependencyMap[8]).intl;
   obj.placeholder = intl.string(arg1(dependencyMap[8]).t.ZImm/x);
   callback = React.useCallback((query) => function queryGuilds(query) {

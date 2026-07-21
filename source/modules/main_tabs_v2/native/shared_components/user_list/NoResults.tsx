@@ -1,5 +1,5 @@
 // Module ID: 9884
-// Function ID: 76524
+// Function ID: 76535
 // Name: NoResults
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ headerContainer: { paddingHorizontal: 16 }, container: {}, image: { marginBottom: 12 }, textContainer: { "Null": null, "Null": null }, text: { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 }, fullHeightContentContainer: { "Null": -536870861, "Null": -299892737 }, fullHeightScrollContent: { flexGrow: 1 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ headerContainer: { paddingHorizontal: 16 }, container: {}, image: { marginBottom: 12 }, textContainer: { margin: null, backgroundColor: null }, text: { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 }, fullHeightContentContainer: { recipients_: -536870861, AgeGateConfirm: -299892737 }, fullHeightScrollContent: { flexGrow: 1 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
 
@@ -49,7 +49,8 @@ export default function NoResults(illustration) {
   }
   const items2 = [tmp6, ];
   const obj1 = { style: tmp.textContainer };
-  const items3 = [callback(arg1(dependencyMap[4]).Text, { style: tmp.text, children: title }), ];
+  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", style: tmp.text, children: title };
+  const items3 = [callback(arg1(dependencyMap[4]).Text, obj2), ];
   let tmp11 = null;
   if (null != subtitle) {
     const obj3 = { style: tmp.text, children: subtitle };

@@ -1,17 +1,17 @@
-// Module ID: 12919
-// Function ID: 98478
+// Module ID: 12921
+// Function ID: 98500
 // Name: NOOP
 // Dependencies: []
 // Exports: Menu
 
-// Module 12919 (NOOP)
+// Module 12921 (NOOP)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 const ScrollView = tmp2.ScrollView;
 const NOOP = arg1(dependencyMap[3]).NOOP;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = { "Bool(true)": null, "Bool(true)": "5f77547974eb8f3f02aedbb78b4b73bc", "Bool(true)": "NitroGem12", "Bool(true)": "lottie", "Bool(true)": true };
+let closure_8 = { ROLE_SUBSCRIPTIONS_TAB: null, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: "5f77547974eb8f3f02aedbb78b4b73bc", handleAppStateChanged: "NitroGem12", afterMs: "lottie", eq: true };
 let obj = { duration: 250, easing: arg1(dependencyMap[5]).STANDARD_EASING };
 let obj2 = arg1(dependencyMap[6]);
 obj = {};
@@ -116,7 +116,7 @@ export const Menu = function Menu(toggleButtonRef) {
   const sharedValue = obj.useSharedValue(0);
   context = sharedValue;
   let obj1 = arg1(dependencyMap[8]);
-  const sharedValue1 = obj1.useSharedValue({ bhk: -536870861, bic: -299892737 });
+  const sharedValue1 = obj1.useSharedValue({ "Null": -536870861, "Null": -299892737 });
   closure_12 = sharedValue1;
   const items = [toggleButtonRef, first];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
@@ -148,7 +148,7 @@ export const Menu = function Menu(toggleButtonRef) {
       str = "row";
     }
     if (null == first) {
-      let point = { max: -536870861, guildId: -299892737 };
+      let point = {};
     } else {
       let num = 0;
       ({ pageX, pageY } = first);
@@ -273,7 +273,7 @@ export const Menu = function Menu(toggleButtonRef) {
           num5 = x1;
         }
         items1[1] = num5;
-        obj.translateX = obj3.interpolate(value, ["Text", "lc"], items1);
+        obj.translateX = obj3.interpolate(value, ["replace", "then"], items1);
         items = [, , ];
         items[0] = obj;
         obj1 = {};
@@ -310,7 +310,7 @@ export const Menu = function Menu(toggleButtonRef) {
           num6 = y1;
         }
         items2[1] = num6;
-        obj1.translateY = obj5.interpolate(value3, ["Text", "lc"], items2);
+        obj1.translateY = obj5.interpolate(value3, ["replace", "then"], items2);
         items[1] = obj1;
         obj2 = {};
         tmp28 = closure_11;

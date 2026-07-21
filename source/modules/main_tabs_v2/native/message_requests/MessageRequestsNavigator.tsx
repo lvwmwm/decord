@@ -1,10 +1,10 @@
-// Module ID: 15429
-// Function ID: 117735
+// Module ID: 15432
+// Function ID: 117774
 // Name: MessageRequestsNavigator
 // Dependencies: []
 // Exports: default
 
-// Module 15429 (MessageRequestsNavigator)
+// Module 15432 (MessageRequestsNavigator)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -14,7 +14,7 @@ let obj1 = arg1(dependencyMap[4]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj1 = { MIN_SWIPE_VELOCITY: null, USER_SAFETY_TOOLS_UNBLOCK: "c7e2eadc5cd55417a6c70f428f65fac7", routingFailures: "SlashIcon", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj1;
 let closure_8 = obj1.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

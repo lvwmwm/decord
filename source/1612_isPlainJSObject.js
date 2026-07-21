@@ -1,5 +1,5 @@
 // Module ID: 1612
-// Function ID: 17880
+// Function ID: 17885
 // Name: isPlainJSObject
 // Dependencies: []
 

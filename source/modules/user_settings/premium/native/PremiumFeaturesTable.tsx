@@ -1,5 +1,5 @@
 // Module ID: 12287
-// Function ID: 94154
+// Function ID: 94166
 // Name: CheckIcon
 // Dependencies: []
 // Exports: default
@@ -208,17 +208,17 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let closure_12 = "rgba(184, 69, 193, 0.5)";
 let obj = arg1(dependencyMap[6]);
-obj = { container: {}, headerText: { textAlign: "center" }, logo: {}, table: { marginTop: 16 }, row: {}, bottomBorder: {} };
+obj = { container: { "Bool(false)": -49894593232006870000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001028007493924, "Bool(false)": 14467327890716857000000000000000000000000 }, headerText: { textAlign: "center" }, logo: { size: "absolute", progress: 5 }, table: { marginTop: 16 }, row: {}, bottomBorder: {} };
 obj = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.topBorderRadius = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.bottomBorderRadius = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.cell = { paddingVertical: 12 };
-obj.labelCell = { markAsSpoilerTitle: "guildFallbackImage", keyboardAppearance: "MAX_AGE" };
-obj.dataCell = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.labelCell = {};
+obj.dataCell = { <string:2320886961>: false, <string:3901792661>: false, "Null": false, "Null": false };
 const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.themedHighlightedCell = { backgroundColor: arg1(dependencyMap[8]).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
-obj.nitroHomeHightlightedBorderLeftRight = { "Bool(true)": 24, "Bool(true)": 16, "Bool(true)": "flex", "Bool(true)": "column" };
+obj.nitroHomeHightlightedBorderLeftRight = { "Null": 24, "Null": 16, "Null": "flex", "Null": "column" };
 obj.premiumGroupCard = { marginTop: 16 };
 obj.priceContainer = { alignItems: "center" };
 let closure_13 = obj.createStyles(obj);
@@ -425,7 +425,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const intl30 = arg1(dependencyMap[15]).intl;
   obj23.column2AccessibilityLabel = intl30.string(arg1(dependencyMap[15]).t.tq+6t/);
   items[9] = obj23;
-  items[10] = {};
+  items[10] = { "Bool(false)": "hidden", "Bool(false)": "all", "Bool(false)": true };
   const found = items.filter((hidden) => null != hidden && !hidden.hidden);
   const obj25 = { style: items1 };
   const items1 = [tmp.container, highlightNitroBasic.style];

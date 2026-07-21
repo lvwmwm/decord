@@ -1,5 +1,5 @@
 // Module ID: 9630
-// Function ID: 74988
+// Function ID: 74999
 // Name: useHorizontalAutocompleteResults
 // Dependencies: []
 // Exports: useHorizontalAutocompleteResults
@@ -106,7 +106,7 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
         return obj;
       }
     }
-    return { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true };
+    return { <string:1375459504>: false, <string:3429148283>: false, <string:1373155564>: null };
   }, items2);
   const autocompleteType = memo1.autocompleteType;
   const query = memo1.query;

@@ -1,17 +1,17 @@
-// Module ID: 14835
-// Function ID: 111777
+// Module ID: 14838
+// Function ID: 111811
 // Name: MessagesEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 14835 (MessagesEmptyState)
+// Module 14838 (MessagesEmptyState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ container: { markAsSpoilerTitle: null, keyboardAppearance: null }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: {}, imageContainer: { 304631162: 24, -309048237: "recent_games_enabled" }, textWrapper: { paddingHorizontal: 48 }, body: { "Null": null, "Null": "absolute" }, title: { alignSelf: null, padding: "text-sm/normal", backgroundColor: "text-link" }, buttonWrapper: {} });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ container: { "Bool(true)": "values", "Bool(true)": "Array" }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: { "Null": null, "Null": null }, imageContainer: { englishName: 24, code: "recent_games_enabled" }, textWrapper: { paddingHorizontal: 48 }, body: { "Null": null, "Null": null }, title: {}, buttonWrapper: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx");
 
@@ -29,7 +29,7 @@ export default function MessagesEmptyState() {
   const importDefault = navigation;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
-    navigation.navigate("friends", { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: "<string:1010910605>", borderTopWidth: "<string:1912603051>" } });
+    navigation.navigate("friends", { screen: "add-friends", params: { backgroundColor: null, width: null } });
   }, items);
   obj = { type: callback(dependencyMap[8]).ImpressionTypes.VIEW, name: callback(dependencyMap[8]).ImpressionNames.MESSAGES_EMPTY_NUX };
   importDefault(dependencyMap[7])(obj);
@@ -40,7 +40,7 @@ export default function MessagesEmptyState() {
   let obj2 = callback(dependencyMap[9]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   callback(dependencyMap[10]);
-  obj = { 0: null, 9223372036854775807: null };
+  obj = { top: null, y: null };
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp15;
   if (isScreenLandscape) {

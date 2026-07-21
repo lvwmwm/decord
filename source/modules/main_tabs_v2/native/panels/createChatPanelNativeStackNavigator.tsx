@@ -1,9 +1,9 @@
-// Module ID: 14602
-// Function ID: 110058
+// Module ID: 14605
+// Function ID: 110090
 // Name: navigatorFactory
 // Dependencies: []
 
-// Module 14602 (navigatorFactory)
+// Module 14605 (navigatorFactory)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function ChatPanelNativeStackNavigator(arg0) {
@@ -12,7 +12,7 @@ const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function 
   let initialRouteName;
   let screenListeners;
   let screenOptions;
-  let obj = {};
+  let obj = { -1553836157: null, -353945046: null, -2088716468: null, -591942203: null, 1630734434: null };
   ({ id, initialRouteName, children, screenListeners, screenOptions } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

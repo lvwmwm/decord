@@ -1,10 +1,10 @@
-// Module ID: 7558
-// Function ID: 60464
+// Module ID: 7559
+// Function ID: 60476
 // Name: GetStartedScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7558 (GetStartedScreen)
+// Module 7559 (GetStartedScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -13,7 +13,7 @@ const SafetyHubLinks = arg1(dependencyMap[4]).SafetyHubLinks;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { loadingIndicator: { paddingHorizontal: true, borderTopStartRadius: "/assets/modules/stage_channels/native/images", borderTopEndRadius: 25, marginTop: 24, lineHeight: null, textAlign: "b252f7dc065300671ba9347414eb0bad" } };
+obj = { loadingIndicator: { 978739812: true, 1676108714: "/assets/modules/stage_channels/native/images", 1675125740: 25, 1365027414: 24, 979455537: null, 1677983569: "b252f7dc065300671ba9347414eb0bad" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, flex: 1 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
@@ -89,7 +89,9 @@ export default function GetStartedScreen(modalSessionId) {
   const items1 = [loading, ];
   obj2 = { style: tmp.container };
   const obj3 = { style: tmp.headerContainer };
-  const items2 = [callback(arg1(dependencyMap[14]).ShieldSpotIllustration, {}), callback(arg1(dependencyMap[15]).Text, { style: tmp.centerText, children: stringResult }), ];
+  const items2 = [callback(arg1(dependencyMap[14]).ShieldSpotIllustration, {}), , ];
+  const obj4 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.centerText, children: stringResult };
+  items2[1] = callback(arg1(dependencyMap[15]).Text, obj4);
   obj5 = { style: tmp.centerText, children: intl2.string(arg1(dependencyMap[11]).t.JNK1ue) };
   items2[2] = callback(arg1(dependencyMap[15]).Text, obj5);
   obj3.children = items2;
@@ -105,9 +107,10 @@ export default function GetStartedScreen(modalSessionId) {
     })
   };
   items3[1] = callback(arg1(dependencyMap[16]).TableRowGroup, obj6);
-  const obj7 = { style: items4 };
+  const obj7 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
   const items4 = [, ];
   ({ centerText: arr6[0], helpLink: arr6[1] } = tmp);
+  obj7.style = items4;
   const intl4 = arg1(dependencyMap[11]).intl;
   obj7.children = intl4.format(arg1(dependencyMap[11]).t.L+FgkZ, {
     handleOnHelpUrlHook() {

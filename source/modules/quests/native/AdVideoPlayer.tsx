@@ -1,27 +1,27 @@
-// Module ID: 13793
-// Function ID: 104335
+// Module ID: 13795
+// Function ID: 104357
 // Name: getSafeAreaInsetOrPadding
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [0, 0, 0, 4294967295, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0]
 
-// Module 13793 (getSafeAreaInsetOrPadding)
-import closure_3 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_14 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13795 (getSafeAreaInsetOrPadding)
+import closure_3 from "result";
+import importAllResult from "result";
+import result from "result";
+import closure_14 from "result";
+import result from "result";
+import importDefaultResult from "result";
+import result from "result";
 
 let StyleSheet;
 function getSafeAreaInsetOrPadding(arg0, arg1) {
   return Math.max(arg0[arg1], obj[arg1]);
 }
-({ View: closure_5, StyleSheet, Pressable: closure_6, ActivityIndicator: closure_7 } = __exportStarResult1);
+({ View: closure_5, StyleSheet, Pressable: closure_6, ActivityIndicator: closure_7 } = result);
 let closure_8 = importDefault(dependencyMap[3]);
 ({ AppStates: closure_9, ComponentActions: closure_10 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
-let obj = { left: require("__exportStarResult1").space.PX_16, right: require("__exportStarResult1").space.PX_16, top: require("__exportStarResult1").space.PX_16, bottom: require("__exportStarResult1").space.PX_16 };
+let obj = { left: require("result").space.PX_16, right: require("result").space.PX_16, top: require("result").space.PX_16, bottom: require("result").space.PX_16 };
 let closure_15 = { code: "function hasVideoEnded_AdVideoPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
 let closure_16 = () => {
   function hasVideoEnded(arg0, arg1) {
@@ -53,12 +53,12 @@ let closure_18 = () => {
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = {};
-__exportStarResult1 = {};
+result = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-__exportStarResult1["backgroundColor"] = require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST;
-__exportStarResult1["justifyContent"] = "center";
-__exportStarResult1["alignItems"] = "center";
-obj.loadingContainer = __exportStarResult1;
+result["backgroundColor"] = require("result").colors.BACKGROUND_BASE_LOWEST;
+result["justifyContent"] = "center";
+result["alignItems"] = "center";
+obj.loadingContainer = result;
 obj.bufferingSpinner = { position: "absolute" };
 const obj3 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
@@ -66,46 +66,47 @@ obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj.bufferingSpinnerCentered = obj3;
 obj.video = {};
-obj.videoContainer = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755987663096558, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, 0: 139264.00004577637 };
+obj.videoContainer = { was: "PlaystationNeutralIcon", visible: "png", hasSpoiler: true };
 const obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 const obj1 = {};
 const tmp4 = arg1(dependencyMap[5]);
-const importDefaultResultResult = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK);
-obj4["backgroundColor"] = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK).alpha(0.5).hex();
+const importDefaultResultResult = require("result")(require("result").unsafe_rawColors.BLACK);
+obj4["backgroundColor"] = require("result")(require("result").unsafe_rawColors.BLACK).alpha(0.5).hex();
 obj4["justifyContent"] = "center";
 obj4["alignItems"] = "center";
 obj4["flexDirection"] = "column";
 obj.controls = obj4;
-const obj5 = { "Null": "isArray", "Null": "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", flexDirection: "isArray", alignItems: "isArrayBuffer", justifyContent: "540091c70b333c8b8937ba1627138192", marginLeft: "wumpus-pikachu", padding: require("__exportStarResult1").space.PX_8 };
+const obj5 = { "Null": "isArray", "Null": "SOLID", "Null": "isArray", "Null": "isArrayBuffer", "Null": "540091c70b333c8b8937ba1627138192", "Null": "wumpus-pikachu", padding: require("result").space.PX_8 };
 obj.controlsTopBottom = obj5;
-const obj6 = { "Bool(true)": "gr", "Bool(true)": null, "Bool(true)": "Group 3", "Bool(true)": 4, "Bool(true)": 2, "Bool(true)": 0, gap: require("__exportStarResult1").space.PX_24 };
-obj.controlsMiddle = obj6;
+const alphaResult = require("result")(require("result").unsafe_rawColors.BLACK).alpha(0.5);
+obj.controlsMiddle = { gap: require("result").space.PX_24 };
 obj.controlsTop = { top: 0 };
 obj.controlsBottom = { bottom: 0 };
-const alphaResult = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK).alpha(0.5);
-obj.progressContainer = { height: require("__exportStarResult1").space.PX_16 };
-const obj8 = { 3339514993915: 0, 9223372036854775807: 11, 9223372036854775807: 4, 9223372036854775807: "Explosion 3", -9223372036854775808: 1, 9223372036854775807: 1, backgroundColor: require("__exportStarResult1").colors.WHITE, shadowOffset: { bhk: -536870861, bic: -299892737 }, shadowColor: require("__exportStarResult1").colors.WHITE };
+const obj7 = { flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007696006539765, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025322775409541142, justifyContent: 0, marginLeft: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009266003024732815, height: require("result").space.PX_16, minWidth: 6893587421222876000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915829 };
+obj.progressContainer = obj7;
+const obj8 = { 1364484706: 0, -547128388: 11, 1783944935: 4, 662389384: "Explosion 3", 1637694579: 1, 49893946: 1, backgroundColor: require("result").colors.WHITE, shadowOffset: { "Null": -536870861, "Null": -299892737 }, shadowColor: require("result").colors.WHITE };
 obj.progress = obj8;
-const obj7 = { height: require("__exportStarResult1").space.PX_16 };
-obj.icon = { color: require("__exportStarResult1").colors.TEXT_DEFAULT };
-const obj9 = { color: require("__exportStarResult1").colors.TEXT_DEFAULT };
-obj.iconDisabled = { color: require("__exportStarResult1").colors.TEXT_SUBTLE };
-const obj10 = { color: require("__exportStarResult1").colors.TEXT_SUBTLE };
-obj.controlButton = { padding: require("__exportStarResult1").space.PX_8 };
-let closure_19 = __exportStarResult1.createStyles(obj);
+const obj6 = { gap: require("result").space.PX_24 };
+obj.icon = { color: require("result").colors.TEXT_DEFAULT };
+const obj9 = { color: require("result").colors.TEXT_DEFAULT };
+obj.iconDisabled = { color: require("result").colors.TEXT_SUBTLE };
+const obj10 = { color: require("result").colors.TEXT_SUBTLE };
+obj.controlButton = { padding: require("result").space.PX_8 };
+let closure_19 = result.createStyles(obj);
 const obj12 = { PAUSED: "paused", PLAYING: "playing", ENDED: "ended", LOADING: "loading", ERRORED: "errored" };
 const obj13 = { USER_INTERACTION: "USER_INTERACTION", SYSTEM_INITIATED: "SYSTEM_INITIATED", IMPERATIVE_API: "IMPERATIVE_API" };
 let closure_22 = { code: "function shouldShowControls_AdVideoPlayerTsx3(){const{hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded}=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);}" };
 let closure_23 = { code: "function AdVideoPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
 let closure_24 = { code: "function AdVideoPlayerTsx5(){const{withTiming,progressSharedValue,timingFast}=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};}" };
-const obj11 = { padding: require("__exportStarResult1").space.PX_8 };
-const result = __exportStarResult1.fileFinishedImporting("modules/quests/native/AdVideoPlayer.tsx");
+const obj11 = { padding: require("result").space.PX_8 };
+result = result.fileFinishedImporting("modules/quests/native/AdVideoPlayer.tsx");
 
 export const PlayerState = obj12;
 export const PlaybackTriggerSource = obj13;
 export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
   let automaticallyWaitsToMinimizeStalling;
+  let bufferConfig;
   let bufferingSpinnerPlacement;
   let captionsEnabled;
   let contentInsets;
@@ -113,6 +114,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
   let httpEngine;
   let isBuffering;
   let isFullscreen;
+  let maxBitRate;
   let onBuffer;
   let onLoadStart;
   let onOpenTranscript;
@@ -120,6 +122,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
   let onToggleFullscreen;
   let onVideoLayout;
   let onVideoTracks;
+  let preferredForwardBufferDuration;
   let renderCaptions;
   let repeat;
   let style;
@@ -187,7 +190,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
     flag8 = false;
   }
   let obj = flag8;
-  ({ repeat, httpEngine, automaticallyWaitsToMinimizeStalling } = initialProgress);
+  ({ repeat, httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration } = initialProgress);
   if (repeat === undefined) {
     repeat = false;
   }
@@ -291,7 +294,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
     return shouldShowControls;
   }();
   let obj2 = arg1(dependencyMap[10]);
-  function he() {
+  function fe() {
     const tmp = tmp16();
     const obj = {};
     let num = 0;
@@ -307,27 +310,24 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
     return obj;
   }
   obj = { shouldShowControls: tmp16, withSpring: arg1(dependencyMap[11]).withSpring, SUBTLE_SPRING: arg1(dependencyMap[12]).SUBTLE_SPRING };
-  he.__closure = obj;
-  he.__workletHash = 311315682972;
-  he.__initData = closure_23;
-  const animatedStyle = obj2.useAnimatedStyle(he);
+  fe.__closure = obj;
+  fe.__workletHash = 311315682972;
+  fe.__initData = closure_23;
+  const animatedStyle = obj2.useAnimatedStyle(fe);
   let obj4 = arg1(dependencyMap[10]);
   sharedValue1 = obj4.useSharedValue(0);
   let obj5 = arg1(dependencyMap[10]);
-  class Se {
-    constructor() {
-      obj = {};
-      obj2 = initialProgress(closure_2[13]);
-      result = 100 * closure_31.get();
-      obj.width = obj2.withTiming(`${tmp}%`, initialProgress(closure_2[14]).timingFast, "animate-always");
-      return obj;
-    }
+  function ge() {
+    const obj = {};
+    const result = 100 * sharedValue1.get();
+    obj.width = initialProgress(flag2[13]).withTiming(`${tmp}%`, initialProgress(flag2[14]).timingFast, "animate-always");
+    return obj;
   }
   obj = { withTiming: arg1(dependencyMap[13]).withTiming, progressSharedValue: sharedValue1, timingFast: arg1(dependencyMap[14]).timingFast };
-  Se.__closure = obj;
-  Se.__workletHash = 11793601648786;
-  Se.__initData = closure_24;
-  const animatedStyle1 = obj5.useAnimatedStyle(Se);
+  ge.__closure = obj;
+  ge.__workletHash = 11793601648786;
+  ge.__initData = closure_24;
+  const animatedStyle1 = obj5.useAnimatedStyle(ge);
   closure_32 = importAllResult.useRef(-1);
   const items1 = [sharedValue];
   const callback1 = importAllResult.useCallback((arg0) => {
@@ -608,7 +608,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
           tmp2 = null == current.setNativeProps;
         }
         if (!tmp2) {
-          let obj = { 9223372036854775807: true, 9223372036854775807: true };
+          let obj = { -1656982745: null, -112051615: null };
           obj = { uri: null };
           obj.src = obj;
           current.setNativeProps(obj);
@@ -692,7 +692,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
   obj3.accessibilityLabel = intl.string(tmp47 ? t.R3aFPe : t.fTMEUi);
   let tmp61 = first2 !== obj12.ERRORED;
   if (tmp61) {
-    obj4 = { httpEngine, automaticallyWaitsToMinimizeStalling, ref, style: tmp.video, paused: tmp47, repeat, source: initialProgress.source, onBuffer: callback17, onPlaybackStalled: callback18, onPlaybackResume: callback19, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
+    obj4 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp47, repeat, source: initialProgress.source, onBuffer: callback17, onPlaybackStalled: callback18, onPlaybackResume: callback19, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
     tmp61 = onPausePlayback(closure_14, obj4);
   }
   const items26 = [tmp61, , , , , ];

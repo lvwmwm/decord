@@ -1,5 +1,5 @@
 // Module ID: 12192
-// Function ID: 93701
+// Function ID: 93713
 // Name: isMostRecentDeadEndInvite
 // Dependencies: []
 // Exports: isMostRecentDeadEndInvite

@@ -1,10 +1,10 @@
-// Module ID: 7645
-// Function ID: 61178
+// Module ID: 7646
+// Function ID: 61190
 // Name: createCommonMessage
 // Dependencies: []
 // Exports: default
 
-// Module 7645 (createCommonMessage)
+// Module 7646 (createCommonMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
 const result = obj.experimental_createToken((theme) => {

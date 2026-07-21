@@ -1,10 +1,10 @@
-// Module ID: 7443
-// Function ID: 59681
+// Module ID: 7444
+// Function ID: 59693
 // Name: usePromotionMarketingComponent
 // Dependencies: []
 // Exports: usePromotionMarketingComponent
 
-// Module 7443 (usePromotionMarketingComponent)
+// Module 7444 (usePromotionMarketingComponent)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

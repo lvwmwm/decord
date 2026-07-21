@@ -1,5 +1,5 @@
 // Module ID: 10046
-// Function ID: 77631
+// Function ID: 77642
 // Name: GUILD_TEMPLATE_ICONS
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 5533
-// Function ID: 47062
+// Function ID: 47070
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ Animated: closure_6, Platform, StyleSheet } = tmp2);
 const View = tmp2.View;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
-const styles = StyleSheet.create({ content: {}, title: { <string:1374466299>: "center", <string:72420094>: "center" }, left: {}, right: {}, expand: {} });
+const styles = StyleSheet.create({ content: {}, title: { "Null": "center", "Null": "center" }, left: {}, right: { margin: 22, backgroundColor: 22 }, expand: { "Null": null, "Null": null } });
 
 export default function Header(children) {
   let backgroundColor;
@@ -116,7 +116,7 @@ export default function Header(children) {
     }
     continue;
   }
-  const items = [obj, false === headerShadowVisible && { 1852047964: "spring", 1671494492: "linear", 1374336950: "easeInEaseOut" }];
+  const items = [obj, false === headerShadowVisible && { backgroundColor: false, height: false, display: false }];
   let headerLeftResult = null;
   if (headerLeft) {
     obj = { tintColor: headerTintColor, pressColor: headerPressColor, pressOpacity: headerPressOpacity, labelVisible: headerLeftLabelVisible };

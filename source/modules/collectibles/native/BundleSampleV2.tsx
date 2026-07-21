@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 64877
+// Module ID: 8207
+// Function ID: 64890
 // Name: getSizedAssetUri
 // Dependencies: []
 // Exports: default
 
-// Module 8206 (getSizedAssetUri)
+// Module 8207 (getSizedAssetUri)
 let StyleSheet;
 function getSizedAssetUri(bgStatic, targetSize) {
   if (null != targetSize) {
@@ -198,21 +198,21 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(dependencyMap[6]).radii.xs };
   const items = [{ rotate: "-8deg" }];
   obj.pfx = obj;
-  const obj1 = { y: null, y: null, isArray: null, valueOf: null, enabled: null, y: null, isArray: null };
+  const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   ({ avatarTop: obj4.top, avatarRight: obj4.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items1 = [{ rotate: "8deg" }];
   obj1.transform = items1;
   obj.avatar = obj1;
-  const obj2 = { y: null, y: null, isArray: null, valueOf: null, enabled: null, y: null, isArray: null };
+  const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   ({ avatarWithNameplateTop: obj5.top, avatarWithNameplateRight: obj5.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items2 = [{ rotate: "8deg" }];
   obj2.transform = items2;
   obj2.shadowColor = importDefault(dependencyMap[6]).colors.BLACK;
-  obj2.shadowOffset = {};
+  obj2.shadowOffset = { "Null": "<string:2754674692>", "Null": "<string:3607772528>" };
   obj2.shadowOpacity = 0.5;
   obj2.shadowRadius = 4;
   obj.avatarWithNameplate = obj2;
-  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { "Null": "<string:2754674692>", "Null": "<string:3607772528>" }, shadowOpacity: 0.5, shadowRadius: 4 };
   return obj;
 });
 const obj7 = arg1(dependencyMap[5]);

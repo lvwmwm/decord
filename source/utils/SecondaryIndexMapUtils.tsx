@@ -1,10 +1,10 @@
-// Module ID: 4962
-// Function ID: 42636
+// Module ID: 4961
+// Function ID: 42643
 // Name: isVersionEqual
 // Dependencies: []
 // Exports: isVersionEqual
 
-// Module 4962 (isVersionEqual)
+// Module 4961 (isVersionEqual)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("utils/SecondaryIndexMapUtils.tsx");
 

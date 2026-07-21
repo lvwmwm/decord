@@ -1,5 +1,5 @@
 // Module ID: 9182
-// Function ID: 71907
+// Function ID: 71918
 // Name: ConfirmEmailChangeStart
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ let closure_9 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[6]).createStyles({ container: { <string:1683772908>: "center", <string:4089483545>: "row", <string:3817842359>: 8, <string:2697383014>: 8 }, image: {}, title: { "Null": "center", "Null": "center" }, body: { action: null, messageReference: null, medium: null }, button: {} });
+let closure_12 = arg1(dependencyMap[6]).createStyles({ container: { <string:743828640>: "construct", <string:3482404964>: "isArray", <string:1940311795>: "isArray", <string:3335284451>: "isArray" }, image: { direction: "checkIsOnChannelNavigationRoute", style: "<string:3844887040>", borderWidth: "<string:158435740>" }, title: {}, body: {}, button: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
 
@@ -35,11 +35,11 @@ export default function ConfirmEmailChangeStart() {
   } else {
     const intl = arg1(closure_2[13]).intl;
     obj = { oldEmail: stateFromStores.email };
-    obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874 };
+    obj = { onUnexpectedItemSize: null, minResolutionHeight: null };
     obj1 = { style: tmp.container };
     const obj2 = { style: tmp.image, source: importDefault(closure_2[14]) };
     const items1 = [callback2(closure_7, obj2), , , ];
-    const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl2 = arg1(closure_2[13]).intl;
     obj3.children = intl2.string(arg1(closure_2[13]).t.dQ71Wa);
     items1[1] = callback2(arg1(closure_2[15]).Text, obj3);

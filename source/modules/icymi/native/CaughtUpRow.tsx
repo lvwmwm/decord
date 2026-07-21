@@ -1,10 +1,10 @@
-// Module ID: 15116
-// Function ID: 114051
+// Module ID: 15119
+// Function ID: 114085
 // Name: ExploreServersRow
 // Dependencies: []
 // Exports: default
 
-// Module 15116 (ExploreServersRow)
+// Module 15119 (ExploreServersRow)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -20,15 +20,15 @@ let closure_10 = arg1(dependencyMap[7]).createICYMIStyles((margin) => {
   obj = { marginHorizontal: margin.margin, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
   obj.textContainer = obj;
   obj.recommendedGuildsContainer = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  const obj2 = { cix: 0, y: 0, isArray: 0, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  obj.iconWrapper = obj2;
-  obj.icon = {};
   const obj1 = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
+  obj.iconWrapper = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
+  obj.icon = {};
+  const obj2 = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
   obj.headerText = { marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-  obj.subtitleText = { "Bool(false)": null, "Bool(false)": null };
-  const obj3 = { marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-  obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: margin.margin };
-  obj.gradient = { "Bool(false)": 543817730, "Bool(true)": -984547327, "Bool(true)": 74580481, "Bool(true)": 134217728, "Bool(true)": 1358954496 };
+  obj.subtitleText = { body: null, ctaLabel: null };
+  const obj4 = { paddingTop: false, justifyContent: false, gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: margin.margin };
+  obj.buttonContainer = obj4;
+  obj.gradient = { flexBasis: false, gap: false, rowGap: false, display: false, backfaceVisibility: false };
   return obj;
 });
 let closure_11 = { code: "function CaughtUpRowTsx1(){const{visibleSharedValue,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};}" };
@@ -64,7 +64,7 @@ export default function ExploreServersRow(visible) {
   const callback1 = React.useCallback(() => {
     let obj = sharedValue(tmp5[9]);
     obj.itemInteracted("caught_up", "caught_up", "press_home");
-    obj = { "Bool(false)": null, "Bool(false)": null, actionParameters: { "Bool(false)": "center", "Bool(false)": "transparent", "Bool(false)": "row", "Bool(false)": "center" } };
+    obj = { <string:1102018133>: 1091698687, <string:3437916651>: 69988, actionParameters: {} };
     sharedValue(tmp5[9]).feedItemActioned(obj);
     const obj2 = sharedValue(tmp5[9]);
     const rootNavigationRef = visible(tmp5[12]).getRootNavigationRef();
@@ -198,15 +198,17 @@ export default function ExploreServersRow(visible) {
   const obj4 = { style: tmp.textContainer };
   obj5 = { style: items1 };
   const items1 = [tmp.iconWrapper, animatedStyle];
-  obj5.children = callback3(arg1(dependencyMap[15]).FlashIcon, { style: tmp.icon });
+  const obj6 = { borderColor: "<string:3193101238>", borderRadius: "<string:1900331521>", borderStyle: "<string:4294967292>", style: tmp.icon };
+  obj5.children = callback3(arg1(dependencyMap[15]).FlashIcon, obj6);
   const items2 = [callback3(importDefault(dependencyMap[5]).View, obj5), , ];
   obj7 = { style: items3 };
   const items3 = [tmp.headerText, animatedStyle1];
   const intl = arg1(dependencyMap[16]).intl;
   obj7.children = intl.string(arg1(dependencyMap[16]).t.xjxffq);
   items2[1] = callback3(closure_9, obj7);
-  const obj8 = { style: items4 };
+  const obj8 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
   const items4 = [tmp.subtitleText, animatedStyle2];
+  obj8.style = items4;
   const intl2 = arg1(dependencyMap[16]).intl;
   obj8.children = intl2.string(arg1(dependencyMap[16]).t.sAApb0);
   items2[2] = callback3(closure_9, obj8);
@@ -219,7 +221,7 @@ export default function ExploreServersRow(visible) {
   obj10.onPress = callback;
   obj10.loading = tmp4[0];
   const items6 = [callback3(arg1(dependencyMap[17]).Button, obj10), ];
-  const obj11 = { 9223372036854775807: "End Star 01", 0: 1, 9223372036854775807: 1, 0: null };
+  const obj11 = {};
   const intl4 = arg1(dependencyMap[16]).intl;
   obj11.text = intl4.string(arg1(dependencyMap[16]).t.AGrUbj);
   obj11.onPress = callback1;
@@ -229,7 +231,6 @@ export default function ExploreServersRow(visible) {
   obj3.children = items5;
   const items7 = [callback4(View, obj3), callback3(arg1(dependencyMap[18]).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: arg1(dependencyMap[20]).VerticalGradient.START, end: arg1(dependencyMap[20]).VerticalGradient.END };
-  const obj6 = { style: tmp.icon };
   const tmp12 = importDefault(dependencyMap[19]);
   const obj20 = importDefault(dependencyMap[21])(token);
   const items8 = [importDefault(dependencyMap[21])(token).alpha(0.2).hex(), ];

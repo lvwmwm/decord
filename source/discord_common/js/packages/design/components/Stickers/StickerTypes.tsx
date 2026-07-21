@@ -1,9 +1,9 @@
-// Module ID: 4798
-// Function ID: 41693
+// Module ID: 4797
+// Function ID: 41700
 // Name: MetaStickerType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 4798 (MetaStickerType)
+// Module 4797 (MetaStickerType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/design/components/Stickers/StickerTypes.tsx");
 

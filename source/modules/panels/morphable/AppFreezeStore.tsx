@@ -1,8 +1,8 @@
-// Module ID: 8285
-// Function ID: 65390
+// Module ID: 8286
+// Function ID: 65403
 // Dependencies: []
 
-// Module 8285
+// Module 8286
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/panels/morphable/AppFreezeStore.tsx");

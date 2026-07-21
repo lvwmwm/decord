@@ -1,5 +1,5 @@
 // Module ID: 11621
-// Function ID: 90240
+// Function ID: 90252
 // Name: isAuthorizedAppTwoWay
 // Dependencies: []
 // Exports: useShouldWarnAuthorizedAppTwoWay

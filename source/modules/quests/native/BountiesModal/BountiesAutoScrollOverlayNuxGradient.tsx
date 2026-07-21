@@ -1,10 +1,10 @@
-// Module ID: 13822
-// Function ID: 104509
+// Module ID: 13825
+// Function ID: 104541
 // Name: BountiesAutoScrollOverlayNuxGradient
 // Dependencies: []
 // Exports: default
 
-// Module 13822 (BountiesAutoScrollOverlayNuxGradient)
+// Module 13825 (BountiesAutoScrollOverlayNuxGradient)
 let closure_3 = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -40,11 +40,11 @@ export default function BountiesAutoScrollOverlayNuxGradient(active) {
   obj = { style: StyleSheet.absoluteFillObject };
   const items2 = ["" + BRAND_500 + "80", "" + BRAND_500 + "00"];
   obj.colors = items2;
-  obj.locations = ["Text", "lc"];
-  obj.start = { max: 2, guildId: 9 };
-  obj.end = { max: "message", guildId: "PRIMARY_530" };
+  obj.locations = ["replace", "then"];
+  obj.start = {};
+  obj.end = {};
   const items3 = [callback(importDefault(dependencyMap[7]), obj), ];
-  obj1 = { style: StyleSheet.absoluteFillObject, colors: [], locations: ["width", "height"], start: { max: 2, guildId: 9 }, end: { max: "message", guildId: "PRIMARY_530" } };
+  obj1 = { style: StyleSheet.absoluteFillObject, colors: [null, null], locations: [null, null], start: {}, end: {} };
   items3[1] = callback(importDefault(dependencyMap[7]), obj1);
   obj.children = items3;
   return callback2(importDefault(dependencyMap[4]).View, obj);

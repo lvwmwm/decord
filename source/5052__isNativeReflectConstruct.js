@@ -1,5 +1,5 @@
 // Module ID: 5052
-// Function ID: 43113
+// Function ID: 43134
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,31 +18,15 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = { code: "function changeEventCalculator_Pnpm_forceTouchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={forceChange:current.force};}else{changePayload={forceChange:current.force-previous.force};}return{...current,...changePayload};}" };
-let closure_7 = () => {
-  function changeEventCalculator(force, force2) {
-    if (undefined === force2) {
-      let obj = { forceChange: force.force };
-    } else {
-      obj = { forceChange: force.force - force2.force };
-    }
-    return Object.assign({}, force, obj);
-  }
-  changeEventCalculator.__closure = {};
-  changeEventCalculator.__workletHash = 11365193947542;
-  changeEventCalculator.__initData = closure_6;
-  return changeEventCalculator;
-}();
 
-export const ForceTouchGesture = (ContinousBaseGesture) => {
-  class ForceTouchGesture {
+export const NativeGesture = (BaseGesture) => {
+  class NativeGesture {
     constructor() {
       self = this;
-      tmp = ForceTouchGesture(this, ForceTouchGesture);
-      obj = closure_3(ForceTouchGesture);
+      tmp = NativeGesture(this, NativeGesture);
+      obj = closure_3(NativeGesture);
       tmp2 = closure_2;
-      if (closure_8()) {
+      if (closure_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -52,57 +36,27 @@ export const ForceTouchGesture = (ContinousBaseGesture) => {
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.config = {};
-      tmp2Result.handlerName = "ForceTouchGestureHandler";
+      tmp2Result.handlerName = "NativeViewGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = ForceTouchGesture;
-  callback2(ForceTouchGesture, ContinousBaseGesture);
+  let closure_0 = NativeGesture;
+  callback2(NativeGesture, BaseGesture);
   let obj = {
-    key: "minForce",
-    value: function minForce(minForce) {
-      this.config.minForce = minForce;
+    key: "shouldActivateOnStart",
+    value: function shouldActivateOnStart(shouldActivateOnStart) {
+      this.config.shouldActivateOnStart = shouldActivateOnStart;
       return this;
     }
   };
-  const items = [obj, , , ];
+  const items = [obj, ];
   obj = {
-    key: "maxForce",
-    value: function maxForce(maxForce) {
-      this.config.maxForce = maxForce;
+    key: "disallowInterruption",
+    value: function disallowInterruption(disallowInterruption) {
+      this.config.disallowInterruption = disallowInterruption;
       return this;
     }
   };
   items[1] = obj;
-  obj = {
-    key: "feedbackOnActivation",
-    value: function feedbackOnActivation(feedbackOnActivation) {
-      this.config.feedbackOnActivation = feedbackOnActivation;
-      return this;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "onChange",
-    value: function onChange(arg0) {
-      this.handlers.changeEventCalculator = closure_7;
-      const items = [arg0];
-      return function _superPropGet(ForceTouchGesture, onChange, arg2, arg3) {
-        let prototype = ForceTouchGesture;
-        if (1) {
-          prototype = ForceTouchGesture.prototype;
-        }
-        const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
-        let fn = tmpResult;
-        if (2) {
-          fn = tmpResult;
-          if ("function" === typeof tmpResult) {
-            fn = (arg0) => tmpResult.apply(arg2, arg0);
-          }
-        }
-        return fn;
-      }(ForceTouchGesture, "onChange", this, 3)(items);
-    }
-  };
-  return callback(ForceTouchGesture, items);
-}(arg1(dependencyMap[6]).ContinousBaseGesture);
+  return callback(NativeGesture, items);
+}(arg1(dependencyMap[5]).BaseGesture);

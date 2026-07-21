@@ -1,10 +1,10 @@
-// Module ID: 14326
-// Function ID: 108171
+// Module ID: 14329
+// Function ID: 108203
 // Name: useCanRotate
 // Dependencies: []
 // Exports: default
 
-// Module 14326 (useCanRotate)
+// Module 14329 (useCanRotate)
 function useCanRotate() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
@@ -73,8 +73,8 @@ function Content() {
 class TooltipNote {
   constructor() {
     obj = { variant: "text-sm/normal", style: {} };
-    items = [-715990173];
-    items[1] = jsx(arg1(dependencyMap[9]).Text, {});
+    items = [null];
+    items[1] = jsx(arg1(dependencyMap[9]).Text, { <string:1749439162>: null, <string:140675621>: null });
     items[2] = " on the surface you expect to see the tooltip.";
     obj.children = items;
     return jsxs(arg1(dependencyMap[9]).Text, obj);

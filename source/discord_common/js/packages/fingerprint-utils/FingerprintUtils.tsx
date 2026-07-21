@@ -1,7 +1,7 @@
 // Module ID: 490
 // Function ID: 6416
 // Name: extractId
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: maybeExtractId
 
 // Module 490 (extractId)

@@ -1,5 +1,5 @@
 // Module ID: 11115
-// Function ID: 86533
+// Function ID: 86545
 // Name: ForumPostGridHeader
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const ForumTimestampFormats = arg1(dependencyMap[2]).ForumTimestampFormats;
 const ChannelFlags = arg1(dependencyMap[3]).ChannelFlags;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ pinIcon: { marginEnd: 8 }, container: {}, details: { <string:327418114>: "safety_user_sentiment_notice_dismissed_at", <string:1857553135>: "message", <string:152437484>: null }, timestampText: { flex: 1 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ pinIcon: { marginEnd: 8 }, container: {}, details: { -9223372036854775808: true, "Null": true, "Null": true }, timestampText: { flex: 1 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
 

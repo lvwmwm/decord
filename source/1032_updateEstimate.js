@@ -1,5 +1,5 @@
 // Module ID: 1032
-// Function ID: 11108
+// Function ID: 11112
 // Name: updateEstimate
 // Dependencies: []
 
@@ -33,7 +33,7 @@ arg5.getInteractionCount = function getInteractionCount() {
 };
 arg5.initInteractionCountPolyfill = function initInteractionCountPolyfill() {
   if (!tmp) {
-    let closure_2 = arg1(arg6[0]).observe("event", updateEstimate, {});
+    let closure_2 = arg1(arg6[0]).observe("event", updateEstimate, { <string:688953657>: true, <string:357660257>: true, <string:1441816915>: true });
     const obj = arg1(arg6[0]);
   }
 };

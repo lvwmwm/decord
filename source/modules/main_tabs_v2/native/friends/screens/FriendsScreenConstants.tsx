@@ -1,7 +1,7 @@
 // Module ID: 11717
-// Function ID: 90971
+// Function ID: 90983
 // Name: SuggestedFriendSource
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11717 (SuggestedFriendSource)
 const _module = require(dependencyMap[0]);

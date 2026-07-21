@@ -1,12 +1,12 @@
 // Module ID: 5454
-// Function ID: 46601
+// Function ID: 46609
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 5454 (__INTERNAL_VIEW_CONFIG)
-let obj = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: { topAnimationFinish: { phasedRegistrationNames: { display: false, alignItems: false } }, topAnimationFailure: { phasedRegistrationNames: { display: "<string:36199745>", alignItems: "<string:4048638208>" } }, topAnimationLoaded: { phasedRegistrationNames: { display: 1, alignItems: 1916193105 } } } };
+let obj = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: { topAnimationFinish: { phasedRegistrationNames: {} }, topAnimationFailure: { phasedRegistrationNames: {} }, topAnimationLoaded: { phasedRegistrationNames: {} } } };
 const _module = require(dependencyMap[0]);
-obj.validAttributes = Object.assign({}, _module.ConditionallyIgnoredEventHandlers({}));
+obj.validAttributes = Object.assign({}, _module.ConditionallyIgnoredEventHandlers({ display: "Small", alignItems: "sm", display: "Placeholder" }));
 const _module1 = require(dependencyMap[1]);
 obj = {
   play(nodeFromPublicInstance) {

@@ -1,5 +1,5 @@
 // Module ID: 11067
-// Function ID: 86090
+// Function ID: 86101
 // Name: SoundmojiActionSheet
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.soundmojiContainer = {};
+obj.soundmojiContainer = { "Null": 7, "Null": 370 };
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[2]);
 let num;
@@ -22,10 +22,10 @@ if (obj5.isIOS()) {
 obj1.fontSize = num;
 obj1.marginEnd = importDefault(dependencyMap[4]).space.PX_16;
 obj.emoji = obj1;
-const obj5 = arg1(dependencyMap[5]);
-obj.textContainer = { gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj2 = { "Null": "<string:275054593>", "Null": "<string:724697089>", "Null": "<string:1719009284>", gap: importDefault(dependencyMap[4]).space.PX_4 };
+obj.textContainer = obj2;
 let closure_7 = obj.createStyles(obj);
-const obj2 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj5 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/sounds/soundmoji/native/views/SoundmojiActionSheet.tsx");
 
 export default function SoundmojiActionSheet(guildId) {

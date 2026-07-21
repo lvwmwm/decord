@@ -1,5 +1,5 @@
 // Module ID: 10870
-// Function ID: 84537
+// Function ID: 84548
 // Name: handleTapCommandMention
 // Dependencies: []
 // Exports: default
@@ -127,8 +127,7 @@ function handleLongPressCommandMention(commandName, commandId) {
     };
     items.push(obj);
   }
-  obj = { url: 12, body: 2, retries: "transparent", options: items };
-  const result = commandId(dependencyMap[18]).showSimpleActionSheet(obj);
+  const result = commandId(dependencyMap[18]).showSimpleActionSheet({ options: items });
 }
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
@@ -203,7 +202,7 @@ export default function MarkupReactCommandRule(node) {
       callback(node.commandName, node.commandId);
     }
   };
-  const items = [true, arg1(closure_2[23]).smartOutput(node, output, state)];
+  const items = [, arg1(closure_2[23]).smartOutput(node, output, state)];
   obj.children = items;
   return jsxs(arg1(closure_2[20]).Text, obj);
 };

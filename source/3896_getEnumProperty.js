@@ -1,5 +1,5 @@
 // Module ID: 3896
-// Function ID: 32237
+// Function ID: 32242
 // Name: getEnumProperty
 // Dependencies: []
 // Exports: useRiveEnum

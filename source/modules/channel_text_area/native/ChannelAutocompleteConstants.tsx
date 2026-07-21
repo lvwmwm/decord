@@ -1,7 +1,7 @@
 // Module ID: 9632
-// Function ID: 75026
+// Function ID: 75037
 // Name: AutocompleteTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9632 (AutocompleteTypes)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 6913
-// Function ID: 55072
+// Module ID: 6914
+// Function ID: 55084
 // Name: getDeviceMetadata
 // Dependencies: []
 // Exports: default
 
-// Module 6913 (getDeviceMetadata)
+// Module 6914 (getDeviceMetadata)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/device/getDeviceMetadata.native.tsx");
 

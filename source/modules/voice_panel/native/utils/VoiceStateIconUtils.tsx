@@ -1,5 +1,5 @@
 // Module ID: 8859
-// Function ID: 69887
+// Function ID: 69898
 // Name: isStableVoiceStateEqual
 // Dependencies: []
 // Exports: useMuteDeafenIconState, useVideoIconState
@@ -58,7 +58,7 @@ function useStableVideoState(id, guildId) {
         return obj;
       }
     }
-    return { 1638701484: null, 184439138: null };
+    return { padding: null, overflow: null };
   }, items1);
 }
 let closure_3 = importDefault(dependencyMap[0]);

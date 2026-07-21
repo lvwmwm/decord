@@ -1,5 +1,5 @@
 // Module ID: 10069
-// Function ID: 77780
+// Function ID: 77791
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker
@@ -271,12 +271,12 @@ export const getTabTitle = function getTabTitle(id) {
 };
 export const searchModeToSearchQueryParams = function searchModeToSearchQueryParams(searchMode) {
   if (constants3.MOST_RELEVANT === searchMode) {
-    return { 9223372036854775807: "alignItems", 9223372036854775807: "Object" };
+    return {};
   } else if (constants3.OLDEST === searchMode) {
-    return { 9223372036854775807: null, 9223372036854775807: null };
+    return { 9223372036854775807: true, 0: true };
   } else {
     const NEWEST = constants3.NEWEST;
-    return { 9223372036854775807: 9, 9223372036854775807: "hero_art_image_link_dark_theme" };
+    return {};
   }
 };
 export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchMode(sort_by) {
@@ -514,10 +514,10 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   }
   ({ currentToken, nextToken, previousToken } = obj);
   if (0 === tokens.length) {
-    obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants2.EMPTY };
+    obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, type: constants2.EMPTY };
     return obj;
   } else if (null == currentToken) {
-    obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants2.FILTER_ALL };
+    obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, type: constants2.FILTER_ALL };
     return obj;
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {

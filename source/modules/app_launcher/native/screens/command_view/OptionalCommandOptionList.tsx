@@ -1,5 +1,5 @@
 // Module ID: 11301
-// Function ID: 87926
+// Function ID: 87938
 // Name: OptionList
 // Dependencies: []
 // Exports: default
@@ -43,7 +43,7 @@ const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { resizeMode: null, width: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { paddingVertical: null, overflow: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_BORDER);
 obj.container = obj;
 obj.addButton = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };

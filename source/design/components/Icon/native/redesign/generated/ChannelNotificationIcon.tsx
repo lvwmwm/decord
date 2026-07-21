@@ -1,5 +1,5 @@
 // Module ID: 10192
-// Function ID: 78687
+// Function ID: 78698
 // Name: ChannelNotificationIcon
 // Dependencies: []
 // Exports: ChannelNotificationIcon

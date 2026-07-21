@@ -1,10 +1,13 @@
 // Module ID: 13130
-// Function ID: 99487
+// Function ID: 99506
 // Dependencies: []
 
 // Module 13130
-let closure_2 = require(dependencyMap[0])({}.hasOwnProperty);
+const tmp = require(dependencyMap[0]).navigator && require(dependencyMap[0]).navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default Object.hasOwn || function hasOwn(arg0, arg1) {
-  return callback(require(dependencyMap[1])(arg0), arg1);
-};
+export default str;

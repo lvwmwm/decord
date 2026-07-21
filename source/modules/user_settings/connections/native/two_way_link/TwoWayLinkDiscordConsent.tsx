@@ -1,5 +1,5 @@
 // Module ID: 8943
-// Function ID: 70451
+// Function ID: 70462
 // Name: TwoWayLinkDiscordConsent
 // Dependencies: []
 // Exports: TwoWayLinkDiscordConsent
@@ -49,7 +49,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
       return callback(...arguments);
     };
   }(), items);
-  obj = { "Null": "ongeveer 1 jaar", "Null": "ongeveer {{count}} jaar", "Null": "1 jaar", "Null": "{{count}} jaar", "Null": "meer dan 1 jaar", "Null": "meer dan {{count}} jaar", clientId, scopes, callback, redirectUri, withBackPressHandler: false };
+  obj = { "Null": "<string:2126592>", "Null": "<string:2097152>", "Null": "<string:524288>", "Null": "<string:1375797248>", "Null": "<string:1153582274>", "Null": "'kl'. HH:mm:ss zzzz", clientId, scopes, callback, redirectUri, withBackPressHandler: false };
   const tmp6 = importDefault(dependencyMap[9])(obj);
   const sendAuthorize = tmp6.sendAuthorize;
   const items1 = [sendAuthorize];
@@ -75,7 +75,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
   let tmp13 = null != sendAuthorize;
   if (tmp13) {
     const obj6 = { style: twoWayLinkStyles.footerButton };
-    const obj7 = {};
+    const obj7 = { text: true, size: "/assets/.cache/intl/ZGVzaWdu" };
     const intl = arg1(dependencyMap[14]).intl;
     obj7.text = intl.string(arg1(dependencyMap[14]).t.ZN4hkc);
     obj7.onPress = callback1;

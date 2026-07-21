@@ -1,11 +1,11 @@
-// Module ID: 12372
-// Function ID: 94600
+// Module ID: 12374
+// Function ID: 94622
 // Name: _isNativeReflectConstruct
-// Dependencies: [251658240, 131072, 351272960, 31, 27, 6666, 1851, 33, 4126, 689, 5244, 1324, 4550, 668, 3774, 12377, 12378, 7166, 7109, 7110, 7161, 5430, 2, 333040, 2031616, 1769472, 247726080, 368115712, 2162688, 297795584, 270270464, 37093376, 368312320, 471662592, 357957632, 634060800, 292749312, 79429632, 247332864, 633798656, 297533440, 811335680, 131072, 528154624, 452984832, 989855744]
+// Dependencies: [251658240, 131072, 351272960, 31, 27, 6666, 1851, 33, 4126, 689, 5243, 1324, 4550, 668, 3774, 12379, 12380, 7167, 7110, 7111, 7162, 5430, 2, 333040, 2031616, 1769472, 247726080, 368115712, 2162688, 297795584, 270270464, 37093376, 368312320, 471728128, 357957632, 634060800, 292749312, 79429632, 247332864, 633798656, 297533440, 811466752, 131072, 528154624, 452984832, 989855744]
 
-// Module 12372 (_isNativeReflectConstruct)
+// Module 12374 (_isNativeReflectConstruct)
 import module_31 from "module_31";
-import keys from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import importAllResult from "items";
 import GuildFeatures from "GuildFeatures";
 import importDefaultResult from "module_33";
@@ -14,7 +14,7 @@ import importDefaultResult2 from "_createForOfIteratorHelperLoose";
 import importDefaultResult4 from "useIsMobileVisualRefreshExperimentEnabled";
 import DrawerSourceTypes from "DrawerSourceTypes";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_12377 from "module_12377";
+import module_12379 from "module_12379";
 import importDefaultResult3 from "result";
 
 function _isNativeReflectConstruct() {
@@ -32,34 +32,34 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ View: closure_9, ActivityIndicator: closure_10, TouchableWithoutFeedback: closure_11 } = GuildFeatures);
 ({ SubscriptionIntervalTypes: closure_16, PremiumSubscriptionSKUs: closure_17, PremiumGiftStyles: closure_18 } = DrawerSourceTypes);
 ({ jsx: closure_19, jsxs: closure_20 } = _createForOfIteratorHelperLoose);
-module_12377 = { giftGroupCard: {} };
-module_12377 = { borderWidth: 1, borderColor: require("module_12378").colors.CARD_BORDER_DEFAULT, borderRadius: require("module_12378").radii.md, backgroundColor: require("module_12378").colors.TABLEROW_BACKGROUND_DEFAULT };
-module_12377.giftGroupCardRefresh = module_12377;
-const obj1 = { PX_16: "text", ix: "Array", fontFamily: require("LinearGradient").Fonts.PRIMARY_SEMIBOLD, color: require("module_12378").colors.MOBILE_TEXT_HEADING_PRIMARY };
-module_12377.title = obj1;
-module_12377.arrow = { color: require("module_12378").colors.ICON_SUBTLE };
-module_12377.subtitle = {};
-module_12377.titleContainer = { shrink: null, disabled: null };
-module_12377.groupCardHeader = { G15_MASK: null, renderCodedLinks: null, renderGiftCode: null, renderActivityInstanceEmbed: null };
-const obj2 = { color: require("module_12378").colors.ICON_SUBTLE };
-module_12377.groupCardHeaderLegacy = { backgroundColor: require("module_12378").colors.BACKGROUND_SURFACE_HIGH };
-module_12377.rowArrow = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009373835647, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002004522235512734, lv: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043836185955061994 };
-const obj3 = { backgroundColor: require("module_12378").colors.BACKGROUND_SURFACE_HIGH };
-module_12377.giftIcon = { borderRadius: require("module_12378").radii.xs };
-module_12377.generateGiftRow = {};
-const obj4 = { borderRadius: require("module_12378").radii.xs };
-module_12377.generateGiftRowLegacy = { backgroundColor: require("module_12378").colors.BACKGROUND_SURFACE_HIGH };
-module_12377.generateGiftRowText = { flexShrink: 1 };
-module_12377.generateGiftButton = { marginLeft: 12 };
-module_12377.loading = { marginTop: 8 };
-module_12377.generateButtonContainer = {};
-const obj5 = { backgroundColor: require("module_12378").colors.BACKGROUND_SURFACE_HIGH };
-module_12377.groupCardHeaderOpen = { backgroundColor: require("module_12378").colors.BACKGROUND_BASE_LOWEST };
-const obj6 = { backgroundColor: require("module_12378").colors.BACKGROUND_BASE_LOWEST };
-module_12377.groupCardHeaderOpenRefresh = { backgroundColor: require("module_12378").colors.BACKGROUND_MOD_MUTED };
-module_12377.subtitleContainer = { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null };
-module_12377.socialLayerSubtitleContainer = { marginTop: 2 };
-module_12377 = module_12377.createLegacyClassComponentStyles(module_12377);
+module_12379 = { giftGroupCard: {} };
+module_12379 = { borderWidth: 1, borderColor: require("module_12380").colors.CARD_BORDER_DEFAULT, borderRadius: require("module_12380").radii.md, backgroundColor: require("module_12380").colors.TABLEROW_BACKGROUND_DEFAULT };
+module_12379.giftGroupCardRefresh = module_12379;
+const obj1 = { 9223372036854775807: null, 0: null, fontFamily: require("LinearGradient").Fonts.PRIMARY_SEMIBOLD, color: require("module_12380").colors.MOBILE_TEXT_HEADING_PRIMARY };
+module_12379.title = obj1;
+module_12379.arrow = { color: require("module_12380").colors.ICON_SUBTLE };
+module_12379.subtitle = {};
+module_12379.titleContainer = { 906602722: null, -1414893631: null };
+module_12379.groupCardHeader = { trackForumPostLinkCopied: -2057813549, GiftReminderNagbar: 1090584580, VANITY_URL_POWERUP_DCS: 110140, spades: 3186 };
+const obj2 = { color: require("module_12380").colors.ICON_SUBTLE };
+module_12379.groupCardHeaderLegacy = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
+module_12379.rowArrow = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009417410814, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452223535337, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043836185955061994 };
+const obj3 = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
+module_12379.giftIcon = { borderRadius: require("module_12380").radii.xs };
+module_12379.generateGiftRow = {};
+const obj4 = { borderRadius: require("module_12380").radii.xs };
+module_12379.generateGiftRowLegacy = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
+module_12379.generateGiftRowText = { flexShrink: 1 };
+module_12379.generateGiftButton = { marginLeft: 12 };
+module_12379.loading = { marginTop: 8 };
+module_12379.generateButtonContainer = { isArray: null, diversity: null };
+const obj5 = { backgroundColor: require("module_12380").colors.BACKGROUND_SURFACE_HIGH };
+module_12379.groupCardHeaderOpen = { backgroundColor: require("module_12380").colors.BACKGROUND_BASE_LOWEST };
+const obj6 = { backgroundColor: require("module_12380").colors.BACKGROUND_BASE_LOWEST };
+module_12379.groupCardHeaderOpenRefresh = { backgroundColor: require("module_12380").colors.BACKGROUND_MOD_MUTED };
+module_12379.subtitleContainer = { "Null": true, "Null": true, "Bool(false)": true };
+module_12379.socialLayerSubtitleContainer = { marginTop: 2 };
+module_12379 = module_12379.createLegacyClassComponentStyles(module_12379);
 const tmp11 = (Component) => {
   class EntitlementGiftGroupCard {
     constructor(arg0) {
@@ -194,7 +194,7 @@ const tmp11 = (Component) => {
       }
       const items1 = [tmp11, , ];
       const obj3 = { style: tmp.titleContainer };
-      const obj4 = { 1655478700: 217448449, 72438626: 377421825, 1446732292: 964034561, children };
+      const obj4 = { handleMessageFocus: true, enableHome: true, afterMs: true, children };
       const items2 = [callback4(EntitlementGiftGroupCard(closure_2[18]).Text, obj4), ];
       obj5 = {};
       let socialLayerSubtitleContainer = isGameItemSKUResult;
@@ -381,7 +381,7 @@ const tmp11 = (Component) => {
   return callback(EntitlementGiftGroupCard, items);
 }(importAllResult.Component);
 tmp11.contextType = arg1(dependencyMap[42]).ThemeContext;
-const obj7 = { backgroundColor: require("module_12378").colors.BACKGROUND_MOD_MUTED };
+const obj7 = { backgroundColor: require("module_12380").colors.BACKGROUND_MOD_MUTED };
 const items = [importDefaultResult1, importDefaultResult4, importDefaultResult, importDefaultResult2, importDefaultResult3];
 const importDefaultResult5 = importDefault(dependencyMap[43]);
 const tmp12 = importDefault(dependencyMap[43]).connectStores(items, (arg0) => {

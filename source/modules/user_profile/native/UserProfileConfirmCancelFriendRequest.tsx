@@ -1,5 +1,5 @@
 // Module ID: 11643
-// Function ID: 90351
+// Function ID: 90363
 // Name: UserProfileConfirmCancelFriendRequest
 // Dependencies: []
 // Exports: default

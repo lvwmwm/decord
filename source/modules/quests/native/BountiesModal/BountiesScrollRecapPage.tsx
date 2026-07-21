@@ -1,17 +1,17 @@
-// Module ID: 13823
-// Function ID: 104513
+// Module ID: 13826
+// Function ID: 104545
 // Name: BountiesRecapOrbsBackground
 // Dependencies: []
 // Exports: BountiesScrollRecapPage
 
-// Module 13823 (BountiesRecapOrbsBackground)
+// Module 13826 (BountiesRecapOrbsBackground)
 function BountiesRecapOrbsBackground(arg0) {
   let reducedMotion;
   let style;
   ({ style, reducedMotion } = arg0);
   let obj = arg1(dependencyMap[6]);
   if (obj.isAndroid()) {
-    obj = { height: true, backgroundColor: "always", shadowOffset: false, shadowRadius: "list", style };
+    obj = { x-sm: "<string:285213129>", sm: "<string:560365649>", md: "list", md-lg: true, style };
     obj = { url: importDefault(dependencyMap[8]), style: closure_3.absoluteFillObject, autoplay: !reducedMotion };
     obj.children = callback(arg1(dependencyMap[7]).APNGPlayer, obj);
     let tmpResult = tmp(closure_4, obj);
@@ -36,14 +36,14 @@ let closure_9 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
   obj = { overflow: "hidden", borderRadius: lg, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj.root = obj;
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
+  obj = { 1414937504: "isArray", 1380856145: "Array", 86689912: "constructor", 1223236048: "values", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
   obj.content = obj;
-  obj.centeredCopy = { "Bool(true)": "percent", "Bool(true)": 0 };
-  obj.orbsBackground = { homeIcon: -1443089903, dataView: 1649267441, env_key: -1443086512, session_id: 1649267441, player_name: 1091649360, player_version: 112740 };
+  obj.centeredCopy = {};
+  obj.orbsBackground = { 1416126881: 0, 251666713: -8, -1545309167: 0, 1432133730: 20, -1973072813: 300, -1032858308: 1.5 };
   obj.headerLabel = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
-  const obj2 = { padding: 0, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, flexDirection: 0, gap: importDefault(dependencyMap[4]).space.PX_8 };
-  obj.titleRow = obj2;
   const obj1 = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
+  obj.titleRow = { paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_8 };
+  const obj2 = { paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_8 };
   obj.actions = { position: "absolute", left: importDefault(dependencyMap[4]).space.PX_24, right: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_12 };
   const obj4 = {};
   const obj3 = { position: "absolute", left: importDefault(dependencyMap[4]).space.PX_24, right: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_12 };
@@ -71,7 +71,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: items1, pointerEvents: "box-none" };
   const items1 = [tmp.root, style];
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none" };
-  const obj1 = {};
+  const obj1 = { 1636040136: 3434895488224299700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -2073668694: 3434895488225687000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 50398457: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000285122503799495, -359272363: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, 757560358: 3106123662674447000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1637971880: -0.000000008766564835172813, 555308136: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332092618160787 };
   const obj2 = { uri: importDefault(dependencyMap[13]) };
   obj1.source = obj2;
   obj1.style = closure_3.absoluteFillObject;
@@ -81,14 +81,14 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none" };
   const obj5 = { style: tmp.centeredCopy, pointerEvents: "none" };
-  const obj6 = { style: tmp.headerLabel };
+  const obj6 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.headerLabel };
   const intl = arg1(dependencyMap[15]).intl;
   obj6.children = intl.string(arg1(dependencyMap[15]).t.d6Rrn6);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj6), , ];
-  const obj7 = { positionBottom: null, positionRight: null, accessibilityLabel: "+" + orbAmount };
+  const obj7 = { accessibilityLabel: "+" + orbAmount };
   const obj8 = { style: tmp.titleRow };
   const items5 = [callback(arg1(dependencyMap[16]).OrbsIcon, {}), ];
-  const obj9 = { audioCaptureSampleRateMismatchPercent: "isArray", paddingHorizontal: "png", ddd: "row", style: tmp.orbAmount, children: "+" + orbAmount };
+  const obj9 = { color: false, textTransform: false, letterSpacing: false, style: tmp.orbAmount, children: "+" + orbAmount };
   items5[1] = callback(arg1(dependencyMap[14]).Text, obj9);
   obj8.children = items5;
   obj7.children = callback2(closure_4, obj8);
@@ -105,7 +105,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const tmp2 = importDefault(dependencyMap[11])();
   items7[1] = { bottom: importDefault(dependencyMap[11])().bottom + importDefault(dependencyMap[4]).space.PX_8 };
   obj11.style = items7;
-  const obj13 = { 0: "e48043bf745ca0395ac959c7415a3757", 9223372036854775807: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages", 0: "jsona", -9223372036854775808: "Clear this text" };
+  const obj13 = { 1375301351: "d5c9201b5d59debfcddeffefede24edc", 1851925612: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages", -1576709639: "jsona", 1644429137: "Clear this text" };
   const intl3 = arg1(dependencyMap[15]).intl;
   obj13.text = intl3.string(arg1(dependencyMap[15]).t.i4jeWR);
   obj13.onPress = onClose;

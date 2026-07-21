@@ -1,7 +1,7 @@
 // Module ID: 9760
-// Function ID: 75909
+// Function ID: 75920
 // Name: useGiftingPromotionConfig
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 9760 (useGiftingPromotionConfig)

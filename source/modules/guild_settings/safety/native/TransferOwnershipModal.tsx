@@ -1,5 +1,5 @@
 // Module ID: 10979
-// Function ID: 85462
+// Function ID: 85473
 // Name: closeModal
 // Dependencies: []
 // Exports: default

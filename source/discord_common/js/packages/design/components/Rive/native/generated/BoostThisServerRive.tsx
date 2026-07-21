@@ -1,15 +1,15 @@
 // Module ID: 3856
-// Function ID: 32060
+// Function ID: 32065
 // Name: BoostThisServerRive
 // Dependencies: []
 
 // Module 3856 (BoostThisServerRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_7 = { Boost Server: { reducedMotion: "boolean" }, Boost Crystal: { reducedMotion: "boolean" }, Crystal Side B: {}, Crystal Side A: {}, Boost Saved: { reducedMotion: "boolean" } };
-let closure_8 = { Boost Server: [1358955054], Boost Crystal: [1358955054], Crystal Side B: [], Crystal Side A: [], Boost Saved: [1358955054] };
+let closure_8 = { Boost Server: [], Boost Crystal: [], Crystal Side B: [], Crystal Side A: [], Boost Saved: [] };
 let closure_9 = {
   Boost Server: function BoostServerBindings(arg0) {
     let instance;

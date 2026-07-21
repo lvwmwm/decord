@@ -1,7 +1,7 @@
 // Module ID: 10642
-// Function ID: 83097
+// Function ID: 83108
 // Name: updateStageMusicMuted
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
 // Module 10642 (updateStageMusicMuted)

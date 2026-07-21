@@ -1,10 +1,10 @@
-// Module ID: 7887
-// Function ID: 62795
+// Module ID: 7888
+// Function ID: 62808
 // Name: GridAvatar
-// Dependencies: [22, 7898, 4126, 689, 7628, 5444, 5504, 1395, 2, 4325, 7899]
+// Dependencies: [22, 7899, 4126, 689, 7629, 5444, 5504, 1395, 2, 4325, 7900]
 // Exports: default
 
-// Module 7887 (GridAvatar)
+// Module 7888 (GridAvatar)
 import "apply";
 import { View } from "normal";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -54,10 +54,10 @@ function GridAvatar(user) {
   return closure_5(arg1(dependencyMap[8]).Avatar, obj1);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = frozen);
-module_5444 = { avatarRow: { padding: true, paddingBottom: true, flexDirection: true } };
+module_5444 = { avatarRow: {} };
 module_5444 = { backgroundColor: require("module_5504").colors.BACKGROUND_SURFACE_HIGH };
 module_5444.avatarStatusStyle = module_5444;
-module_5444.gridContainer = { "Bool(true)": "FrameEffect_01-2_Out", "Bool(true)": 0, "Bool(true)": 149.75, "Bool(true)": 3 };
+module_5444.gridContainer = { -2146320533: "FrameEffect_01-2_Out", 1244786459: 0, -871786476: 149.75, -2045645503: 3 };
 module_5444 = module_5444.createStyles(module_5444);
 const result = PollLayoutTypes.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarGrid.tsx");
 

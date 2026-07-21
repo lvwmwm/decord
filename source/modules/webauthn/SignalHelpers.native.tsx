@@ -1,5 +1,5 @@
 // Module ID: 5593
-// Function ID: 47508
+// Function ID: 47516
 // Name: SignalHelpers
 // Dependencies: []
 

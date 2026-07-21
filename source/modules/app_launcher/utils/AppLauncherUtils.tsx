@@ -1,10 +1,10 @@
-// Module ID: 7912
-// Function ID: 62929
+// Module ID: 7913
+// Function ID: 62942
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 7912 (_createForOfIteratorHelperLoose)
+// Module 7913 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

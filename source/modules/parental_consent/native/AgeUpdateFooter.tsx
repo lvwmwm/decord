@@ -1,10 +1,10 @@
-// Module ID: 16441
-// Function ID: 127013
+// Module ID: 16449
+// Function ID: 127074
 // Name: AgeUpdateFooter
 // Dependencies: []
 // Exports: default
 
-// Module 16441 (AgeUpdateFooter)
+// Module 16449 (AgeUpdateFooter)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ text: { textAlign: "center" } });

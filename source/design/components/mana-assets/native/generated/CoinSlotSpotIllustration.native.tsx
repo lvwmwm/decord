@@ -1,5 +1,5 @@
 // Module ID: 5957
-// Function ID: 49849
+// Function ID: 49857
 // Name: CoinSlotSpotIllustration
 // Dependencies: []
 // Exports: CoinSlotSpotIllustration

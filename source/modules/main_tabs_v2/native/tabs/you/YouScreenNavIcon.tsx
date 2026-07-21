@@ -1,9 +1,9 @@
-// Module ID: 15354
-// Function ID: 116931
+// Module ID: 15357
+// Function ID: 116970
 // Name: str2
 // Dependencies: []
 
-// Module 15354 (str2)
+// Module 15357 (str2)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
@@ -76,7 +76,7 @@ obj2.marginTop = PX_41;
 obj.label = obj2;
 obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: importDefault(dependencyMap[5]).radii.round, height: num, width: num, position: "absolute", right: 0, top: 0 };
 obj.dot = obj3;
-obj4 = { getFieldErrors: false, convertSurrogateToName: false, GameDepthTier5SmallBadge: false, es-EC: false, scale: false, backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
+obj4 = { skuId: "4344770a7977c211fcddc04a38055e0c", application: "channel_settings_grid_view_example_post", jsx: "png", _distance: true, cix: "/assets/images/native/forum_channels", backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
 const items1 = [{ rotate: "30deg" }];
 obj4.transform = items1;
 obj.nitroSlant = obj4;

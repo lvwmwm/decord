@@ -1,10 +1,10 @@
-// Module ID: 16194
-// Function ID: 125123
+// Module ID: 16202
+// Function ID: 125184
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 16194 (_createForOfIteratorHelperLoose)
+// Module 16202 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

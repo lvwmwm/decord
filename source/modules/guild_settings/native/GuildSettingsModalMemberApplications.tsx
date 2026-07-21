@@ -1,9 +1,9 @@
-// Module ID: 15177
-// Function ID: 114470
+// Module ID: 15180
+// Function ID: 114504
 // Name: memoResult1
 // Dependencies: []
 
-// Module 15177 (memoResult1)
+// Module 15180 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -11,7 +11,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { memo: true, current: true, body: true, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
+obj = { 643086240: -93192191, 1474052828: 2013265920, 1636958258: 16777216, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 obj.containerInner = obj;
 obj.spinnerContainer = { padding: 32 };
 obj.footerSpinner = { paddingVertical: 16 };

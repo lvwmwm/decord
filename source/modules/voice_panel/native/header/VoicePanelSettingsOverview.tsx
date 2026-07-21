@@ -1,9 +1,9 @@
-// Module ID: 15665
-// Function ID: 119664
+// Module ID: 15668
+// Function ID: 119703
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15665 (_createForOfIteratorHelperLoose)
+// Module 15668 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -148,7 +148,7 @@ class VoicePanelSettingsOverviewHeader {
       num3 = 25;
       tmp17 = importDefault(dependencyMap[21]);
       items5 = [, ];
-      items5[0] = jsx(arg1(dependencyMap[25]).LockIcon, { flex: "<string:591855618>", flexGrow: "<string:3578855426>" });
+      items5[0] = jsx(arg1(dependencyMap[25]).LockIcon, {});
       tmp20 = jsx;
       obj6 = {};
       num4 = 24;
@@ -226,8 +226,8 @@ let closure_17 = arg1(dependencyMap[12]).SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_
 const tmp2 = arg1(dependencyMap[10]);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = arg1(dependencyMap[13]));
 const tmp3 = arg1(dependencyMap[13]);
-let obj = { headerContainer: { alignItems: "center" }, channelTitleWrapper: { 623806670: -1924071423, 1091229828: 95301, 291196: 1572864, onTapUsername: 1048576 }, channelTitle: { textAlign: "center" }, channelSubtitle: {} };
-obj = { "Bool(true)": 16777216, "Bool(true)": 277877586, "Bool(true)": 373772581, "Bool(true)": 117, "Bool(true)": 0, "Bool(true)": 0, "Null": 0, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[15]).radii.sm };
+let obj = { headerContainer: { alignItems: "center" }, channelTitleWrapper: {}, channelTitle: { textAlign: "center" }, channelSubtitle: { <string:2228586213>: true, <string:1345935829>: true, <string:1384593893>: true } };
+obj = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[15]).radii.sm };
 obj.secureFrames = obj;
 obj.secureFramesIcon = { marginStart: 4 };
 let closure_21 = arg1(dependencyMap[14]).createStyles(obj);

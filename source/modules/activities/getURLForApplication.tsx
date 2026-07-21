@@ -1,12 +1,10 @@
 // Module ID: 10470
-// Function ID: 81064
+// Function ID: 81075
 // Name: getNonTestModeUrlForApplication
-// Dependencies: [0, 4294967295, 4294967295]
+// Dependencies: []
 // Exports: default
 
 // Module 10470 (getNonTestModeUrlForApplication)
-import __exportStarResult1 from "__exportStarResult1";
-
 function getNonTestModeUrlForApplication(arg0) {
   let combined = null;
   if (null != ACTIVITY_APPLICATION_HOST) {
@@ -26,14 +24,15 @@ function isUsingDevShelfActivityUrlOverride() {
   }
   return useActivityUrlOverride;
 }
+let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 
 export default function getURLForApplication(arg0) {
   if (isUsingDevShelfActivityUrlOverride()) {
     let testModeOriginURL = store.getState().activityUrlOverride;
-  } else if (__exportStarResult1.inTestModeForEmbeddedApplication(arg0)) {
-    testModeOriginURL = __exportStarResult1.testModeOriginURL;
+  } else if (closure_0.inTestModeForEmbeddedApplication(arg0)) {
+    testModeOriginURL = closure_0.testModeOriginURL;
   } else {
     testModeOriginURL = getNonTestModeUrlForApplication(arg0);
   }

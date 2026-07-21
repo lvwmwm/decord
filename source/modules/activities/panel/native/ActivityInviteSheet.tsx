@@ -1,10 +1,10 @@
-// Module ID: 15581
-// Function ID: 118883
+// Module ID: 15584
+// Function ID: 118922
 // Name: Loading
 // Dependencies: []
 // Exports: default
 
-// Module 15581 (Loading)
+// Module 15584 (Loading)
 function Loading() {
   const tmp = callback5();
   const items = [];
@@ -36,7 +36,7 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { <string:2072385530>: "redesign/message-preview/semibold", <string:503443283>: "primary", <string:1638258217>: false, <string:1019498760>: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+obj = { 1011943521: "redesign/message-preview/semibold", 1098867089: "primary", 289264: false, -1062441132: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderHeader = obj;
 const tmp4 = arg1(dependencyMap[8]);
 obj.placeholderLabel = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
@@ -134,7 +134,7 @@ export default function ActivityInviteSheet(activity) {
     });
   }, []);
   obj = { value: analyticsLocations };
-  obj = { <string:466257670>: null, <string:1723177918>: null, <string:1549967611>: null };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   let tmp16 = null != first;
   if (!tmp16) {
     tmp16 = !tmp12;
@@ -156,7 +156,7 @@ export default function ActivityInviteSheet(activity) {
     const obj3 = {};
     const obj4 = {};
     const obj5 = { style: tmp.searchAndShareContainer };
-    const obj6 = { "Null": null, "Null": null, onChange: arg1(closure_2[19]).searchInviteSuggestions };
+    const obj6 = { <string:1439367743>: false, <string:1856005359>: false, onChange: arg1(closure_2[19]).searchInviteSuggestions };
     const intl2 = arg1(closure_2[22]).intl;
     obj6.placeholder = intl2.string(arg1(closure_2[22]).t.iI1gMg);
     obj5.children = callback3(arg1(closure_2[25]).SearchField, obj6);

@@ -1,5 +1,5 @@
 // Module ID: 1346
-// Function ID: 15822
+// Function ID: 15827
 // Name: getVersionedDismissibleContentCurrentVersion
 // Dependencies: []
 // Exports: getVersionedDismissibleContentCurrentVersion
@@ -17,11 +17,11 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
     if (null != marketingBySurface) {
       version = marketingBySurface.version;
     }
-    let num9 = 0;
+    let num10 = 0;
     if (null != version) {
-      num9 = version;
+      num10 = version;
     }
-    return num9;
+    return num10;
   } else if (arg1(dependencyMap[3]).DismissibleContent.ACTIVITIES_VOICE_LAUNCHER_BADGE === id) {
     let obj = { storeState: state.getState(), surface: arg1(dependencyMap[6]).EmbeddedActivitySurfaces.VOICE_LAUNCHER };
     return arg1(dependencyMap[5]).getNewestBadgeableVersion(obj);
@@ -36,10 +36,14 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
           if (arg1(dependencyMap[3]).DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE !== id) {
             if (arg1(dependencyMap[3]).DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_PANEL_APP_WIDGET_CTA !== id) {
               if (arg1(dependencyMap[3]).DismissibleContent.COLLECTIBLES_SHOP_SLAYER_STOREFRONT_PROMOTIONAL_BANNER !== id) {
-                obj = arg1(dependencyMap[8]);
-                obj = { andFail: false };
-                obj.assertUnreachable(id, obj);
-                return 0;
+                if (arg1(dependencyMap[3]).DismissibleContent.COLLECTIBLES_SHOP_GAME_SERVER_HOSTING_BANNER === id) {
+                  return 0;
+                } else {
+                  obj = arg1(dependencyMap[8]);
+                  obj = { andFail: false };
+                  obj.assertUnreachable(id, obj);
+                  return 0;
+                }
               }
             }
           }

@@ -1,7 +1,7 @@
 // Module ID: 12263
-// Function ID: 94035
+// Function ID: 94047
 // Name: useCommonTriggerPoint
-// Dependencies: [270270464, 804847616, 488243200, 523763712, 804913152]
+// Dependencies: [270270464, 804847616, 488308736, 523829248, 804913152]
 // Exports: useCommonTriggerPoint
 
 // Module 12263 (useCommonTriggerPoint)

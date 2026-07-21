@@ -1,9 +1,9 @@
-// Module ID: 15647
-// Function ID: 119486
+// Module ID: 15650
+// Function ID: 119525
 // Name: NOOP
 // Dependencies: []
 
-// Module 15647 (NOOP)
+// Module 15650 (NOOP)
 let DEFAULT_BORDER_RADIUS;
 let DRAWER_SPRING_PHYSICS;
 let LAYOUT_PHYSICS;
@@ -633,7 +633,7 @@ const merged5 = Object.assign(StyleSheet.absoluteFillObject);
 obj6["borderTopLeftRadius"] = DEFAULT_BORDER_RADIUS;
 obj6["borderTopRightRadius"] = DEFAULT_BORDER_RADIUS;
 obj2.scrollView = obj6;
-obj2.scrollViewContent = {};
+obj2.scrollViewContent = { isArray: null, diversity: null };
 const obj5 = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWER };
 obj2.shade = { backgroundColor: importDefault(dependencyMap[14]).colors.MOBILE_BACKGROUND_SCRIM_OPAQUE, zIndex: 0 };
 obj2.shadePressable = { flexGrow: 1 };
@@ -711,8 +711,9 @@ let closure_69 = importAllResult.memo((onPress) => {
   fn.__workletHash = 3656047169284;
   fn.__initData = closure_68;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items };
+  obj = { handleRewardClaimThenView: "1501ab02f5dc6a8a8a6cc03fcd7e4123", EXPIRING_SOON: "zh-TW.messages.1501ab02f5dc6a8a8a6cc03fcd7e4123.compiled.messages", overflow: "jsona" };
   const items = [StyleSheet.absoluteFill, tmp.shade, animatedStyle];
+  obj.style = items;
   obj.children = callback2(Pressable, { style: tmp.shadePressable, onPress: onPress.onPress });
   return callback2(importDefault(dependencyMap[15]).View, obj);
 });
@@ -826,7 +827,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
     let obj5 = channelId(closure_2[15]);
     const animatedRef = obj5.useAnimatedRef();
     let obj6 = channelId(closure_2[15]);
-    const sharedValue4 = obj6.useSharedValue({ 331423826: "heading-xl/medium", -1328781680: "mobile-text-heading-primary", -957717544: "text-lg/semibold", 1727269715: "text-strong", 1384664022: "text-md/normal" });
+    const sharedValue4 = obj6.useSharedValue({ zIndex: "heading-xl/medium", flexDirection: "mobile-text-heading-primary", alignItems: "text-lg/semibold", x: "text-strong", y: "text-md/normal" });
     let obj7 = channelId(closure_2[15]);
     const fn = function f() {
       return { gestureActive: sharedValue4.get().active, connected: connected.get(), mode: mode.get() };
@@ -1007,7 +1008,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       const withRefResult = Gesture3.Pan().enabled(first).manualActivation(true).maxPointers(1).hitSlop({ left: -1 * tmp2.left, right: -1 * tmp2.right }).withRef(dismissToPIPGestureRef);
       const fn2 = function u(arg0) {
         if (!store9.get().cancel) {
-          callback(closure_2[21])(closure_19, { max: -536870861, guildId: -299892737 });
+          callback(closure_2[21])(closure_19, {});
           const obj = {};
           ({ absoluteX: obj.absoluteXStart, absoluteY: obj.absoluteYStart } = arg0);
           obj.active = false;
@@ -1160,7 +1161,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       const obj5 = { gestureState: sharedValue4, mode, VoicePanelModes: setMode, connected, lockScrolling: sharedValue1, scrollPosition, POP_RESISTANCE: tmp2, PIP_POP_HEIGHT: 180, runOnJS: scrollPosition(setPanelFullscreen[15]).runOnJS, triggerHapticFeedback: scrollPosition(setPanelFullscreen[23]).triggerHapticFeedback, HapticFeedbackTypes: scrollPosition(setPanelFullscreen[23]).HapticFeedbackTypes, updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), wrapperOffset };
       const fn5 = function s() {
         const result = store8.set(false);
-        callback(closure_2[21])(closure_29, { -1231188844: null, 1541327397: null });
+        callback(closure_2[21])(closure_29, { 1302886172: null, 1113720498: null });
         callback(closure_2[21])(closure_19, { gestureActive: false });
       };
       const onChangeResult = onTouchesMoveResult.onChange(fn4);
@@ -1190,11 +1191,11 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
             if (velocityY > 0) {
               if (store2.get()) {
                 if (store9.get().requiresPop) {
-                  callback(closure_2[21])(closure_19, { users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+                  callback(closure_2[21])(closure_19, { "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
                   const result1 = store8.set(false);
                 } else {
                   store(closure_2[15]).runOnJS(constants)(constants.PIP);
-                  callback(closure_2[21])(closure_19, { users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+                  callback(closure_2[21])(closure_19, { "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
                   const obj3 = store(closure_2[15]);
                 }
               } else {
@@ -1205,12 +1206,12 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
                   obj1 = store(closure_2[15]);
                   obj1.runOnJS(closure_8)();
                 } else {
-                  callback(closure_2[21])(closure_19, { users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+                  callback(closure_2[21])(closure_19, { "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
                   const result2 = store8.set(false);
                 }
               }
             } else {
-              callback(closure_2[21])(closure_19, { users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+              callback(closure_2[21])(closure_19, { "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
               const result3 = store8.set(false);
             }
           }
@@ -1222,7 +1223,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       fn6.__initData = closure_41;
       const obj7 = { gestureState: sharedValue4, mode, VoicePanelModes: setMode, calculatePIPPositionFromVelocity: scrollPosition(setPanelFullscreen[24]).calculatePIPPositionFromVelocity, windowDimensions, safeArea, updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), wrapperDimensions, wrapperOffset, connected, runOnJS: scrollPosition(setPanelFullscreen[15]).runOnJS, setMode, lockScrolling: sharedValue1, MIN_DISMISS_MOVE_PERCENTAGE: 0.2, dismissPanel };
       const fn7 = function t() {
-        callback(closure_2[21])(closure_29, { -1231188844: null, 1541327397: null });
+        callback(closure_2[21])(closure_29, { 1302886172: null, 1113720498: null });
       };
       const onEndResult = onTouchesCancelledResult.onEnd(fn6);
       fn7.__closure = { updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), gestureState: sharedValue4 };
@@ -1494,9 +1495,9 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
     items6[1] = callback2(arg1(closure_2[19]).GestureDetector, obj6);
     obj3.children = items6;
     items5[1] = callback3(AnimatedWrapper, obj3);
+    items5[2] = callback2(importDefault(closure_2[46]), {});
     const obj11 = { gestureState };
-    items5[2] = callback2(importDefault(closure_2[46]), obj11);
-    items5[3] = callback2(importDefault(closure_2[47]), {});
+    items5[3] = callback2(importDefault(closure_2[47]), obj11);
     obj2.children = items5;
     items4[2] = callback3(tmp20, obj2);
     obj.children = items4;

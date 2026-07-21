@@ -1,5 +1,5 @@
 // Module ID: 11468
-// Function ID: 89329
+// Function ID: 89341
 // Name: openAcceptMessageRequestConfirmModal
 // Dependencies: []
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal

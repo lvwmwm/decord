@@ -1,5 +1,5 @@
 // Module ID: 5621
-// Function ID: 47962
+// Function ID: 47970
 // Name: getOrbPriceFromPrices
 // Dependencies: []
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage

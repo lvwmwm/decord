@@ -1,5 +1,5 @@
 // Module ID: 10003
-// Function ID: 77306
+// Function ID: 77317
 // Name: ChannelSpoiler
 // Dependencies: []
 // Exports: default
@@ -14,10 +14,10 @@ let closure_8 = importDefault(dependencyMap[5]);
 const VoicePanelControlsModes = arg1(dependencyMap[6]).VoicePanelControlsModes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { subtitle: { <string:4142373395>: 2, <string:3898509951>: "text-md/semibold" }, subtitleContainer: { alignItems: "center" } };
-obj = { <string:1358955563>: "<string:17891332>", <string:4217575495>: "OPT_OUT_PRICE_INCREASE", <string:173102172>: "<string:2733129984>", <string:1649698307>: "<string:1090584578>", backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+obj = { subtitle: {}, subtitleContainer: { alignItems: "center" } };
+obj = { sa: "surrogates", Array: "y", a: "isArray", skuId: "key", backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.divider = obj;
-obj.subtitleMeasure = {};
+obj.subtitleMeasure = { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" };
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/spoiler_channels/native/ChannelSpoiler.tsx");
@@ -73,7 +73,7 @@ export default function ChannelSpoiler(channelId) {
     channelIconComponent = obj3.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {
-    obj = { style: {} };
+    obj = { style: { 2036930899: "th", 1628470960: "recordCanvas", -154250777: "STICKER_PACK_VIEW_ALL", 1373095266: "<string:1312948480>" } };
     const items4 = [callback2(channelIconComponent, {}), ];
     obj = {};
     obj1 = { flexShrink: 1 };
@@ -96,7 +96,7 @@ export default function ChannelSpoiler(channelId) {
     if ("" !== str.trim()) {
       const obj2 = { spacing: 4, style: tmp2.subtitleContainer };
       obj3 = { style: tmp2.subtitleMeasure, pointerEvents: "none" };
-      const obj4 = { onTextLayout: callback1 };
+      const obj4 = { space: 2539982792701946800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, disabled: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012329723729218196, onTextLayout: callback1 };
       const obj5 = { channelId: stateFromStores1.id };
       obj4.children = importDefault(dependencyMap[20]).parseTopic(stateFromStores1.topic, true, obj5);
       obj3.children = callback2(arg1(dependencyMap[17]).Text, obj4);

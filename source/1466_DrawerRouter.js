@@ -1,15 +1,14 @@
 // Module ID: 1466
-// Function ID: 17008
+// Function ID: 17013
 // Name: DrawerRouter
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
 // Module 1466 (DrawerRouter)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-
-let closure_3 = [];
-const merged = Object.assign({}, require("__exportStarResult1").TabActions, {
+let closure_3 = [null];
+let closure_4 = importDefault(dependencyMap[0]);
+let closure_5 = importDefault(dependencyMap[1]);
+const merged = Object.assign({}, arg1(dependencyMap[2]).TabActions, {
   openDrawer() {
     return { type: "OPEN_DRAWER" };
   },

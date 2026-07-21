@@ -1,9 +1,9 @@
-// Module ID: 6973
-// Function ID: 55726
+// Module ID: 6974
+// Function ID: 55738
 // Name: InviteSendStates
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6973 (InviteSendStates)
+// Module 6974 (InviteSendStates)
 const obj = { GUILD: 0, [0]: "GUILD", GROUP_DM: 1, [1]: "GROUP_DM", FRIEND: 2, [2]: "FRIEND" };
 const items = [, ];
 ({ GUILD: arr[0], GROUP_DM: arr[1] } = obj);

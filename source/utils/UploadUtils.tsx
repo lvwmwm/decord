@@ -1,10 +1,10 @@
-// Module ID: 4664
-// Function ID: 40467
+// Module ID: 4663
+// Function ID: 40474
 // Name: items
 // Dependencies: []
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4664 (items)
+// Module 4663 (items)
 let obj = {
   reName: /\.jpe?g$/i,
   name(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 4673
-// Function ID: 40699
+// Module ID: 4672
+// Function ID: 40706
 // Name: NativePermissionsRequestOptions
 // Dependencies: []
 
-// Module 4673 (NativePermissionsRequestOptions)
+// Module 4672 (NativePermissionsRequestOptions)
 importDefault(dependencyMap[0]).initialize();
 const ProcessArgs = arg1(dependencyMap[1]).ProcessArgs;
 if (ProcessArgs.isDiscordTestSet()) {

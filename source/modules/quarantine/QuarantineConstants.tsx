@@ -1,7 +1,7 @@
 // Module ID: 11474
-// Function ID: 89363
+// Function ID: 89375
 // Name: QUARANTINE_APPEAL_LINK
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11474 (QUARANTINE_APPEAL_LINK)
 const _module = require(dependencyMap[0]);

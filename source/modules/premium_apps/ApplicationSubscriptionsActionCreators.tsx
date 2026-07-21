@@ -1,10 +1,10 @@
-// Module ID: 13297
-// Function ID: 101016
+// Module ID: 13299
+// Function ID: 101038
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13297 (_createForOfIteratorHelperLoose)
+// Module 13299 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

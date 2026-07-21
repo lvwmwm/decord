@@ -1,10 +1,10 @@
 // Module ID: 1357
-// Function ID: 16275
+// Function ID: 16280
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1357 (set)
-const obj = { ALL: new Set(["Text", "lc"]) };
+const obj = { ALL: new Set(["replace", "then"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSortOrder.tsx");
 

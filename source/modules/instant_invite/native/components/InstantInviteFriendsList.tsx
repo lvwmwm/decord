@@ -1,5 +1,5 @@
 // Module ID: 12079
-// Function ID: 93169
+// Function ID: 93181
 // Name: keyExtractor
 // Dependencies: []
 // Exports: default
@@ -34,8 +34,8 @@ function FriendsEmptyComponent() {
   };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj.accessibilityLabel = intl3.string(arg1(dependencyMap[7]).t.a7FVbE);
-  obj.hitSlop = { "Null": "Array", "Null": "gradientTop", "Null": "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", "Null": "showReferralNotificationDot" };
-  const obj1 = { "Null": false, "Null": false, "Null": false };
+  obj.hitSlop = {};
+  const obj1 = { delete: false, dispatch: false, raw: false };
   const items1 = [tmp.goToFriendsLink];
   obj1.style = items1;
   const intl4 = arg1(dependencyMap[7]).intl;

@@ -1,10 +1,10 @@
-// Module ID: 12591
-// Function ID: 96784
+// Module ID: 12593
+// Function ID: 96806
 // Name: JoinVoiceChannelButton
 // Dependencies: []
 // Exports: default
 
-// Module 12591 (JoinVoiceChannelButton)
+// Module 12593 (JoinVoiceChannelButton)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);

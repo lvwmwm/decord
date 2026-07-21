@@ -1,9 +1,9 @@
-// Module ID: 15221
-// Function ID: 114918
+// Module ID: 15224
+// Function ID: 114952
 // Name: SearchHistoryRemoveIcon
 // Dependencies: []
 
-// Module 15221 (SearchHistoryRemoveIcon)
+// Module 15224 (SearchHistoryRemoveIcon)
 function SearchHistoryRemoveIcon(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
@@ -13,7 +13,7 @@ function SearchHistoryRemoveIcon(searchContext) {
   const callback = importAllResult.useCallback(() => {
     const result = searchHistoryItem(closure_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
-  const obj = { "Null": 0, "Null": 3.896, "Null": 5, onPress: callback, style: { marginLeft: 16 }, hitSlop: { 0: "<string:137971085>", 0: "<string:706150401>", 0: "<string:1455226884>", -9223372036854775808: "<string:1503789057>" }, children: callback(arg1(dependencyMap[12]).XSmallIcon, {}) };
+  const obj = { 122814468: 0, 1158220809: 3.896, 301575: 5, onPress: callback, style: { marginLeft: 16 }, hitSlop: {}, children: callback(arg1(dependencyMap[12]).XSmallIcon, {}) };
   return callback(arg1(dependencyMap[11]).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
@@ -41,12 +41,12 @@ function SearchHistoryTextRow(searchContext) {
   if (null != tags) {
     mapped = tags.map((text) => {
       let obj = { accessibilityRole: "button", style: tmp.tag, children: callback(searchContext(tmp[16]).Text, obj) };
-      obj = { encodingConfig: 80, showRemove: 80, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: null, children: text.text };
+      obj = { "Null": 80, "Null": 80, "Null": null, children: text.text };
       return callback(closure_5, obj, text.text);
     });
   }
   const items1 = [mapped, ];
-  const obj1 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, style: tmp.text, children: searchHistoryItem.text };
+  const obj1 = { "Null": true, "Null": 15.1, "Null": 253, style: tmp.text, children: searchHistoryItem.text };
   items1[1] = callback(arg1(dependencyMap[16]).Text, obj1);
   obj.children = items1;
   obj.label = closure_11(View, obj);
@@ -232,12 +232,12 @@ const SearchHistoryItemTypes = arg1(dependencyMap[6]).SearchHistoryItemTypes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
 let obj = {};
-obj = { "Bool(false)": 109907, "Bool(false)": 67503, "Bool(false)": -1699303086, "Bool(false)": 1564545433, "Bool(false)": 1912603216, "Bool(false)": 24, borderRadius: importDefault(dependencyMap[9]).radii.xl, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT };
+obj = { borderRadius: importDefault(dependencyMap[9]).radii.xl, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.iconContainer = obj;
 obj.text = { flexShrink: 1 };
-obj.textContainer = { absolute: 177, wide: null, componentStyles: 1, tall: null };
+obj.textContainer = { paths: 177, has: null, TypeError: 1, Symbol: null };
 obj.textIconContainer = { alignSelf: "flex-start" };
-obj1 = { "Null": 1, "Null": "comp_0", "Null": 1, flexDirection: null, alignItems: 0, columnGap: 40, paddingVertical: 40, borderRadius: importDefault(dependencyMap[9]).radii.lg, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+obj1 = { "Null": 1, "Null": "comp_0", "Null": 1, "Null": null, "Null": 0, "Null": 40, textAlignVertical: 40, borderRadius: importDefault(dependencyMap[9]).radii.lg, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.tag = obj1;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = [];

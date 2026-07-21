@@ -1,7 +1,7 @@
 // Module ID: 6742
-// Function ID: 52477
+// Function ID: 52485
 // Name: AutomodQuarantineUserMessageEmbedKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6742 (AutomodQuarantineUserMessageEmbedKeys)
 const _module = require(dependencyMap[0]);

@@ -1,11 +1,11 @@
 // Module ID: 53
 // Function ID: 1382
-// Dependencies: [239]
+// Dependencies: [4294967295]
 
 // Module 53
-for (const key10018 in require("module_239")) {
+for (const key10018 in arg1(arg6[0])) {
   let tmp2 = key10018;
-  arg5[key10018] = require("module_239")[key10018];
+  arg5[key10018] = arg1(arg6[0])[key10018];
 }
 
-export { default } from "module_239";
+export default importDefault(dependencyMap[0]);

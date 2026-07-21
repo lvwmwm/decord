@@ -1,5 +1,5 @@
 // Module ID: 4187
-// Function ID: 36014
+// Function ID: 36022
 // Name: DesktopSources
 // Dependencies: []
 
@@ -52,10 +52,10 @@ export const DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE = 1500000;
 export const DESKTOP_LOW_QUALITY_STREAM_MIN_BITRATE = 500000;
 export const DESKTOP_BITRATE = 3500000;
 export const DESKTOP_BITRATE_ENHANCED = 9000000;
-export const MEDIA_SINK_WANTS_PROPERTIES = ["<string:3881934617>", "<string:851888209>", "<string:3435973837>", "<string:1079717068>", "<string:3435973837>", "<string:1079717068>"];
-export const defaultVideoQualityOptions = { videoBudget: { useState: "absolute", status: "flex", body: "100%" }, videoCapture: { useState: "absolute", status: "flex", body: "100%" }, videoBitrate: {}, desktopBitrate: { "Bool(false)": "relative", "Bool(false)": 8, "Bool(false)": 0 }, videoBitrateFloor: 150000 };
+export const MEDIA_SINK_WANTS_PROPERTIES = [1298722328, 214599, 217461, 218165, 111443, 174517];
+export const defaultVideoQualityOptions = { videoBudget: {}, videoCapture: {}, videoBitrate: { Math: "flex", data: "100%" }, desktopBitrate: {}, videoBitrateFloor: 150000 };
 export const BIT_FLOOR_PER_PIXEL = 0.02;
-export const VideoHealthManagerConfig = {};
+export const VideoHealthManagerConfig = { sendableWithPremium: 8, regexPatterns: 0, PARTY: 4, bbuXIn: 12, playstationVersion: true };
 export const VIEWERSIDE_CLIP_KFI_MS = 60000;
 export const DARWIN_H265_VERSION = ">=22.0.0";
 export const QUEUE_METRICS_INTERVAL_MS = 900000;

@@ -1,9 +1,14 @@
-// Module ID: 13500
-// Function ID: 102446
+// Module ID: 13502
+// Function ID: 102468
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 
-// Module 13500 (_isNativeReflectConstruct)
+// Module 13502 (_isNativeReflectConstruct)
+import result from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,10 +18,6 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = false;
 let closure_8 = [];
@@ -25,7 +26,7 @@ let tmp2 = (Store) => {
   class WebAuthnStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, WebAuthnStore);
+      tmp = result(this, WebAuthnStore);
       obj = closure_5(WebAuthnStore);
       tmp2 = closure_4;
       if (closure_10()) {

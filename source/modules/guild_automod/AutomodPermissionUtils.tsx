@@ -1,5 +1,5 @@
 // Module ID: 3762
-// Function ID: 28832
+// Function ID: 28837
 // Name: getAutomodQuarantinedProfileFlags
 // Dependencies: []
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodReason, useCurrentUserAutomodQuaratinedProfile

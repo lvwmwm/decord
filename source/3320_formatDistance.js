@@ -1,11 +1,11 @@
 // Module ID: 3320
-// Function ID: 26104
+// Function ID: 26109
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3320 (formatDistance)
-let closure_0 = { lessThanXSeconds: {}, xSeconds: { -9223372036854775808: "0", 0: "AM" }, halfAMinute: "jum\u0103tate de minut", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: {}, aboutXHours: { -9223372036854775808: true, 0: true }, xHours: { -9223372036854775808: -994952638219622700000000000000000000000000000000000000000000000000000000000000000000000, 0: -297627945878512600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, xDays: { -9223372036854775808: null, 0: null }, aboutXWeeks: { -9223372036854775808: null, 0: null }, xWeeks: {}, aboutXMonths: { -9223372036854775808: "amiaz\u0103", 0: "diminea\u021B\u0103" }, xMonths: { -9223372036854775808: "<string:1544749059>", 0: "<string:2423259139>" }, aboutXYears: {}, xYears: { -9223372036854775808: 1967259651, 0: 1967259651 }, overXYears: { -9223372036854775808: null, 0: null }, almostXYears: { -9223372036854775808: null, 0: null } };
+let closure_0 = { lessThanXSeconds: {}, xSeconds: { "Bool(false)": "<string:939524418>", "Bool(false)": "<string:687866636>" }, halfAMinute: "jum\u0103tate de minut", lessThanXMinutes: { "Bool(false)": true, "Bool(false)": true }, xMinutes: { "Bool(false)": null, "Bool(false)": null }, aboutXHours: {}, xHours: { "Bool(false)": "amiaz\u0103", "Bool(false)": "diminea\u021B\u0103" }, xDays: { "Bool(false)": false, "Bool(false)": false }, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: { "Bool(false)": false, "Bool(false)": false }, aboutXYears: { "Bool(false)": 1358954496, "Bool(false)": -1508555582 }, xYears: { "Bool(false)": null, "Bool(false)": null }, overXYears: {}, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

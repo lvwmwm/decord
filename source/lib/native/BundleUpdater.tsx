@@ -1,5 +1,5 @@
 // Module ID: 10930
-// Function ID: 84986
+// Function ID: 84997
 // Name: BundleUpdaterManager
 // Dependencies: []
 
@@ -102,20 +102,20 @@ const tmp6 = () => {
         let obj = lib(closure_2[10]);
         obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
         obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008825708128252117]));
+        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, [null]));
       });
       match.with({ type: "OtaCheckAttempt" }, (result) => {
         closure_7.verbose("OTA check attempt", result);
         let obj = lib(closure_2[10]);
         obj = { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming };
         obj.track(constants.MOBILE_OTA_CHECK_ATTEMPT, obj);
-        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008825708128252117]));
+        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, [null]));
       }).with({ type: "OtaAssetDownloadAttempt" }, (result) => {
         closure_7.verbose("OTA asset download attempt", result);
         let obj = lib(closure_2[10]);
         obj = { result: result.result, duration_seconds: result.durationSeconds, error: result.error, url: result.url, status_code: result.statusCode, bytes_received: result.bytesReceived };
         obj.track(constants.MOBILE_OTA_ASSET_DOWNLOAD_ATTEMPT, obj);
-        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, [null, null]));
+        return lib(closure_2[11]).increment(lib.prepareOtaMetricForDatadog(result, ["bind", "messageId"]));
       }).exhaustive();
     }
   };

@@ -1,17 +1,12 @@
 // Module ID: 7201
-// Function ID: 57998
+// Function ID: 58009
 // Dependencies: []
 
 // Module 7201
-for (const key10015 in arg1(arg6[0])) {
-  let tmp2 = key10015;
-  arg5[key10015] = arg1(arg6[0])[key10015];
-}
-for (const key10020 in arg1(arg6[1])) {
-  let tmp3 = key10020;
-  arg5[key10020] = arg1(arg6[1])[key10020];
-}
-for (const key10025 in arg1(arg6[2])) {
-  let tmp4 = key10025;
-  arg5[key10025] = arg1(arg6[2])[key10025];
-}
+arg5.ReplacementModesAndroid = { UNKNOWN_REPLACEMENT_MODE: 0, [0]: "UNKNOWN_REPLACEMENT_MODE", WITH_TIME_PRORATION: 1, [1]: "WITH_TIME_PRORATION", CHARGE_PRORATED_PRICE: 2, [2]: "CHARGE_PRORATED_PRICE", WITHOUT_PRORATION: 3, [3]: "WITHOUT_PRORATION", CHARGE_FULL_PRICE: 5, [5]: "CHARGE_FULL_PRICE", DEFERRED: 6, [6]: "DEFERRED" };
+arg5.PurchaseStateAndroid = { UNSPECIFIED_STATE: 0, [0]: "UNSPECIFIED_STATE", PURCHASED: 1, [1]: "PURCHASED", PENDING: 2, [2]: "PENDING" };
+arg5.PROMOTED_PRODUCT = "iap-promoted-product";
+arg5.InstallSourceAndroid = { NOT_SET: 0, [0]: "NOT_SET", GOOGLE_PLAY: 1, [1]: "GOOGLE_PLAY", AMAZON: 2, [2]: "AMAZON" };
+arg5.ProductType = { subs: "subs", sub: "sub", inapp: "inapp", iap: "iap" };
+arg5.TransactionReason = { PURCHASE: "PURCHASE", RENEWAL: "RENEWAL" };
+arg5.SubscriptionPlatform = { android: "android", amazon: "amazon", ios: "ios" };

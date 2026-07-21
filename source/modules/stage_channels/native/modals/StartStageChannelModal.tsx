@@ -1,5 +1,5 @@
 // Module ID: 8466
-// Function ID: 67528
+// Function ID: 67539
 // Name: closeModal
 // Dependencies: []
 
@@ -99,7 +99,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGR
 obj.container = obj;
 obj.contentContainer = { paddingHorizontal: 16 };
 obj.contentTopSpacing = { paddingTop: 16 };
-obj.header = { guild: 24, body: "recent_games_enabled" };
+obj.header = { accessibilityRole: 24, GuildBadgeFrog: "recent_games_enabled" };
 obj.headerTitle = {};
 obj.headerSubtitle = { textAlign: "center" };
 obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.xs, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
@@ -110,7 +110,7 @@ obj.optionExplanation = {};
 const tmp4 = arg1(dependencyMap[8]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.label = {};
-const obj3 = { flexDirection: "be0495259d7800ba5ff04ac01243104d", flexWrap: "LocationIcon", justifyContent: "png", paddingHorizontal: null, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[10]).radii.xs };
+const obj3 = { "Bool(true)": "be0495259d7800ba5ff04ac01243104d", "Bool(true)": "LocationIcon", "Bool(true)": "png", "Bool(true)": null, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[10]).radii.xs };
 obj.pill = obj3;
 obj.pillLabel = { textTransform: "uppercase" };
 const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.md };
@@ -273,7 +273,7 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   obj2.children = stringResult1;
   items3[2] = obj(arg1(dependencyMap[21]).Text, obj2);
   obj.children = items3;
-  obj3 = { accessible: null, type: null, padding: null, style: tmp.container };
+  obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, style: tmp.container };
   const items4 = [tmp.contentContainer, ];
   let contentTopSpacing = null;
   const tmp28 = importDefault(dependencyMap[24])(first, memo, first2);
@@ -303,7 +303,7 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   items5[2] = obj(arg1(dependencyMap[20]).FormInput, obj5);
   let tmp49 = null != helpText;
   if (tmp49) {
-    const obj6 = { style: tmp.optionExplanation, children: helpText };
+    const obj6 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.optionExplanation, children: helpText };
     tmp49 = obj(arg1(dependencyMap[21]).Text, obj6);
   }
   items5[3] = tmp49;
@@ -353,7 +353,7 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   const tmp45Result = tmp45(tmp46, obj3);
   let tmp73 = tmp45Result;
   if (null == guild) {
-    const obj13 = { <string:2958189153>: null, <string:1661207664>: null, style: tmp.container };
+    const obj13 = { paddingVertical: null, paddingHorizontal: null, style: tmp.container };
     const obj14 = { style: tmp.keyboardAwareView };
     const obj15 = { guild };
     const items6 = [obj(NavigationBar, obj15), tmp45Result];

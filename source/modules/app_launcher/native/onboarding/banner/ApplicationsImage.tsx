@@ -1,5 +1,5 @@
 // Module ID: 11159
-// Function ID: 86759
+// Function ID: 86771
 // Name: ApplicationsImage
 // Dependencies: []
 // Exports: default

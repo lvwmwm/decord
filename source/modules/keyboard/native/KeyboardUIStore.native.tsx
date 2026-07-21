@@ -1,5 +1,5 @@
 // Module ID: 1454
-// Function ID: 16954
+// Function ID: 16959
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addKeyboardTypeChangedListener, addKeyboardWillOpenChangedListener, setKeyboardType
@@ -283,8 +283,8 @@ function createInitialEntryState(main) {
   let obj = { customKeyboardHeight: getCustomKeyboardHeight(0, require(dependencyMap[4]).KeyboardTypes.SYSTEM, false, main), customKeyboardHeightExcludingSafeAreaInsets: getCustomKeyboardHeight(0, require(dependencyMap[4]).KeyboardTypes.SYSTEM, true, main), keyboardContexts: obj, keyboardDuration: 0, keyboardHeight: getSystemKeyboardHeight(obj2), keyboardHeightExcludingSafeAreaInsets: getSystemKeyboardHeight(obj3), systemKeyboardOpen: false, keyboardType: require(dependencyMap[4]).KeyboardTypes.SYSTEM, keyboardTypePrevious: require(dependencyMap[4]).KeyboardTypes.SYSTEM };
   obj = { [closure_0(closure_2[4]).KeyboardTypes.SYSTEM]: { keyboardWillOpen: false }, [closure_0(closure_2[4]).KeyboardTypes.EXPRESSION]: ExpressionPickerViewType.EMOJI, [closure_0(closure_2[4]).KeyboardTypes.MEDIA]: obj, [closure_0(closure_2[4]).KeyboardTypes.APP_LAUNCHER]: obj1 };
   obj = { target: MediaKeyboardTarget.CHAT };
-  const obj2 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, "Null": -823154013994709700000000000000000000000000000000000000000000000, appEntryKey: main };
-  const obj3 = { "Null": "isArray", "Null": "isArray", appEntryKey: main };
+  const obj2 = { "Null": 1715544575, "Null": 1409286699, appEntryKey: main };
+  const obj3 = { "Null": "info", "Null": "/", appEntryKey: main };
   return obj;
 }
 const AppLauncherRouteName = require(dependencyMap[0]).AppLauncherRouteName;
@@ -322,7 +322,7 @@ KeyboardEvents.addListener(str, (keyboardDuration) => {
 const KeyboardEvents2 = require(dependencyMap[13]).KeyboardEvents;
 KeyboardEvents2.addListener(str2, () => {
   const result = importDefault(dependencyMap[14]).reactNativeKeyboardDidHide("KeyboardUIStore");
-  updateKeyboardStoreState({ -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -9223372036854775808: -823154013994709700000000000000000000000000000000000000000000000 });
+  updateKeyboardStoreState({});
   const obj = importDefault(dependencyMap[14]);
   require(dependencyMap[15]).onKeyboardChanged(false);
   const item = set1.forEach((arg0) => arg0(false));

@@ -1,10 +1,10 @@
-// Module ID: 7831
-// Function ID: 62406
+// Module ID: 7832
+// Function ID: 62419
 // Name: getDecorationSizeForAvatarSize
 // Dependencies: []
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 7831 (getDecorationSizeForAvatarSize)
+// Module 7832 (getDecorationSizeForAvatarSize)
 let closure_3 = require(dependencyMap[0]).DECORATION_TO_AVATAR_RATIO;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");

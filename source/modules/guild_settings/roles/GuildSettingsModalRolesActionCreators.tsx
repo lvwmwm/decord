@@ -1,9 +1,9 @@
-// Module ID: 16179
-// Function ID: 124977
+// Module ID: 16187
+// Function ID: 125038
 // Name: updateGuildRole
 // Dependencies: []
 
-// Module 16179 (updateGuildRole)
+// Module 16187 (updateGuildRole)
 function updateGuildRole(arg0) {
   return _updateGuildRole(...arguments);
 }

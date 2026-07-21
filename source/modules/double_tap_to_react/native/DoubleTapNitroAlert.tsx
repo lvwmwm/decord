@@ -1,10 +1,10 @@
-// Module ID: 7654
-// Function ID: 61208
+// Module ID: 7655
+// Function ID: 61220
 // Name: DoubleTapNitroAlert
 // Dependencies: []
 // Exports: default
 
-// Module 7654 (DoubleTapNitroAlert)
+// Module 7655 (DoubleTapNitroAlert)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const NITRO_UPSELL_ALERT_KEY = arg1(dependencyMap[2]).NITRO_UPSELL_ALERT_KEY;
@@ -12,7 +12,7 @@ const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const MobileSetting = arg1(dependencyMap[4]).MobileSetting;
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ icon: {} });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ icon: { "Null": null, "Null": null } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapNitroAlert.tsx");
 

@@ -136,7 +136,7 @@ if (tmp11) {
 if (tmp11) {
   const _Object2 = Object;
   const _Symbol4 = Symbol;
-  Object.defineProperty(tmp8.prototype, Symbol.toStringTag, {});
+  Object.defineProperty(tmp8.prototype, Symbol.toStringTag, { "Null": null, "Null": false });
 }
 module.exports.default = tmp8;
 module.exports.AbortController = tmp8;

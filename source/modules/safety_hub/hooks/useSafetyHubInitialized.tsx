@@ -1,5 +1,5 @@
 // Module ID: 11044
-// Function ID: 85953
+// Function ID: 85964
 // Name: useSafetyHubInitialized
 // Dependencies: []
 // Exports: useSafetyHubInitialized

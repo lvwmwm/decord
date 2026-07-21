@@ -1,5 +1,5 @@
 // Module ID: 8912
-// Function ID: 70300
+// Function ID: 70311
 // Name: useCanRingToGuildVoiceChannel
 // Dependencies: []
 // Exports: canRingUsersInChannel, useCanRing

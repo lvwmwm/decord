@@ -1,9 +1,9 @@
-// Module ID: 8196
-// Function ID: 64830
+// Module ID: 8197
+// Function ID: 64843
 // Name: PauseDuration
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8196 (PauseDuration)
+// Module 8197 (PauseDuration)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/PauseDuration.tsx");
 

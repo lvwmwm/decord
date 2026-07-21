@@ -1,5 +1,5 @@
 // Module ID: 10305
-// Function ID: 79524
+// Function ID: 79535
 // Name: BugReporterNotification
 // Dependencies: []
 // Exports: BugReporterNotification
@@ -12,7 +12,7 @@ const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { <string:1632221346>: "<string:16958529>", <string:2722977214>: "<string:553216>", borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { y: "<string:16956481>", isArray: "<string:553216>", borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.preview = obj;
 const tmp2 = arg1(dependencyMap[1]);
 obj.rightAccessoryContainer = { marginLeft: importDefault(dependencyMap[6]).space.PX_12 };

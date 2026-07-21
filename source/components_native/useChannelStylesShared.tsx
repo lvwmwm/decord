@@ -1,5 +1,5 @@
 // Module ID: 10357
-// Function ID: 79929
+// Function ID: 79940
 // Name: styles
 // Dependencies: []
 
@@ -18,10 +18,10 @@ obj1.headerTitleContainer = {};
 obj1.headerRightContainer = {};
 const styles1 = _module1.createStyles(obj1);
 const _module2 = require(dependencyMap[0]);
-const obj4 = { navbarLeft: {}, menuIcon: { marginHorizontal: 2 } };
-const obj5 = { rejectWithError: "9c2cfd53ed0ab3abd70ee33b26a982e5", url: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
+const obj4 = { navbarLeft: { ICON_VOICE_MUTED: true, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: true }, menuIcon: { marginHorizontal: 2 } };
+const obj5 = { -1731343402: "9c2cfd53ed0ab3abd70ee33b26a982e5", -731786967: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
 obj4.mentionBadge = obj5;
-const obj6 = { rejectWithError: "9c2cfd53ed0ab3abd70ee33b26a982e5", url: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
+const obj6 = { -1731343402: "9c2cfd53ed0ab3abd70ee33b26a982e5", -731786967: "channel_following_success_2", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_SURFACE_HIGH };
 obj4.mentionBadgeAlternate = obj6;
 const styles2 = _module2.createStyles(obj4);
 const _module3 = require(dependencyMap[2]);

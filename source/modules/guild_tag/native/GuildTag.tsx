@@ -1,5 +1,5 @@
 // Module ID: 8569
-// Function ID: 68075
+// Function ID: 68086
 // Name: memoResult1
 // Dependencies: []
 
@@ -129,7 +129,7 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
   if (SIZE_12 === undefined) {
     SIZE_12 = GuildTagBadgeSize.SIZE_12;
   }
-  let obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "rgba(0, 0, 0, 0.75)" };
+  let obj = { with_expiration: "ERROR", position: "ERROR", left: "NOT_RESPONDER", right: "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryGuild, obj);
   let dependencyMap;

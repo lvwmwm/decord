@@ -1,17 +1,17 @@
-// Module ID: 15412
-// Function ID: 117632
+// Module ID: 15415
+// Function ID: 117671
 // Name: ChannelSettingsChangeDefaultForumLayout
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15412 (ChannelSettingsChangeDefaultForumLayout)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15415 (ChannelSettingsChangeDefaultForumLayout)
+import closure_3 from "result";
+import closure_4 from "result";
+import { View } from "result";
+import closure_6 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
 class ChannelSettingsChangeDefaultForumLayout {
   constructor(arg0) {
@@ -36,56 +36,55 @@ class ChannelSettingsChangeDefaultForumLayout {
     tmp6 = View;
     tmp7 = jsxs;
     obj = {};
-    intl = require("__exportStarResult1").intl;
-    obj.title = intl.string(require("__exportStarResult1").t.mFMDSq);
+    intl = require("result").intl;
+    obj.title = intl.string(require("result").t.mFMDSq);
     LIST = first;
     if (null == first) {
       tmp8 = arg1;
       tmp9 = dependencyMap;
       num = 10;
-      LIST = require("__exportStarResult1").ForumLayout.LIST;
+      LIST = require("result").ForumLayout.LIST;
     }
     obj.defaultValue = LIST;
     obj.onChange = callback;
     obj.hasIcons = true;
     obj1 = {};
-    obj1.icon = jsx(require("__exportStarResult1").GridSquareIcon, {});
-    intl2 = require("__exportStarResult1").intl;
-    obj1.label = intl2.string(require("__exportStarResult1").t.U+rQfW);
-    obj1.value = require("__exportStarResult1").ForumLayout.GRID;
+    obj1.icon = jsx(require("result").GridSquareIcon, {});
+    intl2 = require("result").intl;
+    obj1.label = intl2.string(require("result").t.U+rQfW);
+    obj1.value = require("result").ForumLayout.GRID;
     items1 = [, ];
-    items1[0] = jsx(require("__exportStarResult1").TableRadioRow, obj1);
+    items1[0] = jsx(require("result").TableRadioRow, obj1);
     obj2 = {};
-    obj2.icon = jsx(require("__exportStarResult1").ListViewIcon, {});
-    intl3 = require("__exportStarResult1").intl;
-    obj2.label = intl3.string(require("__exportStarResult1").t.tuHPRX);
-    obj2.value = require("__exportStarResult1").ForumLayout.LIST;
-    items1[1] = jsx(require("__exportStarResult1").TableRadioRow, obj2);
+    obj2.icon = jsx(require("result").ListViewIcon, {});
+    intl3 = require("result").intl;
+    obj2.label = intl3.string(require("result").t.tuHPRX);
+    obj2.value = require("result").ForumLayout.LIST;
+    items1[1] = jsx(require("result").TableRadioRow, obj2);
     obj.children = items1;
     items2 = [, , , ];
-    items2[0] = tmp7(require("__exportStarResult1").TableRadioGroup, obj);
-    obj3 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>" };
-    obj3.style = tmp.description;
-    intl4 = require("__exportStarResult1").intl;
-    obj3.children = intl4.string(require("__exportStarResult1").t.MbX5Hu);
-    items2[1] = jsx(require("__exportStarResult1").Text, obj3);
+    items2[0] = tmp7(require("result").TableRadioGroup, obj);
+    obj3 = { style: tmp.description };
+    intl4 = require("result").intl;
+    obj3.children = intl4.string(require("result").t.MbX5Hu);
+    items2[1] = jsx(require("result").Text, obj3);
     obj4 = {};
-    intl5 = require("__exportStarResult1").intl;
-    obj4.title = intl5.string(require("__exportStarResult1").t.e4oMl4);
-    items2[2] = jsx(require("__exportStarResult1").TableRowGroupTitle, obj4);
+    intl5 = require("result").intl;
+    obj4.title = intl5.string(require("result").t.e4oMl4);
+    items2[2] = jsx(require("result").TableRowGroupTitle, obj4);
     tmp10 = jsx;
     obj5 = { style: tmp.thumbnailImagePortrait };
-    tmp11 = require("__exportStarResult1");
-    if (first === require("__exportStarResult1").ForumLayout.GRID) {
+    tmp11 = require("result");
+    if (first === require("result").ForumLayout.GRID) {
       tmp15 = closure_1;
       tmp16 = dependencyMap;
       num3 = 17;
-      tmp14 = require("__exportStarResult1");
+      tmp14 = require("result");
     } else {
       tmp12 = closure_1;
       tmp13 = dependencyMap;
       num2 = 18;
-      tmp14 = require("__exportStarResult1");
+      tmp14 = require("result");
     }
     obj5.source = tmp14;
     items2[3] = tmp10(tmp11, obj5);
@@ -93,14 +92,14 @@ class ChannelSettingsChangeDefaultForumLayout {
     return tmp5(tmp6, obj);
   }
 }
-({ jsx: closure_7, jsxs: closure_8 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { flex: 1, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("__exportStarResult1").space.PX_16, paddingTop: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.description = { paddingTop: require("__exportStarResult1").space.PX_8, paddingBottom: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.thumbnailImagePortrait = { alignSelf: "center" };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = result);
+result = {};
+result = { flex: 1, backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: require("result").space.PX_16, paddingTop: require("result").space.PX_16 };
+result.container = result;
+result.description = { paddingTop: require("result").space.PX_8, paddingBottom: require("result").space.PX_16 };
+result.thumbnailImagePortrait = { alignSelf: "center" };
+result = result.createStyles(result);
+result = result.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx");
 
 export default function ConnectedChannelSettingsChangeDefaultForumLayout(channelId) {
   const arg1 = channelId.channelId;

@@ -1,7 +1,7 @@
 // Module ID: 3785
-// Function ID: 29518
+// Function ID: 29523
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 3785 (set)
 let obj = { UNKNOWN: 0, [0]: "UNKNOWN", ADMIN: 1, [1]: "ADMIN", USER: 2, [2]: "USER", FRACTIONAL_PREMIUM: 3, [3]: "FRACTIONAL_PREMIUM", DEFERRED_START: 4, [4]: "DEFERRED_START", USER_TEMPORARY_BAN: 5, [5]: "USER_TEMPORARY_BAN" };

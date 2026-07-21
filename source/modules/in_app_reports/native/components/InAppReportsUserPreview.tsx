@@ -1,5 +1,5 @@
 // Module ID: 12208
-// Function ID: 93749
+// Function ID: 93761
 // Name: UserPreview
 // Dependencies: []
 // Exports: default
@@ -9,15 +9,15 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
+obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
 obj = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
 obj.title = {};
-const obj1 = { "Null": "NitroWumpusOfferingRight3dIllustration", "Null": "EMTLOT", "Null": "tts", "Null": "tts", "Null": "GO_LIVE", "Null": "file", "Null": "EMTLOT", borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.userContainer = obj1;
+const tmp3 = arg1(dependencyMap[2]);
+obj.userContainer = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.userProfileInfo = { marginLeft: 8 };
 let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
+const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUserPreview.tsx");
 
 export default function UserPreview(user) {
@@ -25,7 +25,7 @@ export default function UserPreview(user) {
   const tmp = callback2();
   let obj = arg1(dependencyMap[5]);
   obj = { style: tmp.container };
-  obj = { 2003551622: true, 1366017591: true, 996410372: true, style: tmp.title };
+  obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
   const intl = arg1(dependencyMap[7]).intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   obj.children = intl.string(arg1(dependencyMap[7]).t.Rsth7z).toUpperCase();
@@ -37,10 +37,12 @@ export default function UserPreview(user) {
   const obj3 = { style: tmp.userProfileInfo };
   let tmp5 = null != user.globalName;
   if (tmp5) {
-    const obj4 = { children: user.globalName };
+    const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: user.globalName };
     tmp5 = callback(arg1(dependencyMap[6]).Text, obj4);
   }
-  const items3 = [tmp5, callback(arg1(dependencyMap[6]).Text, { children: user.username })];
+  const items3 = [tmp5, ];
+  const obj5 = { "Null": false, "Null": false, children: user.username };
+  items3[1] = callback(arg1(dependencyMap[6]).Text, obj5);
   obj3.children = items3;
   items2[1] = closure_4(View, obj3);
   obj1.children = items2;

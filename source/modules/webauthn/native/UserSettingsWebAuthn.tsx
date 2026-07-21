@@ -1,10 +1,10 @@
-// Module ID: 13503
-// Function ID: 102468
+// Module ID: 13505
+// Function ID: 102490
 // Name: UserSettingsWebAuthn
 // Dependencies: []
 // Exports: default
 
-// Module 13503 (UserSettingsWebAuthn)
+// Module 13505 (UserSettingsWebAuthn)
 let closure_2 = importAll(dependencyMap[0]);
 const WebAuthnScreens = arg1(dependencyMap[1]).WebAuthnScreens;
 const jsx = arg1(dependencyMap[2]).jsx;

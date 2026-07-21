@@ -1,5 +1,5 @@
 // Module ID: 9902
-// Function ID: 76597
+// Function ID: 76608
 // Name: map
 // Dependencies: []
 // Exports: PileOverflow
@@ -14,7 +14,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.container = obj;
 let closure_6 = obj.createStyles(obj);
-const items = [[], [], ["waiting", "attached"], [48, 49], [1074859868, -1408749273], []];
+const items = [[], [], [], ["isArray", "MAX_FORUM_TAGS"], [1074859868, -1408749273], ["Array", "commonProperty"]];
 const map = new Map(items);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
@@ -37,14 +37,14 @@ export const PileOverflow = function PileOverflow(size) {
   obj.paddingHorizontal = num;
   items1[1] = obj;
   obj.style = items1;
-  const obj1 = {};
+  const obj1 = { 2085692463: null, 839748315: null };
   value = map.get(size);
   let str = "text-md/semibold";
   if (null != value) {
     str = value;
   }
   obj1.variant = str;
-  const items2 = ["fill", arg1(dependencyMap[8]).humanizeValue(value, stateFromStores)];
+  const items2 = [null, arg1(dependencyMap[8]).humanizeValue(value, stateFromStores)];
   obj1.children = items2;
   obj.children = closure_4(arg1(dependencyMap[7]).Text, obj1);
   return closure_5(View, obj);

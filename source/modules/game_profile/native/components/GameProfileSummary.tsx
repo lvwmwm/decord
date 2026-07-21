@@ -1,5 +1,5 @@
 // Module ID: 8638
-// Function ID: 68382
+// Function ID: 68393
 // Name: GameProfileSummary
 // Dependencies: []
 // Exports: default

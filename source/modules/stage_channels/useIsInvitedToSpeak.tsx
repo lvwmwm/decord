@@ -1,5 +1,5 @@
 // Module ID: 10619
-// Function ID: 82825
+// Function ID: 82836
 // Name: useIsInvitedToSpeak
 // Dependencies: []
 // Exports: default

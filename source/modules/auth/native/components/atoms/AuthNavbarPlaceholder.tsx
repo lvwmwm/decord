@@ -1,7 +1,7 @@
 // Module ID: 9217
-// Function ID: 72079
+// Function ID: 72090
 // Name: AuthNavbarPlaceholder
-// Dependencies: [79429632, 498073600, 131072, 368050176, 5, 57]
+// Dependencies: [79429632, 498139136, 131072, 368050176, 5, 57]
 // Exports: default
 
 // Module 9217 (AuthNavbarPlaceholder)

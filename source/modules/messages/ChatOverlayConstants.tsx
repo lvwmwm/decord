@@ -1,7 +1,7 @@
 // Module ID: 10424
-// Function ID: 80302
+// Function ID: 80313
 // Name: ChatOverlays
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10424 (ChatOverlays)
 const _module = require(dependencyMap[0]);

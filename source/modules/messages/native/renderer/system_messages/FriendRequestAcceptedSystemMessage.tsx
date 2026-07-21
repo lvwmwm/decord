@@ -1,15 +1,13 @@
-// Module ID: 7743
-// Function ID: 61505
+// Module ID: 7744
+// Function ID: 61517
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [7620, 653, 7755, 1212, 1920, 2, 7756, 1212, 2, 653, 664]
+// Dependencies: []
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7743 (createFriendRequestAcceptedSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ME from "ME";
-import module_664 from "module_664";
-
-const result = module_664.fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
+// Module 7744 (createFriendRequestAcceptedSystemMessage)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
 
 export const createFriendRequestAcceptedSystemMessage = function createFriendRequestAcceptedSystemMessage(message) {
   message = message.message;

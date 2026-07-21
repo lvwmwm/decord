@@ -1,8 +1,8 @@
-// Module ID: 4588
-// Function ID: 40184
+// Module ID: 4587
+// Function ID: 40191
 // Dependencies: []
 
-// Module 4588
+// Module 4587
 let closure_2 = /\n$/;
 let closure_3 = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/;
 const _module = require(dependencyMap[1]);
@@ -10,7 +10,7 @@ const result = _module.fileFinishedImporting("modules/markup/MarkupSubtextRule.t
 
 export default {
   order: importDefault(dependencyMap[0]).defaultRules.heading.order,
-  requiredFirstCharacters: ["accessibilityRole"],
+  requiredFirstCharacters: [true],
   match(arg0, arg1, str) {
     if (null != str) {
       if ("" !== str) {

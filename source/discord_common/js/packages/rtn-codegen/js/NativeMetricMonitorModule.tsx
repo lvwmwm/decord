@@ -1,9 +1,9 @@
-// Module ID: 6834
-// Function ID: 53977
+// Module ID: 6835
+// Function ID: 53989
 // Name: enforcing
 // Dependencies: []
 
-// Module 6834 (enforcing)
+// Module 6835 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMetricMonitorModule");
 const _module = require(dependencyMap[1]);

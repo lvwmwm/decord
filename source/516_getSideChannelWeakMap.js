@@ -1,14 +1,14 @@
 // Module ID: 516
 // Function ID: 6605
 // Name: getSideChannelWeakMap
-// Dependencies: [528, 517, 553, 517, 551]
+// Dependencies: []
 
 // Module 516 (getSideChannelWeakMap)
-const tmp = require("callBindBasic")("%WeakMap%", true);
-let closure_3 = require("getEvalledConstructor")("WeakMap.prototype.get", true);
-let closure_4 = require("getEvalledConstructor")("WeakMap.prototype.set", true);
-let closure_5 = require("getEvalledConstructor")("WeakMap.prototype.has", true);
-let closure_6 = require("getEvalledConstructor")("WeakMap.prototype.delete", true);
+const tmp = require(dependencyMap[0])("%WeakMap%", true);
+let closure_3 = require(dependencyMap[1])("WeakMap.prototype.get", true);
+let closure_4 = require(dependencyMap[1])("WeakMap.prototype.set", true);
+let closure_5 = require(dependencyMap[1])("WeakMap.prototype.has", true);
+let closure_6 = require(dependencyMap[1])("WeakMap.prototype.delete", true);
 if (tmp) {
   function getSideChannelWeakMap() {
     const obj = {
@@ -88,7 +88,7 @@ if (tmp) {
     return obj;
   }
 } else {
-  getSideChannelWeakMap = require("callBoundIntrinsic");
+  getSideChannelWeakMap = require(dependencyMap[4]);
 }
 
 export default getSideChannelWeakMap;

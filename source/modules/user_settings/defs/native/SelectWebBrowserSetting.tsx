@@ -1,10 +1,10 @@
-// Module ID: 14183
-// Function ID: 107350
+// Module ID: 14186
+// Function ID: 107382
 // Name: useWebBrowserSettingOptions
 // Dependencies: []
 // Exports: useWebBrowserSettingOptions
 
-// Module 14183 (useWebBrowserSettingOptions)
+// Module 14186 (useWebBrowserSettingOptions)
 function useWebBrowserSettingOptions() {
   let obj = require(dependencyMap[1]);
   const items = [];

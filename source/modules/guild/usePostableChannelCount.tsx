@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 116372
+// Module ID: 15303
+// Function ID: 116406
 // Name: useSendMessageChannelCount
 // Dependencies: []
 // Exports: default
 
-// Module 15300 (useSendMessageChannelCount)
+// Module 15303 (useSendMessageChannelCount)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[0]).GUILD_SELECTABLE_CHANNELS_KEY;
 let closure_5 = importDefault(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 7662
-// Function ID: 61243
+// Module ID: 7663
+// Function ID: 61255
 // Name: createChangeChannelNameSystemMessage
 // Dependencies: []
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7662 (createChangeChannelNameSystemMessage)
+// Module 7663 (createChangeChannelNameSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
 

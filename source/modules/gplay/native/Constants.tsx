@@ -1,7 +1,7 @@
 // Module ID: 5618
-// Function ID: 47942
+// Function ID: 47950
 // Name: GPlayConnectionState
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5618 (GPlayConnectionState)
 const _module = require(dependencyMap[0]);

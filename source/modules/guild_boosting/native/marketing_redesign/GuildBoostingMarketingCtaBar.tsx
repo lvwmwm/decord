@@ -1,10 +1,10 @@
-// Module ID: 12387
-// Function ID: 94683
+// Module ID: 12389
+// Function ID: 94705
 // Name: useBoostCountAnimatedStyles
 // Dependencies: []
 // Exports: default
 
-// Module 12387 (useBoostCountAnimatedStyles)
+// Module 12389 (useBoostCountAnimatedStyles)
 function useBoostCountAnimatedStyles(first) {
   const arg1 = first;
   let obj = arg1(dependencyMap[12]);
@@ -34,17 +34,17 @@ const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let closure_14 = 10 * importDefault(dependencyMap[8]).Millis.SECOND;
 let obj = arg1(dependencyMap[9]);
-obj = { heading: {}, headerContent: { <string:3194070405>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:341305938>: "canLaunchActivity", <string:1406624201>: "r", <string:2385774236>: "BGYkaH" } };
-obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+obj = { heading: {}, headerContent: { TimeStampProducer: "isArray", MIN_HEADER_HEIGHT: "accessibilityRole", afterMs: "shapes", thumbHashToApproximateAspectRatio: "hasDiversityParent" } };
+obj = { MiniaturesSpotIllustration: 24, US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: "recent_games_enabled", currentSize: "message", origin_channel_id: "NEUTRAL_60", discordTag: 1, origin_channel_id: "status", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.guildIcon = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.guildIconText = { color: importDefault(dependencyMap[10]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.guildName = { "Bool(false)": 10495, "Bool(false)": 10240, "Bool(false)": 5120 };
+obj.guildName = { 0: 10495, 9223372036854775807: 10240, 0: 5120 };
 obj.guildBoostCountWrapper = { position: "relative" };
-obj.totalBoostCountWrapper = { ks: null, flags: "Recents", st: "All", bottom: 56, flexDirection: 16, alignItems: 8, borderRadius: "row" };
-obj.guildBoostCountIcon = { "Null": false, "Null": false, "Null": false };
+obj.totalBoostCountWrapper = { marginRight: null, opacity: null, position: null, top: null, left: null, right: null, bottom: null };
+obj.guildBoostCountIcon = {};
 obj.guildBoostCount = {};
-obj.guildBoostCurrentUserCountWrapper = {};
+obj.guildBoostCurrentUserCountWrapper = { Z_FINISH: false, Z_BLOCK: false, Z_TREES: false };
 obj.guildBoostCurrentUserCount = { alignSelf: "center" };
 const obj1 = { color: importDefault(dependencyMap[10]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.cta = { borderRadius: importDefault(dependencyMap[10]).radii.xl };
@@ -55,8 +55,8 @@ obj.ctaPrimary = obj3;
 obj.ctaSecondary = { marginTop: 10 };
 obj.giftIcon = { marginRight: 8 };
 obj.gradient = { overflow: "visible" };
-obj.headerWave = {};
-obj.headerStars = { "Bool(false)": "center", "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.headerWave = { <string:2412838916>: "<string:17514305>", <string:3897753604>: "<string:29249792>", <string:2240539019>: "getInviteInstanceId", <string:487015223>: "EXYNOS", <string:2364145668>: "<string:4235264256>", <string:1734803460>: "<string:1375731711>" };
+obj.headerStars = {};
 obj.boostingUnavailablePill = {};
 let closure_15 = obj.createStyles(obj);
 let closure_16 = { code: "function GuildBoostingMarketingCtaBarTsx1(){const{withTiming,isVisible}=this.__closure;return{opacity:withTiming(isVisible?1:0,{duration:250})};}" };
@@ -131,19 +131,19 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
     }
   }
   obj1 = {};
-  obj2 = { onLayout, angle: 160, angleCenter: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 } };
+  obj2 = { onLayout, angle: 160, angleCenter: {} };
   const isPremiumResult = obj3.isPremium(stateFromStores);
   const tmp23 = callback3;
   const items4 = [importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_1, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_2, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_3, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_4, importDefault(closure_2[10]).unsafe_rawColors.PREMIUM_TIER_0_HEADER_GRADIENT_5];
   obj2.colors = items4;
-  obj2.locations = ["executeStateUpdate", "fH9TLT", "abacus", "removeRouteRewriter", "RowType"];
+  obj2.locations = [];
   obj2.useAngle = true;
   obj2.style = tmp.gradient;
-  obj3 = { angle: 0, angleCenter: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 }, colors: [null, null], locations: [null, null], useAngle: true, style: tmp.gradient };
+  obj3 = { angle: 0, angleCenter: {}, colors: [null, null], locations: [null, null], useAngle: true, style: tmp.gradient };
   const tmp26 = importDefault(closure_2[24]);
   const items5 = [callback2(importDefault(closure_2[25]), { guild }), , , ];
   const obj4 = { style: tmp.headerContent };
-  const obj5 = { style: tmp.heading };
+  const obj5 = { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003908191865142266, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014916683265352973, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011162314119832734, style: tmp.heading };
   const intl = arg1(closure_2[27]).intl;
   obj5.children = intl.string(arg1(closure_2[27]).t.AF+Tyh);
   const items6 = [callback2(arg1(closure_2[26]).Text, obj5), , , , ];
@@ -157,8 +157,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
       lib((arg0) => !arg0);
     }
   };
-  const obj8 = { MAX_DICE_COUNT: "<string:2011103234>", onIndexChange: null, TEST_PSEUDOMAP: null, style: tmp.guildName, children: guild.name };
-  const items7 = [callback2(arg1(closure_2[26]).Text, obj8), ];
+  const items7 = [callback2(arg1(closure_2[26]).Text, { style: tmp.guildName, children: guild.name }), ];
   const obj9 = { style: tmp.guildBoostCountWrapper };
   const obj10 = { style: items8 };
   const items8 = [tmp9, tmp.totalBoostCountWrapper];
@@ -172,10 +171,9 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   const items10 = [callback3(importDefault(closure_2[12]).View, obj10), ];
   const obj13 = { style: items11 };
   const items11 = [tmp8, tmp.guildBoostCurrentUserCountWrapper];
-  const obj14 = { "Null": true, "Null": "/assets/images/native/premium/guild_boosting/tier_icons/simple", "Null": 32 };
+  const obj14 = { style: items12 };
   const items12 = [, ];
   ({ guildBoostCount: arr13[0], guildBoostCurrentUserCount: arr13[1] } = tmp);
-  obj14.style = items12;
   const intl3 = arg1(closure_2[27]).intl;
   obj14.children = intl3.format(arg1(closure_2[27]).t.xXb78j, { numSubscriptions: memo });
   obj13.children = callback2(arg1(closure_2[26]).Text, obj14);

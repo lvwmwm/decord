@@ -1,10 +1,10 @@
-// Module ID: 12904
-// Function ID: 98447
+// Module ID: 12906
+// Function ID: 98469
 // Name: SpeakerPulse
 // Dependencies: []
 // Exports: default
 
-// Module 12904 (SpeakerPulse)
+// Module 12906 (SpeakerPulse)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

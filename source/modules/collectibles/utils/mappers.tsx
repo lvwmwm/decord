@@ -1,7 +1,7 @@
 // Module ID: 1829
-// Function ID: 20022
+// Function ID: 20027
 // Name: parseSkuIdFromServerData
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: parseServerUserCollectibles
 
 // Module 1829 (parseSkuIdFromServerData)

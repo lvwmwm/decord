@@ -1,5 +1,5 @@
 // Module ID: 11582
-// Function ID: 90012
+// Function ID: 90024
 // Name: GuildPowerupsWarning
 // Dependencies: []
 // Exports: default
@@ -12,9 +12,9 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[4]).space.PX_24, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg, gap: importDefault(dependencyMap[4]).space.PX_8, overflow: "hidden" };
 obj.container = obj;
-const obj1 = { justifyContent: "isArray", alignItems: "accessibilityRole", top: "value", gap: importDefault(dependencyMap[4]).space.PX_4 };
-obj.contentContainer = obj1;
 const tmp3 = arg1(dependencyMap[2]);
+obj.contentContainer = { gap: importDefault(dependencyMap[4]).space.PX_4 };
+const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
 obj.warningText = { marginTop: importDefault(dependencyMap[4]).space.PX_4 };
 obj.text = { textAlign: "center" };
 let closure_6 = obj.createStyles(obj);
@@ -34,16 +34,19 @@ export default function GuildPowerupsWarning(warnings) {
     obj = { style: tmp.contentContainer };
     obj = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING, size: "md" };
     const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, obj), , , ];
-    const obj1 = { style: tmp.text, children: tmp3 };
+    const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.text, children: tmp3 };
     items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
     const obj2 = { variant: "text-sm/medium", style: tmp.text, children: tmp4 };
     items[2] = callback(arg1(dependencyMap[7]).Text, obj2);
     let mapped;
     if (null != warnings) {
       mapped = warnings.map((children) => {
+        const obj = { hasMaxConnections: -5, isBoostOnlySubscription: 16 };
         const items = [, ];
         ({ warningText: arr[0], text: arr[1] } = tmp);
-        return callback(tmp(closure_2[7]).Text, { style: items, children }, "warning-" + arg1);
+        obj.style = items;
+        obj.children = children;
+        return callback(tmp(closure_2[7]).Text, obj, "warning-" + arg1);
       });
     }
     items[3] = mapped;

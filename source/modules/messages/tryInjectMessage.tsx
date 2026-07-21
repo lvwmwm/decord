@@ -1,5 +1,5 @@
 // Module ID: 11085
-// Function ID: 86201
+// Function ID: 86212
 // Name: createInjectedInGameNuxMessage
 // Dependencies: []
 // Exports: tryCreateInjectedMessage

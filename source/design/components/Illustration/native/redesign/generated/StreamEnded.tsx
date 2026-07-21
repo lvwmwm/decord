@@ -1,5 +1,5 @@
 // Module ID: 10557
-// Function ID: 82460
+// Function ID: 82471
 // Name: getStreamEndedSource
 // Dependencies: []
 // Exports: StreamEnded

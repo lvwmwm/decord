@@ -1,5 +1,5 @@
 // Module ID: 10733
-// Function ID: 83435
+// Function ID: 83446
 // Name: ExpandedControlItemIcon
 // Dependencies: []
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem

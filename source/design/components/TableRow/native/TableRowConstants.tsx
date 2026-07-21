@@ -1,10 +1,10 @@
-// Module ID: 5394
-// Function ID: 45992
+// Module ID: 5393
+// Function ID: 45999
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: []
 // Exports: getTableDividerWidth
 
-// Module 5394 (TABLE_ROW_HEIGHT)
+// Module 5393 (TABLE_ROW_HEIGHT)
 let Platform;
 let StyleSheet;
 const _module = require(dependencyMap[0]);

@@ -1,11 +1,11 @@
 // Module ID: 1013
-// Function ID: 11040
+// Function ID: 11044
 // Name: items
 // Dependencies: []
 
 // Module 1013 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+const items = [null, null];
 arg5.FCPThresholds = items;
 arg5.onFCP = function onFCP(arg0) {
   const arg1 = arg0;

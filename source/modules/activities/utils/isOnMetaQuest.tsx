@@ -1,5 +1,5 @@
 // Module ID: 11927
-// Function ID: 92249
+// Function ID: 92261
 // Name: isOnMetaQuest
 // Dependencies: []
 // Exports: default

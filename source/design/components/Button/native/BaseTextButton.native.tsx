@@ -1,5 +1,5 @@
 // Module ID: 4540
-// Function ID: 39800
+// Function ID: 39808
 // Name: CollapsingText
 // Dependencies: []
 
@@ -105,17 +105,17 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let closure_9 = obj1.createStyles((arg0, sm) => {
-  let obj = { grow: { -9223372036854775808: null, 0: null }, shrink: { flexShrink: 1 } };
-  obj = { lineHeight: getTextPlatformLineHeight(sm, arg0) };
+  let obj = { grow: { no: null, name: null }, shrink: { flexShrink: 1 } };
+  obj = { "Null": null, "Null": null, lineHeight: getTextPlatformLineHeight(sm, arg0) };
   obj.buttonText = obj;
-  obj.icon = { borderRadius: -536870861, borderWidth: -299892737 };
+  obj.icon = { "Null": -536870861, "Null": -299892737 };
   obj.iconLeft = { paddingLeft: 4 };
   obj.iconRight = { paddingRight: 4 };
   obj.expressiveButtonContainer = { position: "relative" };
   return obj;
 });
 let obj2 = arg1(dependencyMap[4]);
-let closure_10 = obj2.createStyles({ container: { y: null, processOptOut: "99274532ad7fe616c031212e677b32e8", setNotificationCenterActive: "ThreadLockIcon" }, textCollapsed: {} });
+let closure_10 = obj2.createStyles({ container: { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null }, textCollapsed: { position: null, shadowRadius: null } });
 const tmp3 = arg1(dependencyMap[3]);
 let obj = {};
 obj = { borderWidth: 1, borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, overflow: "hidden" };
@@ -252,8 +252,8 @@ const merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMa
   const sharedValue = obj1.useSharedValue(0);
   const startsWithResult = str3.startsWith("expressive");
   ref = importAllResult.useRef(null);
-  let closure_6 = importAllResult.useRef({ bhk: -536870861, bic: -299892737 });
-  const tmp14 = callback(startsWithResult.useState({ includeExtra: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, style: 139264.00004577637, source: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }), 2);
+  let closure_6 = importAllResult.useRef({ "Null": -536870861, "Null": -299892737 });
+  const tmp14 = callback(startsWithResult.useState({ <string:2959338700>: "8aacc7898585bec38aca6cf682c01533", <string:2213695960>: "FolderIcon", <string:1784159315>: "png" }), 2);
   let callback2 = tmp14[1];
   const items = [onLayout, startsWithResult];
   const items1 = [startsWithResult, onPressIn, enabled];

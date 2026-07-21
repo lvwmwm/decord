@@ -1,5 +1,5 @@
 // Module ID: 1200
-// Function ID: 13769
+// Function ID: 13773
 // Name: _extends
 // Dependencies: []
 // Exports: createBrowserHistory, createHashHistory, createMemoryHistory, locationsAreEqual
@@ -808,7 +808,7 @@ export const createMemoryHistory = function createMemoryHistory(props) {
   }
   ({ getUserConfirmation: closure_0, initialEntries } = obj);
   if (undefined === initialEntries) {
-    initialEntries = [true];
+    initialEntries = [];
   }
   const initialIndex = obj.initialIndex;
   let num = 0;

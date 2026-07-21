@@ -1,5 +1,5 @@
 // Module ID: 10278
-// Function ID: 79395
+// Function ID: 79406
 // Name: MagicWandIcon
 // Dependencies: []
 // Exports: MagicWandIcon

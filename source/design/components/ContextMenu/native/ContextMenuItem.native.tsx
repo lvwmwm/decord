@@ -1,10 +1,10 @@
-// Module ID: 12955
-// Function ID: 98574
+// Module ID: 12957
+// Function ID: 98596
 // Name: ContextMenuItem
 // Dependencies: []
 // Exports: ContextMenuItem
 
-// Module 12955 (ContextMenuItem)
+// Module 12957 (ContextMenuItem)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
@@ -12,7 +12,7 @@ let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dep
 const importDefaultResult = importDefault(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
   let obj = {};
-  obj = { padding: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_PADDING, minHeight: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_BASE_HEIGHT };
+  obj = { 995517192: "https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/", -931573321: ".png", 1638433617: "72x72", -226471655: "emoji", 1649902433: "&amp;", -415618397: "&lt;", padding: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_PADDING, minHeight: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_BASE_HEIGHT };
   obj.container = obj;
   obj.containerRefresh = { justifyContent: "flex-start" };
   obj = { borderTopLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[6]).radii.lg };
@@ -22,7 +22,7 @@ let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj.border = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
   const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
   obj.pressed = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-  const obj4 = { bhk: false, bic: "internal" };
+  const obj4 = { "Null": 0, "Null": -1048576 };
   if ("destructive" === arg0) {
     let TEXT_STRONG = importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
@@ -212,7 +212,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
     tmp19 = activeIndex(importDefault(dependencyMap[3]).View, obj5);
   }
   const items4 = [tmp19, , , ];
-  const obj6 = { style: tmp2.label };
+  const obj6 = { 665604545: 1, 1470947939: 1, style: tmp2.label };
   let str4 = "text-strong";
   if ("destructive" === variant) {
     str4 = "text-feedback-critical";

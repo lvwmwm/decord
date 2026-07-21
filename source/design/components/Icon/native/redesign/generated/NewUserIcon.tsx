@@ -1,5 +1,5 @@
 // Module ID: 11919
-// Function ID: 92235
+// Function ID: 92247
 // Name: NewUserIcon
 // Dependencies: []
 // Exports: NewUserIcon

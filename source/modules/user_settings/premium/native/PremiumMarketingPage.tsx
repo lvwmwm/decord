@@ -1,5 +1,5 @@
 // Module ID: 12270
-// Function ID: 94055
+// Function ID: 94067
 // Name: items
 // Dependencies: []
 // Exports: default
@@ -14,10 +14,10 @@ const FractionalPremiumStates = arg1(dependencyMap[5]).FractionalPremiumStates;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { display: "flex" }, scrollContainer: {} };
+obj = { container: { display: "flex" }, scrollContainer: { headerIcons: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, RowButtonIconProps: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, headerLabel: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 } };
 obj = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.arrowIcon = obj;
-const obj1 = { <string:1482688022>: false, <string:357828252>: false, <string:1611011590>: false };
+const obj1 = { flexDirection: false, justifyContent: false, alignItems: false };
 const items = [{ scaleX: -1 }];
 obj1.transform = items;
 obj.backButton = obj1;

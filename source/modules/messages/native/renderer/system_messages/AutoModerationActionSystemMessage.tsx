@@ -1,10 +1,10 @@
-// Module ID: 7693
-// Function ID: 61358
+// Module ID: 7694
+// Function ID: 61370
 // Name: createAutoModerationActionSystemMessage
 // Dependencies: []
 // Exports: createAutoModerationActionSystemMessage
 
-// Module 7693 (createAutoModerationActionSystemMessage)
+// Module 7694 (createAutoModerationActionSystemMessage)
 const _module = require(dependencyMap[0]);
 ({ processColor: closure_3, Image: closure_4 } = _module);
 let closure_5 = importDefault(dependencyMap[1]);

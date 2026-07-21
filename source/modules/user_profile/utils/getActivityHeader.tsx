@@ -1,5 +1,5 @@
 // Module ID: 11924
-// Function ID: 92242
+// Function ID: 92254
 // Name: getActivityHeader
 // Dependencies: []
 // Exports: default

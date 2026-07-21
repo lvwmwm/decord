@@ -1,9 +1,9 @@
-// Module ID: 6856
-// Function ID: 54253
+// Module ID: 6857
+// Function ID: 54265
 // Name: items
 // Dependencies: []
 
-// Module 6856 (items)
+// Module 6857 (items)
 let closure_2 = importDefault(dependencyMap[0]);
 const items = [arg1(dependencyMap[1]).WidgetType.PERSONAL, arg1(dependencyMap[1]).WidgetType.APPLICATION, arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES, arg1(dependencyMap[1]).WidgetType.PLAYED_GAMES, arg1(dependencyMap[1]).WidgetType.CURRENT_GAMES, arg1(dependencyMap[1]).WidgetType.WANT_TO_PLAY_GAMES];
 const items1 = [arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES];

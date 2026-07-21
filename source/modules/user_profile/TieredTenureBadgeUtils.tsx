@@ -1,10 +1,10 @@
-// Module ID: 6871
-// Function ID: 54325
+// Module ID: 6872
+// Function ID: 54337
 // Name: getTieredTenureBadgeData
 // Dependencies: []
 // Exports: getEarnedOnDate, getTieredTenureBadge
 
-// Module 6871 (getTieredTenureBadgeData)
+// Module 6872 (getTieredTenureBadgeData)
 function getTieredTenureBadgeData(tieredTenureBadge) {
   return TENURE_BADGES[tieredTenureBadge];
 }

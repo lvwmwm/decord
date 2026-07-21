@@ -1,5 +1,5 @@
 // Module ID: 8835
-// Function ID: 69667
+// Function ID: 69678
 // Name: getInputDeviceName
 // Dependencies: []
 
@@ -649,7 +649,7 @@ obj = {
   },
   interact() {
     if (!callback3()) {
-      importDefault(dependencyMap[13]).dispatch({ "Bool(true)": "png", "Bool(true)": true });
+      importDefault(dependencyMap[13]).dispatch({ pointerEvents: "png", width: true });
       const obj = importDefault(dependencyMap[13]);
     }
   },

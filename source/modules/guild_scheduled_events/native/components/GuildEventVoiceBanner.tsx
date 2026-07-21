@@ -1,8 +1,8 @@
-// Module ID: 12588
-// Function ID: 96775
+// Module ID: 12590
+// Function ID: 96797
 // Dependencies: []
 
-// Module 12588
+// Module 12590
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -10,7 +10,7 @@ let closure_6 = arg1(dependencyMap[3]).isGuildScheduledEventActive;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { -1897374070: "Array", -1257818365: "isArray", -229067510: "Text", 184419332: "surrogates", 1553034850: "w", borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { "Bool(false)": 406501434.32031274, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001581278477682522, "Bool(false)": 107974007009402260000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 994899923190653700000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": true, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.header = obj;
 obj.descriptionContainerStyle = { paddingTop: 4 };
 obj.buttonContainer = { marginTop: 12 };
@@ -79,7 +79,7 @@ const memoResult = importAllResult.memo((channel) => {
     }
     if (tmp4) {
       obj2 = { style: tmp.buttonContainer };
-      obj3 = { borderWidth: "flex-end", borderColor: 16, borderRadius: "center", justifyContent: "row", alignItems: 5 };
+      obj3 = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(false)": null, "Bool(false)": "956202360ccc6511b561141de5cd74d2", "Bool(false)": "ro.messages.956202360ccc6511b561141de5cd74d2.compiled.messages", color: "jsona" };
       const intl = arg1(dependencyMap[18]).intl;
       obj3.text = intl.string(arg1(dependencyMap[18]).t.cK1GGY);
       obj3.onPress = callback;

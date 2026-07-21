@@ -1,5 +1,5 @@
 // Module ID: 12184
-// Function ID: 93639
+// Function ID: 93651
 // Name: getPresenceActivity
 // Dependencies: []
 // Exports: createActivityRichPresenceInviteEmbed

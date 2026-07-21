@@ -1,10 +1,10 @@
-// Module ID: 7995
-// Function ID: 63543
+// Module ID: 7996
+// Function ID: 63556
 // Name: notSupported
 // Dependencies: []
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 7995 (notSupported)
+// Module 7996 (notSupported)
 function notSupported() {
   const error = new Error("Native hook not supported for android");
   throw error;
@@ -73,7 +73,7 @@ let closure_5 = importAll(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.android.tsx");
-let closure_8 = { <string:4146460452>: true, <string:3821771932>: true };
+let closure_8 = { "Bool(false)": 131122.52832032426, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
 
 export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription };

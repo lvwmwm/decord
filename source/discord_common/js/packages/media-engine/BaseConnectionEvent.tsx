@@ -1,7 +1,7 @@
 // Module ID: 4278
-// Function ID: 37463
+// Function ID: 37471
 // Name: BaseConnectionEvent
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4278 (BaseConnectionEvent)
 const _module = require(dependencyMap[0]);

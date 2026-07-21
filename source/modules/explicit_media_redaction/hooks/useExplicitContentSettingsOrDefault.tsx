@@ -1,10 +1,10 @@
-// Module ID: 13600
-// Function ID: 103049
+// Module ID: 13602
+// Function ID: 103071
 // Name: useExplicitContentSettingOrDefault
 // Dependencies: []
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 13600 (useExplicitContentSettingOrDefault)
+// Module 13602 (useExplicitContentSettingOrDefault)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitContentSettingsOrDefault.tsx");
 
@@ -41,7 +41,7 @@ export const useExplicitContentSettingOrDefault = function useExplicitContentSet
   obj1.isDm = true;
   obj.explicitContentNonFriendDm = arg1(dependencyMap[2]).resolveExplicitContentSettingWithDefaults(obj1);
   const obj5 = arg1(dependencyMap[2]);
-  obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  obj2 = { 536813311: null, -773110529: null, -775094268: null };
   let prop2;
   if (null != stateFromStoresObject) {
     prop2 = stateFromStoresObject.explicitContentFriendDm;
@@ -83,7 +83,7 @@ export const useGoreContentSettingOrDefault = function useGoreContentSettingOrDe
   obj1.isDm = true;
   obj.goreContentNonFriendDm = arg1(dependencyMap[3]).resolveGoreSettingWithDefaults(obj1);
   const obj5 = arg1(dependencyMap[3]);
-  obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  obj2 = { 536813311: null, -773110529: null, -775094268: null };
   let goreContentFriendDm;
   if (null != stateFromStoresObject) {
     goreContentFriendDm = stateFromStoresObject.goreContentFriendDm;

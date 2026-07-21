@@ -1,5 +1,5 @@
 // Module ID: 6011
-// Function ID: 49930
+// Function ID: 49938
 // Name: DisguiseSpotIllustration
 // Dependencies: []
 // Exports: DisguiseSpotIllustration

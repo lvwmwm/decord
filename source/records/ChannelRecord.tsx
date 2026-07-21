@@ -1,5 +1,5 @@
 // Module ID: 1352
-// Function ID: 16107
+// Function ID: 16112
 // Name: _callSuper
 // Dependencies: []
 // Exports: createChannelRecordFromInvite, createChannelRecordFromServer, getBasicAccessPermissions, isGuildChannelType, isGuildReadableType, isGuildSelectableChannelType, isGuildTextChannelType, isGuildVocalChannelOrVocalThreadType, isReadableType, isTextChannel

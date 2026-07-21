@@ -1,5 +1,5 @@
 // Module ID: 3694
-// Function ID: 28061
+// Function ID: 28066
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } };
+    obj = { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} };
     obj.conjunction = obj;
     const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } };
+    const obj2 = { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "nl";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } } }, locale: "nl" });
+prop.push({ data: { conjunction: { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { application: "center", Set: "r", Icon: "isArray", id: "warn" }, narrow: {}, short: {} } }, locale: "nl" });

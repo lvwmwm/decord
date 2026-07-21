@@ -1,7 +1,7 @@
 // Module ID: 4303
-// Function ID: 37649
+// Function ID: 37657
 // Name: getStreamSourceMetadata
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 4303 (getStreamSourceMetadata)

@@ -1,7 +1,7 @@
 // Module ID: 1052
-// Function ID: 11256
+// Function ID: 11260
 // Name: _wrapTimeFunction
-// Dependencies: [68681728, 70057984]
+// Dependencies: [68747264, 69009408]
 
 // Module 1052 (_wrapTimeFunction)
 function _wrapTimeFunction(arg0) {
@@ -37,7 +37,7 @@ function _wrapXHR(arg0) {
   const require = arg0;
   return function() {
     const arg0 = this;
-    const items = ["a", "alertHeader", "a", "alien"];
+    const items = [true, true, true, true];
     const item = items.forEach((arg0) => {
       const self = arg0;
       let tmp = arg0 in self;
@@ -74,7 +74,7 @@ function _wrapXHR(arg0) {
   };
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
+let closure_2 = [];
 const _module = require(dependencyMap[0]);
 
 export const browserApiErrorsIntegration = _module.defineIntegration(function _browserApiErrorsIntegration() {

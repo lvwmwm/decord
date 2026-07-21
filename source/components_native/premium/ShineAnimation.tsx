@@ -1,13 +1,13 @@
-// Module ID: 7178
-// Function ID: 57811
+// Module ID: 7179
+// Function ID: 57823
 // Dependencies: []
 
-// Module 7178
+// Module 7179
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ Image: closure_4, View: closure_5 } = tmp2);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = Object.freeze({});
+let closure_8 = Object.freeze({ nm: "r", PX_16: "parseReadySupplemental" });
 let obj1 = arg1(dependencyMap[3]);
 let obj = { container: { overflow: "hidden" } };
 obj = {};
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
     constructor() {
       obj = {};
       obj2 = closure_0(alpha[5]);
-      obj.width = "" + obj2.interpolate(closure_0.get(), ["Text", "lc"], [-1631213746, -1765345429]) + "%";
+      obj.width = "" + obj2.interpolate(closure_0.get(), ["replace", "then"], ["../shared/browser-detection", "BUTTON_SEND_DISABLED"]) + "%";
       return obj;
     }
   }

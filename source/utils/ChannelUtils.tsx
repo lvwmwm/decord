@@ -1,5 +1,5 @@
 // Module ID: 4308
-// Function ID: 37732
+// Function ID: 37740
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: channelTypeString, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild

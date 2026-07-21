@@ -1,9 +1,9 @@
-// Module ID: 16374
-// Function ID: 126483
+// Module ID: 16382
+// Function ID: 126544
 // Name: ContentInventoryFeature
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 16374 (ContentInventoryFeature)
+// Module 16382 (ContentInventoryFeature)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryFeature.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13608
-// Function ID: 103118
+// Module ID: 13610
+// Function ID: 103140
 // Name: isSetAndNotDefault
 // Dependencies: []
 // Exports: updateExplicitContentSetting, updateGoreContentSetting
 
-// Module 13608 (isSetAndNotDefault)
+// Module 13610 (isSetAndNotDefault)
 function isSetAndNotDefault(goreContentFriendDm) {
   let tmp = null != goreContentFriendDm;
   if (tmp) {
@@ -29,7 +29,7 @@ function getGoreContentSettingOrDefault(arg0) {
   }
   obj.goreContentNonFriendDm = goreContentNonFriendDm;
   if (!isSetAndNotDefault(goreContentFriendDm)) {
-    goreContentFriendDm = require(dependencyMap[2]).resolveGoreSettingWithDefaultsForTeen({ "Null": null, "Null": null });
+    goreContentFriendDm = require(dependencyMap[2]).resolveGoreSettingWithDefaultsForTeen({ metadataRefreshing: null, metadataAlreadyRefreshed: null });
     const obj5 = require(dependencyMap[2]);
   }
   obj.goreContentFriendDm = goreContentFriendDm;

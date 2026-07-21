@@ -1,9 +1,9 @@
-// Module ID: 12782
-// Function ID: 97925
+// Module ID: 12784
+// Function ID: 97947
 // Name: styles
 // Dependencies: []
 
-// Module 12782 (styles)
+// Module 12784 (styles)
 const Fonts = require(dependencyMap[0]).Fonts;
 let obj = {};
 const _module = require(dependencyMap[1]);

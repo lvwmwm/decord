@@ -1,10 +1,10 @@
-// Module ID: 15076
-// Function ID: 113484
+// Module ID: 15079
+// Function ID: 113518
 // Name: ICYMIFeedbackSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15076 (ICYMIFeedbackSheet)
+// Module 15079 (ICYMIFeedbackSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
@@ -37,11 +37,11 @@ export default function ICYMIFeedbackSheet() {
   obj2.label = intl7.string(arg1(dependencyMap[3]).t.Yu+52W);
   obj2.value = "laggy";
   items[3] = obj2;
-  items[4] = { raw: true, body: true };
+  items[4] = { <string:2048437162>: null, <string:2887950716>: true };
   obj.reasons = items;
   obj.otherKey = "other";
   obj.trackOpen = arg1(dependencyMap[4]).ICYMIAnalytics.trackFeedFeedbackPromptViewed;
-  obj.feedbackReasons = [null];
+  obj.feedbackReasons = ["isArray"];
   obj.trackReport = function trackReport(reason) {
     let obj = callback2(closure_2[5]);
     obj.giveFeedback();

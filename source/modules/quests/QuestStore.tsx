@@ -1,9 +1,9 @@
-// Module ID: 6936
-// Function ID: 55332
+// Module ID: 6937
+// Function ID: 55344
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6936 (_isNativeReflectConstruct)
+// Module 6937 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -848,7 +848,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
       const _Map = Map;
       const map = new Map(map);
       const result = map.set(placement, false);
-      obj = { -2108183326: "o", 1633701404: "o", fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
+      obj = { addData: "o", registerGuildVisibilityMethod: "o", fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
       const _Map2 = Map;
       const map1 = new Map(map1);
       const result1 = map1.set(placement, obj);

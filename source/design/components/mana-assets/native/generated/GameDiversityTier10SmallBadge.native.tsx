@@ -1,7 +1,7 @@
 // Module ID: 6111
-// Function ID: 50080
+// Function ID: 50088
 // Name: GameDiversityTier10SmallBadge
-// Dependencies: [131072, 561250304, 1895825408, 20]
+// Dependencies: [131072, 561250304, 1879048192, 20]
 // Exports: GameDiversityTier10SmallBadge
 
 // Module 6111 (GameDiversityTier10SmallBadge)

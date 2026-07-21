@@ -1,5 +1,5 @@
 // Module ID: 10294
-// Function ID: 79447
+// Function ID: 79458
 // Name: NotificationSettingsChannelPost
 // Dependencies: []
 // Exports: NotificationSettingsChannelPost

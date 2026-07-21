@@ -1,8 +1,8 @@
-// Module ID: 13290
-// Function ID: 100938
+// Module ID: 13292
+// Function ID: 100960
 // Dependencies: []
 
-// Module 13290
+// Module 13292
 const _module = require(dependencyMap[0]);
 let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult(_module.RPC_APPLICATION_LOGGING_CATEGORY);

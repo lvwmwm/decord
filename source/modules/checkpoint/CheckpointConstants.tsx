@@ -1,7 +1,7 @@
 // Module ID: 4350
-// Function ID: 38609
+// Function ID: 38617
 // Name: CheckpointPersonas
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4350 (CheckpointPersonas)
 const _module = require(dependencyMap[0]);

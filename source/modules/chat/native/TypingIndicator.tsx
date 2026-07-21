@@ -1,5 +1,5 @@
 // Module ID: 11361
-// Function ID: 88335
+// Function ID: 88347
 // Name: TypingIndicatorInner
 // Dependencies: []
 
@@ -148,8 +148,8 @@ obj = { paddingTop: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FL
 obj.typingWrapper = obj;
 obj1 = { backgroundColor: "transparent", paddingRight: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
 obj.floatingWrapper = obj1;
-obj.wrapperHoriz = { emojiComponent: true, bottom: true, left: true };
-const obj2 = { "Null": "spriteIndex", "Null": "y", "Null": "isArray", "Null": "constructor", marginRight: importDefault(dependencyMap[6]).space.PX_8 };
+obj.wrapperHoriz = { resultCount: true, stickerResults: true, nonStickerResults: true };
+const obj2 = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
 obj.horiz = obj2;
 obj.text = { flex: 1 };
 let closure_9 = obj1.createStyles(obj);

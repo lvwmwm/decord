@@ -1,5 +1,5 @@
 // Module ID: 1113
-// Function ID: 12663
+// Function ID: 12667
 // Name: isAtLeastReact17
 // Dependencies: []
 // Exports: reactErrorHandler

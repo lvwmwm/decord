@@ -1,5 +1,5 @@
 // Module ID: 10904
-// Function ID: 84720
+// Function ID: 84731
 // Name: getShouldShowAppAuthPrompt
 // Dependencies: []
 // Exports: getShouldShowAppAuthPrompt

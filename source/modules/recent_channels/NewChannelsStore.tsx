@@ -1,7 +1,7 @@
 // Module ID: 6759
-// Function ID: 52925
+// Function ID: 52933
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2, 5, 4662, 1921, 6769, 6784, 6785, 6786, 6787, 6792, 6771, 6798]
+// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2, 5, 4661, 1921, 6769, 6784, 6785, 6786, 6787, 6792, 6771, 6798]
 
 // Module 6759 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";

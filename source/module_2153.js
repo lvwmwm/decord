@@ -1,9 +1,9 @@
 // Module ID: 2153
-// Function ID: 22540
+// Function ID: 22545
 // Dependencies: []
 
 // Module 2153
 const _module = require(dependencyMap[0]);
-const obj = { dismissed: "flex", lastDismissedVersion: "row", lastDismissedAtMs: "center", lastDismissedObjectId: null, numTimesDismissed: null, days: 12, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { runOnJS: null, format: "c86cafcf51d7ae39d5b9628829b8606b", View: "zh-CN.messages.c86cafcf51d7ae39d5b9628829b8606b.compiled.messages", accessibilityRole: "jsona", surrogates: "gr", url: null, scales: [null] };
 
 export default _module.registerAsset(obj);

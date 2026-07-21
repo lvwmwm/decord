@@ -1,5 +1,5 @@
 // Module ID: 11230
-// Function ID: 87418
+// Function ID: 87430
 // Name: useSortApplicationsViaFrecency
 // Dependencies: []
 // Exports: useSortApplicationsViaFrecency

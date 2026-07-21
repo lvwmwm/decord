@@ -1,12 +1,14 @@
 // Module ID: 5917
-// Function ID: 49789
+// Function ID: 49797
 // Name: BumpingFistsSpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: BumpingFistsSpotIllustration
 
 // Module 5917 (BumpingFistsSpotIllustration)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BumpingFistsSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BumpingFistsSpotIllustration.native.tsx");
 
 export const BumpingFistsSpotIllustration = function BumpingFistsSpotIllustration(width) {
   let accessibilityLabel;

@@ -1,5 +1,5 @@
 // Module ID: 4200
-// Function ID: 36219
+// Function ID: 36227
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -1613,7 +1613,7 @@ const tmp4 = (arg0) => {
           const logger = self.logger;
           logger.warn(arg0);
         });
-        self._trackMLSFailures({ info: null, newMessages: null });
+        self._trackMLSFailures({ useId: null, baseVertical: null });
         let preferredRegion = null;
         if (store3.shouldIncludePreferredRegion()) {
           preferredRegion = store3.getPreferredRegion();
@@ -1907,7 +1907,7 @@ const tmp4 = (arg0) => {
       const config = ProcessBoostExperiment.getConfig({ location: "media_engine_connect" });
       ({ processPriority, threadPriorityConfiguration } = config);
       if (0 === arr.length) {
-        let obj = { e: "a", window: "isArray", k: "defineProperty", body: "construct", id: "a", accessibilityRole: "isArray", type: constants7.VIDEO, ssrc: ssrc + 1, rtxSsrc: ssrc + 2 };
+        let obj = { -2063794172: "g_vowel5", -2063728636: "cancelable", -598671356: "g_vowel5", 1884308: "isArray", 16778373: "NATIVE_REQUIRED_ASSETS", 83887237: true, type: constants7.VIDEO, ssrc: ssrc + 1, rtxSsrc: ssrc + 2 };
         arr.push(obj);
       }
       const mediaEngine = store2.getMediaEngine();
@@ -2718,7 +2718,7 @@ const tmp4 = (arg0) => {
   };
   items[74] = {
     key: "_trackVoiceConnectionSuccess",
-    value(context) {
+    value(transportInfo) {
       const self = this;
       function nullableSubtract(onConnectCallbackAt, onConnectCallbackAt2) {
         let diff = null;
@@ -2740,12 +2740,32 @@ const tmp4 = (arg0) => {
             }
             const settings = store2.getSettings();
             const result = self._getAnalyticsProperties();
+            transportInfo = transportInfo.transportInfo;
+            let address;
+            if (null != transportInfo) {
+              address = transportInfo.address;
+            }
+            let tmp10;
+            if (null != address) {
+              if ("" !== address) {
+                let str3 = "ipv6";
+                if (!address.includes(":")) {
+                  let str5;
+                  if (address.includes(".")) {
+                    str5 = "ipv4";
+                  }
+                  str3 = str5;
+                }
+                tmp10 = str3;
+              }
+            }
             let obj = callback(closure_3[24]);
             obj = {};
             const merged = Object.assign(result);
             obj["hostname"] = self.hostname;
             obj["port"] = self.port;
             obj["protocol"] = self.protocol;
+            obj["address_family"] = tmp10;
             obj["cloudflare_best_region"] = preferredRegion;
             obj["connect_time"] = RTCConnection(closure_3[22]).now() - 1 === self._connectCount ? self._createdTime : self._connectStartTime;
             obj["connect_count"] = self._connectCount;
@@ -2758,41 +2778,41 @@ const tmp4 = (arg0) => {
             obj["participant_type"] = self.getVoiceParticipantType();
             obj["join_voice_id"] = self.joinVoiceId;
             const mediaEngine2 = store2.getMediaEngine();
-            let tmp18 = mediaEngine2.getVideoInputDeviceId() !== closure_35;
-            if (tmp18) {
-              tmp18 = context.context === constants6.DEFAULT;
+            let tmp20 = mediaEngine2.getVideoInputDeviceId() !== closure_35;
+            if (tmp20) {
+              tmp20 = transportInfo.context === constants6.DEFAULT;
             }
-            obj["is_camera_enabled"] = tmp18;
+            obj["is_camera_enabled"] = tmp20;
             const stateHistory = self.stateHistory;
             const merged1 = Object.assign(stateHistory.getVoiceConnectionSuccessStats());
             obj.track(constants.VOICE_CONNECTION_SUCCESS, obj);
             const _performance = performance;
             const obj3 = RTCConnection(closure_3[22]);
             const nowResult = performance.now();
-            obj = { rtc_connection_id: result.rtc_connection_id, time_1_creation_to_connect: self._connectStartTime - self._createdTime, time_2_media_engine_connect: self._mediaEngineConnectDuration };
-            const transportInfo = context.transportInfo;
+            obj = { rtc_connection_id: result.rtc_connection_id, hostname: self.hostname, address_family: tmp10, time_1_creation_to_connect: self._connectStartTime - self._createdTime, time_2_media_engine_connect: self._mediaEngineConnectDuration };
+            const transportInfo2 = transportInfo.transportInfo;
             let createConnectionTime;
-            if (null != transportInfo) {
-              createConnectionTime = transportInfo.createConnectionTime;
+            if (null != transportInfo2) {
+              createConnectionTime = transportInfo2.createConnectionTime;
             }
             obj.time_3_media_engine_create_native_connection = createConnectionTime;
-            const transportInfo2 = context.transportInfo;
+            const transportInfo3 = transportInfo.transportInfo;
             let connectTime;
-            if (null != transportInfo2) {
-              connectTime = transportInfo2.connectTime;
+            if (null != transportInfo3) {
+              connectTime = transportInfo3.connectTime;
             }
             obj.time_4_media_engine_connect_to_socket = connectTime;
-            const transportInfo3 = context.transportInfo;
+            const transportInfo4 = transportInfo.transportInfo;
             let prop;
-            if (null != transportInfo3) {
-              prop = transportInfo3.connectCallbackScheduledMs;
+            if (null != transportInfo4) {
+              prop = transportInfo4.connectCallbackScheduledMs;
             }
-            obj.time_5_scheduling_connected_callback = nullableSubtract(context.onConnectCallbackAt, prop);
-            obj.time_6_state_connected_to_end_measure = nullableSubtract(nowResult, context.onConnectCallbackAt);
+            obj.time_5_scheduling_connected_callback = nullableSubtract(transportInfo.onConnectCallbackAt, prop);
+            obj.time_6_state_connected_to_end_measure = nullableSubtract(nowResult, transportInfo.onConnectCallbackAt);
             obj.connect_count = self._connectCount;
-            obj.rtc_connecting_native_connect = nullableSubtract(context.onConnectCallbackAt, context.beginInitializeAt);
-            obj.rtc_connecting_native_codecs = nullableSubtract(context.onVideoCodecsCallbackAt, context.onConnectCallbackAt);
-            obj.rtc_connecting_native_crypto_modes = nullableSubtract(context.onEncryptionModesCallbackAt, context.onVideoCodecsCallbackAt);
+            obj.rtc_connecting_native_connect = nullableSubtract(transportInfo.onConnectCallbackAt, transportInfo.beginInitializeAt);
+            obj.rtc_connecting_native_codecs = nullableSubtract(transportInfo.onVideoCodecsCallbackAt, transportInfo.onConnectCallbackAt);
+            obj.rtc_connecting_native_crypto_modes = nullableSubtract(transportInfo.onEncryptionModesCallbackAt, transportInfo.onVideoCodecsCallbackAt);
             callback(closure_3[24]).track(constants.VOICE_CONNECTION_TTC_COLLECTED, obj);
             const obj7 = callback(closure_3[24]);
           }
@@ -3071,7 +3091,7 @@ const tmp4 = (arg0) => {
       this._secureFramesTransitionPrepareCount = this._secureFramesTransitionPrepareCount + 1;
       closure_3 = RTCConnection(closure_3[22]).now();
       if (0 === arg1) {
-        self._trackMLSFailures({ info: null, newMessages: null });
+        self._trackMLSFailures({ useId: null, baseVertical: null });
       }
       const _connection = self._connection;
       if (null != _connection) {
@@ -3220,7 +3240,7 @@ const tmp4 = (arg0) => {
         const result = _connection.prepareMLSCommitTransition(arg0, arg1, (arg0, protocolVersion) => {
           let obj = self;
           if (arg0) {
-            obj._trackMLSFailures({ info: true, newMessages: true });
+            obj._trackMLSFailures({ useId: null, baseVertical: null });
             obj._mlsSessionResetStartTime = undefined;
             const result = obj._handleSecureFramesRosterChange(arg2, arg0);
             const result1 = obj._maybeSendSecureFramesTransitionReady(arg0);
@@ -3251,7 +3271,7 @@ const tmp4 = (arg0) => {
         _connection.processMLSWelcome(arg0, arg1, (arg0, protocolVersion) => {
           let obj = self;
           if (arg0) {
-            obj._trackMLSFailures({ info: true, newMessages: true });
+            obj._trackMLSFailures({ useId: null, baseVertical: null });
             obj._mlsSessionResetStartTime = undefined;
             const result = obj._handleSecureFramesRosterChange(arg2, arg0);
             const result1 = obj._maybeSendSecureFramesTransitionReady(arg0);

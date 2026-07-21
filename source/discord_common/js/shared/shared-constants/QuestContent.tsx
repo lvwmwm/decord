@@ -1,16 +1,16 @@
-// Module ID: 5252
-// Function ID: 44531
+// Module ID: 5251
+// Function ID: 44538
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 5252 (set)
+// Module 5251 (set)
 const obj = { DISMISSIBLE: new Set([]) };
 const set = new Set([]);
 obj.TARGETED = new Set([]);
 const set1 = new Set([]);
-obj.DESKTOP_DELIVERY = new Set([null, null]);
-const set2 = new Set([null, null]);
-obj.MOBILE_DELIVERY = new Set([null]);
+obj.DESKTOP_DELIVERY = new Set([]);
+const set2 = new Set([]);
+obj.MOBILE_DELIVERY = new Set(["ninja"]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestContent.tsx");
 

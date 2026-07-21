@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 104486
+// Module ID: 13819
+// Function ID: 104518
 // Name: BountiesScrollEndCard
 // Dependencies: []
 // Exports: default
 
-// Module 13816 (BountiesScrollEndCard)
+// Module 13819 (BountiesScrollEndCard)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -95,7 +95,7 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
     obj1.pointerEvents = "box-none";
     obj2 = { style: endedCtaButtonsContainer.backdropTint, pointerEvents: "none" };
     const items1 = [callback(closure_5, obj2), , ];
-    const obj3 = { colors: [null, null], style: endedCtaButtonsContainer.backdropGradient, pointerEvents: "none" };
+    const obj3 = { colors: [], style: endedCtaButtonsContainer.backdropGradient, pointerEvents: "none" };
     items1[1] = callback(importDefault(dependencyMap[12]), obj3);
     if (isBountiesVerticalScrollExperimentEnabled) {
       obj4 = {};
@@ -140,9 +140,9 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
       const items4 = [endedCtaButtonsContainer.overlayContent, animatedStyle];
       obj9.style = items4;
       const obj10 = { style: endedCtaButtonsContainer.textBlock };
-      const obj11 = { children: bountyCtaInfo.label };
+      const obj11 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: bountyCtaInfo.label };
       const items5 = [callback(arg1(dependencyMap[15]).Text, obj11), ];
-      const obj12 = { children: stringResult };
+      const obj12 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c", children: stringResult };
       items5[1] = callback(arg1(dependencyMap[15]).Text, obj12);
       obj10.children = items5;
       const items6 = [callback2(closure_5, obj10), ];

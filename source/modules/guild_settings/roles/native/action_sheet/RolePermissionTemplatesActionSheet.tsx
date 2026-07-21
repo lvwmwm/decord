@@ -1,17 +1,17 @@
-// Module ID: 16196
-// Function ID: 125143
+// Module ID: 16204
+// Function ID: 125204
 // Name: RolePermissionTemplatesActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16196 (RolePermissionTemplatesActionSheet)
+// Module 16204 (RolePermissionTemplatesActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { DEFAULT_CHANNEL_ICON: "Group 11", DISPLAY_NAME_STYLES_COLOR_SELECTED: 2, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
+obj = { accessibilityRole: "Group 11", HermesInternal: 2, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.templateContainer = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

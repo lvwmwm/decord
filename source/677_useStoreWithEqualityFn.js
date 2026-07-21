@@ -1,10 +1,12 @@
 // Module ID: 677
-// Function ID: 8378
+// Function ID: 8382
 // Name: useStoreWithEqualityFn
-// Dependencies: []
+// Dependencies: [0, 0, 2]
 // Exports: createWithEqualityFn
 
 // Module 677 (useStoreWithEqualityFn)
+import result from "result";
+
 function useStoreWithEqualityFn(closure_4, arg1, shallow) {
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
@@ -16,12 +18,11 @@ function useStoreWithEqualityFn(closure_4, arg1, shallow) {
     }
     const obj = require(dependencyMap[1]);
     const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(closure_4.subscribe, closure_4.getState, closure_4.getInitialState, tmp, tmp2);
-    const debugValue = closure_2.useDebugValue(syncExternalStoreWithSelector);
+    const debugValue = result.useDebugValue(syncExternalStoreWithSelector);
     return syncExternalStoreWithSelector;
   }
   tmp = identity;
 }
-let closure_2 = require(dependencyMap[0]);
 function identity(arg0) {
   return arg0;
 }

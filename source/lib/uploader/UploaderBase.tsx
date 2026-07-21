@@ -1,19 +1,9 @@
-// Module ID: 7078
-// Function ID: 56655
+// Module ID: 7079
+// Function ID: 56667
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 7078 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import { AbortCodes } from "__exportStarResult1";
-import { FileUploadErrorTypes } from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
-
+// Module 7079 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -102,6 +92,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+const AbortCodes = arg1(dependencyMap[6]).AbortCodes;
+const FileUploadErrorTypes = arg1(dependencyMap[7]).FileUploadErrorTypes;
+let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("UploaderBase.tsx");
 const tmp4 = (EventEmitter) => {
   class UploaderBase {
@@ -119,7 +118,7 @@ const tmp4 = (EventEmitter) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      f56688 = tmp2Result;
+      f56700 = tmp2Result;
       tmp2Result._aborted = false;
       tmp2Result._errored = false;
       tmp2Result.files = [];
@@ -185,9 +184,9 @@ const tmp4 = (EventEmitter) => {
         tmp2Result.emit("complete", tmp2Result._file, arg0);
         tmp2Result.removeAllListeners();
       };
-      obj2 = f56673(UploaderBase[10]);
+      obj2 = f56685(UploaderBase[10]);
       tmp2Result.id = obj2.uniqueId("Uploader");
-      obj = { kkvDatabase: "Reflect", EMBEDDED_SURVEY_RESPONSE: "left", alignContent: "constructor", _format: "id", applicationCommandLoadingLeftWrapper: "fill", proxyHack: "track", EMBEDDED_SURVEY_RESPONSE: "state", alignSelf: "formatToPlainString", extraMediaCount: "LengthDelimited" };
+      obj = { "Bool(false)": "Reflect", "Bool(false)": "left", "Bool(false)": "constructor", "Bool(false)": "id", "Bool(false)": "fill", "Bool(false)": "track", "Bool(false)": "state", "Bool(false)": "formatToPlainString", "Bool(false)": "LengthDelimited" };
       obj.id = tmp2Result.id;
       obj.items = undefined;
       tmp2Result._file = obj;
@@ -454,13 +453,13 @@ const tmp4 = (EventEmitter) => {
         const _Date = Date;
         self._lastUpdate = Date.now();
         self._loaded = 0;
-        const obj = { kkvDatabase: "Reflect", EMBEDDED_SURVEY_RESPONSE: "left", alignContent: "constructor", _format: "id", applicationCommandLoadingLeftWrapper: "fill", proxyHack: "track", EMBEDDED_SURVEY_RESPONSE: "state", alignSelf: "formatToPlainString", extraMediaCount: "LengthDelimited", id: self.id, items };
+        const obj = { "Bool(false)": "Reflect", "Bool(false)": "left", "Bool(false)": "constructor", "Bool(false)": "id", "Bool(false)": "fill", "Bool(false)": "track", "Bool(false)": "state", "Bool(false)": "formatToPlainString", "Bool(false)": "LengthDelimited", id: self.id, items };
         self._file = obj;
       }
     }
   };
   return callback2(UploaderBase, items);
-}(require("__exportStarResult1").EventEmitter);
-const result = require("__exportStarResult1").fileFinishedImporting("lib/uploader/UploaderBase.tsx");
+}(arg1(dependencyMap[14]).EventEmitter);
+const result = arg1(dependencyMap[15]).fileFinishedImporting("lib/uploader/UploaderBase.tsx");
 
 export default tmp4;

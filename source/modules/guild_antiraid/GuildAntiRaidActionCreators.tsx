@@ -1,5 +1,5 @@
 // Module ID: 10965
-// Function ID: 85276
+// Function ID: 85287
 // Name: _setGuildRaidAlerts
 // Dependencies: []
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed

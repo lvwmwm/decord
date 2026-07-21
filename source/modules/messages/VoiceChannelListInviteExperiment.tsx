@@ -1,13 +1,13 @@
 // Module ID: 9468
-// Function ID: 73763
+// Function ID: 73774
 // Name: items
 // Dependencies: []
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
 // Module 9468 (items)
 const _module = require(dependencyMap[0]);
-let obj = { y: "<string:2802253826>", createBackgroundHighlight: "<string:3578855426>", y: "<string:3544256951>", defaultConfig: { enabled: false } };
-obj = { -1174339580: false, -1169096700: false, config: { enabled: true } };
+let obj = { "Bool(false)": "<string:2803105794>", "Bool(false)": "<string:2018574338>", "Bool(false)": "<string:3762360787>", defaultConfig: { enabled: false } };
+obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: false, 炖锅: false, config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
 let closure_0 = _module.createExperiment(obj);

@@ -1,5 +1,5 @@
 // Module ID: 11597
-// Function ID: 90122
+// Function ID: 90134
 // Name: useGameServerPowerupStatus
 // Dependencies: []
 // Exports: default

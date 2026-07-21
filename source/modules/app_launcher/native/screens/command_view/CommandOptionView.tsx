@@ -1,5 +1,5 @@
 // Module ID: 11272
-// Function ID: 87715
+// Function ID: 87727
 // Name: set
 // Dependencies: []
 // Exports: default
@@ -12,8 +12,8 @@ let closure_4 = importDefault(dependencyMap[2]);
 const items = [arg1(dependencyMap[4]).ApplicationCommandOptionType.STRING, arg1(dependencyMap[4]).ApplicationCommandOptionType.INTEGER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ATTACHMENT, arg1(dependencyMap[4]).ApplicationCommandOptionType.BOOLEAN, arg1(dependencyMap[4]).ApplicationCommandOptionType.MENTIONABLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.USER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ROLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.CHANNEL, arg1(dependencyMap[4]).ApplicationCommandOptionType.NUMBER];
 const set = new Set(items);
 let obj = arg1(dependencyMap[5]);
-obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: { onTapButtonActionComponent: "safety_user_sentiment_notice_dismissed_at", onTapSelectActionComponent: "message", onTapWelcomeReply: null } };
-obj = { <string:3225485828>: null, <string:1761608784>: 15.1, <string:3679956194>: null, tintColor: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_CRITICAL };
+obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: { headerIcons: true, RowButtonIconProps: true, headerLabel: true } };
+obj = { <string:2120507448>: null, <string:1371634271>: 15.1, <string:1849754109>: null, tintColor: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_CRITICAL };
 obj.optionErrorIcon = obj;
 obj.labelText = { marginBottom: 8 };
 let closure_8 = obj.createStyles(obj);
@@ -82,7 +82,7 @@ export default function CommandOptionView(option) {
     const obj4 = { collapsable: false, style };
     let tmp23 = hasItem1;
     if (hasItem1) {
-      const obj5 = { style: tmp.labelText, children: option.displayName };
+      const obj5 = { delete: "content", dispatch: "isArray", raw: "isArray", style: tmp.labelText, children: option.displayName };
       tmp23 = callback(arg1(dependencyMap[11]).Text, obj5);
     }
     const items2 = [tmp23, , , ];

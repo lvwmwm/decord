@@ -1,7 +1,7 @@
 // Module ID: 8347
-// Function ID: 66463
+// Function ID: 66474
 // Name: CREATE_GUILD_EVENT_MODAL_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: isGuildEventValid
 
 // Module 8347 (CREATE_GUILD_EVENT_MODAL_KEY)

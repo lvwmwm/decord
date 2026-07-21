@@ -1,7 +1,7 @@
 // Module ID: 644
 // Function ID: 7358
 // Name: usesClientMods
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: usesClientMods
 
 // Module 644 (usesClientMods)

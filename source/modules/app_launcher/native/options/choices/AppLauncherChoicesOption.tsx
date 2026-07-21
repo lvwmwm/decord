@@ -1,5 +1,5 @@
 // Module ID: 11276
-// Function ID: 87761
+// Function ID: 87773
 // Name: AppLauncherChoicesOption
 // Dependencies: []
 // Exports: default
@@ -75,7 +75,7 @@ export default function AppLauncherChoicesOption(option) {
   }, items);
   let obj = arg1(dependencyMap[9]);
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, callback);
-  obj = { 0: null, 0: null };
+  obj = { bind: null, cursor: null };
   const items1 = [callback2().container, style];
   obj.style = items1;
   obj.hasError = hasError;
@@ -95,7 +95,7 @@ export default function AppLauncherChoicesOption(option) {
   obj.label = jsx(arg1(dependencyMap[11]).Text, obj);
   let tmp9 = null;
   if (null != first) {
-    const obj1 = { -9223372036854775808: true, 0: true, 0: true, children: first.choice.displayName };
+    const obj1 = { children: first.choice.displayName };
     tmp9 = jsx(arg1(dependencyMap[11]).Text, obj1);
   }
   obj.subLabel = tmp9;

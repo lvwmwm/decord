@@ -1,5 +1,5 @@
 // Module ID: 861
-// Function ID: 9624
+// Function ID: 9628
 // Name: setMetricAttribute
 // Dependencies: []
 // Exports: _INTERNAL_captureMetric

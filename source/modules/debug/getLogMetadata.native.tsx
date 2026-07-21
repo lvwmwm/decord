@@ -1,5 +1,5 @@
 // Module ID: 10317
-// Function ID: 79649
+// Function ID: 79660
 // Name: getLogMetadata
 // Dependencies: []
 // Exports: default

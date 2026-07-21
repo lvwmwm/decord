@@ -1,5 +1,5 @@
 // Module ID: 10613
-// Function ID: 82801
+// Function ID: 82812
 // Name: ModeratorStartStageView
 // Dependencies: []
 // Exports: default

@@ -1,17 +1,17 @@
-// Module ID: 13492
-// Function ID: 102384
+// Module ID: 13494
+// Function ID: 102406
 // Name: GuildProfileEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 13492 (GuildProfileEmptyState)
+// Module 13494 (GuildProfileEmptyState)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { onAppear: "center", onDisappear: "center" }, image: {}, header: { allowFetch: "2026-06-gummy-bears", allowApplicationState: "US", height: "usd", backgroundColor: 30 }, createButton: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { y: "center", GuildThemePreviewOwner: "center" }, image: { 1446656869: false, -11404374: false, 1396400387: false }, header: { "Bool(false)": "2026-06-gummy-bears", "Bool(false)": "US", "Bool(false)": "usd", "Bool(false)": 30 }, createButton: { size: true, progress: null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/profiles/native/GuildProfileEmptyState.tsx");
 
@@ -21,11 +21,11 @@ export default function GuildProfileEmptyState() {
   obj = { style: tmp2.image, children: callback2(importDefault(dependencyMap[5]), obj) };
   obj = { style: tmp2.image };
   const items = [callback2(closure_5, obj), , , , ];
-  const obj1 = { style: tmp2.header };
+  const obj1 = { delete: "center", dispatch: "center", raw: "hidden", style: tmp2.header };
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.string(arg1(dependencyMap[7]).t.Z1OZCV);
   items[1] = callback2(arg1(dependencyMap[6]).Text, obj1);
-  const obj2 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp2.header };
+  const obj2 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp2.header };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[7]).t.UEmBq7);
   items[2] = callback2(arg1(dependencyMap[6]).Text, obj2);

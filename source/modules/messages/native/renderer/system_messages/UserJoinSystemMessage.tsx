@@ -1,10 +1,10 @@
-// Module ID: 7665
-// Function ID: 61249
+// Module ID: 7666
+// Function ID: 61261
 // Name: createUserJoinSystemMessage
 // Dependencies: []
 // Exports: createUserJoinSystemMessage
 
-// Module 7665 (createUserJoinSystemMessage)
+// Module 7666 (createUserJoinSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const SystemChannelFlags = arg1(dependencyMap[2]).SystemChannelFlags;

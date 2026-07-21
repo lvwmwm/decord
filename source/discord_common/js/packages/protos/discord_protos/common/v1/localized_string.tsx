@@ -1,9 +1,9 @@
-// Module ID: 7130
-// Function ID: 57400
+// Module ID: 7131
+// Function ID: 57412
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7130 (_callSuper)
+// Module 7131 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -38,8 +38,8 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, LocalizedString$Type);
       items = [, ];
       items[0] = {};
-      items[1] = { V: { xseconds: 16, halfaminute: 8 } };
-      items1 = ["<string:2525476857>"];
+      items[1] = { V: {} };
+      items1 = ["CAROUSEL_SECTION_NAME_4"];
       items1[1] = items;
       return closure_8(this, LocalizedString$Type, items1);
     }
@@ -217,9 +217,9 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, LocalizedSnowflake$Type);
       items = [, ];
-      items[0] = { 9223372036854775807: "center", 0: null, 9223372036854775807: 30, no: "PKLITE compressed ZIP archive (see also PKZIP)" };
+      items[0] = { 1347510942: "PKLITE compressed ZIP archive (see also PKZIP)", 1678385745: "NEUTRAL_25", 1364379111: 1, 140698458: "stretch" };
       items[1] = { V: {} };
-      items1 = ["ToggleShowActivitiesDebugOverlay"];
+      items1 = [false];
       items1[1] = items;
       return closure_8(this, LocalizedSnowflake$Type, items1);
     }

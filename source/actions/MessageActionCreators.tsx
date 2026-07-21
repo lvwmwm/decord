@@ -1,5 +1,5 @@
 // Module ID: 6686
-// Function ID: 51546
+// Function ID: 51554
 // Name: trackInvite
 // Dependencies: []
 
@@ -381,7 +381,7 @@ const obj14 = {
   },
   sendGiftingPromptSystemMessage(channelId, giftingPrompt) {
     let obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_35.EPHEMERAL, author: obj, giftingPrompt };
-    obj = { ;: 55141372474191760000000000000000000000000000000, \: 0.00000000000000000000000000000000000000000000000000000000000004667261458395371, ,: 0.000000000000000000000000000000000000000000000000000000000000041334633291766945, /: 147377264888991440000000000000000000000000000000000000000000000000000000000000000000000000000000000, n: 0.00000000000000000000000000000000000000000000000000000000000004667261458271638, id: closure_42, discriminator: closure_43 };
+    obj = { u: 0.001, [: "FadeIn", i: null, p: 0.3, l: "FadeInRight", id: closure_42, discriminator: closure_43 };
     obj = {};
     const merged = Object.assign(importDefault(dependencyMap[50])(obj));
     obj["state"] = constants9.SENT;
@@ -389,7 +389,7 @@ const obj14 = {
   },
   sendGuildBoostUpsellSystemMessage(channelId, boostingPrompt) {
     let obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_35.EPHEMERAL, author: obj, boostingPrompt };
-    obj = { ;: 0, \: null, ,: 2, /: 2, n: "absolute", id: closure_42, discriminator: closure_43 };
+    obj = { id: closure_42, discriminator: closure_43 };
     obj = {};
     const merged = Object.assign(importDefault(dependencyMap[50])(obj));
     obj["state"] = constants9.SENT;
@@ -437,7 +437,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
+      }).with({}, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -450,7 +450,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
+      }).with({}, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -469,7 +469,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
+      }).with({}, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -817,9 +817,9 @@ const obj14 = {
       callback(closure_3[57]).addLocalMessages(databaseResult, -1);
     })();
   },
-  fetchNewLocalMessages(channelId, closure_16) {
-    closure_16 = channelId;
-    const importDefault = closure_16;
+  fetchNewLocalMessages(channelId, closure_18) {
+    closure_18 = channelId;
+    const importDefault = closure_18;
     return callback(async () => {
       let databaseResult;
       let id;
@@ -2120,7 +2120,7 @@ const obj14 = {
     const importDefault = arg1;
     return callback(async () => {
       const HTTP = callback(closure_3[54]).HTTP;
-      const obj = { handleRemoveAvatarSelect: null, __index__: null, ALLOW_GAME_FRIEND_DMS: null, url: closure_30.MESSAGE_CROSSPOST(callback, closure_1), rejectWithError: callback(closure_3[54]).rejectWithMigratedError() };
+      const obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, url: closure_30.MESSAGE_CROSSPOST(callback, closure_1), rejectWithError: callback(closure_3[54]).rejectWithMigratedError() };
       return yield HTTP.post(obj);
     })();
   },

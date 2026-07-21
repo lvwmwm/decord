@@ -1,10 +1,10 @@
-// Module ID: 15774
-// Function ID: 120616
+// Module ID: 15778
+// Function ID: 120660
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: init, initHeadlessTask
 
-// Module 15774 (_createForOfIteratorHelperLoose)
+// Module 15778 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -146,7 +146,7 @@ function sharedInit() {
       });
     }
   });
-  closure_9.ignoreLogs([]);
+  closure_9.ignoreLogs(["bqy", "sgn", "btj", "ms"]);
   const obj2 = callback(handleNotification[21]);
   const initialBundleDownloaded = importDefault(handleNotification[17]).getInitialBundleDownloaded();
   initialBundleDownloaded.then((versionRequired) => {

@@ -1,5 +1,5 @@
 // Module ID: 10509
-// Function ID: 82048
+// Function ID: 82059
 // Name: getEmbeddedActivityJoinability
 // Dependencies: []
 // Exports: useEmbeddedActivityJoinability

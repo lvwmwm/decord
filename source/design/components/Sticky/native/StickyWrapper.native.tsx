@@ -1,5 +1,5 @@
 // Module ID: 10389
-// Function ID: 80085
+// Function ID: 80096
 // Name: StickyWrapper
 // Dependencies: []
 // Exports: StickyWrapper
@@ -10,7 +10,7 @@ importAll(dependencyMap[0]);
 ({ StyleSheet, View: closure_2 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const styles = StyleSheet.create({ wrapper: {}, header: { zIndex: 1 }, androidHeader: {} });
+const styles = StyleSheet.create({ wrapper: {}, header: { zIndex: 1 }, androidHeader: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" } });
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
 

@@ -1,9 +1,15 @@
 // Module ID: 1713
-// Function ID: 19258
+// Function ID: 19263
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 
 // Module 1713 (_isNativeReflectConstruct)
+import result from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,17 +19,12 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = { code: "function pnpm_FadingTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,halfDuration,withDelay,callback}=this.__closure;return{initialValues:{opacity:1,originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{opacity:delayFunction(delay,withSequence(withTiming(0,{duration:halfDuration}),withTiming(1,{duration:halfDuration}))),originX:withDelay(delay+halfDuration,withTiming(values.targetOriginX,{duration:0})),originY:withDelay(delay+halfDuration,withTiming(values.targetOriginY,{duration:0})),width:withDelay(delay+halfDuration,withTiming(values.targetWidth,{duration:0})),height:withDelay(delay+halfDuration,withTiming(values.targetHeight,{duration:0}))},callback:callback};}" };
 const tmp2 = (BaseAnimationBuilder) => {
   class FadingTransition {
     constructor() {
       self = this;
-      tmp = closure_2(this, FadingTransition);
+      tmp = result(this, FadingTransition);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -74,7 +75,7 @@ const tmp2 = (BaseAnimationBuilder) => {
     }
   ];
   return callback(FadingTransition, null, items);
-}(arg1(dependencyMap[6]).BaseAnimationBuilder);
+}(require("result").BaseAnimationBuilder);
 tmp2.presetName = "FadingTransition";
 
 export const FadingTransition = tmp2;

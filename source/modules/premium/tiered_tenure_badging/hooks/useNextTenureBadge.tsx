@@ -1,5 +1,5 @@
 // Module ID: 12246
-// Function ID: 93918
+// Function ID: 93930
 // Name: useNextTenureBadge
 // Dependencies: []
 // Exports: useNextTenureBadge

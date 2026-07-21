@@ -1,5 +1,5 @@
 // Module ID: 9636
-// Function ID: 75049
+// Function ID: 75060
 // Name: AppliedForumTag
 // Dependencies: []
 // Exports: AppliedForumTagPill
@@ -14,7 +14,7 @@ class AppliedForumTag {
     obj = arg1(dependencyMap[7]);
     items = [];
     items[0] = closure_4;
-    f75051 = obj.useStateFromStores(items, () => {
+    f75062 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != closure_3) {
         usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(closure_3);
@@ -84,10 +84,10 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.pill = obj;
 obj.disableEndMargin = { marginRight: 0 };
-obj.emoji = { accessible: null, guildId: "space-between", "Bool(false)": 8, "Bool(false)": 16 };
+obj.emoji = {};
 obj.textEmoji = {};
 obj.tagName = { flexShrink: 1 };
-obj.container = {};
+obj.container = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/forums/native/AppliedForumTag.tsx");

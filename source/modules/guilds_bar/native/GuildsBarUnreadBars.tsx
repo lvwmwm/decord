@@ -1,9 +1,9 @@
-// Module ID: 14756
-// Function ID: 111222
+// Module ID: 14759
+// Function ID: 111256
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14756 (_createForOfIteratorHelperLoose)
+// Module 14759 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -170,7 +170,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
     layoutStart = scrollPosValue2.get();
   }
   const scrollPosValue3 = scrollPosValue.scrollPosValue;
-  let obj = { flexDirection: false, alignItems: false };
+  let obj = { "Bool(false)": "<string:1876819969>", "Bool(false)": "<string:2170814465>" };
   const diff = scrollPosValue3.get() + scrollPosValue.containerSize - arg3 - (closure_12 + closure_13);
   const tmp3 = _createForOfIteratorHelperLoose(scrollPosValue.state.items);
   const iter = tmp3();
@@ -421,7 +421,8 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: closure_13 } = arg1(dependencyMap[7]));
 const jsx = arg1(dependencyMap[8]).jsx;
 const tmp3 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[9]).createStyles({ wrapper: { width: tmp2.GUILD_LIST_WIDTH } });
+const obj = { isRecording: "<string:3082955202>", microphoneEnabled: "<string:103629460>", isUploading: "<string:3630497793>", currentStep: "<string:961609729>", width: tmp2.GUILD_LIST_WIDTH };
+let closure_15 = arg1(dependencyMap[9]).createStyles({ wrapper: obj });
 let closure_16 = { beforeItem: undefined, afterItem: undefined };
 let closure_17 = { beforeItem: {}, afterItem: undefined };
 let closure_18 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
@@ -532,7 +533,7 @@ const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
   const paddingEnd = tmp6.paddingEnd;
   let closure_7 = paddingEnd;
   const items2 = [fastList, paddingStart, paddingEnd];
-  obj = { borderWidth: "<string:990002005>", backgroundColor: "<string:990001922>", height: "<string:1694644994>", width: "<string:235802126>", style: tmp6.style };
+  obj = { l: "<string:906114645>", body: "<string:906114562>", flex: "<string:1694643714>", accessibilityRole: "<string:235802126>", style: tmp6.style };
   callback = importAllResult.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);

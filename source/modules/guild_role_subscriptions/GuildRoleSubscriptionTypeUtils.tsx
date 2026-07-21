@@ -1,10 +1,10 @@
-// Module ID: 13996
-// Function ID: 106442
+// Module ID: 13999
+// Function ID: 106474
 // Name: getBenefitKey
 // Dependencies: []
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 13996 (getBenefitKey)
+// Module 13999 (getBenefitKey)
 let closure_2 = require(dependencyMap[0]).GuildRoleSubscriptionBenefitTypes;
 const SubscriptionIntervalTypes = require(dependencyMap[1]).SubscriptionIntervalTypes;
 const _module = require(dependencyMap[3]);

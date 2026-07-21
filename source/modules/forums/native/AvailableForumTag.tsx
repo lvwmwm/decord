@@ -1,5 +1,5 @@
 // Module ID: 9850
-// Function ID: 76246
+// Function ID: 76257
 // Name: AvailableForumTag
 // Dependencies: []
 // Exports: default
@@ -11,14 +11,14 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj = { 1449366625: "pillIcon", "Bool(false)": "MetaStickerType", "Bool(false)": "prototype", "Bool(false)": "isArray", "Bool(false)": "currentlyFocusedField", "Bool(false)": "useActionBarPrimaryButton", "Bool(false)": "nativeIsReady", "Bool(false)": "PX_80", "Bool(false)": "interactionId", "Bool(false)": "r", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.pill = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.pillSelected = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
 obj.pillDisabled = { opacity: 0.6 };
-obj.emoji = {};
+obj.emoji = { borderBottomWidth: 2, shadowColor: "30 days", height: "guild", alignSelf: "2026-05_default_invite_expiration_guild_web", backgroundColor: "Default Invite Expiration Guild Web", marginBottom: 20 };
 obj.imageEmoji = {};
-obj.textEmoji = { PX_16: "LengthDelimited", ix: "Array" };
+obj.textEmoji = { 9223372036854775807: false, 0: false };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
@@ -96,7 +96,7 @@ export default function AvailableForumTag(tag) {
         const tmp7 = callback2;
       }
       const items = [tmp7Result, ];
-      obj3 = { children: closure_5 };
+      obj3 = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", children: closure_5 };
       items[1] = callback2(tag(disabled[11]).Text, obj3);
       obj["children"] = items;
       return closure_7(tag(disabled[8]).PressableScale, obj);

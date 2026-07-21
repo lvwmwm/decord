@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 121540
+// Module ID: 15878
+// Function ID: 121584
 // Name: openChangelog
 // Dependencies: []
 // Exports: openChangelog
 
-// Module 15874 (openChangelog)
+// Module 15878 (openChangelog)
 const CHANGELOG_MODAL_KEY = require(dependencyMap[0]).CHANGELOG_MODAL_KEY;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/changelog/openChangelog.native.tsx");

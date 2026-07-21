@@ -1,5 +1,5 @@
 // Module ID: 12067
-// Function ID: 93149
+// Function ID: 93161
 // Name: QRCodeSvg
 // Dependencies: []
 

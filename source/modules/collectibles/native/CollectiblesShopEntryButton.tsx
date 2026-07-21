@@ -1,10 +1,10 @@
-// Module ID: 15355
-// Function ID: 116933
+// Module ID: 15358
+// Function ID: 116972
 // Name: CoachmarkVariant
 // Dependencies: []
 // Exports: default
 
-// Module 15355 (CoachmarkVariant)
+// Module 15358 (CoachmarkVariant)
 function CoachmarkVariant(shopButtonRef) {
   let marketing;
   let navigateToShop;

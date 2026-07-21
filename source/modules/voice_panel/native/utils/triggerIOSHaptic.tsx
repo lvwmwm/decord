@@ -1,10 +1,10 @@
-// Module ID: 15648
-// Function ID: 119548
+// Module ID: 15651
+// Function ID: 119587
 // Name: triggerIOSHaptic
 // Dependencies: []
 // Exports: default
 
-// Module 15648 (triggerIOSHaptic)
+// Module 15651 (triggerIOSHaptic)
 const IS_IOS = require(dependencyMap[0]).IS_IOS;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/voice_panel/native/utils/triggerIOSHaptic.tsx");

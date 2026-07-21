@@ -1,7 +1,7 @@
 // Module ID: 10138
-// Function ID: 78447
+// Function ID: 78458
 // Name: VibingWumpusAction
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10138 (VibingWumpusAction)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 8847
-// Function ID: 69822
+// Function ID: 69833
 // Name: isVideoBackgroundSupported
 // Dependencies: []
 // Exports: default

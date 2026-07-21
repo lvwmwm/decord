@@ -1,14 +1,14 @@
 // Module ID: 6684
-// Function ID: 51471
+// Function ID: 51479
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 4294967295, 0, 4294967295]
 
 // Module 6684 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import { NOOP_NULL } from "__exportStarResult1";
+import result from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_8 from "result";
+import { NOOP_NULL } from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -153,7 +153,7 @@ let tmp7 = (Store) => {
   class ReferralTrialStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, ReferralTrialStore);
+      tmp = result(this, ReferralTrialStore);
       obj = closure_6(ReferralTrialStore);
       tmp2 = closure_5;
       if (closure_26()) {
@@ -305,9 +305,9 @@ let tmp7 = (Store) => {
     }
   };
   return callback(ReferralTrialStore, items);
-}(require("__exportStarResult1").Store);
+}(require("result").Store);
 tmp7.displayName = "ReferralTrialStore";
-tmp7 = new tmp7(require("__exportStarResult1"), {
+tmp7 = new tmp7(require("result"), {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     const arg1 = userTrialOfferId;

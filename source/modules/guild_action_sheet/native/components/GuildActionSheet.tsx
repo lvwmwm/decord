@@ -1,8 +1,8 @@
-// Module ID: 12856
-// Function ID: 98266
+// Module ID: 12858
+// Function ID: 98288
 // Dependencies: []
 
-// Module 12856
+// Module 12858
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function GuildActionSheet(arg0) {
   let obj = arg1(dependencyMap[6]);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
-  obj = { ref: bottomSheetRef, startExpanded: expanded };
+  obj = { <string:4105735343>: true, <string:471773880>: true, <string:1980734049>: true, <string:3420244700>: true, ref: bottomSheetRef, startExpanded: expanded };
   obj = { scrollsToTop: false, style: tmp.container };
   const obj1 = {};
   let num = 0;

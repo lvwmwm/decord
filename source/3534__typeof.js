@@ -1,5 +1,5 @@
 // Module ID: 3534
-// Function ID: 27354
+// Function ID: 27359
 // Name: _typeof
 // Dependencies: []
 
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -296,13 +296,13 @@ export const ISODayParser = (Parser) => {
             const obj = { unit: "day" };
             return ordinalNumber.ordinalNumber(arg0, obj);
           } else if ("iii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }), valueCallback);
           } else if ("iiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }), valueCallback);
           } else if ("iiiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }), valueCallback);
           } else {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || ordinalNumber.day(arg0, { "Bool(true)": null, "Bool(true)": null }), valueCallback);
           }
         }
       }

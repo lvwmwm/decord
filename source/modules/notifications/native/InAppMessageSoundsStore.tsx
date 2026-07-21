@@ -1,5 +1,5 @@
 // Module ID: 10232
-// Function ID: 79040
+// Function ID: 79051
 // Name: isInAppMessageSoundsEnabled
 // Dependencies: []
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled

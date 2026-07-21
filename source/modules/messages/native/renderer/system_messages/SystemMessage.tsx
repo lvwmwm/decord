@@ -1,10 +1,10 @@
-// Module ID: 7640
-// Function ID: 61161
+// Module ID: 7641
+// Function ID: 61173
 // Name: createSystemMessageContent
 // Dependencies: []
 // Exports: createSystemMessageContent
 
-// Module 7640 (createSystemMessageContent)
+// Module 7641 (createSystemMessageContent)
 const _module = require(dependencyMap[0]);
 ({ MessageTypes: closure_2, BoostedGuildTiers: closure_3 } = _module);
 const _module1 = require(dependencyMap[38]);

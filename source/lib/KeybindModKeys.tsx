@@ -1,9 +1,9 @@
-// Module ID: 12705
-// Function ID: 97558
+// Module ID: 12707
+// Function ID: 97580
 // Name: modKey
 // Dependencies: []
 
-// Module 12705 (modKey)
+// Module 12707 (modKey)
 const _module = require(dependencyMap[0]);
 if (_module.isMac()) {
   let str = "cmd";

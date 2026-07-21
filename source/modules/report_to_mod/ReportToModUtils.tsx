@@ -1,5 +1,5 @@
 // Module ID: 5651
-// Function ID: 48332
+// Function ID: 48340
 // Name: isModeratorReportOrPostChannelId
 // Dependencies: []
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags

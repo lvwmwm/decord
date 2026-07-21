@@ -1,10 +1,10 @@
-// Module ID: 15441
-// Function ID: 117805
+// Module ID: 15444
+// Function ID: 117844
 // Name: useSpamMessageRequestCount
 // Dependencies: []
 // Exports: useSpamMessageRequestCount
 
-// Module 15441 (useSpamMessageRequestCount)
+// Module 15444 (useSpamMessageRequestCount)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/message_request/hooks/useSpamMessageRequestsCount.tsx");
 

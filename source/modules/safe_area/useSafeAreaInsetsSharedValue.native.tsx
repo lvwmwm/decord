@@ -1,15 +1,15 @@
 // Module ID: 10383
-// Function ID: 80048
+// Function ID: 80059
 // Name: _arrayLikeToArray
 // Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0]
 // Exports: default
 
 // Module 10383 (_arrayLikeToArray)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
 let done;
 function _arrayLikeToArray(arg0, arg1) {
@@ -25,11 +25,11 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 let obj = {};
 obj = {};
-const merged = Object.assign(__exportStarResult1.getSafeAreaInsets("main"));
-obj.main = __exportStarResult1.makeMutable(obj);
+const merged = Object.assign(result.getSafeAreaInsets("main"));
+obj.main = result.makeMutable(obj);
 obj = {};
-const merged1 = Object.assign(__exportStarResult1.getSafeAreaInsets("share"));
-obj.share = __exportStarResult1.makeMutable(obj);
+const merged1 = Object.assign(result.getSafeAreaInsets("share"));
+obj.share = result.makeMutable(obj);
 function _loop(value) {
   const require = value;
   importDefault(dependencyMap[2])((arg0) => {
@@ -114,7 +114,7 @@ if (!iter.done) {
   } while (!done);
 }
 let closure_4 = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+result = result.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
 export default function useSafeAreaInsetsSharedValue() {
   const obj = require(dependencyMap[5]);

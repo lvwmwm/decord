@@ -1,5 +1,5 @@
 // Module ID: 8737
-// Function ID: 69093
+// Function ID: 69104
 // Name: useCollectiblesExternalGatewayFacet
 // Dependencies: []
 // Exports: default

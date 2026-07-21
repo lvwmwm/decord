@@ -1,5 +1,5 @@
 // Module ID: 12244
-// Function ID: 93909
+// Function ID: 93921
 // Name: TieredTenureBadgePerkCard
 // Dependencies: []
 // Exports: TieredTenureBadgePerkCard
@@ -11,7 +11,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ badgeNameContainer: { flexDirection: "row" }, tenureRequirements: { marginStart: 4 }, image: {}, imageContainer: { position: "String", bottom: "Array" }, upcomingBadge: { opacity: 0.4 }, title: { marginTop: 0 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ badgeNameContainer: { flexDirection: "row" }, tenureRequirements: { marginStart: 4 }, image: {}, imageContainer: {}, upcomingBadge: { opacity: 0.4 }, title: { marginTop: 0 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/premium/tiered_tenure_badging/native/TieredTenureBadgePerkCard.tsx");
 
@@ -88,7 +88,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     }
     obj2 = {};
     obj3 = { style: tmp4.badgeNameContainer };
-    obj4 = {};
+    obj4 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/images/native/icons/voice_calls/dark_theme" };
     const intl6 = arg1(dependencyMap[15]).intl;
     obj4.children = intl6.string(tieredTenureBadgeData.nameUnformatted);
     const items2 = [callback(arg1(dependencyMap[17]).Text, obj4), ];
@@ -98,7 +98,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     const items3 = [callback2(View, obj3), ];
     let tmp41 = null != formatResult;
     if (tmp41) {
-      const obj6 = { children: formatResult };
+      const obj6 = { hasMaxConnections: false, isBoostOnlySubscription: "2026-03-bogo-promotion-marketing-materials-v2", children: formatResult };
       tmp41 = callback(arg1(dependencyMap[17]).Text, obj6);
     }
     items3[1] = tmp41;

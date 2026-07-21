@@ -1,5 +1,5 @@
 // Module ID: 3730
-// Function ID: 28512
+// Function ID: 28517
 // Name: _
 // Dependencies: []
 
@@ -60,8 +60,14 @@ const fn = function _(moment) {
   obj.monthsShortRegex = /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i;
   obj.monthsStrictRegex = /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i;
   obj.monthsShortStrictRegex = /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i;
-  obj.longDateFormat = { <string:1122280543>: 1895826198, <string:3251850218>: 1728054025, <string:306010250>: 1358955273, <string:37429971>: 1835074107, <string:1812403200>: -1200414446, <string:3855182856>: 419430411 };
-  obj.calendar = {
+  obj.longDateFormat = {};
+  const obj2 = {
+    "Null": "flex",
+    "Null": "stretch",
+    "Null": "bottom",
+    "Null": "100%",
+    "Null": 1,
+    "Bool(true)": "flex",
     nextWeek(week) {
       const self = this;
       if (weekResult === this.week()) {
@@ -113,6 +119,7 @@ const fn = function _(moment) {
       const weekResult = week.week();
     }
   };
+  obj.calendar = obj2;
   obj.relativeTime = { ss: relativeTimeWithPlural, m: relativeTimeWithPlural, mm: relativeTimeWithPlural, h: "\u0447\u0430\u0441", hh: relativeTimeWithPlural, d: "\u0434\u0435\u043D\u044C", dd: relativeTimeWithPlural, M: "\u043C\u0435\u0441\u044F\u0446", MM: relativeTimeWithPlural, y: "\u0433\u043E\u0434", yy: relativeTimeWithPlural };
   obj.meridiemParse = /ночи|утра|дня|вечера/i;
   obj.isPM = function isPM(arg0) {
@@ -153,7 +160,7 @@ const fn = function _(moment) {
     }
     return arg0 + "-\u0439";
   };
-  obj.week = { <string:1431496722>: false, <string:1627556098>: false };
+  obj.week = { "Bool(true)": null, "Bool(true)": null };
   return moment.defineLocale("ru", obj);
 };
 if ("object" === typeof exports) {

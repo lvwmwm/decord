@@ -1,10 +1,10 @@
-// Module ID: 7847
-// Function ID: 62557
+// Module ID: 7848
+// Function ID: 62570
 // Name: getImageFormat
 // Dependencies: []
 // Exports: createPendingImage, generateAvatarDescription, generateRecentAvatarFileDetails, getPendingAvatarSrc
 
-// Module 7847 (getImageFormat)
+// Module 7848 (getImageFormat)
 function getImageFormat(canAnimate) {
   let flag = canAnimate.canAnimate;
   if (flag === undefined) {

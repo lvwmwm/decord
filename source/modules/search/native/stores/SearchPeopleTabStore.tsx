@@ -1,5 +1,5 @@
 // Module ID: 11399
-// Function ID: 88649
+// Function ID: 88661
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -108,7 +108,7 @@ let closure_11 = () => {
       const userSearch = this.userSearch;
       this.userIndexes = userSearch.filter(this.searchQueryString);
       let obj = PeopleSearchManager(closure_2[9]);
-      obj = { ruleId: true, type: true, matchFunction: true, style: true, deleteNodeOnBackspace: true, editDisabled: true, color: true, lineClamp: true, variant: true, data: this.userIndexes };
+      obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, data: this.userIndexes };
       const result = obj.parseUserSearchResults(obj);
       let arr3 = result;
       if (this.groupDMs.length > 0) {

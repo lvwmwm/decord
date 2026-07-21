@@ -1,10 +1,10 @@
-// Module ID: 13619
-// Function ID: 103183
+// Module ID: 13621
+// Function ID: 103205
 // Name: useDerivedDmSpamFilterSettingValue
 // Dependencies: []
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 13619 (useDerivedDmSpamFilterSettingValue)
+// Module 13621 (useDerivedDmSpamFilterSettingValue)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).ExplicitContentFilterToDmSpamFilterV2;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");

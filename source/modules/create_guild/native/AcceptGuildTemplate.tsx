@@ -1,5 +1,5 @@
 // Module ID: 10936
-// Function ID: 85044
+// Function ID: 85055
 // Name: GuildTemplateResolving
 // Dependencies: []
 // Exports: default
@@ -31,7 +31,7 @@ function GuildTemplateResolved(guildTemplate) {
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.QzUORX);
   const items1 = [callback(arg1(dependencyMap[14]).Text, obj), , , , , , , , , , ];
-  obj = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001965683182421529, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309744537072, "Null": 0.000000000000000000000000000000006550826165290012, style: tmp.description, children: guildTemplate.name };
+  obj = { delete: 1316279160, dispatch: 251658240, raw: 16777216, style: tmp.description, children: guildTemplate.name };
   items1[1] = callback(arg1(dependencyMap[14]).Text, obj);
   items1[2] = callback(importDefault(dependencyMap[16]), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = {};
@@ -61,16 +61,16 @@ function GuildTemplateResolved(guildTemplate) {
   obj4.children = callback(arg1(dependencyMap[18]).Button, obj5);
   items1[4] = callback(closure_4, obj4);
   items1[5] = callback(importDefault(dependencyMap[19]), { style: tmp.divider, outer: true });
-  const obj7 = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window", style: tmp.sectionHeader };
+  const obj7 = { style: tmp.sectionHeader };
   const intl5 = arg1(dependencyMap[15]).intl;
   obj7.children = intl5.string(arg1(dependencyMap[15]).t.OGiMXJ);
   items1[6] = callback(arg1(dependencyMap[14]).Text, obj7);
-  const obj8 = {};
+  const obj8 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
   const intl6 = arg1(dependencyMap[15]).intl;
   obj8.children = intl6.string(arg1(dependencyMap[15]).t.Ztwyoz);
   items1[7] = callback(arg1(dependencyMap[14]).Text, obj8);
   items1[8] = callback(Channels, { channels: guildTemplate.serializedSourceGuild.channels });
-  const obj10 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", style: tmp.sectionTip };
+  const obj10 = { delete: 1, dispatch: 22, raw: "exposure_tracking", style: tmp.sectionTip };
   const obj11 = { style: tmp.protip };
   const intl7 = arg1(dependencyMap[15]).intl;
   const items2 = [intl7.string(arg1(dependencyMap[15]).t.8tvIiN), ": "];
@@ -83,11 +83,11 @@ function GuildTemplateResolved(guildTemplate) {
   let tmp9 = null;
   if (found.length > 0) {
     const obj12 = {};
-    const obj13 = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window", style: tmp.sectionHeader };
+    const obj13 = { style: tmp.sectionHeader };
     const intl9 = arg1(dependencyMap[15]).intl;
     obj13.children = intl9.string(arg1(dependencyMap[15]).t.mQ0H1p);
     const items4 = [callback(arg1(dependencyMap[14]).Text, obj13), , ];
-    const obj14 = {};
+    const obj14 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
     const intl10 = arg1(dependencyMap[15]).intl;
     obj14.children = intl10.string(arg1(dependencyMap[15]).t.jOPEYC);
     items4[1] = callback(arg1(dependencyMap[14]).Text, obj14);
@@ -207,7 +207,7 @@ const tmp5 = arg1(dependencyMap[6]);
 const merged = Object.assign(importDefault(dependencyMap[9])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj.header = obj1;
 obj.description = {};
-obj.iconUploader = { "Bool(false)": "isArrayBufferToString", "Bool(false)": "%AsyncGenerator%" };
+obj.iconUploader = { borderRadius: "isArrayBufferToString", backgroundColor: "sync" };
 obj.createButtonWrapper = { marginTop: 8 };
 obj.resolvingContainer = {};
 obj.divider = { marginTop: 8 };
@@ -218,12 +218,12 @@ obj2["marginTop"] = 24;
 obj.sectionHeader = obj2;
 const importDefaultResult1 = importDefault(dependencyMap[9]);
 obj.rolesChannelsWrapper = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm, marginTop: 8, padding: 8 };
-obj.channelsWrapper = {};
-obj.rolesWrapper = { 1925026477: null, -1346530010: null };
-obj.channelRow = { "Bool(false)": 44, "Bool(false)": 1166889217, "Bool(false)": 44579137 };
+obj.channelsWrapper = { "Bool(true)": 1665208787, "Bool(true)": 1912603216 };
+obj.rolesWrapper = { -9223372036854775808: null, 7741: null };
+obj.channelRow = {};
 obj.channelIcon = { "Null": true, "Null": true, "Null": true, "Null": true };
 obj.channelCategoryIcon = {};
-const obj4 = { width: "message", height: "row", marginRight: 16, color: importDefault(dependencyMap[8]).colors.CHANNELS_DEFAULT };
+const obj4 = { "Null": "message", "Null": "row", "Null": 16, color: importDefault(dependencyMap[8]).colors.CHANNELS_DEFAULT };
 obj.channelName = obj4;
 const merged2 = Object.assign(importDefault(dependencyMap[9])(Fonts.DISPLAY_EXTRABOLD, undefined, 12, { uppercase: true }));
 obj.channelCategoryName = {};

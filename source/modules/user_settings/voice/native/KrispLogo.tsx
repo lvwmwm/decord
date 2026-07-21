@@ -1,5 +1,5 @@
 // Module ID: 10716
-// Function ID: 83388
+// Function ID: 83399
 // Name: handleKrispLinkPressed
 // Dependencies: []
 // Exports: default
@@ -25,7 +25,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9, HelpdeskArticles: closure_10 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
-let closure_13 = { logo: { -599305822: null, 1817372513: null, 1639456730: null }, detailsView: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } };
+let closure_13 = { logo: { flexDirection: "<string:2868904512>", gap: "<string:1358955029>", flex: "<string:3679572856>" }, detailsView: {} };
 const tmp5 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
 

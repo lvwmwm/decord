@@ -1,10 +1,10 @@
-// Module ID: 14360
-// Function ID: 108425
+// Module ID: 14363
+// Function ID: 108457
 // Name: WishlistButtonCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14360 (WishlistButtonCoachmark)
+// Module 14363 (WishlistButtonCoachmark)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;

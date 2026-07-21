@@ -1,5 +1,5 @@
 // Module ID: 10473
-// Function ID: 81075
+// Function ID: 81086
 // Name: closeVoicePanels
 // Dependencies: []
 // Exports: default

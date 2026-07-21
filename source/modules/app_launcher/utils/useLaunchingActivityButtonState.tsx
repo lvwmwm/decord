@@ -1,5 +1,5 @@
 // Module ID: 11253
-// Function ID: 87545
+// Function ID: 87557
 // Name: useLaunchingActivityButtonState
 // Dependencies: []
 // Exports: default

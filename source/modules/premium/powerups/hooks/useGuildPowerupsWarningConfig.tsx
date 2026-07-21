@@ -1,5 +1,5 @@
 // Module ID: 11583
-// Function ID: 90015
+// Function ID: 90027
 // Name: useGuildPowerupsWarningConfig
 // Dependencies: []
 // Exports: default
@@ -43,7 +43,7 @@ export default function useGuildPowerupsWarningConfig(arg0, arg1) {
   const items3 = [diff, arg1];
   return React.useMemo(() => {
     if (diff <= 0) {
-      let obj = { "Null": "modal_top_pill_localized", "Null": "message", "Null": 7, "Null": "dismiss_key" };
+      let obj = {};
     } else {
       obj = { shouldShow: true };
       const intl = arg0(stateFromStores[4]).intl;

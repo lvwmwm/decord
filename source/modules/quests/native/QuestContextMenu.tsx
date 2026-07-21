@@ -1,9 +1,9 @@
-// Module ID: 13924
-// Function ID: 105821
+// Module ID: 13927
+// Function ID: 105853
 // Name: renderDefaultButton
 // Dependencies: []
 
-// Module 13924 (renderDefaultButton)
+// Module 13927 (renderDefaultButton)
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(callback(ref, closure_3));

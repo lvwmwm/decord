@@ -1,5 +1,5 @@
 // Module ID: 11891
-// Function ID: 92073
+// Function ID: 92085
 // Name: determineEmojiType
 // Dependencies: []
 // Exports: default

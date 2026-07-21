@@ -1,15 +1,16 @@
-// Module ID: 8297
-// Function ID: 65561
+// Module ID: 8298
+// Function ID: 65574
 // Name: useMediaShareActions
-// Dependencies: [0, 0, 0, 0, 0, 0, 653, 8301, 8303, 8304, 8306, 8307, 7808, 2, 8302, 2, 653, 4812, 477, 2, 7803, 8305, 2, 8301, 2, 6, 7, 15, 17, 18, 1838, 8309, 566, 686]
+// Dependencies: [0, 0, 0, 0, 0, 0, 653, 8302, 8304, 8305, 8307, 8308, 7809, 2, 8303, 2, 653, 4811, 477, 2, 7804, 8306, 2, 8302, 2, 6, 7, 15, 17, 18, 1838, 8310, 566, 686]
 // Exports: default
 
-// Module 8297 (useMediaShareActions)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
+// Module 8298 (useMediaShareActions)
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import result from "result";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "ME";
 import { jsx } from "CRUNCHYROLL_LINK_DEST_ORIGIN";
 import dispatcher from "dispatcher";
@@ -229,8 +230,8 @@ function useMediaShareActions(source) {
     return items;
   }, items8);
 }
-({ AnalyticsSections: closure_8, GIF_RE_IOS: closure_9, MediaType: closure_10 } = require("__exportStarResult1"));
-const result = dispatcher.fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
+({ AnalyticsSections: closure_8, GIF_RE_IOS: closure_9, MediaType: closure_10 } = result);
+result = dispatcher.fileFinishedImporting("modules/media_viewer/native/components/MediaShareActions.tsx");
 
 export default function MediaShareActionSheet(source) {
   let obj = { source: source.source, disableDownload: source.disableDownload, shareable: source.shareable };

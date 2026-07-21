@@ -1,5 +1,5 @@
 // Module ID: 8950
-// Function ID: 70548
+// Function ID: 70559
 // Name: _callSuper
 // Dependencies: []
 
@@ -37,14 +37,14 @@ let tmp2 = (MessageType) => {
   class ApplicationUserRoleConnection$Type {
     constructor() {
       tmp = closure_3(this, ApplicationUserRoleConnection$Type);
-      obj = { "Null": "r", "Null": "REACTION_BACKGROUND_DEFAULT", "Null": "AMEX_NETWORK_ERROR", "Null": "y" };
-      obj.V = { xseconds: 16, halfaminute: 8 };
+      obj = { 9223372036854775807: "r", 9223372036854775807: "isInTreatment", 0: "OBSIDIAN", 0: "y" };
+      obj.V = {};
       items = [, , , ];
       items[0] = obj;
       items[1] = {};
-      items[2] = {};
+      items[2] = { 1347510942: "surrogates", 1678385745: "isArray", 1364379111: "unicodeVersion", 140698458: "isArray" };
       items[3] = {};
-      items1 = ["LIVE_GUILD_STAGE"];
+      items1 = ["initializeAndroidNotificationSettingsStore"];
       items1[1] = items;
       return closure_10(this, ApplicationUserRoleConnection$Type, items1);
     }
@@ -54,7 +54,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { -110966814: "png", -1017097241: "text", -1658610399: "text-md/normal", 1860687715: true, metadata: {} };
+      let obj = { "Bool(true)": "png", "Bool(true)": "text", "Bool(true)": "text-md/normal", "Bool(true)": true, metadata: {} };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, ApplicationUserRoleConnection$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -240,7 +240,7 @@ let tmp4 = (MessageType) => {
       tmp = closure_3(this, AcknowledgedApplicationDisclosure$Type);
       obj = {
         T() {
-              const items = [13.113, closure_8];
+              const items = [false, closure_8];
               return items;
             }
       };
@@ -251,7 +251,7 @@ let tmp4 = (MessageType) => {
               return callback(closure_1[7]).Timestamp;
             }
       };
-      items1 = ["Set"];
+      items1 = [null];
       items1[1] = items;
       return closure_10(this, AcknowledgedApplicationDisclosure$Type, items1);
     }
@@ -387,7 +387,7 @@ let tmp6 = (MessageType) => {
       };
       items = [];
       items[0] = obj;
-      items1 = ["isoSubdivision"];
+      items1 = ["Set"];
       items1[1] = items;
       return closure_10(this, AcknowledgedApplicationDisclosures$Type, items1);
     }

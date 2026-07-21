@@ -1,10 +1,10 @@
-// Module ID: 7894
-// Function ID: 62814
+// Module ID: 7895
+// Function ID: 62827
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 7894 (_createForOfIteratorHelperLoose)
+// Module 7895 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -288,7 +288,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 const getPollState = arg1(dependencyMap[6]).getPollState;
 const tmp2 = arg1(dependencyMap[7]);
 const MessageStates = tmp2.MessageStates;
-const obj = { 140599176: true, -1335718063: true, -1978968740: true, 185536522: true, 118130959: true, channelId: tmp2.EMPTY_STRING_SNOWFLAKE_ID, selectedAnswerIds: new Set() };
+const obj = { channelId: tmp2.EMPTY_STRING_SNOWFLAKE_ID, selectedAnswerIds: new Set() };
 const set = new Set();
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/polls/chat/formatPollMessageChatData.tsx");
 
@@ -430,17 +430,17 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           let obj = { didSelfVote: tmp7, hasVoted, isExpired, isSelected: hasItem, isLeader: num >= callback && 0 !== num, showResults };
           const match = num(layout_type[8]).match(obj);
           const str = num(layout_type[8]);
-          const withResult = match.with({}, () => "victorSelected");
-          const withResult1 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected");
-          const withResult2 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected");
-          const withResult3 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted");
-          const withResult4 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted");
-          const withResult5 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted").with({ "Null": true, "Null": true }, () => "notVoted");
-          const withResult6 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted").with({ "Null": true, "Null": true }, () => "notVoted").with({ isSelected: true }, () => "selected");
+          const withResult = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected");
+          const withResult1 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected");
+          const withResult2 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected");
+          const withResult3 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted");
+          const withResult4 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted");
+          const withResult5 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted");
+          const withResult6 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected");
           obj = { answerId: combined };
           obj = { text: answer_id.poll_media.text };
           const obj1 = { animateEmoji: num };
-          const withResult7 = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted").with({ "Null": true, "Null": true }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ -9223372036854775808: null, 0: null }, () => "notVoted");
+          const withResult7 = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted");
           obj.emoji = stringResult(answer_id.poll_media.emoji, obj1);
           obj.stickerId = answer_id.poll_media.sticker_id;
           obj.attachmentIds = answer_id.poll_media.attachment_ids;
@@ -452,14 +452,14 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           }
           obj.isVictor = tmp11;
           obj.didSelfVote = tmp7;
-          obj.style = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted").with({ "Null": true, "Null": true }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ -9223372036854775808: null, 0: null }, () => "notVoted").otherwise(() => "normalVote");
+          obj.style = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted").otherwise(() => "normalVote");
           let tmp12 = closure_10;
           if (closure_10) {
             tmp12 = !useReducedMotion;
           }
           obj.shouldAnimateTransition = tmp12;
           obj.votesPercentage = Math.round(100 * num2);
-          const otherwiseResult = match.with({}, () => "victorSelected").with({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({ markerMid: true, markerEnd: true }, () => "voted").with({ "Null": true, "Null": true }, () => "notVoted").with({ isSelected: true }, () => "selected").with({ -9223372036854775808: null, 0: null }, () => "notVoted").otherwise(() => "normalVote");
+          const otherwiseResult = match.with({ <string:1553034850>: "Small", <string:3348599400>: "sm", <string:4147172310>: "Placeholder" }, () => "victorSelected").with({ <string:1553034850>: "sm", <string:3348599400>: "Placeholder", <string:4147172310>: "Click" }, () => "victorNotSelected").with({ "Bool(true)": null, "Bool(true)": null }, () => "loserSelected").with({ isExpired: true }, () => "notVoted").with({}, () => "voted").with({ "Bool(true)": null, "Bool(true)": null }, () => "notVoted").with({ isSelected: true }, () => "selected").with({}, () => "notVoted").otherwise(() => "normalVote");
           const match1 = num(layout_type[8]).match(layout_type);
           const str2 = num(layout_type[8]);
           obj.votes = match1.with(num(layout_type[18]).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => "(" + num.toLocaleString() + ")").otherwise(() => {
@@ -509,7 +509,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = { 9223372036854775807: "track", -9223372036854775808: "Array", 0: "isArray", -9223372036854775808: "size" };
+          const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
@@ -527,12 +527,12 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = { 9223372036854775807: "track", -9223372036854775808: "Array", 0: "isArray", -9223372036854775808: "size" };
+          const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
-        }).with({ themedColor: null, "Null": null }, () => {
-          const obj = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001332591861790219, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000306499489389672, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473814203, -9223372036854775808: -0.00000000000000000000000000000000000000000000000000000000000000000007422482997638754 };
+        }).with({}, () => {
+          const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.gNj6In);
           return obj;
@@ -551,12 +551,12 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.type = "submit";
           return obj;
         }).with(obj5, () => {
-          const obj = { 9223372036854775807: "track", -9223372036854775808: "Array", 0: "isArray", -9223372036854775808: "size" };
+          const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.XhQEh8);
           return obj;
-        }).with({ themedColor: null, "Null": null }, () => {
-          const obj = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001332591861790219, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000306499489389672, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473814203, -9223372036854775808: -0.00000000000000000000000000000000000000000000000000000000000000000007422482997638754 };
+        }).with({}, () => {
+          const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.gNj6In);
           return obj;
@@ -583,14 +583,14 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
         const match1 = arg1(dependencyMap[8]).match(obj6);
         const str3 = arg1(dependencyMap[8]);
         const obj7 = { isEditingVote: true };
-        const withResult5 = match1.with({ parseEnvelope: null, isVoiceMessage: null }, () => {
+        const withResult5 = match1.with({ 562587111: null, 1422536617: null }, () => {
           const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
           return obj;
         });
         let tmp28;
-        const withResult6 = match1.with({ parseEnvelope: null, isVoiceMessage: null }, () => {
+        const withResult6 = match1.with({ 562587111: null, 1422536617: null }, () => {
           const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
@@ -605,7 +605,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           if (!isExpired) {
             if (!hasVoted) {
               if (!showResults) {
-                const obj8 = { 9223372036854775807: false, -9223372036854775808: false, 0: false, -9223372036854775808: false };
+                const obj8 = {};
                 const intl4 = arg1(dependencyMap[16]).intl;
                 obj8.label = intl4.string(arg1(dependencyMap[16]).t./KHAUF);
                 tmp28 = obj8;
@@ -614,7 +614,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           }
         }
         const allow_multiselect = poll.allow_multiselect;
-        const otherwiseResult1 = match1.with({ parseEnvelope: null, isVoiceMessage: null }, () => {
+        const otherwiseResult1 = match1.with({ 562587111: null, 1422536617: null }, () => {
           const obj = {};
           const intl = flag(layout_type[16]).intl;
           obj.label = intl.string(flag(layout_type[16]).t.trrip0);
@@ -625,7 +625,7 @@ export default function formatPollMessageChatData(poll, arg1, maxSettingsForPres
           obj.label = intl.string(flag(layout_type[16]).t.ETE/oC);
           return obj;
         }).otherwise(() => {
-          const obj = { 1553034850: null, -954564753: "Path 10", -148581432: "ADBE Vector Shape - Group", -1667434715: false, -1596136501: "OPACITY_WHITE_96", -148670258: 0.96, label: closure_13, secondaryLabel: expirationLabel, accessibilityHint: stringResult };
+          const obj = { filter: null, fontSize: null, fontWeight: null, font: null, x: null, y: null, label: closure_13, secondaryLabel: expirationLabel, accessibilityHint: stringResult };
           return obj;
         });
         const obj9 = { isInteractive, isExpired, canSelectMultipleAnswers: allow_multiselect };

@@ -1,7 +1,7 @@
 // Module ID: 9056
-// Function ID: 71101
+// Function ID: 71112
 // Name: TOOLTIP_DELAY_MS
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9056 (TOOLTIP_DELAY_MS)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 11104
-// Function ID: 86424
+// Function ID: 86436
 // Name: resolveShouldUseFabric
 // Dependencies: []
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput

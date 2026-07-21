@@ -1,5 +1,5 @@
 // Module ID: 8956
-// Function ID: 70615
+// Function ID: 70626
 // Name: Permissions
 // Dependencies: []
 // Exports: containsDisallowedPermission, getPermissionName

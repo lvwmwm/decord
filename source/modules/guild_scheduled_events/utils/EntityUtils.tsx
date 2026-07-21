@@ -1,5 +1,5 @@
 // Module ID: 8342
-// Function ID: 66434
+// Function ID: 66445
 // Name: _getLocationFromEvent
 // Dependencies: []
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData

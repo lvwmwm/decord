@@ -1,5 +1,5 @@
 // Module ID: 12080
-// Function ID: 93175
+// Function ID: 93187
 // Name: restoreEventRecurrence
 // Dependencies: []
 // Exports: default

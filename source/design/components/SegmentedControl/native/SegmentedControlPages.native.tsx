@@ -1,5 +1,5 @@
 // Module ID: 8750
-// Function ID: 69149
+// Function ID: 69160
 // Name: SegmentedControlPage
 // Dependencies: []
 // Exports: SegmentedControlPages
@@ -18,7 +18,7 @@ function SegmentedControlPage(children) {
   const React = activePageRangeStart;
   const activePageRangeEnd = children.activePageRangeEnd;
   const jsx = activePageRangeEnd;
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  let obj = { -1048944770: true, 1364700386: "/assets/design/components/Icon/native/redesign/generated/images", -614072001: 24, 944643202: 24, 1301435232: null, -385617478: "99274532ad7fe616c031212e677b32e8", 2024359764: "ThreadLockIcon" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   let obj1 = arg1(dependencyMap[4]);
@@ -546,7 +546,7 @@ export const SegmentedControlPages = function SegmentedControlPages(onEndDragWor
   if (0 === pageWidth) {
     return null;
   } else {
-    obj5 = { ao: true, accessibilityRole: true, __initData: true, Array: true, channel: true, ip: true, ref: pagerRef };
+    obj5 = { <string:2454937656>: "<string:54657025>", <string:66173517>: "<string:1073742270>", <string:2840024297>: "<string:285213260>", <string:2842143096>: "<string:38369345>", <string:996441633>: "<string:893583616>", <string:1364474454>: "<string:872415532>", ref: pagerRef };
     const items6 = [memo, style];
     obj5.style = items6;
     obj5.contentOffset = memo1;

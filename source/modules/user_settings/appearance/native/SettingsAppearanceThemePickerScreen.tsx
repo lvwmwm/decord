@@ -1,10 +1,10 @@
-// Module ID: 14031
-// Function ID: 106680
+// Module ID: 14034
+// Function ID: 106712
 // Name: getThemeOverride
 // Dependencies: []
 // Exports: default
 
-// Module 14031 (getThemeOverride)
+// Module 14034 (getThemeOverride)
 function getThemeOverride(mobileThemes, first1, stateFromStores) {
   let theme = stateFromStores;
   let tmp2;
@@ -31,7 +31,7 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
 obj = {};
-obj = { flex: "isArray", justifyContent: "accessibilityRole", alignItems: "value", paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, gap: importDefault(dependencyMap[12]).space.PX_24 };
+obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, gap: importDefault(dependencyMap[12]).space.PX_24 };
 let obj3 = arg1(dependencyMap[13]);
 if (!obj3.isIOS()) {
   num = importDefault(dependencyMap[12]).space.PX_16;
@@ -41,7 +41,7 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[10]);
 obj.landscapeContainer = { flexDirection: "row", gap: importDefault(dependencyMap[12]).space.PX_16 };
 obj.landscapePreview = { flex: 1 };
-obj.landscapeSelector = {};
+obj.landscapeSelector = { <string:768902381>: true, <string:896389916>: true, <string:193613281>: true };
 const obj2 = { "Null": "isArray", "Null": "body", "Null": "message", gap: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, marginBottom: importDefault(dependencyMap[12]).space.PX_16 };
 obj.segmentedControlContainer = obj2;
 obj.textCentered = { textAlign: "center" };
@@ -373,7 +373,7 @@ function ThemePicker(defaultIndex) {
       }
     };
     obj.headerTitle = function headerTitle() {
-      const obj = { 669602241: false, 1470947939: 400, style: closure_22.textNormal };
+      const obj = { 665604545: false, 1470947939: 400, style: closure_22.textNormal };
       if (null != closure_6) {
         let stringResult = closure_6;
       } else {

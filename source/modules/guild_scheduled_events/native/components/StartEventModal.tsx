@@ -1,5 +1,5 @@
 // Module ID: 8462
-// Function ID: 67485
+// Function ID: 67496
 // Name: NavigationBar
 // Dependencies: []
 // Exports: default
@@ -22,7 +22,7 @@ function NavigationBar(onClose) {
 function StartEventHeader(children) {
   const tmp = callback4();
   let obj = { style: tmp.header };
-  obj = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", style: tmp.headerPrivacyLevel };
+  obj = { delete: "accessibilityLabel", dispatch: "r", raw: "isArray", style: tmp.headerPrivacyLevel };
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.string(arg1(dependencyMap[13]).t.q+fFJv);
   const items = [callback2(arg1(dependencyMap[16]).Text, obj), ];
@@ -53,19 +53,19 @@ obj = {};
 obj = { flex: 1, padding: importDefault(dependencyMap[10]).space.PX_16, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.mainContainer = obj;
 obj.container = {};
+const obj1 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[10]).space.PX_24 };
+obj.headerContainer = obj1;
+obj.footerContainer = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945 };
 const tmp3 = arg1(dependencyMap[8]);
-obj.headerContainer = { gap: importDefault(dependencyMap[10]).space.PX_24 };
-obj.footerContainer = {};
-const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_24 };
 obj.header = { alignItems: "center", paddingTop: importDefault(dependencyMap[10]).space.PX_24 };
-obj.headerTitle = { "Bool(false)": null, "Bool(false)": "absolute" };
+obj.headerTitle = { "Bool(false)": null, "Bool(false)": null };
+const obj3 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
+obj.buttonContainer = obj3;
 const obj2 = { alignItems: "center", paddingTop: importDefault(dependencyMap[10]).space.PX_24 };
-obj.buttonContainer = { gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
-const obj3 = { gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
-obj.previewCard = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
+obj.previewCard = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { y: null, isArray: null } };
 obj.headerPrivacyLevel = {};
 let closure_14 = obj.createStyles(obj);
-const obj4 = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
+const obj4 = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { y: null, isArray: null } };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_scheduled_events/native/components/StartEventModal.tsx");
 
 export default function StartEventModal(event) {
@@ -116,7 +116,7 @@ export default function StartEventModal(event) {
   React = tmp5[1];
   [closure_6, tmp8] = callback(importDefault(dependencyMap[20])(), 2);
   ({ loading, error } = tmp8);
-  obj = { <string:2958189153>: null, <string:1661207664>: null, style: tmp.mainContainer };
+  obj = { paddingVertical: null, paddingHorizontal: null, style: tmp.mainContainer };
   const items3 = [callback2(NavigationBar, { onClose: onCloseModal }), ];
   obj = { style: tmp.container };
   obj1 = { style: tmp.headerContainer };
@@ -144,7 +144,7 @@ export default function StartEventModal(event) {
   const obj5 = { style: tmp.buttonContainer };
   let tmp24 = null;
   if (null != error) {
-    const obj6 = { children: error.getAnyErrorMessage() };
+    const obj6 = { hasMaxConnections: 1, isBoostOnlySubscription: "center", children: error.getAnyErrorMessage() };
     tmp24 = callback2(arg1(dependencyMap[16]).Text, obj6);
   }
   const items7 = [tmp24, ];

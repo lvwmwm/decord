@@ -1,5 +1,5 @@
 // Module ID: 10934
-// Function ID: 85027
+// Function ID: 85038
 // Name: ConnectedAcceptGuildTemplate
 // Dependencies: []
 // Exports: default

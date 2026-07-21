@@ -1,10 +1,10 @@
-// Module ID: 14658
-// Function ID: 110531
+// Module ID: 14661
+// Function ID: 110563
 // Name: RedesignNotificationModal
 // Dependencies: []
 // Exports: RedesignNotificationScreen
 
-// Module 14658 (RedesignNotificationModal)
+// Module 14661 (RedesignNotificationModal)
 class RedesignNotificationModal {
   constructor(arg0) {
     onComplete = global.onComplete;
@@ -57,7 +57,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, marginTop: -importDefault(dependencyMap[7]).space.PX_48 };
 obj.container = obj;
-obj.notificationHeaderImage = {};
+obj.notificationHeaderImage = { audio: "<string:1091633156>", video: "/assets/images/native/community", screenshare: ":", liveStage: "NR", activeEvent: "<string:3275882752>", activity: "<string:2030043710>" };
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/nuf/native/components/notification/RedesignNotificationModal.tsx");

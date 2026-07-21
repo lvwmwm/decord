@@ -1,5 +1,5 @@
 // Module ID: 11384
-// Function ID: 88503
+// Function ID: 88515
 // Name: NewBadge
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,7 @@ let closure_5 = arg1(dependencyMap[3]).createStyles((arg0, arg1) => {
   }
   obj.marginTop = num;
   obj.text = obj;
-  obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj = { GiftCardAvatar3dIllustration: null, partition: null, SvgWithCssUri: null, ruleId: null, ../../lib/frame-service/external: null, IMN: null, borderRadius: importDefault(dependencyMap[5]).radii.round };
   const obj3 = arg1(dependencyMap[4]);
   if (obj5.isThemeLight(arg1)) {
     if (!arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 14434
-// Function ID: 108812
+// Module ID: 14437
+// Function ID: 108844
 // Name: useObscuredContentNonFriendsDmSettingValue
 // Dependencies: []
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14434 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14437 (useObscuredContentNonFriendsDmSettingValue)
 function useObscuredContentNonFriendsDmSettingValue() {
   const parentalControlledExplicitContentSettings = arg1(dependencyMap[2]).useParentalControlledExplicitContentSettings();
   let prop;

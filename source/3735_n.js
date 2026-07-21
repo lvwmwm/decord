@@ -1,5 +1,5 @@
 // Module ID: 3735
-// Function ID: 28540
+// Function ID: 28545
 // Name: n
 // Dependencies: []
 
@@ -36,13 +36,13 @@ const fn = function n(moment) {
       return str;
     },
     longDateFormat: {},
-    calendar: { status: "limit", padding: "Array", opacity: "isArray", PX_8: "Array", Symbol: "toString", r: "Array" },
+    calendar: {},
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}/,
     ordinal(arg0) {
       return arg0;
     },
-    week: { <string:1431496722>: false, <string:1627556098>: false }
+    week: { "Bool(true)": null, "Bool(true)": null }
   });
 };
 if ("object" === typeof exports) {

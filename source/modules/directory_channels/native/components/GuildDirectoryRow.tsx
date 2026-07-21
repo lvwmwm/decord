@@ -1,5 +1,5 @@
 // Module ID: 10063
-// Function ID: 77691
+// Function ID: 77702
 // Dependencies: []
 
 // Module 10063
@@ -12,19 +12,19 @@ let closure_8 = importDefault(dependencyMap[5]);
 const JoinGuildSources = arg1(dependencyMap[6]).JoinGuildSources;
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
-let obj = { container: {}, guildInfoContainer: { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" } };
+let obj = { container: {}, guildInfoContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm, marginRight: 16 };
 obj.guildIcon = obj;
 obj.guildWrapper = { flex: 1 };
-obj.guildDescription = { lineHeight: "P", paddingTop: 40 };
+obj.guildDescription = {};
 obj.memberInfo = {};
-obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.GREEN_360 };
+obj1 = { 2018655073: 858992922, 1669594568: 858993459, 1045670548: "accessibilityRole", -460645489: "name", borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.GREEN_360 };
 obj.dotOnline = obj1;
 const tmp2 = arg1(dependencyMap[7]);
 obj.dotOffline = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.headerContainer = { display: "flex", flexDirection: "row", padding: "center" };
-obj.titleContainer = { padding: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", T: "keyboardAppearance" };
-obj.flex = { 1366017591: false, 996410372: false };
+obj.headerContainer = {};
+obj.titleContainer = {};
+obj.flex = { "Null": null, "Null": null };
 let closure_13 = obj1.createStyles(obj);
 const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
 const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj7 = {};
     obj8 = { style: tmp.dotOnline };
     const items3 = [callback2(View, obj8), ];
-    const obj9 = {};
+    const obj9 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
     const intl3 = arg1(closure_2[16]).intl;
     const obj10 = { membersOnline: approximatePresenceCount };
     obj9.children = intl3.format(arg1(closure_2[16]).t.LC+S+m, obj10);
@@ -97,7 +97,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj11 = {};
     const obj12 = { style: tmp.dotOffline };
     const items5 = [callback2(View, obj12), ];
-    const obj13 = {};
+    const obj13 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
     const intl4 = arg1(closure_2[16]).intl;
     const obj14 = { count: approximateMemberCount };
     obj13.children = intl4.format(arg1(closure_2[16]).t.zRl6XR, obj14);
@@ -121,7 +121,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     tmp32 = "" !== description;
   }
   if (tmp32) {
-    const obj16 = { imageAssetsFolder: 44, progress: 17, speed: "left", loop: 13, style: tmp.guildDescription, children: description };
+    const obj16 = { style: tmp.guildDescription, children: description };
     tmp32 = callback2(arg1(closure_2[20]).Text, obj16);
   }
   items7[1] = tmp32;

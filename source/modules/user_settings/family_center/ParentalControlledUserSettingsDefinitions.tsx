@@ -1,10 +1,10 @@
-// Module ID: 13606
-// Function ID: 103099
+// Module ID: 13608
+// Function ID: 103121
 // Name: defineParentalControlledSetting
 // Dependencies: []
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 13606 (defineParentalControlledSetting)
+// Module 13608 (defineParentalControlledSetting)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 10366
-// Function ID: 79969
+// Function ID: 79980
 // Name: items
 // Dependencies: []
 // Exports: default
@@ -53,7 +53,7 @@ const items2 = [
   }
 ];
 const tmp3 = arg1(dependencyMap[2]);
-let closure_9 = arg1(dependencyMap[10]).createStyles({ text: { action: null, messageReference: null, medium: null }, header: { textAlign: "center" }, image: { <string:2695743315>: "<string:1931038976>", <string:3713832927>: "paymentSource", <string:4272015777>: "<string:47534336>", <string:1604441697>: "OPT_OUT_PRICE_INCREASE", <string:921197205>: "<string:826409216>" } });
+let closure_9 = arg1(dependencyMap[10]).createStyles({ text: {}, header: { textAlign: "center" }, image: {} });
 const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/channel_following/native/components/ChannelFollowSuccessAlert.tsx");
 
@@ -76,7 +76,7 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const items1 = [callback(Image, obj), , ];
   obj1 = { style: tmp.header, children: stableMemo1() };
   items1[1] = callback(arg1(dependencyMap[16]).Text, obj1);
-  obj2 = { style: tmp.text };
+  obj2 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: tmp.text };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[9]).t.2QbSea);
   items1[2] = callback(arg1(dependencyMap[16]).Text, obj2);

@@ -1,5 +1,5 @@
 // Module ID: 8494
-// Function ID: 67813
+// Function ID: 67824
 // Name: shouldDisableUserPresenceInChannel
 // Dependencies: []
 // Exports: shouldDisableUserPresenceInChannel

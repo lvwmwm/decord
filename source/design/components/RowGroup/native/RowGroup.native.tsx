@@ -1,10 +1,10 @@
-// Module ID: 12862
-// Function ID: 98298
+// Module ID: 12864
+// Function ID: 98320
 // Name: RowGroup
 // Dependencies: []
 // Exports: RowGroup
 
-// Module 12862 (RowGroup)
+// Module 12864 (RowGroup)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ export const RowGroup = function RowGroup(children) {
     tmp5Result = null != trailing;
   }
   if (tmp5Result) {
-    obj = { pink: null, plum: "\u{1F44A}\u{1F3FC}" };
+    obj = { "Bool(false)": null, "Bool(false)": "\u{1F44A}\u{1F3FC}" };
     let tmp8 = null != title;
     if (tmp8) {
       obj = { title };

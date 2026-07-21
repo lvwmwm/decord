@@ -1,10 +1,10 @@
-// Module ID: 14956
-// Function ID: 112529
+// Module ID: 14959
+// Function ID: 112563
 // Name: useChannelNoticeRows
 // Dependencies: []
 // Exports: default
 
-// Module 14956 (useChannelNoticeRows)
+// Module 14959 (useChannelNoticeRows)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

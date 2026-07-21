@@ -1,15 +1,15 @@
-// Module ID: 4663
-// Function ID: 40458
+// Module ID: 4662
+// Function ID: 40465
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 4294967295]
 // Exports: isResolvedUpload
 
-// Module 4663 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
+// Module 4662 (_isNativeReflectConstruct)
+import result from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import closure_8 from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -25,7 +25,7 @@ const tmp2 = (EventEmitter) => {
   class Upload {
     constructor(arg0) {
       self = this;
-      tmp = __exportStarResult1(this, Upload);
+      tmp = result(this, Upload);
       obj = closure_7(Upload);
       tmp2 = closure_6;
       if (closure_10()) {

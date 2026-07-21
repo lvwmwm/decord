@@ -1,5 +1,5 @@
 // Module ID: 12188
-// Function ID: 93689
+// Function ID: 93701
 // Name: getApplicationFromMessage
 // Dependencies: []
 // Exports: getApplicationFromMessage

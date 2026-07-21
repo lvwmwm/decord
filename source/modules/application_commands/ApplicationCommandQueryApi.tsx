@@ -1,10 +1,10 @@
-// Module ID: 8181
-// Function ID: 64606
+// Module ID: 8182
+// Function ID: 64619
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useDiscovery, useQuery
 
-// Module 8181 (_createForOfIteratorHelperLoose)
+// Module 8182 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -226,7 +226,7 @@ function createPlaceholderCommands(arg0, type) {
   return items;
 }
 function createPlaceholderCommand(arg0, type) {
-  const obj = { 1375464034: "message", 979437212: 21, 1637965137: "modal_top_pill_localized", -389263020: "message", 1672107618: 7, 1373170892: "dismiss_key", 996213764: "scalar", -1197159086: 9, type, inputType: type(dependencyMap[14]).ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0 };
+  const obj = { 0: "<string:4143972950>", 9223372036854775807: "<string:1912603149>", 0: "Array", 9223372036854775807: "Array", -9223372036854775808: "<string:38042945>", 0: "<string:2631618816>", 0: "<string:1153585411>", 0: "<string:16956481>", type, inputType: type(dependencyMap[14]).ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0 };
   obj.section = obj;
   return obj;
 }
@@ -238,7 +238,7 @@ let closure_10 = importDefault(dependencyMap[3]);
 const BuiltInSectionId = arg1(dependencyMap[4]).BuiltInSectionId;
 const NOOP = arg1(dependencyMap[5]).NOOP;
 const items = [arg1(dependencyMap[11]).ApplicationCommandType.CHAT];
-const obj = { kite: null, lu: null, cardFeaturesWrapper: null, type: arg1(dependencyMap[14]).ApplicationCommandSectionType.APPLICATION };
+const obj = { type: arg1(dependencyMap[14]).ApplicationCommandSectionType.APPLICATION };
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/application_commands/ApplicationCommandQueryApi.tsx");
 

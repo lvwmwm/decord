@@ -1,9 +1,9 @@
-// Module ID: 15699
-// Function ID: 119987
+// Module ID: 15703
+// Function ID: 120031
 // Name: ActivityItemEmptyCard
 // Dependencies: []
 
-// Module 15699 (ActivityItemEmptyCard)
+// Module 15703 (ActivityItemEmptyCard)
 function ActivityItemEmptyCard(activity) {
   activity = activity.activity;
   const arg1 = activity;
@@ -20,7 +20,7 @@ function ActivityItemEmptyCard(activity) {
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [activity.launchId, analyticsLocations, application, channelId];
   callback = importAllResult.useCallback(callback(tmp), items);
-  let obj = { applicationId: activity.applicationId, size: width, names: ["opacity"] };
+  let obj = { applicationId: activity.applicationId, size: width, names: [-242739878136961300000000000000000] };
   const tmp2 = callback4();
   obj = { activeOpacity: 0.7, onPress: callback, style: tmp2.disabledActivity };
   obj = { imageBackground: importDefault(dependencyMap[9])(obj), aspectRatio: width / size.height };

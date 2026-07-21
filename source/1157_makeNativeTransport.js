@@ -1,5 +1,5 @@
 // Module ID: 1157
-// Function ID: 13163
+// Function ID: 13167
 // Name: makeNativeTransport
 // Dependencies: []
 // Exports: makeNativeTransportFactory

@@ -1,5 +1,5 @@
 // Module ID: 9739
-// Function ID: 75741
+// Function ID: 75752
 // Name: SocialLayerStorefrontGiftProductDetails
 // Dependencies: []
 // Exports: default
@@ -12,16 +12,16 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingVertical: importDefault(dependencyMap[5]).space.PX_16, borderWidth: 2, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingVertical: importDefault(dependencyMap[5]).space.PX_16, borderWidth: 2, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.text = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj1 = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.appInfo = { gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj3 = { bhk: false, bic: "internal", borderRadius: importDefault(dependencyMap[5]).radii.xs };
+const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.appInfo = obj2;
+const obj3 = { "Null": 0, "Null": -1048576, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.appIcon = obj3;
 let closure_9 = obj.createStyles(obj);
-const obj2 = { gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj1 = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftProductDetails.tsx");
 
 export default function SocialLayerStorefrontGiftProductDetails(sku) {
@@ -60,7 +60,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
       tmp9 = callback(closure_4, obj3);
     }
     const items2 = [tmp9, ];
-    const obj5 = { children: getOrFetchApplication.name };
+    const obj5 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: getOrFetchApplication.name };
     items2[1] = callback(arg1(dependencyMap[10]).Text, obj5);
     obj2.children = items2;
     tmp7Result = closure_8(closure_5, obj2);

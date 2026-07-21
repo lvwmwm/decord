@@ -1,14 +1,16 @@
-// Module ID: 14959
-// Function ID: 112545
-// Name: experiment
+// Module ID: 14962
+// Function ID: 112579
+// Name: items
 // Dependencies: []
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 14959 (experiment)
+// Module 14962 (items)
 const _module = require(dependencyMap[0]);
-const obj = { -1174339580: null, -1169096700: null, config: { enabled: true } };
+let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false } };
+obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
+obj.treatments = items;
+const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/game_claim/experiments/GameClaimCoachmarkExperiment.tsx");
 

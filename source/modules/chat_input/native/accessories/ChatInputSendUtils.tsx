@@ -1,5 +1,5 @@
 // Module ID: 11110
-// Function ID: 86467
+// Function ID: 86479
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand

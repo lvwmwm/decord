@@ -1,5 +1,5 @@
 // Module ID: 665
-// Function ID: 8029
+// Function ID: 8033
 // Name: pad2
 // Dependencies: []
 // Exports: getContrast, getDarkness, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgba, isValidHex, rgb2int
@@ -185,7 +185,7 @@ export const rgb2int = function rgb2int(str) {
     const _parseInt3 = parseInt;
     obj.blue = parseInt(match[3]);
   } else {
-    obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
+    obj = { "Null": false, "Null": false, "Null": false };
   }
   return (obj.red << 16) + (obj.green << 8) + obj.blue;
 };

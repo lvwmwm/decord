@@ -1,5 +1,5 @@
 // Module ID: 10461
-// Function ID: 80972
+// Function ID: 80983
 // Name: supportedConsoles
 // Dependencies: []
 // Exports: getExpiredCredentialsHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms

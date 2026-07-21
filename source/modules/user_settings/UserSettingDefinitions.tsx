@@ -1,5 +1,5 @@
 // Module ID: 3805
-// Function ID: 31371
+// Function ID: 31376
 // Name: makeUpdateSettingFunction
 // Dependencies: []
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing

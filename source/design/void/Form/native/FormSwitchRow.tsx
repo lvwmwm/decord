@@ -1,10 +1,10 @@
-// Module ID: 7510
-// Function ID: 60151
+// Module ID: 7511
+// Function ID: 60163
 // Name: FormSwitchRow
 // Dependencies: []
 // Exports: default
 
-// Module 7510 (FormSwitchRow)
+// Module 7511 (FormSwitchRow)
 function FormSwitchRow(onValueChange) {
   let accessibilityHint;
   let label;
@@ -24,7 +24,7 @@ function FormSwitchRow(onValueChange) {
   if (switchProps === undefined) {
     switchProps = {};
   }
-  let obj = { "Null": true, "Null": 6, "Null": 132, "Null": null, flexDirection: "\u{1F9D1}\u200D\u{1F680}", alignItems: true, justifyContent: 12.1, transform: 133, zIndex: null };
+  let obj = { <string:996410367>: true, <string:1374595670>: 6, <string:22250482>: 132, <string:3708090627>: null, <string:1374118239>: "\u{1F9D1}\u200D\u{1F680}", <string:1365489647>: true, <string:3780275961>: 12.1, <string:1646712485>: 133, <string:4132544763>: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onValueChange, obj);
   let dependencyMap;

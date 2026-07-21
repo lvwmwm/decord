@@ -1,10 +1,10 @@
-// Module ID: 13423
-// Function ID: 101906
+// Module ID: 13425
+// Function ID: 101928
 // Name: DevToolsPersistedStoresActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13423 (DevToolsPersistedStoresActionSheet)
+// Module 13425 (DevToolsPersistedStoresActionSheet)
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const arg1 = store;
@@ -14,9 +14,9 @@ function DevToolsPersistedStoresActionSheet(store) {
   obj.header = jsx(arg1(dependencyMap[23]).BottomSheetTitleHeader, obj);
   obj = { hasIcons: false };
   const obj1 = {
-    1770455044: "Array",
-    910295044: "sessionStartsWithDND",
-    -855636809: "%Float16Array%",
+    "Bool(true)": 34409537,
+    "Bool(true)": 1117741312,
+    "Bool(true)": 108110,
     onPress() {
       store.clear();
       close(closure_2[10]).open({});
@@ -37,24 +37,29 @@ let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, flex: 1 };
 obj.container = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj1 = { <string:1339513683>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086916947618743, <string:1406355050>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010258372740256698, <string:2556152339>: 203543514635971530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1028844388>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000038754193276338026, <string:1123937688>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007165625202377836, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.sectionHeader = obj1;
 let closure_9 = obj1.createStyles(obj);
-let closure_10 = importAllResult.memo(() => jsx(arg1(dependencyMap[8]).TableRow, {
-  onPress() {
-    const databaseResult = callback(closure_2[9]).database();
-    if (null != databaseResult) {
-      databaseResult.disable("via UserSettingsDatabaseControls");
-      callback(closure_2[10]).open({});
-      const obj3 = callback(closure_2[10]);
+let closure_10 = importAllResult.memo(() => {
+  const obj = {
+    reason: "Array",
+    username_error: "isArray",
+    onPress() {
+      const databaseResult = callback(closure_2[9]).database();
+      if (null != databaseResult) {
+        databaseResult.disable("via UserSettingsDatabaseControls");
+        callback(closure_2[10]).open({});
+        const obj3 = callback(closure_2[10]);
+      }
     }
-  }
-}));
+  };
+  return jsx(arg1(dependencyMap[8]).TableRow, obj);
+});
 let closure_11 = importAllResult.memo(() => {
   let obj = arg1(dependencyMap[11]);
   const items = [importDefault(dependencyMap[12]), closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => callback(closure_2[12]).database(id.getId()));
-  obj = { 0: null, 0: null, 0: null };
+  obj = { lineClamp: null, maxFontSizeMultiplier: null, bottom: null };
   let str = "No active database.";
   if (null != stateFromStores) {
     str = stateFromStores.name;
@@ -73,15 +78,15 @@ let closure_12 = importAllResult.memo(() => jsx(arg1(dependencyMap[8]).TableRow,
   onPress() {
     const result = callback(closure_2[12]).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
     const obj = callback(closure_2[12]);
-    callback(closure_2[10]).open({});
+    callback(closure_2[10]).open({ <string:1435656464>: "<string:18818560>", <string:4081432990>: "<string:2738950400>" });
   }
 }));
 let closure_13 = importAllResult.memo(() => {
   let obj = callback(dependencyMap[13]);
   const callback = obj.useNavigation();
   obj = {
-    0: null,
-    9223372036854775807: null,
+    x: "<string:1375862785>",
+    justifyContent: "<string:661947557>",
     onPress() {
       navigation.navigate("cacheStats");
     }
@@ -169,7 +174,7 @@ export default function DevToolsDataStorageScreen() {
       } else {
         if (1 === arg1) {
           if (0 === persistedStores.length) {
-            return callback(tmp(persistedStores[8]).TableRow, {});
+            return callback(tmp(persistedStores[8]).TableRow, { x: null, justifyContent: null });
           }
         }
         obj = {

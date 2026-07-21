@@ -1,9 +1,9 @@
-// Module ID: 7138
-// Function ID: 57514
+// Module ID: 7139
+// Function ID: 57526
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7138 (_isNativeReflectConstruct)
+// Module 7139 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,35 +25,35 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftIconCoachmark$Type);
       items = [, , , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
+      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
+      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      obj = { "Null": "message", "Null": 0, "Null": 16.95 };
+      obj = { 9223372036854775807: "message", 9223372036854775807: 0, 0: 16.95 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[4] = obj;
-      items[5] = {
-        T() {
-              return callback(closure_1[7]).LocalizedString;
-            }
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj.T = function T() {
+        return callback(closure_1[7]).LocalizedString;
       };
-      items1 = [null];
+      items[5] = obj;
+      items1 = [true];
       items1[1] = items;
-      obj2 = closure_6(GiftIconCoachmark$Type);
+      obj3 = closure_6(GiftIconCoachmark$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj3, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj2.apply(self, items1);
+        constructResult = obj3.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -63,7 +63,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(false)": false };
+      let obj = { "Bool(false)": "fr", "Bool(false)": "french", "Bool(false)": true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftIconCoachmark$Type(closure_1[8]).MESSAGE_TYPE, obj);

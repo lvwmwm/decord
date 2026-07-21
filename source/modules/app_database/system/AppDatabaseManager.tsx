@@ -1,9 +1,9 @@
-// Module ID: 6882
-// Function ID: 54593
+// Module ID: 6883
+// Function ID: 54605
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6882 (_createForOfIteratorHelperLoose)
+// Module 6883 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -89,7 +89,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("AppDatabaseManager");
-const set = new Set(["intl"]);
+const set = new Set([true]);
 const tmp5 = () => {
   class AppDatabaseManager {
     constructor(arg0, arg1, arg2) {
@@ -99,7 +99,7 @@ const tmp5 = () => {
       this.name = arg0;
       [this.actions, this.entries] = tmp2;
       this.lastDatabase = null;
-      registerResult = AppDatabaseManager.register(`${arg0}_CLEAR_CACHES`, [true], [], () => {
+      registerResult = AppDatabaseManager.register(`${arg0}_CLEAR_CACHES`, [null], [], () => {
         let done;
         const tmp = callback(self.entries);
         let iter = tmp();

@@ -1,5 +1,5 @@
 // Module ID: 11381
-// Function ID: 88488
+// Function ID: 88500
 // Dependencies: []
 
 // Module 11381
@@ -20,7 +20,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   }
   obj.elevation = num;
   obj.shadowRadius = 4;
-  obj.shadowOffset = {};
+  obj.shadowOffset = { "Null": null, "Null": null };
   obj.shadowColor = importDefault(dependencyMap[7]).colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
@@ -34,7 +34,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   obj.borderColor = str;
   obj.borderWidth = 1;
   obj.joinButton = obj;
-  obj.joinButtonContent = {};
+  obj.joinButtonContent = { @braintree/wrap-promise: 391184385, onPress: 95234 };
   obj = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
   obj.joinButtonIconActive = obj;
   obj.joinButtonIconInactive = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };

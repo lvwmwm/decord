@@ -1,5 +1,5 @@
 // Module ID: 5718
-// Function ID: 49128
+// Function ID: 49136
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getIdFromHistoryItem, getNavigationHistory, handleHistoryStoreNavigationChange

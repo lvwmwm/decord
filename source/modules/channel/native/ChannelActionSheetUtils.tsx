@@ -1,5 +1,5 @@
 // Module ID: 10186
-// Function ID: 78677
+// Function ID: 78688
 // Name: copyGuildChannelOrThreadLink
 // Dependencies: []
 // Exports: copyGuildChannelOrThreadLink

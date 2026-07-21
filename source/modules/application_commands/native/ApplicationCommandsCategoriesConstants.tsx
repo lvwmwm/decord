@@ -1,7 +1,7 @@
 // Module ID: 11427
-// Function ID: 88935
+// Function ID: 88947
 // Name: ICON_SIZE
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11427 (ICON_SIZE)
 const _module = require(dependencyMap[0]);

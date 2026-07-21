@@ -1,10 +1,10 @@
-// Module ID: 7835
-// Function ID: 62471
+// Module ID: 7836
+// Function ID: 62484
 // Name: ANALYTICS_NAME
 // Dependencies: []
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 7835 (ANALYTICS_NAME)
+// Module 7836 (ANALYTICS_NAME)
 const NOTIFICATIONS_INBOX = require(dependencyMap[0]).NOTIFICATIONS_INBOX;
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
 obj = { ALL: "all", MENTIONS: "mentions", BOOKMARKS: "bookmarks" };

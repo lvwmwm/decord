@@ -1,5 +1,5 @@
 // Module ID: 11518
-// Function ID: 89745
+// Function ID: 89757
 // Name: useGuildPowerupRollbackNotificationConfig
 // Dependencies: []
 // Exports: default

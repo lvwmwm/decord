@@ -1,5 +1,5 @@
 // Module ID: 5569
-// Function ID: 47312
+// Function ID: 47320
 // Name: Animated
 // Dependencies: []
 // Exports: forBottomSheetAndroid, forFadeFromBottomAndroid, forFadeFromCenter, forHorizontalIOS, forModalPresentationIOS, forNoAnimation, forRevealFromBottomAndroid, forScaleFromCenterAndroid, forVerticalIOS
@@ -19,7 +19,7 @@ export const forHorizontalIOS = function forHorizontalIOS(layouts) {
   const screen = layouts.layouts.screen;
   let obj = {};
   obj = {};
-  obj = { translateX: callback(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: items, extrapolate: "clamp" }), inverted) };
+  obj = { translateX: callback(progress.interpolate({ inputRange: ["replace", "then"], outputRange: items, extrapolate: "clamp" }), inverted) };
   const progress = current.progress;
   const items = [screen.width, ];
   let num = 0;
@@ -28,7 +28,7 @@ export const forHorizontalIOS = function forHorizontalIOS(layouts) {
   const obj1 = {};
   if (next) {
     const progress2 = next.progress;
-    const obj2 = { inputRange: ["Text", "lc"] };
+    const obj2 = { inputRange: ["replace", "then"] };
     const items2 = [0.229, -0.3 * screen.width];
     obj2.outputRange = items2;
     obj2.extrapolate = "clamp";
@@ -39,16 +39,16 @@ export const forHorizontalIOS = function forHorizontalIOS(layouts) {
   obj.transform = items1;
   obj.cardStyle = obj;
   const progress3 = current.progress;
-  obj.overlayStyle = { opacity: progress3.interpolate({ inputRange: ["Text", "lc"], outputRange: ["<string:3398392872>", "<string:1211187289>"], extrapolate: "clamp" }) };
-  const obj3 = { opacity: progress3.interpolate({ inputRange: ["Text", "lc"], outputRange: ["<string:3398392872>", "<string:1211187289>"], extrapolate: "clamp" }) };
+  obj.overlayStyle = { opacity: progress3.interpolate({ inputRange: ["replace", "then"], outputRange: [null, null], extrapolate: "clamp" }) };
+  const obj3 = { opacity: progress3.interpolate({ inputRange: ["replace", "then"], outputRange: [null, null], extrapolate: "clamp" }) };
   const progress4 = current.progress;
-  obj.shadowStyle = { shadowOpacity: progress4.interpolate({ inputRange: ["Text", "lc"], outputRange: [-520405018, 1431658495], extrapolate: "clamp" }) };
+  obj.shadowStyle = { shadowOpacity: progress4.interpolate({ inputRange: ["replace", "then"], outputRange: [-520405018, 1431658495], extrapolate: "clamp" }) };
   return obj;
 };
 export const forVerticalIOS = function forVerticalIOS(inverted) {
   let obj = {};
   obj = {};
-  obj = { translateY: callback(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: items, extrapolate: "clamp" }), inverted.inverted) };
+  obj = { translateY: callback(progress.interpolate({ inputRange: ["replace", "then"], outputRange: items, extrapolate: "clamp" }), inverted.inverted) };
   const progress = inverted.current.progress;
   const items = [inverted.layouts.screen.height, 0];
   const items1 = [obj];
@@ -75,11 +75,11 @@ export const forModalPresentationIOS = function forModalPresentationIOS(next) {
   let num3 = 0;
   if (next) {
     const progress2 = next.progress;
-    let obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    let obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num3 = progress2.interpolate(obj);
   }
-  const tmp3Result = closure_2(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num3);
-  obj = { inputRange: [true, true, true] };
+  const tmp3Result = closure_2(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num3);
+  obj = { inputRange: [] };
   const items = [screen.height, , ];
   let num4 = 0;
   if (0 !== index) {
@@ -92,13 +92,13 @@ export const forModalPresentationIOS = function forModalPresentationIOS(next) {
   }
   items[2] = num5 - num2 * result;
   obj.outputRange = items;
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp3 = closure_2;
   const tmp6 = closure_3;
   let num6 = 1;
   const tmp6Result = closure_3(tmp3Result.interpolate(obj), inverted);
   if (screen.width <= screen.height) {
-    obj = { inputRange: [true, true, true] };
+    obj = { inputRange: [] };
     let num7 = 1;
     if (screen.width) {
       num7 = 1 - 2 * num2 / screen.width;
@@ -110,7 +110,7 @@ export const forModalPresentationIOS = function forModalPresentationIOS(next) {
   let num9 = 0;
   if (screen.width <= screen.height) {
     if (tmp5) {
-      const obj1 = { inputRange: [], outputRange: ["GUILD_SETTINGS_LOADED_BANS", "tenureRequirements", "RowType", "isArray"] };
+      const obj1 = { inputRange: [], outputRange: [28992, -1406074880, 996432412, 1900026591] };
       num = tmp3Result.interpolate(obj1);
     }
     num9 = num;
@@ -145,8 +145,8 @@ export const forFadeFromBottomAndroid = function forFadeFromBottomAndroid(curren
   let obj = {};
   obj = {};
   const progress2 = current.progress;
-  const tmp = callback(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: items, extrapolate: "clamp" }), inverted);
-  obj.opacity = importDefault(dependencyMap[1])(closing, current.progress, progress2.interpolate({ inputRange: ["SAFETY_SC_FILTERS_SEXUAL_MEDIA", "itemInner", "available_regions", "start_id"], outputRange: [null, null, null, null], extrapolate: "clamp" }));
+  const tmp = callback(progress.interpolate({ inputRange: ["replace", "then"], outputRange: items, extrapolate: "clamp" }), inverted);
+  obj.opacity = importDefault(dependencyMap[1])(closing, current.progress, progress2.interpolate({ inputRange: [false, false, false, false], outputRange: [], extrapolate: "clamp" }));
   const items1 = [{ translateY: tmp }];
   obj.transform = items1;
   obj.cardStyle = obj;
@@ -160,7 +160,7 @@ export const forRevealFromBottomAndroid = function forRevealFromBottomAndroid(la
   const screen = layouts.layouts.screen;
   let obj = {};
   obj = { overflow: "hidden" };
-  obj = { translateY: callback(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: items, extrapolate: "clamp" }), inverted) };
+  obj = { translateY: callback(progress.interpolate({ inputRange: ["replace", "then"], outputRange: items, extrapolate: "clamp" }), inverted) };
   const progress = current.progress;
   const items = [screen.height, ];
   let num = 0;
@@ -171,11 +171,11 @@ export const forRevealFromBottomAndroid = function forRevealFromBottomAndroid(la
   const obj1 = {};
   const progress2 = current.progress;
   const items2 = [0.9590000000000001 * screen.height * -1, 0];
-  const items3 = [{ translateY: callback(progress2.interpolate({ inputRange: ["Text", "lc"], outputRange: items2, extrapolate: "clamp" }), inverted) }, ];
+  const items3 = [{ translateY: callback(progress2.interpolate({ inputRange: ["replace", "then"], outputRange: items2, extrapolate: "clamp" }), inverted) }, ];
   const obj3 = {};
   if (next) {
     const progress3 = next.progress;
-    const obj4 = { inputRange: ["Text", "lc"] };
+    const obj4 = { inputRange: ["replace", "then"] };
     const items4 = [0.229, 0.02 * screen.height * -1];
     obj4.outputRange = items4;
     obj4.extrapolate = "clamp";
@@ -185,9 +185,9 @@ export const forRevealFromBottomAndroid = function forRevealFromBottomAndroid(la
   items3[1] = obj3;
   obj1.transform = items3;
   obj.cardStyle = obj1;
-  const obj2 = { translateY: callback(progress2.interpolate({ inputRange: ["Text", "lc"], outputRange: items2, extrapolate: "clamp" }), inverted) };
+  const obj2 = { translateY: callback(progress2.interpolate({ inputRange: ["replace", "then"], outputRange: items2, extrapolate: "clamp" }), inverted) };
   const progress4 = current.progress;
-  obj.overlayStyle = { opacity: progress4.interpolate({ inputRange: ["String", "construct", "isArray"], outputRange: ["updateWith", "headerBarSeparator", "usePendingRequestCount"], extrapolate: "clamp" }) };
+  obj.overlayStyle = { opacity: progress4.interpolate({ inputRange: [], outputRange: ["updateUserSoundboardVolume", "wumpusLogoTier2", "useOrbPrice"], extrapolate: "clamp" }) };
   return obj;
 };
 export const forScaleFromCenterAndroid = function forScaleFromCenterAndroid(closing) {
@@ -198,18 +198,18 @@ export const forScaleFromCenterAndroid = function forScaleFromCenterAndroid(clos
   let num = 0;
   if (next) {
     const progress2 = next.progress;
-    let obj = { inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" };
+    let obj = { inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" };
     num = progress2.interpolate(obj);
   }
-  const tmpResult = closure_2(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }), num);
+  const tmpResult = closure_2(progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }), num);
   obj = {};
-  obj = { opacity: tmpResult.interpolate({ inputRange: ["E2EE_USER_VERIFY_MODAL", "INVALID_ACCESS_ERR", "onSelectFont", null, null, null, null], outputRange: [] }) };
+  obj = { opacity: tmpResult.interpolate({ inputRange: ["BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", "giftCode", "CONTEXT_MENU_LEARN_MORE", "hasCustomTheme", "CONFETTI_POTION_MODAL", "ParentalControlledDropsOptedOut", "_persisted"], outputRange: [] }) };
   const obj1 = {};
   const progress3 = current.progress;
-  const interpolateResult = progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" });
+  const interpolateResult = progress.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" });
   const tmp = closure_2;
   const tmp3 = importDefault(dependencyMap[1]);
-  obj1.scale = tmp3(closing.closing, progress3.interpolate({ inputRange: ["Text", "lc"], outputRange: [1070977777, 1065151889], extrapolate: "clamp" }), tmpResult.interpolate({ inputRange: [true, true, true], outputRange: [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001728457148418828, -4310086068234.3613, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020871549900078875] }));
+  obj1.scale = tmp3(closing.closing, progress3.interpolate({ inputRange: ["replace", "then"], outputRange: [28992, 1832321024], extrapolate: "clamp" }), tmpResult.interpolate({ inputRange: [], outputRange: [] }));
   const items = [obj1];
   obj.transform = items;
   obj.cardStyle = obj;
@@ -225,12 +225,12 @@ export const forBottomSheetAndroid = function forBottomSheetAndroid(current) {
   let obj = {};
   obj = {};
   const progress2 = current.progress;
-  const tmp = callback(progress.interpolate({ inputRange: ["Text", "lc"], outputRange: items, extrapolate: "clamp" }), inverted);
-  obj.opacity = importDefault(dependencyMap[1])(closing, current.progress, progress2.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"], extrapolate: "clamp" }));
+  const tmp = callback(progress.interpolate({ inputRange: ["replace", "then"], outputRange: items, extrapolate: "clamp" }), inverted);
+  obj.opacity = importDefault(dependencyMap[1])(closing, current.progress, progress2.interpolate({ inputRange: ["replace", "then"], outputRange: ["replace", "then"], extrapolate: "clamp" }));
   const items1 = [{ translateY: tmp }];
   obj.transform = items1;
   obj.cardStyle = obj;
-  obj = { opacity: progress3.interpolate({ inputRange: ["Text", "lc"], outputRange: [-520405018, 1431658495], extrapolate: "clamp" }) };
+  obj = { opacity: progress3.interpolate({ inputRange: ["replace", "then"], outputRange: [-520405018, 1431658495], extrapolate: "clamp" }) };
   const progress3 = current.progress;
   obj.overlayStyle = obj;
   return obj;
@@ -238,9 +238,9 @@ export const forBottomSheetAndroid = function forBottomSheetAndroid(current) {
 export const forFadeFromCenter = function forFadeFromCenter(current) {
   const progress = current.current.progress;
   let obj = {};
-  obj = { opacity: progress.interpolate({ inputRange: ["SAFETY_SC_FILTERS_SEXUAL_MEDIA", "itemInner", "available_regions", "start_id"], outputRange: [null, null, null, null] }) };
+  obj = { opacity: progress.interpolate({ inputRange: [false, false, false, false], outputRange: [] }) };
   obj.cardStyle = obj;
-  obj = { opacity: progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["width", "height"], extrapolate: "clamp" }) };
+  obj = { opacity: progress.interpolate({ inputRange: ["replace", "then"], outputRange: [null, null], extrapolate: "clamp" }) };
   obj.overlayStyle = obj;
   return obj;
 };

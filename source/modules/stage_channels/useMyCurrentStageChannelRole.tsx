@@ -1,5 +1,5 @@
 // Module ID: 10750
-// Function ID: 83509
+// Function ID: 83520
 // Name: useMyCurrentStageChannelRole
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9417
-// Function ID: 73282
+// Function ID: 73293
 // Name: BackspaceIcon
 // Dependencies: []
 // Exports: BackspaceIcon

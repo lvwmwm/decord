@@ -1,5 +1,5 @@
 // Module ID: 5449
-// Function ID: 46558
+// Function ID: 46566
 // Name: RedesignBottomSheetTitleHeaderBase
 // Dependencies: []
 // Exports: BottomSheetTitleHeader
@@ -126,7 +126,7 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 let closure_8 = arg1(dependencyMap[4]).createStyles(() => {
   let obj = {};
-  obj = { 0: 80, 9223372036854775807: 80, 0: null, 9223372036854775807: "900d6a1aeefc6f4c571ad9d81203dc5c", paddingHorizontal: importDefault(dependencyMap[5]).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL };
+  obj = { display: 80, flexDirection: 80, alignItems: null, borderBottomColor: "900d6a1aeefc6f4c571ad9d81203dc5c", paddingHorizontal: importDefault(dependencyMap[5]).modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL };
   obj.container = obj;
   obj.titles = {};
   obj.subtitle = { textAlign: "center" };
@@ -134,7 +134,7 @@ let closure_8 = arg1(dependencyMap[4]).createStyles(() => {
   return obj;
 });
 const obj = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[4]).createStyles(() => ({ container: { flexDirection: "column" }, accessories: { 1449229240: "row", 371666258: "center" }, item: { flexShrink: 0 } }));
+let closure_9 = arg1(dependencyMap[4]).createStyles(() => ({ container: { flexDirection: "column" }, accessories: { "Bool(false)": false, "Bool(false)": 0 }, item: { flexShrink: 0 } }));
 const obj2 = arg1(dependencyMap[4]);
 let closure_10 = arg1(dependencyMap[4]).createStyles(() => {
   let obj = { accessory: {} };

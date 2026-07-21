@@ -1,5 +1,5 @@
 // Module ID: 10425
-// Function ID: 80303
+// Function ID: 80314
 // Name: useShowChannelOptInNotice
 // Dependencies: []
 // Exports: default

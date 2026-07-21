@@ -1,5 +1,5 @@
 // Module ID: 9009
-// Function ID: 70873
+// Function ID: 70884
 // Name: Scope
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ function Scope(arg0) {
     str = ". " + error;
   }
   obj.accessibilityLabel = "" + stringResult + ": " + text + str;
-  obj = { <string:2737387298>: 48, <string:1292067942>: 12, <string:1400499127>: 4, style: tmp.iconWrapper };
+  obj = { style: tmp.iconWrapper };
   if (isFake) {
     obj = { style: tmp.fakeScopeIcon, color: importDefault(tmp10[6]).colors.TEXT_MUTED, size: "refresh_sm" };
     let tmp8Result = tmp8(tmp9(tmp10[5]).CircleXIcon, obj);
@@ -60,7 +60,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ scopesContainer: {}, scopes: {}, scopeContainer: { flexDirection: "row" }, scope: {}, iconWrapper: { fontSize: -59652324, marginBottom: 0.00000000000000000000000000000000657414935698041, fontFamily: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001261344141645 }, fakeScopeIcon: { opacity: 0.6 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ scopesContainer: {}, scopes: {}, scopeContainer: { flexDirection: "row" }, scope: {}, iconWrapper: { -9223372036854775808: "4550be26e4ce88ab0a8f2d917df660a6", 0: "ic_xbox_24px", 9223372036854775807: "png" }, fakeScopeIcon: { opacity: 0.6 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
 
@@ -86,7 +86,7 @@ export default function AuthorizeScopes(accountScopes) {
       hasItem = requestedScopes.includes(arg1(dependencyMap[12]).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: tmp.scopesContainer };
-    obj = {};
+    obj = { hasMaxConnections: "<string:3547877632>", isBoostOnlySubscription: "content_position" };
     const intl = arg1(dependencyMap[4]).intl;
     obj = { application: application.name };
     obj.children = intl.format(isTrustedName ? t.PZpY9c : t.1Hz+Sl, obj);

@@ -1,10 +1,10 @@
-// Module ID: 15079
-// Function ID: 113646
+// Module ID: 15082
+// Function ID: 113680
 // Name: ScienceIcon
 // Dependencies: []
 // Exports: ScienceIcon
 
-// Module 15079 (ScienceIcon)
+// Module 15082 (ScienceIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ScienceIcon.tsx");

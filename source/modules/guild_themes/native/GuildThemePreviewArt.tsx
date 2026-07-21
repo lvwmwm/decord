@@ -1,10 +1,10 @@
-// Module ID: 14868
-// Function ID: 111990
+// Module ID: 14871
+// Function ID: 112024
 // Name: PreviewOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 14868 (PreviewOverlay)
+// Module 14871 (PreviewOverlay)
 function PreviewOverlay() {
   return <View pointerEvents="none" style={callback().previewOverlay}>{jsx(importDefault(dependencyMap[6]), {})}</View>;
 }
@@ -15,7 +15,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.previewArt = obj;
-obj.previewOverlay = { left: null, accessibilityRole: null, exports: null, "Null": null, "Null": null };
+obj.previewOverlay = { includeFrecency: "<string:1358955120>", lastUsedCommandId: "<string:574694606>", lastUsedTimeMs: "<string:1375732337>", alignItems: "<string:625026254>", flexDirection: "<string:1090519468>" };
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
 

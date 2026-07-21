@@ -1,10 +1,10 @@
-// Module ID: 13588
-// Function ID: 102985
+// Module ID: 13590
+// Function ID: 103007
 // Name: IgnoredUsersList
 // Dependencies: []
 // Exports: default
 
-// Module 13588 (IgnoredUsersList)
+// Module 13590 (IgnoredUsersList)
 function IgnoredUsersList(userIds) {
   userIds = userIds.userIds;
   const tmp = callback3();

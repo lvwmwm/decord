@@ -1,5 +1,5 @@
 // Module ID: 10630
-// Function ID: 82966
+// Function ID: 82977
 // Name: FocusedControlsExpanded
 // Dependencies: []
 // Exports: default
@@ -89,7 +89,7 @@ function FocusedControlsAboveActionBarView(positionY) {
   fn.__closure = obj;
   fn.__workletHash = 5042367101380;
   fn.__initData = closure_23;
-  obj = { onPress: onPressHeader, accessibilityState: { expanded: isExpanded } };
+  obj = { PRELOAD_SERVER_ID: null, EMPTY_SOUND_LIST: 4, paddingBottom: "column", saveClipEx: 288, trackForumPostLinkCopied: 1, onPress: onPressHeader, accessibilityState: { expanded: isExpanded } };
   const obj1 = { style: tmp.aboveActionBarContainer };
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [callback3(FocusedControlsBottomDrawerTooltip, { positionY }), callback3(arg1(dependencyMap[17]).ActionSheetHeaderBar, {}), ];
@@ -364,7 +364,7 @@ class FocusedControlsBottomDrawer {
       if (!reveal) {
         num = sum;
       }
-      let obj = { a: "onFriendOnlineNotificationSettingsChanged", k: "Float32Array", d: "decorationStyle", height: bound };
+      let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "Date", height: bound };
       let num2 = 0;
       if (tmp3) {
         num2 = 16;
@@ -526,11 +526,11 @@ obj1["overflow"] = "hidden";
 obj.visualEffectView = obj1;
 obj.visualEffectViewBackground = { backgroundColor: "rgba(0, 0, 0, .15)" };
 obj.expandedControlsContainer = { marginHorizontal: 16 };
-obj.aboveActionBarContainer = { maxAutoClips: true, ENABLE_COMMUNITY_FLOW_MODAL_KEY: true, paddingBottom: true, T+79Eo: true, containerRefresh: true, es-VE: true };
-obj.aboveActionBarChildrenContainer = {};
-obj.ptbButton = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391244649793, 9223372036854775807: 9126805507, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000381804336755052 };
-obj.tooltipStyle = { "Bool(false)": true, -517964626: true, 542489185: true };
-obj.containerStyle = { width: 1, marginHorizontal: "comp_0" };
+obj.aboveActionBarContainer = {};
+obj.aboveActionBarChildrenContainer = { 0: "<string:410124289>", 9223372036854775807: "<string:402653184>", 9223372036854775807: "<string:16777216>", -9223372036854775808: "<string:38387522>" };
+obj.ptbButton = { isImageLoaded: "<string:3202416642>", isImageErrored: "<string:2018574338>", GUILD_BOOSTING_FAQ: "<string:2631619027>" };
+obj.tooltipStyle = { o: "Array", spriteIndex: "isArray", force: "WireType" };
+obj.containerStyle = { MKTG_HYPESQUAD_FORM_SUBMITTED: 1, marginInlineEnd: "comp_0" };
 const obj2 = {};
 const tmp6 = arg1(dependencyMap[6]);
 const merged1 = Object.assign(importDefault(dependencyMap[10])(tmp5.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, 12, { uppercase: true }));

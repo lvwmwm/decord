@@ -1,5 +1,5 @@
 // Module ID: 9109
-// Function ID: 71353
+// Function ID: 71364
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ I18nManager: closure_4, Platform, StyleSheet } = tmp3);
 const View = tmp3.View;
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-const styles = StyleSheet.create({ row: {} });
+const styles = StyleSheet.create({ row: { "Null": 7, "Null": 370 } });
 
 export default function HeaderConfig(arg0) {
   let UNSTABLE_headerInsets;

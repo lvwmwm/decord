@@ -1,5 +1,5 @@
 // Module ID: 11287
-// Function ID: 87828
+// Function ID: 87840
 // Name: AttachmentPreviewAppLauncher
 // Dependencies: []
 // Exports: default
@@ -24,9 +24,9 @@ let closure_6 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.imageIconWrapper = obj;
-const obj1 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[6]).radii.sm };
+const obj1 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.selectedImage = obj1;
 let closure_8 = obj.createStyles(obj);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/app_launcher/native/options/attachment/AppLauncherAttachmentOption.tsx");

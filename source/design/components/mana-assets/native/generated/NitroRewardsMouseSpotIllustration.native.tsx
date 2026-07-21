@@ -1,5 +1,5 @@
 // Module ID: 6341
-// Function ID: 50425
+// Function ID: 50433
 // Name: NitroRewardsMouseSpotIllustration
 // Dependencies: []
 // Exports: NitroRewardsMouseSpotIllustration

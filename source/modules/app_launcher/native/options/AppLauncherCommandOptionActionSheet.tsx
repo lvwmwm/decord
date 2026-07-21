@@ -1,5 +1,5 @@
 // Module ID: 11278
-// Function ID: 87778
+// Function ID: 87790
 // Name: AppLauncherCommandOptionActionSheet
 // Dependencies: []
 // Exports: AppLauncherCommandOptionActionSheet
@@ -34,7 +34,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   if (flag === undefined) {
     flag = true;
   }
-  let obj = {};
+  let obj = { SharedTransitionType: null, addData: null, GUILD_SETTINGS_GUILD_THEME_SAVE_SUCCESS: null, getCellMetrics: null, GuildRoleSubscriptionListingPreview: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(startExpanded, obj);
   const arg1 = merged;

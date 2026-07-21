@@ -1,5 +1,5 @@
 // Module ID: 12110
-// Function ID: 93301
+// Function ID: 93313
 // Name: OverlayMuteButton
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ function OverlayMuteButton(arg0) {
   let isMuted;
   let onToggleMute;
   ({ isMuted, onToggleMute } = arg0);
-  let obj = { <string:24250455>: null, isArray: null };
+  let obj = { <string:1413519603>: null, <string:1189478959>: null };
   obj = { accessibilityRole: "button" };
   const tmp = callback3();
   const tmp2 = closure_7;
@@ -33,7 +33,7 @@ function OverlayObscureToggleButton(arg0) {
   let onToggleObscure;
   let spoilerActive;
   ({ spoilerActive, onToggleObscure } = arg0);
-  let obj = { <string:24250455>: null, isArray: null };
+  let obj = { <string:1413519603>: null, <string:1189478959>: null };
   obj = { accessibilityRole: "button" };
   const tmp = callback3();
   const tmp2 = closure_7;
@@ -92,10 +92,10 @@ obj["backgroundColor"] = "transparent";
 obj.portraitFooterButtons = obj;
 obj1 = { paddingBottom: importDefault(dependencyMap[5]).space.PX_8 };
 obj.invisibleFooter = obj1;
-const obj2 = { "Null": "category", "Null": "Array", "Null": "isArray", "Null": "LIGHT", "Null": "isArray", gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj2 = { "Null": "bbaa1714f228607ce548d318f0e28f01", "Null": "ic_swipe_reply_24px", "Null": "png", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.overlayIcons = obj2;
-obj.overlayButtonIcon = { bhk: false, bic: "internal" };
-obj.overlayButton = { paddingVertical: false, paddingHorizontal: false, justifyContent: false, alignItems: false };
+obj.overlayButtonIcon = { "Null": 0, "Null": -1048576 };
+obj.overlayButton = { 9223372036854775807: false, 9223372036854775807: false, 0: false, 9223372036854775807: false };
 let closure_10 = obj1.createStyles(obj);
 let closure_11 = importAllResult.memo((arg0) => {
   let contextIcon;
@@ -125,7 +125,7 @@ let closure_11 = importAllResult.memo((arg0) => {
   let obj2 = arg1(dependencyMap[14]);
   const mediaPlayerMutedStore = obj2.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   if (null != slider) {
-    obj = {};
+    obj = { "Bool(false)": "Small", "Bool(false)": "sm", "Bool(false)": "Placeholder" };
     obj = { paddingTop: 8 };
     obj.style = obj;
     let obj5 = arg1(dependencyMap[15]);

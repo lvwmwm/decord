@@ -1,5 +1,5 @@
 // Module ID: 5063
-// Function ID: 43233
+// Function ID: 43250
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,103 +13,122 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["GUILD_DELETE"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
 let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
-({ Animated: closure_10, Easing: closure_11, StyleSheet: closure_12, View: closure_13 } = arg1(dependencyMap[6]));
-importAll(dependencyMap[7]);
+let closure_10 = importAll(dependencyMap[6]);
+({ StyleSheet: closure_11, View: closure_12 } = arg1(dependencyMap[7]));
 const jsx = arg1(dependencyMap[8]).jsx;
-const tmp4 = (Component) => {
-  class TouchableOpacity {
-    constructor() {
+const tmp3 = (Component) => {
+  class TouchableHighlight {
+    constructor(arg0) {
       self = this;
-      tmp = closure_5(this, TouchableOpacity);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
+      tmp = closure_5(this, TouchableHighlight);
       items = [];
-      combined = items.concat(array);
-      obj = closure_8(TouchableOpacity);
-      tmp4 = closure_7;
-      if (closure_15()) {
-        items1 = combined;
-        if (!combined) {
-          items1 = [];
-        }
-        tmp6 = closure_8;
-        constructResult = Reflect.construct(obj, items1, closure_8(self).constructor);
+      items[0] = Component;
+      obj = closure_8(TouchableHighlight);
+      tmp2 = closure_7;
+      if (closure_14()) {
+        tmp4 = globalThis;
+        _Reflect = Reflect;
+        tmp5 = closure_8;
+        constructResult = Reflect.construct(obj, items, closure_8(self).constructor);
       } else {
-        constructResult = obj.apply(self, combined);
+        constructResult = obj.apply(self, items);
       }
-      tmp4Result = tmp4(self, constructResult);
-      TouchableOpacity = tmp4Result;
-      tmp4Result.getChildStyleOpacityWithDefault = () => {
-        const tmp = closure_12.flatten(tmp4Result.props.style) || {};
-        let num = 1;
-        if (null != tmp.opacity) {
-          const opacity = tmp.opacity;
-          num = opacity.valueOf();
+      tmp2Result = tmp2(self, constructResult);
+      TouchableHighlight = tmp2Result;
+      tmp2Result.showUnderlay = () => {
+        if (tmp2Result.hasPressHandler()) {
+          let obj = {};
+          obj = { opacity: tmp2Result.props.activeOpacity };
+          obj.extraChildStyle = obj;
+          obj = { backgroundColor: tmp2Result.props.underlayColor };
+          obj.extraUnderlayStyle = obj;
+          tmp2Result.setState(obj);
+          if (null != tmp2Result.props.onShowUnderlay) {
+            const props = tmp2Result.props;
+            props.onShowUnderlay();
+          }
         }
-        return num;
       };
-      value = new closure_10.Value(tmp4Result.getChildStyleOpacityWithDefault());
-      tmp4Result.opacity = value;
-      tmp4Result.setOpacityTo = (toValue, duration) => {
-        const useNativeAnimations = tmp4Result.props.useNativeAnimations;
-        const obj = { toValue, duration, easing: closure_11.inOut(closure_11.quad), useNativeDriver: tmp2 };
-        const tmp2 = null == useNativeAnimations || useNativeAnimations;
-        closure_10.timing(tmp4Result.opacity, { toValue, duration, easing: closure_11.inOut(closure_11.quad), useNativeDriver: tmp2 }).start();
+      tmp2Result.hasPressHandler = () => {
+        let onLongPress = tmp2Result.props.onPress;
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onPressIn;
+        }
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onPressOut;
+        }
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onLongPress;
+        }
+        return onLongPress;
       };
-      tmp4Result.onStateChange = (arg0, arg1) => {
-        if (arg1 === tmp4Result(closure_2[9]).TOUCHABLE_STATE.BEGAN) {
-          tmp4Result.setOpacityTo(tmp4Result.props.activeOpacity, 0);
+      tmp2Result.hideUnderlay = () => {
+        tmp2Result.setState({ 9223372036854775807: "o", 0: "o" });
+        if (null != tmp2Result.props.onHideUnderlay) {
+          const props = tmp2Result.props;
+          props.onHideUnderlay();
+        }
+      };
+      tmp2Result.onStateChange = (arg0, arg1) => {
+        if (arg1 === tmp2Result(closure_2[9]).TOUCHABLE_STATE.BEGAN) {
+          tmp2Result.showUnderlay();
         } else {
-          let tmp3 = arg1 !== tmp4Result(closure_2[9]).TOUCHABLE_STATE.UNDETERMINED;
+          let tmp3 = arg1 !== tmp2Result(closure_2[9]).TOUCHABLE_STATE.UNDETERMINED;
           if (tmp3) {
-            tmp3 = arg1 !== tmp4Result(closure_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
+            tmp3 = arg1 !== tmp2Result(closure_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
           }
           if (!tmp3) {
-            tmp4Result.setOpacityTo(tmp4Result.getChildStyleOpacityWithDefault(), 150);
+            tmp2Result.hideUnderlay();
           }
         }
       };
-      return tmp4Result;
+      tmp2Result.state = { 9223372036854775807: "o", 0: "o" };
+      return tmp2Result;
     }
   }
-  const arg1 = TouchableOpacity;
-  callback2(TouchableOpacity, Component);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const self = this;
-        const props = this.props;
-        let style = props.style;
-        if (undefined === style) {
-          style = {};
-        }
-        const obj = { style: items, onStateChange: self.onStateChange };
-        const items = [style, { opacity: self.opacity }];
-        const tmp = callback2(props, closure_3);
-        const tmp2 = callback5;
-        if (self.props.children) {
-          let children = self.props.children;
-        } else {
-          children = callback5(closure_13, {});
-        }
-        obj.children = children;
-        return tmp2(callback(closure_2[9]), Object.assign({}, tmp, obj));
+  const arg1 = TouchableHighlight;
+  callback2(TouchableHighlight, Component);
+  let obj = {
+    key: "renderChildren",
+    value: function renderChildren() {
+      const self = this;
+      if (this.props.children) {
+        const Children = React.Children;
+        const onlyResult = Children.only(self.props.children);
+        const obj = { style: closure_11.compose(onlyResult.props.style, self.state.extraChildStyle) };
+        return React.cloneElement(onlyResult, obj);
+      } else {
+        return callback5(closure_12, {});
       }
     }
-  ];
-  return callback(TouchableOpacity, items);
-}(arg1(dependencyMap[7]).Component);
-tmp4.defaultProps = Object.assign({}, importDefault(dependencyMap[9]).defaultProps, { activeOpacity: 0.2 });
+  };
+  const items = [obj, ];
+  obj = {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
+      }
+      const obj = { style: items, onStateChange: self.onStateChange };
+      const items = [style, self.state.extraUnderlayStyle];
+      const tmp = callback2(props, closure_3);
+      obj.children = self.renderChildren();
+      return callback5(callback(closure_2[9]), Object.assign({}, tmp, obj));
+    }
+  };
+  items[1] = obj;
+  return callback(TouchableHighlight, items);
+}(arg1(dependencyMap[6]).Component);
+tmp3.defaultProps = Object.assign({}, importDefault(dependencyMap[9]).defaultProps, { <string:1380856145>: 0.2, <string:2403576603>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003065420838, <string:2097153080>: -1468487258528317700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
 
-export default tmp4;
+export default tmp3;

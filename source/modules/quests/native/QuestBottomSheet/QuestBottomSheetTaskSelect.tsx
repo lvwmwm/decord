@@ -1,10 +1,10 @@
-// Module ID: 13933
-// Function ID: 105881
+// Module ID: 13936
+// Function ID: 105913
 // Name: QuestBottomSheetTaskSelect
 // Dependencies: []
 // Exports: default
 
-// Module 13933 (QuestBottomSheetTaskSelect)
+// Module 13936 (QuestBottomSheetTaskSelect)
 importAll(dependencyMap[0]);
 const QuestTaskPlatform = arg1(dependencyMap[1]).QuestTaskPlatform;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));

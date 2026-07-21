@@ -1,10 +1,10 @@
-// Module ID: 15223
-// Function ID: 114958
+// Module ID: 15226
+// Function ID: 114992
 // Name: ChannelSubtitle
 // Dependencies: []
 // Exports: renderChannelSubtitle
 
-// Module 15223 (ChannelSubtitle)
+// Module 15226 (ChannelSubtitle)
 function ChannelSubtitle(arg0) {
   let channelId;
   let connected;

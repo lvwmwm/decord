@@ -1,5 +1,5 @@
 // Module ID: 3595
-// Function ID: 27778
+// Function ID: 27783
 // Name: nextDay
 // Dependencies: []
 // Exports: default

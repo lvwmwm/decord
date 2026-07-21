@@ -1,9 +1,9 @@
-// Module ID: 7143
-// Function ID: 57585
+// Module ID: 7144
+// Function ID: 57597
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7143 (_isNativeReflectConstruct)
+// Module 7144 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,13 +25,13 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftReminderNagbar$Type);
       items = [, ];
-      items[0] = {};
-      obj = { "Null": 411, "Null": 134, "Null": null };
+      items[0] = { 1347510942: 5, 1678385745: "banner_asset_url", 1364379111: "scalar", 140698458: 9 };
+      obj = { 9223372036854775807: 411, 9223372036854775807: 134, 0: null };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[1] = obj;
-      items1 = ["es-EA"];
+      items1 = [null];
       items1[1] = items;
       obj2 = closure_6(GiftReminderNagbar$Type);
       tmp2 = closure_5;

@@ -1,10 +1,10 @@
-// Module ID: 14609
-// Function ID: 110158
+// Module ID: 14612
+// Function ID: 110190
 // Name: ChooseAccount
 // Dependencies: []
 // Exports: default
 
-// Module 14609 (ChooseAccount)
+// Module 14612 (ChooseAccount)
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -47,7 +47,7 @@ export default function ChooseAccount() {
     let obj = multiAccountUsers(_handlePressRemove[16]);
     obj.hideActionSheet();
     let obj1 = arr(_handlePressRemove[17]);
-    obj = { url: 1903368625, body: 9, retries: 27469377 };
+    obj = { position: true, width: true, aspectRatio: true };
     obj = {};
     const intl = arr(_handlePressRemove[14]).intl;
     obj.label = intl.string(arg0(_handlePressRemove[14]).t.DSN+hw);

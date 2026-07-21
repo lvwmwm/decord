@@ -1,5 +1,5 @@
 // Module ID: 11958
-// Function ID: 92416
+// Function ID: 92428
 // Name: ModeratorActionRow
 // Dependencies: []
 // Exports: default
@@ -38,7 +38,7 @@ function ModeratorActionRow(arg0) {
     obj = { label };
     let tmp5;
     if (null != sublabel) {
-      const obj1 = { children: sublabel };
+      const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images", children: sublabel };
       tmp5 = jsx(arg1(dependencyMap[15]).Text, obj1);
     }
     obj.sublabel = tmp5;

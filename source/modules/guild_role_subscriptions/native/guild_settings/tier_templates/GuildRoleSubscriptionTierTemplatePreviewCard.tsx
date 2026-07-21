@@ -1,17 +1,17 @@
-// Module ID: 16345
-// Function ID: 126112
+// Module ID: 16353
+// Function ID: 126173
 // Name: ContentHeader
 // Dependencies: []
 // Exports: default
 
-// Module 16345 (ContentHeader)
+// Module 16353 (ContentHeader)
 function ContentHeader(arg0) {
   let count;
   let title;
   ({ count, title } = arg0);
   const tmp = callback3();
   let obj = { style: tmp.contentHeader };
-  obj = { style: tmp.contentHeader, children: count };
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.contentHeader, children: count };
   const items = [callback(arg1(dependencyMap[6]).Text, obj), " ", title];
   obj.children = items;
   return callback2(arg1(dependencyMap[6]).Text, obj);
@@ -24,7 +24,7 @@ function BenefitShowCase(children) {
   let obj = {};
   let tmp3 = title;
   if ("string" === typeof title) {
-    obj = { children: title };
+    obj = { hasMaxConnections: false, isBoostOnlySubscription: false, children: title };
     tmp3 = callback(arg1(dependencyMap[6]).Text, obj);
   }
   const items = [tmp3, callback(arg1(dependencyMap[11]).Spacer, { size: 2 }), callback(arg1(dependencyMap[6]).Text, { children: children.description })];
@@ -37,11 +37,12 @@ function ChannelBenefitShowCase(channel) {
   let type;
   ({ description, type, name } = channel.channel);
   let obj = arg1(dependencyMap[12]);
-  obj = { style: {} };
-  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(arg1(dependencyMap[11]).Spacer, { size: 4 }), callback(arg1(dependencyMap[6]).Text, { children: name })];
+  obj = { style: { "Null": 7, "Null": 370 } };
+  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(arg1(dependencyMap[11]).Spacer, { size: 4 }), ];
+  obj = { hasMaxConnections: false, isBoostOnlySubscription: false, children: name };
+  items[2] = callback(arg1(dependencyMap[6]).Text, obj);
   obj.children = items;
-  obj = { title: callback2(closure_6, obj), description };
-  return callback(BenefitShowCase, obj);
+  return callback(BenefitShowCase, { title: callback2(closure_6, obj), description });
 }
 function ViewEntireTemplateFooter() {
   const tmp = callback3();
@@ -74,19 +75,19 @@ obj = { padding: 16, borderRadius: importDefault(dependencyMap[5]).radii.md, bac
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.subscriptionPlanTextStyle = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
-const obj2 = { "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+const obj2 = { "Null": null, 160498172: null, 1090782306: null, color: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.descriptionPlanTextStyle = obj2;
-const obj3 = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004074371678144605, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000004667261426580222, 9223372036854775807: -1645684642245205400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: null, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
+const obj3 = { bounces: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004204895948425893, originWhitelist: 0.00000000000000000000000000000000000000000000000000000000000004667261426580222, allowsInlineMediaPlayback: -1623348473290814200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: null, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.separator = obj3;
 const obj1 = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 obj.contentContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, padding: 16, paddingBottom: 0 };
 obj.contentHeader = { textTransform: "uppercase" };
 const obj4 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, padding: 16, paddingBottom: 0 };
 obj.viewEntireTemplateFooter = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj5 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.viewEntireTemplateFooterUnderline = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
+const obj6 = { paddingBottom: null, borderTopWidth: null, borderColor: null, marginTop: null, display: null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
+obj.viewEntireTemplateFooterUnderline = obj6;
 let closure_11 = obj.createStyles(obj);
-const obj6 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
+const obj5 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.sm };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePreviewCard.tsx");
 
 export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
@@ -148,7 +149,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     }
   }, items1);
   obj = { style: tmp.container };
-  obj = { template, handleSelectTemplateInPreview: callback1, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: false, descriptionTextProps: { arrow: null, icon: null } };
+  obj = { template, handleSelectTemplateInPreview: callback1, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: false, descriptionTextProps: { "Bool(true)": null, <string:22198377>: null } };
   const items2 = [callback(arg1(dependencyMap[21]).GuildRoleSubscriptionTierTemplateBasicInfo, obj), ];
   obj1 = {
     style: tmp.contentContainer,

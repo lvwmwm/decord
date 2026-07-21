@@ -1,5 +1,5 @@
 // Module ID: 11363
-// Function ID: 88350
+// Function ID: 88362
 // Name: JumpToPresentButton
 // Dependencies: []
 // Exports: default
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, position: "absolute", right: importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_RIGHT_SPACING };
 obj.container = obj;
-const obj1 = { 1449288664: "", -1401465942: "", -1394561895: "Array", marginBottom: importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING };
+const obj1 = { 0: "Array", -9223372036854775808: "isArray", 9223372036854775807: "container", marginBottom: importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING };
 obj.containerIOS = obj1;
 let closure_9 = obj.createStyles(obj);
 let closure_10 = arg1(dependencyMap[8]).isIOS() ? () => null : (arg0) => {

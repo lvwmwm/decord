@@ -1,7 +1,7 @@
 // Module ID: 10340
-// Function ID: 79803
+// Function ID: 79814
 // Name: parseReactionPermissions
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10340 (parseReactionPermissions)

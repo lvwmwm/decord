@@ -1,10 +1,10 @@
-// Module ID: 6990
-// Function ID: 55886
+// Module ID: 6991
+// Function ID: 55898
 // Name: snowflakeSequence
 // Dependencies: []
 // Exports: createNonce
 
-// Module 6990 (snowflakeSequence)
+// Module 6991 (snowflakeSequence)
 let closure_2 = 0;
 const snowflakeSequence = new require(dependencyMap[0]).SnowflakeSequence();
 const _module = require(dependencyMap[1]);

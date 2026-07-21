@@ -1,5 +1,5 @@
 // Module ID: 10818
-// Function ID: 83996
+// Function ID: 84007
 // Name: trackApplicationOpen
 // Dependencies: [670, 2, 6]
 // Exports: default

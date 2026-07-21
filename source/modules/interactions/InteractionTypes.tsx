@@ -1,7 +1,7 @@
 // Module ID: 4353
-// Function ID: 38614
+// Function ID: 38622
 // Name: InteractionState
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4353 (InteractionState)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 16452
-// Function ID: 127130
+// Module ID: 16460
+// Function ID: 127191
 // Name: _handleIncomingURL
 // Dependencies: []
 // Exports: default
 
-// Module 16452 (_handleIncomingURL)
+// Module 16460 (_handleIncomingURL)
 function _handleIncomingURL() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

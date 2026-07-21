@@ -1,9 +1,9 @@
-// Module ID: 15634
-// Function ID: 119369
+// Module ID: 15637
+// Function ID: 119408
 // Name: getMaxPanelWidth
 // Dependencies: []
 
-// Module 15634 (getMaxPanelWidth)
+// Module 15637 (getMaxPanelWidth)
 let closure_0 = require(dependencyMap[0]).VOICE_PANEL_DRAWER_MAX_WIDTH;
 let closure_1 = { code: "function getMaxPanelWidth_PanelSizeUtilsTsx1({windowWidth:windowWidth,connected:connected,safeAreaLeft:safeAreaLeft,safeAreaRight:safeAreaRight}){const{VOICE_PANEL_DRAWER_MAX_WIDTH}=this.__closure;return Math.min(windowWidth,connected?windowWidth:Math.min(VOICE_PANEL_DRAWER_MAX_WIDTH,windowWidth-safeAreaLeft-safeAreaRight));}" };
 let closure_2 = { code: "function getPanelX_PanelSizeUtilsTsx2(windowWidth,width){return(windowWidth-width)/2;}" };

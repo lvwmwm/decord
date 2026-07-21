@@ -1,5 +1,5 @@
 // Module ID: 10577
-// Function ID: 82547
+// Function ID: 82558
 // Name: useStreamError
 // Dependencies: []
 // Exports: default

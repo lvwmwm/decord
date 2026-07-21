@@ -1,5 +1,5 @@
 // Module ID: 11422
-// Function ID: 88866
+// Function ID: 88878
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getChannelHighlightNodes, getEmojiHighlightNodes, getMatchedOptions, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getUsernameHighlightNodes

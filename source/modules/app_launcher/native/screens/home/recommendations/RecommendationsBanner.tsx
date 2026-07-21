@@ -1,5 +1,5 @@
 // Module ID: 11200
-// Function ID: 87218
+// Function ID: 87230
 // Dependencies: []
 
 // Module 11200
@@ -17,7 +17,7 @@ let closure_10 = importAllResult.memo((applicationId) => {
   let obj1 = arg1(dependencyMap[7]);
   const heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   const arg1 = heroMediaDimensions;
-  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["SENTRY_BAGGAGE_KEY_PREFIX"] };
+  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["RollOutRight"] };
   const tmp2 = importDefault(dependencyMap[8])(obj);
   const importDefault = tmp2;
   const items = [heroMediaDimensions, tmp2];

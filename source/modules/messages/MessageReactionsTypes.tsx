@@ -1,9 +1,9 @@
-// Module ID: 7000
-// Function ID: 56016
+// Module ID: 7001
+// Function ID: 56028
 // Name: ReactionTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7000 (ReactionTypes)
+// Module 7001 (ReactionTypes)
 const obj = { NORMAL: 0, [0]: "NORMAL", BURST: 1, [1]: "BURST", VOTE: 2, [2]: "VOTE" };
 const items = [, ];
 ({ NORMAL: arr[0], BURST: arr[1] } = obj);

@@ -1,12 +1,12 @@
 // Module ID: 3332
-// Function ID: 26139
+// Function ID: 26144
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3332 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: "<string:4098359297>", 0: "<string:1392509715>" }, xSeconds: { -9223372036854775808: "<string:27582208>", 0: "<string:38447616>" }, halfAMinute: "en halv minut", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: {}, aboutXHours: { -9223372036854775808: "fm", 0: "em" }, xHours: {}, xDays: { -9223372036854775808: "<string:1736966147>", 0: "<string:536281091>" }, aboutXWeeks: { -9223372036854775808: true, 0: true }, xWeeks: { -9223372036854775808: "Array", 0: "DCDBackgroundTaskManager" }, aboutXMonths: {}, xMonths: { -9223372036854775808: null, 0: null }, aboutXYears: { -9223372036854775808: 1107297040, 0: 193429 }, xYears: { -9223372036854775808: "minuta", 0: "minut\u0119" }, overXYears: { -9223372036854775808: 1107297040, 0: 193402 }, almostXYears: { -9223372036854775808: false, 0: false } };
-let closure_1 = ["CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "INVALID_MESSAGE_SEND_USER", "Array", "toHslString", "a", "inviteAgeText", "da", "useSilenceErrorSMMViewNotFound", "align", "cellIndex", "initialTouchX", "a", "hermesStacks"];
+let closure_0 = { lessThanXSeconds: { "Bool(false)": false, "Bool(false)": false }, xSeconds: {}, halfAMinute: "en halv minut", lessThanXMinutes: {}, xMinutes: {}, aboutXHours: { "Bool(false)": "<string:1627390418>", "Bool(false)": "<string:3489661344>" }, xHours: { "Bool(false)": "<string:51133952>", "Bool(false)": "<string:21361408>" }, xDays: {}, aboutXWeeks: { "Bool(false)": false, "Bool(false)": false }, xWeeks: { "Bool(false)": null, "Bool(false)": null }, aboutXMonths: {}, xMonths: { "Bool(false)": null, "Bool(false)": null }, aboutXYears: { "Bool(false)": "a", "Bool(false)": "isArray" }, xYears: {}, overXYears: { "Bool(false)": 283246594, "Bool(false)": -79560701 }, almostXYears: { "Bool(false)": 283312130, "Bool(false)": -532545533 } };
+let closure_1 = ["SOLID", "APPROVED", "Array", "useDeleteSubscriptionListing", "a", "handleSend", "defaultLocale", "GuildBadgeFire", "GuildEntityDao", "_parser", "microphoneUnit", "a", "hasConnectedOnce"];
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

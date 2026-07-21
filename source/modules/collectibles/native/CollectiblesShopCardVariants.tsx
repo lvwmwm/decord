@@ -1,5 +1,5 @@
 // Module ID: 8724
-// Function ID: 69028
+// Function ID: 69039
 // Name: VariantOption
 // Dependencies: []
 
@@ -45,13 +45,13 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
-obj = { paddingStart: importDefault(dependencyMap[4]).space.PX_4 };
+obj = { ty: 8, c: null, o: "\u270A\u{1F3FF}", paddingStart: importDefault(dependencyMap[4]).space.PX_4 };
 obj.variantsContainer = obj;
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { 9223372036854775807: "/assets/modules/premium/native/images/perks", 9223372036854775807: 300.5, 0: 175, 9223372036854775807: null, 0: "034593f3dac51b7d85899e7191ac5a9f", 9223372036854775807: "client_theme", -9223372036854775808: "png", 9223372036854775807: true, marginStart: -importDefault(dependencyMap[4]).space.PX_4, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.round };
+  obj = { marginStart: -importDefault(dependencyMap[4]).space.PX_4, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.round };
   obj.variantOption = obj;
   obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
   let num = 0;

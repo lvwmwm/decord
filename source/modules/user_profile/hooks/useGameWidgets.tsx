@@ -1,5 +1,5 @@
 // Module ID: 11984
-// Function ID: 92622
+// Function ID: 92634
 // Name: useGameWidgets
 // Dependencies: []
 // Exports: useGameWidgets

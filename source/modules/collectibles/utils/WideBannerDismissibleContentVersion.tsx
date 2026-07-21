@@ -1,10 +1,10 @@
-// Module ID: 12872
-// Function ID: 98324
+// Module ID: 12874
+// Function ID: 98346
 // Name: getWideBannerDismissibleContentVersion
 // Dependencies: []
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 12872 (getWideBannerDismissibleContentVersion)
+// Module 12874 (getWideBannerDismissibleContentVersion)
 let closure_2 = importDefault(dependencyMap[0]);
 const CollectibleShopTab = arg1(dependencyMap[1]).CollectibleShopTab;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");

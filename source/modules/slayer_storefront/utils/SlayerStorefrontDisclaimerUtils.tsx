@@ -1,5 +1,5 @@
 // Module ID: 9736
-// Function ID: 75725
+// Function ID: 75736
 // Name: getNotSupportedSentence
 // Dependencies: []
 // Exports: getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getRedeemPurchaseDescriptionForApplication

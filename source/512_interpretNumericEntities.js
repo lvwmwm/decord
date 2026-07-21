@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 512 (interpretNumericEntities)
-const obj = { decoder: require(dependencyMap[0]).decode };
+const obj = { 9223372036854775807: false, 0: false, 9223372036854775807: false, -27654118: false, 0: false, 9223372036854775807: false, -9223372036854775808: false, 0: false, 0: false, 9223372036854775807: false, 0: false, 0: false, 9223372036854775807: "Text", 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, 0: false, 0: false, 0: false, 0: false, decoder: require(dependencyMap[0]).decode };
 function interpretNumericEntities(str) {
   return str.replace(/&#(\d+);/g, (arg0, replaced) => String.fromCharCode(parseInt(replaced, 10)));
 }

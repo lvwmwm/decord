@@ -1,5 +1,5 @@
 // Module ID: 3458
-// Function ID: 26798
+// Function ID: 26803
 // Name: formatDistanceStrict
 // Dependencies: []
 // Exports: default

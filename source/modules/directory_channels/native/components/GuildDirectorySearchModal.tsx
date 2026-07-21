@@ -1,5 +1,5 @@
 // Module ID: 10022
-// Function ID: 77415
+// Function ID: 77426
 // Name: GuildDirectorySearchModal
 // Dependencies: []
 // Exports: default
@@ -14,8 +14,8 @@ export default function GuildDirectorySearchModal(arg0) {
   const obj = {
     screens: importDefault(dependencyMap[4])(() => function getScreens(arg0) {
       const obj = {
-        "Bool(false)": true,
-        "Bool(false)": true,
+        1388296529: null,
+        -805977770: null,
         render() {
           const merged = Object.assign(arg0);
           return callback2(callback(closure_2[2]), {});

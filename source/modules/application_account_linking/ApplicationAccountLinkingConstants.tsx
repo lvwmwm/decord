@@ -1,7 +1,7 @@
 // Module ID: 5466
-// Function ID: 46698
+// Function ID: 46706
 // Name: AuthorizeFlow
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5466 (AuthorizeFlow)
 const date = new Date("2026-07-10Z-07:00");

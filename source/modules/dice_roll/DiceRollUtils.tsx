@@ -1,5 +1,5 @@
 // Module ID: 11418
-// Function ID: 88791
+// Function ID: 88803
 // Name: sumResults
 // Dependencies: []
 // Exports: getBarText

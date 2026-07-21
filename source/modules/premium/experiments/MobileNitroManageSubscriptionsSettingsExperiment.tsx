@@ -1,12 +1,12 @@
-// Module ID: 7415
-// Function ID: 59596
+// Module ID: 7416
+// Function ID: 59608
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment, useMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 7415 (apexExperiment)
+// Module 7416 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: "<string:296327975>", 0: "/assets/modules/premium/native/images/perks", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { 844175713: null, 1387159956: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/experiments/MobileNitroManageSubscriptionsSettingsExperiment.tsx");

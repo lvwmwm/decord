@@ -1,7 +1,7 @@
 // Module ID: 95
 // Function ID: 1546
 // Name: pickScale
-// Dependencies: []
+// Dependencies: [520093696]
 
 // Module 95 (pickScale)
 arg5.pickScale = function pickScale(scales, _default) {

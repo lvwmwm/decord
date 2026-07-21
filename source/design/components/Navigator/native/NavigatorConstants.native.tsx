@@ -1,9 +1,9 @@
-// Module ID: 4965
-// Function ID: 42665
+// Module ID: 4964
+// Function ID: 42672
 // Name: NAV_BAR_HEIGHT
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 4965 (NAV_BAR_HEIGHT)
+// Module 4964 (NAV_BAR_HEIGHT)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("design/components/Navigator/native/NavigatorConstants.native.tsx");
 

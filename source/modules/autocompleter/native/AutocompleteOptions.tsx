@@ -1,5 +1,5 @@
 // Module ID: 9631
-// Function ID: 75003
+// Function ID: 75014
 // Name: getAutocompleteOptions
 // Dependencies: []
 // Exports: getAutocompleteOptions
@@ -19,7 +19,7 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ EmojiIntention: closure_16, EMOJI_MAX_LENGTH: closure_17, EMOJI_URL_BASE_SIZE: closure_18 } = arg1(dependencyMap[10]));
 let closure_19 = false;
 const tmp4 = arg1(dependencyMap[10]);
-let closure_20 = importDefault(dependencyMap[11]).debounce(importDefault(dependencyMap[12]), arg1(dependencyMap[7]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { flex: null, marginRight: null });
+let closure_20 = importDefault(dependencyMap[11]).debounce(importDefault(dependencyMap[12]), arg1(dependencyMap[7]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { -809188780: null, 163101889: null });
 const importDefaultResult = importDefault(dependencyMap[11]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/autocompleter/native/AutocompleteOptions.tsx");
 

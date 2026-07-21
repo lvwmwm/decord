@@ -1,10 +1,10 @@
-// Module ID: 8205
-// Function ID: 64875
+// Module ID: 8206
+// Function ID: 64888
 // Name: InfoBox
 // Dependencies: []
 // Exports: default
 
-// Module 8205 (InfoBox)
+// Module 8206 (InfoBox)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

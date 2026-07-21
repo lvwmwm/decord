@@ -1,10 +1,10 @@
-// Module ID: 7696
-// Function ID: 61375
+// Module ID: 7697
+// Function ID: 61387
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
 // Dependencies: []
 // Exports: getTimeframes
 
-// Module 7696 (GUILD_REPORT_RAID_MOBILE_KEY)
+// Module 7697 (GUILD_REPORT_RAID_MOBILE_KEY)
 const Permissions = require(dependencyMap[0]).Permissions;
 const importAllResult = importAll(dependencyMap[2]);
 const _module = require(dependencyMap[3]);
@@ -18,11 +18,11 @@ export const getTimeframes = () => {
   const intl = require(dependencyMap[1]).intl;
   obj.label = intl.string(require(dependencyMap[1]).t.GA/d4I);
   const items = [obj, , , , , ];
-  obj = { 140623342: "<string:3999678721>", -1262000557: "<string:3259039745>" };
+  obj = {};
   const intl2 = require(dependencyMap[1]).intl;
   obj.label = intl2.string(require(dependencyMap[1]).t.+rHFej);
   items[1] = obj;
-  obj = { 140623342: "<string:200671234>", -1262000557: "<string:2731409409>" };
+  obj = {};
   const intl3 = require(dependencyMap[1]).intl;
   obj.label = intl3.string(require(dependencyMap[1]).t.5CNt/M);
   items[2] = obj;
@@ -30,7 +30,7 @@ export const getTimeframes = () => {
   const intl4 = require(dependencyMap[1]).intl;
   obj1.label = intl4.string(require(dependencyMap[1]).t.oQ4PNE);
   items[3] = obj1;
-  const obj2 = { 140623342: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006897728971497669, -1262000557: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003178245886970336 };
+  const obj2 = {};
   const intl5 = require(dependencyMap[1]).intl;
   obj2.label = intl5.string(require(dependencyMap[1]).t.LOQ0j6);
   items[4] = obj2;

@@ -1,5 +1,5 @@
 // Module ID: 3737
-// Function ID: 28550
+// Function ID: 28555
 // Name: t
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const fn = function t(moment) {
     weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"),
     weekdaysShort: "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split("_"),
     weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"),
-    longDateFormat: { <string:1122280543>: "emoji", <string:3251850218>: "&amp;", <string:306010250>: "&lt;", <string:37429971>: "&gt;", <string:1812403200>: "&#39;", <string:3855182856>: "&quot;", <string:3327387082>: null, <string:3355583292>: "\u{1F603}", <string:1383555360>: 6, <string:2914423152>: 1 },
+    longDateFormat: { "Bool(true)": "", "Bool(true)": null, "Bool(true)": null, "Bool(true)": false, "Bool(true)": 1, "Bool(true)": null, "Bool(true)": 0, "Bool(true)": "transparent", "Bool(true)": "100%", "Bool(true)": "column" },
     meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
     meridiemHour(arg0, arg1) {
       let num = arg0;
@@ -83,7 +83,7 @@ const fn = function t(moment) {
       }
       return arg0 + "\u65E5";
     },
-    relativeTime: {}
+    relativeTime: { 9223372036854775807: null, 0: null, -9223372036854775808: null, -9223372036854775808: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, 0: null, -9223372036854775808: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }
   });
 };
 if ("object" === typeof exports) {

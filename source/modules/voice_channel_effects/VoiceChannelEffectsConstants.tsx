@@ -1,7 +1,7 @@
 // Module ID: 5738
-// Function ID: 49334
+// Function ID: 49342
 // Name: VoiceChannelEffectAnimationType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5738 (VoiceChannelEffectAnimationType)
 const _module = require(dependencyMap[0]);

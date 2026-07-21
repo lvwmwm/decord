@@ -1,10 +1,10 @@
-// Module ID: 15058
-// Function ID: 113356
+// Module ID: 15061
+// Function ID: 113390
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15058 (_createForOfIteratorHelperLoose)
+// Module 15061 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -190,7 +190,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGR
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[8]);
 obj.guildHeader = { marginBottom: importDefault(dependencyMap[10]).space.PX_32 };
-const obj2 = { flex: null, display: 8, alignItems: null, justifyContent: "\u270A\u{1F3FF}", alignSelf: true, paddingTop: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_8, gap: importDefault(dependencyMap[10]).space.PX_4 };
+const obj2 = { "Null": null, "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true, paddingTop: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_8, gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.categoryHeader = obj2;
 const obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_32 };
 obj.channelNameContainer = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_4 };
@@ -419,11 +419,11 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
         const obj1 = { guild: stateFromStores };
         obj.children = callback(navigation(tmp[25]).GuildScoreSettings, obj1);
         const items = [callback(guildChannels, obj), , ];
-        const obj2 = {};
+        const obj2 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
         const intl = navigation(tmp[14]).intl;
         obj2.children = intl.string(navigation(tmp[14]).t.0jRosn);
         items[1] = callback(navigation(tmp[22]).Text, obj2);
-        const obj3 = {};
+        const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true };
         const obj4 = { marginBottom: guildId(tmp[10]).space.PX_16 };
         obj3.style = obj4;
         const intl2 = navigation(tmp[14]).intl;
@@ -437,7 +437,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
       const obj5 = { style: tmp.categoryHeader };
       const obj6 = { size: "xs", color: guildId(tmp[10]).colors.TEXT_SUBTLE };
       const items1 = [callback(navigation(tmp[26]).ChevronSmallDownIcon, obj6), ];
-      const obj7 = { children: item.title };
+      const obj7 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", children: item.title };
       items1[1] = callback(navigation(tmp[22]).Text, obj7);
       obj5.children = items1;
       return callback2(guildChannels, obj5);

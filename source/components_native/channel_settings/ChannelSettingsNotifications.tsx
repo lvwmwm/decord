@@ -1,5 +1,5 @@
 // Module ID: 10266
-// Function ID: 79297
+// Function ID: 79308
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
@@ -412,21 +412,23 @@ const tmp6 = (PureComponent) => {
       let tmp9Result = null;
       if (null != channel) {
         if (guildMuted) {
-          let obj = {};
+          let obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
           const intl = ChannelSettingsNotifications(closure_2[14]).intl;
           obj = {
             mutedHook(children) {
-                  return callback2(callback(closure_2[30]).Text, { children }, arg1);
+                  const obj = { hasMaxConnections: 1, isBoostOnlySubscription: "center", children };
+                  return callback2(callback(closure_2[30]).Text, obj, arg1);
                 }
           };
           obj.children = intl.format(ChannelSettingsNotifications(closure_2[14]).t.O34r15, obj);
           let tmp5 = callback5(ChannelSettingsNotifications(closure_2[30]).Text, obj);
         } else if (guildMessageNotifications === constants2.NO_MESSAGES) {
-          obj = {};
+          obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
           const intl3 = ChannelSettingsNotifications(closure_2[14]).intl;
           const obj1 = {
             notificationHook(children) {
-                  return callback2(callback(closure_2[30]).Text, { children }, arg1);
+                  const obj = { hasMaxConnections: -5, isBoostOnlySubscription: 16, children };
+                  return callback2(callback(closure_2[30]).Text, obj, arg1);
                 }
           };
           obj.children = intl3.format(ChannelSettingsNotifications(closure_2[14]).t.nRwUIL, obj1);

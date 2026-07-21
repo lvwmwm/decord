@@ -1,8 +1,8 @@
-// Module ID: 15318
-// Function ID: 116529
+// Module ID: 15321
+// Function ID: 116563
 // Dependencies: []
 
-// Module 15318
+// Module 15321
 const importAllResult = importAll(dependencyMap[0]);
 const DraftType = arg1(dependencyMap[1]).DraftType;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -330,7 +330,21 @@ const memoResult = importAllResult.memo(function MediaKeyboard(channel) {
     obj.children = items;
     return canStartThreads(chatInputRef(ref[34]), obj);
   }, items4);
-  obj = { animationConfigs: KEYBOARD_ANIMATION_CONFIG, animatedIndex: sharedValue, animatedPosition: sharedValue1, bottomSheetRef: ref, accessoriesComponent: callback1, handleComponent: callback, overlayComponent: obj4.useAppLauncherActionSheet({ chatInputRef, channel }).appLauncherActionSheet, onClose, transitionState };
+  obj = {
+    animationConfigs: KEYBOARD_ANIMATION_CONFIG,
+    animatedIndex: sharedValue,
+    animatedPosition: sharedValue1,
+    bottomSheetRef: ref,
+    accessoriesComponent: callback1,
+    handleComponent: callback,
+    overlayComponent: obj4.useAppLauncherActionSheet({ chatInputRef, channel }).appLauncherActionSheet,
+    onClose,
+    onAccessibilityFocusRestore() {
+      const current = chatInputRef.current;
+      return current.focusPhotosButton();
+    },
+    transitionState
+  };
   const obj8 = arg1(dependencyMap[18]);
   obj = { channel, draftType: tmp10.draftType, onPressCamera: memo.onPressCamera, onAttachPress: memo.onAttachPress, onPressItem: memo.onPressItem, onLongPressItem: memo.onLongPressItem, onViewAll: memo.onViewAll, onManageLimited: memo.onManageLimited, includedUploadIds: tmp10.includedUploadIds, extensions: allowedExtensions, allowCamera: fileTypeFiltering.mediaFilesAllowed, uploadDisabled: tmp10.uploadDisabled, uploadLimit: tmp10.uploadLimit, disableWhenReachedLimit: tmp10.disableWhenReachedLimit };
   obj.children = memo(importDefault(dependencyMap[38]), obj);

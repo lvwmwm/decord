@@ -1,5 +1,5 @@
 // Module ID: 10440
-// Function ID: 80564
+// Function ID: 80575
 // Name: LAUNCH_PAD_SPRING_CONFIG
 // Dependencies: []
 
@@ -20,7 +20,7 @@ if (!_module.isAndroid()) {
 const _module2 = require(dependencyMap[3]);
 const result = _module2.fileFinishedImporting("modules/launchpad/native/LaunchPadConstants.tsx");
 
-export const LAUNCH_PAD_SPRING_CONFIG = { 0: true, 0: -1493171651, 9223372036854775807: 2113929624, 9223372036854775807: 385876641, 0: null };
+export const LAUNCH_PAD_SPRING_CONFIG = {};
 export const LAUNCH_PAD_PULL_TAB_HEIGHT = 96;
 export const LAUNCH_PAD_PULL_TAB_WIDTH = 26;
 export const LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET = 18;

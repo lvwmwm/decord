@@ -1,10 +1,10 @@
-// Module ID: 15163
-// Function ID: 114339
+// Module ID: 15166
+// Function ID: 114373
 // Name: MemberActionRow
 // Dependencies: []
 // Exports: default
 
-// Module 15163 (MemberActionRow)
+// Module 15166 (MemberActionRow)
 function MemberActionRow(channelId) {
   let completed;
   let icon;
@@ -81,7 +81,7 @@ function MemberActionRow(channelId) {
       const obj7 = { onPress: tmp7, style: tmp.actionContainer };
       const items4 = [tmp17, , ];
       const obj8 = { style: tmp.channelNameContainer };
-      const obj9 = { children: title };
+      const obj9 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: title };
       const items5 = [callback(arg1(dependencyMap[21]).Text, obj9), ];
       const obj10 = {};
       const intl = arg1(dependencyMap[25]).intl;
@@ -122,10 +122,10 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[10]).EMOJI_URL_BASE_SIZE;
 const GuildMemberFlags = arg1(dependencyMap[11]).GuildMemberFlags;
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
-obj = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: {} };
+obj = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { "Bool(true)": "<string:7525240>", "Bool(true)": "<string:536870912>" } };
 obj = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[14]).radii.sm };
 obj.actionContainer = obj;
-obj.channelNameContainer = { <string:76581376>: "P", <string:4018557184>: 40 };
+obj.channelNameContainer = {};
 const tmp2 = arg1(dependencyMap[12]);
 obj.icon = { borderRadius: importDefault(dependencyMap[14]).radii.xs };
 obj.emoji = {};
@@ -223,7 +223,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
           obj3.children = callback(arg1(dependencyMap[22]).Icon, obj4);
           const items7 = [callback(View, obj3), ];
           const obj5 = { style: tmp.channelNameContainer };
-          const obj6 = {};
+          const obj6 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
           const intl = arg1(dependencyMap[25]).intl;
           obj6.children = intl.string(arg1(dependencyMap[25]).t.K/i3iQ);
           obj5.children = callback(arg1(dependencyMap[21]).Text, obj6);

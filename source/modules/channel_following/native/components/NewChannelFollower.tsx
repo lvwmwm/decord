@@ -1,5 +1,5 @@
 // Module ID: 10360
-// Function ID: 79941
+// Function ID: 79952
 // Name: NewChannelFollower
 // Dependencies: []
 // Exports: default
@@ -19,15 +19,15 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { container: { icon: "<string:2154889218>", join: "<string:16777216>", message: "ars", enumerable: "<string:1148797184>", title: "<string:2255552513>" }, header: {}, headerGuildIcon: {} };
+obj = { container: {}, header: {}, headerGuildIcon: {} };
 obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, height: 32 };
 obj.headerChannelContainer = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.headerChannel = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.headerChannelIcon = { "Null": null, "Null": null, lv: null, mg: null };
-obj.ctaHeader = { "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24 };
-obj.ctaSubhead = { "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24 };
-obj.channelIcon = {};
+obj.headerChannelIcon = {};
+obj.ctaHeader = {};
+obj.ctaSubhead = {};
+obj.channelIcon = { convert: 134, allowUnknown: null, <string:3307565226>: 1 };
 let closure_18 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
 const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/channel_following/native/components/NewChannelFollower.tsx");
@@ -80,7 +80,7 @@ export default function NewChannelFollower(targetChannelId) {
   } else {
     tmp13Result = tmp13(tmp14[19]);
   }
-  obj = { ref: bottomSheetRef };
+  obj = { "Bool(true)": "Small", "Bool(true)": "sm", "Bool(true)": "Placeholder", ref: bottomSheetRef };
   obj = {};
   obj1 = { source: tmp13Result, style: tmp.header };
   obj2 = { style: tmp.header };
@@ -104,7 +104,7 @@ export default function NewChannelFollower(targetChannelId) {
   obj1.children = callback3(closure_5, obj2);
   const items4 = [callback2(closure_6, obj1), ];
   const obj7 = { style: tmp.container };
-  const obj8 = { "Null": true, "Null": true, "Null": true, style: tmp.ctaHeader };
+  const obj8 = { delete: true, dispatch: true, raw: true, style: tmp.ctaHeader };
   const intl = arg1(dependencyMap[26]).intl;
   obj8.children = intl.string(arg1(dependencyMap[26]).t.mvPFbA);
   const items5 = [callback2(arg1(dependencyMap[25]).Text, obj8), , , , , ];

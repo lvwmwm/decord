@@ -1,5 +1,5 @@
 // Module ID: 9438
-// Function ID: 73554
+// Function ID: 73565
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse

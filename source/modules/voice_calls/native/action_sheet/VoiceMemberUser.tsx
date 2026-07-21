@@ -1,9 +1,9 @@
-// Module ID: 12594
-// Function ID: 96829
+// Module ID: 12596
+// Function ID: 96851
 // Name: StreamingUserRow
 // Dependencies: []
 
-// Module 12594 (StreamingUserRow)
+// Module 12596 (StreamingUserRow)
 let Platform;
 function StreamingUserRow(user) {
   user = user.user;
@@ -152,12 +152,12 @@ let obj = { row: { flexDirection: "row" } };
 obj = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj.voiceStatusIcon = obj;
 obj.voiceStatusIconMargin = { marginLeft: 8 };
-obj.streamPreview = {};
-obj1 = { registerAsset: "Array", application: "isArray", next: "spriteIndex", forEach: "bottom", loadJsonAsset: "Array", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
+obj.streamPreview = { borderRadius: "<string:3192994401>", paths: "<string:684289>", channelId: "<string:141754368>", backgroundColor: "<string:939524096>" };
+obj1 = { 314201: true, 314202: true, 649053781: true, 637891959: true, 1101869427: true, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.ringingButton = obj1;
 const tmp3 = arg1(dependencyMap[10]);
 obj.ringingButtonLabel = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.autoDisabledVideo = {};
+obj.autoDisabledVideo = { "Null": 7, "Null": 370 };
 obj.autoDisabledVideoLabel = { marginLeft: 4 };
 let closure_14 = obj1.createStyles(obj);
 let obj6 = arg1(dependencyMap[11]);
@@ -166,7 +166,7 @@ const obj2 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependen
 obj3.labelCallScreen = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[12]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[12]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj3.voiceStatusIcon = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
-obj6 = { registerAsset: "Array", application: "isArray", next: "spriteIndex", forEach: "bottom", loadJsonAsset: "Array", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
+obj6 = { 314201: true, 314202: true, 649053781: true, 637891959: true, 1101869427: true, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj3.ringingButton = obj6;
 const obj5 = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj3.ringingButtonLabel = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_ACTIVE };
@@ -191,7 +191,7 @@ let closure_16 = importAllResult.memo((user) => {
     withStream = true;
   }
   ({ isActionSheet, onPress: closure_2 } = user);
-  let obj = { "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft", "Bool(false)": null, "Bool(false)": 0.6 };
+  let obj = { -9223372036854775808: null, -9223372036854775808: 0.6, 9223372036854775807: "BounceOutRight", 9223372036854775807: null, 0: 0.6, 9223372036854775807: "BounceOutLeft", -9223372036854775808: null, 0: 0.6 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(user, obj);
   let tmp3;
@@ -371,7 +371,7 @@ let closure_16 = importAllResult.memo((user) => {
   if (stateFromStores) {
     const obj10 = {};
     const items4 = [name, ];
-    const obj11 = {};
+    const obj11 = { <string:2077996694>: "#C0C0C0", <string:4179938721>: 2, <string:3800758922>: 80 };
     const intl = arg1(dependencyMap[25]).intl;
     const items5 = ["\u2196", intl.string(arg1(dependencyMap[25]).t.pFO/Ph)];
     obj11.children = items5;
@@ -390,7 +390,7 @@ let closure_16 = importAllResult.memo((user) => {
     const obj12 = { style: tmp3.autoDisabledVideo };
     const obj13 = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[18]).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const items6 = [callback(arg1(dependencyMap[18]).Icon, obj13), ];
-    const obj14 = { style: tmp3.autoDisabledVideoLabel };
+    const obj14 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp3.autoDisabledVideoLabel };
     const intl3 = arg1(dependencyMap[25]).intl;
     obj14.children = intl3.string(arg1(dependencyMap[25]).t.m2Hyj0);
     items6[1] = callback(arg1(dependencyMap[24]).Text, obj14);

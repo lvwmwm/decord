@@ -1,5 +1,5 @@
 // Module ID: 6679
-// Function ID: 51387
+// Function ID: 51395
 // Name: useInterval
 // Dependencies: [57, 5, 6]
 // Exports: default

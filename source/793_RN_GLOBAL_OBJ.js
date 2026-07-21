@@ -1,5 +1,5 @@
 // Module ID: 793
-// Function ID: 8952
+// Function ID: 8956
 // Name: RN_GLOBAL_OBJ
 // Dependencies: []
 

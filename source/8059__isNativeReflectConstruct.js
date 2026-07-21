@@ -1,9 +1,13 @@
 // Module ID: 8059
-// Function ID: 63939
+// Function ID: 63945
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 5, 11]
 
 // Module 8059 (_isNativeReflectConstruct)
+import result from "result";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import checkLogForPII from "checkLogForPII";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,18 +17,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
-  class FeDistantLight {
+const tmp2 = (arg0) => {
+  class FeDisplacementMap {
     constructor() {
       self = this;
-      tmp = closure_2(this, FeDistantLight);
-      obj = closure_5(FeDistantLight);
-      tmp2 = closure_4;
+      tmp = result(this, FeDisplacementMap);
+      obj = closure_5(FeDisplacementMap);
+      tmp2 = checkLogForPII;
       if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
@@ -39,20 +40,20 @@ const tmp2 = (Component) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeDistantLight;
-  callback2(FeDistantLight, Component);
+  const arg1 = FeDisplacementMap;
+  callback2(FeDisplacementMap, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FeDistantLight(closure_1[6]).warnUnimplementedFilter();
+        const result = FeDisplacementMap(closure_1[5]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FeDistantLight, items);
-}(arg1(dependencyMap[5]).Component);
-tmp2.displayName = "FeDistantLight";
-tmp2.defaultProps = {};
+  return callback(FeDisplacementMap, items);
+}(importDefault(dependencyMap[6]));
+tmp2.displayName = "FeDisplacementMap";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
 export default tmp2;

@@ -1,5 +1,5 @@
 // Module ID: 9340
-// Function ID: 72968
+// Function ID: 72979
 // Name: isNSFWInvite
 // Dependencies: []
 // Exports: handleNSFWGuildInvite, shouldNSFWGateGuild

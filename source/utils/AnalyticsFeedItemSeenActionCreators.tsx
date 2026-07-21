@@ -1,7 +1,7 @@
 // Module ID: 9132
-// Function ID: 71573
+// Function ID: 71584
 // Name: markAnalyticsFeedItemSeen
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
 // Module 9132 (markAnalyticsFeedItemSeen)

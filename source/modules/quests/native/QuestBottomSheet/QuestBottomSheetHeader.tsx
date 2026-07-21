@@ -1,10 +1,10 @@
-// Module ID: 13893
-// Function ID: 105060
+// Module ID: 13896
+// Function ID: 105092
 // Name: QuestBottomSheetHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13893 (QuestBottomSheetHeader)
+// Module 13896 (QuestBottomSheetHeader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,13 +12,13 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { overflow: null, position: null, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.containerWithActionSheet = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.title = { textAlign: "center" };
 obj.titleWithActionSheet = { "Null": 1, "Null": null };
-obj.actionSheetButton = { marginRight: -536870861, columnGap: -299892737 };
+obj.actionSheetButton = { isArray: -536870861, diversity: -299892737 };
 let closure_9 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetHeader.tsx");
@@ -156,7 +156,7 @@ export default function QuestBottomSheetHeader(step) {
   obj.style = items1;
   let tmp10Result = null != tmp3;
   if (tmp10Result) {
-    obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028706073021718732, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017100505289156275, "Null": 994646613622753800000000000000000000000000000000000000000000000000000000000000000000000, ../lib/deferred: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001056174957006, ref };
+    obj = { ref };
     const items2 = [tmp.title, ];
     let titleWithActionSheet = withActionSheet;
     if (withActionSheet) {

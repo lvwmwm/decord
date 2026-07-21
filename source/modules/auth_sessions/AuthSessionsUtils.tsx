@@ -1,10 +1,10 @@
-// Module ID: 13515
-// Function ID: 102534
+// Module ID: 13517
+// Function ID: 102556
 // Name: useAuthSessions
 // Dependencies: []
 // Exports: formatDate, useAuthSessions
 
-// Module 13515 (useAuthSessions)
+// Module 13517 (useAuthSessions)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

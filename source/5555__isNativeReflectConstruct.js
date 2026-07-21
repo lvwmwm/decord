@@ -1,5 +1,5 @@
 // Module ID: 5555
-// Function ID: 47129
+// Function ID: 47137
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -123,19 +123,19 @@ function getProgressFromGesture(interpolate, width, options) {
     obj = {};
     const items = [0.229, tmp];
     obj.inputRange = items;
-    obj.outputRange = ["<string:3813229678>", "<string:153900714>"];
+    obj.outputRange = [];
     let interpolateResult = interpolate.interpolate(obj);
   } else {
     obj = {};
     const items1 = [tmp, 0];
     obj.inputRange = items1;
-    obj.outputRange = ["Text", "lc"];
+    obj.outputRange = ["replace", "then"];
     interpolateResult = interpolate.interpolate(obj);
   }
   return interpolateResult;
 }
 const tmp4 = arg1(dependencyMap[8]);
-const styles = StyleSheet.create({ container: { flex: 1 }, absolute: {}, floating: { zIndex: 1 } });
+const styles = StyleSheet.create({ container: { flex: 1 }, absolute: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, floating: { zIndex: 1 } });
 
 export default (Component) => {
   class CardStack {
@@ -336,7 +336,7 @@ export default (Component) => {
             let num4 = 1;
             if (scenes[arg2.length - 1]) {
               const current = tmp3.progress.current;
-              let obj = { inputRange: [] };
+              let obj = { inputRange: ["<string:3435973836>", "<string:24199148>", "<string:838860800>"] };
               const items = [, , num2];
               obj.outputRange = items;
               obj.extrapolate = "clamp";

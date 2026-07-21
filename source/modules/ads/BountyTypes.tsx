@@ -1,5 +1,5 @@
 // Module ID: 10835
-// Function ID: 84089
+// Function ID: 84100
 // Name: bountyCtaFromServer
 // Dependencies: []
 // Exports: bountyFromServer

@@ -1,5 +1,5 @@
 // Module ID: 9679
-// Function ID: 75336
+// Function ID: 75347
 // Dependencies: []
 
 // Module 9679
@@ -62,14 +62,14 @@ let closure_17 = arg1(dependencyMap[8]).createStyles(() => {
   obj.button = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
   const obj7 = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
   obj.promotionalButton = { marginTop: importDefault(dependencyMap[7]).space.PX_12 };
-  obj.featureIcon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+  obj.featureIcon = {};
   const obj9 = {};
   const obj8 = { marginTop: importDefault(dependencyMap[7]).space.PX_12 };
   const merged1 = Object.assign(importDefault(dependencyMap[9])(Fonts.PRIMARY_NORMAL, importDefault(dependencyMap[7]).colors.WHITE, 16));
   obj9["marginStart"] = -8;
   obj.featureText = obj9;
-  obj.wumpusNoPrice = { zIndex: true, display: true };
-  obj.promotionalCardImage = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
+  obj.wumpusNoPrice = { display: true, flexDirection: true };
+  obj.promotionalCardImage = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
   obj.promotionalBackground = {};
   return obj;
 });
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function PremiumGiftFeaturesCard(variant
   if (str === undefined) {
     str = "default";
   }
-  let obj = { 122763873: true, -959683896: true, 1365199185: true, 996213764: true, 1640500561: true, -1459858518: true };
+  let obj = { -9223372036854775808: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(variant, obj);
   let callback;

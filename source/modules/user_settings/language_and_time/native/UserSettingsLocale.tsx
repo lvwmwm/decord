@@ -1,9 +1,9 @@
-// Module ID: 14130
-// Function ID: 107227
+// Module ID: 14133
+// Function ID: 107259
 // Name: handleLanguageChange
 // Dependencies: []
 
-// Module 14130 (handleLanguageChange)
+// Module 14133 (handleLanguageChange)
 function handleLanguageChange() {
   return _handleLanguageChange(...arguments);
 }
@@ -23,7 +23,7 @@ const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
 obj = { padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.content = obj;
-obj.flagImage = { bhk: "fi", bic: "png" };
+obj.flagImage = { "Null": "fi", "Null": "png" };
 let closure_9 = arg1(dependencyMap[6]).createStyles(obj);
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function UserSettingsLocale() {

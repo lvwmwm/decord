@@ -1,7 +1,7 @@
 // Module ID: 6804
-// Function ID: 53679
+// Function ID: 53687
 // Name: FeaturedSubblockType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6804 (FeaturedSubblockType)
 const _module = require(dependencyMap[0]);

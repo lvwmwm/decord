@@ -1,10 +1,10 @@
-// Module ID: 4640
-// Function ID: 40285
+// Module ID: 4639
+// Function ID: 40292
 // Name: ForumLockIcon
 // Dependencies: []
 // Exports: ForumLockIcon
 
-// Module 4640 (ForumLockIcon)
+// Module 4639 (ForumLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ForumLockIcon.tsx");

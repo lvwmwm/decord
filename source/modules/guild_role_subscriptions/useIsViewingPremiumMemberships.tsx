@@ -1,5 +1,5 @@
 // Module ID: 11796
-// Function ID: 91552
+// Function ID: 91564
 // Name: useIsViewingPremiumMemberships
 // Dependencies: []
 // Exports: default

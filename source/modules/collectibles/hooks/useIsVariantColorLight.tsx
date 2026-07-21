@@ -1,5 +1,5 @@
 // Module ID: 8725
-// Function ID: 69035
+// Function ID: 69046
 // Name: useIsVariantColorLight
 // Dependencies: []
 // Exports: default

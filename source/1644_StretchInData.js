@@ -1,24 +1,24 @@
 // Module ID: 1644
-// Function ID: 18335
+// Function ID: 18340
 // Name: StretchInData
 // Dependencies: []
 
 // Module 1644 (StretchInData)
 let obj = { StretchInX: obj, StretchInY: obj };
-obj = { 9223372036854775807: "ZoomOutRight", 0: null, 0: 0.3 };
+obj = { "Null": "ZoomOutRight", "Null": null, "Null": 0.3 };
 const items = [{ scaleX: 0 }];
 const items1 = [{ scaleX: 1 }];
 obj.style = { [0]: { transform: items }, [100]: { transform: items1 } };
-obj = { 9223372036854775807: "0vw", 0: 1, 0: "center" };
+obj = { "Null": "0vw", "Null": 1, "Null": "center" };
 const items2 = [{ scaleY: 0 }];
 const items3 = [{ scaleY: 1 }];
 obj.style = { [0]: { transform: items2 }, [100]: { transform: items3 } };
 const obj1 = { StretchOutX: obj2, StretchOutY: obj3 };
-const obj2 = { 9223372036854775807: null, 0: null, 0: null };
+const obj2 = { "Null": "stt-Latn-VN", "Null": "<string:1061224704>", "Null": "<string:1358954763>" };
 const items4 = [{ scaleX: 1 }];
 const items5 = [{ scaleX: 0 }];
 obj2.style = { [0]: { transform: items4 }, [100]: { transform: items5 } };
-const obj3 = { 9223372036854775807: "relative", 0: null, 0: null };
+const obj3 = { "Null": "relative", "Null": null, "Null": null };
 const items6 = [{ scaleY: 1 }];
 const items7 = [{ scaleY: 0 }];
 obj3.style = { [0]: { transform: items6 }, [100]: { transform: items7 } };

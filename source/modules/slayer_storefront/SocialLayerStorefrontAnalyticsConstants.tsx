@@ -1,7 +1,7 @@
 // Module ID: 9728
-// Function ID: 75690
+// Function ID: 75701
 // Name: SlayerShopCardCTAType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9728 (SlayerShopCardCTAType)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 10494
-// Function ID: 81918
+// Function ID: 81929
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -42,7 +42,7 @@ const tmp2 = (arg0) => {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      items1 = [];
+      items1 = [false, false];
       if (-1 === items1.indexOf(encoding)) {
         tmp16 = WindowProxySocket;
         tmp17 = closure_1;

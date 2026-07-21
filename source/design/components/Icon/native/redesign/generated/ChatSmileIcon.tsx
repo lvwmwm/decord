@@ -1,5 +1,5 @@
 // Module ID: 9006
-// Function ID: 70868
+// Function ID: 70879
 // Name: ChatSmileIcon
 // Dependencies: []
 // Exports: ChatSmileIcon

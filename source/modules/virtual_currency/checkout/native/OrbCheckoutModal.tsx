@@ -1,16 +1,16 @@
 // Module ID: 11820
-// Function ID: 91627
+// Function ID: 91639
 // Name: OrbCheckoutModalContent
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 11820 (OrbCheckoutModalContent)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { InternalPaymentGateways } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import result from "result";
+import result from "result";
+import { InternalPaymentGateways } from "result";
+import result from "result";
+import result from "result";
 
 function OrbCheckoutModalContent(orbBalance) {
   let obj = arg1(dependencyMap[4]);
@@ -42,9 +42,9 @@ function OrbCheckoutModalFooter(onPress) {
   obj.children = items;
   return callback4(arg1(dependencyMap[6]).Stack, obj);
 }
-({ useRef: closure_4, useEffect: closure_5, useCallback: closure_6, useMemo: closure_7 } = __exportStarResult1);
-({ AnalyticEvents: closure_8, CurrencyCodes: closure_9 } = __exportStarResult1);
-({ jsx: closure_11, jsxs: closure_12 } = __exportStarResult1);
+({ useRef: closure_4, useEffect: closure_5, useCallback: closure_6, useMemo: closure_7 } = result);
+({ AnalyticEvents: closure_8, CurrencyCodes: closure_9 } = result);
+({ jsx: closure_11, jsxs: closure_12 } = result);
 let closure_13 = { MAIN: "MAIN" };
 function OrbCheckoutModalScreen(startTime) {
   let obj = arg1(dependencyMap[4]);
@@ -183,7 +183,7 @@ function OrbCheckoutModalScreen(startTime) {
   obj.children = items3;
   return callback4(arg1(dependencyMap[13]).ModalScreen, obj);
 }
-const result = __exportStarResult1.fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx");
+result = result.fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx");
 
 export default function _default(skuId) {
   let analyticsLocations;

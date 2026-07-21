@@ -1,5 +1,5 @@
 // Module ID: 852
-// Function ID: 9492
+// Function ID: 9496
 // Name: _makeInternalError
 // Dependencies: []
 
@@ -146,21 +146,21 @@ export const Client = () => {
       this._outcomes = {};
       this._hooks = {};
       this._eventProcessors = [];
-      obj = f9552(f9547[5]);
+      obj = f9556(f9551[5]);
       transportOptions = arg0.transportOptions;
       bufferSize = undefined;
       if (null != transportOptions) {
         bufferSize = transportOptions.bufferSize;
       }
       if (null == bufferSize) {
-        tmp3 = f9552;
-        tmp4 = f9547;
+        tmp3 = f9556;
+        tmp4 = f9551;
         num = 6;
-        bufferSize = f9552(f9547[6]).DEFAULT_TRANSPORT_BUFFER_SIZE;
+        bufferSize = f9556(f9551[6]).DEFAULT_TRANSPORT_BUFFER_SIZE;
       }
       self._promiseBuffer = obj.makePromiseBuffer(bufferSize);
-      tmp5 = f9552;
-      tmp6 = f9547;
+      tmp5 = f9556;
+      tmp6 = f9551;
       if (arg0.dsn) {
         num4 = 7;
         tmp5Result = tmp5(tmp6[7]);
@@ -168,19 +168,19 @@ export const Client = () => {
       } else {
         num2 = 8;
         if (tmp5(tmp6[8]).DEBUG_BUILD) {
-          tmp7 = f9552;
-          tmp8 = f9547;
+          tmp7 = f9556;
+          tmp8 = f9551;
           num3 = 9;
-          debug = f9552(f9547[9]).debug;
+          debug = f9556(f9551[9]).debug;
           str = "No DSN provided, client will not send events.";
           warnResult = debug.warn("No DSN provided, client will not send events.");
         }
       }
       if (self._dsn) {
-        tmp10 = f9552;
-        tmp11 = f9547;
+        tmp10 = f9556;
+        tmp11 = f9551;
         num5 = 10;
-        obj3 = f9552(f9547[10]);
+        obj3 = f9556(f9551[10]);
         sdk = undefined;
         if (arg0._metadata) {
           sdk = arg0._metadata.sdk;
@@ -208,13 +208,13 @@ export const Client = () => {
       if (self._options.enableLogs) {
         tmp16 = closure_13;
         tmp17 = closure_18;
-        tmp18 = f9552;
-        tmp19 = f9547;
+        tmp18 = f9556;
+        tmp19 = f9551;
         num6 = 11;
         str2 = "afterCaptureLog";
         str3 = "flushLogs";
         tmp20 = self;
-        tmp21 = closure_13(self, "afterCaptureLog", "flushLogs", closure_18, f9552(f9547[11])._INTERNAL_flushLogsBuffer);
+        tmp21 = closure_13(self, "afterCaptureLog", "flushLogs", closure_18, f9556(f9551[11])._INTERNAL_flushLogsBuffer);
       }
       enableMetrics = self._options.enableMetrics;
       if (null == enableMetrics) {
@@ -228,13 +228,13 @@ export const Client = () => {
       if (tmp23) {
         tmp24 = closure_13;
         tmp25 = closure_17;
-        tmp26 = f9552;
-        tmp27 = f9547;
+        tmp26 = f9556;
+        tmp27 = f9551;
         num7 = 12;
         str4 = "afterCaptureMetric";
         str5 = "flushMetrics";
         tmp28 = self;
-        tmp29 = closure_13(self, "afterCaptureMetric", "flushMetrics", closure_17, f9552(f9547[12])._INTERNAL_flushMetricsBuffer);
+        tmp29 = closure_13(self, "afterCaptureMetric", "flushMetrics", closure_17, f9556(f9551[12])._INTERNAL_flushMetricsBuffer);
       }
       return;
     }
@@ -1189,7 +1189,7 @@ export const Client = () => {
       }).then(null, (originalException) => {
         if (!callback4(originalException)) {
           if (!callback3(originalException)) {
-            let obj = { mechanism: {} };
+            let obj = { mechanism: { id: false, gameId: false } };
             obj = { __sentry__: true };
             obj.data = obj;
             obj.originalException = originalException;

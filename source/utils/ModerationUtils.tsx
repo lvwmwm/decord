@@ -1,10 +1,10 @@
-// Module ID: 13617
-// Function ID: 103173
+// Module ID: 13619
+// Function ID: 103195
 // Name: mapColorToHighlightColor
 // Dependencies: []
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 13617 (mapColorToHighlightColor)
+// Module 13619 (mapColorToHighlightColor)
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
     return require(dependencyMap[3]).HighlightColors.ACCENT;

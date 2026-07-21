@@ -1,7 +1,7 @@
 // Module ID: 12196
-// Function ID: 93722
+// Function ID: 93734
 // Name: setCoverImageURL
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: setCoverImageURL
 
 // Module 12196 (setCoverImageURL)

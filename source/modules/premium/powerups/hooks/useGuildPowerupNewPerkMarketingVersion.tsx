@@ -1,5 +1,5 @@
 // Module ID: 11524
-// Function ID: 89773
+// Function ID: 89785
 // Name: useGuildPowerupNewPerkMarketingVersion
 // Dependencies: [755040256, 87425024, 79429632, 146145280, 131072, 779419648, 2885681159, 3791650830, 905969665, 33554434, 1946157056, 4096]
 // Exports: default

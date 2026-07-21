@@ -1,5 +1,5 @@
 // Module ID: 9986
-// Function ID: 77212
+// Function ID: 77223
 // Name: OAuth2AuthorizeModal
 // Dependencies: []
 // Exports: default
@@ -14,14 +14,14 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.contentContainer = { flex: 1 };
-obj.titleContainer = { paddingHorizontal: null, height: 11, justifyContent: "modal_top_pill" };
-const obj1 = { 1134748497: -1, 276882: 1092747263, 297352: 137464, 296048: -735595182, -1198516137: 19403049, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj.titleContainer = { accessibilityRole: null, forEach: 11, p: "modal_top_pill" };
+const obj1 = { "Bool(true)": "key", "Bool(true)": "to", "Bool(true)": "Array", "Bool(true)": "Reflect", "Bool(true)": "Array", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.titleContainerBorder = obj1;
-const tmp2 = arg1(dependencyMap[2]);
-obj.title = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+const obj2 = { value: true, start: true, end: true, label: true, disabled: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+obj.title = obj2;
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function OAuth2AuthorizeModalTsx1(){const{borderOpacity}=this.__closure;var _borderOpacity$get;return{opacity:(_borderOpacity$get=borderOpacity.get())!==null&&_borderOpacity$get!==void 0?_borderOpacity$get:1};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeModal.tsx");
 
 export default function OAuth2AuthorizeModal(arg0) {
@@ -85,7 +85,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   obj2.children = tmp18;
   const items2 = [callback(arg1(dependencyMap[9]).PressableOpacity, obj2), , ];
   const obj5 = { style: tmp.title };
-  const obj6 = { useEffect: "isArray", top: "accessibilityRole" };
+  const obj6 = {};
   const intl3 = arg1(dependencyMap[10]).intl;
   obj6.children = intl3.string(arg1(dependencyMap[10]).t.y+/PE9);
   obj5.children = callback(arg1(dependencyMap[13]).Text, obj6);

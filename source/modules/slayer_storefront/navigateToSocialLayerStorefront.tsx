@@ -1,10 +1,10 @@
-// Module ID: 7452
-// Function ID: 59752
+// Module ID: 7453
+// Function ID: 59764
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
 // Dependencies: []
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7452 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 7453 (navigateToSocialLayerStorefrontWithGuildPreview)
 function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
   return _navigateToSocialLayerStorefrontWithGuildPreview(...arguments);
 }

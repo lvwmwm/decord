@@ -1,10 +1,10 @@
-// Module ID: 15281
-// Function ID: 116188
+// Module ID: 15284
+// Function ID: 116222
 // Name: useSearchSegmentedControlState
 // Dependencies: []
 // Exports: useSearchSegmentedControlState
 
-// Module 15281 (useSearchSegmentedControlState)
+// Module 15284 (useSearchSegmentedControlState)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = { code: "function useSearchSegmentedControlStateTsx1(){const{visibleTabsStateful}=this.__closure;return visibleTabsStateful;}" };
 let closure_4 = { code: "function useSearchSegmentedControlStateTsx2(){const{visibleTabs,activeIndex}=this.__closure;return visibleTabs.get()[activeIndex.get()];}" };

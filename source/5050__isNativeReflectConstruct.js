@@ -1,5 +1,5 @@
 // Module ID: 5050
-// Function ID: 43096
+// Function ID: 43111
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,12 +19,12 @@ let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 
-export const FlingGesture = (BaseGesture) => {
-  class FlingGesture {
+export const LongPressGesture = (BaseGesture) => {
+  class LongPressGesture {
     constructor() {
       self = this;
-      tmp = FlingGesture(this, FlingGesture);
-      obj = closure_3(FlingGesture);
+      tmp = LongPressGesture(this, LongPressGesture);
+      obj = closure_3(LongPressGesture);
       tmp2 = closure_2;
       if (closure_5()) {
         tmp4 = globalThis;
@@ -36,27 +36,36 @@ export const FlingGesture = (BaseGesture) => {
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.config = {};
-      tmp2Result.handlerName = "FlingGestureHandler";
+      tmp2Result.handlerName = "LongPressGestureHandler";
+      result = tmp2Result.shouldCancelWhenOutside(true);
       return tmp2Result;
     }
   }
-  let closure_0 = FlingGesture;
-  callback2(FlingGesture, BaseGesture);
+  let closure_0 = LongPressGesture;
+  callback2(LongPressGesture, BaseGesture);
   let obj = {
+    key: "minDuration",
+    value: function minDuration(CONTEXT_MENU_LONG_PRESS_DURATION_MS) {
+      this.config.minDurationMs = CONTEXT_MENU_LONG_PRESS_DURATION_MS;
+      return this;
+    }
+  };
+  const items = [obj, , ];
+  obj = {
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
+      return this;
+    }
+  };
+  items[1] = obj;
+  obj = {
     key: "numberOfPointers",
     value: function numberOfPointers(numberOfPointers) {
       this.config.numberOfPointers = numberOfPointers;
       return this;
     }
   };
-  const items = [obj, ];
-  obj = {
-    key: "direction",
-    value: function direction(DOWN) {
-      this.config.direction = DOWN;
-      return this;
-    }
-  };
-  items[1] = obj;
-  return callback(FlingGesture, items);
+  items[2] = obj;
+  return callback(LongPressGesture, items);
 }(arg1(dependencyMap[5]).BaseGesture);

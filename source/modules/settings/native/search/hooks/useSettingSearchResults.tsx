@@ -1,14 +1,15 @@
-// Module ID: 14454
-// Function ID: 108911
+// Module ID: 14457
+// Function ID: 108943
 // Name: useSettingSearchResults
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 0, 0, 0]
 // Exports: useSettingSearchResults
 
-// Module 14454 (useSettingSearchResults)
-let closure_3 = importDefault(dependencyMap[0]);
+// Module 14457 (useSettingSearchResults)
+import result from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+
 let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = [];
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
 

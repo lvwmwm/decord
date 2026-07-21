@@ -1,5 +1,5 @@
 // Module ID: 12143
-// Function ID: 93536
+// Function ID: 93548
 // Name: GiftCodeRedeemSuccess
 // Dependencies: []
 // Exports: default
@@ -12,15 +12,15 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(true)": 0.129, "Bool(true)": 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.body = { "Null": true, "Null": true, "Null": true, "Null": true, gap: true, display: true };
+obj.body = { voiceCategoryExpand: true, GEN_AI_SYSTEM_ATTRIBUTE: true, EXPRESSION_FOOTER_HEIGHT: true, marginHorizontal: true, alignContent: true, updateErrors: true };
 const tmp4 = arg1(dependencyMap[3]);
 obj.nameplateContainer = { width: "100%", paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
-const obj2 = { "Null": null, "Null": null, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
+const obj2 = { @braintree/wrap-promise: "BLURPLE_19", onPress: 1, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
 obj.bundleContainer = obj2;
-obj.header = { "Null": "Array", "Null": "summaryId" };
-obj.message = { "Null": null, "Null": null };
+obj.header = {};
+obj.message = {};
 obj.footer = { paddingHorizontal: 24 };
 obj.gameItemCard = { marginTop: 20 };
 let closure_8 = obj.createStyles(obj);
@@ -127,7 +127,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
               }
             }
             if (null != first) {
-              const obj13 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.header };
+              const obj13 = { style: tmp.header };
               const intl = arg1(dependencyMap[26]).intl;
               obj13.children = intl.string(arg1(dependencyMap[26]).t.IMffmm);
               tmp34 = callback(arg1(dependencyMap[25]).Text, obj13);

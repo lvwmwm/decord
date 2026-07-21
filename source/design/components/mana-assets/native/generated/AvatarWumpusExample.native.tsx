@@ -1,5 +1,5 @@
 // Module ID: 5885
-// Function ID: 49741
+// Function ID: 49749
 // Name: AvatarWumpusExample
 // Dependencies: []
 // Exports: AvatarWumpusExample

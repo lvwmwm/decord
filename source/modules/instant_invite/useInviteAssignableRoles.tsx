@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 126253
+// Module ID: 16367
+// Function ID: 126314
 // Name: useInviteAssignableRoles
 // Dependencies: []
 // Exports: default
 
-// Module 16359 (useInviteAssignableRoles)
+// Module 16367 (useInviteAssignableRoles)
 let closure_3 = importAll(dependencyMap[0]);
 const isEveryoneRole = arg1(dependencyMap[1]).isEveryoneRole;
 let closure_5 = importDefault(dependencyMap[2]);

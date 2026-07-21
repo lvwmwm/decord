@@ -1,5 +1,5 @@
 // Module ID: 10553
-// Function ID: 82428
+// Function ID: 82439
 // Name: StreamTextOverlay
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ class StreamTextOverlay {
     obj = { style: tmp.screenMessageContainer };
     tmp2 = jsxs;
     tmp3 = View;
-    obj = { "Null": false, "Null": false, "Null": false };
+    obj = { delete: null, dispatch: null, raw: null };
     obj.style = tmp.screenMessageText;
     obj.children = global.title;
     items = [, ];
@@ -63,7 +63,7 @@ const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_3
 obj3.backgroundColor = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj3.borderRadius = importDefault(dependencyMap[8]).radii.md;
 obj.statusWrapper = obj3;
-obj.liveTag = {};
+obj.liveTag = { <string:3250345558>: "isArray", <string:553825121>: "Text", <string:1935339265>: "marginTop" };
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = importAllResult.memo((participant) => {
   let gestureEnabled;
@@ -143,7 +143,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   let onFullScreen;
   let style;
   ({ onFullScreen, style } = arg0);
-  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { "Bool(true)": 793802832, "Bool(true)": 580399000, "Bool(true)": -259028247, "Bool(true)": 1783710348 } };
+  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { emitDefaultValues: true, enumAsInteger: true, useProtoFieldName: true, prettySpaces: true } };
   const items = [callback2().statusWrapper, style];
   obj = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[11]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE };
   obj.children = callback(arg1(dependencyMap[11]).Icon, obj);

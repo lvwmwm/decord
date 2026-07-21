@@ -1,10 +1,10 @@
-// Module ID: 15462
-// Function ID: 117942
+// Module ID: 15465
+// Function ID: 117981
 // Name: getOverviewSettings
 // Dependencies: []
 // Exports: default
 
-// Module 15462 (getOverviewSettings)
+// Module 15465 (getOverviewSettings)
 function getOverviewSettings(isPremiumUser) {
   isPremiumUser = isPremiumUser.isPremiumUser;
   let obj = {};

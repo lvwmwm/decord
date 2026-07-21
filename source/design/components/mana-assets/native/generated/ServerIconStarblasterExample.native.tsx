@@ -1,7 +1,7 @@
 // Module ID: 6487
-// Function ID: 50644
+// Function ID: 50652
 // Name: ServerIconStarblasterExample
-// Dependencies: [33554457, 1946157056, 33, 5233]
+// Dependencies: [33554457, 1946157056, 33, 5232]
 // Exports: ServerIconStarblasterExample
 
 // Module 6487 (ServerIconStarblasterExample)

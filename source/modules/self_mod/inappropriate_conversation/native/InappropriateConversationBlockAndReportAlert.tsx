@@ -1,11 +1,12 @@
 // Module ID: 10135
-// Function ID: 78423
+// Function ID: 78434
 // Name: InappropriateConversationBlockAndReportAlert
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
 // Module 10135 (InappropriateConversationBlockAndReportAlert)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
 
 class InappropriateConversationBlockAndReportAlert {
   constructor(arg0) {
@@ -61,13 +62,13 @@ class InappropriateConversationBlockAndReportAlert {
       callback(analyticsBlockAndReportContext);
     }, items3);
     obj = { userId: senderId, channelId, onClose: global.onClose, onCancel: callback1, onBlock: callback2, onBlockAndReport: callback3, blockButtonVariant: "primary" };
-    tmp5 = require("__exportStarResult1");
-    intl = require("__exportStarResult1").intl;
-    obj.description = intl.string(require("__exportStarResult1").t.5NhTvu);
+    tmp5 = require("result");
+    intl = require("result").intl;
+    obj.description = intl.string(require("result").t.5NhTvu);
     return jsx(tmp5, obj);
   }
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/InappropriateConversationBlockAndReportAlert.tsx");
+result = result.fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/InappropriateConversationBlockAndReportAlert.tsx");
 
 export default InappropriateConversationBlockAndReportAlert;
 export { InappropriateConversationBlockAndReportAlert };

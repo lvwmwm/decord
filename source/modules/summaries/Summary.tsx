@@ -1,7 +1,7 @@
 // Module ID: 9479
-// Function ID: 73882
+// Function ID: 73893
 // Name: SummarySources
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: createSummaryFromServer
 
 // Module 9479 (SummarySources)

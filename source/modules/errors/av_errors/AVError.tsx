@@ -1,11 +1,11 @@
 // Module ID: 8849
-// Function ID: 69840
+// Function ID: 69851
 // Name: validateUniqueErrorCodes
 // Dependencies: []
 // Exports: getErrorInfo, reportAVError
 
 // Module 8849 (validateUniqueErrorCodes)
-let closure_2 = ["gradientTransform"];
+let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("AVError");

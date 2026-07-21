@@ -1,14 +1,13 @@
 // Module ID: 4082
-// Function ID: 33884
+// Function ID: 33889
 // Name: XLargeIcon
-// Dependencies: [5, 77, 4101, 4102, 31, 4100]
+// Dependencies: []
 // Exports: XLargeIcon
 
 // Module 4082 (XLargeIcon)
-import "asyncGeneratorStep";
-import { jsx } from "_defineProperty";
-
-const result = require("importDefaultResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/XLargeIcon.tsx");
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XLargeIcon.tsx");
 
 export const XLargeIcon = function XLargeIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

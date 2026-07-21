@@ -1,7 +1,7 @@
 // Module ID: 4318
-// Function ID: 37818
+// Function ID: 37826
 // Name: sanitizeGuildTextChannelName
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 4318 (sanitizeGuildTextChannelName)

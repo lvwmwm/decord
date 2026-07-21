@@ -1,10 +1,10 @@
-// Module ID: 7421
-// Function ID: 59637
+// Module ID: 7422
+// Function ID: 59649
 // Name: useIsInReverseTrial
 // Dependencies: []
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 7421 (useIsInReverseTrial)
+// Module 7422 (useIsInReverseTrial)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
 

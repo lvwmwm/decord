@@ -1,5 +1,5 @@
 // Module ID: 6055
-// Function ID: 49996
+// Function ID: 50004
 // Name: FireIllocon
 // Dependencies: []
 // Exports: FireIllocon

@@ -1,5 +1,5 @@
 // Module ID: 6619
-// Function ID: 50842
+// Function ID: 50850
 // Name: WizardHatAndBookSpotIllustration
 // Dependencies: []
 // Exports: WizardHatAndBookSpotIllustration

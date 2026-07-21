@@ -1,5 +1,5 @@
 // Module ID: 9907
-// Function ID: 76630
+// Function ID: 76641
 // Name: keyExtractor
 // Dependencies: []
 
@@ -48,7 +48,7 @@ let obj1 = arg1(dependencyMap[5]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
 obj.container = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj1 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.headerBorder = obj1;
 obj.cardContainer = {};
 let closure_9 = obj1.createStyles(obj);

@@ -1,5 +1,5 @@
 // Module ID: 12136
-// Function ID: 93491
+// Function ID: 93503
 // Name: setUseEntranceAnimationState
 // Dependencies: []
 // Exports: useEntranceAnimation

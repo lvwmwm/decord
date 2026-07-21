@@ -1,5 +1,5 @@
 // Module ID: 9856
-// Function ID: 76277
+// Function ID: 76288
 // Dependencies: []
 
 // Module 9856
@@ -74,7 +74,7 @@ const obj = {
       obj = { type: "LOAD_PINNED_MESSAGES", channelId, reset: tmp2 };
       obj.dispatch(obj);
       const HTTP = reset(dependencyMap[4]).HTTP;
-      obj = { "Bool(false)": "RTC_CONNECTION_LOSS_RATE", "Bool(false)": "handleJoinThreadVoice", "Bool(false)": "toString", "Bool(false)": "isArray", "Bool(false)": "toString", url: closure_7.PINS(channelId) };
+      obj = { url: closure_7.PINS(channelId) };
       const obj1 = { limit: num };
       let toISOStringResult;
       if (null != before) {

@@ -1,5 +1,5 @@
 // Module ID: 9386
-// Function ID: 73186
+// Function ID: 73197
 // Name: EmojiPopoutType
 // Dependencies: []
 // Exports: getEmojiPopoutData
@@ -70,7 +70,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
           obj2.text = intl9.string(require(dependencyMap[1]).t.gl/XHJ);
           obj2.description = null;
         }
-        const obj3 = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", "Null": true, type: obj.UNAVAILABLE };
+        const obj3 = { <string:2857778021>: false, <string:2622732180>: false, <string:1263595226>: null, type: obj.UNAVAILABLE };
         obj2 = obj3;
       }
     }

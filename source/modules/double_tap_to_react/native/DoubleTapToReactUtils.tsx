@@ -1,10 +1,10 @@
-// Module ID: 7649
-// Function ID: 61187
+// Module ID: 7650
+// Function ID: 61199
 // Name: getFallbackDoubleTapDisambiguatedEmoji
 // Dependencies: []
 // Exports: areEmojisEqual, handleAddDefaultDoubleTapReaction
 
-// Module 7649 (getFallbackDoubleTapDisambiguatedEmoji)
+// Module 7650 (getFallbackDoubleTapDisambiguatedEmoji)
 function getFallbackDoubleTapDisambiguatedEmoji() {
   const byName = importDefault(dependencyMap[7]).getByName("heart");
   let tmp2 = null;

@@ -1,7 +1,7 @@
 // Module ID: 6738
-// Function ID: 52473
+// Function ID: 52481
 // Name: AutomodBlockProfileUpdateMessageEmbedKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6738 (AutomodBlockProfileUpdateMessageEmbedKeys)
 const _module = require(dependencyMap[0]);

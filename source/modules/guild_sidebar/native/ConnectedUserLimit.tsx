@@ -1,14 +1,15 @@
-// Module ID: 14845
-// Function ID: 111879
+// Module ID: 14848
+// Function ID: 111913
 // Name: ConnectedUserLimit
 // Dependencies: [0, 0, 0, 4294967295, 0]
 // Exports: ConnectedUserLimit
 
-// Module 14845 (ConnectedUserLimit)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 14848 (ConnectedUserLimit)
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_sidebar/native/ConnectedUserLimit.tsx");
+result = result.fileFinishedImporting("modules/guild_sidebar/native/ConnectedUserLimit.tsx");
 
 export const ConnectedUserLimit = function ConnectedUserLimit(userCount) {
   let channel;

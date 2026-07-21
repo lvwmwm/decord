@@ -1,5 +1,5 @@
 // Module ID: 11502
-// Function ID: 89611
+// Function ID: 89623
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -96,11 +96,11 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGRO
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { item: "5", activePageRangeStart: "5", activePageRangeEnd: "GameServer Test #5", ref: "25565", borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = { "Null": 2046820991, "Null": 1174405381, "Null": 66666, "Null": 66666, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.boostInfoContainer = obj2;
+const obj3 = { "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.boostInfoSeparator = obj3;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
-obj.boostInfoSeparator = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.scrollView = { paddingBottom: importDefault(dependencyMap[5]).space.PX_96 };
 const obj4 = { paddingBottom: importDefault(dependencyMap[5]).space.PX_96 };
 obj.boostButtonContainer = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };

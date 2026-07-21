@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 116568
+// Module ID: 15323
+// Function ID: 116603
 // Name: useMediaKeyboardConfig
 // Dependencies: []
 // Exports: default
 
-// Module 15320 (useMediaKeyboardConfig)
+// Module 15323 (useMediaKeyboardConfig)
 let closure_3 = importAll(dependencyMap[0]);
 const MediaKeyboardTarget = arg1(dependencyMap[1]).MediaKeyboardTarget;
 ({ ChannelTypesSets: closure_5, MAX_UPLOAD_COUNT: closure_6 } = arg1(dependencyMap[2]));

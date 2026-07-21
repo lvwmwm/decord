@@ -1,10 +1,10 @@
-// Module ID: 16299
-// Function ID: 125778
+// Module ID: 16307
+// Function ID: 125839
 // Name: useArchiveOrDelete
 // Dependencies: []
 // Exports: default
 
-// Module 16299 (useArchiveOrDelete)
+// Module 16307 (useArchiveOrDelete)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 ({ useEffect: closure_6, useRef: closure_7 } = arg1(dependencyMap[2]));

@@ -1,9 +1,9 @@
-// Module ID: 15350
-// Function ID: 116903
+// Module ID: 15353
+// Function ID: 116942
 // Name: useHasSettingsBadge
 // Dependencies: []
 
-// Module 15350 (useHasSettingsBadge)
+// Module 15353 (useHasSettingsBadge)
 function useHasSettingsBadge() {
   let tmp = arg1(dependencyMap[10]).useUnseenOutboundPromotions().length > 0;
   const obj = arg1(dependencyMap[10]);
@@ -64,11 +64,11 @@ let closure_13 = arg1(dependencyMap[6]).createStyles((paddingTop, arg1, arg2, ar
   obj2.borderWidth = 1;
   const merged3 = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_HIGH);
   obj.containerFloating = obj2;
-  const obj3 = { 9223372036854775807: true, 0: true, 9223372036854775807: true, top: importDefault(dependencyMap[8]).space.PX_4, right: importDefault(dependencyMap[8]).space.PX_12, paddingTop };
-  obj.buttons = obj3;
   const obj7 = arg1(dependencyMap[9]);
-  obj.buttonsFloating = { gap: importDefault(dependencyMap[8]).space.PX_16 };
-  obj.loading = { <string:2700829420>: null, <string:1661207633>: null, <string:1365420630>: null };
+  obj.buttons = { top: importDefault(dependencyMap[8]).space.PX_4, right: importDefault(dependencyMap[8]).space.PX_12, paddingTop };
+  const obj4 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_16 };
+  obj.buttonsFloating = obj4;
+  obj.loading = { "Bool(true)": null, "Bool(true)": null, 266603034: null };
   return obj;
 });
 const obj2 = arg1(dependencyMap[6]);
@@ -130,7 +130,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     }
     importAllResult = containerBackground;
     const items1 = [gradientSecondaryBackground, containerBackground];
-    const tmp16 = callback3(num, num2, importAllResult.useMemo(() => {
+    const tmp16 = callback2(num, num2, importAllResult.useMemo(() => {
       let hexResult1 = null;
       if (null != containerBackground) {
         const obj = navigateToPremium(gradientSecondaryBackground[19]);
@@ -235,7 +235,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     const items6 = [isLoading, ];
     obj7 = {};
     const tmp53 = importDefault(dependencyMap[27]);
-    const tmp56 = callback2;
+    const tmp56 = closure_12;
     const tmp57 = closure_11;
     const tmp63 = callback;
     const tmp64 = tmp21;
@@ -249,7 +249,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     ContentDismissActionType = color;
     const items7 = [color];
     const memo = importAllResult.useMemo(() => {
-      const obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
+      const obj = { start: {}, end: {} };
       const obj2 = navigateToPremium(gradientSecondaryBackground[19])(color);
       const items = [navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0).hex(), ];
       const alphaResult = navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0);
@@ -259,22 +259,27 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
       return obj;
     }, items7);
     const obj19 = arg1(dependencyMap[34]);
+    const obj8 = {};
     if (obj20.isYouNavFloating()) {
-      const obj8 = { style: tmp16.containerFloatingWrap, pointerEvents: "box-none" };
+      obj8.style = tmp16.containerFloatingWrap;
+      obj8.pointerEvents = "box-none";
       const obj9 = { style: tmp16.containerFloatingGradient };
       const merged = Object.assign(memo);
       obj9["pointerEvents"] = "none";
       const items8 = [callback(importDefault(dependencyMap[35]), obj9), ];
       const obj10 = { style: tmp16.containerFloating, children: tmp56Result };
-      items8[1] = callback(tmp21, obj10);
+      items8[1] = callback(tmp73, obj10);
       obj8.children = items8;
-      let tmp74 = callback2(tmp21, obj8);
-      const tmp80 = importDefault(dependencyMap[35]);
+      let tmp72Result = tmp72(tmp73, obj8);
+      const tmp78 = importDefault(dependencyMap[35]);
     } else {
-      const obj11 = { style: tmp16.container, pointerEvents: "box-none", children: tmp56Result };
-      tmp74 = callback(tmp21, obj11);
+      obj8.style = tmp16.container;
+      obj8.pointerEvents = "box-none";
+      const items9 = [navigateToPremium.backButton, tmp56Result];
+      obj8.children = items9;
+      tmp72Result = tmp72(tmp73, obj8);
     }
-    return tmp74;
+    return tmp72Result;
   }
   containerBackground = userProfileColors.containerBackground;
 });

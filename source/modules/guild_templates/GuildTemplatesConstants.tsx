@@ -1,7 +1,7 @@
 // Module ID: 5716
-// Function ID: 49125
+// Function ID: 49133
 // Name: GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5716 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
 const _module = require(dependencyMap[0]);

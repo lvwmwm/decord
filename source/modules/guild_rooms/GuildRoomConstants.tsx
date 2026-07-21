@@ -1,10 +1,10 @@
-// Module ID: 15925
-// Function ID: 122151
+// Module ID: 15929
+// Function ID: 122195
 // Name: items
 // Dependencies: []
 // Exports: getSeatName
 
-// Module 15925 (items)
+// Module 15929 (items)
 let obj = {};
 obj = { background: importDefault(dependencyMap[1]), aspectRatio: 1.375514403292181 };
 obj = { name: "PC_SEAT_1", position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][0] };
@@ -37,9 +37,9 @@ const obj13 = { name: "SIDE_GROUP_SEAT_3", position: arg1(dependencyMap[2]).GUIL
 items[13] = obj13;
 const obj14 = { name: "SIDE_GROUP_SEAT_STANDING_1", position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][14] };
 items[14] = obj14;
-const obj15 = { position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][15] };
+const obj15 = { IRRELEVANT_CHANNEL: null, PENDING_REMOTE_INIT: null, marginRight: null, position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][15] };
 items[15] = obj15;
-const obj16 = { error: null, height: "310a8c90474cd965e25feed5bbd7d9c0", width: "hi.messages.310a8c90474cd965e25feed5bbd7d9c0.compiled.messages", position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][16] };
+const obj16 = { IRRELEVANT_CHANNEL: null, PENDING_REMOTE_INIT: null, marginRight: null, position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][16] };
 items[16] = obj16;
 const obj17 = { position: arg1(dependencyMap[2]).GUILD_ROOM_BACKGROUND_POSITIONS[arg1(undefined, dependencyMap[0]).GuildRoomBackgrounds.DEFAULT][17] };
 items[17] = obj17;
@@ -56,7 +56,7 @@ obj[arg1(dependencyMap[0]).GuildRoomBackgrounds.DEFAULT] = obj;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
 export const GUILD_ROOM_SPATIAL_AUDIO_MODE = "guild-room";
-export const DEFAULT_BACKGROUND_POSITION = { borderRadius: null, width: 4, height: 4, bottom: "rgba(0, 0, 0, 0.75)" };
+export const DEFAULT_BACKGROUND_POSITION = { fontFamily: "ERROR", lineHeight: "ERROR", Č: "NOT_RESPONDER", GUILD_WEBHOOKS: "NOT_RESPONDER" };
 export const getSeatName = function getSeatName(arg0, arg1) {
   arg1 = arg0;
   const dependencyMap = arg1;

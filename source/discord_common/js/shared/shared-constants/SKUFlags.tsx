@@ -1,7 +1,7 @@
 // Module ID: 672
-// Function ID: 8272
+// Function ID: 8276
 // Name: SKUFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 672 (SKUFlags)
 const _module = require(dependencyMap[0]);

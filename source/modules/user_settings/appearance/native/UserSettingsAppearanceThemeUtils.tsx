@@ -1,10 +1,10 @@
-// Module ID: 13948
-// Function ID: 105995
+// Module ID: 13951
+// Function ID: 106027
 // Name: getThemeNameForAnalytics
 // Dependencies: []
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme
 
-// Module 13948 (getThemeNameForAnalytics)
+// Module 13951 (getThemeNameForAnalytics)
 function getThemeNameForAnalytics(type) {
   let id = type;
   if (type.type === arg1(dependencyMap[7]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
@@ -81,7 +81,7 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
 };
 export const handleSaveSyncedModeTheme = function handleSaveSyncedModeTheme(theme, mode, analyticsLocations) {
   if ("system" !== theme.theme) {
-    let obj = { "Null": true, "Null": true, themeName: getThemeNameForAnalytics(theme), analyticsLocations };
+    let obj = { "Null": null, "Null": null, themeName: getThemeNameForAnalytics(theme), analyticsLocations };
     trackClientThemeUpdated(obj);
     obj = {};
     obj[mode] = theme.theme;

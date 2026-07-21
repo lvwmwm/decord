@@ -1,9 +1,9 @@
-// Module ID: 7153
-// Function ID: 57709
+// Module ID: 7154
+// Function ID: 57721
 // Name: handleConnectionStateUpdated
 // Dependencies: []
 
-// Module 7153 (handleConnectionStateUpdated)
+// Module 7154 (handleConnectionStateUpdated)
 function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(dependencyMap[16]).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
@@ -156,21 +156,21 @@ async function _handleDowngradeCommand(arg0, arg1) {
 async function _executePendingDowngrade() {
   const pendingDowngrade = pendingDowngrade.getPendingDowngrade();
   if (null != pendingDowngrade) {
-    callback2(closure_2[16]).dispatch({ "Bool(false)": 75616, "Bool(false)": 2041856273 });
+    callback2(closure_2[16]).dispatch({});
     const obj2 = callback2(closure_2[16]);
     yield callback(closure_2[17]).downgradeSubscription(tmp2);
     callback3();
     yield closure_37();
     const obj3 = callback(closure_2[17]);
     const dispatch = callback2(closure_2[16]).dispatch;
-    dispatch({ "Bool(false)": "isArray", "Bool(false)": "isArray" });
+    dispatch({ "Null": "isArray", "Null": "isArray" });
     const tmp12 = callback2(closure_2[16]);
-    callback2(closure_2[16]).dispatch({ "Bool(false)": "isArray", "Bool(false)": "isArray" });
+    callback2(closure_2[16]).dispatch({ "Null": "isArray", "Null": "isArray" });
     return dispatch;
   }
 }
 function clearPendingDowngrade() {
-  importDefault(dependencyMap[16]).dispatch({ "Bool(true)": null, "Bool(true)": null });
+  importDefault(dependencyMap[16]).dispatch({});
 }
 function fetchAndAlertActiveSubscription() {
   return _fetchAndAlertActiveSubscription(...arguments);
@@ -225,7 +225,7 @@ async function _handleAppStateUpdated(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = ["handleOpenInterview"];
+let closure_3 = ["Kaaba"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

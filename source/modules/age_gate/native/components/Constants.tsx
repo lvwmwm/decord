@@ -1,7 +1,7 @@
 // Module ID: 9342
-// Function ID: 72975
+// Function ID: 72986
 // Name: NsfwGateSource
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9342 (NsfwGateSource)
 const _module = require(dependencyMap[0]);

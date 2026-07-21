@@ -1,10 +1,10 @@
-// Module ID: 7070
-// Function ID: 56514
+// Module ID: 7071
+// Function ID: 56526
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getFailedMessageId, isMessageDataCommand
 
-// Module 7070 (_isNativeReflectConstruct)
+// Module 7071 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,8 +24,8 @@ function isMessageDataSend(type) {
 function isMessageDataEdit(messageData) {
   return messageData.type === obj.EDIT;
 }
-let closure_3 = ["isDark", "GUILD_ROLE_CONNECTIONS_ELIGIBILITY"];
-let closure_4 = ["isDark", "GUILD_ROLE_CONNECTIONS_ELIGIBILITY"];
+let closure_3 = ["isArray", "paddingHorizontal"];
+let closure_4 = ["isArray", "paddingHorizontal"];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -75,7 +75,7 @@ let tmp3 = (arg0) => {
         let channelId;
         let isCrossposted;
         messageId = messageId.messageId;
-        let obj = { deeplinkSection: "spring", analytics: "linear", Ambient_Lightmode: "easeInEaseOut" };
+        let obj = { alignItems: false, position: false, flex: false };
         ({ channelId, isCrossposted } = messageId);
         Object.setPrototypeOf(null);
         const merged = Object.assign(messageId, obj);
@@ -285,7 +285,7 @@ let tmp3 = (arg0) => {
       if (store.get("send_fail_100")) {
         const logger = self.logger;
         logger.log("Skipping message send because send_fail_100 is enabled");
-        obj1 = { "Bool(false)": "message", "Bool(false)": 2, "Bool(false)": "client_version", "Bool(false)": "message", "Bool(false)": "filter", "Bool(false)": null, headers: {} };
+        obj1 = { alignItems: 1641502213, justifyContent: 1056985994, borderRadius: -32598375, position: 1637544017, left: 342950391, overflow: 1090519040, headers: {} };
         arg1(null, obj1);
       } else {
         const _AbortController = AbortController;
@@ -334,7 +334,7 @@ let tmp3 = (arg0) => {
       if (store.get("send_fail_100")) {
         const logger = self.logger;
         logger.log("Skipping message send because send_fail_100 is enabled");
-        obj1 = { "Bool(false)": "message", "Bool(false)": 2, "Bool(false)": "client_version", "Bool(false)": "message", "Bool(false)": "filter", "Bool(false)": null, headers: {} };
+        obj1 = { alignItems: 1641502213, justifyContent: 1056985994, borderRadius: -32598375, position: 1637544017, left: 342950391, overflow: 1090519040, headers: {} };
         arg1(null, obj1);
       } else {
         const _AbortController = AbortController;

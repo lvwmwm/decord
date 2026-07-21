@@ -1,9 +1,9 @@
-// Module ID: 16004
-// Function ID: 122795
+// Module ID: 16008
+// Function ID: 122839
 // Name: DiscoverabilityLandingScene
 // Dependencies: []
 
-// Module 16004 (DiscoverabilityLandingScene)
+// Module 16008 (DiscoverabilityLandingScene)
 function DiscoverabilityLandingScene(onComplete) {
   onComplete = onComplete.onComplete;
   const arg1 = onComplete;
@@ -143,12 +143,12 @@ let closure_6 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj = { MIN_SWIPE_VELOCITY: null, USER_SAFETY_TOOLS_UNBLOCK: "c7e2eadc5cd55417a6c70f428f65fac7", routingFailures: "SlashIcon", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj;
-const obj1 = { "Bool(false)": "isArray", "Bool(false)": "accessibilityRole", "Bool(false)": "value", "Bool(false)": "container", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-obj.container = obj1;
+obj.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 let closure_8 = obj.createStyles(obj);
 RedesignDiscoverabilityModal.modalConfig = { animation: arg1(dependencyMap[4]).ModalAnimation.SLIDE_IN_OUT };
+const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/nuf/native/components/RedesignDiscoverabilityModal.tsx");
 
 export default RedesignDiscoverabilityModal;

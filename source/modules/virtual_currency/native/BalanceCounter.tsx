@@ -1,5 +1,5 @@
 // Module ID: 9787
-// Function ID: 76042
+// Function ID: 76053
 // Name: BalanceCounter
 // Dependencies: []
 
@@ -49,7 +49,7 @@ class BalanceCounter {
     tmp9 = useCallback((set, targetHeight, duration) => {
       callback(true);
       let obj = value(closure_2[5]);
-      obj = { "Bool(false)": "ASYNC_OP_IN_PROGRESS", "Bool(false)": "UNABLE_TO_OPEN_FILE_TYPE", "Bool(false)": "import", "Bool(false)": false, duration };
+      obj = { duration };
       const fn = function l() {
         callback(closure_2[3]).runOnJS(closure_9)(false);
       };

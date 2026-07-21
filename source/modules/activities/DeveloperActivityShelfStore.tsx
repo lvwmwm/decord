@@ -1,9 +1,9 @@
-// Module ID: 7364
-// Function ID: 59342
+// Module ID: 7365
+// Function ID: 59354
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7364 (_isNativeReflectConstruct)
+// Module 7365 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,8 +19,8 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const ApplicationFlags = arg1(dependencyMap[5]).ApplicationFlags;
-let obj = { width: "Text", height: "x", borderRadius: "kind", alignItems: "Array", lastUsedObject: {} };
-obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
+let closure_8 = { lastUsedObject: {} };
+let obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
 const INITIALIZED = obj.INITIALIZED;
 let closure_11 = [];
 let tmp2 = (PersistedStore) => {
@@ -50,7 +50,7 @@ let tmp2 = (PersistedStore) => {
     key: "initialize",
     value(arg0) {
       let obj = arg0;
-      obj = { width: "Text", height: "x", borderRadius: "kind", alignItems: "Array", lastUsedObject: {} };
+      obj = { lastUsedObject: {} };
       if (null == arg0) {
         obj = {};
       }
@@ -150,15 +150,15 @@ const items = [
 tmp2.migrations = items;
 obj = {
   LOGOUT: function reset() {
-    const obj = { width: "Text", height: "x", borderRadius: "kind", alignItems: "Array", lastUsedObject: {} };
+    let closure_8 = { lastUsedObject: {} };
     const INITIALIZED = obj.INITIALIZED;
     let closure_11 = [];
   },
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function handleToggleUseActivityUrlOverride() {
-    obj.useActivityUrlOverride = !obj.useActivityUrlOverride;
+    closure_8.useActivityUrlOverride = !closure_8.useActivityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: function handleSetActivityUrlOverride(activityUrlOverride) {
-    obj.activityUrlOverride = activityUrlOverride.activityUrlOverride;
+    closure_8.activityUrlOverride = activityUrlOverride.activityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function handleMarkActivityUsed(applicationId) {
     applicationId = applicationId.applicationId;
@@ -166,7 +166,7 @@ obj = {
     if (null == closure_11.find((id) => id.id === applicationId)) {
       return false;
     } else {
-      obj.lastUsedObject[applicationId] = applicationId.timestamp;
+      closure_8.lastUsedObject[applicationId] = applicationId.timestamp;
     }
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
@@ -181,7 +181,7 @@ obj = {
     const INITIALIZED = obj.ERROR;
   },
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function handleUpdateFilter(arg0) {
-    obj.filter = arg0.filter;
+    closure_8.filter = arg0.filter;
   },
   USER_SETTINGS_PROTO_UPDATE() {
 

@@ -1,10 +1,10 @@
-// Module ID: 7760
-// Function ID: 61616
+// Module ID: 7761
+// Function ID: 61628
 // Name: useChangelog
 // Dependencies: []
 // Exports: useCurrentChangelog
 
-// Module 7760 (useChangelog)
+// Module 7761 (useChangelog)
 function useChangelog(changelogId, stateFromStores) {
   let defaultChangelog;
   let defaultLoadState;
@@ -56,7 +56,7 @@ function useChangelog(changelogId, stateFromStores) {
     }
   }, items2);
   if (null == changelogId) {
-    obj = { flexDirection: "handled", alignItems: false, justifyContent: 16, id: changelogId };
+    obj = { id: changelogId };
     let obj1 = obj;
   } else {
     if (null == changelog) {

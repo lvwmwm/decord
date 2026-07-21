@@ -1,5 +1,5 @@
 // Module ID: 11529
-// Function ID: 89803
+// Function ID: 89815
 // Name: useIsNewGamesCoachmarkEnabled
 // Dependencies: []
 // Exports: useIsNewGamesCoachmarkEnabled

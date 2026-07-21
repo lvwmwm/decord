@@ -1,5 +1,5 @@
 // Module ID: 8761
-// Function ID: 69252
+// Function ID: 69263
 // Name: NativePaymentContextProvider
 // Dependencies: []
 // Exports: NativePaymentContextProvider

@@ -1,7 +1,7 @@
 // Module ID: 4192
-// Function ID: 36032
+// Function ID: 36040
 // Name: Notifications
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4192 (Notifications)
 const _module = require(dependencyMap[0]);

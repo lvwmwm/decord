@@ -1,5 +1,5 @@
 // Module ID: 4135
-// Function ID: 34362
+// Function ID: 34367
 // Name: useGuildIdForChannelRoute
 // Dependencies: []
 // Exports: default, getGuildIdForGenericRedirect

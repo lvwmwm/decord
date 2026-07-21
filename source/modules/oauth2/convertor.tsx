@@ -1,5 +1,5 @@
 // Module ID: 8954
-// Function ID: 70611
+// Function ID: 70622
 // Name: convertOAuth2Authorization
 // Dependencies: [6, 7]
 // Exports: convertOAuth2Authorization

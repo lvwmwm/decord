@@ -1,5 +1,5 @@
 // Module ID: 12175
-// Function ID: 93610
+// Function ID: 93622
 // Name: createGuildTemplateEmbed
 // Dependencies: []
 // Exports: createGuildTemplateEmbed

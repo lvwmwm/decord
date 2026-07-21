@@ -1,5 +1,5 @@
 // Module ID: 10289
-// Function ID: 79434
+// Function ID: 79445
 // Name: NotificationSettingsMockChannels
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ obj = {};
 obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj;
 obj.channel = {};
-obj.channelName = {};
+obj.channelName = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMockChannels.tsx");
@@ -22,15 +22,15 @@ const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notificati
 export default function NotificationSettingsMockChannels(unreadSetting) {
   const tmp = callback2();
   const arg1 = tmp;
-  let obj = { 0: null, 9223372036854775807: null, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
+  let obj = { resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   const intl = arg1(dependencyMap[6]).intl;
   obj.name = intl.string(arg1(dependencyMap[6]).t.EjLobP);
   const items = [obj, , ];
-  obj = { 0: null, 9223372036854775807: null, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
+  obj = { resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj.name = intl2.string(arg1(dependencyMap[6]).t.Wgpwpp);
   items[1] = obj;
-  obj = { 0: null, 9223372036854775807: null, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
+  obj = { resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
   const intl3 = arg1(dependencyMap[6]).intl;
   obj.name = intl3.string(arg1(dependencyMap[6]).t.g9VImh);
   items[2] = obj;

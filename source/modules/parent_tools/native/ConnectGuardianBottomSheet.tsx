@@ -1,10 +1,10 @@
-// Module ID: 13659
-// Function ID: 103454
+// Module ID: 13661
+// Function ID: 103476
 // Name: ConnectGuardianBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13659 (ConnectGuardianBottomSheet)
+// Module 13661 (ConnectGuardianBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -48,7 +48,7 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
   obj = { startExpanded: true };
   obj = { style: tmp.container };
   obj1 = { style: tmp.info };
-  const obj2 = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.centered };
+  const obj2 = { style: tmp.centered };
   if (null == title) {
     const intl = arg1(dependencyMap[12]).intl;
     title = intl.string(importDefault(dependencyMap[13]).aCUVfL);
@@ -67,7 +67,7 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
   const items3 = [closure_8(View, obj1), , ];
   const obj6 = { linkCode, expiresAt, onRefresh: onRefresh.onRefresh };
   items3[1] = callback(View, { style: tmp.cardContainer, children: callback(arg1(dependencyMap[15]).ConnectGuardianCard, obj6) });
-  const obj7 = { 9223372036854775807: null, -9223372036854775808: null };
+  const obj7 = { "Bool(true)": null, "Bool(true)": null };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj7.text = intl3.string(importDefault(dependencyMap[13]).Hsm5IF);
   obj7.onPress = callback;

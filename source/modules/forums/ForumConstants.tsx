@@ -1,7 +1,7 @@
 // Module ID: 5681
-// Function ID: 48877
+// Function ID: 48885
 // Name: FORUM_GUIDELINES_ACTION_SHEET
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5681 (FORUM_GUIDELINES_ACTION_SHEET)
 const _module = require(dependencyMap[0]);

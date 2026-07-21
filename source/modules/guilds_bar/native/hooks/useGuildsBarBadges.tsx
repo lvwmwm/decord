@@ -1,11 +1,11 @@
-// Module ID: 14732
-// Function ID: 111091
+// Module ID: 14735
+// Function ID: 111125
 // Name: useGuildsBarBadges
 // Dependencies: []
 // Exports: default
 
-// Module 14732 (useGuildsBarBadges)
-let closure_3 = [true];
+// Module 14735 (useGuildsBarBadges)
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -18,7 +18,7 @@ let closure_12 = importDefault(dependencyMap[8]);
 ({ GuildFeatures: closure_13, Permissions: closure_14 } = arg1(dependencyMap[9]));
 const jsx = arg1(dependencyMap[10]).jsx;
 const tmp2 = arg1(dependencyMap[9]);
-let closure_16 = arg1(dependencyMap[11]).createStyles({ topRightBadge: {} });
+let closure_16 = arg1(dependencyMap[11]).createStyles({ topRightBadge: { EMPHASIZE_NOTICE: 15177100802009333000000000000000000000000000000000000000000000000000000000000000000, minWidth: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008446793996087146, CHANNEL_NAME_CHANNEL_ICON_RADIUS: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003399539124444363, handleLayoutTransition: 9126805507 } });
 const obj = arg1(dependencyMap[11]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarBadges.tsx");
 

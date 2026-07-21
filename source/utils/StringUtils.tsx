@@ -1,5 +1,5 @@
 // Module ID: 1832
-// Function ID: 20029
+// Function ID: 20034
 // Name: isNullOrEmpty
 // Dependencies: [5, 27]
 // Exports: isNullOrEmpty
@@ -16,9 +16,9 @@ export const isNullOrEmpty = function isNullOrEmpty(application_id) {
   }
   return tmp;
 };
-export const upperCaseFirstChar = require("keys").upperCaseFirstChar;
-export const getAcronym = require("keys").getAcronym;
-export const cssValueToNumber = require("keys").cssValueToNumber;
-export const stripDiacritics = require("keys").stripDiacritics;
-export const truncateText = require("keys").truncateText;
-export const normalize = require("keys").normalize;
+export const upperCaseFirstChar = require("get ActivityIndicator").upperCaseFirstChar;
+export const getAcronym = require("get ActivityIndicator").getAcronym;
+export const cssValueToNumber = require("get ActivityIndicator").cssValueToNumber;
+export const stripDiacritics = require("get ActivityIndicator").stripDiacritics;
+export const truncateText = require("get ActivityIndicator").truncateText;
+export const normalize = require("get ActivityIndicator").normalize;

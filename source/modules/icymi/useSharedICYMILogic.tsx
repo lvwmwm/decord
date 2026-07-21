@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 113696
+// Module ID: 15089
+// Function ID: 113730
 // Name: useSharedICYMILogic
 // Dependencies: []
 // Exports: useSharedICYMILogic
 
-// Module 15086 (useSharedICYMILogic)
+// Module 15089 (useSharedICYMILogic)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -192,9 +192,9 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
   }, []);
   const items9 = [callback, callback1, callback2];
   const memo = React.useMemo(() => {
-    let obj = { viewabilityConfig: { trackSelectGIF: null, ENABLE_COMMUNITY_FLOW_MODAL_KEY: "slide_from_bottom", zIndex: "gr" }, onViewableItemsChanged: callback };
+    let obj = { viewabilityConfig: { 1694760785: null, 1420449339: "slide_from_bottom", -1396944286: "gr" }, onViewableItemsChanged: callback };
     const items = [obj, , ];
-    obj = { viewabilityConfig: { trackSelectGIF: 377946113, ENABLE_COMMUNITY_FLOW_MODAL_KEY: -1824849919, zIndex: -1513816063 }, onViewableItemsChanged: callback1 };
+    obj = { viewabilityConfig: { 1694760785: false, 1420449339: false, -1396944286: false }, onViewableItemsChanged: callback1 };
     items[1] = obj;
     obj = { viewabilityConfig: {}, onViewableItemsChanged: callback2 };
     items[2] = obj;

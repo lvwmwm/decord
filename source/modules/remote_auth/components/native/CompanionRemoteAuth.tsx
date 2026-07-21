@@ -1,56 +1,56 @@
-// Module ID: 14646
-// Function ID: 110432
+// Module ID: 14649
+// Function ID: 110464
 // Name: renderSteps
 // Dependencies: []
 // Exports: CompanionRemoteAuth
 
-// Module 14646 (renderSteps)
-function renderSteps(state, style, callback1, context) {
+// Module 14649 (renderSteps)
+function renderSteps(state, avatar, callback1, context) {
   const step = state.step;
-  if (style(dependencyMap[5]).RemoteAuthStep.INITIALIZING !== step) {
-    if (style(dependencyMap[5]).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (style(dependencyMap[5]).RemoteAuthStep.PENDING_TICKET === step) {
+  if (avatar(dependencyMap[5]).RemoteAuthStep.INITIALIZING !== step) {
+    if (avatar(dependencyMap[5]).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (avatar(dependencyMap[5]).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         let obj = {};
-        obj = { style: style.avatar, user, size: style(dependencyMap[10]).AvatarSizes.LARGE, guildId: context };
-        const items = [callback(style(dependencyMap[10]).Avatar, obj), , , ];
+        obj = { style: avatar.avatar, user, size: avatar(dependencyMap[10]).AvatarSizes.LARGE, guildId: context };
+        const items = [callback(avatar(dependencyMap[10]).Avatar, obj), , , ];
         obj = { variant: "heading-lg/bold" };
-        const intl = style(dependencyMap[8]).intl;
-        obj.children = intl.string(style(dependencyMap[8]).t.apGCUT);
-        items[1] = callback(style(dependencyMap[7]).Text, obj);
-        const obj1 = { style: style.statusText };
-        const intl2 = style(dependencyMap[8]).intl;
+        const intl = avatar(dependencyMap[8]).intl;
+        obj.children = intl.string(avatar(dependencyMap[8]).t.apGCUT);
+        items[1] = callback(avatar(dependencyMap[7]).Text, obj);
+        const obj1 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: avatar.statusText };
+        const intl2 = avatar(dependencyMap[8]).intl;
         const obj2 = {};
         let obj5 = importDefault(dependencyMap[11]);
         obj2.username = obj5.getUserTag(user);
-        obj1.children = intl2.format(style(dependencyMap[8]).t.Cbl5JK, obj2);
-        items[2] = callback(style(dependencyMap[7]).Text, obj1);
-        const obj3 = { style: style.buttonContainer };
+        obj1.children = intl2.format(avatar(dependencyMap[8]).t.Cbl5JK, obj2);
+        items[2] = callback(avatar(dependencyMap[7]).Text, obj1);
+        const obj3 = { style: avatar.buttonContainer };
         const obj4 = {};
-        const intl3 = style(dependencyMap[8]).intl;
-        obj4.text = intl3.string(style(dependencyMap[8]).t.ETE/oC);
+        const intl3 = avatar(dependencyMap[8]).intl;
+        obj4.text = intl3.string(avatar(dependencyMap[8]).t.ETE/oC);
         obj4.onPress = callback1;
-        obj3.children = callback(style(dependencyMap[9]).Button, obj4);
+        obj3.children = callback(avatar(dependencyMap[9]).Button, obj4);
         items[3] = callback(View, obj3);
         obj.children = items;
         return callback2(closure_8, obj);
       } else {
-        return callback(style(dependencyMap[6]).ActivityIndicator, {});
+        return callback(avatar(dependencyMap[6]).ActivityIndicator, {});
       }
     }
   }
   obj5 = {};
-  const items1 = [callback(style(dependencyMap[6]).ActivityIndicator, {}), , ];
-  const obj6 = { style: style.statusText };
-  const intl4 = style(dependencyMap[8]).intl;
-  obj6.children = intl4.string(style(dependencyMap[8]).t.7LkwqE);
-  items1[1] = callback(style(dependencyMap[7]).Text, obj6);
-  const obj7 = { style: style.buttonContainer };
+  const items1 = [callback(avatar(dependencyMap[6]).ActivityIndicator, {}), , ];
+  const obj6 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: avatar.statusText };
+  const intl4 = avatar(dependencyMap[8]).intl;
+  obj6.children = intl4.string(avatar(dependencyMap[8]).t.7LkwqE);
+  items1[1] = callback(avatar(dependencyMap[7]).Text, obj6);
+  const obj7 = { style: avatar.buttonContainer };
   const obj8 = {};
-  const intl5 = style(dependencyMap[8]).intl;
-  obj8.text = intl5.string(style(dependencyMap[8]).t.ETE/oC);
+  const intl5 = avatar(dependencyMap[8]).intl;
+  obj8.text = intl5.string(avatar(dependencyMap[8]).t.ETE/oC);
   obj8.onPress = callback1;
-  obj7.children = callback(style(dependencyMap[9]).Button, obj8);
+  obj7.children = callback(avatar(dependencyMap[9]).Button, obj8);
   items1[2] = callback(View, obj7);
   obj5.children = items1;
   return callback2(closure_8, obj5);
@@ -61,7 +61,7 @@ const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ statusContainer: { 2130673151: 6, -2097184513: "focus_mode_expires_at_ms" }, avatar: { marginBottom: 16 }, statusText: { "Null": "GuildMembers", "Null": "avatarId", "Null": "useActionBarPrimaryButton", "Null": "<string:1209088>" }, buttonContainer: {} });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ statusContainer: {}, avatar: { marginBottom: 16 }, statusText: { timestamp: "png", target: true, type: "/assets/images/native", appearance: 48 }, buttonContainer: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/remote_auth/components/native/CompanionRemoteAuth.tsx");
 
@@ -73,7 +73,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   const context = React.useContext(importDefault(dependencyMap[13]));
   const callback = React.useCallback((arg0) => {
     let obj = fingerprint(closure_2[14]);
-    obj = { source: constants2.QR_CODE };
+    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, source: constants2.QR_CODE };
     let tmp = null;
     if (null != arg0) {
       tmp = arg0;

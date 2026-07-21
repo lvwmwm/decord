@@ -1,10 +1,10 @@
-// Module ID: 7618
-// Function ID: 61016
+// Module ID: 7619
+// Function ID: 61028
 // Name: processColorOrThrow
 // Dependencies: []
 // Exports: processColorOrThrow
 
-// Module 7618 (processColorOrThrow)
+// Module 7619 (processColorOrThrow)
 const processColor = require(dependencyMap[0]).processColor;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");

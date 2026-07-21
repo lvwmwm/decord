@@ -1,10 +1,10 @@
-// Module ID: 7585
-// Function ID: 60715
+// Module ID: 7586
+// Function ID: 60727
 // Name: close
 // Dependencies: []
 // Exports: default
 
-// Module 7585 (close)
+// Module 7586 (close)
 function close() {
   importDefault(dependencyMap[11]).hideActionSheet(STAGE_SETTINGS_SHEET_KEY);
 }

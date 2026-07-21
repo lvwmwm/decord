@@ -1,10 +1,10 @@
-// Module ID: 14212
-// Function ID: 107470
+// Module ID: 14215
+// Function ID: 107502
 // Name: onFriendGamingActivityNotificationSettingsChanged
 // Dependencies: []
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 14212 (onFriendGamingActivityNotificationSettingsChanged)
+// Module 14215 (onFriendGamingActivityNotificationSettingsChanged)
 let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[4]);

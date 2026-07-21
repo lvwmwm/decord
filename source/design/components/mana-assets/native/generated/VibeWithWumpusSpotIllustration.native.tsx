@@ -1,5 +1,5 @@
 // Module ID: 6601
-// Function ID: 50815
+// Function ID: 50823
 // Name: VibeWithWumpusSpotIllustration
 // Dependencies: []
 // Exports: VibeWithWumpusSpotIllustration

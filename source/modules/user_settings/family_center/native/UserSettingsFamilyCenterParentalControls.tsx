@@ -1,10 +1,10 @@
-// Module ID: 13709
-// Function ID: 103713
+// Module ID: 13711
+// Function ID: 103735
 // Name: FamilyCenterParentalControlsSettings
 // Dependencies: []
 // Exports: default
 
-// Module 13709 (FamilyCenterParentalControlsSettings)
+// Module 13711 (FamilyCenterParentalControlsSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -13,7 +13,7 @@ const FamilyCenterSubPages = arg1(dependencyMap[4]).FamilyCenterSubPages;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { marginVertical: 10388343592192675000000000000000000, marginHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 } };
+obj = { container: {} };
 obj = { paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 obj.segmentedControlContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);

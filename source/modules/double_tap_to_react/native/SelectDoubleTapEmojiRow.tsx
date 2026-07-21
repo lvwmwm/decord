@@ -1,5 +1,5 @@
 // Module ID: 11416
-// Function ID: 88771
+// Function ID: 88783
 // Name: num2
 // Dependencies: []
 
@@ -12,7 +12,7 @@ const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[3]).ACTION_SHEET_MAX_WIDTH;
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
-let obj = { emoji: { bhk: "<string:1027735553>", bic: "<string:4143972873>" }, customEmoji: { bhk: "<string:1027735553>", bic: "<string:4143972873>" } };
+let obj = { emoji: {}, customEmoji: {} };
 obj = {};
 let obj4 = arg1(dependencyMap[7]);
 let num = 20;
@@ -31,7 +31,7 @@ obj.color = importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT;
 obj.textEmoji = obj;
 obj1 = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.emojiRow = obj1;
-const obj2 = { 1108365732: 498, -816651167: 498, 1640773638: null, borderRadius: importDefault(dependencyMap[8]).radii.md };
+const obj2 = { lj: 498, apply: 498, __d: null, borderRadius: importDefault(dependencyMap[8]).radii.md };
 obj.emojiPressable = obj2;
 const tmp3 = arg1(dependencyMap[5]);
 obj.selectedEmojiPressable = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
@@ -41,9 +41,9 @@ obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_
 obj.selectedEmojiWrapper = obj5;
 const obj3 = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.chooseEmojiButton = { color: importDefault(dependencyMap[8]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };
-const obj6 = { color: importDefault(dependencyMap[8]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };
-obj.customReactionOverlay = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[8]).radii.round, borderColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const obj8 = { <string:1632221346>: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", <string:2722977214>: "bun run write-native-version", color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+const obj7 = { 9223372036854775807: null, 9223372036854775807: "\u{1F469}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F467}", 9223372036854775807: 6, 9223372036854775807: 184, 9223372036854775807: null, 0: "\u{1F468}\u200D\u{1F468}\u200D\u{1F466}", 9223372036854775807: 6, -9223372036854775808: 185, 0: null, -9223372036854775808: "\u{1F468}\u200D\u{1F468}\u200D\u{1F467}", 0: 6, 0: 186, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[8]).radii.round, borderColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.customReactionOverlay = obj7;
+const obj8 = { y: "<string:2552889346>", isArray: "<string:2938503170>", color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 obj.selectedCustomReactionIcon = obj8;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo((emoji) => {
@@ -101,7 +101,7 @@ let closure_13 = importAllResult.memo((emoji) => {
   obj.children = closure_9(View, obj);
   return closure_9(arg1(dependencyMap[10]).PressableOpacity, obj);
 });
-const obj7 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[8]).radii.round, borderColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj6 = { color: importDefault(dependencyMap[8]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 const memoResult = importAllResult.memo((selectedEmoji) => {
   selectedEmoji = selectedEmoji.selectedEmoji;
   const arg1 = selectedEmoji;

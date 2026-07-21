@@ -1,5 +1,5 @@
 // Module ID: 8432
-// Function ID: 67214
+// Function ID: 67225
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -173,10 +173,10 @@ const MFALevels = tmp2.MFALevels;
 ({ GuildSettingsSections: closure_18, GuildSettingsSubsections: closure_19, Endpoints: closure_20, GuildFeatures: closure_21 } = tmp2);
 const DEFAULT_DISCOVERY_CATEGORY_ID = arg1(dependencyMap[14]).DEFAULT_DISCOVERY_CATEGORY_ID;
 ({ PUBLIC_SUCCESS_MODAL_SEEN_KEY: closure_23, CREATE_NEW_CHANNEL_VALUE: closure_24 } = arg1(dependencyMap[15]));
-let closure_35 = [];
-let closure_36 = ["<string:167772618>", "<string:922747465>", "<string:369099090>", "<string:654311892>", "<string:3372220721>", "<string:38039040>", "<string:37943552>", "<string:36841984>", "<string:37846784>", "<string:37712640>", "<string:38185216>", "<string:37876992>"];
-set = new Set(["<string:1123614722>", "<string:841613314>", "<string:1098842114>", "<string:1064501250>", null]);
-let closure_38 = { bannerAnimatedStyle: "08fd133b0b292a14ea2a09a50dd4618e", bannerImageAnimatedStyle: "CalendarIcon", blurAnimatedProps: "png", showBlur: 8 };
+let closure_35 = ["HAS_APPLICATION", "$", "platformTypes", "marginHorizontal", "VIBES_OFF", "ng", "SOLID", "marginHorizontal", "fontText", "H", "i-tsu", "na", "y1", "try", "attachGestureHandler", "USE_JPEG", "PLATFORM_GITHUB", "%URIError%", "numpad -", "mi", "textDecoder", "li", "PERMISSIONS_REQUESTED"];
+let closure_36 = [];
+set = new Set([null, null, null, null, null]);
+let closure_38 = {};
 let closure_39 = false;
 const CLOSED = FormStates.CLOSED;
 let closure_41 = {};
@@ -536,7 +536,7 @@ obj = {
         }
       }
       const HTTP = arg1(dependencyMap[18]).HTTP;
-      obj = { lc: null, type: null, end: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
+      obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
       const value = HTTP.get(obj);
       value.then((body) => {
         let obj = callback(closure_2[19]);

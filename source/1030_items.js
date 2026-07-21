@@ -1,11 +1,11 @@
 // Module ID: 1030
-// Function ID: 11096
+// Function ID: 11100
 // Name: items
 // Dependencies: []
 
 // Module 1030 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["Array", "PREMIUM_MARKETING_MOMENT_USER_SETTINGS_OFFER_BADGE"];
+const items = ["Array", "isArray"];
 function whenReady(backgroundifyResult, arg1) {
   arg1 = backgroundifyResult;
   const _document = arg1(arg6[0]).WINDOW.document;

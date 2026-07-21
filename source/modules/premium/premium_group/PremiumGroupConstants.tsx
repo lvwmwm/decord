@@ -1,5 +1,5 @@
 // Module ID: 3788
-// Function ID: 29531
+// Function ID: 29536
 // Name: TOTAL_PREMIUM_GROUP_MEMBER_SEATS
 // Dependencies: []
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName

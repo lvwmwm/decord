@@ -1,5 +1,5 @@
 // Module ID: 10844
-// Function ID: 84210
+// Function ID: 84221
 // Name: isSocialLayerApplication
 // Dependencies: []
 // Exports: isSocialLayerSDKAuthorization

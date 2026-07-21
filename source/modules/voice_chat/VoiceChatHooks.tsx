@@ -1,5 +1,5 @@
 // Module ID: 10201
-// Function ID: 78734
+// Function ID: 78745
 // Name: useIsConnectedToVoiceChannelForId
 // Dependencies: []
 // Exports: useIsConnectedToVoiceChannel

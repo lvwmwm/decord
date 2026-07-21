@@ -1,10 +1,10 @@
-// Module ID: 7748
-// Function ID: 61565
+// Module ID: 7749
+// Function ID: 61577
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 7748 (_createForOfIteratorHelperLoose)
+// Module 7749 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

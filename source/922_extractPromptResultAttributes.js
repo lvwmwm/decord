@@ -1,5 +1,5 @@
 // Module ID: 922
-// Function ID: 10058
+// Function ID: 10062
 // Name: extractPromptResultAttributes
 // Dependencies: []
 // Exports: extractPromptResultAttributes, extractToolResultAttributes

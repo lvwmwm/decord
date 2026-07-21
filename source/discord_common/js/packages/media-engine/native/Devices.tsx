@@ -1,5 +1,5 @@
 // Module ID: 4230
-// Function ID: 37071
+// Function ID: 37079
 // Name: sanitizeDevices
 // Dependencies: []
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices

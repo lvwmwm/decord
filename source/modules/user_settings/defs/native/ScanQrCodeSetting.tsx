@@ -1,14 +1,14 @@
-// Module ID: 13759
-// Function ID: 104024
+// Module ID: 13761
+// Function ID: 104046
 // Name: pressable
 // Dependencies: []
 
-// Module 13759 (pressable)
+// Module 13761 (pressable)
 const NativePermissionTypes = arg1(dependencyMap[1]).NativePermissionTypes;
 let obj = arg1(tmp3);
 // CreateGeneratorClosureLongIndex (0x67)
 const importDefaultResult = importDefault(dependencyMap[0]);
-const debounceResult = obj.debounce(importDefault(dependencyMap[0])(dependencyMap[2]), 1000, { flex: true, marginRight: true });
+const debounceResult = obj.debounce(importDefault(dependencyMap[0])(dependencyMap[2]), 1000, { -809188780: null, 163101889: null });
 obj = {
   useTitle() {
     const intl = arg1(dependencyMap[9]).intl;

@@ -1,5 +1,5 @@
 // Module ID: 846
-// Function ID: 9432
+// Function ID: 9436
 // Name: applyClientOptions
 // Dependencies: []
 // Exports: parseEventHintOrCaptureContext, prepareEvent
@@ -130,7 +130,7 @@ function applyDebugMeta(exception) {
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = [true, true, true, true, true, true, true];
+let closure_4 = [];
 
 export { applyClientOptions };
 export { applyDebugIds };

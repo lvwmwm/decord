@@ -1,5 +1,5 @@
 // Module ID: 8745
-// Function ID: 69137
+// Function ID: 69148
 // Name: UserNameplateRow
 // Dependencies: []
 // Exports: UserNameplateRow
@@ -77,7 +77,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   }, items1);
   let obj1 = arg1(closure_2[6]);
   const token = obj1.useToken(importDefault(closure_2[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
-  obj = { "Bool(false)": "<string:2020689293>", "Bool(false)": "<string:16777216>", radius: token };
+  obj = { radius: token };
   let tmp11 = !context;
   if (tmp11) {
     tmp11 = true === start;

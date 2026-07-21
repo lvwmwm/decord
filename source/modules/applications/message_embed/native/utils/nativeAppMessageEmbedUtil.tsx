@@ -1,5 +1,5 @@
 // Module ID: 11077
-// Function ID: 86143
+// Function ID: 86154
 // Name: items
 // Dependencies: []
 // Exports: getAppGradientColors, getAppIconSrc

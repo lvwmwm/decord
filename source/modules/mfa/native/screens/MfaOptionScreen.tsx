@@ -1,10 +1,10 @@
-// Module ID: 14517
-// Function ID: 109330
+// Module ID: 14520
+// Function ID: 109362
 // Name: MFAOptionScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14517 (MFAOptionScreen)
+// Module 14520 (MFAOptionScreen)
 const ScrollView = require(dependencyMap[0]).ScrollView;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = _module);
@@ -42,13 +42,13 @@ export default function MFAOptionScreen(arg0) {
   const items = [tmp7, callback(require(dependencyMap[6]).Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
   let tmp8 = null != subtitle;
   if (tmp8) {
-    const obj3 = { children: subtitle };
+    const obj3 = { hasMaxConnections: "<string:3547877632>", isBoostOnlySubscription: "content_position", children: subtitle };
     tmp8 = callback(require(dependencyMap[6]).Text, obj3);
   }
   items[2] = tmp8;
   let tmp12 = null != error;
   if (tmp12) {
-    const obj4 = { children: error };
+    const obj4 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: error };
     tmp12 = callback(require(dependencyMap[6]).Text, obj4);
   }
   items[3] = tmp12;

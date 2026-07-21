@@ -1,10 +1,10 @@
-// Module ID: 14919
-// Function ID: 112340
+// Module ID: 14922
+// Function ID: 112374
 // Name: useTotalPossibleBoostCount
 // Dependencies: []
 // Exports: default
 
-// Module 14919 (useTotalPossibleBoostCount)
+// Module 14922 (useTotalPossibleBoostCount)
 const useMemo = require(dependencyMap[0]).useMemo;
 const _module = require(dependencyMap[1]);
 ({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: closure_1, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_2 } = _module);

@@ -1,5 +1,5 @@
 // Module ID: 12130
-// Function ID: 93426
+// Function ID: 93438
 // Dependencies: []
 
 // Module 12130
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     num = 0;
   }
   const source = onLoad.source;
-  let obj = { fontSize: null, lineHeight: null, fontFamily: null, textAlign: null, marginTop: null, alignItems: null, paddingHorizontal: null };
+  let obj = { isEnabled: true, _responseType: "/assets/design/components/Icon/native/redesign/generated/images", afterMs: 24, enableGameUpdateNotifications: 24, FEED_SESSION_STARTED: null, overScrollMode: "99274532ad7fe616c031212e677b32e8", enabled: "ThreadLockIcon" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onLoad, obj);
   let callback;

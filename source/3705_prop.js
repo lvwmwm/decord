@@ -1,5 +1,5 @@
 // Module ID: 3705
-// Function ID: 28072
+// Function ID: 28077
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "L", "Bool(false)": 12, "Bool(false)": 16, "Bool(false)": 48 }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "L", "Bool(false)": 12, "Bool(false)": 16, "Bool(false)": 48 } };
+    obj = { long: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" }, narrow: {}, short: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" } };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    const obj1 = { long: { application: "L", Set: 8, Icon: 1, id: 8 }, narrow: { application: "L", Set: 8, Icon: 1, id: 8 }, short: { application: "L", Set: 8, Icon: 1, id: 8 } };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "zh-Hans";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "L", "Bool(false)": 12, "Bool(false)": 16, "Bool(false)": 48 }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "L", "Bool(false)": 12, "Bool(false)": 16, "Bool(false)": 48 } }, disjunction: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } }, unit: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } } }, locale: "zh-Hans" });
+prop.push({ data: { conjunction: { long: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" }, narrow: {}, short: { application: "isArray", Set: "construct", Icon: "Array", id: "isArray" } }, disjunction: { long: { application: "L", Set: 8, Icon: 1, id: 8 }, narrow: { application: "L", Set: 8, Icon: 1, id: 8 }, short: { application: "L", Set: 8, Icon: 1, id: 8 } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "zh-Hans" });

@@ -1,10 +1,10 @@
-// Module ID: 13854
-// Function ID: 104768
+// Module ID: 13857
+// Function ID: 104800
 // Name: productPurchaseStatus
 // Dependencies: []
 // Exports: usePurchasedProductsSort
 
-// Module 13854 (productPurchaseStatus)
+// Module 13857 (productPurchaseStatus)
 function productPurchaseStatus(type, arr) {
   const require = arr;
   if (type.type === require(dependencyMap[2]).CollectiblesItemType.BUNDLE) {

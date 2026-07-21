@@ -1,13 +1,11 @@
-// Module ID: 15573
-// Function ID: 118822
+// Module ID: 15576
+// Function ID: 118861
 // Name: clamp
-// Dependencies: [0, 0]
+// Dependencies: []
 
-// Module 15573 (clamp)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
-({ MIN_PIP_TOSS_VELOCITY: closure_0, PIP_WINDOW_OFFSET: closure_1 } = __exportStarResult1);
+// Module 15576 (clamp)
+const _module = require(dependencyMap[0]);
+({ MIN_PIP_TOSS_VELOCITY: closure_0, PIP_WINDOW_OFFSET: closure_1 } = _module);
 let closure_2 = { code: "function clamp_MorphablePanelUtilsTsx1(value,min,max){return Math.min(Math.max(value,min),max);}" };
 let closure_3 = () => {
   function clamp(arg0, arg1, arg2) {
@@ -161,7 +159,8 @@ const tmp5 = () => {
   calculatePIPPositionFromVelocity.__initData = closure_7;
   return calculatePIPPositionFromVelocity;
 }();
-const result = __exportStarResult1.fileFinishedImporting("modules/panels/morphable/native/MorphablePanelUtils.tsx");
+const _module1 = require(dependencyMap[1]);
+const result = _module1.fileFinishedImporting("modules/panels/morphable/native/MorphablePanelUtils.tsx");
 
 export const calculateXYDiff = tmp3;
 export const getPIPWindowDimensions = tmp4;
@@ -186,7 +185,7 @@ export const getClampedPIPPosition = () => {
     }
     let point = topAvoidanceRegion.positionOffset;
     if (point === undefined) {
-      point = { max: -536870861, guildId: -299892737 };
+      point = {};
     }
     const disableHorizontalSafeAreas = topAvoidanceRegion.disableHorizontalSafeAreas;
     let obj = {};

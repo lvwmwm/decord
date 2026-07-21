@@ -1,5 +1,5 @@
 // Module ID: 10182
-// Function ID: 78671
+// Function ID: 78682
 // Name: GroupPlusIcon
 // Dependencies: []
 // Exports: GroupPlusIcon

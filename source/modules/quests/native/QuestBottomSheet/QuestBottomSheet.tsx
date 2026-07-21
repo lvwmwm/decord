@@ -1,10 +1,10 @@
-// Module ID: 13892
-// Function ID: 105029
+// Module ID: 13895
+// Function ID: 105061
 // Name: QuestBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13892 (QuestBottomSheet)
+// Module 13895 (QuestBottomSheet)
 function QuestBottomSheet(initialStep) {
   let defibrillator;
   let handleTaskSelect;
@@ -635,11 +635,11 @@ const tmp3 = arg1(dependencyMap[5]);
 obj.contentContainer = { display: "flex", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_24 };
 obj2 = { display: "flex", gap: importDefault(dependencyMap[7]).space.PX_8, marginHorizontal: -importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginTop: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_16, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.microphoneUnit = obj2;
-const obj1 = { display: "flex", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_24 };
-obj.microphoneUnitHeader = { gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj3 = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[7]).space.PX_8 };
+obj.microphoneUnitHeader = obj3;
 let closure_14 = obj2.createStyles(obj);
 const context = importDefaultResult.createContext({ isInQuestBottomSheet: false });
-const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { display: "flex", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_24 };
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheet.tsx");
 
 export default function QuestBottomSheetConnected(questContentPosition) {

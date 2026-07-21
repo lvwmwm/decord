@@ -1,5 +1,5 @@
 // Module ID: 4096
-// Function ID: 33928
+// Function ID: 33933
 // Name: showActionSheet
 // Dependencies: []
 
@@ -20,7 +20,7 @@ function showActionSheet(arg0) {
     callback2(closure_2[3]).dispatch(obj);
   });
 }
-let closure_3 = [];
+let closure_3 = [1526727094, 251658607, -1291845208, -1476394453, 100663661];
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

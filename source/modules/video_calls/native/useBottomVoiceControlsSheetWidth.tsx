@@ -1,5 +1,5 @@
 // Module ID: 10539
-// Function ID: 82345
+// Function ID: 82356
 // Name: useBottomVoiceControlsSheetWidth
 // Dependencies: []
 // Exports: default

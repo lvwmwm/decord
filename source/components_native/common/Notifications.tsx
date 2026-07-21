@@ -1,19 +1,20 @@
 // Module ID: 10204
-// Function ID: 78746
+// Function ID: 78757
 // Name: Notifications
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 10204 (Notifications)
-import "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("components_native/common/Notifications.tsx");
+result = result.fileFinishedImporting("components_native/common/Notifications.tsx");
 
 export default function Notifications() {
   let obj = arg1(dependencyMap[3]);
-  const items = [__exportStarResult1];
+  const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => currentNotification.getCurrentNotification());
   let tmp2 = null;
   if (null != stateFromStores) {

@@ -1,5 +1,5 @@
 // Module ID: 3449
-// Function ID: 26767
+// Function ID: 26772
 // Name: getUTCWeekYear
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9055
-// Function ID: 71092
+// Function ID: 71103
 // Name: ActivityStatus
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ const DOT_UNICODE = arg1(dependencyMap[5]).DOT_UNICODE;
 const ActivityTypes = arg1(dependencyMap[6]).ActivityTypes;
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_13 = arg1(dependencyMap[8]).createStyles({ container: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
+let closure_13 = arg1(dependencyMap[8]).createStyles({ container: { "Null": true, "Null": true, "Bool(false)": true }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/activity_status/native/ActivityStatus.tsx");
 
@@ -191,7 +191,7 @@ export default function ActivityStatus(guildId) {
       tmp24 = null != tmp10;
     }
     if (tmp24) {
-      obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, style: textStyle, maxFontSizeMultiplier, children: closure_8 };
+      obj3 = { style: textStyle, maxFontSizeMultiplier, children: closure_8 };
       tmp24 = callback(importDefault(dependencyMap[18]), obj3);
     }
     items5[1] = tmp24;

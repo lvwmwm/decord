@@ -1,10 +1,10 @@
-// Module ID: 12431
-// Function ID: 94891
+// Module ID: 12433
+// Function ID: 94913
 // Name: getGuildSubscriptionRemovalSource
 // Dependencies: []
 // Exports: GuildSubscriptionRemoval
 
-// Module 12431 (getGuildSubscriptionRemovalSource)
+// Module 12433 (getGuildSubscriptionRemovalSource)
 function getGuildSubscriptionRemovalSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

@@ -1,19 +1,21 @@
 // Module ID: 5794
-// Function ID: 49518
+// Function ID: 49526
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
 // Module 5794 (useGiftCardMobileConsumptionHalfsheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const PaymentSourceTypes = arg1(dependencyMap[5]).PaymentSourceTypes;
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import { ContentDismissActionType } from "result";
+import { PaymentSourceTypes } from "result";
+import result from "result";
+
 const obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
 const Idle = obj.Idle;
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
+result = result.fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
   const enabled = arg1(dependencyMap[6]).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;

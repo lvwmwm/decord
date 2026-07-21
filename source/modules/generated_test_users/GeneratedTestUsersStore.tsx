@@ -1,9 +1,9 @@
-// Module ID: 13396
-// Function ID: 101834
+// Module ID: 13398
+// Function ID: 101856
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13396 (_isNativeReflectConstruct)
+// Module 13398 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,7 +28,7 @@ let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = { suggestion: "o", fetched: "o" };
+let closure_6 = { "Bool(true)": "o", "Bool(true)": "o" };
 let tmp2 = (PersistedStore) => {
   class GeneratedTestUsersStore {
     constructor() {

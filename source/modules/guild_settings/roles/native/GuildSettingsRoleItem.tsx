@@ -1,8 +1,8 @@
-// Module ID: 16184
-// Function ID: 124999
+// Module ID: 16192
+// Function ID: 125060
 // Dependencies: []
 
-// Module 16184
+// Module 16192
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -27,13 +27,13 @@ obj1.lineHeight = num + 1;
 obj.label = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.sparkleIcon = { tintColor: importDefault(dependencyMap[6]).colors.ICON_MUTED };
-const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.ICON_MUTED };
-obj.container = { borderRadius: importDefault(dependencyMap[6]).radii.round };
+const obj3 = { "Bool(false)": "<string:27676226>", "Bool(false)": "<string:28343040>", "Bool(false)": "<string:2790146560>", "Bool(false)": "<string:2967928833>", "Bool(false)": "<string:1312948225>", "Bool(false)": "<string:838861222>", "Bool(false)": "<string:1107296658>", borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj.container = obj3;
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.gradient = {};
 obj.image = { tintColor: "white" };
 let closure_9 = obj1.createStyles(obj);
-const obj3 = { borderRadius: importDefault(dependencyMap[6]).radii.round };
+const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.ICON_MUTED };
 const obj4 = {};
 const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) {
   let isEveryoneRole;
@@ -156,7 +156,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
       }
       obj6.icon = callback(View, obj8);
       const obj9 = { style: tmp2.row };
-      const obj10 = { imageAssetsFolder: "<string:962072674>", progress: "<string:996425668>", speed: "<string:2542620639>", loop: "<string:3175170022>", style: tmp2.label, children: role.name };
+      const obj10 = { colorFilters: "<string:962072674>", dummy: "<string:996425668>", textFiltersAndroid: "<string:2542620639>", textFiltersIOS: "<string:2873180134>", style: tmp2.label, children: role.name };
       const items2 = [callback(arg1(dependencyMap[7]).Text, obj10), , ];
       const tags2 = role.tags;
       let prop;
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
       items2[1] = tmp59;
       let tmp64 = null;
       if (locked) {
-        tmp64 = callback(arg1(dependencyMap[26]).LockIcon, { flex: "png", flexGrow: true });
+        tmp64 = callback(arg1(dependencyMap[26]).LockIcon, {});
       }
       items2[2] = tmp64;
       obj9.children = items2;
@@ -210,7 +210,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
               const items3 = [role.colors.primary_color, role.colors.secondary_color, role.colors.tertiary_color];
               const found = items3.filter(arg1(dependencyMap[19]).isNotNullish);
               obj15.colors = found.map((color) => role(onMoveUp[20]).int2hex(color));
-              obj15.start = { max: -536870861, guildId: -299892737 };
+              obj15.start = {};
               obj15.end = {};
               obj15.style = tmp2.gradient;
               const items4 = [callback(importDefault(dependencyMap[18]), obj15), ];

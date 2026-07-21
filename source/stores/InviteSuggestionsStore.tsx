@@ -1,5 +1,5 @@
 // Module ID: 10056
-// Function ID: 77650
+// Function ID: 77661
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -166,7 +166,7 @@ const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
 const set = new Set();
 let closure_22 = [];
 const map = new Map();
-let closure_24 = { 0: null, 9223372036854775807: 4, 0: 4, 0: "rgba(0, 0, 0, 0.75)" };
+let closure_24 = { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", "Bool(true)": "NOT_RESPONDER" };
 let tmp5 = (Store) => {
   class InviteSuggestionsStore {
     constructor() {

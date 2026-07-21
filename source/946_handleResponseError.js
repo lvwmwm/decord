@@ -1,5 +1,5 @@
 // Module ID: 946
-// Function ID: 10254
+// Function ID: 10258
 // Name: handleResponseError
 // Dependencies: []
 // Exports: handleResponseError, messagesFromParams, setMessagesAttribute, shouldInstrument
@@ -13,7 +13,7 @@ export const handleResponseError = function handleResponseError(setStatus, error
   if (error.error) {
     let obj = { code: require(dependencyMap[5]).SPAN_STATUS_ERROR, message: error.error.type || "internal_error" };
     setStatus.setStatus(obj);
-    obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
+    obj = { mechanism: { id: -37057201859176220000000000000000000000000000000000000000000000000000000000000000000000000000, gameId: 219408260989583100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
     require(dependencyMap[6]).captureException(error.error, obj);
     const obj2 = require(dependencyMap[6]);
   }

@@ -1,7 +1,7 @@
 // Module ID: 10235
-// Function ID: 79062
+// Function ID: 79073
 // Name: Soundpacks
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10235 (Soundpacks)
 const _module = require(dependencyMap[0]);

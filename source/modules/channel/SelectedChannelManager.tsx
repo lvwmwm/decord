@@ -1,9 +1,9 @@
-// Module ID: 16037
-// Function ID: 123146
+// Module ID: 16045
+// Function ID: 123207
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16037 (_isNativeReflectConstruct)
+// Module 16045 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -98,7 +98,7 @@ let tmp3 = (arg0) => {
   obj = {
     key: "handleLogout",
     value() {
-      callback(closure_2[12]).dispatch({ "Bool(true)": "da", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/../discord_common/js/shared/images/flags", "Bool(true)": 70, "Bool(true)": 47 });
+      callback(closure_2[12]).dispatch({});
     }
   };
   items[2] = obj;

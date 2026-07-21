@@ -1,5 +1,5 @@
 // Module ID: 3577
-// Function ID: 27732
+// Function ID: 27737
 // Name: isYesterday
 // Dependencies: []
 // Exports: default

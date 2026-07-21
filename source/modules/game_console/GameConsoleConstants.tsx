@@ -1,5 +1,5 @@
 // Module ID: 8942
-// Function ID: 70449
+// Function ID: 70460
 // Name: XBOX_URL_BASE
 // Dependencies: []
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS

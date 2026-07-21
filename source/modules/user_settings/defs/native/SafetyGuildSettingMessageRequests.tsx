@@ -1,9 +1,9 @@
-// Module ID: 14414
-// Function ID: 108716
+// Module ID: 14417
+// Function ID: 108748
 // Name: showMessageRequestRestrictionModal
 // Dependencies: []
 
-// Module 14414 (showMessageRequestRestrictionModal)
+// Module 14417 (showMessageRequestRestrictionModal)
 function showMessageRequestRestrictionModal(arg0) {
   const arg1 = arg0;
   let obj = importDefault(dependencyMap[5]);

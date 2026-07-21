@@ -1,5 +1,5 @@
 // Module ID: 11299
-// Function ID: 87910
+// Function ID: 87922
 // Name: AppLauncherChannelOption
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10091
-// Function ID: 78142
+// Function ID: 78153
 // Name: ButtonBadge
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78144(false);
+    tmp = f78155(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = importDefault(dependencyMap[10]);
@@ -26,7 +26,7 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
-  let obj = { actionIconButtonPressable: { extraChildStyle: "isArray", extraUnderlayStyle: "Icon", 1458330862: "track", -516552717: "Array", -1047346797: "isArray", -1806515818: "hd", 1648162628: "sr", 500206416: "r", -630406073: "isArray", -570041138: "props" }, withoutMargin: { marginEnd: 0 } };
+  let obj = { actionIconButtonPressable: { 0: null, -9223372036854775808: null, 9223372036854775807: null, 0: "isArray", 0: "LengthDelimited", 0: "start", -9223372036854775808: "r", -9223372036854775808: "isArray", 0: "s", 9223372036854775807: "end" }, withoutMargin: { marginEnd: 0 } };
   obj = {};
   let prop;
   if (!arg0) {
@@ -37,7 +37,7 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.INPUT_BACKGROUND_DEFAULT };
   const merged = Object.assign(importDefault(dependencyMap[3]).shadows.SHADOW_LOW);
   obj.outlined = obj;
-  obj.roundButton = { withTiming: "boolean", View: "string" };
+  obj.roundButton = { "Bool(false)": false, "Bool(false)": false };
   const obj1 = {};
   const colors = importDefault(dependencyMap[3]).colors;
   obj1.tintColor = arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT;
@@ -49,8 +49,8 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   }
   obj2.marginTop = num2;
   obj.actionText = obj2;
-  obj.unreadBadgeLeft = {};
-  obj.unreadBadgeRight = {};
+  obj.unreadBadgeLeft = { "Null": true, "Null": true, "Null": true };
+  obj.unreadBadgeRight = { <string:3250345558>: true, <string:553825121>: true, <string:1935339265>: true };
   const obj6 = arg1(dependencyMap[4]);
   obj.unreadBadgeMask = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };
   const obj3 = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };

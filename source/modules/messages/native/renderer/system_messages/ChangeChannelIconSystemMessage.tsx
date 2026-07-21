@@ -1,10 +1,10 @@
-// Module ID: 7663
-// Function ID: 61245
+// Module ID: 7664
+// Function ID: 61257
 // Name: createChangeChannelIconSystemMessage
 // Dependencies: []
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 7663 (createChangeChannelIconSystemMessage)
+// Module 7664 (createChangeChannelIconSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12864
-// Function ID: 98305
+// Module ID: 12866
+// Function ID: 98327
 // Name: _isNativeReflectConstruct
-// Dependencies: [357629952, 131072, 528023552, 452984832, 3791650816, 553648129, 503316480, 2969567248, 3170893826, 1728053265, 33554461, 2046820352, 31, 27, 653, 33]
+// Dependencies: [357629952, 131072, 528023552, 452984832, 3791650816, 553648129, 503316480, 2969567248, 3170893826, 1744830481, 33554461, 2046820352, 31, 27, 653, 33]
 // Exports: canUserUse
 
-// Module 12864 (_isNativeReflectConstruct)
+// Module 12866 (_isNativeReflectConstruct)
 import module_33 from "module_33";
 
 let PremiumSubscriptionSKUs;

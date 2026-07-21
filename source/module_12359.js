@@ -1,9 +1,9 @@
 // Module ID: 12359
-// Function ID: 94537
+// Function ID: 94550
 // Dependencies: []
 
 // Module 12359
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: true, isInternetReachable: true, details: true, reachabilityUrl: true, reachabilityMethod: true, reachabilityHeaders: true, reachabilityTest: true, reachabilityShortTimeout: true, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { "Bool(false)": "%Math.round%", "Bool(false)": "appVersion", "Bool(false)": "ng", "Bool(false)": "SOLID", "Bool(false)": "toValue", "Bool(false)": "r", "Bool(false)": "PREMIUM_TIER_0_HEADER_GRADIENT_4", "Bool(false)": "r", scales: [null] };
 
 export default _module.registerAsset(obj);

@@ -1,5 +1,5 @@
 // Module ID: 4126
-// Function ID: 34313
+// Function ID: 34318
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, useLegacyClassComponentStyles
@@ -224,10 +224,10 @@ export const experimental_createToken = function experimental_createToken(arg0) 
   const arg1 = arg0;
   return { [closure_7]: (arg0) => arg0(arg0) };
 };
-export const createStyles = function createStyles(__exportStarResult1) {
-  const arg1 = __exportStarResult1;
+export const createStyles = function createStyles(result) {
+  const arg1 = result;
   const importDefault = new Map();
-  let closure_2 = "function" === typeof __exportStarResult1;
+  let closure_2 = "function" === typeof result;
   return (arg0) => {
     const items = [...arguments];
     arg0 = items;
@@ -255,8 +255,8 @@ export const createStyles = function createStyles(__exportStarResult1) {
         let items = arg0;
         items = [arg0, ];
         const obj = {
-          "Bool(true)": null,
-          "Bool(true)": null,
+          9223372036854775807: null,
+          9223372036854775807: null,
           get() {
             if (closure_2) {
               const items = [];
@@ -278,8 +278,8 @@ export const createStyles = function createStyles(__exportStarResult1) {
     }
   };
 };
-export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(__exportStarResult1) {
-  const arg1 = __exportStarResult1;
+export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(module_12379) {
+  const arg1 = module_12379;
   const importDefault = new Map();
   return (key) => {
     const FALLBACK_THEME_CONTEXT_VALUE = key(closure_2[4]).FALLBACK_THEME_CONTEXT_VALUE;
@@ -295,8 +295,8 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
       Object.defineProperties(obj, Object.fromEntries(keys.map((arg0) => {
         const items = [arg0, ];
         const obj = {
-          "Bool(true)": null,
-          "Bool(true)": null,
+          9223372036854775807: null,
+          9223372036854775807: null,
           get() {
             const tmp = callback(arg0[closure_0], arg0);
             Object.defineProperty(closure_1, arg0, { value: tmp, enumerable: true });

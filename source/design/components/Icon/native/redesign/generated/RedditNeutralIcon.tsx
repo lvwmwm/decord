@@ -1,14 +1,15 @@
 // Module ID: 11853
-// Function ID: 91796
+// Function ID: 91808
 // Name: RedditNeutralIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: RedditNeutralIcon
 
 // Module 11853 (RedditNeutralIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/RedditNeutralIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/RedditNeutralIcon.tsx");
 
 export const RedditNeutralIcon = function RedditNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

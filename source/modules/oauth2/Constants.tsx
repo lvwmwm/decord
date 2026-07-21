@@ -1,7 +1,7 @@
 // Module ID: 8945
-// Function ID: 70515
+// Function ID: 70526
 // Name: OAuth2Steps
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8945 (OAuth2Steps)
 const _module = require(dependencyMap[0]);

@@ -1,14 +1,14 @@
-// Module ID: 16415
-// Function ID: 126773
+// Module ID: 16423
+// Function ID: 126834
 // Name: StreamFullAlert
 // Dependencies: []
 // Exports: default
 
-// Module 16415 (StreamFullAlert)
+// Module 16423 (StreamFullAlert)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = { image: { height: 6, zIndex: "focus_mode_expires_at_ms" }, body: { marginTop: 16 } };
+let closure_6 = { image: { dampingRatio: null, stiffness: null }, body: { marginTop: 16 } };
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 

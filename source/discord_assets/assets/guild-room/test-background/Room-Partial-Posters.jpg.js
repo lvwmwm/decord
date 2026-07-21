@@ -1,9 +1,9 @@
-// Module ID: 15927
-// Function ID: 122155
+// Module ID: 15931
+// Function ID: 122199
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15927 (metadata)
+// Module 15931 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Room-Partial-Posters.jpg.js");
 

@@ -1,5 +1,5 @@
 // Module ID: 10545
-// Function ID: 82371
+// Function ID: 82382
 // Name: openIgnoreThermalStateAlert
 // Dependencies: []
 // Exports: openIgnoreThermalStateAlert

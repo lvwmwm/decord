@@ -1,5 +1,5 @@
 // Module ID: 8110
-// Function ID: 64227
+// Function ID: 64232
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,12 +19,13 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class TSpan {
+arg1(dependencyMap[6]);
+const jsx = arg1(dependencyMap[7]).jsx;
+const tmp4 = (arg0) => {
+  class Text {
     constructor() {
       self = this;
-      tmp = closure_3(this, TSpan);
+      tmp = closure_3(this, Text);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -32,7 +33,7 @@ const tmp3 = (arg0) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_6(TSpan);
+      obj = closure_6(Text);
       tmp3 = closure_5;
       if (closure_9()) {
         if (!combined) {
@@ -44,18 +45,21 @@ const tmp3 = (arg0) => {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      TSpan = tmp3Result;
+      Text = tmp3Result;
       tmp3Result.setNativeProps = (matrix) => {
-        let tmp = !matrix.matrix;
+        let tmp = matrix;
+        if (matrix) {
+          tmp = !matrix.matrix;
+        }
         if (tmp) {
-          tmp = callback(closure_2[7])(matrix);
+          tmp = callback(closure_2[8])(matrix);
         }
         if (tmp) {
           matrix.matrix = tmp;
         }
-        const propsAndStylesResult = tmp3Result(closure_2[8]).propsAndStyles(matrix);
-        const obj = tmp3Result(closure_2[8]);
-        const merged = Object.assign(propsAndStylesResult, tmp3Result(closure_2[9]).pickNotNil(callback(closure_2[10])(propsAndStylesResult, false)));
+        const propsAndStylesResult = tmp3Result(closure_2[9]).propsAndStyles(matrix);
+        const obj = tmp3Result(closure_2[9]);
+        const merged = Object.assign(propsAndStylesResult, tmp3Result(closure_2[10]).pickNotNil(callback(closure_2[11])(propsAndStylesResult, true)));
         if (tmp3Result.root) {
           const root = tmp3Result.root;
           root.setNativeProps(propsAndStylesResult);
@@ -64,25 +68,24 @@ const tmp3 = (arg0) => {
       return tmp3Result;
     }
   }
-  const arg1 = TSpan;
-  callback2(TSpan, arg0);
+  const arg1 = Text;
+  callback2(Text, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const propsAndStylesResult = TSpan(closure_2[8]).propsAndStyles(this.props);
-        const obj = TSpan(closure_2[8]);
-        const tmp2Result = callback(closure_2[8])(Object.assign({}, propsAndStylesResult, { max: "o", guildId: "o" }), this);
-        const merged = Object.assign(tmp2Result, callback(closure_2[10])(propsAndStylesResult, false));
+        const propsAndStylesResult = Text(closure_2[9]).propsAndStyles(this.props);
+        const obj = Text(closure_2[9]);
+        const tmp2Result = callback(closure_2[9])(Object.assign({}, propsAndStylesResult, {}), this);
+        const merged = Object.assign(tmp2Result, callback(closure_2[11])(propsAndStylesResult, true));
         tmp2Result.ref = this.refMethod;
-        const tmp2 = callback(closure_2[8]);
-        return callback4(callback(closure_2[11]), Object.assign({}, tmp2Result));
+        const tmp2 = callback(closure_2[9]);
+        return callback4(callback(closure_2[12]), Object.assign({}, tmp2Result));
       }
     }
   ];
-  return callback(TSpan, items);
-}(importDefault(dependencyMap[12]));
-tmp3.displayName = "TSpan";
-arg1(dependencyMap[10]).setTSpan(tmp3);
+  return callback(Text, items);
+}(importDefault(dependencyMap[13]));
+tmp4.displayName = "Text";
 
-export default tmp3;
+export default tmp4;

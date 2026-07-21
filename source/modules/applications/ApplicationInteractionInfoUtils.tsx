@@ -1,10 +1,10 @@
-// Module ID: 7910
-// Function ID: 62917
+// Module ID: 7911
+// Function ID: 62930
 // Name: canViewInteractionInfo
 // Dependencies: []
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 7910 (canViewInteractionInfo)
+// Module 7911 (canViewInteractionInfo)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 

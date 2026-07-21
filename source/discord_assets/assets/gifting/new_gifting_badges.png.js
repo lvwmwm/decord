@@ -1,9 +1,9 @@
-// Module ID: 15494
-// Function ID: 118223
+// Module ID: 15497
+// Function ID: 118262
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15494 (metadata)
+// Module 15497 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/gifting/new_gifting_badges.png.js");
 

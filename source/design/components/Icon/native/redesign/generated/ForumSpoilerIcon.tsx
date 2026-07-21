@@ -1,10 +1,10 @@
-// Module ID: 4638
-// Function ID: 40281
+// Module ID: 4637
+// Function ID: 40288
 // Name: ForumSpoilerIcon
 // Dependencies: []
 // Exports: ForumSpoilerIcon
 
-// Module 4638 (ForumSpoilerIcon)
+// Module 4637 (ForumSpoilerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ForumSpoilerIcon.tsx");

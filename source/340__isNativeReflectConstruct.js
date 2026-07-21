@@ -17,9 +17,9 @@ function _isNativeReflectConstruct() {
 function createRefForwarder(arg0) {
   const global = arg0;
   const obj = {
-    -9223372036854775808: null,
-    -9223372036854775808: "\u{1F9BB}\u{1F3FF}",
-    9223372036854775807: true,
+    isArray: false,
+    displayName: false,
+    string: null,
     getForwardingRef: importDefault(dependencyMap[28])((arg0) => (nativeInstance) => {
       let tmp = null;
       if (null != nativeInstance) {
@@ -39,7 +39,7 @@ function createRefForwarder(arg0) {
   const arg1 = obj;
   return obj;
 }
-let closure_4 = ["rejectResponderTermination"];
+let closure_4 = ["cancelable"];
 let closure_5 = [null];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
@@ -811,7 +811,7 @@ const tmp4 = (Component) => {
 }(importAllResult.Component);
 tmp4.Context = importDefault(dependencyMap[23]);
 const tmp3 = arg1(dependencyMap[7]);
-let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: {}, baseHorizontal: { marginRight: 56840585, columnGap: -1739341727, "Null": 1486415255, "Null": -506050936 }, contentContainerHorizontal: { flexDirection: "row" } });
+let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: { isArray: null, diversity: null, string: null, y: null }, baseHorizontal: { isArray: false, diversity: false, string: false, y: false }, contentContainerHorizontal: { flexDirection: "row" } });
 class Wrapper {
   constructor(arg0) {
     ref = global.ref;

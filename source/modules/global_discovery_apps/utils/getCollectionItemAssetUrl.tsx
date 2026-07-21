@@ -1,5 +1,5 @@
 // Module ID: 11233
-// Function ID: 87450
+// Function ID: 87462
 // Name: getCollectionItemAssetUrl
 // Dependencies: []
 // Exports: getCollectionItemAssetUrl

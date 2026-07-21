@@ -1,5 +1,5 @@
 // Module ID: 12222
-// Function ID: 93805
+// Function ID: 93817
 // Name: SettingsUpsellsTableRow
 // Dependencies: []
 // Exports: default

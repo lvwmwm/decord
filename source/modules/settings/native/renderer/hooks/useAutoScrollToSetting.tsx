@@ -1,10 +1,10 @@
-// Module ID: 14453
-// Function ID: 108906
+// Module ID: 14456
+// Function ID: 108938
 // Name: useAutoScrollToSearchResultSetting
 // Dependencies: []
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 14453 (useAutoScrollToSearchResultSetting)
+// Module 14456 (useAutoScrollToSearchResultSetting)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const NodeType = arg1(dependencyMap[2]).NodeType;
@@ -49,7 +49,7 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
             const obj2 = current;
           }
           if (!tmp8) {
-            obj = { index: initialScrollIndex };
+            obj = { "Bool(true)": null, "Bool(true)": "e42f1b42dc7bf4b285d5f4924a46e5c4", "Bool(true)": "TicketIcon", index: initialScrollIndex };
             obj2.scrollToIndex(obj);
           }
         }

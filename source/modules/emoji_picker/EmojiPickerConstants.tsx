@@ -1,9 +1,9 @@
-// Module ID: 5266
-// Function ID: 44775
+// Module ID: 5265
+// Function ID: 44782
 // Name: EmojiCategoryTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 5266 (EmojiCategoryTypes)
+// Module 5265 (EmojiCategoryTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
 
@@ -23,5 +23,5 @@ export const KAOMOJI_PICKER_TAB_PANEL_ID = "kaomoji-picker-tab-panel";
 export const KAOMOJI_PICKER_TAB_ID = "kaomoji-picker-tab";
 export const GIF_PICKER_TAB_PANEL_ID = "gif-picker-tab-panel";
 export const GIF_PICKER_TAB_ID = "gif-picker-tab";
-export const EMOJI_SIZE_MAP = { "Null": "channelTypes", "Null": "FRIEND_SUGGESTION", "Null": "clearAuthSessions" };
+export const EMOJI_SIZE_MAP = { position: "serverDeaf", paddingHorizontal: "expressionless", display: "trackNsfwSpaceWarningModalClicked" };
 export const EMOJI_ROW_SIZE = 9;

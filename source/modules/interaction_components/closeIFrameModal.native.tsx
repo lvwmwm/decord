@@ -1,10 +1,10 @@
-// Module ID: 15957
-// Function ID: 122388
+// Module ID: 15961
+// Function ID: 122432
 // Name: closeIFrameModal
 // Dependencies: [6, 7, 15, 17]
 // Exports: default
 
-// Module 15957 (closeIFrameModal)
+// Module 15961 (closeIFrameModal)
 import { INTERACTION_IFRAME_MODAL_KEY as closure_2 } from "_classCallCheck";
 import _getPrototypeOf from "_getPrototypeOf";
 

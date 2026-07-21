@@ -1,10 +1,10 @@
-// Module ID: 14363
-// Function ID: 108434
+// Module ID: 14366
+// Function ID: 108466
 // Name: SkeletonGrid
 // Dependencies: []
 // Exports: default
 
-// Module 14363 (SkeletonGrid)
+// Module 14366 (SkeletonGrid)
 function SkeletonGrid(accessibilityLabel) {
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   const arg1 = loadingCardsNum;
@@ -44,7 +44,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
-obj = { skeletonGrid: { -1034713870: null, -421288570: null } };
+obj = { skeletonGrid: { 9223372036854775807: "values", 9223372036854775807: "Array" } };
 obj = { flexDirection: "row", gap: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP };
 obj.skeletonRow = obj;
 let closure_5 = obj.createStyles(obj);

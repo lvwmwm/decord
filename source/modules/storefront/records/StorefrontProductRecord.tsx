@@ -1,5 +1,5 @@
 // Module ID: 6790
-// Function ID: 53620
+// Function ID: 53628
 // Name: StorefrontProductRecord
 // Dependencies: []
 
@@ -27,7 +27,7 @@ const tmp2 = () => {
         let tenant_metadata;
         let updated_at;
         ({ options, created_at, updated_at, skus, tenant_metadata } = sku_ids);
-        let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+        let obj = {};
         Object.setPrototypeOf(null);
         let tmp2 = StorefrontProductRecord;
         obj = {};

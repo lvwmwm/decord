@@ -1,5 +1,5 @@
 // Module ID: 9189
-// Function ID: 71976
+// Function ID: 71987
 // Name: useWideAuthView
 // Dependencies: []
 // Exports: default

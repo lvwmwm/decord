@@ -1,10 +1,10 @@
-// Module ID: 15172
-// Function ID: 114423
+// Module ID: 15175
+// Function ID: 114457
 // Name: showMembersManagementActionSheet
 // Dependencies: []
 // Exports: default, getMembersManagementActions
 
-// Module 15172 (showMembersManagementActionSheet)
+// Module 15175 (showMembersManagementActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
 

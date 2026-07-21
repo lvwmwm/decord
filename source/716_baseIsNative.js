@@ -1,7 +1,7 @@
 // Module ID: 716
-// Function ID: 8733
+// Function ID: 8737
 // Name: baseIsNative
-// Dependencies: []
+// Dependencies: [49610752, 3580952576, 1929379842, 725]
 
 // Module 716 (baseIsNative)
 let closure_2 = /^\[object .+?Constructor\]$/;

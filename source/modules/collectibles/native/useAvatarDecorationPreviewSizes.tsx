@@ -1,12 +1,13 @@
 // Module ID: 9768
-// Function ID: 75960
+// Function ID: 75971
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: []
+// Dependencies: [0, 0, 0]
 // Exports: useAvatarDecorationPreviewSizes
 
 // Module 9768 (useAvatarDecorationPreviewSizes)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/collectibles/native/useAvatarDecorationPreviewSizes.tsx");
+import result from "result";
+
+result = result.fileFinishedImporting("modules/collectibles/native/useAvatarDecorationPreviewSizes.tsx");
 
 export const useAvatarDecorationPreviewSizes = function useAvatarDecorationPreviewSizes() {
   const size = importDefault(dependencyMap[0])();

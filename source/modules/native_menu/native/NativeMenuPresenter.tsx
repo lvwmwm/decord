@@ -1,10 +1,10 @@
-// Module ID: 15469
-// Function ID: 117991
+// Module ID: 15472
+// Function ID: 118030
 // Name: MenuContainer
 // Dependencies: []
 // Exports: default
 
-// Module 15469 (MenuContainer)
+// Module 15472 (MenuContainer)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");

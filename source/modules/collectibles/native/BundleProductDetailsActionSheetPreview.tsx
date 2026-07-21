@@ -1,5 +1,5 @@
 // Module ID: 8739
-// Function ID: 69109
+// Function ID: 69120
 // Name: BundleThumbnail
 // Dependencies: []
 // Exports: default
@@ -53,11 +53,11 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.previewContainer = obj;
-const obj1 = { borderColor: "canCreatePrivateChannel", justifyContent: "MemberSafetyPagePermissions", alignItems: "type", overflow: "isArray", style: "SERVER_GUIDE_CHANNEL_SELECTED", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-obj.bundleThumbnail = obj1;
-const obj2 = { 0: true, 9223372036854775807: true, -9223372036854775808: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, borderRadius: importDefault(dependencyMap[6]).radii.sm + 2, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
-obj.selectedRing = obj2;
 const tmp4 = arg1(dependencyMap[4]);
+obj.bundleThumbnail = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+const obj2 = { GRADIENT_EASING_CONFIG: null, Globe: "heading-lg/bold", baseVertical: "mobile-text-heading-primary", canSort: "header", ebAnWE: "flex", flexGrow: "center", -77266183: "row", borderRadius: importDefault(dependencyMap[6]).radii.sm + 2, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
+obj.selectedRing = obj2;
+const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.bundleThumbnailRow = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_12, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: 2 };
 const obj3 = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_12, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: 2 };
 obj.bundleContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
@@ -171,7 +171,7 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
   const items6 = [name, ];
   let tmp22 = null != collectibleTypeLabel;
   if (tmp22) {
-    const obj10 = {};
+    const obj10 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
     const _HermesInternal = HermesInternal;
     obj10.children = " - " + collectibleTypeLabel;
     tmp22 = callback5(arg1(dependencyMap[11]).Text, obj10);

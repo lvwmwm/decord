@@ -1,5 +1,5 @@
 // Module ID: 12254
-// Function ID: 93994
+// Function ID: 94006
 // Name: SharedUser
 // Dependencies: []
 // Exports: default
@@ -37,11 +37,11 @@ function SharedUser(user) {
     obj1.children = items2;
     let tmp10 = callback2(closure_6, obj1);
   } else {
-    const obj5 = { style: tmp.recipientDisplayName, children: name };
+    const obj5 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, style: tmp.recipientDisplayName, children: name };
     tmp10 = callback(require(dependencyMap[8]).Text, obj5);
   }
   items1[1] = tmp10;
-  const obj6 = {};
+  const obj6 = { "Bool(true)": null, "Bool(true)": null };
   const intl2 = require(dependencyMap[9]).intl;
   obj6.text = intl2.string(require(dependencyMap[9]).t.g33r/P);
   const obj7 = { size: "xs", color: importDefault(dependencyMap[4]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
@@ -70,11 +70,11 @@ const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_16, alignSelf
 obj.subheader = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 const obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 obj.recipientContainer = { gap: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: 21 };
-const obj3 = { gap: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: 21 };
-obj.recipientRow = { padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+const obj4 = { "Null": 7, "Null": 370, padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj.recipientRow = obj4;
 obj.recipientDisplayName = { flex: 1 };
 obj.erroredAvatar = { opacity: 0.5 };
-obj.avatarContainer = { accessibilityRole: null, jsxs: null };
+obj.avatarContainer = { "Null": null, "Null": null };
 let closure_8 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[20]);
 const result = _module2.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 9285
-// Function ID: 72539
+// Function ID: 72550
 // Name: DCDChatItem
 // Dependencies: []
 // Exports: default

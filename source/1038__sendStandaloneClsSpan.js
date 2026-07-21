@@ -1,5 +1,5 @@
 // Module ID: 1038
-// Function ID: 11172
+// Function ID: 11176
 // Name: _sendStandaloneClsSpan
 // Dependencies: []
 // Exports: trackClsAsStandaloneSpan

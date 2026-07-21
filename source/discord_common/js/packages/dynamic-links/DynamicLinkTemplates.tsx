@@ -1,7 +1,7 @@
 // Module ID: 12238
-// Function ID: 93873
+// Function ID: 93885
 // Name: getInviteDynamicLinkTemplate
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getChannelDynamicLinkTemplate, getDefaultDynamicLinkTemplate, getGuildTemplateDynamicLinkTemplate, getInviteDynamicLinkTemplate
 
 // Module 12238 (getInviteDynamicLinkTemplate)

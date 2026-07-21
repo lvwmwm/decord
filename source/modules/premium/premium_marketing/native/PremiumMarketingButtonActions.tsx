@@ -1,10 +1,10 @@
-// Module ID: 7451
-// Function ID: 59744
+// Module ID: 7452
+// Function ID: 59756
 // Name: getButtonActionHandler
 // Dependencies: []
 // Exports: getButtonActionHandler
 
-// Module 7451 (getButtonActionHandler)
+// Module 7452 (getButtonActionHandler)
 let closure_3 = importDefault(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 ({ AnalyticsSections: closure_5, AnalyticsObjects: closure_6, AnalyticsObjectTypes: closure_7, UserSettingsSections: closure_8 } = arg1(dependencyMap[2]));

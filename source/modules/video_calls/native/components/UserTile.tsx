@@ -1,5 +1,5 @@
 // Module ID: 10579
-// Function ID: 82553
+// Function ID: 82564
 // Name: UserTile
 // Dependencies: []
 // Exports: default
@@ -19,11 +19,11 @@ const MediaEngineContextTypes = arg1(dependencyMap[9]).MediaEngineContextTypes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let obj1 = arg1(dependencyMap[11]);
 let obj = {};
-obj = { "Bool(false)": 3, "Bool(false)": "rgb", "Bool(false)": 32, "Bool(false)": 32, "Bool(false)": 20, backgroundColor: importDefault(dependencyMap[12]).colors.BLACK };
+obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BLACK };
 obj.container = obj;
-obj.imageBackground = { "Bool(true)": false, "Bool(true)": "auto", 0: "none", 0: true };
-obj.autoDisabledVideoWrapper = { bottom: true, body: true, disabled: true };
-obj1 = { imageStyle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016259745739813683, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000382693999994463, source: false };
+obj.imageBackground = {};
+obj.autoDisabledVideoWrapper = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj1 = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016259745739813683, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000142422538579256, 0: "<string:1358954918>" };
 const tmp2 = arg1(dependencyMap[10]);
 obj1.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj.autoDisabledVideo = obj1;
@@ -110,7 +110,7 @@ let closure_18 = importAllResult.memo((guildId) => {
       obj.style = items;
       obj = { source: tmp(id[17]), size: hasVideo(id[16]).Icon.Sizes.SMALL, disableColor: true };
       const items1 = [callback(hasVideo(id[16]).Icon, obj), ];
-      const obj1 = { style: tmp.labelText };
+      const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.labelText };
       const intl = hasVideo(id[19]).intl;
       obj1.children = intl.string(hasVideo(id[19]).t.m2Hyj0);
       items1[1] = callback(hasVideo(id[18]).Text, obj1);

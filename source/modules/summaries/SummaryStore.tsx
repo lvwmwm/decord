@@ -1,5 +1,5 @@
 // Module ID: 9476
-// Function ID: 73802
+// Function ID: 73813
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -46,7 +46,7 @@ let closure_24 = {};
 let closure_25 = {};
 let closure_26 = [];
 let closure_27 = {};
-obj = { length: null, offset: "\u{1F9BB}\u{1F3FF}", limit: true };
+obj = { "Null": false, "Null": false, "Null": null };
 obj.status = obj.OK;
 let closure_29 = [];
 let closure_30 = [];

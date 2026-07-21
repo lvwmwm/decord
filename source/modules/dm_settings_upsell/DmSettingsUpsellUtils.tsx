@@ -1,10 +1,10 @@
-// Module ID: 15890
-// Function ID: 121688
+// Module ID: 15894
+// Function ID: 121732
 // Name: trackEvent
 // Dependencies: [670, 2, 6]
 // Exports: trackEvent
 
-// Module 15890 (trackEvent)
+// Module 15894 (trackEvent)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

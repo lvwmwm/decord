@@ -1,10 +1,10 @@
-// Module ID: 7917
-// Function ID: 63099
+// Module ID: 7918
+// Function ID: 63112
 // Name: _fetchApplicationCommandIndex
 // Dependencies: []
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 7917 (_fetchApplicationCommandIndex)
+// Module 7918 (_fetchApplicationCommandIndex)
 async function _fetchApplicationCommandIndex(arg0, arg1, arg2) {
   function end(error) {
     const diff = performance.now() - undefined;

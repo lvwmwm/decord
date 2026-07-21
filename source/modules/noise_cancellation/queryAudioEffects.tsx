@@ -1,10 +1,10 @@
-// Module ID: 12707
-// Function ID: 97560
+// Module ID: 12709
+// Function ID: 97582
 // Name: _queryAudioEffects
 // Dependencies: []
 // Exports: default
 
-// Module 12707 (_queryAudioEffects)
+// Module 12709 (_queryAudioEffects)
 function _queryAudioEffects() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

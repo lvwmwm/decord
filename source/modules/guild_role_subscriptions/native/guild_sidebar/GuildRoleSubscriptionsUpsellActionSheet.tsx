@@ -1,17 +1,17 @@
-// Module ID: 14939
-// Function ID: 112473
+// Module ID: 14942
+// Function ID: 112507
 // Name: GuildRoleSubscriptionsUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14939 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 14942 (GuildRoleSubscriptionsUpsellActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildSettingsSections = arg1(dependencyMap[2]).GuildSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ title: { "Null": null, "Null": "absolute" }, description: {}, dismissButton: { marginTop: 4 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ title: {}, description: { "Null": "isArray", "Null": "skuId", "Null": "textAlign" }, dismissButton: { marginTop: 4 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsUpsellActionSheet.tsx");
 
@@ -26,7 +26,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   };
   obj = { source: importDefault(dependencyMap[8]) };
   const items = [callback(importDefault(dependencyMap[7]), obj), , , , ];
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.C0m4rQ);
   items[1] = callback(arg1(dependencyMap[9]).Text, obj);

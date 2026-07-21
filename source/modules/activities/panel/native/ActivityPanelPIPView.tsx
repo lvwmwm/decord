@@ -1,9 +1,9 @@
-// Module ID: 15571
-// Function ID: 118802
+// Module ID: 15574
+// Function ID: 118841
 // Name: useBaseActivityPanelPIPView
 // Dependencies: []
 
-// Module 15571 (useBaseActivityPanelPIPView)
+// Module 15574 (useBaseActivityPanelPIPView)
 function useBaseActivityPanelPIPView() {
   const tmp = importDefault(dependencyMap[15])();
   const arg1 = tmp;
@@ -218,7 +218,7 @@ class BaseActivityPanelPIPView {
     items4[0] = setMode;
     tmp12Result = tmp12(obj3);
     memo1 = defineProperty.useMemo(() => {
-      const obj = {};
+      const obj = { mediaContentContainer: null, pQ3bLk: 4, LANDING_FRAME_NAME: "column" };
       const intl = transitionState(stateFromStores[27]).intl;
       obj.accessibilityLabel = intl.string(transitionState(stateFromStores[27]).t.3ejJer);
       const items = [{ name: "activate" }];

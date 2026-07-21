@@ -1,5 +1,5 @@
 // Module ID: 9414
-// Function ID: 73265
+// Function ID: 73276
 // Name: NODE_SIZE
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ const View = arg1(dependencyMap[2]).View;
 ({ EXPRESSION_FOOTER_HEIGHT: closure_6, NODE_SIZE } = arg1(dependencyMap[3]));
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { "Null": null, "Null": null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
+obj = { margin: null, backgroundColor: null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 let closure_8 = obj.createStyles({ itemInner: obj, fadedItemOpacity: { opacity: 0.5 } });
 let closure_9 = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx1(){const{blockRef}=this.__closure;return blockRef.get();}" };
 let closure_10 = { code: "function EmojiPickerCategoriesUnicodeShortcutItemTsx2(blockRef,previous){const{cheapWorkletShallowEqual,categoryIndex,EXPRESSION_FOOTER_HEIGHT,unicodeShortcutVisible,runOnJS,setUnicodeShortcutVisible}=this.__closure;if(blockRef==null||cheapWorkletShallowEqual(blockRef,previous!==null&&previous!==void 0?previous:undefined)){return;}const categoryScrollPos=categoryIndex*EXPRESSION_FOOTER_HEIGHT;const categoryUnicodeShortcutVisible=categoryScrollPos>blockRef.end-(unicodeShortcutVisible?0:EXPRESSION_FOOTER_HEIGHT);runOnJS(setUnicodeShortcutVisible)(categoryUnicodeShortcutVisible);}" };

@@ -1,10 +1,10 @@
-// Module ID: 7652
-// Function ID: 61201
+// Module ID: 7653
+// Function ID: 61213
 // Name: DoubleTapErrorToastIcon
 // Dependencies: []
 // Exports: showDoubleTapErrorToast
 
-// Module 7652 (DoubleTapErrorToastIcon)
+// Module 7653 (DoubleTapErrorToastIcon)
 function DoubleTapErrorToastIcon() {
   let obj = { style: callback().icon, aria-hidden: true };
   obj = { color: importDefault(dependencyMap[5]).colors.WHITE, size: "xs" };

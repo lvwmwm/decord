@@ -1,5 +1,5 @@
 // Module ID: 10846
-// Function ID: 84218
+// Function ID: 84229
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -1435,7 +1435,7 @@ const forwardRefResult = importAllResult.forwardRef((messages) => {
 forwardRefResult.displayName = "Messages";
 const tmp3 = arg1(dependencyMap[10]);
 const memoResult = importAllResult.memo(forwardRefResult, (interactionStates, interactionStates2) => {
-  const tmp = !importDefault(dependencyMap[33])(interactionStates, interactionStates2, [null], { shouldWarnLargeObjects: false });
+  const tmp = !importDefault(dependencyMap[33])(interactionStates, interactionStates2, [], { shouldWarnLargeObjects: false });
   let tmp2 = !tmp;
   if (!tmp) {
     tmp2 = importDefault(dependencyMap[33])(interactionStates.interactionStates, interactionStates2.interactionStates);

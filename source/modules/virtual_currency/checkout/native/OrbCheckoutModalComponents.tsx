@@ -1,5 +1,5 @@
 // Module ID: 11822
-// Function ID: 91652
+// Function ID: 91664
 // Name: OrbCheckoutErrorCard
 // Dependencies: []
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[3]);
 obj = { topRowWrapper: {}, rowWrapper: {} };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.rowDetailsContainer = obj;
-obj.orbPaymentSourceDetails = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" };
+obj.orbPaymentSourceDetails = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.sectionTitle = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
 const obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
@@ -27,8 +27,8 @@ const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/virtual_cu
 
 export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(children) {
   let obj = { style: callback3().errorCard };
-  obj = { "Bool(true)": -144637951, "Bool(true)": 17545793, "Bool(true)": 1106731264 };
-  const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, { flex: "%JSONStringify%", flexGrow: "isArrayBuffer" }), callback(arg1(dependencyMap[7]).Text, { children: children.error })];
+  obj = { 9223372036854775807: "fi", 9223372036854775807: "pillIcon", -9223372036854775808: "VOICE_CHANNEL_ACTIVITY" };
+  const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, { accessibilityRole: "%Math%", "": "isArrayBuffer" }), callback(arg1(dependencyMap[7]).Text, { children: children.error })];
   obj.children = items;
   obj.children = callback2(arg1(dependencyMap[5]).Stack, obj);
   return callback(closure_4, obj);

@@ -1,5 +1,5 @@
 // Module ID: 10914
-// Function ID: 84822
+// Function ID: 84833
 // Name: useTrackQuestEventWithImpression
 // Dependencies: []
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackQuestContentClickedWithImpression

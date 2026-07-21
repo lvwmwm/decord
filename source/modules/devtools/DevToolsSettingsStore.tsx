@@ -1,9 +1,9 @@
-// Module ID: 6954
-// Function ID: 55556
+// Module ID: 6955
+// Function ID: 55568
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6954 (_isNativeReflectConstruct)
+// Module 6955 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,7 +19,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = { devWidgetPosition: { max: -536870861, guildId: -299892737 }, sortedScreenKeys: [] };
+let closure_8 = { devWidgetPosition: {}, sortedScreenKeys: [] };
 let tmp2 = (DeviceSettingsStore) => {
   class DevToolsSettingsStore {
     constructor() {

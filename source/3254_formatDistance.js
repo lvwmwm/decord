@@ -1,11 +1,11 @@
 // Module ID: 3254
-// Function ID: 25935
+// Function ID: 25940
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3254 (formatDistance)
-let closure_0 = { lessThanXSeconds: {}, xSeconds: { -9223372036854775808: "Array", 0: "setOpacityTo" }, halfAMinute: "30 secondes", lessThanXMinutes: { -9223372036854775808: true, 0: true }, xMinutes: { -9223372036854775808: null, 0: null }, aboutXHours: { -9223372036854775808: true, 0: true }, xHours: { -9223372036854775808: 19323648, 0: 22298368 }, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: { -9223372036854775808: "press", 0: "reply_button" } };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": true, "Bool(false)": true }, xSeconds: { "Bool(false)": null, "Bool(false)": null }, halfAMinute: "30 secondes", lessThanXMinutes: { "Bool(false)": 32786432, "Bool(false)": 25564160 }, xMinutes: {}, aboutXHours: {}, xHours: { "Bool(false)": null, "Bool(false)": null }, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: { "Bool(false)": "manje od {{count}} sekunde", "Bool(false)": "manje od {{count}} sekundi" }, xMonths: { "Bool(false)": "manje od 1 sekunde", "Bool(false)": "manje od 1 sekunde" }, aboutXYears: { "Bool(false)": true, "Bool(false)": true }, xYears: { "Bool(false)": "{{count}} sekunde", "Bool(false)": "{{count}} sekundi" }, overXYears: { "Bool(false)": "1 sekunda", "Bool(false)": "1 sekunde" }, almostXYears: { "Bool(false)": true, "Bool(false)": true } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

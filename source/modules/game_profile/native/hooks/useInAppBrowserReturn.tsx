@@ -1,5 +1,5 @@
 // Module ID: 8594
-// Function ID: 68245
+// Function ID: 68256
 // Name: useInAppBrowserReturn
 // Dependencies: []
 // Exports: default

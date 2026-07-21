@@ -1,9 +1,9 @@
-// Module ID: 15269
-// Function ID: 115267
+// Module ID: 15272
+// Function ID: 115301
 // Name: ThreadListTableRow
 // Dependencies: []
 
-// Module 15269 (ThreadListTableRow)
+// Module 15272 (ThreadListTableRow)
 function ThreadListTableRow(thread) {
   let end;
   let start;
@@ -27,7 +27,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ subLabel: { "Bool(true)": null, "Bool(true)": null } });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ subLabel: { "Bool(false)": false, "Bool(false)": "auto.db.supabase.postgres" } });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((threadId) => {
   let end;

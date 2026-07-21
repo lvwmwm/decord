@@ -1,5 +1,5 @@
 // Module ID: 10819
-// Function ID: 83998
+// Function ID: 84009
 // Name: _getPrimaryAppCommand
 // Dependencies: []
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
@@ -15,7 +15,7 @@ function queryForPrimaryAppCommand(closure_0, id) {
   let obj = {};
   const items = [id(dependencyMap[4]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items;
-  obj = { "Bool(false)": "100%", "Bool(false)": "hidden", "Bool(false)": "flex-end", "Bool(false)": "row", "Bool(false)": "center", scoreMethod: id(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId: id };
+  obj = { <string:4199657057>: "100%", <string:3821364133>: "hidden", <string:1393906828>: "flex-end", <string:3980691200>: "row", <string:3595885077>: "center", scoreMethod: id(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId: id };
   return closure_7.query(closure_0, obj, obj).commands[0];
 }
 function useGetPrimaryAppCommand(context, applicationId) {
@@ -40,7 +40,7 @@ function useGetPrimaryAppCommand(context, applicationId) {
 }
 function useQueryForPrimaryAppCommand(context, applicationId) {
   let obj = { commandTypes: items };
-  obj = { "Bool(false)": "100%", "Bool(false)": "hidden", "Bool(false)": "flex-end", "Bool(false)": "row", "Bool(false)": "center", scoreMethod: applicationId(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId };
+  obj = { <string:4199657057>: "100%", <string:3821364133>: "hidden", <string:1393906828>: "flex-end", <string:3980691200>: "row", <string:3595885077>: "center", scoreMethod: applicationId(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId };
   return callback2(context, obj, obj);
 }
 function isPrimaryAppCommandUsableInAppDM(integration_types) {

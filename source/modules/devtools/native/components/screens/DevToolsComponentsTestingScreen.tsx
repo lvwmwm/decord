@@ -1,10 +1,10 @@
-// Module ID: 14556
-// Function ID: 109692
+// Module ID: 14559
+// Function ID: 109724
 // Name: Select
 // Dependencies: []
 // Exports: default
 
-// Module 14556 (Select)
+// Module 14559 (Select)
 function Select(children) {
   let type = children.type;
   const tmp = importDefaultResult(React.useState(false), 2);
@@ -48,12 +48,12 @@ function Select(children) {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    state = ["their", mapped.join(", ")];
+    state = [454480908, mapped.join(", ")];
     obj2.children = state;
     closure_8(callback(dependencyMap[11]).Text, obj2);
     const tmp24 = closure_8;
   } else {
-    items[2] = callback2(callback(dependencyMap[11]).Text, { "Null": null, "Null": null });
+    items[2] = callback2(callback(dependencyMap[11]).Text, { <string:1749439162>: 1092681729, <string:140675621>: 73114 });
     const obj3 = {};
     let str4 = "off";
     if (first) {
@@ -82,15 +82,19 @@ obj.wrap = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.contentContainer = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 let closure_9 = obj.createStyles(obj);
-const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
-const obj2 = { -9223372036854775808: "DEFAULT_AUDIO_MIXER_SETTINGS", 0: "toPermissionKey", -9223372036854775808: "ll", 0: "COPY_INSTANT_INVITE", 0: "getCurrentAppState", type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT };
-const items = [{ raw: true, body: true }, {}, { emoji: { name: "\u2B50" } }, { emoji: {} }];
+let obj4 = arg1(dependencyMap[7]);
+const obj2 = { accessible: null, useStateFromStores: null, d: null, Date: null, state: null, type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT };
+const items = [{ <string:2048437162>: null, <string:2887950716>: null }, {}, , ];
+const obj3 = { <string:2048437162>: null, <string:2887950716>: null, emoji: { name: "\u2B50" } };
+items[2] = obj3;
+obj4 = { <string:2048437162>: null, <string:2887950716>: null, emoji: { top: null, right: null, left: null } };
+items[3] = obj4;
 obj2.options = items;
 const items1 = [obj2, ];
-const obj5 = arg1(dependencyMap[7]);
+const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 items1[1] = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
-const transformComponentsResult = obj5.transformComponents(items1);
-const obj3 = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
+const transformComponentsResult = obj4.transformComponents(items1);
+const obj5 = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
 [closure_11, closure_12] = importDefaultResult(transformComponentsResult, 2);
 const importDefaultResultResult = importDefaultResult(transformComponentsResult, 2);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsComponentsTestingScreen.tsx");
@@ -120,7 +124,7 @@ export default function DevToolsComponentsTestingScreen() {
   items[1] = callback3(arg1(dependencyMap[9]).ComponentStateContextProvider, obj);
   items[2] = callback2(arg1(dependencyMap[14]).Button, {
     onPress() {
-      return callback(closure_2[17]).dispatch({ login_method: "Authorization", fromRegister: false });
+      return callback(closure_2[17]).dispatch({});
     },
     text: "Reset Modal State"
   });

@@ -1,5 +1,5 @@
 // Module ID: 9037
-// Function ID: 70991
+// Function ID: 71002
 // Name: SelfDismissibleAlertBody
 // Dependencies: []
 // Exports: SelfDismissibleAlertBody
@@ -34,13 +34,13 @@ export const SelfDismissibleAlertBody = function SelfDismissibleAlertBody(errorC
   let tmp4 = body;
   if (null != errorCodeMessage) {
     obj = { style: tmp.container };
-    obj = {};
+    obj = { <string:1558859557>: "Reflect", <string:996770733>: "container" };
     const items2 = [, ];
     ({ body: arr3[0], alertBody: arr3[1] } = tmp);
     obj.style = items2;
     obj.children = body;
     const items3 = [callback(arg1(dependencyMap[6]).Text, obj), ];
-    const obj1 = {};
+    const obj1 = { <string:1558859557>: "Reflect", <string:996770733>: "container" };
     const items4 = [, ];
     ({ body: arr5[0], errorCodeText: arr5[1] } = tmp);
     obj1.style = items4;

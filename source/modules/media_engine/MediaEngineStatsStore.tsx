@@ -1,5 +1,5 @@
 // Module ID: 4211
-// Function ID: 36591
+// Function ID: 36599
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -99,7 +99,7 @@ function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
   let tmp = arg2;
   const found = arr.find((type) => "video" === type.type);
   if (null == arg2) {
-    const obj = { nick: "r", colorString: "setAlert", colorStrings: "jsVersion", variant: "SELF_HARM_CONTENT", color: "numMediaItems", style: "r", children: "isSearching", <string:4217527512>: "SELF_HARM_CONTENT", <string:223783584>: "numMemberTabReturnedResults", <string:3180073356>: "r", minVersion };
+    const obj = { minVersion };
     tmp = obj;
   }
   if (null == found) {

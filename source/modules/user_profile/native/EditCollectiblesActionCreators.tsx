@@ -1,10 +1,10 @@
-// Module ID: 7851
-// Function ID: 62579
+// Module ID: 7852
+// Function ID: 62592
 // Name: navigateToNitroManagement
 // Dependencies: []
 // Exports: navigateToNitroManagement
 
-// Module 7851 (navigateToNitroManagement)
+// Module 7852 (navigateToNitroManagement)
 const UserSettingsSections = require(dependencyMap[0]).UserSettingsSections;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/user_profile/native/EditCollectiblesActionCreators.tsx");

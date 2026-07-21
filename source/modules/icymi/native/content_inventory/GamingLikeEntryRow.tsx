@@ -1,10 +1,10 @@
-// Module ID: 15102
-// Function ID: 113911
+// Module ID: 15105
+// Function ID: 113945
 // Name: items
-// Dependencies: [32178176, 305594368, 438173696, 519831552, 102039552, 31260672, 351404032, 597295104, 350945280, 647168000, 131072, 108199936, 503316507, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15106, 334832, 2031616, 88342528, 292552704, 121176064, 121372672, 270073856, 2162688, 37093376]
+// Dependencies: [32178176, 305528832, 438173696, 519897088, 102039552, 31260672, 351338496, 597295104, 350879744, 647168000, 131072, 124977152, 503316507, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15109, 334832, 2031616, 88342528, 292552704, 121176064, 121372672, 270073856, 2162688, 37093376]
 // Exports: default
 
-// Module 15102 (items)
+// Module 15105 (items)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);
@@ -60,19 +60,16 @@ const obj2 = {
     return true === arg1(dependencyMap[5]).isEntryMarathon(entry);
   }
 };
-let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((arg0) => {
+let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((gap) => {
   let obj = {};
-  obj = { x: null, "Null": null, "Null": null };
-  ({ margin: obj2.gap, margin: obj2.padding, inset: obj2.marginLeft } = arg0);
-  obj.borderRadius = importDefault(dependencyMap[8]).radii.lg;
-  obj.backgroundColor = importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH;
+  obj = { gap: gap.margin, padding: gap.margin, marginLeft: gap.inset, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
   const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_HIGH);
   obj.card = obj;
-  obj.cardInnerContainer = {};
-  obj = { bhk: false, bic: false, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+  obj.cardInnerContainer = { <string:1660689751>: null, <string:5332066>: null };
+  obj = { "Null": "NR", "Null": "__RRWEB_EXCLUDE_SHADOW_DOM__", borderRadius: importDefault(dependencyMap[8]).radii.sm };
   obj.image = obj;
   obj.gameName = { maxWidth: 275, color: importDefault(dependencyMap[8]).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
-  const obj2 = { 0: false, 9223372036854775807: false, 0: false, 0: false, -9223372036854775808: false, 9223372036854775807: false, gap: importDefault(dependencyMap[8]).space.PX_8 };
+  const obj2 = { 0: true, 9223372036854775807: true, 0: true, 0: true, -9223372036854775808: true, 9223372036854775807: true, gap: importDefault(dependencyMap[8]).space.PX_8 };
   obj.badges = obj2;
   return obj;
 });
@@ -178,7 +175,7 @@ export default function GamingLikeEntryRow(content) {
         obj.onPress = tmp11;
         obj1 = {};
         const isEntryActiveResult = arg1(dependencyMap[5]).isEntryActive(content);
-        obj2 = {};
+        obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
         let tmp20;
         if (null != displayNameStylesFont) {
           const obj3 = { fontFamily: displayNameStylesFont };
@@ -188,14 +185,14 @@ export default function GamingLikeEntryRow(content) {
         let obj10 = importDefault(dependencyMap[25]);
         obj2.children = obj10.getName(stateFromStores);
         const items5 = [callback(arg1(dependencyMap[24]).Text, obj2), ];
-        const obj4 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10 };
+        const obj4 = { "Null": 0, "Null": 5.566, "Null": 10 };
         let obj12 = arg1(dependencyMap[26]);
         let obj13 = importDefault(dependencyMap[27]);
         obj4.children = obj12.getRelativeTimestamp(obj13.extractTimestamp(content.id));
         items5[1] = callback(arg1(dependencyMap[24]).Text, obj4);
         obj1.children = items5;
         obj.title = closure_9(closure_8, obj1);
-        obj5 = { "Null": 1107296850, "Null": 107218 };
+        obj5 = { <string:2077996694>: null, <string:4179938721>: null };
         let obj15 = arg1(dependencyMap[5]);
         let str3 = "text-default";
         if (obj15.isEntryActive(content)) {

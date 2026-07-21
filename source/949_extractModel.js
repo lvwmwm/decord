@@ -1,5 +1,5 @@
 // Module ID: 949
-// Function ID: 10277
+// Function ID: 10281
 // Name: extractModel
 // Dependencies: []
 // Exports: instrumentGoogleGenAIClient
@@ -198,7 +198,7 @@ function instrumentMethod(arg0, arg1, arg2, arg3) {
           }
           return arg0(arg2[13]).handleCallbackErrors(() => arg0.apply(closure_1, closure_1), (arg0) => {
             let obj = arg0(closure_1[12]);
-            obj = { onDrawerSlide: false, onDrawerStateChanged: false };
+            obj = { id: null, gameId: null };
             obj = { function: arg0 };
             obj.data = obj;
             obj.captureException(arg0, { mechanism: obj });

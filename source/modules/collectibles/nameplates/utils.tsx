@@ -1,10 +1,14 @@
 // Module ID: 1873
-// Function ID: 20862
+// Function ID: 20867
 // Name: getNameplateData
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1889, 1891, 20]
 // Exports: getBackgroundGradientColors, getNameplateDataFromProductRecord, getNameplateSampleUsers, parseFirstFrame
 
 // Module 1873 (getNameplateData)
+import { isNameplateRecord } from "asyncGeneratorStep";
+import { ThemeTypes } from "_classCallCheck";
+import AppStartPerformance from "AppStartPerformance";
+
 function getNameplateData(nameplate) {
   let tmp = null;
   if (null != nameplate) {
@@ -40,10 +44,7 @@ function getNameplatePalette(palette) {
   }
   return INVALID_NAMEPLATE_PALETTE;
 }
-const isNameplateRecord = require(dependencyMap[0]).isNameplateRecord;
-const ThemeTypes = require(dependencyMap[1]).ThemeTypes;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/collectibles/nameplates/utils.tsx");
+const result = AppStartPerformance.fileFinishedImporting("modules/collectibles/nameplates/utils.tsx");
 
 export { getNameplateData };
 export const getNameplateDataFromProductRecord = function getNameplateDataFromProductRecord(product) {

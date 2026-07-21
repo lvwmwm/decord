@@ -1,7 +1,7 @@
 // Module ID: 4172
-// Function ID: 35417
+// Function ID: 35425
 // Name: DevToolsFocusedPidsTrackMode
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4172 (DevToolsFocusedPidsTrackMode)
 const _module = require(dependencyMap[0]);

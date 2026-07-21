@@ -1,5 +1,5 @@
 // Module ID: 10514
-// Function ID: 82067
+// Function ID: 82078
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -300,7 +300,7 @@ let tmp6 = (arg0) => {
       let obj = EmbeddedActivitiesNativeManager(closure_2[26]);
       obj = { location, applicationId, showFeedback };
       obj.stopEmbeddedActivity(obj);
-      obj = { -9223372036854775808: "Group 6", 9223372036854775807: 1, 9223372036854775807: 2, 9223372036854775807: 0, applicationId };
+      obj = { valid: 503316741, dnsWarn: 503317000, rfc5321: 285213192, cfws: 37004865, applicationId };
       callback(closure_2[24]).dispatch(obj);
     }
   };

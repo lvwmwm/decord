@@ -1,5 +1,5 @@
 // Module ID: 12299
-// Function ID: 94185
+// Function ID: 94197
 // Name: usePremiumGroupMembership
 // Dependencies: []
 // Exports: default

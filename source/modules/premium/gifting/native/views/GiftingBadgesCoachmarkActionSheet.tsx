@@ -1,10 +1,10 @@
-// Module ID: 15493
-// Function ID: 118214
+// Module ID: 15496
+// Function ID: 118253
 // Name: HasBadgeCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 15493 (HasBadgeCoachmark)
+// Module 15496 (HasBadgeCoachmark)
 function HasBadgeCoachmark(markAsDismissed) {
   let currentTier;
   let giftCount;
@@ -37,7 +37,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   obj.children = tmp9;
   const items2 = [callback(closure_5, obj), , ];
   const obj2 = { style: tmp.textContainer };
-  const obj3 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003131513669135372, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000962250703, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001018557979663, style: tmp.text };
+  const obj3 = { delete: "absolute", dispatch: 0, raw: 0, style: tmp.text };
   const intl = arg1(dependencyMap[12]).intl;
   const obj4 = {};
   const name = currentTier.name;
@@ -103,7 +103,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const intl = arg1(dependencyMap[12]).intl;
   obj4.children = intl.string(importDefault(dependencyMap[13]).Q2RQka);
   const items3 = [callback(arg1(dependencyMap[11]).Text, obj4), ];
-  const obj5 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.text };
+  const obj5 = { style: tmp.text };
   const intl2 = arg1(dependencyMap[12]).intl;
   obj5.children = intl2.string(importDefault(dependencyMap[13]).3EQnkg);
   items3[1] = callback(arg1(dependencyMap[11]).Text, obj5);
@@ -132,10 +132,10 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[6]).space.PX_24 };
 obj.container = obj;
-const obj1 = { alignSelf: true, marginTop: true, opacity: true, style: "absolute", padding: importDefault(dependencyMap[6]).space.PX_16 };
-obj.graphicContainer = obj1;
-obj.newBadgeImage = { <string:2886096359>: null, <string:493005838>: "c0ad0e7adefed3e2ebad52c7f4beb394", <string:2886572783>: "progress-setup" };
 const tmp3 = arg1(dependencyMap[4]);
+obj.graphicContainer = { padding: importDefault(dependencyMap[6]).space.PX_16 };
+obj.newBadgeImage = { backgroundColor: "/assets/images/native/icons", borderRadius: 24, width: 24 };
+const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.textContainer = { gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.text = { textAlign: "center" };
 obj.footer = { width: "100%" };

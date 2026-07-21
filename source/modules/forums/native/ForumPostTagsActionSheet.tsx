@@ -1,5 +1,5 @@
 // Module ID: 9849
-// Function ID: 76239
+// Function ID: 76250
 // Name: ForumPostTagsActionSheet
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const View = arg1(dependencyMap[2]).View;
 const MAX_FORUM_POST_TAGS = arg1(dependencyMap[3]).MAX_FORUM_POST_TAGS;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { Symbol: 285213929, justifyContent: 815361, Icon: -1974403072 }, saveButton: {}, subtitle: { marginTop: 4 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { 979464370: true, 1637975633: true, 50352554: true }, saveButton: {}, subtitle: { marginTop: 4 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
 

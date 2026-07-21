@@ -1,10 +1,10 @@
-// Module ID: 15375
-// Function ID: 117188
+// Module ID: 15378
+// Function ID: 117227
 // Name: GridSquareIcon
 // Dependencies: []
 // Exports: GridSquareIcon
 
-// Module 15375 (GridSquareIcon)
+// Module 15378 (GridSquareIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GridSquareIcon.tsx");

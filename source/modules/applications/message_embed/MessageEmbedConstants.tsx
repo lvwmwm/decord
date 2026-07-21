@@ -1,9 +1,9 @@
-// Module ID: 6924
-// Function ID: 55242
+// Module ID: 6925
+// Function ID: 55254
 // Name: LinkType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6924 (LinkType)
+// Module 6925 (LinkType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/applications/message_embed/MessageEmbedConstants.tsx");
 

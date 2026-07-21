@@ -1,5 +1,5 @@
 // Module ID: 10363
-// Function ID: 79958
+// Function ID: 79969
 // Name: openChannelPicker
 // Dependencies: []
 // Exports: default
@@ -21,7 +21,7 @@ export default function openChannelPicker(onClose) {
       return true;
     };
   }
-  let obj = {};
+  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onClose, obj);
   const guild = guild.getGuild(guildId);

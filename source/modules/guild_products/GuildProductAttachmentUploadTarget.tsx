@@ -1,22 +1,26 @@
-// Module ID: 4705
-// Function ID: 40923
+// Module ID: 4704
+// Function ID: 40930
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: []
+// Dependencies: [4741, 4742, 4743, 4744, 4745]
 
-// Module 4705 (GuildProductAttachmentUploadTarget)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = arg1(dependencyMap[2]));
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+// Module 4704 (GuildProductAttachmentUploadTarget)
+import error from "error";
+import getStringFromDataView from "getStringFromDataView";
+import DataView from "DataView";
+import { Endpoints } from "addFileType";
+import module_4745 from "module_4745";
+
+({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = DataView);
+const result = module_4745.fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
+
+export default () => {
   class GuildProductAttachmentUploadTarget {
     constructor() {
       tmp = GuildProductAttachmentUploadTarget(this, GuildProductAttachmentUploadTarget);
       return;
     }
   }
-  let closure_0 = GuildProductAttachmentUploadTarget;
+  let error = GuildProductAttachmentUploadTarget;
   let obj = {
     key: "getCreateAttachmentURL",
     value(arg0) {
@@ -58,6 +62,3 @@ const tmp3 = () => {
   };
   return callback(GuildProductAttachmentUploadTarget, items);
 }();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
-
-export default tmp3;

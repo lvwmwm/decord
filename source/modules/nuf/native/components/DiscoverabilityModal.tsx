@@ -1,5 +1,5 @@
 // Module ID: 11771
-// Function ID: 91364
+// Function ID: 91376
 // Name: DiscoverabilityLandingScene
 // Dependencies: []
 
@@ -119,7 +119,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Bool(false)": "isArray", "Bool(false)": "accessibilityRole", "Bool(false)": "value", "Bool(false)": "container", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
+obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 obj.container = obj;
 let closure_8 = obj.createStyles(obj);
 DiscoverabilityModal.modalConfig = { animation: arg1(dependencyMap[4]).ModalAnimation.SLIDE_IN_OUT };

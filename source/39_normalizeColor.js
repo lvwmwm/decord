@@ -1,7 +1,7 @@
 // Module ID: 39
 // Function ID: 1277
 // Name: normalizeColor
-// Dependencies: []
+// Dependencies: [0, 4294967295]
 
 // Module 39 (normalizeColor)
 arg5.default = function normalizeColor(arg0) {

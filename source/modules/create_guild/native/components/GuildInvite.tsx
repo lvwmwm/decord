@@ -1,5 +1,5 @@
 // Module ID: 11731
-// Function ID: 91107
+// Function ID: 91119
 // Name: SeeMoreFooter
 // Dependencies: []
 // Exports: default
@@ -77,14 +77,14 @@ obj.header = { marginBottom: 8 };
 obj.description = {};
 obj.headerImage = { marginVertical: 16 };
 obj.linkContainer = {};
-const obj1 = { "Null": "headMetaSocial", "Null": "png", "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "_gameProfileResults", "Bool(false)": "r", "Bool(false)": "MERCH_STORE", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
-obj.linkButton = obj1;
 const tmp4 = arg1(dependencyMap[10]);
-obj.linkButtonIcon = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.linkButton = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
+const obj2 = { "Bool(false)": "r", "Bool(false)": "gift_info", tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.linkButtonIcon = obj2;
 obj.inviteDetail = { marginTop: 8 };
 obj.shareButton = { marginVertical: 16 };
-obj.suggestionsContainer = { "Bool(false)": 0.00000000000000008415554799014589, "Bool(false)": null, "Bool(false)": null };
-const obj2 = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.suggestionsContainer = {};
+const obj1 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.friendIcon = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
 obj.suggestionRowsContainer = { marginHorizontal: 12 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xxl };

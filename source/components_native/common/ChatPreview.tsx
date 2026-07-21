@@ -1,5 +1,5 @@
 // Module ID: 9301
-// Function ID: 72625
+// Function ID: 72636
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
@@ -76,14 +76,14 @@ const tmp4 = arg1(dependencyMap[12]);
 const tmp5 = arg1(dependencyMap[13]);
 ({ jsx: closure_21, jsxs: closure_22 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { chat: { 9223372036854775807: 10, 9223372036854775807: 10 } };
+obj = { chat: { Č: 10, accessibilityDismiss: 10 } };
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.containerInner = obj;
 const tmp6 = arg1(dependencyMap[14]);
 obj.jumpToChatButtonContainer = { flexShrink: 0, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { flexShrink: 0, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH };
 obj.jumpToChatButton = { height: 44, borderTopWidth: tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
-obj.jumpToChatText = { "Null": -1140850104, "Null": 1358954898, "Null": 208844757 };
+obj.jumpToChatText = {};
 let closure_23 = obj.createLegacyClassComponentStyles(obj);
 const tmp7 = (PureComponent) => {
   class ChatPreviewBase {
@@ -579,7 +579,7 @@ const tmp7 = (PureComponent) => {
       const tmp7 = callback(closure_3[41]);
       obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer };
       const obj3 = { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat };
-      const obj4 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp.jumpToChatText };
+      const obj4 = { delete: 1, dispatch: 1, raw: null, style: tmp.jumpToChatText };
       const intl = ChatPreviewBase(closure_3[22]).intl;
       obj4.children = intl.string(ChatPreviewBase(closure_3[22]).t.+TSRGD);
       obj3.children = callback4(ChatPreviewBase(closure_3[45]).Text, obj4);

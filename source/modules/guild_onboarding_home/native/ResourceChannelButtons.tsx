@@ -1,5 +1,5 @@
 // Module ID: 11370
-// Function ID: 88386
+// Function ID: 88398
 // Name: ResourceChannelButtons
 // Dependencies: []
 // Exports: default

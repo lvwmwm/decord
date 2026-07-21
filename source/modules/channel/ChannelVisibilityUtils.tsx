@@ -1,5 +1,5 @@
 // Module ID: 10214
-// Function ID: 78920
+// Function ID: 78931
 // Name: isChannelCurrentlyVisible
 // Dependencies: []
 // Exports: isChannelCurrentlyVisible

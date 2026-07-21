@@ -1,10 +1,10 @@
-// Module ID: 14885
-// Function ID: 112110
+// Module ID: 14888
+// Function ID: 112144
 // Name: useGuildHasLiveChannelNotice
 // Dependencies: []
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 14885 (useGuildHasLiveChannelNotice)
+// Module 14888 (useGuildHasLiveChannelNotice)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

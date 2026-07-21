@@ -1,5 +1,5 @@
 // Module ID: 10269
-// Function ID: 79346
+// Function ID: 79357
 // Name: getMuteSettings
 // Dependencies: []
 // Exports: getMuteSettings

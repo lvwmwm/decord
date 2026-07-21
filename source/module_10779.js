@@ -1,9 +1,9 @@
 // Module ID: 10779
-// Function ID: 83733
+// Function ID: 83744
 // Dependencies: []
 
 // Module 10779
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: null, isInternetReachable: null, details: null, reachabilityUrl: null, reachabilityMethod: null, reachabilityHeaders: null, reachabilityTest: null, reachabilityShortTimeout: null, scales: [] };
+const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

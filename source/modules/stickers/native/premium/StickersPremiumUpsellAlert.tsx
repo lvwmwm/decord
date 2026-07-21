@@ -1,5 +1,5 @@
 // Module ID: 9616
-// Function ID: 74898
+// Function ID: 74909
 // Name: PerkRow
 // Dependencies: []
 // Exports: default
@@ -59,17 +59,17 @@ obj = {
 };
 items[2] = obj;
 let obj3 = arg1(dependencyMap[11]);
-const obj1 = { alert: { paddingTop: 18 }, shortHeightAlert: { height: 500 }, content: { alignItems: "center" }, closeContainer: { title: "t2Wbo1", headerShown: "AnalyticsGameOpenTypes", height: "setAllowEmail" }, description: { <string:4142373395>: null, <string:3898509951>: null } };
-const tmp5 = arg1(dependencyMap[5]);
-obj1.perks = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm };
-obj3 = { y: 176588824096788050000000000000000000, isArray: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015911256348749364, accessibilityRole: 1758216272277784200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Icon: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000679784012476727, "": 131072.0055866321, borderBottomColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_560 };
+const obj1 = { alert: { paddingTop: 18 }, shortHeightAlert: { height: 500 }, content: { alignItems: "center" }, closeContainer: { "Null": 1153585875, "Null": 1091646857, "Null": 151651 }, description: {} };
+const obj2 = { paddingVertical: true, alignItems: true, flexGrow: true, zIndex: true, isGift: true, giftRecipient: 88211459, isSocialLayerStorefrontEnabled: 369099508, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj1.perks = obj2;
+obj3 = { borderBottomColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_560 };
 obj1.perkRow = obj3;
 obj1.lastPerkRow = { borderBottomWidth: 0 };
 obj1.perkIcon = {};
-obj1.perkText = { "Bool(false)": null, "Bool(false)": 0 };
+obj1.perkText = { "Bool(true)": null, "Bool(true)": 0 };
 obj1.imageHeader = { marginBottom: 12 };
 let closure_16 = obj3.createStyles(obj1);
-const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+const tmp5 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/stickers/native/premium/StickersPremiumUpsellAlert.tsx");
 
 export default function StickersPremiumUpsellAlert(arg0) {
@@ -116,7 +116,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   obj.style = items;
   obj = { style: tmp.closeContainer };
-  obj = { "Bool(false)": "absolute", "Bool(false)": 0, onPress: onClose };
+  obj = { 9223372036854775807: "absolute", 0: 0, onPress: onClose };
   const obj1 = { source: importDefault(dependencyMap[25]) };
   obj.children = callback(arg1(dependencyMap[12]).Icon, obj1);
   obj.children = callback(arg1(dependencyMap[24]).PressableOpacity, obj);

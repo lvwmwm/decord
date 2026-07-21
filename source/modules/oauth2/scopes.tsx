@@ -1,5 +1,5 @@
 // Module ID: 8947
-// Function ID: 70521
+// Function ID: 70532
 // Name: items
 // Dependencies: []
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
@@ -48,7 +48,7 @@ const result = _module.fileFinishedImporting("modules/oauth2/scopes.tsx");
 export const FAKE_SCOPES = items;
 export const OrderedAccountScopes = items1;
 export const ValidScopes = combined;
-export const RemovedScopes = [-689342252];
+export const RemovedScopes = [];
 export const getScopeNames = function getScopeNames(value, accountScopes) {
   if (require(dependencyMap[1]).OAuth2Scopes.IDENTIFY === value) {
     const intl55 = require(dependencyMap[0]).intl;

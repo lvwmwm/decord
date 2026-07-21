@@ -1,10 +1,10 @@
-// Module ID: 16072
-// Function ID: 123512
+// Module ID: 16080
+// Function ID: 123573
 // Name: close
 // Dependencies: []
 // Exports: default
 
-// Module 16072 (close)
+// Module 16080 (close)
 function close() {
   importDefault(dependencyMap[6]).terminate();
   const obj = importDefault(dependencyMap[6]);

@@ -1,7 +1,7 @@
 // Module ID: 10469
-// Function ID: 81063
+// Function ID: 81074
 // Name: FrameLayoutModes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10469 (FrameLayoutModes)
 const _module = require(dependencyMap[0]);

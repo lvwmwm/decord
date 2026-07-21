@@ -1,5 +1,5 @@
 // Module ID: 10590
-// Function ID: 82621
+// Function ID: 82632
 // Name: useBaseActivityView
 // Dependencies: []
 
@@ -114,7 +114,7 @@ let closure_10 = arg1(dependencyMap[5]).OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ loadingContainer: { markAsSpoilerTitle: null, keyboardAppearance: null } });
+let closure_14 = arg1(dependencyMap[7]).createStyles({ loadingContainer: { "Bool(true)": "values", "Bool(true)": "Array" } });
 const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portraitSafeAreasConfig) {
   let channel;
   let channel2;

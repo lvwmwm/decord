@@ -1,5 +1,5 @@
 // Module ID: 10588
-// Function ID: 82614
+// Function ID: 82625
 // Name: useCurrentEmbeddedActivity
 // Dependencies: []
 // Exports: default

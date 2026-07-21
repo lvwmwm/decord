@@ -1,5 +1,5 @@
 // Module ID: 11288
-// Function ID: 87836
+// Function ID: 87848
 // Name: AppLauncherSelectOptionFormRow
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { marginTop: 35924116233733936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: 13339325930009687000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, lineClamp: -0.000020027193576912034, maxFontSizeMultiplier: 128840307290545650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.formRow = obj;
 let closure_4 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
@@ -22,13 +22,13 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   let unselectedSubLabel;
   ({ selected, selectedItemName: closure_0, unselectedSubLabel } = arg0);
   const importDefault = unselectedSubLabel;
-  let obj = { ellipsizeMode: true, variant: true, color: true, lineClamp: true, maxFontSizeMultiplier: true, bottom: true };
+  let obj = { TypeError: true, uri: true, marginBottom: true, borderRadius: true, variant: true, color: true };
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   let obj1 = arg1(dependencyMap[4]);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
-  obj = { 0: null, 0: null };
+  obj = { bind: null, cursor: null };
   const items = [callback().formRow, style];
   obj.style = items;
   obj = {};
@@ -46,17 +46,11 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   obj.children = option.displayName;
   obj.label = jsx(arg1(dependencyMap[6]).Text, obj);
   if (selected) {
-    let fn = () => {
-      const obj = { -9223372036854775808: true, 0: true, 0: true, children: callback };
-      return callback2(callback(closure_2[6]).Text, obj);
-    };
+    let fn = () => callback2(callback(closure_2[6]).Text, { children: callback });
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
-      fn = () => {
-        const obj = { -9223372036854775808: 400, 0: 20, 0: 24, children: unselectedSubLabel };
-        return callback2(callback(closure_2[6]).Text, obj);
-      };
+      fn = () => callback2(callback(closure_2[6]).Text, { children: unselectedSubLabel });
     }
   }
   obj.subLabel = fn;

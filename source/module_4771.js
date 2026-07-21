@@ -1,14 +1,13 @@
 // Module ID: 4771
-// Function ID: 41447
+// Function ID: 41456
 // Dependencies: []
 
 // Module 4771
-let obj = { containerRefreshMedium: false, ignoreRequireCycleLogs: false, isRobloxSubgameGame: false, PARTY: false };
-obj = {
-  name: "MPFVersion",
-  description(value) {
-    return arg1(arg6[0]).getStringValue(value);
+arg5.default = {
+  [4]: {
+    name: "ShotInfo",
+    description(arg0) {
+      return arg0;
+    }
   }
 };
-obj[45056] = obj;
-arg5.default = obj;

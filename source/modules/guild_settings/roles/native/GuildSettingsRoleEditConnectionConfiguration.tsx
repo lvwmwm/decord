@@ -1,10 +1,10 @@
-// Module ID: 16199
-// Function ID: 125197
+// Module ID: 16207
+// Function ID: 125258
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 16199 (Header)
+// Module 16207 (Header)
 function Header(arg0) {
   let applicationId;
   let integration;
@@ -615,13 +615,13 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.numericalInputContainerBase = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.numericalInput = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
-const obj2 = { -9223372036854775808: -738197503, 9223372036854775807: 16777216, 0: 38594370, 0: 32305408, -9223372036854775808: -1210756864, 9223372036854775807: 116, 9223372036854775807: 4096, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+const obj2 = { GuildBadgeForce: -738197503, useIsMobileGameCollectionExperimentEnabled: 16777216, _monthsRegex: 38608706, 0: 21417216, padding: -747089664, borderRadius: importDefault(dependencyMap[7]).radii.xs, borderWidth: 4096, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.appNumericalInput = obj2;
-obj.appNumericalInputContainer = {};
+obj.appNumericalInputContainer = { "Null": 7, "Null": 370 };
 obj.appNumericalInputText = { flexShrink: 1 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.numericalInputDisabled = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
-obj.metadataRow = { "Null": null, "Null": null, "Null": null };
+obj.metadataRow = {};
 obj.metadataRowText = { lineHeight: 32 };
 let closure_15 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };

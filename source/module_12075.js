@@ -1,9 +1,9 @@
 // Module ID: 12075
-// Function ID: 93160
+// Function ID: 93172
 // Dependencies: []
 
 // Module 12075
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: 18, isInternetReachable: 18, details: 6, reachabilityUrl: null, reachabilityMethod: "secondary", reachabilityHeaders: "Button with a entity variant icon", reachabilityTest: "md", reachabilityShortTimeout: "interactive-text-active", scales: [] };
+const obj = { "Bool(false)": 18, "Bool(false)": 18, "Bool(false)": 6, "Bool(false)": null, "Bool(false)": "secondary", "Bool(false)": "Button with a entity variant icon", "Bool(false)": "md", "Bool(false)": "interactive-text-active", scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

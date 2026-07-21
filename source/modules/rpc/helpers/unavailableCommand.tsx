@@ -1,9 +1,9 @@
-// Module ID: 13319
-// Function ID: 101167
+// Module ID: 13321
+// Function ID: 101189
 // Name: unsupportedCommand
 // Dependencies: []
 
-// Module 13319 (unsupportedCommand)
+// Module 13321 (unsupportedCommand)
 const RPCErrors = require(dependencyMap[0]).RPCErrors;
 let obj = {
   handler(cmd) {

@@ -1,5 +1,5 @@
 // Module ID: 1887
-// Function ID: 21032
+// Function ID: 21037
 // Name: prefixCell
 // Dependencies: [6, 7, 15, 17, 18, 1352]
 
@@ -170,7 +170,7 @@ const result = _callSuper.fileFinishedImporting("../discord_common/js/packages/k
 export const Table = () => {
   class Table {
     constructor(arg0, arg1, arg2, arg3) {
-      f21040 = this;
+      f21045 = this;
       tmp = _defineProperties(this, Table);
       this.messages = {
         getLatest(guildId, channelId, arg2) {

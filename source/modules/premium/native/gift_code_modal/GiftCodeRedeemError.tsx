@@ -1,5 +1,5 @@
 // Module ID: 12144
-// Function ID: 93544
+// Function ID: 93556
 // Name: GiftCodeRedeemError
 // Dependencies: []
 // Exports: default
@@ -11,11 +11,11 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(true)": 0.129, "Bool(true)": 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.body = { "Null": true, "Null": true, "Null": true, "Null": true, gap: true, display: true };
-obj.header = { "Null": "Array", "Null": "summaryId" };
-obj.message = { "Null": null, "Null": null };
+obj.body = { voiceCategoryExpand: true, GEN_AI_SYSTEM_ATTRIBUTE: true, EXPRESSION_FOOTER_HEIGHT: true, marginHorizontal: true, alignContent: true, updateErrors: true };
+obj.header = {};
+obj.message = {};
 obj.footer = { paddingHorizontal: 24 };
 let closure_8 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);

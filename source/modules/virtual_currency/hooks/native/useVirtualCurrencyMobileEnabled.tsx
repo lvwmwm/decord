@@ -1,5 +1,5 @@
 // Module ID: 12096
-// Function ID: 93264
+// Function ID: 93276
 // Name: isVirtualCurrencyEnabled
 // Dependencies: [6, 7]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled

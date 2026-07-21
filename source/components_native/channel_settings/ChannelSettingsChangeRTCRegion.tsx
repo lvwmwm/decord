@@ -1,10 +1,10 @@
-// Module ID: 15410
-// Function ID: 117598
+// Module ID: 15413
+// Function ID: 117637
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15410 (_isNativeReflectConstruct)
+// Module 15413 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -48,11 +48,11 @@ const tmp3 = (PureComponent) => {
       tmp2Result = tmp2(self, constructResult);
       ChannelSettingsChangeRTCRegion = tmp2Result;
       tmp2Result.state = () => {
-        let obj = { regions: [] };
+        let obj = { 0: "/assets/images/native", 9223372036854775807: 192.33333333333334, -9223372036854775808: 416, regions: [] };
         let str = "AUTOMATIC_RTC_REGION";
         const channel = tmp2Result.props.channel;
         const regions = regions.getRegions(channel.getGuildId());
-        obj = { position: "SERVER_GUIDE_CHANNEL_SELECTED", top: "WebUserSettings", left: "Array", width: "BGYkaH", zIndex: "isArray", flex: "SET_VOICE_CHANNEL_STATUS", overflow: "isArray", borderBottomLeftRadius: "isArrayBuffer" };
+        obj = { accessible: "Array", create: "benefitType", parent: "basename", withSpring: "basename", disabled: "RNSVGRadialGradient", borderRadius: "google_sku_ids", flexDirection: "%RangeErrorPrototype%", alignItems: "isArray" };
         const intl = tmp2Result(closure_2[12]).intl;
         obj.name = intl.string(tmp2Result(closure_2[12]).t.JEmsap);
         const items = [obj];

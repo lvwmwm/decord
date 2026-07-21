@@ -1,10 +1,10 @@
-// Module ID: 16218
-// Function ID: 125379
+// Module ID: 16226
+// Function ID: 125440
 // Name: FeatureCard
 // Dependencies: []
 // Exports: default
 
-// Module 16218 (FeatureCard)
+// Module 16226 (FeatureCard)
 function FeatureCard(arg0) {
   let body;
   let header;
@@ -15,7 +15,8 @@ function FeatureCard(arg0) {
   obj = { style: tmp.featureIcon, children: icon() };
   const items = [callback(closure_4, obj), ];
   obj = { style: tmp.featureDescription };
-  const items1 = [callback(arg1(dependencyMap[10]).Heading, { children: header }), callback(arg1(dependencyMap[10]).Text, { children: body })];
+  const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: header };
+  const items1 = [callback(arg1(dependencyMap[10]).Heading, obj1), callback(arg1(dependencyMap[10]).Text, { children: body })];
   obj.children = items1;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
@@ -30,12 +31,12 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { collapsable: "absolute", preventClipping: 0 }, body: { collapsable: 24, preventClipping: "recent_games_enabled" }, details: { "Bool(true)": 24, "Bool(true)": "recent_games_enabled" }, headerImage: { width: "100%" }, features: {} };
+obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: {}, body: { value: 24, marginTop: "recent_games_enabled" }, details: { "Bool(true)": 24, "Bool(true)": "recent_games_enabled" }, headerImage: { width: "100%" }, features: { size: false, progress: false } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.featureCard = obj;
-const obj1 = { "Null": "0b8a6fa235bbde823695fe5cdeccf7e4", "Null": "channel_setup_light", "Null": "png", "Null": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
+const obj1 = { "Bool(true)": "0b8a6fa235bbde823695fe5cdeccf7e4", "Bool(true)": "channel_setup_light", "Bool(true)": "png", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
 obj.featureIcon = obj1;
-obj.featureDescription = {};
+obj.featureDescription = { <string:1660689751>: null, <string:5332066>: null };
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
@@ -122,7 +123,8 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   const intl6 = arg1(dependencyMap[9]).intl;
   obj8.body = intl6.format(arg1(dependencyMap[9]).t.A6G7ak, {
     featureHook(children) {
-      return callback2(callback(navigation[10]).Text, { children }, arg1);
+      const obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", children };
+      return callback2(callback(navigation[10]).Text, obj, arg1);
     }
   });
   const items5 = [obj8, , ];
@@ -140,7 +142,8 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
       return null;
     },
     featureHook(children) {
-      return callback2(callback(navigation[10]).Text, { children }, arg1);
+      const obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", children };
+      return callback2(callback(navigation[10]).Text, obj, arg1);
     }
   });
   items5[1] = obj10;

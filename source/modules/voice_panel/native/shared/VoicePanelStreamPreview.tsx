@@ -1,5 +1,5 @@
 // Module ID: 11948
-// Function ID: 92356
+// Function ID: 92368
 // Name: VoicePanelStreamPreview
 // Dependencies: []
 // Exports: VoicePanelStreamPreview
@@ -18,9 +18,9 @@ let closure_9 = importDefault(dependencyMap[5]).createAnimatedComponent(arg1(dep
 let closure_10 = { duration: 200 };
 let obj2 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj = { MODE_NUMBER: null, MODE_ALPHA_NUM: "no-hide-descendants", MODE_8BIT_BYTE: true, MODE_KANJI: "/assets/.cache/intl/ZGVzaWdu", L: null, backgroundColor: importDefault(dependencyMap[8]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.roundedCard = obj;
-obj.streamPreviewImage = { 453470977: "text-feedback-warning", -1361616382: "text-xs/medium", 432814162: "text-feedback-warning", 1397776803: true };
+obj.streamPreviewImage = {};
 const importDefaultResult1 = importDefault(dependencyMap[5]);
 obj.ownStreamTextContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM, borderRadius: importDefault(dependencyMap[8]).radii.sm, marginHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
@@ -121,7 +121,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const tmp9 = closure_8;
   if (stateFromStores) {
     const obj4 = { style: tmp.ownStreamTextContainer };
-    const obj5 = { style: tmp.ownStreamText };
+    const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: "flex-start", style: tmp.ownStreamText };
     const intl2 = arg1(dependencyMap[15]).intl;
     obj5.children = intl2.string(arg1(dependencyMap[15]).t.ro/HN8);
     obj4.children = tmp17(arg1(dependencyMap[14]).Text, obj5);

@@ -1,10 +1,10 @@
-// Module ID: 13489
-// Function ID: 102361
+// Module ID: 13491
+// Function ID: 102383
 // Name: UserSettingsEditGuildProfile
 // Dependencies: []
 // Exports: default
 
-// Module 13489 (UserSettingsEditGuildProfile)
+// Module 13491 (UserSettingsEditGuildProfile)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet } = arg1(dependencyMap[1]));

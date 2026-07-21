@@ -1,7 +1,7 @@
 // Module ID: 9229
-// Function ID: 72169
+// Function ID: 72180
 // Name: PHONE_VERIFICATION_MODAL_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9229 (PHONE_VERIFICATION_MODAL_KEY)
 const _module = require(dependencyMap[0]);

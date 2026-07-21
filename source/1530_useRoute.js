@@ -1,5 +1,5 @@
 // Module ID: 1530
-// Function ID: 17500
+// Function ID: 17505
 // Name: useRoute
 // Dependencies: []
 // Exports: default

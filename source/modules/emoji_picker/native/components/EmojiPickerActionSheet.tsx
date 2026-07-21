@@ -1,7 +1,7 @@
 // Module ID: 9320
-// Function ID: 72797
+// Function ID: 72808
 // Name: EmojiPickerActionSheet
-// Dependencies: [1849, 5262, 5265, 9325, 2, 653, 3963, 686, 507, 2, 5262, 1852, 624, 2, 31, 5266, 2, 57, 31, 5262, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7649, 3829, 9331, 2, 31]
+// Dependencies: [1849, 5261, 5264, 9325, 2, 653, 3963, 686, 507, 2, 5261, 1852, 624, 2, 31, 5265, 2, 57, 31, 5261, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7650, 3829, 9331, 2, 31]
 // Exports: default
 
 // Module 9320 (EmojiPickerActionSheet)
@@ -163,7 +163,7 @@ export default function EmojiPickerActionSheet(onClose) {
       const intl = onClose(pickerIntention[23]).intl;
       obj.children = intl.string(onClose(pickerIntention[23]).t.wHTk2C);
       const items = [ref(onClose(pickerIntention[22]).Text, obj), ];
-      obj = {};
+      obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
       const intl2 = onClose(pickerIntention[23]).intl;
       obj.children = intl2.string(onClose(pickerIntention[23]).t.VrWSNn);
       items[1] = ref(onClose(pickerIntention[22]).Text, obj);
@@ -184,7 +184,7 @@ export default function EmojiPickerActionSheet(onClose) {
     }
     items1[1] = headerSpacer;
     obj.style = items1;
-    obj = { 0: "r", 0: "isArray", -9223372036854775808: "mode", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
+    obj = { -9223372036854775808: 40, 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
     const items2 = [ref(onClose(pickerIntention[24]).SearchField, obj), ];
     let tmp5 = pickerIntention === closure_9.REACTION;
     if (tmp5) {
@@ -226,7 +226,7 @@ export default function EmojiPickerActionSheet(onClose) {
   const tmp25 = memo1;
   let isIOSResult = arg1(dependencyMap[15]).isIOS();
   if (isIOSResult) {
-    obj = { animatedSheetIndex: sharedValue1 };
+    obj = { GiftCodeModalStates: 15187286127396292000000000000000000000000000000000000000000000000000000000000000000, guildDirectoryEntryFromServer: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001904963455117194, currencySpacing: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003476677904935, animatedSheetIndex: sharedValue1 };
     isIOSResult = callback2(importDefault(dependencyMap[31]), obj);
   }
   const items7 = [isIOSResult, ];

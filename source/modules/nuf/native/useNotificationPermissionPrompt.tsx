@@ -1,10 +1,10 @@
-// Module ID: 15124
-// Function ID: 114125
+// Module ID: 15127
+// Function ID: 114159
 // Name: useNotificationPermissionPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 15124 (useNotificationPermissionPrompt)
+// Module 15127 (useNotificationPermissionPrompt)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

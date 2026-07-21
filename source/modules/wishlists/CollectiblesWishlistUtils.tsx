@@ -1,5 +1,5 @@
 // Module ID: 8660
-// Function ID: 68531
+// Function ID: 68542
 // Name: getProductNameAndTypeFromSku
 // Dependencies: []
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct

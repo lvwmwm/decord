@@ -1,12 +1,12 @@
 // Module ID: 3842
-// Function ID: 32011
+// Function ID: 32016
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
 // Dependencies: [0, 0]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
 // Module 3842 (updateAccessibilityAnnouncerLiveRegionMessage)
-import { Text } from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
+import { Text } from "result";
+import importAllResult from "result";
 
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_2 = arg1(dependencyMap[3]).create(() => ({ message: undefined, version: 0 }));

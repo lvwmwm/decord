@@ -1,5 +1,5 @@
 // Module ID: 859
-// Function ID: 9617
+// Function ID: 9621
 // Name: isAttributeObject
 // Dependencies: []
 // Exports: serializeAttributes

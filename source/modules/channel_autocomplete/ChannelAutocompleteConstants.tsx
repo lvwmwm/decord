@@ -1,10 +1,10 @@
-// Module ID: 4564
-// Function ID: 40000
+// Module ID: 4563
+// Function ID: 40007
 // Name: MENTION_SENTINEL
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: formatGameMentionRaw
 
-// Module 4564 (MENTION_SENTINEL)
+// Module 4563 (MENTION_SENTINEL)
 const tmp2 = /^<@\$(\d+)>/;
 const regExp = new RegExp(tmp2.source.replace(/^\^/, ""), "g");
 const _module = require(dependencyMap[0]);

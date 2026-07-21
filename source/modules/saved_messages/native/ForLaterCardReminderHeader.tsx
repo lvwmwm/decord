@@ -1,5 +1,5 @@
 // Module ID: 9921
-// Function ID: 76732
+// Function ID: 76743
 // Name: ForLaterCardReminderHeader
 // Dependencies: []
 // Exports: ForLaterCardReminderHeader
@@ -12,7 +12,7 @@ const _module1 = require(dependencyMap[2]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: importDefault(dependencyMap[3]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.container = obj;
-const obj1 = { <string:173102256>: null, <string:1549034243>: "494d75fe739ed4a36d195ab8193847fa", <string:3972818102>: "alert", <string:374453936>: "png", <string:4221592070>: true, <string:1637461585>: "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
+const obj1 = { 0: null, 0: "494d75fe739ed4a36d195ab8193847fa", 9223372036854775807: "alert", 0: "png", -9223372036854775808: true, 9223372036854775807: "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
 obj.icon = obj1;
 obj.actionsContainer = {};
 let closure_6 = _module1.createStyles(obj);

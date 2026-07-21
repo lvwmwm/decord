@@ -1,5 +1,5 @@
 // Module ID: 12021
-// Function ID: 92895
+// Function ID: 92907
 // Name: EmptyGuildList
 // Dependencies: []
 // Exports: default
@@ -110,7 +110,7 @@ export default function GuildInviteActionSheet(arg0) {
   let obj = {};
   const intl = callback(dependencyMap[7]).intl;
   obj.title = intl.string(callback(dependencyMap[7]).t.HvoZQD);
-  obj = { 1891290120: null, -475247768: null };
+  obj = { ind: null, PX_8: null };
   obj.header = callback3(callback(dependencyMap[15]).BottomSheetTitleHeader, obj);
   obj.contentStyles = tmp.content;
   obj = { style: tmp.searchbarWrapper };

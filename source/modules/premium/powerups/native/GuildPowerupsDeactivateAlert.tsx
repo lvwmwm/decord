@@ -1,5 +1,5 @@
 // Module ID: 11562
-// Function ID: 89948
+// Function ID: 89960
 // Name: GuildPowerupsDeactivateAlert
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 293, borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_SUBTLE };
 obj.headerContainer = obj;
 obj.extraContentContainer = { paddingHorizontal: importDefault(dependencyMap[3]).space.PX_12 };
 obj.warningText = { textAlign: "center" };
@@ -41,7 +41,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const obj4 = {};
   let tmp6 = null != error;
   if (tmp6) {
-    const obj5 = { "Null": 240, "Null": 130, "Null": null, style: tmp.warningText, children: error };
+    const obj5 = { delete: 240, dispatch: 130, raw: null, style: tmp.warningText, children: error };
     tmp6 = callback(require(dependencyMap[12]).Text, obj5);
   }
   const items = [tmp6, , ];

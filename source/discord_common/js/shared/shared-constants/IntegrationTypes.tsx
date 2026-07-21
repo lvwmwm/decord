@@ -1,10 +1,10 @@
-// Module ID: 16157
-// Function ID: 124536
+// Module ID: 16165
+// Function ID: 124597
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 16157 (set)
-const obj = { SYNCABLE: new Set([null, null]) };
+// Module 16165 (set)
+const obj = { SYNCABLE: new Set(["configurable", "writable"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationTypes.tsx");
 

@@ -1,11 +1,11 @@
 // Module ID: 8994
-// Function ID: 70812
+// Function ID: 70823
 // Name: ClearButton
 // Dependencies: []
 
 // Module 8994 (ClearButton)
 function ClearButton(onPress) {
-  let obj = { style: {}, accessibilityRole: "button" };
+  let obj = { style: { "057": "<string:410124289>", UPVOTE: "<string:402653184>" }, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[6]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[6]).t.VkKicb);
   obj.onPress = onPress.onPress;
@@ -61,7 +61,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   if (WITH_CONTENT === undefined) {
     WITH_CONTENT = arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT;
   }
-  let obj = { "Null": "6b87bd10c997f01ea0ccd2cea57f04c5", "Null": "ic_selection_none_24px", "Null": "png", "Null": "heading-xl/bold", "Null": null, "Null": "mobile-text-heading-primary", "Null": "header", "Null": null, "Null": 1, "Null": "absolute", "Null": "100%", "Null": "100%", "Null": null, "Null": "row", "Null": 4 };
+  let obj = { "Bool(false)": "mobile-text-heading-primary", "Bool(false)": "header", "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "absolute", "Bool(false)": "100%", "Bool(false)": "100%", "Bool(false)": null, "Bool(false)": "row", "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": 120 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(editable, obj);
   let ref;

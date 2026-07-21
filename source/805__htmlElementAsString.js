@@ -1,5 +1,5 @@
 // Module ID: 805
-// Function ID: 9036
+// Function ID: 9040
 // Name: _htmlElementAsString
 // Dependencies: []
 
@@ -41,7 +41,7 @@ function _htmlElementAsString(dataset, arr) {
             items.push("[" + arg0[0] + "=\"" + arg0[1] + "\"]");
           });
         }
-        const iter = ["a", "isArray", "ks", "Icon", "r"][Symbol.iterator]();
+        const iter = [][Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp33 = dataset;

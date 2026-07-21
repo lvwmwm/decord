@@ -1,9 +1,9 @@
 // Module ID: 5520
-// Function ID: 46983
+// Function ID: 46991
 // Dependencies: []
 
 // Module 5520
-let closure_3 = ["state", "r", "isArray", "flex", "String"];
+let closure_3 = ["<string:1081540610>", "<string:1123155970>", "<string:609288194>", "avatarContainer", "<string:6553600>"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

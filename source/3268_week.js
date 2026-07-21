@@ -1,5 +1,5 @@
 // Module ID: 3268
-// Function ID: 25968
+// Function ID: 25973
 // Name: week
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,7 @@ function week(arg0) {
   };
 }
 let closure_0 = [];
-const obj = { lastWeek: week(false), nextWeek: week(true) };
+const obj = { areIntervalsOverlapping: "ip", clamp: "r", closestIndexTo: "isArray", closestTo: "accessible", compareAsc: "then", compareDesc: "key", lastWeek: week(false), nextWeek: week(true) };
 
 export default function formatRelative(arg0, arg1) {
   let tmpResult = tmp;

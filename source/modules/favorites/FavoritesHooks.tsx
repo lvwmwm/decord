@@ -1,5 +1,5 @@
 // Module ID: 10335
-// Function ID: 79767
+// Function ID: 79778
 // Name: useFavoritesAccess
 // Dependencies: []
 // Exports: useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories

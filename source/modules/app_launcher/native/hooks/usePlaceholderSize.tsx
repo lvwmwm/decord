@@ -1,5 +1,5 @@
 // Module ID: 11163
-// Function ID: 86813
+// Function ID: 86825
 // Name: usePlaceholderWidth
 // Dependencies: []
 // Exports: usePlaceholderWidth

@@ -1,10 +1,10 @@
-// Module ID: 14036
-// Function ID: 106720
+// Module ID: 14039
+// Function ID: 106752
 // Name: SettingsAppearanceThemeCarousel
 // Dependencies: []
 // Exports: default
 
-// Module 14036 (SettingsAppearanceThemeCarousel)
+// Module 14039 (SettingsAppearanceThemeCarousel)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const importDefaultResult = importDefault(dependencyMap[2]);
@@ -19,7 +19,7 @@ obj.container = obj;
 obj.textCentered = { textAlign: "center" };
 obj1 = { gap: importDefault(dependencyMap[7]).space.PX_4, alignItems: "center" };
 obj.labelGroup = obj1;
-const obj2 = { 9223372036854775807: "tax", 9223372036854775807: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", 0: "getPreviewBanner", -9223372036854775808: "Array", 9223372036854775807: "impressionStartTimestamp", marginTop: importDefault(dependencyMap[7]).space.PX_4 };
+const obj2 = { 9223372036854775807: false, 0: false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, marginTop: importDefault(dependencyMap[7]).space.PX_4 };
 obj.titleContainer = obj2;
 const importDefaultResult1 = importDefault(dependencyMap[4]);
 obj.floatingNuxContainer = { position: "absolute", left: importDefault(dependencyMap[7]).space.PX_24 };
@@ -160,7 +160,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     tmp3 = callback(closure_10, obj1);
   }
   const items4 = [tmp3, ];
-  obj2 = { "Null": null, "Null": null, "Null": null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
+  obj2 = { 0: null, 9223372036854775807: null, 9223372036854775807: null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
   let obj8 = themes[currentThemeIndex];
   obj2.children = obj8.getName();
   items4[1] = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -173,7 +173,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       const obj5 = { pointerEvents: "none", style: tmp.selectionBorder };
       const items5 = [callback(closure_4, obj5), ];
       const obj6 = { ref, data: themes, renderItem: callback };
-      const obj7 = { style: false, body: false, a: false, width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
+      const obj7 = { fillOpacity: "number", fillRule: "number", stroke: "mY3Y38", width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
       obj6.style = obj7;
       obj6.width = importDefaultResult.THEME_ITEM_WIDTH + importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN;
       obj6.height = importDefaultResult.THEME_ITEM_HEIGHT;

@@ -1,5 +1,5 @@
 // Module ID: 10688
-// Function ID: 83274
+// Function ID: 83285
 // Name: ImageSparkleIcon
 // Dependencies: []
 // Exports: ImageSparkleIcon

@@ -1,5 +1,5 @@
 // Module ID: 12191
-// Function ID: 93699
+// Function ID: 93711
 // Name: getCoverImageFromActivity
 // Dependencies: []
 // Exports: default

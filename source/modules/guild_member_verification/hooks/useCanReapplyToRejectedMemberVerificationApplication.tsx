@@ -1,5 +1,5 @@
 // Module ID: 9155
-// Function ID: 71770
+// Function ID: 71781
 // Name: useCanReapplyToRejectedMemberVerificationApplication
 // Dependencies: []
 // Exports: useCanReapplyToRejectedMemberVerificationApplication

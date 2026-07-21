@@ -1,5 +1,5 @@
 // Module ID: 9828
-// Function ID: 76210
+// Function ID: 76221
 // Name: AttachmentIcon
 // Dependencies: []
 // Exports: default
@@ -45,7 +45,7 @@ function FilenameText(fileName) {
     tmp5 = "" !== fileName;
   }
   if (tmp5) {
-    obj = { 139078429: 343539713, 0: 640745473, 0: 1649541121, 0: 1149304833, 9223372036854775807: -1910964223, style: tmp.attachmentFileName, children: fileName };
+    obj = { style: tmp.attachmentFileName, children: fileName };
     tmp5 = callback(arg1(dependencyMap[20]).Text, obj);
   }
   const items = [tmp5, ];
@@ -81,11 +81,11 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { 9223372036854775807: "<string:4192927746>", 0: "<string:3578855425>", 9223372036854775807: "<string:1816203703>", 0: "<string:1912602980>", 0: "toString", -9223372036854775808: "resolve", 0: "<string:1230062081>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { display: "<string:4185456642>", flexDirection: "<string:2018574337>", alignItems: "<string:3376484819>", textAlignVertical: "<string:1912602979>", height: "toString", backgroundColor: "resolve", marginHorizontal: "<string:1235304961>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.fileInfoAttachmentPreviewFile = obj;
 obj.attachmentFileIcon = {};
 obj.attachmentFileName = {};
-obj.videoIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.videoIcon = { contentInset: false, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false, searchResultsQuery: false, isEntryLive: false, doughnut: false };
 let closure_8 = obj1.createStyles(obj);
 obj1 = { archive: importDefault(dependencyMap[5]), acrobat: importDefault(dependencyMap[6]), ae: importDefault(dependencyMap[7]), ai: importDefault(dependencyMap[8]), audio: importDefault(dependencyMap[9]), code: importDefault(dependencyMap[10]), document: importDefault(dependencyMap[11]), image: importDefault(dependencyMap[12]), photoshop: importDefault(dependencyMap[13]), sketch: importDefault(dependencyMap[14]), spreadsheet: importDefault(dependencyMap[15]), unknown: importDefault(dependencyMap[16]), video: importDefault(dependencyMap[17]), webcode: importDefault(dependencyMap[18]) };
 let closure_10 = importAllResult.memo((borderRadius) => {

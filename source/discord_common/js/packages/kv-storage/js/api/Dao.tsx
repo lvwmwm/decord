@@ -1,16 +1,17 @@
 // Module ID: 1886
-// Function ID: 21008
+// Function ID: 21013
 // Name: Dao
 // Dependencies: [0, 0, 0, 0, 0]
 
 // Module 1886 (Dao)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import closure_2 from "result";
+import closure_3 from "result";
+import result from "result";
 
 const tmp3 = () => {
   class DaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, DaoTransaction);
+      tmp = closure_2(this, DaoTransaction);
       this.transaction = arg0;
       return;
     }
@@ -55,7 +56,9 @@ const tmp3 = () => {
   const items1 = [obj];
   return callback(DaoTransaction, items, items1);
 }();
-const tmp2 = () => {
+result = result.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
+
+export const Dao = () => {
   class Dao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -63,7 +66,7 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, Dao);
+      tmp = closure_2(self, Dao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
@@ -199,7 +202,4 @@ const tmp2 = () => {
   };
   return callback(Dao, items);
 }();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
-
-export const Dao = tmp2;
 export const DaoTransaction = tmp3;

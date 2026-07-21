@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 64648
+// Module ID: 8185
+// Function ID: 64661
 // Name: getGiftStyleUrl
 // Dependencies: []
 // Exports: createGiftCodeEmbed
 
-// Module 8184 (getGiftStyleUrl)
+// Module 8185 (getGiftStyleUrl)
 function getGiftStyleUrl(arg0) {
   if (constants.BOX === arg0) {
     return importDefault(dependencyMap[7]);

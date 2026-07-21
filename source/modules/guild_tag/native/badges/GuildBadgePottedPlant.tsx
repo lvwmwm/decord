@@ -1,18 +1,18 @@
-// Module ID: 12835
-// Function ID: 98157
+// Module ID: 12837
+// Function ID: 98179
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgePottedPlant
 
-// Module 12835 (items)
+// Module 12837 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = ["<string:3704409292>", "<string:1146569023>", "<string:1665269761>"];
-let closure_5 = ["__d", "r", "isArray"];
-const items = [{}, {}, {}];
-let closure_7 = [-957777708, 1060257900, 1236950581];
+let closure_4 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682772776, -92559631349653940000000000000000000000000000000000000000000000, 8592586856.156181];
+let closure_5 = ["<string:3704409292>", "<string:1136869695>", "<string:2218917889>"];
+const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+let closure_7 = [null, null, "IconAnimation_Notifications_3D_LottieFix02"];
 let closure_8 = [];
-const items1 = [{}, {}, {}];
+const items1 = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgePottedPlant.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
+  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -56,7 +56,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   }
   obj6.fill = str;
   items[5] = callback(arg1(dependencyMap[3]).Path, obj6);
-  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": 4, "Bool(false)": 16 });
+  items[6] = callback(arg1(dependencyMap[3]).Path, {});
   const obj7 = { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z" };
   let tmp9;
   if (null != secondaryColorsTransformed) {

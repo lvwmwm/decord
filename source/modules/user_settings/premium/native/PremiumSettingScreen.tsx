@@ -1,10 +1,10 @@
-// Module ID: 13763
-// Function ID: 104040
+// Module ID: 13765
+// Function ID: 104062
 // Name: PremiumScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13763 (PremiumScreen)
+// Module 13765 (PremiumScreen)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/premium/native/PremiumSettingScreen.tsx");

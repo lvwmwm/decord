@@ -1,10 +1,10 @@
-// Module ID: 13945
-// Function ID: 105960
+// Module ID: 13948
+// Function ID: 105992
 // Name: QuestEmbedPreview
 // Dependencies: []
 // Exports: QuestEmbedPreview
 
-// Module 13945 (QuestEmbedPreview)
+// Module 13948 (QuestEmbedPreview)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

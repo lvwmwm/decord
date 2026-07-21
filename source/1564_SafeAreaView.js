@@ -1,14 +1,14 @@
 // Module ID: 1564
-// Function ID: 17618
+// Function ID: 17623
 // Name: SafeAreaView
 // Dependencies: []
 
 // Module 1564 (SafeAreaView)
-let closure_2 = ["r"];
+let closure_2 = [null];
 let closure_3 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { "Null": "BounceIn", "Null": null, "Null": 0.6, "Null": "BounceInRight" };
+let closure_6 = { flexGrow: false, flexShrink: false, height: false, left: false };
 
 export const SafeAreaView = importAll(dependencyMap[1]).forwardRef((edges, ref) => {
   edges = edges.edges;

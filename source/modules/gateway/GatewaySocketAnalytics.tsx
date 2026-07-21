@@ -1,10 +1,10 @@
-// Module ID: 12456
-// Function ID: 95149
+// Module ID: 12458
+// Function ID: 95171
 // Name: prettyPrintTrace_
 // Dependencies: []
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12456 (prettyPrintTrace_)
+// Module 12458 (prettyPrintTrace_)
 function prettyPrintTrace_(arg0, arg1) {
   let length;
   if (null == arg0) {
@@ -74,7 +74,7 @@ function getReadyPayloadSizeAnalytics(guilds) {
   return { num_guilds: guilds.length, num_guild_channels: closure_1, num_guild_category_channels: closure_0 };
 }
 let closure_2 = [];
-let closure_3 = [];
+let closure_3 = [null];
 let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
@@ -346,7 +346,7 @@ export const logGatewayConnected = function logGatewayConnected(failedConnectAtt
   obj.track(constants.GATEWAY_CONNECTED, obj, { logEventProperties: true });
 };
 export const createResumeAnalytics = function createResumeAnalytics(arg0) {
-  const obj = {};
+  const obj = { id: "Reflect", x: "left", y: "constructor", dimensions: "id", player: "fill", assetKey: "track" };
   let num = 0;
   if (null != arg0) {
     num = arg0;

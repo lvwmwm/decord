@@ -1,5 +1,5 @@
 // Module ID: 12087
-// Function ID: 93212
+// Function ID: 93224
 // Name: EmptyDisplay
 // Dependencies: []
 
@@ -18,7 +18,7 @@ function EmptyDisplay(arg0) {
 }
 function FetchErrorDisplay(style) {
   let obj = { style: style.style };
-  obj = { "Null": false, "Null": 0, "Null": 4, style: callback3().emptyDisplayTitle };
+  obj = { delete: false, dispatch: 0, raw: 4, style: callback3().emptyDisplayTitle };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.obChXk);
   obj.children = callback(arg1(dependencyMap[11]).Text, obj);
@@ -26,7 +26,7 @@ function FetchErrorDisplay(style) {
 }
 function NoUsersDisplay(style) {
   let obj = { style: style.style };
-  obj = { "Null": false, "Null": 0, "Null": 4, style: callback3().emptyDisplayTitle };
+  obj = { delete: false, dispatch: 0, raw: 4, style: callback3().emptyDisplayTitle };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.hW0mBR);
   obj.children = callback(arg1(dependencyMap[11]).Text, obj);
@@ -202,19 +202,20 @@ let closure_6 = importDefault(dependencyMap[3]);
 const Fonts = arg1(dependencyMap[4]).Fonts;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
-let obj = { staticMessageContentContainer: { accessibilityRole: true, guildId: null }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
+let obj = { staticMessageContentContainer: { -1805531016: "<string:4083789493>", 2095032404: "<string:3209801398>" }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
 obj = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 };
 obj.userName = obj;
-obj.emptyDisplayContainer = {};
+obj.emptyDisplayContainer = { YUU0RF: null, f12: null, findChoiceStringValue: null };
 obj.staticMessageContent = { height: "100%" };
 obj1 = { paddingTop: 24 };
 const tmp2 = arg1(dependencyMap[5]);
 const merged = Object.assign(importDefault(dependencyMap[8])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
 obj1["textAlign"] = "center";
 obj.emptyDisplayTitle = obj1;
-const obj3 = { "Bool(false)": "never", "Bool(false)": true, "Bool(false)": "compatibility", tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.remainingUsersIcon = obj3;
-const obj4 = { tt: null, refId: null, sr: null, ks: null, ao: null, w: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
+const importDefaultResult = importDefault(dependencyMap[8]);
+const obj2 = { marginBottom: 8 };
+obj.remainingUsersIcon = { tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj4 = { <string:2404551769>: "window", <string:1642563304>: "Array", <string:2256557963>: "isArray", <string:2761889636>: "x", <string:2730533642>: "hasDiversityParent", <string:3280959101>: "location", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.remainingUsersIconContainer = obj4;
 let closure_9 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((eventUser) => {
@@ -259,8 +260,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   return callback(arg1(dependencyMap[13]).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
-const importDefaultResult = importDefault(dependencyMap[8]);
-const obj2 = { marginBottom: 8 };
+const obj3 = { tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailRsvpSheet.tsx");
 
 export default EventDetailRsvpSheet;

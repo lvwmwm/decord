@@ -1,5 +1,5 @@
 // Module ID: 8592
-// Function ID: 68233
+// Function ID: 68244
 // Name: GameProfileEmbedAction
 // Dependencies: []
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen

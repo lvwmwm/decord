@@ -1,7 +1,7 @@
 // Module ID: 1389
-// Function ID: 16569
+// Function ID: 16574
 // Name: TypeTag
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1389 (TypeTag)
 const _module = require(dependencyMap[0]);

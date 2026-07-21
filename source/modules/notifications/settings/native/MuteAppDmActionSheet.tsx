@@ -1,5 +1,5 @@
 // Module ID: 11622
-// Function ID: 90243
+// Function ID: 90255
 // Name: MuteAppDMActionSheet
 // Dependencies: []
 // Exports: default
@@ -12,13 +12,13 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.sheet = obj;
-obj.iconContainer = { 304631162: "absolute", -309048237: 0 };
-obj.iconBackground = { bhk: null, bic: null };
+obj.iconContainer = {};
+obj.iconBackground = { "Null": "row", "Null": "center" };
 obj.content = { padding: 16 };
-obj.headerText = { y: 2137063425, measureButtonAndShowMenu: 95420418, TA8GFt: -2075787263 };
-obj.infoText = { y: null, measureButtonAndShowMenu: null, TA8GFt: null };
+obj.headerText = {};
+obj.infoText = { unicodeVersion: "<string:2255552513>", TypeError: "<string:16777216>", body: "%MapPrototype%" };
 obj.dismissButtonContainer = { marginTop: 8 };
-const obj1 = { padding: "Array", _distance: "isArray", a: "parent", DARK: "round", url: "Array", kind: "isArray", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+const obj1 = { "Null": 17891330, "Null": -1002126767, "Null": -167771276, "Null": -167771414, "Null": -167771414, "Null": 1912603370, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 obj.mutedNotificationContainer = obj1;
 obj.mutedNotification = {};
 let closure_6 = obj.createStyles(obj);
@@ -41,7 +41,7 @@ export default function MuteAppDMActionSheet(channel) {
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[8]).t.uAmAiL);
   items[1] = callback(arg1(dependencyMap[9]).Text, obj2);
-  const obj3 = { style: tmp.infoText };
+  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.infoText };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[8]).t.mscFJU);
   items[2] = callback(arg1(dependencyMap[9]).Text, obj3);

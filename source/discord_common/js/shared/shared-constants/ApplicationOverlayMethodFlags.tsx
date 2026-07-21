@@ -1,7 +1,7 @@
 // Module ID: 4155
-// Function ID: 35102
+// Function ID: 35110
 // Name: ApplicationOverlayMethodFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4155 (ApplicationOverlayMethodFlags)
 const _module = require(dependencyMap[0]);

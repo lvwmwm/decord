@@ -1,10 +1,10 @@
-// Module ID: 15069
-// Function ID: 113417
+// Module ID: 15072
+// Function ID: 113451
 // Name: ICYMIInfoScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15069 (ICYMIInfoScreen)
+// Module 15072 (ICYMIInfoScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,21 +14,21 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
+obj = { 9223372036854775807: "scalar", 9223372036854775807: 1, 9223372036854775807: "center", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.closeIcon = { height: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 const obj1 = { height: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 obj.closeIconColor = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.bgImage = {};
-obj.headerImg = { "Null": 95231, "Null": 65536, "Null": 786432, "Null": 979435520 };
+obj.headerImg = { flexDirection: 95231, flexWrap: 65536, gap: 786432, isEnabled: 979435520 };
 obj.flashIcon = { "Null": "flex", "Null": "row" };
 obj.subContainer = {};
-obj.header = { channelId: "isArrayBufferToString", position: "%AsyncGenerator%" };
-obj.headerText = { "Bool(true)": "absolute", "Bool(true)": 0 };
-const obj3 = { x: false, text: false, jsxs: false, code: false, surrogates: false, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj.header = { content: "isArrayBufferToString", t: "sync" };
+obj.headerText = {};
+const obj3 = { color: false, variant: false, style: false, maxFontSizeMultiplier: false, lineClamp: false, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.body = obj3;
-const obj4 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
+const obj4 = { resetRoot: null, drawerOpen: null, marginBottom: null, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.divider = obj4;
 obj.infoRow = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -115,11 +115,11 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   obj10.source = importDefault(closure_2[22]);
   obj10.style = tmp.flashIcon;
   items7[1] = callback3(importDefault(closure_2[18]), obj10);
-  const obj11 = {};
+  const obj11 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
   const intl2 = arg1(closure_2[17]).intl;
   obj11.children = intl2.string(arg1(closure_2[17]).t.jnXV/V);
   items7[2] = callback3(arg1(closure_2[23]).Text, obj11);
-  const obj12 = { style: tmp.headerText };
+  const obj12 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.headerText };
   const intl3 = arg1(closure_2[17]).intl;
   obj12.children = intl3.string(arg1(closure_2[17]).t.9SjvoK);
   items7[3] = callback3(arg1(closure_2[23]).Text, obj12);
@@ -160,16 +160,19 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[4] = callback4(closure_6, obj23);
   obj14.children = items10;
   const items13 = [callback4(closure_6, obj14), ];
-  const obj26 = { style: tmp.hint };
+  const obj26 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.hint };
   const intl7 = arg1(closure_2[17]).intl;
   obj26.children = intl7.format(arg1(closure_2[17]).t.jVS/hc, {
     feedbackHook(children) {
-      return callback(extendedOnboarding(closure_2[23]).Text, {
+      const obj = {
+        hasMaxConnections: true,
+        isBoostOnlySubscription: true,
         onPress() {
           return callback2(paths[27]).openLazy(callback(paths[29])(paths[28], paths.paths), "ICYMIFeedbackSheet", {});
         },
         children
-      }, arg1);
+      };
+      return callback(extendedOnboarding(closure_2[23]).Text, obj, arg1);
     }
   });
   items13[1] = callback3(arg1(closure_2[23]).Text, obj26);

@@ -1,5 +1,5 @@
 // Module ID: 10299
-// Function ID: 79495
+// Function ID: 79506
 // Name: LocationText
 // Dependencies: []
 // Exports: SimpleNotificationHeader, default
@@ -50,7 +50,7 @@ function LocationText(channel) {
     tmp5 = callback(arg1(dependencyMap[8]).Text, obj);
   }
   const items1 = [tmp5, memo, ];
-  obj = { -9223372036854775808: "SHARE_SCREEN_MODAL_KEY", 0: "proto", 0: "NO_VOICE_STATES", color: str, style: tmp.secondaryText, children: _location };
+  obj = { <string:1643205302>: 220545491, <string:1415816450>: -144637950, <string:4283523744>: 684545, color: str, style: tmp.secondaryText, children: _location };
   items1[2] = callback(arg1(dependencyMap[8]).Text, obj);
   obj.children = items1;
   return closure_8(View, obj);
@@ -62,13 +62,13 @@ let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let closure_9 = Object.freeze({ radius: 12 });
-let closure_10 = Object.freeze({ label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" });
+let closure_10 = Object.freeze({});
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj.headerContent = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
-obj.primaryText = {};
+obj.headerContent = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
+obj.primaryText = { "Bool(false)": null, "Bool(false)": null };
 obj.secondaryTextContainer = {};
 obj.separator = { marginHorizontal: 2 };
 obj.icon = {};
@@ -177,7 +177,7 @@ export default function MessageNotificationHeader(arg0) {
     obj4.onPress = function onPress() {
       return onDismiss("close_from_expanded");
     };
-    const obj5 = { color: "icon-subtle", style: { <string:1632221346>: false, <string:2722977214>: "internal" } };
+    const obj5 = { color: "icon-subtle", style: { y: 0, isArray: -1048576 } };
     obj4.children = callback(arg1(dependencyMap[17]).XSmallIcon, obj5);
     expanded = callback(arg1(dependencyMap[15]).PressableOpacity, obj4);
   }
@@ -197,7 +197,7 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   let tmp4 = null != secondaryText;
   if (tmp4) {
     obj = { style: tmp.secondaryTextContainer };
-    obj = { flex: null, display: 10, flexDirection: -2, alignItems: true, justifyContent: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
+    obj = { paddingTop: null, textTransform: 10, absolute: -2, tall: true, wide: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
     const items2 = [callback(arg1(dependencyMap[8]).Text, obj), ];
     const obj1 = { style: tmp.secondaryText, children: secondaryText };
     items2[1] = callback(arg1(dependencyMap[8]).Text, obj1);

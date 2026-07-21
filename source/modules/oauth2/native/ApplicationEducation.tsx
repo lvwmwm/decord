@@ -1,5 +1,5 @@
 // Module ID: 9005
-// Function ID: 70864
+// Function ID: 70875
 // Name: ApplicationEducationEntry
 // Dependencies: []
 // Exports: default
@@ -25,8 +25,8 @@ const View = arg1(dependencyMap[1]).View;
 const MAX_FRIENDS = arg1(dependencyMap[2]).MAX_FRIENDS;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { applicationEducation: {}, entry: { <string:3461472865>: 54801408, <string:1447977218>: -225361408, <string:1640807382>: 854917122 }, entryText: { flex: 1 } };
-obj = { bhk: false, bic: "internal", tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+obj = { applicationEducation: {}, entry: { "Null": "<string:1107297123>", "Null": "n\u00E4stan ett \u00E5r", "Bool(false)": "n\u00E4stan {{count}} \u00E5r" }, entryText: { flex: 1 } };
+obj = { "Null": 0, "Null": -1048576, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.entryIcon = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
@@ -141,7 +141,7 @@ export default function ApplicationEducation(arg0) {
       if (null != arr2) {
         tmp59 = null;
         if (arr2.length > 0) {
-          const obj13 = { children: arr2 };
+          const obj13 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", children: arr2 };
           tmp59 = callback(arg1(dependencyMap[13]).Text, obj13);
         }
       }

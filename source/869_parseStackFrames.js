@@ -1,5 +1,5 @@
 // Module ID: 869
-// Function ID: 9674
+// Function ID: 9678
 // Name: parseStackFrames
 // Dependencies: []
 // Exports: eventFromMessage, eventFromUnknownInput
@@ -222,7 +222,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
     data = data.data.mechanism;
   }
   if (!data) {
-    data = { onDrawerSlide: true, onDrawerStateChanged: true };
+    data = { id: false, gameId: false };
   }
   const tmp = callback(getException(arg0, data, arg2, data), 2);
   let obj = {};

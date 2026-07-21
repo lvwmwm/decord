@@ -1,5 +1,5 @@
 // Module ID: 10586
-// Function ID: 82598
+// Function ID: 82609
 // Name: ActivityTileInner
 // Dependencies: []
 // Exports: default
@@ -210,17 +210,17 @@ const XSMALL = arg1(dependencyMap[10]).AvatarSizes.XSMALL;
 const themedRippleConfig = arg1(dependencyMap[7]).getThemedRippleConfig({ foreground: true });
 let obj = arg1(dependencyMap[11]);
 obj = {};
-obj = { url: "a", oldFormErrors: "p", rejectWithError: "midnatt", retries: "middag", useAdaptiveCompression: "p\u00E5 morg.", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { 693235809: "set", 1372873169: "Array", 542349517: "isArray", -2130773854: "position", -410103049: "channel", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 obj.pressableOpacity = obj;
 obj.activityPreview = {};
 const tmp4 = arg1(dependencyMap[9]);
 obj.activityViewContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 obj.titleText = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, fontFamily: tmp3.Fonts.DISPLAY_EXTRABOLD };
-obj.subtitleText = { "Null": null, "Null": null, "Null": null };
+obj.subtitleText = { 9223372036854775807: "<string:2255552513>", 9223372036854775807: "<string:16777216>", 0: "%MapPrototype%" };
 const obj2 = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, fontFamily: tmp3.Fonts.DISPLAY_EXTRABOLD };
 obj.overflow = { height: arg1(dependencyMap[10]).AVATAR_SIZE_MAP[XSMALL], backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_NORMAL };
-obj.buttonWrapper = { "Bool(true)": null, "Bool(true)": null };
+obj.buttonWrapper = { disabled: null, sequence: null };
 obj.buttonPill = { borderRadius: 100 };
 let closure_14 = obj.createStyles(obj);
 const obj3 = { height: arg1(dependencyMap[10]).AVATAR_SIZE_MAP[XSMALL], backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_NORMAL };

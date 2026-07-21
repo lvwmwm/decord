@@ -1,9 +1,9 @@
-// Module ID: 14389
-// Function ID: 108558
+// Module ID: 14392
+// Function ID: 108590
 // Name: route
 // Dependencies: []
 
-// Module 14389 (route)
+// Module 14392 (route)
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[6]);
 obj = {

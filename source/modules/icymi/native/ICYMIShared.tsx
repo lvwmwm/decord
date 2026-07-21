@@ -1,13 +1,13 @@
-// Module ID: 15092
-// Function ID: 113753
+// Module ID: 15095
+// Function ID: 113787
 // Name: Separator
 // Dependencies: []
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
 
-// Module 15092 (Separator)
+// Module 15095 (Separator)
 class Separator {
   constructor() {
-    obj = { style: f113760().separator };
+    obj = { style: f113794().separator };
     return jsx(View, obj);
   }
 }
@@ -54,7 +54,7 @@ class GuildContentPost {
     arg1 = guild;
     ({ channel: closure_1, id: closure_2, type: closure_3 } = global);
     ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f113760();
+    tmp = f113794();
     obj = arg1(dependencyMap[25]);
     obj = {};
     fontScale = obj.useFontScale();
@@ -87,7 +87,7 @@ class GuildContentPost {
       tmp18 = arg1;
       tmp19 = dependencyMap;
       num = 27;
-      obj7 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10 };
+      obj7 = { "Null": 0, "Null": 5.566, "Null": 10 };
       num2 = 28;
       obj10 = arg1(dependencyMap[28]);
       obj7.children = obj10.getRelativeTimestamp(timestamp);
@@ -183,34 +183,34 @@ let closure_21 = arg1(dependencyMap[19]).createICYMIStyles((margin) => {
   obj.content = obj;
   const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[21]).radii.round, backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
   obj.insetIconWrapper = obj1;
-  obj.authorIcon = { 314033: false, 315680: false, 314067: "press" };
+  obj.authorIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": "press" };
   obj2 = { tintColor: importDefault(dependencyMap[21]).colors.TEXT_MUTED };
   obj.moreDetailsIcon = obj2;
   ({ margin: obj8.paddingBottom, margin: obj8.marginHorizontal } = margin);
-  obj.channelNameAndAccessory = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" };
+  obj.channelNameAndAccessory = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" };
   obj4 = { flexDirection: "column", paddingBottom: margin.margin, marginHorizontal: margin.margin };
   obj.channelNameAndAccessoryLarge = obj4;
-  obj.header = { <string:2316633720>: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", <string:1071949164>: "keyboardAppearance" };
-  obj.headerInfo = { marginLeft: margin.margin };
-  obj.title = { items: 0, width: "", flex: 0, justifyContent: 0 };
+  obj.header = {};
+  const obj5 = { isArray: null, diversity: null, marginLeft: margin.margin };
+  obj.headerInfo = obj5;
+  obj.title = { 1650211683: 0, 1644363857: "", -77441452: 0, 67064224: 0 };
   obj.titleLeft = {};
-  const obj5 = { 1449229240: "row", 371666258: "center", borderRadius: importDefault(dependencyMap[21]).radii.sm };
-  obj.subTitleContainer = obj5;
-  obj.subtitle = {};
-  obj.genContentSubtitle = { gap: importDefault(dependencyMap[21]).space.PX_4 };
+  const obj6 = { "Bool(false)": false, "Bool(false)": 0, borderRadius: importDefault(dependencyMap[21]).radii.sm };
+  obj.subTitleContainer = obj6;
+  obj.subtitle = { customNavbar: true, getOrFetchLinkedUsers: true, encoderQualityStats: true };
+  const obj7 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[21]).space.PX_4 };
+  obj.genContentSubtitle = obj7;
   obj.genContentSubtitleChannel = {};
   obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj3 = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" };
-  const obj6 = { gap: importDefault(dependencyMap[21]).space.PX_4 };
-  obj.separator = { backgroundColor: importDefault(dependencyMap[21]).colors.BORDER_SUBTLE };
-  obj.eventsSubtitle = {};
-  const obj8 = { <string:2471618329>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045856417437685, <string:3096204232>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008452491928007849, <string:3664558111>: 139264.00001610073, <string:1369504610>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003375041563059219, <string:1398886034>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000049814743080912026, <string:1644430417>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200346588526, <string:72526422>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015493702505500123, backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[21]).radii.md };
-  obj.comments = obj8;
-  obj.recentCommentText = { "Null": true, "Null": true, "Null": true };
-  obj.commentCount = { <string:3798027838>: 40, <string:1627573841>: null, <string:3151386190>: "center", <string:45572556>: "text-md/medium", <string:1435107624>: "input-placeholder-text-default" };
-  const obj9 = { bhk: false, bic: "internal", tintColor: importDefault(dependencyMap[21]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.commentsIcon = obj9;
-  const obj7 = { backgroundColor: importDefault(dependencyMap[21]).colors.BORDER_SUBTLE };
+  const obj8 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[21]).colors.BORDER_SUBTLE };
+  obj.separator = obj8;
+  obj.eventsSubtitle = { "Null": 7, "Null": 370 };
+  const obj9 = { icon: "WebUserSettings", label: "ME", hasCustomProfileTheme: "MediaManager", isPending: "type", accessibilityRole: "isArray", onPress: "NATIVE_REQUIRED_ASSETS_ICONS", editable: "getUserTrialOffer", backgroundColor: importDefault(dependencyMap[21]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[21]).radii.md };
+  obj.comments = obj9;
+  obj.recentCommentText = { "Null": "<string:2370959201>", "Null": "<string:3375841609>", "Null": "<string:24182785>" };
+  obj.commentCount = {};
+  const obj10 = { "Null": 0, "Null": -1048576, tintColor: importDefault(dependencyMap[21]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.commentsIcon = obj10;
   obj.chevron = { tintColor: importDefault(dependencyMap[21]).colors.TEXT_MUTED };
   return obj;
 });
@@ -226,7 +226,7 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: constants3.ICYMI, object: constants.ACK_MESSAGE_VIEWED, objectType: constants2.ACK_SEMI_AUTOMATIC };
     obj.ack(arg0, obj, true, true, arg2);
   }, 1500);
-  importDefault(dependencyMap[15])(closure_17.CHANNEL(id2, id, id3), { textContentType: true, autoCapitalize: true });
+  importDefault(dependencyMap[15])(closure_17.CHANNEL(id2, id, id3), { textContentType: null, autoCapitalize: null });
   if (null != id3) {
     id2(dependencyMap[16]).runAfterInteractions(() => {
       let obj = arg2(closure_2[17]);
@@ -274,7 +274,7 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
   const callback = React.useCallback(() => {
     let obj = channel(author[33]);
     obj.itemInteracted(id, "announcement", "open_profile");
-    obj = { itemId: id, itemType: "announcement", actionParameters: { "Bool(false)": 544342527, "Bool(false)": 536870912, "Bool(false)": 1358954496, "Bool(false)": -465465325 } };
+    obj = { itemId: id, itemType: "announcement", actionParameters: {} };
     channel(author[33]).feedItemActioned(obj);
     obj = { userId: author.id, channelId: channel.id };
     channel(author[34])(obj);
@@ -282,7 +282,7 @@ export const AnnouncementContentPost = function AnnouncementContentPost(guild) {
   obj.avatar = callback(CutoutGuildIconWithUser, { guild, author });
   obj = { style: { maxWidth: 225 }, children: guild.name };
   obj.title = callback(arg1(dependencyMap[27]).Text, obj, channel.id);
-  obj1 = { encodingConfig: "bendrumas", showRemove: "<string:745668608>", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "<string:4227858432>", style: callback3().subtitle };
+  obj1 = { style: callback3().subtitle };
   const obj2 = { variant: "text-md/semibold", onPress: callback, style: obj3 };
   const obj3 = { color: colorString };
   obj2.children = `${closure_24(tmp4)} `;
@@ -360,7 +360,7 @@ export const GuildEventPost = function GuildEventPost(guild) {
     if (null != stateFromStores) {
       let obj = channel(event[33]);
       obj.itemInteracted(event.id, type, "open_profile");
-      obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": 544342527, "Bool(false)": 536870912, "Bool(false)": 1358954496, "Bool(false)": -465465325 } };
+      obj = { itemId: event.id, itemType: "guild_event", actionParameters: {} };
       channel(event[33]).feedItemActioned(obj);
       obj = { userId: stateFromStores.id };
       let highestRoleId;
@@ -396,7 +396,7 @@ export const GuildEventPost = function GuildEventPost(guild) {
   obj.avatar = tmp18;
   obj2 = { style: { maxWidth: 225 }, children: guild.name };
   obj.title = callback(arg1(dependencyMap[27]).Text, obj2, event.id);
-  const obj3 = { encodingConfig: "bendrumas", showRemove: "<string:745668608>", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "<string:4227858432>", style: callback3().subtitle };
+  const obj3 = { style: callback3().subtitle };
   if (null != stateFromStores) {
     const obj4 = {};
     const obj5 = { variant: "text-md/semibold", onPress: callback };
@@ -478,7 +478,7 @@ export const MessageContentPost = function MessageContentPost(guild) {
   const callback = React.useCallback(() => {
     let obj = channel(author[33]);
     obj.itemInteracted(id, type, "open_profile");
-    obj = { itemId: id, itemType: "message", actionParameters: { "Bool(false)": 544342527, "Bool(false)": 536870912, "Bool(false)": 1358954496, "Bool(false)": -465465325 } };
+    obj = { itemId: id, itemType: "message", actionParameters: {} };
     channel(author[33]).feedItemActioned(obj);
     obj = { userId: author.id, channelId: channel.id };
     channel(author[34])(obj);
@@ -486,7 +486,7 @@ export const MessageContentPost = function MessageContentPost(guild) {
   obj = { guild, channel, timestamp, avatar: callback(CutoutGuildIconWithUser, { guild, author }) };
   obj = { style: { maxWidth: 225 }, children: guild.name };
   obj.title = callback(arg1(dependencyMap[27]).Text, obj, channel.id);
-  obj1 = { encodingConfig: "bendrumas", showRemove: "<string:745668608>", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "<string:4227858432>", style: { marginRight: React.useContext(arg1(dependencyMap[40]).ICYMIContext).margin } };
+  obj1 = { style: { marginRight: React.useContext(tmp4(tmp5[40]).ICYMIContext).margin } };
   const obj2 = { style: obj3, onPress: callback, variant: "text-md/semibold" };
   const obj3 = { color: colorString };
   obj2.children = `${closure_24(tmp6)} `;
@@ -528,7 +528,7 @@ export const SimplePost = function SimplePost(arg0) {
   const fn = function c() {
     const obj = {};
     const items = [token, hexWithOpacityResult];
-    obj.backgroundColor = highlight(hexWithOpacityResult[44]).interpolateColor(sharedValue.get(), ["Text", "lc"], items);
+    obj.backgroundColor = highlight(hexWithOpacityResult[44]).interpolateColor(sharedValue.get(), ["replace", "then"], items);
     return obj;
   };
   obj = { interpolateColor: arg1(dependencyMap[44]).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
@@ -643,7 +643,7 @@ export const ThreadAsComments = function ThreadAsComments(parentMessage) {
         obj.guildId = thread.guild_id;
         obj.size = arg1(dependencyMap[22]).AvatarSizes.XSMALL;
         const items2 = [callback(arg1(dependencyMap[22]).Avatar, obj), , ];
-        const obj1 = { "Null": true, "Null": true, style: tmp.recentCommentText };
+        const obj1 = { style: tmp.recentCommentText };
         if (mostRecentMessage.content.length > 0) {
           let obj4 = importDefault(dependencyMap[49]);
           let parseInlineReplyResult = obj4.parseInlineReply(mostRecentMessage.content, true);

@@ -1,5 +1,5 @@
 // Module ID: 1626
-// Function ID: 18177
+// Function ID: 18182
 // Name: getSensorContainer
 // Dependencies: []
 // Exports: configureLayoutAnimationBatch, enableLayoutAnimations, getViewProp, initializeSensor, isConfigured, isReanimated3, jsiConfigureProps, markNodeAsRemovable, registerEventHandler, registerSensor, setShouldAnimateExitingForTag, subscribeForKeyboardEvents, unmarkNodeAsRemovable, unregisterEventHandler, unregisterSensor, unsubscribeFromKeyboardEvents
@@ -23,7 +23,7 @@ function isReanimated3() {
 }
 let closure_5 = { code: "function handleAndFlushAnimationFrame_Pnpm_coreTs1(eventTimestamp,event){const{eventHandler}=this.__closure;global.__frameTimestamp=eventTimestamp;eventHandler(event);global.__flushAnimationFrame(eventTimestamp);global.__frameTimestamp=undefined;}" };
 let closure_6 = { code: "function handleAndFlushAnimationFrame_Pnpm_coreTs2(state,height){const{eventHandler}=this.__closure;const now=global._getAnimationTimestamp();global.__frameTimestamp=now;eventHandler(state,height);global.__flushAnimationFrame(now);global.__frameTimestamp=undefined;}" };
-let closure_7 = { header: null, backgroundColor: null };
+let closure_7 = { <string:3112915200>: null, <string:3082218084>: null };
 
 export const startMapper = require(dependencyMap[6]).startMapper;
 export const stopMapper = require(dependencyMap[6]).stopMapper;

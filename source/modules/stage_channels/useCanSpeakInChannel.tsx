@@ -1,5 +1,5 @@
 // Module ID: 10356
-// Function ID: 79926
+// Function ID: 79937
 // Name: useCanCurrentUserSpeakInChannel
 // Dependencies: []
 // Exports: default

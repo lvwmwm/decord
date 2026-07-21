@@ -1,5 +1,5 @@
 // Module ID: 9075
-// Function ID: 71150
+// Function ID: 71161
 // Name: VoiceActivityStatus
 // Dependencies: []
 // Exports: default
@@ -29,7 +29,7 @@ export default function VoiceActivityStatus(hideText) {
     let obj = {};
     let tmp5 = !hideIcon;
     if (tmp5) {
-      obj = { "Bool(true)": "abb394aed71d149627aa4dc597482f89", "Bool(true)": "stack-nav-back", "Bool(true)": "png", channel };
+      obj = { channel };
       const items = [tmp.icon, hideText.iconStyle];
       obj.style = items;
       tmp5 = callback(importDefault(dependencyMap[3]), obj);

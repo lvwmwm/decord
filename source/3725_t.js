@@ -1,5 +1,5 @@
 // Module ID: 3725
-// Function ID: 28493
+// Function ID: 28498
 // Name: t
 // Dependencies: []
 
@@ -34,7 +34,7 @@ const fn = function t(moment) {
     weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
     weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
     weekdaysParseExact: true,
-    longDateFormat: { <string:1122280543>: 1, <string:3251850218>: "za %s", <string:306010250>: "%s temu", <string:37429971>: "kilka sekund", <string:1812403200>: "HH:mm", <string:3855182856>: "HH:mm:ss" },
+    longDateFormat: {},
     calendar: {},
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
@@ -47,7 +47,7 @@ const fn = function t(moment) {
       }
       str = "ste";
     },
-    week: { <string:1431496722>: false, <string:1627556098>: false }
+    week: { "Bool(true)": null, "Bool(true)": null }
   });
 };
 if ("object" === typeof exports) {

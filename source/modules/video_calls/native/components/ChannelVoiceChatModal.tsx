@@ -1,5 +1,5 @@
 // Module ID: 10195
-// Function ID: 78693
+// Function ID: 78704
 // Name: ChannelVoiceChatModal
 // Dependencies: []
 // Exports: default

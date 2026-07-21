@@ -1,5 +1,5 @@
 // Module ID: 961
-// Function ID: 10387
+// Function ID: 10391
 // Name: instrumentFetch
 // Dependencies: []
 // Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler
@@ -187,7 +187,7 @@ function getUrlFromResource(url) {
 }
 function parseFetchArgs(arg0) {
   if (0 === arg0.length) {
-    return { "Null": "subtype", "Null": "enum" };
+    return {};
   } else if (2 === arg0.length) {
     const tmp6 = callback(arg0, 2);
     const first = tmp6[0];

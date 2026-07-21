@@ -1,5 +1,5 @@
 // Module ID: 11743
-// Function ID: 91208
+// Function ID: 91220
 // Name: InviteRolesList
 // Dependencies: []
 // Exports: default
@@ -38,7 +38,7 @@ export default function InviteRolesList(invite) {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style: invite.style };
-      obj = {};
+      obj = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum" };
       const intl = arg1(dependencyMap[7]).intl;
       obj.children = intl.string(arg1(dependencyMap[7]).t.stcSfI);
       const items1 = [callback(arg1(dependencyMap[6]).Text, obj), ];

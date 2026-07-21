@@ -1,10 +1,10 @@
-// Module ID: 7705
-// Function ID: 61388
+// Module ID: 7706
+// Function ID: 61400
 // Name: createStageStartSystemMessage
 // Dependencies: []
 // Exports: createStageStartSystemMessage
 
-// Module 7705 (createStageStartSystemMessage)
+// Module 7706 (createStageStartSystemMessage)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageStartSystemMessage.tsx");
 

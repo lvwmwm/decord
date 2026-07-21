@@ -1,10 +1,10 @@
-// Module ID: 13394
-// Function ID: 101813
+// Module ID: 13396
+// Function ID: 101835
 // Name: CacheLogEntry
 // Dependencies: []
 // Exports: default
 
-// Module 13394 (CacheLogEntry)
+// Module 13396 (CacheLogEntry)
 function CacheLogEntry(entry) {
   entry = entry.entry;
   const before = entry.before;

@@ -1,5 +1,5 @@
 // Module ID: 10547
-// Function ID: 82379
+// Function ID: 82390
 // Name: PopoutMenuRow
 // Dependencies: []
 
@@ -86,11 +86,11 @@ const forwardRefResult = importAllResult.forwardRef(function PopoutMenu(onClose)
   let closure_10 = ref;
   const ref1 = bottom.useRef(null);
   let closure_11 = ref1;
-  const tmp11 = callback(bottom.useState({ <string:75726401>: null, <string:3904065792>: 4, <string:3383448658>: 4, <string:1948537673>: "rgba(0, 0, 0, 0.75)" }), 2);
+  const tmp11 = callback(bottom.useState({ "Bool(false)": "ERROR", "Bool(false)": "ERROR", "Bool(false)": "NOT_RESPONDER", "Bool(false)": "NOT_RESPONDER" }), 2);
   const first2 = tmp11[0];
   let closure_12 = first2;
   let closure_13 = tmp11[1];
-  const tmp13 = callback(bottom.useState({ bhk: -536870861, bic: -299892737 }), 2);
+  const tmp13 = callback(bottom.useState({ "Null": -536870861, "Null": -299892737 }), 2);
   const first3 = tmp13[0];
   const PopoutMenuRow = first3;
   let closure_15 = tmp13[1];

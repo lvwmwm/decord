@@ -1,10 +1,10 @@
 // Module ID: 4517
-// Function ID: 39701
+// Function ID: 39709
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [0, 4294967295]
 
 // Module 4517 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "__exportStarResult1";
+import { codegenNativeComponent } from "result";
 
 const obj = { uiViewClassName: "RNSTabsBottomAccessoryContent", validAttributes: { environment: true } };
 const _module = require(dependencyMap[1]);

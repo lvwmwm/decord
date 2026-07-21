@@ -1,5 +1,5 @@
 // Module ID: 10044
-// Function ID: 77622
+// Function ID: 77633
 // Name: GuildTemplatesItem
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ class GuildTemplatesItem {
     importDefault = global.onGuildTemplatePress;
     obj = {
       Icon() {
-            const obj = { source: guildTemplate(closure_2[8]).GUILD_TEMPLATE_ICONS[closure_0.id], disableColor: true, style: { bhk: null, bic: null } };
+            const obj = { source: guildTemplate(closure_2[8]).GUILD_TEMPLATE_ICONS[closure_0.id], disableColor: true, style: { "Null": "row", "Null": "center" } };
             return callback(guildTemplate(closure_2[7]).Icon, obj);
           },
       message: guildTemplate.label,
@@ -31,7 +31,7 @@ const GuildDirectoryCreate = arg1(dependencyMap[3]).GuildDirectoryCreate;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const tmp4 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ label: { "Null": 24, "Null": 24, "Null": null }, title: { "Null": null, "Null": null }, description: { textAlign: "center" }, header: {}, templateGroup: { marginHorizontal: 16 } });
+let closure_11 = arg1(dependencyMap[5]).createStyles({ label: { 0: "usePubSub", 9223372036854775807: "Array", 9223372036854775807: "ERNhYf" }, title: { "Null": null, "Null": null }, description: { textAlign: "center" }, header: {}, templateGroup: { marginHorizontal: 16 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");
 
@@ -53,7 +53,7 @@ export default function GuildDirectoryTemplates(directoryGuildName) {
   obj = {};
   obj = { contentContainerStyle: obj1 };
   const obj2 = { style: tmp.header };
-  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   obj3.children = intl.format(arg1(dependencyMap[13]).t.T7aLYT, { guildName: directoryGuildName.directoryGuildName });
   const items1 = [callback2(arg1(dependencyMap[12]).Text, obj3), ];

@@ -1,5 +1,5 @@
 // Module ID: 11568
-// Function ID: 89971
+// Function ID: 89983
 // Name: openGuildPowerupsMultiPerkBottomSheet
 // Dependencies: []
 // Exports: default

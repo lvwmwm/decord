@@ -1,9 +1,9 @@
-// Module ID: 6939
-// Function ID: 55469
+// Module ID: 6940
+// Function ID: 55481
 // Name: DEFAULT_VIDEO_VOLUME
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6939 (DEFAULT_VIDEO_VOLUME)
+// Module 6940 (DEFAULT_VIDEO_VOLUME)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/video-player/DiscordVideoPlayerTypes.tsx");
 

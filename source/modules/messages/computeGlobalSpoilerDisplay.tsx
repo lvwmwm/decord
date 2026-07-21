@@ -1,5 +1,5 @@
 // Module ID: 10837
-// Function ID: 84097
+// Function ID: 84108
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: []
 // Exports: useShouldDisplaySpoilerObscurity

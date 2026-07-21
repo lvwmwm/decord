@@ -1,5 +1,5 @@
 // Module ID: 12047
-// Function ID: 93025
+// Function ID: 93037
 // Dependencies: []
 
 // Module 12047
@@ -37,47 +37,48 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
       callback(items);
     });
   }, []);
-  obj = { "Bool(false)": 60, "Bool(false)": 0, "Bool(false)": 0 };
-  const items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
-  obj.contentContainerStyle = items;
-  obj.children = first.map((type) => {
-    let IconComponent;
-    let fullIcon;
-    let getLabel;
-    let icon;
-    ({ fullIcon, getLabel, icon, IconComponent, onPress: closure_0 } = type);
-    let obj = { style: obj };
-    obj = { maxWidth: 76 * callback };
-    if (null != fullIcon) {
-      obj = {
-        image: fullIcon,
-        label: getLabel(),
-        onPress() {
-            return callback(callback);
-          },
-        maxFontSizeMultiplier: 2
-      };
-      let tmp3Result = callback2(onItemPressed(closure_2[9]).ImageButton, obj);
-    } else {
-      const obj1 = { variant: "secondary" };
-      if (null == IconComponent) {
-        if (null == icon) {
-          icon = callback(closure_2[11]);
+  obj = {
+    contentContainerStyle: items,
+    children: first.map((type) => {
+      let IconComponent;
+      let fullIcon;
+      let getLabel;
+      let icon;
+      ({ fullIcon, getLabel, icon, IconComponent, onPress: closure_0 } = type);
+      let obj = { style: obj };
+      obj = { maxWidth: 76 * callback };
+      if (null != fullIcon) {
+        obj = {
+          image: fullIcon,
+          label: getLabel(),
+          onPress() {
+              return callback(callback);
+            },
+          maxFontSizeMultiplier: 2
+        };
+        let tmp3Result = callback2(onItemPressed(closure_2[9]).ImageButton, obj);
+      } else {
+        const obj1 = { variant: "secondary" };
+        if (null == IconComponent) {
+          if (null == icon) {
+            icon = callback(closure_2[11]);
+          }
+          IconComponent = icon;
         }
-        IconComponent = icon;
+        obj1.icon = IconComponent;
+        obj1.label = getLabel();
+        obj1.onPress = function onPress() {
+          return callback(callback);
+        };
+        obj1.maxFontSizeMultiplier = 2;
+        tmp3Result = callback2(onItemPressed(closure_2[10]).IconButton, obj1);
+        const tmp3 = callback2;
       }
-      obj1.icon = IconComponent;
-      obj1.label = getLabel();
-      obj1.onPress = function onPress() {
-        return callback(callback);
-      };
-      obj1.maxFontSizeMultiplier = 2;
-      tmp3Result = callback2(onItemPressed(closure_2[10]).IconButton, obj1);
-      const tmp3 = callback2;
-    }
-    obj.children = tmp3Result;
-    return callback2(closure_5, obj, type.type);
-  });
+      obj.children = tmp3Result;
+      return callback2(closure_5, obj, type.type);
+    })
+  };
+  const items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
   const children = <closure_6 {...obj} />;
   return jsx(arg1(closure_2[8]).GestureDetector, { gesture, children });
 });

@@ -1,5 +1,5 @@
 // Module ID: 11176
-// Function ID: 86887
+// Function ID: 86899
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, useGlobalSearchResults, useLocalSearchResults
@@ -727,7 +727,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   commands = tmp3.commands;
   commandSectionMap = tmp3.commandSectionMap;
   let loading = tmp3.loading;
-  let obj = { flexDirection: null, flexGrow: null, flexShrink: null, context, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 };
+  let obj = { option: null, children: null, contentContainerStyles: null, context, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 };
   apps = useApplicationsInContext(obj).apps;
   obj = {};
   let guild_id = null;

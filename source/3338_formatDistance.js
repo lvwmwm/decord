@@ -1,11 +1,11 @@
 // Module ID: 3338
-// Function ID: 26153
+// Function ID: 26158
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3338 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: null, 0: null }, xSeconds: { -9223372036854775808: null, 0: null }, halfAMinute: "\u0E04\u0E23\u0E36\u0E48\u0E07\u0E19\u0E32\u0E17\u0E35", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: { -9223372036854775808: null, 0: null }, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": null, "Bool(false)": null }, xSeconds: {}, halfAMinute: "\u0E04\u0E23\u0E36\u0E48\u0E07\u0E19\u0E32\u0E17\u0E35", lessThanXMinutes: {}, xMinutes: { "Bool(false)": 51243848, "Bool(false)": 51244288 }, aboutXHours: { "Bool(false)": null, "Bool(false)": null }, xHours: {}, xDays: { "Bool(false)": 234094595, "Bool(false)": -347602941 }, aboutXWeeks: { "Bool(false)": "a", "Bool(false)": "isArray" }, xWeeks: { "Bool(false)": null, "Bool(false)": null }, aboutXMonths: { "Bool(false)": null, "Bool(false)": null }, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

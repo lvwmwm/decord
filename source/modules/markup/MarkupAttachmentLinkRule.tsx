@@ -1,8 +1,8 @@
-// Module ID: 4573
-// Function ID: 40069
+// Module ID: 4572
+// Function ID: 40076
 // Dependencies: []
 
-// Module 4573
+// Module 4572
 let closure_0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 let obj = {};
 obj = {

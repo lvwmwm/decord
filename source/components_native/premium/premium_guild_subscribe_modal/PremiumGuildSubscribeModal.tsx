@@ -1,10 +1,10 @@
-// Module ID: 5238
-// Function ID: 44242
+// Module ID: 5237
+// Function ID: 44249
 // Name: PremiumGuildSubscribeModal
 // Dependencies: []
 // Exports: default
 
-// Module 5238 (PremiumGuildSubscribeModal)
+// Module 5237 (PremiumGuildSubscribeModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

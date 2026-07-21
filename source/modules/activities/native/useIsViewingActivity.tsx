@@ -1,5 +1,5 @@
 // Module ID: 10535
-// Function ID: 82313
+// Function ID: 82324
 // Name: useIsViewingActivity
 // Dependencies: []
 // Exports: useIsViewingActivity

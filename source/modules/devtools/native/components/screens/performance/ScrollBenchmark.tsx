@@ -1,10 +1,10 @@
-// Module ID: 14579
-// Function ID: 109878
+// Module ID: 14582
+// Function ID: 109910
 // Name: ScrollBenchmark
 // Dependencies: []
 // Exports: default
 
-// Module 14579 (ScrollBenchmark)
+// Module 14582 (ScrollBenchmark)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");

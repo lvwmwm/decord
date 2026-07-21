@@ -1,5 +1,5 @@
 // Module ID: 1448
-// Function ID: 16876
+// Function ID: 16881
 // Dependencies: []
 
 // Module 1448
@@ -555,7 +555,7 @@ export default () => {
         tmp2 = color[2] < 5;
       }
       if (tmp2) {
-        vboxes[0].color = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
+        vboxes[0].color = [null, null, null];
       }
       const diff = vboxes.length - 1;
       const color2 = vboxes[diff].color;

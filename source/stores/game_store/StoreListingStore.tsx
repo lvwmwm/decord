@@ -1,9 +1,9 @@
-// Module ID: 13300
-// Function ID: 101049
+// Module ID: 13302
+// Function ID: 101071
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 653, 13280, 13268, 10490, 7365, 10485, 13272, 10475, 2, 6936]
+// Dependencies: [5, 653, 13282, 13270, 10490, 7366, 10485, 13274, 10475, 2, 6937]
 
-// Module 13300 (_isNativeReflectConstruct)
+// Module 13302 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";

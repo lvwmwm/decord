@@ -1,10 +1,10 @@
-// Module ID: 14250
-// Function ID: 107688
+// Module ID: 14253
+// Function ID: 107720
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
 
-// Module 14250 (_callSuper)
+// Module 14253 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -144,13 +144,13 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f107703;
+      tmp13 = f107735;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f107703, obj5);
+      tmp14 = jsx(f107735, obj5);
     }
     return tmp14;
   }
@@ -173,20 +173,20 @@ let obj = arg1(dependencyMap[10]);
 obj = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
 obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, overflow: "hidden" };
 obj.videoSpecial = obj;
-obj.videoOverlay = { "Null": null, "Null": null, "Null": null };
+obj.videoOverlay = {};
 const tmp3 = arg1(dependencyMap[9]);
 obj.playButton = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
-obj.playIcon = { bhk: 24, bic: 24 };
-obj.empty = {};
+obj.playIcon = { "Null": 24, "Null": 24 };
+obj.empty = { "Null": "oneTimeCode", "Null": "stretch", "Null": 1, "Null": "center" };
 let closure_15 = obj.createLegacyClassComponentStyles(obj);
 let obj4 = arg1(dependencyMap[10]);
 const obj2 = {};
-const obj3 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000026706284291665426, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058794711, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761874, "Bool(true)": 131072.00998116285, "Bool(true)": 31091720928522130000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
-obj2.bulletPoint = obj3;
+const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+obj2.bulletPoint = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
 obj2.listItem = {};
-obj4 = { guildId: 20, justifyContent: "owning_team_id", guild_id: "scalar", justifyContent: 9, color: importDefault(dependencyMap[11]).colors.TEXT_DEFAULT };
+obj4 = { color: importDefault(dependencyMap[11]).colors.TEXT_DEFAULT };
 obj2.listText = obj4;
-obj2.listItemContent = { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+obj2.listItemContent = {};
 let closure_16 = obj4.createLegacyClassComponentStyles(obj2);
 const tmp4 = (PureComponent) => {
   class ListItem {
@@ -258,7 +258,7 @@ const tmp5 = (PureComponent) => {
         tmp2.track(constants.CHANGE_LOG_VIDEO_INTERACTED);
         const current = tmp2.ref.current;
         if (null != current) {
-          obj = {};
+          obj = { <string:1669536098>: 11289912320616628000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1645850274>: 2.000000599364285, <string:4184044779>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009220728876660892, <string:1549891269>: -12680549038139213000000000000000000000000000000000000000000000000000000000000000000000000000000 };
           const obj1 = {};
           const merged = Object.assign(obj);
           obj1["width"] = width;
@@ -384,8 +384,8 @@ const tmp5 = (PureComponent) => {
       const items1 = [callback3(callback(closure_2[17]), obj6), ];
       let tmp20 = null;
       if (null != video) {
-        const obj7 = { -968277389: false, -968228860: false, style: tmp.videoOverlay, onPress: self.playVideo };
-        const obj8 = { -968277389: false, -968228860: false, source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+        const obj7 = { "Bool(false)": -1522462253, "Bool(false)": 1912603165, style: tmp.videoOverlay, onPress: self.playVideo };
+        const obj8 = { "Bool(false)": -1522462253, "Bool(false)": 1912603165, source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
         obj7.children = callback3(callback(closure_2[20]), obj8);
         tmp20 = callback3(ChangeLog(closure_2[19]).PressableOpacity, obj7);
         const tmp26 = callback(closure_2[20]);
@@ -409,7 +409,7 @@ const tmp5 = (PureComponent) => {
   return callback(ChangeLog, items);
 }(importAllResult.PureComponent);
 tmp5.contextType = arg1(dependencyMap[12]).ThemeContext;
-const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+const obj3 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
 const result = arg1(dependencyMap[33]).fileFinishedImporting("components_native/ChangeLogModal.tsx");
 
 export default function ChangelogModal() {

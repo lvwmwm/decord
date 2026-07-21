@@ -1,5 +1,5 @@
 // Module ID: 10970
-// Function ID: 85338
+// Function ID: 85349
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
@@ -186,8 +186,8 @@ obj.userInfo = { height: 63 };
 obj.avatar = {};
 obj.rowLabel = { flexDirection: "row" };
 obj.ctaButton = {};
-obj.actionButtonLeft = { <string:945182054>: "<string:30192896>", <string:3218772856>: "<string:1067995392>", <string:3006752417>: "szabad", <string:2934583893>: "badge-force-gradient-" };
-obj.actionButtonRight = { <string:945182054>: null, <string:3218772856>: 1, <string:3006752417>: null, <string:2934583893>: 47 };
+obj.actionButtonLeft = {};
+obj.actionButtonRight = { "Null": null, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": 47 };
 obj.actionButtonContainer = { flexBasis: "auto" };
 let closure_26 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

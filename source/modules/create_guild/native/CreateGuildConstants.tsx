@@ -1,7 +1,7 @@
 // Module ID: 9219
-// Function ID: 72086
+// Function ID: 72097
 // Name: NUXGuildTemplatesAnalytics
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9219 (NUXGuildTemplatesAnalytics)
 const _module = require(dependencyMap[0]);

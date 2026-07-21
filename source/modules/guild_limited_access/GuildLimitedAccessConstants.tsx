@@ -1,9 +1,9 @@
-// Module ID: 12719
-// Function ID: 97600
+// Module ID: 12721
+// Function ID: 97622
 // Name: GUILD_LIMITED_ACCESS_HC_LINK
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 12719 (GUILD_LIMITED_ACCESS_HC_LINK)
+// Module 12721 (GUILD_LIMITED_ACCESS_HC_LINK)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessConstants.tsx");
 

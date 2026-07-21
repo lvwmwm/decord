@@ -1,5 +1,5 @@
 // Module ID: 11371
-// Function ID: 88391
+// Function ID: 88403
 // Name: getCurrentAndNextResourceChannel
 // Dependencies: []
 // Exports: default, usePreviousAndNextResourceChannel
@@ -12,7 +12,7 @@ export default function getCurrentAndNextResourceChannel(arg0, arg1) {
   const resourceChannels = resourceChannels.getResourceChannels(arg0);
   const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === arg1);
   if (findIndexResult < 0) {
-    let items = [null, null];
+    let items = [true, true];
   } else {
     items = [resourceChannels[findIndexResult], resourceChannels[(findIndexResult + 1) % resourceChannels.length]];
   }
@@ -35,5 +35,5 @@ export const usePreviousAndNextResourceChannel = function usePreviousAndNextReso
     }
     return items2;
   }
-  items2 = [null, null];
+  items2 = [true, true];
 };

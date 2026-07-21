@@ -1,10 +1,10 @@
-// Module ID: 12860
-// Function ID: 98285
+// Module ID: 12862
+// Function ID: 98307
 // Name: GuildProgressBar
 // Dependencies: []
 // Exports: default
 
-// Module 12860 (GuildProgressBar)
+// Module 12862 (GuildProgressBar)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -12,10 +12,10 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { position: "relative", backgroundColor: arg1(dependencyMap[4]).PROGRESS_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: 8 };
 obj.wrapper = obj;
-obj.progress = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+const obj1 = { "Bool(false)": null, "Bool(false)": "7730e55139737e3f08bf4e9540ae6591", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj.progress = obj1;
 let closure_6 = obj.createStyles(obj);
 let closure_7 = { code: "function GuildProgressBarTsx1(){const{percentWidth}=this.__closure;return{width:percentWidth.get()+\"%\"};}" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_progress/native/components/GuildProgressBar.tsx");
 
 export default function GuildProgressBar(percent) {

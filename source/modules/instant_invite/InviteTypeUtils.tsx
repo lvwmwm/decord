@@ -1,10 +1,10 @@
-// Module ID: 6972
-// Function ID: 55716
+// Module ID: 6973
+// Function ID: 55728
 // Name: isGroupDMInvite
 // Dependencies: []
 // Exports: getGuildInviteExtendedType, getInviteType, isRoleSubscriptionInvite, isStreamInvite
 
-// Module 6972 (isGroupDMInvite)
+// Module 6973 (isGroupDMInvite)
 function isGroupDMInvite(invite) {
   let tmp = invite.type === constants2.GROUP_DM;
   if (!tmp) {

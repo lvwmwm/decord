@@ -1,10 +1,10 @@
-// Module ID: 13393
-// Function ID: 101807
+// Module ID: 13395
+// Function ID: 101829
 // Name: DevToolsLoggingFlagsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13393 (DevToolsLoggingFlagsScreen)
+// Module 13395 (DevToolsLoggingFlagsScreen)
 const ScrollView = require(dependencyMap[0]).ScrollView;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[2]);

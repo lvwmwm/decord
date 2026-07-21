@@ -1,5 +1,5 @@
 // Module ID: 10259
-// Function ID: 79266
+// Function ID: 79277
 // Name: WaveformIcon
 // Dependencies: []
 // Exports: WaveformIcon

@@ -1,5 +1,5 @@
 // Module ID: 9117
-// Function ID: 71404
+// Function ID: 71415
 // Name: PressableNavigatorButtonWrapper
 // Dependencies: []
 // Exports: default
@@ -23,6 +23,6 @@ export default function PressableNavigatorButtonWrapper(isModal) {
     flag = false;
   }
   const tmp = callback();
-  const obj = { commandOptionText: 0, osRequirement: 7, alignSelf: 4, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, children: isModal.children };
+  const obj = { "Null": 0, 9223372036854775807: 7, 9223372036854775807: 4, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, children: isModal.children };
   return <View {...obj} />;
 };

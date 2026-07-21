@@ -1,7 +1,7 @@
 // Module ID: 11178
-// Function ID: 86965
+// Function ID: 86977
 // Name: SearchAppsRequestSource
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11178 (SearchAppsRequestSource)
 const _module = require(dependencyMap[0]);

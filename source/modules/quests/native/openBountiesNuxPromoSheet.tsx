@@ -1,10 +1,10 @@
-// Module ID: 13839
-// Function ID: 104588
+// Module ID: 13842
+// Function ID: 104620
 // Name: openBountiesNuxPromoSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13839 (openBountiesNuxPromoSheet)
+// Module 13842 (openBountiesNuxPromoSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/quests/native/openBountiesNuxPromoSheet.tsx");
 

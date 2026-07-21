@@ -1,10 +1,10 @@
-// Module ID: 15327
-// Function ID: 116649
+// Module ID: 15330
+// Function ID: 116688
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15327 (_createForOfIteratorHelperLoose)
+// Module 15330 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -125,15 +125,15 @@ let obj = arg1(dependencyMap[11]);
 obj = { container: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: importDefault(dependencyMap[12]).space.PX_16 };
 obj.inviteAppsContainerNonSticky = obj;
-obj.inviteAppsContentContainer = {};
+obj.inviteAppsContentContainer = { <string:1675284954>: "/assets/images/native", <string:1404098796>: 24, <string:3908211720>: 24 };
 const tmp4 = arg1(dependencyMap[10]);
 obj.emptyContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const obj1 = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.emptyActionContainer = { marginHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_8 };
-const obj2 = { marginHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_8 };
-obj.loading = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj3 = { convert: false, rewardContentWrapper: false, requestBillingAgreement: false, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.loading = obj3;
 let closure_20 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj2 = { marginHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_8 };
 const result = arg1(dependencyMap[41]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/AddFriendsScreen.tsx");
 
 export default function AddFriendsScreen(navigation) {
@@ -459,7 +459,7 @@ export default function AddFriendsScreen(navigation) {
               if (tmp17) {
                 let obj = {
                   component() {
-                          let obj = { getAndIncrementChangesetIdForChat: "canUseNativeForeground", radioTick: "dist", useVoiceMessagesUIStore: "extractSessionDataFromInitializeRequest", GuildEventDatetime: "dist" };
+                          let obj = { <string:1997870990>: "inset", <string:846163538>: "ce", <string:1368023441>: "SOLID", <string:4183006138>: "scrollTopOffset" };
                           const intl = tmp(tmp14[16]).intl;
                           obj.label = intl.string(tmp(tmp14[16]).t.j2POVo);
                           obj = { IconComponent: tmp(tmp14[35]).FriendsIcon };
@@ -473,8 +473,11 @@ export default function AddFriendsScreen(navigation) {
               return obj;
             }
             obj = {
+              "Null": true,
+              "Null": "/assets/images/native/empties",
+              "Null": 292,
               component() {
-                  let obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, start: !closure_22 };
+                  let obj = { LengthDelimited: -572653566, fill: -146669566, body: -771751385, duration: 1308623397, accessibilityRole: 103461, messageId: 146723, has: 139675, start: !closure_22 };
                   const intl = tmp(tmp14[16]).intl;
                   obj.label = intl.string(tmp(tmp14[16]).t.QzVsOs);
                   obj = { IconComponent: tmp(tmp14[36]).AtIcon };
@@ -506,6 +509,8 @@ export default function AddFriendsScreen(navigation) {
             }
             const analyticsLocations = tmp14;
             const obj2 = {
+              "Null": 292,
+              "Null": 182,
               key: stateFromStoresArray[arg1].id,
               component() {
                   const obj = { accepted: tmp4.includes(tmp14.id), user: tmp14, start: tmp, end: tmp2, onPress: closure_14, onDeclineIncomingRequest: closure_12, onAcceptIncomingRequest: closure_11 };
@@ -536,7 +541,7 @@ export default function AddFriendsScreen(navigation) {
             let closure_3 = user;
             const applicationId = tmp10.applicationId;
             let closure_4 = applicationId;
-            const obj4 = {};
+            const obj4 = { "Null": 292, "Null": 182 };
             const _HermesInternal = HermesInternal;
             obj4.key = "" + user.id + "-" + applicationId;
             obj4.component = function component() {

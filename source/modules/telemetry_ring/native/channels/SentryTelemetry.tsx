@@ -1,9 +1,9 @@
-// Module ID: 12999
-// Function ID: 98937
+// Module ID: 13001
+// Function ID: 98959
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12999 (_isNativeReflectConstruct)
+// Module 13001 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +18,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001435832648451094, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013194813607045764 };
+let closure_8 = {};
 let tmp2 = (arg0) => {
   class SentryTelemetryImpl {
     constructor() {

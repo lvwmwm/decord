@@ -1,10 +1,10 @@
-// Module ID: 7485
-// Function ID: 60065
+// Module ID: 7486
+// Function ID: 60077
 // Name: StageSparkleInner
 // Dependencies: []
 // Exports: default
 
-// Module 7485 (StageSparkleInner)
+// Module 7486 (StageSparkleInner)
 function StageSparkleInner(style) {
   let IconComponent;
   let icon;
@@ -35,11 +35,11 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { container: {} };
-obj = { tt: true, refId: "/assets/design/components/Icon/native/redesign/generated/images", sr: 24, ks: 24, ao: null, w: "80a1b67e775ddb8de80fde27e63a5302", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.iconContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.iconStyle = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.sparkles = {};
+obj.sparkles = { force: null, trackAnalytics: null };
 let closure_6 = obj.createStyles(obj);
 const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/native/components/StageSparkle.tsx");

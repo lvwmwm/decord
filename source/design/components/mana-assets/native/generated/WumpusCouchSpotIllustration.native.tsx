@@ -1,5 +1,5 @@
 // Module ID: 6625
-// Function ID: 50851
+// Function ID: 50859
 // Name: WumpusCouchSpotIllustration
 // Dependencies: []
 // Exports: WumpusCouchSpotIllustration

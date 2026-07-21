@@ -1,7 +1,7 @@
 // Module ID: 10897
-// Function ID: 84705
+// Function ID: 84716
 // Name: hasPartySize
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: hasPartySize
 
 // Module 10897 (hasPartySize)

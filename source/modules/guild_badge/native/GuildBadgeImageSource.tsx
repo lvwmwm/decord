@@ -1,5 +1,5 @@
 // Module ID: 5698
-// Function ID: 49047
+// Function ID: 49055
 // Name: resolveImageSource
 // Dependencies: []
 // Exports: getGuildBadgeImageSource

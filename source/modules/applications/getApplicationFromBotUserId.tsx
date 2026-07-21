@@ -1,5 +1,5 @@
 // Module ID: 11623
-// Function ID: 90248
+// Function ID: 90260
 // Name: useGetApplicationFromBotUserId
 // Dependencies: []
 // Exports: default

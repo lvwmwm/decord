@@ -1,7 +1,7 @@
 // Module ID: 10004
-// Function ID: 77314
+// Function ID: 77325
 // Name: VoicePanelControlsModes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10004 (VoicePanelControlsModes)
 const _module = require(dependencyMap[0]);

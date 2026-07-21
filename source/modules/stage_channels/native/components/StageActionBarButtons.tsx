@@ -1,5 +1,5 @@
 // Module ID: 10634
-// Function ID: 83020
+// Function ID: 83031
 // Name: AgeVerificationSpeakerActionSheet
 // Dependencies: []
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
@@ -24,7 +24,8 @@ class AgeVerificationSpeakerActionSheet {
     obj3.children = intl.string(arg1(dependencyMap[12]).t.zvubnM);
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[38]).Text, obj3);
-    obj4 = { style: tmp.body };
+    obj4 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
+    obj4.style = tmp.body;
     intl2 = arg1(dependencyMap[12]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[12]).t./wx+J2);
     items[1] = jsx(arg1(dependencyMap[38]).Text, obj4);
@@ -141,7 +142,7 @@ let obj = arg1(dependencyMap[9]);
 obj = { actionBarCTAContainer: { position: "relative" } };
 obj = { tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.imageStyle = obj;
-const obj1 = { 0: "Golive Simulcast without prober 720p@500k", 0: 144.002, 0: null, tintColor: importDefault(dependencyMap[10]).colors.WHITE };
+const obj1 = { timeRange: "Golive Simulcast without prober 720p@500k", TimeStampProducer: 144.002, GlobalDiscoveryServerTab: null, tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.iconStyle = obj1;
 const tmp2 = arg1(dependencyMap[8]);
 obj.iconContainerStyle = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360, borderRadius: importDefault(dependencyMap[10]).radii.lg, padding: 4 };

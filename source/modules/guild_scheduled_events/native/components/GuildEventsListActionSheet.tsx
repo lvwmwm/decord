@@ -1,5 +1,5 @@
 // Module ID: 8446
-// Function ID: 67369
+// Function ID: 67380
 // Name: GuildEventsListHeader
 // Dependencies: []
 // Exports: default

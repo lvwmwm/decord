@@ -1,5 +1,5 @@
 // Module ID: 789
-// Function ID: 8905
+// Function ID: 8909
 // Name: processEvent
 // Dependencies: []
 // Exports: debugSymbolicatorIntegration
@@ -135,7 +135,7 @@ function symbolicate(arg0) {
             self = this;
             return Promise.all(self.map((arg0) => {
               const self = arg0;
-              return callback(self, undefined, undefined, /* F8917 */ function*() { ... });
+              return callback(self, undefined, undefined, /* F8921 */ function*() { ... });
             }));
           }
         });
@@ -222,7 +222,7 @@ if (!fn) {
     return _Promise;
   };
 }
-const items = [true, true];
+const items = [];
 const regExp = new RegExp(items.join("|"));
 
 export const debugSymbolicatorIntegration = function debugSymbolicatorIntegration() {

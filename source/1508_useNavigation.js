@@ -1,5 +1,5 @@
 // Module ID: 1508
-// Function ID: 17343
+// Function ID: 17348
 // Name: useNavigation
 // Dependencies: []
 // Exports: default

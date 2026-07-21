@@ -1,5 +1,5 @@
 // Module ID: 12239
-// Function ID: 93878
+// Function ID: 93890
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, generateAttemptId, parseDynamicLink
@@ -84,7 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = [839936529, 1175555635, -1122638574];
+let closure_3 = [null, null, null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("../discord_common/js/packages/dynamic-links/generateDynamicLink.tsx");
@@ -110,7 +110,7 @@ export default function generateDynamicLink(arg0, arg1) {
   }
   const encodeURIComponentResult = encodeURIComponent(str.toString());
   const encodeURIComponentResult1 = encodeURIComponent("discord://app/open#" + str.toString());
-  const items = [1069815955, 962072626];
+  const items = [0.015, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012528747644163019];
   const regExp = new RegExp("(" + items.join("|") + ")", "ig");
   let match;
   if (null != importDefault(dependencyMap[2])) {

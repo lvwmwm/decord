@@ -1,10 +1,10 @@
-// Module ID: 14637
-// Function ID: 110385
+// Module ID: 14640
+// Function ID: 110417
 // Name: getWumpTrashSource
 // Dependencies: []
 // Exports: WumpTrash
 
-// Module 14637 (getWumpTrashSource)
+// Module 14640 (getWumpTrashSource)
 function getWumpTrashSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

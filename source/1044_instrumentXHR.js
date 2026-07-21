@@ -1,5 +1,5 @@
 // Module ID: 1044
-// Function ID: 11211
+// Function ID: 11215
 // Name: instrumentXHR
 // Dependencies: []
 // Exports: addXhrInstrumentationHandler

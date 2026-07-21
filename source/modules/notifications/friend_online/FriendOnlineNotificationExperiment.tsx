@@ -1,10 +1,10 @@
-// Module ID: 14209
-// Function ID: 107461
+// Module ID: 14212
+// Function ID: 107493
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14209 (apexExperiment)
+// Module 14212 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } });
 const _module1 = require(dependencyMap[1]);

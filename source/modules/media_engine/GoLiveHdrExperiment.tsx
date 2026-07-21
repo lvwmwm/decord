@@ -1,10 +1,10 @@
-// Module ID: 12638
-// Function ID: 97249
+// Module ID: 12640
+// Function ID: 97271
 // Name: HdrCaptureMode
 // Dependencies: []
 // Exports: getGoLiveHdrConfig
 
-// Module 12638 (HdrCaptureMode)
+// Module 12640 (HdrCaptureMode)
 let obj = { Never: "never", Always: "always", PermittedDevicesOnly: "permittedDevicesOnly" };
 const _module = require(dependencyMap[0]);
 obj = { hdrCaptureMode: obj.Never };

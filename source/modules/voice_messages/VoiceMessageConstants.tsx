@@ -1,7 +1,7 @@
 // Module ID: 11093
-// Function ID: 86305
+// Function ID: 86316
 // Name: VoiceMessageAnimationState
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11093 (VoiceMessageAnimationState)
 const _module = require(dependencyMap[0]);

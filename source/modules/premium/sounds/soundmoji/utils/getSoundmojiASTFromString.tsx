@@ -1,10 +1,10 @@
-// Module ID: 4574
-// Function ID: 40072
+// Module ID: 4573
+// Function ID: 40079
 // Name: getSoundmojiFromMessage
-// Dependencies: [771751943, 956301319, 2365587463, 4009754626, 4026531857, 4043309073, 4060086289, 4076863505, 4093640721]
+// Dependencies: []
 // Exports: default
 
-// Module 4574 (getSoundmojiFromMessage)
+// Module 4573 (getSoundmojiFromMessage)
 function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, soundboardSounds) {
   if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
     const soundById = soundById.getSoundById(soundId);

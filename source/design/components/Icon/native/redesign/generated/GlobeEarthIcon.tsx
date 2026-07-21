@@ -1,5 +1,5 @@
 // Module ID: 9015
-// Function ID: 70916
+// Function ID: 70927
 // Name: GlobeEarthIcon
 // Dependencies: []
 // Exports: GlobeEarthIcon

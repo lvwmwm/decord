@@ -1,7 +1,7 @@
 // Module ID: 11013
-// Function ID: 85678
+// Function ID: 85689
 // Name: AccountSettingsTabs
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11013 (AccountSettingsTabs)
 const _module = require(dependencyMap[0]);

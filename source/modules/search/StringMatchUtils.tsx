@@ -1,10 +1,10 @@
-// Module ID: 14456
-// Function ID: 108940
+// Module ID: 14459
+// Function ID: 108972
 // Name: calculateJaroWinklerDistance
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 14456 (calculateJaroWinklerDistance)
+// Module 14459 (calculateJaroWinklerDistance)
 function calculateJaroWinklerDistance(formatted, arg1) {
   const diff = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
   const items = [];
@@ -40,7 +40,7 @@ function calculateJaroWinklerDistance(formatted, arg1) {
     const _Math4 = Math;
     const _Math5 = Math;
     const diff1 = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
-    const obj = { children: "\u{1F9BB}\u{1F3FF}", style: true };
+    const obj = { -9223372036854775808: null, -9223372036854775808: null };
     const items1 = [];
     for (let num4 = 0; num4 < formatted.length; num4 = num4 + 1) {
       let _Math6 = Math;

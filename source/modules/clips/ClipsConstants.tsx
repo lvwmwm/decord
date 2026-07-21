@@ -1,5 +1,5 @@
 // Module ID: 4180
-// Function ID: 35971
+// Function ID: 35979
 // Name: result
 // Dependencies: []
 // Exports: CLIP_NAME_TEMPLATE

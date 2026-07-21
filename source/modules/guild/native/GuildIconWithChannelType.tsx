@@ -1,5 +1,5 @@
 // Module ID: 9900
-// Function ID: 76589
+// Function ID: 76600
 // Name: GuildIconWithChannelTypeSizes
 // Dependencies: []
 // Exports: GuildIconWithChannelType
@@ -27,7 +27,7 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   let size;
   let tmp;
   let typeIconSize;
-  let obj = { <string:1654750303>: "spring", <string:4038841767>: "linear", <string:1405143440>: "easeInEaseOut" };
+  let obj = {};
   ({ aria-label: tmp, size, channel } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

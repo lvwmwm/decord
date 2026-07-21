@@ -1,7 +1,7 @@
 // Module ID: 478
 // Function ID: 6168
 // Name: isWindows
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isIOS, isLinux, isMac, isMacWeb, isWeb, platformPrefersDeepLink, platformSupportsActivityJoin
 
 // Module 478 (isWindows)

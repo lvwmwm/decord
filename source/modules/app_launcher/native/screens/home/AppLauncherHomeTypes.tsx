@@ -1,7 +1,7 @@
 // Module ID: 11196
-// Function ID: 87209
+// Function ID: 87221
 // Name: AppLauncherHomeListItemType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11196 (AppLauncherHomeListItemType)
 const _module = require(dependencyMap[0]);

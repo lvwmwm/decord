@@ -1,10 +1,10 @@
-// Module ID: 13895
-// Function ID: 105091
+// Module ID: 13898
+// Function ID: 105123
 // Name: useDismissSheetOrCollapseDock
 // Dependencies: []
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 13895 (useDismissSheetOrCollapseDock)
+// Module 13898 (useDismissSheetOrCollapseDock)
 function useDismissSheetOrCollapseDock() {
   const setRestingQuestDockMode = React.useContext(arg1(dependencyMap[3]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
   const arg1 = setRestingQuestDockMode;

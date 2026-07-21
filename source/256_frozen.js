@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 256 (frozen)
-const frozen = Object.freeze({});
+const frozen = Object.freeze({ "Bool(true)": true, "Null": true, "Null": true });
 arg5.default = frozen;
 arg5.coerceDisplayMode = function coerceDisplayMode(arg0) {
   if (frozen.SUSPENDED === arg0) {

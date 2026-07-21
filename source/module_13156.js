@@ -1,16 +1,7 @@
 // Module ID: 13156
-// Function ID: 99541
-// Dependencies: []
+// Function ID: 99559
+// Dependencies: [4294967295]
 
 // Module 13156
 
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== tmp) {
-      num = require(dependencyMap[0])(tmp);
-    }
-  }
-  return num;
-};
+export default (arg0) => require(dependencyMap[0])(arg0.length);

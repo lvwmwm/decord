@@ -1,7 +1,7 @@
 // Module ID: 8854
-// Function ID: 69853
+// Function ID: 69864
 // Name: VOICE_PANEL_SETTINGS_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8854 (VOICE_PANEL_SETTINGS_KEY)
 const _module = require(dependencyMap[0]);

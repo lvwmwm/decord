@@ -1,12 +1,15 @@
-// Module ID: 13835
-// Function ID: 104562
+// Module ID: 13838
+// Function ID: 104594
 // Name: BountiesModalContentInner
 // Dependencies: []
 // Exports: default
 
-// Module 13835 (BountiesModalContentInner)
+// Module 13838 (BountiesModalContentInner)
 function BountiesModalContentInner(bounty) {
+  let handleBufferAnalytics;
+  let handleLoadStartAnalytics;
   let handleProgress;
+  let handleReadyForDisplayAnalytics;
   let handleVideoEnd;
   let handleVideoEndAnalytics;
   let handleVideoErrorAnalytics;
@@ -122,11 +125,15 @@ function BountiesModalContentInner(bounty) {
     let obj4 = arg1(dependencyMap[19]);
     obj = { bountyId: bounty.id, sourceQuestContent, rewardDurationMs: result };
     ({ timestampSec: obj6.initialPlaybackTimeSec, maxTimestampSec: obj6.initialMaxVideoProgressSec, duration: obj6.initialVideoDurationSec } = initialProgress);
+    obj.wasPreloaded = false;
+    obj.startupPath = "carousel";
+    let duration = null;
+    obj.verticalScrollingPosition = null;
     const bountiesModalVideoAnalytics = obj4.useBountiesModalVideoAnalytics(obj);
     const handleVideoProgressAnalytics = bountiesModalVideoAnalytics.handleVideoProgressAnalytics;
     QuestsExperimentLocations = handleVideoProgressAnalytics;
     const items5 = [handleVideoProgressAnalytics, handleProgress];
-    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics } = bountiesModalVideoAnalytics);
+    ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
     const callback1 = React.useCallback((arg0, arg1, arg2) => {
       handleVideoProgressAnalytics(arg0, arg1, arg2);
       handleProgress(arg0, arg1, arg2);
@@ -134,7 +141,6 @@ function BountiesModalContentInner(bounty) {
     let obj6 = arg1(dependencyMap[15]);
     obj1 = { endMode: tmp8, rewardDurationMs: result, isCompleted: stateFromStores, onRewardEarned: callback, onVideoProgress: callback1, onVideoEnd: handleVideoEndAnalytics, onVideoLooped: handleVideoLoopedAnalytics, onVideoPaused: handleVideoPausedAnalytics, onVideoResumed: handleVideoResumedAnalytics };
     ({ timestampSec: obj8.initialProgressSec, maxTimestampSec: obj8.initialMaxVideoProgressSec } = initialProgress);
-    let duration = null;
     if (initialProgress.duration > 0) {
       duration = initialProgress.duration;
     }
@@ -202,6 +208,9 @@ function BountiesModalContentInner(bounty) {
       handleVideoPaused,
       handleVideoResumed,
       handleVideoError: handleVideoErrorAnalytics,
+      onLoadStart: handleLoadStartAnalytics,
+      onBuffer: handleBufferAnalytics,
+      onFirstFrame: handleReadyForDisplayAnalytics,
       rewardRemainingSeconds,
       rewardTotalSeconds,
       normalizedProgress,
@@ -254,7 +263,7 @@ let closure_13 = 0.5625;
 const tmp2 = arg1(dependencyMap[7]);
 let closure_14 = arg1(dependencyMap[10]).createStyles(() => {
   let obj = { videoWrapper: { position: "absolute" }, closeButton: { position: "absolute" } };
-  obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, bottom: importDefault(dependencyMap[11]).space.PX_24 };
+  obj = { bottom: importDefault(dependencyMap[11]).space.PX_24 };
   obj.bottomContainer = obj;
   obj = { left: importDefault(dependencyMap[11]).space.PX_16, right: importDefault(dependencyMap[11]).space.PX_16 };
   obj.bottomContainerFullWidth = obj;

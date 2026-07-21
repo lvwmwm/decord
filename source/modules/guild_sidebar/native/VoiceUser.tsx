@@ -1,10 +1,10 @@
-// Module ID: 14848
-// Function ID: 111891
+// Module ID: 14851
+// Function ID: 111925
 // Name: VoiceUserConnected
 // Dependencies: []
 // Exports: default
 
-// Module 14848 (VoiceUserConnected)
+// Module 14851 (VoiceUserConnected)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -44,7 +44,7 @@ export default function VoiceUserConnected(channel) {
     if (tmp) {
       let obj = { embedded: null, component: null, localVideo: closure_7.isVideoEnabled() };
     } else {
-      obj = { padding: "postal-address-country", flex: "password", flexDirection: "email", localMute: closure_7.isLocalMute(user.id) };
+      obj = { padding: "absolute", flex: -1, flexDirection: -1, localMute: closure_7.isLocalMute(user.id) };
       const tmp = closure_7;
     }
     return obj;

@@ -1,5 +1,5 @@
 // Module ID: 918
-// Function ID: 10044
+// Function ID: 10048
 // Name: extractTargetInfo
 // Dependencies: []
 // Exports: extractTargetInfo, getRequestArguments
@@ -9,15 +9,15 @@ let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let obj = {};
-obj = { targetAttribute: require(dependencyMap[2]).MCP_TOOL_NAME_ATTRIBUTE };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, targetAttribute: require(dependencyMap[2]).MCP_TOOL_NAME_ATTRIBUTE };
 obj.tools/call = obj;
-obj = { "Null": true, "Null": "IEMobile", "Null": "IE", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
+obj = { targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 obj.resources/read = obj;
 obj.resources/subscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 const obj1 = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
 obj.resources/unsubscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-const obj3 = { width: null, height: null, fill: null, display: null, alignItems: null, targetAttribute: require(dependencyMap[2]).MCP_PROMPT_NAME_ATTRIBUTE };
-obj.prompts/get = obj3;
+const obj2 = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
+obj.prompts/get = { targetAttribute: require(dependencyMap[2]).MCP_PROMPT_NAME_ATTRIBUTE };
 
 export const extractTargetInfo = function extractTargetInfo(method, params) {
   if (obj[method]) {

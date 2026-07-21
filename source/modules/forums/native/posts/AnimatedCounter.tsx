@@ -1,5 +1,5 @@
 // Module ID: 10341
-// Function ID: 79805
+// Function ID: 79816
 // Name: getStartPosition
 // Dependencies: []
 
@@ -192,7 +192,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ container: { "Null": "o", "Null": "lj", "Null": "prototype", "Null": "lj", "Null": "prototype", "Null": "code" }, hidden: { opacity: 0 } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ container: {}, hidden: { opacity: 0 } });
 const obj = { ABOVE: -1, [-1]: "ABOVE", NEUTRAL: 0, [0]: "NEUTRAL", BELOW: 1, [1]: "BELOW" };
 const items = [, , ];
 ({ ABOVE: arr[0], NEUTRAL: arr[1], BELOW: arr[2] } = obj);

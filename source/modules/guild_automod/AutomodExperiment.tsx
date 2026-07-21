@@ -1,11 +1,11 @@
 // Module ID: 10229
-// Function ID: 79035
+// Function ID: 79046
 // Name: experiment
 // Dependencies: []
 
 // Module 10229 (experiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1174339580: null, -1169096700: null, config: { enabled: true } };
+const obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
 const items = [obj];
 const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
 const _module1 = require(dependencyMap[1]);

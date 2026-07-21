@@ -1,7 +1,7 @@
 // Module ID: 10503
-// Function ID: 82020
+// Function ID: 82031
 // Name: stashPendingFrameLaunch
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: consumePendingFrameLaunch, discardPendingFrameLaunch, stashPendingFrameLaunch
 
 // Module 10503 (stashPendingFrameLaunch)

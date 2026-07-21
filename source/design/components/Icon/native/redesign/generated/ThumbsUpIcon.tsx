@@ -1,5 +1,5 @@
 // Module ID: 9290
-// Function ID: 72560
+// Function ID: 72571
 // Name: ThumbsUpIcon
 // Dependencies: []
 // Exports: ThumbsUpIcon

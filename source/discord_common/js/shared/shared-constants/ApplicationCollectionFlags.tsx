@@ -1,7 +1,7 @@
 // Module ID: 11235
-// Function ID: 87453
+// Function ID: 87465
 // Name: ApplicationCollectionFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11235 (ApplicationCollectionFlags)
 const _module = require(dependencyMap[0]);

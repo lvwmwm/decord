@@ -1,5 +1,5 @@
 // Module ID: 10287
-// Function ID: 79424
+// Function ID: 79435
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
 // Dependencies: []
 // Exports: default

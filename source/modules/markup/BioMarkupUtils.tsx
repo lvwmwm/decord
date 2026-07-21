@@ -1,5 +1,5 @@
 // Module ID: 9004
-// Function ID: 70860
+// Function ID: 70871
 // Name: getOrParseBioAST
 // Dependencies: []
 // Exports: parseBioReactWithCachedAST
@@ -14,7 +14,7 @@ function getOrParseBioAST(description) {
   }
   return value;
 }
-const items = [importDefault(dependencyMap[1]).PROFILE_BIO_RULES, importDefault(dependencyMap[2])({ -1721651893: null, confirmText: null })];
+const items = [importDefault(dependencyMap[1]).PROFILE_BIO_RULES, importDefault(dependencyMap[2])({})];
 const importDefaultResultResult = importDefault(dependencyMap[0])(items);
 let importDefaultResult1 = importDefault(dependencyMap[3]);
 let obj = { max: 2000 };
@@ -26,7 +26,7 @@ let closure_4 = importDefault(dependencyMap[5]).astParserFor(importDefaultResult
 const importDefaultResult2 = importDefault(dependencyMap[5]);
 const importAllResult1 = importAll(dependencyMap[4]);
 const importDefaultResult3 = importDefault(dependencyMap[0]);
-const items1 = [importDefault(dependencyMap[7]).omit(importDefaultResultResult, [-1374389440, "<string:1077549793>", "<string:377957170>", "<string:1916653273>", "<string:927713088>", "<string:207634825>"]), ];
+const items1 = [importDefault(dependencyMap[7]).omit(importDefaultResultResult, ["<string:1081197879>", "<string:1202590843>", "<string:1077549793>", "<string:377957170>", "<string:1916653273>", "<string:927713088>"]), ];
 obj = {
   react() {
     return null;

@@ -1,10 +1,10 @@
-// Module ID: 6953
-// Function ID: 55522
+// Module ID: 6954
+// Function ID: 55534
 // Name: assignBillingSessionId
 // Dependencies: []
 // Exports: trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAppStoreOverlayEvent, trackBountyAutoScrollDismissed, trackBountyCarouselEmptyStateViewed, trackBountyCarouselScroll, trackBountyVerticalScroll, trackQuestBarOrDockModeChange, trackQuestContentClicked, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 6953 (assignBillingSessionId)
+// Module 6954 (assignBillingSessionId)
 function assignBillingSessionId(uuid, arg1) {
   let tmp = uuid;
   if (!arg1) {

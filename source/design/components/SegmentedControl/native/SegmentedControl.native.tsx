@@ -1,5 +1,5 @@
 // Module ID: 8752
-// Function ID: 69190
+// Function ID: 69201
 // Name: SegmentedControl
 // Dependencies: []
 // Exports: SegmentedControl
@@ -13,9 +13,9 @@ let closure_8 = {};
 const tmp3 = arg1(dependencyMap[2]);
 let closure_9 = arg1(dependencyMap[3]).createStyles((borderRadius, paddingVertical) => {
   let obj = { scrollContentContainer: { flexGrow: 1 } };
-  obj = { "Bool(false)": "2026-01-profile-updates-notification", "Bool(false)": "text-lg/normal", "Bool(false)": "text-default", "Bool(false)": true, "Bool(false)": null, "Bool(false)": "sku", backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical };
+  obj = { accessibilityRole: "Array", GuildBadgeFrog: "meanBy", connectedEmbeddedActivity: "APPEARANCE", GIFS_SEARCH: "AUTO_MODERATION_BLOCKED_MESSAGE", 1364605794: "%Date%", -1604188661: "ME", backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical };
   obj.controlsContainer = obj;
-  obj = { "Null": 136616579955019750000000000000000000000000000000000000000000000, "Null": 231584247876275150000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000055667843557169214, "Null": -0.0000000000000000000000000000000000000009788013785464425, flexDirection: 33348158454412793000000000000000000000000000000000000000000000000000000000000000, borderRadius };
+  obj = { Wp9bEl: 11289912320616628000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, PremiumSKUPreview: 231584247876275150000000000000000000000000000000000000000000000000000000000000, UMWBZr: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053474810762224517, display: -12680549025477242000000000000000000000000000000000000000000000000000000000000000000000000000000, CONNECTIONS_CALLBACK: 33348160424430016000000000000000000000000000000000000000000000000000000000000000, borderRadius };
   obj.indicatorContainer = obj;
   obj.indicator = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND, borderRadius };
   return obj;
@@ -364,7 +364,7 @@ export const SegmentedControl = function SegmentedControl(state) {
   const items4 = [setActiveIndex(items, obj2), memo1];
   obj1.children = items4;
   const tmp16 = tmp(items, obj1, items.length);
-  obj3 = { 1667340749: true, 1384234600: true, contentContainerStyle: tmp2.scrollContentContainer, keyboardShouldPersistTaps: state.keyboardShouldPersistTaps, children: tmp16 };
+  obj3 = { <string:1806389752>: null, <string:123181409>: null, contentContainerStyle: tmp2.scrollContentContainer, keyboardShouldPersistTaps: state.keyboardShouldPersistTaps, children: tmp16 };
   let tmp17 = setActiveIndex(pressedIndex, obj3);
   if (tmp) {
     obj4 = { gesture: onEndResult, children: tmp16 };

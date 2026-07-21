@@ -1,5 +1,5 @@
 // Module ID: 11614
-// Function ID: 90184
+// Function ID: 90196
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -22,7 +22,7 @@ const View = arg1(dependencyMap[6]).View;
 const importAllResult = importAll(dependencyMap[5]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-let closure_11 = obj.createLegacyClassComponentStyles({ progressCircle: {}, circle: { "Null": null, "Null": null, "Null": null }, circleOverlay: { useIsScreenIndexFrozenSharedValue: "<string:1166886285>", UNSAFE_isSingleUseGuildDismissibleContentDismissed: "<string:44579137>", onScreenshot: "<string:1379557632>", uniform: "<string:1166868933>" } });
+let closure_11 = obj.createLegacyClassComponentStyles({ progressCircle: { "Null": null, "Null": null }, circle: {}, circleOverlay: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007418630414757526, mn: 170069515047461800000000, ks: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750084939928347, bottom: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002781342323652067 } });
 const tmp4 = (Component) => {
   class ProgressCircle {
     constructor() {
@@ -91,7 +91,7 @@ const tmp4 = (Component) => {
   return callback(ProgressCircle, items);
 }(importAllResult.Component);
 tmp4.contextType = arg1(dependencyMap[10]).ThemeContext;
-obj = { "Bool(true)": true, "Bool(true)": "destructive", color: importDefault(dependencyMap[11]).unsafe_rawColors.GUILD_BOOSTING_PINK };
+obj = { color: importDefault(dependencyMap[11]).unsafe_rawColors.GUILD_BOOSTING_PINK };
 tmp4.defaultProps = obj;
 const tmp3 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");

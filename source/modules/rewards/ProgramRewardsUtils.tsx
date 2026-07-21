@@ -1,10 +1,10 @@
-// Module ID: 12532
-// Function ID: 96277
+// Module ID: 12534
+// Function ID: 96299
 // Name: isEligibleForProgramReward
 // Dependencies: []
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
 
-// Module 12532 (isEligibleForProgramReward)
+// Module 12534 (isEligibleForProgramReward)
 function isEligibleForProgramReward(NITRO, canUseMonthlyOrbs) {
   let str = canUseMonthlyOrbs;
   if (canUseMonthlyOrbs === undefined) {

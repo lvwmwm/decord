@@ -1,9 +1,9 @@
-// Module ID: 13560
-// Function ID: 102835
+// Module ID: 13562
+// Function ID: 102857
 // Name: pressable
-// Dependencies: [95420416, 37093376, 602603520, 886308864, 79429632, 888799232, 353173504, 83427328]
+// Dependencies: []
 
-// Module 13560 (pressable)
+// Module 13562 (pressable)
 let closure_3 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[6]);
 obj = {

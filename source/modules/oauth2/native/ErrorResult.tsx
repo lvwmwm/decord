@@ -1,5 +1,5 @@
 // Module ID: 8957
-// Function ID: 70672
+// Function ID: 70683
 // Name: error
 // Dependencies: []
 // Exports: default
@@ -11,10 +11,10 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { <string:1671242653>: -165, <string:1668212695>: 320, <string:1382995813>: -45, <string:1888128809>: 0, <string:2968308836>: "gr", <string:2580370136>: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
+obj = { -110960001: -165, -1209052185: 320, -1656971974: -45, 1860687715: 0, 1859609955: "gr", -1903211694: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.inner = { paddingTop: "Array", zIndex: "isArray", flexDirection: "content", alignItems: "r" };
-obj.text = { "Null": null, "Null": "absolute" };
+obj.inner = { 1962313087: "Array", 1104954998: "textComponentStyle", 290881: "isArray", 1250711380: "STICKER_PACK_VIEW_ALL" };
+obj.text = {};
 const tmp4 = arg1(dependencyMap[2]);
 obj.image = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
 let closure_7 = obj.createStyles(obj);

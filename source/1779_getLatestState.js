@@ -1,13 +1,13 @@
 // Module ID: 1779
-// Function ID: 19785
+// Function ID: 19790
 // Name: getLatestState
-// Dependencies: []
+// Dependencies: [494338048, 520093696, 452984832, 553648128]
 // Exports: useKeyboardState
 
 // Module 1779 (getLatestState)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useState: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = ["channel_id", "Array"];
+let closure_5 = [];
 function getLatestState() {
   const KeyboardController = arg1(dependencyMap[2]).KeyboardController;
   const obj = {};

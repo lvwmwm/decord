@@ -1,10 +1,10 @@
-// Module ID: 4953
-// Function ID: 42527
+// Module ID: 4952
+// Function ID: 42534
 // Name: useIsStageSpeakingDisabledForCurrentUser
 // Dependencies: []
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
 
-// Module 4953 (useIsStageSpeakingDisabledForCurrentUser)
+// Module 4952 (useIsStageSpeakingDisabledForCurrentUser)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

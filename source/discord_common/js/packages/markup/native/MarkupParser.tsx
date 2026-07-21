@@ -1,9 +1,9 @@
-// Module ID: 7668
-// Function ID: 61263
+// Module ID: 7669
+// Function ID: 61275
 // Name: saferParse
 // Dependencies: []
 
-// Module 7668 (saferParse)
+// Module 7669 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let tmp = arg3;
   let flag = arg4;

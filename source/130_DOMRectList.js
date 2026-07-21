@@ -19,7 +19,7 @@ const tmp2 = () => {
       if (0 < arg0.length) {
         do {
           _Object = Object;
-          obj = { FRIEND_REQUESTS: "y", ForYouLoadMore: "isArray", QUEST_BADGE: "Reflect", GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: "container" };
+          obj = { consumed: "y", ForcedColorsPreference: "isArray", MOBILE_NITRO_HOME_SETTINGS_BADGE: "Reflect", NOTIFICATION_WARNING: "container" };
           obj.value = arg0[num];
           definePropertyResult1 = Object.defineProperty(self, num, obj);
           num = num + 1;

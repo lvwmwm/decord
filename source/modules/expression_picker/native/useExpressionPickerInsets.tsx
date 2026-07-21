@@ -1,5 +1,5 @@
 // Module ID: 9564
-// Function ID: 74493
+// Function ID: 74504
 // Name: useExpressionPickerInsets
 // Dependencies: []
 // Exports: default
@@ -19,7 +19,7 @@ export default function useExpressionPickerInsets(hasCategories) {
   if (hasCategories.hasCategories) {
     num = EXPRESSION_FOOTER_HEIGHT;
   }
-  const sum = importDefault(dependencyMap[3])({ MOBILE_BOTTOM_SHEET: true, margin: true }).insets.bottom + num;
+  const sum = importDefault(dependencyMap[3])({ "Null": null, "Null": null }).insets.bottom + num;
   obj.safeAreaBottomKeyboardAware = sum + importDefault(dependencyMap[4]).space.PX_16;
   return obj;
 };

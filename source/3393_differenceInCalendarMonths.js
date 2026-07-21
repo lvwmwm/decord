@@ -1,18 +1,17 @@
 // Module ID: 3393
-// Function ID: 26564
+// Function ID: 26569
 // Name: differenceInCalendarMonths
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3393 (differenceInCalendarMonths)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function differenceInCalendarMonths(defaultResult1, defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
-  const defaultResult2 = startOfWeek.default(defaultResult1);
+  closure_1.default(2, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
+  const defaultResult2 = closure_0.default(defaultResult1);
   const fullYear = defaultResult1.getFullYear();
   const diff = fullYear - defaultResult2.getFullYear();
   const month = defaultResult1.getMonth();

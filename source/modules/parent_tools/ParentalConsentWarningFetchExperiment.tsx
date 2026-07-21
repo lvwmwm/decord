@@ -1,13 +1,12 @@
-// Module ID: 16021
-// Function ID: 122981
+// Module ID: 16029
+// Function ID: 123042
 // Name: isParentalConsentWarningFetchEnabled
 // Dependencies: []
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 16021 (isParentalConsentWarningFetchEnabled)
+// Module 16029 (isParentalConsentWarningFetchEnabled)
 const _module = require(dependencyMap[0]);
-const obj = { margin: 285212672, paddingHorizontal: 38874433, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
+let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/parent_tools/ParentalConsentWarningFetchExperiment.tsx");
 

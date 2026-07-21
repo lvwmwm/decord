@@ -1,5 +1,5 @@
 // Module ID: 5783
-// Function ID: 49453
+// Function ID: 49461
 // Name: HeaderActionButton
 // Dependencies: []
 
@@ -8,10 +8,10 @@ const ANDROID_FOREGROUND_RIPPLE = arg1(dependencyMap[1]).ANDROID_FOREGROUND_RIPP
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { button: { 2019522654: true, 2018474062: true, 2018605136: true, 2018801746: true } };
+let obj = { button: { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true } };
 obj = { color: importDefault(dependencyMap[4]).colors.TEXT_BRAND, textTransform: "capitalize" };
 obj.text = obj;
-obj.buttonFont = {};
+obj.buttonFont = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010864618462954, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006880778367787447 };
 obj.buttonDisabled = { opacity: 0.6 };
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize } = arg0);
   const tmp = callback2();
   if (null != text) {
-    let obj = { @braintree/event-emitter: 2, @braintree/iframer: 80, @braintree/uuid: null };
+    let obj = {};
     const items = [, , ];
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;

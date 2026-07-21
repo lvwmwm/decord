@@ -1,9 +1,9 @@
-// Module ID: 14539
-// Function ID: 109522
+// Module ID: 14542
+// Function ID: 109554
 // Name: TestView
 // Dependencies: []
 
-// Module 14539 (TestView)
+// Module 14542 (TestView)
 function TestView() {
   const tmp = callback3();
   const tmp2 = callback(importAllResult.useState("1341506443580276736"), 2);
@@ -26,8 +26,9 @@ function TestView() {
   obj = { spacing: 16, style: tmp.container };
   const items1 = [callback2(arg1(dependencyMap[9]).Text, {}), ];
   obj = {};
+  const obj1 = { 16667904: true, 16668160: true, 16668416: true, style: tmp.title };
   const items2 = [
-    callback2(arg1(dependencyMap[9]).Text, { style: tmp.title }),
+    callback2(arg1(dependencyMap[9]).Text, obj1),
     callback2(arg1(dependencyMap[11]).TextInput, {
       containerStyle: tmp.textInput,
       value: first,
@@ -35,11 +36,13 @@ function TestView() {
         return callback(arg0);
       }
     }),
-    callback2(arg1(dependencyMap[11]).TextInput, { containerStyle: tmp.textInput, value: first1, onChange: tmp7[1] }),
+  ,
   ,
 
   ];
-  const obj4 = { "Null": "EMTLOT", "Null": "primary", "Null": "lg", "Null": "braintree:merchantId", "Null": "shouldShowTopicsBar", "Null": "timeAsync", containerStyle: tmp.textInput, value: first2, onChange: tmp9[1] };
+  const obj3 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, containerStyle: tmp.textInput, value: first1, onChange: tmp7[1] };
+  items2[2] = callback2(arg1(dependencyMap[11]).TextInput, obj3);
+  const obj4 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "string", "Bool(false)": "enumerable", "Bool(false)": "count", containerStyle: tmp.textInput, value: first2, onChange: tmp9[1] };
   items2[3] = callback2(arg1(dependencyMap[11]).TextInput, obj4);
   const obj5 = {};
   let tmp14 = null === first;

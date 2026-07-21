@@ -1,9 +1,9 @@
-// Module ID: 6873
-// Function ID: 54334
+// Module ID: 6874
+// Function ID: 54346
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6873 (_isNativeReflectConstruct)
+// Module 6874 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -97,7 +97,7 @@ function createGuildState(guild_id) {
   if (null == guild_id) {
     tmp = NULL_STRING_GUILD_ID;
   }
-  const obj = { unreadByType: {}, mentionCounts: {} };
+  const obj = { channel_id: 215435264, sr: -2067333117, ks: -37355518, ao: -2091909119, ip: 1350172674, op: 1188495362, st: -1216675839, unreadByType: {}, mentionCounts: {} };
   let sentinel;
   if (null != closure_28[tmp]) {
     sentinel = tmp3.sentinel;

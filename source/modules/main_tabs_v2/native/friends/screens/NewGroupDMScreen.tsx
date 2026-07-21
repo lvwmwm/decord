@@ -1,10 +1,10 @@
-// Module ID: 15325
-// Function ID: 116611
+// Module ID: 15328
+// Function ID: 116650
 // Name: handleOneRecipientInDM
 // Dependencies: []
 // Exports: default
 
-// Module 15325 (handleOneRecipientInDM)
+// Module 15328 (handleOneRecipientInDM)
 function handleOneRecipientInDM() {
   return _handleOneRecipientInDM(...arguments);
 }
@@ -42,10 +42,10 @@ const tmp4 = arg1(dependencyMap[10]);
 obj.instantInviteView = { flexShrink: 1, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const obj1 = { flexShrink: 1, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.nameInputContainer = { paddingHorizontal: 16, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-const obj2 = { paddingHorizontal: 16, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-obj.nameInput = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+const obj3 = { "Bool(false)": "accessibilityLabel", "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": 24, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+obj.nameInput = obj3;
 let closure_19 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+const obj2 = { paddingHorizontal: 16, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewGroupDMScreen.tsx");
 
 export default function NewGroupDMScreen(navigation) {

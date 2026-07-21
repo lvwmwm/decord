@@ -1,15 +1,16 @@
 // Module ID: 3487
-// Function ID: 26887
+// Function ID: 26892
 // Name: getUnixTime
 // Dependencies: [0, 0]
 // Exports: default
 
 // Module 3487 (getUnixTime)
-_interopRequireDefault(require("__exportStarResult1"));
-_interopRequireDefault(require("__exportStarResult1"));
+import result from "result";
+import result from "result";
+
 
 export default function getUnixTime(defaultResult1) {
-  __exportStarResult1.default(1, arguments);
-  return Math.floor(__exportStarResult1.default(defaultResult1) / 1000);
+  result.default(1, arguments);
+  return Math.floor(result.default(defaultResult1) / 1000);
 };
 export default exports.default;

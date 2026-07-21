@@ -1,10 +1,10 @@
-// Module ID: 15087
-// Function ID: 113722
+// Module ID: 15090
+// Function ID: 113756
 // Name: createItem
 // Dependencies: []
 // Exports: default
 
-// Module 15087 (createItem)
+// Module 15090 (createItem)
 function createItem(id, type, unread) {
   type = type.type;
   if (type(dependencyMap[2]).ICYMIItemTypes.MESSAGE === type) {

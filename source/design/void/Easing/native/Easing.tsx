@@ -1,9 +1,9 @@
-// Module ID: 12909
-// Function ID: 98461
+// Module ID: 12911
+// Function ID: 98483
 // Name: STANDARD_EASING
 // Dependencies: []
 
-// Module 12909 (STANDARD_EASING)
+// Module 12911 (STANDARD_EASING)
 const Easing = require(dependencyMap[0]).Easing;
 const Easing2 = require(dependencyMap[0]).Easing;
 const bezierResult = Easing.bezier(0.4, 0, 0.2, 1);

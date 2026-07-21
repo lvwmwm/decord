@@ -1,5 +1,5 @@
 // Module ID: 5509
-// Function ID: 46909
+// Function ID: 46917
 // Name: Divider
 // Dependencies: []
 // Exports: UserProfileCardRows, UserProfileFormRow, default
@@ -16,11 +16,12 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_5 } = tmp2);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { title: { "Bool(true)": 5, "Bool(true)": "safety_user_sentiment_notice_dismissed_at", "Bool(true)": "message", "Bool(true)": null }, text: { flexShrink: 1 } };
+obj = { title: {}, text: { flexShrink: 1 } };
 obj = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginLeft: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP, marginRight: -tmp2.CARD_PADDING };
 obj.rowDivider = obj;
-obj.row = { 9223372036854775807: "<string:4082740858>", 0: "<string:4082216571>" };
-obj.rowLabel = { columnGap: CARD_ROWS_COLUMN_GAP };
+obj.row = { "Bool(true)": -4230758200257680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -0.0013427734375204973 };
+const obj1 = { "Null": 7, "Null": 370, columnGap: CARD_ROWS_COLUMN_GAP };
+obj.rowLabel = obj1;
 obj.rowLabelText = { flex: 1, lineHeight: CARD_ROWS_ICON_SIZE };
 obj.rowSublabel = { marginHorizontal: CARD_ROWS_ICON_SIZE + CARD_ROWS_COLUMN_GAP };
 let closure_9 = obj.createStyles(obj);
@@ -33,7 +34,7 @@ export default function UserProfileCard(title) {
   let titleIcon;
   let titleStyle;
   title = title.title;
-  let obj = {};
+  let obj = { __initData: null, application: null, y: null, y: null, useCallback: null };
   ({ titleIcon, titleStyle, children, style } = title);
   Object.setPrototypeOf(null);
   const merged = Object.assign(title, obj);

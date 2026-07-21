@@ -1,12 +1,14 @@
 // Module ID: 11716
-// Function ID: 90957
+// Function ID: 90969
 // Name: SuggestedFriendsSectionHeader
 // Dependencies: []
 // Exports: default
 
 // Module 11716 (SuggestedFriendsSectionHeader)
-function SuggestedFriendsSectionHeader(children) {
-  return callback2(View, { style: callback4().sectionHeader, children: callback2(arg1(dependencyMap[10]).Text, { children: children.label }) });
+function SuggestedFriendsSectionHeader(label) {
+  let obj = { style: callback4().sectionHeader, children: callback2(arg1(dependencyMap[10]).Text, obj) };
+  obj = { "Null": 1514275327, "Null": -436207206, children: label.label };
+  return callback2(View, obj);
 }
 function SuggestionRow(suggestion) {
   let end;
@@ -38,14 +40,15 @@ function SuggestionRow(suggestion) {
   obj.checked = selected;
   obj.label = tmp4;
   obj1 = {};
-  const items = [callback2(arg1(dependencyMap[10]).Text, { children: userTag }), ];
+  const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: userTag };
+  const items = [callback2(arg1(dependencyMap[10]).Text, obj2), ];
   let tmp9 = null != suggestion.mutual_friends_count;
   if (tmp9) {
-    const obj2 = {};
+    const obj3 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
     const intl = arg1(dependencyMap[15]).intl;
-    const obj3 = { count: suggestion.mutual_friends_count };
-    obj2.children = intl.format(arg1(dependencyMap[15]).t.z7y34b, obj3);
-    tmp9 = callback2(arg1(dependencyMap[10]).Text, obj2);
+    const obj4 = { count: suggestion.mutual_friends_count };
+    obj3.children = intl.format(arg1(dependencyMap[15]).t.z7y34b, obj4);
+    tmp9 = callback2(arg1(dependencyMap[10]).Text, obj3);
   }
   items[1] = tmp9;
   obj1.children = items;
@@ -68,15 +71,15 @@ obj.container = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.header = { alignItems: "center", paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.title = { "Null": null, "Null": null };
-obj.subtitle = { "Bool(false)": null, "Bool(false)": null };
+obj.subtitle = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
 const obj1 = { alignItems: "center", paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.list = { flex: 1, marginTop: importDefault(dependencyMap[7]).space.PX_12 };
 const obj2 = { flex: 1, marginTop: importDefault(dependencyMap[7]).space.PX_12 };
 obj.divider = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
-obj.linearGradient = { -9223372036854775808: null, 9223372036854775807: null, -9223372036854775808: null, 0: null };
-const obj4 = { -9223372036854775808: true, 9223372036854775807: true, -9223372036854775808: true, padding: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_32 };
+obj.linearGradient = { "Bool(true)": null, "Bool(true)": 10, "Bool(true)": null, "Bool(true)": 0.2 };
+const obj4 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, padding: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_32 };
 obj.redesignButton = obj4;
-const obj5 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
+const obj5 = { "Bool(false)": -1661796349, "Bool(false)": -1371340797, "Bool(false)": -1275067531, "Bool(false)": -1258290315, marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj.sectionHeader = obj5;
 let closure_11 = obj.createStyles(obj);
 const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
@@ -139,7 +142,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     if ("header" === item.type) {
       let obj = {};
       obj = { style: tmp.header };
-      const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+      const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
       const intl = friendSuggestions(tmp[15]).intl;
       obj1.children = intl.string(friendSuggestions(tmp[15]).t.7Fjv54);
       const items = [callback(friendSuggestions(tmp[10]).Text, obj1), ];
@@ -184,7 +187,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj2.colors = items;
   items5[1] = callback2(importDefault(dependencyMap[21]), obj2);
   obj3 = { style: tmp.redesignButton };
-  obj4 = {};
+  obj4 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
   const intl = arg1(dependencyMap[15]).intl;
   obj4.text = intl.string(arg1(dependencyMap[15]).t.J5/69j);
   obj4.onPress = function onPress() {

@@ -1,5 +1,5 @@
 // Module ID: 1269
-// Function ID: 14324
+// Function ID: 14328
 // Name: serializeAst
 // Dependencies: []
 

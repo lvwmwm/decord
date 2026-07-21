@@ -1,5 +1,5 @@
 // Module ID: 10624
-// Function ID: 82849
+// Function ID: 82860
 // Name: nativeEventEmitter
 // Dependencies: []
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue

@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 114879
+// Module ID: 15217
+// Function ID: 114913
 // Name: MediaGridPlaceholderItem
 // Dependencies: []
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15214 (MediaGridPlaceholderItem)
+// Module 15217 (MediaGridPlaceholderItem)
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_LIST_SECTION_TOP_PADDING;
 let closure_3 = importAll(dependencyMap[0]);
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = tmp2);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {}, recentsContainer: { position: "relative", paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, row: { flexDirection: "row" }, section: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING } };
+obj = { container: { lce: 0.0000000000000000000000000000000000000000000000000000000000000000000000012206957798544156, origin_channel_id: 0.3, rankRtcRegions: 0.00000000000000000000000000000000000000000000000000000000000004667253317964295 }, recentsContainer: { position: "relative", paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, row: { flexDirection: "row" }, section: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING } };
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.sectionItem = obj;
 obj.sectionText = { opacity: 0 };
@@ -53,13 +53,13 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   items2[2] = placeholderAnimatedStyle;
   obj = { style: tmp.section };
   const obj1 = { style: tmp.sectionItem };
-  const obj2 = { style: tmp.sectionText };
+  const obj2 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: tmp.sectionText };
   const intl = arg1(dependencyMap[11]).intl;
   obj2.children = intl.string(arg1(dependencyMap[11]).t.LBYpDH);
   obj1.children = callback(arg1(dependencyMap[10]).Text, obj2);
   const items3 = [callback(View, obj1), ];
   const obj3 = { style: tmp.sectionItem };
-  const obj4 = { style: tmp.sectionText };
+  const obj4 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute", style: tmp.sectionText };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[11]).t.LFTAUp);
   obj3.children = callback(arg1(dependencyMap[10]).Text, obj4);

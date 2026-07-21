@@ -1,5 +1,5 @@
 // Module ID: 10451
-// Function ID: 80688
+// Function ID: 80699
 // Name: makeClientVariant
 // Dependencies: []
 // Exports: getApexExperiments, useApexExperiments

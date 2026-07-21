@@ -1,7 +1,7 @@
 // Module ID: 4240
-// Function ID: 37284
+// Function ID: 37292
 // Name: object
-// Dependencies: [705]
+// Dependencies: []
 
 // Module 4240 (object)
 

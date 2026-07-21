@@ -1,5 +1,5 @@
 // Module ID: 12213
-// Function ID: 93762
+// Function ID: 93774
 // Name: Breadcrumbs
 // Dependencies: []
 // Exports: default
@@ -9,8 +9,8 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Null": 0.00000000000000000000005626120684003777, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002199554210183587, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008148464216806, "Null": 90058178401121940000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, title: {}, breadCrumbItemContainer: { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "538100cf5ed1ed88cced15fcffad07fd", "Bool(false)": "PiggyBankIcon" } };
-obj = { <string:1639048017>: 1048575, <string:3110228414>: 1895956480, <string:1649630308>: 15, <string:2895728982>: 1631214929, <string:1954571093>: 422202, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
+obj = { container: { justifyContent: 1375732375, flexDirection: 168038687, marginRight: 37403206, columnGap: 26103040 }, title: {}, breadCrumbItemContainer: {} };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
 obj.breadCrumbDot = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.breadCrumbBar = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
@@ -35,7 +35,7 @@ export default function Breadcrumbs(element) {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [null, null];
+        const items = [true, true];
         let state;
         if (null != multiSelect) {
           state = multiSelect.state;
@@ -58,7 +58,7 @@ export default function Breadcrumbs(element) {
       } else {
         obj = { style: tmp3.container };
         let map = arg1(dependencyMap[6]).Text;
-        let obj1 = { 2003551622: true, 1366017591: true, 996410372: true, style: tmp3.title };
+        let obj1 = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp3.title };
         const REPORT_TO_MOD = arg1(dependencyMap[7]).ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(element.menuName);
         const intl = arg1(dependencyMap[8]).intl;
@@ -82,8 +82,7 @@ export default function Breadcrumbs(element) {
           const items = [tmp3, , ];
           obj = { style: tmp3.breadCrumbDot };
           items[1] = callback(closure_3, obj);
-          const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, style: tmp3.breadCrumbText, children };
-          items[2] = callback(tmp3(closure_2[6]).Text, obj1);
+          items[2] = callback(tmp3(closure_2[6]).Text, { style: tmp3.breadCrumbText, children });
           obj.children = items;
           return closure_5(closure_3, obj, "" + children + "+" + arg1);
         });
@@ -99,7 +98,7 @@ export default function Breadcrumbs(element) {
         let tmp;
         [tmp] = destination.destination;
         const multiSelect = destination.multiSelect;
-        const items = [null, null];
+        const items = [true, true];
         let state;
         if (null != multiSelect) {
           state = multiSelect.state;

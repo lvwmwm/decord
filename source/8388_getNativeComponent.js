@@ -1,5 +1,5 @@
 // Module ID: 8388
-// Function ID: 66754
+// Function ID: 66765
 // Name: getNativeComponent
 // Dependencies: []
 // Exports: getNativeComponent, getNativeModule

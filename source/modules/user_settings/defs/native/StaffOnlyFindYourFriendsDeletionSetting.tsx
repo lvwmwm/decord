@@ -1,9 +1,9 @@
-// Module ID: 13621
-// Function ID: 103192
+// Module ID: 13623
+// Function ID: 103214
 // Name: setFindYourFriendsDeletionIsLoading
 // Dependencies: []
 
-// Module 13621 (setFindYourFriendsDeletionIsLoading)
+// Module 13623 (setFindYourFriendsDeletionIsLoading)
 function setFindYourFriendsDeletionIsLoading(arg0) {
   const arg1 = arg0;
   arg1(dependencyMap[5]).batchUpdates(() => state.setState({ isLoading: arg0 }));

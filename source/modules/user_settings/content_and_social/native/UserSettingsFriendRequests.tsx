@@ -1,10 +1,10 @@
-// Module ID: 15336
-// Function ID: 116759
+// Module ID: 15339
+// Function ID: 116798
 // Name: UserSettingsFriendRequests
 // Dependencies: []
 // Exports: default
 
-// Module 15336 (UserSettingsFriendRequests)
+// Module 15339 (UserSettingsFriendRequests)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AllFriendSourceFlags: closure_5, FriendSourceFlags: closure_6 } = arg1(dependencyMap[2]));

@@ -1,7 +1,7 @@
 // Module ID: 728
-// Function ID: 8755
+// Function ID: 8759
 // Name: assocIndexOf
-// Dependencies: []
+// Dependencies: [47775744]
 
 // Module 728 (assocIndexOf)
 

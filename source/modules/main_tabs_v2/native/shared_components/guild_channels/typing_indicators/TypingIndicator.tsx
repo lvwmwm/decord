@@ -1,10 +1,10 @@
-// Module ID: 14819
-// Function ID: 111688
+// Module ID: 14822
+// Function ID: 111722
 // Name: TypingIndicator
 // Dependencies: []
 // Exports: TypingIndicator
 
-// Module 14819 (TypingIndicator)
+// Module 14822 (TypingIndicator)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -12,11 +12,11 @@ let closure_5 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
   obj = { "Null": "flex", "Null": "row", "Null": "center", borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
   obj.ellipsisWrapper = obj;
-  obj = { constructor: null, paths: 2, construct: 8, paths: null, accessible: 1 };
+  obj = { 1649291686: null, 1750176054: 2, -1858706798: 8, 835966546: null, 1390895607: 1 };
   const unsafe_rawColors = importDefault(dependencyMap[4]).unsafe_rawColors;
   obj.backgroundColor = arg0 ? unsafe_rawColors.BRAND_200 : unsafe_rawColors.BRAND_500;
   obj.ellipsis = obj;
-  const obj1 = {};
+  const obj1 = { "Null": true, "Null": true };
   const unsafe_rawColors2 = importDefault(dependencyMap[4]).unsafe_rawColors;
   obj1.backgroundColor = arg0 ? unsafe_rawColors2.BRAND_500 : unsafe_rawColors2.WHITE;
   obj.ellipsisDot = obj1;

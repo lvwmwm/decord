@@ -1,9 +1,9 @@
-// Module ID: 5353
-// Function ID: 45794
+// Module ID: 5352
+// Function ID: 45801
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5353 (_isNativeReflectConstruct)
+// Module 5352 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +18,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
-let obj = { "Null": "\u{1F9BB}\u{1F3FF}", "Null": true, formFields: [] };
+let obj = { "Bool(false)": null, "Bool(false)": null, formFields: [] };
 let closure_9 = {};
 let tmp2 = (Store) => {
   class MemberVerificationFormStore {

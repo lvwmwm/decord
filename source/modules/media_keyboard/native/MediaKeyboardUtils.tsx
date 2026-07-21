@@ -1,5 +1,5 @@
 // Module ID: 9644
-// Function ID: 75096
+// Function ID: 75107
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread
@@ -123,7 +123,7 @@ function handleCameraDialog(arg0) {
       ({ id: obj2.channel_id, guild_id: obj2.guild_id } = callback);
       obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj);
       callback3();
-      obj = { <string:357852769>: "category", <string:3173126870>: "Array", <string:4116326337>: "isArray", <string:1625412499>: "constructor", <string:1178085059>: "to", <string:1423264469>: "isArray" };
+      obj = {};
       const obj3 = callback2(callback3[15]);
       obj.quality = callback(callback3[12]).getImageCompressionQuality();
       obj.saveToPhotos = obj.saveCameraUploadsToDevice;
@@ -213,7 +213,7 @@ function handleViewAllDialog(arg0) {
           found = uploads.filter((id) => closure_3.includes(id.id));
           arr2 = found;
         }
-        obj = { "Bool(true)": null, "Bool(true)": null };
+        obj = { fetchedAt: false, width: false };
         if (closure_2 <= 1) {
           obj.selectionLimit = 1;
           obj.selections = arr2.map((id) => id.id);

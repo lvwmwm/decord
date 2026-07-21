@@ -1,10 +1,10 @@
-// Module ID: 7570
-// Function ID: 60560
+// Module ID: 7571
+// Function ID: 60572
 // Name: WarningIcon
 // Dependencies: []
 // Exports: WarningIcon
 
-// Module 7570 (WarningIcon)
+// Module 7571 (WarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/WarningIcon.tsx");

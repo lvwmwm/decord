@@ -1,5 +1,5 @@
 // Module ID: 6749
-// Function ID: 52540
+// Function ID: 52548
 // Name: toPermissionKey
 // Dependencies: []
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions

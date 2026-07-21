@@ -1,5 +1,5 @@
 // Module ID: 5428
-// Function ID: 46504
+// Function ID: 46512
 // Name: TableRowInner
 // Dependencies: []
 
@@ -30,7 +30,7 @@ class TableRow {
     obj2 = arg1(dependencyMap[7]);
     token = obj2.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
     tmp6 = jsx;
-    obj = { "Null": null, "Null": null, "Null": null };
+    obj = { GuildMemberFlags: null, calendarIcon: null, RowButton: null };
     obj.radius = token;
     str = undefined;
     if (enabled) {
@@ -114,7 +114,7 @@ class TableRowInner {
       num2 = 1.5;
       tmp6 = fontScale > 1.5;
     }
-    tmp7 = f46507(true === disabled, null != tmp2, tmp6, tmp);
+    tmp7 = f46515(true === disabled, null != tmp2, tmp6, tmp);
     obj3 = arg1(dependencyMap[7]);
     token = obj3.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     obj4 = arg1(dependencyMap[7]);
@@ -276,7 +276,7 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   obj.iconContainer = obj;
   let num2 = 18;
   obj.trailing = { marginStart: 18 };
-  const obj1 = { borderRadius: true, borderWidth: true, padding: true, paddingBottom: true, flexDirection: true };
+  const obj1 = {};
   if (arg2) {
     str = "column";
   }

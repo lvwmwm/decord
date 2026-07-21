@@ -1,10 +1,10 @@
-// Module ID: 14395
-// Function ID: 108595
+// Module ID: 14398
+// Function ID: 108627
 // Name: VerificationListItem
 // Dependencies: []
 // Exports: default
 
-// Module 14395 (VerificationListItem)
+// Module 14398 (VerificationListItem)
 function VerificationListItem(userId) {
   let end;
   let index;
@@ -83,7 +83,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ list: { flexGrow: 1 }, listContent: {}, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ list: { flexGrow: 1 }, listContent: { paddingHorizontal: -0.000000015832525233992072, accessible: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855055024309289 }, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
 let closure_8 = { VERIFICATION: "VERIFICATION", SECTION: "SECTION" };
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");

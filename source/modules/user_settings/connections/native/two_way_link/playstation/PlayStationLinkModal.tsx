@@ -1,5 +1,5 @@
 // Module ID: 8964
-// Function ID: 70695
+// Function ID: 70706
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
@@ -49,7 +49,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_6,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, {});
+        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
       },
       render() {
         return callback(arg0(closure_2[9]).PlayStationLinkPreConnect, { platformType: arg0 });
@@ -60,7 +60,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_6,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { "Null": false, "Null": false });
+        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
       },
       render(arg0) {
         let callbackCode;

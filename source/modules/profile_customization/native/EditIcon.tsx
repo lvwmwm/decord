@@ -1,22 +1,22 @@
-// Module ID: 13460
-// Function ID: 102201
+// Module ID: 13462
+// Function ID: 102223
 // Name: EditIcon
 // Dependencies: []
 // Exports: default
 
-// Module 13460 (EditIcon)
+// Module 13462 (EditIcon)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.editIcon = obj;
-const obj1 = { bhk: "<string:1027735553>", bic: "<string:4143972873>", borderRadius: importDefault(dependencyMap[4]).radii.md };
-obj.xs = obj1;
-const obj2 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj.xs = { borderRadius: importDefault(dependencyMap[4]).radii.md };
+const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.sm = obj2;
 let closure_5 = obj.createStyles(obj);
+const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.md };
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/profile_customization/native/EditIcon.tsx");
 
 export default function EditIcon(style) {

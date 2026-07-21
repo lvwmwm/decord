@@ -1,10 +1,10 @@
-// Module ID: 12759
-// Function ID: 97824
+// Module ID: 12761
+// Function ID: 97846
 // Name: ActivateDevice
-// Dependencies: [342949888, 91226112, 836763648, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 301989904, 3758096419, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12773, 1934, 2]
+// Dependencies: [342884352, 91226112, 836894720, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 301989904, 3791650851, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12775, 1934, 2]
 // Exports: ActivateDevice
 
-// Module 12759 (ActivateDevice)
+// Module 12761 (ActivateDevice)
 import result2 from "result2";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -13,11 +13,11 @@ let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = { background: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
+obj = { "Null": "confetti", "Null": "png", backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
 obj.imageStyle = obj;
 obj.safeArea = {};
-const obj1 = { marginTop: "sm", alignItems: null, flexDirection: null, backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, paddingHorizontal: 0, paddingVertical: 0, marginRight: 8, flexDirection: 8, marginBottom: true, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: {}, shadowRadius: 4 };
-obj.content = obj1;
+const tmp2 = arg1(dependencyMap[2]);
+obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: { "Null": "<string:2754674692>", "Null": "<string:3607772528>" }, shadowRadius: 4 };
 obj.scroller = {};
 obj.scrollerContent = {};
 let closure_10 = obj.createStyles(obj);
@@ -26,7 +26,7 @@ const result = result2.fileFinishedImporting("modules/activate_device/native/Act
 export const ActivateDevice = (onClose) => {
   onClose = onClose.onClose;
   const tmp = callback2();
-  const tmp2 = callback(React.useState({}), 2);
+  const tmp2 = callback(React.useState({ GIFS_SEARCH: null, borderWidth: null }), 2);
   const first = tmp2[0];
   const arg1 = first;
   const importDefault = tmp4;

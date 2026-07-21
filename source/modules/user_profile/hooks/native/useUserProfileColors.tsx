@@ -1,10 +1,10 @@
-// Module ID: 8232
-// Function ID: 64999
+// Module ID: 8233
+// Function ID: 65012
 // Name: useUserProfileColors
 // Dependencies: []
 // Exports: useUserProfileColors
 
-// Module 8232 (useUserProfileColors)
+// Module 8233 (useUserProfileColors)
 let closure_3 = importDefault(dependencyMap[0]);
 const ThemeTypes = arg1(dependencyMap[1]).ThemeTypes;
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileColors.tsx");

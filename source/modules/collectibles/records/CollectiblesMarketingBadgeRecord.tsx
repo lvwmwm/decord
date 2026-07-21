@@ -1,5 +1,5 @@
 // Module ID: 6793
-// Function ID: 53635
+// Function ID: 53643
 // Name: CollectiblesMarketingBadgeRecord
 // Dependencies: []
 

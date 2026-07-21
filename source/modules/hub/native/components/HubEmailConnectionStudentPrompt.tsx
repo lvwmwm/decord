@@ -1,5 +1,5 @@
 // Module ID: 11751
-// Function ID: 91246
+// Function ID: 91258
 // Name: HubEmailConnectionStudentPrompt
 // Dependencies: []
 // Exports: default

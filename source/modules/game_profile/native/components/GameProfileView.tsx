@@ -1,5 +1,5 @@
 // Module ID: 8621
-// Function ID: 68301
+// Function ID: 68312
 // Name: GameProfileView
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 6766
-// Function ID: 53096
+// Function ID: 53104
 // Name: maybeFetchCollectiblesForInvoices
 // Dependencies: []
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId

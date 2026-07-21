@@ -1,10 +1,10 @@
-// Module ID: 16002
-// Function ID: 122784
+// Module ID: 16006
+// Function ID: 122828
 // Name: RedesignSkipAvatarUploadAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 16002 (RedesignSkipAvatarUploadAlertModal)
+// Module 16006 (RedesignSkipAvatarUploadAlertModal)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

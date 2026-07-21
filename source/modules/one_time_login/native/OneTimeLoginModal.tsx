@@ -1,10 +1,10 @@
-// Module ID: 12745
-// Function ID: 97760
+// Module ID: 12747
+// Function ID: 97782
 // Name: OneTimeLoginModal
 // Dependencies: []
 // Exports: default
 
-// Module 12745 (OneTimeLoginModal)
+// Module 12747 (OneTimeLoginModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6, Image: closure_7 } = arg1(dependencyMap[2]));
@@ -17,20 +17,20 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.md };
+obj = { "Null": "png", "Null": null, "Null": "stretch", "Null": "row", "Null": "center", "Null": "flex-start", "Null": 16, borderRadius: importDefault(dependencyMap[9]).radii.md };
 obj.container = obj;
 obj.centerContent = {};
 const tmp4 = arg1(dependencyMap[7]);
 obj.bottomContent = { alignItems: "center", gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.logo = {};
+const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, gap: importDefault(dependencyMap[9]).space.PX_8 };
+obj.loadingContainer = obj2;
 const obj1 = { alignItems: "center", gap: importDefault(dependencyMap[9]).space.PX_8 };
-obj.loadingContainer = { gap: importDefault(dependencyMap[9]).space.PX_8 };
-const obj2 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.link = { textDecorationColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
-const obj4 = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 293, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
-obj.raisedIcon = obj4;
-let closure_15 = obj.createStyles(obj);
 const obj3 = { textDecorationColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
+obj.raisedIcon = { borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
+let closure_15 = obj.createStyles(obj);
+const obj4 = { borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/one_time_login/native/OneTimeLoginModal.tsx");
 
 export default function OneTimeLoginModal(token) {
@@ -57,7 +57,7 @@ export default function OneTimeLoginModal(token) {
     let obj = tmp(tmp2[13]);
     obj = { has_token: null != token };
     obj.track(constants2.ONE_TIME_LOGIN_MODAL_OPENED, obj);
-    tmp(tmp2[13]).track(constants2.DEEP_LINK_CLICKED, { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112326898752, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006795325752693196, "Null": 0.00000000000000000000000000000000000000000004099383275409865 });
+    tmp(tmp2[13]).track(constants2.DEEP_LINK_CLICKED, {});
   }, items1);
   callback = React.useCallback(() => {
     tmp(tmp2[13]).track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "loading" });
@@ -154,7 +154,7 @@ export default function OneTimeLoginModal(token) {
   const intl2 = arg1(dependencyMap[20]).intl;
   obj7.children = intl2.string(arg1(dependencyMap[20]).t.ZXe5/Y);
   const items10 = [callback2(arg1(dependencyMap[26]).Text, obj7), ];
-  const obj8 = { w: 29705613, h: 2161, ip: 1166889216 };
+  const obj8 = { "Bool(true)": 29246658, "Bool(true)": 2161, "Bool(true)": 1153585408 };
   const intl3 = arg1(dependencyMap[20]).intl;
   obj8.text = intl3.string(arg1(dependencyMap[20]).t.FIEwfG);
   obj8.onPress = callback;

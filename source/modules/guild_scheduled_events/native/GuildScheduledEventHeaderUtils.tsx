@@ -1,5 +1,5 @@
 // Module ID: 12084
-// Function ID: 93197
+// Function ID: 93209
 // Name: getGuildScheduledEventHeaderProps
 // Dependencies: []
 // Exports: getGuildScheduledEventHeaderProps

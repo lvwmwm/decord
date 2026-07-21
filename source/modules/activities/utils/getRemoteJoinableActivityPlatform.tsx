@@ -1,5 +1,5 @@
 // Module ID: 10901
-// Function ID: 84713
+// Function ID: 84724
 // Name: getRemoteJoinableActivityPlatform
 // Dependencies: []
 // Exports: getRemoteJoinableActivityPlatform

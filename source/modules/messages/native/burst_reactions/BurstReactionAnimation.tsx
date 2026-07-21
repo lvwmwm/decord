@@ -1,10 +1,10 @@
-// Module ID: 7062
-// Function ID: 56453
+// Module ID: 7063
+// Function ID: 56465
 // Name: BurstReactionAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 7062 (BurstReactionAnimation)
+// Module 7063 (BurstReactionAnimation)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -24,7 +24,7 @@ export default function BurstReactionAnimation(arg0) {
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
-  let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  let obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const tmp3 = callback();

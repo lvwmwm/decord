@@ -1,5 +1,5 @@
 // Module ID: 10452
-// Function ID: 80707
+// Function ID: 80718
 // Name: _fetchApexExperimentsMetadata
 // Dependencies: []
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
@@ -23,7 +23,7 @@ function _fetchInstallationExperiments() {
   const _fetchInstallationExperiments = obj;
   return obj(...arguments);
 }
-let closure_3 = [false];
+let closure_3 = ["\u0433\u043B\u043E\u0431\u0443\u0441"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

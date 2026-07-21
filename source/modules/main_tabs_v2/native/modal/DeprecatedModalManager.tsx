@@ -1,9 +1,9 @@
-// Module ID: 16060
-// Function ID: 123382
+// Module ID: 16068
+// Function ID: 123443
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16060 (_isNativeReflectConstruct)
+// Module 16068 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -186,9 +186,9 @@ let closure_15 = {
   }
 };
 const obj = {
-  "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==",
-  "Bool(false)": null,
-  "Bool(false)": "4c57d1e5843d61cf9d8ac6883994f498",
+  accumulated: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==",
+  guildDirectoryEntryFromServer: null,
+  currencySpacing: "d5e8222907103de9bee7fa85e9d02eed",
   store: importDefaultResult,
   isOpen(arg0, arg1) {
     let action = arg1;
@@ -256,13 +256,12 @@ let tmp4 = (arg0) => {
               return callback(closure_2[18]).default;
             }
       };
-      obj2 = {
-        store: closure_11,
-        getComponent() {
-              return callback(closure_2[19]).default;
-            }
+      obj2 = { "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/images" };
+      obj2.store = closure_11;
+      obj2.getComponent = function getComponent() {
+        return callback(closure_2[19]).default;
       };
-      obj3 = { paddingVertical: "<string:46078720>", marginRight: "<string:3084210432>", guildVerificationRoleEnabled: "<string:2259239185>" };
+      obj3 = { "Bool(false)": "key", "Bool(false)": "Array", "Bool(false)": "isArray" };
       obj3.store = closure_10;
       obj3.getComponent = function getComponent() {
         return callback(closure_2[20]).default;

@@ -1,5 +1,5 @@
 // Module ID: 1600
-// Function ID: 17811
+// Function ID: 17816
 // Name: jSWorkletsModule
 // Dependencies: []
 

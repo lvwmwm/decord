@@ -1,10 +1,10 @@
-// Module ID: 15465
-// Function ID: 117958
+// Module ID: 15468
+// Function ID: 117997
 // Name: PictureInPictureGlobal
 // Dependencies: []
 // Exports: default
 
-// Module 15465 (PictureInPictureGlobal)
+// Module 15468 (PictureInPictureGlobal)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, StyleSheet: closure_6, TouchableOpacity: closure_7 } = arg1(dependencyMap[2]));
@@ -18,7 +18,7 @@ const ParticipantTypes = arg1(dependencyMap[9]).ParticipantTypes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj1 = arg1(dependencyMap[11]);
-let obj = { container: {} };
+let obj = { container: { "Null": 0.1, "Null": 1418472223133344700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293658201766086 } };
 const tmp3 = arg1(dependencyMap[10]);
 obj.elevationShadow = arg1(dependencyMap[12]).generateBoxShadowStyle(arg1(dependencyMap[12]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
 obj = { borderRadius: importDefault(dependencyMap[13]).radii.sm, overflow: "hidden" };
@@ -248,12 +248,12 @@ export default function PictureInPictureGlobal(channel) {
     const obj = {};
     let value = derivedValue.get();
     const items = [num(derivedValue[34]).NAV_BAR_HEIGHT + 12, 12];
-    obj.marginTop = num(derivedValue[32]).interpolate(value, ["Text", "lc"], items);
+    obj.marginTop = num(derivedValue[32]).interpolate(value, ["replace", "then"], items);
     const obj2 = num(derivedValue[32]);
     const items1 = [tmp2 + 12, ];
     value = derivedValue.get();
     items1[1] = num(derivedValue[35]).PIP_AVOIDANCE_TAB_BAR_HEIGHT + 12;
-    obj.marginBottom = num(derivedValue[32]).interpolate(value, ["Text", "lc"], items1);
+    obj.marginBottom = num(derivedValue[32]).interpolate(value, ["replace", "then"], items1);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[32]).interpolate, animatedDrawerState: derivedValue, NAV_BAR_HEIGHT: arg1(dependencyMap[34]).NAV_BAR_HEIGHT, PADDING: 12, chatInputContainerHeight: tmp2, PIP_AVOIDANCE_TAB_BAR_HEIGHT: arg1(dependencyMap[35]).PIP_AVOIDANCE_TAB_BAR_HEIGHT };

@@ -1,5 +1,5 @@
 // Module ID: 11979
-// Function ID: 92602
+// Function ID: 92614
 // Name: useGameNameAndCoverImage
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 12165
-// Function ID: 93571
+// Function ID: 93583
 // Name: createInviteEmbed
 // Dependencies: []
 // Exports: createInviteEmbed

@@ -1,5 +1,5 @@
 // Module ID: 10668
-// Function ID: 83165
+// Function ID: 83176
 // Name: useIsVoiceChannelFull
 // Dependencies: []
 // Exports: default, useIsVoiceChannelLocked

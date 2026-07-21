@@ -1,5 +1,5 @@
 // Module ID: 4220
-// Function ID: 36831
+// Function ID: 36839
 // Name: SoundshareStatsAggregator
 // Dependencies: []
 
@@ -10,7 +10,7 @@ const tmp2 = () => {
   class SoundshareStatsAggregator {
     constructor() {
       tmp = SoundshareStatsAggregator(this, SoundshareStatsAggregator);
-      this._report = {};
+      this._report = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
       set = new Set();
       this._pids = set;
       return;
@@ -23,7 +23,7 @@ const tmp2 = () => {
       const _report = this._report;
       if ("soundshare_state_transition" === type.type) {
         const _HermesInternal2 = HermesInternal;
-        let combined = "soundshare_state_transition_" + ["<string:1529662668>", "<string:6582592>", "<string:3211264>", "isArray", "<string:1933565952>", "Array"][type.newState] + "_count";
+        let combined = "soundshare_state_transition_" + [][type.newState] + "_count";
       } else {
         const _HermesInternal = HermesInternal;
         combined = "" + type.type + "_count";

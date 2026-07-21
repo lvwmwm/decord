@@ -1,9 +1,9 @@
-// Module ID: 12721
-// Function ID: 97624
+// Module ID: 12723
+// Function ID: 97646
 // Name: IS_OVERLAY_DEV_ENV
 // Dependencies: []
 
-// Module 12721 (IS_OVERLAY_DEV_ENV)
+// Module 12723 (IS_OVERLAY_DEV_ENV)
 let flag = require(dependencyMap[0]).isPlatformEmbedded;
 if (flag) {
   const _module = require(dependencyMap[0]);

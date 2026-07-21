@@ -1,10 +1,10 @@
-// Module ID: 16240
-// Function ID: 125481
+// Module ID: 16248
+// Function ID: 125542
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
 // Dependencies: []
 // Exports: default
 
-// Module 16240 (GuildSettingsRoleSubscriptionsEmptyContent)
+// Module 16248 (GuildSettingsRoleSubscriptionsEmptyContent)
 function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   guild = guild.guild;
   let obj = arg1(dependencyMap[5]);

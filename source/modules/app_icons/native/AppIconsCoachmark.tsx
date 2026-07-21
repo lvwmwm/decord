@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 118140
+// Module ID: 15484
+// Function ID: 118179
 // Name: AppIconsCoachmarkActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15481 (AppIconsCoachmarkActionSheet)
+// Module 15484 (AppIconsCoachmarkActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ obj = {};
 obj = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: 0 };
 obj.container = obj;
 obj.info = { alignItems: "center" };
-obj.image = { "Bool(false)": null, "Bool(false)": null };
+obj.image = {};
 obj.nitroWheel = { marginRight: 8 };
-obj.titleContainer = {};
-obj.subtitle = { "Null": null, "Null": null };
+obj.titleContainer = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.subtitle = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.footer = { marginTop: 20, gap: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_10 = obj.createStyles(obj);
@@ -59,7 +59,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   items3[1] = callback(arg1(dependencyMap[14]).Text, obj4);
   obj2.children = items3;
   items2[1] = callback2(closure_5, obj2);
-  const obj5 = { style: tmp.subtitle };
+  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[15]).intl;
   const string = intl2.string;
   const t = arg1(dependencyMap[15]).t;

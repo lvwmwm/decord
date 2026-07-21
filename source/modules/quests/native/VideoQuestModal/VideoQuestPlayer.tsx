@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 105224
+// Module ID: 13911
+// Function ID: 105256
 // Name: getSafeAreaInsetOrPadding
 // Dependencies: []
 
-// Module 13908 (getSafeAreaInsetOrPadding)
+// Module 13911 (getSafeAreaInsetOrPadding)
 let StyleSheet;
 function getSafeAreaInsetOrPadding(arg0, arg1) {
   return Math.max(arg0[arg1], obj[arg1]);
@@ -65,7 +65,7 @@ obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj.bufferingSpinnerCentered = obj3;
 obj.video = {};
-obj.videoContainer = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755987663096558, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, 0: 139264.00004577637 };
+obj.videoContainer = { was: "PlaystationNeutralIcon", visible: "png", hasSpoiler: true };
 const obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 const obj1 = {};
@@ -77,17 +77,17 @@ obj4["justifyContent"] = "center";
 obj4["alignItems"] = "center";
 obj4["flexDirection"] = "column";
 obj.controls = obj4;
-const obj5 = { "Null": "isArray", "Null": "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", flexDirection: "isArray", alignItems: "isArrayBuffer", justifyContent: "540091c70b333c8b8937ba1627138192", marginLeft: "wumpus-pikachu", padding: importDefault(dependencyMap[8]).space.PX_8 };
+const obj5 = { "Null": "isArray", "Null": "SOLID", "Null": "isArray", "Null": "isArrayBuffer", "Null": "540091c70b333c8b8937ba1627138192", "Null": "wumpus-pikachu", padding: importDefault(dependencyMap[8]).space.PX_8 };
 obj.controlsTopBottom = obj5;
-const obj6 = { "Bool(true)": "gr", "Bool(true)": null, "Bool(true)": "Group 3", "Bool(true)": 4, "Bool(true)": 2, "Bool(true)": 0, gap: importDefault(dependencyMap[8]).space.PX_24 };
-obj.controlsMiddle = obj6;
+const alphaResult = importDefault(dependencyMap[11])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
+obj.controlsMiddle = { gap: importDefault(dependencyMap[8]).space.PX_24 };
 obj.controlsTop = { top: 0 };
 obj.controlsBottom = { bottom: 0 };
-const alphaResult = importDefault(dependencyMap[11])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
-obj.progressContainer = { height: importDefault(dependencyMap[8]).space.PX_16 };
-const obj8 = { menuDismiss: 0, SLOWMODE_VALUES: 11, BACKGROUND_FEEDBACK_POSITIVE: 4, y: "Explosion 3", dm: 1, dn: 1, do: null, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, shadowOffset: { bhk: -536870861, bic: -299892737 } };
+const obj7 = { flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007696006539765, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025322775409541142, justifyContent: 0, marginLeft: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009266003024732815, height: importDefault(dependencyMap[8]).space.PX_16, minWidth: 6893587421222876000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915829 };
+obj.progressContainer = obj7;
+const obj8 = { "Null": 0, "Null": 11, 50418440: 4, 83461222: "Explosion 3", 22210401: 1, 1376057603: 1, -625421284: null, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, shadowOffset: { "Null": -536870861, "Null": -299892737 } };
 obj.progress = obj8;
-const obj7 = { height: importDefault(dependencyMap[8]).space.PX_16 };
+const obj6 = { gap: importDefault(dependencyMap[8]).space.PX_24 };
 obj.icon = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj9 = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.iconDisabled = { color: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
@@ -280,7 +280,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   let obj3 = arg1(dependencyMap[16]);
   class K {
     constructor() {
-      tmp = f105235();
+      tmp = f105267();
       obj = {};
       obj2 = onLoad(onToggleFullscreen[17]);
       num = 0;
@@ -885,7 +885,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     obj4.accessibilityLabel = intl.string(tmp69 ? t.R3aFPe : t.fTMEUi);
     let tmp88 = first1 !== constants.ERRORED;
     if (tmp88) {
-      obj5 = { <string:2815140391>: "height", <string:2502972614>: "id", <string:413896846>: "init", <string:1565693687>: "instance", <string:1640499105>: "ip", <string:1318212044>: "is", httpEngine: rnvHttpEngine, ref, style: top1.video, paused: tmp69, source: memo2, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback3, onSeek: callback10, onProgress: callback12, onLoadStart: callback14, onEnd: callback13, onError: callback15, onReadyForDisplay: callback1, onVideoTracks: callback16, onLayout: callback17, resizeMode: "contain" };
+      obj5 = { httpEngine: rnvHttpEngine, ref, style: top1.video, paused: tmp69, source: memo2, onBuffer: callback18, onPlaybackStalled: callback19, onPlaybackResume: callback20, onLoad: callback3, onSeek: callback10, onProgress: callback12, onLoadStart: callback14, onEnd: callback13, onError: callback15, onReadyForDisplay: callback1, onVideoTracks: callback16, onLayout: callback17, resizeMode: "contain" };
       tmp88 = targetSeconds(closure_16, obj5);
     }
     const items28 = [tmp88, , , , , ];

@@ -1,7 +1,7 @@
 // Module ID: 5643
-// Function ID: 48237
+// Function ID: 48245
 // Name: getGuildModeratorReportingEnabled
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 5643 (getGuildModeratorReportingEnabled)

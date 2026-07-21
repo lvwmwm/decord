@@ -1,5 +1,5 @@
 // Module ID: 1495
-// Function ID: 17223
+// Function ID: 17228
 // Name: validateArrayFormatSeparator
 // Dependencies: []
 // Exports: exclude, parseUrl, pick, stringify, stringifyUrl
@@ -91,7 +91,7 @@ function parseValue(str, parseNumbers) {
 function parse(str) {
   let tmp15;
   let tmp16;
-  const merged = Object.assign({ type: true, test: null, text: 11, guild: null, isOwner: 0.1, canManageGuildRoleSubscriptions: null }, arg1);
+  const merged = Object.assign({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, arg1);
   validateArrayFormatSeparator(merged.arrayFormatSeparator);
   const tmp4 = function parserForArrayFormat(merged) {
     const arrayFormat = merged.arrayFormat;
@@ -335,7 +335,7 @@ export const stringify = (arg0, arg1) => {
   let exports = arg1;
   if (arg0) {
     const _Object = Object;
-    const merged = Object.assign({ y: true, removeFile: null, y: 11, migrationData: null }, arg1);
+    const merged = Object.assign({ 5426273: true, 1678426334: true, -1564117289: true, 1172060754: true }, arg1);
     exports = merged;
     validateArrayFormatSeparator(merged.arrayFormatSeparator);
     function shouldFilter(item10026) {
@@ -550,7 +550,7 @@ export const parseUrl = (arg0, arg1) => {
 };
 export const stringifyUrl = (url) => {
   let concat = url;
-  const merged = Object.assign(callback({ isArray: null, LIGHT: null }, closure_6, true), arg1);
+  const merged = Object.assign(callback({ size: null, text: null }, closure_6, true), arg1);
   const str = removeHash(url.url);
   const json = exports.stringify(Object.assign(exports.parse(exports.extract(concat.url), { sort: false }), concat.query), merged);
   let combined = json;

@@ -1,5 +1,5 @@
 // Module ID: 875
-// Function ID: 9733
+// Function ID: 9737
 // Name: removeTrailingSlash
 // Dependencies: []
 

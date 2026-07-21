@@ -1,5 +1,5 @@
 // Module ID: 9421
-// Function ID: 73337
+// Function ID: 73348
 // Name: DiscordTag
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(false)": null, "Bool(false)": "Shape 2", "Bool(false)": 3 } };
+obj = { container: { "Null": null, "Null": "Shape 2", "Null": 3 } };
 obj = { marginLeft: importDefault(dependencyMap[4]).space.PX_4 };
 obj.botTag = obj;
 let closure_6 = obj.createStyles(obj);
@@ -36,12 +36,12 @@ export default function DiscordTag(arg0) {
   } else {
     tmp4Result = null;
     if (null != user) {
-      obj = { "Bool(true)": "topSelectionChange", "Bool(true)": "onResponderMove", "Bool(true)": "<string:324075776>", "Bool(true)": "<string:553616>", style: usernameStyle };
+      obj = { style: usernameStyle };
       const items = [user.toString(), ];
       let tmp7 = !user.hasUniqueUsername();
       if (tmp7) {
         const obj1 = { style: discriminatorStyle };
-        const items1 = ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", user.discriminator];
+        const items1 = [null, user.discriminator];
         obj1.children = items1;
         tmp7 = callback2(arg1(dependencyMap[5]).Text, obj1);
       }

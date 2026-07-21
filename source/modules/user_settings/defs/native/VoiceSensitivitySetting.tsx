@@ -1,22 +1,22 @@
-// Module ID: 14015
-// Function ID: 106585
+// Module ID: 14018
+// Function ID: 106617
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 14015
-import { View } from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14018
+import { View } from "result";
+import closure_4 from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-let closure_6 = __exportStarResult1.createStyles({ slider: { marginTop: 8 } });
+let closure_6 = result.createStyles({ slider: { marginTop: 8 } });
 const obj = {
   useTitle() {
     const intl = require(dependencyMap[9]).intl;
     return intl.string(require(dependencyMap[9]).t.sqUm+k);
   },
-  parent: require("__exportStarResult1").MobileSetting.VOICE,
+  parent: require("result").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
@@ -43,14 +43,14 @@ const obj = {
     return items;
   }
 };
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
+result = result.fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
 
-export default __exportStarResult1.createStatic({
+export default result.createStatic({
   useTitle() {
     const intl = require(dependencyMap[9]).intl;
     return intl.string(require(dependencyMap[9]).t.sqUm+k);
   },
-  parent: require("__exportStarResult1").MobileSetting.VOICE,
+  parent: require("result").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;

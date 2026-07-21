@@ -1,10 +1,10 @@
-// Module ID: 16444
-// Function ID: 127027
+// Module ID: 16452
+// Function ID: 127088
 // Name: ErrorScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16444 (ErrorScreen)
+// Module 16452 (ErrorScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -12,7 +12,7 @@ const View = arg1(dependencyMap[3]).View;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { 1996650242: false, 453146370: false, 1644305154: false, 609555990: false, 604120066: false, gap: importDefault(dependencyMap[6]).space.PX_8, padding: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { gap: importDefault(dependencyMap[6]).space.PX_8, padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.buttonContainer = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };

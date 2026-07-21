@@ -1,5 +1,5 @@
 // Module ID: 10493
-// Function ID: 81915
+// Function ID: 81926
 // Name: logger
 // Dependencies: []
 // Exports: default

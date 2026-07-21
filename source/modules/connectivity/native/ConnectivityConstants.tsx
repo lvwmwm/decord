@@ -1,7 +1,7 @@
 // Module ID: 10621
-// Function ID: 82833
+// Function ID: 82844
 // Name: RTC_PANEL_HEIGHT
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10621 (RTC_PANEL_HEIGHT)
 const _module = require(dependencyMap[0]);

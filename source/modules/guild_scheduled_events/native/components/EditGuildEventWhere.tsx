@@ -1,5 +1,5 @@
 // Module ID: 8396
-// Function ID: 66817
+// Function ID: 66828
 // Name: EditGuildEventWhere
 // Dependencies: []
 // Exports: default
@@ -86,7 +86,7 @@ export default function EditGuildEventWhere(guild) {
   obj1 = {};
   let tmp17 = null;
   if (null != first) {
-    obj2 = { "Null": "<string:24187203>", "Null": "<string:16777216>", "Null": "<string:1090841937>", style: tmp.error, children: first };
+    obj2 = { delete: "571b1cf067821ef4949e09c037a195b6", dispatch: "ic_person_shield", raw: "png", style: tmp.error, children: first };
     tmp17 = callback3(arg1(dependencyMap[15]).Text, obj2);
   }
   const items4 = [tmp17, ];
@@ -166,7 +166,7 @@ export default function EditGuildEventWhere(guild) {
   }
   items5[3] = hasItem;
   if (stateFromStores1) {
-    const obj7 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.text };
+    const obj7 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.text };
     const intl4 = arg1(dependencyMap[9]).intl;
     const obj8 = {
       onClick() {

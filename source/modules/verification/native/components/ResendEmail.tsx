@@ -1,5 +1,5 @@
 // Module ID: 9180
-// Function ID: 71892
+// Function ID: 71903
 // Name: ResendEmail
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 const VerificationModalScenes = arg1(dependencyMap[5]).VerificationModalScenes;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ container: { variant: "center", accessibilityRole: "row", bm: 8, now: 8 }, title: { "Null": "center", "Null": "center" }, body: { action: null, messageReference: null, medium: null }, resend: {}, change: { default: "sh", valueOf: 0 } });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ container: { 9223372036854775807: "construct", 0: "isArray", 0: "isArray", 9223372036854775807: "isArray" }, title: {}, body: {}, resend: {}, change: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
 
@@ -59,7 +59,7 @@ export default function ResendEmail() {
     navigation.push(constants.ENTER_EMAIL);
   }, items3);
   const items4 = [callback2(arg1(dependencyMap[13]).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.fUtddV);
   items4[1] = callback2(arg1(dependencyMap[14]).Text, obj);

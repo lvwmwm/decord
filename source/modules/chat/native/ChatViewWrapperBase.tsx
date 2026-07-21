@@ -1,5 +1,5 @@
 // Module ID: 10390
-// Function ID: 80087
+// Function ID: 80098
 // Name: ChatViewWrapperBase
 // Dependencies: []
 // Exports: default

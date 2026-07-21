@@ -1,5 +1,5 @@
 // Module ID: 8398
-// Function ID: 66837
+// Function ID: 66848
 // Name: StageChannelUpsell
 // Dependencies: []
 // Exports: default
@@ -16,13 +16,13 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { "Null": "r", "Null": "sectionIdsByBotId", "Null": "Array", "Null": "nextTierIcon", "Null": "%AsyncIteratorPrototype%", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.container = obj;
 obj.image = { marginBottom: 16 };
-obj.closeContainer = { "Null": false, "Null": false, "Null": false };
-obj.header = {};
-obj.description = { collapsable: "/assets/design/components/Illustration/native/redesign/generated/images", preventClipping: 160 };
-obj.button = { "Bool(true)": null, "Bool(true)": null };
+obj.closeContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.header = { 0: "y", 0: "Float16Array" };
+obj.description = { value: "/assets/design/components/Illustration/native/redesign/generated/images", marginTop: 160 };
+obj.button = { disabled: null, sequence: null };
 let closure_12 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx");
@@ -41,7 +41,7 @@ export default function StageChannelUpsell(arg0) {
     const items = [callback3(arg1(dependencyMap[10]).PressableOpacity, obj), , , , , ];
     const obj1 = { source: importDefault(dependencyMap[13]), style: tmp.image };
     items[1] = callback3(closure_4, obj1);
-    const obj2 = { "Null": "text-overlay-light", "Null": null, "Null": 3, style: tmp.header };
+    const obj2 = { delete: "text-overlay-light", dispatch: null, raw: 3, style: tmp.header };
     const intl = arg1(dependencyMap[15]).intl;
     obj2.children = intl.string(arg1(dependencyMap[15]).t.Sx8Ezi);
     items[2] = callback3(arg1(dependencyMap[14]).Text, obj2);
@@ -53,13 +53,14 @@ export default function StageChannelUpsell(arg0) {
     const intl3 = arg1(dependencyMap[15]).intl;
     const obj5 = {
       suggestionsHook(children) {
-          return callback3(callback(tmp3[14]).Text, { children }, arg1);
+          const obj = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", children };
+          return callback3(callback(tmp3[14]).Text, obj, arg1);
         }
     };
     obj4.children = intl3.format(arg1(dependencyMap[15]).t.Vh7rP7, obj5);
     items[4] = callback3(arg1(dependencyMap[14]).Text, obj4);
     const obj6 = { style: tmp.button };
-    const obj7 = { 9223372036854775807: null, -9223372036854775808: null };
+    const obj7 = { "Bool(true)": null, "Bool(true)": null };
     const intl4 = arg1(dependencyMap[15]).intl;
     obj7.text = intl4.string(arg1(dependencyMap[15]).t.X/3SyA);
     obj7.onPress = function onPress() {

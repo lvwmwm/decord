@@ -1,5 +1,5 @@
 // Module ID: 3828
-// Function ID: 31927
+// Function ID: 31932
 // Name: presentAddedFriendToast
 // Dependencies: []
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
@@ -11,7 +11,7 @@ const result = _module.fileFinishedImporting("modules/toast/native/ToastUtils.ts
 
 export const presentAddedFriendToast = function presentAddedFriendToast() {
   let obj = importDefault(dependencyMap[1]);
-  obj = { 286: "p", 296: "Array", 306: "isArray" };
+  obj = {};
   const intl = require(dependencyMap[2]).intl;
   obj.content = intl.string(require(dependencyMap[2]).t.Fn5bwO);
   obj.IconComponent = require(dependencyMap[3]).FriendsIcon;

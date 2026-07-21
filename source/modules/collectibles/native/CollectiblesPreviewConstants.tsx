@@ -1,9 +1,9 @@
-// Module ID: 8207
-// Function ID: 64884
+// Module ID: 8208
+// Function ID: 64897
 // Name: SAMPLE_PROFILE_ASPECT_RATIO
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8207 (SAMPLE_PROFILE_ASPECT_RATIO)
+// Module 8208 (SAMPLE_PROFILE_ASPECT_RATIO)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");
 

@@ -1,10 +1,9 @@
-// Module ID: 16448
-// Function ID: 127061
+// Module ID: 16456
+// Function ID: 127122
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16448 (_isNativeReflectConstruct)
-let QuestsExperimentLocations;
+// Module 16456 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -163,11 +162,12 @@ let closure_13 = importDefault(dependencyMap[11]);
 let closure_14 = importDefault(dependencyMap[12]);
 let closure_15 = importDefault(dependencyMap[13]);
 let closure_16 = importDefault(dependencyMap[14]);
-({ DISCORD_APPLICATION_ID: closure_17, QuestsExperimentLocations } = arg1(dependencyMap[15]));
+const tmp3 = arg1(dependencyMap[15]);
+const DISCORD_APPLICATION_ID = tmp3.DISCORD_APPLICATION_ID;
 const MINUTE = importDefault(dependencyMap[16]).Millis.MINUTE;
 const SECOND = importDefault(dependencyMap[16]).Millis.SECOND;
 let obj = arg1(dependencyMap[17]);
-obj = { location: QuestsExperimentLocations.QUESTS_MANAGER };
+obj = { location: tmp3.QuestsExperimentLocations.QUESTS_MANAGER };
 const questLogger = obj.getQuestLogger(obj);
 let tmp4 = (arg0) => {
   class QuestProgressManager {
@@ -178,7 +178,7 @@ let tmp4 = (arg0) => {
       items1 = [...items];
       obj = closure_7(QuestProgressManager);
       tmp3 = closure_6;
-      if (closure_22()) {
+      if (closure_21()) {
         tmp5 = globalThis;
         _Reflect = Reflect;
         tmp6 = closure_7;
@@ -206,23 +206,23 @@ let tmp4 = (arg0) => {
               const _Math = Math;
               const diff = questTaskDetails.targetSeconds - questTaskDetails.progressSeconds;
               const bound = Math.max(0, diff * callback(closure_2[16]).Millis.SECOND);
-              if (bound <= closure_19) {
-                let sum = bound + closure_20;
+              if (bound <= closure_18) {
+                let sum = bound + closure_19;
               } else {
-                sum = closure_19;
+                sum = closure_18;
               }
               return sum;
             }
           }
         }
-        return closure_19;
+        return closure_18;
       };
       tmp3Result.initiateHeartbeat = (arg0, arg1, arg2) => {
         let closure_1 = arg1;
         const obj = arg0.heartbeats[arg1];
         if (obj.has(arg0)) {
           const _HermesInternal2 = HermesInternal;
-          closure_21.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: " + arg0);
+          closure_20.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: " + arg0);
         } else {
           function maybeSendHeartbeat(self, arg1, self2) {
             const activelyProgressingQuests = self.getActivelyProgressingQuests(arg1);
@@ -241,14 +241,8 @@ let tmp4 = (arg0) => {
                 }
                 applicationId = applicationId1;
               }
-              const QuestHeartbeatExecutableFingerprintExperiment = self(self2[28]).QuestHeartbeatExecutableFingerprintExperiment;
-              let obj = { location: constants.QUESTS_MANAGER };
-              if (QuestHeartbeatExecutableFingerprintExperiment.getConfig(obj).enabled) {
-                let prop;
-                if (result != value) {
-                  prop = value.executableFingerprint;
-                }
-                let tmp19 = prop;
+              if (result != value) {
+                let executableFingerprint = value.executableFingerprint;
               }
               let executablePath;
               if (result != value) {
@@ -265,37 +259,37 @@ let tmp4 = (arg0) => {
                 const currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
                 if (result == currentUserActiveStream) {
                   const _HermesInternal3 = HermesInternal;
-                  closure_21.log("~ initiateHeartbeat -> Attempted to beat for stream quest but no active stream, terminating heartbeat for questId: " + self);
+                  closure_20.log("~ initiateHeartbeat -> Attempted to beat for stream quest but no active stream, terminating heartbeat for questId: " + self);
                   self.terminateHeartbeat(self, arg1);
                 } else {
                   const _HermesInternal4 = HermesInternal;
-                  const obj5 = self(self2[29]);
-                  closure_21.log("~ initiateHeartbeat -> Sending heartbeat for questId: " + self);
-                  const encodeStreamKeyResult = self(self2[29]).encodeStreamKey(currentUserActiveStream);
-                  obj = { questId: self, streamKey: encodeStreamKeyResult, applicationId, executablePath, executableFingerprint: tmp19 };
+                  const obj4 = self(self2[28]);
+                  closure_20.log("~ initiateHeartbeat -> Sending heartbeat for questId: " + self);
+                  const encodeStreamKeyResult = self(self2[28]).encodeStreamKey(currentUserActiveStream);
+                  let obj = { questId: self, streamKey: encodeStreamKeyResult, applicationId, executablePath, executableFingerprint };
                   self(self2[21]).sendHeartbeat(obj);
-                  const obj6 = self(self2[21]);
+                  const obj5 = self(self2[21]);
                 }
               } else {
                 const _HermesInternal2 = HermesInternal;
-                closure_21.log("~ initiateHeartbeat -> Sending heartbeat for questId: " + self);
-                const obj1 = { questId: self, applicationId, executablePath, executableFingerprint: tmp19 };
-                self(self2[21]).sendHeartbeat(obj1);
-                const obj3 = self(self2[21]);
+                closure_20.log("~ initiateHeartbeat -> Sending heartbeat for questId: " + self);
+                obj = { questId: self, applicationId, executablePath, executableFingerprint };
+                self(self2[21]).sendHeartbeat(obj);
+                const obj2 = self(self2[21]);
               }
-              tmp19 = self;
+              executableFingerprint = self;
               executablePath = self.calculateHeartbeatDurationMs(self);
               const _window = window;
               timerId = window.setTimeout(maybeSendHeartbeat, executablePath);
               result = obj.set(self, timerId);
             } else {
               const _HermesInternal = HermesInternal;
-              closure_21.log("~ initiateHeartbeat -> Quest " + self + " is no longer actively progressing, terminating heartbeat");
+              closure_20.log("~ initiateHeartbeat -> Quest " + self + " is no longer actively progressing, terminating heartbeat");
               self.terminateHeartbeat(self, arg1);
             }
           }
           const _HermesInternal = HermesInternal;
-          closure_21.log("~ initiateHeartbeat -> Initiating heartbeat for Quest " + arg0);
+          closure_20.log("~ initiateHeartbeat -> Initiating heartbeat for Quest " + arg0);
           maybeSendHeartbeat();
         }
       };
@@ -305,7 +299,7 @@ let tmp4 = (arg0) => {
         let value = obj.get(questId);
         if (null != value) {
           const _HermesInternal2 = HermesInternal;
-          closure_21.log("~ terminateHeartbeat -> Terminating heartbeat for questId: " + questId);
+          closure_20.log("~ terminateHeartbeat -> Terminating heartbeat for questId: " + questId);
           const _window = window;
           window.clearTimeout(value);
           obj.delete(questId);
@@ -316,7 +310,7 @@ let tmp4 = (arg0) => {
           }
           if (tmp3) {
             const _HermesInternal = HermesInternal;
-            closure_21.log("~ terminateHeartbeat -> Sending terminal heartbeat for questId: " + questId);
+            closure_20.log("~ terminateHeartbeat -> Sending terminal heartbeat for questId: " + questId);
             obj = { questId, terminal: true };
             tmp3Result(closure_2[21]).sendHeartbeat(obj);
             const obj2 = tmp3Result(closure_2[21]);
@@ -326,10 +320,10 @@ let tmp4 = (arg0) => {
       tmp3Result.handleSendHeartbeatSuccess = (questId) => {
         let length;
         questId = questId.questId;
-        closure_21.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded for questId: " + questId + ")");
+        closure_20.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded for questId: " + questId + ")");
         if (null != questId.userStatus.completedAt) {
           const _HermesInternal = HermesInternal;
-          closure_21.log("~ handleSendHeartbeatSuccess -> Quest " + questId + " completed, terminating any heartbeats for it");
+          closure_20.log("~ handleSendHeartbeatSuccess -> Quest " + questId + " completed, terminating any heartbeats for it");
           const _Object = Object;
           const keys = Object.keys(tmp3Result.heartbeats);
           let num = 0;
@@ -344,7 +338,7 @@ let tmp4 = (arg0) => {
         }
       };
       tmp3Result.handleSendHeartbeatFailure = (questId) => {
-        closure_21.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: " + questId.questId);
+        closure_20.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: " + questId.questId);
       };
       obj1 = {
         QUESTS_FETCH_CURRENT_QUESTS_SUCCESS() {
@@ -443,7 +437,7 @@ let tmp4 = (arg0) => {
       } else if (QuestProgressManager(closure_2[26]).FirstPartyQuestTaskTypes.PLAY_ACTIVITY === arg0) {
         return self.getActivelyProgressingActivityQuests();
       } else {
-        QuestProgressManager(closure_2[30]).assertNever(arg0);
+        QuestProgressManager(closure_2[29]).assertNever(arg0);
       }
     }
   };
@@ -459,7 +453,7 @@ let tmp4 = (arg0) => {
       const runningGames = store.getRunningGames();
       const runningNonGames = store.getRunningNonGames();
       const quests = closure_15.quests;
-      closure_21.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", runningGames, "Running non-games: ", runningNonGames);
+      closure_20.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", runningGames, "Running non-games: ", runningNonGames);
       const obj = {};
       const tmp4 = callback5(runningGames);
       const iter = tmp4();
@@ -517,7 +511,7 @@ let tmp4 = (arg0) => {
       }
       function _loop(arg0) {
         let iter3;
-        let obj = arg0(obj[31]);
+        let obj = arg0(obj[30]);
         const result = obj.removeExecutablePathPrefix(tmp.exePath);
         const tmp3 = callback(quests.values());
         const iter = tmp3();
@@ -529,9 +523,9 @@ let tmp4 = (arg0) => {
             let tmp6 = closure_2;
             let obj2 = closure_0(closure_2[27]);
             let desktopApplicationIds = obj2.getDesktopApplicationIds(value);
-            let tmp7 = closure_25;
+            let tmp7 = closure_24;
             let tmp8 = tmp4;
-            if (closure_25(value)) {
+            if (closure_24(value)) {
               tmp8 = tmp4;
               if (null != desktopApplicationIds) {
                 let found = desktopApplicationIds.find((arg0) => arg0 === arg0);
@@ -541,9 +535,9 @@ let tmp4 = (arg0) => {
                   let result1 = closure_0.set(value.id, obj);
                   tmp8 = found;
                 } else {
-                  let tmp9 = closure_27;
+                  let tmp9 = closure_26;
                   tmp8 = found;
-                  if (closure_27(desktopApplicationIds, tmp)) {
+                  if (closure_26(desktopApplicationIds, tmp)) {
                     let tmp10 = closure_0;
                     obj = {};
                     let tmp11 = closure_0;
@@ -572,7 +566,7 @@ let tmp4 = (arg0) => {
           length = keys.length;
         } while (num < length);
       }
-      closure_21.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
+      closure_20.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
       return map;
     }
   };
@@ -592,7 +586,7 @@ let tmp4 = (arg0) => {
         if (null == streamerActiveStreamMetadata) {
           return map;
         } else {
-          closure_21.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", streamerActiveStreamMetadata);
+          closure_20.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", streamerActiveStreamMetadata);
           const id = streamerActiveStreamMetadata.id;
           if (null == id) {
             return map;
@@ -607,8 +601,8 @@ let tmp4 = (arg0) => {
                 let tmp3 = closure_2;
                 let obj2 = closure_0(closure_2[27]);
                 let streamingApplicationId = obj2.getStreamingApplicationId(value);
-                let tmp5 = closure_25;
-                let tmp6 = closure_25(value) && null != streamingApplicationId;
+                let tmp5 = closure_24;
+                let tmp6 = closure_24(value) && null != streamingApplicationId;
                 if (tmp6) {
                   if (streamingApplicationId === id) {
                     let obj = { applicationId: id };
@@ -620,7 +614,7 @@ let tmp4 = (arg0) => {
               } while (!iter.done);
             }
             const _Array = Array;
-            closure_21.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
+            closure_20.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
             return map;
           }
         }
@@ -639,7 +633,7 @@ let tmp4 = (arg0) => {
       if (null != connectedFrame) {
         set.add(connectedFrame.applicationId);
       }
-      closure_21.log("~ getActivelyProgressingActivityQuestIds -> Running activity applicationIds: ", Array.from(set));
+      closure_20.log("~ getActivelyProgressingActivityQuestIds -> Running activity applicationIds: ", Array.from(set));
       if (0 === set.size) {
         return map;
       } else {
@@ -650,8 +644,8 @@ let tmp4 = (arg0) => {
         if (!iter7.done) {
           do {
             let value = iter4.value;
-            let tmp4 = closure_23;
-            let tmp5 = closure_23(quests.values());
+            let tmp4 = closure_22;
+            let tmp5 = closure_22(quests.values());
             let iter = tmp5();
             if (!iter.done) {
               do {
@@ -660,8 +654,8 @@ let tmp4 = (arg0) => {
                 let tmp7 = closure_2;
                 let obj4 = closure_0(closure_2[27]);
                 let playActivityApplicationId = obj4.getPlayActivityApplicationId(value);
-                let tmp9 = closure_25;
-                let tmp10 = closure_25(value) && null != playActivityApplicationId;
+                let tmp9 = closure_24;
+                let tmp10 = closure_24(value) && null != playActivityApplicationId;
                 if (tmp10) {
                   if (playActivityApplicationId === value) {
                     let obj = { applicationId: value };
@@ -683,12 +677,12 @@ let tmp4 = (arg0) => {
         if (!iter5.done) {
           do {
             value = iter5.value;
-            let tmp16 = closure_25;
-            let result1 = closure_25(value);
+            let tmp16 = closure_24;
+            let result1 = closure_24(value);
             if (result1) {
               let tmp18 = closure_0;
               let tmp19 = closure_2;
-              let obj6 = closure_0(closure_2[32]);
+              let obj6 = closure_0(closure_2[31]);
               result1 = obj6.isPlayAnyActivityQuest(value);
             }
             if (result1) {
@@ -702,15 +696,14 @@ let tmp4 = (arg0) => {
           } while (!iter6.done);
         }
         const _Array = Array;
-        closure_21.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
+        closure_20.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(map.keys()));
         return map;
       }
     }
   };
   return callback(QuestProgressManager, items);
-}(importDefault(dependencyMap[33]));
+}(importDefault(dependencyMap[32]));
 tmp4 = new tmp4();
-const tmp3 = arg1(dependencyMap[15]);
-const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/quests/managers/QuestProgressManager.tsx");
+const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/quests/managers/QuestProgressManager.tsx");
 
 export default tmp4;

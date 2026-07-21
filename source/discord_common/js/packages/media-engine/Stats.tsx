@@ -1,7 +1,7 @@
 // Module ID: 4232
-// Function ID: 37091
+// Function ID: 37099
 // Name: STATS_INTERVAL
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4232 (STATS_INTERVAL)
 const _module = require(dependencyMap[0]);

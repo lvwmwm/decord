@@ -1,9 +1,9 @@
-// Module ID: 13903
-// Function ID: 105153
+// Module ID: 13906
+// Function ID: 105185
 // Name: QUEST_PROGRESS_DIAMETER_BY_SIZE
 // Dependencies: []
 
-// Module 13903 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
+// Module 13906 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
 const _module = require(dependencyMap[0]);
 ({ useMemo: closure_3, useEffect: closure_4, useRef: closure_5 } = _module);
 const importDefaultResult = importDefault(dependencyMap[0]);
@@ -13,18 +13,17 @@ const _module1 = require(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = _module1);
 let closure_11 = ["<string:1900042517>", "isArray"];
 let closure_12 = importDefault(dependencyMap[4]).createAnimatedComponent(require(dependencyMap[5]).Circle);
-const obj = {};
+const obj = { "Bool(false)": 0.93333333333333, "Bool(false)": null, "Bool(false)": 0, "Bool(false)": null, "Bool(false)": 39 };
 const _module2 = require(dependencyMap[6]);
 let closure_14 = _module2.createStyles((arg0) => {
-  let obj = { wrapper: { position: "relative" }, container: {}, completionGlow: { shadowOffset: { bhk: -536870861, bic: -299892737 } }, canvas: { transform: items } };
+  let obj = { wrapper: { position: "relative" }, container: { 0: null, mn: "<string:24310126>", ks: "<string:335544320>", bottom: "<string:1358954496>", accessibilityRole: "<string:141640898>" }, completionGlow: { shadowOffset: { "Null": -536870861, "Null": -299892737 } }, canvas: { transform: items } };
   const items = [{ rotate: "-90deg" }];
   obj = { position: "absolute", height: 0.78 * arg0, width: 0.78 * arg0, borderRadius: importDefault(dependencyMap[7]).radii.round, overflow: "hidden" };
   obj.imageContainer = obj;
   obj = { color: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
   obj.progressPath = obj;
   obj.confetti = {};
-  const obj1 = { GUILD_TOP_READ_CHANNELS: 0, PARTY: null, paddingVertical: 67, identityErrorMessage: 95, CHANNEL_DETAILS_TOP_MARGIN: 67, OPTION_7: 0, marginVertical: 0, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT };
-  obj.opacityMask = obj1;
+  obj.opacityMask = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT };
   return obj;
 });
 let closure_15 = { code: "function QuestProgressIndicatorTsx1(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
@@ -66,7 +65,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
   dependencyMap = stateFromStores;
-  const tmp2 = { 1656663739: "takenAt", 1565683566: "handleJoinThreadVoice", 1634754160: "Boolean", -1446817374: "isArray", 1384223330: "IncomingFriendRequestRow" }[size];
+  const tmp2 = { "Bool(false)": 208797700, "Bool(false)": -2080374784, "Bool(false)": 16777219, "Bool(false)": 82126657, "Bool(false)": 422400 }[size];
   tmp3 = obj[size];
   tmp4 = {}[size];
   const diff = tmp3 / 2 - tmp2 / 2;
@@ -205,7 +204,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   obj3 = { style: tmp7.container };
   obj4 = { height: tmp3, width: tmp3, style: tmp7.canvas };
   obj5 = {};
-  obj6 = { type: "/assets/design/components/Icon/native/redesign/generated/images", body: 24, 9223372036854775807: 24, 0: null, 0: "ffb75c82f97e39285286ef89f1767a3c" };
+  obj6 = { blurTheme: "inputRef", blurStyle: "pipScale", blurAmount: "sy", flexShrink: "construct", minWidth: "isArray" };
   const items7 = [tmp11(require(dependencyMap[5]).Stop, { offset: "0", stopColor: closure_11[0] }), tmp11(require(dependencyMap[5]).Stop, { offset: "1", stopColor: closure_11[1] })];
   obj6.children = items7;
   obj5.children = sharedValue2(require(dependencyMap[5]).LinearGradient, obj6);

@@ -741,8 +741,8 @@ class RequestBase {
     return;
   }
 }
-const set = new Set([null, null, null, null, null, null, null, null]);
-const set1 = new Set([]);
+const set = new Set(["Presto", "Blink", "COLD_START", 3187, 3188, 3189, 3190, 3191]);
+const set1 = new Set([null, null, null, null, null, null, null, null, null, null]);
 RequestBase.prototype.getHeader = RequestBase.prototype.get;
 
 export default RequestBase;

@@ -1,10 +1,10 @@
-// Module ID: 4620
-// Function ID: 40250
+// Module ID: 4619
+// Function ID: 40257
 // Name: isRoleRequired
 // Dependencies: []
 // Exports: default
 
-// Module 4620 (isRoleRequired)
+// Module 4619 (isRoleRequired)
 let closure_2 = require(dependencyMap[0]).GUILD_NON_CATEGORY_CHANNEL_TYPES;
 const Permissions = require(dependencyMap[1]).Permissions;
 const _module = require(dependencyMap[4]);

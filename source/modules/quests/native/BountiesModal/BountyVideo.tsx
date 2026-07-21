@@ -1,10 +1,10 @@
-// Module ID: 13809
-// Function ID: 104433
+// Module ID: 13811
+// Function ID: 104464
 // Name: BountyVideo
 // Dependencies: []
 // Exports: BountyVideo
 
-// Module 13809 (BountyVideo)
+// Module 13811 (BountyVideo)
 let num = 0;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -42,7 +42,7 @@ let closure_16 = { code: "function BountyVideoTsx1(){const{posterOpacity}=this._
 let closure_17 = { code: "function BountyVideoTsx2(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
 let closure_18 = { code: "function BountyVideoTsx3(){const{peekScale,AUTO_SCROLL_PEEK_SCALE,AUTO_SCROLL_PEEK_TOP_OFFSET}=this.__closure;if(peekScale==null){return{};}const scale=peekScale.get();const scaleProgress=(1-scale)/(1-AUTO_SCROLL_PEEK_SCALE);return{transform:[{translateY:scaleProgress*AUTO_SCROLL_PEEK_TOP_OFFSET},{scale:scale}]};}" };
 const obj2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
+const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
 
 export const BountyVideo = function BountyVideo(bounty) {
   let balanceWidgetPillResetKey;
@@ -57,6 +57,8 @@ export const BountyVideo = function BountyVideo(bounty) {
   let isProgressBarVisible;
   let isScrollIndicatorEnabled;
   let normalizedProgress;
+  let onBuffer;
+  let onLoadStart;
   let onPlayerStateChange;
   let orbsBalance;
   let ownedByVerticalScrollExperiment;
@@ -75,18 +77,19 @@ export const BountyVideo = function BountyVideo(bounty) {
   const importDefault = handleVideoProgress;
   const handleVideoError = bounty.handleVideoError;
   const dependencyMap = handleVideoError;
+  const onFirstFrame = bounty.onFirstFrame;
+  let callback = onFirstFrame;
   let flag = bounty.isActive;
-  ({ sourceQuestContent, isCompleted, isProgressBarVisible, orbsBalance, handleVideoEnd, handleVideoPaused, handleVideoResumed, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress, initialProgress, repeat } = bounty);
+  ({ sourceQuestContent, isCompleted, isProgressBarVisible, orbsBalance, handleVideoEnd, handleVideoPaused, handleVideoResumed, onLoadStart, onBuffer, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress, initialProgress, repeat } = bounty);
   if (flag === undefined) {
     flag = false;
   }
-  let callback = flag;
+  const React = flag;
   let flag2 = bounty.isRecapPageRevealed;
   if (flag2 === undefined) {
     flag2 = false;
   }
   const isScrollingInBoundsSharedValue = bounty.isScrollingInBoundsSharedValue;
-  const React = isScrollingInBoundsSharedValue;
   ({ renderEndCard, shouldLoadHls, playerRef, onPlayerStateChange, balanceWidgetPillResetKey } = bounty);
   if (shouldLoadHls === undefined) {
     shouldLoadHls = true;
@@ -94,26 +97,36 @@ export const BountyVideo = function BountyVideo(bounty) {
   const width = bounty.width;
   const height = bounty.height;
   const peekScale = bounty.peekScale;
-  let constants;
+  const QuestsExperimentLocations = peekScale;
+  let flag3 = bounty.softDownloadCapsEnabled;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
+  let callback2;
   let first;
   let tmp9;
-  let closure_11;
+  let closure_12;
   let closure_13;
-  const tmp = callback2();
+  let lg;
+  const tmp = callback3();
   let obj = arg1(dependencyMap[10]);
   const rnvHttpEngine = obj.useRnvHttpEngine();
   let obj1 = arg1(dependencyMap[11]);
-  const bountiesExperience = obj1.useBountiesExperience(constants.VIDEO_MODAL_MOBILE);
+  const bountiesExperience = obj1.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   ({ ownedByVerticalScrollExperiment, stage1Enabled } = bountiesExperience);
   let obj2 = arg1(dependencyMap[12]);
   const isBountiesVerticalScrollExperimentEnabled = obj2.useIsBountiesVerticalScrollExperimentEnabled("BountyVideo");
-  [tmp6, closure_8] = callback(React.useState(false), 2);
+  if (flag3) {
+    flag3 = !flag;
+  }
+  [tmp6, closure_9] = callback(React.useState(false), 2);
   const tmp7 = callback(React.useState(false), 2);
   first = tmp7[0];
   tmp9 = tmp7[1];
-  closure_11 = React.useRef(null);
+  closure_12 = React.useRef(null);
   let obj3 = arg1(dependencyMap[13]);
   const sharedValue = obj3.useSharedValue(1);
+  closure_13 = sharedValue;
   const items = [bounty, width, height];
   const memo = React.useMemo(() => {
     let obj = bounty(handleVideoError[6]);
@@ -145,103 +158,103 @@ export const BountyVideo = function BountyVideo(bounty) {
     }
   }, items2);
   callback = React.useCallback(() => {
-    if (null != closure_11.current) {
+    if (null != closure_12.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_11.current);
-      closure_11.current = null;
+      clearTimeout(closure_12.current);
+      closure_12.current = null;
     }
     tmp9(true);
   }, []);
-  closure_13 = callback;
-  const items3 = [callback, handleVideoError];
+  lg = callback;
+  const items3 = [onFirstFrame];
+  const items4 = [callback, handleVideoError];
   const callback1 = React.useCallback(() => {
-    if (null != closure_11.current) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(closure_11.current);
+    if (null != onFirstFrame) {
+      onFirstFrame();
     }
-    closure_11.current = setTimeout(() => {
+    if (null != closure_12.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(closure_12.current);
+    }
+    closure_12.current = setTimeout(() => {
       callback(true);
-      closure_11.current = null;
-    }, sharedValue);
-  }, []);
-  const items4 = [handleVideoProgress];
-  const callback2 = React.useCallback((arg0) => {
+      closure_12.current = null;
+    }, closure_12);
+  }, items3);
+  const items5 = [handleVideoProgress];
+  callback2 = React.useCallback((arg0) => {
     callback();
     if (null != handleVideoError) {
       handleVideoError(arg0);
     }
-  }, items3);
+  }, items4);
   const callback3 = React.useCallback((currentTime) => {
     if (currentTime.currentTime > 0) {
       _undefined(true);
     }
     handleVideoProgress(currentTime);
-  }, items4);
+  }, items5);
   let obj6 = arg1(dependencyMap[13]);
-  class Oe {
+  class Ce {
     constructor() {
       obj = { opacity: useSharedValue.get() };
       return obj;
     }
   }
-  Oe.__closure = { posterOpacity: sharedValue };
-  Oe.__workletHash = 4975136521719;
-  Oe.__initData = closure_16;
-  const animatedStyle = obj6.useAnimatedStyle(Oe);
+  Ce.__closure = { posterOpacity: sharedValue };
+  Ce.__workletHash = 4975136521719;
+  Ce.__initData = closure_16;
+  const animatedStyle = obj6.useAnimatedStyle(Ce);
   let obj7 = arg1(dependencyMap[13]);
-  function be() {
-    if (null != isScrollingInBoundsSharedValue) {
-      const value = isScrollingInBoundsSharedValue.get();
-    }
-    const obj = {};
-    let num = 0;
-    if (flag) {
-      num = 0;
-      if (true !== value) {
-        num = 1;
+  class Ae {
+    constructor() {
+      if (null != closure_5) {
+        tmp2 = closure_5;
+        value = closure_5.get();
       }
+      obj = {};
+      obj2 = bounty(handleVideoError[15]);
+      num = 0;
+      if (closure_4) {
+        flag = true;
+        num = 0;
+        if (true !== value) {
+          num = 1;
+        }
+      }
+      obj.opacity = obj2.withTiming(num, bounty(handleVideoError[16]).timingStandard);
+      return obj;
     }
-    obj.opacity = bounty(handleVideoError[15]).withTiming(num, bounty(handleVideoError[16]).timingStandard);
-    return obj;
   }
   obj = { isScrollingInBoundsSharedValue, withTiming: arg1(dependencyMap[15]).withTiming, isActive: flag, timingStandard: arg1(dependencyMap[16]).timingStandard };
-  be.__closure = obj;
-  be.__workletHash = 12676706441349;
-  be.__initData = closure_17;
-  const animatedStyle1 = obj7.useAnimatedStyle(be);
+  Ae.__closure = obj;
+  Ae.__workletHash = 12676706441349;
+  Ae.__initData = closure_17;
+  const animatedStyle1 = obj7.useAnimatedStyle(Ae);
   let obj9 = arg1(dependencyMap[13]);
-  class Pe {
-    constructor() {
-      if (null == peekScale) {
-        return {};
-      } else {
-        tmp = peekScale;
-        value = peekScale.get();
-        obj = {};
-        obj = {};
-        num = 1;
-        tmp4 = bounty;
-        tmp5 = handleVideoError;
-        num2 = 17;
-        diff = 1 - value;
-        diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
-        obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
-        items = [, ];
-        items[0] = obj;
-        obj1 = {};
-        obj1.scale = value;
-        items[1] = obj1;
-        obj.transform = items;
-        return obj;
-      }
+  function ve() {
+    if (null == peekScale) {
+      return {};
+    } else {
+      const value = peekScale.get();
+      let obj = {};
+      obj = {};
+      const diff = 1 - value;
+      const diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
+      obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+      const items = [obj, ];
+      obj = { scale: value };
+      items[1] = obj;
+      obj.transform = items;
+      return obj;
     }
   }
   obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: arg1(dependencyMap[17]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: arg1(dependencyMap[17]).AUTO_SCROLL_PEEK_TOP_OFFSET };
-  Pe.__closure = obj;
-  Pe.__workletHash = 7501077341815;
-  Pe.__initData = closure_18;
+  ve.__closure = obj;
+  ve.__workletHash = 7501077341815;
+  ve.__initData = closure_18;
   let tmp26 = isCtaVisible;
-  const animatedStyle2 = obj9.useAnimatedStyle(Pe);
+  const animatedStyle2 = obj9.useAnimatedStyle(ve);
   if (isBountiesVerticalScrollExperimentEnabled) {
     let tmp27 = isCtaVisible;
     if (isCtaVisible) {
@@ -250,8 +263,8 @@ export const BountyVideo = function BountyVideo(bounty) {
     tmp26 = tmp27;
   }
   obj1 = {};
-  obj2 = { style: items5 };
-  const items5 = [height.absoluteFillObject, tmp.peekOrigin, animatedStyle2];
+  obj2 = { style: items6 };
+  const items6 = [width.absoluteFillObject, tmp.peekOrigin, animatedStyle2];
   obj3 = { style: tmp.videoContainer };
   let tmp32Result = null;
   if (shouldLoadHls) {
@@ -264,84 +277,101 @@ export const BountyVideo = function BountyVideo(bounty) {
       tmp35 = !ownedByVerticalScrollExperiment;
     }
     obj4.automaticallyWaitsToMinimizeStalling = tmp35;
+    let prop;
+    if (flag3) {
+      prop = arg1(dependencyMap[19]).SOFT_CAP_PRELOAD_MAX_BITRATE;
+    }
+    obj4.maxBitRate = prop;
+    let prop1;
+    if (flag3) {
+      prop1 = arg1(dependencyMap[19]).SOFT_CAP_PRELOAD_BUFFER_CONFIG;
+    }
+    obj4.bufferConfig = prop1;
+    let prop2;
+    if (flag3) {
+      prop2 = arg1(dependencyMap[19]).SOFT_CAP_PRELOAD_FORWARD_BUFFER_SEC;
+    }
+    obj4.preferredForwardBufferDuration = prop2;
     obj4.initialProgress = initialProgress;
     obj4.isFullscreen = false;
     obj4.externallyPaused = !flag || isEndCardVisible || flag2;
-    obj4.style = height.absoluteFillObject;
+    obj4.style = width.absoluteFillObject;
     obj4.contentInsets = closure_13;
     obj4.onProgress = callback3;
     obj4.onEnd = handleVideoEnd;
     obj4.onPausePlayback = handleVideoPaused;
     obj4.onResumePlayback = handleVideoResumed;
     obj4.onError = callback2;
+    obj4.onLoadStart = onLoadStart;
+    obj4.onBuffer = onBuffer;
     obj4.onReadyForDisplay = callback1;
     obj4.hideControls = isEndCardVisible;
     obj4.showSkipButtons = false;
     obj4.repeat = repeat;
     obj4.bufferingSpinnerPlacement = "center";
     obj4.onPlayerStateChange = onPlayerStateChange;
-    tmp32Result = first(arg1(dependencyMap[18]).AdVideoPlayer, obj4);
-    const tmp32 = first;
+    tmp32Result = callback2(arg1(dependencyMap[18]).AdVideoPlayer, obj4);
+    const tmp32 = callback2;
   }
-  const items6 = [tmp32Result, , , , ];
+  const items7 = [tmp32Result, , , , ];
   if (null != memo) {
     obj6 = {};
-    const items7 = [tmp.poster, animatedStyle];
-    obj6.style = items7;
+    const items8 = [tmp.poster, animatedStyle];
+    obj6.style = items8;
     obj6.pointerEvents = "none";
-    obj7 = { style: height.absoluteFillObject };
+    obj7 = { style: width.absoluteFillObject };
     const obj8 = { uri: memo };
     obj7.source = obj8;
     obj7.resizeMode = "cover";
-    const items8 = [first(importDefault(dependencyMap[19]), obj7), ];
-    let tmp47 = !first;
-    if (tmp47) {
-      obj9 = { font: "isArray", dx: "GuildActionSheetSecondaryActions", color: token };
-      tmp47 = first(peekScale, obj9);
+    const items9 = [callback2(importDefault(dependencyMap[20]), obj7), ];
+    let tmp56 = !first;
+    if (tmp56) {
+      obj9 = { font: null, dx: null, color: token };
+      tmp56 = callback2(height, obj9);
     }
-    items8[1] = tmp47;
-    obj6.children = items8;
-    let tmp42Result = tmp9(importDefault(dependencyMap[13]).View, obj6);
-    const tmp42 = tmp9;
+    items9[1] = tmp56;
+    obj6.children = items9;
+    let tmp51Result = first(importDefault(dependencyMap[13]).View, obj6);
+    const tmp51 = first;
   } else {
     const obj10 = {};
-    const items9 = [tmp.poster, animatedStyle];
-    obj10.style = items9;
+    const items10 = [tmp.poster, animatedStyle];
+    obj10.style = items10;
     obj10.pointerEvents = "none";
-    tmp42Result = first(importDefault(dependencyMap[13]).View, obj10);
+    tmp51Result = callback2(importDefault(dependencyMap[13]).View, obj10);
   }
-  items6[1] = tmp42Result;
+  items7[1] = tmp51Result;
   let renderEndCardResult;
   if (null != renderEndCard) {
     renderEndCardResult = renderEndCard();
   }
-  items6[2] = renderEndCardResult;
+  items7[2] = renderEndCardResult;
   if (isScrollIndicatorEnabled) {
     isScrollIndicatorEnabled = tmp6;
   }
   if (isScrollIndicatorEnabled) {
     const obj11 = { opacityStyle: animatedStyle1, isActive: flag, isEndCardVisible };
-    isScrollIndicatorEnabled = first(importDefault(dependencyMap[20]), obj11);
+    isScrollIndicatorEnabled = callback2(importDefault(dependencyMap[21]), obj11);
   }
-  items6[3] = isScrollIndicatorEnabled;
-  const obj12 = { style: items10, pointerEvents: "box-none" };
-  const items10 = [height.absoluteFillObject, animatedStyle1];
+  items7[3] = isScrollIndicatorEnabled;
+  const obj12 = { style: items11, pointerEvents: "box-none" };
+  const items11 = [width.absoluteFillObject, animatedStyle1];
   const obj13 = { bounty, visible: tmp26, sourceQuestContent };
-  obj12.children = first(importDefault(dependencyMap[21]), obj13);
-  items6[4] = first(importDefault(dependencyMap[13]).View, obj12);
-  obj3.children = items6;
-  const items11 = [tmp9(width, obj3), ];
-  const obj14 = { style: items12 };
-  const items12 = [tmp.progress, animatedStyle1];
-  obj14.children = first(importDefault(dependencyMap[9]), { progress: normalizedProgress, visible: isProgressBarVisible });
-  items11[1] = first(importDefault(dependencyMap[13]).View, obj14);
-  obj2.children = items11;
-  const items13 = [tmp9(importDefault(dependencyMap[13]).View, obj2), ];
-  const obj15 = { style: items14 };
-  const items14 = [tmp.leftRow, animatedStyle1];
-  const items15 = [first(importDefault(dependencyMap[22]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), first(arg1(dependencyMap[23]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
-  obj15.children = items15;
-  items13[1] = tmp9(importDefault(dependencyMap[13]).View, obj15);
-  obj1.children = items13;
-  return tmp9(closure_11, obj1);
+  obj12.children = callback2(importDefault(dependencyMap[22]), obj13);
+  items7[4] = callback2(importDefault(dependencyMap[13]).View, obj12);
+  obj3.children = items7;
+  const items12 = [first(isScrollingInBoundsSharedValue, obj3), ];
+  const obj14 = { style: items13 };
+  const items13 = [tmp.progress, animatedStyle1];
+  obj14.children = callback2(importDefault(dependencyMap[9]), { progress: normalizedProgress, visible: isProgressBarVisible });
+  items12[1] = callback2(importDefault(dependencyMap[13]).View, obj14);
+  obj2.children = items12;
+  const items14 = [first(importDefault(dependencyMap[13]).View, obj2), ];
+  const obj15 = { style: items15 };
+  const items15 = [tmp.leftRow, animatedStyle1];
+  const items16 = [callback2(importDefault(dependencyMap[23]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), callback2(arg1(dependencyMap[24]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
+  obj15.children = items16;
+  items14[1] = first(importDefault(dependencyMap[13]).View, obj15);
+  obj1.children = items14;
+  return first(tmp9, obj1);
 };

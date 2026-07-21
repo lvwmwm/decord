@@ -1,5 +1,5 @@
 // Module ID: 4457
-// Function ID: 39286
+// Function ID: 39294
 // Name: _callSuper
 // Dependencies: []
 
@@ -168,10 +168,10 @@ const tmp4 = (arg0) => {
     constructor(arg0, arg1) {
       tmp = closure_7(this, StripePaymentConfirmationHandler);
       if (null == arg0) {
-        tmp7 = f39321;
-        tmp8 = f39315;
+        tmp7 = f39329;
+        tmp8 = f39323;
         num2 = 8;
-        obj2 = f39321(f39315[8]);
+        obj2 = f39329(f39323[8]);
         str2 = "Payment source cannot be null on a redirect.";
         throw obj2.dispatchConfirmationError("Payment source cannot be null on a redirect.");
       } else {
@@ -193,10 +193,10 @@ const tmp4 = (arg0) => {
             tmp5 = closure_12;
             tmp12.handlerRegistry = closure_12[tmp12.paymentSourceType];
           } else {
-            tmp3 = f39321;
-            tmp4 = f39315;
+            tmp3 = f39329;
+            tmp4 = f39323;
             num = 8;
-            obj = f39321(f39315[8]);
+            obj = f39329(f39323[8]);
             str = "Invalid Payment Source Type - redirect or direct confirmation handlers not found.";
             throw obj.dispatchConfirmationError("Invalid Payment Source Type - redirect or direct confirmation handlers not found.");
           }
@@ -227,7 +227,7 @@ const tmp4 = (arg0) => {
   obj = { key: "getPaymentIntentInfo" };
   let closure_4 = callback(async function() {
     const HTTP = callback(closure_2[10]).HTTP;
-    let obj = { lc: null, type: null, end: null, url: closure_9.BILLING_STRIPE_PAYMENT_INTENTS(this.paymentId) };
+    let obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_9.BILLING_STRIPE_PAYMENT_INTENTS(this.paymentId) };
     const body = yield HTTP.get(obj).body;
     obj = { clientSecret: body.stripe_payment_intent_client_secret, paymentMethodId: body.stripe_payment_intent_payment_method_id };
     return obj;

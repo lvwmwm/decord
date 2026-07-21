@@ -1,5 +1,5 @@
 // Module ID: 6219
-// Function ID: 50242
+// Function ID: 50250
 // Name: GiftingTier3LargeBadge
 // Dependencies: []
 // Exports: GiftingTier3LargeBadge

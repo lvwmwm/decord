@@ -1,5 +1,5 @@
 // Module ID: 8693
-// Function ID: 68847
+// Function ID: 68858
 // Name: useSelectedVariantIndex
 // Dependencies: []
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex

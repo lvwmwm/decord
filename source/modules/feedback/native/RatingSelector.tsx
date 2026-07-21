@@ -1,5 +1,5 @@
 // Module ID: 9496
-// Function ID: 73988
+// Function ID: 73999
 // Name: RatingSelector
 // Dependencies: []
 // Exports: default
@@ -11,9 +11,9 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ DEFAULT_RATINGS: closure_5, FeedbackRating: closure_6 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp4 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ ratings: { padding: 0, paddingBottom: 6, flexDirection: 0 }, rating: {}, emoji: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ ratings: {}, rating: {}, emoji: {} });
 const obj = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { INVALID_PROVIDER: null, heart_decoration: "center", allowEmptyQueries: null, MESSAGE_SENT_WITH_GIF: "hidden", aspectRatio: true }, rating: { width: "100%" }, emoji: { bhk: "boolean", bic: "string" } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { 261970: null, 1379623171: "center", 2076015548: null, 626110817: "hidden", 1362321802: true }, rating: { width: "100%" }, emoji: { "Null": false, "Null": false } });
 const obj2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
 

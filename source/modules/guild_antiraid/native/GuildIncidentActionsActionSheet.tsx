@@ -1,5 +1,5 @@
 // Module ID: 10963
-// Function ID: 85248
+// Function ID: 85259
 // Name: DurationSelectionActionSheet
 // Dependencies: []
 
@@ -115,7 +115,7 @@ class GuildIncidentActionsActionSheet {
     obj1.leading = jsx(arg1(dependencyMap[14]).BetaTag, obj2);
     obj.header = jsx(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj1);
     tmp13 = jsx;
-    obj3 = { revealed: true, borderTopWidth: true, borderColor: true, borderRadius: true, backgroundColor: true, paddingHorizontal: true };
+    obj3 = { channelId: false, rolling: false, dismissing: false, diceCount: false, diceSides: false, results: false };
     tmp14 = jsx;
     obj4 = {};
     str = "";

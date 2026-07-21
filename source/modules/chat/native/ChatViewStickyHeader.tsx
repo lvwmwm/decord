@@ -1,5 +1,5 @@
 // Module ID: 10391
-// Function ID: 80089
+// Function ID: 80100
 // Name: ChatViewStickyHeaderAccountSafetyWarnings
 // Dependencies: []
 

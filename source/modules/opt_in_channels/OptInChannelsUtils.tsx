@@ -1,5 +1,5 @@
 // Module ID: 9971
-// Function ID: 77051
+// Function ID: 77062
 // Name: setIndex
 // Dependencies: []
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery

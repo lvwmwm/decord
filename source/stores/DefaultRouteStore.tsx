@@ -1,5 +1,5 @@
 // Module ID: 3949
-// Function ID: 32618
+// Function ID: 32623
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,7 +19,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const Routes = arg1(dependencyMap[5]).Routes;
-let obj = { 0: "o", 0: "o" };
+let obj = { "Null": "o", "Null": "o" };
 let tmp2 = (PersistedStore) => {
   class DefaultRouteStore {
     constructor() {
@@ -114,7 +114,7 @@ obj = {
     return true;
   },
   LOGOUT: function handleLogout() {
-    let closure_9 = { 0: "o", 0: "o" };
+    let closure_9 = { "Null": "o", "Null": "o" };
   }
 };
 tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);

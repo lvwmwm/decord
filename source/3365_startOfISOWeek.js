@@ -1,15 +1,15 @@
 // Module ID: 3365
-// Function ID: 26472
+// Function ID: 26477
 // Name: startOfISOWeek
-// Dependencies: [0, 0]
+// Dependencies: []
 // Exports: default
 
 // Module 3365 (startOfISOWeek)
-_interopRequireDefault(require("__exportStarResult1"));
-_interopRequireDefault(require("__exportStarResult1"));
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function startOfISOWeek(defaultResult1) {
-  __exportStarResult1.default(1, arguments);
-  return __exportStarResult1.default(defaultResult1, { weekStartsOn: 1 });
+  closure_1.default(1, arguments);
+  return closure_0.default(defaultResult1, { weekStartsOn: 1 });
 };
 export default exports.default;

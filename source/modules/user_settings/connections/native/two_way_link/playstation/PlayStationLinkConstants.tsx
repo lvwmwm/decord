@@ -1,7 +1,7 @@
 // Module ID: 8965
-// Function ID: 70710
+// Function ID: 70721
 // Name: PlayStationLinkModalScenes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8965 (PlayStationLinkModalScenes)
 const _module = require(dependencyMap[0]);

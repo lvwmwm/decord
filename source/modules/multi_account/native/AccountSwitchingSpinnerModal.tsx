@@ -1,9 +1,9 @@
-// Module ID: 15979
-// Function ID: 122634
+// Module ID: 15983
+// Function ID: 122678
 // Name: AccountSwitchingSpinnerModal
 // Dependencies: []
 
-// Module 15979 (AccountSwitchingSpinnerModal)
+// Module 15983 (AccountSwitchingSpinnerModal)
 class AccountSwitchingSpinnerModal {
   constructor() {
     obj = { style: closure_4().switchingSpinnerContainer, accessible: true };

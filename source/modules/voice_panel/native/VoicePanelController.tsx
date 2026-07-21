@@ -1,10 +1,10 @@
-// Module ID: 15606
-// Function ID: 119041
+// Module ID: 15609
+// Function ID: 119080
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15606 (_createForOfIteratorHelperLoose)
+// Module 15609 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -118,7 +118,7 @@ function useLayoutManagerState(windowDimensions) {
   let closure_8 = tmp4;
   const managerSubscription = arg1(dependencyMap[38]).useManagerSubscription(layoutManager);
   let closure_9 = managerSubscription;
-  const ref = React.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { bhk: -536870861, bic: -299892737 } });
+  const ref = React.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { "Null": -536870861, "Null": -299892737 } });
   let closure_10 = ref;
   function useUpdateLayoutManagerState(isConnected) {
     isConnected = isConnected.isConnected;
@@ -525,7 +525,7 @@ export default function VoicePanelController(channelId) {
       };
     }, items1);
     const obj21 = channelId(first[22]);
-    const sharedValue12 = channelId(first[22]).useSharedValue({ users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+    const sharedValue12 = channelId(first[22]).useSharedValue({ "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
     const obj22 = channelId(first[22]);
     class W {
       constructor() {
@@ -1205,7 +1205,7 @@ export default function VoicePanelController(channelId) {
             }
             if (tmp15) {
               let obj = focused(pipState[27]);
-              obj = { "Bool(false)": "<string:1091650957>", "Bool(false)": "/assets/modules/voice_panel/native/images", "Bool(false)": "MERCH_STORE", "Bool(false)": "HEADER", "Bool(false)": "<string:1312882944>", icon: focused(pipState[30]) };
+              obj = { userId: "row", style: "center", avError: "kSampleStepSize", removeRetryButton: "type", removeSplashImage: "isArray", icon: focused(pipState[30]) };
               const intl = channelId(pipState[29]).intl;
               obj.content = intl.string(channelId(pipState[29]).t.O2IlPT);
               obj.open(obj);

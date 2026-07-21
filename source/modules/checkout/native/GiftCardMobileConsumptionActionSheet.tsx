@@ -1,5 +1,5 @@
 // Module ID: 5801
-// Function ID: 49609
+// Function ID: 49617
 // Name: GiftCardMobileConsumptionActionSheet
 // Dependencies: []
 // Exports: default
@@ -15,9 +15,9 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.sheet = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.container = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { "Null": 0, "Null": "100%", paddingTop: importDefault(dependencyMap[5]).space.PX_12 };
+const obj2 = { 663976015: "handleHeaderLayout", 664037462: "gay-Latn-ID", paddingTop: importDefault(dependencyMap[5]).space.PX_12 };
 obj.illustration = obj2;
-obj.body = { width: 69, marginTop: null, textAlign: 1, paddingTop: null, paddingLeft: "\u{1F9D4}\u200D\u2642\uFE0F", minimumFractionDigits: true, maximumFractionDigits: 13.1 };
+obj.body = { 1616111827: 69, -1290341649: null, -657693324: 1, -1225038868: null, mn: "\u{1F9D4}\u200D\u2642\uFE0F", current: true, round: 13.1 };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/checkout/native/GiftCardMobileConsumptionActionSheet.tsx");
@@ -61,7 +61,7 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   const intl = arg1(closure_2[12]).intl;
   obj2.children = intl.string(importDefault(closure_2[13]).V3DI1E);
   items3[1] = callback(arg1(closure_2[11]).Text, obj2);
-  const obj3 = { key: "r", onCloseCallback: "sectionIdsByBotId", dismissable: "Array" };
+  const obj3 = {};
   const intl2 = arg1(closure_2[12]).intl;
   obj3.text = intl2.string(importDefault(closure_2[13]).YZePWx);
   obj3.onPress = function onPress() {

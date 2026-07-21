@@ -1,5 +1,5 @@
 // Module ID: 8949
-// Function ID: 70538
+// Function ID: 70549
 // Name: _getDisclosures
 // Dependencies: []
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure

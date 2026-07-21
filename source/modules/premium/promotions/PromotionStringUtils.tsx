@@ -1,5 +1,5 @@
 // Module ID: 12243
-// Function ID: 93905
+// Function ID: 93917
 // Name: useFormatStringWithCommonPremiumParams
 // Dependencies: []
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams

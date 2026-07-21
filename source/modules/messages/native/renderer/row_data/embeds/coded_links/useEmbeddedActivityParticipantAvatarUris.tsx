@@ -1,5 +1,5 @@
 // Module ID: 12173
-// Function ID: 93596
+// Function ID: 93608
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: []
 // Exports: default, getEmbeddedActivityParticipantAvatarUris

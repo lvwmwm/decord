@@ -1,7 +1,7 @@
 // Module ID: 11944
-// Function ID: 92346
+// Function ID: 92358
 // Name: getActivityJoinability
-// Dependencies: [653, 22, 2, 4213, 4142, 6976, 9058, 566, 2, 31, 27, 4575]
+// Dependencies: [653, 22, 2, 4213, 4142, 6977, 9058, 566, 2, 31, 27, 4574]
 // Exports: default
 
 // Module 11944 (getActivityJoinability)

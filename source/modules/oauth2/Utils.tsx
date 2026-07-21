@@ -1,5 +1,5 @@
 // Module ID: 8951
-// Function ID: 70572
+// Function ID: 70583
 // Name: getApplicationDetailsText
 // Dependencies: []
 // Exports: getApplicationDetailsText, isContentClassificationRestricted

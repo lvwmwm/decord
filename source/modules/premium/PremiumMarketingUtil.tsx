@@ -1,5 +1,5 @@
 // Module ID: 12008
-// Function ID: 92796
+// Function ID: 92808
 // Name: navigateToPremiumHomePage
 // Dependencies: []
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage

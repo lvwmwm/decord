@@ -1,23 +1,23 @@
-// Module ID: 13926
-// Function ID: 105840
+// Module ID: 13929
+// Function ID: 105872
 // Name: VideoQuestModalHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13926 (VideoQuestModalHeader)
+// Module 13929 (VideoQuestModalHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const useVideoQuestUIStore = arg1(dependencyMap[2]).useVideoQuestUIStore;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { videoContentHeaderWrapper: {} };
-obj = { "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.videoContentHeading = obj;
 obj.subheader = { opacity: 0.6 };
-const obj1 = { "Null": "png", "Null": "absolute", "Null": 0, "Null": 0, "Null": 0, textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { bhk: -536870861, bic: -299892737 } };
-obj.textShadow = obj1;
-let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
+obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 } };
+let closure_7 = obj.createStyles(obj);
+const obj1 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": -536870861, "Null": -299892737 } };
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");
 
 export default function VideoQuestModalHeader(showCurrentVideoTime) {

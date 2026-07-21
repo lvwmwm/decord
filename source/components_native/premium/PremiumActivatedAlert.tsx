@@ -1,10 +1,10 @@
-// Module ID: 7155
-// Function ID: 57780
+// Module ID: 7156
+// Function ID: 57792
 // Name: getHeaderBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7155 (getHeaderBackground)
+// Module 7156 (getHeaderBackground)
 function getHeaderBackground(arg0) {
   if (arg1(dependencyMap[6]).Branding.TIER_0 === arg0) {
     return importDefault(dependencyMap[7]);
@@ -105,8 +105,8 @@ const SubscriptionStatusTypes = arg1(dependencyMap[2]).SubscriptionStatusTypes;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { alert: {}, header: { "Null": "\u{1F926}\u{1F3FD}\u200D\u2640\uFE0F", "Null": true, "Null": null, "Null": 9, "Null": null }, headerImage: { display: "a", position: "<string:42810433>" }, body: {}, logoPlusPremiumGuild: { "Bool(false)": "isArray", "Bool(false)": "constructor", "Bool(false)": "prototype" } };
-obj = { PX_16: null, ix: null, message: null, defineProperty: null, color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+obj = { alert: {}, header: { "Bool(true)": "\u{1F926}\u{1F3FD}\u200D\u2640\uFE0F", -32267494: true, -1290293711: null, 68273455: 9, 1766669584: null }, headerImage: { position: "#fff", shadowRadius: "M88.341 88.128c-1.367 1.374-1.82 6.713-1.82 6.713s5.346-.447 6.72-1.814a3.48 3.48 0 0 0 1.004-2.3H90.66v-3.59c-.87.029-1.697.382-2.32.99Z" }, body: { "Bool(true)": null, "Null": null, "Null": null, "Null": null, "Null": null }, logoPlusPremiumGuild: { "Bool(true)": "isArray", "Bool(true)": "constructor", "Bool(true)": "prototype" } };
+obj = { 9223372036854775807: "<string:1854755072>", 0: "construct", 9223372036854775807: "<string:108069120>", 0: "<string:1627389952>", color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 obj.description = obj;
 let closure_9 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[3]);
@@ -115,16 +115,16 @@ let closure_10 = arg1(dependencyMap[4]).createStyles((arg0) => {
     let obj = { headerImage: {} };
     return obj;
   } else if (arg1(dependencyMap[6]).Branding.TIER_1 === arg0) {
-    obj = { headerImage: { 296965868: "SERVER_GUIDE_CHANNEL_SELECTED", 215747989: "EAPLAY", 1415398453: "r" } };
+    obj = { headerImage: { 1799628192: -918482477, 297757558: 1912603017, 837753728: 91 } };
     return obj;
   } else if (arg1(dependencyMap[6]).Branding.BUNDLE === arg0) {
-    const obj1 = { headerImage: { 296965868: 6, 215747989: 61, 1415398453: null } };
+    const obj1 = { headerImage: { 1799628192: 6, 297757558: 61, 837753728: null } };
     return obj1;
   } else if (arg1(dependencyMap[6]).Branding.TIER_2 === arg0) {
-    const obj2 = { headerImage: { 9223372036854775807: "isArray", -9223372036854775808: "isArrayBuffer", 0: "toothbrush", 0: "%DataViewPrototype%" } };
+    const obj2 = { headerImage: { "Null": "isArray", "Null": "isArrayBuffer", "Null": "BACKDROP_OPAQUE_MAX_OPACITY", "Null": "B" } };
     return obj2;
   } else if (arg1(dependencyMap[6]).Branding.PREMIUM_GUILD === arg0) {
-    obj = { headerImage: { 296965868: true, 215747989: "/assets/images/native/premium/illustrations", 1415398453: 140.5 } };
+    obj = { headerImage: { 1799628192: true, 297757558: "/assets/images/native/premium/illustrations", 837753728: 140.5 } };
     return obj;
   }
 });
@@ -177,7 +177,7 @@ export default function PremiumActivatedAlert(onClose) {
   let obj = arg1(dependencyMap[6]);
   const premiumBranding = obj.getPremiumBranding(renewalMutations);
   if (arg1(dependencyMap[6]).Branding.TIER_0 === premiumBranding) {
-    obj = { logo: { bhk: "<string:3214082050>", bic: "<string:3578855426>" } };
+    obj = { logo: { "Null": "<string:3215523842>", "Null": "<string:2018574338>" } };
     let tmp13 = obj;
   } else if (arg1(dependencyMap[6]).Branding.TIER_1 === premiumBranding) {
     obj = { logo: {} };

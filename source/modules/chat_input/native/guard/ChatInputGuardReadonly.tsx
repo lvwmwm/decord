@@ -1,5 +1,5 @@
 // Module ID: 11489
-// Function ID: 89412
+// Function ID: 89424
 // Name: sortChannelsByLastMessageId
 // Dependencies: []
 

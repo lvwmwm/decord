@@ -1,5 +1,5 @@
 // Module ID: 5463
-// Function ID: 46648
+// Function ID: 46656
 // Name: fetchApplication
 // Dependencies: []
 // Exports: useApplicationWithLoggedOutContext
@@ -24,7 +24,7 @@ async function _fetchApplication(arg0, arg1) {
     obj.rejectWithError = callback(closure_2[6]).rejectWithMigratedError();
     const tmp3 = yield HTTP.get(obj);
     const obj5 = callback(closure_2[6]);
-    const obj2 = { marginBottom: "rgba(0, 0, 0, 0.5)", flexDirection: 24, alignItems: "flex", application: tmp3.body };
+    const obj2 = { 9223372036854775807: "rgba(0, 0, 0, 0.5)", 0: 24, -9223372036854775808: "flex", application: tmp3.body };
     callback2(closure_2[5]).dispatch(obj2);
     return tmp3.body;
   };

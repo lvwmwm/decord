@@ -1,5 +1,5 @@
 // Module ID: 5682
-// Function ID: 48878
+// Function ID: 48886
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -115,7 +115,7 @@ let tmp2 = (Store) => {
     key: "getMessageState",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { 687810559: null, 721365503: null };
+        closure_10[arg0] = { "Bool(false)": null, 654255103: null };
       }
       return closure_10[arg0];
     }

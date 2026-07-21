@@ -1,10 +1,10 @@
-// Module ID: 13324
-// Function ID: 101227
+// Module ID: 13326
+// Function ID: 101249
 // Name: createVoiceSettingsEventHandlers
 // Dependencies: []
 // Exports: default
 
-// Module 13324 (createVoiceSettingsEventHandlers)
+// Module 13326 (createVoiceSettingsEventHandlers)
 const _module = require(dependencyMap[0]);
 ({ RPC_SCOPE_CONFIG: closure_3, RPC_LOCAL_SCOPE: closure_4 } = _module);
 const RPCEvents = require(dependencyMap[1]).RPCEvents;

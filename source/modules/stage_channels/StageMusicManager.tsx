@@ -1,5 +1,5 @@
 // Module ID: 10637
-// Function ID: 83070
+// Function ID: 83081
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton

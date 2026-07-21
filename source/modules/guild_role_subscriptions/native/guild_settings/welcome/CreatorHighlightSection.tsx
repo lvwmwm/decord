@@ -1,10 +1,10 @@
-// Module ID: 16269
-// Function ID: 125602
+// Module ID: 16277
+// Function ID: 125663
 // Name: GuildServerSubscriberCount
 // Dependencies: []
 // Exports: default
 
-// Module 16269 (GuildServerSubscriberCount)
+// Module 16277 (GuildServerSubscriberCount)
 function GuildServerSubscriberCount(arg0) {
   let style;
   let subscriberCount;
@@ -71,9 +71,9 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     items1[1] = closure_7(closure_4, obj3);
     obj.children = items1;
     const items3 = [closure_7(closure_4, obj), , , , ];
-    const obj6 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.ownerQuote, children: quote };
+    const obj6 = { delete: null, dispatch: 1, raw: 1, style: tmp.ownerQuote, children: quote };
     items3[1] = callback(arg1(dependencyMap[5]).Text, obj6);
-    const obj7 = { 9223372036854775807: "xs", 0: "interactive-text-default", -9223372036854775808: "md", 0: "background-brand", 0: "white", style: tmp.ownerUsername };
+    const obj7 = { "Bool(true)": -1034747437, "Bool(true)": -1274954172, "Bool(true)": 94480, "Bool(true)": 1359020032, "Bool(true)": 1111557363, style: tmp.ownerUsername };
     const intl = arg1(dependencyMap[8]).intl;
     const obj8 = { attributionName: quote_attribution };
     if (null == quote_attribution_title) {
@@ -143,7 +143,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { horizontalContainer: { flexDirection: "row" }, serverSubscriberCount: { marginTop: 8 } };
-obj = { "Null": 208463177963594620000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006688871913474923, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007436098949264682, "Null": -0.0000000000000000000000000000000000000009788013778458023, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312419341205383, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { 9223372036854775807: "public.item", -9223372036854775808: "public.audio", 0: "public.comma-separated-values-text", "Bool(false)": "com.microsoft.word.doc", "Bool(false)": "org.openxmlformats.wordprocessingml.document", backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.subscriberCountContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.subscriberCount = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
@@ -151,12 +151,12 @@ obj.subscriberCountIcon = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
 obj.cardContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.cardHeaderContainer = {};
-obj.guildIcon = { <string:3853039475>: null, <string:1408316811>: "stretch", <string:3025157889>: 54, <string:676503258>: 1 };
+obj.guildIcon = { <string:1041126390>: null, <string:2664543392>: "stretch", <string:2790316114>: 54, <string:1182744880>: 1 };
 obj.ownerQuote = { marginTop: 24 };
 obj.ownerUsername = { marginTop: 8 };
 obj.premiumEmojisTitle = {};
 obj.viewServerButtonContainer = {};
-const obj3 = { -1269809407: null, 676503258: 10, 1093740625: "grab", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+const obj3 = { handleShowStreamFeedback: null, artHero: 10, GEN_AI_EXECUTE_TOOL_OPERATION_ATTRIBUTE: "grab", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.viewServerButton = obj3;
 obj.emojiSectionContainer = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };

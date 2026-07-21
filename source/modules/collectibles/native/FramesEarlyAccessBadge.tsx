@@ -1,5 +1,5 @@
 // Module ID: 8735
-// Function ID: 69073
+// Function ID: 69084
 // Name: BadgeWithTooltip
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ let closure_4 = importAll(dependencyMap[1]);
 ({ Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = {};
+let closure_9 = { "Bool(true)": 410058753, "Bool(true)": 16777216, "Bool(true)": 1095025233, "Bool(true)": 148820 };
 let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.round, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8 };

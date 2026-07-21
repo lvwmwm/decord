@@ -1,5 +1,5 @@
 // Module ID: 10591
-// Function ID: 82636
+// Function ID: 82647
 // Name: doesOrientationMatchLockState
 // Dependencies: []
 // Exports: default

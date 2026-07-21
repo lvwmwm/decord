@@ -1,5 +1,5 @@
 // Module ID: 1331
-// Function ID: 15570
+// Function ID: 15575
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addDismissedContent, checkAllDismissedContents, clearDismissedContents, clearGuildDismissedContents, clearGuildThemeSourcePreferenceOverride, markUserSettingsLoadOkayForDevelopment, removeDismissedContent, removeDismissedRecurringContent, setDefaultGuildThemePreference, updateGuildDismissedContent, updateUserChannelSettings
@@ -145,7 +145,7 @@ if ("undefined" !== typeof document) {
 let tmp9 = () => {
   class UserSettingsProtoActionCreators {
     constructor(arg0, arg1) {
-      f15610 = this;
+      f15615 = this;
       tmp = closure_4(this, UserSettingsProtoActionCreators);
       this.ProtoClass = arg0;
       this.type = arg1;
@@ -195,7 +195,7 @@ let tmp9 = () => {
           logger2.log("Not persisting proto because the proto was null");
         }
       });
-      tmp2 = f15603(UserSettingsProtoActionCreators[11]);
+      tmp2 = f15608(UserSettingsProtoActionCreators[11]);
       tmp2 = new tmp2(this.ProtoClass.typeName);
       this.logger = tmp2;
       return;
@@ -360,7 +360,7 @@ let tmp9 = () => {
     let obj = { url: closure_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
     const b64ToProtoResult = callback(closure_2[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
     if (null == b64ToProtoResult) {
-      self.dispatchChanges({ useNativeReachability: null, javascript: null });
+      self.dispatchChanges({});
     } else {
       const runMigrationsResult = callback(closure_2[8]).runMigrations(tmp4, callback2(closure_2[14])[self.type]);
       const isDirty = runMigrationsResult.isDirty;
@@ -405,7 +405,7 @@ let tmp9 = () => {
       const self = this;
       if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
         ({ ProtoClass, markDirty } = self);
-        const obj = { backgroundColor: "<string:1196490754>", flexDirection: "<string:3310486038>", cleanup };
+        const obj = { cleanup };
         markDirty(ProtoClass.create(), obj);
       }
     }

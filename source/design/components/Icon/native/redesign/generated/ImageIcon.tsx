@@ -1,10 +1,10 @@
-// Module ID: 4641
-// Function ID: 40287
+// Module ID: 4640
+// Function ID: 40294
 // Name: ImageIcon
 // Dependencies: []
 // Exports: ImageIcon
 
-// Module 4641 (ImageIcon)
+// Module 4640 (ImageIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImageIcon.tsx");

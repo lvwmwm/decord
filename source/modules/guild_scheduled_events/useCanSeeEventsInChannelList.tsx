@@ -1,5 +1,5 @@
 // Module ID: 11406
-// Function ID: 88718
+// Function ID: 88730
 // Name: useCanSeeEventsInChannelList
 // Dependencies: []
 // Exports: default

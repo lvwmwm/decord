@@ -1,9 +1,9 @@
-// Module ID: 8257
-// Function ID: 65114
+// Module ID: 8258
+// Function ID: 65127
 // Name: BadgeId
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8257 (BadgeId)
+// Module 8258 (BadgeId)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/BadgeId.tsx");
 

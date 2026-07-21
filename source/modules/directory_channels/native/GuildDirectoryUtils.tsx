@@ -1,5 +1,5 @@
 // Module ID: 10042
-// Function ID: 77612
+// Function ID: 77623
 // Name: _onAddDirectoryGuildEntry
 // Dependencies: []
 // Exports: onAddDirectoryGuildEntry

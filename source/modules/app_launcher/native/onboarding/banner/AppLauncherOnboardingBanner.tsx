@@ -1,5 +1,5 @@
 // Module ID: 11157
-// Function ID: 86755
+// Function ID: 86767
 // Name: AppLauncherOnboardingBanner
 // Dependencies: []
 // Exports: default

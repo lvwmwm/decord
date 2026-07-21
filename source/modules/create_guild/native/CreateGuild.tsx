@@ -1,5 +1,5 @@
 // Module ID: 10057
-// Function ID: 77675
+// Function ID: 77686
 // Name: CreateGuild
 // Dependencies: []
 // Exports: default
@@ -15,8 +15,8 @@ obj = { flex: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.contentContainer = obj;
 obj.header = { textAlign: "center" };
-obj.description = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-obj.iconUploader = { "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 };
+obj.description = { SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME: null, SCROLL_EVENT_TIMER_MS: null, cutoutBottomRightSize: null };
+obj.iconUploader = { borderRadius: "/assets/design/components/Illustration/native/redesign/generated/images", backgroundColor: 160 };
 obj.hint = { marginBottom: 8 };
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
@@ -107,7 +107,7 @@ export default function CreateGuild(arg0) {
   const intl5 = arg1(dependencyMap[11]).intl;
   obj6.children = intl5.format(arg1(dependencyMap[11]).t.2bprXx, { guidelinesURL: MarketingURLs.GUIDELINES });
   items1[5] = callback(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { poggermode_enabled: "r", poggermode_applause: "isArray", poggermode_achievement_unlock: "mode", disabled: "" === guild.name };
+  const obj8 = { 9223372036854775807: 40, 0: true, -9223372036854775808: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", disabled: "" === guild.name };
   if (null == customButtonLabel) {
     const intl6 = arg1(dependencyMap[11]).intl;
     customButtonLabel = intl6.string(arg1(dependencyMap[11]).t.O0p/lS);

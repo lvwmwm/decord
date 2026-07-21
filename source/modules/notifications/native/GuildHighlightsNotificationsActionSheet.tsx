@@ -1,5 +1,5 @@
 // Module ID: 9491
-// Function ID: 73946
+// Function ID: 73957
 // Name: GuildPill
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ function GuildPill(guild) {
   let obj = { style: tmp.guildPill };
   obj = { guild, size: arg1(dependencyMap[10]).GuildIconSizes.SMALL_32, animate: true };
   const items = [callback2(importDefault(dependencyMap[10]), obj), ];
-  obj = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.guildName };
+  obj = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.guildName };
   let name;
   if (null != guild) {
     name = guild.name;
@@ -45,13 +45,13 @@ const FeedbackRating = arg1(dependencyMap[6]).FeedbackRating;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { contentContainer: { <string:1365418235>: 3, <string:1398886034>: 2, <string:3584858450>: 0 }, header: { guild: 24, body: "recent_games_enabled" }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: {}, thanks: {} };
+obj = { contentContainer: { useTopCommands: 3, GameDiversityTier4SmallBadge: 2, analyticsData: 0 }, header: { accessibilityRole: 24, GuildBadgeFrog: "recent_games_enabled" }, headerTitle: { marginBottom: 4 }, centerText: { textAlign: "center" }, feedback: {}, thanks: {} };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
 obj.settings = obj;
 let closure_13 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[7]);
 const obj1 = {};
-const obj2 = { 1362864738: "fe4737c3dd5ab570ff8c05c7dd4152ca", 979683341: "custom_icons", 1694193211: "png", 984241846: true, -323957656: "/assets/modules/premium/native/images/perks", -1437140064: 300, backgroundColor: importDefault(dependencyMap[9]).colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, borderRadius: importDefault(dependencyMap[9]).radii.round };
+const obj2 = { 0: "fe4737c3dd5ab570ff8c05c7dd4152ca", 0: "custom_icons", -9223372036854775808: "png", 9223372036854775807: true, 0: "/assets/modules/premium/native/images/perks", 0: 300, backgroundColor: importDefault(dependencyMap[9]).colors.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, borderRadius: importDefault(dependencyMap[9]).radii.round };
 const merged = Object.assign(importDefault(dependencyMap[9]).shadows.SHADOW_LOW);
 obj1.guildPill = obj2;
 obj1.guildName = { paddingHorizontal: 8 };
@@ -172,7 +172,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
     const obj2 = { style: tmp.header };
     const obj3 = { guild };
     const items5 = [callback2(GuildPill, obj3), , ];
-    const obj4 = { "Null": true, "Null": true, "Null": true, style: tmp.headerTitle };
+    const obj4 = { delete: true, dispatch: true, raw: true, style: tmp.headerTitle };
     const intl4 = arg1(dependencyMap[14]).intl;
     obj4.children = intl4.string(arg1(dependencyMap[14]).t.o8Bypv);
     items5[1] = callback2(arg1(dependencyMap[11]).Text, obj4);

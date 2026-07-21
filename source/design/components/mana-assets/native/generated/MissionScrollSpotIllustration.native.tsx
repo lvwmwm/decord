@@ -1,13 +1,14 @@
 // Module ID: 6295
-// Function ID: 50356
+// Function ID: 50364
 // Name: MissionScrollSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MissionScrollSpotIllustration
 
 // Module 6295 (MissionScrollSpotIllustration)
-import { jsx } from "__exportStarResult1";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");
 
 export const MissionScrollSpotIllustration = function MissionScrollSpotIllustration(width) {
   let accessibilityLabel;

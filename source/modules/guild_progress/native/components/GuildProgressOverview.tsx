@@ -1,15 +1,18 @@
-// Module ID: 12859
-// Function ID: 98278
+// Module ID: 12861
+// Function ID: 98300
 // Name: GuildProgressOverviewView
 // Dependencies: []
 // Exports: default
 
-// Module 12859 (GuildProgressOverviewView)
+// Module 12861 (GuildProgressOverviewView)
 class GuildProgressOverviewView {
   constructor(arg0) {
     ({ titleStyle, onPress, onLongPress, title, subtitle, percentComplete } = global);
     tmp = closure_7();
-    obj = { style: tmp.container, onPress, onLongPress };
+    obj = { animated: true, hasHandledScroll: true };
+    obj.style = tmp.container;
+    obj.onPress = onPress;
+    obj.onLongPress = onLongPress;
     obj = { style: tmp.horizontal };
     obj1 = {};
     items = [, ];
@@ -17,7 +20,9 @@ class GuildProgressOverviewView {
     items[1] = titleStyle;
     items1 = [, ];
     items1[0] = jsx(arg1(dependencyMap[11]).LegacyText, { style: items, children: title });
-    obj2 = { style: tmp.step, children: subtitle };
+    obj2 = { delete: "a", dispatch: "isArray", raw: "textAlign" };
+    obj2.style = tmp.step;
+    obj2.children = subtitle;
     items1[1] = jsx(arg1(dependencyMap[12]).Text, obj2);
     obj1.children = items1;
     items2 = [, ];
@@ -38,8 +43,8 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { padding: 16 }, horizontal: { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" } };
-obj = { "Bool(true)": 255, "Bool(true)": 1816203520, "Bool(true)": 1912602980, "Bool(true)": 24, "Bool(true)": 24, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { container: { padding: 16 }, horizontal: { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r" } };
+obj = { guild_id: 255, "Null": -918482688, "Null": 1912602979, "Null": 24, "Null": 24, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
 obj.step = { lineHeight: 16 };
 obj.progressBar = { marginTop: 8 };

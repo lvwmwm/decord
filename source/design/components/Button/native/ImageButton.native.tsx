@@ -1,5 +1,5 @@
 // Module ID: 12078
-// Function ID: 93163
+// Function ID: 93175
 // Name: ImageButton
 // Dependencies: []
 
@@ -25,11 +25,11 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   }
   obj.flexGrow = num;
   obj.labelPressable = obj;
-  obj = { width: -536870861, marginHorizontal: -299892737, minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj = { MKTG_HYPESQUAD_FORM_SUBMITTED: -536870861, marginInlineEnd: -299892737, minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.pill = obj;
   obj.imageWrapper = { width: sum, height: sum, position: "relative" };
   obj.image = { width: sum, height: sum };
-  const obj1 = { o: "center", concat: null, o: 4, borderRadius: importDefault(dependencyMap[5]).radii.round, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND };
+  const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[5]).radii.round, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
   obj.imageDim = obj1;
   return obj;
 });
@@ -50,7 +50,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   ref = onPressIn;
   const onPressOut = size.onPressOut;
   const importDefault = onPressOut;
-  let obj = { ip: null, op: 0.6, st: "BounceOutRight", bm: null, channel: 0.6, ddd: "BounceOutLeft", ind: null, ty: 0.6 };
+  let obj = { getApplication: null, setBarStyle: 0.6, strokeContainer: "BounceOutRight", getFramesFromEvent: null, geta79: 0.6, mutate: "BounceOutLeft", SUB_SPAM: null, GUILD_SETTINGS_OVERVIEW: 0.6 };
   ({ grow, image } = size);
   Object.setPrototypeOf(null);
   const merged = Object.assign(size, obj);

@@ -1,9 +1,9 @@
-// Module ID: 12530
-// Function ID: 96275
+// Module ID: 12532
+// Function ID: 96297
 // Name: RewardProgram
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 12530 (RewardProgram)
+// Module 12532 (RewardProgram)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/RewardProgram.tsx");
 

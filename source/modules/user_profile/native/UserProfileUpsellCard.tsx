@@ -1,10 +1,10 @@
-// Module ID: 13488
-// Function ID: 102357
+// Module ID: 13490
+// Function ID: 102379
 // Name: UserProfileUpsellCard
 // Dependencies: []
 // Exports: default
 
-// Module 13488 (UserProfileUpsellCard)
+// Module 13490 (UserProfileUpsellCard)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const Gradients = arg1(dependencyMap[3]).Gradients;
@@ -14,12 +14,12 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.upsellButton = obj;
-obj.titleContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-obj.linearGradient = {};
+obj.titleContainer = { size: false, style: false, color: false, channel: false };
+obj.linearGradient = { "Null": false, "Null": false, "Null": false, "Null": false };
 obj.outer = { marginHorizontal: arg1(dependencyMap[2]).PROFILE_SIDE_PADDING - 1 };
 const tmp4 = arg1(dependencyMap[4]);
 obj.scroll = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.inner = { flex: 0.0000000000000000000000014475671618756285, display: 2852224147080230300000000000000 };
+obj.inner = { paddingHorizontal: "<string:2382365025>", accessible: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002420963059289762 };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
@@ -57,7 +57,7 @@ export default function UserProfileUpsellCard(headerText) {
     text: ctaText,
     color: arg1(dependencyMap[7]).ButtonColors.GREEN,
     renderIcon() {
-      return callback2(tmp(closure_2[8]).NitroWheelIcon, {});
+      return callback2(tmp(closure_2[8]).NitroWheelIcon, { "Null": "<string:2235695108>", "Null": "<string:2701132348>" });
     }
   };
   let fn;

@@ -1,15 +1,15 @@
-// Module ID: 8131
-// Function ID: 64341
+// Module ID: 8132
+// Function ID: 64354
 // Name: PremiumFeatureList
 // Dependencies: []
 // Exports: default
 
-// Module 8131 (PremiumFeatureList)
+// Module 8132 (PremiumFeatureList)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { item: {} };
+obj = { item: { position: 40, bottom: 56, marginHorizontal: true, width: "/assets/../node_modules/.pnpm/@react-navigation+elements@1.3.31_pai5gyheycjh643xsf3bglag4a/node_modules/@react-navigation/elements/src/assets", backgroundColor: 24 } };
 obj = {};
 const tmp2 = arg1(dependencyMap[3]);
 const merged = Object.assign(importDefault(dependencyMap[5])(arg1(dependencyMap[2]).Fonts.PRIMARY_NORMAL, importDefault(dependencyMap[6]).colors.TEXT_DEFAULT, 14));

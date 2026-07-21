@@ -1,5 +1,5 @@
 // Module ID: 5947
-// Function ID: 49834
+// Function ID: 49842
 // Name: ClydeCoinsSpotIllustration
 // Dependencies: []
 // Exports: ClydeCoinsSpotIllustration

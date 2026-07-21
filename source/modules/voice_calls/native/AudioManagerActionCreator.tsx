@@ -1,7 +1,7 @@
 // Module ID: 8856
-// Function ID: 69873
+// Function ID: 69884
 // Name: setAudioOutputDevice
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: setAudioOutputDevice
 
 // Module 8856 (setAudioOutputDevice)

@@ -1,5 +1,5 @@
 // Module ID: 9279
-// Function ID: 72492
+// Function ID: 72503
 // Name: closeConversationsAndJumpToMessage
 // Dependencies: []
 // Exports: closeConversationsAndJumpToMessage

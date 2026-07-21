@@ -1,7 +1,7 @@
 // Module ID: 10512
-// Function ID: 82062
+// Function ID: 82073
 // Name: shouldOpenActivityInPopoutWindow
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: shouldOpenActivityInPopoutWindow, wrapPreemptiveActivityPopout
 
 // Module 10512 (shouldOpenActivityInPopoutWindow)

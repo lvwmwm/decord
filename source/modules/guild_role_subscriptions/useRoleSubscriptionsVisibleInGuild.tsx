@@ -1,5 +1,5 @@
 // Module ID: 5627
-// Function ID: 48001
+// Function ID: 48009
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
 // Dependencies: []
 // Exports: areRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList

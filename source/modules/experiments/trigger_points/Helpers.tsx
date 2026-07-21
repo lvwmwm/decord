@@ -1,9 +1,9 @@
-// Module ID: 7152
-// Function ID: 57700
+// Module ID: 7153
+// Function ID: 57712
 // Name: CommonTriggerPointConfiguration
 // Dependencies: []
 
-// Module 7152 (CommonTriggerPointConfiguration)
+// Module 7153 (CommonTriggerPointConfiguration)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

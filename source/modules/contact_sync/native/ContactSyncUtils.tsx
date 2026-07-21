@@ -1,16 +1,16 @@
 // Module ID: 11698
-// Function ID: 90810
+// Function ID: 90822
 // Name: isContactSyncAvailable
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getStoredContacts, handleOpenLearnMoreLink, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
 // Module 11698 (isContactSyncAvailable)
-import closure_3 from "__exportStarResult1";
-import { NativeModules } from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import { NativeModules } from "result";
+import closure_5 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
 function isContactSyncAvailable() {
   const tmp = !arg1(dependencyMap[6]).isIOS();
@@ -42,13 +42,13 @@ function isContactSyncEnabled(contactSyncAccount) {
 function getOpenLearnMoreUrl() {
   return importDefault(dependencyMap[15]).getArticleURL(constants4.CONTACT_SYNC);
 }
-({ useContactSyncStore: closure_6, clearDismissState: closure_7, deleteStoredContacts: closure_8 } = __exportStarResult1);
-({ CONTACT_SYNC_MODAL_KEY: closure_9, ContactPermissions: closure_10, ContactSyncSuggestionsSetting: closure_11 } = __exportStarResult1);
-({ Endpoints: closure_12, PlatformTypes: closure_13, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = __exportStarResult1);
+({ useContactSyncStore: closure_6, clearDismissState: closure_7, deleteStoredContacts: closure_8 } = result);
+({ CONTACT_SYNC_MODAL_KEY: closure_9, ContactPermissions: closure_10, ContactSyncSuggestionsSetting: closure_11 } = result);
+({ Endpoints: closure_12, PlatformTypes: closure_13, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = result);
 const error = new Error("No contact permissions");
 const error1 = new Error("No phone number");
 const error2 = new Error("Failed to fetch contact image");
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/contact_sync/native/ContactSyncUtils.tsx");
+result = arg1(dependencyMap[18]).fileFinishedImporting("modules/contact_sync/native/ContactSyncUtils.tsx");
 
 export const ContactSyncPermissionDenied = error;
 export const ContactSyncFailedUserHasNoPhone = error1;

@@ -1,10 +1,10 @@
-// Module ID: 6898
-// Function ID: 54964
+// Module ID: 6899
+// Function ID: 54976
 // Name: cleanString
 // Dependencies: []
 // Exports: getNames, getRelationshipType
 
-// Module 6898 (cleanString)
+// Module 6899 (cleanString)
 function cleanString(globalName) {
   const obj = arg1(dependencyMap[4]);
   return arg1(dependencyMap[4]).stripDiacritics(globalName.toLocaleLowerCase()).trim();

@@ -1,7 +1,7 @@
 // Module ID: 1853
-// Function ID: 20431
+// Function ID: 20436
 // Name: BadgeRarity
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1853 (BadgeRarity)
 const _module = require(dependencyMap[0]);

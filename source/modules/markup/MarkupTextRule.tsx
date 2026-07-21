@@ -1,10 +1,10 @@
-// Module ID: 4569
-// Function ID: 40043
+// Module ID: 4568
+// Function ID: 40050
 // Name: textRegexp
 // Dependencies: []
 // Exports: textMarkupPatternWithExclusions
 
-// Module 4569 (textRegexp)
+// Module 4568 (textRegexp)
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;
 const obj = {};
 const merged = Object.assign(importDefault(dependencyMap[0]).defaultRules.text);

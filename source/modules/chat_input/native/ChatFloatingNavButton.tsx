@@ -1,5 +1,5 @@
 // Module ID: 11364
-// Function ID: 88357
+// Function ID: 88369
 // Name: ChatFloatingNavButton
 // Dependencies: []
 // Exports: default
@@ -44,7 +44,7 @@ export default function ChatFloatingNavButton(arg0) {
       items = [, ];
       items[0] = closure_1;
       items[1] = closure_2;
-      interpolateColorResult = obj3.interpolateColor(closure_0.get(), ["Text", "lc"], items);
+      interpolateColorResult = obj3.interpolateColor(closure_0.get(), ["replace", "then"], items);
       obj.backgroundColor = obj2.withSpring(interpolateColorResult, closure_0(closure_2[8]).ON_PRESS_SPRING, "animate-always");
       return obj;
     }

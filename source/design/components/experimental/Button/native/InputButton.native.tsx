@@ -1,5 +1,5 @@
 // Module ID: 8369
-// Function ID: 66682
+// Function ID: 66693
 // Name: InputButton
 // Dependencies: []
 
@@ -9,7 +9,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 const Text = arg1(dependencyMap[2]).Text;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj1 = arg1(dependencyMap[4]);
-let obj = { buttonText: {} };
+let obj = { buttonText: { "Null": "100%", "Null": null, "Null": null } };
 obj = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.buttonTextPlaceholder = obj;
 obj1 = { color: importDefault(dependencyMap[5]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };

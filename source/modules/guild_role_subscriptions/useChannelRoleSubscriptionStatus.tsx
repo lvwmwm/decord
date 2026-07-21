@@ -1,10 +1,10 @@
-// Module ID: 4571
-// Function ID: 40063
+// Module ID: 4570
+// Function ID: 40070
 // Name: getChannelRoleSubscriptionStatus
 // Dependencies: []
 // Exports: default
 
-// Module 4571 (getChannelRoleSubscriptionStatus)
+// Module 4570 (getChannelRoleSubscriptionStatus)
 function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
   let obj = closure_4;
   let obj2 = closure_3;
@@ -21,7 +21,7 @@ function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
   const channel = obj.getChannel(id);
   if (null != channel) {
     if (channel.isRoleSubscriptionTemplatePreviewChannel()) {
-      obj = { 9223372036854775807: null, 597675913776: null };
+      obj = { "Null": null, "Null": null };
     }
     return obj;
   }
@@ -45,7 +45,7 @@ let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const Permissions = arg1(dependencyMap[3]).Permissions;
-let closure_6 = {};
+let closure_6 = { "Bool(false)": null, "Bool(false)": null };
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
 
 export default function useChannelRoleSubscriptionStatus(arg0) {

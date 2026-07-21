@@ -1,5 +1,5 @@
 // Module ID: 8755
-// Function ID: 69220
+// Function ID: 69231
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useProductDescription

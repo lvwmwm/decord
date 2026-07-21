@@ -1,9 +1,11 @@
-// Module ID: 13941
-// Function ID: 105933
+// Module ID: 13944
+// Function ID: 105965
 // Name: route
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
-// Module 13941 (route)
+// Module 13944 (route)
+import result from "result";
+
 let obj = {
   useTitle() {
     const intl = require(dependencyMap[2]).intl;
@@ -13,17 +15,17 @@ let obj = {
     return require(dependencyMap[3]).useIsPreviewerOnAnyQuest();
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").QuestsIcon,
+  IconComponent: require("result").QuestsIcon,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.QUEST_PREVIEW_TOOL_2,
+  route: require("result").UserSettingsSections.QUEST_PREVIEW_TOOL_2,
   getComponent() {
     return require(dependencyMap[5]).default;
   }
 };
-const route = require("__exportStarResult1").createRoute(obj);
+const route = result.createRoute(obj);
 const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/QuestPreviewToolSetting.tsx");
+result = _module1.fileFinishedImporting("modules/user_settings/defs/native/QuestPreviewToolSetting.tsx");
 
 export default route;

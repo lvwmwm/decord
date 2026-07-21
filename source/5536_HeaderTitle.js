@@ -1,5 +1,5 @@
 // Module ID: 5536
-// Function ID: 47068
+// Function ID: 47076
 // Name: HeaderTitle
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ Animated: closure_4, Platform, StyleSheet } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
-const styles = StyleSheet.create({ title: { -357058973: "center", 1661377617: 16, 1656181994: 0 } });
+const styles = StyleSheet.create({ title: { -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null } });
 
 export default function HeaderTitle(tintColor) {
   let text = tintColor.tintColor;

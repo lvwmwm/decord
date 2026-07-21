@@ -1,5 +1,5 @@
 // Module ID: 3536
-// Function ID: 27378
+// Function ID: 27383
 // Name: _typeof
 // Dependencies: []
 
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const AMPMParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 80);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", [1946157837, 1962935053, null, null, null, null]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const AMPMParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 80);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [1946157837, 1962935053, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -256,7 +256,7 @@ export const AMPMParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 80);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [1946157837, 1962935053, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -280,14 +280,14 @@ export const AMPMParser = (Parser) => {
         if ("aa" !== arg1) {
           if ("aaa" !== arg1) {
             if ("aaaaa" === arg1) {
-              return dayPeriod.dayPeriod(arg0, {});
+              return dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
             } else {
-              return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+              return dayPeriod.dayPeriod(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
             }
           }
         }
       }
-      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
     }
   };
   const items = [obj, ];

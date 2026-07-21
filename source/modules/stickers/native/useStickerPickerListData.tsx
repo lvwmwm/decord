@@ -1,17 +1,16 @@
 // Module ID: 9624
-// Function ID: 74949
+// Function ID: 74960
 // Name: useStickerPickerListData
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: default
 
 // Module 9624 (useStickerPickerListData)
-import closure_3 from "__exportStarResult1";
-import { useStickerPickerStore } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
-({ MIN_MARGIN: closure_5, ROW_HEIGHT: closure_6, STICKER_SIZE: closure_7 } = __exportStarResult1);
+let closure_3 = importAll(dependencyMap[0]);
+const useStickerPickerStore = arg1(dependencyMap[1]).useStickerPickerStore;
+const tmp2 = arg1(dependencyMap[2]);
+({ MIN_MARGIN: closure_5, ROW_HEIGHT: closure_6, STICKER_SIZE: closure_7 } = tmp2);
 const obj = { STICKERS: 0, [0]: "STICKERS", NSFW: 1, [1]: "NSFW" };
-let closure_9 = __exportStarResult1.LABEL_HEIGHT + 2 * arg1(dependencyMap[3]).PADDING_VERTICAL;
+let closure_9 = tmp2.LABEL_HEIGHT + 2 * arg1(dependencyMap[3]).PADDING_VERTICAL;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stickers/native/useStickerPickerListData.tsx");
 
 export default function useStickerPickerListData(containerWidth) {

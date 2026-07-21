@@ -1,5 +1,5 @@
 // Module ID: 3341
-// Function ID: 26158
+// Function ID: 26163
 // Dependencies: []
 
 // Module 3341
@@ -14,9 +14,9 @@ obj = {
     return String(arg0);
   }
 };
-obj.era = obj.default({ values: { narrow: [false, false], abbreviated: [true, true], wide: [false, false] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [false, false], abbreviated: [null, null], wide: [true, true] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [], abbreviated: ["d\u1EA5u", "d\u1EA5u g\u1EA1ch ch\u00E9o", "h\u1EE7y", "nh\u00E2n"], wide: [false, false, false, false] },
+  values: { narrow: [null, null, null, null], abbreviated: ["r", "isArray", "Icon", "channel_id"], wide: [1659633665, -22151167, 1416888321, -323092479] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
@@ -24,7 +24,7 @@ obj.quarter = obj.default({
 });
 obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
 obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { unicodeVersion: false, y: false, isArray: false, colors: false, construct: false, y: false, isArray: false, id: false }, abbreviated: { unicodeVersion: false, y: false, isArray: false, colors: false, construct: false, y: false, isArray: false, id: false }, wide: { unicodeVersion: false, y: false, isArray: false, colors: false, construct: false, y: false, isArray: false, id: false } }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

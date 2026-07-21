@@ -1,9 +1,9 @@
-// Module ID: 12880
-// Function ID: 98360
+// Module ID: 12882
+// Function ID: 98382
 // Name: GradientBorder
 // Dependencies: []
 
-// Module 12880 (GradientBorder)
+// Module 12882 (GradientBorder)
 class GradientBorder {
   constructor(arg0) {
     ({ children, borderWidth } = global);
@@ -19,7 +19,7 @@ class GradientBorder {
       num2 = 1;
       borderRadius = importDefault(dependencyMap[5]).radii.sm + 1;
     }
-    obj = {};
+    obj = { "Null": null, "Null": null, "Null": null, flexDirection: null, justifyContent: null };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp5 = function getStartEnd(direction) {
@@ -27,8 +27,8 @@ class GradientBorder {
       const str = callback(closure_2[4]);
       const withResult = match.with(constants.HORIZONTAL, () => closure_5);
       const withResult1 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6);
-      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { max: -536870861, guildId: -299892737 }, END: {} }));
-      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { max: -536870861, guildId: -299892737 }, END: {} })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: {} })).exhaustive();
+      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: {}, END: {} }));
+      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: {}, END: {} })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: {} })).exhaustive();
     }(direction);
     tmp8 = null;
     if (null != children) {

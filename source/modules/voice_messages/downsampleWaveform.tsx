@@ -1,5 +1,5 @@
 // Module ID: 11352
-// Function ID: 88292
+// Function ID: 88304
 // Name: downsampleWaveform
 // Dependencies: []
 // Exports: default

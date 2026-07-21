@@ -1,9 +1,9 @@
-// Module ID: 6940
-// Function ID: 55470
+// Module ID: 6941
+// Function ID: 55482
 // Name: frozen
 // Dependencies: []
 
-// Module 6940 (frozen)
+// Module 6941 (frozen)
 const frozen = Object.freeze({
   getItem(arg0) {
     const Storage = require(dependencyMap[0]).Storage;

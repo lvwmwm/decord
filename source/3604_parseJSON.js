@@ -1,16 +1,15 @@
 // Module ID: 3604
-// Function ID: 27811
+// Function ID: 27816
 // Name: parseJSON
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3604 (parseJSON)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function parseJSON(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  closure_1.default(1, arguments);
   if ("string" === typeof defaultResult1) {
     const match = defaultResult1.match(/(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2}):(\d{2})(?:\.(\d{0,7}))?(?:Z|(.)(\d{2}):?(\d{2})?)?/);
     let _Date = Date;
@@ -45,7 +44,7 @@ export default function parseJSON(defaultResult1) {
     }
     return _Date;
   } else {
-    return startOfWeek.default(defaultResult1);
+    return closure_0.default(defaultResult1);
   }
 };
 export default exports.default;

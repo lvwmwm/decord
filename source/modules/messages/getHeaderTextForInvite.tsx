@@ -1,5 +1,5 @@
 // Module ID: 12167
-// Function ID: 93579
+// Function ID: 93591
 // Name: getHeaderTextForInvite
 // Dependencies: []
 // Exports: getHeaderTextForInvite

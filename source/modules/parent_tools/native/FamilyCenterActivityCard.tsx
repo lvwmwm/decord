@@ -1,10 +1,10 @@
-// Module ID: 13669
-// Function ID: 103482
+// Module ID: 13671
+// Function ID: 103504
 // Name: FamilyCenterActivityCardPrefaceText
 // Dependencies: []
 // Exports: default
 
-// Module 13669 (FamilyCenterActivityCardPrefaceText)
+// Module 13671 (FamilyCenterActivityCardPrefaceText)
 function FamilyCenterActivityCardPrefaceText() {
   const tmp = callback3();
   const tmp2 = importDefault(dependencyMap[7])();
@@ -26,7 +26,7 @@ function FamilyCenterActivityCardPrefaceText() {
     tmp9 = callback(arg1(dependencyMap[13]).Icon, obj1);
   }
   const items = [tmp9, , ];
-  obj2 = { "Null": null, "Null": null, "Null": null, style: tmp.text };
+  obj2 = { delete: "<string:1864193>", dispatch: "<string:2621440>", raw: "<string:1359020032>", style: tmp.text };
   let tmp15 = ageSpecificText;
   if (activeLinkUserIds.length > 1) {
     tmp15 = ageSpecificText;
@@ -58,7 +58,7 @@ function FamilyCenterHeaderSubText() {
   const activityWindowTimestampFormatter = arg1(dependencyMap[9]).getActivityWindowTimestampFormatter(tmp);
   arg1(dependencyMap[8]);
   if (!tmp) {
-    obj = { children: tmp4 };
+    obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: tmp4 };
     let tmp5 = callback(arg1(dependencyMap[15]).Text, obj);
   } else {
     tmp5 = null;
@@ -79,10 +79,10 @@ class FamilyCenterActivityCardHeader {
         tmp3 = jsx;
         tmp4 = View;
         obj = {};
-        tmp5 = f103495;
+        tmp5 = f103517;
         obj1 = {};
         obj1.user = selectedTeenUser;
-        obj.children = jsx(f103495, obj1);
+        obj.children = jsx(f103517, obj1);
         tmp6 = jsx(View, obj);
         tmp9 = tmp6;
       } else {
@@ -117,7 +117,7 @@ class FamilyCenterActivityCardAccountSelect {
     dependencyMap = obj3.useFamilyCenterActions(obj).selectTeenUser;
     items = [];
     items[0] = activeLinkUsers;
-    f103490 = f103490.useMemo(() => activeLinkUsers.map((id) => {
+    f103512 = f103512.useMemo(() => activeLinkUsers.map((id) => {
       const obj = {};
       const name = callback(closure_2[26]).getName(id);
       const obj2 = callback(closure_2[26]);
@@ -167,14 +167,14 @@ class FamilyCenterActivityCardAccountSelect {
         }
       };
       tmp11 = jsx;
-      tmp12 = f103495;
+      tmp12 = f103517;
       obj3 = {};
       obj3.user = selectedTeenUser;
       flag = true;
       obj3.inSelector = true;
       tmp10 = importDefault(dependencyMap[16]);
       items1 = [, ];
-      items1[0] = jsx(f103495, obj3);
+      items1[0] = jsx(f103517, obj3);
       tmp13 = jsx;
       tmp14 = arg1;
       num2 = 13;
@@ -199,7 +199,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let closure_10 = "FamilyCenterTeenAccountSelect";
 let obj1 = arg1(dependencyMap[5]);
-let obj = { container: {} };
+let obj = { container: { ty: 8, c: null, o: "\u270A\u{1F3FF}" } };
 obj = { color: importDefault(dependencyMap[6]).colors.ICON_SUBTLE, width: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_16 };
 obj.icon = obj;
 obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_4 };
@@ -207,13 +207,13 @@ obj.text = obj1;
 let closure_11 = obj1.createStyles(obj);
 let obj5 = arg1(dependencyMap[5]);
 const obj2 = {};
-const tmp3 = arg1(dependencyMap[4]);
-obj2.header = { padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
+const obj3 = { GameIconImageSize: "M", stageInfo: "hasConfetti", alignSelf: "Float64Array", useIOSCompletionStates: "ME", BADGE_TEXT_DEFAULT: "getApplicationState", padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
+obj2.header = obj3;
 const obj4 = { borderRadius: arg1(dependencyMap[13]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[13]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj2.avatar = obj4;
 obj5 = { marginRight: importDefault(dependencyMap[6]).space.PX_12, alignItems: "flex-start" };
 obj2.avatarContainer = obj5;
-const obj3 = { padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
+const tmp3 = arg1(dependencyMap[4]);
 obj2.userHeader = { paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
 const obj6 = { paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
 obj2.nonSelectorHeader = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
@@ -245,7 +245,7 @@ const memoResult = importAllResult.memo((arg0) => {
 memoResult.displayName = "FamilyCenterActivityCardAccount";
 let obj12 = arg1(dependencyMap[5]);
 const obj8 = {};
-const obj9 = { -9223372036854775808: true, 9223372036854775807: true, -9223372036854775808: true, 0: true, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
+const obj9 = { d: "toString", useMemo: "isArray", keys: "toString", hasDiversityParent: "isArray", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
 obj8.touch = obj9;
 const obj7 = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
@@ -260,15 +260,15 @@ const obj10 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_D
 obj11.preface = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
 const obj13 = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
 obj11.container = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
-const obj14 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
-obj11.content = { padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
-obj16 = { gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj15 = { <string:2337341444>: "<string:3157541376>", <string:2971099654>: "<string:2774663169>", <string:1097896017>: "<string:1749155842>", padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
+obj11.content = obj15;
+obj16 = { 1549967418: "isArray", 1380856145: "construct", 496989610: "Map", 75490881: "isArray", gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj11.totals = obj16;
 obj11.first = { width: "100%" };
 obj11.other = { width: "48.5%" };
-const obj15 = { padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
-obj11.activities = { gap: importDefault(dependencyMap[6]).space.PX_32 };
-const obj17 = { gap: importDefault(dependencyMap[6]).space.PX_32 };
+const obj17 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[6]).space.PX_32 };
+obj11.activities = obj17;
+const obj14 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj11.settingsControls = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };
 let closure_15 = obj16.createStyles(obj11);
 const obj18 = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };

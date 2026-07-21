@@ -1,9 +1,9 @@
-// Module ID: 16315
-// Function ID: 125917
+// Module ID: 16323
+// Function ID: 125978
 // Name: DeleteButton
 // Dependencies: []
 
-// Module 16315 (DeleteButton)
+// Module 16323 (DeleteButton)
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete };
@@ -30,11 +30,11 @@ const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
 let obj = {};
-obj = { 9223372036854775807: true, 0: "/assets/modules/guild_role_subscriptions/native/images", 0: 40, 0: 40, 0: null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
+obj = { <string:22413314>: true, <string:16843009>: "/assets/modules/guild_role_subscriptions/native/images", <string:16843009>: 40, <string:1711341825>: 40, <string:50529027>: null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.scrollContainer = { flexGrow: 1 };
 obj.deleteButton = { "Null": null, "Null": "4b2e500a83e119218e6e2834f09f9cd5", "Null": "ic_add_tier_40px", "Null": "png" };
-obj.deleteIcon = { bhk: false, bic: "internal" };
+obj.deleteIcon = { "Null": 0, "Null": -1048576 };
 obj1 = {};
 const tmp4 = arg1(dependencyMap[9]);
 const merged = Object.assign(importDefault(dependencyMap[12])(arg1(dependencyMap[8]).Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[11]).unsafe_rawColors.RED_400, 16));
@@ -130,7 +130,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       };
       let tmp40 = callback2(importDefault(dependencyMap[19]), obj);
     } else {
-      obj = { "Null": "postal-address-country", "Null": "password", "Null": "email", style: tmp2.textInput, maxLength: closure_12, value: first };
+      obj = { "Null": "absolute", "Null": -1, a: -1, style: tmp2.textInput, maxLength: closure_12, value: first };
       const intl9 = arg1(dependencyMap[17]).intl;
       obj.placeholder = intl9.string(arg1(dependencyMap[17]).t.kV54/Y);
       obj.onChange = tmp4;
@@ -149,7 +149,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       listingId: benefitType.listingId
     };
     const items = [callback2(importDefault(dependencyMap[22]), obj1), ];
-    const obj2 = { accessible: null, type: null, padding: null };
+    const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
     const items1 = [tmp.scrollContainer, ];
     const obj3 = { paddingBottom: importDefault(dependencyMap[18])().bottom + 32 + 16 };
     items1[1] = obj3;
@@ -178,7 +178,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     const intl8 = arg1(dependencyMap[17]).intl;
     obj8.children = intl8.string(arg1(dependencyMap[17]).t.74JctW);
     items2[4] = callback2(importDefault(dependencyMap[23]), obj8);
-    const obj9 = { "Null": null, "Null": "text-sm/medium", "Null": "text-default", "Null": true, "Null": "no-hide-descendants", style: tmp2.textInput, maxLength: _handleDelete, value: first3, onChange: tmp7[1], placeholder: stringResult2 };
+    const obj9 = { style: tmp2.textInput, maxLength: _handleDelete, value: first3, onChange: tmp7[1], placeholder: stringResult2 };
     items2[5] = callback2(arg1(dependencyMap[21]).FormInput, obj9);
     let tmp57 = null;
     if (null != benefitType.onDelete) {

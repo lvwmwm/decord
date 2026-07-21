@@ -1,5 +1,5 @@
 // Module ID: 11165
-// Function ID: 86818
+// Function ID: 86830
 // Name: EntityBorderAppIcon
 // Dependencies: []
 // Exports: default

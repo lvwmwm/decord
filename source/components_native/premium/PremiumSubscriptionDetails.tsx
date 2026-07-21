@@ -1,10 +1,10 @@
-// Module ID: 7370
-// Function ID: 59425
+// Module ID: 7371
+// Function ID: 59437
 // Name: getHeaderBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7370 (getHeaderBackground)
+// Module 7371 (getHeaderBackground)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 function getHeaderBackground(arg0, arg1) {
   return obj5[arg0][arg1];
@@ -388,19 +388,19 @@ const tmp2 = arg1(dependencyMap[3]);
 const SubscriptionPlanInfo = arg1(dependencyMap[7]).SubscriptionPlanInfo;
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[8]));
-let obj = { imageTier2: { <string:1632221346>: 411, <string:2722977214>: 134 }, imageTier1: { <string:1632221346>: "png", <string:2722977214>: true }, imageTier0: { <string:1632221346>: "5dd914546a21d2f37ba762b2209e8ec8", <string:2722977214>: "img_bundle_mobile" }, imageBundle: { <string:1632221346>: "png", <string:2722977214>: true }, imagePremiumNonActive: { <string:1632221346>: "png", <string:2722977214>: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { <string:1632221346>: 51, <string:2722977214>: 33 }, logoPremiumTier0: { <string:1632221346>: null, <string:2722977214>: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
+let obj = { imageTier2: { y: 411, isArray: 134 }, imageTier1: { y: "png", isArray: true }, imageTier0: { y: "5dd914546a21d2f37ba762b2209e8ec8", isArray: "img_bundle_mobile" }, imageBundle: { y: "png", isArray: true }, imagePremiumNonActive: { y: "png", isArray: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { y: 51, isArray: 33 }, logoPremiumTier0: { y: null, isArray: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
 obj = {};
 obj = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj.price = obj;
 const tmp4 = arg1(dependencyMap[8]);
 obj.priceDark = { color: importDefault(dependencyMap[9]).unsafe_rawColors.BLACK };
 let obj4 = arg1(dependencyMap[10]);
-const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: {} };
-const obj3 = { <string:2321632914>: null, <string:2878377810>: "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { "Null": 7, "Null": 370 } };
+const obj3 = { accessibilityRole: null, "": "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj2.container = obj3;
-obj2.buttonContainer = { display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485186689, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254470373541481 };
+obj2.buttonContainer = { "Null": 24541952, "Null": 24541952 };
 obj2.buttonWrapper = {};
-obj2.cancelLink = { ENABLE_COMMUNITY_FLOW_MODAL_KEY: "center", margin: 16, T+79Eo: 20, getItemCount: null };
+obj2.cancelLink = { height: "center", alignSelf: 16, flexDirection: 20, justifyContent: null };
 obj2.desktopSubtext = { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 let closure_18 = obj4.createStyles(obj2);
 obj4 = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
@@ -505,7 +505,7 @@ export default function PremiumSubscriptionDetails(subscription) {
   let tmp4Result = null;
   if (null != first) {
     obj = { style };
-    const obj1 = { 1501064855: "SERVER_GUIDE_CHANNEL_SELECTED", -1267889981: "EAPLAY", -1145697943: "r", -1266241916: "FULL", style: tmp.title };
+    const obj1 = { Opened: -918482477, marginVertical: 1912603017, marginStart: 51, marginEnd: 36, style: tmp.title };
     const intl = arg1(dependencyMap[60]).intl;
     obj1.children = intl.string(arg1(dependencyMap[60]).t.ITurwY);
     const items = [callback3(arg1(dependencyMap[61]).Text, obj1), , , , ];

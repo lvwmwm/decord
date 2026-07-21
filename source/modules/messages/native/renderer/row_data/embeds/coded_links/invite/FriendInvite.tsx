@@ -1,5 +1,5 @@
 // Module ID: 12169
-// Function ID: 93584
+// Function ID: 93596
 // Name: createFriendInvite
 // Dependencies: []
 // Exports: createFriendInvite

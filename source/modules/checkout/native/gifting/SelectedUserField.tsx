@@ -1,5 +1,5 @@
 // Module ID: 8807
-// Function ID: 69417
+// Function ID: 69428
 // Name: SelectedUserField
 // Dependencies: []
 // Exports: default
@@ -19,7 +19,7 @@ obj.opener = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.openerWithClearButton = { paddingRight: 0 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.searchIcon = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const obj3 = { marginHorizontal: true, overflow: "/assets/images/native/icons/voice_calls", flex: 24, display: 24, flexDirection: null, flexShrink: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj3 = { category: true, flexDirection: "/assets/images/native/icons/voice_calls", alignItems: 24, borderRadius: importDefault(dependencyMap[4]).radii.lg, paddingHorizontal: null, accessible: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.userPill = obj3;
 obj.userPillText = { marginLeft: 6 };
 const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
@@ -59,7 +59,8 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl4.string(arg1(dependencyMap[6]).t.xFn72s);
   }
   obj1.accessibilityLabel = combined;
-  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, { style: tmp.searchIcon }), ];
+  const obj2 = { Gateway: "lag", communicationDisabledUntilTimestamp: "isArrayBuffer", withMutualGuilds: "<string:2631618816>", style: tmp.searchIcon };
+  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, obj2), ];
   if (null != selectedUser) {
     const obj3 = { style: tmp.userPill };
     obj4 = { user: selectedUser, guildId: undefined, size: arg1(dependencyMap[9]).AvatarSizes.XSMALL_20 };
@@ -70,7 +71,7 @@ export default function SelectedUserField(onPress) {
     let tmp15 = callback2(closure_4, obj3);
     const obj11 = importDefault(dependencyMap[7]);
   } else {
-    const obj6 = { style: tmp.userPillText };
+    const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.userPillText };
     const intl2 = arg1(dependencyMap[6]).intl;
     obj6.children = intl2.string(arg1(dependencyMap[6]).t.R0vK0N);
     tmp15 = callback(arg1(dependencyMap[10]).Text, obj6);

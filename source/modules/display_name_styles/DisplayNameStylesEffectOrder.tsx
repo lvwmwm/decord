@@ -1,10 +1,10 @@
-// Module ID: 14101
-// Function ID: 107049
+// Module ID: 14104
+// Function ID: 107081
 // Name: items
 // Dependencies: []
 // Exports: useVisibleEffectOrder
 
-// Module 14101 (items)
+// Module 14104 (items)
 let closure_2 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const EFFECT_ORDER = tmp2.EFFECT_ORDER;

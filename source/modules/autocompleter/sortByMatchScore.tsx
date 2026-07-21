@@ -1,10 +1,10 @@
-// Module ID: 5317
-// Function ID: 45166
+// Module ID: 5316
+// Function ID: 45173
 // Name: sortByMatchScore
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
-// Module 5317 (sortByMatchScore)
+// Module 5316 (sortByMatchScore)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/autocompleter/sortByMatchScore.tsx");
 

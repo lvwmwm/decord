@@ -1,5 +1,5 @@
 // Module ID: 1321
-// Function ID: 15508
+// Function ID: 15513
 // Name: resolveTheme
 // Dependencies: []
 // Exports: default

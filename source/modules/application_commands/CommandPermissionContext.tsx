@@ -1,10 +1,10 @@
-// Module ID: 7918
-// Function ID: 63117
+// Module ID: 7919
+// Function ID: 63130
 // Name: computeAllowNsfw
 // Dependencies: []
 // Exports: buildPermissionContext, computeCommandContextType, usePermissionContext
 
-// Module 7918 (computeAllowNsfw)
+// Module 7919 (computeAllowNsfw)
 function computeAllowNsfw(guild_id, arg1, viewNsfwCommandsOrDefault) {
   let nsfw = viewNsfwCommandsOrDefault;
   let tmp2 = !tmp;
@@ -54,7 +54,7 @@ function computePermissions(isPrivate) {
       return obj;
     }
   }
-  obj = { <string:1690056031>: null, <string:4221568066>: null, <string:2084847187>: null, computedPermissions: importAll(dependencyMap[11]).deserialize(0) };
+  obj = { <string:1773490101>: null, <string:3221487602>: null, <string:2439930378>: null, computedPermissions: importAll(dependencyMap[11]).deserialize(0) };
   return obj;
 }
 function getContextGuildId(context) {

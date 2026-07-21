@@ -1,5 +1,5 @@
 // Module ID: 3766
-// Function ID: 28901
+// Function ID: 28906
 // Name: _callSuper
 // Dependencies: []
 // Exports: isMessageComponentsV2
@@ -247,6 +247,19 @@ const tmp8 = (arg0) => {
         tmp9 = mediaMention;
       }
       tmp2.mediaMention = tmp9;
+      lobby_member = arg0.lobby_member;
+      additional_name = undefined;
+      if (null != lobby_member) {
+        additional_name = lobby_member.additional_name;
+      }
+      if (null == additional_name) {
+        additional_name = arg0.additionalName;
+      }
+      tmp11 = null;
+      if (null != additional_name) {
+        tmp11 = additional_name;
+      }
+      tmp2.additionalName = tmp11;
       return tmp2;
     }
   }
@@ -410,13 +423,13 @@ const tmp8 = (arg0) => {
       });
       if (-1 === closure_4) {
         if (NORMAL === MessageRecord(items[10]).ReactionTypes.BURST) {
-          let obj = { emoji, me_burst: flag, count_details: {}, burst_colors: items };
+          let obj = { emoji, me_burst: flag, count_details: { <string:1737507435>: null, <string:2701656068>: null }, burst_colors: items };
           mapped.push(obj);
         } else if (NORMAL === MessageRecord(items[10]).ReactionTypes.VOTE) {
-          obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", "Bool(false)": "name-prefix", "Bool(false)": "name-suffix", "Bool(false)": "name", "Bool(false)": "name-middle", emoji, me_vote: flag, count_details: {}, burst_colors: [] };
+          obj = { emoji, me_vote: flag, count_details: {}, burst_colors: [] };
           mapped.push(obj);
         } else {
-          obj = { 0: null, -9223372036854775808: null, 9223372036854775807: null, 0: null, 0: null, 0: null, emoji, me: flag, count_details: {}, burst_colors: [] };
+          obj = { emoji, me: flag, count_details: { <string:1737507435>: null, <string:2701656068>: null }, burst_colors: [] };
           mapped.push(obj);
         }
       }

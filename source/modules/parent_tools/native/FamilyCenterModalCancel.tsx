@@ -1,10 +1,10 @@
-// Module ID: 13707
-// Function ID: 103700
+// Module ID: 13709
+// Function ID: 103722
 // Name: FamilyCenterModalCancelScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13707 (FamilyCenterModalCancelScreen)
+// Module 13709 (FamilyCenterModalCancelScreen)
 function FamilyCenterModalCancelScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;
@@ -65,7 +65,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { cix: 0, y: 0, isArray: 0, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.header = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.headerText = { marginTop: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };

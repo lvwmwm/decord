@@ -1,5 +1,5 @@
 // Module ID: 8837
-// Function ID: 69724
+// Function ID: 69735
 // Name: snapVolumeToDefault
 // Dependencies: []
 // Exports: coerceAudioContextForProto, snapVolumeToDefault

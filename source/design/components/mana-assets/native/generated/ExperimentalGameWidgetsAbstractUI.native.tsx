@@ -1,13 +1,14 @@
 // Module ID: 6039
-// Function ID: 49972
+// Function ID: 49980
 // Name: ExperimentalGameWidgetsAbstractUI
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: ExperimentalGameWidgetsAbstractUI
 
 // Module 6039 (ExperimentalGameWidgetsAbstractUI)
-import { jsx } from "__exportStarResult1";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");
 
 export const ExperimentalGameWidgetsAbstractUI = function ExperimentalGameWidgetsAbstractUI(width) {
   let accessibilityLabel;

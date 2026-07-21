@@ -1,5 +1,5 @@
 // Module ID: 11382
-// Function ID: 88495
+// Function ID: 88507
 // Name: formatNumber
 // Dependencies: []
 // Exports: default, useConnectedUserLimitFormatted

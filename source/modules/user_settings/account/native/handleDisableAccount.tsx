@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 103001
+// Module ID: 13593
+// Function ID: 103023
 // Name: handleDisableAccount
 // Dependencies: []
 // Exports: default
 
-// Module 13591 (handleDisableAccount)
+// Module 13593 (handleDisableAccount)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");

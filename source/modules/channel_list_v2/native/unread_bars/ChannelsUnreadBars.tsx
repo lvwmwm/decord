@@ -1,9 +1,9 @@
-// Module ID: 14882
-// Function ID: 112069
+// Module ID: 14885
+// Function ID: 112103
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14882 (_createForOfIteratorHelperLoose)
+// Module 14885 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -178,7 +178,7 @@ function findNearestUnreadItem(containerSize, id) {
     if (null != layoutStart) {
       tmp7 = layoutStart;
     }
-    let obj = { flexDirection: false, alignItems: false };
+    let obj = { "Bool(false)": "<string:1876819969>", "Bool(false)": "<string:2170814465>" };
     const diff = tmp7 + containerSize.containerSize - arg2 - arg3;
     const tmp11 = _createForOfIteratorHelperLoose(containerSize.state.items);
     const iter = tmp11();

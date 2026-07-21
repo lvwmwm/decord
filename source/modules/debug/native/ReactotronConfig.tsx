@@ -1,8 +1,8 @@
-// Module ID: 13211
-// Function ID: 100207
+// Module ID: 13213
+// Function ID: 100229
 // Dependencies: []
 
-// Module 13211
+// Module 13213
 const importDefaultResult = importDefault(dependencyMap[0]);
 const reactNative = importDefault(dependencyMap[0]).configure({}).useReactNative();
 reactNative.connect();

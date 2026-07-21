@@ -164,7 +164,7 @@ const tmp4 = (Component) => {
   };
   return callback2(Modal, items);
 }(importAll(dependencyMap[7]).Component);
-tmp4.defaultProps = { accessibilityRole: true, round: true };
+tmp4.defaultProps = { size: null, progressViewOffset: null };
 tmp4.contextType = arg1(dependencyMap[13]).RootTagContext;
 const importAllResult = importAll(dependencyMap[7]);
 let str = "left";

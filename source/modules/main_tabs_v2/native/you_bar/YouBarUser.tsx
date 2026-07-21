@@ -1,8 +1,8 @@
-// Module ID: 14986
-// Function ID: 112856
+// Module ID: 14989
+// Function ID: 112890
 // Dependencies: []
 
-// Module 14986
+// Module 14989
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -11,7 +11,7 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[6]).modules.mobile.YOU_BAR_BORDER_RADIUS };
+obj = { "Null": 7, "Null": 370, borderRadius: importDefault(dependencyMap[6]).modules.mobile.YOU_BAR_BORDER_RADIUS };
 obj.youButton = obj;
 obj.userText = {};
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.round, height: 16, width: 80 };

@@ -1,9 +1,9 @@
-// Module ID: 6876
-// Function ID: 54482
+// Module ID: 6877
+// Function ID: 54494
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6876 (_isNativeReflectConstruct)
+// Module 6877 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,7 +25,7 @@ function handleReset() {
   if (flag === undefined) {
     flag = false;
   }
-  obj = { notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set() };
+  obj = { d: false, ty: false, d: false, s: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set() };
   if (flag) {
     let prop = obj.notifCenterLocalItems;
   } else {
@@ -220,7 +220,7 @@ let closure_10 = importDefault(dependencyMap[7]);
 let closure_11 = importDefault(dependencyMap[8]);
 let closure_12 = importDefault(dependencyMap[9]);
 const RelationshipTypes = arg1(dependencyMap[10]).RelationshipTypes;
-let obj = { notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: undefined, notifCenterActive: false, notifCenterTabFocused: false };
+let obj = { d: false, ty: false, d: false, s: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: undefined, notifCenterActive: false, notifCenterTabFocused: false };
 let tmp3 = (PersistedStore) => {
   class NotificationCenterItemsStore {
     constructor() {

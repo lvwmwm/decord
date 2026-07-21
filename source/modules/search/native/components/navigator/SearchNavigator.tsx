@@ -1,25 +1,25 @@
-// Module ID: 15420
-// Function ID: 117670
+// Module ID: 15423
+// Function ID: 117709
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15420
-import importAllResult from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { SearchEntrypointAnalyticsLocations as closure_5 } from "__exportStarResult1";
-import { SearchNavigatorScreens } from "__exportStarResult1";
-import { SearchTypes } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15423
+import importAllResult from "result";
+import { View } from "result";
+import { SearchEntrypointAnalyticsLocations as closure_5 } from "result";
+import { SearchNavigatorScreens } from "result";
+import { SearchTypes } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_8, jsxs: closure_9 } = __exportStarResult1);
+({ jsx: closure_8, jsxs: closure_9 } = result);
 let obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-let closure_10 = __exportStarResult1.createStyles(obj);
-__exportStarResult1 = __exportStarResult1.createNativeStackNavigator();
-const result = __exportStarResult1.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigator.tsx");
+let closure_10 = result.createStyles(obj);
+result = result.createNativeStackNavigator();
+result = result.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigator.tsx");
 
 export default importAllResult.memo((route) => {
   const searchContext = route.route.params.searchContext;
@@ -49,15 +49,15 @@ export default importAllResult.memo((route) => {
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj.screenOptions = {};
   const items2 = [
-    callback(__exportStarResult1.Screen, {
+    callback(result.Screen, {
       initialParams: { searchContext },
       name: SearchNavigatorScreens.SEARCH_TABS,
-      options: { 0: null, -9223372036854775808: null },
+      options: {},
       getComponent() {
         return searchContext(closure_2[12]).default;
       }
     }),
-    callback(__exportStarResult1.Screen, {
+    callback(result.Screen, {
       name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
       options(route) {
         const searchContext = route.route;
@@ -78,6 +78,6 @@ export default importAllResult.memo((route) => {
     })
   ];
   obj.children = items2;
-  obj.children = callback2(__exportStarResult1.Navigator, obj);
+  obj.children = callback2(result.Navigator, obj);
   return callback(View, obj);
 });

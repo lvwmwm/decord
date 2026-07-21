@@ -1,9 +1,9 @@
-// Module ID: 13634
-// Function ID: 103304
+// Module ID: 13636
+// Function ID: 103326
 // Name: toggle
 // Dependencies: []
 
-// Module 13634 (toggle)
+// Module 13636 (toggle)
 let closure_3 = importDefault(dependencyMap[0]);
 const Consents = arg1(dependencyMap[2]).Consents;
 let obj = arg1(dependencyMap[10]);

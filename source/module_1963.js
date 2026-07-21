@@ -1,8 +1,9 @@
 // Module ID: 1963
-// Function ID: 21912
+// Function ID: 21917
 // Dependencies: []
 
 // Module 1963
 const _module = require(dependencyMap[0]);
+const obj = { runOnJS: null, format: null, View: null, accessibilityRole: null, surrogates: null, url: null, scales: [null] };
 
-export default _module.registerAsset({ scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] });
+export default _module.registerAsset(obj);

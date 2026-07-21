@@ -1,10 +1,10 @@
-// Module ID: 15835
-// Function ID: 121036
+// Module ID: 15839
+// Function ID: 121080
 // Name: trackCaptchaEvent
 // Dependencies: []
 // Exports: InlineHcaptcha
 
-// Module 15835 (trackCaptchaEvent)
+// Module 15839 (trackCaptchaEvent)
 let NativeEventEmitter;
 function trackCaptchaEvent(captcha_event_name, captcha_flow_key, sitekey, captcha_service) {
   let obj = importDefault(dependencyMap[6]);
@@ -111,7 +111,7 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
   siteKey = siteKey.siteKey;
   const arg1 = siteKey;
   ({ onVerify: closure_1, onError: closure_2 } = siteKey);
-  let obj = { "Null": "spring", "Null": "linear", "Null": "easeInEaseOut" };
+  let obj = { title: false, headerLeft: false, headerRight: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(siteKey, obj);
   const items = [closure_5];

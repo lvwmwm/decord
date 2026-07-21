@@ -1,5 +1,5 @@
 // Module ID: 1550
-// Function ID: 17575
+// Function ID: 17580
 // Name: useScrollToTop
 // Dependencies: []
 // Exports: default
@@ -47,11 +47,11 @@ export default function useScrollToTop(ref) {
               if ("scrollToTop" in null) {
                 null.scrollToTop();
               } else if ("scrollTo" in null) {
-                null.scrollTo({ -437190652: "isArray", -434503676: "isArray" });
+                null.scrollTo({ "Bool(false)": "info", "Bool(false)": "/" });
               } else if ("scrollToOffset" in null) {
-                null.scrollToOffset({ -437125116: "isArray", -435748860: "isArray" });
+                null.scrollToOffset({ "Null": "info", "Null": "/" });
               } else if ("scrollResponderScrollTo" in null) {
-                const result = null.scrollResponderScrollTo({ -437190652: "isArray", -434503676: "isArray" });
+                const result = null.scrollResponderScrollTo({ "Bool(false)": "info", "Bool(false)": "/" });
               }
             }
           } else {

@@ -1,5 +1,5 @@
 // Module ID: 4151
-// Function ID: 35094
+// Function ID: 35102
 // Name: items3
 // Dependencies: []
 // Exports: getAppIntentScheme
@@ -11,7 +11,7 @@ const items1 = ["1247266306231898122", "1257458870390099989", "12762390717646809
 let obj = { UNLOCKED: 1, [1]: "UNLOCKED", PORTRAIT: 2, [2]: "PORTRAIT", LANDSCAPE: 3, [3]: "LANDSCAPE" };
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
 obj = { label_type: require(dependencyMap[1]).EmbeddedActivityLabelTypes.NONE, omit_badge_from_surfaces: [] };
-obj = { <string:1384648778>: 0.12841855, -967727069: 0.008856452, -1594138107: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011104589879530045 };
+obj = { lj: true, withTiming: true, application: true };
 ({ UNLOCKED: obj3.default_orientation_lock_state, UNLOCKED: obj3.tablet_default_orientation_lock_state } = obj);
 const items3 = [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.WEB];
 obj.supported_platforms = items3;

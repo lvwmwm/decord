@@ -1,10 +1,10 @@
-// Module ID: 7651
-// Function ID: 61196
+// Module ID: 7652
+// Function ID: 61208
 // Name: canReactToMessageInternal
 // Dependencies: []
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7651 (canReactToMessageInternal)
+// Module 7652 (canReactToMessageInternal)
 function canReactToMessageInternal(state, getGuildId, items) {
   let obj;
   let obj2;

@@ -1,5 +1,5 @@
 // Module ID: 1323
-// Function ID: 15537
+// Function ID: 15542
 // Name: isPerModeThemingActive
 // Dependencies: []
 // Exports: isPerModeThemingActive

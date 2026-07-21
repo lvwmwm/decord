@@ -1,5 +1,5 @@
 // Module ID: 9401
-// Function ID: 73243
+// Function ID: 73254
 // Name: NatureIcon
 // Dependencies: []
 // Exports: NatureIcon

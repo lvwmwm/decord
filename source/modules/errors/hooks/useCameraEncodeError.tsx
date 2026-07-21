@@ -1,10 +1,10 @@
-// Module ID: 15691
-// Function ID: 119939
+// Module ID: 15694
+// Function ID: 119978
 // Name: useCameraEncodeError
 // Dependencies: []
 // Exports: default
 
-// Module 15691 (useCameraEncodeError)
+// Module 15694 (useCameraEncodeError)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");

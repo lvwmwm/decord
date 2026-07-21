@@ -1,5 +1,5 @@
 // Module ID: 1039
-// Function ID: 11178
+// Function ID: 11182
 // Name: getAbsoluteTime
 // Dependencies: []
 // Exports: resourceTimingToSpanAttributes

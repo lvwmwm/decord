@@ -1,5 +1,5 @@
 // Module ID: 10358
-// Function ID: 79930
+// Function ID: 79941
 // Name: AnnouncementChannelLurkerBar
 // Dependencies: []
 
@@ -37,7 +37,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.wrapper = obj;
-obj.text = { collapsable: "absolute", preventClipping: 0 };
+obj.text = {};
 let closure_5 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");

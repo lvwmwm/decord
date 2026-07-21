@@ -1,5 +1,5 @@
 // Module ID: 5512
-// Function ID: 46917
+// Function ID: 46925
 // Name: ChevronSmallRightIcon
 // Dependencies: []
 // Exports: ChevronSmallRightIcon

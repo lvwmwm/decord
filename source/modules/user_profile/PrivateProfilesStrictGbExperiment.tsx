@@ -1,13 +1,12 @@
 // Module ID: 11995
-// Function ID: 92674
+// Function ID: 92686
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsInPrivateProfilesStrictGbExperiment, useIsInPrivateProfilesStrictGbExperiment
 
 // Module 11995 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: "<string:2691872725>", 0: "<string:1778384896>", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/user_profile/PrivateProfilesStrictGbExperiment.tsx");
 

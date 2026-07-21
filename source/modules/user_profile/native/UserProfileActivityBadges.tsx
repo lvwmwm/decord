@@ -1,5 +1,5 @@
 // Module ID: 11913
-// Function ID: 92204
+// Function ID: 92216
 // Name: TimestampBadge
 // Dependencies: []
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
@@ -83,7 +83,7 @@ export const PartyBadge = function PartyBadge(activity) {
         let obj = { style: tmp.container };
         obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
         const items = [callback(arg1(dependencyMap[16]).GroupIcon, obj), ];
-        obj = { children: richGameStateBadgeText };
+        obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: richGameStateBadgeText };
         items[1] = callback(arg1(dependencyMap[17]).Text, obj);
         obj.children = items;
         tmp9 = callback2(View, obj);
@@ -106,7 +106,7 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
     obj = { style: tmp.container };
     obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
     const items = [callback(arg1(dependencyMap[18]).TopicsIcon, obj), ];
-    const obj1 = { children: episodeBadgeText };
+    const obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: episodeBadgeText };
     items[1] = callback(arg1(dependencyMap[17]).Text, obj1);
     obj.children = items;
     tmp4 = callback2(View, obj);

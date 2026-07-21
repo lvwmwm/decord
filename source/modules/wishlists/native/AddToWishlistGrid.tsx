@@ -1,5 +1,5 @@
 // Module ID: 12015
-// Function ID: 92840
+// Function ID: 92852
 // Name: AddToWishlistGrid
 // Dependencies: []
 // Exports: default
@@ -8,9 +8,8 @@
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { "Bool(false)": true, "Bool(false)": "/assets/modules/instant_invite/native/images", "Bool(false)": 160.5, "Bool(false)": 140, gap: arg1(dependencyMap[2]).WISHLIST_SUGGESTION_CARD_GAP };
-let closure_5 = obj.createStyles({ itemsContainer: obj });
+let closure_5 = arg1(dependencyMap[4]).createStyles({ itemsContainer: { gap: arg1(dependencyMap[2]).WISHLIST_SUGGESTION_CARD_GAP } });
+const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/wishlists/native/AddToWishlistGrid.tsx");
 
 export default function AddToWishlistGrid(arg0) {

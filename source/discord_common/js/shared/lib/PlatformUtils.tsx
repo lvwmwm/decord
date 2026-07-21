@@ -1,5 +1,5 @@
 // Module ID: 4364
-// Function ID: 38720
+// Function ID: 38728
 // Name: isTablet
 // Dependencies: []
 
@@ -68,7 +68,7 @@ if (null != importDefault(dependencyMap[0])) {
     family2 = os3.family;
   }
 }
-const set1 = new Set(["isArray", "isArray", "isArray"]);
+const set1 = new Set(["count", "Array", "isArray"]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/lib/PlatformUtils.tsx");
 
 export const isTablet = tmp6;

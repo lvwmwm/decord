@@ -1,10 +1,10 @@
-// Module ID: 14336
-// Function ID: 108250
+// Module ID: 14339
+// Function ID: 108282
 // Name: SampleCard
 // Dependencies: []
 // Exports: default
 
-// Module 14336 (SampleCard)
+// Module 14339 (SampleCard)
 function SampleCard(arg0) {
   let children;
   let noScroll;
@@ -27,11 +27,11 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { start: null, length: "166185917b52ede00e3e20d3f1f7faeb", body: "CheckmarkSmallIcon" }, card: { gap: 12 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, card: { gap: 12 } });
 const items = [arg1(dependencyMap[4]).AvatarSizes.XSMALL, arg1(dependencyMap[4]).AvatarSizes.REFRESH_MEDIUM_32, arg1(dependencyMap[4]).AvatarSizes.NORMAL, arg1(dependencyMap[4]).AvatarSizes.LARGE_48, arg1(dependencyMap[4]).AvatarSizes.XLARGE];
 const items1 = [arg1(dependencyMap[5]).GuildIconSizes.XSMALL, arg1(dependencyMap[5]).GuildIconSizes.SMALL_32, arg1(dependencyMap[5]).GuildIconSizes.NORMAL, arg1(dependencyMap[5]).GuildIconSizes.LARGE, arg1(dependencyMap[5]).GuildIconSizes.XLARGE];
-let closure_10 = [];
-let closure_11 = [1407713282, -1371209725, -1325399225, -1308622179, 419431069, -16776365];
+let closure_10 = [225579656, 873073126, 241766718];
+let closure_11 = ["Array", "getIndexingErrorText", "a", "MESSAGE_ACTIONS_MENU", "order", "generateNonce"];
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemPile.tsx");
 
@@ -42,7 +42,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: children(closure_2[10]).DEFAULT_AVATARS.length };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -57,7 +57,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile (with overflow)",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: 9500 };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -71,7 +71,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Pile (with overflow)",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: closure_10, totalCount: 9500 };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -85,7 +85,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: arr.slice(0, 2) };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -100,7 +100,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(children(closure_2[8]).Text, obj), ];
       obj = { size: children, names: arr.slice(0, 2) };
       const DEFAULT_AVATARS = children(closure_2[10]).DEFAULT_AVATARS;
@@ -115,7 +115,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile (different sizes)",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(callback(closure_2[8]).Text, obj), ];
       obj = {};
       const items1 = [children, callback(closure_2[4]).AvatarSizes.NORMAL];
@@ -135,7 +135,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Avatar Duo Pile (different sizes)",
     children: items.map((children) => {
       let obj = {};
-      obj = { children };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children };
       const items = [callback2(callback(closure_2[8]).Text, obj), ];
       obj = {};
       const items1 = [children, callback(closure_2[4]).AvatarSizes.NORMAL];
@@ -155,7 +155,7 @@ export default function UserSettingsDesignSystemPile() {
     title: "Guild Icon Pile (with overflow)",
     children: items1.map((size) => {
       let obj = {};
-      obj = { children: size.toLowerCase() };
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: size.toLowerCase() };
       const items = [callback2(size(closure_2[8]).Text, obj), ];
       obj = { size, names: closure_11, totalCount: 128, children: closure_11.map((value) => callback2(callback(closure_2[5]), { value, size: value }, arg1)) };
       items[1] = callback2(size(closure_2[12]).GuildIconPile, obj);
@@ -163,21 +163,22 @@ export default function UserSettingsDesignSystemPile() {
       return callback3(size(closure_2[6]).Stack, obj, size);
     })
   });
-  const obj5 = { user: 30653696, body: 1628651776 };
-  const items1 = [callback2(arg1(dependencyMap[8]).Text, { children: [] }), ];
-  const items2 = [[], [242.896, 0], ["APP_STATE_UPDATE", "CLEAR_CACHES"], [], ["width", "height"], ["originY", "preloadAllIntlMessageFiles"], []];
+  const obj5 = { 9223372036854775807: "r", 0: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD" };
+  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: [null, null, null] };
+  const items1 = [callback2(arg1(dependencyMap[8]).Text, obj6), ];
+  const items2 = [[], [242.896, 0], [], [], [null, null], ["GroupPlusIcon", "afterMs"], ["<string:53040003>", "<string:806589490>"]];
   items1[1] = items2.map((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
     let obj = {};
-    obj = {};
+    obj = { hasMaxConnections: true, isBoostOnlySubscription: "md" };
     let str = "null";
     let str2 = "null";
     if (null != tmp) {
       str2 = tmp;
     }
-    const items = [, str2, ", depthY="];
+    const items = [true, str2, ", depthY="];
     if (null != tmp2) {
       str = tmp2;
     }

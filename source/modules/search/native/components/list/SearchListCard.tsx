@@ -1,10 +1,10 @@
-// Module ID: 15234
-// Function ID: 115012
+// Module ID: 15237
+// Function ID: 115046
 // Name: SearchListContentAuthor
 // Dependencies: []
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15234 (SearchListContentAuthor)
+// Module 15237 (SearchListContentAuthor)
 class SearchListContentAuthor {
   constructor(arg0) {
     author = global.author;
@@ -16,7 +16,7 @@ class SearchListContentAuthor {
     obj.avatarDecoration = author.avatarDecoration;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Avatar, obj);
-    obj1 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum" };
+    obj1 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum" };
     obj1.style = tmp.authorName;
     obj4 = importDefault(dependencyMap[7]);
     obj1.children = obj4.getName(author);
@@ -35,14 +35,14 @@ function SearchListPrivateChannel(channel) {
     obj = { channel, size: arg1(dependencyMap[5]).AvatarSizes.SIZE_16 };
     obj.children = callback(importDefault(dependencyMap[9]), obj);
     const items = [callback(View, obj), ];
-    const obj1 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum", style: tmp.channelName, children: tmp2 };
+    const obj1 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum", style: tmp.channelName, children: tmp2 };
     items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
     obj.children = items;
     let tmp3Result = tmp3(tmp4, obj);
     const tmp15 = importDefault(dependencyMap[9]);
   } else {
     obj.style = tmp.privateChannelIcon;
-    const obj2 = { style: tmp.icon };
+    const obj2 = { Gateway: "lag", communicationDisabledUntilTimestamp: "isArrayBuffer", withMutualGuilds: "<string:2631618816>", style: tmp.icon };
     const items1 = [callback(arg1(dependencyMap[10]).ForumIcon, obj2), ];
     const obj3 = {};
     const intl = arg1(dependencyMap[11]).intl;
@@ -67,7 +67,7 @@ class SearchListGuildChannel {
     obj1.color = tmp.channelIcon.color;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Icon, obj1);
-    obj2 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum" };
+    obj2 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", "Null": "enum" };
     obj2.style = tmp.channelName;
     obj2.children = tmp2;
     items[1] = jsx(arg1(dependencyMap[6]).Text, obj2);
@@ -79,20 +79,20 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { channelName: { 112697466: false, -352602269: false } };
+obj = { channelName: { subscriptionHasPremiumGuildPlan: null, COUNT_INITIAL_DISPATCHS_LENGTH: null } };
 obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelIcon = obj;
 obj.avatar = { marginRight: 2 };
-obj.channel = {};
-obj.author = {};
-obj.authorName = {};
+obj.channel = { "Null": 7, "Null": 370 };
+obj.author = { "Null": 7, "Null": 370 };
+obj.authorName = { subscriptionHasPremiumGuildPlan: null, COUNT_INITIAL_DISPATCHS_LENGTH: null };
 const tmp2 = arg1(dependencyMap[2]);
 obj.container = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.content = { "Bool(false)": "_handleGuildMembersChunkBatch", "Bool(false)": "<string:3664531712>", "Bool(false)": "<string:44579138>" };
+obj.content = { length: "row", w: "center", length: 16 };
 obj.footer = {};
-const obj2 = { 9223372036854775807: 10, 9223372036854775807: 10, borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+const obj2 = { Č: 10, accessibilityDismiss: 10, borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.thumbnail = obj2;
-obj.privateChannelIcon = {};
+obj.privateChannelIcon = { "Null": 7, "Null": 370 };
 obj.icon = { marginRight: 4 };
 obj.gdmIcon = { width: 18 };
 let closure_7 = obj.createStyles(obj);
@@ -125,7 +125,7 @@ export const SearchListCardContent = function SearchListCardContent(arg0) {
   const items = [tmp3, ];
   let tmp7 = subLabel;
   if ("string" === typeof subLabel) {
-    obj = { -9223372036854775808: "Text", 0: "jsx", 0: "parent", children: subLabel };
+    obj = { <string:1643205302>: "editingMessageId", <string:1415816450>: "turquoise", <string:4283523744>: "hermesProfile", children: subLabel };
     tmp7 = callback(arg1(dependencyMap[6]).Text, obj);
   }
   items[1] = tmp7;

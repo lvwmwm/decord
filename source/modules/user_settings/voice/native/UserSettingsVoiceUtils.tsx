@@ -1,5 +1,5 @@
 // Module ID: 10712
-// Function ID: 83371
+// Function ID: 83382
 // Name: getSelectedNoiseSuppressionOption
 // Dependencies: []
 // Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption

@@ -1,10 +1,10 @@
-// Module ID: 15447
-// Function ID: 117820
+// Module ID: 15450
+// Function ID: 117859
 // Name: PendingSpamMessageRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 15447 (PendingSpamMessageRequestRow)
+// Module 15450 (PendingSpamMessageRequestRow)
 function PendingSpamMessageRequestRow(isLastRow) {
   let hasSingleMessageRequest;
   let isAcceptLoading;
@@ -149,7 +149,7 @@ function PendingSpamMessageRequestRow(isLastRow) {
         const items5 = [handleAcceptMessageRequest(closure_5, obj3), ];
         let tmp29 = null;
         if (!isLastRow.isLastRow) {
-          tmp29 = handleRejectMessageRequest(arg1(dependencyMap[19]).FormDivider, { ref: null, onChange: null });
+          tmp29 = handleRejectMessageRequest(arg1(dependencyMap[19]).FormDivider, { justifyContent: null, alignItems: null });
         }
         items5[1] = tmp29;
         obj.children = items5;
@@ -169,10 +169,10 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.sectionContainer = obj;
 obj.rowContainer = {};
-obj.actionContainer = {};
+obj.actionContainer = { width: "k", resizeMode: "r", paddingRight: "isArray" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.actionButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.acceptButton = { marginRight: 16 };
@@ -210,7 +210,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj.bodyText = intl.string(arg1(closure_2[6]).t.hasFPQ);
     return callback(importDefault(closure_2[27]), obj);
   } else {
-    const items = ["y"];
+    const items = ["<string:4166254596>"];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -231,7 +231,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
       const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = {};
+        obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
         const intl = goToMessageRequestPreview(closure_2[6]).intl;
         obj = { count: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj);

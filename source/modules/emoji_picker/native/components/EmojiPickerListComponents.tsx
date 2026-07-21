@@ -1,9 +1,9 @@
 // Module ID: 9355
-// Function ID: 73011
-// Name: LABEL_TOP_PADDING
+// Function ID: 73022
+// Name: NSFW_ROW_HEIGHT
 // Dependencies: []
 
-// Module 9355 (LABEL_TOP_PADDING)
+// Module 9355 (NSFW_ROW_HEIGHT)
 let LABEL_BOTTOM_PADDING;
 let LABEL_TOP_PADDING;
 let NSFW_ROW_HEIGHT;
@@ -14,11 +14,11 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { psnrHistogram: "a364dc7a784101f7c8f6791c7b4514ce", articleLink: "back-icon", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
 obj.section = obj;
-obj1 = { height: NSFW_ROW_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };
+obj1 = { 9223372036854775807: "git", 0: "git+https://github.com/mrousavy/nitro.git", 9223372036854775807: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", 9223372036854775807: "bun run write-native-version", 0: "rm -rf lib && bun typecheck && bob build", 9223372036854775807: "tsc --noEmit", 9223372036854775807: "eslint \"**/*.{js,ts,tsx}\" --fix", height: NSFW_ROW_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };
 obj.nsfwContainer = obj1;
-obj.nsfwText = {};
+obj.nsfwText = { paddingHorizontal: null, paddingVertical: 1 };
 let closure_6 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(() => {
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = { style: tmp.nsfwContainer };
   obj = { source: importDefault(dependencyMap[7]), size: arg1(dependencyMap[6]).Icon.Sizes.SMALL };
   const items = [callback(arg1(dependencyMap[6]).Icon, obj), ];
-  obj = { style: tmp.nsfwText };
+  obj = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001191393554252316, dispatch: 557056.0015292466, raw: 1112527108802911800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.nsfwText };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.SLzV5z);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);

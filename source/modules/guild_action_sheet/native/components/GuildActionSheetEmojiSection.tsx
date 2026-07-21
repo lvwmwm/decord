@@ -1,10 +1,10 @@
-// Module ID: 12861
-// Function ID: 98289
+// Module ID: 12863
+// Function ID: 98311
 // Name: GuildActionSheetEmojiSection
 // Dependencies: []
 // Exports: default
 
-// Module 12861 (GuildActionSheetEmojiSection)
+// Module 12863 (GuildActionSheetEmojiSection)
 let Fonts;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -16,17 +16,17 @@ let closure_8 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { header: {} };
+obj = { header: { <string:3635438572>: null, <string:1408024149>: null, <string:1708473420>: null } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
 obj.dotSeparator = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.premiumTitle = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, marginLeft: 4, fontFamily: Fonts.PRIMARY_BOLD, fontSize: 12 };
 obj.emojiContainer = {};
-obj.emoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
-const obj2 = { <string:3798200520>: null, <string:391272364>: "\u{1F449}\u{1F3FE}", <string:1726450124>: true, <string:478287371>: null, <string:2120507470>: 8, color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_BOLD };
-obj.emojiCount = obj2;
-let closure_13 = obj.createStyles(obj);
+obj.emoji = {};
 const obj1 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, marginLeft: 4, fontFamily: Fonts.PRIMARY_BOLD, fontSize: 12 };
+obj.emojiCount = { color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_BOLD };
+let closure_13 = obj.createStyles(obj);
+const obj2 = { color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_BOLD };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetEmojiSection.tsx");
 
 export default function GuildActionSheetEmojiSection(guildId) {

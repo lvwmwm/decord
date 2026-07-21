@@ -1,12 +1,12 @@
-// Module ID: 12363
-// Function ID: 94548
+// Module ID: 12365
+// Function ID: 94570
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getMobileBoostingEnabled, getShouldRemoveYearlyUpsell
 
-// Module 12363 (apexExperiment)
+// Module 12365 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: null, 0: null, defaultConfig: { 9223372036854775807: null, 0: null }, variations: { [0]: { 9223372036854775807: null, 0: null }, [1]: { 9223372036854775807: true, 0: true }, [2]: { 9223372036854775807: null, 0: null } } };
+const obj = { 844175713: null, 1387159956: null, defaultConfig: { PREDICATE_FAILED: null, getEmbeddedActivityLaunchability: null }, variations: { [0]: { PREDICATE_FAILED: null, getEmbeddedActivityLaunchability: null }, [1]: { PREDICATE_FAILED: null, getEmbeddedActivityLaunchability: null }, [2]: { PREDICATE_FAILED: null, getEmbeddedActivityLaunchability: null } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/MobileBoostingExperiment.tsx");

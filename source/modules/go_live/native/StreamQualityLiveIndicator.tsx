@@ -1,5 +1,5 @@
 // Module ID: 10576
-// Function ID: 82542
+// Function ID: 82553
 // Name: StreamQualityLiveIndicator
 // Dependencies: []
 // Exports: default
@@ -14,15 +14,15 @@ const ResolutionTypes = arg1(dependencyMap[5]).ResolutionTypes;
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { liveIndicator: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+obj = { liveIndicator: { width: null, resizeMode: null, paddingRight: null } };
 obj = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.none, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.none, height: 18, textAlign: "center" };
 obj.liveTag = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.qualityTag = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
-obj.qualityTagText = {};
+obj.qualityTagText = { minWidth: false, maxWidth: false, flexShrink: false };
 const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
 obj.reducedQualityTagText = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
-obj.nitroWheel = {};
+obj.nitroWheel = { marginHorizontal: null, borderRadius: null };
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { code: "function StreamQualityLiveIndicatorTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
 const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };

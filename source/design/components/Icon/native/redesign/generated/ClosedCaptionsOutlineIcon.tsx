@@ -1,10 +1,10 @@
-// Module ID: 13794
-// Function ID: 104381
+// Module ID: 13796
+// Function ID: 104403
 // Name: ClosedCaptionsOutlineIcon
 // Dependencies: []
 // Exports: ClosedCaptionsOutlineIcon
 
-// Module 13794 (ClosedCaptionsOutlineIcon)
+// Module 13796 (ClosedCaptionsOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClosedCaptionsOutlineIcon.tsx");

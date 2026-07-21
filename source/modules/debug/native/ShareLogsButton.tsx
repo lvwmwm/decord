@@ -1,8 +1,8 @@
-// Module ID: 14271
-// Function ID: 107832
+// Module ID: 14274
+// Function ID: 107864
 // Dependencies: []
 
-// Module 14271
+// Module 14274
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 const memoResult = importAll(dependencyMap[0]).memo(function ShareLogsButton() {

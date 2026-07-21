@@ -1,10 +1,10 @@
-// Module ID: 15333
-// Function ID: 116743
+// Module ID: 15336
+// Function ID: 116782
 // Name: UsernameSearchScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15333 (UsernameSearchScreen)
+// Module 15336 (UsernameSearchScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -21,7 +21,7 @@ const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.
 obj.iosPaddingThemeAdjust = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 const obj2 = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 obj.container = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-const obj4 = { "Null": "maestro", "Null": "<string:706757137>", "Null": "<string:706740225>", marginTop: importDefault(dependencyMap[5]).space.PX_16 };
+const obj4 = { "Bool(true)": 631504900, "Bool(true)": -991821820, "Bool(true)": -760741887, marginTop: importDefault(dependencyMap[5]).space.PX_16 };
 obj.inputContainer = obj4;
 obj.headerText = { textTransform: "none" };
 let closure_10 = obj.createStyles(obj);
@@ -71,7 +71,7 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: items1 };
   const items1 = [tmp.content, clientThemesOverride];
   const items2 = [callback(importDefault(dependencyMap[12]), { absolute: true }), ];
-  obj1 = { "Bool(false)": "NOT_RESPONDER", "Bool(false)": "RESPONDER_INACTIVE_PRESS_IN" };
+  obj1 = { useIsMobileGameCollectionExperimentEnabled: true, openSafetyFlow: true };
   const items3 = [tmp.container, prop, ];
   const tmp7 = importDefault(dependencyMap[11]);
   items3[2] = { paddingBottom: insets.bottom + importDefault(dependencyMap[5]).space.PX_16 };

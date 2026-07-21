@@ -1,10 +1,10 @@
-// Module ID: 5393
-// Function ID: 45989
+// Module ID: 5392
+// Function ID: 45996
 // Name: TableRowDivider
 // Dependencies: []
 // Exports: TableRowDivider
 
-// Module 5393 (TableRowDivider)
+// Module 5392 (TableRowDivider)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const getTableDividerWidth = arg1(dependencyMap[2]).getTableDividerWidth;

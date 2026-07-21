@@ -1,5 +1,5 @@
 // Module ID: 10723
-// Function ID: 83409
+// Function ID: 83420
 // Name: VoicePanelRiveMicButton
 // Dependencies: []
 // Exports: VoicePanelRiveMicButton
@@ -14,7 +14,7 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   let color;
   let muted;
   ({ color, muted } = arg0);
-  let obj = { style: { areRequestOptionsEqual: 24, SMS_CODE_LENGTH: 24, getMaxListeners: null } };
+  let obj = { style: {} };
   obj = { dataBinding: obj };
   obj = { fill: color, on: !muted };
   let str = "On";

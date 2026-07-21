@@ -1,5 +1,5 @@
 // Module ID: 3711
-// Function ID: 28421
+// Function ID: 28426
 // Name: n
 // Dependencies: []
 
@@ -141,7 +141,7 @@ const fn = function n(moment) {
   }
   const parts = "leden_\u00FAnor_b\u0159ezen_duben_kv\u011Bten_\u010Derven_\u010Dervenec_srpen_z\u00E1\u0159\u00ED_\u0159\u00EDjen_listopad_prosinec".split("_");
   const parts1 = "led_\u00FAno_b\u0159e_dub_kv\u011B_\u010Dvn_\u010Dvc_srp_z\u00E1\u0159_\u0159\u00EDj_lis_pro".split("_");
-  const obj = { months: parts, monthsShort: parts1 };
+  let obj = { months: parts, monthsShort: parts1 };
   const items = [];
   let num = 0;
   do {
@@ -184,8 +184,14 @@ const fn = function n(moment) {
   obj.weekdays = "ned\u011Ble_pond\u011Bl\u00ED_\u00FAter\u00FD_st\u0159eda_\u010Dtvrtek_p\u00E1tek_sobota".split("_");
   obj.weekdaysShort = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
   obj.weekdaysMin = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
-  obj.longDateFormat = {};
-  obj.calendar = {
+  obj.longDateFormat = { "Bool(true)": true, "Bool(true)": "Array", "Bool(true)": "4Z9Fbb", "Bool(true)": "Array", "Bool(true)": "alternate", "Bool(true)": "Array", "Bool(true)": "NATIVE_REQUIRED_ASSETS_ICONS" };
+  obj = {
+    intl: 1193934849,
+    flex: 234422273,
+    getChannel: 299892737,
+    PX_8: 299827201,
+    textAlign: -615448575,
+    unicodeVersion: 684444,
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -232,10 +238,12 @@ const fn = function n(moment) {
       }
     }
   };
-  obj.relativeTime = { s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  obj.calendar = obj;
+  obj = { 9223372036854775807: -3482416091957523000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017367305307133232, s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
+  obj.relativeTime = obj;
   obj.dayOfMonthOrdinalParse = /\d{1,2}\./;
   obj.ordinal = "%d.";
-  obj.week = { <string:1431496722>: false, <string:1627556098>: false };
+  obj.week = { "Bool(true)": null, "Bool(true)": null };
   return moment.defineLocale("cs", obj);
 };
 if ("object" === typeof exports) {

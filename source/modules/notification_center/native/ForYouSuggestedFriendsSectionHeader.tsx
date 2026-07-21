@@ -1,10 +1,10 @@
-// Module ID: 15039
-// Function ID: 113229
+// Module ID: 15042
+// Function ID: 113263
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 15039 (ForYouSuggestedFriendsSectionHeader)
+// Module 15042 (ForYouSuggestedFriendsSectionHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -28,7 +28,7 @@ export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
   }
   items[1] = noDivider;
   obj.style = items;
-  obj = { MAX_DICE_COUNT: true, onIndexChange: true, TEST_PSEUDOMAP: true, style: tmp.text };
+  obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.text };
   const intl = arg1(dependencyMap[6]).intl;
   obj.children = intl.string(arg1(dependencyMap[6]).t.1uAmCw);
   obj.children = jsx(arg1(dependencyMap[5]).Text, obj);

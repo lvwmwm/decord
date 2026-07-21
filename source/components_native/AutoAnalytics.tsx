@@ -1,35 +1,35 @@
-// Module ID: 15297
-// Function ID: 116340
+// Module ID: 15300
+// Function ID: 116374
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15297 (_isNativeReflectConstruct)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import closure_12 from "__exportStarResult1";
-import closure_13 from "__exportStarResult1";
-import closure_14 from "__exportStarResult1";
-import closure_15 from "__exportStarResult1";
-import closure_16 from "__exportStarResult1";
-import closure_17 from "__exportStarResult1";
-import closure_18 from "__exportStarResult1";
-import closure_19 from "__exportStarResult1";
-import closure_20 from "__exportStarResult1";
-import closure_21 from "__exportStarResult1";
-import closure_22 from "__exportStarResult1";
-import closure_23 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { isStaticChannelRoute } from "__exportStarResult1";
-import { PremiumTypes } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15300 (_isNativeReflectConstruct)
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import closure_8 from "result";
+import closure_9 from "result";
+import closure_10 from "result";
+import closure_12 from "result";
+import closure_13 from "result";
+import closure_14 from "result";
+import closure_15 from "result";
+import closure_16 from "result";
+import closure_17 from "result";
+import closure_18 from "result";
+import closure_19 from "result";
+import closure_20 from "result";
+import closure_21 from "result";
+import closure_22 from "result";
+import closure_23 from "result";
+import result from "result";
+import { isStaticChannelRoute } from "result";
+import { PremiumTypes } from "result";
+import { jsx } from "result";
+import result from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -41,7 +41,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 let closure_11 = importDefault(dependencyMap[9]);
-({ AnalyticEvents: closure_24, ActivityTypes: closure_25, GuildFeatures: closure_26 } = __exportStarResult1);
+({ AnalyticEvents: closure_24, ActivityTypes: closure_25, GuildFeatures: closure_26 } = result);
 let closure_30 = (PureComponent) => {
   class AutoAnalytics {
     constructor() {
@@ -367,8 +367,8 @@ let closure_30 = (PureComponent) => {
     }
   };
   return callback(AutoAnalytics, items);
-}(require("__exportStarResult1").PureComponent);
-const result = __exportStarResult1.fileFinishedImporting("components_native/AutoAnalytics.tsx");
+}(require("result").PureComponent);
+result = result.fileFinishedImporting("components_native/AutoAnalytics.tsx");
 
 export default function ConnectedAutoAnalytics() {
   let obj = arg1(dependencyMap[37]);

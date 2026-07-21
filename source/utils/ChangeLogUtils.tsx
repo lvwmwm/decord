@@ -1,10 +1,10 @@
-// Module ID: 7762
-// Function ID: 61636
+// Module ID: 7763
+// Function ID: 61648
 // Name: parseWithClassNameExtraction
 // Dependencies: []
 // Exports: renderChangelogMessageMarkup
 
-// Module 7762 (parseWithClassNameExtraction)
+// Module 7763 (parseWithClassNameExtraction)
 function parseWithClassNameExtraction(transformUpperCase) {
   let flag = transformUpperCase.transformUpperCase;
   if (flag === undefined) {
@@ -176,7 +176,7 @@ export default {
   }
 };
 export const renderChangelogMessageMarkup = function renderChangelogMessageMarkup(content, arg1, changeLog) {
-  let obj = { <string:2715181566>: null, <string:3898250591>: null };
+  let obj = { allowLinks: null, allowDevLinks: null };
   const obj2 = importDefault(dependencyMap[5]);
   if (null != changeLog) {
     obj = { changeLog };

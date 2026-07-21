@@ -1,5 +1,5 @@
 // Module ID: 8919
-// Function ID: 70364
+// Function ID: 70375
 // Name: validateDiscordTag
 // Dependencies: []
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag

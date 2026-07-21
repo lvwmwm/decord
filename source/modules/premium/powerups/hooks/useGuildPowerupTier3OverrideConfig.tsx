@@ -1,5 +1,5 @@
 // Module ID: 11578
-// Function ID: 89996
+// Function ID: 90008
 // Name: useGuildPowerupTier3OverrideConfig
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
     const intl = arg1(dependencyMap[3]).intl;
     obj.text = intl.string(importDefault(dependencyMap[4]).l9n4QZ);
   } else {
-    obj = { 0: null, 9223372036854775807: false };
+    obj = { left: "<string:3349217282>", top: "<string:160104449>" };
   }
   return obj;
 };

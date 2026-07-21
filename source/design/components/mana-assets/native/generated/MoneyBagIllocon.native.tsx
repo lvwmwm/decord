@@ -1,13 +1,14 @@
 // Module ID: 6297
-// Function ID: 50359
+// Function ID: 50367
 // Name: MoneyBagIllocon
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MoneyBagIllocon
 
 // Module 6297 (MoneyBagIllocon)
-import { jsx } from "__exportStarResult1";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MoneyBagIllocon.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MoneyBagIllocon.native.tsx");
 
 export const MoneyBagIllocon = function MoneyBagIllocon(size) {
   let accessibilityLabel;

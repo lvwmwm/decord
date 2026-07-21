@@ -1,5 +1,5 @@
 // Module ID: 10476
-// Function ID: 81156
+// Function ID: 81167
 // Name: leaveCurrentFrame
 // Dependencies: []
 // Exports: leaveCurrentFrame

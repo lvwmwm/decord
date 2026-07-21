@@ -1,5 +1,5 @@
 // Module ID: 8564
-// Function ID: 68051
+// Function ID: 68062
 // Name: Coachmark
 // Dependencies: []
 // Exports: CoachmarkContainer
@@ -356,7 +356,7 @@ function Cursor(arg0) {
   obj.children = items1;
   return callback4(closure_7, obj);
 }
-let closure_3 = ["GUILD_DELETE"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -380,24 +380,24 @@ const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
 obj.bodyBgColor = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.gradient = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
-const obj5 = { <string:1365418235>: false, <string:1398886034>: false, <string:3584858450>: false, padding: importDefault(dependencyMap[7]).space.PX_16 };
+const obj5 = { useTopCommands: "number", GameDiversityTier4SmallBadge: "number", analyticsData: "mY3Y38", padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.bodyContainer = obj5;
-obj.center = {};
+obj.center = { "Null": null, "Null": null };
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
 obj.buttonSpacing = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.text = {};
 obj.cursorContainer = {};
-const obj6 = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.cursorHead = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-const obj8 = { bhk: false, bic: false, backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj7 = { 2122157199: "LOGIN", -2108594079: true, 1371431202: "/assets/images", 1835117963: 498, 1633059665: 498, borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj.cursorHead = obj7;
+const obj8 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.cursorSpine = obj8;
 obj.image = {};
-const obj7 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj6 = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.bottomMargin = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const obj9 = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.closeButton = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 let closure_14 = obj1.createStyles(obj);
-let closure_15 = { -648468124: null, -1067341607: null, 74951703: null, 73901312: null, 74178560: null };
+let closure_15 = { flexDirection: null, marginLeft: null, gap: null, width: null, height: null };
 const obj10 = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 

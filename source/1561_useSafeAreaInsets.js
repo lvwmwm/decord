@@ -1,5 +1,5 @@
 // Module ID: 1561
-// Function ID: 17603
+// Function ID: 17608
 // Name: useSafeAreaInsets
 // Dependencies: []
 // Exports: SafeAreaListener, SafeAreaProvider, useSafeArea, useSafeAreaFrame, withSafeAreaInsets
@@ -64,7 +64,7 @@ export const SafeAreaProvider = function SafeAreaProvider(arg0) {
     context1 = frame;
   }
   if (null == context1) {
-    let obj = { max: -536870861, guildId: -299892737, width: store.get("window").width, height: store.get("window").height };
+    let obj = { width: store.get("window").width, height: store.get("window").height };
     context1 = obj;
   }
   const tmp12 = callback2(importAllResult.useState(context1), 2);

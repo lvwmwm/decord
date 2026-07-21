@@ -1,10 +1,10 @@
-// Module ID: 16009
-// Function ID: 122876
+// Module ID: 16013
+// Function ID: 122920
 // Name: NotificationReactivationActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16009 (NotificationReactivationActionSheet)
+// Module 16013 (NotificationReactivationActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const EventActionType = arg1(dependencyMap[2]).EventActionType;
@@ -47,7 +47,7 @@ export default function NotificationReactivationActionSheet(location) {
   obj = { style: tmp.container };
   obj = { style: tmp.image, source: importDefault(dependencyMap[11]), resizeMode: "contain" };
   const items2 = [callback(closure_5, obj), , , ];
-  const obj1 = { bottom: "faint", <string:51007960>: 16, <string:1650218083>: "none", style: tmp.title };
+  const obj1 = { "Bool(false)": "faint", "Bool(false)": 16, "Bool(false)": "none", style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   obj1.children = intl.string(arg1(dependencyMap[13]).t.a4bgO0);
   items2[1] = callback(arg1(dependencyMap[12]).Text, obj1);

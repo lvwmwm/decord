@@ -1,7 +1,7 @@
 // Module ID: 1915
-// Function ID: 21590
+// Function ID: 21595
 // Name: ImpersonateType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1915 (ImpersonateType)
 const _module = require(dependencyMap[0]);

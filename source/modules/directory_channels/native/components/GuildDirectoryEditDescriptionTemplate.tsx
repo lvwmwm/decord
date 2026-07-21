@@ -1,5 +1,5 @@
 // Module ID: 10038
-// Function ID: 77579
+// Function ID: 77590
 // Name: GuildDirectoryEditDescriptionTemplate
 // Dependencies: []
 // Exports: default

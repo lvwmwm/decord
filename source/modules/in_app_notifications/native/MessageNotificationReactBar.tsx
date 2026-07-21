@@ -1,5 +1,5 @@
 // Module ID: 10301
-// Function ID: 79509
+// Function ID: 79520
 // Name: MessageNotificationReactBar
 // Dependencies: []
 // Exports: MessageNotificationReactBar

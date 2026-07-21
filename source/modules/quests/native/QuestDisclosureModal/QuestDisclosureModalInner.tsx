@@ -1,10 +1,10 @@
-// Module ID: 13882
-// Function ID: 105003
+// Module ID: 13885
+// Function ID: 105035
 // Name: QuestDisclosureModalInner
 // Dependencies: []
 // Exports: default
 
-// Module 13882 (QuestDisclosureModalInner)
+// Module 13885 (QuestDisclosureModalInner)
 const View = require(dependencyMap[0]).View;
 const HelpdeskArticles = require(dependencyMap[1]).HelpdeskArticles;
 const _module = require(dependencyMap[2]);
@@ -17,10 +17,10 @@ obj.illustration = { alignSelf: "center", marginBottom: importDefault(dependency
 const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
 obj.closeButton = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
 obj.targetList = { padding: 0 };
-const obj2 = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
-obj.targetItem = { paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+const obj3 = { query: "center", type: "r", guildId: "isArray", paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+obj.targetItem = obj3;
 obj.lastTargetItem = { borderBottomWidth: 0 };
-const obj3 = { paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+const obj2 = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
 obj.disclosureText = { paddingVertical: importDefault(dependencyMap[4]).space.PX_12, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[18]);
@@ -108,7 +108,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   obj10.children = intl5.format(require(dependencyMap[7]).t.tzq9Wa, obj11);
   items2[3] = callback(require(dependencyMap[15]).TextWithIOSLinkWorkaround, obj10);
   const obj12 = { style: tmp.closeButton };
-  const obj13 = { "Null": "<string:1130823682>", "Null": "<string:3578855425>", "Null": "<string:815799>" };
+  const obj13 = { "Null": "Boolean", "Null": "isArray", "Null": "values" };
   const intl6 = require(dependencyMap[7]).intl;
   obj13.text = intl6.string(require(dependencyMap[7]).t.cpT0Cq);
   obj13.onPress = onClose;

@@ -1,10 +1,10 @@
-// Module ID: 14946
-// Function ID: 112492
+// Module ID: 14949
+// Function ID: 112526
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14946 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 14949 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,12 +16,12 @@ const tmp2 = arg1(dependencyMap[4]);
 let closure_12 = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { -1362229764: false, -349726597: false, 140694625: false, -433827239: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020304490458102812, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { <string:1641097624>: true, <string:1493721812>: true, <string:3169187154>: true, <string:381375725>: true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.videoContainer = { borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
-obj.info = { "Null": "center", "Null": "center" };
-obj.title = { "Null": null, "Null": "absolute" };
+obj.info = {};
+obj.title = {};
 obj.subtitle = {};
 obj.footer = { marginTop: 32 };
 obj.button = { marginBottom: 8 };
@@ -62,11 +62,11 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1.children = callback2(importDefault(closure_2[13]), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info };
-  const obj4 = { 0: 2673, 0: -2031795968, 0: -1184825342, style: tmp.title };
+  const obj4 = { flexShrink: 2673, flexGrow: -2028912384, zIndex: -1184825342, style: tmp.title };
   const intl2 = arg1(closure_2[12]).intl;
   obj4.children = intl2.string(arg1(closure_2[12]).t.gCgirr);
   const items3 = [callback2(arg1(closure_2[14]).Text, obj4), ];
-  const obj5 = { style: tmp.subtitle };
+  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.subtitle };
   const intl3 = arg1(closure_2[12]).intl;
   obj5.children = intl3.string(arg1(closure_2[12]).t.fLMZFw);
   items3[1] = callback2(arg1(closure_2[14]).Text, obj5);

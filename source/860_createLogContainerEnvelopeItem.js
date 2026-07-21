@@ -1,11 +1,11 @@
 // Module ID: 860
-// Function ID: 9621
+// Function ID: 9625
 // Name: createLogContainerEnvelopeItem
 // Dependencies: []
 
 // Module 860 (createLogContainerEnvelopeItem)
 function createLogContainerEnvelopeItem(items) {
-  const obj = { -9223372036854775808: true, 9223372036854775807: true, 9223372036854775807: true, item_count: items.length };
+  const obj = { -824876486: true, 509723217: true, 1627466321: true, item_count: items.length };
   items = [obj, { items }];
   return items;
 }

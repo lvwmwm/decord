@@ -1,10 +1,10 @@
-// Module ID: 14217
-// Function ID: 107485
+// Module ID: 14220
+// Function ID: 107517
 // Name: onServerTrendingNotificationSettingsChanged
 // Dependencies: []
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 14217 (onServerTrendingNotificationSettingsChanged)
+// Module 14220 (onServerTrendingNotificationSettingsChanged)
 let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[4]);

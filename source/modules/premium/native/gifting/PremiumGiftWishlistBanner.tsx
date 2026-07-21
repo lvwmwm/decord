@@ -1,5 +1,5 @@
 // Module ID: 9720
-// Function ID: 75544
+// Function ID: 75555
 // Name: PremiumGiftWishlistBanner
 // Dependencies: []
 // Exports: PremiumGiftWishlistBanner
@@ -147,7 +147,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
     obj = {};
     obj1 = { style: tmp9.title, variant: "text-lg/semibold", children: obj5.title };
     const items5 = [tmp9(arg1(dependencyMap[27]).Text, obj1), , ];
-    const obj2 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp9.subtitle, children: subtitle };
+    const obj2 = { style: tmp9.subtitle, children: subtitle };
     items5[1] = tmp9(arg1(dependencyMap[27]).Text, obj2);
     if (tmp10) {
       obj3 = { style: tmp9.placeholderRow };
@@ -156,7 +156,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       obj3.children = Array.from(obj4, (arg0, arg1) => tmp9(totalUnownedWishlistItemCount, { style: tmp9.placeholder }, arg1));
       let tmp19Result = tmp9(totalUnownedWishlistItemCount, obj3);
     } else {
-      obj5 = { snapToInterval: arg1(dependencyMap[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16 };
+      obj5 = { buttonBlur: "Array", alertWrapper: "isArray", FITNESS: "__d", EMPTY_MEDIA_RESULTS: "count", marginHorizontal: "type", receiveMessage: "a", snapToInterval: arg1(dependencyMap[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16 };
       const obj6 = { gap: PX_16, paddingHorizontal: PX_16, paddingVertical: importDefault(dependencyMap[9]).space.PX_8 };
       obj5.contentContainerStyle = obj6;
       const items6 = [

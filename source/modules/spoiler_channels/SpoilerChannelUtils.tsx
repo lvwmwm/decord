@@ -1,5 +1,5 @@
 // Module ID: 5719
-// Function ID: 49147
+// Function ID: 49155
 // Name: getSpoilerGatingChannelId
 // Dependencies: []
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId

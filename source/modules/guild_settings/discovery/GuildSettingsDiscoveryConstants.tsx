@@ -1,10 +1,10 @@
-// Module ID: 15078
-// Function ID: 113499
+// Module ID: 15081
+// Function ID: 113533
 // Name: GuildPrimaryCategory
 // Dependencies: []
 // Exports: calculateLocaleOptions
 
-// Module 15078 (GuildPrimaryCategory)
+// Module 15081 (GuildPrimaryCategory)
 const obj = { GENERAL_CHATTING: 14, [14]: "GENERAL_CHATTING", GAMING: 1, [1]: "GAMING", MUSIC: 2, [2]: "MUSIC", ENTERTAINMENT: 3, [3]: "ENTERTAINMENT", CREATIVE_ARTS: 4, [4]: "CREATIVE_ARTS", SCIENCE_AND_TECH: 5, [5]: "SCIENCE_AND_TECH", EDUCATION: 6, [6]: "EDUCATION", SPORTS: 7, [7]: "SPORTS", FASHION_AND_BEAUTY: 8, [8]: "FASHION_AND_BEAUTY", RELATIONSHIPS_AND_IDENTITY: 9, [9]: "RELATIONSHIPS_AND_IDENTITY", TRAVEL_AND_FOOD: 10, [10]: "TRAVEL_AND_FOOD", FITNESS_AND_HEALTH: 11, [11]: "FITNESS_AND_HEALTH", FINANCE: 12, [12]: "FINANCE", OTHER: 13, [13]: "OTHER", EMOJI: 43, [43]: "EMOJI", BOTS: 49, [49]: "BOTS" };
 const items = [
   () => {
@@ -610,7 +610,7 @@ const items15 = [
     return intl.string(require(dependencyMap[0]).t.QiafXT);
   }
 ];
-let closure_2 = [1929380417];
+let closure_2 = [null];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_settings/discovery/GuildSettingsDiscoveryConstants.tsx");
 

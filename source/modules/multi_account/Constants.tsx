@@ -1,7 +1,7 @@
 // Module ID: 11442
-// Function ID: 89101
+// Function ID: 89113
 // Name: MAX_ACCOUNTS
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11442 (MAX_ACCOUNTS)
 const _module = require(dependencyMap[0]);

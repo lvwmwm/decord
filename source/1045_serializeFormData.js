@@ -1,5 +1,5 @@
 // Module ID: 1045
-// Function ID: 11219
+// Function ID: 11223
 // Name: serializeFormData
 // Dependencies: []
 // Exports: getBodyString, getFetchRequestArgBody, parseXhrResponseHeaders

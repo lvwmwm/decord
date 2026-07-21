@@ -1,10 +1,10 @@
-// Module ID: 7656
-// Function ID: 61214
+// Module ID: 7657
+// Function ID: 61226
 // Name: hasReplyPermission
 // Dependencies: []
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 7656 (hasReplyPermission)
+// Module 7657 (hasReplyPermission)
 function hasReplyPermission(isPrivate, type, closure_3) {
   if (isPrivate.isPrivate()) {
     let canResult = !isPrivate.isSystemDM();

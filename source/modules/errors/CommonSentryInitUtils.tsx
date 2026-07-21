@@ -1,17 +1,17 @@
-// Module ID: 13002
-// Function ID: 98951
+// Module ID: 13004
+// Function ID: 98973
 // Name: IGNORE_ANALYTICS_BREADCRUMB_EVENTS
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: filterThrottle
 
-// Module 13002 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
+// Module 13004 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");
 
-export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = [];
+export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = ["Array", "isArray", "message", "message", "Array", "isArray", "accessibilityRole", "accessible", "__initData", "Text", "filter", "paths", "Array"];
 export const filterThrottle = function filterThrottle(arg0) {
   ({ maxBudgetMinute: closure_0, maxBudgetHour: closure_1 } = arg0);
-  let closure_2 = { minute: { "Null": -536870861, "Null": -299892737 }, hour: { "Null": -536870861, "Null": -299892737 } };
+  let closure_2 = { minute: {}, hour: {} };
   return () => {
     const timestamp = Date.now();
     const rounded = Math.round(timestamp / 1000 / 60);

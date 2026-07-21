@@ -1,11 +1,11 @@
 // Module ID: 655
-// Function ID: 8014
+// Function ID: 8018
 // Name: items
 // Dependencies: []
 // Exports: isExternalProduct, isFractionalPremiumSku, isIndexPageTab, shouldAddTabToUrl
 
 // Module 655 (items)
-let obj = { HOME: "home", CATALOG: "catalog", ORBS: "orbs", AVATAR_DECORATIONS: "avatar-decorations", PROFILE_EFFECTS: "profile-effects", NAMEPLATES: "nameplates", PROFILE_FRAMES: "profile-frames", BUNDLES: "bundles", LAYOUT: "layout", COLLECTION_INDEX: "collection-index", GAME_SHOPS: "game-shops" };
+let obj = { HOME: "home", CATALOG: "catalog", ORBS: "orbs", AVATAR_DECORATIONS: "avatar-decorations", PROFILE_EFFECTS: "profile-effects", NAMEPLATES: "nameplates", PROFILE_FRAMES: "profile-frames", BUNDLES: "bundles", LAYOUT: "layout", COLLECTION_INDEX: "collection-index", GAME_SHOPS: "game-shops", GAME_SERVERS: "game-servers" };
 const items = [, , , , ];
 ({ AVATAR_DECORATIONS: arr[0], PROFILE_EFFECTS: arr[1], NAMEPLATES: arr[2], PROFILE_FRAMES: arr[3], BUNDLES: arr[4] } = obj);
 obj = { ORB_PROFILE_BADGE: "1342211853484429445", FRACTIONAL_PREMIUM: require(dependencyMap[0]).FractionalPremiumSKUs.PREMIUM_TIER_2_3_DAY, FRACTIONAL_PREMIUM_1_DAY: require(dependencyMap[0]).FractionalPremiumSKUs.PREMIUM_TIER_2_1_DAY };

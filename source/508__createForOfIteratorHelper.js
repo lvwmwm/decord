@@ -843,7 +843,7 @@ function trim(str) {
 }
 _exports.serializeObject = serialize;
 _exports.parseString = parseString;
-_exports.types = { 0: 620757502, 9223372036854775807: 1107296843, 9223372036854775807: 93003, 0: 150313, 0: 33596226, 9223372036854775807: 38475776 };
+_exports.types = {};
 let obj = { application/x-www-form-urlencoded: require(dependencyMap[1]).stringify, application/json: require(dependencyMap[2]) };
 _exports.serialize = obj;
 obj = { application/x-www-form-urlencoded: parseString, application/json: JSON.parse };
@@ -864,7 +864,7 @@ _exports.agent = () => {
   return tmp;
 };
 let closure_6 = 0;
-const items = [];
+const items = [null, null, null, null, null, null];
 if (0 < items.length) {
   do {
     let tmp5 = function _loop() {

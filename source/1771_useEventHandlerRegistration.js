@@ -1,5 +1,5 @@
 // Module ID: 1771
-// Function ID: 19732
+// Function ID: 19737
 // Name: useEventHandlerRegistration
 // Dependencies: []
 // Exports: useAnimatedValue, useEventHandlerRegistration

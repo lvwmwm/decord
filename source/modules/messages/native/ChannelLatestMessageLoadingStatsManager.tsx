@@ -1,5 +1,5 @@
 // Module ID: 10851
-// Function ID: 84289
+// Function ID: 84300
 // Name: ChannelLatestMessageLoadingStatsManager
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 11293
-// Function ID: 87864
+// Function ID: 87876
 // Name: getRoleColor
 // Dependencies: []
 // Exports: default
@@ -61,7 +61,7 @@ class RoleRow {
     }, items1);
     tmp6 = jsx;
     obj1 = {};
-    obj2 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253 };
+    obj2 = { "Null": true, "Null": 15.1, "Null": 253 };
     obj2.children = guildRole.name;
     obj1.label = jsx(arg1(dependencyMap[12]).Text, obj2);
     obj1.icon = jsx(RoleIcon, { role: guildRole });
@@ -137,7 +137,7 @@ export default function AppLauncherRoleListActionSheet(channel) {
       callback2(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
+        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
       }
     }
   };

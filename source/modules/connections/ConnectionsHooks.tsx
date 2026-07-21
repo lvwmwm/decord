@@ -1,5 +1,5 @@
 // Module ID: 6730
-// Function ID: 52416
+// Function ID: 52424
 // Name: usePlatformAllowed
 // Dependencies: [57, 1881, 6750, 2, 57, 6, 7, 1917, 6724, 2, 6, 7]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatforms
@@ -53,7 +53,7 @@ function usePlatformAllowed(forUserProfile) {
   };
 }
 ({ ACTIVITY_PLATFORM_TYPES: closure_7, PlatformTypes } = _slicedToArray);
-let closure_10 = { [PlatformTypes.INSTAGRAM]: [] };
+let closure_10 = { [PlatformTypes.INSTAGRAM]: ["<string:1488977921>"] };
 const items = [PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()];
 const items1 = [items];
 const map = new Map(items1);

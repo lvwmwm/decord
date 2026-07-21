@@ -1,7 +1,7 @@
 // Module ID: 8521
-// Function ID: 67911
+// Function ID: 67922
 // Name: DEFAULT_PREMIUM_BADGE_ID
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8521 (DEFAULT_PREMIUM_BADGE_ID)
 const _module = require(dependencyMap[0]);

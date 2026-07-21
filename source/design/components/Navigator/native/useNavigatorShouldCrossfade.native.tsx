@@ -1,5 +1,5 @@
 // Module ID: 5518
-// Function ID: 46980
+// Function ID: 46988
 // Name: useNavigatorShouldCrossfade
 // Dependencies: []
 // Exports: useNavigatorShouldCrossfade

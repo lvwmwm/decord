@@ -1,16 +1,17 @@
-// Module ID: 13688
-// Function ID: 103611
+// Module ID: 13690
+// Function ID: 103633
 // Name: useChangeSpendingLimitFormState
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 13688 (useChangeSpendingLimitFormState)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 13690 (useChangeSpendingLimitFormState)
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
+result = result.fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
 
 export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFormState(teenId) {
   const arg1 = teenId;

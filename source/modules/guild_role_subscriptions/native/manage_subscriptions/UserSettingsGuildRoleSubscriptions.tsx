@@ -1,14 +1,14 @@
-// Module ID: 13974
-// Function ID: 106176
+// Module ID: 13977
+// Function ID: 106208
 // Name: GuildRoleSubscriptionsSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13974 (GuildRoleSubscriptionsSectionHeader)
+// Module 13977 (GuildRoleSubscriptionsSectionHeader)
 function GuildRoleSubscriptionsSectionHeader() {
   const tmp = callback3();
   let obj = { style: tmp.sectionHeader };
-  obj = {};
+  obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
   const intl = arg1(dependencyMap[5]).intl;
   obj.children = intl.string(arg1(dependencyMap[5]).t.KzCF/6);
   const items = [callback(arg1(dependencyMap[4]).Text, obj), ];

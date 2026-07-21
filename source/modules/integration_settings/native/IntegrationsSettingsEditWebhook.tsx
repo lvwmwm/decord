@@ -1,10 +1,10 @@
-// Module ID: 15406
-// Function ID: 117521
+// Module ID: 15409
+// Function ID: 117560
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15406 (_isNativeReflectConstruct)
+// Module 15409 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -33,7 +33,7 @@ obj = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE
 obj.form = obj;
 const tmp4 = arg1(dependencyMap[11]);
 obj.row = { padding: importDefault(dependencyMap[13]).modules.mobile.TABLE_ROW_PADDING };
-obj.channelIcon = {};
+obj.channelIcon = { convert: 134, allowUnknown: null, <string:3307565226>: 1 };
 let closure_19 = obj.createLegacyClassComponentStyles(obj);
 const tmp5 = (PureComponent) => {
   class EditWebhook {
@@ -54,7 +54,11 @@ const tmp5 = (PureComponent) => {
       }
       tmp2Result = tmp2(self, constructResult);
       EditWebhook = tmp2Result;
-      tmp2Result.state = { avatar: tmp2Result.props.avatar, name: tmp2Result.props.name, channel: tmp2Result.props.channel };
+      obj = { <string:3972818074>: "hasLargeHeader", <string:4065459120>: "\u{1F5A5}\uFE0F", "Null": "getIsEnabled", "Null": "r", "Null": "createWithEqualityFn", "Null": "r" };
+      obj.avatar = tmp2Result.props.avatar;
+      obj.name = tmp2Result.props.name;
+      obj.channel = tmp2Result.props.channel;
+      tmp2Result.state = obj;
       tmp2Result.handleSave = () => {
         let guildId;
         let props;
@@ -166,7 +170,8 @@ const tmp5 = (PureComponent) => {
         obj.show(obj);
       };
       tmp2Result.handleCancelChanges = () => {
-        tmp2Result.setState({ avatar: tmp2Result.props.avatar, name: tmp2Result.props.name, channel: tmp2Result.props.channel });
+        const obj = { <string:3972818074>: "hasLargeHeader", <string:4065459120>: "\u{1F5A5}\uFE0F", "Null": "getIsEnabled", "Null": "r", "Null": "createWithEqualityFn", "Null": "r", avatar: tmp2Result.props.avatar, name: tmp2Result.props.name, channel: tmp2Result.props.channel };
+        tmp2Result.setState(obj);
       };
       return tmp2Result;
     }

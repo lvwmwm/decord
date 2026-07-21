@@ -1,5 +1,5 @@
 // Module ID: 11865
-// Function ID: 91853
+// Function ID: 91865
 // Name: FireIcon
 // Dependencies: []
 // Exports: FireIcon

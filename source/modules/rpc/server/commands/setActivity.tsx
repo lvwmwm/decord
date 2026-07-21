@@ -1,9 +1,9 @@
-// Module ID: 13294
-// Function ID: 100974
+// Module ID: 13296
+// Function ID: 100996
 // Name: RPC_LOCAL_SCOPE
 // Dependencies: []
 
-// Module 13294 (RPC_LOCAL_SCOPE)
+// Module 13296 (RPC_LOCAL_SCOPE)
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
 let closure_3 = importDefault(dependencyMap[0]);
@@ -12,7 +12,7 @@ const TransportTypes = tmp2.TransportTypes;
 ({ RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = tmp2);
 const tmp3 = arg1(dependencyMap[2]);
 ({ ActivityGamePlatforms: closure_5, ActivityPartyPrivacy: closure_6, ActivityTypes: closure_7, AnalyticEvents: closure_8, RPCErrors: closure_9 } = tmp3);
-let closure_10 = [];
+let closure_10 = [true];
 let obj = {};
 obj = {};
 obj = {};

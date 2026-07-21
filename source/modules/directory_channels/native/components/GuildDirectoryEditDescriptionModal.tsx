@@ -1,5 +1,5 @@
 // Module ID: 10036
-// Function ID: 77541
+// Function ID: 77552
 // Name: GuildDirectoryEditDescription
 // Dependencies: []
 // Exports: default
@@ -18,7 +18,7 @@ function GuildDirectoryEditDescription(entry) {
   let obj = { top: true, style: tmp.safeArea };
   obj = { style: tmp.container, keyboardShouldPersistTaps: "handled" };
   obj = { style: tmp.header };
-  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.format(arg1(dependencyMap[10]).t.w9tsNk, { guildName: entry.name });
   obj.children = callback(arg1(dependencyMap[9]).Text, obj1);

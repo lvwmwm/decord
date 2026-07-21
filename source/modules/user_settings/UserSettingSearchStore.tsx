@@ -1,10 +1,10 @@
-// Module ID: 13429
-// Function ID: 101950
+// Module ID: 13431
+// Function ID: 101972
 // Name: zustandStore
 // Dependencies: []
 
-// Module 13429 (zustandStore)
-const zustandStore = require(dependencyMap[0]).createZustandStore(() => ({ <string:693174276>: 0.12841855, <string:1374118307>: 0.008856452, <string:425798476>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011104589879530045, <string:1369950035>: -36044734960262730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }));
+// Module 13431 (zustandStore)
+const zustandStore = require(dependencyMap[0]).createZustandStore(() => ({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }));
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/user_settings/UserSettingSearchStore.tsx");
 

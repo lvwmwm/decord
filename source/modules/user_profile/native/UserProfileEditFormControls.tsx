@@ -1,10 +1,10 @@
-// Module ID: 13466
-// Function ID: 102220
+// Module ID: 13468
+// Function ID: 102242
 // Name: FormControlText
 // Dependencies: []
 // Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
 
-// Module 13466 (FormControlText)
+// Module 13468 (FormControlText)
 function FormControlText(children) {
   const tmp = callback4();
   return callback2(arg1(dependencyMap[6]).Text, { style: callback4().formControlText, children: children.text });
@@ -13,7 +13,7 @@ function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
-    const obj = { style: tmp.formControlText, children: text };
+    const obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.formControlText, children: text };
     tmp2 = callback2(arg1(dependencyMap[6]).Text, obj);
   }
   return tmp2;
@@ -27,7 +27,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.button = obj;
-obj.buttonTextContainer = {};
+obj.buttonTextContainer = { isArray: null, diversity: null, string: null };
 obj.formControlText = {};
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

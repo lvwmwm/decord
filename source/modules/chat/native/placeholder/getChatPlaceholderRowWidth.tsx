@@ -1,7 +1,7 @@
 // Module ID: 10065
-// Function ID: 77701
+// Function ID: 77712
 // Name: getChatPlaceholderRowWidth
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10065 (getChatPlaceholderRowWidth)

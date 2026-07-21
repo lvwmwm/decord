@@ -1,32 +1,32 @@
 // Module ID: 3757
-// Function ID: 28730
+// Function ID: 28735
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1194, 653, 3768, 3769]
 
 // Module 3757 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_1 from "__exportStarResult1";
-import closure_2 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { isGuildLurker } from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
+import result from "result";
+import closure_1 from "result";
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import { isGuildLurker } from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import closure_8 from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function _isNativeReflectConstruct() {
-  let __exportStarResult1 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let result = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return __exportStarResult1;
+    return result;
   }
   const result = _isNativeReflectConstruct();
 }
 function _createForOfIteratorHelperLoose(@@iterator) {
-  let __exportStarResult1 = Symbol_iterator;
+  let result = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
   if (Symbol_iterator) {
     const _Symbol = Symbol;
@@ -78,7 +78,7 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      __exportStarResult1 = tmp;
+      result = tmp;
     }
     let closure_1 = 0;
     return () => {
@@ -168,7 +168,7 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let __exportStarResult1 = LurkingStore;
+  let result = LurkingStore;
   callback2(LurkingStore, Store);
   let obj = {
     key: "initialize",

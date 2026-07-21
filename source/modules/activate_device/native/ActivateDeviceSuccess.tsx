@@ -1,15 +1,15 @@
-// Module ID: 12769
-// Function ID: 97865
+// Module ID: 12771
+// Function ID: 97887
 // Name: ActivateDeviceSuccess
 // Dependencies: []
 // Exports: ActivateDeviceSuccess
 
-// Module 12769 (ActivateDeviceSuccess)
+// Module 12771 (ActivateDeviceSuccess)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ image: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { backgroundColor: 1977745411, borderRadius: 1978204163, height: -12386301 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
 

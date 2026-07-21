@@ -1,5 +1,5 @@
 // Module ID: 3521
-// Function ID: 27139
+// Function ID: 27144
 // Name: _typeof
 // Dependencies: []
 
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const StandAloneQuarterParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 120);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "flexDirection", "r", "body", "w"]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "d", "E", "i", "e", "c", "t", "T", "y", "R", "u", "q", "Q"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const StandAloneQuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "flexDirection", "r", "body", "w"]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "d", "E", "i", "e", "c", "t", "T", "y", "R", "u", "q", "Q"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -256,7 +256,7 @@ export const StandAloneQuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "flexDirection", "r", "body", "w"]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "d", "E", "i", "e", "c", "t", "T", "y", "R", "u", "q", "Q"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -282,11 +282,11 @@ export const StandAloneQuarterParser = (Parser) => {
             const obj = { unit: "quarter" };
             return ordinalNumber.ordinalNumber(arg0, obj);
           } else if ("qqq" === arg1) {
-            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
+            return ordinalNumber.quarter(arg0, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" }) || ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
           } else if ("qqqqq" === arg1) {
-            return ordinalNumber.quarter(arg0, {});
+            return ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
           } else {
-            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
+            return ordinalNumber.quarter(arg0, { "Bool(true)": "a", "Bool(true)": "_activities" }) || ordinalNumber.quarter(arg0, { "Bool(true)": "<string:956302067>", "Bool(true)": "<string:1107297014>" }) || ordinalNumber.quarter(arg0, { "Bool(true)": null, "Bool(true)": null });
           }
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 6949
-// Function ID: 55512
+// Module ID: 6950
+// Function ID: 55524
 // Name: _rewardRedemptionInstructionsFromServer
 // Dependencies: []
 // Exports: questRewardsConfigV2FromServer
 
-// Module 6949 (_rewardRedemptionInstructionsFromServer)
+// Module 6950 (_rewardRedemptionInstructionsFromServer)
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {
   const obj = {};
   const keys = Object.keys(redemption_instructions_by_platform);

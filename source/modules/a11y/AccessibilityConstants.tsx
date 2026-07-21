@@ -1,9 +1,9 @@
-// Module ID: 13004
-// Function ID: 98956
+// Module ID: 13006
+// Function ID: 98978
 // Name: AccessibilityFeatureFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 13004 (AccessibilityFeatureFlags)
+// Module 13006 (AccessibilityFeatureFlags)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/a11y/AccessibilityConstants.tsx");
 

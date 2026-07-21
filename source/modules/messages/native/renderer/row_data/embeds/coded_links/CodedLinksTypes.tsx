@@ -1,7 +1,7 @@
 // Module ID: 11075
-// Function ID: 86134
+// Function ID: 86145
 // Name: AppMessageEmbedDisplayType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11075 (AppMessageEmbedDisplayType)
 const _module = require(dependencyMap[0]);

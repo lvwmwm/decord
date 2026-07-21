@@ -1,8 +1,8 @@
-// Module ID: 12775
-// Function ID: 97889
+// Module ID: 12777
+// Function ID: 97911
 // Dependencies: [131072, 619708416, 5, 57, 31, 27, 1352, 1348]
 
-// Module 12775
+// Module 12777
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_2 = importDefault(dependencyMap[0]);
@@ -25,7 +25,7 @@ export default {
       let result = callback2(guild, arg1);
       if (result) {
         let obj = callback(closure_1[4]);
-        obj = { -9223372036854775808: null, -9223372036854775808: null, -9223372036854775808: null, guild, isUserInCreatorMonetizationEligibleCountry: callback(closure_1[5]).isUserInCreatorMonetizationEligibleCountry() };
+        obj = { flex: null, justifyContent: null, alignItems: null, guild, isUserInCreatorMonetizationEligibleCountry: callback(closure_1[5]).isUserInCreatorMonetizationEligibleCountry() };
         const obj3 = callback(closure_1[5]);
         obj.shouldRestrictUpdatingRoleSubscriptionSettings = callback(closure_1[6]).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);

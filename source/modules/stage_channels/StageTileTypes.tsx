@@ -1,7 +1,7 @@
 // Module ID: 10764
-// Function ID: 83657
+// Function ID: 83668
 // Name: StageTileSize
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10764 (StageTileSize)
 const _module = require(dependencyMap[0]);

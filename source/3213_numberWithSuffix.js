@@ -1,5 +1,5 @@
 // Module ID: 3213
-// Function ID: 25828
+// Function ID: 25833
 // Name: numberWithSuffix
 // Dependencies: []
 
@@ -59,16 +59,16 @@ obj = {
     }
   }
 };
-obj.era = obj.default({ values: { narrow: [], abbreviated: [null, null], wide: ["a", "isArray"] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [], abbreviated: [51195392, 51198720], wide: [10393675361256532000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243482303928736] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [], abbreviated: [], wide: [null, null, null, null] },
+  values: { narrow: [null, null, null, null], abbreviated: ["a", "FIXED", "a", "FIXED32"], wide: [] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { abbreviated: ["isArray", "ind", "Object", "r", "isArray", "colors", "flexDirection", "a", "isArray", "accessibilityRole", "useCallback", "__closure"], wide: [null, null, true, true, null, null, "SET_LOCATION_METADATA", -1660469503, 503462911, 487803906, 38404100, 625475587] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: ["<string:80413184>", "<string:80412160>", "<string:80411392>", "<string:59666432>", "<string:80413184>", "<string:80411392>", "<string:1965115136>"] }, defaultWidth: "wide" });
+obj.month = obj.default({ values: { abbreviated: [], wide: [] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [true, true, true, true, true, true, true], wide: [null, null, null, null, null, null, null] }, defaultWidth: "wide" });
 obj.dayPeriod = obj.default({ values: { wide: {} }, defaultWidth: "wide" });
 
 export default obj;

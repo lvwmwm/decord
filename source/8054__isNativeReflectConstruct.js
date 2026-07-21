@@ -1,9 +1,13 @@
 // Module ID: 8054
-// Function ID: 63908
+// Function ID: 63914
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 5, 11]
 
 // Module 8054 (_isNativeReflectConstruct)
+import result from "result";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import checkLogForPII from "checkLogForPII";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +17,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class FeComposite {
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+const tmp2 = (arg0) => {
+  class FeComponentTransfer {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeComposite);
-      obj = closure_6(FeComposite);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = result(this, FeComponentTransfer);
+      obj = closure_5(FeComponentTransfer);
+      tmp2 = checkLogForPII;
+      if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,28 +40,20 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeComposite;
-  callback2(FeComposite, arg0);
+  const arg1 = FeComponentTransfer;
+  callback2(FeComponentTransfer, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeComposite = this;
-        const obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        const obj2 = FeComposite(closure_2[8]);
-        const extractFilterResult = FeComposite(closure_2[8]).extractFilter(this.props);
-        return callback4(tmp, Object.assign(obj, extractFilterResult, FeComposite(closure_2[8]).extractFeComposite(this.props)));
+        const result = FeComponentTransfer(closure_1[5]).warnUnimplementedFilter();
+        return null;
       }
     }
   ];
-  return callback(FeComposite, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeComposite";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { markerMid: null, markerEnd: 4, clipPath: 4, clipRule: "rgba(0, 0, 0, 0.75)" });
+  return callback(FeComponentTransfer, items);
+}(importDefault(dependencyMap[6]));
+tmp2.displayName = "FeComponentTransfer";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

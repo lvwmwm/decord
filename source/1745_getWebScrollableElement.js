@@ -1,5 +1,5 @@
 // Module ID: 1745
-// Function ID: 19523
+// Function ID: 19528
 // Name: getWebScrollableElement
 // Dependencies: []
 
@@ -20,7 +20,7 @@ const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 let closure_5 = { code: "function pnpm_useScrollViewOffsetTs1(){const{animatedRef,getWebScrollableElement,offset}=this.__closure;if(animatedRef){const element=getWebScrollableElement(animatedRef.current);offset.value=element.scrollLeft===0?element.scrollTop:element.scrollLeft;}}" };
 let closure_6 = { code: "function pnpm_useScrollViewOffsetTs2(event){const{offset}=this.__closure;offset.value=event.contentOffset.x===0?event.contentOffset.y:event.contentOffset.x;}" };
-let closure_7 = ["onLayout", "bottomOffset", "disableScrollOnKeyboardHide", "enabled", "extraKeyboardSpace"];
+let closure_7 = ["doneText", "button", "icon", "showArrows", "onNextCallback"];
 
 export const useScrollViewOffset = _module1.isWeb() ? function useScrollViewOffsetWeb(animatedRef) {
   const require = animatedRef;

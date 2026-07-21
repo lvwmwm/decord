@@ -1,10 +1,10 @@
-// Module ID: 13706
-// Function ID: 103690
+// Module ID: 13708
+// Function ID: 103712
 // Name: FamilyCenterModalDeclineScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13706 (FamilyCenterModalDeclineScreen)
+// Module 13708 (FamilyCenterModalDeclineScreen)
 function FamilyCenterModalDeclineScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;
@@ -46,7 +46,7 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   const intl2 = arg1(dependencyMap[8]).intl;
   obj5.children = intl2.string(importDefault(dependencyMap[16]).cXgKMD);
   const items3 = [callback(arg1(dependencyMap[15]).Text, obj5), ];
-  const obj6 = {};
+  const obj6 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj6.children = intl3.string(importDefault(dependencyMap[16]).LcM8BS);
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj6);
@@ -77,7 +77,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { cix: 0, y: 0, isArray: 0, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.header = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.headerText = { marginTop: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };

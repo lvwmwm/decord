@@ -1,5 +1,5 @@
 // Module ID: 9933
-// Function ID: 76846
+// Function ID: 76857
 // Name: AppInteractionInfoActionSheet
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ itemContainer: { userId: 14, bottom: "default_guilds_activity_restricted", marginTop: "enum", flex: null }, itemLabel: { paddingVertical: null, marginTop: 0.3, aspectRatio: "-50%" } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ itemContainer: { borderWidth: 14, position: "default_guilds_activity_restricted", top: "enum", left: null }, itemLabel: { -2046424494: null, 651580065: 0.3, -11371588: "-50%" } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/applications/native/AppInteractionInfoActionSheet.tsx");
 
@@ -89,7 +89,7 @@ export default function AppInteractionInfoActionSheet(message) {
     obj = { guild: stateFromStores1, size: arg1(dependencyMap[12]).GuildIconSizes.SMALL_32 };
     const items5 = [callback(importDefault(dependencyMap[12]), obj), ];
     obj1 = { style: tmp.itemLabel };
-    obj2 = { children: stateFromStores1.name };
+    obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: stateFromStores1.name };
     const items6 = [callback(arg1(dependencyMap[13]).Text, obj2), ];
     const obj3 = {};
     const intl2 = arg1(dependencyMap[14]).intl;
@@ -113,7 +113,7 @@ export default function AppInteractionInfoActionSheet(message) {
       const obj7 = { user: stateFromStores, size: arg1(dependencyMap[17]).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       const items7 = [callback(arg1(dependencyMap[17]).Avatar, obj7), ];
       const obj8 = { style: tmp.itemLabel };
-      const obj9 = { children: stateFromStores.username };
+      const obj9 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: stateFromStores.username };
       const items8 = [callback(arg1(dependencyMap[13]).Text, obj9), ];
       const obj10 = {};
       const intl = arg1(dependencyMap[14]).intl;
@@ -140,7 +140,7 @@ export default function AppInteractionInfoActionSheet(message) {
     const obj15 = { user: tmp14, size: arg1(dependencyMap[17]).AvatarSizes.REFRESH_MEDIUM_32, guildId };
     const items10 = [callback(arg1(dependencyMap[17]).Avatar, obj15), ];
     const obj16 = { style: tmp.itemLabel };
-    const obj17 = { children: tmp14.username };
+    const obj17 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: tmp14.username };
     const items11 = [callback(arg1(dependencyMap[13]).Text, obj17), ];
     const obj18 = {};
     const intl3 = arg1(dependencyMap[14]).intl;

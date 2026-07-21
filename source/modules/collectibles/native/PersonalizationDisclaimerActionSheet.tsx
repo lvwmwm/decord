@@ -1,10 +1,10 @@
-// Module ID: 14371
-// Function ID: 108479
+// Module ID: 14374
+// Function ID: 108511
 // Name: PersonalizationDisclaimerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14371 (PersonalizationDisclaimerActionSheet)
+// Module 14374 (PersonalizationDisclaimerActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-const obj1 = { push: false, body: false, applicationId: false, paddingVertical: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { enableGameUpdateNotifications: "number", CONNECTIONS_CALLBACK_ERROR: "number", handleRewardClaimThenView: "mY3Y38", paddingVertical: importDefault(dependencyMap[4]).space.PX_8 };
 obj.header = obj1;
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

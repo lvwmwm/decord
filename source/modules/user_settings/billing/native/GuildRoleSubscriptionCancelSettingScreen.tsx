@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 106326
+// Module ID: 13993
+// Function ID: 106358
 // Name: GuildRoleSubscriptionCancelSettingScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13990 (GuildRoleSubscriptionCancelSettingScreen)
+// Module 13993 (GuildRoleSubscriptionCancelSettingScreen)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/billing/native/GuildRoleSubscriptionCancelSettingScreen.tsx");

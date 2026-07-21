@@ -1,10 +1,10 @@
-// Module ID: 12777
-// Function ID: 97901
+// Module ID: 12779
+// Function ID: 97923
 // Name: GuildFeatures
 // Dependencies: []
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 12777 (GuildFeatures)
+// Module 12779 (GuildFeatures)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const items = [, , ];

@@ -1,17 +1,17 @@
-// Module ID: 15687
-// Function ID: 119865
+// Module ID: 15690
+// Function ID: 119904
 // Name: getScaleChangeWithOverscroll
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
-// Module 15687 (getScaleChangeWithOverscroll)
-import closure_3 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import { PixelRatio } from "__exportStarResult1";
-import { VoicePanelControlsModes } from "__exportStarResult1";
-import { VoicePanelPIPModes } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15690 (getScaleChangeWithOverscroll)
+import closure_3 from "result";
+import importAllResult from "result";
+import { PixelRatio } from "result";
+import result from "result";
+import { VoicePanelControlsModes } from "result";
+import { VoicePanelPIPModes } from "result";
 
-({ VoicePanelModes: closure_6, MODE_CHANGE_PHYSICS: closure_7 } = require("__exportStarResult1"));
+({ VoicePanelModes: closure_6, MODE_CHANGE_PHYSICS: closure_7 } = result);
 const SCALE_PHYSICS = arg1(dependencyMap[6]).SCALE_PHYSICS;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 const tmp3 = arg1(dependencyMap[7]);
@@ -28,13 +28,13 @@ let closure_15 = () => {
       return 1 + diff1 * Math.max(0.1, 1 - diff * diff * 5);
     }
   }
-  getScaleChangeWithOverscroll.__closure = { <string:3429041871>: 0.96, <string:2454823163>: "PLUM_19" };
+  getScaleChangeWithOverscroll.__closure = { -9223372036854775808: 0.96, 9223372036854775807: "PLUM_19" };
   getScaleChangeWithOverscroll.__workletHash = 8727721301304;
   getScaleChangeWithOverscroll.__initData = closure_14;
   return getScaleChangeWithOverscroll;
 }();
 const importDefaultResult = importDefault(dependencyMap[8]);
-let closure_16 = arg1(dependencyMap[10]).createStyles({ wrapper: { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, 1308821199: false, -816970926: false }, animatedWrapperStyles: { position: "absolute" }, video: {}, spinner: { 9223372036854775807: "getElementsByClassName", 0: "<string:1362780416>", 9223372036854775807: "<string:4235329989>", 0: "<string:4244635647>", 9223372036854775807: "<string:301989887>", 0: "/assets/modules/voice_panel/native/images", 0: 24 } });
+let closure_16 = arg1(dependencyMap[10]).createStyles({ wrapper: {}, animatedWrapperStyles: { position: "absolute" }, video: {}, spinner: { position: "/assets/modules/voice_panel/native/images", top: 24, left: 24, right: null, bottom: "e57414c7a7beaf43becfa6bd320e5461", flexDirection: "vr", "Bool(true)": "png" } });
 let closure_17 = { code: "function VoicePanelVideoRendererTsx2(){const{containerLayout,videoDimensions}=this.__closure;return Math.max(containerLayout.get().width/videoDimensions.get().width,containerLayout.get().height/videoDimensions.get().height);}" };
 let closure_18 = { code: "function VoicePanelVideoRendererTsx3(){const{containerLayout,videoDimensions}=this.__closure;return Math.min(containerLayout.get().width/videoDimensions.get().width,containerLayout.get().height/videoDimensions.get().height);}" };
 let closure_19 = { code: "function VoicePanelVideoRendererTsx4(){const{translateX,translateY,scale,fitScale,coverScale}=this.__closure;if(translateX.get()!==0||translateY.get()!==0){return false;}if(scale.get()===fitScale.get()||scale.get()===coverScale.get()){return true;}return false;}" };
@@ -1065,8 +1065,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(id) {
           tmp6 = sharedCoords;
           num2 = 8;
           obj2 = id(sharedCoords[8]);
-          tmp7 = f119915;
-          tmp8 = obj2.runOnJS(f119915)();
+          tmp7 = f119954;
+          tmp8 = obj2.runOnJS(f119954)();
         }
       }
       return;
@@ -1242,6 +1242,6 @@ const memoResult = importAllResult.memo(function VideoRenderer(id) {
   obj7.children = tmp30(tmp31, obj8);
   return tmp29(arg1(dependencyMap[15]).GestureDetector, obj7);
 });
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/voice_panel/native/card/VoicePanelVideoRenderer.tsx");
+result = arg1(dependencyMap[29]).fileFinishedImporting("modules/voice_panel/native/card/VoicePanelVideoRenderer.tsx");
 
 export default memoResult;

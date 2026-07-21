@@ -1,10 +1,10 @@
-// Module ID: 15720
-// Function ID: 120156
+// Module ID: 15729
+// Function ID: 120321
 // Name: getConsoleColor
 // Dependencies: []
 // Exports: default
 
-// Module 15720 (getConsoleColor)
+// Module 15729 (getConsoleColor)
 let PLAYSTATION;
 let PLAYSTATION_STAGING;
 let XBOX;

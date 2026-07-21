@@ -1,10 +1,10 @@
-// Module ID: 14332
-// Function ID: 108204
+// Module ID: 14335
+// Function ID: 108236
 // Name: BackdropCard
 // Dependencies: []
 // Exports: default
 
-// Module 14332 (BackdropCard)
+// Module 14335 (BackdropCard)
 function BackdropCard(arg0) {
   let buttonLabel;
   let description;
@@ -73,9 +73,10 @@ export default function UserSettingsDesignSystemBackdrop() {
   obj = { contentContainerStyle: tmp.container };
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj1 = { spacing: 24 };
-  const items = [callback2(BackdropCard, { setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), callback2(BackdropCard, { setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), ];
-  const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
-  items[2] = callback2(BackdropCard, obj2);
+  const items = [callback2(BackdropCard, { setShowBackdrop: tmp2[1], setBlurAmount: tmp7 }), , ];
+  const obj2 = { -1407593: "1 \u03B7\u03BC\u03AD\u03C1\u03B1", 9223372036854775807: "{{count}} \u03B7\u03BC\u03AD\u03C1\u03B5\u03C2", 9223372036854775807: "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 1 \u03B5\u03B2\u03B4\u03BF\u03BC\u03AC\u03B4\u03B1", 0: "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 {{count}} \u03B5\u03B2\u03B4\u03BF\u03BC\u03AC\u03B4\u03B5\u03C2", setShowBackdrop: tmp2[1], setBlurAmount: tmp7 };
+  items[1] = callback2(BackdropCard, obj2);
+  items[2] = callback2(BackdropCard, { setShowBackdrop: tmp2[1], setBlurAmount: tmp7 });
   obj1.children = items;
   const items1 = [callback3(arg1(dependencyMap[6]).Stack, obj1), ];
   if (first) {
@@ -85,7 +86,7 @@ export default function UserSettingsDesignSystemBackdrop() {
     const obj5 = { style: tmp.backdropContent, pointerEvents: "box-none" };
     const obj6 = {};
     const obj7 = { variant: "text-md/normal" };
-    const items3 = ["ACK_INBOX_FORUM_NO_POSTS", tmp6];
+    const items3 = [true, tmp6];
     obj7.children = items3;
     obj6.children = callback3(arg1(dependencyMap[7]).Text, obj7);
     obj5.children = callback2(arg1(dependencyMap[5]).Card, obj6);

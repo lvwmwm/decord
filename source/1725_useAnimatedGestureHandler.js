@@ -1,24 +1,24 @@
 // Module ID: 1725
-// Function ID: 19366
+// Function ID: 19371
 // Name: useAnimatedGestureHandler
-// Dependencies: [1687, 1727, 1729, 31, 1742, 6, 7, 1743, 1626, 1589, 1623, 31, 1585, 1734, 1586, 1729, 31]
+// Dependencies: []
 
 // Module 1725 (useAnimatedGestureHandler)
 
-export const useAnimatedGestureHandler = require("WorkletEventHandlerNative").useAnimatedGestureHandler;
-export const useAnimatedKeyboard = require("useHandler").useAnimatedKeyboard;
-export const useAnimatedProps = require("useEvent").useAnimatedProps;
-export const useAnimatedReaction = require("module_31").useAnimatedReaction;
-export const useAnimatedRef = require("FrameCallbackRegistryJS").useAnimatedRef;
-export const useAnimatedScrollHandler = require("_classCallCheck").useAnimatedScrollHandler;
-export const useAnimatedSensor = require("_defineProperties").useAnimatedSensor;
-export const useAnimatedStyle = require("pnpm_FrameCallbackRegistryUITs1").useAnimatedStyle;
-export const useComposedEventHandler = require("getSensorContainer").useComposedEventHandler;
-export const useDerivedValue = require("runWorkletOnJS").useDerivedValue;
-export const useEvent = require("isReducedMotionEnabledInSystem").useEvent;
-export const useFrameCallback = require("module_31").useFrameCallback;
-export const useHandler = require("isJest").useHandler;
-export const useReducedMotion = require("useSharedValue").useReducedMotion;
-export const useScrollViewOffset = require("module_1586").useScrollViewOffset;
-export const useSharedValue = require("useEvent").useSharedValue;
-export const useWorkletCallback = require("module_31").useWorkletCallback;
+export const useAnimatedGestureHandler = require(dependencyMap[0]).useAnimatedGestureHandler;
+export const useAnimatedKeyboard = require(dependencyMap[1]).useAnimatedKeyboard;
+export const useAnimatedProps = require(dependencyMap[2]).useAnimatedProps;
+export const useAnimatedReaction = require(dependencyMap[3]).useAnimatedReaction;
+export const useAnimatedRef = require(dependencyMap[4]).useAnimatedRef;
+export const useAnimatedScrollHandler = require(dependencyMap[5]).useAnimatedScrollHandler;
+export const useAnimatedSensor = require(dependencyMap[6]).useAnimatedSensor;
+export const useAnimatedStyle = require(dependencyMap[7]).useAnimatedStyle;
+export const useComposedEventHandler = require(dependencyMap[8]).useComposedEventHandler;
+export const useDerivedValue = require(dependencyMap[9]).useDerivedValue;
+export const useEvent = require(dependencyMap[10]).useEvent;
+export const useFrameCallback = require(dependencyMap[11]).useFrameCallback;
+export const useHandler = require(dependencyMap[12]).useHandler;
+export const useReducedMotion = require(dependencyMap[13]).useReducedMotion;
+export const useScrollViewOffset = require(dependencyMap[14]).useScrollViewOffset;
+export const useSharedValue = require(dependencyMap[15]).useSharedValue;
+export const useWorkletCallback = require(dependencyMap[16]).useWorkletCallback;

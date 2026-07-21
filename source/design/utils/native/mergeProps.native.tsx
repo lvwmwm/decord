@@ -1,7 +1,7 @@
 // Module ID: 3836
-// Function ID: 31991
+// Function ID: 31996
 // Name: chainCallbacks
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: mergeProps, mergeRefs
 
 // Module 3836 (chainCallbacks)

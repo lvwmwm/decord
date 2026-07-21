@@ -1,5 +1,5 @@
 // Module ID: 10755
-// Function ID: 83549
+// Function ID: 83560
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: keySection, parseSection
@@ -327,7 +327,7 @@ const MediaEngineContextTypes = tmp2.MediaEngineContextTypes;
 const keySectionResult = keySection(MediaEngineContextTypes.DEFAULT, arg1(dependencyMap[8]).RTCDebugSections.TRANSPORT, 0);
 let closure_17 = {};
 const map = new Map();
-let obj = { "Bool(false)": null, "Bool(false)": "text-sm/semibold", "Bool(false)": "text-link", "Bool(false)": "True", "Bool(false)": "True", "Bool(false)": "true", "Bool(false)": 424, "Bool(false)": 424, "Bool(false)": 100, "Bool(false)": "2026-03-soundmoji-rendering", flexDirection: "user", backgroundColor: "2025-12-proportional-vad-indicator", justifyContent: "text", borderRadius: "", marginBottom: 255, accessible: 0, _distance: 256, "Null": 0, "Null": 0, "Null": 1895895296, "Bool(true)": -1, "Bool(true)": 812720385, "Bool(true)": 16777216, "Bool(true)": 369, "Bool(true)": 1166889472 };
+let obj = {};
 const obj2 = () => {
   class RTCDebugVideoOutputMap {
     constructor(arg0) {

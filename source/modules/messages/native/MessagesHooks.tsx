@@ -1,5 +1,5 @@
 // Module ID: 10446
-// Function ID: 80617
+// Function ID: 80628
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState

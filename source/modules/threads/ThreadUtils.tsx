@@ -1,10 +1,10 @@
-// Module ID: 7017
-// Function ID: 56321
+// Module ID: 7018
+// Function ID: 56333
 // Name: getAccessibilityLabelFormatter
 // Dependencies: []
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7017 (getAccessibilityLabelFormatter)
+// Module 7018 (getAccessibilityLabelFormatter)
 function getAccessibilityLabelFormatter() {
   const obj = { minutes: arg1(dependencyMap[6]).t.1Rcf/h, hours: arg1(dependencyMap[6]).t.vgnx51, days: arg1(dependencyMap[6]).t.fNvE50 };
   const intl = arg1(dependencyMap[6]).intl;

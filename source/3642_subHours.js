@@ -1,5 +1,5 @@
 // Module ID: 3642
-// Function ID: 27922
+// Function ID: 27927
 // Name: subHours
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 8294
-// Function ID: 65490
+// Module ID: 8295
+// Function ID: 65503
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: createVideoControls
 
-// Module 8294 (_isNativeReflectConstruct)
+// Module 8295 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -105,7 +105,7 @@ const importAllResult = importAll(dependencyMap[6]);
 const jsx = arg1(dependencyMap[8]).jsx;
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { disabled: 38139904, size: 23751424, variant: 23778816, aliceblue: 38091008, antiquewhite: 38171904, shadowColor: importDefault(dependencyMap[10]).unsafe_rawColors.BLACK, shadowOffset: {}, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
+obj = { shadowColor: importDefault(dependencyMap[10]).unsafe_rawColors.BLACK, shadowOffset: { y: null, isArray: null }, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.video = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };

@@ -1,5 +1,5 @@
 // Module ID: 1874
-// Function ID: 20871
+// Function ID: 20876
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isNameplateRecord

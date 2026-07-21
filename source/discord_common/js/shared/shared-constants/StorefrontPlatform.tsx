@@ -1,7 +1,7 @@
 // Module ID: 9737
-// Function ID: 75733
+// Function ID: 75744
 // Name: StorefrontPlatform
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9737 (StorefrontPlatform)
 const _module = require(dependencyMap[0]);

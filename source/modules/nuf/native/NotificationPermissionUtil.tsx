@@ -1,5 +1,5 @@
 // Module ID: 11439
-// Function ID: 89024
+// Function ID: 89036
 // Name: _requestPushNotificationPermission
 // Dependencies: []
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt

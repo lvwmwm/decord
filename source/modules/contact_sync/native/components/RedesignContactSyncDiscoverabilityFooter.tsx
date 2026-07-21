@@ -1,5 +1,5 @@
 // Module ID: 11704
-// Function ID: 90924
+// Function ID: 90936
 // Name: RedesignContactSyncDiscoverabilityFooter
 // Dependencies: [31, 33, 4126, 689, 1212, 9114, 2]
 // Exports: default

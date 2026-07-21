@@ -1,24 +1,24 @@
-// Module ID: 7407
-// Function ID: 59546
+// Module ID: 7408
+// Function ID: 59558
 // Name: SubscriptionRenewalMutationsNotice
 // Dependencies: []
 // Exports: default
 
-// Module 7407 (SubscriptionRenewalMutationsNotice)
+// Module 7408 (SubscriptionRenewalMutationsNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isNoneSubscription = arg1(dependencyMap[2]).isNoneSubscription;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": null, "Null": 14, "Null": 14, "Null": 1, "Null": null, "Null": null, marginTop: "center", borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: arg1(dependencyMap[6]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: arg1(dependencyMap[6]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.container = obj;
-const obj1 = { <string:252898708>: null, <string:3355923052>: null, color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
-obj.icon = obj1;
-const obj2 = { <string:3769257420>: -33283686791197806000000, <string:995506788>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061404906786437, color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
+const tmp3 = arg1(dependencyMap[3]);
+obj.icon = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
+const obj2 = { "Null": -33283686791197806000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061404906786437, color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 obj.text = obj2;
 let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
+const obj1 = { color: arg1(dependencyMap[6]).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/SubscriptionRenewalMutationsNotice.tsx");
 
 export default function SubscriptionRenewalMutationsNotice(arg0) {

@@ -1,279 +1,467 @@
 // Module ID: 4766
-// Function ID: 41366
-// Dependencies: []
+// Function ID: 41397
+// Dependencies: [6, 7, 15]
 
 // Module 4766
-arg5.default = {
-  ApertureValue(arg0) {
+import _classCallCheck from "_classCallCheck";
+
+let obj = {};
+obj = { name: "ExposureTime", description: require("_defineProperties").ExposureTime };
+obj[33434] = obj;
+obj = { name: "FNumber", description: require("_defineProperties").FNumber };
+obj[33437] = obj;
+obj[34850] = { name: "ExposureProgram", description: require("_defineProperties").ExposureProgram };
+obj[34856] = {
+  name: "OECF",
+  description() {
+    return "[Raw OECF table data]";
+  }
+};
+obj[34864] = {
+  name: "SensitivityType",
+  description(arg0) {
+    return {}[arg0] || "Unknown";
+  }
+};
+obj[36864] = {
+  name: "ExifVersion",
+  description(value) {
+    return arg1(dependencyMap[2]).getStringValue(value);
+  }
+};
+const obj1 = { name: "ExposureProgram", description: require("_defineProperties").ExposureProgram };
+const obj2 = {
+  name: "OECF",
+  description() {
+    return "[Raw OECF table data]";
+  }
+};
+const obj3 = {
+  name: "SensitivityType",
+  description(arg0) {
+    return {}[arg0] || "Unknown";
+  }
+};
+const obj4 = {
+  name: "ExifVersion",
+  description(value) {
+    return arg1(dependencyMap[2]).getStringValue(value);
+  }
+};
+obj[37121] = { name: "ComponentsConfiguration", description: require("_defineProperties").ComponentsConfiguration };
+const obj5 = { name: "ComponentsConfiguration", description: require("_defineProperties").ComponentsConfiguration };
+obj[37377] = { name: "ShutterSpeedValue", description: require("_defineProperties").ShutterSpeedValue };
+const obj6 = { name: "ShutterSpeedValue", description: require("_defineProperties").ShutterSpeedValue };
+obj[37378] = { name: "ApertureValue", description: require("_defineProperties").ApertureValue };
+obj[37381] = {
+  name: "MaxApertureValue",
+  description(arg0) {
     return Math.pow(Math.sqrt(2), arg0[0] / arg0[1]).toFixed(2);
-  },
-  ColorSpace(parsed) {
-    let str = "sRGB";
-    if (1 !== parsed) {
-      let str2 = "Unknown";
-      if (65535 === parsed) {
-        str2 = "Uncalibrated";
-      }
-      str = str2;
-    }
-    return str;
-  },
-  ComponentsConfiguration(mapped) {
-    mapped = mapped.map((arg0) => {
-      let str = "Y";
-      if (49 !== arg0) {
-        let str2 = "Cb";
-        if (50 !== arg0) {
-          let str3 = "Cr";
-          if (51 !== arg0) {
-            let str4 = "R";
-            if (52 !== arg0) {
-              let str5 = "G";
-              if (53 !== arg0) {
-                let str6;
-                if (54 === arg0) {
-                  str6 = "B";
-                }
-                str5 = str6;
-              }
-              str4 = str5;
-            }
-            str3 = str4;
-          }
-          str2 = str3;
-        }
-        str = str2;
-      }
-      return str;
-    });
-    return mapped.join("");
-  },
-  Contrast(arg0) {
-    let str = "Normal";
+  }
+};
+obj[37382] = {
+  name: "SubjectDistance",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " m";
+  }
+};
+const obj7 = { name: "ApertureValue", description: require("_defineProperties").ApertureValue };
+const obj8 = {
+  name: "MaxApertureValue",
+  description(arg0) {
+    return Math.pow(Math.sqrt(2), arg0[0] / arg0[1]).toFixed(2);
+  }
+};
+const obj9 = {
+  name: "SubjectDistance",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " m";
+  }
+};
+obj[37383] = { name: "MeteringMode", description: require("_defineProperties").MeteringMode };
+const obj10 = { name: "MeteringMode", description: require("_defineProperties").MeteringMode };
+obj[37384] = { name: "LightSource", description: require("_defineProperties").LightSource };
+obj[37385] = {
+  name: "Flash",
+  description(arg0) {
+    let str = "Flash did not fire";
     if (0 !== arg0) {
-      let str2 = "Soft";
+      let str22 = "Flash fired";
       if (1 !== arg0) {
-        let str3 = "Unknown";
-        if (2 === arg0) {
-          str3 = "Hard";
-        }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  },
-  CustomRendered(arg0) {
-    let str = "Normal process";
-    if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Custom process";
-      }
-      str = str2;
-    }
-    return str;
-  },
-  ExposureMode(arg0) {
-    let str = "Auto exposure";
-    if (0 !== arg0) {
-      let str2 = "Manual exposure";
-      if (1 !== arg0) {
-        let str3 = "Unknown";
-        if (2 === arg0) {
-          str3 = "Auto bracket";
-        }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  },
-  ExposureProgram(arg0) {
-    let str = "Undefined";
-    if (0 !== arg0) {
-      let str10 = "Manual";
-      if (1 !== arg0) {
-        let str9 = "Normal program";
-        if (2 !== arg0) {
-          let str2 = "Aperture priority";
-          if (3 !== arg0) {
-            let str3 = "Shutter priority";
-            if (4 !== arg0) {
-              let str4 = "Creative program";
-              if (5 !== arg0) {
-                let str5 = "Action program";
-                if (6 !== arg0) {
-                  let str6 = "Portrait mode";
-                  if (7 !== arg0) {
-                    let str7 = "Landscape mode";
-                    if (8 !== arg0) {
-                      let str8 = "Unknown";
-                      if (9 === arg0) {
-                        str8 = "Bulb";
-                      }
-                      str7 = str8;
-                    }
-                    str6 = str7;
-                  }
-                  str5 = str6;
-                }
-                str4 = str5;
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str9 = str2;
-        }
-        str10 = str9;
-      }
-      str = str10;
-    }
-    return str;
-  },
-  ExposureTime(parts) {
-    if (parts[0] / parts[1] > 0.25) {
-      const result = parts[0] / parts[1];
-      const _Number = Number;
-      if (Number.isInteger(result)) {
-        let text = `${obj}`;
-      } else {
-        text = result.toFixed(1);
-      }
-      return text;
-    } else {
-      if (0 !== parts[0]) {
-        const _Math = Math;
-        const _HermesInternal2 = HermesInternal;
-        let combined = "1/" + Math.round(parts[1] / parts[0]);
-      } else {
-        const _HermesInternal = HermesInternal;
-        combined = "0/" + parts[1];
-      }
-      return combined;
-    }
-  },
-  FNumber(arg0) {
-    return "f/" + Number(arg0[0] / arg0[1]).toFixed(1);
-  },
-  FocalLength(arg0) {
-    return arg0[0] / arg0[1] + " mm";
-  },
-  FocalPlaneResolutionUnit(arg0) {
-    let str = "inches";
-    if (2 !== arg0) {
-      let str2 = "centimeters";
-      if (3 !== arg0) {
-        let str3 = "Unknown";
-        if (4 === arg0) {
-          str3 = "millimeters";
-        }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  },
-  LightSource(arg0) {
-    let str = "Daylight";
-    if (1 !== arg0) {
-      let str20 = "Fluorescent";
-      if (2 !== arg0) {
-        let str19 = "Tungsten (incandescent light)";
-        if (3 !== arg0) {
-          let str18 = "Flash";
-          if (4 !== arg0) {
-            let str17 = "Fine weather";
+        let str21 = "Strobe return light not detected";
+        if (5 !== arg0) {
+          let str20 = "Strobe return light detected";
+          if (7 !== arg0) {
+            let str19 = "Flash fired, compulsory flash mode";
             if (9 !== arg0) {
-              let str16 = "Cloudy weather";
-              if (10 !== arg0) {
-                let str15 = "Shade";
-                if (11 !== arg0) {
-                  let str14 = "Daylight fluorescent (D 5700 \u2013 7100K)";
-                  if (12 !== arg0) {
-                    let str13 = "Day white fluorescent (N 4600 \u2013 5400K)";
-                    if (13 !== arg0) {
-                      let str12 = "Cool white fluorescent (W 3900 \u2013 4500K)";
-                      if (14 !== arg0) {
-                        let str11 = "White fluorescent (WW 3200 \u2013 3700K)";
-                        if (15 !== arg0) {
-                          let str10 = "Standard light A";
-                          if (17 !== arg0) {
-                            let str9 = "Standard light B";
-                            if (18 !== arg0) {
-                              let str2 = "Standard light C";
-                              if (19 !== arg0) {
-                                let str3 = "D55";
-                                if (20 !== arg0) {
-                                  let str4 = "D65";
-                                  if (21 !== arg0) {
-                                    let str5 = "D75";
-                                    if (22 !== arg0) {
-                                      let str6 = "D50";
-                                      if (23 !== arg0) {
-                                        let str7 = "ISO studio tungsten";
-                                        if (24 !== arg0) {
-                                          let str8 = "Unknown";
-                                          if (255 === arg0) {
-                                            str8 = "Other light source";
+              let str18 = "Flash fired, compulsory flash mode, return light not detected";
+              if (13 !== arg0) {
+                let str17 = "Flash fired, compulsory flash mode, return light detected";
+                if (15 !== arg0) {
+                  let str16 = "Flash did not fire, compulsory flash mode";
+                  if (16 !== arg0) {
+                    let str15 = "Flash did not fire, auto mode";
+                    if (24 !== arg0) {
+                      let str14 = "Flash fired, auto mode";
+                      if (25 !== arg0) {
+                        let str13 = "Flash fired, auto mode, return light not detected";
+                        if (29 !== arg0) {
+                          let str12 = "Flash fired, auto mode, return light detected";
+                          if (31 !== arg0) {
+                            let str11 = "No flash function";
+                            if (32 !== arg0) {
+                              let str10 = "Flash fired, red-eye reduction mode";
+                              if (65 !== arg0) {
+                                let str9 = "Flash fired, red-eye reduction mode, return light not detected";
+                                if (69 !== arg0) {
+                                  let str2 = "Flash fired, red-eye reduction mode, return light detected";
+                                  if (71 !== arg0) {
+                                    let str3 = "Flash fired, compulsory flash mode, red-eye reduction mode";
+                                    if (73 !== arg0) {
+                                      let str4 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected";
+                                      if (77 !== arg0) {
+                                        let str5 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light detected";
+                                        if (79 !== arg0) {
+                                          let str6 = "Flash fired, auto mode, red-eye reduction mode";
+                                          if (89 !== arg0) {
+                                            let str7 = "Flash fired, auto mode, return light not detected, red-eye reduction mode";
+                                            if (93 !== arg0) {
+                                              let str8 = "Unknown";
+                                              if (95 === arg0) {
+                                                str8 = "Flash fired, auto mode, return light detected, red-eye reduction mode";
+                                              }
+                                              str7 = str8;
+                                            }
+                                            str6 = str7;
                                           }
-                                          str7 = str8;
+                                          str5 = str6;
                                         }
-                                        str6 = str7;
+                                        str4 = str5;
                                       }
-                                      str5 = str6;
+                                      str3 = str4;
                                     }
-                                    str4 = str5;
+                                    str2 = str3;
                                   }
-                                  str3 = str4;
+                                  str9 = str2;
                                 }
-                                str2 = str3;
+                                str10 = str9;
                               }
-                              str9 = str2;
+                              str11 = str10;
                             }
-                            str10 = str9;
+                            str12 = str11;
                           }
-                          str11 = str10;
+                          str13 = str12;
                         }
-                        str12 = str11;
+                        str14 = str13;
                       }
-                      str13 = str12;
+                      str15 = str14;
                     }
-                    str14 = str13;
+                    str16 = str15;
                   }
-                  str15 = str14;
+                  str17 = str16;
                 }
-                str16 = str15;
+                str18 = str17;
               }
-              str17 = str16;
+              str19 = str18;
             }
-            str18 = str17;
+            str20 = str19;
           }
-          str19 = str18;
+          str21 = str20;
         }
-        str20 = str19;
+        str22 = str21;
       }
-      str = str20;
+      str = str22;
     }
     return str;
-  },
-  MeteringMode(arg0) {
-    let str = "Average";
+  }
+};
+const obj11 = { name: "LightSource", description: require("_defineProperties").LightSource };
+const obj12 = {
+  name: "Flash",
+  description(arg0) {
+    let str = "Flash did not fire";
+    if (0 !== arg0) {
+      let str22 = "Flash fired";
+      if (1 !== arg0) {
+        let str21 = "Strobe return light not detected";
+        if (5 !== arg0) {
+          let str20 = "Strobe return light detected";
+          if (7 !== arg0) {
+            let str19 = "Flash fired, compulsory flash mode";
+            if (9 !== arg0) {
+              let str18 = "Flash fired, compulsory flash mode, return light not detected";
+              if (13 !== arg0) {
+                let str17 = "Flash fired, compulsory flash mode, return light detected";
+                if (15 !== arg0) {
+                  let str16 = "Flash did not fire, compulsory flash mode";
+                  if (16 !== arg0) {
+                    let str15 = "Flash did not fire, auto mode";
+                    if (24 !== arg0) {
+                      let str14 = "Flash fired, auto mode";
+                      if (25 !== arg0) {
+                        let str13 = "Flash fired, auto mode, return light not detected";
+                        if (29 !== arg0) {
+                          let str12 = "Flash fired, auto mode, return light detected";
+                          if (31 !== arg0) {
+                            let str11 = "No flash function";
+                            if (32 !== arg0) {
+                              let str10 = "Flash fired, red-eye reduction mode";
+                              if (65 !== arg0) {
+                                let str9 = "Flash fired, red-eye reduction mode, return light not detected";
+                                if (69 !== arg0) {
+                                  let str2 = "Flash fired, red-eye reduction mode, return light detected";
+                                  if (71 !== arg0) {
+                                    let str3 = "Flash fired, compulsory flash mode, red-eye reduction mode";
+                                    if (73 !== arg0) {
+                                      let str4 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected";
+                                      if (77 !== arg0) {
+                                        let str5 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light detected";
+                                        if (79 !== arg0) {
+                                          let str6 = "Flash fired, auto mode, red-eye reduction mode";
+                                          if (89 !== arg0) {
+                                            let str7 = "Flash fired, auto mode, return light not detected, red-eye reduction mode";
+                                            if (93 !== arg0) {
+                                              let str8 = "Unknown";
+                                              if (95 === arg0) {
+                                                str8 = "Flash fired, auto mode, return light detected, red-eye reduction mode";
+                                              }
+                                              str7 = str8;
+                                            }
+                                            str6 = str7;
+                                          }
+                                          str5 = str6;
+                                        }
+                                        str4 = str5;
+                                      }
+                                      str3 = str4;
+                                    }
+                                    str2 = str3;
+                                  }
+                                  str9 = str2;
+                                }
+                                str10 = str9;
+                              }
+                              str11 = str10;
+                            }
+                            str12 = str11;
+                          }
+                          str13 = str12;
+                        }
+                        str14 = str13;
+                      }
+                      str15 = str14;
+                    }
+                    str16 = str15;
+                  }
+                  str17 = str16;
+                }
+                str18 = str17;
+              }
+              str19 = str18;
+            }
+            str20 = str19;
+          }
+          str21 = str20;
+        }
+        str22 = str21;
+      }
+      str = str22;
+    }
+    return str;
+  }
+};
+obj[37386] = { name: "FocalLength", description: require("_defineProperties").FocalLength };
+obj[37394] = {
+  name: "SecurityClassification",
+  description(arg0) {
+    return {}[arg0] || "Unknown";
+  }
+};
+obj[37396] = {
+  name: "SubjectArea",
+  description(arg0) {
+    if (2 === arg0.length) {
+      const _HermesInternal3 = HermesInternal;
+      let str = "Location; X: " + arg0[0] + ", Y: " + arg0[1];
+    } else if (3 === arg0.length) {
+      const _HermesInternal2 = HermesInternal;
+      str = "Circle; X: " + arg0[0] + ", Y: " + arg0[1] + ", diameter: " + arg0[2];
+    } else {
+      str = "Unknown";
+      if (4 === arg0.length) {
+        const _HermesInternal = HermesInternal;
+        str = "Rectangle; X: " + arg0[0] + ", Y: " + arg0[1] + ", width: " + arg0[2] + ", height: " + arg0[3];
+      }
+    }
+    return str;
+  }
+};
+obj[37500] = {
+  name: "MakerNote",
+  description() {
+    return "[Raw maker note data]";
+  }
+};
+const obj13 = { name: "FocalLength", description: require("_defineProperties").FocalLength };
+const obj14 = {
+  name: "SecurityClassification",
+  description(arg0) {
+    return {}[arg0] || "Unknown";
+  }
+};
+const obj15 = {
+  name: "SubjectArea",
+  description(arg0) {
+    if (2 === arg0.length) {
+      const _HermesInternal3 = HermesInternal;
+      let str = "Location; X: " + arg0[0] + ", Y: " + arg0[1];
+    } else if (3 === arg0.length) {
+      const _HermesInternal2 = HermesInternal;
+      str = "Circle; X: " + arg0[0] + ", Y: " + arg0[1] + ", diameter: " + arg0[2];
+    } else {
+      str = "Unknown";
+      if (4 === arg0.length) {
+        const _HermesInternal = HermesInternal;
+        str = "Rectangle; X: " + arg0[0] + ", Y: " + arg0[1] + ", width: " + arg0[2] + ", height: " + arg0[3];
+      }
+    }
+    return str;
+  }
+};
+const obj16 = {
+  name: "MakerNote",
+  description() {
+    return "[Raw maker note data]";
+  }
+};
+obj[37510] = { name: "UserComment", description: require("_possibleConstructorReturn").getEncodedString };
+obj[37888] = {
+  name: "AmbientTemperature",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " \u00B0C";
+  }
+};
+obj[37889] = {
+  name: "Humidity",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " %";
+  }
+};
+obj[37890] = {
+  name: "Pressure",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " hPa";
+  }
+};
+obj[37891] = {
+  name: "WaterDepth",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " m";
+  }
+};
+obj[37892] = {
+  name: "Acceleration",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " mGal";
+  }
+};
+obj[37893] = {
+  name: "CameraElevationAngle",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " \u00B0";
+  }
+};
+obj[40960] = {
+  name: "FlashpixVersion",
+  description(arr) {
+    const mapped = arr.map((arg0) => String.fromCharCode(arg0));
+    return mapped.join("");
+  }
+};
+const obj17 = { name: "UserComment", description: require("_possibleConstructorReturn").getEncodedString };
+const obj18 = {
+  name: "AmbientTemperature",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " \u00B0C";
+  }
+};
+const obj19 = {
+  name: "Humidity",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " %";
+  }
+};
+const obj20 = {
+  name: "Pressure",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " hPa";
+  }
+};
+const obj21 = {
+  name: "WaterDepth",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " m";
+  }
+};
+const obj22 = {
+  name: "Acceleration",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " mGal";
+  }
+};
+const obj23 = {
+  name: "CameraElevationAngle",
+  description(arg0) {
+    return arg0[0] / arg0[1] + " \u00B0";
+  }
+};
+const obj24 = {
+  name: "FlashpixVersion",
+  description(arr) {
+    const mapped = arr.map((arg0) => String.fromCharCode(arg0));
+    return mapped.join("");
+  }
+};
+obj[40961] = { name: "ColorSpace", description: require("_defineProperties").ColorSpace };
+obj[41484] = {
+  name: "SpatialFrequencyResponse",
+  description() {
+    return "[Raw SFR table data]";
+  }
+};
+const obj25 = { name: "ColorSpace", description: require("_defineProperties").ColorSpace };
+const obj26 = {
+  name: "SpatialFrequencyResponse",
+  description() {
+    return "[Raw SFR table data]";
+  }
+};
+obj[41488] = { name: "FocalPlaneResolutionUnit", description: require("_defineProperties").FocalPlaneResolutionUnit };
+obj[41492] = {
+  name: "SubjectLocation",
+  description(arg0) {
+    const tmp = callback(arg0, 2);
+    return "X: " + tmp[0] + ", Y: " + tmp[1];
+  }
+};
+obj[41495] = {
+  name: "SensingMethod",
+  description(arg0) {
+    let str = "Undefined";
     if (1 !== arg0) {
-      let str2 = "CenterWeightedAverage";
+      let str2 = "One-chip color area sensor";
       if (2 !== arg0) {
-        let str3 = "Spot";
+        let str3 = "Two-chip color area sensor";
         if (3 !== arg0) {
-          let str4 = "MultiSpot";
+          let str4 = "Three-chip color area sensor";
           if (4 !== arg0) {
-            let str5 = "Pattern";
+            let str5 = "Color sequential area sensor";
             if (5 !== arg0) {
-              let str6 = "Partial";
-              if (6 !== arg0) {
+              let str6 = "Trilinear sensor";
+              if (7 !== arg0) {
                 let str7 = "Unknown";
-                if (255 === arg0) {
-                  str7 = "Other";
+                if (8 === arg0) {
+                  str7 = "Color sequential linear sensor";
                 }
                 str6 = str7;
               }
@@ -288,50 +476,66 @@ arg5.default = {
       str = str2;
     }
     return str;
-  },
-  ResolutionUnit(arg0) {
-    let str = "inches";
-    if (2 !== arg0) {
-      let str2 = "Unknown";
-      if (3 === arg0) {
-        str2 = "centimeters";
-      }
-      str = str2;
-    }
-    return str;
-  },
-  Saturation(arg0) {
-    let str = "Normal";
-    if (0 !== arg0) {
-      let str2 = "Low saturation";
-      if (1 !== arg0) {
-        let str3 = "Unknown";
-        if (2 === arg0) {
-          str3 = "High saturation";
-        }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  },
-  FocalLengthIn35mmFilm(arg0) {
+  }
+};
+obj[41728] = {
+  name: "FileSource",
+  description(arg0) {
     let str = "Unknown";
-    if (0 !== arg0) {
-      str = `${arg0} mm`;
+    if (3 === arg0) {
+      str = "DSC";
     }
     return str;
-  },
-  SceneCaptureType(arg0) {
-    let str = "Standard";
-    if (0 !== arg0) {
-      let str2 = "Landscape";
-      if (1 !== arg0) {
-        let str3 = "Portrait";
-        if (2 !== arg0) {
-          let str4 = "Unknown";
-          if (3 === arg0) {
-            str4 = "Night scene";
+  }
+};
+obj[41729] = {
+  name: "SceneType",
+  description(arg0) {
+    let str = "Unknown";
+    if (1 === arg0) {
+      str = "A directly photographed image";
+    }
+    return str;
+  }
+};
+obj[41730] = {
+  name: "CFAPattern",
+  description() {
+    return "[Raw CFA pattern table data]";
+  }
+};
+const obj27 = { name: "FocalPlaneResolutionUnit", description: require("_defineProperties").FocalPlaneResolutionUnit };
+const obj28 = {
+  name: "SubjectLocation",
+  description(arg0) {
+    const tmp = callback(arg0, 2);
+    return "X: " + tmp[0] + ", Y: " + tmp[1];
+  }
+};
+const obj29 = {
+  name: "SensingMethod",
+  description(arg0) {
+    let str = "Undefined";
+    if (1 !== arg0) {
+      let str2 = "One-chip color area sensor";
+      if (2 !== arg0) {
+        let str3 = "Two-chip color area sensor";
+        if (3 !== arg0) {
+          let str4 = "Three-chip color area sensor";
+          if (4 !== arg0) {
+            let str5 = "Color sequential area sensor";
+            if (5 !== arg0) {
+              let str6 = "Trilinear sensor";
+              if (7 !== arg0) {
+                let str7 = "Unknown";
+                if (8 === arg0) {
+                  str7 = "Color sequential linear sensor";
+                }
+                str6 = str7;
+              }
+              str5 = str6;
+            }
+            str4 = str5;
           }
           str3 = str4;
         }
@@ -340,50 +544,168 @@ arg5.default = {
       str = str2;
     }
     return str;
-  },
-  Sharpness(arg0) {
-    let str = "Normal";
+  }
+};
+const obj30 = {
+  name: "FileSource",
+  description(arg0) {
+    let str = "Unknown";
+    if (3 === arg0) {
+      str = "DSC";
+    }
+    return str;
+  }
+};
+const obj31 = {
+  name: "SceneType",
+  description(arg0) {
+    let str = "Unknown";
+    if (1 === arg0) {
+      str = "A directly photographed image";
+    }
+    return str;
+  }
+};
+const obj32 = {
+  name: "CFAPattern",
+  description() {
+    return "[Raw CFA pattern table data]";
+  }
+};
+obj[41985] = { name: "CustomRendered", description: require("_defineProperties").CustomRendered };
+const obj33 = { name: "CustomRendered", description: require("_defineProperties").CustomRendered };
+obj[41986] = { name: "ExposureMode", description: require("_defineProperties").ExposureMode };
+const obj34 = { name: "ExposureMode", description: require("_defineProperties").ExposureMode };
+obj[41987] = { name: "WhiteBalance", description: require("_defineProperties").WhiteBalance };
+obj[41988] = {
+  name: "DigitalZoomRatio",
+  description(arg0) {
+    let str = "Digital zoom was not used";
+    if (0 !== arg0[0]) {
+      str = `${arg0[0] / arg0[1]}`;
+    }
+    return str;
+  }
+};
+const obj35 = { name: "WhiteBalance", description: require("_defineProperties").WhiteBalance };
+const obj36 = {
+  name: "DigitalZoomRatio",
+  description(arg0) {
+    let str = "Digital zoom was not used";
+    if (0 !== arg0[0]) {
+      str = `${arg0[0] / arg0[1]}`;
+    }
+    return str;
+  }
+};
+obj[41989] = { name: "FocalLengthIn35mmFilm", description: require("_defineProperties").FocalLengthIn35mmFilm };
+const obj37 = { name: "FocalLengthIn35mmFilm", description: require("_defineProperties").FocalLengthIn35mmFilm };
+obj[41990] = { name: "SceneCaptureType", description: require("_defineProperties").SceneCaptureType };
+obj[41991] = {
+  name: "GainControl",
+  description(arg0) {
+    let str = "None";
     if (0 !== arg0) {
-      let str2 = "Soft";
+      let str2 = "Low gain up";
       if (1 !== arg0) {
-        let str3 = "Unknown";
-        if (2 === arg0) {
-          str3 = "Hard";
+        let str3 = "High gain up";
+        if (2 !== arg0) {
+          let str4 = "Low gain down";
+          if (3 !== arg0) {
+            let str5 = "Unknown";
+            if (4 === arg0) {
+              str5 = "High gain down";
+            }
+            str4 = str5;
+          }
+          str3 = str4;
         }
         str2 = str3;
       }
       str = str2;
     }
     return str;
-  },
-  ShutterSpeedValue(arg0) {
-    const powResult = Math.pow(2, arg0[0] / arg0[1]);
-    if (powResult <= 1) {
-      const _Math2 = Math;
-      const _HermesInternal2 = HermesInternal;
-      let combined = "" + Math.round(1 / powResult);
-    } else {
-      const _Math = Math;
-      const _HermesInternal = HermesInternal;
-      combined = "1/" + Math.round(powResult);
-    }
-    return combined;
-  },
-  WhiteBalance(arg0) {
-    let str = "Auto white balance";
+  }
+};
+const obj38 = { name: "SceneCaptureType", description: require("_defineProperties").SceneCaptureType };
+const obj39 = {
+  name: "GainControl",
+  description(arg0) {
+    let str = "None";
     if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Manual white balance";
+      let str2 = "Low gain up";
+      if (1 !== arg0) {
+        let str3 = "High gain up";
+        if (2 !== arg0) {
+          let str4 = "Low gain down";
+          if (3 !== arg0) {
+            let str5 = "Unknown";
+            if (4 === arg0) {
+              str5 = "High gain down";
+            }
+            str4 = str5;
+          }
+          str3 = str4;
+        }
+        str2 = str3;
       }
       str = str2;
     }
     return str;
-  },
-  XResolution(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
-  },
-  YResolution(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
   }
 };
+obj[41992] = { name: "Contrast", description: require("_defineProperties").Contrast };
+const obj40 = { name: "Contrast", description: require("_defineProperties").Contrast };
+obj[41993] = { name: "Saturation", description: require("_defineProperties").Saturation };
+const obj41 = { name: "Saturation", description: require("_defineProperties").Saturation };
+obj[41994] = { name: "Sharpness", description: require("_defineProperties").Sharpness };
+obj[41995] = {
+  name: "DeviceSettingDescription",
+  description() {
+    return "[Raw device settings table data]";
+  }
+};
+obj[41996] = {
+  name: "SubjectDistanceRange",
+  description(arg0) {
+    let str = "Macro";
+    if (1 !== arg0) {
+      let str2 = "Close view";
+      if (2 !== arg0) {
+        let str3 = "Unknown";
+        if (3 === arg0) {
+          str3 = "Distant view";
+        }
+        str2 = str3;
+      }
+      str = str2;
+    }
+    return str;
+  }
+};
+obj[42034] = {
+  name: "LensSpecification",
+  description(arg0) {
+    const result = arg0[0][0] / arg0[0][1];
+    const parsed = parseFloat(result.toFixed(5));
+    const result1 = arg0[1][0] / arg0[1][1];
+    const combined = "" + parsed + "-" + parseFloat(result1.toFixed(5)) + " mm";
+    if (0 === arg0[3][1]) {
+      const _HermesInternal2 = HermesInternal;
+      return "" + combined + " f/?";
+    } else {
+      const result2 = 1 / (arg0[2][1] / arg0[2][1] / (arg0[3][0] / arg0[3][1]));
+      const _parseFloat = parseFloat;
+      const _HermesInternal = HermesInternal;
+      return "" + combined + " f/" + parseFloat(result2.toFixed(5));
+    }
+  }
+};
+obj[42080] = {
+  name: "CompositeImage",
+  description(arg0) {
+    return { -349215301: true, 2115606444: true, -1437386140: true }[arg0] || "Unknown";
+  }
+};
+
+export default obj;

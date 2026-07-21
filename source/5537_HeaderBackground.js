@@ -1,5 +1,5 @@
 // Module ID: 5537
-// Function ID: 47070
+// Function ID: 47078
 // Name: HeaderBackground
 // Dependencies: []
 // Exports: default
@@ -7,7 +7,7 @@
 // Module 5537 (HeaderBackground)
 let Platform;
 let StyleSheet;
-let closure_2 = ["GUILD_DELETE"];
+let closure_2 = [null];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ Animated: closure_4, Platform, StyleSheet } = arg1(dependencyMap[2]));

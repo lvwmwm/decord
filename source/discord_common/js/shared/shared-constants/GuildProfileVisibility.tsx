@@ -1,10 +1,10 @@
-// Module ID: 5400
-// Function ID: 46042
+// Module ID: 5399
+// Function ID: 46049
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 5400 (set)
-const obj = { VISIBLE: new Set([false, false]) };
+// Module 5399 (set)
+const obj = { VISIBLE: new Set([1072117559, 369]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileVisibility.tsx");
 

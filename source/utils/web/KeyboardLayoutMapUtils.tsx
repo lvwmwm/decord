@@ -1,10 +1,10 @@
-// Module ID: 12704
-// Function ID: 97474
+// Module ID: 12706
+// Function ID: 97496
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, resetKeyboardMapper
 
-// Module 12704 (_isNativeReflectConstruct)
+// Module 12706 (_isNativeReflectConstruct)
 let LinuxKeyToCode;
 let MacosKeyToCode;
 let WindowsKeyToCode;
@@ -163,7 +163,7 @@ if (!obj.isLinux()) {
   const obj2 = arg1(dependencyMap[10]);
 }
 const obj = arg1(dependencyMap[10]);
-const frozen = Object.freeze({ "Null": null, "Null": "928ec3b0cfa6ddcb7b852c71960488c7", "Null": "Share", borderRadius: "png", borderWidth: 12, borderStyle: 16, marginBottom: 8, fontSize: true, color: "/assets/modules/contact_sync/native/images", paddingHorizontal: 40, paddingBottom: 40, textAlign: null, margin: "1d68443a64aaff8d1d20c2355b47322a", width: "cta", height: "png", display: 24, justifyContent: 128, alignItems: 96, minWidth: null, height: "center", borderRadius: 1, marginHorizontal: "space-between", marginVertical: null, justifyContent: "stretch", alignItems: 80, "Bool(false)": 80, "Bool(false)": "center", "Bool(false)": "underline", "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "native_modal", "Bool(false)": "one_time_login_native_modal", "Bool(false)": "native_app", "Bool(false)": "native_modal", "Bool(false)": "missing_token", sk: "No token provided", default: "native_modal", ml: "one_time_login", np: "native_modal", has: "api_error", ind: true, _distance: "/assets/images/native", title: 120, t: 120, accessible: null, messageId: "0242e2e3975e7ca5a2256573e276d96f", container: "logo", channel: "png" });
+const frozen = Object.freeze({ MIN_SWIPE_VELOCITY: null, switch: "928ec3b0cfa6ddcb7b852c71960488c7", UMWBZr: "Share", elevation: "png", friendIcon: 12, _monthsRegex: 16, marginLeft: 8, ExclusiveGesture: true, EMPTY_SOUND_LIST: "/assets/modules/contact_sync/native/images", display: 40, CONNECTIONS_CALLBACK_ERROR: 40, FM: null, EMOJI_REACTIONS_ON_MESSAGES: "1d68443a64aaff8d1d20c2355b47322a", paddingVertical: "cta", GiftCodeModalStates: "png", crystal_ball: 24, native_build_number: 128, shouldInitialScroll: 96, stageInfoTopic: null, fontSize: "center", getIsActivitiesEnabledForCurrentPlatform: 1, EMOJI_REACTIONS_ON_MESSAGES: "space-between", paddingBottom: null, nodeName: "stretch", GuildEventDescription: 80, IMPERSONATE_UPDATE: 80, afterMs: "center", Č: null, accessibilityDismiss: "row", channelInfo: "space-between", unstable_shouldYield: 8, GemLeftUpwards3dIllustration: 16, GiftingTier5SmallBadge: "underline", ElYQFS: null, smiling_imp: 1, _cachedKeyLayoutMapEntries: "native_modal", channelInfo: "one_time_login_native_modal", inspectedExpressionPosition: "native_app", hasInteracted: "native_modal", activeCategoryIndex: "missing_token", searchPlaceholder: "No token provided", bottomPosition: "native_modal", analyticsId: "one_time_login", completeRoot: "native_modal", fetching: "api_error", GameControllerIcon: true, NEW_USER_INTENT_START: "/assets/images/native", fontWeight: 120 });
 let tmp7 = () => {
   class DiscordKeyboardLayoutMap {
     constructor() {

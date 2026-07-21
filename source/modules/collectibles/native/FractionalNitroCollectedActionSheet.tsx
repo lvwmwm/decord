@@ -1,5 +1,5 @@
 // Module ID: 11825
-// Function ID: 91678
+// Function ID: 91690
 // Name: NitroAcquiredHeader
 // Dependencies: []
 // Exports: default
@@ -30,19 +30,19 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { flex: 1, padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.body = obj;
-const obj1 = { justifyContent: "isArray", alignItems: "accessibilityRole", top: "value", gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.content = obj1;
 const tmp3 = arg1(dependencyMap[4]);
+obj.content = { gap: importDefault(dependencyMap[6]).space.PX_16 };
+const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.buttonContainer = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.description = { textAlign: "center" };
-obj.header = { "Null": "isArray", "Null": "container", "Null": "", "Null": "" };
-const obj3 = { right: 4317509, bottom: 1163911168, accessibilityRole: 4318373, props: 285204480, guildId: 4320215 };
+obj.header = { "Null": "accessibilityLabel", "Null": "r", "Null": "isArray", "Null": 24 };
+const obj3 = { -9223372036854775808: 4317509, 0: 1163911168, -9223372036854775808: 4318373, -9223372036854775808: 285204480, 9223372036854775807: 4320215 };
 const items = [{ translateX: -34 }, { translateY: -34 }];
 obj3.transform = items;
 obj.fractionNitroIcon = obj3;
-const obj4 = { "Null": "/assets/images/native/icons", "Null": 12, "Null": 12, "Null": null, alignItems: "center", justifyContent: "ic_sparkle", loading: "png", right: importDefault(dependencyMap[6]).space.PX_16, top: importDefault(dependencyMap[6]).space.PX_16, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+const obj4 = { "Null": "/assets/images/native/icons", "Null": 12, "Null": 12, alignItems: "center", justifyContent: "b28329d7d2ebd0b330f6112973e5d746", loading: "ic_sparkle", note: "png", right: importDefault(dependencyMap[6]).space.PX_16, top: importDefault(dependencyMap[6]).space.PX_16, backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.questionIconContainer = obj4;
-obj.questionIcon = { bhk: null, bic: null };
+obj.questionIcon = { "Null": false, "Null": false };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/collectibles/native/FractionalNitroCollectedActionSheet.tsx");
@@ -86,7 +86,7 @@ export default function FractionalNitroCollectedActionSheet(consumed) {
   const memo1 = React.useMemo(() => {
     const intl = consumed(tmp2[16]).intl;
     const formatToPlainStringResult = intl.formatToPlainString(consumed(tmp2[16]).t.Cz1G97, { days: 3 });
-    let obj = { style: tmp.description };
+    let obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
     if (consumed) {
       const intl3 = consumed(tmp2[16]).intl;
       obj = { duration: formatToPlainStringResult, expirationDate: expiresAt };
@@ -147,7 +147,7 @@ export default function FractionalNitroCollectedActionSheet(consumed) {
       tmp27 = obj8;
     }
     const items5 = [callback(arg1(dependencyMap[23]).Button, tmp27), ];
-    const obj9 = { key: "r", onCloseCallback: "sectionIdsByBotId" };
+    const obj9 = {};
     const intl2 = arg1(dependencyMap[16]).intl;
     obj9.text = intl2.string(arg1(dependencyMap[16]).t.TkTvBz);
     obj9.onPress = function onPress() {

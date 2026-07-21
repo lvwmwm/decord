@@ -1,9 +1,9 @@
-// Module ID: 14585
-// Function ID: 109903
+// Module ID: 14588
+// Function ID: 109935
 // Name: VisualEffectViewOverrideOverlay_
 // Dependencies: []
 
-// Module 14585 (VisualEffectViewOverrideOverlay_)
+// Module 14588 (VisualEffectViewOverrideOverlay_)
 function VisualEffectViewOverrideOverlay_(arg0) {
   const x = arg0.x;
   const arg1 = x;
@@ -46,7 +46,7 @@ const DEV_WIDGET_SIZE = arg1(dependencyMap[3]).DEV_WIDGET_SIZE;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
-const styles = obj1.createStyles({ zeroPadding: { flex: -536870861, display: -299892737 }, zeroPaddingVertical: { paddingVertical: 0 }, zeroPaddingHorizontal: { paddingHorizontal: 0 }, zeroHeight: { height: 0 }, enabledSwitchStyle: { alignSelf: "flex-start" } });
+const styles = obj1.createStyles({ zeroPadding: { paddingHorizontal: -536870861, accessible: -299892737 }, zeroPaddingVertical: { paddingVertical: 0 }, zeroPaddingHorizontal: { paddingHorizontal: 0 }, zeroHeight: { height: 0 }, enabledSwitchStyle: { alignSelf: "flex-start" } });
 let obj2 = arg1(dependencyMap[5]);
 let obj = {};
 obj = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_660, borderRadius: importDefault(dependencyMap[6]).radii.lg };

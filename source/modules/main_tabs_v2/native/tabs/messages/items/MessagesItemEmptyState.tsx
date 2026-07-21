@@ -1,18 +1,18 @@
-// Module ID: 14831
-// Function ID: 111757
+// Module ID: 14834
+// Function ID: 111791
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
 // Dependencies: []
 
-// Module 14831 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 14834 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Null": "<string:592510980>", "Null": "<string:1359020034>", "Null": "<string:1363251339>", padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { "Bool(false)": true, "Bool(false)": "mobile-text-heading-primary", "Bool(false)": null, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj1 = { position: "default", bottom: "done", left: "go", marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.containerImage = obj1;
 obj.image = {};
 const tmp3 = arg1(dependencyMap[2]);
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       obj2 = current;
     }
     if (!tmp2) {
-      obj = { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: "<string:1010910605>", borderTopWidth: "<string:1912603051>" } };
+      obj = { screen: "add-friends", params: { backgroundColor: null, width: null } };
       obj2.navigate("friends", obj);
     }
   }, []);
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   obj.style = tmp.image;
   obj.children = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
-  const obj1 = { <string:3422816600>: "photo", <string:99133337>: "high", <string:77661089>: 1, <string:3265332897>: 0, style: tmp.title };
+  const obj1 = { style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.8JZof8);
   items[1] = callback(arg1(dependencyMap[7]).Heading, obj1);

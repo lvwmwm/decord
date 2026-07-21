@@ -1,5 +1,5 @@
 // Module ID: 5721
-// Function ID: 49169
+// Function ID: 49177
 // Name: matchSorter
 // Dependencies: []
 // Exports: matchSorter
@@ -303,7 +303,7 @@ matchSorter.rankings = obj;
 function defaultBaseSortFn(rankedValue, rankedValue2) {
   return String(rankedValue.rankedValue).localeCompare(String(rankedValue2.rankedValue));
 }
-let closure_4 = { largeTitleFontSize: "keyword", largeTitleFontWeight: "to top left" };
+let closure_4 = { -9223372036854775808: "<string:1358954784>", 0: "<string:1094796210>" };
 
 export { defaultBaseSortFn };
 export { matchSorter };

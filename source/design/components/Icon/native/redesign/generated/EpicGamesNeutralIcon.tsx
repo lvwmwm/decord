@@ -1,12 +1,12 @@
 // Module ID: 8603
-// Function ID: 68272
+// Function ID: 68283
 // Name: EpicGamesNeutralIcon
 // Dependencies: [31, 27, 33, 4126, 689, 5462]
 // Exports: EpicGamesNeutralIcon
 
 // Module 8603 (EpicGamesNeutralIcon)
 import "module_31";
-import { jsx } from "keys";
+import { jsx } from "get ActivityIndicator";
 import mergeLocations from "mergeLocations";
 
 const result = mergeLocations.fileFinishedImporting("design/components/Icon/native/redesign/generated/EpicGamesNeutralIcon.tsx");

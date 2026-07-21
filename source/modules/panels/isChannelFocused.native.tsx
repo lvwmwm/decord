@@ -1,5 +1,5 @@
 // Module ID: 10216
-// Function ID: 78926
+// Function ID: 78937
 // Name: getFocusedChannelId
 // Dependencies: []
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused

@@ -1,5 +1,5 @@
 // Module ID: 11681
-// Function ID: 90625
+// Function ID: 90637
 // Name: getClass
 // Dependencies: []
 // Exports: getClass

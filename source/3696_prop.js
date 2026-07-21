@@ -1,5 +1,5 @@
 // Module ID: 3696
-// Function ID: 28063
+// Function ID: 28068
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" }, narrow: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" }, short: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" } };
+    const obj1 = { long: { application: "isArray", Set: "now", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "now", Icon: "content", id: "a" }, short: { application: "isArray", Set: "now", Icon: "content", id: "a" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "pl";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } }, disjunction: { long: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" }, narrow: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" }, short: { "Bool(false)": "<string:2483028852>", "Bool(false)": "<string:1140851434>", "Bool(false)": "{0}\u548C{1}", "Bool(false)": "{0}\u3001{1}" } }, unit: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } } }, locale: "pl" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: "isArray", Set: "now", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "now", Icon: "content", id: "a" }, short: { application: "isArray", Set: "now", Icon: "content", id: "a" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "pl" });

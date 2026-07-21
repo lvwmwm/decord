@@ -1,5 +1,5 @@
 // Module ID: 8817
-// Function ID: 69516
+// Function ID: 69527
 // Name: Placeholder
 // Dependencies: []
 
@@ -29,16 +29,16 @@ const USERS_LIST_PADDING_BETWEEN_SECTIONS = tmp2.USERS_LIST_PADDING_BETWEEN_SECT
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = { sectionHeader: obj };
-obj = { 9223372036854775807: 10, 9223372036854775807: 10, top: -1 * tmp2.USERS_LIST_SECTION_BOTTOM_PADDING };
+obj = { Č: 10, accessibilityDismiss: 10, top: -1 * tmp2.USERS_LIST_SECTION_BOTTOM_PADDING };
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.stickyHeader = obj1;
-const obj2 = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.list = obj2;
+const tmp3 = arg1(dependencyMap[4]);
+obj.list = { backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.emptySection = { paddingBottom: USERS_LIST_PADDING_BETWEEN_SECTIONS };
-const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS };
+const obj3 = { 0: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS };
 obj.section = obj3;
 obj.badgeWrapper = { height: "100%" };
-const obj4 = { left: importDefault(dependencyMap[6]).space.PX_4 + importDefault(dependencyMap[6]).space.PX_4 / 2 };
+const obj4 = { "Null": null, "Null": "01b615b81a2755a195f3be7dbb482eef", "Null": "voice_bar_speaker_new", left: importDefault(dependencyMap[6]).space.PX_4 + importDefault(dependencyMap[6]).space.PX_4 / 2 };
 obj.badge = obj4;
 let closure_10 = obj1.createStyles(obj);
 let closure_11 = { code: "function UsersFastListTsx1(){const{scrollPosValue,stickyAt}=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;}" };
@@ -145,7 +145,7 @@ let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
     }
   }
   obj = { style: memo1 };
-  obj1 = { "Null": 2417, "Null": 487680 };
+  obj1 = { 0: null, 9223372036854775807: null };
   let str = "text-sm/semibold";
   if (tmp2) {
     str = "text-md/medium";
@@ -171,7 +171,7 @@ let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
   let tmp18 = null;
   if (null != actionTitle) {
     const obj4 = { onPress: action };
-    const obj5 = { children: actionTitle };
+    const obj5 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute", children: actionTitle };
     obj4.children = callback2(arg1(dependencyMap[12]).Text, obj5);
     tmp18 = callback2(arg1(dependencyMap[14]).PressableOpacity, obj4);
   }
@@ -193,7 +193,7 @@ let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
   }
   return tmp25Result;
 });
-const tmp3 = arg1(dependencyMap[4]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const forwardRefResult = importAllResult.forwardRef(function UsersFastListInner(getItemProps, ref) {
   let getItemSize;
   let inActionSheet;

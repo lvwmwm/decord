@@ -1,9 +1,9 @@
-// Module ID: 13477
-// Function ID: 102295
+// Module ID: 13479
+// Function ID: 102317
 // Name: PX_8
 // Dependencies: []
 
-// Module 13477 (PX_8)
+// Module 13479 (PX_8)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isProfileFrameRecord = arg1(dependencyMap[2]).isProfileFrameRecord;
@@ -12,11 +12,11 @@ let closure_6 = arg1(dependencyMap[3]).PROFILE_FRAME_ASPECT_RATIO;
 const PX_8 = importDefault(dependencyMap[5]).space.PX_8;
 let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: arg1(dependencyMap[7]).GUTTER_SIZE };
+obj = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: arg1(dependencyMap[7]).GUTTER_SIZE };
 obj.row = obj;
 obj1 = { height: arg1(dependencyMap[7]).GUTTER_SIZE };
 obj.rowSpacer = obj1;
-const obj2 = { borderWidth: "<string:1107296833>", width: "p\u00E4iv\u00E4", height: "{{count}} p\u00E4iv\u00E4\u00E4", justifyContent: "<string:39208002>", alignItems: "<string:19595008>", borderRadius: "<string:1275085312>", paddingVertical: PX_8 };
+const obj2 = { -1302634668: null, 643032929: null, -1061115014: null, 1449681162: null, 687284756: null, 56714916: null, paddingVertical: PX_8 };
 obj.previewContainer = obj2;
 let closure_11 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {

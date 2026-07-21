@@ -1,15 +1,17 @@
-// Module ID: 12640
-// Function ID: 97253
+// Module ID: 12642
+// Function ID: 97275
 // Name: getAGC2ExperimentConfig
 // Dependencies: []
 // Exports: getAGC2ExperimentConfig
 
-// Module 12640 (getAGC2ExperimentConfig)
-let obj = { "Null": null, "Null": "19.1.0", "Null": "angle", "Null": 90, "Null": null, "Null": 1, "Null": "text-xs/medium", "Null": "text-muted", "Null": 1 };
+// Module 12642 (getAGC2ExperimentConfig)
+let obj = { guildId: true, userId: true, onCancel: true, flexDirection: true, justifyContent: true, width: true, height: true, marginBottom: true, kicking: true };
 const _module = require(dependencyMap[0]);
-obj = { friend_add_type: "isArray", source_page: "isArray", fontSize: "isArray" };
+obj = { marginLeft: false, marginRight: false, borderRadius: false };
 obj.noiseCancellationConfig = obj;
-let closure_0 = _module.createApexExperiment({ defaultConfig: { noiseCancellationDuringProcessing: false, noiseCancellationConfig: { useAGC2: false } }, variations: { [1]: { noiseCancellationDuringProcessing: true, noiseCancellationConfig: { useAGC2: false } }, [2]: { noiseCancellationConfig: obj }, [3]: obj, [4]: { noiseCancellationConfig: obj }, [5]: { noiseCancellationConfig: obj }, [6]: { noiseCancellationConfig: obj } } });
+obj = { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039873323606451113, marginRight: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042721418146003455, borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004556951274888411 };
+obj.noiseCancellationConfig = obj;
+let closure_0 = _module.createApexExperiment({ defaultConfig: { noiseCancellationDuringProcessing: false, noiseCancellationConfig: { useAGC2: false } }, variations: { [1]: { noiseCancellationDuringProcessing: true, noiseCancellationConfig: { useAGC2: false } }, [2]: obj, [3]: { noiseCancellationConfig: obj }, [4]: { noiseCancellationConfig: obj }, [5]: { noiseCancellationConfig: obj }, [6]: obj } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/media_engine/AGC2Experiment.tsx");
 

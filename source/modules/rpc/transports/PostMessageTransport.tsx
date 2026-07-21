@@ -1,5 +1,5 @@
 // Module ID: 10483
-// Function ID: 81190
+// Function ID: 81201
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4031, 653, 10485, 10484, 10495, 2, 6, 7, 653, 22, 10485, 2, 7, 6, 15, 17]
 
@@ -74,7 +74,7 @@ export default (EventEmitter) => {
           return tmp === arg0;
         });
         if (null == found) {
-          found = [null, null];
+          found = [true, true];
         }
         const first = callback3(found, 1)[0];
         if (null != first) {
@@ -107,7 +107,7 @@ export default (EventEmitter) => {
           return tmp.frameId === id;
         });
         if (null == found) {
-          found = [null, null];
+          found = [true, true];
         }
         const tmp2 = callback3(found, 2);
         const first = tmp2[0];

@@ -1,9 +1,9 @@
 // Module ID: 10725
-// Function ID: 83413
+// Function ID: 83424
 // Dependencies: []
 
 // Module 10725
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "<string:1591476226>", isInternetReachable: "<string:3578855425>", details: "<string:3359769015>", reachabilityUrl: "<string:2818573434>", reachabilityMethod: "<string:3310485760>", reachabilityHeaders: "<string:1900383489>", reachabilityTest: "Boolean", reachabilityShortTimeout: "<string:1361593681>", scales: [] };
+const obj = { "Bool(false)": "<string:3684827138>", "Bool(false)": "<string:2018574337>", "Bool(false)": "<string:507642323>", "Bool(false)": "<string:1107297403>", "Bool(false)": "<string:3193045248>", "Bool(false)": "<string:1900331521>", "Bool(false)": "Boolean", "Bool(false)": "<string:1370553681>", scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

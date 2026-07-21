@@ -1,13 +1,12 @@
-// Module ID: 15910
-// Function ID: 121884
+// Module ID: 15914
+// Function ID: 121928
 // Name: useIsSearchResultsFeedbackExperimentEnabled
 // Dependencies: []
 // Exports: getIsSearchResultsFeedbackExperimentEnabled, useIsSearchResultsFeedbackExperimentEnabled
 
-// Module 15910 (useIsSearchResultsFeedbackExperimentEnabled)
+// Module 15914 (useIsSearchResultsFeedbackExperimentEnabled)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: "/assets/modules/holidays/assets", 0: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
+let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/search/experiments/SearchResultsFeedbackExperiment.tsx");
 

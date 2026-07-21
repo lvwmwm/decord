@@ -1,5 +1,5 @@
 // Module ID: 8775
-// Function ID: 69325
+// Function ID: 69336
 // Name: PremiumGiftBackgroundAnimation
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: {}, consistentHeight: { height: 300 }, animation: { height: "he", borderRadius: "simple", borderWidth: false }, baseAnimation: {}, lottie: { height: 275 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { "Null": "absolute", "Null": 4, "Null": 8, "Null": null }, consistentHeight: { height: 300 }, animation: { outerContainer: true, getMessageStickers: true, SIZE_152: true }, baseAnimation: {}, lottie: { height: 275 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
 

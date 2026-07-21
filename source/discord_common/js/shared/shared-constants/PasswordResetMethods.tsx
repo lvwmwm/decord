@@ -1,7 +1,7 @@
 // Module ID: 9190
-// Function ID: 71978
+// Function ID: 71989
 // Name: PasswordResetMethods
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9190 (PasswordResetMethods)
 const _module = require(dependencyMap[0]);

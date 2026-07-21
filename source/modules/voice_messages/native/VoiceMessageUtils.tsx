@@ -1,5 +1,5 @@
 // Module ID: 11351
-// Function ID: 88269
+// Function ID: 88281
 // Name: generateBase64EncodedWaveform
 // Dependencies: []
 // Exports: emitVoiceMessageRecorded, endAudioRecording, startAudioRecording, triggerHaptic

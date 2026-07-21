@@ -1,10 +1,10 @@
-// Module ID: 14102
-// Function ID: 107052
+// Module ID: 14105
+// Function ID: 107084
 // Name: useDisplayNameStylesNewFonts
 // Dependencies: []
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14102 (useDisplayNameStylesNewFonts)
+// Module 14105 (useDisplayNameStylesNewFonts)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ FLYWHEEL_EFFECTS: closure_4, FLYWHEEL_FONTS: closure_5 } = arg1(dependencyMap[2]));

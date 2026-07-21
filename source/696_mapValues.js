@@ -1,7 +1,7 @@
 // Module ID: 696
-// Function ID: 8688
+// Function ID: 8692
 // Name: mapValues
-// Dependencies: [726, 727, 730]
+// Dependencies: [4294967295, 4294967295, 0]
 
 // Module 696 (mapValues)
 

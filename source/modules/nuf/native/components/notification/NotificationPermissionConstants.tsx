@@ -1,7 +1,7 @@
 // Module ID: 11438
-// Function ID: 89023
+// Function ID: 89035
 // Name: EventActionType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11438 (EventActionType)
 const _module = require(dependencyMap[0]);

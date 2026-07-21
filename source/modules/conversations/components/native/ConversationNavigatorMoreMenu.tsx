@@ -1,5 +1,5 @@
 // Module ID: 9289
-// Function ID: 72554
+// Function ID: 72565
 // Name: ConversationNavigatorMoreMenu
 // Dependencies: []
 // Exports: default

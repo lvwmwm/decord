@@ -1,7 +1,7 @@
 // Module ID: 620
 // Function ID: 7106
 // Name: shallowEqual
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: areArraysShallowEqual, default
 
 // Module 620 (shallowEqual)

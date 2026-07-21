@@ -1,5 +1,5 @@
 // Module ID: 3713
-// Function ID: 28429
+// Function ID: 28434
 // Name: t
 // Dependencies: []
 
@@ -9,7 +9,7 @@ const fn = function t(moment) {
     const items = [`${arg0} Tage`, `${arg0} Tagen`];
     const items1 = [`${arg0} Monate`, `${arg0} Monaten`];
     const items2 = [`${arg0} Jahre`, `${arg0} Jahren`];
-    const tmp = { m: ["rofl", "roflmao"], h: ["canSubmitFpReport", "hideResourceChannels"], d: [null, null], dd: items, M: [], MM: items1, y: [true, true], yy: items2 }[arg2];
+    const tmp = { m: [], h: ["rofl", "roflmao"], d: [false, false], dd: items, M: [false, false], MM: items1, y: [935778084969865000000000000000000000000, -0.000000000000000000000000000000000000000022958929468294653], yy: items2 }[arg2];
     if (arg1) {
       let first = tmp[0];
     } else {
@@ -17,7 +17,9 @@ const fn = function t(moment) {
     }
     return first;
   }
-  return moment.defineLocale("de", { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { <string:1122280543>: null, <string:3251850218>: null, <string:306010250>: null, <string:37429971>: null, <string:1812403200>: null, <string:3855182856>: null }, calendar: { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null }, relativeTime: { m: processRelativeTime, h: processRelativeTime, d: processRelativeTime, dd: processRelativeTime, M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { <string:1431496722>: false, <string:1627556098>: false } });
+  let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: {}, calendar: { ./is-ios-google-search-app: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024183193710372743, flex: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042874130818666855, backgroundColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007253324863422722, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013671699877416496, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007558502064416258, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015124306037371821 }, relativeTime: obj, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { "Bool(true)": null, "Bool(true)": null } };
+  obj = { 9223372036854775807: "r", 0: "isArray", -9223372036854775808: "set", -9223372036854775808: "w", 0: "filter", 9223372036854775807: "r", 9223372036854775807: "isArray", 0: "Boolean", m: processRelativeTime, h: processRelativeTime, d: processRelativeTime, dd: processRelativeTime, M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime };
+  return moment.defineLocale("de", obj);
 };
 if ("object" === typeof exports) {
   if (undefined !== module) {

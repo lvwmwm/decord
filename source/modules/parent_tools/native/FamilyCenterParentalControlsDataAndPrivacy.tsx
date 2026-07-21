@@ -1,10 +1,10 @@
-// Module ID: 13711
-// Function ID: 103724
+// Module ID: 13713
+// Function ID: 103746
 // Name: FamilyCenterParentalControlsDataAndPrivacy
 // Dependencies: []
 // Exports: default
 
-// Module 13711 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 13713 (FamilyCenterParentalControlsDataAndPrivacy)
 let closure_3 = importAll(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 const MobileSetting = arg1(dependencyMap[2]).MobileSetting;

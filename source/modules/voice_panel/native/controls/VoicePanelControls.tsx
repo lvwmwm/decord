@@ -1,8 +1,8 @@
-// Module ID: 15713
-// Function ID: 120092
-// Dependencies: [9883, 2, 4140, 4141, 8926, 624, 15718, 9046, 15719, 15720, 2, 57, 31, 1348, 10006, 10009, 482, 33, 1324, 689, 4126, 4537, 7492, 3840, 10005, 15615, 5798, 624, 15611, 3989, 11367, 4472, 9883, 4538, 7582, 9634, 2, 31, 10006, 10009, 10004, 33, 4126, 689, 10005, 15717, 3989, 4472, 15723, 4538, 5515, 1273, 4124]
+// Module ID: 15722
+// Function ID: 120257
+// Dependencies: [9883, 2, 4140, 4141, 8926, 624, 15727, 9046, 15728, 15729, 2, 57, 31, 1348, 10006, 10009, 482, 33, 1324, 689, 4126, 4537, 7493, 3840, 10005, 15618, 5798, 624, 15614, 3989, 11367, 4472, 9883, 4538, 7583, 9634, 2, 31, 10006, 10009, 10004, 33, 4126, 689, 10005, 15726, 3989, 4472, 15732, 4538, 5515, 1273, 4124]
 
-// Module 15713
+// Module 15722
 import closure_3 from "t";
 import importAllResult from "result2";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,9 +30,9 @@ obj["zIndex"] = 1;
 obj.accessibilityWrapper = obj;
 getConsoleColor = { borderRadius: require("result2").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 obj.wrapper = getConsoleColor;
-const obj2 = { -783165016: "5de2b08de99a642bedb9972f5a6793f2", 1383489899: "el.messages.5de2b08de99a642bedb9972f5a6793f2.compiled.messages", -1287393223: "jsona", 1991210072: true, 2108357039: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", 581925551: null, -1062242264: "72ad0b4b960146a110960dea1a6ad5e5", marginHorizontal: require("result2").space.PX_16 };
+const obj2 = { trackForumPostLinkCopied: false, isStreamInfoOverlayEnabled: false, _monthsRegex: false, borderColor: false, NONE_MONTH: "CANCELLATION_FLOW_STEP", alertWrapper: "generateNonce", useIsMobileGameCollectionExperimentEnabled: "Array", marginHorizontal: require("result2").space.PX_16 };
 obj.buttonsWrapper = obj2;
-obj.actionSheetDragHandleWrapper = { -324479661: true, 1392981258: true, -1400267819: true, -715936620: true, 1806469531: true };
+obj.actionSheetDragHandleWrapper = { display: true, flexDirection: true, rowGap: true, padding: true, alignItems: true };
 let closure_21 = getConsoleColor.createStyles(obj);
 if (_slicedToArray.isMetaQuest()) {
   num = 15;
@@ -378,7 +378,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ "Bool(true)": 0.124, "Bool(true)": 1, "Bool(true)": "Enable Application Identity Linked Roles", "Bool(true)": 0, "Bool(true)": 40, "Bool(true)": 4, "Bool(true)": "Star", "Bool(true)": 1, "Bool(true)": 1 });
+    const gestureSpecs = obj.useSharedValue({ "Null": 0.124, "Null": 1, "Null": "Enable Application Identity Linked Roles", flexDirection: 0, justifyContent: 40, alignItems: 4, paddingVertical: "Star", paddingHorizontal: 1, paddingVertical: 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;
@@ -463,7 +463,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
                   tmp30 = "settings" !== callback;
                 }
                 if (tmp30) {
-                  obj = { 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", 9223372036854775807: null };
+                  obj = {};
                   const obj2 = callback(store[15]);
                   obj.source = callback(store[20]).VoicePanelTabAnalyticsSources.GESTURE;
                   callback(store[15]).runOnJS(closure_3)(obj);
@@ -705,7 +705,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
               } else if (null != currentControlsMode) {
                 obj1 = self(tmp2[27]);
               }
-              let obj3 = { "Null": "M5 3H2V4H5V3Z", "Null": "white", "Null": "M7 9H6V10H7V9Z", "Null": "black", "Null": "M8 6H7V7H8V6Z", "Null": "black" };
+              let obj3 = {};
               obj3 = self(tmp2[22]);
               obj3.width = obj3.getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
               obj3.height = minHeight;
@@ -743,7 +743,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ "Bool(true)": 0.124, "Bool(true)": 1, "Bool(true)": "Enable Application Identity Linked Roles", "Bool(true)": 0, "Bool(true)": 40, "Bool(true)": 4, "Bool(true)": "Star", "Bool(true)": 1, "Bool(true)": 1 });
+    const gestureSpecs = obj.useSharedValue({ "Null": 0.124, "Null": 1, "Null": "Enable Application Identity Linked Roles", flexDirection: 0, justifyContent: 40, alignItems: 4, paddingVertical: "Star", paddingHorizontal: 1, paddingVertical: 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;
@@ -828,7 +828,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
                   tmp30 = "settings" !== callback;
                 }
                 if (tmp30) {
-                  obj = { 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", 9223372036854775807: null };
+                  obj = {};
                   const obj2 = callback(store[15]);
                   obj.source = callback(store[20]).VoicePanelTabAnalyticsSources.GESTURE;
                   callback(store[15]).runOnJS(closure_3)(obj);

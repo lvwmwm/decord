@@ -1,17 +1,18 @@
 // Module ID: 10392
-// Function ID: 80094
+// Function ID: 80105
 // Name: useStrangerDangerWarning
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useStrangerDangerWarning
 
 // Module 10392 (useStrangerDangerWarning)
-import __exportStarResult1 from "__exportStarResult1";
-import { SafetyWarningTypes } from "__exportStarResult1";
+import closure_2 from "result";
+import { SafetyWarningTypes } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
+result = result.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
 
 export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
-  const items = [__exportStarResult1];
+  const items = [closure_2];
   const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = arg1(dependencyMap[2]);
   const isSpamMessageRequest = arg1(dependencyMap[3]).useIsSpamMessageRequest(id);

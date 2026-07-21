@@ -1,5 +1,5 @@
 // Module ID: 4058
-// Function ID: 33817
+// Function ID: 33822
 // Name: experiment
 // Dependencies: []
 // Exports: getServerThemeEnabled, useServerThemeEnabled
@@ -7,9 +7,9 @@
 // Module 4058 (experiment)
 const EMPTY_STRING_SNOWFLAKE_ID = require(dependencyMap[0]).EMPTY_STRING_SNOWFLAKE_ID;
 const _module = require(dependencyMap[1]);
-const obj = { -1174339580: null, -1169096700: null, config: { uppercase: true, trinketAnimationUrl: true, bundleType: true } };
-const items = [obj, { config: { uppercase: true, trinketAnimationUrl: true, bundleType: true } }];
-const experiment = _module.createExperiment({ defaultConfig: { uppercase: true, trinketAnimationUrl: false, bundleType: false }, treatments: items });
+const obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { name: 500, fontStack: 1000, uppercase: 60000 } };
+const items = [obj, { config: { name: "sm", fontStack: "Placeholder", uppercase: "Click" } }];
+const experiment = _module.createExperiment({ defaultConfig: { name: "#ffa813", fontStack: "absolute", uppercase: null }, treatments: items });
 const _module1 = require(dependencyMap[3]);
 const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeExperiment.tsx");
 
@@ -23,7 +23,7 @@ export const getServerThemeEnabled = function getServerThemeEnabled(guildId, Gui
     obj = { guildId, location: GuildPowerupsConstants };
     let config = ServerThemeApexShadowExperiment.getConfig(obj);
   } else {
-    config = { "Null": null, "Null": null };
+    config = { size: null, lineHeight: null };
   }
   if (!currentConfig.inExperiment) {
     let tmp6 = !tmp5;

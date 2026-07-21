@@ -1,10 +1,10 @@
-// Module ID: 14347
-// Function ID: 108324
+// Module ID: 14350
+// Function ID: 108356
 // Name: useShopOrientationLock
 // Dependencies: []
 // Exports: useShopOrientationLock
 
-// Module 14347 (useShopOrientationLock)
+// Module 14350 (useShopOrientationLock)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = 0;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");

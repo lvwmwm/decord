@@ -1,10 +1,10 @@
-// Module ID: 13417
-// Function ID: 101881
+// Module ID: 13419
+// Function ID: 101903
 // Name: RecordPlayerIcon
 // Dependencies: []
 // Exports: RecordPlayerIcon
 
-// Module 13417 (RecordPlayerIcon)
+// Module 13419 (RecordPlayerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RecordPlayerIcon.tsx");

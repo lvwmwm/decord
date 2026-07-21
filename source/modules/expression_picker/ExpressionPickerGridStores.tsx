@@ -1,5 +1,5 @@
 // Module ID: 9323
-// Function ID: 72861
+// Function ID: 72872
 // Name: createStore
 // Dependencies: []
 // Exports: default
@@ -48,7 +48,7 @@ function createStore() {
   };
   return obj;
 }
-let closure_2 = Object.freeze({ inspectedExpressionPosition: { FETCH_CHANNEL_INFO: -536870861, cloneNodeWithNewProps: -299892737 } });
+let closure_2 = Object.freeze({ inspectedExpressionPosition: { <string:1407453624>: -536870861, <string:82601002>: -299892737 } });
 const store = createStore();
 const store1 = createStore();
 const store2 = createStore();

@@ -1,5 +1,5 @@
 // Module ID: 11557
-// Function ID: 89913
+// Function ID: 89925
 // Name: useGuildPowerupOnActivate
 // Dependencies: [31, 4049, 1910, 1838, 566, 5415, 4019, 1212, 2230, 2, 31, 653, 4096, 11539, 4019, 8431, 8434]
 // Exports: default
@@ -73,7 +73,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               handleMobileWebRedirectCheckout(analyticsLocations, stateFromStores.id);
             } else {
               obj = {
-                source: { <string:70455808>: "png", <string:1362780416>: true },
+                source: { 0: "png", 0: true },
                 analyticsLocations,
                 guildId: stateFromStores.id,
                 onBack() {

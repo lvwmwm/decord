@@ -1,12 +1,12 @@
-// Module ID: 14443
-// Function ID: 108854
+// Module ID: 14446
+// Function ID: 108886
 // Name: useIsInActivityPrivacyCopyExperiment
 // Dependencies: []
 // Exports: getIsInActivityPrivacyUpsellExperiment, useIsInActivityPrivacyCopyExperiment
 
-// Module 14443 (useIsInActivityPrivacyCopyExperiment)
+// Module 14446 (useIsInActivityPrivacyCopyExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: -1124073132, 0: 285213139, defaultConfig: { contentStyles: null, Millis: null }, variations: { [0]: { contentStyles: null, Millis: null }, [1]: { contentStyles: true, Millis: true }, [2]: { contentStyles: null, Millis: null } } };
+const obj = { 844175713: "Array", 1387159956: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", defaultConfig: { style: null, nativeID: null }, variations: { [0]: { style: null, nativeID: null }, [1]: { style: null, nativeID: null }, [2]: { style: null, nativeID: null } } };
 let closure_2 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/activity_privacy/ActivityPrivacyMatchingExperiment.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 8968
-// Function ID: 70717
+// Function ID: 70728
 // Name: PlayStationLinkPreConnect
 // Dependencies: []
 // Exports: PlayStationLinkPreConnect
@@ -8,7 +8,7 @@
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles({ image: { bhk: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008702820173914571, bic: 9126805519.375 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ image: { "Null": true, "Null": true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
 

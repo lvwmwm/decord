@@ -1,5 +1,5 @@
 // Module ID: 8585
-// Function ID: 68147
+// Function ID: 68158
 // Name: useResolveGame
 // Dependencies: [31, 8596, 8597, 8599]
 // Exports: default

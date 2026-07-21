@@ -1,10 +1,10 @@
-// Module ID: 15873
-// Function ID: 121538
+// Module ID: 15877
+// Function ID: 121582
 // Name: getAppMajorVersion
 // Dependencies: []
 // Exports: getAppMajorVersion
 
-// Module 15873 (getAppMajorVersion)
+// Module 15877 (getAppMajorVersion)
 const _module = require(dependencyMap[0]);
 const constants = _module.getConstants();
 const _module1 = require(dependencyMap[1]);

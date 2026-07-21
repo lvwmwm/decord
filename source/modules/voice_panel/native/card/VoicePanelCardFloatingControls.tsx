@@ -1,9 +1,9 @@
-// Module ID: 15705
-// Function ID: 120010
+// Module ID: 15709
+// Function ID: 120054
 // Name: StreamIcon
 // Dependencies: []
 
-// Module 15705 (StreamIcon)
+// Module 15709 (StreamIcon)
 let Platform;
 let Pressable;
 function StreamIcon(voicePlatform) {
@@ -120,24 +120,24 @@ const importDefaultResult = importDefault(dependencyMap[12]);
 let closure_20 = importDefault(dependencyMap[12]).createAnimatedComponent(Pressable);
 const importDefaultResult1 = importDefault(dependencyMap[12]);
 let closure_21 = arg1(dependencyMap[14]).createStyles((arg0) => {
-  let obj = { labelPositionContainer: { MOBILE_BOTTOM_SHEET: "hidden", borderWidth: "absolute", namePlaceholder: 1, nameContainer: 1, updateAllWidths: 1, activeCommandOption: 1, customIconSrc: 1 } };
+  let obj = { labelPositionContainer: { _monthsRegex: true, borderWidth: "/assets/images/native/icons", barStyle: 24, partitionKey: 24, unzoom: null, snowballStem: "467a8f409d631a3f8d45e79495764df7", isSameOrAfter: "ic_mic_neutral" } };
   obj = { variant: null, lineClamp: null, ellipsizeMode: null, spacing: null, speed: null, style: null, size: null, width: null, horizontal: null, style: null };
   const radii = importDefault(dependencyMap[15]).radii;
   obj.borderRadius = arg0 ? radii.sm : radii.round;
   obj.backgroundColor = importDefault(dependencyMap[15]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj.labelOuterContainer = obj;
-  obj.initialIcons = {};
-  obj = { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  obj.initialIcons = { horizontal: -1663348269, style: 116, pointerEvents: 0, channelId: 0 };
+  obj = { "Null": "<string:2552889346>", "Null": "<string:2938503170>", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
   obj.icon = obj;
   obj.iconWithoutBackground = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
-  const obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
-  obj.iconContainer = { borderRadius: importDefault(dependencyMap[15]).radii.round };
+  const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, <string:903611347>: null, borderRadius: importDefault(dependencyMap[15]).radii.round };
+  obj.iconContainer = obj2;
   obj.speakerMuteIcon = { marginRight: 4 };
   obj.floatingContainer = { isPreload: true, skipLocalFetch: "/assets/images/native", type: 18, value: 18, description: null };
   obj.floatingText = { line: null, column: null, seenCR: null, locale: null, parentLocale: null };
-  const obj3 = { <string:1435746702>: true, <string:751231512>: true, <string:2539449152>: true, <string:979674688>: true, borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
+  const obj3 = { 0: null, 9223372036854775807: null, -9223372036854775808: null, -9223372036854775808: null, borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
   obj.ringingIconContainer = obj3;
-  const obj2 = { borderRadius: importDefault(dependencyMap[15]).radii.round };
+  const obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
   obj.ringingIcon = { tintColor: importDefault(dependencyMap[15]).colors.STATUS_POSITIVE };
   obj.secureFramesIcon = { marginEnd: -2 };
   return obj;
@@ -595,7 +595,7 @@ let closure_41 = importAllResult.memo((controlsHidden) => {
   const tmp19 = closure_17;
   const tmp20 = closure_20;
   const tmp27 = closure_17;
-  const obj9 = { useRef: "inputHint", sk: "guildFolders", accessibilityRole: "ranges", window: "isArray", call: "isArray" };
+  const obj9 = {};
   const items5 = [tmp3.floatingText, ];
   let tmp30 = null != displayNameStylesFont;
   if (tmp30) {

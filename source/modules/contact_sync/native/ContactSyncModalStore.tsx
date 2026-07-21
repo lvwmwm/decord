@@ -1,5 +1,5 @@
 // Module ID: 11695
-// Function ID: 90751
+// Function ID: 90763
 // Name: initialValues
 // Dependencies: [5, 57, 31, 27, 1849, 6646, 11695]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
@@ -8,12 +8,15 @@
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _slicedToArray from "_slicedToArray";
 import { ContactPermissions } from "module_31";
-import { PlatformTypes } from "keys";
+import { PlatformTypes } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import initialValues from "initialValues";
 
 function initialValues() {
-  const obj = { mode: obj.NORMAL, permissionState: ContactPermissions.NOT_DETERMINED, suggestions: [] };
+  const obj = { marginBottom: "bde7994716d98a3897a327489b8b2f6d", width: "gif", position: "png", top: 500, bottom: 1000, zIndex: 60000, display: 3600000, flexDirection: 86400000, justifyContent: 604800000, paddingHorizontal: 2592000000 };
+  obj.mode = obj.NORMAL;
+  obj.permissionState = ContactPermissions.NOT_DETERMINED;
+  obj.suggestions = [];
   return obj;
 }
 let obj = { NORMAL: 0, [0]: "NORMAL", ONBOARDING: 1, [1]: "ONBOARDING", ONBOARDING_INVITE: 2, [2]: "ONBOARDING_INVITE" };

@@ -1,5 +1,5 @@
 // Module ID: 10019
-// Function ID: 77407
+// Function ID: 77418
 // Dependencies: []
 
 // Module 10019
@@ -13,9 +13,8 @@ export default {
     const require = channelId;
     const importDefault = around;
     const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { "Bool(false)": "RTC_CONNECTION_LOSS_RATE", "Bool(false)": "handleJoinThreadVoice", "Bool(false)": "toString", "Bool(false)": "isArray", "Bool(false)": "toString", url: closure_3.MESSAGES(channelId) };
+    let obj = { url: closure_3.MESSAGES(channelId), query: obj };
     obj = { limit: closure_4, around };
-    obj.query = obj;
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = arg1(closure_2[2]);

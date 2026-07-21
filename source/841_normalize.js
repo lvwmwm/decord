@@ -1,5 +1,5 @@
 // Module ID: 841
-// Function ID: 9345
+// Function ID: 9349
 // Name: normalize
 // Dependencies: []
 // Exports: normalizeUrlToBase
@@ -43,7 +43,7 @@ function visit(arg0, __sentry_skip_normalization__) {
     }
     callback(tmp2, 2);
     if (null != __sentry_skip_normalization__) {
-      const items = ["<string:2622554114>", "<string:20751948>"];
+      const items = ["Array", "isArray"];
       if (!items.includes(typeof __sentry_skip_normalization__)) {
         if ("number" === tmp34) {
           const _Number = Number;

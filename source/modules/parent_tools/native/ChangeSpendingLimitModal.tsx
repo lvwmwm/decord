@@ -1,10 +1,10 @@
-// Module ID: 13687
-// Function ID: 103599
+// Module ID: 13689
+// Function ID: 103621
 // Name: renderMonthlySpendLine
 // Dependencies: []
 // Exports: default
 
-// Module 13687 (renderMonthlySpendLine)
+// Module 13689 (renderMonthlySpendLine)
 function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, arg3) {
   let tmp = formatPriceResult;
   let formatToPlainStringResult = arg3;
@@ -74,7 +74,7 @@ function ChangeSpendingLimitScreen(teenId) {
   obj2.children = intl.string(_handleSave(dependencyMap[9]).IFguF2);
   const items = [callback2(callback(dependencyMap[7]).Text, obj2), ];
   const obj3 = { spacing: _handleSave(dependencyMap[5]).space.PX_8 };
-  const obj4 = {};
+  const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl2 = callback(dependencyMap[8]).intl;
   obj4.children = intl2.string(_handleSave(dependencyMap[9]).1fHSu2);
   const items1 = [callback2(callback(dependencyMap[7]).Text, obj4), , ];

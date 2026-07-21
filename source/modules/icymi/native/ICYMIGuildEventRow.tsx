@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 114064
+// Module ID: 15120
+// Function ID: 114098
 // Name: ICYMIGuildEventRow
 // Dependencies: []
 // Exports: default
 
-// Module 15117 (ICYMIGuildEventRow)
+// Module 15120 (ICYMIGuildEventRow)
 function ICYMIGuildEventRow(event) {
   let channel;
   let guild;
@@ -41,7 +41,7 @@ function ICYMIGuildEventRow(event) {
   const callback = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: {} };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { <string:2204214729>: true, <string:1672982865>: "/assets/modules/guild_role_subscriptions/native/images", <string:1370399429>: 84.5, <string:3949021540>: 90.5 } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     obj = { eventId: event.id, event };
@@ -50,7 +50,7 @@ function ICYMIGuildEventRow(event) {
   const callback1 = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": null, "Bool(false)": "4588b9ce3776c8bf8c8aad48652638ac", "Bool(false)": "XLargeIcon", "Bool(false)": "png" } };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { <string:2204214729>: "errExpectingATEXT", <string:1672982865>: "j", <string:1370399429>: "MiniaturesSpotIllustration", <string:3949021540>: "toString" } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     event(tmp3[16]).transitionToGuild(guild.id);
@@ -131,7 +131,7 @@ function ICYMIGuildEventRow(event) {
   const obj7 = { style: tmp.infoContainer };
   const obj8 = { style: tmp.locationContainer };
   const items4 = [callback3(arg1(dependencyMap[22]).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
-  const obj10 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10 };
+  const obj10 = { "Null": 0, "Null": 5.566, "Null": 10 };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj10.children = intl2.format(arg1(dependencyMap[9]).t.+DLsD8, { count: tmp12Result });
   items4[1] = callback3(arg1(dependencyMap[20]).Text, obj10);
@@ -149,7 +149,7 @@ function ICYMIGuildEventRow(event) {
     }
   }
   const items6 = [tmp33, ];
-  const obj14 = { encodingConfig: false, showRemove: false, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: false };
+  const obj14 = {};
   let result = null;
   if (null != locationFromEvent) {
     result = arg1(dependencyMap[21]).guildEventDetailsParser(locationFromEvent, true);
@@ -181,11 +181,11 @@ let closure_13 = arg1(dependencyMap[6]).createICYMIStyles((margin) => {
   obj = { marginTop: importDefault(dependencyMap[7]).space.PX_12 };
   obj.card = obj;
   obj.title = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj2 = { "Null": "isArray", "Null": "accessibilityRole", "Null": "replace", "Null": "marginBottom", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-  obj.timeAndUserPillContainer = obj2;
   const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-  obj.separator = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
-  const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
+  obj.timeAndUserPillContainer = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj3 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
+  obj.separator = obj3;
+  const obj2 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
   obj.eventsChannelIcon = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
   const obj4 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.infoContainer = { gap: importDefault(dependencyMap[7]).space.PX_4 };

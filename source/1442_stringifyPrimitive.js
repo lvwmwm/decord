@@ -1,5 +1,5 @@
 // Module ID: 1442
-// Function ID: 16786
+// Function ID: 16791
 // Name: stringifyPrimitive
 // Dependencies: []
 

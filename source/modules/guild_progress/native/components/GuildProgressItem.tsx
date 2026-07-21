@@ -1,5 +1,5 @@
 // Module ID: 11612
-// Function ID: 90178
+// Function ID: 90190
 // Name: GuildProgressItem
 // Dependencies: []
 // Exports: default
@@ -7,7 +7,7 @@
 // Module 11612 (GuildProgressItem)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = arg1(dependencyMap[2]).createStyles({ icon: { bhk: "boolean", bic: "string" } });
+let closure_4 = arg1(dependencyMap[2]).createStyles({ icon: { "Null": false, "Null": false } });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
 

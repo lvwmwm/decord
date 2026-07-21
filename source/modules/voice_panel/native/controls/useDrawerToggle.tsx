@@ -1,10 +1,10 @@
-// Module ID: 15714
-// Function ID: 120134
+// Module ID: 15723
+// Function ID: 120299
 // Name: useDrawerToggle
 // Dependencies: []
 // Exports: default
 
-// Module 15714 (useDrawerToggle)
+// Module 15723 (useDrawerToggle)
 let closure_3 = importAll(dependencyMap[0]);
 const VoicePanelControlsModes = arg1(dependencyMap[1]).VoicePanelControlsModes;
 let closure_5 = { code: "function useDrawerToggleTsx1(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };

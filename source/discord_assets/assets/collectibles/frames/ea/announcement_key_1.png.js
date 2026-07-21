@@ -1,9 +1,9 @@
-// Module ID: 15503
-// Function ID: 118300
+// Module ID: 15506
+// Function ID: 118339
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15503 (metadata)
+// Module 15506 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/collectibles/frames/ea/announcement_key_1.png.js");
 

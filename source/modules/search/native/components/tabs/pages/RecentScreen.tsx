@@ -1,9 +1,9 @@
-// Module ID: 15208
-// Function ID: 114764
+// Module ID: 15211
+// Function ID: 114798
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15208 (_createForOfIteratorHelperLoose)
+// Module 15211 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -86,26 +86,26 @@ function _arrayLikeToArray(arg0, arg1) {
 function ClearAllHistory(searchContext) {
   const arg1 = searchContext.searchContext;
   let obj = {
-    "Null": 0,
-    "Null": 3.896,
-    "Null": 5,
+    122814468: 0,
+    1158220809: 3.896,
+    301575: 5,
     onPress() {
       return callback(closure_2[12]).clearSearchHistory(searchContext);
     }
   };
   const intl = arg1(dependencyMap[13]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.LFTAUp);
-  obj = {};
+  obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj.children = intl2.string(arg1(dependencyMap[13]).t.LFTAUp);
   obj.children = jsx(arg1(dependencyMap[14]).Text, obj);
   return jsx(arg1(dependencyMap[11]).PressableHighlight, obj);
 }
 function ViewAll(onJumpToMedia) {
-  let obj = { "Null": 0, "Null": 3.896, "Null": 5, onPress: onJumpToMedia.onJumpToMedia };
+  let obj = { 122814468: 0, 1158220809: 3.896, 301575: 5, onPress: onJumpToMedia.onJumpToMedia };
   const intl = arg1(dependencyMap[13]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.Ofpgwh);
-  obj = {};
+  obj = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
   const intl2 = arg1(dependencyMap[13]).intl;
   obj.children = intl2.string(arg1(dependencyMap[13]).t.Ofpgwh);
   obj.children = jsx(arg1(dependencyMap[14]).Text, obj);

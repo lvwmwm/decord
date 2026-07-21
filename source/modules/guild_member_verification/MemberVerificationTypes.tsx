@@ -1,7 +1,7 @@
 // Module ID: 3948
-// Function ID: 32614
+// Function ID: 32619
 // Name: isTermsFormField
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: hasNonTermsFormField
 
 // Module 3948 (isTermsFormField)

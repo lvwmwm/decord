@@ -1,9 +1,9 @@
-// Module ID: 15908
-// Function ID: 121849
+// Module ID: 15912
+// Function ID: 121893
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15908 (_isNativeReflectConstruct)
+// Module 15912 (_isNativeReflectConstruct)
 let FeedbackGroup;
 let FeedbackType;
 function _isNativeReflectConstruct() {
@@ -214,7 +214,7 @@ let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = importDefault(dependencyMap[7]);
 ({ FeedbackGroup, FeedbackType, FeedbackTypePrecedence: closure_10, MAX_REPRESENTABLE_DATE: closure_11 } = arg1(dependencyMap[8]));
-let obj = { 0: "message", 9223372036854775807: "OPACITY_BLACK_92" };
+let obj = { duration: "message", padding: "OPACITY_BLACK_92" };
 obj = {};
 obj = {};
 const merged = Object.assign(obj);
@@ -249,8 +249,8 @@ obj2["feedbackType"] = FeedbackType.VIDEO_BACKGROUND;
 obj[FeedbackType.VIDEO_BACKGROUND] = obj2;
 const tmp2 = arg1(dependencyMap[8]);
 obj[FeedbackType.ACTIVITY] = { group: FeedbackGroup.AV, hotspot: arg1(dependencyMap[9]).HotspotLocations.POST_ACTIVITY_FEEDBACK, feedbackType: FeedbackType.ACTIVITY };
-const obj4 = { audioJitterBufferSamples: "/assets/modules/holidays/assets", givenName: null, REFERENCE_ORIGINAL: "7209f284854b7ea1e5642c91fd2e43d4", lurkLocation: "snowsgiving_loading_dark", UNDETERMINED: "webm", group: FeedbackGroup.SAFETY, hotspot: arg1(dependencyMap[9]).HotspotLocations.IN_APP_REPORTS_FEEDBACK, feedbackType: FeedbackType.IN_APP_REPORTS };
-obj[FeedbackType.IN_APP_REPORTS] = obj4;
+const obj3 = { group: FeedbackGroup.AV, hotspot: arg1(dependencyMap[9]).HotspotLocations.POST_ACTIVITY_FEEDBACK, feedbackType: FeedbackType.ACTIVITY };
+obj[FeedbackType.IN_APP_REPORTS] = { group: FeedbackGroup.SAFETY, hotspot: arg1(dependencyMap[9]).HotspotLocations.IN_APP_REPORTS_FEEDBACK, feedbackType: FeedbackType.IN_APP_REPORTS };
 const obj5 = {};
 const merged3 = Object.assign(obj);
 obj5["group"] = FeedbackGroup.SEARCH;
@@ -264,7 +264,7 @@ const items1 = [
 ];
 obj5["eligibilityChecks"] = items1;
 obj[FeedbackType.SEARCH_RESULTS] = obj5;
-const obj3 = { group: FeedbackGroup.AV, hotspot: arg1(dependencyMap[9]).HotspotLocations.POST_ACTIVITY_FEEDBACK, feedbackType: FeedbackType.ACTIVITY };
+const obj4 = { group: FeedbackGroup.SAFETY, hotspot: arg1(dependencyMap[9]).HotspotLocations.IN_APP_REPORTS_FEEDBACK, feedbackType: FeedbackType.IN_APP_REPORTS };
 const tmp7 = (arg0) => {
   class FeedbackManager {
     constructor(arg0) {

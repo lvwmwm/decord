@@ -1,7 +1,7 @@
 // Module ID: 4409
-// Function ID: 38834
+// Function ID: 38842
 // Name: isInteger
-// Dependencies: [4294967295]
+// Dependencies: []
 
 // Module 4409 (isInteger)
 

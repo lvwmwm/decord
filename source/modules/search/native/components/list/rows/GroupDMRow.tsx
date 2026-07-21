@@ -1,10 +1,10 @@
-// Module ID: 15220
-// Function ID: 114915
+// Module ID: 15223
+// Function ID: 114949
 // Name: GroupDMRow
 // Dependencies: []
 // Exports: default
 
-// Module 15220 (GroupDMRow)
+// Module 15223 (GroupDMRow)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/search/native/components/list/rows/GroupDMRow.tsx");
@@ -29,7 +29,7 @@ export default function GroupDMRow(channel) {
   const recipientsLabel = arg1(dependencyMap[5]).useRecipientsLabel(channel);
   let tmp6;
   if (null != recipientsLabel) {
-    obj = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null, children: recipientsLabel };
+    obj = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, children: recipientsLabel };
     tmp6 = jsx(arg1(dependencyMap[6]).Text, obj);
   }
   obj = {};

@@ -1,7 +1,7 @@
 // Module ID: 8367
-// Function ID: 66676
+// Function ID: 66687
 // Name: TwinButtons
-// Dependencies: [45154304, 102039552, 325255168, 357105664, 360382464, 325451776, 492371968, 492306432]
+// Dependencies: [45154304, 102039552, 325189632, 357105664, 360382464, 325386240, 492437504, 492371968]
 // Exports: TwinButtons
 
 // Module 8367 (TwinButtons)

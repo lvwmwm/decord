@@ -1,5 +1,5 @@
 // Module ID: 9367
-// Function ID: 73053
+// Function ID: 73064
 // Dependencies: []
 
 // Module 9367
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f73059;
+        tmp = f73070;
       }
       if (!tmp) {
         num2 = 0;
@@ -166,24 +166,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     }
   }));
   const items6 = [animateEmoji];
-  obj = {
-    config: importAllResult.useMemo(() => {
-      const obj = { borderBottomWidth: true, borderBottomColor: true, onChatScrollPosition: true, onTapImage: true, animateEmoji };
-      return obj;
-    }, items6),
-    emojiData: data,
-    emojiMargin: PADDING_VERTICAL,
-    emojiSize: IMAGE_SIZE,
-    onPressEmoji: callback2,
-    onLongPressEmoji: callback3,
-    onStickyHeaderRender: callback4,
-    onShowNitroUpsell: callback5,
-    paddingTop,
-    paddingBottom,
-    useTier0UpsellContent,
-    ref,
-    style: callback().container
-  };
+  obj = { config: importAllResult.useMemo(() => ({ animateEmoji }), items6), emojiData: data, emojiMargin: PADDING_VERTICAL, emojiSize: IMAGE_SIZE, onPressEmoji: callback2, onLongPressEmoji: callback3, onStickyHeaderRender: callback4, onShowNitroUpsell: callback5, paddingTop, paddingBottom, useTier0UpsellContent, ref, style: callback().container };
   const items7 = [guildId, analyticsLocations, useTier0UpsellContent, data.hasSearchUpsell];
   const tmp = callback();
   const obj1 = {};

@@ -1,16 +1,15 @@
 // Module ID: 3469
-// Function ID: 26834
+// Function ID: 26839
 // Name: getDate
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3469 (getDate)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function getDate(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  return startOfWeek.default(defaultResult1).getDate();
+  closure_1.default(1, arguments);
+  return closure_0.default(defaultResult1).getDate();
 };
 export default exports.default;

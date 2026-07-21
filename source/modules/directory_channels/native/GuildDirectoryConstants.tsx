@@ -1,7 +1,7 @@
 // Module ID: 10031
-// Function ID: 77488
+// Function ID: 77499
 // Name: GuildDirectoryCreate
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10031 (GuildDirectoryCreate)
 const _module = require(dependencyMap[0]);

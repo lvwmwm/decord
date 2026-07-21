@@ -1,7 +1,7 @@
 // Module ID: 5594
-// Function ID: 47522
+// Function ID: 47530
 // Name: encodeUserIdForWebAuthn
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: encodeUserIdForWebAuthn
 
 // Module 5594 (encodeUserIdForWebAuthn)

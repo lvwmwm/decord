@@ -1,5 +1,5 @@
 // Module ID: 9139
-// Function ID: 71635
+// Function ID: 71646
 // Name: MemberVerificationModal
 // Dependencies: []
 // Exports: default
@@ -20,13 +20,13 @@ obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_
 obj.flexLoading = obj;
 obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.scrollContainer = obj1;
-obj.closeButtonContainer = {};
+obj.closeButtonContainer = { "Null": null, "Null": null };
 obj.closeIconContainer = {};
 const importDefaultResult = importDefault(dependencyMap[6]);
 obj.closeIconOverBanner = { position: "absolute", tintColor: importDefault(dependencyMap[9]).colors.WHITE };
 const obj2 = { position: "absolute", tintColor: importDefault(dependencyMap[9]).colors.WHITE };
 obj.closeIconAfterBanner = { position: "absolute", tintColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
-obj.headerSeparator = { "Bool(false)": true, "Bool(false)": null };
+obj.headerSeparator = { "Null": true, "Null": null };
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = { code: "function MemberVerificationModalTsx1({contentOffset:{y:y}}){const{scrollTop}=this.__closure;return scrollTop.set(y);}" };
 let closure_14 = { code: "function MemberVerificationModalTsx2(){const{interpolate,scrollTop,bannerHeight,safeAreaTop,theme}=this.__closure;return{opacity:interpolate(scrollTop.get(),[0,bannerHeight-safeAreaTop],[1,theme==='dark'?1:0],'clamp')};}" };
@@ -73,7 +73,7 @@ export default function MemberVerificationModal(guildId) {
       if ("dark" === closure_4) {
         num = 1;
       }
-      items1 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
+      items1 = [null];
       items1[1] = num;
       obj.opacity = obj2.interpolate(value, items, items1, "clamp");
       return obj;
@@ -88,7 +88,7 @@ export default function MemberVerificationModal(guildId) {
   const fn = function v() {
     const obj = {};
     const items = [0.229, tmp5 - top];
-    obj.opacity = guildId(top[6]).interpolate(sharedValue.get(), items, ["Text", "lc"], "clamp");
+    obj.opacity = guildId(top[6]).interpolate(sharedValue.get(), items, ["replace", "then"], "clamp");
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[6]).interpolate, scrollTop: sharedValue, bannerHeight: tmp5, safeAreaTop: top };
@@ -196,7 +196,7 @@ export default function MemberVerificationModal(guildId) {
             if ("dark" === closure_4) {
               num = 1;
             }
-            items1 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
+            items1 = [null];
             items1[1] = num;
             obj.opacity = obj2.interpolate(value, items, items1, "clamp");
             return obj;

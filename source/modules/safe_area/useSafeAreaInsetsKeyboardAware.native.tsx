@@ -1,10 +1,10 @@
-// Module ID: 5226
-// Function ID: 44188
+// Module ID: 5225
+// Function ID: 44195
 // Name: useSafeAreaInsetsKeyboardAware
 // Dependencies: []
 // Exports: default
 
-// Module 5226 (useSafeAreaInsetsKeyboardAware)
+// Module 5225 (useSafeAreaInsetsKeyboardAware)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

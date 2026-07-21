@@ -1,5 +1,5 @@
 // Module ID: 11199
-// Function ID: 87215
+// Function ID: 87227
 // Name: RecommendationsBannerCard
 // Dependencies: []
 // Exports: default
@@ -13,16 +13,16 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, width: "100%", overflow: "hidden" };
 obj.container = obj;
-obj.banner = { -1716629078: null, 1375445090: null, -698284748: null };
-const obj1 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, padding: importDefault(dependencyMap[5]).space.PX_16 };
+obj.banner = {};
+const obj1 = { 1655329890: -1661796349, -1135455284: -1371340797, 1702608251: -1275067531, -1437140064: -1258290315, padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.appDetailsContainer = obj1;
-const obj2 = { GUILD_ROOM: "#433D84", kkvDatabase: "M75.647 61.135c10.446 0 18.915-8.532 18.915-19.057 0-10.526-8.469-19.058-18.915-19.058-10.447 0-18.916 8.532-18.916 19.058 0 10.524 8.47 19.057 18.916 19.057z", UPLOAD_INTL_DATA: 0.4, paddingBottom: "url(#d)", marginLeft: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = { "Null": "#433D84", "Null": "M75.647 61.135c10.446 0 18.915-8.532 18.915-19.057 0-10.526-8.469-19.058-18.915-19.058-10.447 0-18.916 8.532-18.916 19.058 0 10.524 8.47 19.057 18.916 19.057z", "Null": 0.4, flexDirection: "url(#d)", marginLeft: importDefault(dependencyMap[5]).space.PX_16 };
 obj.appDetails = obj2;
 obj.appIconContainer = { flexShrink: 0 };
-const tmp2 = arg1(dependencyMap[3]);
-obj.notifsContainer = { gap: importDefault(dependencyMap[5]).space.PX_4, right: importDefault(dependencyMap[5]).space.PX_8, top: importDefault(dependencyMap[5]).space.PX_8, alignItems: "flex-end" };
+const obj3 = { 1635791185: null, 67064246: null, gap: importDefault(dependencyMap[5]).space.PX_4, right: importDefault(dependencyMap[5]).space.PX_8, top: importDefault(dependencyMap[5]).space.PX_8, alignItems: "flex-end" };
+obj.notifsContainer = obj3;
 obj.badge = {};
-const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_4, right: importDefault(dependencyMap[5]).space.PX_8, top: importDefault(dependencyMap[5]).space.PX_8, alignItems: "flex-end" };
+const tmp2 = arg1(dependencyMap[3]);
 obj.promotedLabelWrapper = { paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 let closure_8 = obj.createStyles(obj);
 const obj4 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
@@ -134,9 +134,9 @@ export default function RecommendationsBannerCard(application) {
     }
     const items5 = [tmp34, , ];
     const obj11 = { style: tmp.appDetails };
-    const obj12 = { -9223372036854775808: "low", 0: true, 0: true, children: application.name };
+    const obj12 = { children: application.name };
     const items6 = [callback(arg1(dependencyMap[14]).Text, obj12), ];
-    const obj13 = { -9223372036854775808: 1, 0: "auto", 0: 0, children: application.description };
+    const obj13 = { <string:1643205302>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, <string:1415816450>: 173030459411399400000000, <string:4283523744>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122059054016, children: application.description };
     items6[1] = callback(arg1(dependencyMap[14]).Text, obj13);
     obj11.children = items6;
     items5[1] = callback2(View, obj11);

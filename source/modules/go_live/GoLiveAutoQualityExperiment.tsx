@@ -1,5 +1,5 @@
 // Module ID: 10683
-// Function ID: 83263
+// Function ID: 83274
 // Name: getGoLiveAutoQualityExperimentConfig
 // Dependencies: []
 // Exports: maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
@@ -11,7 +11,7 @@ function getGoLiveAutoQualityExperimentConfig(location) {
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const ApplicationStreamPresets = arg1(dependencyMap[2]).ApplicationStreamPresets;
-let obj = { <string:1446771556>: true, <string:995386538>: false, <string:3428952662>: false };
+let obj = { 0: "#ffa813", 0: "absolute", -9223372036854775808: null };
 obj = { defaultConfig: obj };
 obj = {};
 const obj1 = {};

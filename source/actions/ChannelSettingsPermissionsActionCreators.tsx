@@ -1,5 +1,5 @@
 // Module ID: 8407
-// Function ID: 66943
+// Function ID: 66954
 // Name: _updatePermission
 // Dependencies: []
 // Exports: init, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission

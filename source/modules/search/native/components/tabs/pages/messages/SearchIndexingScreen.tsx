@@ -1,14 +1,15 @@
-// Module ID: 15262
-// Function ID: 115215
+// Module ID: 15265
+// Function ID: 115249
 // Name: SearchIndexingScreen
 // Dependencies: [0, 0, 0, 0, 4294967295, 0]
 // Exports: default
 
-// Module 15262 (SearchIndexingScreen)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 15265 (SearchIndexingScreen)
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchIndexingScreen.tsx");
+result = result.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchIndexingScreen.tsx");
 
 export default function SearchIndexingScreen(searchContext) {
   searchContext = searchContext.searchContext;

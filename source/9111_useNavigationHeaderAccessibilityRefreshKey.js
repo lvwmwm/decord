@@ -1,5 +1,5 @@
 // Module ID: 9111
-// Function ID: 71357
+// Function ID: 71368
 // Name: useNavigationHeaderAccessibilityRefreshKey
 // Dependencies: []
 // Exports: default

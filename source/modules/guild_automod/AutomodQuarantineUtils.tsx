@@ -1,5 +1,5 @@
 // Module ID: 11005
-// Function ID: 85624
+// Function ID: 85635
 // Name: useCurrentUserHasAutomodQuarantinedProfile
 // Dependencies: []
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal

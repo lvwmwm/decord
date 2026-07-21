@@ -1,5 +1,5 @@
 // Module ID: 11993
-// Function ID: 92668
+// Function ID: 92680
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsInPrivateProfilesExperiment, useIsInPrivateProfilesExperiment

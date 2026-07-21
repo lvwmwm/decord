@@ -1,10 +1,10 @@
-// Module ID: 16318
-// Function ID: 125948
+// Module ID: 16326
+// Function ID: 126009
 // Name: GuildRoleSubscriptionBenefitModalHeader
 // Dependencies: []
 // Exports: default
 
-// Module 16318 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16326 (GuildRoleSubscriptionBenefitModalHeader)
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,7 +14,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.headerContainer = obj;
-obj.headerButtonContainer = {};
+obj.headerButtonContainer = { "Null": true, "Null": "/assets/modules/guild_role_subscriptions/native/images", "Null": 16 };
 obj.headerButtonStart = { alignItems: "flex-start" };
 obj.headerButtonEnd = { alignItems: "flex-end" };
 const obj1 = {};
@@ -56,16 +56,16 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const items1 = [callback2(importDefault(dependencyMap[10]), obj), , ];
   const obj2 = { style: tmp.titleContainer };
   const items2 = [callback2(arg1(dependencyMap[13]).LegacyText, { style: tmp.title, accessibilityRole: "header", children: title }), ];
-  const obj3 = { style: tmp.title, accessibilityRole: "header", children: title };
-  const tmp2 = callback3;
-  const tmp4 = importDefault(dependencyMap[10]);
-  items2[1] = callback2(arg1(dependencyMap[11]).Text, { style: tmp.subtitle, children: callback(obj.useName(listingId), 1)[0] });
+  const obj4 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.subtitle, children: callback(obj.useName(listingId), 1)[0] };
+  items2[1] = callback2(arg1(dependencyMap[11]).Text, obj4);
   obj2.children = items2;
   items1[1] = callback3(View, obj2);
   const obj5 = { style: items3, accessibilityRole: "button", disabled: !canSave, onPress: onSave };
   const items3 = [, ];
   ({ headerButtonContainer: arr4[0], headerButtonEnd: arr4[1] } = tmp);
-  const obj4 = { style: tmp.subtitle, children: callback(obj.useName(listingId), 1)[0] };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", children: title };
+  const tmp2 = callback3;
+  const tmp4 = importDefault(dependencyMap[10]);
   const obj6 = {};
   const items4 = [tmp.headerButton, ];
   let disabledButton = !canSave;

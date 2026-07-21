@@ -1,9 +1,9 @@
-// Module ID: 16498
-// Function ID: 127409
+// Module ID: 16506
+// Function ID: 127470
 // Name: promise
 // Dependencies: []
 
-// Module 16498 (promise)
+// Module 16506 (promise)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/headless_tasks/android/GenerateInvite.tsx");

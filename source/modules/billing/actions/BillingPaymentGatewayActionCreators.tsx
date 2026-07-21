@@ -1,5 +1,5 @@
 // Module ID: 4450
-// Function ID: 39069
+// Function ID: 39077
 // Name: _getClientSecret
 // Dependencies: []
 // Exports: confirmCardPaymentSource, confirmEPS, confirmIdeal, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createPaymentRequestPaymentSource, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
@@ -8,7 +8,7 @@
 let PaymentSourceTypes;
 async function _getClientSecret(paymentId, arg1) {
   const HTTP = callback(closure_3[4]).HTTP;
-  const obj = { lc: null, type: null, end: null, url: closure_5.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
+  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_5.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
   return yield HTTP.get(obj).body.stripe_payment_intent_client_secret;
 }
 function createAdyenPaymentSourceToken(type) {

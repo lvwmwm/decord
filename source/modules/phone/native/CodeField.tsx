@@ -1,5 +1,5 @@
 // Module ID: 9256
-// Function ID: 72312
+// Function ID: 72323
 // Name: SingleCodeInput
 // Dependencies: []
 // Exports: CodeBlocks, default
@@ -45,7 +45,7 @@ function SingleCodeInput(loading) {
   obj.autoFocus = true;
   const items = [closure_7(arg1(dependencyMap[7]).TextInput, obj), ];
   obj = { style: tmp2.singleInputButton };
-  const obj1 = { <string:3434862166>: "RBTree", <string:671266657>: "currentEmbeddedApplication", <string:2052426241>: "SyntaxError", loading: flag };
+  const obj1 = { ti: true, tk: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", tl: null, loading: flag };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj1.text = intl2.string(arg1(dependencyMap[8]).t.13ofGu);
   obj1.onPress = function handlePressSubmit() {
@@ -87,7 +87,7 @@ function CodeFieldInner(loading) {
   const items = [tmp2.background, backgroundStyle];
   obj = { style: tmp2.container };
   [tmp4, tmp5] = callback(React.useState(""), 2);
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title, children: title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title, children: title };
   const items1 = [callback2(arg1(dependencyMap[10]).Text, obj), callback2(arg1(dependencyMap[10]).Text, { style: tmp2.subtitle, children: description }), , ];
   const obj1 = { style: tmp2.subtitle, children: description };
   const tmp3 = callback(React.useState(""), 2);
@@ -109,20 +109,20 @@ let obj1 = arg1(dependencyMap[4]);
 obj = { viewWrapper: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.background = obj;
-obj.backgroundFlex = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1 };
+obj.backgroundFlex = { "Bool(true)": 0.129, "Bool(true)": 1 };
 obj.container = { padding: 16 };
 obj.title = { textAlign: "center" };
-obj.subtitle = { action: null, messageReference: null, medium: null };
+obj.subtitle = {};
 obj.inputContainer = {};
 obj.codeContainer = {};
 obj.spacer = { width: 4 };
-obj1 = { borderWidth: null, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, marginTop: null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.inputWrapper = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.inputWrapperError = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400 };
 obj.input = { textAlign: "center" };
 obj.singleInputWrapper = { width: "100%" };
-obj.singleInputButton = { "Null": null, "Null": null };
+obj.singleInputButton = { 0: null, 0: null };
 let closure_10 = obj1.createStyles(obj);
 const obj2 = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/phone/native/CodeField.tsx");
@@ -242,7 +242,7 @@ export const CodeBlocks = function CodeBlocks(count) {
           const str4 = str.replace("-", "").trim().toUpperCase();
           let parts = str4.split("");
           if ("" === str4) {
-            parts = [null];
+            parts = ["<string:2246337460>"];
           }
           const items = [...closure_5];
           const items1 = [tmp, 1, ...parts];

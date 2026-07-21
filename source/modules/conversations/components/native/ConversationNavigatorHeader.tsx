@@ -1,5 +1,5 @@
 // Module ID: 9280
-// Function ID: 72494
+// Function ID: 72505
 // Name: ConversationNavigatorHeader
 // Dependencies: []
 // Exports: default

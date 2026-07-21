@@ -1,9 +1,9 @@
-// Module ID: 6818
-// Function ID: 53759
+// Module ID: 6819
+// Function ID: 53771
 // Name: ShopVariantsReturnStyle
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6818 (ShopVariantsReturnStyle)
+// Module 6819 (ShopVariantsReturnStyle)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopVariantsReturnStyle.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 9371
-// Function ID: 73094
+// Function ID: 73105
 // Name: PremiumEmojiFeatureUpsell
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_5 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { <string:1367186513>: null, <string:3613500496>: null, <string:3713892945>: null, <string:4272015777>: null, bottom: arg0 + importDefault(dependencyMap[4]).space.PX_12 };
+  obj = { bottom: arg0 + importDefault(dependencyMap[4]).space.PX_12 };
   obj.container = obj;
   return obj;
 });

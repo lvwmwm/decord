@@ -1,9 +1,9 @@
-// Module ID: 4940
-// Function ID: 42320
+// Module ID: 4939
+// Function ID: 42327
 // Name: makeRequest
 // Dependencies: []
 
-// Module 4940 (makeRequest)
+// Module 4939 (makeRequest)
 function makeRequest(arg0, trackedActionData, request_method) {
   trackedActionData = arg0;
   const dependencyMap = trackedActionData.trackedActionData;
@@ -50,7 +50,7 @@ function makeRequest(arg0, trackedActionData, request_method) {
     });
   });
 }
-let closure_2 = ["<string:1654834513>"];
+let closure_2 = [-777111954108288600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
 

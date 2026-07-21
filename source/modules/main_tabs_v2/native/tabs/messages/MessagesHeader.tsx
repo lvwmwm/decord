@@ -1,10 +1,10 @@
-// Module ID: 14768
-// Function ID: 111328
+// Module ID: 14771
+// Function ID: 111362
 // Name: PX_16
 // Dependencies: []
 // Exports: getMessagesHeaderHeight
 
-// Module 14768 (PX_16)
+// Module 14771 (PX_16)
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     let obj = height(tmp[12]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      obj = { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: -2, borderTopWidth: "center" } };
+      obj = { screen: "add-friends", params: {} };
       rootNavigationRef.navigate("friends", obj);
     }
   }, []);
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
       obj2.navigate("friends", obj);
     }
   }, []);
-  obj = {};
+  obj = { MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: 1554382849, GuildEventDatetime: 24182788, canvas: 1090519040 };
   const obj1 = { size: "sm", color: importDefault(dependencyMap[4]).colors.WHITE };
   obj.icon = callback(arg1(dependencyMap[16]).PlusLargeIcon, obj1);
   const intl = arg1(dependencyMap[17]).intl;
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj3.children = callback(arg1(dependencyMap[18]).Text, obj4);
   const items1 = [callback(View, obj3), , , ];
   const obj5 = { style: tmp.headerPanelButtons };
-  const obj6 = { <string:4217742945>: true, <string:1655330464>: "yes", <string:1722587473>: "2026-04-collectibles-profile-frames-purchase", onPress: callback2 };
+  const obj6 = { paddingVertical: 44, display: null, flexDirection: true, onPress: callback2 };
   if (tmp2) {
     let tmp21 = importDefault(dependencyMap[19]);
   } else {

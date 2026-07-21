@@ -1,5 +1,5 @@
 // Module ID: 5575
-// Function ID: 47333
+// Function ID: 47341
 // Name: StyleSheet
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const StyleSheet = tmp2.StyleSheet;
 const View = tmp2.View;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-const styles = StyleSheet.create({ container: { RNSVGTSpan: true, OverKeyboardView: true }, scene: { flex: 1 } });
+const styles = StyleSheet.create({ container: {}, scene: { flex: 1 } });
 
 export default importAllResult.memo(function CardContainer(active) {
   let animationEnabled;

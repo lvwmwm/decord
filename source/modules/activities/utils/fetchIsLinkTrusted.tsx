@@ -1,10 +1,10 @@
-// Module ID: 13285
-// Function ID: 100906
+// Module ID: 13287
+// Function ID: 100928
 // Name: _fetchIsLinkTrusted
 // Dependencies: []
 // Exports: fetchIsLinkTrusted
 
-// Module 13285 (_fetchIsLinkTrusted)
+// Module 13287 (_fetchIsLinkTrusted)
 function _fetchIsLinkTrusted() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,9 +1,9 @@
-// Module ID: 13381
-// Function ID: 101719
+// Module ID: 13383
+// Function ID: 101741
 // Name: DevToolsContentSortButtons
 // Dependencies: []
 
-// Module 13381 (DevToolsContentSortButtons)
+// Module 13383 (DevToolsContentSortButtons)
 function DevToolsContentSortButtons(arg0) {
   let end;
   let start;

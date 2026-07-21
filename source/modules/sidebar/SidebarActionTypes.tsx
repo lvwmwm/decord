@@ -1,7 +1,7 @@
 // Module ID: 5657
-// Function ID: 48566
+// Function ID: 48574
 // Name: SidebarType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5657 (SidebarType)
 const _module = require(dependencyMap[0]);

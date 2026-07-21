@@ -1,5 +1,5 @@
 // Module ID: 10625
-// Function ID: 82864
+// Function ID: 82875
 // Name: ConnectivityGlobalStatusContent
 // Dependencies: []
 // Exports: default
@@ -19,7 +19,7 @@ obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE
 obj.bgNeutral = obj;
 const tmp3 = arg1(dependencyMap[8]);
 obj.bg = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
-const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, minHeight: arg1(dependencyMap[6]).RTC_PANEL_HEIGHT };
+const obj2 = { 235340516: -1555890173, 56972490: 167773045, 46203784: -1577057397, 782762651: 1090519925, minHeight: arg1(dependencyMap[6]).RTC_PANEL_HEIGHT };
 obj.container = obj2;
 let closure_11 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };

@@ -1,9 +1,9 @@
-// Module ID: 16153
-// Function ID: 124511
+// Module ID: 16161
+// Function ID: 124572
 // Name: IntegrationExpireGracePeriodTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 16153 (IntegrationExpireGracePeriodTypes)
+// Module 16161 (IntegrationExpireGracePeriodTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireGracePeriodTypes.tsx");
 

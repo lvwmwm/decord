@@ -1,5 +1,5 @@
 // Module ID: 9049
-// Function ID: 71043
+// Function ID: 71054
 // Name: acceptFriendRequest
 // Dependencies: []
 
@@ -34,7 +34,7 @@ function handleFriendRequestAcceptError(body, userId) {
     }
   }
   if (code === AbortCodes.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
-    let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, userId: userId.userId };
+    let obj = { "Null": true, "Null": "/assets/images/native/premium/illustrations", "Null": 397, userId: userId.userId };
     let flag = true;
     importDefault(dependencyMap[8]).dispatch(obj);
     const obj3 = importDefault(dependencyMap[8]);

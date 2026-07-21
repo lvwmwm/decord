@@ -1,10 +1,10 @@
-// Module ID: 7593
-// Function ID: 60796
+// Module ID: 7594
+// Function ID: 60808
 // Name: _submitHamReportForFirstDM
 // Dependencies: []
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 7593 (_submitHamReportForFirstDM)
+// Module 7594 (_submitHamReportForFirstDM)
 async function _submitHamReportForFirstDM(record, arg1, arg2) {
   let obj = callback(closure_2[7]);
   obj = { name: callback(closure_2[5]).ReportNames.FIRST_DM, record };
@@ -123,7 +123,7 @@ export const showUnauthenticatedReportModalForUser = function showUnauthenticate
   let obj = { reported_user_id: tmp.id };
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.USER, obj);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.USER, record: tmp };
-  obj = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", onClose, emailToken };
+  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
   onClose(dependencyMap[6]).showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForGuild = function showUnauthenticatedReportModalForGuild(emailToken, onClose) {
@@ -132,21 +132,21 @@ export const showUnauthenticatedReportModalForGuild = function showUnauthenticat
   obj = { guild_id: result.id };
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.GUILD, obj);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.GUILD, record: result };
-  const obj1 = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", onClose, emailToken };
+  const obj1 = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
   onClose(dependencyMap[6]).showReportModal(obj, {}, obj1);
 };
 export const showUnauthenticatedReportModalForTida = function showUnauthenticatedReportModalForTida(emailToken, onClose) {
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.MEDIA_TAKEDOWN, {});
   let obj = onClose(dependencyMap[6]);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.MEDIA_TAKEDOWN };
-  obj = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", onClose, emailToken };
+  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   trackShowReportModalAnalytics(onClose(dependencyMap[5]).UnauthenticatedReportNames.MESSAGE, { message_id: undefined, channel_id: undefined });
   let obj = onClose(dependencyMap[6]);
   obj = { name: onClose(dependencyMap[5]).UnauthenticatedReportNames.MESSAGE, record: new closure_5({}) };
-  obj = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", onClose, emailToken };
+  obj = { y: "absolute", isArray: -1, flex: -1, onClose, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
 export const submitReportForInappropriateConversationSafetyAlert = function submitReportForInappropriateConversationSafetyAlert(arg0, arg1, arg2) {

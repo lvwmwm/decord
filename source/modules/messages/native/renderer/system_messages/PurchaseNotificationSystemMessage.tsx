@@ -1,10 +1,10 @@
-// Module ID: 7703
-// Function ID: 61384
+// Module ID: 7704
+// Function ID: 61396
 // Name: createPurchaseNotificationSystemMessage
-// Dependencies: [1348, 1838, 7635]
+// Dependencies: [1348, 1838, 7636]
 // Exports: createPurchaseNotificationSystemMessage
 
-// Module 7703 (createPurchaseNotificationSystemMessage)
+// Module 7704 (createPurchaseNotificationSystemMessage)
 import result from "result";
 
 result = result.fileFinishedImporting("modules/messages/native/renderer/system_messages/PurchaseNotificationSystemMessage.tsx");

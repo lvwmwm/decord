@@ -1,5 +1,5 @@
 // Module ID: 10828
-// Function ID: 84053
+// Function ID: 84064
 // Name: useBountiesExperience
 // Dependencies: []
 // Exports: useBountiesExperience
@@ -27,7 +27,7 @@ export const useBountiesExperience = function useBountiesExperience(VIDEO_MODAL_
     num2 = config1.rewardTimerSeconds;
   }
   if (config.enabled) {
-    const obj1 = { bottom: null, right: null, borderColor: null, borderWidth: null };
+    const obj1 = {};
     ({ verticalScrollEnabled: obj5.verticalScrollEnabled, ctaTimerMilliSeconds: obj5.ctaTimerMilliSeconds, scrollAffordanceVariant: obj5.scrollAffordanceVariant } = config);
     obj1.stage1Enabled = config1.enabled;
     obj1.orbAmount = num;

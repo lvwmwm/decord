@@ -1,5 +1,5 @@
 // Module ID: 9425
-// Function ID: 73348
+// Function ID: 73359
 // Name: ReactionEmojiOptionsActionSheet
 // Dependencies: []
 // Exports: default
@@ -15,12 +15,12 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { alignItems: "center", paddingTop: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.header = obj;
-const obj1 = { 9223372036854775807: "r", -9223372036854775808: "isArray", 0: "sr", 9223372036854775807: "intl", 9223372036854775807: "r", 9223372036854775807: "isArray", backgroundColor: importDefault(dependencyMap[7]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xl, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG, paddingVertical: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { end: false, home: false, left: false, up: false, right: false, down: false, backgroundColor: importDefault(dependencyMap[7]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xl, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG, paddingVertical: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.reactionPill = obj1;
 obj.emoji = {};
 obj.emojiText = {};
 obj.reactionText = {};
-obj.starIcon = { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" };
+obj.starIcon = {};
 const tmp2 = arg1(dependencyMap[5]);
 obj.starIconSelected = { tintColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_WARNING };
 const obj2 = { tintColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_WARNING };
@@ -117,7 +117,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   const items6 = [emoji.id, callback];
   const callback2 = React.useCallback(() => {
     function content() {
-      const obj = { style: {}, variant: "text-md/bold" };
+      const obj = { style: { "Null": "noin tunti", "Null": "noin {{count}} tuntia" }, variant: "text-md/bold" };
       const intl = callback(closure_3[17]).intl;
       const string = intl.string;
       const t = callback(closure_3[17]).t;
@@ -192,7 +192,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   obj3 = { src: emojiURL, name: str };
   ({ emojiText: obj11.textEmojiStyle, emoji: obj11.fastImageStyle } = tmp);
   const items9 = [callback(importDefault(dependencyMap[24]), obj3), ];
-  obj4 = { style: tmp.reactionText, children: reaction.burst_count > 0 ? reaction.burst_count : reaction.count };
+  obj4 = { hasMaxConnections: null, isBoostOnlySubscription: null, style: tmp.reactionText, children: reaction.burst_count > 0 ? reaction.burst_count : reaction.count };
   items9[1] = callback(arg1(dependencyMap[16]).Text, obj4);
   obj2.children = items9;
   const items10 = [callback2(View, obj2), ];

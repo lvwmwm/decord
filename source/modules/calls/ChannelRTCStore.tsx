@@ -1,5 +1,5 @@
 // Module ID: 4139
-// Function ID: 34695
+// Function ID: 34700
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -93,12 +93,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function _getParticipants(channelId) {
-  let tmp = closure_31[channelId];
+  let tmp = closure_32[channelId];
   if (null == tmp) {
     let tmp4 = importDefault(dependencyMap[21]);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(channelId);
-    closure_31[channelId] = tmp4;
+    closure_32[channelId] = tmp4;
     tmp = tmp4;
   }
   return tmp;
@@ -187,13 +187,13 @@ function updateParticipants(arg0) {
             let VIDEO = constants2.VOICE;
           }
           if (VIDEO !== constants2.VOICE) {
-            closure_34[arg1] = VIDEO;
+            closure_35[arg1] = VIDEO;
           }
         }
         VIDEO = constants2.VIDEO;
       }
       let tmp10;
-      if (null != closure_35[arg1]) {
+      if (null != closure_36[arg1]) {
         tmp10 = tmp8[closure_27.APP];
       }
       delete r4[r3];
@@ -216,7 +216,7 @@ function _getSelectedParticipantId(channelId) {
   if (null != channel) {
     channel.isDM();
   }
-  let tmp3 = closure_32[channelId];
+  let tmp3 = closure_33[channelId];
   if (null == tmp3) {
     const items = [tmp2, constants2.NONE];
     tmp3 = items;
@@ -224,18 +224,18 @@ function _getSelectedParticipantId(channelId) {
   return tmp3;
 }
 function getHasSelectedParticipant(channelId) {
-  let tmp = null != closure_32[channelId];
+  let tmp = null != closure_33[channelId];
   if (tmp) {
-    tmp = callback3(closure_32[channelId], 1)[0] !== constants2.NONE;
+    tmp = callback3(closure_33[channelId], 1)[0] !== constants2.NONE;
   }
   return tmp;
 }
 function updateElapsedSelectedParticipantStats(currentVoiceChannelId) {
-  if (null == closure_33[currentVoiceChannelId]) {
-    closure_33[currentVoiceChannelId] = { 0: null, 9223372036854775807: 4, 9223372036854775807: 4, -9223372036854775808: "rgba(0, 0, 0, 0.75)" };
+  if (null == closure_34[currentVoiceChannelId]) {
+    closure_34[currentVoiceChannelId] = { "Null": "ERROR", "Null": "ERROR", "Null": "NOT_RESPONDER", "Null": "NOT_RESPONDER" };
   }
   const nowResult = performance.now();
-  if (closure_33[currentVoiceChannelId].lastUpdate > 0) {
+  if (closure_34[currentVoiceChannelId].lastUpdate > 0) {
     let str = "gridDurationMs";
     const diff = nowResult - tmp2.lastUpdate;
     if (tmp4) {
@@ -243,17 +243,17 @@ function updateElapsedSelectedParticipantStats(currentVoiceChannelId) {
     }
     tmp2[str] = tmp2[str] + diff;
   }
-  closure_33[currentVoiceChannelId].lastUpdate = nowResult;
+  closure_34[currentVoiceChannelId].lastUpdate = nowResult;
 }
 function setSelectedParticipantId(channelId, arg1) {
   updateElapsedSelectedParticipantStats(channelId);
   if (null == arg1) {
     delete r3[r2];
   } else {
-    closure_32[channelId] = arg1;
+    closure_33[channelId] = arg1;
   }
   if (tmp2 !== getHasSelectedParticipant(channelId)) {
-    closure_33[channelId].toggleCount = closure_33[channelId].toggleCount + 1;
+    closure_34[channelId].toggleCount = closure_34[channelId].toggleCount + 1;
   }
 }
 function hasVideo(id) {
@@ -303,6 +303,18 @@ function handleRebuildActiveChannels() {
   closure_30 = items;
   return tmp((rebuild) => rebuild.rebuild(), importDefault(dependencyMap[22]).difference(items, closure_30));
 }
+function setChatOpen(channelId, chatOpen) {
+  closure_39[channelId] = chatOpen;
+  if (chatOpen) {
+    obj.add(channelId);
+  } else {
+    obj.delete(channelId);
+  }
+}
+function deleteChatOpen(currentVoiceChannelId) {
+  delete r1[r2];
+  set.delete(currentVoiceChannelId);
+}
 function handleEmbeddedActivityChange() {
   return updateParticipants((updateEmbeddedActivities) => updateEmbeddedActivities.updateEmbeddedActivities());
 }
@@ -318,9 +330,10 @@ function handleCallUpdate(channelId) {
   return updateParticipants((rebuild) => rebuild.rebuild(), items);
 }
 function handleChannelDelete(channel) {
-  delete r1[r2];
-  delete r1[r2];
-  clearChannel(channel.channel.id);
+  const id = channel.channel.id;
+  deleteChatOpen(id);
+  delete r3[r2];
+  clearChannel(id);
 }
 function handleStreamClose(streamKey) {
   const decodeStreamKeyResult = arg1(dependencyMap[25]).decodeStreamKey(streamKey.streamKey);
@@ -361,7 +374,7 @@ importDefaultResult = new importDefaultResult("ChannelRTCStore");
 importDefaultResult.enableNativeLogger(true);
 const frozen = Object.freeze([]);
 let closure_30 = [];
-let closure_31 = {};
+const set = new Set();
 let closure_32 = {};
 let closure_33 = {};
 let closure_34 = {};
@@ -371,14 +384,15 @@ let closure_37 = {};
 let closure_38 = {};
 let closure_39 = {};
 let closure_40 = {};
-let tmp7 = (PersistedStore) => {
+let closure_41 = {};
+let tmp8 = (PersistedStore) => {
   class ChannelRTCStore {
     constructor() {
       self = this;
       tmp = closure_3(this, ChannelRTCStore);
       obj = closure_6(ChannelRTCStore);
       tmp2 = closure_5;
-      if (closure_41()) {
+      if (closure_42()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = closure_6;
@@ -399,9 +413,9 @@ let tmp7 = (PersistedStore) => {
     value(voiceParticipantsHidden) {
       this.waitFor(closure_11, closure_12, closure_13, closure_14, closure_9, closure_10, closure_15, closure_16, closure_17, closure_18, closure_19, closure_20);
       const items = [closure_9];
-      this.syncWith(items, closure_54);
+      this.syncWith(items, closure_57);
       const items1 = [closure_10];
-      this.syncWith(items1, closure_53);
+      this.syncWith(items1, closure_54);
       let prop;
       if (null != voiceParticipantsHidden) {
         prop = voiceParticipantsHidden.voiceParticipantsHidden;
@@ -411,16 +425,16 @@ let tmp7 = (PersistedStore) => {
         if (null != voiceParticipantsHidden) {
           prop1 = voiceParticipantsHidden.voiceParticipantsHidden;
         }
-        const merged = Object.assign(closure_37, prop1);
-        const tmp6 = closure_37;
+        const merged = Object.assign(closure_38, prop1);
+        const tmp6 = closure_38;
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , ];
+  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return { voiceParticipantsHidden: closure_37 };
+      return { voiceParticipantsHidden: closure_38 };
     }
   };
   items[1] = obj;
@@ -455,7 +469,7 @@ let tmp7 = (PersistedStore) => {
     key: "getFilteredParticipants",
     value(arg0) {
       const obj = callback5(arg0);
-      if (null != closure_37[arg0]) {
+      if (null != closure_38[arg0]) {
         if (tmp) {
           let toArrayResult = obj.toArray(ChannelRTCStore(closure_2[21]).ChannelRTCParticipantsIndexes.FILTERED);
         }
@@ -511,13 +525,13 @@ let tmp7 = (PersistedStore) => {
   items[11] = {
     key: "getParticipantsOpen",
     value(arg0) {
-      return null == closure_36[arg0] || closure_36[arg0];
+      return null == closure_37[arg0] || closure_37[arg0];
     }
   };
   items[12] = {
     key: "getVoiceParticipantsHidden",
     value(arg0) {
-      return null != closure_37[arg0] && closure_37[arg0];
+      return null != closure_38[arg0] && closure_38[arg0];
     }
   };
   items[13] = {
@@ -557,7 +571,7 @@ let tmp7 = (PersistedStore) => {
   items[15] = {
     key: "getSelectedParticipantStats",
     value(arg0) {
-      if (null == closure_33[arg0]) {
+      if (null == closure_34[arg0]) {
         let obj = {};
       } else {
         obj = {};
@@ -579,7 +593,7 @@ let tmp7 = (PersistedStore) => {
   items[17] = {
     key: "getMode",
     value(arg0) {
-      if (null != closure_34[arg0]) {
+      if (null != closure_35[arg0]) {
         return tmp;
       } else {
         callback7(arg0) ? closure_25.VIDEO : closure_25.VOICE;
@@ -598,16 +612,22 @@ let tmp7 = (PersistedStore) => {
   items[19] = {
     key: "getChatOpen",
     value(arg0) {
-      return null != closure_38[arg0] && closure_38[arg0];
+      return null != closure_39[arg0] && closure_39[arg0];
     }
   };
   items[20] = {
     key: "getAllChatOpen",
     value() {
-      return closure_38;
+      return closure_39;
     }
   };
   items[21] = {
+    key: "getOpenChatChannelIds",
+    value() {
+      return closure_31;
+    }
+  };
+  items[22] = {
     key: "isFullscreenInContext",
     value() {
       let APP = arg0;
@@ -615,23 +635,23 @@ let tmp7 = (PersistedStore) => {
         APP = constants3.APP;
       }
       const ChannelRTCStore = APP;
-      const values = Object.values(closure_35);
+      const values = Object.values(closure_36);
       return values.some((arg0) => arg0[closure_0] === constants.FULL_SCREEN);
     }
   };
-  items[22] = {
-    key: "getStageStreamSize",
-    value(arg0) {
-      return closure_39[arg0];
-    }
-  };
   items[23] = {
-    key: "getStageVideoLimitBoostUpsellDismissed",
+    key: "getStageStreamSize",
     value(arg0) {
       return closure_40[arg0];
     }
   };
   items[24] = {
+    key: "getStageVideoLimitBoostUpsellDismissed",
+    value(arg0) {
+      return closure_41[arg0];
+    }
+  };
+  items[25] = {
     key: "isParticipantPoppedOut",
     value(arg0, arg1) {
       const participant = this.getParticipant(arg0, arg1);
@@ -645,17 +665,17 @@ let tmp7 = (PersistedStore) => {
   };
   return callback(ChannelRTCStore, items);
 }(importDefault(dependencyMap[26]).PersistedStore);
-tmp7.displayName = "ChannelRTCStore";
-tmp7.persistKey = "ChannelRTCStore";
-tmp7 = new tmp7(importDefault(dependencyMap[27]), {
+tmp8.displayName = "ChannelRTCStore";
+tmp8.persistKey = "ChannelRTCStore";
+tmp8 = new tmp8(importDefault(dependencyMap[27]), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let done;
     const tmp = _createForOfIteratorHelperLoose(closure_30);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_52;
-        let tmp3 = closure_52(iter.value);
+        let tmp2 = closure_53;
+        let tmp3 = closure_53(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -674,7 +694,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
     if (null != channelId) {
       delete r0[r6];
     } else if (null != currentVoiceChannelId) {
-      delete r4[r5];
+      deleteChatOpen(currentVoiceChannelId);
       delete r4[r5];
       updateElapsedSelectedParticipantStats(currentVoiceChannelId);
     }
@@ -682,10 +702,10 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
     if (channelId !== currentVoiceChannelId) {
       flag = false;
       if (null != currentVoiceChannelId) {
-        const tmp7 = _getParticipants(currentVoiceChannelId);
-        arg1 = tmp7;
-        const guildRingingUsers = tmp7.guildRingingUsers;
-        const item = guildRingingUsers.forEach((arg0) => tmp7.updateGuildRingingUsers(arg0, false));
+        const tmp8 = _getParticipants(currentVoiceChannelId);
+        arg1 = tmp8;
+        const guildRingingUsers = tmp8.guildRingingUsers;
+        const item = guildRingingUsers.forEach((arg0) => tmp8.updateGuildRingingUsers(arg0, false));
         const items = [currentVoiceChannelId];
         flag = updateParticipants((rebuild) => rebuild.rebuild(), items);
       }
@@ -702,7 +722,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
       return tmp;
     } else if (null == channelId.messageId) {
       return tmp;
-    } else if (closure_38[channelId]) {
+    } else if (closure_39[channelId]) {
       return tmp;
     } else {
       const channel = store2.getChannel(channelId);
@@ -710,7 +730,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
       if (null != channel) {
         let flag = tmp;
         if (channel.isGuildVocal()) {
-          closure_38[channelId] = true;
+          setChatOpen(channelId, true);
           flag = true;
         }
         tmp4 = flag;
@@ -752,14 +772,14 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
       if (null != originChannelId) {
         const obj = {};
         let NORMAL;
-        if (null != closure_35[originChannelId]) {
+        if (null != closure_36[originChannelId]) {
           NORMAL = tmp5[closure_27.APP];
         }
         if (null == NORMAL) {
           NORMAL = constants3.NORMAL;
         }
         obj[constants5.APP] = NORMAL;
-        closure_35[channel.id] = obj;
+        closure_36[channel.id] = obj;
         return true;
       }
     }
@@ -803,10 +823,10 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
         if (hasVideo(tmp3)) {
           break;
         } else {
-          let tmp21 = closure_36;
+          let tmp21 = closure_37;
           let tmp22 = channelId;
           let flag = false;
-          closure_36[tmp] = false;
+          closure_37[tmp] = false;
           // break
         }
         break;
@@ -856,21 +876,21 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
     channelId = channelId.channelId;
     const obj = {};
     ({ layout, appContext } = channelId);
-    const merged = Object.assign(closure_35[channelId]);
+    const merged = Object.assign(closure_36[channelId]);
     obj[appContext] = layout;
-    closure_35[channelId] = obj;
+    closure_36[channelId] = obj;
   },
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: function handleUpdateParticipantsOpen(channelId) {
-    closure_36[channelId.channelId] = channelId.participantsOpen;
+    closure_37[channelId.channelId] = channelId.participantsOpen;
   },
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: function handleUpdateVoiceParticipantsHidden(channelId) {
-    closure_37[channelId.channelId] = channelId.voiceParticipantsHidden;
+    closure_38[channelId.channelId] = channelId.voiceParticipantsHidden;
   },
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: function handleUpdateStageStreamSize(channelId) {
-    closure_39[channelId.channelId] = channelId.large;
+    closure_40[channelId.channelId] = channelId.large;
   },
   CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: function handleUpdateStageVideoLimitBoostUpsellDismissed(channelId) {
-    closure_40[channelId.channelId] = channelId.dismissed;
+    closure_41[channelId.channelId] = channelId.dismissed;
   },
   STREAM_UPDATE_SELF_HIDDEN: function handleUpdateSelfStreamHidden(channelId) {
     channelId = channelId.channelId;
@@ -887,7 +907,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[27]), {
     updateParticipant(id, items);
   },
   CHANNEL_RTC_UPDATE_CHAT_OPEN: function handleUpdateChatOpen(channelId) {
-    closure_38[channelId.channelId] = channelId.chatOpen;
+    setChatOpen(channelId.channelId, channelId.chatOpen);
   },
   RTC_CONNECTION_VIDEO: function handleRTCConnectionVideo(channelId) {
     const items = [channelId.channelId];
@@ -984,8 +1004,8 @@ const obj = {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_52;
-        let tmp3 = closure_52(iter.value);
+        let tmp2 = closure_53;
+        let tmp3 = closure_53(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -1004,7 +1024,7 @@ const obj = {
     if (null != channelId) {
       delete r0[r6];
     } else if (null != currentVoiceChannelId) {
-      delete r4[r5];
+      deleteChatOpen(currentVoiceChannelId);
       delete r4[r5];
       updateElapsedSelectedParticipantStats(currentVoiceChannelId);
     }
@@ -1012,10 +1032,10 @@ const obj = {
     if (channelId !== currentVoiceChannelId) {
       flag = false;
       if (null != currentVoiceChannelId) {
-        const tmp7 = _getParticipants(currentVoiceChannelId);
-        arg1 = tmp7;
-        const guildRingingUsers = tmp7.guildRingingUsers;
-        const item = guildRingingUsers.forEach((arg0) => tmp7.updateGuildRingingUsers(arg0, false));
+        const tmp8 = _getParticipants(currentVoiceChannelId);
+        arg1 = tmp8;
+        const guildRingingUsers = tmp8.guildRingingUsers;
+        const item = guildRingingUsers.forEach((arg0) => tmp8.updateGuildRingingUsers(arg0, false));
         const items = [currentVoiceChannelId];
         flag = updateParticipants((rebuild) => rebuild.rebuild(), items);
       }
@@ -1032,7 +1052,7 @@ const obj = {
       return tmp;
     } else if (null == channelId.messageId) {
       return tmp;
-    } else if (closure_38[channelId]) {
+    } else if (closure_39[channelId]) {
       return tmp;
     } else {
       const channel = store2.getChannel(channelId);
@@ -1040,7 +1060,7 @@ const obj = {
       if (null != channel) {
         let flag = tmp;
         if (channel.isGuildVocal()) {
-          closure_38[channelId] = true;
+          setChatOpen(channelId, true);
           flag = true;
         }
         tmp4 = flag;
@@ -1082,14 +1102,14 @@ const obj = {
       if (null != originChannelId) {
         const obj = {};
         let NORMAL;
-        if (null != closure_35[originChannelId]) {
+        if (null != closure_36[originChannelId]) {
           NORMAL = tmp5[closure_27.APP];
         }
         if (null == NORMAL) {
           NORMAL = constants3.NORMAL;
         }
         obj[constants5.APP] = NORMAL;
-        closure_35[channel.id] = obj;
+        closure_36[channel.id] = obj;
         return true;
       }
     }
@@ -1133,10 +1153,10 @@ const obj = {
         if (hasVideo(tmp3)) {
           break;
         } else {
-          let tmp21 = closure_36;
+          let tmp21 = closure_37;
           let tmp22 = channelId;
           let flag = false;
-          closure_36[tmp] = false;
+          closure_37[tmp] = false;
           // break
         }
         break;
@@ -1186,21 +1206,21 @@ const obj = {
     channelId = channelId.channelId;
     const obj = {};
     ({ layout, appContext } = channelId);
-    const merged = Object.assign(closure_35[channelId]);
+    const merged = Object.assign(closure_36[channelId]);
     obj[appContext] = layout;
-    closure_35[channelId] = obj;
+    closure_36[channelId] = obj;
   },
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: function handleUpdateParticipantsOpen(channelId) {
-    closure_36[channelId.channelId] = channelId.participantsOpen;
+    closure_37[channelId.channelId] = channelId.participantsOpen;
   },
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: function handleUpdateVoiceParticipantsHidden(channelId) {
-    closure_37[channelId.channelId] = channelId.voiceParticipantsHidden;
+    closure_38[channelId.channelId] = channelId.voiceParticipantsHidden;
   },
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: function handleUpdateStageStreamSize(channelId) {
-    closure_39[channelId.channelId] = channelId.large;
+    closure_40[channelId.channelId] = channelId.large;
   },
   CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: function handleUpdateStageVideoLimitBoostUpsellDismissed(channelId) {
-    closure_40[channelId.channelId] = channelId.dismissed;
+    closure_41[channelId.channelId] = channelId.dismissed;
   },
   STREAM_UPDATE_SELF_HIDDEN: function handleUpdateSelfStreamHidden(channelId) {
     channelId = channelId.channelId;
@@ -1217,7 +1237,7 @@ const obj = {
     updateParticipant(id, items);
   },
   CHANNEL_RTC_UPDATE_CHAT_OPEN: function handleUpdateChatOpen(channelId) {
-    closure_38[channelId.channelId] = channelId.chatOpen;
+    setChatOpen(channelId.channelId, channelId.chatOpen);
   },
   RTC_CONNECTION_VIDEO: function handleRTCConnectionVideo(channelId) {
     const items = [channelId.channelId];
@@ -1310,5 +1330,5 @@ const obj = {
 const tmp3 = arg1(dependencyMap[19]);
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/calls/ChannelRTCStore.tsx");
 
-export default tmp7;
+export default tmp8;
 export const NO_PARTICIPANTS = frozen;

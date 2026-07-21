@@ -1,5 +1,5 @@
 // Module ID: 8572
-// Function ID: 68098
+// Function ID: 68109
 // Name: RestrictedGuildProfileView
 // Dependencies: []
 // Exports: default
@@ -38,7 +38,7 @@ export default function RestrictedGuildProfileView() {
   const intl = arg1(dependencyMap[10]).intl;
   obj5.children = intl.string(arg1(dependencyMap[10]).t.wZmueu);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj5), ];
-  const obj6 = {};
+  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: "md" };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj6.children = intl2.string(arg1(dependencyMap[10]).t.8mfCqY);
   items1[1] = callback(arg1(dependencyMap[9]).Text, obj6);

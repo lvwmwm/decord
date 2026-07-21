@@ -1,9 +1,9 @@
 // Module ID: 1796
-// Function ID: 19887
+// Function ID: 19892
 // Dependencies: []
 
 // Module 1796
-let closure_3 = [];
+let closure_3 = ["<string:1072483532>", "<string:1717986918>", "<string:1072588390>", "%MapPrototype%", "<string:2402169344>", "<string:1583251070>", "<string:3651747822>", "<string:3570717908>", "<string:24199140>", "<string:838860800>"];
 let closure_4 = importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
 const Platform = arg1(dependencyMap[2]).Platform;

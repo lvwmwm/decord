@@ -1,5 +1,5 @@
 // Module ID: 12086
-// Function ID: 93200
+// Function ID: 93212
 // Name: closeGuildEventInfoActionSheet
 // Dependencies: []
 // Exports: default
@@ -88,7 +88,7 @@ export default function EventDetailInfoSheet(guildEvent) {
     if (null != guildEvent.creator_id) {
       let obj = { creator: user.getUser(guildEvent.creator_id), creatorMember: member.getMember(guildEvent.guild_id, guildEvent.creator_id) };
     } else {
-      obj = { ddd: "o", ind: "o" };
+      obj = { <string:3798200557>: "o", <string:2689750956>: "o" };
     }
     return obj;
   }, items6);

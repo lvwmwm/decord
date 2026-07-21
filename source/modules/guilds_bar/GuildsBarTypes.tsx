@@ -1,9 +1,9 @@
-// Module ID: 14761
-// Function ID: 111272
+// Module ID: 14764
+// Function ID: 111306
 // Name: SpecialGuildsNodeIds
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 14761 (SpecialGuildsNodeIds)
+// Module 14764 (SpecialGuildsNodeIds)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guilds_bar/GuildsBarTypes.tsx");
 

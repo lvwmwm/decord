@@ -1,5 +1,5 @@
 // Module ID: 10097
-// Function ID: 78185
+// Function ID: 78196
 // Name: useSafetyAlertsSettingOrDefault
 // Dependencies: [469762087, 3154116624, 33554436, 4026531840, 7955, 345088]
 // Exports: useSafetyAlertsSettingOrDefault

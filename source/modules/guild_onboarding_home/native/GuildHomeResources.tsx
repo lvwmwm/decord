@@ -1,10 +1,10 @@
-// Module ID: 15165
-// Function ID: 114354
+// Module ID: 15168
+// Function ID: 114388
 // Name: ResourceChannelRow
 // Dependencies: []
 // Exports: default
 
-// Module 15165 (ResourceChannelRow)
+// Module 15168 (ResourceChannelRow)
 function ResourceChannelRow(channelId) {
   let description;
   let icon;
@@ -58,14 +58,14 @@ function ResourceChannelRow(channelId) {
       const resourceChannelIconURL = obj8.getResourceChannelIconURL(obj);
       obj1 = { onPress: tmp11, style: tmp.channelContainer };
       obj2 = { style: tmp.textContent };
-      const obj3 = { children: channelId.title };
+      const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "Cheerful Choco sparkles", children: channelId.title };
       const items4 = [callback(arg1(dependencyMap[18]).Text, obj3), , ];
       let tmp22 = tmp15;
       if (null == description || 0 === description.length) {
         tmp22 = null != tmp8;
       }
       if (tmp22) {
-        obj4 = { 9223372036854775807: 1091698687, 9223372036854775807: 91244, 0: 6258, 9223372036854775807: 6144, 9223372036854775807: -1992163072, style: tmp.messageContent };
+        obj4 = { style: tmp.messageContent };
         obj5 = {};
         ({ guild_id: obj16.guildId, id: obj16.channelId } = stateFromStores);
         obj4.children = importDefault(dependencyMap[19]).parse(tmp8, true, obj5);
@@ -75,7 +75,7 @@ function ResourceChannelRow(channelId) {
       items4[1] = tmp22;
       let tmp27 = !tmp15;
       if (!(null == description || 0 === description.length)) {
-        obj6 = { 9223372036854775807: 1091698687, 9223372036854775807: 91244, 0: 6258, 9223372036854775807: 6144, 9223372036854775807: -1992163072, style: tmp.messageContent };
+        obj6 = { style: tmp.messageContent };
         ({ guild_id: obj19.guildId, id: obj19.channelId } = stateFromStores);
         obj6.children = importDefault(dependencyMap[19]).parse(description, true, {});
         tmp27 = callback(arg1(dependencyMap[18]).Text, obj6);
@@ -143,14 +143,14 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { "Null": "3cb840d03313467838d658bbec801fcd", "Null": "icon7", "Null": "png", "Null": "LOGIN" }, emptyStateContainer: {} };
+obj = { container: { BILLING_SUBSCRIPTION: "3cb840d03313467838d658bbec801fcd", GameDepthTier1SmallBadge: "icon7", UMWBZr: "png", -45008031: "LOGIN" }, emptyStateContainer: { "Null": 1674133777, "Null": 410124289, "Null": 402653184, "Null": 16777216 } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.channelContainer = obj;
 obj.messageContent = { marginTop: 8 };
 obj.textContent = { flex: 1 };
 obj.thumbnail = { marginLeft: 8 };
-obj.emptyStateImage = {};
-obj.icon = { bhk: false, bic: false };
+obj.emptyStateImage = { size: null, progress: "\u{1F595}" };
+obj.icon = { "Null": "NR", "Null": "__RRWEB_EXCLUDE_SHADOW_DOM__" };
 let closure_14 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_onboarding_home/native/GuildHomeResources.tsx");
@@ -162,7 +162,7 @@ export default function GuildHomeResources(guildId) {
   const arr = importDefault(dependencyMap[20])(guildId);
   if (0 === arr.length) {
     let obj = { style: tmp.emptyStateContainer };
-    obj = {};
+    obj = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
     const intl = arg1(dependencyMap[22]).intl;
     obj.children = intl.string(arg1(dependencyMap[22]).t.owvC9U);
     const items = [callback(arg1(dependencyMap[18]).Text, obj), , ];

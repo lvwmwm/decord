@@ -1,31 +1,29 @@
 // Module ID: 10420
-// Function ID: 80280
+// Function ID: 80291
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [1194, 1348, 1906, 4142, 669, 2, 57, 31, 4120, 1347, 7814, 4163]
+// Dependencies: []
 // Exports: default
 
 // Module 10420 (UnreadSettingNoticeConnected)
-import "_isNativeReflectConstruct";
-import { View } from "_isNativeReflectConstruct";
-import { ChannelNotificationSettingsFlags as closure_4 } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
-({ jsx: closure_5, jsxs: closure_6 } = _isNativeReflectConstruct);
-set = {};
-set = { paddingVertical: require("result2").space.PX_12, paddingHorizontal: require("result2").space.PX_16, borderBottomColor: require("result2").colors.BORDER_SUBTLE, backgroundColor: require("result2").colors.BACKGROUND_BASE_LOW };
-const merged = Object.assign(require("result2").shadows.SHADOW_LOW);
-set.content = set;
-set.informations = { flex: 1 };
-set.actions = {};
-set.inlineTextWithIcon = {};
-set = set.createStyles(set);
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx");
+importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+let closure_4 = arg1(dependencyMap[2]).ChannelNotificationSettingsFlags;
+({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
+let obj = arg1(dependencyMap[4]);
+obj = {};
+obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
+obj.content = obj;
+obj.informations = { flex: 1 };
+obj.actions = {};
+obj.inlineTextWithIcon = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+let closure_7 = obj.createStyles(obj);
+const tmp3 = arg1(dependencyMap[3]);
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx");
 
 export default function UnreadSettingNoticeConnected(channel) {
   const arg1 = channel;
-  const tmp = set();
+  const tmp = callback3();
   let obj = { style: tmp.content };
   obj = { id: channel.channel.id };
   const items = [callback(importDefault(dependencyMap[6]), obj), , ];
@@ -44,7 +42,7 @@ export default function UnreadSettingNoticeConnected(channel) {
       self.clearUnreadsNotice();
     }
   };
-  const obj4 = {};
+  const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[8]).t.KyUKhT);
   obj3.children = callback(arg1(dependencyMap[7]).Text, obj4);

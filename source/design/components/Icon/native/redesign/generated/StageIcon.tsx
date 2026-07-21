@@ -1,10 +1,10 @@
-// Module ID: 4651
-// Function ID: 40307
+// Module ID: 4650
+// Function ID: 40314
 // Name: StageIcon
 // Dependencies: []
 // Exports: StageIcon
 
-// Module 4651 (StageIcon)
+// Module 4650 (StageIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StageIcon.tsx");

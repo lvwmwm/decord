@@ -1,5 +1,5 @@
 // Module ID: 11590
-// Function ID: 90098
+// Function ID: 90110
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: default
@@ -36,13 +36,13 @@ export default function GuildPowerupsCard(status) {
   let containerStyle;
   let style;
   status = status.status;
-  let obj = { position: null, bottom: 4, padding: 4, width: "rgba(0, 0, 0, 0.75)" };
+  let obj = { 1721860433: "ERROR", 1408999516: "ERROR", -77157802: "NOT_RESPONDER", 1448895136: "NOT_RESPONDER" };
   ({ children, containerStyle, style } = status);
   Object.setPrototypeOf(null);
   const merged = Object.assign(status, obj);
   const tmp3 = callback();
   obj = { style: containerStyle };
-  obj = { "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 232, "Null": 126 };
+  obj = { -77157802: "/assets/design/components/Illustration/native/redesign/generated/images", 1448895136: 232, 1311855018: 126 };
   const merged1 = Object.assign(merged);
   let type;
   if (null != status) {

@@ -1,10 +1,10 @@
-// Module ID: 7526
-// Function ID: 60216
+// Module ID: 7527
+// Function ID: 60228
 // Name: CardSection
 // Dependencies: []
 // Exports: default
 
-// Module 7526 (CardSection)
+// Module 7527 (CardSection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));

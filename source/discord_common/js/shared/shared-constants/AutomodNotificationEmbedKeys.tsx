@@ -1,7 +1,7 @@
 // Module ID: 6743
-// Function ID: 52478
+// Function ID: 52486
 // Name: AutomodNotificationEmbedKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6743 (AutomodNotificationEmbedKeys)
 const _module = require(dependencyMap[0]);

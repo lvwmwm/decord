@@ -1,5 +1,5 @@
 // Module ID: 11220
-// Function ID: 87368
+// Function ID: 87380
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
@@ -23,7 +23,7 @@ export default function EmptyState() {
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[6]).AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container };
   const items = [callback(importDefault(dependencyMap[7]), {}), ];
-  obj = { style: tmp.textContainer };
+  obj = { delete: "contain", dispatch: 8, raw: 4, style: tmp.textContainer };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.V7+xhH);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);

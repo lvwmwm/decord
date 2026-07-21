@@ -1,7 +1,7 @@
 // Module ID: 11452
-// Function ID: 89214
+// Function ID: 89226
 // Name: LeftSlot
-// Dependencies: [4345, 653, 11360, 566, 2, 31, 4147, 8588, 653, 566, 8586, 8592, 2, 31, 4163, 5337]
+// Dependencies: [4345, 653, 11360, 566, 2, 31, 4147, 8588, 653, 566, 8586, 8592, 2, 31, 4163, 5336]
 
 // Module 11452 (LeftSlot)
 import closure_3 from "_isNativeReflectConstruct";
@@ -34,9 +34,9 @@ function LeftSlot(state) {
 ({ jsx: closure_7, jsxs: closure_8 } = result2);
 let closure_9 = module_31.createStyles(() => {
   let obj = {};
-  obj = { gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
+  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
   obj.container = obj;
-  obj.leftSlot = {};
+  obj.leftSlot = { "Null": null, "Null": null };
   return obj;
 });
 const forwardRefResult = importAllResult.forwardRef((channel) => {

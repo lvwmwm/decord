@@ -1,7 +1,7 @@
 // Module ID: 9461
-// Function ID: 73708
+// Function ID: 73719
 // Name: QuestRewardAssignmentMethods
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9461 (QuestRewardAssignmentMethods)
 const _module = require(dependencyMap[0]);

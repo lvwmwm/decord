@@ -1,10 +1,10 @@
-// Module ID: 12966
-// Function ID: 98635
+// Module ID: 12968
+// Function ID: 98657
 // Name: AvatarDuoPile
 // Dependencies: []
 // Exports: AvatarDuoPile
 
-// Module 12966 (AvatarDuoPile)
+// Module 12968 (AvatarDuoPile)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
@@ -15,7 +15,7 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   obj.size = 0;
   obj.children = 0;
   const merged = Object.assign(size, obj);
-  obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": null };
+  obj = {};
   if ("aria-label" in merged) {
     aria-label = merged.aria-label;
   } else {

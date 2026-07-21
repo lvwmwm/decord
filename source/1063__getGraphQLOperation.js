@@ -1,7 +1,7 @@
 // Module ID: 1063
-// Function ID: 11358
+// Function ID: 11362
 // Name: _getGraphQLOperation
-// Dependencies: [0, 0]
+// Dependencies: []
 
 // Module 1063 (_getGraphQLOperation)
 function _getGraphQLOperation(operationName) {
@@ -104,11 +104,12 @@ function getGraphQLRequestPayload(arg0) {
   return tmp4;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const _module = require(dependencyMap[0]);
 
 export { _getGraphQLOperation };
 export { getGraphQLRequestPayload };
 export { getRequestPayloadXhrOrFetch };
-export const graphqlClientIntegration = require("__exportStarResult1").defineIntegration(function _graphqlClientIntegration(arg0) {
+export const graphqlClientIntegration = _module.defineIntegration(function _graphqlClientIntegration(arg0) {
   const require = arg0;
   return {
     name: "GraphQLClient",

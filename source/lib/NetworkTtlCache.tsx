@@ -1,9 +1,9 @@
-// Module ID: 12528
-// Function ID: 96253
+// Module ID: 12530
+// Function ID: 96275
 // Name: NetworkTtlCache
 // Dependencies: []
 
-// Module 12528 (NetworkTtlCache)
+// Module 12530 (NetworkTtlCache)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };

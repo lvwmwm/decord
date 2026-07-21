@@ -1,5 +1,5 @@
 // Module ID: 8363
-// Function ID: 66652
+// Function ID: 66663
 // Name: GuildEventSchedule
 // Dependencies: []
 // Exports: default

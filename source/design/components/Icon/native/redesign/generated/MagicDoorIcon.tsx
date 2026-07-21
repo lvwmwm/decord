@@ -1,14 +1,15 @@
-// Module ID: 13413
-// Function ID: 101875
+// Module ID: 13415
+// Function ID: 101897
 // Name: MagicDoorIcon
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 0]
 // Exports: MagicDoorIcon
 
-// Module 13413 (MagicDoorIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 13415 (MagicDoorIcon)
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/MagicDoorIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/MagicDoorIcon.tsx");
 
 export const MagicDoorIcon = function MagicDoorIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

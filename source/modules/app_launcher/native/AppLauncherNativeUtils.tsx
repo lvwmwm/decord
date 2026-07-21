@@ -1,5 +1,5 @@
 // Module ID: 11160
-// Function ID: 86761
+// Function ID: 86773
 // Name: handleApplicationSelected
 // Dependencies: []
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
@@ -160,7 +160,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items3;
             }
-            items3 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+            items3 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
@@ -173,7 +173,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items5;
             }
-            items5 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+            items5 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if ("string" === typeof found.value) {
@@ -185,7 +185,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 return items7;
               }
             }
-            items7 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+            items7 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
@@ -209,10 +209,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 }
               }
             }
-            const items11 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+            const items11 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
             return items11;
           } else {
-            const items12 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+            const items12 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
             return items12;
           }
         }
@@ -236,7 +236,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
         }
       }
     }
-    const items15 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
+    const items15 = [{ v: "<string:3444703234>", w: "<string:299071619>" }];
     return items15;
   }
 };

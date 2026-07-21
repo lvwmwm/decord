@@ -1,5 +1,5 @@
 // Module ID: 4121
-// Function ID: 34282
+// Function ID: 34287
 // Name: MESSAGE_GROUP_SPACING
 // Dependencies: []
 // Exports: isChannelStreamMessage
@@ -8,7 +8,7 @@
 const ChannelStreamTypes = require(dependencyMap[0]).ChannelStreamTypes;
 let obj = {};
 obj = {};
-const frozen = Object.freeze({ 9223372036854775807: "name", 0: "name-middle", 0: "name-family", 9223372036854775807: "name-given", 0: "password-new", -9223372036854775808: "off", 0: "sms-otp", 9223372036854775807: "postal-code", "Null": "gender", "Null": "street-address", "Null": "tel" });
+const frozen = Object.freeze({});
 obj.response = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
 obj.deadline = importDefault(dependencyMap[1]).Millis.MINUTE;
 obj.timeout = obj;

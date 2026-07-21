@@ -1,5 +1,5 @@
 // Module ID: 10224
-// Function ID: 78999
+// Function ID: 79010
 // Name: set
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationConstants.tsx");
 const items = [-100, 0, 100];
 
-export const REACTION_MILESTONE_COUNTS = new Set(["<string:993083397>", "<string:2542620639>"]);
+export const REACTION_MILESTONE_COUNTS = new Set(["CHANNEL_PINNED_MESSAGE", "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS"]);
 export const IN_APP_NOTIFICATION_MAX_HEIGHT = 96;
 export const NOTIFICATION_MAX_WIDTH = 480;
 export const NOTIFICATION_PREVIEW_LINE_CLAMP = 2;

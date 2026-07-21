@@ -1,5 +1,5 @@
 // Module ID: 10196
-// Function ID: 78698
+// Function ID: 78709
 // Dependencies: []
 
 // Module 10196
@@ -13,11 +13,11 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.chat = obj;
 obj1 = { height: 44, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chatHeaderSpacer = obj1;
-const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.chatHeader = obj2;
+const tmp2 = arg1(dependencyMap[3]);
+obj.chatHeader = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chatHeaderBackIconContainer = {};
 obj.chatHeaderTitleContainer = {};
-const tmp2 = arg1(dependencyMap[3]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.safeAreaTop = { alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 let closure_8 = obj1.createStyles(obj);
 const obj3 = { alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.importantForAccessibility = str;
   obj.accessibilityElementsHidden = !tmp2;
   obj.style = tmp.chat;
-  const items1 = [callback(importDefault(dependencyMap[12]), { "Bool(false)": null, "Bool(false)": null }), ];
+  const items1 = [callback(importDefault(dependencyMap[12]), { "Bool(true)": null, "Bool(true)": null }), ];
   obj = { guildId: guild_id, channelId: id };
   let tmp15Result = null;
   if (!flag) {

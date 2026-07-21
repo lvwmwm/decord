@@ -1,5 +1,5 @@
 // Module ID: 10489
-// Function ID: 81857
+// Function ID: 81868
 // Name: validateSocketClient
 // Dependencies: []
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings

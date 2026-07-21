@@ -1,5 +1,5 @@
 // Module ID: 9088
-// Function ID: 71183
+// Function ID: 71194
 // Name: FacepileGroupDMAvatar
 // Dependencies: []
 // Exports: default
@@ -102,7 +102,7 @@ obj[arg1(dependencyMap[4]).AvatarSizes.XSMALL] = arg1(dependencyMap[4]).AvatarSi
 obj[arg1(dependencyMap[4]).AvatarSizes.SIZE_16] = arg1(dependencyMap[4]).AvatarSizes.XXSMALL_10;
 obj[arg1(dependencyMap[4]).AvatarSizes.NORMAL] = arg1(dependencyMap[4]).AvatarSizes.XSMALL;
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ firstFace: {}, secondFace: { "Null": 3375103, "Null": -8192, "Null": 4320799 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ firstFace: {}, secondFace: { justifyContent: 3375103, paddingRight: -8192, height: 4320799 } });
 const obj2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/group_dm/native/GroupDMAvatar.tsx");
 

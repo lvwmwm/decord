@@ -1,7 +1,7 @@
 // Module ID: 4559
-// Function ID: 39942
+// Function ID: 39950
 // Name: AST_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4559 (AST_KEY)
 const _module = require(dependencyMap[0]);

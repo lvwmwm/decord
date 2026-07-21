@@ -1,10 +1,10 @@
-// Module ID: 15645
-// Function ID: 119471
+// Module ID: 15648
+// Function ID: 119510
 // Name: usePanelOpenState
 // Dependencies: [31, 10005, 2, 57, 31, 4139, 10006, 10004, 4144, 33, 10005, 682, 477]
 // Exports: default
 
-// Module 15645 (usePanelOpenState)
+// Module 15648 (usePanelOpenState)
 import closure_3 from "module_31";
 import dismissPanel from "dismissPanel";
 import result2 from "result2";

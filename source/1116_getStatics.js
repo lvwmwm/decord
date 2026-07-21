@@ -1,5 +1,5 @@
 // Module ID: 1116
-// Function ID: 12692
+// Function ID: 12696
 // Name: getStatics
 // Dependencies: []
 
@@ -28,8 +28,8 @@ function getStatics($$typeof) {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 let closure_0 = {};
-let closure_1 = {};
-let obj = { "Null": "y", "Null": "onPlayerStateChange", "Null": "r", "Null": "inactiveDotElement", "Null": "handleActivityJoin", "Null": "japan" };
+let closure_1 = { "Null": "force", "Null": "forceChange", "Null": "rotation", "Null": "rotationChange", "Null": "scale", "Null": "scaleChange", "Null": "duration" };
+let obj = {};
 const forResult1 = Symbol.for("react.memo");
 obj = {};
 obj[Symbol.for("react.forward_ref")] = {};

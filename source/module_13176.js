@@ -1,6 +1,8 @@
 // Module ID: 13176
-// Function ID: 99594
+// Function ID: 99613
 // Dependencies: []
 
 // Module 13176
-const parsed = parseInt(require(dependencyMap[0]).Platform.Version, 10);
+const Platform = require(dependencyMap[0]).Platform;
+const _module = require(dependencyMap[1]);
+_module.setupURLPolyfill();

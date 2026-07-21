@@ -1,10 +1,14 @@
 // Module ID: 873
-// Function ID: 9702
+// Function ID: 9706
 // Name: eventFromEnvelope
-// Dependencies: []
+// Dependencies: [801, 798, 895, 825, 863, 896]
 // Exports: makeMultiplexedTransport
 
 // Module 873 (eventFromEnvelope)
+import consoleSandbox from "consoleSandbox";
+import module_798 from "module_798";
+import instrumentConsole from "instrumentConsole";
+
 function eventFromEnvelope(arg0, arg1) {
   const require = arg1;
   require(dependencyMap[3]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
@@ -19,9 +23,6 @@ function eventFromEnvelope(arg0, arg1) {
   });
   return dependencyMap;
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const MULTIPLEXED_TRANSPORT_EXTRA_KEY = "MULTIPLEXED_TRANSPORT_EXTRA_KEY";
@@ -57,7 +58,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 const arg1 = tmp;
                 const obj = {};
-                const callback = callback2(/* F9710 */ function*() { ... });
+                const callback = callback2(/* F9714 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };
@@ -67,7 +68,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 const arg1 = tmp;
                 const obj = {};
-                const callback = callback2(/* F9710 */ function*() { ... });
+                const callback = callback2(/* F9714 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };
@@ -89,7 +90,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
         getEvent(arg0) {
           let items = arg0;
           if (null == arg0) {
-            items = [null];
+            items = ["TypeError"];
           }
           return callback3(arg0, items);
         }
@@ -104,7 +105,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
       const found = mapped.filter((arg0) => arg0);
       let arr4 = found;
       if (!found.length) {
-        const items = [null, closure_1];
+        const items = ["<string:2246337460>", closure_1];
         const items1 = [items];
         arr4 = items1;
       }

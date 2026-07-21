@@ -1,5 +1,5 @@
 // Module ID: 11830
-// Function ID: 91702
+// Function ID: 91714
 // Name: useShouldShowPremiumProfileFrameEA
 // Dependencies: []
 // Exports: default

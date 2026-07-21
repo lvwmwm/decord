@@ -1,9 +1,9 @@
-// Module ID: 15133
-// Function ID: 114189
+// Module ID: 15136
+// Function ID: 114223
 // Name: Header
 // Dependencies: []
 
-// Module 15133 (Header)
+// Module 15136 (Header)
 let MIDNIGHT_BORDER_WIDTH;
 function Header(channelId) {
   let guildId;
@@ -87,12 +87,14 @@ function Header(channelId) {
   obj.label = intl.string(arg1(dependencyMap[12]).t.WYj55Y);
   obj.action = function action() {
     let obj = channelId(isNavigationScreen[13]);
-    obj = { "Bool(false)": "<string:1073291515>", "Bool(false)": "<string:1368396625>", "Bool(false)": "<string:2821985863>", "Bool(false)": "<string:2302102470>", "Bool(false)": "<string:4064288065>", guildId, channelId };
+    obj = { "Bool(false)": 1094738768, "Bool(false)": 159728, "Bool(false)": "black", "Bool(false)": "0.1", "Bool(false)": "M248.055 0.225335H85.0491V154.266H248.055V0.225335Z", guildId, channelId };
     obj.navigateToRootTab(obj);
   };
   const items3 = [obj];
   if (memo1) {
     obj = {
+      afterMs: false,
+      serverQuests: false,
       items: items3,
       children(ref) {
           let obj = Object.create(null);
@@ -161,7 +163,7 @@ const tmp5 = arg1(dependencyMap[5]);
 obj.midnightContentContainerBorder = { borderLeftWidth: MIDNIGHT_BORDER_WIDTH, borderLeftColor: importDefault(dependencyMap[7]).colors.APP_FRAME_BORDER };
 const obj2 = { borderLeftWidth: MIDNIGHT_BORDER_WIDTH, borderLeftColor: importDefault(dependencyMap[7]).colors.APP_FRAME_BORDER };
 obj.containerEmpty = { backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
-const obj4 = { it: null, prototype: 1, padding: null, replace: "stretch", has: 16, backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
+const obj4 = { rowGap: null, padding: 1, alignItems: null, justifyContent: "stretch", 21/9: 16, backgroundColor: importDefault(dependencyMap[7]).colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
 obj.headerWrapper = obj4;
 const obj5 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);

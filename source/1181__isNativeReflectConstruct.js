@@ -1,5 +1,5 @@
 // Module ID: 1181
-// Function ID: 13425
+// Function ID: 13429
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -365,7 +365,7 @@ const tmp4 = (Component) => {
         tmp2Result._savedState = Object.assign({}, tmp2Result.state);
       };
       tmp2Result._clearFormState = () => {
-        const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
         tmp2Result._savedState = obj;
       };
       tmp2Result._hasScreenshot = () => {
@@ -544,7 +544,7 @@ const tmp4 = (Component) => {
         } else if (capturedScreenshot) {
           const result = self._setCapturedScreenshot(capturedScreenshot);
         }
-        obj = { "Null": "postal-address-country", "Null": "password", "Bool(false)": "email" };
+        obj = { "Bool(true)": "absolute", "Bool(false)": -1, "Bool(false)": -1 };
         let obj3 = FeedbackWidget(props2[9]);
         let dismiss;
         if (obj3.notWeb()) {
@@ -679,7 +679,7 @@ const tmp4 = (Component) => {
     {
       key: "reset",
       value: function reset() {
-        const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
         FeedbackWidget._savedState = obj;
       }
     }
@@ -687,7 +687,7 @@ const tmp4 = (Component) => {
   return callback(FeedbackWidget, items, items1);
 }(importAllResult.Component);
 tmp4.defaultProps = arg1(dependencyMap[11]).defaultConfiguration;
-const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
+const obj = { "Bool(true)": "fr", "Bool(true)": "french", "Bool(true)": true, filename: undefined, attachment: undefined, attachmentUri: undefined };
 tmp4._savedState = obj;
 
 export const FeedbackWidget = tmp4;

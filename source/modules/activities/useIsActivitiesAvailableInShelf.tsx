@@ -1,5 +1,5 @@
 // Module ID: 10542
-// Function ID: 82357
+// Function ID: 82368
 // Name: useIsActivitiesAvailableInShelf
 // Dependencies: []
 // Exports: default

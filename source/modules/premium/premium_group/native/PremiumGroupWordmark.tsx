@@ -1,10 +1,10 @@
-// Module ID: 8010
-// Function ID: 63584
+// Module ID: 8011
+// Function ID: 63597
 // Name: PremiumGroupWordmark
 // Dependencies: []
 // Exports: default
 
-// Module 8010 (PremiumGroupWordmark)
+// Module 8011 (PremiumGroupWordmark)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupWordmark.tsx");
@@ -13,7 +13,7 @@ export default function PremiumGroupWordmark(arg0) {
   let alwaysWhite;
   let height;
   let width;
-  let obj = { "Bool(false)": "spring", "Bool(false)": "linear", "Bool(false)": "easeInEaseOut" };
+  let obj = { variant: false, selectable: false, style: false };
   ({ width, height, alwaysWhite } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

@@ -1,13 +1,13 @@
 // Module ID: 9368
-// Function ID: 73070
+// Function ID: 73081
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 9368 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "EmojiPickerView", directEventTypes: { topStickyHeaderRender: { registrationName: "onStickyHeaderRender" }, topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topShowNitroUpsell: { registrationName: "onShowNitroUpsell" } } };
-obj = {};
+obj = { "Bool(false)": "force", "Bool(false)": "forceChange", "Bool(false)": "rotation", "Bool(false)": "rotationChange", "Bool(false)": "scale", "Bool(false)": "scaleChange", "Bool(false)": "duration" };
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ 0: "force", 9223372036854775807: "forceChange", 0: "rotation", 0: "rotationChange", 9223372036854775807: "scale", 0: "scaleChange", 9223372036854775807: "duration" }));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 obj = {

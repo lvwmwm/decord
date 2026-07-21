@@ -1,16 +1,15 @@
 // Module ID: 3494
-// Function ID: 26908
+// Function ID: 26913
 // Name: getYear
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3494 (getYear)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function getYear(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  return startOfWeek.default(defaultResult1).getFullYear();
+  closure_1.default(1, arguments);
+  return closure_0.default(defaultResult1).getFullYear();
 };
 export default exports.default;

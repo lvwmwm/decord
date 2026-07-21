@@ -1,5 +1,5 @@
 // Module ID: 3454
-// Function ID: 26787
+// Function ID: 26792
 // Name: isProtectedDayOfYearToken
 // Dependencies: []
 
@@ -38,4 +38,4 @@ arg5.throwProtectedError = function throwProtectedError(arg0, StringResult, arg2
   }
 };
 let closure_0 = [null, null];
-let closure_1 = [null, null];
+let closure_1 = ["w", "I"];

@@ -1,5 +1,5 @@
 // Module ID: 3281
-// Function ID: 26003
+// Function ID: 26008
 // Dependencies: []
 
 // Module 3281
@@ -47,16 +47,16 @@ obj = {
     }
   }
 };
-obj.era = obj.default({ values: { narrow: [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012844119975602198, 0.00000000000000000000000000000000000000000000009852900796706634], abbreviated: [null, null], wide: [null, null] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: ["r", "hak"], abbreviated: [], wide: [] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [], abbreviated: ["d\u1EA5u", "d\u1EA5u g\u1EA1ch ch\u00E9o", "h\u1EE7y", "nh\u00E2n"], wide: [49696000, 49718528, 49736704, 49746944] },
+  values: { narrow: [null, null, null, null], abbreviated: ["r", "isArray", "Icon", "channel_id"], wide: [] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return Number(arg0) - 1;
   }
 });
 obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: [2002780162, -1504051197, 1933967362, 1941766147, -366608381, -246349822, 37808708] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [null, null, null, null, null, null, null], short: [null, null, null, null, null, null, null], abbreviated: [null, null, null, null, null, null, null], wide: ["<string:305266691>", "<string:2457337858>", "<string:1948450817>", "<string:1045495811>", "<string:23447620>", "<string:23447296>", "<string:23447040>"] }, defaultWidth: "wide" });
 obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
 
 export default obj;

@@ -1,5 +1,5 @@
 // Module ID: 5771
-// Function ID: 49405
+// Function ID: 49413
 // Name: CircleXIcon
 // Dependencies: []
 // Exports: CircleXIcon
@@ -22,7 +22,7 @@ export const CircleXIcon = function CircleXIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { disableCalls: "spring", _coerce: "linear", HOSTED_FIELDS_FIELD_NOT_PRESENT: "easeInEaseOut" };
+  let obj = { body: false, borderRadius: false, accessibilityRole: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
@@ -31,7 +31,7 @@ export const CircleXIcon = function CircleXIcon(color) {
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
   const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), {}];
+  const items2 = [...items1.flat(), { force: null, trackAnalytics: null }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);

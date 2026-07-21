@@ -1,5 +1,5 @@
 // Module ID: 10344
-// Function ID: 79833
+// Function ID: 79844
 // Dependencies: []
 
 // Module 10344
@@ -10,7 +10,7 @@ let closure_5 = arg1(dependencyMap[2]).NOTIFICATION_PREVIEW_LINE_CLAMP;
 const jsx = arg1(dependencyMap[4]).jsx;
 const tmp2 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { bottom: 109907, name: 67503, description: -1699303086, accessible: 1564545433, paths: 1912603216, delete: 24, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.iconContainer = obj;
 let closure_9 = arg1(dependencyMap[5]).createStyles(obj);
 const obj2 = arg1(dependencyMap[5]);

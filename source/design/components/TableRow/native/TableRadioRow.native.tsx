@@ -1,10 +1,10 @@
-// Module ID: 7512
-// Function ID: 60160
+// Module ID: 7513
+// Function ID: 60172
 // Name: TableRadioRow
 // Dependencies: []
 // Exports: TableRadioRow
 
-// Module 7512 (TableRadioRow)
+// Module 7513 (TableRadioRow)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/TableRow/native/TableRadioRow.native.tsx");
@@ -23,7 +23,7 @@ export const TableRadioRow = function TableRadioRow(value) {
     disabled = false;
   }
   ({ legacyCompat_selected, legacyCompat_onPress: closure_1 } = value);
-  let obj = {};
+  let obj = { name: true, padding: "/assets/design/components/Icon/native/redesign/generated/images", string: 24, track: 24, body: null, start: "99274532ad7fe616c031212e677b32e8", nm: "ThreadLockIcon" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let React;

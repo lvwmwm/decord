@@ -1,7 +1,7 @@
 // Module ID: 10230
-// Function ID: 79036
+// Function ID: 79047
 // Name: getGuildSafetyAlertsChannelId
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10230 (getGuildSafetyAlertsChannelId)

@@ -1,10 +1,10 @@
-// Module ID: 6901
-// Function ID: 54994
+// Module ID: 6902
+// Function ID: 55006
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
 // Dependencies: []
 // Exports: default
 
-// Module 6901 (maybeDispatchDevOnlyDummyFriendSuggestions)
+// Module 6902 (maybeDispatchDevOnlyDummyFriendSuggestions)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");
 

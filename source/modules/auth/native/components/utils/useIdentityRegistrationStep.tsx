@@ -1,10 +1,10 @@
-// Module ID: 14615
-// Function ID: 110210
+// Module ID: 14618
+// Function ID: 110242
 // Name: useIdentityRegistrationStep
 // Dependencies: []
 // Exports: useIdentityRegistrationStep
 
-// Module 14615 (useIdentityRegistrationStep)
+// Module 14618 (useIdentityRegistrationStep)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

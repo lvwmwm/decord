@@ -1,5 +1,5 @@
 // Module ID: 10729
-// Function ID: 83421
+// Function ID: 83432
 // Name: IconPosition
 // Dependencies: []
 // Exports: LabeledActionButton
@@ -11,15 +11,15 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { <string:1364362083>: "number_line_settings", <string:1386747137>: "message", <string:2819990313>: 42, <string:1404987490>: "eligibility_persistence", <string:3816549847>: "enum", backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
+obj = { backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
 obj.buttonContainer = obj;
 obj.container = { marginHorizontal: 12 };
 obj.containerWithLabel = {};
 obj.pressable = {};
-obj.buttonContent = {};
+obj.buttonContent = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
 const tmp4 = arg1(dependencyMap[3]);
 obj.buttonText = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-obj.rightTextMargin = {};
+obj.rightTextMargin = { "Bool(true)": "r", "Bool(true)": "gift_info" };
 let closure_6 = obj.createStyles(obj);
 const obj2 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
 const obj1 = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
@@ -37,7 +37,7 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   if (iconPosition === undefined) {
     iconPosition = obj2.LEFT;
   }
-  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  let obj = { -79157947: true, -788528008: "/assets/design/components/Icon/native/redesign/generated/images", 1275069581: 24, -2013264746: 24, 134218861: null, 1107297406: "99274532ad7fe616c031212e677b32e8", 2097153111: "ThreadLockIcon" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const tmp4 = callback2();

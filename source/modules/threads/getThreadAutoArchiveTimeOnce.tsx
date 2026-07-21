@@ -1,10 +1,10 @@
-// Module ID: 5312
-// Function ID: 45129
+// Module ID: 5311
+// Function ID: 45136
 // Name: getThreadLastActivityTime
 // Dependencies: []
 // Exports: default
 
-// Module 5312 (getThreadLastActivityTime)
+// Module 5311 (getThreadLastActivityTime)
 function getThreadLastActivityTime(threadMetadata) {
   if (null == threadMetadata.threadMetadata) {
     return 0;

@@ -1,5 +1,5 @@
 // Module ID: 3310
-// Function ID: 26077
+// Function ID: 26082
 // Name: dayAndTimeWithAdjective
 // Dependencies: []
 // Exports: default
@@ -27,11 +27,11 @@ if (!_module) {
 } else {
   tmp3 = _module;
 }
-let closure_1 = { "Null": "EEEE, d 'de' MMMM 'de' y", "Null": "d 'de' MMMM 'de' y" };
-let closure_2 = { "Null": true, "Null": true };
+let closure_1 = { 0: null, 0: null };
+let closure_2 = { 0: 32, 0: "center" };
 let closure_3 = {};
-let closure_4 = { progress: null, loading: "'ontem \u00E0s' p", hasConfetti: "'hoje \u00E0s' p", goreContentGuilds: "'amanh\u00E3 \u00E0s' p", goreContentFriendDm: "eeee '\u00E0s' p", goreContentNonFriendDm: "P", se-FI: 32 };
-obj = { "Bool(true)": "isArray", "Bool(true)": "loadJsonAsset", "Bool(true)": "surrogates", "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "mode", lastWeek: dayAndTimeWithAdjective, nextWeek: dayAndTimeWithAdjective };
+let closure_4 = { display: true, flexDirection: true, padding: true, marginVertical: true, marginHorizontal: true, hasSelectedAnswer: true, GuildSelectDefaultIcon: true };
+obj = { areIntervalsOverlapping: "/assets/.cache/intl/aW50bA==", clamp: null, closestIndexTo: "b0aab43a708e01f81d83932d47cbb74d", closestTo: "bg.messages.b0aab43a708e01f81d83932d47cbb74d.compiled.messages", compareAsc: "jsona", compareDesc: "\u010Ce\u0161tina", lastWeek: dayAndTimeWithAdjective, nextWeek: dayAndTimeWithAdjective };
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   let tmpResult = tmp;

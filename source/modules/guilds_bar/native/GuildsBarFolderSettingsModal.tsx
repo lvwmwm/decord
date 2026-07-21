@@ -1,16 +1,10 @@
-// Module ID: 14691
-// Function ID: 110807
+// Module ID: 14694
+// Function ID: 110841
 // Name: GuildFolderSettingsScene
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14691 (GuildFolderSettingsScene)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { DEFAULT_FOLDER_COLOR } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
+// Module 14694 (GuildFolderSettingsScene)
 function GuildFolderSettingsScene(arg0) {
   let color;
   let name;
@@ -21,7 +15,7 @@ function GuildFolderSettingsScene(arg0) {
   obj = {};
   const intl = arg1(dependencyMap[7]).intl;
   obj.title = intl.string(arg1(dependencyMap[7]).t.tGRbjA);
-  obj = { 9223372036854775807: "<string:1091633703>", -9223372036854775808: 1124139009, 9223372036854775807: 95731, 0: 95730, 9223372036854775807: 119741, 9223372036854775807: 39426625 };
+  obj = { "Bool(true)": "r", "Bool(true)": "key", "Bool(true)": "Text", "Bool(true)": "paddingHorizontal", "Bool(true)": "delete", "Bool(true)": "Array" };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.placeholder = intl2.string(arg1(dependencyMap[7]).t.xV9hVh);
   obj.value = name;
@@ -37,7 +31,12 @@ function GuildFolderSettingsScene(arg0) {
   obj.children = items;
   return callback3(arg1(dependencyMap[6]).Form, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = require("__exportStarResult1"));
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+const DEFAULT_FOLDER_COLOR = arg1(dependencyMap[3]).DEFAULT_FOLDER_COLOR;
+({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
+const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
 
 export default function GuildFolderSettingsModal(folderId) {

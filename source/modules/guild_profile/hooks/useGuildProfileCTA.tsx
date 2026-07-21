@@ -1,5 +1,5 @@
 // Module ID: 10931
-// Function ID: 85008
+// Function ID: 85019
 // Name: useGuildProfileCTA
 // Dependencies: []
 // Exports: default, getGuildProfileCTAType

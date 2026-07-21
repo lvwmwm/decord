@@ -1,10 +1,10 @@
-// Module ID: 7997
-// Function ID: 63560
+// Module ID: 7998
+// Function ID: 63573
 // Name: usePremiumFeatures
 // Dependencies: []
 // Exports: default
 
-// Module 7997 (usePremiumFeatures)
+// Module 7998 (usePremiumFeatures)
 let closure_3 = importAll(dependencyMap[0]);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_4, PremiumTypes: closure_5 } = arg1(dependencyMap[1]));
 const TOTAL_PREMIUM_GROUP_USERS = arg1(dependencyMap[2]).TOTAL_PREMIUM_GROUP_USERS;

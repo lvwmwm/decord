@@ -1,9 +1,9 @@
-// Module ID: 6909
-// Function ID: 55020
+// Module ID: 6910
+// Function ID: 55032
 // Name: enforcing
 // Dependencies: []
 
-// Module 6909 (enforcing)
+// Module 6910 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTTIModule");
 const _module = require(dependencyMap[1]);

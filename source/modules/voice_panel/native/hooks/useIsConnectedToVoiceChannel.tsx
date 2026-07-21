@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 118978
+// Module ID: 15594
+// Function ID: 119017
 // Name: useIsConnectedToVoiceChannel
 // Dependencies: []
 // Exports: default
 
-// Module 15591 (useIsConnectedToVoiceChannel)
+// Module 15594 (useIsConnectedToVoiceChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

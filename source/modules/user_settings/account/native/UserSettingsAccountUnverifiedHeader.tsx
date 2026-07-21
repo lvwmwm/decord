@@ -1,5 +1,5 @@
 // Module ID: 9226
-// Function ID: 72144
+// Function ID: 72155
 // Name: handleOpenEmailVerification
 // Dependencies: []
 // Exports: default
@@ -35,9 +35,9 @@ let closure_3 = importDefault(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { height: "\u0159\u00EDjna", accessibilityRole: "<string:2001862656>", props: "<string:1903368625>", "Bool(true)": "o", "Bool(true)": "<string:2680059697>", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
+obj = { renderReplies: "r\u016F\u017Eov\u00E9 srdce", renderReactions: "<string:2471624704>", position: "<string:1904843953>", bottom: "o", height: "<string:2680059697>", width: true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
 obj.accountWarning = obj;
-obj.accountWarningText = {};
+obj.accountWarningText = { "Bool(true)": "<string:4083789493>", "Bool(true)": "<string:3209801398>" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.accountWarningButton = { borderColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 let closure_6 = obj.createStyles(obj);
@@ -52,7 +52,7 @@ export default function UserSettingsAccountUnverifiedHeader() {
   let tmp3 = null;
   if (null != tmp2) {
     obj = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification };
-    obj = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.accountWarningText, children: tmp2.title };
+    obj = { delete: 369098752, dispatch: 16777216, raw: 882, style: tmp.accountWarningText, children: tmp2.title };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj), ];
     const obj1 = { style: tmp.accountWarningButton, children: tmp2.button };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj1);

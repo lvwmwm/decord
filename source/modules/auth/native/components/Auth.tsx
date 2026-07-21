@@ -1,9 +1,9 @@
-// Module ID: 14603
-// Function ID: 110064
+// Module ID: 14606
+// Function ID: 110096
 // Name: getInitialAuthScreen
 // Dependencies: []
 
-// Module 14603 (getInitialAuthScreen)
+// Module 14606 (getInitialAuthScreen)
 function getInitialAuthScreen() {
   return AuthStates.WELCOME;
 }
@@ -70,7 +70,7 @@ function NavigatorWithCaptchaHook() {
     }
     items2[2] = obj6;
     obj4.style = items2;
-    const obj7 = { "Bool(false)": "Not Eligible", "Bool(false)": "Not Eligible", "Bool(false)": "long-animation-frame", "Bool(false)": true, "Bool(false)": "onunhandledrejection", "Bool(false)": "db.vacuum", screens: closure_12, containerStyle: tmp3.cardContainer };
+    const obj7 = { screens: closure_12, containerStyle: tmp3.cardContainer };
     let transparent = null;
     if (first === AuthStates.WELCOME) {
       transparent = tmp3.transparent;
@@ -133,7 +133,7 @@ let closure_12 = Object.fromEntries(entries.map((arg0) => {
   const merged = Object.assign(tmp2);
   obj = null;
   if (tmp2.fullscreen) {
-    obj = { status: null, current: null };
+    obj = { unread: null, mentionCount: null };
   }
   const merged1 = Object.assign(obj);
   let tmp5 = null;
@@ -181,8 +181,8 @@ if (arg1(dependencyMap[9]).hasWebAuthn) {
 obj[AuthStates.LOGIN] = num;
 obj[AuthStates.MFA] = 600;
 let obj3 = arg1(dependencyMap[10]);
-obj = { transparent: { backgroundColor: "transparent" }, cardContainer: {}, wideOuterContainer: { markAsSpoilerTitle: null, keyboardAppearance: null } };
-obj1 = { "Null": true, "Null": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[11]).radii.lg };
+obj = { transparent: { backgroundColor: "transparent" }, cardContainer: {}, wideOuterContainer: { "Bool(true)": "values", "Bool(true)": "Array" } };
+obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.lg };
 obj.wideCard = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.wideHeaderFlat = { borderBottomWidth: 0, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };

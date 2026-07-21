@@ -1,5 +1,5 @@
 // Module ID: 4455
-// Function ID: 39260
+// Function ID: 39268
 // Name: _typeof
 // Dependencies: []
 
@@ -216,7 +216,7 @@ function loadStripe(KEY) {
         _registerWrapper = applyResult._registerWrapper;
       }
       if (_registerWrapper) {
-        const obj = { "Bool(false)": null, "Bool(false)": null, startTime: closure_1 };
+        const obj = { startTime: closure_1 };
         applyResult._registerWrapper(obj);
       }
       return applyResult;

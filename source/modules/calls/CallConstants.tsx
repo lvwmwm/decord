@@ -1,7 +1,7 @@
 // Module ID: 4144
-// Function ID: 34903
+// Function ID: 34911
 // Name: ParticipantTypes
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: isActivityParticipant, isStreamParticipant, isUserParticipant
 
 // Module 4144 (ParticipantTypes)

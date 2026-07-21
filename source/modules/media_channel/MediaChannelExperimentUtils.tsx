@@ -1,5 +1,5 @@
 // Module ID: 8402
-// Function ID: 66877
+// Function ID: 66888
 // Name: useGuildEligibleForMediaChannels
 // Dependencies: []
 // Exports: useGuildEligibleForMediaChannels

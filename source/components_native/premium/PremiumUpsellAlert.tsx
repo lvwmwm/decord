@@ -1,9 +1,9 @@
-// Module ID: 7953
-// Function ID: 63430
+// Module ID: 7954
+// Function ID: 63443
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7953 (_isNativeReflectConstruct)
+// Module 7954 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -238,7 +238,7 @@ function UploadUpsell(arg0) {
   const items1 = [callback4(tmp7, { isInitial: true, upsellItem: item, alertWidth }, constants.UPLOAD), ];
   let tmp4 = null;
   if (callback(importAllResult.useState(!stateFromStores), 1)[0]) {
-    obj = { 0: null, 0: null };
+    obj = { bind: null, cursor: null };
     const intl = arg1(dependencyMap[19]).intl;
     obj.label = intl.string(arg1(dependencyMap[19]).t.ix8XIj);
     const intl2 = arg1(dependencyMap[19]).intl;
@@ -263,7 +263,7 @@ class PremiumUpsellAlert {
     analyticsLocation = global.analyticsLocation;
     importDefault = analyticsLocation;
     dependencyMap = global.imageSource;
-    f63449 = undefined;
+    f63462 = undefined;
     closure_8 = undefined;
     getUploadAlertDescription = function getUploadAlertDescription() {
       if (useTier0UpsellContent) {
@@ -295,7 +295,7 @@ class PremiumUpsellAlert {
     obj2 = arg1(dependencyMap[34]);
     items = [];
     items[0] = closure_13;
-    f63449 = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
+    f63462 = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
     generateUpsellItems = function generateUpsellItems(initialUpsellKey) {
       const upsellItems = initialUpsellKey(imageSource[37]).getUpsellItems();
       return upsellItems.sort((key) => {
@@ -428,7 +428,7 @@ const tmp4 = arg1(dependencyMap[10]);
 const tmp5 = arg1(dependencyMap[12]);
 ({ jsx: closure_19, jsxs: closure_20, Fragment: closure_21 } = arg1(dependencyMap[13]));
 let obj = arg1(dependencyMap[14]);
-obj = { carousel: { alignItems: "center" }, upsellContainer: { alignItems: "center" }, premiumUpsellContainer: { channelId: "absolute", position: 0 }, nitroWheel: { display: true, flexDirection: true, alignItems: true }, upsellImage: { <string:1632221346>: null, <string:2722977214>: "5e2f785032385a803c0dd3d91ffe95da" }, upsellTitle: { "Null": null, "Null": null } };
+obj = { carousel: { alignItems: "center" }, upsellContainer: { alignItems: "center" }, premiumUpsellContainer: {}, nitroWheel: { shadowOpacity: "<string:1014104065>", elevation: "<string:1006632960>", shadowRadius: "<string:16777216>" }, upsellImage: { y: null, isArray: "5e2f785032385a803c0dd3d91ffe95da" }, upsellTitle: { "Null": null, "Null": null } };
 obj = { marginVertical: importDefault(dependencyMap[15]).space.PX_8, textAlign: "center" };
 obj.premiumUpsellTitle = obj;
 obj.upsellDescription = { textAlign: "center" };
@@ -480,7 +480,7 @@ const tmp7 = (PureComponent) => {
         obj = { style: tmp.upsellImage, source: upsellItem.image, resizeMode: "contain" };
         ({ activeTitle, description } = upsellItem);
         const items1 = [callback3(closure_11, obj), , ];
-        obj = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.upsellTitle };
+        obj = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.upsellTitle };
         if (props.isInitial) {
           passiveTitle = activeTitle;
         }

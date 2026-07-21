@@ -1,5 +1,5 @@
 // Module ID: 1064
-// Function ID: 11372
+// Function ID: 11376
 // Name: _callSuper
 // Dependencies: []
 
@@ -74,7 +74,7 @@ function stringifyRule(cssText) {
       if (str17.split("\"").length >= 3) {
         const _JSON = JSON;
         const _HermesInternal5 = HermesInternal;
-        const items = ["resource", "url(" + JSON.stringify(tmp.href) + ")"];
+        const items = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002087619459550054, "url(" + JSON.stringify(tmp.href) + ")"];
         if ("" === tmp.layerName) {
           let arr = items.push("layer");
         } else if (tmp.layerName) {
@@ -639,7 +639,7 @@ function needMaskingText(nodeType, maskTextClass2, maskTextSelector2, unmaskText
     return false;
   } else {
     if ("INPUT" === obj.tagName) {
-      const items = [-2131886079, -643891199, 1137180673, 1221722115, 1162739715, 1113653251, 134322];
+      const items = [false, false, false, false, false, false, false];
       if (items.includes(obj.getAttribute("autocomplete"))) {
         return true;
       }
@@ -1799,7 +1799,7 @@ function on(arg0, arg1) {
       let _document = arguments[2];
     }
     let closure_2 = _document;
-    const obj = { "Bool(true)": null, "Bool(true)": null };
+    const obj = { allowLinks: null, allowEmojiLinks: null };
     let closure_3 = obj;
     const listener = _document.addEventListener(arg0, arg1, obj);
     return () => _document.removeEventListener(arg0, arg1, obj);
@@ -2351,7 +2351,7 @@ function initMutationObserver(doc, doc) {
       processMutations.bind(obj)(arg0);
     }
   }));
-  __rrMutationObserver.observe(doc, { 0: "y", 0: "onPlayerStateChange", 0: "r", -3172852711828053: "inactiveDotElement", 0: "handleActivityJoin", 0: "japan" });
+  __rrMutationObserver.observe(doc, {});
   return __rrMutationObserver;
 }
 function initMouseInteractionObserver(doc) {
@@ -2600,7 +2600,7 @@ function initInputObserver(sampling) {
   ({ inputCb: closure_0, doc } = sampling);
   const dependencyMap = doc;
   ({ mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5, ignoreClass: closure_6, ignoreSelector: closure_7, maskInputOptions: closure_8, maskInputFn: closure_9, userTriggeredOnInput: closure_10, maskTextClass: closure_11, unmaskTextClass: closure_12, maskTextSelector: closure_13, unmaskTextSelector: closure_14 } = sampling);
-  const mapped = "last" === sampling.sampling.input ? ["isArray"] : ["a", "_handleTouchEnd"].map((arg0) => callback8(arg0, callback(eventHandler), doc));
+  const mapped = "last" === sampling.sampling.input ? [true] : [41999360, -1116977920].map((arg0) => callback8(arg0, callback(eventHandler), doc));
   let closure_15 = mapped;
   const defaultView = doc.defaultView;
   const defineProperty = defaultView;
@@ -2639,7 +2639,7 @@ function initInputObserver(sampling) {
       const item = mapped.forEach((arg0) => arg0());
     };
   }
-  const arr = "last" === sampling.sampling.input ? ["isArray"] : ["a", "_handleTouchEnd"];
+  const arr = "last" === sampling.sampling.input ? [true] : [41999360, -1116977920];
 }
 function getNestedCSSRulePositions(parentRule) {
   const items = [];
@@ -4240,7 +4240,7 @@ function addBreadcrumbEvent(triggerUserActivity, category) {
   const require = triggerUserActivity;
   const dependencyMap = category;
   if ("sentry.transaction" !== category.category) {
-    const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243429549086442, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003829693124512866];
+    const items = [false, false];
     if (items.includes(category.category)) {
       triggerUserActivity.triggerUserActivity();
     } else {
@@ -4607,7 +4607,7 @@ function createEventBuffer(useCompression) {
                 return "";
               }
             }
-            const blob = new Blob([]);
+            const blob = new Blob(["<string:3211936002>"]);
             return URL.createObjectURL(blob);
           }();
         }
@@ -4995,7 +4995,7 @@ function handleBreadcrumbs(arg0) {
                             obj = { arguments: _arguments.map(() => { ... }) };
                             if (closure_0) {
                               const obj1 = {};
-                              const obj2 = { warnings: ["\u00D7"] };
+                              const obj2 = { warnings: ["<string:2705412352>"] };
                               obj1._meta = obj2;
                               obj = obj1;
                             } else {
@@ -5067,7 +5067,7 @@ function handleGlobalEventListener(arg0) {
                   if (!flag) {
                     let obj = { type: Custom.Custom, timestamp: 1000 * self.timestamp };
                     obj = { tag: "breadcrumb" };
-                    obj = { timestamp: self.timestamp };
+                    obj = { 1398170312: null, -198750543: null, -1620972324: null, timestamp: self.timestamp };
                     const obj1 = { feedbackId: self.event_id };
                     obj.data = obj1;
                     obj.payload = obj;
@@ -5297,7 +5297,7 @@ function makeNetworkReplayBreadcrumb(type, startTimestamp) {
   return tmp;
 }
 function buildSkippedNetworkRequestOrResponse(size) {
-  return { headers: {}, size, _meta: { warnings: ["Array"] } };
+  return { headers: {}, size, _meta: { warnings: [false] } };
 }
 function buildNetworkRequestOrResponse(headers, size, body) {
   let warnings;
@@ -5327,12 +5327,12 @@ function buildNetworkRequestOrResponse(headers, size, body) {
               let obj = {};
               if (tmp2) {
                 obj.body = substr;
-                obj.warnings = [null];
+                obj.warnings = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005838314717672631];
                 let tmp11 = obj;
               } else {
                 const _HermesInternal = HermesInternal;
                 obj.body = "" + substr + "\u2026";
-                obj.warnings = [1994915843];
+                obj.warnings = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006138973482948894];
                 tmp11 = obj;
               }
               return tmp11;
@@ -5793,7 +5793,7 @@ async function _addMemoryEntry(arg0, arg1) {
     const _Date = Date;
     ({ jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize } = callback(closure_1[9]).GLOBAL_OBJ.performance.memory);
     const result = Date.now() / 1000;
-    let obj = { start: result, end: result };
+    let obj = { maskAllText: "omit", maskAllImages: 1442841342, start: result, end: result };
     obj = {};
     const obj1 = { jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize };
     obj.memory = obj1;
@@ -6057,7 +6057,7 @@ async function _sendReplay(arg0, arg1) {
       return true;
     }
   }
-  obj = { "Null": null, "Null": null };
+  obj = { <string:2558083779>: null, <string:1193082884>: null };
 }
 function throttle(arg0, arg1, arg2) {
   const require = arg0;
@@ -6122,7 +6122,7 @@ function __publicField$1(arg0, arg1, value) {
     text = `${arg1}`;
   }
   if (text in arg0) {
-    const obj = { value };
+    const obj = { 1694458623: "Small", 1761568511: "sm", 1811900927: "Placeholder", value };
     let tmp2 = defineProperty(arg0, text, obj);
   } else {
     arg0[text] = value;
@@ -6479,7 +6479,7 @@ let closure_43 = () => {
     key: "addNode",
     value: function addNode(value) {
       const self = this;
-      const obj = { 0: null, 0: "\u{1F9BB}\u{1F3FF}", "Bool(false)": true, value };
+      const obj = { 9223372036854775807: false, 0: false, 9223372036854775807: null, value };
       value.__ln = obj;
       if (value.previousSibling) {
         if (callback2(value.previousSibling)) {
@@ -7259,7 +7259,7 @@ function callbackWrapper(arg0) {
   } : arg0;
 }
 let closure_47 = [];
-let closure_48 = [null, null, null];
+let closure_48 = ["SEND_ACTIVITY_JOIN_INVITE", "targetOrbAmount", "pushToTalk"];
 const weakMap1 = new WeakMap();
 let closure_50 = () => {
   class CrossOriginIframeMirror {
@@ -7569,7 +7569,7 @@ let closure_52 = () => {
               if (closure_37.Plugin === type) {
                 return event;
               } else if (closure_37.Custom === type) {
-                self.replaceIds(event.data.payload, value, [true, true, true, true]);
+                self.replaceIds(event.data.payload, value, []);
                 return event;
               } else {
                 if (closure_37.IncrementalSnapshot === type) {
@@ -7577,7 +7577,7 @@ let closure_52 = () => {
                   if (closure_38.Mutation === source) {
                     const adds = event.data.adds;
                     const item = adds.forEach((node) => {
-                      self.replaceIds(node, node, ["URL_REGEX", "replayIntegration", "QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT"]);
+                      self.replaceIds(node, node, []);
                       self.replaceIdOnNode(node.node, node);
                       const crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
                       const value = crossOriginIframeRootIdMap.get(node);
@@ -7587,15 +7587,15 @@ let closure_52 = () => {
                     });
                     const removes = event.data.removes;
                     const item1 = removes.forEach((data) => {
-                      self.replaceIds(data, data, [44, 179]);
+                      self.replaceIds(data, data, [2124552486268932000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005776622131885018]);
                     });
                     const attributes = event.data.attributes;
                     const item2 = attributes.forEach((data) => {
-                      self.replaceIds(data, data, []);
+                      self.replaceIds(data, data, [null]);
                     });
                     const texts = event.data.texts;
                     const item3 = texts.forEach((data) => {
-                      self.replaceIds(data, data, []);
+                      self.replaceIds(data, data, [null]);
                     });
                     return event;
                   } else {
@@ -7617,31 +7617,31 @@ let closure_52 = () => {
                                           } else if (closure_38.Selection === source) {
                                             const ranges = event.data.ranges;
                                             const item4 = ranges.forEach((data) => {
-                                              self.replaceIds(data, data, ["irish", "plant"]);
+                                              self.replaceIds(data, data, [null, null]);
                                             });
                                             return event;
                                           } else if (closure_38.AdoptedStyleSheet === source) {
-                                            self.replaceIds(event.data, value, []);
-                                            self.replaceStyleIds(event.data, value, [447044437]);
+                                            self.replaceIds(event.data, value, [null]);
+                                            self.replaceStyleIds(event.data, value, []);
                                             const styles = event.data.styles;
                                             if (null != styles) {
                                               const item5 = styles.forEach((data) => {
-                                                self.replaceStyleIds(data, data, [1432024523]);
+                                                self.replaceStyleIds(data, data, ["<string:1157628262>"]);
                                               });
                                             }
                                             return event;
                                           }
                                         }
                                       }
-                                      self.replaceIds(event.data, value, []);
-                                      self.replaceStyleIds(event.data, value, [1432024523]);
+                                      self.replaceIds(event.data, value, [null]);
+                                      self.replaceStyleIds(event.data, value, ["<string:1157628262>"]);
                                       return event;
                                     }
                                   }
                                 }
                               }
                             }
-                            self.replaceIds(event.data, value, []);
+                            self.replaceIds(event.data, value, [null]);
                             return event;
                           }
                         }
@@ -7649,7 +7649,7 @@ let closure_52 = () => {
                     }
                     const positions = event.data.positions;
                     const item6 = positions.forEach((data) => {
-                      self.replaceIds(data, data, []);
+                      self.replaceIds(data, data, [null]);
                     });
                     return event;
                   }
@@ -7716,7 +7716,7 @@ let closure_52 = () => {
     value: function replaceIdOnNode(node, value) {
       const IframeManager = value;
       const self = this;
-      this.replaceIds(node, value, [null, null]);
+      this.replaceIds(node, value, []);
       if ("childNodes" in node) {
         const childNodes = node.childNodes;
         const item = childNodes.forEach((node) => {

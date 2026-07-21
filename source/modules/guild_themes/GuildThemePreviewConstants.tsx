@@ -1,7 +1,7 @@
 // Module ID: 4012
-// Function ID: 33328
+// Function ID: 33333
 // Name: GuildThemePreviewOrigin
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4012 (GuildThemePreviewOrigin)
 const _module = require(dependencyMap[0]);

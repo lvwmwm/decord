@@ -1,7 +1,7 @@
 // Module ID: 908
-// Function ID: 9961
+// Function ID: 9965
 // Name: isProfilingIntegrationWithProfiler
-// Dependencies: []
+// Dependencies: [57, 916, 57]
 
 // Module 908 (isProfilingIntegrationWithProfiler)
 function isProfilingIntegrationWithProfiler(_profiler) {

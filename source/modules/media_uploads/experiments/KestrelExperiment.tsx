@@ -1,12 +1,12 @@
-// Module ID: 4709
-// Function ID: 40951
+// Module ID: 4708
+// Function ID: 40958
 // Name: getKestrelConfig
 // Dependencies: []
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 4709 (getKestrelConfig)
+// Module 4708 (getKestrelConfig)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: true, 0: true, defaultConfig: {}, variations: { [0]: {}, [1]: {}, [2]: {}, [3]: {} } };
+const obj = { 844175713: false, 1387159956: false, defaultConfig: {}, variations: { [0]: {}, [1]: { -9223372036854775808: 748879873, -9223372036854775808: 1834024961 }, [2]: {}, [3]: {} } };
 let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/media_uploads/experiments/KestrelExperiment.tsx");

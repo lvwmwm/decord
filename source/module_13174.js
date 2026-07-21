@@ -1,8 +1,9 @@
 // Module ID: 13174
-// Function ID: 99591
+// Function ID: 99610
 // Dependencies: []
 
 // Module 13174
-const Platform = require(dependencyMap[0]).Platform;
-const _module = require(dependencyMap[1]);
-_module.setupURLPolyfill();
+
+export default Object.keys || function keys(arg0) {
+  return require(dependencyMap[0])(arg0, require(dependencyMap[1]));
+};

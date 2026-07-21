@@ -1,25 +1,25 @@
-// Module ID: 14846
-// Function ID: 111881
+// Module ID: 14849
+// Function ID: 111915
 // Dependencies: []
 
-// Module 14846
+// Module 14849
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Null": "Array", "Null": "validSeverityLevels", lv: "setIsPaused", tintColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ICON };
+obj = { 0: true, 0: true, 0: true, tintColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ICON };
 obj.videoIcon = obj;
-obj1 = { <string:996319581>: null, <string:2764919210>: null, <string:173095777>: null, <string:2488558083>: null, <string:1568693330>: null, <string:1375429025>: null, <string:979464368>: null, backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND, borderWidth: importDefault(dependencyMap[4]).modules.mobile.VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj1 = { "Bool(false)": "M104.474 96.4733C104.962 98.219 108.357 99.0802 111.123 98.0096L114.192 88.8389L106.357 89.2811L104.474 96.4733Z", "Bool(false)": "#CF1581", "Bool(false)": "M127.491 97.195L125.422 89.2812L115.75 88.7458C115.75 88.7458 117.052 92.726 118.866 98.1493C121.098 99.9183 126.189 98.2191 127.491 97.195Z", "Bool(false)": "#CF1581", "Bool(false)": "M48.7903 25.0864C48.7903 25.0864 59.3458 29.6252 68.1808 25.9942C70.5988 25.0166 72.668 27.9726 70.9243 29.8813C69.1805 31.7899 66.1115 33.745 61.7638 34.0244L48.7903 25.0864Z", "Bool(false)": "#3442D7", "Bool(false)": "M84.9905 28.4613C76.5042 31.8829 61.1592 34.257 52.8125 27.2277C36.677 13.6113 5.98698 22.6657 8.98623 48.8976C11.9855 75.1294 44.303 73.1277 44.303 73.1277L62.1357 56.1363C52.8125 57.8355 35.654 38.0743 56.207 42.52C76.2252 46.8725 84.6882 38.5863 88.199 32.0225C89.3382 29.9044 87.1992 27.5769 84.9905 28.4613Z", backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND, borderWidth: importDefault(dependencyMap[4]).modules.mobile.VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.wrapper = obj1;
-const tmp2 = arg1(dependencyMap[2]);
-obj.left = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
-const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRightColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
+const obj2 = { "Bool(true)": "<string:1959478466>", "Bool(true)": "<string:1959460867>", "Bool(true)": "<string:1959460867>", "Bool(true)": "<string:1959460867>", "Bool(true)": "<string:2706505731>", backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
+obj.left = obj2;
+const obj3 = { "Bool(false)": "<string:16777217>", "Bool(false)": "<string:822321489>", "Bool(false)": "<string:2576980378>", "Bool(false)": "<string:1072273817>", "Bool(false)": "getInviteInstanceId", "Bool(false)": "displayNameAccessibilityHint", "Bool(false)": "<string:29250048>", borderRightColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
 obj.mid = obj3;
-const obj4 = { "Null": "M111.031 63.6776C111.031 63.0181 111.559 62.4833 112.212 62.4833H137.017C137.67 62.4833 138.198 63.0181 138.198 63.6776C138.198 64.3369 137.67 64.8717 137.017 64.8717H112.212C111.559 64.8717 111.031 64.3369 111.031 63.6776Z", "Null": "white", "Null": "M99.2224 90.9774C103.136 90.9774 106.31 87.7696 106.31 83.8127C106.31 79.8558 103.136 76.6481 99.2224 76.6481C95.3082 76.6481 92.1351 79.8558 92.1351 83.8127C92.1351 87.7696 95.3082 90.9774 99.2224 90.9774Z", "Null": "white", "Null": "M143.514 78.8689H112.802C111.824 78.8689 111.031 79.671 111.031 80.6601C111.031 81.6493 111.824 82.4514 112.802 82.4514H143.514C144.492 82.4514 145.286 81.6493 145.286 80.6601C145.286 79.671 144.492 78.8689 143.514 78.8689Z", "Null": "white", backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
-obj.right = obj4;
+const tmp2 = arg1(dependencyMap[2]);
+obj.right = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
 let closure_6 = obj1.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_BACKGROUND };
+const obj4 = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
 const memoResult = importAllResult.memo(function VoiceChannelUserLimit(videoLimit) {
   let total;
   let users;

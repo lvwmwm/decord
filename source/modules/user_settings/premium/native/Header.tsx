@@ -1,5 +1,5 @@
 // Module ID: 12278
-// Function ID: 94127
+// Function ID: 94139
 // Name: Header
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,7 @@ export default function Header(style) {
   const tmp = callback2();
   let obj = { style: items };
   const items = [tmp.container, style.style];
-  obj = { "Bool(true)": "r", "Bool(true)": "ron", "Bool(true)": "Array" };
+  obj = { mediaContentContainer: "r", pQ3bLk: "BWD8fs", LANDING_FRAME_NAME: "Array" };
   const tmp2 = importDefault(dependencyMap[4])();
   const tmp3 = closure_5;
   const tmp4 = View;
@@ -32,7 +32,7 @@ export default function Header(style) {
   }
   obj.source = tmp7Result;
   const items1 = [tmp5(tmp6, obj), ];
-  obj = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.headerText };
+  obj = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.headerText };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj.children = intl2.string(arg1(dependencyMap[6]).t.SD5MJW);
   items1[1] = callback(arg1(dependencyMap[10]).Text, obj);

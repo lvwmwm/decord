@@ -1,20 +1,9 @@
 // Module ID: 3945
-// Function ID: 32558
+// Function ID: 32563
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0]
+// Dependencies: []
 
 // Module 3945 (_isNativeReflectConstruct)
-import closure_2 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -130,8 +119,16 @@ function handleGuildRemove(guildId) {
   }
   return flag;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
-({ ME: closure_11, Routes: closure_12 } = __exportStarResult1);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
+let closure_8 = importDefault(dependencyMap[6]);
+let closure_9 = importDefault(dependencyMap[7]);
+let closure_10 = importDefault(dependencyMap[8]);
+({ ME: closure_11, Routes: closure_12 } = arg1(dependencyMap[9]));
 let closure_13 = null;
 let closure_14 = null;
 let closure_15 = {};
@@ -244,10 +241,10 @@ let tmp3 = (PersistedStore) => {
     }
   };
   return callback(SelectedGuildStore, items);
-}(require("__exportStarResult1").PersistedStore);
+}(importDefault(dependencyMap[13]).PersistedStore);
 tmp3.displayName = "SelectedGuildStore";
 tmp3.persistKey = "SelectedGuildStore";
-tmp3 = new tmp3(require("__exportStarResult1"), {
+tmp3 = new tmp3(importDefault(dependencyMap[14]), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: function handleOverlayInitialize(selectedGuildId) {
     selectedGuildId = selectedGuildId.selectedGuildId;
@@ -286,7 +283,47 @@ tmp3 = new tmp3(require("__exportStarResult1"), {
     let closure_14 = null;
   }
 });
-const result = __exportStarResult1.fileFinishedImporting("stores/SelectedGuildStore.tsx");
+const obj = {
+  CONNECTION_OPEN: handleConnectionOpen,
+  OVERLAY_INITIALIZE: function handleOverlayInitialize(selectedGuildId) {
+    selectedGuildId = selectedGuildId.selectedGuildId;
+    let closure_14;
+    handleConnectionOpen();
+  },
+  CHANNEL_SELECT: function handleChannelSelect(guildId) {
+    guildId = guildId.guildId;
+    if (closure_13 === guildId) {
+      return false;
+    } else {
+      updateLastSelectedGuildMillis(closure_13);
+      updateLastSelectedGuildMillis(guildId);
+      if (null != guildId) {
+        let closure_14 = guildId;
+      }
+      closure_13 = guildId;
+    }
+  },
+  GUILD_MEMBER_REMOVE: function handleGuildMemberRemove(user) {
+    let tmp = user.user.id === id.getId();
+    if (tmp) {
+      tmp = handleGuildRemove(user.guildId);
+    }
+    return tmp;
+  },
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    let tmp2 = true !== guild.guild.unavailable;
+    if (tmp2) {
+      tmp2 = handleGuildRemove(tmp);
+    }
+    return tmp2;
+  },
+  LOGOUT: function handleLogout() {
+    let closure_13 = null;
+    let closure_14 = null;
+  }
+};
+const tmp2 = arg1(dependencyMap[9]);
+const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/SelectedGuildStore.tsx");
 
 export default tmp3;
 export const SELECTED_GUILD_TIMESTAMP_NOW = -1;

@@ -1,9 +1,9 @@
-// Module ID: 7477
-// Function ID: 60025
+// Module ID: 7478
+// Function ID: 60037
 // Name: SafetyToastType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7477 (SafetyToastType)
+// Module 7478 (SafetyToastType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/safety_common/Constants.tsx");
 

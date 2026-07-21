@@ -1,15 +1,15 @@
-// Module ID: 14272
-// Function ID: 107835
+// Module ID: 14275
+// Function ID: 107867
 // Name: Code
 // Dependencies: []
 // Exports: default
 
-// Module 14272 (Code)
+// Module 14275 (Code)
 function Code(arg0) {
   let children;
   let color;
   ({ children, color } = arg0);
-  const obj = { -9223372036854775808: "white", 0: "M331.173 7.2326L335.924 5.62087C336.025 5.54029 336.025 5.45972 335.924 5.45972L331.173 3.7674L329.051 0.0604396C329.051 -0.0201465 328.949 -0.0201465 328.848 0.0604396L326.827 3.7674H326.726L322.076 5.45972C321.975 5.45972 321.975 5.54029 322.076 5.62087L326.726 7.2326H326.827L328.848 10.9396C328.949 11.0201 329.051 11.0201 329.051 10.9396L331.173 7.2326Z", 0: "white", color, style: callback4().code, children };
+  const obj = { <string:1643205302>: "white", <string:1415816450>: "M327.173 68.5751L331.924 67.1099C332.025 67.0366 332.025 66.9634 331.924 66.9634L327.173 65.4249L325.051 62.0549C325.051 61.9817 324.949 61.9817 324.848 62.0549L322.827 65.4249H322.726L318.076 66.9634C317.975 66.9634 317.975 67.0366 318.076 67.1099L322.726 68.5751H322.827L324.848 71.9451C324.949 72.0183 325.051 72.0183 325.051 71.9451L327.173 68.5751Z", <string:4283523744>: "white", color, style: callback4().code, children };
   return callback3(arg1(dependencyMap[9]).Text, obj);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -93,8 +93,8 @@ export default function UserSettingsStartupTimings() {
     let obj = {};
     obj = { spacing: 16, style: { padding: 16 } };
     obj = {
-      "Bool(false)": false,
-      "Bool(false)": false,
+      "Bool(false)": "<string:1107296648>",
+      "Bool(false)": "text-sm/normal",
       children: callback(callback2(closure_2[20]).TableCheckboxRow, {
         label: "Show start times at launch",
         onPress() {
@@ -106,15 +106,15 @@ export default function UserSettingsStartupTimings() {
       })
     };
     const items = [callback(callback2(closure_2[19]).TableRowGroup, obj), , , , ];
-    const obj2 = { "Bool(false)": true, "Bool(false)": true };
+    const obj2 = { "Bool(false)": "<string:18862336>", "Bool(false)": "<string:3301130752>" };
     const obj3 = {};
     const obj4 = {};
     const obj5 = {};
-    const items1 = [null, renderTime(closure_7)];
+    const items1 = ["rgba(39, 30, 173, 0.3)", renderTime(closure_7)];
     obj5.children = items1;
     const items2 = [callback2(num, obj5), , , , , , , ];
     const obj6 = {};
-    const items3 = [null, renderTime(closure_11)];
+    const items3 = ["transparent", renderTime(closure_11)];
     obj6.children = items3;
     items2[1] = callback2(num, obj6);
     const obj7 = {};
@@ -122,11 +122,11 @@ export default function UserSettingsStartupTimings() {
     obj7.children = items4;
     items2[2] = callback2(num, obj7);
     const obj8 = {};
-    const items5 = [null, renderTime(callback2)];
+    const items5 = [131150.55676460272, renderTime(callback2)];
     obj8.children = items5;
     items2[3] = callback2(num, obj8);
     const obj9 = {};
-    const items6 = [null, renderTime(closure_10)];
+    const items6 = [1111556098, renderTime(closure_10)];
     obj9.children = items6;
     items2[4] = callback2(num, obj9);
     const obj10 = {};
@@ -138,7 +138,7 @@ export default function UserSettingsStartupTimings() {
     if (null != lastTrackedAppUiViewed2Properties) {
       prop = lastTrackedAppUiViewed2Properties.time_display_messages_with_cache_end;
     }
-    const items8 = [, renderTTi(prop)];
+    const items8 = [-1203634175, renderTTi(prop)];
     obj11.children = items8;
     items2[6] = callback2(num, obj11);
     const obj12 = {};
@@ -146,7 +146,7 @@ export default function UserSettingsStartupTimings() {
     if (null != lastTrackedAppUiViewed2Properties) {
       prop1 = lastTrackedAppUiViewed2Properties.time_display_latest_messages_end;
     }
-    const items9 = [, renderTTi(prop1)];
+    const items9 = [null, renderTTi(prop1)];
     obj12.children = items9;
     items2[7] = callback2(num, obj12);
     obj4.children = items2;
@@ -156,12 +156,12 @@ export default function UserSettingsStartupTimings() {
     const obj13 = {};
     const obj14 = {};
     const obj15 = {};
-    const items10 = [callback2(num, { children: [] }), callback2(num, { children: ["All ", "Selected values: "] }), callback2(num, { children: [] }), callback2(num, { children: [null, null] }), callback2(num, { children: [true, true] }), callback2(num, { children: [] })];
+    const items10 = [callback2(num, { children: [] }), callback2(num, { children: [] }), callback2(num, { children: [] }), callback2(num, { children: ["Selected values: ", "Found: "] }), callback2(num, { children: [] }), callback2(num, { children: [true, true] })];
     obj15.children = items10;
     obj14.label = callback2(closure_10, obj15);
     obj13.children = callback(callback2(closure_2[22]).TableRow, obj14);
     items[2] = callback(callback2(closure_2[19]).TableRowGroup, obj13);
-    const obj16 = { "Bool(false)": null, "Bool(false)": null };
+    const obj16 = { "Bool(false)": 1312948225, "Bool(false)": -1006632538 };
     const items11 = [
       callback(callback2(closure_2[20]).TableCheckboxRow, {
         label: "Hide the Noise",
@@ -181,7 +181,7 @@ export default function UserSettingsStartupTimings() {
     obj16.children = items11;
     items[3] = callback2(callback2(closure_2[19]).TableRowGroup, obj16);
     const obj19 = {};
-    const obj20 = { "Null": "Table Row Section", "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", icon: callback(callback2(closure_2[23]).ShareIcon, {}), onPress: closure_14 };
+    const obj20 = { accessibilityRole: "Table Row Section", keys: true, jsxs: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", icon: callback(callback2(closure_2[23]).ShareIcon, {}), onPress: closure_14 };
     obj19.children = callback(callback2(closure_2[22]).TableRow, obj20);
     items[4] = callback(callback2(closure_2[19]).TableRowGroup, obj19);
     obj.children = items;

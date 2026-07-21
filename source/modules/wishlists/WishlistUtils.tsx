@@ -1,5 +1,5 @@
 // Module ID: 11983
-// Function ID: 92616
+// Function ID: 92628
 // Name: createNitroSuggestedSku
 // Dependencies: []
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile

@@ -1,5 +1,5 @@
 // Module ID: 10974
-// Function ID: 85427
+// Function ID: 85438
 // Name: GuildDisableCommunicationModal
 // Dependencies: []
 // Exports: default

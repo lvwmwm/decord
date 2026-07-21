@@ -1,10 +1,10 @@
-// Module ID: 7556
-// Function ID: 60461
+// Module ID: 7557
+// Function ID: 60473
 // Name: LinkExternalSmallIcon
 // Dependencies: []
 // Exports: LinkExternalSmallIcon
 
-// Module 7556 (LinkExternalSmallIcon)
+// Module 7557 (LinkExternalSmallIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LinkExternalSmallIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15956
-// Function ID: 122379
+// Module ID: 15960
+// Function ID: 122423
 // Name: InteractionIframeModal
 // Dependencies: []
 // Exports: default
 
-// Module 15956 (InteractionIframeModal)
+// Module 15960 (InteractionIframeModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

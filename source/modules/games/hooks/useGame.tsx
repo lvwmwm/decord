@@ -1,10 +1,10 @@
-// Module ID: 6859
-// Function ID: 54272
+// Module ID: 6860
+// Function ID: 54284
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: useGames
 
-// Module 6859 (importDefaultResult1)
+// Module 6860 (importDefaultResult1)
 let closure_3 = importAll(dependencyMap[1]);
 const importDefaultResult1 = importDefault(dependencyMap[2]);
 let obj = arg1(dependencyMap[4]);

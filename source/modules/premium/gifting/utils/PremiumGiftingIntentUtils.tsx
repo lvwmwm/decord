@@ -1,5 +1,5 @@
 // Module ID: 10949
-// Function ID: 85138
+// Function ID: 85149
 // Name: GiftIntentType
 // Dependencies: []
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType

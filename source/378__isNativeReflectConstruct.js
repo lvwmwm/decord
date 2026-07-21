@@ -1,16 +1,9 @@
 // Module ID: 378
 // Function ID: 5639
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: []
 
 // Module 378 (_isNativeReflectConstruct)
-import "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -37,13 +30,19 @@ function _superPropGet(arg0, arg1, arg2, arg3) {
   }
   return fn;
 }
+importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 
 export default (arg0) => {
   class TimingAnimation {
     constructor(arg0) {
       self = this;
-      tmp = __exportStarResult1(this, TimingAnimation);
+      tmp = closure_4(this, TimingAnimation);
       items = [];
       items[0] = arg0;
       obj = closure_7(TimingAnimation);
@@ -177,4 +176,4 @@ export default (arg0) => {
     }
   };
   return callback(TimingAnimation, items);
-}(require("__exportStarResult1"));
+}(importDefault(dependencyMap[8]));

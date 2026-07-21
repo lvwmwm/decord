@@ -1,5 +1,5 @@
 // Module ID: 11378
-// Function ID: 88466
+// Function ID: 88478
 // Name: DoubleTapToReactChatInputBannerInner
 // Dependencies: []
 // Exports: DoubleTapToReactChatInputBanner
@@ -38,13 +38,13 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const items2 = [callback3(View, obj), , ];
   const obj3 = { style: tmp.text };
   obj4 = { style: tmp.header };
-  const obj5 = {};
+  const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const intl = arg1(dependencyMap[14]).intl;
   obj5.children = intl.string(arg1(dependencyMap[14]).t.6RUX7d);
   const items3 = [callback2(arg1(dependencyMap[13]).Text, obj5), callback2(arg1(dependencyMap[15]).NewBadge, {})];
   obj4.children = items3;
   const items4 = [callback3(View, obj4), ];
-  const obj6 = {};
+  const obj6 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
   const intl2 = arg1(dependencyMap[14]).intl;
   obj6.children = intl2.format(arg1(dependencyMap[14]).t.5/l2rR, {
     emojiName: emoji.name,
@@ -52,13 +52,14 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
       return callback2(callback(closure_2[13]).Text, { children }, arg1);
     },
     tapHereHook(children) {
-      return callback2(callback(closure_2[13]).Text, { children }, arg1);
+      const obj = { hasMaxConnections: 48797859737789140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, isBoostOnlySubscription: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004383619097214925, children };
+      return callback2(callback(closure_2[13]).Text, obj, arg1);
     }
   });
   items4[1] = callback2(arg1(dependencyMap[13]).Text, obj6);
   obj3.children = items4;
   items2[1] = callback3(View, obj3);
-  const obj8 = { "Bool(true)": 8, "Bool(true)": "absolute" };
+  const obj8 = { enabled: 8, marginTop: "absolute" };
   const intl3 = arg1(dependencyMap[14]).intl;
   obj8.accessibilityLabel = intl3.string(arg1(dependencyMap[14]).t.cpT0Cq);
   obj8.onPress = emoji.handleDismissBanner;
@@ -178,16 +179,16 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.animatedContainer = obj;
-obj.measurement = { -1350914179: 1996489027, -1351079902: 1358954819 };
-obj.container = { "Null": "1 s\u0103pt\u0103m\u00E2n\u0103", "Null": "{{count}} s\u0103pt\u0103m\u00E2ni", "Null": "circa 1 lun\u0103", "Null": "circa {{count}} luni" };
+obj.measurement = {};
+obj.container = {};
 const tmp2 = arg1(dependencyMap[6]);
 obj.highlight = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.text = { "Bool(false)": null, "Bool(false)": 0 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.emojiContainer = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
-obj.emoji = { bhk: null, bic: 6 };
+obj.text = { "Null": null, "Null": 0 };
+const obj2 = { "Bool(true)": true, "Bool(true)": "/assets/modules/instant_invite/native/images", "Bool(true)": 32, "Bool(true)": 32, "Bool(true)": null, "Bool(true)": "6745f221b3e662876db35721a519454b", "Bool(true)": "copy", "Bool(true)": "png", "Bool(true)": null, borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
+obj.emojiContainer = obj2;
+obj.emoji = {};
 const obj3 = {};
-const obj2 = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
+const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 let num = 22;
 if (obj7.isIOS()) {
   num = 28;
@@ -202,7 +203,7 @@ if (obj8.isIOS()) {
 obj3.lineHeight = num2;
 obj3.color = importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT;
 obj.textEmoji = obj3;
-obj.header = {};
+obj.header = { "Null": -747089664, "Null": 4211, "Bool(false)": 4096 };
 obj.closeButton = { alignSelf: "flex-start" };
 let closure_13 = obj.createStyles(obj);
 let closure_14 = { code: "function DoubleTapToReactChatInputBannerTsx1(){const{useReducedMotion,height,withDelay,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get()};}return{height:withDelay(200,withTiming(height.get(),{duration:300,easing:DECELERATED_EASING}))};}" };

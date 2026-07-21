@@ -1,5 +1,5 @@
 // Module ID: 6788
-// Function ID: 53606
+// Function ID: 53614
 // Name: StorefrontCollectionRecord
 // Dependencies: []
 
@@ -28,7 +28,7 @@ const tmp2 = () => {
         let unpublished_at;
         let updated_at;
         ({ created_at, updated_at, unpublished_at, unpublish_settings, tenant_metadata } = application_id);
-        let obj = { _desired: true, v: true, mode: true, userId: true, concat: true, left: true };
+        let obj = { H264: true, H265: true, VP8: true, VP9: true, AV1: true, UNKNOWN: true };
         Object.setPrototypeOf(null);
         const merged = Object.assign(application_id, obj);
         let tmp3 = StorefrontCollectionRecord;

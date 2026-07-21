@@ -1,7 +1,7 @@
 // Module ID: 445
 // Function ID: 6018
 // Name: requireNativeComponent
-// Dependencies: [475, 623]
+// Dependencies: []
 
 // Module 445 (requireNativeComponent)
 arg5.default = function requireNativeComponent(defaultResult1) {

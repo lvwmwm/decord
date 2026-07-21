@@ -1,5 +1,5 @@
 // Module ID: 11906
-// Function ID: 92162
+// Function ID: 92174
 // Name: getApplicationImage
 // Dependencies: []
 // Exports: useImageForActivity, useImageForContentEntry

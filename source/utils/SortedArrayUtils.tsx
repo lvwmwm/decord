@@ -1,10 +1,10 @@
-// Module ID: 4803
-// Function ID: 41836
+// Module ID: 4802
+// Function ID: 41843
 // Name: insertionIndex
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: insert
 
-// Module 4803 (insertionIndex)
+// Module 4802 (insertionIndex)
 function insertionIndex(arr, arg1, arg2) {
   let tmp2;
   let length = arr.length;

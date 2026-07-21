@@ -1,8 +1,8 @@
-// Module ID: 6996
-// Function ID: 55924
-// Dependencies: [284214097]
+// Module ID: 6997
+// Function ID: 55936
+// Dependencies: []
 
-// Module 6996
+// Module 6997
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");
 

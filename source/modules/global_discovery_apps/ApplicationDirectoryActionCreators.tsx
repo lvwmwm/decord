@@ -1,5 +1,5 @@
 // Module ID: 11180
-// Function ID: 86980
+// Function ID: 86992
 // Name: _getEmbedApplication
 // Dependencies: []
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search

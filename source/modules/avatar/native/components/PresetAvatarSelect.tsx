@@ -1,10 +1,10 @@
-// Module ID: 15988
-// Function ID: 122704
+// Module ID: 15992
+// Function ID: 122748
 // Name: DefaultAvatarButton
 // Dependencies: []
 // Exports: default
 
-// Module 15988 (DefaultAvatarButton)
+// Module 15992 (DefaultAvatarButton)
 function DefaultAvatarButton(selected) {
   let accessibilityLabel;
   let onSelect;
@@ -123,8 +123,8 @@ items1[7] = {
   }
 };
 let obj8 = arg1(dependencyMap[12]);
-const obj6 = { container: { textButtonPill: "<string:141856787>", applicationCommandLoadingLeftWrapper: "<string:134217728>", cardIcon: "<string:134217728>" }, buttonsContainer: {} };
-const obj7 = { <string:1632221346>: null, <string:2722977214>: null, borderRadius: importDefault(dependencyMap[13]).radii.xl };
+const obj6 = { container: { <string:2824056786>: "<string:141856807>", <string:2151834189>: "<string:134217728>", <string:2855952948>: "<string:134217728>" }, buttonsContainer: { x: "/assets/design/components/Icon/native/redesign/generated/images", delete: 24, 9223372036854775807: 24, 9223372036854775807: null } };
+const obj7 = { y: "row", isArray: "center", borderRadius: importDefault(dependencyMap[13]).radii.xl };
 obj6.defaultAvatarButton = obj7;
 obj6.defaultAvatarContainer = {};
 obj8 = { borderColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
@@ -167,7 +167,7 @@ export default function PresetAvatarSelect(arg0) {
   };
   const items1 = [];
   items[1] = callback(View, obj);
-  const items2 = [false, false, false, false];
+  const items2 = [null, true, true, true];
   items[2] = callback(View, {
     style: tmp.buttonsContainer,
     children: items2.map((arg0) => {

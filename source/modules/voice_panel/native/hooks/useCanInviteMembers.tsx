@@ -1,19 +1,20 @@
-// Module ID: 15656
-// Function ID: 119611
+// Module ID: 15659
+// Function ID: 119650
 // Name: useCanInviteMembers
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: useCanInviteMembers
 
-// Module 15656 (useCanInviteMembers)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import { Permissions } from "__exportStarResult1";
+// Module 15659 (useCanInviteMembers)
+import closure_2 from "result";
+import closure_3 from "result";
+import { Permissions } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
+result = result.fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
 
 export const useCanInviteMembers = function useCanInviteMembers(channelId) {
   const arg1 = channelId;
-  const items = [__exportStarResult1, closure_3];
+  const items = [closure_2, closure_3];
   const items1 = [channelId];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
     const channel = channel.getChannel(arg0);

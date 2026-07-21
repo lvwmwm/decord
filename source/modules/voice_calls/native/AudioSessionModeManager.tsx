@@ -1,9 +1,9 @@
-// Module ID: 15862
-// Function ID: 121399
+// Module ID: 15866
+// Function ID: 121443
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15862 (_isNativeReflectConstruct)
+// Module 15866 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -64,7 +64,7 @@ if (obj.isAndroid()) {
     setAVAudioSessionMode(VIDEO) {
 
       },
-    AVAudioSessionMode: {}
+    AVAudioSessionMode: { <string:2988224429>: 29966913, style: 661934336, value: 23719745, minimumValue: 617500928 }
   };
   let VoiceEngine = obj;
 } else {

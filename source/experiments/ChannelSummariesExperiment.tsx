@@ -1,5 +1,5 @@
 // Module ID: 9478
-// Function ID: 73875
+// Function ID: 73886
 // Name: canSeeChannelSummaries
 // Dependencies: []
 // Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries

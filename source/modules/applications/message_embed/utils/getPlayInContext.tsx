@@ -1,12 +1,12 @@
 // Module ID: 11076
-// Function ID: 86135
+// Function ID: 86146
 // Name: usePlayInContext
 // Dependencies: [0, 0, 0, 4294967295, 4294967295]
 // Exports: getPlayInContext, usePlayInContext
 
 // Module 11076 (usePlayInContext)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import result from "result";
+import closure_3 from "result";
 
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
 
@@ -16,7 +16,7 @@ export const usePlayInContext = function usePlayInContext(arg0) {
   const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => channelId.getChannelId());
   const dependencyMap = stateFromStores;
-  const items1 = [__exportStarResult1];
+  const items1 = [result];
   const stateFromStores1 = arg1(dependencyMap[2]).useStateFromStores(items1, () => {
     if (null == stateFromStores) {
       return null;
@@ -39,7 +39,7 @@ export const usePlayInContext = function usePlayInContext(arg0) {
     _location = stateFromStores1.location;
   }
   const obj2 = arg1(dependencyMap[2]);
-  const items2 = [__exportStarResult1];
+  const items2 = [result];
   const stateFromStores2 = arg1(dependencyMap[2]).useStateFromStores(items2, () => store.getCurrentEmbeddedActivity());
   const obj3 = arg1(dependencyMap[2]);
   const embeddedActivityLaunchability = arg1(dependencyMap[3]).useEmbeddedActivityLaunchability(stateFromStores);

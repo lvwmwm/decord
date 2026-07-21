@@ -1,7 +1,7 @@
 // Module ID: 874
-// Function ID: 9728
+// Function ID: 9732
 // Name: set
-// Dependencies: [956301315, 1593835523]
+// Dependencies: []
 
 // Module 874 (set)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

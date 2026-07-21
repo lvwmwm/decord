@@ -1,5 +1,5 @@
 // Module ID: 11555
-// Function ID: 89904
+// Function ID: 89916
 // Name: useGuildPowerupCardFooterConfig
 // Dependencies: []
 // Exports: default

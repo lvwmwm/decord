@@ -1,5 +1,5 @@
 // Module ID: 8936
-// Function ID: 70425
+// Function ID: 70436
 // Name: TwoWayLinkStepHeader
 // Dependencies: []
 // Exports: TwoWayLinkStepHeader
@@ -15,7 +15,7 @@ export const TwoWayLinkStepHeader = function TwoWayLinkStepHeader(arg0) {
   ({ idx, total } = arg0);
   let obj = arg1(dependencyMap[2]);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  obj = { style: twoWayLinkStyles.stepHeader };
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: twoWayLinkStyles.stepHeader };
   const intl = arg1(dependencyMap[4]).intl;
   obj.children = intl.format(arg1(dependencyMap[4]).t.fHz6eR, { number: idx, total });
   return jsx(arg1(dependencyMap[3]).Text, obj);

@@ -1,33 +1,33 @@
 // Module ID: 10418
-// Function ID: 80266
+// Function ID: 80277
 // Name: ForumPostActionBar
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 10418 (ForumPostActionBar)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import { AnalyticsSections } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import closure_4 from "result";
+import { View } from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import closure_8 from "result";
+import { AnalyticsSections } from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-__exportStarResult1 = {};
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-__exportStarResult1.actionBarContainer = __exportStarResult1;
-__exportStarResult1.actionRow = { paddingVertical: null, paddingHorizontal: 0, gap: 360, maxWidth: 0 };
-__exportStarResult1.reactionRow = { paddingVertical: null, paddingHorizontal: 0, gap: 360, maxWidth: 0 };
-const obj1 = { 1628504068: false, 1628569604: "Array", -1818951676: "isArray", 2101084164: "x", 1763115012: "Reflect", 1319305220: "mn", 1319370756: "Array", -1689190396: "isArray", borderRadius: require("__exportStarResult1").radii.xs, backgroundColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-__exportStarResult1.actionButton = obj1;
-__exportStarResult1.actionButtonsContainer = { justifyContent: "flex-end" };
-__exportStarResult1.lastActionButton = { marginRight: 0 };
-__exportStarResult1.buttonText = { marginLeft: 8 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
+({ jsx: closure_10, jsxs: closure_11 } = result);
+let obj = arg1(dependencyMap[8]);
+obj = {};
+obj = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+obj.actionBarContainer = obj;
+obj.actionRow = { positionBottom: null, positionRight: 0, text: 360, state: 0 };
+obj.reactionRow = { positionBottom: null, positionRight: 0, text: 360, state: 0 };
+obj.actionButton = { borderRadius: require("result").radii.xs, backgroundColor: require("result").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("result").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+obj.actionButtonsContainer = { justifyContent: "flex-end" };
+obj.lastActionButton = { marginRight: 0 };
+obj.buttonText = { marginLeft: 8 };
+let closure_12 = obj.createStyles(obj);
+result = result.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
 
 export default function ForumPostActionBar(channel) {
   channel = channel.channel;
@@ -36,7 +36,7 @@ export default function ForumPostActionBar(channel) {
   let items9 = function handleFollow() {
     const result = channel(closure_2[13]).handleToggleFollowForumPost(channel, stateFromStores1);
   };
-  const tmp = __exportStarResult1();
+  const tmp = callback3();
   let obj = arg1(guildId[10]);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel.parent_id));
@@ -113,7 +113,7 @@ export default function ForumPostActionBar(channel) {
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       intl = callback2;
-      items9 = [callback2(tmp20(tmp21[18]).CheckmarkLargeIcon, { flex: null, flexGrow: null }), ];
+      items9 = [callback2(tmp20(tmp21[18]).CheckmarkLargeIcon, {}), ];
       Text = tmp20(tmp21[19]).Text;
       const obj6 = {};
       const items10 = [tmp.buttonText];
@@ -131,7 +131,7 @@ export default function ForumPostActionBar(channel) {
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
       const items11 = [callback2(tmp20(tmp21[20]).BellIcon, obj7), ];
-      const obj8 = { "Null": "2026-05-app-store-overlay-feature-gate", "Null": "user", "Null": "2026-03-quest-reload-video-on-obscured", style: tmp.buttonText };
+      const obj8 = { delete: "2026-05-app-store-overlay-feature-gate", dispatch: "user", raw: "2026-03-quest-reload-video-on-obscured", style: tmp.buttonText };
       const intl2 = tmp20(tmp21[num3]).intl;
       obj8.children = intl2.string(tmp20(tmp21[num3]).t.0rQinA);
       items11[1] = callback2(tmp20(tmp21[19]).Text, obj8);

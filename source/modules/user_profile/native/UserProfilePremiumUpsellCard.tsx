@@ -1,16 +1,16 @@
-// Module ID: 13487
-// Function ID: 102352
+// Module ID: 13489
+// Function ID: 102374
 // Name: UserProfilePremiumUpsellCard
 // Dependencies: []
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13487 (UserProfilePremiumUpsellCard)
+// Module 13489 (UserProfilePremiumUpsellCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ AnalyticsObjects: closure_4, AnalyticsPages: closure_5, AnalyticsSections: closure_6, UserSettingsSections: closure_7 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
 let closure_9 = arg1(dependencyMap[3]).createStyles((bottom) => {
-  const container = { ks: null, View: null, a: null, accessibilityRole: null, bottom };
+  const container = { bottom };
   return { container };
 });
 const obj = arg1(dependencyMap[3]);

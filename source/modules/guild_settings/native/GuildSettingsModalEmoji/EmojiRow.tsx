@@ -1,10 +1,10 @@
-// Module ID: 16121
-// Function ID: 124300
+// Module ID: 16129
+// Function ID: 124361
 // Name: num2
 // Dependencies: []
 // Exports: EmojiRow
 
-// Module 16121 (num2)
+// Module 16129 (num2)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6, Pressable: closure_7 } = arg1(dependencyMap[2]));
@@ -12,8 +12,8 @@ let closure_8 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { flex: { flex: 1 }, flexCenterRow: {} };
-obj = { -1437146132: true, -1907127711: true, 806923152: true, 692273813: true, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { flex: { flex: 1 }, flexCenterRow: { "Null": 7, "Null": 370 } };
+obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.nameContainer = obj;
 const obj1 = {};
 let obj4 = arg1(dependencyMap[7]);
@@ -26,7 +26,7 @@ obj1.borderRadius = importDefault(dependencyMap[6]).radii.xs;
 obj1.alignItems = "center";
 obj1.flexDirection = "row";
 obj.activeNameContainer = obj1;
-obj.usernameContainer = {};
+obj.usernameContainer = { width: "characters", height: false, marginHorizontal: 48 };
 const obj2 = { fontSize: 16 };
 const tmp3 = arg1(dependencyMap[4]);
 let num2;
@@ -39,8 +39,8 @@ obj.emojiText = obj2;
 obj.colon = { width: 4 };
 const obj7 = arg1(dependencyMap[7]);
 obj.username = { fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
-obj.emojiImage = { "Null": false, "Null": false, "Null": false };
-obj4 = { justifyContent: "0e971a927dbdc3183654a0324b5f2831", alignItems: "ic_partnered_guild_icon_black_24px", height: "png", width: true, paddingLeft: importDefault(dependencyMap[6]).space.PX_8 };
+obj.emojiImage = {};
+obj4 = { REQUEST: "0e971a927dbdc3183654a0324b5f2831", SENT: "ic_partnered_guild_icon_black_24px", ERROR: "png", INVALID_CODE: true, paddingLeft: importDefault(dependencyMap[6]).space.PX_8 };
 obj.overflowIcon = obj4;
 let closure_11 = obj.createStyles(obj);
 const obj3 = { fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
@@ -178,7 +178,10 @@ export const EmojiRow = function EmojiRow(guildId) {
     return callback2(arg1(dependencyMap[16]).TableRow, obj);
   }
   obj13 = { style: tmp.nameContainer };
-  const items7 = [callback2(arg1(dependencyMap[14]).Text, { style: tmp.colon }), callback2(arg1(dependencyMap[14]).Text, { style: tmp.emojiText, children: first }), callback2(arg1(dependencyMap[14]).Text, { style: tmp.colon })];
+  const obj14 = { EMOJI_REACTIONS_ON_MESSAGES: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: -120145600412238510000000000000000000000000000000000000000000000000000000000, authorization: 0.0000000000000000000000000000000003851862592832466, style: tmp.colon };
+  const items7 = [callback2(arg1(dependencyMap[14]).Text, obj14), callback2(arg1(dependencyMap[14]).Text, { style: tmp.emojiText, children: first }), ];
+  const obj16 = { EMOJI_REACTIONS_ON_MESSAGES: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingVertical: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: -120145600412238510000000000000000000000000000000000000000000000000000000000, authorization: 0.0000000000000000000000000000000003851862592832466, style: tmp.colon };
+  items7[2] = callback2(arg1(dependencyMap[14]).Text, obj16);
   obj13.children = items7;
   tmp23 = callback3(closure_5, obj13);
 };

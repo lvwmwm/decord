@@ -1,5 +1,5 @@
 // Module ID: 11321
-// Function ID: 88084
+// Function ID: 88096
 // Name: useRenderPollAnswerImage
 // Dependencies: []
 // Exports: default

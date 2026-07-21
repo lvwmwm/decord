@@ -1,5 +1,5 @@
 // Module ID: 9781
-// Function ID: 76021
+// Function ID: 76032
 // Name: OrbLottieAnimation
 // Dependencies: [270270464, 297467904, 270401536, 31260672, 131072, 527958016, 452984832]
 
@@ -40,7 +40,7 @@ const forwardRefResult = obj.forwardRef((animationType) => {
   } else {
     SpendEarnOrbsLottie = tmp6(tmp7[5]).SpendEarnOrbsLottie;
   }
-  obj = { "Bool(true)": "password", "Bool(true)": "default", "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/ZGVzaWdu", "Bool(true)": null, "Bool(true)": "cbe99d29fa8428762338b11bd1660d0e", "Bool(true)": "uk.messages.cbe99d29fa8428762338b11bd1660d0e.compiled.messages", ref: tmp3 };
+  obj = { -9223372036854775808: 2020671489, 9223372036854775807: 1808465921, 9223372036854775807: 759300097, 0: 1644167430, 0: 1358955057, 9223372036854775807: 553718385, -9223372036854775808: 1985135201, ref: tmp3 };
   let str = "spend";
   if (null != animationType) {
     str = animationType;

@@ -1,11 +1,11 @@
-// Module ID: 7869
-// Function ID: 62654
+// Module ID: 7870
+// Function ID: 62667
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 7869 (__INTERNAL_VIEW_CONFIG)
+// Module 7870 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "APNGDecorationView", directEventTypes: { topLoad: { registrationName: "onLoad" } } };
-obj = { action: null, color: null };
+obj = { 1454046051: null, 1632514385: null };
 const _module = require(dependencyMap[0]);
 const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ onLoad: true }));
 obj.validAttributes = obj;

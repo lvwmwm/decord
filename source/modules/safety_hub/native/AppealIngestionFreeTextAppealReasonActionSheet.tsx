@@ -1,5 +1,5 @@
 // Module ID: 11037
-// Function ID: 85928
+// Function ID: 85939
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
 // Dependencies: []
 // Exports: default
@@ -11,8 +11,8 @@ const View = arg1(dependencyMap[2]).View;
 let closure_5 = importDefault(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { footerText: { textAlign: "center" }, textArea: {} };
-obj = { flexDirection: null, alignItems: null, justifyContent: null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { footerText: { textAlign: "center" }, textArea: { size: "/assets/design/components/Icon/native/redesign/generated/images", progress: 24 } };
+obj = { 0: null, 0: null, 0: null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.separator = obj;
 obj.closeIcon = {};
 let closure_8 = obj.createStyles(obj);
@@ -50,7 +50,7 @@ export default function AppealIngestionFreeTextAppealReasonActionSheet(onPress) 
   obj3.onChange = tmp3[1];
   items1[2] = callback2(arg1(dependencyMap[14]).TextArea, obj3);
   items1[3] = callback2(View, { style: tmp.separator });
-  const obj5 = { style: tmp.footerText };
+  const obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp.footerText };
   const intl5 = arg1(dependencyMap[8]).intl;
   obj5.children = intl5.string(arg1(dependencyMap[8]).t.xfNY3L);
   items1[4] = callback2(arg1(dependencyMap[15]).Text, obj5);

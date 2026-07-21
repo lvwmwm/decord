@@ -1,5 +1,5 @@
 // Module ID: 8559
-// Function ID: 68019
+// Function ID: 68030
 // Name: useTooltipPosition
 // Dependencies: []
 // Exports: default
@@ -41,6 +41,6 @@ export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
         return obj;
       }
     }
-    return { responseTtlSeconds: "spring", GameDiversityTier1SmallBadge: "linear", GIFT_CODE_EMBED: "easeInEaseOut" };
+    return { -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false };
   }, items);
 };

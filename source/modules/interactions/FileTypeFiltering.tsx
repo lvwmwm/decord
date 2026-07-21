@@ -1,5 +1,5 @@
 // Module ID: 11270
-// Function ID: 87685
+// Function ID: 87697
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getFileTypeFiltering, useFileTypeFiltering
@@ -242,11 +242,11 @@ function areMediaFilesAllowed(arr) {
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = [];
+let closure_6 = ["subscriptionTrialId", "Group", "NOT_SHAREABLE_QUEST", "r_mark_yDU$esjava$0", "editStateIdsForGroup", "stickerByIdIndex", "NOT_SHAREABLE_QUEST"];
 let closure_7 = [90, 87, 83, "mkv"];
-let closure_8 = [481036352, 712729690, 2095984960, 979252543, -919453646, 446676598];
-let closure_9 = { jpg: [true, true, true, true], mov: [true, true] };
-let closure_10 = { jpg: ["channelId", "channelId"], mp4: ["Object", "String"] };
+let closure_8 = ["updateUserSoundboardVolume", "subscriptionTrialId", "disableTouchLogging", "taqkwK", "QUEST_FETCH_QUEST_TO_DELIVER", "GUILD_SETTINGS_COMMUNITY_WELCOME"];
+let closure_9 = { jpg: [1864015806, -1821032393, 777389080, -919453644], mov: [1864015806, 1992900663] };
+let closure_10 = { jpg: ["channelId", "channelId"], mp4: [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000272945815071379, -0.00000008488497109238047] };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/interactions/FileTypeFiltering.tsx");
 
 export { useFileTypesFormattedString };

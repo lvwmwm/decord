@@ -1,5 +1,5 @@
 // Module ID: 8880
-// Function ID: 69995
+// Function ID: 70006
 // Name: asciiToBase16
 // Dependencies: []
 // Exports: asyncLoop, byteSwap, byteSwap32, bytesToHex, checkOpts, concatBytes, createView, hexToBytes, isBytes, randomBytes, rotl, rotr, u32, u8, wrapConstructor, wrapConstructorWithOpts, wrapXOFConstructorWithOpts
@@ -53,7 +53,7 @@ function toBytes(B) {
 let closure_3 = require(dependencyMap[0]);
 let closure_4 = require(dependencyMap[1]);
 let closure_5 = require(dependencyMap[2]);
-const uint32Array = new Uint32Array([-2107221969294640700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]);
+const uint32Array = new Uint32Array([]);
 const uint8Array = new Uint8Array(uint32Array.buffer);
 let closure_6 = Array.from({ length: 256 }, (arg0, arg1) => arg1.toString(16).padStart(2, "0"));
 let closure_7 = {};

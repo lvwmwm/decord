@@ -1,5 +1,5 @@
 // Module ID: 9176
-// Function ID: 71873
+// Function ID: 71884
 // Name: ChangeEmailCollectReasons
 // Dependencies: []
 // Exports: default
@@ -61,15 +61,15 @@ export default function ChangeEmailCollectReasons(changeEmailReason) {
   const items3 = [changeEmailReason, callback1];
   let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874, style: tmp.background };
+    obj = { onUnexpectedItemSize: null, minResolutionHeight: null, style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl = arg1(dependencyMap[16]).intl;
     obj1.children = intl.string(arg1(dependencyMap[16]).t.41NIIh);
     const items4 = [callback(arg1(dependencyMap[15]).Text, obj1), , ];
     const obj2 = { style: tmp.radioGroup, children: tmp6 };
     items4[1] = callback(closure_4, obj2);
-    const obj3 = { key: true, onCloseCallback: true, onPress: callback };
+    const obj3 = { text: true, size: true, onPress: callback };
     const intl2 = arg1(dependencyMap[16]).intl;
     obj3.text = intl2.string(arg1(dependencyMap[16]).t.XiOHRX);
     obj3.disabled = null == changeEmailReason;

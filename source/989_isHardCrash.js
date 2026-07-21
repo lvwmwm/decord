@@ -1,5 +1,5 @@
 // Module ID: 989
-// Function ID: 10635
+// Function ID: 10639
 // Name: isHardCrash
 // Dependencies: []
 

@@ -1,14 +1,16 @@
-// Module ID: 16007
-// Function ID: 122820
+// Module ID: 16011
+// Function ID: 122864
 // Name: useConnectGuardianGate
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: useConnectGuardianGate
 
-// Module 16007 (useConnectGuardianGate)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
+// Module 16011 (useConnectGuardianGate)
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
+
+result = result.fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
 
 export const useConnectGuardianGate = function useConnectGuardianGate() {
   let expiresAt;

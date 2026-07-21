@@ -1,10 +1,10 @@
-// Module ID: 15611
-// Function ID: 119182
+// Module ID: 15614
+// Function ID: 119221
 // Name: useFloatingCTAProps
 // Dependencies: []
 // Exports: useShouldShowFloatingCTA
 
-// Module 15611 (useFloatingCTAProps)
+// Module 15614 (useFloatingCTAProps)
 function useFloatingCTAProps(stateFromStores) {
   const tmp = function useOverrideFloatingCTAProps(arg0) {
     const setShowFloatingCTA = React.useContext(setShowFloatingCTA(closure_2[10])).setShowFloatingCTA;
@@ -159,7 +159,7 @@ function getBadConnectionCTAProps(arg0) {
     }
     return tmp;
   };
-  obj = { "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007581462672511034, "Bool(false)": 15177100802009343000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 2059872418701240300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { 9223372036854775807: null, 0: null, 0: null };
   const intl3 = arg1(dependencyMap[23]).intl;
   obj.accessibilityLabel = intl3.string(arg1(dependencyMap[23]).t.cpT0Cq);
   obj.onPress = function onPress() {

@@ -1,9 +1,9 @@
-// Module ID: 8305
-// Function ID: 65748
+// Module ID: 8306
+// Function ID: 65761
 // Name: PlatformType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8305 (PlatformType)
+// Module 8306 (PlatformType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/PlatformType.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 14978
-// Function ID: 112753
+// Module ID: 14981
+// Function ID: 112787
 // Name: openManageAccountsModal
 // Dependencies: []
 // Exports: default
 
-// Module 14978 (openManageAccountsModal)
+// Module 14981 (openManageAccountsModal)
 const SWITCH_ACCOUNTS_MODAL_KEY = require(dependencyMap[0]).SWITCH_ACCOUNTS_MODAL_KEY;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/multi_account/native/openManageAccountsModal.tsx");

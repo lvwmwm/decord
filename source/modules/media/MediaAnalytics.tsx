@@ -1,5 +1,5 @@
 // Module ID: 11008
-// Function ID: 85640
+// Function ID: 85651
 // Name: logMediaAttachmentPlaybackStarted
 // Dependencies: [670, 2, 6]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted

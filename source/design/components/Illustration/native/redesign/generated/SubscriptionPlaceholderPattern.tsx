@@ -1,5 +1,5 @@
 // Module ID: 12314
-// Function ID: 94366
+// Function ID: 94378
 // Name: getSubscriptionPlaceholderPatternSource
 // Dependencies: []
 // Exports: SubscriptionPlaceholderPattern

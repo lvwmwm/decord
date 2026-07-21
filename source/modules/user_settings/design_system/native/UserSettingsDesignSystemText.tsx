@@ -1,10 +1,10 @@
-// Module ID: 14293
-// Function ID: 107947
+// Module ID: 14296
+// Function ID: 107979
 // Name: UserSettingsDesignSystemText
 // Dependencies: []
 // Exports: default
 
-// Module 14293 (UserSettingsDesignSystemText)
+// Module 14296 (UserSettingsDesignSystemText)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const jsx = arg1(dependencyMap[2]).jsx;

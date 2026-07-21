@@ -1,12 +1,12 @@
-// Module ID: 14787
-// Function ID: 111436
+// Module ID: 14790
+// Function ID: 111470
 // Name: useSuggestedFriends
 // Dependencies: [0, 0]
 // Exports: default
 
-// Module 14787 (useSuggestedFriends)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 14790 (useSuggestedFriends)
+import result from "result";
+import closure_4 from "result";
 
 let closure_5 = importDefault(dependencyMap[2]);
 const SuggestedFriendSource = arg1(dependencyMap[3]).SuggestedFriendSource;

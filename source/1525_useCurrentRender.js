@@ -1,5 +1,5 @@
 // Module ID: 1525
-// Function ID: 17478
+// Function ID: 17483
 // Name: useCurrentRender
 // Dependencies: []
 // Exports: default

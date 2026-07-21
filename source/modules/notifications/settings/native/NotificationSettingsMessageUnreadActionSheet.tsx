@@ -1,5 +1,5 @@
 // Module ID: 10292
-// Function ID: 79442
+// Function ID: 79453
 // Name: NotificationSettingsMessageUnreadActionSheet
 // Dependencies: []
 // Exports: default
@@ -33,7 +33,7 @@ export default function NotificationSettingsMessageUnreadActionSheet(defaultValu
   const intl = arg1(dependencyMap[9]).intl;
   obj2.children = intl.string(arg1(dependencyMap[9]).t.Tqd1Af);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj2), , ];
-  const obj3 = {};
+  const obj3 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[9]).t.RpQgm5);
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj3);

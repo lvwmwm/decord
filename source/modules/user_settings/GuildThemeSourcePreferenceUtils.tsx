@@ -1,5 +1,5 @@
 // Module ID: 1320
-// Function ID: 15505
+// Function ID: 15510
 // Name: resolveDefaultGuildThemePreference
 // Dependencies: []
 // Exports: resolveGuildThemeSourcePreference

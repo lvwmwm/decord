@@ -1,21 +1,21 @@
-// Module ID: 13785
-// Function ID: 104250
+// Module ID: 13787
+// Function ID: 104272
 // Name: BountiesScrollPromptFooter
-// Dependencies: [57, 31, 27, 6646, 653, 33, 689, 8140, 4126, 666, 3989, 4538, 4542]
+// Dependencies: [57, 31, 27, 6646, 653, 33, 689, 8141, 4126, 666, 3989, 4538, 4542]
 // Exports: default
 
-// Module 13785 (BountiesScrollPromptFooter)
+// Module 13787 (BountiesScrollPromptFooter)
 import _slicedToArray from "_slicedToArray";
 import { StyleSheet } from "module_31";
-import keys from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import SUBTLE_SPRING from "SUBTLE_SPRING";
 
 ({ jsx: closure_6, jsxs: closure_7 } = _isNativeReflectConstruct);
 let closure_8 = ME.createStyles(() => {
-  let obj = { root: {} };
-  obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+  let obj = { root: { channelId: "<string:3082955202>", selectedAnswerIds: "<string:103629460>", submitting: "<string:3630497793>", editing: "<string:961609729>" } };
+  obj = { frameId: "genAdds", syncRow: "BasicWorkScheduler", GroupPlusIcon: "<string:3952297984>", VANITY_URL_POWERUP_DCS: "<string:287834115>", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
   obj.content = obj;
   obj = {};
   const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -47,7 +47,7 @@ export default function BountiesScrollPromptFooter(zIndex) {
     return tmp;
   }, items);
   let obj2 = arg1(dependencyMap[8]);
-  const items1 = [keys];
+  const items1 = [getActivityIndicator];
   const stateFromStores = obj2.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   const tmp5 = importDefault(dependencyMap[9])();
   const importDefault = tmp5;
@@ -60,7 +60,7 @@ export default function BountiesScrollPromptFooter(zIndex) {
     const obj1 = {};
     const items3 = [tmp.gradient, opacityStyle];
     obj1.style = items3;
-    obj2 = { borderWidth: 7471105, position: 0, alignSelf: 50331648 };
+    obj2 = {};
     let str2 = "play";
     if (stateFromStores) {
       str2 = "halt";

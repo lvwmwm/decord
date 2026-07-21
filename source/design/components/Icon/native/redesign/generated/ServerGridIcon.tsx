@@ -1,10 +1,10 @@
-// Module ID: 12400
-// Function ID: 94788
+// Module ID: 12402
+// Function ID: 94810
 // Name: ServerGridIcon
 // Dependencies: []
 // Exports: ServerGridIcon
 
-// Module 12400 (ServerGridIcon)
+// Module 12402 (ServerGridIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ServerGridIcon.tsx");

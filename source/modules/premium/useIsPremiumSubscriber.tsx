@@ -1,5 +1,5 @@
 // Module ID: 8522
-// Function ID: 67912
+// Function ID: 67923
 // Name: useIsPremiumSubscriber
 // Dependencies: []
 // Exports: useIsPremiumSubscriber

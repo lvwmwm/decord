@@ -1,5 +1,5 @@
 // Module ID: 11385
-// Function ID: 88506
+// Function ID: 88518
 // Name: handleInviteDisabledPress
 // Dependencies: []
 
@@ -65,7 +65,7 @@ function GuildSearchAndInvite(guildId) {
   const memo = onInvitePress.useMemo(() => {
     let tmp = null;
     if (canInvite) {
-      const obj = { icon: canInvite(invitesDisabled[21]), onPress: onInvitePress, onPressDisabled: closure_15 };
+      const obj = { "Bool(true)": null, "Bool(true)": null, icon: canInvite(invitesDisabled[21]), onPress: onInvitePress, onPressDisabled: closure_15 };
       const intl = guildId(invitesDisabled[22]).intl;
       obj.accessibilityLabel = intl.string(guildId(invitesDisabled[22]).t.VINpSK);
       obj.disabled = invitesDisabled;

@@ -1,10 +1,10 @@
-// Module ID: 5389
-// Function ID: 45953
+// Module ID: 5388
+// Function ID: 45960
 // Name: SafeAreaPaddingView
 // Dependencies: []
 // Exports: SafeAreaPaddingView
 
-// Module 5389 (SafeAreaPaddingView)
+// Module 5388 (SafeAreaPaddingView)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -28,7 +28,7 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
     flag4 = false;
   }
   let style = top.style;
-  let obj = {};
+  let obj = { transparentBlack: null, withReducedMotion: null, getEmbeddedActivityLaunchability: null, showChannelChangeConfirmationAlert: null, PREMIUM_INLINE_ROADBLOCK: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(top, obj);
   let importDefault;

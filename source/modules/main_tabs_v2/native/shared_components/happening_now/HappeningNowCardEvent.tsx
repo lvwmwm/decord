@@ -1,9 +1,9 @@
-// Module ID: 14823
-// Function ID: 111715
+// Module ID: 14826
+// Function ID: 111749
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
 // Dependencies: []
 
-// Module 14823 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 14826 (HAPPENING_NOW_CONTENT_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -15,18 +15,18 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { info: { position: "png", right: null, zIndex: 20, marginVertical: 4 } };
+let obj = { info: { -9223372036854775808: 1107427327, 0: 115907, 0: 133758, 0: 1348682001 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.infoNoImage = obj;
 obj1 = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm, alignSelf: "center", width: tmp3.HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
 obj.decorationImage = obj1;
-obj.dottedLineContainer = { updateApplicationCommandManagerState: 5234, questDockHeaderContentExpanded: 2560, EMOJI_REACTION: -1644019456, iconPosition: 1951465473, GUILD_SETTINGS_LOADED_BANS: 4, resetPendingPrimaryGuildChanges: 8, GuildPowerupsBoostButton: 8 };
-const obj2 = { left: 1, width: "classification_types", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, position: 1 };
+obj.dottedLineContainer = { "Bool(false)": -3841, "Bool(false)": 1340159, "Bool(false)": 655360, "Bool(false)": 74711040, "Bool(false)": 134217728, "Bool(false)": 134217728, "Bool(false)": 402653184 };
+const obj2 = { "Bool(false)": 1, "Bool(false)": "classification_types", "Bool(false)": "enum", "Bool(false)": 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.shortDottedLineSegment = obj2;
-const obj3 = { left: "r", width: "stopAnalyticHeartbeat", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, position: "isArray" };
-obj.dottedLineSegment = obj3;
-obj.interestedUsersContainer = { "Null": null, "Null": null };
 const tmp4 = arg1(dependencyMap[6]);
+obj.dottedLineSegment = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
+obj.interestedUsersContainer = { margin: null, backgroundColor: null };
+const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.interestedUsersIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 const obj4 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 obj.ticketContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: HAPPENING_NOW_CONTENT_HEIGHT, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm };

@@ -1,5 +1,5 @@
 // Module ID: 10620
-// Function ID: 82829
+// Function ID: 82840
 // Name: useGlobalStatusIndicatorState
 // Dependencies: []
 // Exports: useGlobalStatusIndicatorState

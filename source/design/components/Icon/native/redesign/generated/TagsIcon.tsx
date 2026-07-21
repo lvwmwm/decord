@@ -1,5 +1,5 @@
 // Module ID: 10330
-// Function ID: 79754
+// Function ID: 79765
 // Name: TagsIcon
 // Dependencies: []
 // Exports: TagsIcon

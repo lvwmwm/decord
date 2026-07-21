@@ -1,10 +1,10 @@
-// Module ID: 12386
-// Function ID: 94674
+// Module ID: 12388
+// Function ID: 94696
 // Name: useFetchGuildBoostSlots
 // Dependencies: []
 // Exports: default
 
-// Module 12386 (useFetchGuildBoostSlots)
+// Module 12388 (useFetchGuildBoostSlots)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

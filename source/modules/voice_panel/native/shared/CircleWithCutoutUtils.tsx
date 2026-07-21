@@ -1,5 +1,5 @@
 // Module ID: 10540
-// Function ID: 82347
+// Function ID: 82358
 // Name: getCutoutCenterX
 // Dependencies: []
 // Exports: default, getBadgeLeft, getBadgeTop

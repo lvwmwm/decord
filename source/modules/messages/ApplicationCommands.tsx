@@ -1,15 +1,13 @@
-// Module ID: 7690
-// Function ID: 61352
+// Module ID: 7691
+// Function ID: 61364
 // Name: getApplicationCommand
-// Dependencies: [1953825491, 683]
+// Dependencies: []
 // Exports: getApplicationCommand
 
-// Module 7690 (getApplicationCommand)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 7691 (getApplicationCommand)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
+const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
 
 export const getApplicationCommand = function getApplicationCommand(content) {
   const match = regex.exec(content);

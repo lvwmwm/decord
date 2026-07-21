@@ -1,10 +1,10 @@
-// Module ID: 7919
-// Function ID: 63130
+// Module ID: 7920
+// Function ID: 63143
 // Name: resolveNsfwTogglesWithDefaults
 // Dependencies: []
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 7919 (resolveNsfwTogglesWithDefaults)
+// Module 7920 (resolveNsfwTogglesWithDefaults)
 function resolveNsfwTogglesWithDefaults(setting, arg1, nSFWAllowed, isAgeVerified) {
   let tmp = arg1;
   if (arg1) {

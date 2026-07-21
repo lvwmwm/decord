@@ -1,10 +1,10 @@
-// Module ID: 16159
-// Function ID: 124544
+// Module ID: 16167
+// Function ID: 124605
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
 
-// Module 16159 (_callSuper)
+// Module 16167 (_callSuper)
 let Fonts;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
@@ -214,7 +214,7 @@ const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[17]).colors
 const obj2 = {};
 const merged1 = Object.assign(importDefault(dependencyMap[16])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[17]).colors.TEXT_SUBTLE, 12, { uppercase: true }));
 obj.categoryText = obj2;
-obj.categoryView = { bm: true, cursor: true };
+obj.categoryView = { padding: null, HermesInternal: 16 };
 obj.sortingCategoryView = { paddingTop: 16 };
 const importDefaultResult1 = importDefault(dependencyMap[16]);
 const obj3 = { uppercase: true };
@@ -225,7 +225,7 @@ obj.row = { marginTop: -tmp3.StyleSheet.hairlineWidth };
 obj.formRowStyle = { paddingVertical: 12 };
 const importDefaultResult2 = importDefault(dependencyMap[16]);
 obj.dropHighlight = { backgroundColor: importDefault(dependencyMap[17]).unsafe_rawColors.GREEN_360, opacity: 0.3 };
-obj.floatingActionButtonContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.floatingActionButtonContainer = { accessibilityRole: null, LIGHT: null, <string:1459331175>: 24, <string:3081396828>: "center", <string:1280632673>: 8, <string:4198116023>: "center" };
 let closure_23 = obj.createLegacyClassComponentStyles(obj);
 const tmp12 = (PureComponent) => {
   class Category {

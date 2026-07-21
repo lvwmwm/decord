@@ -1,5 +1,5 @@
 // Module ID: 1186
-// Function ID: 13528
+// Function ID: 13532
 // Name: TelemetryRingLifecycle
 // Dependencies: []
 

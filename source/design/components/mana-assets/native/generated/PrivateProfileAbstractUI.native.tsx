@@ -1,12 +1,14 @@
 // Module ID: 6421
-// Function ID: 50545
+// Function ID: 50553
 // Name: PrivateProfileAbstractUI
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: PrivateProfileAbstractUI
 
 // Module 6421 (PrivateProfileAbstractUI)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
 
 export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width) {
   let accessibilityLabel;

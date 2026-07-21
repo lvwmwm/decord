@@ -1,11 +1,12 @@
 // Module ID: 1319
-// Function ID: 15504
-// Name: __exportStarResult1
+// Function ID: 15509
+// Name: result
 // Dependencies: [0, 0]
 
-// Module 1319 (__exportStarResult1)
-import { UserSettingsTypes } from "__exportStarResult1";
+// Module 1319 (result)
+import { UserSettingsTypes } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/UserSettingsMigrationsByType.tsx");
+result = result.fileFinishedImporting("modules/user_settings/UserSettingsMigrationsByType.tsx");
 
 export default { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: [], [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: [] };

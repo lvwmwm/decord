@@ -1,5 +1,5 @@
 // Module ID: 8411
-// Function ID: 67000
+// Function ID: 67011
 // Name: useGuildProfile
 // Dependencies: []
 // Exports: useGuildProfile

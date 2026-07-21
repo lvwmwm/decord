@@ -1,11 +1,11 @@
 // Module ID: 5540
-// Function ID: 47078
+// Function ID: 47086
 // Name: MaskedView
 // Dependencies: []
 // Exports: default
 
 // Module 5540 (MaskedView)
-let closure_0 = [null];
+let closure_0 = [906643286];
 let closure_2 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const UIManager = arg1(dependencyMap[2]).UIManager;

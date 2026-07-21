@@ -1,9 +1,9 @@
-// Module ID: 15026
-// Function ID: 113208
+// Module ID: 15029
+// Function ID: 113242
 // Name: ForYouItemImage
 // Dependencies: []
 
-// Module 15026 (ForYouItemImage)
+// Module 15029 (ForYouItemImage)
 let FRIEND_BACKGROUND;
 let MESSAGE_BACKGROUND;
 let PROFILE_BACKGROUND;
@@ -34,7 +34,8 @@ let closure_9 = obj1.createStyles((arg0) => {
   obj.container = obj;
   obj = { height: num, width: num, borderRadius: result };
   obj.rowImage = obj;
-  obj.guildFallbackImage = { maxHeight: result, color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj1 = { onChange: null, showTopContainer: null, maxLength: false, maxHeight: result, color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.guildFallbackImage = obj1;
   return obj;
 });
 let obj2 = arg1(dependencyMap[7]);

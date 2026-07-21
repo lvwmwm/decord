@@ -1,5 +1,5 @@
 // Module ID: 4173
-// Function ID: 35418
+// Function ID: 35426
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -98,8 +98,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getDefaultSettings() {
-  let obj = { mode: InputModes.VOICE_ACTIVITY };
-  obj = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001465328505083617, backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000217534276588052, opacity: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003836952962855214, top: -91878362797366780000000000, left: 175902004323928600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, right: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021219957915, bottom: -4182107295528360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, autoThreshold: arg1(dependencyMap[29]).isPlatformEmbedded || false, shortcut: [], updatedAt: undefined };
+  let obj = { "Bool(false)": -7554807576424697000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000120631743419573, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001474410503703884, "Bool(false)": null, "Bool(false)": null, "Bool(false)": "friend_requests_grouped", "Bool(false)": false, 1653773732: "Bahasa Indonesia", -1272516145: "Indonesian", 1674378083: "id", "Null": "simple", "Null": false, "Null": true, "Null": null, "Null": "secondary", "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", mode: InputModes.VOICE_ACTIVITY };
+  obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, autoThreshold: arg1(dependencyMap[29]).isPlatformEmbedded || false, shortcut: [], updatedAt: undefined };
   obj.modeOptions = obj;
   obj.localMutes = {};
   obj.disabledLocalVideos = {};
@@ -201,7 +201,7 @@ function _getSettings0(context) {
   if (null == CUSTOM) {
     CUSTOM = InputProfile.CUSTOM;
   }
-  const tmp6 = isKrispAvailable() ? closure_144 : obj1;
+  const tmp6 = isKrispAvailable() ? closure_144 : closure_76;
   let obj = {};
   let modeOptions = tmp2.modeOptions;
   if (null == modeOptions) {
@@ -1273,7 +1273,7 @@ function applySettings() {
 }
 function tryEnable() {
   if (!closure_84) {
-    result.enable().then(() => callback(closure_3[49]).dispatch({ pacsize: true, channels: "/assets/images/native", rate: 36 }));
+    result.enable().then(() => callback(closure_3[49]).dispatch({ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }));
     const enableResult = result.enable();
   }
 }
@@ -1325,7 +1325,7 @@ function isDeviceSystemEchoIncompatible(windowsDeviceService) {
 function inferDeviceFormFactor(type) {
   if ("videoinput" === type.type !== true) {
     if (hasHardwareMatch(type, tmp3) !== true) {
-      const items = [-642821350, -1028080039, -1353420191];
+      const items = [null, null, null];
       const macosTransportType = type.macosTransportType;
       let str2 = "";
       let str = "";
@@ -1340,7 +1340,7 @@ function inferDeviceFormFactor(type) {
         if (isMatch !== true) {
           const obj = importDefault(dependencyMap[38])(type.hardwareId);
           if (obj.startsWith("BTHENUM") !== true) {
-            const items1 = [false, false];
+            const items1 = [];
             const macosTransportType2 = type.macosTransportType;
             let tmp6 = str2;
             if (null != macosTransportType2) {
@@ -1379,7 +1379,7 @@ function inferDeviceFormFactor(type) {
 }
 function convertDevices(videoDevices, arg1) {
   arg1 = videoDevices;
-  if (0 === videoDevices[{ "Null": "setMediaViewerSources", "Null": "Boolean", "Null": "isArray" }[arg1.deviceType]].length) {
+  if (0 === videoDevices[{ PLACE_ID: null, ROBLOX_TIME_STARTED: null, UNIVERSE_ID: null }[arg1.deviceType]].length) {
     const tmp5 = makeDisabledDevice(tmp);
     const obj = {};
     obj[tmp5.id] = tmp5;
@@ -1581,7 +1581,7 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
       let obj = { soundshareId: audioPid, soundshareSession: str2 };
     } else {
       importDefaultResult.info("Error: trying to get soundshare id before MediaEngineStore is instantiated.");
-      obj = { 0: "form__label", 9223372036854775807: "English, US" };
+      obj = {};
     }
     ({ soundshareId, soundshareSession } = obj);
     if (null != soundshareId) {
@@ -1623,7 +1623,7 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
     importAll(dependencyMap[40]).attachToProcess(pidFromDesktopSource);
     const obj5 = importAll(dependencyMap[40]);
   }
-  return { 0: "o", 9223372036854775807: "o" };
+  return { concat: "o", category: "o" };
 }
 function resetProbingState() {
   const DEFAULT = MediaEngineContextTypes.DEFAULT;
@@ -1840,7 +1840,7 @@ function processQueueMetricsForAnalytics(taskMetrics) {
       if (1 === taskMetrics.taskMetrics.length) {
         return null;
       } else {
-        const obj = {};
+        const obj = { position: null, top: 1, left: 0.5 };
         ({ periodMs: obj.metrics_period_ms, queueName: obj.queue_name, taskMetrics } = taskMetrics);
         obj.total_tasks = taskMetrics.reduce((arg0, count) => arg0 + count.count, 0);
         taskMetrics = taskMetrics.taskMetrics;
@@ -1921,7 +1921,7 @@ const NoiseCancellerError = tmp7.NoiseCancellerError;
 let importDefaultResult = importDefault(dependencyMap[27]);
 importDefaultResult = new importDefaultResult("MediaEngineStore");
 let closure_63 = "MediaEngineStore";
-let closure_64 = {};
+let closure_64 = { <string:1413519603>: null, <string:1189478959>: null };
 let closure_65 = 5 * importDefault(dependencyMap[28]).Millis.SECOND;
 let closure_66 = 2 * importDefault(dependencyMap[28]).Millis.SECOND;
 let closure_67 = 30 * importDefault(dependencyMap[28]).Millis.SECOND;
@@ -1931,9 +1931,9 @@ let closure_70 = "https://ciscobinary.openh264.org/libopenh264-2.5.1-linux64.7.s
 let closure_71 = "d828a944d4d2bb64195ada89cf2cde9bc41733b1547d0788ef49fb8cb231b76f";
 let closure_72 = 0;
 let obj = { WEBCAM: "WEBCAM", INTEGRATED: "INTEGRATED", BLUETOOTH: "BLUETOOTH", AIRPLAY: "AIRPLAY", HEADSET: "HEADSET" };
-obj = { mode: InputModes.VOICE_ACTIVITY, modeOptions: {} };
-let closure_75 = { [InputProfile.CUSTOM]: {}, [InputProfile.VOICE_ISOLATION]: { modeOptions: { 0: null, 0: null } }, [InputProfile.STUDIO]: obj };
-const obj1 = { preferredRegions: 60, lastTestTimestamp: 0, lastGeoRankedOrder: 0, modeOptions: { vadUseKrisp: false } };
+obj = { state: "Array", x: "create", to: "registerAsset", borderRadius: "text", y: "useRef", isArray: "Array", modeOptions: { accessible: null, borderRadius: null } };
+let closure_75 = { [InputProfile.CUSTOM]: {}, [InputProfile.VOICE_ISOLATION]: obj, [InputProfile.STUDIO]: { mode: InputModes.VOICE_ACTIVITY, modeOptions: { "Bool(false)": "react-stripe-js", "Bool(false)": "3.7.0", "Bool(false)": "https://stripe.com/docs/stripe-js/react" } } };
+let closure_76 = { modeOptions: { vadUseKrisp: false } };
 let obj4 = arg1(dependencyMap[30]);
 let obj5 = arg1(dependencyMap[30]);
 const result = obj4.initializeMediaEngine(obj5.determineMediaEngine());
@@ -1984,6 +1984,7 @@ let closure_125 = {};
 let closure_126 = null;
 let closure_127 = null;
 let closure_128 = false;
+const obj1 = { mode: InputModes.VOICE_ACTIVITY, modeOptions: { "Bool(false)": "react-stripe-js", "Bool(false)": "3.7.0", "Bool(false)": "https://stripe.com/docs/stripe-js/react" } };
 const tmp6 = arg1(dependencyMap[24]);
 importDefault(dependencyMap[32]).hasPermission(NativePermissionTypes.AUDIO, { showAuthorizationError: false });
 const importDefaultResult1 = importDefault(dependencyMap[32]);
@@ -3353,7 +3354,7 @@ obj5 = {
           closure_112 = true;
           const tmp7 = _getSettings0();
           if (tmp8) {
-            mergeSettings({ "Bool(true)": null, "Bool(true)": null });
+            mergeSettings({ -696166742: null, -1196501373: null });
             result.eachConnection(updateConnectionMuteDeaf);
           }
           const tmp8 = tmp7.mute || tmp7.deaf;
@@ -3971,7 +3972,7 @@ obj5 = {
   MEDIA_ENGINE_SET_AUDIO_ENABLED: function handleSetAudioEnabled(enabled) {
     enabled = enabled.enabled;
     if (enabled.unmute) {
-      mergeSettings({ "Null": null, "Null": null });
+      mergeSettings({ tokens: null, NativeDocumentPicker: null });
     }
     result.eachConnection(updateConnectionMuteDeaf);
   },

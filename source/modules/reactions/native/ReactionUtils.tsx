@@ -1,5 +1,5 @@
 // Module ID: 9307
-// Function ID: 72764
+// Function ID: 72775
 // Name: handleOutOfSuperReactions
 // Dependencies: []
 // Exports: handleAddNewReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
@@ -100,7 +100,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     _location = {};
   }
   isPoll = isPoll.isPoll;
-  let obj = {};
+  let obj = { ix: null, data: null, bottom: null, type: null, text: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(isPoll, obj);
   const channel = channel.getChannel(channelId);

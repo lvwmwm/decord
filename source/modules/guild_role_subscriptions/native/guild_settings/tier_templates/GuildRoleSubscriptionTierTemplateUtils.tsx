@@ -1,10 +1,10 @@
-// Module ID: 16349
-// Function ID: 126136
+// Module ID: 16357
+// Function ID: 126197
 // Name: getPrivateChannelIconComponent
 // Dependencies: []
 // Exports: getPrivateChannelIconComponent
 
-// Module 16349 (getPrivateChannelIconComponent)
+// Module 16357 (getPrivateChannelIconComponent)
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 

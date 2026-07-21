@@ -1,5 +1,5 @@
 // Module ID: 11949
-// Function ID: 92360
+// Function ID: 92372
 // Name: AnimatedContainer
 // Dependencies: []
 // Exports: default
@@ -133,7 +133,7 @@ function GroupMemberCount(count) {
   const tmp = callback3(importDefault(dependencyMap[7])("GroupAvatar"));
   let obj = { style: tmp.avatarWrapper };
   obj = { style: tmp.overflowCount, children: callback2(arg1(dependencyMap[14]).Text, { variant: "text-sm/semibold", children: items }) };
-  const items = ["fill", count.count];
+  const items = [null, count.count];
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
@@ -178,7 +178,7 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj.shadowColor = BLACK;
   obj = undefined;
   if (!arg0) {
-    obj = { bhk: -536870861, bic: -299892737 };
+    obj = { "Null": -536870861, "Null": -299892737 };
   }
   obj.shadowOffset = obj;
   obj.shadowRadius = 5;
@@ -215,7 +215,7 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   }
   obj4.backgroundColor = prop1;
   obj.gradientContainer = obj4;
-  const obj5 = { "Bool(false)": "center", "Bool(false)": null, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "rgba(0, 0, 0, 0.75)" };
+  const obj5 = { 9223372036854775807: "<string:408361903>", 9223372036854775807: "<string:2920093709>", 0: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
   let prop2;
   if (!arg0) {
     prop2 = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
@@ -244,12 +244,12 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj7.shadowOpacity = DARK_03_LIGHT_02;
   let obj8;
   if (!arg0) {
-    obj8 = { bhk: 2, bic: "text-sm/semibold" };
+    obj8 = { "Null": 2, "Null": "text-sm/semibold" };
   }
   obj7.shadowOffset = obj8;
   obj7.shadowRadius = 2;
   obj.shadow = obj7;
-  obj.avatar = { flex: null, marginHorizontal: null, marginVertical: null, backgroundColor: null };
+  obj.avatar = { -9223372036854775808: "2026-07-mobile-game-collection", "Bool(false)": "user", "Bool(false)": "flex", "Bool(false)": "row" };
   const obj9 = {};
   let prop3;
   if (!arg0) {
@@ -257,19 +257,19 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   }
   obj9.backgroundColor = prop3;
   obj.avatarWrapper = obj9;
-  const obj10 = {};
+  const obj10 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": "icon-feedback-info", "Bool(true)": "2026-02-private-profiles", "Bool(true)": "user", "Bool(true)": "2026-03-private-profiles-strict" };
   const colors = importDefault(dependencyMap[5]).colors;
   obj10.backgroundColor = arg0 ? colors.BACKGROUND_MOD_SUBTLE : colors.BACKGROUND_BASE_LOWER;
   obj.overflowCount = obj10;
   return obj;
 });
-const items = [{}, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }];
+const items = [{}, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
 const items1 = [items, , , ];
-const items2 = [{ -36761634623508064: null, 9223372036854775807: "7f6039bf3e89b748bf345decabdfb1bd", 0: "SoundboardSlashIcon" }, { -36761634623508064: 1900038762, 9223372036854775807: 3, 0: 46176833 }, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }];
+const items2 = [{}, { "Bool(true)": 1900038762, "Bool(true)": 3, "Bool(true)": 46185025 }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
 items1[1] = items2;
-const items3 = [{ -36761634623508064: true, 9223372036854775807: true, 0: true }, { -36761634623508064: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, 9223372036854775807: 139264.00004577637, 0: -69181168339614214000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, { -36761634623508064: -0.0000000000000000000000000000000000000009870321230940414, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312423307170434, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122671433504 }, { -36761634623508064: "spring", 9223372036854775807: "linear", 0: "easeInEaseOut" }];
+const items3 = [{ "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, {}, { "Bool(true)": "ThreadMinusIcon", "Bool(true)": "png", "Bool(true)": true }, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }];
 items1[2] = items3;
-const items4 = [{}, { -36761634623508064: "Array", 9223372036854775807: "isPrivate", 0: "isArray" }, { -36761634623508064: true, 9223372036854775807: true, 0: true }, { -36761634623508064: "Array", 9223372036854775807: "extractMessage", 0: "CONFIG_NEVER_ANIMATE_TIMING" }];
+const items4 = [{}, { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, {}, { "Bool(true)": 388251943, "Bool(true)": 1752236034, "Bool(true)": 822083584 }];
 items1[3] = items4;
 let closure_13 = { code: "function GroupAvatarTsx1(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
 const obj = arg1(dependencyMap[4]);

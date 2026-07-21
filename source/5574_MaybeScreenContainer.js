@@ -1,11 +1,11 @@
 // Module ID: 5574
-// Function ID: 47330
+// Function ID: 47338
 // Name: MaybeScreenContainer
 // Dependencies: []
 // Exports: MaybeScreen, MaybeScreenContainer
 
 // Module 5574 (MaybeScreenContainer)
-let closure_0 = ["a"];
+let closure_0 = ["<string:2781521352>"];
 let closure_1 = [null, null];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);

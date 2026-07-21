@@ -1,10 +1,10 @@
-// Module ID: 7930
-// Function ID: 63321
+// Module ID: 7931
+// Function ID: 63334
 // Name: getAutoArchiveOptions
 // Dependencies: []
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 7930 (getAutoArchiveOptions)
+// Module 7931 (getAutoArchiveOptions)
 function getAutoArchiveOptions() {
   let obj = { id: "1hour" };
   const intl = require(dependencyMap[2]).intl;

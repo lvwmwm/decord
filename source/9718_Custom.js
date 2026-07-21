@@ -1,5 +1,5 @@
 // Module ID: 9718
-// Function ID: 75535
+// Function ID: 75546
 // Name: Custom
 // Dependencies: []
 // Exports: Custom
@@ -83,7 +83,7 @@ export const Custom = function Custom(activeDotStyle) {
               num6 = height3;
             }
             let obj = {};
-            obj = { cel-gaulish: "<string:1900025036>", ces: "form", minWidth: bound, minHeight: Math.max(num4, num5, num6) };
+            obj = { 1862235647: "<string:1900025036>", 1929343231: "checkIsOnChannelNavigationRoute", minWidth: bound, minHeight: Math.max(num4, num5, num6) };
             const items = [obj, , ];
             obj = {};
             if (tmp) {

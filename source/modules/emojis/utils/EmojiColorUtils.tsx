@@ -1,10 +1,10 @@
-// Module ID: 7639
-// Function ID: 61158
+// Module ID: 7640
+// Function ID: 61170
 // Name: buildPlatformedThemedEmojiColorPalette
 // Dependencies: []
 // Exports: buildEmojiColorPalette
 
-// Module 7639 (buildPlatformedThemedEmojiColorPalette)
+// Module 7640 (buildPlatformedThemedEmojiColorPalette)
 function buildPlatformedThemedEmojiColorPalette(colors) {
   let saturationFactor;
   let num = colors.saturationFactor;

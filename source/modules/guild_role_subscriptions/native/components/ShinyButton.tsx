@@ -1,5 +1,5 @@
 // Module ID: 9347
-// Function ID: 72990
+// Function ID: 73001
 // Name: ShinyButton
 // Dependencies: []
 // Exports: default
@@ -27,7 +27,7 @@ export default function ShinyButton(style) {
 
     };
   }
-  let obj = { 0: null, 0: 4, 0: 4, 9223372036854775807: "rgba(0, 0, 0, 0.75)" };
+  let obj = { 9223372036854775807: "ERROR", 0: "ERROR", -9223372036854775808: "NOT_RESPONDER", 9223372036854775807: "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(style, obj);
   const tmp3 = callback();

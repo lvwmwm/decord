@@ -1,5 +1,5 @@
 // Module ID: 8879
-// Function ID: 69979
+// Function ID: 69990
 // Name: XorAndSalsa
 // Dependencies: []
 // Exports: scrypt, scryptAsync
@@ -173,7 +173,7 @@ function scryptInit(B, B, arg2) {
   let onProgress;
   let p;
   let r;
-  ({ N, r, p, dkLen, asyncTick, maxmem, onProgress } = require(dependencyMap[1]).checkOpts({ lineCap: true, arcSweepAngle: true, handleInitiateEdit: true }, arg2));
+  ({ N, r, p, dkLen, asyncTick, maxmem, onProgress } = require(dependencyMap[1]).checkOpts({ 0: "<string:2068971521>", 0: "<string:1641248907>", -9223372036854775808: "<string:605307544>" }, arg2));
   const require = onProgress;
   require(dependencyMap[2]).number(N);
   require(dependencyMap[2]).number(r);

@@ -1,5 +1,5 @@
 // Module ID: 992
-// Function ID: 10641
+// Function ID: 10645
 // Name: reactNativeErrorHandlersIntegration
 // Dependencies: []
 
@@ -72,7 +72,7 @@ let closure_3 = {
       const obj5 = originalException(arg6[3]);
     }
     obj.syntheticException = syntheticError;
-    obj.mechanism = { onDrawerSlide: "<string:1102995917>", onDrawerStateChanged: "form__label" };
+    obj.mechanism = {};
     obj.captureException(originalException, obj);
   },
   onHandled(displayId, error) {
@@ -176,7 +176,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                   _ErrorUtils.setGlobalHandler((arg0, arg1) => {
                     const self = arg0;
                     let closure_1 = arg1;
-                    return callResult(self, undefined, undefined, /* F10658 */ function*() { ... });
+                    return callResult(self, undefined, undefined, /* F10662 */ function*() { ... });
                   });
                 } else {
                   const debug = self(closure_1[2]).debug;
@@ -184,7 +184,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                 }
               }();
             }
-          }(Object.assign({}, closure_0));
+          }(Object.assign({ "Bool(false)": "Small", "Bool(false)": "sm", "Bool(false)": "Placeholder" }, closure_0));
         }
     };
     return obj;

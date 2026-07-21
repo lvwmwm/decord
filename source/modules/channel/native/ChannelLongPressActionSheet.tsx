@@ -1,5 +1,5 @@
 // Module ID: 9092
-// Function ID: 71210
+// Function ID: 71221
 // Name: handleVoiceOrStageChannelConnectPress
 // Dependencies: []
 // Exports: default

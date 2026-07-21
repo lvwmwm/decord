@@ -1,5 +1,5 @@
 // Module ID: 11290
-// Function ID: 87844
+// Function ID: 87856
 // Name: MentionableIcon
 // Dependencies: []
 // Exports: default

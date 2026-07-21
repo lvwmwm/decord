@@ -1,5 +1,5 @@
 // Module ID: 10457
-// Function ID: 80926
+// Function ID: 80937
 // Name: useQuestImpressionRef
 // Dependencies: []
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpressionId, useQuestStatusChanged

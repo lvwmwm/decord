@@ -1,9 +1,9 @@
-// Module ID: 16479
-// Function ID: 127243
+// Module ID: 16487
+// Function ID: 127304
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16479 (_createForOfIteratorHelperLoose)
+// Module 16487 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -256,7 +256,7 @@ let tmp9 = () => {
                     HermesBuiltin.arraySpread(metrics.timings, 1);
                     if (closure_5.get("libdiscore_verbose_telemetry_logging")) {
                       const mapped = items1.map((kind) => " - " + kind.kind + ": " + kind.durationMillis + "ms");
-                      const items2 = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001581712200955342, mapped.join("\n")];
+                      const items2 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040848882568606484, mapped.join("\n")];
                       const items3 = [items2, , ];
                       const mutations = metrics.mutations;
                       const mapped1 = mutations.map((metrics) => {
@@ -274,7 +274,7 @@ let tmp9 = () => {
                         });
                         return " * Record Type: " + metrics.recordType + "\n" + mapped.join("\n");
                       });
-                      const items4 = [570362367, mapped1.join("\n")];
+                      const items4 = [1073685247, mapped1.join("\n")];
                       items3[1] = items4;
                       const memory = metrics.memory;
                       const mapped2 = memory.map((statistics) => {
@@ -287,7 +287,7 @@ let tmp9 = () => {
                         });
                         return " * Record Type: " + statistics.recordType + "\n" + mapped.join("\n");
                       });
-                      const items5 = [false, mapped2.join("\n")];
+                      const items5 = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026881571506148153, mapped2.join("\n")];
                       items3[2] = items5;
                       const found = items3.filter((arg0) => {
                         let arr;
@@ -338,7 +338,7 @@ let tmp9 = () => {
           }, DispatcherBridge(FLUX_API[14]).DispatchBand.Database);
           num2 = 15;
           _default = DispatcherBridge(FLUX_API[15]).default;
-          f127266 = _default;
+          f127327 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               const _Date = Date;
@@ -375,7 +375,7 @@ let tmp9 = () => {
       closure_8.error("Fatal dispatch error for action", type, "hasAuthoritativeStore:", result, error);
       let obj = callback(closure_2[16]);
       obj = { actionType: type, hasAuthoritativeStore: result };
-      obj.captureException(error, { extra: obj, tags: { "Bool(false)": "<string:8776650>", "Bool(false)": "<string:2046367515>" } });
+      obj.captureException(error, { extra: obj, tags: { "Null": "<string:387645573>", "Null": "<string:2654435833>" } });
       if (result) {
         const result1 = DispatcherBridge(closure_2[12]).clearLibdiscoreExperimentCache();
         throw error;
@@ -423,7 +423,7 @@ let tmp9 = () => {
       error = new Error(str3);
       closure_8.error("Store", name, "failed to handle action", type, "mode:", mode, error);
       const obj = { actionType: type, storeName: name, storeMode: mode };
-      callback(closure_2[16]).captureException(error, { extra: obj, tags: { "Bool(false)": 1739693623, "Bool(false)": 554374742 } });
+      callback(closure_2[16]).captureException(error, { extra: obj, tags: { "Null": true, "Null": true } });
       if ("typescript-libdiscore-dual-read" !== mode) {
         if ("libdiscore" === mode) {
           const result = DispatcherBridge(closure_2[12]).clearLibdiscoreExperimentCache();
@@ -478,7 +478,7 @@ let tmp9 = () => {
   };
   return callback(DispatcherBridge, items);
 }();
-const set = new Set([989805055, 1023359999]);
+const set = new Set([1023359999, 1056914943]);
 tmp9 = new tmp9(function filterStores(items) {
   return items.filter((getMode) => set.has(getMode.getMode()));
 }(items));

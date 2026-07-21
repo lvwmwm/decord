@@ -1,5 +1,5 @@
 // Module ID: 3963
-// Function ID: 32812
+// Function ID: 32817
 // Name: isPseudoGuildId
 // Dependencies: []
 // Exports: isValidChannelId, isValidGuildId

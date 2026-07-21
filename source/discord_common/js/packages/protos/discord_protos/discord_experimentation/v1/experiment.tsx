@@ -1,9 +1,9 @@
-// Module ID: 7777
-// Function ID: 61746
+// Module ID: 7778
+// Function ID: 61758
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7777 (_callSuper)
+// Module 7778 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -39,44 +39,45 @@ const obj1 = { ENABLED: 0, [0]: "ENABLED", DISABLED: 1, [1]: "DISABLED" };
 const obj2 = { FULL: 0, [0]: "FULL", FORCE_CONTROL: 3, [3]: "FORCE_CONTROL", OVERRIDES_ONLY: 4, [4]: "OVERRIDES_ONLY", OFF: 5, [5]: "OFF" };
 const obj3 = { DEFAULT: 0, [0]: "DEFAULT", HOLDOUT: 1, [1]: "HOLDOUT", NUMBERLINE: 2, [2]: "NUMBERLINE" };
 const obj4 = { CUSTOM_UNIT_PREFIX_UNSPECIFIED: 0, [0]: "CUSTOM_UNIT_PREFIX_UNSPECIFIED", SEO_URL_SLUG: 1, [1]: "SEO_URL_SLUG" };
-const obj5 = { DEFAULT: 0, [0]: "DEFAULT", OFF: 1, [1]: "OFF", OVERRIDES_ONLY: 2, [2]: "OVERRIDES_ONLY" };
-const obj6 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", CONTROL: 1, [1]: "CONTROL", TREATMENT: 2, [2]: "TREATMENT", OVERRIDE: 3, [3]: "OVERRIDE" };
-const obj7 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ACTIVE: 1, [1]: "ACTIVE", UNUSED: 2, [2]: "UNUSED", BURNED: 3, [3]: "BURNED", PRESERVED: 4, [4]: "PRESERVED" };
-const obj8 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", DRAFT: 1, [1]: "DRAFT", MEASUREMENT: 2, [2]: "MEASUREMENT", ROLLING_OUT: 4, [4]: "ROLLING_OUT", ARCHIVED: 6, [6]: "ARCHIVED", AA_MODE: 7, [7]: "AA_MODE" };
+const obj5 = { EXPOSURE_POINT_ID_UNSPECIFIED: 0, [0]: "EXPOSURE_POINT_ID_UNSPECIFIED", SEO_INSTALLATION_PAGE_LOAD: 1, [1]: "SEO_INSTALLATION_PAGE_LOAD", MARKETING_INSTALLATION_PAGE_LOAD: 2, [2]: "MARKETING_INSTALLATION_PAGE_LOAD" };
+const obj6 = { DEFAULT: 0, [0]: "DEFAULT", OFF: 1, [1]: "OFF", OVERRIDES_ONLY: 2, [2]: "OVERRIDES_ONLY" };
+const obj7 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", CONTROL: 1, [1]: "CONTROL", TREATMENT: 2, [2]: "TREATMENT", OVERRIDE: 3, [3]: "OVERRIDE" };
+const obj8 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ACTIVE: 1, [1]: "ACTIVE", UNUSED: 2, [2]: "UNUSED", BURNED: 3, [3]: "BURNED", PRESERVED: 4, [4]: "PRESERVED" };
+const obj9 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", DRAFT: 1, [1]: "DRAFT", MEASUREMENT: 2, [2]: "MEASUREMENT", ROLLING_OUT: 4, [4]: "ROLLING_OUT", ARCHIVED: 6, [6]: "ARCHIVED", AA_MODE: 7, [7]: "AA_MODE" };
 let tmp2 = (MessageType) => {
   class Experiment$Type {
     constructor() {
       tmp = closure_3(this, Experiment$Type);
-      items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-      items[0] = { 9223372036854775807: "Array", 0: "convertRouteToNavigation", 9223372036854775807: "discarded_events", no: "captureMessage" };
+      items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+      items[0] = { 1347510942: 37978659492616684000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1678385745: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000414325527730875, 1364379111: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010033866602678007, 140698458: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002133799475442977 };
       items[1] = {};
-      items[2] = {
-        T() {
-              return callback(closure_1[6]).Timestamp;
-            }
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj.T = function T() {
+        return callback(closure_1[6]).Timestamp;
       };
-      items[3] = { 9223372036854775807: 1, 0: 5, 9223372036854775807: 29, no: "engine_feature_flags" };
-      items[4] = { 9223372036854775807: "YELLOW_NEW_22", 0: 1, 9223372036854775807: "filter_snapshot_name", no: "scalar" };
-      obj = { "Null": null, "Null": null, "Null": null };
+      items[2] = obj;
+      items[3] = { 1347510942: 1, 1678385745: 5, 1364379111: 29, 140698458: "engine_feature_flags" };
+      items[4] = { 1347510942: "YELLOW_NEW_22", 1678385745: 1, 1364379111: "filter_snapshot_name", 140698458: "scalar" };
+      obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "Path" };
       obj.T = function T() {
         return callback(closure_1[6]).Timestamp;
       };
       items[5] = obj;
       items[6] = {};
       items[7] = {};
-      items[8] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
-      obj = { "Null": "isArray", "Null": "key", "Null": "Array" };
-      obj.T = function T() {
-        return callback(closure_1[7]).StringValue;
-      };
-      items[9] = obj;
-      obj1 = { "Null": true, "Null": null, "Null": 11 };
+      items[8] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      obj1 = { 9223372036854775807: "\u{1F468}\u{1F3FD}", 9223372036854775807: true, 0: null };
       obj1.T = function T() {
         return callback(closure_1[7]).StringValue;
       };
-      items[10] = obj1;
+      items[9] = obj1;
+      obj2 = { 9223372036854775807: true, 9223372036854775807: null, 0: 11 };
+      obj2.T = function T() {
+        return callback(closure_1[7]).StringValue;
+      };
+      items[10] = obj2;
       items[11] = {};
-      items[12] = {};
+      items[12] = { 1347510942: true, 1678385745: false, 1364379111: 0, 140698458: false };
       items[13] = {
         T() {
               const items = [, closure_9];
@@ -85,97 +86,103 @@ let tmp2 = (MessageType) => {
       };
       items[14] = {
         T() {
-              return closure_20;
+              return closure_21;
             }
       };
-      obj2 = { -1369353863: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013331563889283026, 1636868177: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002020612264975397, -1293725045: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001591810061214976, 140686057: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002052268434635064 };
-      obj2.T = function T() {
-        return callback(closure_1[8]).Rule;
+      items[15] = {
+        T() {
+              return callback(closure_1[8]).Rule;
+            }
       };
-      items[15] = obj2;
-      obj3 = { "Null": "expected_end_date", "Null": "message", "Null": "absolute" };
+      obj3 = { 9223372036854775807: "expected_end_date", 9223372036854775807: "message", 0: "absolute" };
       obj3.T = function T() {
-        const items = [, closure_18];
+        const items = [, closure_19];
         return items;
       };
       items[16] = obj3;
-      obj4 = { -1369353863: 1, 1636868177: "hidden", -1293725045: 32, 140686057: "is_automated_change" };
-      obj4.T = function T() {
-        const items = [, closure_10];
-        return items;
+      items[17] = {
+        T() {
+              const items = [, closure_10];
+              return items;
+            }
       };
-      items[17] = obj4;
       items[18] = {};
-      items[19] = { 9223372036854775807: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015564394547672712, 0: 916638187241061400000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255048, no: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000709625233065 };
+      items[19] = { 1347510942: -292124884992.0225, 1678385745: -34.000000020695126, 1364379111: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005311443648336557, 140698458: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000709625233065 };
       items[20] = {
         T() {
               const items = [, closure_11];
               return items;
             }
       };
-      obj5 = { "Null": "message", "Null": "absolute", "Null": 1 };
-      obj5.T = function T() {
+      obj4 = { 9223372036854775807: "message", 9223372036854775807: "absolute", 0: 1 };
+      obj4.T = function T() {
         const items = [, closure_12];
         return items;
       };
-      items[21] = obj5;
+      items[21] = obj4;
       items[22] = {};
       items[23] = {};
-      items[24] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
+      items[24] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items[25] = {
         T() {
               const items = [, closure_13];
               return items;
             }
       };
-      items[26] = { 9223372036854775807: "is_managed", 0: "scalar", 9223372036854775807: 8, no: 43 };
-      items[27] = { -1369353863: "r", 1636868177: "BountyCarouselEmptyStateReason", -1293725045: null, 140686057: null, -73316248: null };
-      items[28] = { -1369353863: null, 1636868177: null, -1293725045: null, 140686057: null, -73316248: null };
-      obj6 = { "Null": 23125069725767586000000000000000000000000000000000000000000000000000000000000000000, "Null": 131072.00363353058, "Null": 31091720928424160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      items[26] = {};
+      items[27] = {};
+      items[28] = {};
+      obj5 = { 9223372036854775807: "<string:1900013232>", 9223372036854775807: "isArray", 0: "<string:3092376625>" };
+      obj5.T = function T() {
+        return closure_23;
+      };
+      items[29] = obj5;
+      obj6 = { 9223372036854775807: "RollOutRight", 9223372036854775807: null, 0: null };
       obj6.T = function T() {
-        return closure_22;
-      };
-      items[29] = obj6;
-      obj7 = { "Null": null, "Null": null, "Null": null };
-      obj7.T = function T() {
         return callback(closure_1[6]).Timestamp;
       };
-      items[30] = obj7;
-      items[31] = {};
-      items[32] = {};
-      obj8 = { "Null": 2, "Null": 8, "Null": 30 };
-      obj8.T = function T() {
-        return callback(closure_1[6]).Timestamp;
-      };
-      items[33] = obj8;
-      items[34] = {
+      items[30] = obj6;
+      items[31] = { 1347510942: "<string:2622554114>", 1678385745: "<string:422281>", 1364379111: "<string:1061224448>", 140698458: "<string:1895825675>" };
+      items[32] = { 1347510942: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012846007869360331, 1678385745: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001174214032631898, 1364379111: 15177100858548435000000000000000000000000000000000000000000000000000000000000000000, 140698458: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007845530864367 };
+      items[33] = {
         T() {
-              return callback(closure_1[7]).Int32Value;
+              return callback(closure_1[6]).Timestamp;
             }
       };
-      obj9 = { "Null": null, "Null": null, "Null": null };
-      obj9.T = function T() {
+      obj7 = { 9223372036854775807: 1, 9223372036854775807: null, 0: 2 };
+      obj7.T = function T() {
+        return callback(closure_1[7]).Int32Value;
+      };
+      items[34] = obj7;
+      obj8 = { 9223372036854775807: "unit_id_in_range_by_hash", 9223372036854775807: "message", 0: "filter" };
+      obj8.T = function T() {
         const items = [, closure_14];
         return items;
       };
-      items[35] = obj9;
-      items[36] = {};
-      items[37] = {};
-      items[38] = { 9223372036854775807: "backdropTint", 0: "<string:793657600>", 9223372036854775807: "<string:3110207490>", no: "<string:1274183>" };
-      items[39] = {
+      items[35] = obj8;
+      items[36] = {
         T() {
-              return closure_19;
+              const items = [, closure_15];
+              return items;
             }
       };
+      items[37] = {};
+      items[38] = {};
+      items[39] = { 1347510942: "configure", 1678385745: "<string:804995328>", 1364379111: "<string:3110207490>", 140698458: "<string:1274183>" };
       items[40] = {
         T() {
-              const items = [, closure_15, "ELIGIBILITY_PERSISTENCE_"];
+              return closure_20;
+            }
+      };
+      items[41] = {
+        T() {
+              const items = [, closure_16, "ELIGIBILITY_PERSISTENCE_"];
               return items;
             }
       };
       items1 = [];
       items1[1] = items;
-      return closure_23(this, Experiment$Type, items1);
+      return closure_24(this, Experiment$Type, items1);
     }
   }
   const arg1 = Experiment$Type;
@@ -183,7 +190,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { variations: [], rules: [], surfaces: [], fieldNumbersToCopy: [], engineFeatureFlags: [], isAutomatedChange: false, suppressEditorMention: false, customUnitPrefix: 0, growthbookTags: [], allocateRightToLeft: false, isManaged: false, eligibilityPersistence: 0 };
+      let obj = { variations: [], rules: [], surfaces: [], fieldNumbersToCopy: [], engineFeatureFlags: [], isAutomatedChange: false, suppressEditorMention: false, customUnitPrefix: 0, exposurePoints: [], growthbookTags: [], allocateRightToLeft: false, isManaged: false, eligibilityPersistence: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Experiment$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -203,17 +210,9 @@ let tmp2 = (MessageType) => {
       if (null == arg3) {
         obj = self.create();
       }
-      const sum = pos.pos + arg1;
-      if (pos.pos < sum) {
-        obj.eligibilityPersistence = pos.int32();
-        while (true) {
-          do {
-            let tmp3 = tmp7;
-            let tmp4 = tmp8;
-            let tmp5 = tmp9;
-            let tmp6 = tmp10;
-          } while (pos.pos >= sum);
-        }
+      if (pos.pos < pos.pos + arg1) {
+        [r10031, r10032] = callback(pos.tag(), 2);
+        const tmp3 = callback(pos.tag(), 2);
       }
       return obj;
     }
@@ -228,6 +227,7 @@ let tmp2 = (MessageType) => {
       let length4;
       let length5;
       let length6;
+      let length7;
       if ("0" !== id.id) {
         tag.tag(1, Experiment$Type(closure_1[9]).WireType.Bit64).fixed64(id.id);
         const tagResult = tag.tag(1, Experiment$Type(closure_1[9]).WireType.Bit64);
@@ -295,11 +295,11 @@ let tmp2 = (MessageType) => {
       let num31 = 0;
       if (0 < id.variations.length) {
         do {
-          let tmp43 = closure_20;
+          let tmp43 = closure_21;
           let tmp44 = closure_0;
           let tmp45 = closure_1;
           let tagResult14 = tag.tag(15, closure_0(closure_1[9]).WireType.LengthDelimited);
-          let internalBinaryWriteResult4 = closure_20.internalBinaryWrite(id.variations[num31], tagResult14.fork(), writeUnknownFields);
+          let internalBinaryWriteResult4 = closure_21.internalBinaryWrite(id.variations[num31], tagResult14.fork(), writeUnknownFields);
           let joined4 = internalBinaryWriteResult4.join();
           num31 = num31 + 1;
           length = id.variations.length;
@@ -397,8 +397,8 @@ let tmp2 = (MessageType) => {
       }
       if (id.debugConfig) {
         const tagResult29 = tag.tag(30, Experiment$Type(closure_1[9]).WireType.LengthDelimited);
-        const joined8 = closure_22.internalBinaryWrite(id.debugConfig, tag.tag(30, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult6 = closure_22.internalBinaryWrite(id.debugConfig, tag.tag(30, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const joined8 = closure_23.internalBinaryWrite(id.debugConfig, tag.tag(30, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult6 = closure_23.internalBinaryWrite(id.debugConfig, tag.tag(30, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (id.expectedEndDate) {
         const Timestamp3 = Experiment$Type(closure_1[6]).Timestamp;
@@ -430,33 +430,46 @@ let tmp2 = (MessageType) => {
         tag.tag(36, Experiment$Type(closure_1[9]).WireType.Varint).int32(id.customUnitPrefix);
         const tagResult35 = tag.tag(36, Experiment$Type(closure_1[9]).WireType.Varint);
       }
-      let num58 = 0;
+      if (id.exposurePoints.length) {
+        tag.tag(45, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork();
+        let num59 = 0;
+        if (0 < id.exposurePoints.length) {
+          do {
+            let boolResult2 = tag.int32(id.exposurePoints[num59]);
+            num59 = num59 + 1;
+            length6 = id.exposurePoints.length;
+          } while (num59 < length6);
+        }
+        tag.join();
+        const tagResult36 = tag.tag(45, Experiment$Type(closure_1[9]).WireType.LengthDelimited);
+      }
+      let num60 = 0;
       if (0 < id.growthbookTags.length) {
         do {
-          let boolResult2 = closure_0;
+          boolResult2 = closure_0;
           boolResult2 = closure_1;
-          let tagResult36 = tag.tag(37, closure_0(closure_1[9]).WireType.LengthDelimited);
-          boolResult2 = tagResult36.string(id.growthbookTags[num58]);
-          num58 = num58 + 1;
-          length6 = id.growthbookTags.length;
-        } while (num58 < length6);
+          let tagResult37 = tag.tag(37, closure_0(closure_1[9]).WireType.LengthDelimited);
+          boolResult2 = tagResult37.string(id.growthbookTags[num60]);
+          num60 = num60 + 1;
+          length7 = id.growthbookTags.length;
+        } while (num60 < length7);
       }
       if (false !== id.allocateRightToLeft) {
         tag.tag(38, Experiment$Type(closure_1[9]).WireType.Varint).bool(id.allocateRightToLeft);
-        const tagResult37 = tag.tag(38, Experiment$Type(closure_1[9]).WireType.Varint);
+        const tagResult38 = tag.tag(38, Experiment$Type(closure_1[9]).WireType.Varint);
       }
       if (false !== id.isManaged) {
         tag.tag(39, Experiment$Type(closure_1[9]).WireType.Varint).bool(id.isManaged);
-        const tagResult38 = tag.tag(39, Experiment$Type(closure_1[9]).WireType.Varint);
+        const tagResult39 = tag.tag(39, Experiment$Type(closure_1[9]).WireType.Varint);
       }
       if (id.numberLineSettings) {
-        const tagResult39 = tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited);
-        closure_19.internalBinaryWrite(id.numberLineSettings, tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult10 = closure_19.internalBinaryWrite(id.numberLineSettings, tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const tagResult40 = tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited);
+        closure_20.internalBinaryWrite(id.numberLineSettings, tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult10 = closure_20.internalBinaryWrite(id.numberLineSettings, tag.tag(43, Experiment$Type(closure_1[9]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (0 !== id.eligibilityPersistence) {
         tag.tag(42, Experiment$Type(closure_1[9]).WireType.Varint).int32(id.eligibilityPersistence);
-        const tagResult40 = tag.tag(42, Experiment$Type(closure_1[9]).WireType.Varint);
+        const tagResult41 = tag.tag(42, Experiment$Type(closure_1[9]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
@@ -477,18 +490,18 @@ let tmp4 = (MessageType) => {
   class Experiment_NumberLineSettings$Type {
     constructor() {
       tmp = closure_3(this, Experiment_NumberLineSettings$Type);
-      obj = { "Null": true, "Null": true, "Null": true };
+      obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj.T = function T() {
-        const items = [1274757377, closure_8];
+        const items = ["Array", closure_8];
         return items;
       };
       items = [, , ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: true, 0: true, 9223372036854775807: true, no: true };
-      items[2] = { 9223372036854775807: 12795897, 0: 1942682240, 9223372036854775807: 558055417, no: 1894514691 };
-      items1 = [true];
+      items[1] = { 1347510942: true, 1678385745: true, 1364379111: true, 140698458: true };
+      items[2] = {};
+      items1 = [34.011148571976626];
       items1[1] = items;
-      return closure_23(this, Experiment_NumberLineSettings$Type, items1);
+      return closure_24(this, Experiment_NumberLineSettings$Type, items1);
     }
   }
   const arg1 = Experiment_NumberLineSettings$Type;
@@ -496,7 +509,7 @@ let tmp4 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+      let obj = {};
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Experiment_NumberLineSettings$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -619,15 +632,15 @@ let tmp6 = (MessageType) => {
       items = [, , , , , , ];
       items[0] = {};
       items[1] = {};
-      items[2] = { 9223372036854775807: "<string:1136222464>", 0: "p\u0159ibli\u017En\u011B {{count}} rok\u016F", 9223372036854775807: "p\u0159ibli\u017En\u011B p\u0159ed {{count}} roky", no: "p\u0159ibli\u017En\u011B za {{count}} rok\u016F" };
+      items[2] = { 1347510942: 7732690358290140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1678385745: 24269442033240220000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1364379111: 19507009822992964000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 140698458: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018002120602516007 };
       items[3] = {
         T() {
-              return closure_21;
+              return closure_22;
             }
       };
-      obj = { "Null": true, "Null": true, "Null": true };
+      obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj.T = function T() {
-        const items = [false, closure_16];
+        const items = [true, closure_17];
         return items;
       };
       items[4] = obj;
@@ -636,10 +649,10 @@ let tmp6 = (MessageType) => {
               return callback(closure_1[7]).StringValue;
             }
       };
-      items[6] = { 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012741662971786344, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000154504360221915, 9223372036854775807: -0.000000000000000000000000000000027733459501558816, no: -21714742576494048000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      items[6] = { 1347510942: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012415912158825045, 1678385745: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015451551546468, 1364379111: -0.00000000000000000000000000000002773345953527966, 140698458: -0.00000000000000000000000000000000000000000000000000000000000000000000000000029362973099161495 };
       items1 = [null];
       items1[1] = items;
-      return closure_23(this, Variation$Type, items1);
+      return closure_24(this, Variation$Type, items1);
     }
   }
   const arg1 = Variation$Type;
@@ -647,7 +660,7 @@ let tmp6 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": "<string:3212902401>", "Bool(true)": "<string:3578855426>", "Bool(true)": "<string:2973831607>", "Bool(true)": "<string:1912602902>", "Bool(true)": "toString", "Bool(true)": "toString", buckets: [] };
+      let obj = { showFullscreenEmptyState: "<string:3214344193>", isArray: "<string:2018574338>", beforeAddRecordingEvent: "<string:1866535379>", getLastRouteChangeSourceLocationStack: "<string:1912603103>", y: "toString", y: "toString", buckets: [] };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Variation$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -688,8 +701,8 @@ let tmp6 = (MessageType) => {
           tmp11 = tmp4;
         } else if (4 === tmp7) {
           let buckets = obj.buckets;
-          let tmp31 = closure_21;
-          let arr = buckets.push(closure_21.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+          let tmp31 = closure_22;
+          let arr = buckets.push(closure_22.internalBinaryRead(pos, pos.uint32(), readUnknownField));
           tmp10 = tmp3;
           tmp11 = tmp4;
         } else if (5 === tmp7) {
@@ -776,11 +789,11 @@ let tmp6 = (MessageType) => {
       let num7 = 0;
       if (0 < id.buckets.length) {
         do {
-          let tmp10 = closure_21;
+          let tmp10 = closure_22;
           let tmp11 = closure_0;
           let tmp12 = closure_1;
           let tagResult3 = tag.tag(4, closure_0(closure_1[9]).WireType.LengthDelimited);
-          let internalBinaryWriteResult = closure_21.internalBinaryWrite(id.buckets[num7], tagResult3.fork(), writeUnknownFields);
+          let internalBinaryWriteResult = closure_22.internalBinaryWrite(id.buckets[num7], tagResult3.fork(), writeUnknownFields);
           let joined = internalBinaryWriteResult.join();
           num7 = num7 + 1;
           length = id.buckets.length;
@@ -820,17 +833,17 @@ let tmp8 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, Bucket$Type);
       items = [, , ];
-      items[0] = { 9223372036854775807: "message", 0: 1, 9223372036854775807: "PINK_55", no: 1 };
+      items[0] = { 1347510942: "message", 1678385745: 1, 1364379111: "BG_GRADIENT_LOFI_VIBES_2", 140698458: 34.94 };
       items[1] = {};
-      obj = { "Null": "<string:1894580225>", "Null": "<string:2059337731>", "Null": "<string:390266881>" };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
-        const items = [, closure_17];
+        const items = [, closure_18];
         return items;
       };
       items[2] = obj;
       items1 = [null];
       items1[1] = items;
-      return closure_23(this, Bucket$Type, items1);
+      return closure_24(this, Bucket$Type, items1);
     }
   }
   const arg1 = Bucket$Type;
@@ -838,7 +851,7 @@ let tmp8 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { required: "spring", rows: "linear", Ambient_Lightmode: "easeInEaseOut" };
+      let obj = { 0: false, -9223372036854775808: false, 9223372036854775807: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Bucket$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -959,14 +972,14 @@ let tmp10 = (MessageType) => {
       tmp = closure_3(this, DebugConfig$Type);
       items = [, , , , , ];
       items[0] = {};
-      items[1] = { 9223372036854775807: true, 0: true, 9223372036854775807: true, no: true };
+      items[1] = { 1347510942: true, 1678385745: true, 1364379111: true, 140698458: true };
       items[2] = {};
       items[3] = {};
-      items[4] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
-      items[5] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
-      items1 = [false];
+      items[4] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      items[5] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
+      items1 = [0.00000000000012794629902442472];
       items1[1] = items;
-      return closure_23(this, DebugConfig$Type, items1);
+      return closure_24(this, DebugConfig$Type, items1);
     }
   }
   const arg1 = DebugConfig$Type;
@@ -974,7 +987,7 @@ let tmp10 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 0: true, 0: null, 9223372036854775807: 14, 0: "#ffff", 9223372036854775807: 5, 9223372036854775807: "favorite_emojis" };
+      let obj = { "Null": true, "Null": null, "Null": 14, "Null": "#ffff", "Null": 5, "Null": "favorite_emojis" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, DebugConfig$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -1122,10 +1135,11 @@ export const Experiment_ExposureTracking = obj1;
 export const Experiment_AssignmentMode = obj2;
 export const Experiment_Type = obj3;
 export const Experiment_CustomUnitPrefix = obj4;
-export const Experiment_EligibilityPersistence = obj5;
-export const Variation_Type = obj6;
-export const Bucket_Type = obj7;
-export const Phase = obj8;
+export const Experiment_ExposurePointId = obj5;
+export const Experiment_EligibilityPersistence = obj6;
+export const Variation_Type = obj7;
+export const Bucket_Type = obj8;
+export const Phase = obj9;
 export const Experiment = tmp2;
 export const Experiment_NumberLineSettings = tmp4;
 export const Variation = tmp6;

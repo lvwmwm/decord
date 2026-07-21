@@ -1,5 +1,5 @@
 // Module ID: 10520
-// Function ID: 82137
+// Function ID: 82148
 // Name: isActivityFocused
 // Dependencies: []
 // Exports: default

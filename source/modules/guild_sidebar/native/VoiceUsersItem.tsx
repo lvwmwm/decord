@@ -1,14 +1,14 @@
-// Module ID: 14852
-// Function ID: 111914
+// Module ID: 14855
+// Function ID: 111948
 // Name: VoiceUsersItem
 // Dependencies: []
 // Exports: default
 
-// Module 14852 (VoiceUsersItem)
+// Module 14855 (VoiceUsersItem)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { onCellLayout: false, GridButton: false, en-MV: false, conversationId: false } });
+let closure_2 = arg1(dependencyMap[3]).createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
 

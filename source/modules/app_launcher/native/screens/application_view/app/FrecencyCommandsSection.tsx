@@ -1,5 +1,5 @@
 // Module ID: 11259
-// Function ID: 87567
+// Function ID: 87579
 // Name: FrecencyCommandsSection
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { marginBottom: arg1(dependencyMap[5]).BETWEEN_SECTIONS_MARGIN };
 obj.container = obj;
-obj.header = { "Bool(false)": "<string:1095827458>", "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.header = { size: "<string:3931176962>", style: false, color: false, channel: false };
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/FrecencyCommandsSection.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 7508
-// Function ID: 60146
+// Module ID: 7509
+// Function ID: 60158
 // Name: FormSwitch
 // Dependencies: []
 // Exports: default
 
-// Module 7508 (FormSwitch)
+// Module 7509 (FormSwitch)
 importAll(dependencyMap[0]);
 const Switch = arg1(dependencyMap[1]).Switch;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,5 +1,5 @@
 // Module ID: 5460
-// Function ID: 46632
+// Function ID: 46640
 // Name: ConnectionCard
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 829
-// Function ID: 9237
+// Function ID: 9241
 // Name: TRACING_DEFAULTS
 // Dependencies: []
 // Exports: startIdleSpan
@@ -304,7 +304,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
     const sentryNonRecordingSpan = new SentryNonRecordingSpan();
     const _Object = Object;
     const obj2 = require(dependencyMap[2]);
-    const merged = Object.assign({ "Null": "TrackIarSettingsUpsellsActionType", "Null": "qALKny" }, require(dependencyMap[5]).getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
+    const merged = Object.assign({ targetField: "press", targetAttribute: "tune_settings_button" }, require(dependencyMap[5]).getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
     const obj5 = require(dependencyMap[5]);
     require(dependencyMap[5]).freezeDscOnSpan(sentryNonRecordingSpan, merged);
     return sentryNonRecordingSpan;

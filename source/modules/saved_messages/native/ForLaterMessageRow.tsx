@@ -1,5 +1,5 @@
 // Module ID: 9923
-// Function ID: 76740
+// Function ID: 76751
 // Name: ForLaterMessageRow
 // Dependencies: []
 // Exports: ForLaterMessageRow
@@ -34,8 +34,8 @@ export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
     return tmp;
   }, items);
   obj = {
-    -1034289856: "<string:553648726>",
-    -1031355792: "<string:68987969>",
+    i: true,
+    apply: true,
     modifyRow(arg0) {
       if (null != lineClamp) {
         const obj = { numberOfLines: lineClamp, expandable: lineClamp(setting[8]).isIOS() };

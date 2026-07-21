@@ -1,10 +1,10 @@
-// Module ID: 7664
-// Function ID: 61247
+// Module ID: 7665
+// Function ID: 61259
 // Name: createChannelPinnedMessageSystemMessage
 // Dependencies: []
 // Exports: createChannelPinnedMessageSystemMessage
 
-// Module 7664 (createChannelPinnedMessageSystemMessage)
+// Module 7665 (createChannelPinnedMessageSystemMessage)
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx");
 
@@ -13,7 +13,7 @@ export const createChannelPinnedMessageSystemMessage = function createChannelPin
   let obj = require(dependencyMap[0]);
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(dependencyMap[1])({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), pinsOnClick: obj };
-  obj = { "Bool(true)": "RTC_CONNECTION_LOSS_RATE", "Bool(true)": "handleJoinThreadVoice", "Bool(true)": "toString", messageChannelId: message.channel_id };
+  obj = { "Bool(true)": "accessibilityLabel", "Bool(true)": "r", "Bool(true)": "isArray", messageChannelId: message.channel_id };
   const messageReference = message.messageReference;
   if (null != messageReference) {
     const intl2 = require(dependencyMap[2]).intl;

@@ -1,10 +1,10 @@
-// Module ID: 7474
-// Function ID: 59990
+// Module ID: 7475
+// Function ID: 60002
 // Name: useStageChannelIsLive
 // Dependencies: []
 // Exports: default
 
-// Module 7474 (useStageChannelIsLive)
+// Module 7475 (useStageChannelIsLive)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/stage_channels/useStateChannelIsLive.tsx");
 

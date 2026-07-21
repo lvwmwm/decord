@@ -1,15 +1,14 @@
 // Module ID: 885
-// Function ID: 9784
+// Function ID: 9788
 // Name: weakMap
-// Dependencies: [863, 798, 900]
+// Dependencies: []
 
 // Module 885 (weakMap)
-import normalizeArray from "normalizeArray";
-
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
+const _module = require(dependencyMap[2]);
 
-export const functionToStringIntegration = normalizeArray.defineIntegration(function _functionToStringIntegration() {
+export const functionToStringIntegration = _module.defineIntegration(function _functionToStringIntegration() {
   return {
     name: "FunctionToString",
     setupOnce() {

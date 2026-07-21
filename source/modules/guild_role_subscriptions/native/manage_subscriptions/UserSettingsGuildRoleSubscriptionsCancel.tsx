@@ -1,10 +1,10 @@
-// Module ID: 13991
-// Function ID: 106328
+// Module ID: 13994
+// Function ID: 106360
 // Name: WhatYouLose
 // Dependencies: []
 // Exports: default
 
-// Module 13991 (WhatYouLose)
+// Module 13994 (WhatYouLose)
 function WhatYouLose(subscription) {
   let guild;
   let listingId;
@@ -24,26 +24,30 @@ function WhatYouLose(subscription) {
   const formatResult1 = intl.format(arg1(dependencyMap[10]).t.EtAXzC, { subscriptionEndDate: obj4.format(closure_12) });
   const items = [callback3(importDefault(dependencyMap[11]), { guild }), callback3(arg1(dependencyMap[12]).Spacer, { size: 16 }), ];
   obj2 = {};
-  const items1 = [callback3(arg1(dependencyMap[13]).Text, { children: callback2(obj3.useName(listingId), 1)[0] }), callback3(arg1(dependencyMap[12]).Spacer, { size: 2 }), ];
-  obj3 = { children: guild.name };
-  items1[2] = callback3(arg1(dependencyMap[13]).Text, obj3);
+  obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004345847379953, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002999363228337182 };
+  obj3.children = callback2(obj3.useName(listingId), 1)[0];
+  const items1 = [callback3(arg1(dependencyMap[13]).Text, obj3), callback3(arg1(dependencyMap[12]).Spacer, { size: 2 }), ];
+  obj4 = { children: guild.name };
+  items1[2] = callback3(arg1(dependencyMap[13]).Text, obj4);
   obj2.children = items1;
   items[2] = callback4(closure_7, obj2);
   obj1.children = items;
   const items2 = [callback4(closure_7, obj1), callback3(importDefault(dependencyMap[14]), { style: { marginVertical: 16 } }), , , , , ];
-  obj4 = {};
+  const obj5 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004345847379953, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002999363228337182 };
   const intl3 = arg1(dependencyMap[10]).intl;
-  obj4.children = intl3.string(arg1(dependencyMap[10]).t.9SgXmT);
-  items2[2] = callback3(arg1(dependencyMap[13]).Text, obj4);
+  obj5.children = intl3.string(arg1(dependencyMap[10]).t.9SgXmT);
+  items2[2] = callback3(arg1(dependencyMap[13]).Text, obj5);
   items2[3] = callback3(arg1(dependencyMap[12]).Spacer, { size: 12 });
+  const obj6 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
   const items3 = [formatResult1, "\n"];
-  items2[4] = callback4(arg1(dependencyMap[13]).Text, { children: items3 });
+  obj6.children = items3;
+  items2[4] = callback4(arg1(dependencyMap[13]).Text, obj6);
   items2[5] = callback3(arg1(dependencyMap[13]).Text, { children: intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj) });
-  const obj5 = {};
+  const obj7 = {};
   const formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj);
-  obj5.source = importDefault(dependencyMap[16]);
-  obj5.style = tmp.cactus;
-  items2[6] = callback3(importDefault(dependencyMap[15]), obj5);
+  obj7.source = importDefault(dependencyMap[16]);
+  obj7.style = tmp.cactus;
+  items2[6] = callback3(importDefault(dependencyMap[15]), obj7);
   obj.children = items2;
   return callback4(closure_7, obj);
 }
@@ -121,7 +125,7 @@ function Content(subscription) {
       const items1 = [callback3(WhatYouLose, obj3), , , , ];
       const obj4 = { size: 24 };
       items1[1] = callback3(arg1(dependencyMap[12]).Spacer, obj4);
-      const obj5 = {};
+      const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: null };
       const obj6 = { textTransform: "uppercase" };
       obj5.style = obj6;
       const intl = arg1(dependencyMap[10]).intl;
@@ -152,19 +156,18 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let closure_12 = "M/DD/YY";
 let obj = arg1(dependencyMap[6]);
-obj = { container: { flex: 1 }, body: {}, heroImage: obj };
-obj = { fileName: 106, lineNumber: "hidden", columnNumber: 8, height: undefined };
-const obj1 = { 1365451934: true, -1805488391: true, 1406296379: true, borderTopColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.footer = obj1;
+obj = { container: { flex: 1 }, body: {}, heroImage: { height: undefined } };
+obj = { EMPTY_SOUND_LIST: -93192191, marginVertical: 2013265920, shouldShowEveryoneGuard: 16777216, borderTopColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_HOVER };
+obj.footer = obj;
 let closure_13 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
-const obj2 = {};
-const obj5 = arg1(dependencyMap[6]);
-obj2.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
-obj2.header = {};
-obj2.cactus = { -9223372036854775808: "Array", 0: "canUnlinkLobbyChannel", 0: "Array", 9223372036854775807: "canUnlinkLobbyChannel" };
-let closure_14 = obj5.createStyles(obj2);
-const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
+const obj1 = {};
+const obj4 = arg1(dependencyMap[6]);
+obj1.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
+obj1.header = {};
+obj1.cactus = { paths: "<string:2566914466>", construct: "<string:2566914373>", fill: "<string:2298478917>", Array: "<string:285213076>" };
+let closure_14 = obj4.createStyles(obj1);
+const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptionsCancel.tsx");
 
 export default function UserSettingsGuildRoleSubscriptionsCancel(subscriptionId) {

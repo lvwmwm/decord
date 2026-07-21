@@ -1,5 +1,5 @@
 // Module ID: 9308
-// Function ID: 72772
+// Function ID: 72783
 // Name: items
 // Dependencies: []
 // Exports: default
@@ -22,7 +22,7 @@ obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj["top"] = -150;
 obj.fill = obj;
-const obj1 = { onPress: "user", variant: "2026-06-dont-badge-muted-vcs", disabled: "text-sm/bold", isRoleSubscriptionEmoji: "text-feedback-info", isUnusableRoleSubscriptionEmoji: 750, tintColor: importDefault(dependencyMap[14]).colors.WHITE };
+const obj1 = { 9223372036854775807: "user", 0: "2026-06-dont-badge-muted-vcs", 9223372036854775807: "text-sm/bold", 0: "text-feedback-info", 9223372036854775807: 750, tintColor: importDefault(dependencyMap[14]).colors.WHITE };
 obj.nitroIcon = obj1;
 obj.description = { paddingHorizontal: 16 };
 let closure_10 = obj.createStyles(obj);

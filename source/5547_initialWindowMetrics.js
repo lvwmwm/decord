@@ -1,5 +1,5 @@
 // Module ID: 5547
-// Function ID: 47094
+// Function ID: 47102
 // Name: initialWindowMetrics
 // Dependencies: []
 
@@ -53,7 +53,7 @@ if (undefined !== height) {
 }
 if (null == arg1(dependencyMap[4]).initialWindowMetrics) {
   let obj = {};
-  obj = { max: -536870861, guildId: -299892737, width: num, height: num2 };
+  obj = { width: num, height: num2 };
   obj.frame = obj;
   class SafeAreaProviderCompat {
     constructor(arg0) {

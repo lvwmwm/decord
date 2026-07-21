@@ -1,10 +1,10 @@
-// Module ID: 13458
-// Function ID: 102189
+// Module ID: 13460
+// Function ID: 102211
 // Name: ChangeAvatarActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13458 (ChangeAvatarActionSheet)
+// Module 13460 (ChangeAvatarActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -16,13 +16,13 @@ obj = { marginLeft: importDefault(dependencyMap[6]).space.PX_8 };
 obj.nitroWheel = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.sublabel = { color: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
-const obj2 = { "Null": true, "Null": true, "Null": true, "Null": true, color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.label = obj2;
 const obj1 = { color: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
+obj.label = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj2 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.remove = { color: importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL };
 const obj3 = { color: importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.upsellButton = { marginTop: importDefault(dependencyMap[6]).space.PX_12, marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-obj.upsellTitleContainer = { <string:226124958>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, <string:4217921538>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583 };
+obj.upsellTitleContainer = {};
 obj.titleWrapper = { flex: 0 };
 obj.titleContainer = { justifyContent: "flex-start" };
 let closure_9 = obj.createStyles(obj);

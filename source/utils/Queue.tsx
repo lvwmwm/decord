@@ -1,9 +1,9 @@
-// Module ID: 7072
-// Function ID: 56551
+// Module ID: 7073
+// Function ID: 56563
 // Name: Queue
 // Dependencies: []
 
-// Module 7072 (Queue)
+// Module 7073 (Queue)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let importDefaultResult = importDefault(dependencyMap[2]);

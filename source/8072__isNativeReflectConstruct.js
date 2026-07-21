@@ -1,9 +1,13 @@
 // Module ID: 8072
-// Function ID: 64024
+// Function ID: 64030
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 5, 11]
 
 // Module 8072 (_isNativeReflectConstruct)
+import result from "result";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import checkLogForPII from "checkLogForPII";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,18 +17,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const tmp2 = (arg0) => {
-  class FeMorphology {
+  class FeImage {
     constructor() {
       self = this;
-      tmp = closure_2(this, FeMorphology);
-      obj = closure_5(FeMorphology);
-      tmp2 = closure_4;
+      tmp = result(this, FeImage);
+      obj = closure_5(FeImage);
+      tmp2 = checkLogForPII;
       if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
@@ -39,20 +40,20 @@ const tmp2 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeMorphology;
-  callback2(FeMorphology, arg0);
+  const arg1 = FeImage;
+  callback2(FeImage, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FeMorphology(closure_1[5]).warnUnimplementedFilter();
+        const result = FeImage(closure_1[5]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FeMorphology, items);
+  return callback(FeImage, items);
 }(importDefault(dependencyMap[6]));
-tmp2.displayName = "FeMorphology";
+tmp2.displayName = "FeImage";
 tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
 export default tmp2;

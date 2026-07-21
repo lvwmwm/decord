@@ -1,5 +1,5 @@
 // Module ID: 5778
-// Function ID: 49427
+// Function ID: 49435
 // Name: useKeyboardBlurring
 // Dependencies: []
 
@@ -65,7 +65,7 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
         }, items1);
         obj = {
           panGestureWrapper(arg0) {
-            let obj = { style: {} };
+            let obj = { style: { "Bool(false)": null, "Bool(false)": null } };
             const items = [arg0, ];
             obj = {};
             const current = arg0.current;

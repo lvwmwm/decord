@@ -1,5 +1,5 @@
 // Module ID: 11521
-// Function ID: 89759
+// Function ID: 89771
 // Name: getGuildPowerupFormattedDateString
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/premium/pow
 export default function getGuildPowerupFormattedDateString(arg0) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = { 1618834222: false, -1200702078: false };
+    obj = { "Bool(false)": false, "Bool(false)": false };
   }
   return new Date(arg0).toLocaleDateString(locale.locale, obj);
 };

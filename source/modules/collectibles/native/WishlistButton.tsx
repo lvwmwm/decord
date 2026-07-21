@@ -1,5 +1,5 @@
 // Module ID: 8702
-// Function ID: 68876
+// Function ID: 68887
 // Name: WishlistButtonBase
 // Dependencies: []
 // Exports: default
@@ -33,7 +33,7 @@ class WishlistButtonBase {
     jsx = undefined;
     closure_13 = undefined;
     closure_14 = undefined;
-    tmp = f68895(size);
+    tmp = f68906(size);
     closure_6 = tmp;
     tmp2 = arg1(dependencyMap[14]).ICON_SIZE[closure_16[size]];
     obj = arg1(dependencyMap[13]);
@@ -165,7 +165,7 @@ class WishlistButtonBase {
     obj.SUBTLE_SPRING = arg1(dependencyMap[21]).SUBTLE_SPRING;
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f68895;
+    J.__initData = f68906;
     animatedStyle = obj4.useAnimatedStyle(J);
     obj6 = arg1(dependencyMap[9]);
     class Y {
@@ -195,7 +195,7 @@ class WishlistButtonBase {
     obj1.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f68895;
+    Y.__initData = f68906;
     animatedStyle1 = obj6.useAnimatedStyle(Y);
     obj8 = arg1(dependencyMap[9]);
     class K {
@@ -211,7 +211,7 @@ class WishlistButtonBase {
           obj2 = isWishlisted(busy[9]);
           tmp5 = obj2;
           tmp6 = value;
-          num = obj2.interpolate(value, [], ["<string:3813229678>", "<string:153900714>"], isWishlisted(busy[9]).Extrapolation.CLAMP);
+          num = obj2.interpolate(value, [], [], isWishlisted(busy[9]).Extrapolation.CLAMP);
         }
         obj["opacity"] = num;
         obj = {};
@@ -229,7 +229,7 @@ class WishlistButtonBase {
     obj2.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f68895;
+    K.__initData = f68906;
     obj3 = {
       style(pressed) {
             pressed = pressed.pressed;
@@ -319,7 +319,7 @@ class WishlistButton {
     importDefault = onPress;
     onTrackPress = global.onTrackPress;
     dependencyMap = onTrackPress;
-    obj = { "Null": null, "Null": 4, "Null": 4, "Null": "rgba(0, 0, 0, 0.75)" };
+    obj = { 0: "ERROR", 9223372036854775807: "ERROR", 9223372036854775807: "NOT_RESPONDER", 9223372036854775807: "NOT_RESPONDER" };
     tmp = null;
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
@@ -400,7 +400,7 @@ let obj = { duration: 400 };
 const Easing = arg1(dependencyMap[9]).Easing;
 obj.easing = Easing.bezier(0.67, 0, 0.26, 1);
 obj = { sm: arg1(dependencyMap[10]).SMALL_BUTTON_HEIGHT, md: arg1(dependencyMap[10]).MEDIUM_BUTTON_HEIGHT };
-let closure_16 = { "Bool(true)": "d6d04f6fd100db0e028d8a7cb876c1d6", "Bool(true)": "PlusSmallIcon" };
+let closure_16 = { overflow: "d6d04f6fd100db0e028d8a7cb876c1d6", position: "PlusSmallIcon" };
 const tmp3 = arg1(dependencyMap[8]);
 let closure_17 = arg1(dependencyMap[11]).createStyles((arg0) => {
   let obj = {};
@@ -419,8 +419,8 @@ let closure_17 = arg1(dependencyMap[11]).createStyles((arg0) => {
   const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
   obj.midnight = { borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
   obj.disabled = { opacity: 0.5 };
-  obj.iconContainer = {};
-  obj.animationFill = { label: false, subLabel: false, icon: false, trailing: false };
+  obj.iconContainer = { fr: true, fs: true, ha: true };
+  obj.animationFill = { icon: "<string:1627390343>", trailing: "<string:3175236087>", arrow: "<string:242483201>", onPress: "<string:234881024>" };
   return obj;
 });
 let closure_18 = { code: "function WishlistButtonTsx1(done){const{runOnJS,setIsClickAnimating}=this.__closure;if(done){runOnJS(setIsClickAnimating)(false);}}" };

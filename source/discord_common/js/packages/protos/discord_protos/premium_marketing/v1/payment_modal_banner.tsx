@@ -1,9 +1,9 @@
-// Module ID: 7134
-// Function ID: 57461
+// Module ID: 7135
+// Function ID: 57473
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7134 (_isNativeReflectConstruct)
+// Module 7135 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,20 +25,20 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PaymentModalBanner$Type);
       items = [, , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
+      items[0] = { 1347510942: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004780256688701622, 1678385745: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473800797, 1364379111: 131072.00412178785, 140698458: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034032482983877397 };
+      items[1] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items[2] = {};
-      obj = { "Null": "3", "Null": 3, "Null": "mobile_body" };
+      obj = { 9223372036854775807: "3", 9223372036854775807: 3, 0: "mobile_body" };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[3] = obj;
-      obj = { "Null": null, "Null": 9, "Null": null };
+      obj = { 9223372036854775807: null, 9223372036854775807: 9, 0: null };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[4] = obj;
-      items1 = ["onShouldStartLoadWithRequest"];
+      items1 = ["reason:unsupported_issuing_country"];
       items1[1] = items;
       obj3 = closure_6(PaymentModalBanner$Type);
       tmp2 = closure_5;
@@ -58,7 +58,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { type: false, d: false, next: false };
+      let obj = { CA: "fr", ES: "french", AU: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PaymentModalBanner$Type(closure_1[7]).MESSAGE_TYPE, obj);

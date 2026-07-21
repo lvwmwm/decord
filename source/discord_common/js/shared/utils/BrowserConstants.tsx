@@ -1,9 +1,9 @@
-// Module ID: 12610
-// Function ID: 96895
+// Module ID: 12612
+// Function ID: 96917
 // Name: parsed
 // Dependencies: []
 
-// Module 12610 (parsed)
+// Module 12612 (parsed)
 const version = importDefault(dependencyMap[0]).version;
 let str = "0";
 if (null != version) {

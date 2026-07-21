@@ -1,5 +1,5 @@
 // Module ID: 4526
-// Function ID: 39753
+// Function ID: 39761
 // Name: LifecycleManager
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 8107
-// Function ID: 64209
+// Function ID: 64214
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,55 +13,57 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-importAll(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class Symbol {
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+const tmp2 = (Component) => {
+  class Stop {
     constructor() {
       self = this;
-      tmp = closure_2(this, Symbol);
-      obj = closure_5(Symbol);
-      tmp2 = closure_4;
-      if (closure_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+      tmp = Stop(this, Stop);
+      length = arguments.length;
+      array = new Array(length);
+      for (let num = 0; num < length; num = num + 1) {
+        array[num] = arguments[num];
       }
-      return tmp2(self, constructResult);
+      items = [];
+      combined = items.concat(array);
+      obj = closure_3(Stop);
+      tmp3 = closure_2;
+      if (closure_5()) {
+        if (!combined) {
+          combined = [];
+        }
+        tmp5 = closure_3;
+        constructResult = Reflect.construct(obj, combined, closure_3(self).constructor);
+      } else {
+        constructResult = obj.apply(self, combined);
+      }
+      tmp3Result = tmp3(self, constructResult);
+      Stop = tmp3Result;
+      tmp3Result.setNativeProps = () => {
+        const parent = tmp3Result.props.parent;
+        if (parent) {
+          parent.forceUpdate();
+        }
+      };
+      return tmp3Result;
     }
   }
-  const importDefault = Symbol;
-  callback2(Symbol, arg0);
+  let closure_0 = Stop;
+  callback2(Stop, Component);
   const items = [
     {
       key: "render",
       value: function render() {
-        const Symbol = this;
-        const props = this.props;
-        let obj = { name: props.id };
-        obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        obj = { children: props.children };
-        return callback3(Symbol(closure_1[7]), Object.assign(obj, obj, Symbol(closure_1[8])(props), obj));
+        return null;
       }
     }
   ];
-  return callback(Symbol, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "Symbol";
+  return callback(Stop, items);
+}(arg1(dependencyMap[5]).Component);
+tmp2.displayName = "Stop";
 
-export default tmp3;
+export default tmp2;

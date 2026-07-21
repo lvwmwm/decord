@@ -1,15 +1,15 @@
-// Module ID: 15840
-// Function ID: 121071
+// Module ID: 15844
+// Function ID: 121115
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [1040056320, 1040121856, 1040384000, 1040449536, 1040515072, 1040646144, 752680960, 766705664, 1040973824, 1041039360, 1041104896, 1041432576, 1041498112, 448069632, 1041563648, 1041629184, 1042743296, 626262016, 459341824, 686686208, 1042808832, 1042874368, 1043005440, 1043136512, 1043202048, 1043267584]
+// Dependencies: []
 // Exports: default
 
-// Module 15840 (RestrictedHoursLogoutBlockingLayer)
+// Module 15844 (RestrictedHoursLogoutBlockingLayer)
 let StyleSheet;
 function RestrictedHoursLogoutBlockingLayer(visible) {
   let tmp2 = null;
   if (visible.visible) {
-    let obj = { isUserAvatar: "onFriendOnlineNotificationSettingsChanged", type: "NEW_ROCKER", channelId: "isArray", style: tmp.logoutBlockingLayer };
+    let obj = { style: tmp.logoutBlockingLayer };
     obj = { size: "large" };
     obj.children = callback2(arg1(dependencyMap[7]).ActivityIndicator, obj);
     tmp2 = callback2(closure_5, obj);
@@ -128,19 +128,20 @@ function RestrictedHoursScreen(visible) {
   items3[1] = callback2(importDefault(dependencyMap[11]).View, obj3);
   obj5 = { style: items5 };
   const items5 = [tmp.content, animatedStyle2];
-  obj6 = { style: tmp.riveContainer, children: callback2(arg1(dependencyMap[17]).TeenScreenTimeRive, { guildId: "<string:200687894>", padding: "<string:7471105>" }) };
+  obj6 = { style: tmp.riveContainer, children: callback2(arg1(dependencyMap[17]).TeenScreenTimeRive, {}) };
   const items6 = [callback2(closure_5, obj6), ];
   obj7 = { style: tmp.description, children: formatResult };
   items6[1] = callback2(arg1(dependencyMap[18]).Text, obj7);
   obj5.children = items6;
   items3[2] = callback3(importDefault(dependencyMap[11]).View, obj5);
   const obj8 = { style: tmp.footer };
-  const obj9 = { style: tmp.description };
+  const obj9 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.description };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj9.children = intl3.format(importDefault(dependencyMap[14]).iqeKDz, {
     username: stateFromStores,
     loginHook(children) {
-      return callback(onLogin(sharedValue1[18]).Text, { onPress: onLogin, children }, arg1);
+      const obj = { hasMaxConnections: false, isBoostOnlySubscription: false, onPress: onLogin, children };
+      return callback(onLogin(sharedValue1[18]).Text, obj, arg1);
     }
   });
   obj8.children = callback2(arg1(dependencyMap[18]).Text, obj9);
@@ -172,13 +173,13 @@ obj2["zIndex"] = 1;
 obj.assetLayers = obj2;
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj.sunbeamGradient = {};
-obj.riveContainer = {};
+obj.riveContainer = { ind: "accessibilityLabel", y: "r", isArray: "isArray" };
 const obj3 = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.content = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.description = { textAlign: "center" };
-const obj5 = { y: "<string:1627390512>", frame_id: "<string:1166889530>", f23: "<string:678577549>", shouldClear: "<string:671088640>", bottom: importDefault(dependencyMap[6]).space.PX_32 };
-obj.footer = obj5;
+const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
+obj.footer = { bottom: importDefault(dependencyMap[6]).space.PX_32 };
 const obj6 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 obj6["zIndex"] = 10;
@@ -191,7 +192,7 @@ let closure_11 = { MAIN: "main" };
 let closure_12 = { code: "function RestrictedHoursModalTsx1(){const{backgroundOpacity}=this.__closure;return{opacity:backgroundOpacity.get()};}" };
 let closure_13 = { code: "function RestrictedHoursModalTsx2(){const{gradientOpacity}=this.__closure;return{opacity:gradientOpacity.get()};}" };
 let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpacity,contentScale}=this.__closure;return{opacity:contentOpacity.get(),transform:[{scale:contentScale.get()}]};}" };
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
+const obj5 = { bottom: importDefault(dependencyMap[6]).space.PX_32 };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
@@ -224,8 +225,8 @@ export default function RestrictedHoursModal() {
     const items = [closure_4, arg1];
     return closure_4(closure_2[19]).useNavigatorScreens(() => {
       const obj = {
-        1675881098: null,
-        1404659208: null,
+        "Null": null,
+        "Null": null,
         render() {
           return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
         }
@@ -252,8 +253,8 @@ export default function RestrictedHoursModal() {
       const items = [closure_4, arg1];
       return closure_4(closure_2[19]).useNavigatorScreens(() => {
         const obj = {
-          1675881098: null,
-          1404659208: null,
+          "Null": null,
+          "Null": null,
           render() {
             return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
           }

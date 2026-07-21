@@ -1,7 +1,7 @@
 // Module ID: 1859
-// Function ID: 20505
+// Function ID: 20510
 // Name: isUserPrimaryGuildEqual
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
 // Module 1859 (isUserPrimaryGuildEqual)

@@ -1,10 +1,10 @@
-// Module ID: 15094
-// Function ID: 113785
+// Module ID: 15097
+// Function ID: 113819
 // Name: truncateUsername
 // Dependencies: []
 // Exports: default
 
-// Module 15094 (truncateUsername)
+// Module 15097 (truncateUsername)
 function truncateUsername(arr) {
   let combined = arr;
   if (arr.length > 20) {
@@ -41,27 +41,27 @@ const DEFAULT_ROLE_COLOR_HEX = arg1(dependencyMap[5]).DEFAULT_ROLE_COLOR_HEX;
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
 let closure_12 = arg1(dependencyMap[7]).createICYMIStyles((margin) => {
-  let obj = { container: obj, content: { 9223372036854775807: 10, 9223372036854775807: 10 } };
+  let obj = { container: obj, content: { Č: 10, accessibilityDismiss: 10 } };
   obj = { marginTop: margin.margin };
-  obj = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
+  obj = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
   obj.channelNameAndAccessory = obj;
   obj.channelNameAndAccessoryLarge = { flexDirection: "column", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
-  obj.header = { <string:2316633720>: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", <string:1071949164>: "keyboardAppearance" };
-  const obj1 = { flexDirection: "column", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
-  obj.headerInfo = { marginLeft: importDefault(dependencyMap[8]).space.PX_12 };
-  obj.title = { items: 0, width: "", flex: 0, justifyContent: 0 };
+  obj.header = {};
+  const obj2 = { isArray: null, diversity: null, marginLeft: importDefault(dependencyMap[8]).space.PX_12 };
+  obj.headerInfo = obj2;
+  obj.title = { 1650211683: 0, 1644363857: "", -77441452: 0, 67064224: 0 };
   obj.titleLeft = {};
-  const obj3 = { 1449229240: "row", 371666258: "center", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+  const obj3 = { "Bool(false)": false, "Bool(false)": 0, borderRadius: importDefault(dependencyMap[8]).radii.sm };
   obj.subTitleContainer = obj3;
-  obj.subtitle = {};
-  obj.genContentSubtitle = { <string:3461472865>: false, <string:1447977218>: false, <string:1640807382>: false };
+  obj.subtitle = { customNavbar: true, getOrFetchLinkedUsers: true, encoderQualityStats: true };
+  obj.genContentSubtitle = { "Null": false, "Null": false, "Bool(false)": false };
   obj.genContentSubtitleChannel = {};
   obj.subtitleTrailing = { paddingVertical: 1 };
-  const obj2 = { marginLeft: importDefault(dependencyMap[8]).space.PX_12 };
-  obj.separator = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-  const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+  const obj4 = { y: false, isArray: false, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+  obj.separator = obj4;
+  const obj1 = { flexDirection: "column", paddingBottom: importDefault(dependencyMap[8]).space.PX_4, marginHorizontal: margin.margin };
   obj.normalContent = { borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG };
-  obj.authorAvatar = { 314033: 3375103, 315680: -8192, 314067: 4320799 };
+  obj.authorAvatar = { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 };
   return obj;
 });
 const obj = arg1(dependencyMap[7]);
@@ -280,7 +280,7 @@ export default function ICYMICardInCard(message) {
               items1[1] = stateFromStores(message(id[17]).Text, obj3);
               const obj4 = { style: tmp.genContentSubtitleChannel };
               const items2 = [stateFromStores(iconForChannel, {}), ];
-              const obj5 = { inactiveDotElement: -1459617377, uniform: 1358954818, _$esjava$b: 1196537813, requestResponseStart: 29462, _forceFlush: 0, MOBILE_THREAD_EMBED_BACKGROUND: 0, onPress: onHeaderPress };
+              const obj5 = { onPress: onHeaderPress };
               const obj6 = { flex: 1 };
               obj5.style = obj6;
               obj5.children = tmp20;
@@ -312,7 +312,7 @@ export default function ICYMICardInCard(message) {
       const items4 = [stateFromStores(message(id[17]).Text, obj10), ];
       const obj11 = { style: tmp.genContentSubtitleChannel };
       const items5 = [stateFromStores(TextIcon, {}), ];
-      const obj12 = { inactiveDotElement: -1459617377, uniform: 1358954818, _$esjava$b: 1196537813, requestResponseStart: 29462, _forceFlush: 0, MOBILE_THREAD_EMBED_BACKGROUND: 0, onPress: onHeaderPress };
+      const obj12 = { onPress: onHeaderPress };
       const obj13 = { flex: 1 };
       obj12.style = obj13;
       obj12.children = id;
@@ -358,7 +358,7 @@ export default function ICYMICardInCard(message) {
   const items12 = [memo1, ];
   let tmp38 = !hideTimestamp;
   if (tmp38) {
-    const obj7 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10, children: arg1(dependencyMap[24]).getRelativeTimestamp(timestamp) };
+    const obj7 = { "Null": 0, "Null": 5.566, "Null": 10, children: arg1(dependencyMap[24]).getRelativeTimestamp(timestamp) };
     tmp38 = stateFromStores(arg1(dependencyMap[17]).Text, obj7);
     const obj15 = arg1(dependencyMap[24]);
   }

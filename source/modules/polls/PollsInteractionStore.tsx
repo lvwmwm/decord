@@ -1,10 +1,10 @@
-// Module ID: 7895
-// Function ID: 62854
+// Module ID: 7896
+// Function ID: 62867
 // Name: useMessagePollInteractions
 // Dependencies: []
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 7895 (useMessagePollInteractions)
+// Module 7896 (useMessagePollInteractions)
 let closure_3 = {};
 const _module = require(dependencyMap[0]);
 let closure_4 = _module.createWithEqualityFn((arg0) => {

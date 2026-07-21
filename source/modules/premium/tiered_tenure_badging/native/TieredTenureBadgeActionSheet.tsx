@@ -1,5 +1,5 @@
 // Module ID: 8523
-// Function ID: 67915
+// Function ID: 67926
 // Name: TieredTenureBadgeItem
 // Dependencies: []
 // Exports: default
@@ -34,7 +34,7 @@ function TieredTenureBadgeItem(arg0) {
     obj.style = items;
     obj = { resizeMode: "contain", source: small };
     const items1 = [callback(importDefault(dependencyMap[11]), obj), , , ];
-    obj1 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.badgeName };
+    obj1 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.badgeName };
     const intl = arg1(dependencyMap[13]).intl;
     obj1.children = intl.string(tieredTenureBadgeData.nameUnformatted);
     items1[1] = callback(arg1(dependencyMap[12]).Text, obj1);
@@ -44,7 +44,7 @@ function TieredTenureBadgeItem(arg0) {
       isUsersBadge = null != premiumSince;
     }
     if (isUsersBadge) {
-      const obj3 = { style: tmp.badgePremiumSince };
+      const obj3 = { delete: null, dispatch: null, raw: null, style: tmp.badgePremiumSince };
       const intl2 = arg1(dependencyMap[13]).intl;
       const obj4 = {};
       const _Date = Date;
@@ -70,7 +70,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { headerContainer: { onAppear: null, onDisappear: "absolute" }, title: {}, subtitle: { "Null": null, "Null": null }, container: {}, rowContainer: { <string:2580405758>: null, <string:3972856678>: 15, <string:1725476963>: "activity_joining_restricted_guild_ids", <string:1674338908>: "scalar", <string:1691810720>: 1, <string:1549967611>: 6, <string:1632539217>: 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: {} };
+obj = { headerContainer: { y: null, GuildThemePreviewOwner: null }, title: { "Null": false, "Null": false, "Null": false }, subtitle: {}, container: {}, rowContainer: { GiftCardStack3dIllustration: null, fetchGroupListingsForGuild: 15, useIsMobileGameCollectionExperimentEnabled: "activity_joining_restricted_guild_ids", getMenu: "scalar", afterMs: 1, friendIcon: 6, canSort: 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: { overflow: true, xxs: true, xs: true, sm: true, md: true } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderWidth: 1.2, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.usersBadgeContainer = obj;
 obj.badgeName = { marginTop: 8 };
@@ -165,7 +165,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     return items;
   }, []);
   obj2 = { style: tmp.headerContainer };
-  obj3 = { style: tmp.title };
+  obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   const string = intl.string;
   const t = arg1(dependencyMap[13]).t;
@@ -203,7 +203,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     obj6.children = tmp25(Button, obj7);
     let tmp31 = obj6;
   } else {
-    const obj8 = { position: false, bottom: false };
+    const obj8 = { 0: "<string:188678146>", borderRadius: "<string:3260153857>" };
     const intl3 = arg1(dependencyMap[13]).intl;
     const string2 = intl3.string;
     const t2 = arg1(dependencyMap[13]).t;
@@ -221,7 +221,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
   const tmp14Result = callback2(View, obj2);
   const tmp23 = closure_10;
   const tmp24 = View;
-  const obj9 = { 1891290120: null, -475247768: null };
+  const obj9 = { ind: null, PX_8: null };
   let tmp34;
   if (flag) {
     tmp34 = tmp23Result;

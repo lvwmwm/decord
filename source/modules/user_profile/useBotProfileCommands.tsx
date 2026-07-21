@@ -1,5 +1,5 @@
 // Module ID: 11877
-// Function ID: 91934
+// Function ID: 91946
 // Name: useBotProfileCommands
 // Dependencies: [1194, 4213, 653, 566]
 // Exports: default

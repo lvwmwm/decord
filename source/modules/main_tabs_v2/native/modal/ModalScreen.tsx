@@ -1,11 +1,11 @@
-// Module ID: 15427
-// Function ID: 117726
+// Module ID: 15430
+// Function ID: 117765
 // Name: Modal
 // Dependencies: []
 // Exports: default
 
-// Module 15427 (Modal)
-let closure_3 = [1814446592, -120061948];
+// Module 15430 (Modal)
+let closure_3 = ["parseInt", "SOLID"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ View: closure_6, StyleSheet: closure_7 } = arg1(dependencyMap[2]));

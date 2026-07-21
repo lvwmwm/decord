@@ -1,15 +1,14 @@
-// Module ID: 13622
-// Function ID: 103205
+// Module ID: 13624
+// Function ID: 103227
 // Name: useStaffOrDeveloperSettingPredicate
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 13622 (useStaffOrDeveloperSettingPredicate)
-import __exportStarResult1 from "__exportStarResult1";
-
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
+// Module 13624 (useStaffOrDeveloperSettingPredicate)
+let closure_2 = importDefault(dependencyMap[0]);
+const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");
 
 export const useStaffOrDeveloperSettingPredicate = function useStaffOrDeveloperSettingPredicate() {
-  const items = [__exportStarResult1];
+  const items = [closure_2];
   return arg1(dependencyMap[1]).useStateFromStores(items, () => isDeveloper.isDeveloper);
 };

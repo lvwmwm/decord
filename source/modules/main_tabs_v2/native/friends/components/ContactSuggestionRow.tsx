@@ -1,10 +1,10 @@
-// Module ID: 15331
-// Function ID: 116733
+// Module ID: 15334
+// Function ID: 116772
 // Name: ContactSuggestionRow
 // Dependencies: []
 // Exports: ContactSuggestionRow
 
-// Module 15331 (ContactSuggestionRow)
+// Module 15334 (ContactSuggestionRow)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ AnalyticEvents: closure_5, InstantInviteSources: closure_6, RelationshipTypes: closure_7 } = arg1(dependencyMap[2]));
@@ -20,7 +20,7 @@ export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFrien
   const importDefault = added;
   const onAddSuggestion = suggestedFriend.onAddSuggestion;
   const dependencyMap = onAddSuggestion;
-  let obj = { dipslay: "spring", flexDirection: "linear", justifyContent: "easeInEaseOut" };
+  let obj = { width: false, height: false, objectFit: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(suggestedFriend, obj);
   const React = merged;

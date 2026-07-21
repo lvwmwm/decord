@@ -1,5 +1,5 @@
 // Module ID: 9594
-// Function ID: 74772
+// Function ID: 74783
 // Name: useStickerCategories
 // Dependencies: []
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories

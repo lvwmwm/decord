@@ -1,5 +1,5 @@
 // Module ID: 11807
-// Function ID: 91605
+// Function ID: 91617
 // Name: UnifiedGiftModalSuccessScreen
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_24, alignItems: "center" };
 obj.alertContainer = obj;
-obj.image = { "Bool(false)": null, "Bool(false)": null };
+obj.image = {};
 const tmp2 = arg1(dependencyMap[3]);
 obj.title = { marginTop: -importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
 const obj1 = { marginTop: -importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };

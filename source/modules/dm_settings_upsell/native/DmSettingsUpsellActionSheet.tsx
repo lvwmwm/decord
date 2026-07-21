@@ -1,10 +1,10 @@
-// Module ID: 15889
-// Function ID: 121680
+// Module ID: 15893
+// Function ID: 121724
 // Name: DmSettingsUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15889 (DmSettingsUpsellActionSheet)
+// Module 15893 (DmSettingsUpsellActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -51,20 +51,20 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     const intl = arg1(dependencyMap[12]).intl;
     obj2.children = intl.string(arg1(dependencyMap[12]).t.w2BvnL);
     items2[1] = callback(arg1(dependencyMap[11]).Text, obj2);
-    const obj3 = { style: tmp.body };
+    const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.body };
     const intl2 = arg1(dependencyMap[12]).intl;
     const obj4 = { guild_name: stateFromStores.name };
     obj3.children = intl2.format(arg1(dependencyMap[12]).t.Depjkv, obj4);
     items2[2] = callback(arg1(dependencyMap[11]).Text, obj3);
     const obj5 = { style: tmp.guildContainer };
-    const obj6 = {};
+    const obj6 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
     const intl3 = arg1(dependencyMap[12]).intl;
     obj6.children = intl3.string(arg1(dependencyMap[12]).t.KPB2iw);
     const items3 = [callback(arg1(dependencyMap[11]).Text, obj6), ];
     const obj7 = { style: tmp.guildInfo };
     const obj8 = { guild: stateFromStores, size: arg1(dependencyMap[13]).GuildIconSizes.SMALL_32 };
     const items4 = [callback(importDefault(dependencyMap[13]), obj8), ];
-    const obj9 = { children: stateFromStores.name };
+    const obj9 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: stateFromStores.name };
     items4[1] = callback(arg1(dependencyMap[11]).Text, obj9);
     obj7.children = items4;
     items3[1] = callback2(closure_4, obj7);
@@ -94,8 +94,6 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     obj10.text = intl4.string(arg1(dependencyMap[12]).t.TD7iUx);
     items2[4] = callback(arg1(dependencyMap[14]).Button, obj10);
     const obj11 = {
-      key: "r",
-      onCloseCallback: "sectionIdsByBotId",
       onPress() {
           stateFromStores(closure_2[19]).hideActionSheet();
           const obj = stateFromStores(closure_2[19]);

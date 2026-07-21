@@ -1,12 +1,12 @@
 // Module ID: 9379
-// Function ID: 73128
+// Function ID: 73139
 // Name: styles
 // Dependencies: []
 
 // Module 9379 (styles)
 const _module = require(dependencyMap[0]);
-let obj = { emojiContainer: {}, emojiDescriptionWrapper: { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" }, emojiWrapper: { -412991801: "<string:2159476740>", 1932219241: "<string:1107361793>" } };
-obj = { borderRadius: importDefault(dependencyMap[1]).radii.sm };
+let obj = { emojiContainer: { "Null": 7, "Null": 370 }, emojiDescriptionWrapper: {}, emojiWrapper: { ICON_VOICE_MUTED: true, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: true } };
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[1]).radii.sm };
 obj.emojiIcon = obj;
 obj.divider = { marginTop: importDefault(dependencyMap[1]).space.PX_16, marginBottom: importDefault(dependencyMap[1]).space.PX_16, marginLeft: 0, backgroundColor: importDefault(dependencyMap[1]).colors.BORDER_SUBTLE, height: 0.5 };
 obj.ctaButton = { marginTop: 16 };

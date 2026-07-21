@@ -1,10 +1,10 @@
-// Module ID: 13449
-// Function ID: 102124
+// Module ID: 13451
+// Function ID: 102146
 // Name: ColorBox
 // Dependencies: []
 // Exports: default
 
-// Module 13449 (ColorBox)
+// Module 13451 (ColorBox)
 function ColorBox(hue) {
   let colorBoxInnerStyle;
   let colorBoxStyle;
@@ -18,7 +18,7 @@ function ColorBox(hue) {
   class S {
     constructor() {
       obj = hue(closure_2[7]);
-      obj = { allowed: 255, reason: 4293643775, BANNER: 65535 };
+      obj = { "Null": 255, "Null": 4293643775, "Null": 65535 };
       obj.h = hue.get();
       return obj.hslToRgbWorklet(obj);
     }
@@ -40,9 +40,9 @@ function ColorBox(hue) {
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(S, fn);
-  const obj1 = { style: items, colors: items1, start: { max: false, guildId: false }, end: { max: 3211264, guildId: 2042617856 } };
+  const obj1 = { style: items, colors: items1, start: {}, end: {} };
   const items = [tmp.colorBox, colorBoxStyle];
-  const items1 = [146, tmp2[0]];
+  const items1 = [, tmp2[0]];
   const obj2 = { colors: [] };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
   const tmp5 = importDefault(dependencyMap[8]);
@@ -56,11 +56,11 @@ const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {} };
-obj = { OPEN_OVERLAY_VOICE_SETTINGS: null, paddingBottom: null, X-Discord-Locale: null, getAutomodQuarantinedProfileFlags: null, GIFS_TRENDING_GIFS: null, allowed: null, accessible: null, borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { padding: "M7 1v1h2V1H7Z", ks: "<string:1414594560>", bind: "<string:1907712401>", shapes: "apply", width: "<string:1638344529>", Object: "<string:8483257>", now: "<string:1895890944>", borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.selector = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.colorBox = { overflow: "hidden", borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.colorBoxInner = { <string:1364362083>: null, <string:1386747137>: null };
+obj.colorBoxInner = {};
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function SaturationValueColorPickerTsx1(){const{hslToRgbWorklet,hue}=this.__closure;return hslToRgbWorklet({h:hue.get(),s:1,l:0.5});}" };
 let closure_10 = { code: "function SaturationValueColorPickerTsx2(result,previous){const{runOnJS,setColor}=this.__closure;if(result!==previous)runOnJS(setColor)(\"rgb(\"+result[0]+\", \"+result[1]+\", \"+result[2]+\")\");}" };

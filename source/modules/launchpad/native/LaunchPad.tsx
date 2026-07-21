@@ -1,9 +1,9 @@
-// Module ID: 15522
-// Function ID: 118431
+// Module ID: 15525
+// Function ID: 118470
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15522 (_createForOfIteratorHelperLoose)
+// Module 15525 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -107,7 +107,7 @@ function TabButton(selected) {
   return closure_25(arg1(dependencyMap[21]).PressableHighlight, obj);
 }
 function TabHeader(text) {
-  const obj = { isArray: "5.9.4", valueOf: 24, string: 0, y: 83, style: callback4().subheader, children: text.text };
+  const obj = { "Null": "5.9.4", "Null": 24, "Null": 0, "Null": 83, style: callback4().subheader, children: text.text };
   return callback3(arg1(dependencyMap[22]).Text, obj);
 }
 function createAndAppendChannel(arg0, has, arr) {
@@ -253,7 +253,7 @@ function useInitialResults(disabled) {
                 }
               }
             }
-          }, { "Null": null, "Null": null });
+          }, { CREATE_GUILD: null, VJlc0S: null });
           const push = items.push;
           const items4 = [];
           HermesBuiltin.arraySpread(items1, 0);
@@ -440,14 +440,14 @@ const tmp3 = arg1(dependencyMap[7]);
 const md = importDefault(dependencyMap[19]).radii.md;
 let obj1 = arg1(dependencyMap[20]);
 let obj = {};
-obj = { color: "\u{1F9D1}\u200D\u{1F692}", lineHeight: true, flexGrow: 12.1, alignSelf: 127, paddingVertical: null, paddingHorizontal: 1, paddingTop: "center", marginBottom: "center", MINUTES_30: 64, HOURS_1: 16, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_BASE_LOW };
+obj = { "Null": "\u{1F9D1}\u200D\u{1F692}", "Null": true, "Null": 12.1, -9223372036854775808: 127, 9223372036854775807: null, 9223372036854775807: 1, 0: "center", 0: "center", 9223372036854775807: 64, -9223372036854775808: 16, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_BASE_LOW };
 obj.wrapper = obj;
 obj.launchPadContent = {};
 obj.header = {};
-obj.subheader = { t: true, transform: true, category: true, parent: true, padding: true, add: true };
+obj.subheader = { <string:659765085>: true, <string:3220057763>: true, <string:2389464008>: true, <string:4136885584>: true, <string:3617500503>: true, <string:1235136095>: true };
 obj1 = { backgroundColor: importDefault(dependencyMap[19]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, borderColor: importDefault(dependencyMap[19]).colors.INPUT_BORDER_DEFAULT };
 obj.tabs = obj1;
-const obj2 = { "Bool(false)": "boolean", "Bool(false)": "string", "Bool(false)": "boolean", "Bool(false)": "artboard", "Bool(false)": "artboard", borderRadius: md - 5 };
+const obj2 = { "Null": false, "Null": false, "Null": false, "Null": false, <string:903611347>: false, borderRadius: md - 5 };
 obj.tab = obj2;
 const tmp4 = arg1(dependencyMap[18]);
 obj.tabSelected = { backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_BASE_LOW };

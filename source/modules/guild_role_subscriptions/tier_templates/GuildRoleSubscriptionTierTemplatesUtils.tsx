@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 106453
+// Module ID: 14001
+// Function ID: 106485
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 13998 (_createForOfIteratorHelperLoose)
+// Module 14001 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -263,11 +263,11 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
     usedTemplate = tmp.usedTemplate;
   }
   if (null == usedTemplate) {
-    return { "Bool(false)": "o", "Bool(false)": "o" };
+    return { <string:1404468938>: "o", <string:931048688>: "o" };
   } else {
     const templateWithCategory = templateWithCategory.getTemplateWithCategory(guildId, usedTemplate);
     if (null == templateWithCategory) {
-      return { "Bool(false)": "o", "Bool(false)": "o" };
+      return { <string:1404468938>: "o", <string:931048688>: "o" };
     } else {
       const first = templateWithCategory.listings[0];
       let name;

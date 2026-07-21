@@ -1,11 +1,11 @@
 // Module ID: 10573
-// Function ID: 82535
+// Function ID: 82546
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 10573 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDZoomLayoutAndroid", directEventTypes: { topZoomChanged: { registrationName: "onZoomChanged" } } };
-obj = {};
+obj = { -9223372036854775808: "Small", 0: "sm", 0: "Placeholder" };
 const _module = require(dependencyMap[0]);
 const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ onZoomChanged: true }));
 obj.validAttributes = obj;

@@ -1,7 +1,7 @@
 // Module ID: 3539
-// Function ID: 27435
+// Function ID: 27440
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3355, 3388, 3208]
 
 // Module 3539 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -318,4 +318,4 @@ export const Hour1to12Parser = (Parser) => {
   };
   _defineProperties(Hour1to12Parser.prototype, items);
   return Hour1to12Parser;
-}(require(dependencyMap[2]).Parser);
+}(require("requiredArgs").Parser);

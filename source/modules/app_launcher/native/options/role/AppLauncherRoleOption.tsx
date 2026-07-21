@@ -1,5 +1,5 @@
 // Module ID: 11295
-// Function ID: 87880
+// Function ID: 87892
 // Name: AppLauncherRoleOption
 // Dependencies: []
 // Exports: default

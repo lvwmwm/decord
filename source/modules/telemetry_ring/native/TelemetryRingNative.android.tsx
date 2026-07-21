@@ -1,9 +1,9 @@
-// Module ID: 12992
-// Function ID: 98852
+// Module ID: 12994
+// Function ID: 98874
 // Name: TelemetryChannel
 // Dependencies: []
 
-// Module 12992 (TelemetryChannel)
+// Module 12994 (TelemetryChannel)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingNative.android.tsx");
 

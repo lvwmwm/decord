@@ -1,10 +1,10 @@
-// Module ID: 15594
-// Function ID: 118987
+// Module ID: 15597
+// Function ID: 119026
 // Name: FramePanelController
 // Dependencies: []
 // Exports: default
 
-// Module 15594 (FramePanelController)
+// Module 15597 (FramePanelController)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,5 +1,5 @@
 // Module ID: 11972
-// Function ID: 92536
+// Function ID: 92548
 // Name: GameFriendApplicationRow
 // Dependencies: []
 // Exports: default
@@ -22,7 +22,7 @@ function GameFriendApplicationRow(application) {
     obj = { userDisplayName, userId, applicationId: application.id, gameName: application.name };
     const result = obj.confirmRemoveGameFriend(obj);
   }, items);
-  let obj = { trailing: callback3(arg1(dependencyMap[11]).XSmallIcon, { flex: true, flexGrow: true }) };
+  let obj = { trailing: callback3(arg1(dependencyMap[11]).XSmallIcon, {}) };
   obj = { style: tmp.applicationNameWrapper };
   obj = { style: tmp.gameIcon, resizeMode: "contain" };
   const obj1 = {};
@@ -34,7 +34,9 @@ function GameFriendApplicationRow(application) {
   obj1.uri = str;
   obj.source = obj1;
   obj.disableColor = true;
-  const items1 = [callback3(arg1(dependencyMap[12]).Icon, obj, application.id), callback3(arg1(dependencyMap[13]).Text, { children: application.name })];
+  const items1 = [callback3(arg1(dependencyMap[12]).Icon, obj, application.id), ];
+  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: application.name };
+  items1[1] = callback3(arg1(dependencyMap[13]).Text, obj2);
   obj.children = items1;
   obj.label = closure_11(closure_7, obj);
   obj.onPress = callback;
@@ -50,7 +52,7 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = { applicationNameWrapper: {} };
-obj = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.gameIcon = obj;
 let closure_12 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[6]);

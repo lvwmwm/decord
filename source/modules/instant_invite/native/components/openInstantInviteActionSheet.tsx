@@ -1,5 +1,5 @@
 // Module ID: 8482
-// Function ID: 67724
+// Function ID: 67735
 // Name: openInstantInviteActionSheet
 // Dependencies: []
 // Exports: default

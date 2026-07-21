@@ -1,9 +1,9 @@
-// Module ID: 15296
-// Function ID: 116321
+// Module ID: 15299
+// Function ID: 116355
 // Name: GuildChannelDetailsTopic
 // Dependencies: []
 
-// Module 15296 (GuildChannelDetailsTopic)
+// Module 15299 (GuildChannelDetailsTopic)
 function GuildChannelDetailsTopic(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -138,7 +138,7 @@ function GuildChannelDetailsTopic(channel) {
     PressableOpacity = arg1(dependencyMap[15]).PressableOpacity;
   }
   obj2 = {};
-  obj3 = { "Null": null, "Null": "soundboard-footer", "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", style: tmp.hidden };
+  obj3 = { Globe: null, FITNESS: 0, audioJitterBufferHistogram: 0, invalidatePushSyncTokens: null, style: tmp.hidden };
   obj4 = { variant: "heading-sm/normal", style: tmp.topicText, onTextLayout: callback, onLayout: callback1, children: memo3 };
   obj3.children = callback2(arg1(dependencyMap[16]).Text, obj4);
   const items8 = [callback2(first1, obj3), ];
@@ -147,7 +147,7 @@ function GuildChannelDetailsTopic(channel) {
   obj6 = { style: animatedStyle1 };
   const obj7 = { onPress: memo1, activeOpacity: 0.7 };
   obj8 = { pointerEvents: str };
-  const obj9 = { onLayout: callback2 };
+  const obj9 = { "Null": 24, "Null": 24, onLayout: callback2 };
   let tmp31;
   if (!first1) {
     tmp31 = sharedValue1;
@@ -200,7 +200,7 @@ function PrivateChannelDetailsTopic(channel) {
   });
   let tmp2 = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
     obj = { textAlign: channel.textAlign };
     obj.style = obj;
     obj.children = stateFromStores;
@@ -215,7 +215,7 @@ function GroupDMChannelDetailsTopic(channel) {
   const stateFromStores = obj.useStateFromStores(items, () => channel(closure_2[20]).getPrivateChannelUserTagsString(channel.recipients, closure_7));
   let tmp2 = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
     obj = { textAlign: channel.textAlign };
     obj.style = obj;
     obj.children = stateFromStores;
@@ -238,7 +238,7 @@ if (obj2.isAndroid()) {
   num = 4;
 }
 const obj2 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[8]).createStyles({ hidden: { "Null": "<string:1429033472>", "Null": "<string:625063893>", "Null": "<string:1627390510>", "Null": "<string:23871991>" }, topic: { overflow: "hidden" }, gradient: {}, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
+let closure_15 = arg1(dependencyMap[8]).createStyles({ hidden: { 9223372036854775807: "<string:1425887744>", 9223372036854775807: "<string:1312936824>", overflow: "<string:1627390343>", OPERATION_CANCELED: "<string:3175236087>" }, topic: { overflow: "hidden" }, gradient: { SDK_VERSION: null, numberOfLines: null }, expanded: { textAlign: "center" }, topicText: { paddingVertical: 5 } });
 let closure_16 = {};
 let closure_17 = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 let closure_18 = { code: "function ChannelDetailsTopicTsx1(){const{expandedHeight,truncatedHeight,EMPTY_STYLE,withSpring,expanded,SPRING_CHANNEL_DETAILS}=this.__closure;const _expandedHeight=expandedHeight.get();const _truncatedHeight=truncatedHeight.get();if(_truncatedHeight==null||_expandedHeight==null)return EMPTY_STYLE;return{height:withSpring(expanded?_expandedHeight:_truncatedHeight,SPRING_CHANNEL_DETAILS)};}" };

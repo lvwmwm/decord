@@ -1,5 +1,5 @@
 // Module ID: 9861
-// Function ID: 76339
+// Function ID: 76350
 // Name: useRedactableMediaAttachmentsForMessage
 // Dependencies: []
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage

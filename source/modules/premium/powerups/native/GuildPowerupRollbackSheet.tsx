@@ -1,5 +1,5 @@
 // Module ID: 11536
-// Function ID: 89830
+// Function ID: 89842
 // Name: GuildPowerupRollbackSheet
 // Dependencies: []
 // Exports: default

@@ -1,15 +1,15 @@
 // Module ID: 10958
-// Function ID: 85227
+// Function ID: 85238
 // Name: useSearchableSelectComponent
 // Dependencies: [4211081230, 4127195137, 33554471, 4026531840, 14609]
 // Exports: default
 
 // Module 10958 (useSearchableSelectComponent)
-import ChooseAccount from "ChooseAccount";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
-const result = ChooseAccount.fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
+const result = RegistrationTransitionActionTypes.fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
 
 export default function useSearchableSelectComponent(selectActionComponent) {
   let containerId;

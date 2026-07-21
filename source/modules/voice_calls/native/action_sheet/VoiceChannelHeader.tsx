@@ -1,9 +1,9 @@
-// Module ID: 12602
-// Function ID: 96857
+// Module ID: 12604
+// Function ID: 96879
 // Name: PrivateChannelSubtitle
 // Dependencies: []
 
-// Module 12602 (PrivateChannelSubtitle)
+// Module 12604 (PrivateChannelSubtitle)
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = callback2();
@@ -35,15 +35,15 @@ class VoiceChannelHeader {
     items = [];
     items[0] = closure_5;
     stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(channel.getGuildId()));
-    tmp3 = f96861(dependencyMap[14])(channel);
+    tmp3 = f96883(dependencyMap[14])(channel);
     obj2 = arg1(dependencyMap[13]);
     items1 = [];
     items1[0] = closure_4;
     items2 = [];
     items2[0] = channel;
-    f96861 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f96883 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
-    tmp4 = f96861(dependencyMap[15])(channel);
+    tmp4 = f96883(dependencyMap[15])(channel);
     if (null != stateFromStores) {
       name = stateFromStores.name;
     }
@@ -91,9 +91,9 @@ class VoiceChannelHeader {
     tmp13 = jsx;
     obj3 = {};
     obj3.size = arg1(dependencyMap[19]).Icon.Sizes.MEDIUM;
-    tmp14 = f96861;
+    tmp14 = f96883;
     tmp15 = dependencyMap;
-    if (f96861(dependencyMap[20])(channel)) {
+    if (f96883(dependencyMap[20])(channel)) {
       num4 = 21;
       tmp14Result = tmp14(tmp15[21]);
     } else {
@@ -114,7 +114,7 @@ class VoiceChannelHeader {
       tmp21 = arg1;
       tmp22 = dependencyMap;
       num5 = 11;
-      obj5 = { "Bool(false)": 0, "Bool(false)": null, "Bool(false)": 117, "Bool(false)": 167 };
+      obj5 = {};
       obj5.children = formatToPlainStringResult;
       tmp19 = jsx(arg1(dependencyMap[11]).Text, obj5);
     }
@@ -173,10 +173,10 @@ let closure_6 = importDefault(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { 0: 0.000002295276792134519, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586576, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000170698410605, 0: 0.000000000000000000000000000000000003385429693561303, 0: -9609111719247874 }, middle: { <string:525603545>: "xbMc8r", <string:1645004369>: "STATUS_BAR_HEIGHT", <string:743730449>: "%AsyncGenerator%" } };
+obj = { container: { Globe: null, trackForumPostLinkCopied: "86035f94bc8c78da758eed4788f623cf", onPressAutocompleteItem: "empty_castle", playstationVersion: "png", handleToggleMuteChannel: "sm" }, middle: { US_BANK_ACCOUNT_MUTUALLY_EXCLUSIVE_OPTIONS: "vBfZzD", F+x38C: "USER_MODAL_UNIGNORE", ctl: "sync" } };
 obj = { flexDirection: "row", tintColor: importDefault(dependencyMap[8]).colors.WHITE };
 obj.icons = obj;
-const obj1 = { PX_16: "<string:2236743682>", ix: "<string:1941427526>", color: importDefault(dependencyMap[8]).colors.WHITE };
+const obj1 = { 9223372036854775807: "166185917b52ede00e3e20d3f1f7faeb", 0: "CheckmarkSmallIcon", color: importDefault(dependencyMap[8]).colors.WHITE };
 obj.subtitle = obj1;
 obj.subtitleWrapper = { flexDirection: "row" };
 let closure_12 = obj.createStyles(obj);

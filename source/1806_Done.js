@@ -1,5 +1,5 @@
 // Module ID: 1806
-// Function ID: 19922
+// Function ID: 19927
 // Name: Done
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ importDefault(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[0]);
 ({ StyleSheet, Text: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ doneButton: { <string:80641536>: 4, <string:80784128>: "guild_recents_dismissed_at" }, doneButtonContainer: {} });
+const styles = StyleSheet.create({ doneButton: { <string:80682240>: "scalar", <string:80824832>: 4 }, doneButtonContainer: {} });
 
 export default function Done(rippleRadius) {
   let button;
@@ -37,7 +37,7 @@ export default function Done(rippleRadius) {
   const items = [keyboardState, theme];
   const items1 = [onPress];
   const obj2 = arg1(dependencyMap[5]);
-  obj = { "Null": true, "Null": true };
+  obj = { "Null": null, "Null": null };
   let str = "Done";
   obj.rippleRadius = num;
   obj.style = doneButtonContainer.doneButtonContainer;

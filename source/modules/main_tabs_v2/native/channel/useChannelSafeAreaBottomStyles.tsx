@@ -1,5 +1,5 @@
 // Module ID: 10386
-// Function ID: 80074
+// Function ID: 80085
 // Name: useChannelSafeAreaBottomStyles
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 8211
-// Function ID: 64913
+// Module ID: 8212
+// Function ID: 64926
 // Name: randomizeProfileEffect
 // Dependencies: []
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 8211 (randomizeProfileEffect)
+// Module 8212 (randomizeProfileEffect)
 function randomizeProfileEffect(arg0) {
   if (null == arg0) {
     return arg0;

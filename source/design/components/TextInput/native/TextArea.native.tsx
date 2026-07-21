@@ -1,9 +1,9 @@
-// Module ID: 7498
-// Function ID: 60120
+// Module ID: 7499
+// Function ID: 60132
 // Name: TextArea
 // Dependencies: []
 
-// Module 7498 (TextArea)
+// Module 7499 (TextArea)
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {

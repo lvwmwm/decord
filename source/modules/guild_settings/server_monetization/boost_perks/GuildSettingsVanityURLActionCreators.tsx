@@ -1,5 +1,5 @@
 // Module ID: 8436
-// Function ID: 67310
+// Function ID: 67321
 // Name: fetchVanityUrl
 // Dependencies: []
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
@@ -11,7 +11,7 @@ const result = _module.fileFinishedImporting("modules/guild_settings/server_mone
 
 export const fetchVanityUrl = function fetchVanityUrl(id) {
   const HTTP = require(dependencyMap[1]).HTTP;
-  const obj = { lc: null, type: null, end: null, url: Endpoints.GUILD_VANITY_URL(id) };
+  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.GUILD_VANITY_URL(id) };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let code;

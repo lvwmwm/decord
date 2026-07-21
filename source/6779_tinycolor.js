@@ -1,5 +1,5 @@
 // Module ID: 6779
-// Function ID: 53381
+// Function ID: 53389
 // Name: tinycolor
 // Dependencies: []
 
@@ -25,7 +25,7 @@
           tmp9 = function inputToRGB(toHslResult) {
             let b;
             let g;
-            let obj = { EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "spring", canManageWebhooks: "linear", canManageGuild: "easeInEaseOut" };
+            let obj = { isArray: false, fileFinishedImporting: false, string: false };
             if ("string" !== typeof toHslResult) {
               let num36 = 1;
               let tmp30 = obj;
@@ -371,7 +371,7 @@
       obj = arg2;
       readabilityResult = tinycolor.readability(Math, arg1);
       if (!arg2) {
-        obj = { "Bool(false)": "/assets/modules/collectibles/web", "Bool(false)": null };
+        obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
       }
       str = obj.level || "AA";
       str2 = str.toUpperCase();
@@ -1142,7 +1142,7 @@
             tmp9 = function inputToRGB(toHslResult) {
               let b;
               let g;
-              let obj = { EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "spring", canManageWebhooks: "linear", canManageGuild: "easeInEaseOut" };
+              let obj = { isArray: false, fileFinishedImporting: false, string: false };
               if ("string" !== typeof toHslResult) {
                 let num36 = 1;
                 let tmp30 = obj;
@@ -1488,7 +1488,7 @@
         obj = arg2;
         readabilityResult = tinycolor.readability(arg0, arg1);
         if (!arg2) {
-          obj = { "Bool(false)": "/assets/modules/collectibles/web", "Bool(false)": null };
+          obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
         }
         str = obj.level || "AA";
         str2 = str.toUpperCase();
@@ -1615,7 +1615,7 @@
             tmp9 = function inputToRGB(toHslResult) {
               let b;
               let g;
-              let obj = { EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "spring", canManageWebhooks: "linear", canManageGuild: "easeInEaseOut" };
+              let obj = { isArray: false, fileFinishedImporting: false, string: false };
               if ("string" !== typeof toHslResult) {
                 let num36 = 1;
                 let tmp30 = obj;
@@ -1961,7 +1961,7 @@
         obj = arg2;
         readabilityResult = tinycolor.readability(Math, arg1);
         if (!arg2) {
-          obj = { "Bool(false)": "/assets/modules/collectibles/web", "Bool(false)": null };
+          obj = { ChatCheckIcon: "localhost", currencyDisplay: 9090 };
         }
         str = obj.level || "AA";
         str2 = str.toUpperCase();

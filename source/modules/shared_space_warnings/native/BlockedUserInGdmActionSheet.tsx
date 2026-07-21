@@ -1,10 +1,10 @@
-// Module ID: 12540
-// Function ID: 96364
+// Module ID: 12542
+// Function ID: 96386
 // Name: getUserCalloutRowText
 // Dependencies: []
 // Exports: default
 
-// Module 12540 (getUserCalloutRowText)
+// Module 12542 (getUserCalloutRowText)
 function getUserCalloutRowText(arg0) {
   let calledOutUserIds;
   let totalUsers;
@@ -139,12 +139,12 @@ obj = {};
 obj = { paddingTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_8, textAlign: "center" };
 obj.container = obj;
 obj.headerImage = {};
-obj.title = { customStatusActivity: null, hasCustomProfileTheme: null };
-obj.description = { customStatusActivity: null, hasCustomProfileTheme: null };
+obj.title = { "Null": null, "Null": null };
+obj.description = { "Null": null, "Null": null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.tableGroup = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
 obj.buttons = { gap: 8 };
-obj.icon = { 0: "Array", 0: "summaryId", 0: "onUpload", -9223372036854775808: "%JSONStringify%" };
+obj.icon = { -1144417191: "user", 1228423717: "2026-03-private-profiles-strict-gb", 1252200126: "user", 1714909323: "row" };
 let closure_14 = obj.createStyles(obj);
 const obj1 = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
@@ -207,7 +207,7 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     const obj5 = { source: importDefault(dependencyMap[21]), style: tmp.headerImage };
     const items3 = [callback(closure_4, obj5), , , ];
     const obj6 = {};
-    const obj7 = { style: tmp.title };
+    const obj7 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.title };
     const intl3 = arg1(dependencyMap[11]).intl;
     obj7.children = intl3.string(arg1(dependencyMap[11]).t.mwJJ+f);
     const items4 = [callback(arg1(dependencyMap[9]).Text, obj7), ];
@@ -251,8 +251,6 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     obj13.text = intl4.string(arg1(dependencyMap[11]).t.I4q1kA);
     const items5 = [callback(arg1(dependencyMap[24]).Button, obj13), ];
     const obj14 = {
-      key: "r",
-      onCloseCallback: "sectionIdsByBotId",
       onPress() {
           let obj = blockedUserIds(ignoredUserIds[25]);
           obj.hideActionSheet();

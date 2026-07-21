@@ -1,10 +1,10 @@
-// Module ID: 16271
-// Function ID: 125619
+// Module ID: 16279
+// Function ID: 125680
 // Name: useFetchHighlightedCreatorGuildDetails
 // Dependencies: []
 // Exports: default
 
-// Module 16271 (useFetchHighlightedCreatorGuildDetails)
+// Module 16279 (useFetchHighlightedCreatorGuildDetails)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 8291
-// Function ID: 65448
+// Module ID: 8292
+// Function ID: 65461
 // Name: getReadablePlayerError
 // Dependencies: []
 // Exports: createTiktokVideoControls
 
-// Module 8291 (getReadablePlayerError)
+// Module 8292 (getReadablePlayerError)
 function getReadablePlayerError(arg0) {
   if ("1" === arg0) {
     return "MEDIA_ERR_ABORTED";
@@ -29,7 +29,7 @@ function postMessage(current) {
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = {};
+let closure_6 = { scaleAmountInPx: "/assets/.cache/intl/ZGVzaWdu", onLayout: null, onPressIn: "6f26364a343a1fa9a6e8ce73bcba4b45", onPressOut: "bg.messages.6f26364a343a1fa9a6e8ce73bcba4b45.compiled.messages" };
 const obj = { -1: arg1(dependencyMap[3]).PlayerState.UNSTARTED, [0]: arg1(dependencyMap[3]).PlayerState.ENDED, [1]: arg1(dependencyMap[3]).PlayerState.PLAYING, [2]: arg1(dependencyMap[3]).PlayerState.PAUSED, [3]: arg1(dependencyMap[3]).PlayerState.BUFFERING };
 const memoResult = importAllResult.memo((visible) => {
   visible = visible.visible;
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo((visible) => {
   const importDefault = source;
   const controls = visible.controls;
   const dependencyMap = controls;
-  let obj = { max: null, isoDate: 4, timestamp: 4, ref: "rgba(0, 0, 0, 0.75)" };
+  let obj = { sa: "ERROR", skuId: "ERROR", ind: "NOT_RESPONDER", body: "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(visible, obj);
   obj = undefined;
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo((visible) => {
         callback2(ref, obj);
       }
       if (first === visible(controls[3]).PlayerState.ENDED) {
-        callback2(ref, { paddingHorizontal: null, alignItems: null });
+        callback2(ref, { onError: null, hybridRef: null });
         const obj1 = { type: "play" };
         callback2(ref, obj1);
       }
@@ -171,7 +171,7 @@ const memoResult = importAllResult.memo((visible) => {
   }, items1);
   const effect1 = React.useEffect(() => {
     const MediaViewerAnalytics = visible(controls[5]).MediaViewerAnalytics;
-    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ scaleAmountInPx: 16, onLayout: 8 });
+    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({});
   }, []);
   const items2 = [source.uri];
   const memo = React.useMemo(() => {

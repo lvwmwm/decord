@@ -1,5 +1,5 @@
 // Module ID: 9710
-// Function ID: 75505
+// Function ID: 75516
 // Name: useUpdateGestureConfig
 // Dependencies: []
 // Exports: useUpdateGestureConfig

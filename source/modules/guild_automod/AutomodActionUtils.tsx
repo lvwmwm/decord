@@ -1,10 +1,10 @@
-// Module ID: 16101
-// Function ID: 124152
+// Module ID: 16109
+// Function ID: 124213
 // Name: getDefaultActions
 // Dependencies: []
 // Exports: getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled
 
-// Module 16101 (getDefaultActions)
+// Module 16109 (getDefaultActions)
 function getDefaultActions() {
   let obj = { type: AutomodActionType.BLOCK_MESSAGE, metadata: { customMessage: undefined } };
   obj = { type: AutomodActionType.FLAG_TO_CHANNEL, metadata: { channelId: undefined } };

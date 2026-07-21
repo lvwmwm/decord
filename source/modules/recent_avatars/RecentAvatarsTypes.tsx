@@ -1,9 +1,9 @@
-// Module ID: 7848
-// Function ID: 62565
+// Module ID: 7849
+// Function ID: 62578
 // Name: AssetOriginTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7848 (AssetOriginTypes)
+// Module 7849 (AssetOriginTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/recent_avatars/RecentAvatarsTypes.tsx");
 

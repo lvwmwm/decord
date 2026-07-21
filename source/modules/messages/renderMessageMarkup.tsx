@@ -1,10 +1,10 @@
-// Module ID: 7772
-// Function ID: 61687
+// Module ID: 7773
+// Function ID: 61699
 // Name: getInitialParserStateFromMessage
 // Dependencies: []
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7772 (getInitialParserStateFromMessage)
+// Module 7773 (getInitialParserStateFromMessage)
 function getInitialParserStateFromMessage(message, closure_7) {
   let mentionGames;
   let obj = { channelId: message.channel_id, messageId: message.id };
@@ -78,7 +78,7 @@ function render(arg0, arg1, toAST) {
   };
 }
 function renderAutomodMessageMarkupWithParser(parseAutoModerationSystemMessage, arg1, highlightWord, channelId) {
-  const obj = { "Bool(true)": null, "Bool(true)": "28ca3fe7e0f15c000b6f60698565b44e", "Bool(true)": "it.messages.28ca3fe7e0f15c000b6f60698565b44e.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "ICYMI_SET_REFRESHING", "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/ZGVzaWdu", "Bool(true)": null, 1279582106: "d1eb27c77b672c8ab2e55fed7c667e0b", -525709876: "ko.messages.d1eb27c77b672c8ab2e55fed7c667e0b.compiled.messages", 591185490: "jsona", 1383555330: null, mentionChannels: [], mentionGames: new Map(), soundboardSounds: [], highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
+  const obj = { mentionChannels: [], mentionGames: new Map(), soundboardSounds: [], highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
   return parseAutoModerationSystemMessage(arg1, true, obj, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
@@ -130,7 +130,7 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
     let content;
     let guildId;
     let messageId;
-    const obj = { mentionChannels: [] };
+    const obj = { crystal_ball: null, channels: "custom", POLL_ALERT: 60, friendIcon: 60, enableGameUpdateNotifications: 0.8, containerSize: null, serializeHost: true, accessibilityRole: "contain", GuildBadgeFrog: null, NONE_MONTH: true, GiftingTier3SmallBadge: "no-hide-descendants", ExpoRandom: false, paddingTop: true, position: "/assets/.cache/intl/ZGVzaWdu", mentionChannels: [] };
     ({ content, guildId, channelId, messageId, authorId } = arg1);
     obj.mentionGames = new Map();
     obj.soundboardSounds = [];

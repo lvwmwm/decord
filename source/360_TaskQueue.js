@@ -1,17 +1,16 @@
 // Module ID: 360
 // Function ID: 5337
 // Name: TaskQueue
-// Dependencies: [29, 5, 31]
+// Dependencies: []
 
 // Module 360 (TaskQueue)
-import _objectWithoutProperties from "_objectWithoutProperties";
-import asyncGeneratorStep from "asyncGeneratorStep";
-
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
 
 export default () => {
   class TaskQueue {
     constructor(arg0) {
-      tmp = _objectWithoutProperties(this, TaskQueue);
+      tmp = closure_2(this, TaskQueue);
       this._onMoreTasks = arg0.onMoreTasks;
       items = [];
       items[0] = { tasks: [], popable: false };
@@ -110,10 +109,10 @@ export default () => {
       const self = this;
       const _queueStack = this._queueStack;
       _queueStack.push({ tasks: [], popable: false });
-      let _objectWithoutProperties = this._queueStack[this._queueStack.length - 1];
+      let closure_2 = this._queueStack[this._queueStack.length - 1];
       const genResult = arr.gen();
       arr.gen().then(() => {
-        _objectWithoutProperties.popable = true;
+        closure_2.popable = true;
         if (self.hasTasksToProcess()) {
           self._onMoreTasks();
         }

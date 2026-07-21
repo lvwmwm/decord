@@ -1,5 +1,5 @@
 // Module ID: 11389
-// Function ID: 88560
+// Function ID: 88572
 // Name: TiktokNeutralIcon
 // Dependencies: []
 // Exports: TiktokNeutralIcon

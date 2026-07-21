@@ -1,13 +1,13 @@
 // Module ID: 1835
-// Function ID: 20042
+// Function ID: 20047
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
 // Module 1835 (set)
 let closure_0 = /input/i;
 let closure_1 = /textarea/i;
-const set = new Set([]);
+const set = new Set([null, null, 8173823, 9363664, 10327285, 6737904, 14121983, 11889663, 14965989, 9137407, 16683586, 3534206]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/DOMUtils.tsx");
 

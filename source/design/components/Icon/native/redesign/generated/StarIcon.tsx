@@ -1,5 +1,5 @@
 // Module ID: 9387
-// Function ID: 73188
+// Function ID: 73199
 // Name: StarIcon
 // Dependencies: []
 // Exports: StarIcon

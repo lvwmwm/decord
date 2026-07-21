@@ -1,12 +1,12 @@
 // Module ID: 8587
-// Function ID: 68155
+// Function ID: 68166
 // Name: GetButton
 // Dependencies: []
 // Exports: default
 
 // Module 8587 (GetButton)
 function GetButton(onPress) {
-  const obj = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
+  const obj = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj.text = intl.string(arg1(dependencyMap[8]).t.l8JeHg);
   obj.onPress = onPress.onPress;
@@ -22,11 +22,11 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { 0: null, 1879049317: null, 1358955618: null, 862056517: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
+obj = { reachedLimit: null, limit: null, hasBailedAst: null, id: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingContainer = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.scrollView = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
-obj.stickyHeader = {};
+obj.stickyHeader = { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" };
 let closure_10 = obj.createStyles(obj);
 let closure_11 = { code: "function GameProfileScreenTsx1(){const{heroHeaderHeight,scrollY,STICKY_HEADER_HEIGHT}=this.__closure;return heroHeaderHeight.get()>0&&scrollY.get()>=heroHeaderHeight.get()-STICKY_HEADER_HEIGHT;}" };
 let closure_12 = { code: "function GameProfileScreenTsx2(isVisible,wasVisible){const{stickyHeaderVisible,withTiming}=this.__closure;if(isVisible!==wasVisible){stickyHeaderVisible.set(withTiming(isVisible?1:0,{duration:150}));}}" };
@@ -167,7 +167,7 @@ export default function GameProfileScreen(gameId) {
     let obj = {};
     obj = {};
     const items = [-56, 0];
-    obj.translateY = gameId(sourceUserId[15]).interpolate(sharedValue2.get(), ["Text", "lc"], items);
+    obj.translateY = gameId(sourceUserId[15]).interpolate(sharedValue2.get(), ["replace", "then"], items);
     const items1 = [obj];
     obj.transform = items1;
     return obj;
@@ -336,7 +336,7 @@ export default function GameProfileScreen(gameId) {
     }
     return fn;
   }, items11);
-  const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, ref: bottomSheetRef, onExpand: callback1 };
+  const obj3 = { "Null": true, "Null": true, "Null": true, "Null": true, ref: bottomSheetRef, onExpand: callback1 };
   if (!game.isLoading) {
     if (null != data) {
       obj4 = { ref, style: tmp.scrollView, onScroll: callback };
@@ -375,6 +375,6 @@ export default function GameProfileScreen(gameId) {
     obj3.children = items12;
     return name(tmp40, obj3);
   }
-  obj10 = { style: tmp.loadingContainer, children: first1(ref, {}) };
+  obj10 = { style: tmp.loadingContainer, children: first1(ref, { font: 397, dx: 97 }) };
   tmp41 = first1(first, obj10);
 };

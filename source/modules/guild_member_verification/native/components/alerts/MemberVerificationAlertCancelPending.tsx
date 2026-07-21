@@ -1,16 +1,16 @@
 // Module ID: 9151
-// Function ID: 71716
+// Function ID: 71727
 // Name: MemberVerificationAlertCancelPending
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 9151 (MemberVerificationAlertCancelPending)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx");
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = result);
+result = result.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx");
 
 export default function MemberVerificationAlertCancelPending(guildId) {
   let confirmText;
@@ -20,7 +20,7 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   const arg1 = guildId;
   ({ confirmText, subtitleText, onClose } = guildId);
   const importDefault = onClose;
-  let obj = { overflow: null, height: 4, paddingVertical: 4, alignItems: "rgba(0, 0, 0, 0.75)" };
+  let obj = { "Bool(false)": "ERROR", "Bool(false)": "ERROR", "Bool(false)": "NOT_RESPONDER", "Bool(false)": "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(guildId, obj);
   const items = [guildId, onClose];

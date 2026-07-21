@@ -1,10 +1,10 @@
-// Module ID: 14740
-// Function ID: 111130
+// Module ID: 14743
+// Function ID: 111164
 // Name: folderLabel
 // Dependencies: []
 // Exports: default
 
-// Module 14740 (folderLabel)
+// Module 14743 (folderLabel)
 function folderLabel(name) {
   if (null != name.name) {
     if ("" !== name.name) {

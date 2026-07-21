@@ -1,5 +1,5 @@
 // Module ID: 1619
-// Function ID: 17971
+// Function ID: 17976
 // Name: checkInvalidReadDuringRender
 // Dependencies: []
 
@@ -18,17 +18,17 @@ let closure_4 = () => {
   function addCompilerSafeGetAndSet(arg0) {
     let obj = { get: obj };
     obj = {
-      1403228943: "postal-address-country",
-      830090965: "password",
-      0: "email",
+      "Bool(false)": "absolute",
+      "Bool(false)": -1,
+      "Bool(false)": -1,
       value() {
         return arg0.value;
       }
     };
     obj = {
-      1403228943: "postal-address-country",
-      830090965: "password",
-      0: "email",
+      "Bool(false)": "absolute",
+      "Bool(false)": -1,
+      "Bool(false)": -1,
       value: (arg0) => {
         function value(arg0) {
           return arg0(...arguments);
@@ -55,7 +55,7 @@ let closure_4 = () => {
 let closure_5 = { code: "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}" };
 let closure_6 = () => {
   function hideInternalValueProp(arg0) {
-    Object.defineProperty(arg0, "_value", { "Bool(true)": null, "Bool(true)": null });
+    Object.defineProperty(arg0, "_value", { 9223372036854775807: null, 9223372036854775807: null });
   }
   hideInternalValueProp.__closure = {};
   hideInternalValueProp.__workletHash = 3380393180484;

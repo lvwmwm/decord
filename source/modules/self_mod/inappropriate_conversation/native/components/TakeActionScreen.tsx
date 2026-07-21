@@ -1,10 +1,10 @@
-// Module ID: 14568
-// Function ID: 109790
+// Module ID: 14571
+// Function ID: 109822
 // Name: TakeActionButtons
 // Dependencies: []
 // Exports: default
 
-// Module 14568 (TakeActionButtons)
+// Module 14571 (TakeActionButtons)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -17,7 +17,7 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_15, jsxs: closure_16 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { -1861163602: "application/vnd.sentry.items.trace-metric+json", -738052821: "first-input", 1560505897: true, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj = { gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.toastContainer = { paddingHorizontal: importDefault(dependencyMap[9]).space.PX_8, paddingVertical: importDefault(dependencyMap[9]).space.PX_12 };
@@ -78,7 +78,7 @@ export default function TakeActionButtons(senderId) {
   const items4 = [senderId, channelId, tmp.toastContainer, setReported, lastChannelMessage, trackAnalyticsEvent];
   closure_8 = React.useCallback(callback(fn), items4);
   obj = { style: tmp.container };
-  obj = { icon: importDefault(dependencyMap[23]) };
+  obj = { "Bool(true)": "<string:285278212>", "Bool(true)": "<string:34882625>", "Bool(true)": "<string:2789409024>", "Bool(true)": "<string:2768241238>", "Bool(true)": "<string:3405775446>", icon: importDefault(dependencyMap[23]) };
   const intl = arg1(dependencyMap[19]).intl;
   const string = intl.string;
   const t = arg1(dependencyMap[19]).t;
@@ -93,7 +93,7 @@ export default function TakeActionButtons(senderId) {
   }
   obj.onPress = callback;
   const items5 = [callback3(arg1(dependencyMap[22]).Button, obj), , ];
-  obj1 = { 9223372036854775807: false, -9223372036854775808: false, icon: importDefault(dependencyMap[24]), loading: tmp5[0], disabled: isReported };
+  obj1 = { "Bool(true)": 1124139009, "Bool(true)": 153708, icon: importDefault(dependencyMap[24]), loading: tmp5[0], disabled: isReported };
   const intl2 = arg1(dependencyMap[19]).intl;
   const string2 = intl2.string;
   const t2 = arg1(dependencyMap[19]).t;
@@ -109,7 +109,7 @@ export default function TakeActionButtons(senderId) {
   };
   items5[1] = callback3(arg1(dependencyMap[22]).Button, obj1);
   if (shouldShowHelplineLink) {
-    obj2 = { icon: importDefault(dependencyMap[25]) };
+    obj2 = { "Bool(true)": "%Float32Array%", "Bool(true)": "isArrayBuffer", "Bool(true)": "fr-NE", "Bool(true)": "MIN", "Bool(true)": "r", icon: importDefault(dependencyMap[25]) };
     const intl6 = arg1(dependencyMap[19]).intl;
     obj2.text = intl6.string(arg1(dependencyMap[19]).t.sZf6cz);
     obj2.onPress = function onPress() {
@@ -119,7 +119,7 @@ export default function TakeActionButtons(senderId) {
   } else {
     obj3 = { style: tmp.helplineGroup };
     const Button = arg1(dependencyMap[22]).Button;
-    obj4 = { icon: importDefault(dependencyMap[26]) };
+    obj4 = { "Bool(true)": "%Float32Array%", "Bool(true)": "isArrayBuffer", "Bool(true)": "fr-NE", "Bool(true)": "MIN", "Bool(true)": "r", icon: importDefault(dependencyMap[26]) };
     const intl3 = arg1(dependencyMap[19]).intl;
     const string3 = intl3.string;
     const t3 = arg1(dependencyMap[19]).t;
@@ -130,7 +130,7 @@ export default function TakeActionButtons(senderId) {
         trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_THROUGHLINE);
       };
       const items6 = [tmp17(Button, obj4), ];
-      const obj5 = { style: tmp.textCenter };
+      const obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp.textCenter };
       const intl5 = tmp18(tmp19[19]).intl;
       obj5.children = intl5.string(tmp18(tmp19[19]).t.PMeb/r);
       items6[1] = tmp17(tmp18(tmp19[28]).Text, obj5);
@@ -143,7 +143,7 @@ export default function TakeActionButtons(senderId) {
         trackAnalyticsEvent(senderId(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_NO_FILTR);
       };
       const items7 = [tmp17(Button, obj4), ];
-      const obj6 = { style: tmp.textCenter };
+      const obj6 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, style: tmp.textCenter };
       const intl4 = tmp18(tmp19[19]).intl;
       obj6.children = intl4.string(tmp18(tmp19[19]).t.XNwhxC);
       items7[1] = tmp17(tmp18(tmp19[28]).Text, obj6);

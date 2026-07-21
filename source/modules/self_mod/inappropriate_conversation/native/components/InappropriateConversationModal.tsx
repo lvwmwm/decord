@@ -1,10 +1,10 @@
-// Module ID: 14567
-// Function ID: 109767
+// Module ID: 14570
+// Function ID: 109799
 // Name: IntroScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14567 (IntroScreen)
+// Module 14570 (IntroScreen)
 function IntroScreen(arg0) {
   ({ warningId: closure_0, senderId: closure_1, trackAnalyticsEvent: closure_2 } = arg0);
   const tmp = callback5();
@@ -29,14 +29,14 @@ function IntroScreen(arg0) {
   obj.children = items2;
   items1[1] = callback4(closure_7, obj);
   const obj3 = { style: tmp.ctaContainer };
-  const obj4 = {};
+  const obj4 = { body: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", hasDiversityParent: null, padding: "06ce787c33fd0c9cd370f243d3462ef5", View: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages" };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[13]).t.+o4Q7e);
   obj4.onPress = function onPress() {
     callback2(callback(callback2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_TAKE_ACTION);
   };
   const items3 = [callback3(arg1(dependencyMap[14]).Button, obj4), ];
-  const obj5 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
+  const obj5 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj5.text = intl4.string(arg1(dependencyMap[13]).t.xLkGzP);
   obj5.onPress = function onPress() {
@@ -101,7 +101,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   obj.children = items1;
   items[1] = callback4(closure_7, obj);
   const obj2 = { style: tmp.ctaContainer };
-  const obj3 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
+  const obj3 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj3.text = intl3.string(arg1(dependencyMap[13]).t.lkUb4S);
   obj3.onPress = function onPress() {
@@ -109,7 +109,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     trackAnalyticsEvent(trackAnalyticsEvent(closure_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
   const items2 = [callback3(arg1(dependencyMap[14]).Button, obj3), ];
-  const obj4 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
+  const obj4 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
   const intl4 = arg1(dependencyMap[13]).intl;
   obj4.text = intl4.string(arg1(dependencyMap[13]).t.ogLlvy);
   obj4.onPress = function onPress() {
@@ -170,17 +170,17 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { transform: -951910397, topOffset: -570424460, marginLeft: -1056963724, marginRight: 1124074356, marginVertical: "a", messageTypeIconSize: "NoResults", padding: importDefault(dependencyMap[7]).space.PX_32, gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { padding: importDefault(dependencyMap[7]).space.PX_32, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
-const obj1 = { height: "r", width: "convertRouteToNavigation", overflow: "hardwareClassification", marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
-obj.warningText = obj1;
-const obj2 = { -1861163602: "application/vnd.sentry.items.trace-metric+json", -738052821: "first-input", 1560505897: true, gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.ctaContainer = obj2;
+const tmp4 = arg1(dependencyMap[5]);
+obj.warningText = { marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_4 };
+obj.ctaContainer = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.takeoverHeader = {};
 obj.takeoverDescription = { textAlign: "center" };
 obj.safetyTips = { alignSelf: "stretch" };
 let closure_15 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[5]);
+const obj2 = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/native/components/InappropriateConversationModal.tsx");
 
 export default function InappropriateConversationModal(channelId) {

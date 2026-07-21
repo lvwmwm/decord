@@ -1,13 +1,13 @@
-// Module ID: 14634
-// Function ID: 110370
+// Module ID: 14637
+// Function ID: 110402
 // Name: RegistrationBailoutButton
 // Dependencies: []
 // Exports: default
 
-// Module 14634 (RegistrationBailoutButton)
+// Module 14637 (RegistrationBailoutButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = arg1(dependencyMap[2]).createStyles({ bail: {} });
+let closure_3 = arg1(dependencyMap[2]).createStyles({ bail: { "Null": "Array", "Null": "isArray", "Null": "name" } });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/auth/native/components/RegistrationBailoutButton.tsx");
 

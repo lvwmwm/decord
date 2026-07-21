@@ -1,17 +1,23 @@
-// Module ID: 16295
-// Function ID: 125740
+// Module ID: 16303
+// Function ID: 125801
 // Name: Header
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16295 (Header)
+// Module 16303 (Header)
+import closure_3 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+
 function Header(arg0) {
   let description;
   let title;
   ({ description, title } = arg0);
-  const tmp = callback3();
+  const tmp = result();
   let obj = { top: true, style: tmp.headerContainer };
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title, children: title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title, children: title };
   const items = [callback(arg1(dependencyMap[6]).Text, obj), , ];
   obj = { style: tmp.subtitle, children: description };
   items[1] = callback(arg1(dependencyMap[6]).Text, obj);
@@ -33,7 +39,7 @@ function Footer(arg0) {
     stringResult = intl.string(arg1(dependencyMap[8]).t.bm6P5/);
   }
   let obj = {};
-  const items = [callback3().footerContainer, ];
+  const items = [result().footerContainer, ];
   obj = { paddingBottom: importDefault(dependencyMap[9])().bottom };
   items[1] = obj;
   obj.style = items;
@@ -41,29 +47,25 @@ function Footer(arg0) {
   obj.children = callback(arg1(dependencyMap[10]).Button, obj);
   return callback(closure_4, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, height: "100%" };
-obj.container = obj;
-obj.scrollContainer = { flexGrow: 1 };
-obj.headerContainer = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
-obj.title = {};
-obj.subtitle = { "Null": null, "Null": null };
-obj.separator = { marginTop: 24 };
-obj.footerContainer = {};
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
+({ View: closure_4, ScrollView: closure_5 } = result);
+({ jsx: closure_6, jsxs: closure_7 } = result);
+result = {};
+result = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOW, height: "100%" };
+result.container = result;
+result.scrollContainer = { flexGrow: 1 };
+result.headerContainer = {};
+result.title = {};
+result.subtitle = {};
+result.separator = { marginTop: 24 };
+result.footerContainer = {};
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
 
 export default function GuildRoleSubscriptionTierEditStep(scrollable) {
   let obj = Object.create(null);
   obj.scrollable = 0;
   const merged = Object.assign(scrollable, obj);
-  const tmp3 = callback3();
+  const tmp3 = result();
   obj = arg1(dependencyMap[11]);
   const navigation = obj.useNavigation();
   const arg1 = navigation;
@@ -84,7 +86,7 @@ export default function GuildRoleSubscriptionTierEditStep(scrollable) {
     const obj1 = {};
     const merged1 = Object.assign(merged);
     const items1 = [callback(Header, obj1), , ];
-    const obj2 = { accessible: null, type: null, padding: null };
+    const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
     const items2 = [tmp3.scrollContainer];
     obj2.contentContainerStyle = items2;
     obj2.children = merged.children;

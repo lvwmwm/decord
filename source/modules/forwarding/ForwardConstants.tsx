@@ -1,7 +1,7 @@
 // Module ID: 9867
-// Function ID: 76404
+// Function ID: 76415
 // Name: MAX_DESTINATION_COUNT
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9867 (MAX_DESTINATION_COUNT)
 const _module = require(dependencyMap[0]);

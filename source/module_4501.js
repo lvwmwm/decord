@@ -1,18 +1,17 @@
 // Module ID: 4501
-// Function ID: 39662
-// Dependencies: [31, 27, 33, 4521, 2, 31, 27, 33, 4522, 3989, 2]
+// Function ID: 39670
+// Dependencies: []
 
 // Module 4501
-import module_31 from "module_31";
-import importAllResult from "keys";
-import module_33 from "module_33";
-import AccessibilityView from "AccessibilityView";
-
 let StyleSheet;
 let closure_3 = [];
-({ Platform: closure_6, StyleSheet } = module_33);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = AccessibilityView);
-const styles = StyleSheet.create({ container: { flex: 1 }, absoluteWithNoBottom: {} });
+let closure_4 = importDefault(dependencyMap[0]);
+const importAllResult = importAll(dependencyMap[1]);
+({ Platform: closure_6, StyleSheet } = arg1(dependencyMap[2]));
+const tmp2 = arg1(dependencyMap[2]);
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
+const tmp3 = arg1(dependencyMap[3]);
+const styles = StyleSheet.create({ container: { flex: 1 }, absoluteWithNoBottom: { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" } });
 
 export default importAllResult.forwardRef(function ScreenStackItem(unstable_sheetFooter) {
   let activityState;
@@ -59,7 +58,7 @@ export default importAllResult.forwardRef(function ScreenStackItem(unstable_shee
   const items = [null != hidden && hidden, str];
   const effect = importAllResult.useEffect(() => {
     ref(closure_2[6])(false, "Dynamically changing header's visibility in modals will result in remounting the screen and losing all local state.");
-    module_31.current = tmp10;
+    closure_4.current = tmp10;
   }, items);
   let scrollEdgeEffects;
   if (null != tmp) {
@@ -107,9 +106,9 @@ export default importAllResult.forwardRef(function ScreenStackItem(unstable_shee
   obj.children = items1;
   children = closure_9(closure_8, obj);
   const obj3 = {
-    9223372036854775807: null,
-    0: null,
-    9223372036854775807: null,
+    accessibilityRole: null,
+    current: null,
+    "Bool(false)": null,
     ref(current) {
       closure_1.current = current;
       if (null !== closure_2) {

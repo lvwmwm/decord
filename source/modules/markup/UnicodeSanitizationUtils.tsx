@@ -1,10 +1,10 @@
-// Module ID: 4566
-// Function ID: 40014
+// Module ID: 4565
+// Function ID: 40021
 // Name: makeMatcher
 // Dependencies: []
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4566 (makeMatcher)
+// Module 4565 (makeMatcher)
 function makeMatcher(join) {
   const regExp = new RegExp(join.join("|"), "gu");
   return regExp;
@@ -193,9 +193,9 @@ obj = { character: "p", matcher: makeMatcher([]) };
 items1[2] = obj;
 items1[3] = { character: "s", matcher: makeMatcher([]) };
 const obj1 = { character: "s", matcher: makeMatcher([]) };
-items1[4] = { character: ":", matcher: makeMatcher(["top", "top_arrow", "\u201CSoon\u201D com seta para a direita", "em breve", "flecha", "seta", "seta \"SOON\"", "s\u00EDmbolo \u201CSoon\u201D", "soon", "soon_arrow", "heavy_check_mark", "check_mark", "ballot_box_with_check", "radio_button", "white_circle", "red_circle", "blue_circle", false, false]) };
-const obj2 = { character: ":", matcher: makeMatcher(["top", "top_arrow", "\u201CSoon\u201D com seta para a direita", "em breve", "flecha", "seta", "seta \"SOON\"", "s\u00EDmbolo \u201CSoon\u201D", "soon", "soon_arrow", "heavy_check_mark", "check_mark", "ballot_box_with_check", "radio_button", "white_circle", "red_circle", "blue_circle", false, false]) };
-items1[5] = { character: "/", matcher: makeMatcher([15184219107047550000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009366128460446297, 15182625100030070000000000000000000000000000000000000000000000000000000000000000000, 15183184964747270000000000000000000000000000000000000000000000000000000000000000000, 15192438776760394000000000000000000000000000000000000000000000000000000000000000000, 494871446913607900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011468028909977662, -2437606577914517000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, true, true, true, true, true, true]) };
+items1[4] = { character: ":", matcher: makeMatcher([]) };
+const obj2 = { character: ":", matcher: makeMatcher([]) };
+items1[5] = { character: "/", matcher: makeMatcher(["dobbelt utropstegn", "tegn", "tegnsetting", "utropstegn", "!", "!?", "?", "\u203D", "interrobang", "sp\u00F8rsm\u00E5l", "sp\u00F8rsm\u00E5lstegn", "tegn", "tegnsetting", "utrop"]) };
 let closure_5 = [];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils.tsx");

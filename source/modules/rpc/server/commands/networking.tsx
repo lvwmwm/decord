@@ -1,8 +1,8 @@
-// Module ID: 13291
-// Function ID: 100941
+// Module ID: 13293
+// Function ID: 100963
 // Dependencies: []
 
-// Module 13291
+// Module 13293
 let RPCCommands;
 const RPC_LOCAL_SCOPE = require(dependencyMap[0]).RPC_LOCAL_SCOPE;
 const _module = require(dependencyMap[1]);
@@ -11,11 +11,11 @@ let obj = {
   scope: RPC_LOCAL_SCOPE,
   handler() {
     const HTTP = require(dependencyMap[2]).HTTP;
-    let obj = { marginBottom: 0.35, marginTop: 1, textAlign: 0, url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT };
+    let obj = { "Null": 0.35, "Null": 1, "Bool(false)": 0, url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT };
     const value = HTTP.get(obj);
     const items = [value.then((body) => body.body.address), ];
     const HTTP2 = require(dependencyMap[2]).HTTP;
-    obj = { <string:2497405736>: 543817732, <string:4237488189>: 1091633153, <string:2898743961>: 103969, <string:3493979195>: -517586687, url: constants.NETWORKING_TOKEN };
+    obj = { toValue: 522584068, duration: 1091633153, useNativeDriver: 103843, visible: -507166463, url: constants.NETWORKING_TOKEN };
     items[1] = HTTP2.post(obj).then((body) => body.body.token);
     const postResult = HTTP2.post(obj);
     return Promise.all(items).then((arg0) => {
@@ -53,7 +53,7 @@ export default {
     scope: RPC_LOCAL_SCOPE,
     handler() {
       const HTTP = require(dependencyMap[2]).HTTP;
-      const obj = { <string:2497405736>: -2061584335, <string:4237488189>: -1095216661, <string:2898743961>: 1264537919, <string:3493979195>: -1717986767, url: constants.NETWORKING_TOKEN };
+      const obj = { toValue: -0.000001449584960937493, duration: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023536503765317118, useNativeDriver: 1493869773881034000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, visible: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024079394459357874, url: constants.NETWORKING_TOKEN };
       return HTTP.post(obj).then((body) => body.body);
     }
   }

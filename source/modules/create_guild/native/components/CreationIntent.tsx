@@ -1,5 +1,5 @@
 // Module ID: 11730
-// Function ID: 91097
+// Function ID: 91109
 // Name: CreationIntent
 // Dependencies: []
 // Exports: default
@@ -20,11 +20,11 @@ obj.contentContainer = obj;
 const tmp5 = arg1(dependencyMap[4]);
 obj.scrollContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.headerContainer = {};
-obj.headerTitle = { collapsable: "absolute", preventClipping: 0 };
-obj.headerDescription = { "Bool(false)": null, "Bool(false)": null };
+obj.headerTitle = {};
+obj.headerDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.sections = { paddingHorizontal: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_PADDING };
-obj.skipDescription = { <string:3246022526>: "079f1f5099b5396d01af5ed23e7bac76", <string:1764223313>: "ic_invites_disabled", <string:3679956194>: "png", <string:944643202>: true };
+obj.skipDescription = {};
 let closure_13 = obj.createStyles(obj);
 let closure_14 = Math.random() < 0.5;
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_PADDING };

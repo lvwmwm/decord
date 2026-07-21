@@ -1,5 +1,5 @@
 // Module ID: 11201
-// Function ID: 87223
+// Function ID: 87235
 // Name: RecommendationAppRow
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 11823
-// Function ID: 91659
+// Function ID: 91671
 // Name: useVirtualCurrencyBalance
 // Dependencies: []
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance

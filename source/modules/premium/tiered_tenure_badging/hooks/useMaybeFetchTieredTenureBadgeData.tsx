@@ -1,5 +1,5 @@
 // Module ID: 12266
-// Function ID: 94043
+// Function ID: 94055
 // Name: useMaybeFetchTieredTenureBadgeData
 // Dependencies: []
 // Exports: useMaybeFetchTieredTenureBadgeData

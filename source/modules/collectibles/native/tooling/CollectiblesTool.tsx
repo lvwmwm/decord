@@ -1,10 +1,10 @@
-// Module ID: 14564
-// Function ID: 109733
+// Module ID: 14567
+// Function ID: 109765
 // Name: FramePreviewOverrideSection
 // Dependencies: []
 // Exports: default
 
-// Module 14564 (FramePreviewOverrideSection)
+// Module 14567 (FramePreviewOverrideSection)
 function FramePreviewOverrideSection() {
   const tmp = callback6();
   const tmp2 = callback3((override) => override.override);
@@ -19,10 +19,10 @@ function FramePreviewOverrideSection() {
   if ("loading" === tmp3) {
     let obj = { style: tmp.section };
     obj = { style: tmp.sectionHeader };
-    obj = { -9223372036854775808: 553648449, 9223372036854775807: 20912449, 0: 1091641600, style: tmp.sectionTitle };
+    obj = { EMPTY_SOUND_LIST: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015661112340041445, paddingTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, HAPPENING_NOW_PANELS_CONTAINER_PADDING: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000315055375900778, style: tmp.sectionTitle };
     obj.children = callback4(callback(dependencyMap[10]).Text, obj);
     const items = [callback4(closure_6, obj), , , , ];
-    const obj1 = { -9223372036854775808: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, style: tmp.description };
+    const obj1 = { EMPTY_SOUND_LIST: true, paddingTop: true, HAPPENING_NOW_PANELS_CONTAINER_PADDING: true, style: tmp.description };
     items[1] = callback4(callback(dependencyMap[10]).Text, obj1);
     const obj2 = { variant: "text-xs/normal" };
     const items1 = [tmp.statusText, statusError];
@@ -84,9 +84,9 @@ const tmp3 = arg1(dependencyMap[6]);
 obj.scrollContainer = { padding: importDefault(dependencyMap[8]).space.PX_16, paddingBottom: importDefault(dependencyMap[8]).space.PX_32 };
 const obj1 = { padding: importDefault(dependencyMap[8]).space.PX_16, paddingBottom: importDefault(dependencyMap[8]).space.PX_32 };
 obj.section = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.lg, padding: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_16, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED };
+const obj3 = { "Null": 7, "Null": 370, marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
+obj.sectionHeader = obj3;
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.lg, padding: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_16, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED };
-obj.sectionHeader = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
-const obj3 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.sectionTitle = { flex: 1, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj4 = { flex: 1, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.inputContainer = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
@@ -94,7 +94,7 @@ const obj5 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.inputWrapper = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_4 };
 const obj6 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_4 };
 obj.inputLabel = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT, fontWeight: "600" };
-const obj8 = { "Bool(true)": true, "Bool(true)": null, "Bool(true)": 8, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
+const obj8 = { "Null": true, "Null": null, "Null": 8, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
 obj.statusText = obj8;
 const obj7 = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT, fontWeight: "600" };
 obj.statusSuccess = { color: importDefault(dependencyMap[8]).colors.TEXT_FEEDBACK_POSITIVE };
@@ -112,8 +112,8 @@ const obj14 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROU
 obj.description = { color: importDefault(dependencyMap[8]).colors.TEXT_MUTED, marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 const obj15 = { color: importDefault(dependencyMap[8]).colors.TEXT_MUTED, marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 obj.placeholder = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
-const obj16 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
-obj.placeholderText = { color: importDefault(dependencyMap[8]).colors.TEXT_MUTED };
+const obj17 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, color: importDefault(dependencyMap[8]).colors.TEXT_MUTED };
+obj.placeholderText = obj17;
 let closure_12 = obj.createStyles(obj);
 function UnpurchasedCollectiblesShopCardV2(arg0) {
   let tmp2;
@@ -135,7 +135,7 @@ function UnpurchasedCollectiblesShopCardV2(arg0) {
   const merged = Object.assign(arg0);
   return callback4(importDefault(dependencyMap[9]), obj, tmp2);
 }
-const obj17 = { color: importDefault(dependencyMap[8]).colors.TEXT_MUTED };
+const obj16 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");
 
 export default function _default() {
@@ -156,7 +156,7 @@ export default function _default() {
   if (tmp5) {
     tmp5 = null != stateFromStores2;
   }
-  obj = { paddingBottom: null, left: null, noOp: tmp5 };
+  obj = { noOp: tmp5 };
   const tmp7 = importDefault(dependencyMap[13])(obj);
   let categories = tmp7.categories;
   let tmp8 = tmp5;
@@ -210,10 +210,10 @@ export default function _default() {
   const tmp16 = closure_6;
   const tmp17 = callback5;
   const tmp18 = closure_5;
-  const obj7 = { -9223372036854775808: true, 9223372036854775807: true, 0: true, style: tmp.sectionTitle };
+  const obj7 = { EMPTY_SOUND_LIST: "<string:1179779074>", paddingTop: "<string:1372813356>", HAPPENING_NOW_PANELS_CONTAINER_PADDING: "<string:3863029620>", style: tmp.sectionTitle };
   const items6 = [callback4(closure_6, { style: tmp.sectionHeader, children: callback4(arg1(dependencyMap[10]).Text, obj7) }), ];
   const obj8 = { style: tmp.inputContainer };
-  const obj9 = { -9223372036854775808: false, 9223372036854775807: false, 0: false, style: tmp.inputLabel };
+  const obj9 = { EMPTY_SOUND_LIST: "text-feedback-critical", paddingTop: "md", HAPPENING_NOW_PANELS_CONTAINER_PADDING: "status-positive", style: tmp.inputLabel };
   const items7 = [callback4(arg1(dependencyMap[10]).Text, obj9), , , , ];
   const obj10 = { style: tmp.inputWrapper };
   const obj11 = { value: tmp10[0], onChangeText: tmp10[1], placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done" };
@@ -226,7 +226,7 @@ export default function _default() {
     tmp23 = "" !== str.trim();
   }
   if (tmp23) {
-    const obj13 = { -9223372036854775808: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002308523043116392, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017167212148317, 0: 1758094259919999500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    const obj13 = { EMPTY_SOUND_LIST: null, paddingTop: null, HAPPENING_NOW_PANELS_CONTAINER_PADDING: null };
     const items8 = [, ];
     ({ statusText: arr9[0], statusLoading: arr9[1] } = tmp);
     obj13.style = items8;
@@ -240,7 +240,7 @@ export default function _default() {
     tmp8 = null == first;
   }
   if (tmp8) {
-    const obj14 = { -9223372036854775808: "Error", 9223372036854775807: "Photos permission is required to save recordings", 0: "Error" };
+    const obj14 = { EMPTY_SOUND_LIST: null, paddingTop: null, HAPPENING_NOW_PANELS_CONTAINER_PADDING: null };
     const items9 = [, ];
     ({ statusText: arr10[0], statusError: arr10[1] } = tmp);
     obj14.style = items9;
@@ -253,7 +253,7 @@ export default function _default() {
     const items10 = [, ];
     ({ statusText: arr11[0], statusSuccess: arr11[1] } = tmp);
     obj15.style = items10;
-    const items11 = ["then", first.name];
+    const items11 = [true, first.name];
     obj15.children = items11;
     tmp30 = callback5(arg1(dependencyMap[10]).Text, obj15);
   }
@@ -268,7 +268,6 @@ export default function _default() {
   const tmp20 = closure_6;
   const tmp21 = callback5;
   const tmp22 = closure_6;
-  const obj18 = { -9223372036854775808: false, 9223372036854775807: false, 0: false, style: tmp.sectionTitle };
   const items12 = [callback4(closure_6, { style: tmp.sectionHeader, children: callback4(arg1(dependencyMap[10]).Text, obj18) }), ];
   if (null != first) {
     if (null != tmp13[0]) {

@@ -1,10 +1,10 @@
-// Module ID: 16138
-// Function ID: 124390
+// Module ID: 16146
+// Function ID: 124451
 // Name: StickerPlusIcon
 // Dependencies: []
 // Exports: StickerPlusIcon
 
-// Module 16138 (StickerPlusIcon)
+// Module 16146 (StickerPlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StickerPlusIcon.tsx");

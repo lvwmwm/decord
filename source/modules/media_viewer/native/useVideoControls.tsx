@@ -1,10 +1,10 @@
-// Module ID: 8274
-// Function ID: 65312
+// Module ID: 8275
+// Function ID: 65325
 // Name: useVideoControls
 // Dependencies: []
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8274 (useVideoControls)
+// Module 8275 (useVideoControls)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

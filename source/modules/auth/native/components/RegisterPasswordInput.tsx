@@ -1,9 +1,9 @@
-// Module ID: 14632
-// Function ID: 110345
+// Module ID: 14635
+// Function ID: 110377
 // Name: PasswordStrength
 // Dependencies: []
 
-// Module 14632 (PasswordStrength)
+// Module 14635 (PasswordStrength)
 function PasswordStrength(passwordScore) {
   let isPasswordFocused;
   let password;
@@ -64,7 +64,7 @@ obj1 = { color: importDefault(dependencyMap[7]).colors.TEXT_FEEDBACK_WARNING };
 obj.medium = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.strong = { color: importDefault(dependencyMap[7]).colors.TEXT_FEEDBACK_POSITIVE };
-obj.passwordStrength = {};
+obj.passwordStrength = { size: true, progress: true };
 obj.inputHint = { width: "100%" };
 let closure_13 = obj1.createStyles(obj);
 const obj3 = {};
@@ -148,7 +148,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, closure_18) => {
   const callback3 = importAllResult.useCallback(() => {
     tmp8((arg0) => !arg0);
   }, items5);
-  obj = { 575034026: 675414018, 39987511: 603980395, -741845871: 1107296954 };
+  obj = { canSort: null, VIDEO_PLACEHOLDER_WIDTH: null, friendIcon: null };
   const tmp20 = closure_10;
   const tmp21 = closure_12;
   const tmp22 = callback4;
@@ -187,7 +187,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, closure_18) => {
   }
   obj1.accessibilityLabel = stringResult;
   obj1.onPress = callback3;
-  obj1.hitSlop = { <string:2958189153>: 800, <string:1661207664>: 16 };
+  obj1.hitSlop = {};
   obj.trailingPressableProps = obj1;
   obj.errorMessage = tmp13;
   let str2;

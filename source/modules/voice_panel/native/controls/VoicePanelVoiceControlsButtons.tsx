@@ -1,10 +1,10 @@
-// Module ID: 15751
-// Function ID: 120321
+// Module ID: 15760
+// Function ID: 120486
 // Name: GameConsoleAccountButton
 // Dependencies: []
 // Exports: ActivitiesButton, AudioRouteButton, ChatButton, DeafenSwitch, GameConsoles, HideNonVideoParticipants, HideSelfVideo, InviteButton, LeaveActivitiesButton, RTCDebugPanelButton, ReportStreamIssueButton, ScreenshareButton, ShareActivityLogsButton, SoundboardButton, StreamVolumeItem, ToggleShowActivitiesDebugOverlay, VoiceSettingsButton
 
-// Module 15751 (GameConsoleAccountButton)
+// Module 15760 (GameConsoleAccountButton)
 class GameConsoleAccountButton {
   constructor(arg0) {
     channel = global.channel;

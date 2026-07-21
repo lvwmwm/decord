@@ -1,5 +1,5 @@
 // Module ID: 11135
-// Function ID: 86622
+// Function ID: 86634
 // Name: ForumPostList
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const View = arg1(dependencyMap[2]).View;
 const ChannelFlags = arg1(dependencyMap[3]).ChannelFlags;
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ header: { "Null": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", "Bool(true)": true }, content: { right: false, type: false } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true }, content: { "Null": "y", "Null": "isArray" } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/list/ForumPostList.tsx");
 

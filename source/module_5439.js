@@ -1,9 +1,9 @@
 // Module ID: 5439
-// Function ID: 46541
+// Function ID: 46549
 // Dependencies: []
 
 // Module 5439
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: null, isInternetReachable: null, details: null, reachabilityUrl: null, reachabilityMethod: null, reachabilityHeaders: null, reachabilityTest: "onAnimationFailureCapture", reachabilityShortTimeout: "onAnimationFailure", scales: [] };
+const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": "onAnimationFailureCapture", scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

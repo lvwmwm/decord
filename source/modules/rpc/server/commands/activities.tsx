@@ -1,8 +1,8 @@
-// Module ID: 13310
-// Function ID: 101118
+// Module ID: 13312
+// Function ID: 101140
 // Dependencies: []
 
-// Module 13310
+// Module 13312
 let RPCCommands;
 let closure_3 = importDefault(dependencyMap[0]);
 ({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: closure_5 } = arg1(dependencyMap[1]));

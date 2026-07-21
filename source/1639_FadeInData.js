@@ -1,32 +1,32 @@
 // Module ID: 1639
-// Function ID: 18326
+// Function ID: 18331
 // Name: FadeInData
 // Dependencies: []
 
 // Module 1639 (FadeInData)
 let obj = { FadeIn: obj, FadeInRight: { style: { [0]: { opacity: 0, transform: items }, [100]: { opacity: 1, transform: items1 } } }, FadeInLeft: { style: { [0]: { opacity: 0, transform: items2 }, [100]: { opacity: 1, transform: items3 } } }, FadeInUp: obj, FadeInDown: { style: { [0]: { opacity: 0, transform: items6 }, [100]: { opacity: 1, transform: items7 } } } };
-obj = { 9223372036854775807: 0.3, 0: "500px", 0: "90deg", style: { [0]: { opacity: 0 }, [100]: { opacity: 1 } } };
+obj = { "Null": 0.3, "Null": "500px", "Null": "90deg", style: { [0]: { opacity: 0 }, [100]: { opacity: 1 } } };
 const items = [{ translateX: "25px" }];
 const items1 = [{ translateX: "0px" }];
 const items2 = [{ translateX: "-25px" }];
 const items3 = [{ translateX: "0px" }];
-obj = { 9223372036854775807: 0.3, 0: "500px", 0: "-90deg" };
+obj = { "Null": 0.3, "Null": "500px", "Null": "-90deg" };
 const items4 = [{ translateY: "-25px" }];
 const items5 = [{ translateY: "0px" }];
 obj.style = { [0]: { opacity: 0, transform: items4 }, [100]: { opacity: 1, transform: items5 } };
 const items6 = [{ translateY: "25px" }];
 const items7 = [{ translateY: "0px" }];
 const obj1 = { FadeOut: obj2, FadeOutRight: { style: { [0]: { opacity: 1, transform: items8 }, [100]: { opacity: 0, transform: items9 } } }, FadeOutLeft: obj3, FadeOutUp: { style: { [0]: { opacity: 1, transform: items12 }, [100]: { opacity: 0, transform: items13 } } }, FadeOutDown: obj4 };
-const obj2 = { 9223372036854775807: 0.3, 0: "500px", 0: "90deg", style: { [0]: { opacity: 1 }, [100]: { opacity: 0 } } };
+const obj2 = { "Null": 0.3, "Null": "500px", "Null": "90deg", style: { [0]: { opacity: 1 }, [100]: { opacity: 0 } } };
 const items8 = [{ translateX: "0px" }];
 const items9 = [{ translateX: "25px" }];
-const obj3 = { 9223372036854775807: 0.3, 0: "500px", 0: "-90deg" };
+const obj3 = { "Null": 0.3, "Null": "500px", "Null": "-90deg" };
 const items10 = [{ translateX: "0px" }];
 const items11 = [{ translateX: "-25px" }];
 obj3.style = { [0]: { opacity: 1, transform: items10 }, [100]: { opacity: 0, transform: items11 } };
 const items12 = [{ translateY: "0px" }];
 const items13 = [{ translateY: "-25px" }];
-const obj4 = { 9223372036854775807: 0.3, 0: "500px", 0: "90deg" };
+const obj4 = { "Null": 0.3, "Null": "500px", "Null": "90deg" };
 const items14 = [{ translateY: "0px" }];
 const items15 = [{ translateY: "25px" }];
 obj4.style = { [0]: { opacity: 1, transform: items14 }, [100]: { opacity: 0, transform: items15 } };

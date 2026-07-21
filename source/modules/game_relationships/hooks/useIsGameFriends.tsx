@@ -1,5 +1,5 @@
 // Module ID: 11981
-// Function ID: 92608
+// Function ID: 92620
 // Name: useIsGameFriends
 // Dependencies: []
 // Exports: useIsGameFriends

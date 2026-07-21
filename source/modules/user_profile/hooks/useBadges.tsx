@@ -1,10 +1,10 @@
-// Module ID: 8246
-// Function ID: 65066
+// Module ID: 8247
+// Function ID: 65079
 // Name: useBadges
 // Dependencies: []
 // Exports: default
 
-// Module 8246 (useBadges)
+// Module 8247 (useBadges)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");

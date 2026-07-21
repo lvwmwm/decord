@@ -1,10 +1,10 @@
 // Module ID: 4423
-// Function ID: 38861
+// Function ID: 38869
 // Name: isPropertyDescriptor
 // Dependencies: []
 
 // Module 4423 (isPropertyDescriptor)
-const obj = { call: "y", paths: "onPlayerStateChange", apply: "r", paths: "inactiveDotElement", marginBottom: "handleActivityJoin", shapes: "japan" };
+const obj = {};
 Object.setPrototypeOf(null);
 
 export default function isPropertyDescriptor(obj) {

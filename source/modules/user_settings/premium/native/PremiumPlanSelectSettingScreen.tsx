@@ -1,10 +1,10 @@
-// Module ID: 13770
-// Function ID: 104059
+// Module ID: 13772
+// Function ID: 104081
 // Name: PremiumPlanSelectSettingScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13770 (PremiumPlanSelectSettingScreen)
+// Module 13772 (PremiumPlanSelectSettingScreen)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/premium/native/PremiumPlanSelectSettingScreen.tsx");

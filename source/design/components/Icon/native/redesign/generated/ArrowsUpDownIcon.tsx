@@ -1,5 +1,5 @@
 // Module ID: 11263
-// Function ID: 87587
+// Function ID: 87599
 // Name: ArrowsUpDownIcon
 // Dependencies: []
 // Exports: ArrowsUpDownIcon

@@ -1,5 +1,5 @@
 // Module ID: 12179
-// Function ID: 93621
+// Function ID: 93633
 // Name: createVoiceChannelLinkEmbed
 // Dependencies: []
 // Exports: createVoiceChannelLinkEmbed

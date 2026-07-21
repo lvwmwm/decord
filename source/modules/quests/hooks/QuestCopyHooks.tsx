@@ -1,5 +1,5 @@
 // Module ID: 10915
-// Function ID: 84845
+// Function ID: 84856
 // Name: formatWithOrWithoutMarkdown
 // Dependencies: []
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePremiumExtendableCopy, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription, useQuestInstructionTitle

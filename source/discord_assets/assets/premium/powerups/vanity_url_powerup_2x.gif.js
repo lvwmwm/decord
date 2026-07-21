@@ -1,9 +1,9 @@
-// Module ID: 14879
-// Function ID: 112066
+// Module ID: 14882
+// Function ID: 112100
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 14879 (metadata)
+// Module 14882 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/powerups/vanity_url_powerup_2x.gif.js");
 

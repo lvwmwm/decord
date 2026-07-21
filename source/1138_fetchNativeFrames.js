@@ -1,5 +1,5 @@
 // Module ID: 1138
-// Function ID: 12946
+// Function ID: 12950
 // Name: fetchNativeFrames
 // Dependencies: []
 

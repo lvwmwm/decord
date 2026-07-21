@@ -1,5 +1,5 @@
 // Module ID: 9629
-// Function ID: 74978
+// Function ID: 74989
 // Name: HorizontalAutocompleteWrapper
 // Dependencies: []
 // Exports: default
@@ -99,6 +99,8 @@ export default function HorizontalAutocompleteWrapper(channel) {
   obj = { style: items2 };
   const items2 = [style, animatedStyle];
   obj1 = {
+    <string:1698100995>: "channelId",
+    <string:3635473612>: "channelId",
     keyExtractor(arg0, arg1) {
       return String(arg1);
     },

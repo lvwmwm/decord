@@ -1,5 +1,5 @@
 // Module ID: 8464
-// Function ID: 67508
+// Function ID: 67519
 // Name: createStageChannelForEvent
 // Dependencies: []
 // Exports: preStartEventActions, setEventAsActive

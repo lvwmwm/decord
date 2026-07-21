@@ -1,19 +1,19 @@
-// Module ID: 8314
-// Function ID: 65892
+// Module ID: 8315
+// Function ID: 65905
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 8314 (apexExperiment)
+// Module 8315 (apexExperiment)
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
-const apexExperiment = obj.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-obj = { 9223372036854775807: "center", 0: 16, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+obj = { 844175713: true, 1387159956: true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = obj.createApexExperiment(obj);
+obj = { 844175713: null, 1387159956: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment1 = arg1(dependencyMap[1]).createApexExperiment(obj);
-const obj2 = arg1(dependencyMap[1]);
-obj = { 9223372036854775807: true, 0: "/assets/images/native", defaultConfig: { icymiDesktopEnabled: false }, variations: { [1]: { icymiDesktopEnabled: true } } };
-const apexExperiment2 = arg1(dependencyMap[1]).createApexExperiment(obj);
-const obj4 = arg1(dependencyMap[1]);
+const obj3 = arg1(dependencyMap[1]);
+const apexExperiment2 = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { icymiDesktopEnabled: false }, variations: { [1]: { icymiDesktopEnabled: true } } });
+const obj5 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
 
 export const ICYMI_LAB_FEATURE = "hide_icymi_tab";

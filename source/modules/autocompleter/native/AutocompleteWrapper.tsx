@@ -1,25 +1,9 @@
 // Module ID: 11419
-// Function ID: 88795
+// Function ID: 88807
 // Name: isSlashAutocompleteType
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 11419 (isSlashAutocompleteType)
-import closure_3 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { AutocompleteTypes } from "__exportStarResult1";
-import { EmojiInteractionPoint } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
 function isSlashAutocompleteType(arg0) {
   let tmp = arg0 === AutocompleteTypes.SLASHES;
   if (!tmp) {
@@ -37,25 +21,37 @@ function getAutocompletesHeight(arg0, arg1, arg2, arg3) {
   return num;
 }
 function getStickersItemLayout(arg0, index) {
-  const obj = { length: index(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_SIZE };
-  const result = index * (index(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_SIZE + index(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_MARGIN);
+  const obj = { length: index(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_SIZE };
+  const result = index * (index(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_SIZE + index(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_MARGIN);
   const diff = index - 1;
-  obj.offset = result + diff * index(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_MARGIN;
+  obj.offset = result + diff * index(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_MARGIN;
   obj.index = index;
   return obj;
 }
-({ View: closure_5, FlatList: closure_6 } = __exportStarResult1);
-({ AutoCompleteResultTypes: closure_11, WHITESPACE_RE: closure_12, AnalyticEvents: closure_13, UpsellTypes: closure_14 } = __exportStarResult1);
+let closure_3 = importDefault(dependencyMap[0]);
+const importAllResult = importAll(dependencyMap[1]);
+const tmp2 = arg1(dependencyMap[2]);
+({ View: closure_5, FlatList: closure_6 } = tmp2);
+let closure_7 = importDefault(dependencyMap[3]);
+let closure_8 = importDefault(dependencyMap[4]);
+let closure_9 = importDefault(dependencyMap[5]);
+let closure_10 = importDefault(dependencyMap[6]);
+({ AutoCompleteResultTypes: closure_11, WHITESPACE_RE: closure_12, AnalyticEvents: closure_13, UpsellTypes: closure_14 } = arg1(dependencyMap[7]));
 const BOOLEAN_CHOICES = arg1(dependencyMap[8]).BOOLEAN_CHOICES;
-({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_16, AUTOCOMPLETE_ROW_HEIGHT: closure_17 } = __exportStarResult1);
-({ MENTION_SENTINEL: closure_18, CHANNEL_SENTINEL: closure_19, EMOJI_SENTINEL: closure_20 } = __exportStarResult1);
-({ jsx: closure_23, Fragment: closure_24, jsxs: closure_25 } = __exportStarResult1);
-const hairlineWidth = __exportStarResult1.StyleSheet.hairlineWidth;
-let closure_27 = 284 + require("__exportStarResult1").AUTOCOMPLETE_STICKER_NODE_SIZE + 12 + hairlineWidth;
-let closure_28 = __exportStarResult1.createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
+const tmp3 = arg1(dependencyMap[7]);
+({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_16, AUTOCOMPLETE_ROW_HEIGHT: closure_17 } = arg1(dependencyMap[9]));
+const tmp4 = arg1(dependencyMap[9]);
+({ MENTION_SENTINEL: closure_18, CHANNEL_SENTINEL: closure_19, EMOJI_SENTINEL: closure_20 } = arg1(dependencyMap[10]));
+const AutocompleteTypes = arg1(dependencyMap[11]).AutocompleteTypes;
+const EmojiInteractionPoint = arg1(dependencyMap[12]).EmojiInteractionPoint;
+const tmp5 = arg1(dependencyMap[10]);
+({ jsx: closure_23, Fragment: closure_24, jsxs: closure_25 } = arg1(dependencyMap[13]));
+const hairlineWidth = tmp2.StyleSheet.hairlineWidth;
+const tmp6 = arg1(dependencyMap[13]);
+let closure_27 = arg1(dependencyMap[14]).createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
   let obj = { autocompletePositionRelative: { position: "relative" } };
   obj = {};
-  let obj2 = borderWidth(dependencyMap[16]);
+  let obj2 = borderWidth(dependencyMap[15]);
   let str = "absolute";
   if (obj2.isAndroid()) {
     str = "relative";
@@ -64,23 +60,23 @@ let closure_28 = __exportStarResult1.createStyles((borderRadius, borderWidth, bo
   obj.marginHorizontal = marginHorizontal;
   obj.marginBottom = marginBottom;
   obj.autocompleteWrapper = obj;
-  obj.autocompleteWrapperAbsolute = { isArray: "spring", messageId: "linear", surrogates: "easeInEaseOut" };
-  obj = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
+  obj.autocompleteWrapperAbsolute = { "Null": false, "Null": false, "Null": false };
+  obj = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
   obj.autocompleteContainer = obj;
-  obj.autocomplete = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-  obj2 = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 };
+  const obj1 = { isArray: null, diversity: null, backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+  obj.autocomplete = obj1;
+  obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 };
   obj.sectionDivider = obj2;
-  const obj3 = { eachRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018913127811932393, DefaultNumberOption: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000195901076535542, SearchQueryTagTypes: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755311579794185, VideoButton: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001693576729730451, QUEST_EMBED_MOBILE: 9126805512.125, backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+  const obj3 = { "Null": null, "Null": "260617da8a2932d3af6bc2abf2ba2716", marginBottom: "rejected-alert", paddingHorizontal: "png", backgroundColor: importDefault(dependencyMap[16]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj.sectionTitle = obj3;
-  const obj1 = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-  obj.stickersAutocompleteList = { paddingLeft: 12 - borderWidth(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: borderWidth(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  obj.stickersAutocompleteList = { paddingLeft: 12 - borderWidth(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: borderWidth(dependencyMap[17]).AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   return obj;
 });
-let closure_29 = { stickerResults: [], nonStickerResults: [] };
+let closure_28 = { stickerResults: [], nonStickerResults: [] };
 const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   let canOnlyUseTextCommands;
   let screenIndex;
-  let tmp13;
+  let tmp14;
   analyticsLocations = analyticsLocations.analyticsLocations;
   const arg1 = analyticsLocations;
   const channel = analyticsLocations.channel;
@@ -92,12 +88,12 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const onChangeAutoCompleteVisibility = analyticsLocations.onChangeAutoCompleteVisibility;
   const commandsDisabled = analyticsLocations.commandsDisabled;
   const chatInputRef = analyticsLocations.chatInputRef;
-  let tmp38Result;
+  let tmp39Result;
   let isScreenReaderEnabled;
   let callback2;
   let callback4;
   let first3;
-  let closure_47;
+  let closure_48;
   ({ canOnlyUseTextCommands, screenIndex } = analyticsLocations);
   let obj = arg1(dependencyMap[21]);
   const items = [closure_7];
@@ -109,38 +105,39 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const activeCommand = stateFromStoresObject.activeCommand;
   let closure_9 = activeCommand;
   let obj1 = arg1(dependencyMap[22]);
-  const token = obj1.useToken(importDefault(dependencyMap[17]).modules.mobile.TABLE_ROW_HEIGHT);
+  const token = obj1.useToken(importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_HEIGHT);
   let closure_10 = token;
-  const IncludeStickersInAutocomplete = arg1(dependencyMap[23]).IncludeStickersInAutocomplete;
+  let obj2 = arg1(dependencyMap[23]);
+  const scaledTextLineHeight = obj2.useScaledTextLineHeight("text-sm/semibold");
+  const IncludeStickersInAutocomplete = arg1(dependencyMap[24]).IncludeStickersInAutocomplete;
   const setting = IncludeStickersInAutocomplete.getSetting();
-  const tmp4 = callback(onChangeAutoCompleteVisibility.useState(closure_29), 2);
-  const first = tmp4[0];
+  const tmp5 = callback(onChangeAutoCompleteVisibility.useState(closure_28), 2);
+  const first = tmp5[0];
   const resultCount = first.resultCount;
   const stickerResults = first.stickerResults;
-  const nonStickerResults = first.nonStickerResults;
+  const BOOLEAN_CHOICES = nonStickerResults;
   let hasStickerResults = first.hasStickerResults;
-  const BOOLEAN_CHOICES = hasStickerResults;
   let hasNonStickerResults = first.hasNonStickerResults;
-  let closure_17 = tmp4[1];
-  let obj2 = arg1(dependencyMap[21]);
-  const items1 = [closure_8];
-  const stateFromStores = obj2.useStateFromStores(items1, () => activeOption.loadState);
+  let closure_18 = tmp5[1];
   let obj3 = arg1(dependencyMap[21]);
+  const items1 = [closure_8];
+  const stateFromStores = obj3.useStateFromStores(items1, () => activeOption.loadState);
+  let obj4 = arg1(dependencyMap[21]);
   const items2 = [closure_10];
-  const stateFromStores1 = obj3.useStateFromStores(items2, () => token.loadState);
-  const context = importAllResult.useContext(arg1(dependencyMap[24]).RedesignCompatContext);
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => token.loadState);
+  const context = importAllResult.useContext(arg1(dependencyMap[25]).RedesignCompatContext);
   const items3 = [channel, setting];
-  const memo = importAllResult.useMemo(() => analyticsLocations(canMentionEveryone[25]).getAutocompleteOptions(channel, true, setting), items3);
-  const tmp10 = callback(onChangeAutoCompleteVisibility.useState({ guild: null, borderRadius: false, id: null, name: "" }), 2);
-  const first1 = tmp10[0];
+  const memo = importAllResult.useMemo(() => analyticsLocations(canMentionEveryone[26]).getAutocompleteOptions(channel, true, setting), items3);
+  const tmp11 = callback(onChangeAutoCompleteVisibility.useState({ url: "<string:3349217282>", rejectWithError: "<string:160104449>", oldFormErrors: "<string:115015681>", retries: "<string:1749155841>" }), 2);
+  const first1 = tmp11[0];
   const focused = first1.focused;
+  const AutocompleteTypes = focused;
   const text = first1.text;
-  const AutocompleteTypes = text;
+  const EmojiInteractionPoint = text;
   const selectionStart = first1.selectionStart;
-  const EmojiInteractionPoint = selectionStart;
   const selectionEnd = first1.selectionEnd;
-  let closure_24 = tmp10[1];
-  [tmp13, closure_25] = callback(onChangeAutoCompleteVisibility.useState(0), 2);
+  callback2 = tmp11[1];
+  [tmp14, closure_26] = callback(onChangeAutoCompleteVisibility.useState(0), 2);
   const effect = importAllResult.useEffect(() => {
     let closure_0 = false;
     const result = activeCommand.addConditionalChangeListener(() => {
@@ -148,7 +145,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       if (!callback) {
         let flag;
         if (connected.isConnected()) {
-          const obj = callback(closure_2[26]);
+          const obj = callback(closure_2[27]);
           const result = obj.initiateEmojiInteraction(obj.AutocompleteWrapperShown);
           flag = false;
         }
@@ -163,7 +160,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, importAllResult.useMemo(() => {
     let closure_0 = -1;
     return () => ({
-      setChatInputHeight: closure_25,
+      setChatInputHeight: closure_26,
       setData(channelIds, combined) {
         ({ focused: closure_0, text: closure_1, selectionStart: closure_2, selectionEnd: closure_3 } = channelIds);
         if (-1 !== timeout) {
@@ -184,10 +181,10 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     if (null != text) {
       if (0 !== text.trim().length) {
         if (null != activeOption) {
-          let obj1 = analyticsLocations(canMentionEveryone[27]);
+          let obj1 = analyticsLocations(canMentionEveryone[28]);
           let applicationCommandOptionQueryOptions = obj1.getApplicationCommandOptionQueryOptions(activeOption);
         } else {
-          applicationCommandOptionQueryOptions = { accessibilityRole: true, bind: true, parent: true, body: true, name: true, ao: true, applicationId: "isArray", y: "key", canMentionEveryone, canMentionHere: canMentionEveryone };
+          applicationCommandOptionQueryOptions = { canMentionEveryone, canMentionHere: canMentionEveryone };
         }
         let tmp7;
         if (null != activeOption) {
@@ -213,28 +210,28 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
               if (null == activeOption.choices) {
                 if (!activeOption.autocomplete) {
                   const type = activeOption.type;
-                  if (analyticsLocations(canMentionEveryone[28]).ApplicationCommandOptionType.BOOLEAN === type) {
+                  if (analyticsLocations(canMentionEveryone[29]).ApplicationCommandOptionType.BOOLEAN === type) {
                     let analyticsLocations = "";
-                    let CHOICES = text.CHOICES;
-                    let choices = hasStickerResults;
+                    let CHOICES = focused.CHOICES;
+                    let choices = nonStickerResults;
                     let flag = true;
                     let str = "";
-                  } else if (analyticsLocations(canMentionEveryone[28]).ApplicationCommandOptionType.CHANNEL === type) {
-                    analyticsLocations = memo;
-                    CHOICES = text.CHANNELS;
+                  } else if (analyticsLocations(canMentionEveryone[29]).ApplicationCommandOptionType.CHANNEL === type) {
+                    analyticsLocations = context;
+                    CHOICES = focused.CHANNELS;
                     const channelTypes = activeOption.channelTypes;
                     flag = true;
-                    str = memo;
+                    str = context;
                   } else {
-                    if (analyticsLocations(canMentionEveryone[28]).ApplicationCommandOptionType.ROLE !== type) {
-                      if (analyticsLocations(canMentionEveryone[28]).ApplicationCommandOptionType.USER !== type) {
+                    if (analyticsLocations(canMentionEveryone[29]).ApplicationCommandOptionType.ROLE !== type) {
+                      if (analyticsLocations(canMentionEveryone[29]).ApplicationCommandOptionType.USER !== type) {
                         flag = false;
                       }
                     }
-                    analyticsLocations = context;
-                    CHOICES = text.MENTIONS;
+                    analyticsLocations = closure_18;
+                    CHOICES = focused.MENTIONS;
                     flag = true;
-                    str = context;
+                    str = closure_18;
                   }
                 }
                 let tmp11 = CHOICES;
@@ -280,7 +277,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
                 }
               }
               analyticsLocations = "";
-              CHOICES = text.CHOICES;
+              CHOICES = focused.CHOICES;
               choices = activeOption.choices;
               flag = true;
               str = "";
@@ -301,10 +298,10 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
           sum = num5 + num6;
         }
         while (true) {
-          let tmp38 = resultCount;
+          let tmp38 = setting;
           let tmp39 = text;
           let num9 = 0;
-          let isMatch = resultCount.test(text[tmp - 1]);
+          let isMatch = setting.test(text[tmp - 1]);
           if (tmp37) {
             num9 = sum;
           }
@@ -314,10 +311,10 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
             let substr1 = text.slice(tmp, selectionEnd);
             let tmp45 = analyticsLocations;
             let tmp46 = canMentionEveryone;
-            let obj2 = analyticsLocations(canMentionEveryone[29]);
+            let obj2 = analyticsLocations(canMentionEveryone[30]);
             let prefix = obj2.getPrefix(substr1);
             analyticsLocations = prefix;
-            let obj3 = analyticsLocations(canMentionEveryone[29]);
+            let obj3 = analyticsLocations(canMentionEveryone[30]);
             let query = obj3.getQuery(substr1);
             channel = query;
             if (null == query) {
@@ -357,21 +354,21 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
                 break;
               }
             } else {
-              let tmp49 = resultCount;
+              let tmp49 = setting;
               tmp50 = tmp11;
               tmp51 = query;
               tmp52 = tmp;
-              if (resultCount.test(query)) {
+              if (setting.test(query)) {
                 break;
               }
             }
-            let tmp57 = text;
+            let tmp57 = focused;
             let tmp58 = tmp51;
-            if (tmp50 === text.SLASHES) {
+            if (tmp50 === focused.SLASHES) {
               let tmp59 = analyticsLocations;
               let tmp60 = canMentionEveryone;
-              let num11 = 30;
-              let obj5 = analyticsLocations(canMentionEveryone[30]);
+              let num11 = 31;
+              let obj5 = analyticsLocations(canMentionEveryone[31]);
               let str4 = "";
               if (null != tmp51) {
                 str4 = tmp51;
@@ -408,23 +405,23 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         }
       }
     }
-    return { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true };
+    return { <string:1375459504>: false, <string:3429148283>: false, <string:1373155564>: null };
   }, items4);
   const autocompleteType = memo1.autocompleteType;
-  const hairlineWidth = autocompleteType;
+  let closure_27 = autocompleteType;
   const query = memo1.query;
-  let closure_27 = query;
+  closure_28 = query;
   const queryOptions = memo1.queryOptions;
-  let closure_28 = queryOptions;
+  const isSlashAutocompleteType = queryOptions;
   const autocompleteSelectionStart = memo1.autocompleteSelectionStart;
-  closure_29 = autocompleteSelectionStart;
+  const getAutocompletesHeight = autocompleteSelectionStart;
   const showOptionValuesPicker = memo1.showOptionValuesPicker;
-  const isSlashAutocompleteType = showOptionValuesPicker;
+  const getStickersItemLayout = showOptionValuesPicker;
   const items5 = [autocompleteType, query, queryOptions, memo];
   callback = importAllResult.useCallback((arg0) => {
     if (null != autocompleteType) {
       if (null != query) {
-        let obj = memo[closure_26];
+        let obj = memo[closure_27];
         const queryResultsResult = obj.queryResults(query, queryOptions, arg0);
         const items = [];
         const analyticsLocations = items;
@@ -441,16 +438,15 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         callback(obj);
       }
     }
-    callback(autocompleteSelectionStart);
+    callback(query);
   }, items5);
-  const getAutocompletesHeight = callback;
   const items6 = [autocompleteType, callback, memo];
   const effect1 = importAllResult.useEffect(() => {
     let tmp = null;
     if (null != autocompleteType) {
       let stores;
       if (null != memo) {
-        stores = memo[closure_26].stores;
+        stores = memo[closure_27].stores;
       }
       tmp = stores;
     }
@@ -467,29 +463,28 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const effect2 = importAllResult.useEffect(() => {
     callback(true);
   }, items7);
-  const items8 = [stickerResults, nonStickerResults];
+  const items8 = [stickerResults, first.nonStickerResults];
   const callback1 = importAllResult.useCallback(() => ({ numStickerResults: stickerResults.length, numEmojiResults: nonStickerResults.filter((type) => type.type === constants.EMOJI).length }), items8);
-  const getStickersItemLayout = callback1;
   const items9 = [autocompleteType, focused, keyboardType, resultCount];
   const memo2 = importAllResult.useMemo(() => {
     let tmp = !focused;
     if (!tmp) {
       let tmp3 = 0 === resultCount;
       if (tmp3) {
-        tmp3 = !showOptionValuesPicker(autocompleteType);
+        tmp3 = !queryOptions(autocompleteType);
       }
       tmp = tmp3;
     }
     let tmp6 = !tmp;
     if (!tmp) {
-      tmp6 = keyboardType === analyticsLocations(canMentionEveryone[31]).KeyboardTypes.SYSTEM;
+      tmp6 = keyboardType === analyticsLocations(canMentionEveryone[32]).KeyboardTypes.SYSTEM;
     }
     return tmp6;
   }, items9);
-  let closure_34 = importAllResult.useRef(false);
+  let closure_35 = importAllResult.useRef(false);
   const items10 = [autocompleteType, activeCommand];
   const effect3 = importAllResult.useEffect(() => {
-    let tmp2 = showOptionValuesPicker(autocompleteType);
+    let tmp2 = queryOptions(autocompleteType);
     if (ref.current) {
       if (!tmp2) {
         tmp2 = null != activeCommand;
@@ -502,9 +497,9 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       }
       tmp.current = tmp3;
       if (ref.current) {
-        let obj = analyticsLocations(canMentionEveryone[32]);
+        let obj = analyticsLocations(canMentionEveryone[33]);
         obj = { location: "slash_ui" };
-        obj.trackWithMetadata(stickerResults.APPLICATION_COMMAND_TOP_OF_FUNNEL, obj);
+        obj.trackWithMetadata(resultCount.APPLICATION_COMMAND_TOP_OF_FUNNEL, obj);
       }
     }
   }, items10);
@@ -518,51 +513,52 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       onChangeAutoCompleteVisibility(tmp);
     }
     if (tmp) {
-      const result = analyticsLocations(canMentionEveryone[33]).iOSTrackAutocompleteOpen(autocompleteType, channel, callback1());
-      const obj = analyticsLocations(canMentionEveryone[33]);
+      const result = analyticsLocations(canMentionEveryone[34]).iOSTrackAutocompleteOpen(autocompleteType, channel, callback1());
+      const obj = analyticsLocations(canMentionEveryone[34]);
     }
   }, items11);
-  const tmp12 = callback(onChangeAutoCompleteVisibility.useState(0), 2);
+  const tmp13 = callback(onChangeAutoCompleteVisibility.useState(0), 2);
   const insets = importDefault(dependencyMap[19])({ includeKeyboardHeight: true }).insets;
   const diff = importDefault(dependencyMap[18])({ ignoreKeyboard: true }).height - insets.top - insets.bottom;
-  const diff1 = diff - arg1(dependencyMap[20]).NAV_BAR_HEIGHT - tmp13;
-  const items12 = [autocompleteType, stickerResults.length, diff1];
+  const diff1 = diff - arg1(dependencyMap[20]).NAV_BAR_HEIGHT - tmp14;
+  const items12 = [autocompleteType, stickerResults.length, diff1, scaledTextLineHeight];
   const memo3 = importAllResult.useMemo(() => {
+    const sum = scaledTextLineHeight + 24;
+    let num = 200;
+    const sum1 = 200 + sum;
     if (stickerResults.length > 0) {
-      let num = query;
-    } else {
-      num = 200;
-      if (autocompleteType === text.EMOJIS_AND_STICKERS) {
-        num = 242;
-      }
+      num = sum1 + sum + analyticsLocations(canMentionEveryone[17]).AUTOCOMPLETE_STICKER_NODE_SIZE + 12 + closure_26;
+    } else if (autocompleteType === focused.EMOJIS_AND_STICKERS) {
+      num = sum1;
     }
     return Math.min(diff1, num);
   }, items12);
-  const tmp28 = callback(onChangeAutoCompleteVisibility.useState(null), 2);
-  const first2 = tmp28[0];
-  const tmp30 = tmp28[1];
-  const items13 = [resultCount, autocompleteType, memo2, hasStickerResults, hasNonStickerResults, nonStickerResults.length, memo3, first2, context, token];
+  const tmp29 = callback(onChangeAutoCompleteVisibility.useState(null), 2);
+  const first2 = tmp29[0];
+  const tmp31 = tmp29[1];
+  const items13 = [resultCount, autocompleteType, memo2, hasStickerResults, hasNonStickerResults, first.nonStickerResults.length, memo3, first2, context, token, scaledTextLineHeight];
   const memo4 = importAllResult.useMemo(() => {
-    if (autocompleteType === text.EMOJIS_AND_STICKERS) {
-      const tmp17 = callback(nonStickerResults.length, autocompleteType, context, token);
+    if (autocompleteType === focused.EMOJIS_AND_STICKERS) {
+      const tmp17 = autocompleteSelectionStart(nonStickerResults.length, autocompleteType, context, token);
       let sum = tmp17;
       if (hasNonStickerResults) {
-        sum = tmp17 + 42;
+        sum = tmp17 + (scaledTextLineHeight + 24);
       }
-      let sum1 = sum;
+      let sum2 = sum;
       if (hasStickerResults) {
-        sum1 = sum + (42 + analyticsLocations(canMentionEveryone[14]).AUTOCOMPLETE_STICKER_NODE_SIZE + 12);
+        const sum1 = scaledTextLineHeight + 24;
+        sum2 = sum + (sum1 + analyticsLocations(canMentionEveryone[17]).AUTOCOMPLETE_STICKER_NODE_SIZE + 12);
       }
-      let tmp24 = hasStickerResults;
+      let tmp27 = hasStickerResults;
       if (hasStickerResults) {
-        tmp24 = hasNonStickerResults;
+        tmp27 = hasNonStickerResults;
       }
-      let sum2 = sum1;
-      if (tmp24) {
-        sum2 = sum1 + autocompleteType;
+      let sum3 = sum2;
+      if (tmp27) {
+        sum3 = sum2 + closure_26;
       }
-      let num = sum2;
-    } else if (showOptionValuesPicker(autocompleteType)) {
+      let num = sum3;
+    } else if (queryOptions(autocompleteType)) {
       let num2 = 0;
       if (null != first2) {
         num2 = first2;
@@ -571,7 +567,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     } else {
       num = 0;
       if (null != autocompleteType) {
-        num = callback(resultCount, autocompleteType, context, token);
+        num = autocompleteSelectionStart(resultCount, autocompleteType, context, token);
       }
     }
     let num7 = 0;
@@ -580,28 +576,28 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     }
     return Math.min(num7, memo3);
   }, items13);
-  let obj4 = arg1(dependencyMap[34]);
-  const chatInputFloating = obj4.useMobileVisualRefreshConfig({ location: "AutocompleteWrapper" }).chatInputFloating;
-  const tmp32 = memo4 > 0;
-  let obj5 = arg1(dependencyMap[22]);
-  const token1 = obj5.useToken(importDefault(dependencyMap[17]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS);
+  let obj5 = arg1(dependencyMap[35]);
+  const chatInputFloating = obj5.useMobileVisualRefreshConfig({ location: "AutocompleteWrapper" }).chatInputFloating;
+  const tmp33 = memo4 > 0;
   let obj6 = arg1(dependencyMap[22]);
-  const token2 = obj6.useToken(importDefault(dependencyMap[17]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH);
+  const token1 = obj6.useToken(importDefault(dependencyMap[16]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS);
   let obj7 = arg1(dependencyMap[22]);
-  const token3 = obj7.useToken(importDefault(dependencyMap[17]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH);
+  const token2 = obj7.useToken(importDefault(dependencyMap[16]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH);
   let obj8 = arg1(dependencyMap[22]);
-  const token4 = obj8.useToken(importDefault(dependencyMap[17]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_HORIZONTAL);
+  const token3 = obj8.useToken(importDefault(dependencyMap[16]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH);
   let obj9 = arg1(dependencyMap[22]);
-  const token5 = obj9.useToken(importDefault(dependencyMap[17]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM);
+  const token4 = obj9.useToken(importDefault(dependencyMap[16]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_HORIZONTAL);
+  let obj10 = arg1(dependencyMap[22]);
+  const token5 = obj10.useToken(importDefault(dependencyMap[16]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM);
   let num = 0;
-  if (tmp32) {
+  if (tmp33) {
     num = token2;
   }
   let num2 = 0;
-  if (tmp32) {
+  if (tmp33) {
     num2 = token3;
   }
-  if (tmp32) {
+  if (tmp33) {
     let num3 = token5;
   } else {
     num3 = 0;
@@ -609,30 +605,30 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       num3 = 0;
     }
   }
-  tmp38Result = closure_28(token1, num, num2, token4, num3);
-  let obj10 = arg1(dependencyMap[35]);
-  isScreenReaderEnabled = obj10.useIsScreenReaderEnabled();
-  let obj11 = arg1(dependencyMap[16]);
-  let isAndroidResult = obj11.isAndroid();
+  tmp39Result = closure_27(token1, num, num2, token4, num3);
+  let obj11 = arg1(dependencyMap[36]);
+  isScreenReaderEnabled = obj11.useIsScreenReaderEnabled();
+  let obj12 = arg1(dependencyMap[15]);
+  let isAndroidResult = obj12.isAndroid();
   if (!isAndroidResult) {
-    let obj12 = arg1(dependencyMap[16]);
-    let isIOSResult = obj12.isIOS();
+    let obj13 = arg1(dependencyMap[15]);
+    let isIOSResult = obj13.isIOS();
     if (isIOSResult) {
-      let tmp45 = isScreenReaderEnabled;
+      let tmp46 = isScreenReaderEnabled;
       if (!isScreenReaderEnabled) {
-        tmp45 = chatInputFloating;
+        tmp46 = chatInputFloating;
       }
-      isIOSResult = tmp45;
+      isIOSResult = tmp46;
     }
     isAndroidResult = isIOSResult;
   }
-  const items14 = [isScreenReaderEnabled, chatInputFloating, tmp38Result.autocompletePositionRelative];
-  const items15 = [tmp32, token5];
+  const items14 = [isScreenReaderEnabled, chatInputFloating, tmp39Result.autocompletePositionRelative];
+  const items15 = [tmp33, token5];
   const memo5 = importAllResult.useMemo(() => {
     let prop = null;
     if (obj.isIOS()) {
       if (isScreenReaderEnabled) {
-        prop = tmp38Result.autocompletePositionRelative;
+        prop = tmp39Result.autocompletePositionRelative;
       } else {
         prop = null;
       }
@@ -641,19 +637,19 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   }, items14);
   const memo6 = importAllResult.useMemo(() => {
     let tmp;
-    if (tmp32) {
+    if (tmp33) {
       const obj = { marginTop: token5 };
       tmp = obj;
     }
     return tmp;
   }, items15);
   const items16 = [analyticsLocations, channel, chatInputRef];
-  const tmp24 = importDefault(dependencyMap[18])({ ignoreKeyboard: true });
-  const tmp38 = closure_28;
+  const tmp25 = importDefault(dependencyMap[18])({ ignoreKeyboard: true });
+  const tmp39 = closure_27;
   callback2 = importAllResult.useCallback((type) => {
-    if (type.type !== setting.EMOJI_PREMIUM_UPSELL) {
+    if (type.type !== scaledTextLineHeight.EMOJI_PREMIUM_UPSELL) {
       let result;
-      const autocompleteResultText = analyticsLocations(canMentionEveryone[29]).getAutocompleteResultText(type, channel);
+      const autocompleteResultText = analyticsLocations(canMentionEveryone[30]).getAutocompleteResultText(type, channel);
       const current = chatInputRef.current;
       const applicationCommandManager = current.getApplicationCommandManager();
       if (null != applicationCommandManager) {
@@ -661,16 +657,16 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       }
       if (!result) {
         const current2 = chatInputRef.current;
-        current2.insertText(autocompleteResultText, arg1, type.type !== setting.STICKER);
-        if (type.type === setting.STICKER) {
+        current2.insertText(autocompleteResultText, arg1, type.type !== scaledTextLineHeight.STICKER);
+        if (type.type === scaledTextLineHeight.STICKER) {
           const current3 = chatInputRef.current;
           current3.handleSelectSticker(type.sticker, arg1);
         }
       }
-      const obj3 = analyticsLocations(canMentionEveryone[29]);
+      const obj3 = analyticsLocations(canMentionEveryone[30]);
     } else {
-      let obj = channel(canMentionEveryone[37]);
-      obj = { initialUpsellKey: nonStickerResults.EMOJI_AUTOCOMPLETE, analyticsLocations };
+      let obj = channel(canMentionEveryone[38]);
+      obj = { initialUpsellKey: stickerResults.EMOJI_AUTOCOMPLETE, analyticsLocations };
       const result1 = obj.handleShowUpsellAlert(obj);
     }
   }, items16);
@@ -679,11 +675,11 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const callback3 = importAllResult.useCallback((type) => {
     const current = chatInputRef.current;
     const applicationCommandManager = current.getApplicationCommandManager();
-    if (type.type === analyticsLocations(canMentionEveryone[28]).ApplicationCommandOptionType.ATTACHMENT) {
+    if (type.type === analyticsLocations(canMentionEveryone[29]).ApplicationCommandOptionType.ATTACHMENT) {
       if (null != optionStates[type.name].lastValidationResult) {
         if (lastValidationResult.success) {
-          const result = analyticsLocations(canMentionEveryone[38]).openCommandAttachmentPreview(applicationCommandManager, tmp5, type.name);
-          const obj2 = analyticsLocations(canMentionEveryone[38]);
+          const result = analyticsLocations(canMentionEveryone[39]).openCommandAttachmentPreview(applicationCommandManager, tmp5, type.name);
+          const obj2 = analyticsLocations(canMentionEveryone[39]);
         }
       }
       if (null != applicationCommandManager) {
@@ -699,10 +695,10 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     }
   }, items17);
   callback4 = importAllResult.useCallback((selectionType) => {
-    let obj = analyticsLocations(canMentionEveryone[33]);
+    let obj = analyticsLocations(canMentionEveryone[34]);
     obj = { selectionType: selectionType.type };
     let id = null;
-    if (selectionType.type === setting.STICKER) {
+    if (selectionType.type === scaledTextLineHeight.STICKER) {
       id = selectionType.sticker.id;
     }
     obj.stickerId = id;
@@ -714,72 +710,72 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     }
     callback2(selectionType, num, showOptionValuesPicker);
   }, items18);
-  const tmp52 = callback(onChangeAutoCompleteVisibility.useState(null), 2);
-  first3 = tmp52[0];
-  closure_47 = tmp52[1];
+  const tmp53 = callback(onChangeAutoCompleteVisibility.useState(null), 2);
+  first3 = tmp53[0];
+  closure_48 = tmp53[1];
   const items19 = [autocompleteType, callback4, first3, channel, activeCommand];
   const callback5 = importAllResult.useCallback((item) => {
     item = item.item;
     const analyticsLocations = item;
     const type = item.type;
-    if (setting.USER === type) {
+    if (scaledTextLineHeight.USER === type) {
       let obj = {};
       const merged = Object.assign(item);
       obj["guildId"] = channel.guild_id;
       obj["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).User, obj);
-    } else if (setting.GLOBAL === type) {
+      return selectionStart(channel(canMentionEveryone[17]).User, obj);
+    } else if (scaledTextLineHeight.GLOBAL === type) {
       obj = {};
       const merged1 = Object.assign(item);
       obj["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).Global, obj);
-    } else if (setting.ROLE === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Global, obj);
+    } else if (scaledTextLineHeight.ROLE === type) {
       const obj1 = {};
       const merged2 = Object.assign(item);
       obj1["onPress"] = function onPress() {
         return callback(item);
       };
-      let tmp53 = autocompleteType === text.MENTIONS;
+      let tmp53 = autocompleteType === focused.MENTIONS;
       if (tmp53) {
         tmp53 = null == activeCommand;
       }
       obj1["showDescription"] = tmp53;
-      return selectionEnd(channel(canMentionEveryone[14]).Role, obj1);
-    } else if (setting.CHANNEL === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Role, obj1);
+    } else if (scaledTextLineHeight.CHANNEL === type) {
       const obj2 = {};
       const merged3 = Object.assign(item);
       obj2["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).Channel, obj2);
-    } else if (setting.EMOJI === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Channel, obj2);
+    } else if (scaledTextLineHeight.EMOJI === type) {
       const obj3 = {};
       const merged4 = Object.assign(item);
       obj3["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).Emoji, obj3);
-    } else if (setting.EMOJI_PREMIUM_UPSELL === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Emoji, obj3);
+    } else if (scaledTextLineHeight.EMOJI_PREMIUM_UPSELL === type) {
       const obj4 = {};
       const merged5 = Object.assign(item);
       obj4["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).EmojiPremiumUpsell, obj4);
-    } else if (setting.CHOICE === type) {
+      return selectionStart(channel(canMentionEveryone[17]).EmojiPremiumUpsell, obj4);
+    } else if (scaledTextLineHeight.CHOICE === type) {
       const obj5 = {};
       const merged6 = Object.assign(item);
       obj5["onPress"] = function onPress() {
         return callback(item);
       };
-      return selectionEnd(channel(canMentionEveryone[14]).Choice, obj5);
-    } else if (setting.CHOICE_LOADING === type) {
-      return selectionEnd(channel(canMentionEveryone[14]).ChoiceLoading, {});
-    } else if (setting.STICKER === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Choice, obj5);
+    } else if (scaledTextLineHeight.CHOICE_LOADING === type) {
+      return selectionStart(channel(canMentionEveryone[17]).ChoiceLoading, {});
+    } else if (scaledTextLineHeight.STICKER === type) {
       const obj6 = {};
       const merged7 = Object.assign(item);
       obj6["onPress"] = function onPress() {
@@ -790,32 +786,32 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
       };
       obj6["isInteracting"] = first3 === item.sticker.id;
       const _HermesInternal = HermesInternal;
-      return selectionEnd(channel(canMentionEveryone[14]).Sticker, obj6, "" + item.sticker.id + "-" + first3 === item.sticker.id);
-    } else if (setting.LABEL === type) {
+      return selectionStart(channel(canMentionEveryone[17]).Sticker, obj6, "" + item.sticker.id + "-" + first3 === item.sticker.id);
+    } else if (scaledTextLineHeight.LABEL === type) {
       obj = {};
       const merged8 = Object.assign(item);
-      return selectionEnd(channel(canMentionEveryone[14]).Label, obj);
+      return selectionStart(channel(canMentionEveryone[17]).Label, obj);
     } else {
       return null;
     }
   }, items19);
-  const items20 = [tmp38Result.autocomplete, { maxHeight: memo3 }];
+  const items20 = [tmp39Result.autocomplete, { maxHeight: memo3 }];
   obj = {};
-  const items21 = [tmp38Result.autocompleteWrapper, , ];
+  const items21 = [tmp39Result.autocompleteWrapper, , ];
   let autocompleteWrapperAbsolute = !isAndroidResult;
   if (autocompleteWrapperAbsolute) {
-    autocompleteWrapperAbsolute = tmp38Result.autocompleteWrapperAbsolute;
+    autocompleteWrapperAbsolute = tmp39Result.autocompleteWrapperAbsolute;
   }
   items21[1] = autocompleteWrapperAbsolute;
   items21[2] = memo5;
   obj.style = items21;
   obj = { style: items22 };
-  const items22 = [tmp38Result.autocompleteContainer, importDefault(dependencyMap[36])(memo4, screenIndex)];
-  let tmp59Result = null != autocompleteType;
-  if (tmp59Result) {
+  const items22 = [tmp39Result.autocompleteContainer, importDefault(dependencyMap[37])(memo4, screenIndex)];
+  let tmp60Result = null != autocompleteType;
+  if (tmp60Result) {
     obj1 = {};
-    let tmp62 = autocompleteType === AutocompleteTypes.SLASHES_DISCOVERY;
-    if (tmp62) {
+    let tmp63 = autocompleteType === AutocompleteTypes.SLASHES_DISCOVERY;
+    if (tmp63) {
       obj2 = {
         channel,
         onPressSlashItem(command, section, visualSection) {
@@ -823,16 +819,16 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
               if (null != autocompleteSelectionStart) {
                 num = autocompleteSelectionStart;
               }
-              callback2({ command, section, type: setting.SLASH, visualSection, location: analyticsLocations(canMentionEveryone[41]).ApplicationCommandTriggerLocations.DISCOVERY }, num);
+              callback2({ command, section, type: scaledTextLineHeight.SLASH, visualSection, location: analyticsLocations(canMentionEveryone[42]).ApplicationCommandTriggerLocations.DISCOVERY }, num);
             },
-        onHeightChange: tmp30,
+        onHeightChange: tmp31,
         canOnlyUseTextCommands
       };
-      tmp62 = selectionEnd(importDefault(dependencyMap[40]), obj2);
+      tmp63 = selectionStart(importDefault(dependencyMap[41]), obj2);
     }
-    const items23 = [tmp62, , , ];
-    let tmp68Result = autocompleteType === AutocompleteTypes.SLASHES;
-    if (tmp68Result) {
+    const items23 = [tmp63, , , ];
+    let tmp69Result = autocompleteType === AutocompleteTypes.SLASHES;
+    if (tmp69Result) {
       obj3 = { channel };
       let str = "";
       if (null != query) {
@@ -844,75 +840,90 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         if (null != autocompleteSelectionStart) {
           num = autocompleteSelectionStart;
         }
-        callback2({ command, section: arg1, type: setting.SLASH, location: analyticsLocations(canMentionEveryone[41]).ApplicationCommandTriggerLocations.DISCOVERY, query }, num);
+        callback2({ command, section: arg1, type: scaledTextLineHeight.SLASH, location: analyticsLocations(canMentionEveryone[42]).ApplicationCommandTriggerLocations.DISCOVERY, query }, num);
       };
       obj3.style = items20;
-      obj3.ItemSeparatorComponent = arg1(dependencyMap[29]).getItemSeparator;
-      obj3.getItemLayout = arg1(dependencyMap[29]).getItemLayout;
+      obj3.ItemSeparatorComponent = arg1(dependencyMap[30]).getItemSeparator;
+      obj3.getItemLayout = arg1(dependencyMap[30]).getItemLayout;
       obj3.onCommandsChange = function onCommandsChange(arg0) {
-        tmp30(callback(arg0, autocompleteType, context, token));
+        tmp31(autocompleteSelectionStart(arg0, autocompleteType, context, token));
       };
-      tmp68Result = selectionEnd(importDefault(dependencyMap[42]), obj3);
-      const tmp68 = selectionEnd;
-      const tmp71 = importDefault(dependencyMap[42]);
+      tmp69Result = selectionStart(importDefault(dependencyMap[43]), obj3);
+      const tmp69 = selectionStart;
+      const tmp72 = importDefault(dependencyMap[43]);
     }
-    items23[1] = tmp68Result;
-    let tmp76Result = autocompleteType === AutocompleteTypes.EMOJIS_AND_STICKERS;
-    if (tmp76Result) {
+    items23[1] = tmp69Result;
+    let tmp77Result = autocompleteType === AutocompleteTypes.EMOJIS_AND_STICKERS;
+    if (tmp77Result) {
       obj4 = {};
-      let tmp78 = hasStickerResults;
+      let tmp79 = hasStickerResults;
       if (hasStickerResults) {
         obj5 = {};
-        obj6 = { style: tmp38Result.sectionTitle, variant: "text-sm/semibold" };
-        const intl = arg1(dependencyMap[44]).intl;
-        obj7 = { prefix: query };
-        obj6.children = intl.format(arg1(dependencyMap[44]).t.uferGG, obj7);
-        const items24 = [selectionEnd(arg1(dependencyMap[43]).Text, obj6), ];
-        obj8 = { horizontal: true };
-        obj9 = {};
+        obj6 = {};
+        const items24 = [tmp39Result.sectionTitle, ];
+        obj7 = { height: scaledTextLineHeight };
+        items24[1] = obj7;
+        obj6.style = items24;
+        obj8 = { variant: "text-sm/semibold" };
+        const intl = arg1(dependencyMap[45]).intl;
+        obj9 = { prefix: query };
+        obj8.children = intl.format(arg1(dependencyMap[45]).t.uferGG, obj9);
+        obj6.children = selectionStart(arg1(dependencyMap[44]).Text, obj8);
+        const items25 = [selectionStart(commandsDisabled, obj6), ];
+        obj10 = { horizontal: true };
+        obj11 = {};
         const merged = Object.assign(items20);
-        const merged1 = Object.assign(tmp38Result.stickersAutocompleteList);
-        obj8.style = obj9;
-        obj8.keyExtractor = function keyExtractor(sticker) {
+        const merged1 = Object.assign(tmp39Result.stickersAutocompleteList);
+        obj10.style = obj11;
+        obj10.keyExtractor = function keyExtractor(sticker) {
           return sticker.sticker.id;
         };
-        obj8.data = stickerResults;
-        obj8.renderItem = callback5;
-        obj8.showsHorizontalScrollIndicator = false;
-        obj8.getItemLayout = getStickersItemLayout;
-        obj10 = { right: 12 };
-        obj8.contentInset = obj10;
-        items24[1] = selectionEnd(chatInputRef, obj8);
-        obj5.children = items24;
-        tmp78 = callback2(closure_24, obj5);
+        obj10.data = stickerResults;
+        obj10.renderItem = callback5;
+        obj10.showsHorizontalScrollIndicator = false;
+        obj10.getItemLayout = getStickersItemLayout;
+        obj12 = { right: 12 };
+        obj10.contentInset = obj12;
+        items25[1] = selectionStart(chatInputRef, obj10);
+        obj5.children = items25;
+        tmp79 = callback2(selectionEnd, obj5);
       }
-      const items25 = [tmp78, , ];
+      const items26 = [tmp79, , ];
       if (hasStickerResults) {
         hasStickerResults = hasNonStickerResults;
       }
       if (hasStickerResults) {
-        obj11 = { style: tmp38Result.sectionDivider };
-        hasStickerResults = selectionEnd(importDefault(dependencyMap[45]), obj11);
+        obj13 = { style: tmp39Result.sectionDivider };
+        hasStickerResults = selectionStart(importDefault(dependencyMap[46]), obj13);
       }
-      items25[1] = hasStickerResults;
+      items26[1] = hasStickerResults;
       if (hasNonStickerResults) {
-        obj12 = { style: tmp38Result.sectionTitle, variant: "text-sm/semibold" };
-        const intl2 = arg1(dependencyMap[44]).intl;
-        const obj13 = {};
+        const obj14 = {};
+        const items27 = [tmp39Result.sectionTitle, ];
+        const obj15 = { height: scaledTextLineHeight };
+        items27[1] = obj15;
+        obj14.style = items27;
+        const obj16 = { variant: "text-sm/semibold" };
+        const intl2 = arg1(dependencyMap[45]).intl;
+        const obj17 = {};
+        stateFromStoresObject = memo;
+        stateFromStoresObject = globalThis;
         const _HermesInternal = HermesInternal;
-        obj13.prefix = "" + focused + query;
-        obj12.children = intl2.format(arg1(dependencyMap[44]).t.ksAVYt, obj13);
-        hasNonStickerResults = selectionEnd(arg1(dependencyMap[43]).Text, obj12);
+        obj17.prefix = "" + memo + query;
+        obj16.children = intl2.format(arg1(dependencyMap[45]).t.ksAVYt, obj17);
+        obj14.children = selectionStart(arg1(dependencyMap[44]).Text, obj16);
+        hasNonStickerResults = selectionStart(commandsDisabled, obj14);
       }
-      items25[2] = hasNonStickerResults;
-      obj4.children = items25;
-      tmp76Result = callback2(closure_24, obj4);
-      const tmp76 = callback2;
-      const tmp77 = closure_24;
+      items26[2] = hasNonStickerResults;
+      obj4.children = items26;
+      tmp77Result = callback2(selectionEnd, obj4);
+      const tmp77 = callback2;
+      const tmp78 = selectionEnd;
     }
-    items23[2] = tmp76Result;
+    items23[2] = tmp77Result;
+    stateFromStoresObject = selectionStart;
     stateFromStoresObject = chatInputRef;
-    const obj14 = {
+    const obj18 = {
       style: items20,
       keyExtractor(arg0, arg1) {
           return String(arg1);
@@ -922,36 +933,38 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     };
     stateFromStoresObject = arg1;
     stateFromStoresObject = dependencyMap;
-    obj14.ItemSeparatorComponent = arg1(dependencyMap[29]).getItemSeparator;
-    obj14.getItemLayout = arg1(dependencyMap[29]).getItemLayout;
-    items23[3] = selectionEnd(chatInputRef, obj14);
+    obj18.ItemSeparatorComponent = arg1(dependencyMap[30]).getItemSeparator;
+    obj18.getItemLayout = arg1(dependencyMap[30]).getItemLayout;
+    items23[3] = selectionStart(chatInputRef, obj18);
     obj1.children = items23;
-    tmp59Result = callback2(closure_24, obj1);
-    const tmp59 = callback2;
-    const tmp60 = closure_24;
+    tmp60Result = callback2(selectionEnd, obj1);
+    const tmp60 = callback2;
+    const tmp61 = selectionEnd;
   }
-  obj.children = tmp59Result;
-  const items26 = [selectionEnd(importDefault(dependencyMap[39]).View, obj), ];
+  obj.children = tmp60Result;
+  const items28 = [selectionStart(importDefault(dependencyMap[40]).View, obj), ];
   stateFromStoresObject = null != activeCommand && !commandsDisabled;
   if (stateFromStoresObject) {
-    stateFromStoresObject = selectionEnd;
+    stateFromStoresObject = selectionStart;
     stateFromStoresObject = commandsDisabled;
-    const obj15 = { style: memo6 };
+    const obj19 = { style: memo6 };
     stateFromStoresObject = importDefault;
     stateFromStoresObject = dependencyMap;
-    const obj16 = { command: activeCommand, section: stateFromStoresObject.activeSection, guildId: channel.guild_id, onPressOption: callback3, currentOption: activeOption, optionStates };
-    obj15.children = selectionEnd(importDefault(dependencyMap[46]), obj16);
-    stateFromStoresObject = selectionEnd(commandsDisabled, obj15);
+    const obj20 = { command: activeCommand, section: stateFromStoresObject.activeSection, guildId: channel.guild_id, onPressOption: callback3, currentOption: activeOption, optionStates };
+    obj19.children = selectionStart(importDefault(dependencyMap[47]), obj20);
+    stateFromStoresObject = selectionStart(commandsDisabled, obj19);
   }
-  items26[1] = stateFromStoresObject;
-  obj.children = items26;
-  const tmp48 = importDefault(dependencyMap[36])(memo4, screenIndex);
-  const tmp55 = callback2;
-  const tmp56 = commandsDisabled;
-  const tmp57 = selectionEnd;
-  return selectionEnd(commandsDisabled, { style: tmp38Result.autocompletePositionRelative, children: callback2(commandsDisabled, obj) });
+  items28[1] = stateFromStoresObject;
+  obj.children = items28;
+  const tmp49 = importDefault(dependencyMap[37])(memo4, screenIndex);
+  const tmp56 = callback2;
+  const tmp57 = commandsDisabled;
+  const tmp58 = selectionStart;
+  return selectionStart(commandsDisabled, { style: tmp39Result.autocompletePositionRelative, children: callback2(commandsDisabled, obj) });
 });
 forwardRefResult.displayName = "AutocompleteWrapper";
-const result = __exportStarResult1.fileFinishedImporting("modules/autocompleter/native/AutocompleteWrapper.tsx");
+const obj2 = arg1(dependencyMap[14]);
+const memoResult = importAllResult.memo(forwardRefResult);
+const result = arg1(dependencyMap[48]).fileFinishedImporting("modules/autocompleter/native/AutocompleteWrapper.tsx");
 
-export default importAllResult.memo(forwardRefResult);
+export default memoResult;

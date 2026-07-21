@@ -1,7 +1,7 @@
 // Module ID: 1208
-// Function ID: 13873
+// Function ID: 13877
 // Name: reportEvent
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: logFluxAction, notifyStoreChange, notifyStoreCreated
 
 // Module 1208 (reportEvent)

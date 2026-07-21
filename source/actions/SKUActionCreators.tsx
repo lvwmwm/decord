@@ -1,10 +1,10 @@
-// Module ID: 7361
-// Function ID: 59290
+// Module ID: 7362
+// Function ID: 59302
 // Name: _fetchSKU
 // Dependencies: []
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 7361 (_fetchSKU)
+// Module 7362 (_fetchSKU)
 async function _fetchSKU(skuId, arg1) {
   if (null == closure_5.get(skuId)) {
     let obj = { type: "SKU_FETCH_START", skuId: tmp };
@@ -131,7 +131,7 @@ async function _orderSKU(sku_id, payment_source_id, request_gateway_country_code
   let obj = callback2(closure_2[4]);
   obj.dispatch({ type: "ORDER_CREATE_START" });
   obj = { order_line_items: items, billing_facet: obj1, location_facet: obj2 };
-  obj = { _resetProfilerInfo: "default", entanglements: "done", _lastSampleTimestamp: "go", sku_id };
+  obj = { sku_id };
   const items = [obj];
   if (arg3) {
     const obj3 = { is_gift: true };

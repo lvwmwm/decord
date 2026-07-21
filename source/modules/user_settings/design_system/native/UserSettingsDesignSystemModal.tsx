@@ -1,10 +1,10 @@
-// Module ID: 14334
-// Function ID: 108213
+// Module ID: 14337
+// Function ID: 108245
 // Name: useScreens
 // Dependencies: []
 // Exports: default
 
-// Module 14334 (useScreens)
+// Module 14337 (useScreens)
 function useScreens() {
   return arg1(dependencyMap[6]).useNavigatorScreens(() => {
     let obj = {};
@@ -23,13 +23,13 @@ function useScreens() {
     };
     obj.render = function render(arg0, arg1) {
       const obj = {
-        "Bool(false)": "O.O",
-        "Bool(false)": "warning",
-        "Bool(false)": "Heartbeat",
-        "Bool(false)": "oO--oO",
-        "Bool(false)": "heartbeat",
-        "Bool(false)": "Triple Click",
-        "Bool(false)": "o.o.o",
+        string: "<string:718164314>",
+        track: "<string:17244737>",
+        body: "<string:2885701888>",
+        name: "<string:20401986>",
+        padding: "<string:17262336>",
+        format: "<string:3040825600>",
+        colors: "<string:27702851>",
         onAction() {
           return arg1.push(constants.WHO_DAT);
         },
@@ -46,9 +46,9 @@ function useScreens() {
     };
     obj.render = function render(arg0, arg1) {
       const obj = {
-        "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images",
-        "Bool(true)": 24,
-        "Bool(true)": 24,
+        challenge: "Triple Click",
+        mfaChallenge: "o.o.o",
+        finish: "tripleClick",
         onAction() {
           return arg1.push(constants.EVERYBODY);
         },
@@ -83,11 +83,11 @@ function useScreens() {
     };
     obj2.render = function render(arg0, arg1) {
       const obj = {
-        fullscreen: "r",
-        ignoreKeyboard: "isArray",
-        headerTitle: "alignItems",
-        autoFocus: "Icon",
-        required: "y",
+        "Bool(true)": "Notification",
+        "Bool(true)": "o-O=o",
+        "Bool(true)": "notification",
+        "Bool(true)": "text-lg/bold",
+        "Bool(true)": "Semantic Types",
         onAction() {
           return arg1.push(constants.LIMIT);
         }
@@ -105,20 +105,12 @@ function useScreens() {
       return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.LIMIT });
     };
     obj3.render = function render() {
-      const obj = {
-        "Bool(false)": false,
-        "Bool(false)": false,
-        "Bool(false)": false,
-        "Bool(false)": false,
-        "Bool(false)": false,
-        "Bool(false)": false,
-        "Bool(false)": false,
+      return callback3(closure_14, {
         onAction: callback2(closure_2[8]).pop,
         onSecondaryAction() {
           return callback(closure_2[12]).openURL("https://www.youtube.com/watch?v=votBDwhTu1E");
         }
-      };
-      return callback3(closure_14, obj);
+      });
     };
     obj[constants.LIMIT] = obj3;
     return obj;
@@ -196,7 +188,7 @@ function SwitchesScreen(onAction) {
   const tmp2 = callback(React.useState(parts.map(() => false)), 2);
   const first = tmp2[0];
   let closure_1 = tmp2[1];
-  let obj = { height: true, right: true };
+  let obj = {};
   obj = { isVisible: first.some((arg0) => arg0), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction.onAction };
   obj.footer = callback2(arg1(dependencyMap[21]).ModalFloatingAction, obj);
   obj = { style: tmp.tableRows };
@@ -239,12 +231,12 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { -1437179220: null, -1208246173: "\u{1F468}\u200D\u{1F468}\u200D\u{1F466}\u200D\u{1F466}", 1644566097: 6, 1481728595: 188 } };
+obj = { container: { -9223372036854775808: null, -9223372036854775808: "\u{1F468}\u200D\u{1F468}\u200D\u{1F466}\u200D\u{1F466}", 9223372036854775807: 6, 0: 188 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.screen = obj;
-const obj1 = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391244649793, "Bool(false)": 9126805507, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003820420002483527, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016459986031041713, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000945656390104407, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011809624005504141, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027118417120470957, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { keyboardType: -1758369715761618200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, autoCapitalize: 292062.0791015852, autoCorrect: false, defaultValue: false, placeholder: false, dateInput: false, GUILD_SETTINGS_SET_SECTION: false, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.emojiContainer = obj1;
-obj.emoji = { PX_16: false, ix: false };
+obj.emoji = {};
 obj.title = { marginBottom: 16 };
 obj.tableRows = { width: "100%" };
 let closure_9 = obj.createStyles(obj);

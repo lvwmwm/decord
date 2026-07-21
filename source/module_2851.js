@@ -1,8 +1,8 @@
 // Module ID: 2851
-// Function ID: 24730
+// Function ID: 24735
 // Dependencies: []
 
 // Module 2851
 const _module = require(dependencyMap[0]);
 
-export default _module.registerAsset({ scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] });
+export default _module.registerAsset({ scales: [null] });

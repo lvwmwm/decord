@@ -1,5 +1,5 @@
 // Module ID: 9003
-// Function ID: 70848
+// Function ID: 70859
 // Dependencies: []
 
 // Module 9003
@@ -9,19 +9,19 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { animatedViewContainer: { overflow: "hidden" }, container: { et: null, eu: "900d6a1aeefc6f4c571ad9d81203dc5c" }, measuringContainer: {}, descriptionContainer: { marginTop: 8 }, expandDescriptionCTAGradient: { "Bool(false)": "png", "Bool(false)": 18, "Bool(false)": 18, "Bool(false)": 4, "Bool(false)": "flex" } };
-obj = { marginRight: null, marginLeft: false, checked: 0, label: 0, subLabel: 0, backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
+let obj = { animatedViewContainer: { overflow: "hidden" }, container: { -9223372036854775808: null, 0: "900d6a1aeefc6f4c571ad9d81203dc5c" }, measuringContainer: { 9223372036854775807: "<string:3497122742>", 9223372036854775807: "<string:822083591>" }, descriptionContainer: { marginTop: 8 }, expandDescriptionCTAGradient: { ORBS_SHOP_ONBOARDING_COACHMARK: "INVALID_CHANNEL_TYPE", fromTop: "package", Globe: "_headers", 6.4: "png", guildLoaded: "ACCOUNT_ENABLE_2FA" } };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
 obj.expandDescriptionCTA = obj;
 obj.collapseDescriptionCTA = { marginTop: 4 };
-obj1 = { gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj1 = { overflow: true, flex: "/assets/design/components/Icon/native/redesign/generated/images", flexDirection: 24, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.nameContainer = obj1;
 obj.nameText = { flexShrink: 1 };
-const tmp3 = arg1(dependencyMap[3]);
-obj.partnerLabelWrapper = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj2 = { <string:743521509>: 1916866816, <string:1371103610>: 1442840857, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj.partnerLabelWrapper = obj2;
 let closure_10 = obj1.createStyles(obj);
 let closure_11 = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
 let closure_12 = { code: "function DetailsHeaderTsx2(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+const tmp3 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyle) {
   let application;
   let containerStyle;
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let tmp30 = null;
   if (isPartnerApplicationResult) {
     obj4 = { style: tmp.partnerLabelWrapper };
-    obj5 = {};
+    obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
     const intl = arg1(closure_2[16]).intl;
     obj5.children = intl.string(arg1(closure_2[16]).t.LO4f0P);
     obj4.children = str(arg1(closure_2[15]).Text, obj5);
@@ -253,9 +253,6 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       obj10.style = items10;
       const items11 = [str(importDefault(closure_2[17]), obj10), ];
       const obj12 = {
-        marginTop: -0.0000000000000000000000000000000000000000005605197760997415,
-        marginBottom: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010400061133624569,
-        gap: -0.0000000000000044409002618943934,
         onLayout(nativeEvent) {
               if (null == first2) {
                 callback3(nativeEvent.nativeEvent.layout.width);
@@ -263,7 +260,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
             }
       };
       const intl3 = arg1(closure_2[16]).intl;
-      const items12 = [false, intl3.string(arg1(closure_2[16]).t.OBCR+p)];
+      const items12 = [, intl3.string(arg1(closure_2[16]).t.OBCR+p)];
       obj12.children = items12;
       items11[1] = first2(arg1(closure_2[15]).Text, obj12);
       obj9.children = items11;

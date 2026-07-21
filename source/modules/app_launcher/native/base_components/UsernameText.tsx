@@ -1,5 +1,5 @@
 // Module ID: 11294
-// Function ID: 87878
+// Function ID: 87890
 // Name: UsernameText
 // Dependencies: []
 // Exports: default
@@ -32,7 +32,7 @@ export default function UsernameText(color) {
     obj = {};
     const merged = Object.assign(obj);
     obj["color"] = "text-muted";
-    const items1 = ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", user.discriminator];
+    const items1 = [null, user.discriminator];
     obj["children"] = items1;
     items[1] = callback(arg1(dependencyMap[3]).Text, obj);
     obj.children = items;

@@ -1,5 +1,5 @@
 // Module ID: 9218
-// Function ID: 72081
+// Function ID: 72092
 // Name: OrSeparator
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ class OrSeparator {
     obj = { style: tmp.innerSeparator };
     items = [, , ];
     items[0] = jsx(View, obj);
-    obj1 = { "Null": "[\u6628\u65E5] LT", "Null": null, "Null": "L" };
+    obj1 = { delete: 1404174337, dispatch: null, raw: null };
     obj1.style = tmp.orText;
     intl = arg1(dependencyMap[7]).intl;
     obj1.children = intl.string(arg1(dependencyMap[7]).t.HEuagM);
@@ -37,18 +37,18 @@ const tmp4 = arg1(dependencyMap[3]);
 obj.container = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 const obj1 = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.textInput = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.innerSeparator = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.separator = { <string:1646734673>: null, <string:72458491>: "\u{1F937}\u{1F3FF}", <string:2700829712>: true, <string:1834026050>: null };
-const obj4 = { body: "long_press", flex: "item_body", accessible: "open", marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
+const obj3 = { onPress: null, name: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.innerSeparator = obj3;
+obj.separator = { 1453996901: null, -1973307556: "\u{1F937}\u{1F3FF}", 1654826833: true, -699287860: null };
+const obj4 = { flex: "press", accessible: "toggle_existing_reaction_button", withSpring: "react", marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 obj.orText = obj4;
 obj.header = { textAlign: "center" };
 obj.description = {};
 obj.exampleText = { marginTop: 8 };
 let closure_11 = obj.createStyles(obj);
-const items = [];
+const items = [null, null, null];
 let closure_13 = items[0];
-const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/accept_invite/native/JoinServer.tsx");
 
 export default function JoinServer(arg0) {
@@ -77,7 +77,7 @@ export default function JoinServer(arg0) {
   let tmp8 = null;
   if (importDefault(dependencyMap[10])().height > closure_6) {
     const obj2 = {};
-    const obj3 = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.header };
+    const obj3 = { style: tmp.header };
     const intl = arg1(dependencyMap[7]).intl;
     obj3.children = intl.string(arg1(dependencyMap[7]).t.jlfuFW);
     const items2 = [callback(arg1(dependencyMap[6]).Text, obj3), ];
@@ -105,7 +105,7 @@ export default function JoinServer(arg0) {
   obj5.textStyle = tmp.textInput;
   obj5.onSubmitEditing = onDone;
   items3[1] = callback(importDefault(dependencyMap[11]), obj5);
-  const obj6 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.exampleText };
+  const obj6 = { style: tmp.exampleText };
   const intl5 = arg1(dependencyMap[7]).intl;
   obj6.children = intl5.format(arg1(dependencyMap[7]).t.vwWaTe, {
     example1: items[0],
@@ -130,7 +130,7 @@ export default function JoinServer(arg0) {
   obj10.onPress = onDone;
   items5[1] = callback(arg1(dependencyMap[12]).Button, obj10);
   items5[2] = callback(OrSeparator, {});
-  const obj11 = { key: "r", onCloseCallback: "sectionIdsByBotId" };
+  const obj11 = {};
   const intl8 = arg1(dependencyMap[7]).intl;
   obj11.text = intl8.string(arg1(dependencyMap[7]).t.MOqX/G);
   const intl9 = arg1(dependencyMap[7]).intl;

@@ -1,7 +1,7 @@
 // Module ID: 8930
-// Function ID: 70411
+// Function ID: 70422
 // Name: XboxLinkModalScenes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8930 (XboxLinkModalScenes)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 15504
-// Function ID: 118301
+// Module ID: 15507
+// Function ID: 118340
 // Name: PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID
 // Dependencies: []
 // Exports: useMainViewTooltipActionSheetMap
 
-// Module 15504 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
+// Module 15507 (PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID)
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID;
@@ -103,7 +103,7 @@ export const useMainViewTooltipActionSheetMap = function useMainViewTooltipActio
   });
   const GiftPromotionReminderExperiment = arg1(dependencyMap[18]).GiftPromotionReminderExperiment;
   let obj11 = arg1(dependencyMap[19]);
-  let isEligibleToShowGiftingBadgeCoachmark = obj11.useIsEligibleToShowGiftingBadgeCoachmark({ "Bool(false)": "", "Bool(false)": "" });
+  let isEligibleToShowGiftingBadgeCoachmark = obj11.useIsEligibleToShowGiftingBadgeCoachmark({ "Null": true, "Null": true });
   const arg1 = isEligibleToShowGiftingBadgeCoachmark;
   const items6 = [isEligibleToShowGiftingBadgeCoachmark];
   const effect = React.useEffect(() => {

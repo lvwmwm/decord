@@ -1,16 +1,16 @@
-// Module ID: 13917
-// Function ID: 105785
+// Module ID: 13920
+// Function ID: 105817
 // Name: VideoQuestCaptions
 // Dependencies: []
 // Exports: VideoQuestCaptions
 
-// Module 13917 (VideoQuestCaptions)
+// Module 13920 (VideoQuestCaptions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 9223372036854775807: "c1eae5d24a46f9d36a9168ec38445f00", -9223372036854775808: "DragIcon", -9223372036854775808: "png", 9223372036854775807: null, 9223372036854775807: -8, 0: 8, bottom: importDefault(dependencyMap[4]).space.PX_32, left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { bottom: importDefault(dependencyMap[4]).space.PX_32, left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
 const obj1 = {};
 const importDefaultResult = importDefault(dependencyMap[5]);
@@ -59,10 +59,10 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
   if ("success" === videoQuestCaptions.status) {
     tmp4 = null;
     if (null != memo) {
-      obj = {};
+      obj = { "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole" };
       const items1 = [tmp.container, style];
       obj.style = items1;
-      obj = { "Bool(false)": false, "Bool(false)": 300, "Bool(false)": 32, "Bool(false)": 32, style: tmp.captionBox };
+      obj = { 1649621859: 0, 1387052113: 0, -550975292: 0, 1370110562: 1000, style: tmp.captionBox };
       const obj1 = { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text };
       obj.children = jsx(arg1(dependencyMap[9]).Text, obj1);
       obj.children = jsx(importDefault(dependencyMap[8]), obj);

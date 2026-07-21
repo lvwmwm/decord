@@ -1,7 +1,7 @@
 // Module ID: 8632
-// Function ID: 68375
+// Function ID: 68386
 // Name: OpenCriticTier
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8632 (OpenCriticTier)
 const _module = require(dependencyMap[0]);

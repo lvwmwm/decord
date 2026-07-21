@@ -1,5 +1,5 @@
 // Module ID: 10772
-// Function ID: 83681
+// Function ID: 83692
 // Dependencies: []
 
 // Module 10772
@@ -8,7 +8,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 const ParticipantTypes = arg1(dependencyMap[3]).ParticipantTypes;
 const jsx = arg1(dependencyMap[4]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let obj = { container: { Illustration: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011746128409395384, AnimationState: 82206955738298380000000000, PowerMeter: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001390671171426377 } };
+let obj = { container: { call: "getDebugMetadata", header: "getAudioMixerSettings", replace: "getChannelPermissionSpecMap" } };
 obj = { flex: 1, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.media = obj;
 let closure_7 = arg1(dependencyMap[5]).createStyles(obj);
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo((channel) => {
       const obj5 = arg1(dependencyMap[7]);
       items2[2] = arg1(dependencyMap[7]).getTileWidthStyle(size, importDefault(dependencyMap[8])().width, isScreenLandscape);
       obj.style = items2;
-      obj = { participant: stateFromStores };
+      obj = { QUEST_HOME_SEARCH_ENTERED: false, sort: false, isSameDay: false, opened: false, participant: stateFromStores };
       const obj6 = arg1(dependencyMap[7]);
       obj.avatarSize = arg1(dependencyMap[12]).AvatarSizes.XLARGE;
       obj.channel = channel;

@@ -1,5 +1,5 @@
 // Module ID: 10816
-// Function ID: 83981
+// Function ID: 83992
 // Name: _handleUsePrimaryEntryPointAppCommand
 // Dependencies: []
 // Exports: default

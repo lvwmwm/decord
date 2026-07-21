@@ -1,7 +1,7 @@
 // Module ID: 3806
-// Function ID: 31393
+// Function ID: 31398
 // Name: ChannelListLayoutTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 3806 (ChannelListLayoutTypes)
 const _module = require(dependencyMap[0]);

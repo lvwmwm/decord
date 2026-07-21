@@ -1,10 +1,10 @@
-// Module ID: 14607
-// Function ID: 110131
+// Module ID: 14610
+// Function ID: 110163
 // Name: InviteCard
 // Dependencies: []
 // Exports: default
 
-// Module 14607 (InviteCard)
+// Module 14610 (InviteCard)
 function InviteCard(invite) {
   let guild;
   let inviter;
@@ -51,9 +51,9 @@ function InviteCard(invite) {
     obj1.style = items;
     const items1 = [tmp14, ];
     const obj2 = { style: tmp.text };
-    const obj3 = { children: stringResult };
+    const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: stringResult };
     const items2 = [callback2(arg1(dependencyMap[20]).Text, obj3), ];
-    const obj4 = { children: name };
+    const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: name };
     items2[1] = callback2(arg1(dependencyMap[20]).Text, obj4);
     obj2.children = items2;
     items1[1] = callback3(closure_4, obj2);
@@ -71,10 +71,12 @@ function GuildTemplateCard(arg0) {
   obj = { source: importDefault(dependencyMap[21]) };
   const items1 = [callback2(closure_5, obj), ];
   obj = { style: tmp.text };
-  const obj1 = {};
+  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl = arg1(dependencyMap[16]).intl;
   obj1.children = intl.string(arg1(dependencyMap[16]).t.QzUORX);
-  const items2 = [callback2(arg1(dependencyMap[20]).Text, obj1), callback2(arg1(dependencyMap[20]).Text, { children: guildTemplate.name })];
+  const items2 = [callback2(arg1(dependencyMap[20]).Text, obj1), ];
+  const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: guildTemplate.name };
+  items2[1] = callback2(arg1(dependencyMap[20]).Text, obj2);
   obj.children = items2;
   items1[1] = callback3(closure_4, obj);
   obj.children = items1;
@@ -96,7 +98,7 @@ function Centerpiece(inlineButtons) {
   obj = { style: tmp2.logo, source: arg1(dependencyMap[23]) };
   const items1 = [callback2(closure_5, obj), , ];
   const obj1 = {};
-  const obj2 = { backgroundColor: null, alignItems: "38957e8b938c7ee2a40f1e8c893feb71", flexDirection: "welcome-bg", borderRadius: "png", borderWidth: "absolute", style: tmp2.header };
+  const obj2 = { "Bool(false)": null, "Bool(false)": "38957e8b938c7ee2a40f1e8c893feb71", "Bool(false)": "welcome-bg", "Bool(false)": "png", "Bool(false)": "absolute", style: tmp2.header };
   let num = 2;
   if (tmp) {
     num = 1;
@@ -105,7 +107,7 @@ function Centerpiece(inlineButtons) {
   const intl = arg1(dependencyMap[16]).intl;
   obj2.children = intl.string(arg1(dependencyMap[16]).t.3S2xmm);
   const items2 = [callback2(arg1(dependencyMap[20]).Heading, obj2), , , ];
-  const obj3 = { "Bool(false)": "<string:3562799106>", "Bool(false)": "<string:1233977345>", "Bool(false)": "<string:1140654082>", "Bool(false)": "<string:1776615426>" };
+  const obj3 = { <string:1653988714>: "<string:3566272514>", <string:1650833672>: "<string:1239547905>", <string:1408999516>: "<string:1141964802>", <string:1688306001>: "<string:1770717186>" };
   const items3 = [tmp2.subHeader, ];
   if (null != invite) {
     let subHeaderWithInvite = tmp2.subHeaderWithInvite;
@@ -153,8 +155,8 @@ const tmp3 = arg1(dependencyMap[9]);
 ({ jsx: closure_20, jsxs: closure_21 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
 let closure_22 = obj.createStyles((arg0) => {
-  let obj = { container: { updateAndClearStaleNotifications: null, GUILD_INCIDENT_ALERT_MODE_DISABLED: true, ellipsizeMode: true }, logo: { height: true, accessible: true, flex: true, textAlign: true, y: true, y: true }, scrollViewContainer: {}, header: { justifyContent: "absolute", alignItems: 0, borderRadius: 0 } };
-  obj = { 0: "r", 0: 150.5, 0: 156, 0: null, 9223372036854775807: "af47f5760d10cc835b5537c36ba26c7a", 9223372036854775807: "redesign_notification_illustration" };
+  let obj = { container: { ../../../lib/convert-to-braintree-error: false, ../../../lib/deferred: "linear", ../../../lib/enumerate: "opacity" }, logo: { 571757226: true, 39987447: true, -740928367: true, -1595476175: true, -865755990: true, -73344925: true }, scrollViewContainer: {}, header: {} };
+  obj = { borderless: "r", foreground: 150.5, radius: 156, flex: null, flexDirection: "af47f5760d10cc835b5537c36ba26c7a", justifyContent: "redesign_notification_illustration" };
   let num = 300;
   if (arg0) {
     num = 480;
@@ -163,12 +165,12 @@ let closure_22 = obj.createStyles((arg0) => {
   obj.subHeader = obj;
   obj.subHeaderWithInvite = { marginBottom: 16 };
   obj.centerpieceContainer = {};
-  obj.buttonContainer = { <string:3890872324>: -9518933773090420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:3904372740>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729537362337454, <string:3396665348>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000263212440804036, <string:3857383428>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001518 };
+  obj.buttonContainer = { "Null": "<string:783482881>", "Null": "<string:2018574338>", "Null": "<string:2940338643>", "Null": "<string:536871523>" };
   return obj;
 });
 const tmp4 = arg1(dependencyMap[12]);
 obj = {};
-obj = { position: true, left: null, top: 11, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[14]).radii.sm };
+obj = { borderRadius: importDefault(dependencyMap[14]).radii.sm, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST, height: 11 };
 obj.container = obj;
 obj.text = { marginLeft: 16 };
 let closure_23 = arg1(dependencyMap[13]).createStyles(obj);
@@ -265,8 +267,8 @@ export default function Welcome() {
   obj = { style: tmp2.buttonContainer };
   obj = {};
   obj1 = {
-    key: -2036531198,
-    onCloseCallback: -716111871,
+    text: 822084101,
+    size: null,
     onPress: function handlePressRegister() {
       if (closure_3) {
         let obj = { fromRegister: true };

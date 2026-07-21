@@ -1,5 +1,5 @@
 // Module ID: 8992
-// Function ID: 70808
+// Function ID: 70819
 // Dependencies: []
 
 // Module 8992
@@ -7,7 +7,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: { "Bool(false)": "P", "Bool(false)": 40 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: {}, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const obj2 = arg1(dependencyMap[3]);
 const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
   let clearButtonVisibility;
@@ -26,7 +26,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     enableAndroidSanitizedInputWorkaround = false;
   }
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  let obj = { 0: "r", -9223372036854775808: "setAlert", 0: "jsVersion", 9223372036854775807: "SELF_HARM_CONTENT", 0: "numMediaItems", 0: "r", 0: "isSearching", 9223372036854775807: "SELF_HARM_CONTENT", 9223372036854775807: "numMemberTabReturnedResults", 0: "r" };
+  let obj = {};
   ({ secureTextEntry, keyboardType } = accessibilityLabel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityLabel, obj);

@@ -1,10 +1,10 @@
-// Module ID: 15002
-// Function ID: 112963
+// Module ID: 15005
+// Function ID: 112997
 // Name: CoachmarkImg
 // Dependencies: []
 // Exports: default
 
-// Module 15002 (CoachmarkImg)
+// Module 15005 (CoachmarkImg)
 function CoachmarkImg() {
   const obj = { source: importDefault(dependencyMap[7]), style: callback2().imageContainer };
   return <Image {...obj} />;
@@ -15,7 +15,7 @@ const Image = arg1(dependencyMap[2]).Image;
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[4]).jsx;
 let closure_8 = arg1(dependencyMap[5]).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ imageContainer: { bhk: true, bic: "/assets/design/components/Icon/native/redesign/generated/images" } });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ imageContainer: { "Null": "Array", "Null": "isArray" } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
 

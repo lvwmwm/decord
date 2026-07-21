@@ -1,27 +1,27 @@
 // Module ID: 9887
-// Function ID: 76541
+// Function ID: 76552
 // Name: ShareFooterLayout
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 9887 (ShareFooterLayout)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import "result";
+import { View } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { paddingHorizontal: require("__exportStarResult1").space.PX_16, paddingVertical: require("__exportStarResult1").space.PX_12, gap: require("__exportStarResult1").space.PX_12, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.footer = __exportStarResult1;
-__exportStarResult1.footerSeparator = { marginHorizontal: -require("__exportStarResult1").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.warningWrapper = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001261344141645, "Bool(true)": 17917957937422630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -7552086520862065000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-const obj1 = { marginHorizontal: -require("__exportStarResult1").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.chatRow = { gap: require("__exportStarResult1").space.PX_12 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = result);
+result = {};
+result = { paddingHorizontal: require("result").space.PX_16, paddingVertical: require("result").space.PX_12, gap: require("result").space.PX_12, backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: require("result").colors.BORDER_SUBTLE };
+result.footer = result;
+result.footerSeparator = { marginHorizontal: -require("result").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("result").colors.BORDER_SUBTLE };
+result.warningWrapper = { overflow: 2, flex: 2, flexDirection: 0 };
+const obj1 = { marginHorizontal: -require("result").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("result").colors.BORDER_SUBTLE };
+result.chatRow = { gap: require("result").space.PX_12 };
+result = result.createStyles(result);
 let closure_8 = { code: "function ShareFooterLayoutTsx1(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
+result = result.fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
 
 export default function ShareFooterLayout(arg0) {
   let avoidKeyboard;
@@ -31,7 +31,7 @@ export default function ShareFooterLayout(arg0) {
   let warningText;
   ({ preview, warningText } = arg0);
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
-  const tmp = __exportStarResult1();
+  const tmp = result();
   const sum = tmp.footer.paddingVertical + importDefault(dependencyMap[5])({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   const arg1 = sum;
   let obj = arg1(dependencyMap[6]);

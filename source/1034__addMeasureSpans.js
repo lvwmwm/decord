@@ -1,5 +1,5 @@
 // Module ID: 1034
-// Function ID: 11122
+// Function ID: 11126
 // Name: _addMeasureSpans
 // Dependencies: []
 // Exports: addPerformanceEntries, startTrackingInteractions, startTrackingLongAnimationFrames, startTrackingLongTasks, startTrackingWebVitals
@@ -19,7 +19,7 @@ function _addMeasureSpans(activeSpan, detail) {
     if (tmp4) {
       break;
     } else {
-      let items = [1105639455, 1956642816];
+      let items = [null, null];
       if (!items.includes(detail.entryType)) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
@@ -151,7 +151,7 @@ function _addNavigationSpans(activeSpan, requestStart) {
   const require = activeSpan;
   const dependencyMap = requestStart;
   let closure_2 = arg2;
-  const items = [99055375618515160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001909373853290874, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003112051109, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006365987374, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010609978957];
+  const items = [];
   const item = items.forEach((arg0) => {
     callback(arg0, arg1, arg0, arg2);
   });
@@ -235,7 +235,7 @@ function _addResourceSpans(activeSpan, initiatorType, arr, arg3, arg4, arg5, arr
           tmp6.server.address = url.host;
         }
         tmp6.url.same_origin = arr.includes(require(dependencyMap[4]).WINDOW.location.origin);
-        const items = [[null, null], [null, null], ["D", "tidaWebformEnabled"], [], [], ["<string:3880249158>", "<string:20187715>"]];
+        const items = [[], ["r", "isArray"], ["onload", "onerror"], ["string", "onPress"], [], []];
         _setResourceRequestAttributes(initiatorType, tmp6, items);
         const _Object = Object;
         const sum = arg5 + arg3;
@@ -545,7 +545,7 @@ export const startTrackingLongAnimationFrames = function startTrackingLongAnimat
           let tmp34 = activeSpan;
           let tmp35 = msToSecResult;
           let tmp36 = msToSecResult1;
-          obj = { "Bool(false)": null, "Bool(false)": null };
+          obj = {};
           let tmp37 = tmp21;
           obj.attributes = tmp22;
           let tmp38 = obj6;
@@ -557,7 +557,7 @@ export const startTrackingLongAnimationFrames = function startTrackingLongAnimat
       }
     }
   });
-  performanceObserver.observe({ accessibilityRole: ",", intl: "replace" });
+  performanceObserver.observe({ 9223372036854775807: 17141313, 0: 110842112 });
 };
 export const startTrackingLongTasks = function startTrackingLongTasks() {
   const result = require(dependencyMap[7]).addPerformanceInstrumentationHandler("longtask", (arg0) => {
@@ -599,7 +599,7 @@ export const startTrackingLongTasks = function startTrackingLongTasks() {
           let tmp17 = msToSecResult;
           let tmp18 = msToSecResult1;
           let sum = msToSecResult + msToSecResult1;
-          obj = { "Bool(false)": "<string:1091670017>", "Bool(false)": "/assets/.cache/intl/ZGVzaWdu" };
+          obj = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007040431797029554, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004323753079722544 };
           let tmp20 = callback2;
           obj.attributes = callback2({}, callback(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.metrics");
           let tmp21 = obj3;

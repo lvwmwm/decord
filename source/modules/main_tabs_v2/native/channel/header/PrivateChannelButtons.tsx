@@ -1,5 +1,5 @@
 // Module ID: 10094
-// Function ID: 78160
+// Function ID: 78171
 // Dependencies: []
 
 // Module 10094
@@ -22,7 +22,7 @@ const tmp4 = arg1(dependencyMap[13]).AVATAR_SIZE_MAP[arg1(undefined, dependencyM
 const obj = { direction: arg1(dependencyMap[13]).CutoutDirection.RIGHT, radius: tmp4 / 2 + 3, inset: -6 };
 const tmp3 = arg1(dependencyMap[12]);
 let closure_22 = arg1(dependencyMap[14]).createStyles((arg0) => {
-  let obj = { privateChannelButtonsWrapper: { fontSize: true, marginBottom: true, isMuted: true } };
+  let obj = { privateChannelButtonsWrapper: {} };
   obj = {};
   let prop;
   if (!arg0) {
@@ -216,7 +216,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     if (tmp) {
       let obj = screenIndex(tmp[26]);
-      obj = { destination_pane: lib.SETTINGS_APP_DMS_MENU, application_id: application.id };
+      obj = { "Bool(false)": "AccountAgeTier6LargeBadge", "Bool(false)": "linkCode", "Bool(false)": "quest_status", destination_pane: lib.SETTINGS_APP_DMS_MENU, application_id: application.id };
       obj.trackWithMetadata(callback.SETTINGS_PANE_VIEWED, obj);
       obj = { userId: recipientId, channel: stateFromStores, application };
       screenIndex(tmp[27]).openLazy(channelId(tmp[29])(tmp[28], tmp.paths), "AppDMOptionsBottomSheet", obj);
@@ -371,7 +371,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
         if (tmp43) {
           const obj12 = { style: tmp.overflowBadge };
           const obj13 = {};
-          const items15 = ["fill", totalParticipantCount - 5];
+          const items15 = [null, totalParticipantCount - 5];
           obj13.children = items15;
           obj12.children = callback2(arg1(dependencyMap[43]).Text, obj13);
           tmp43 = callback(View, obj12);

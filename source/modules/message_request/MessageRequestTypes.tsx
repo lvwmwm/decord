@@ -1,7 +1,7 @@
 // Module ID: 10130
-// Function ID: 78409
+// Function ID: 78420
 // Name: MessageRequestConsentStatusTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10130 (MessageRequestConsentStatusTypes)
 const _module = require(dependencyMap[0]);

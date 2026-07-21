@@ -1,5 +1,5 @@
 // Module ID: 11349
-// Function ID: 88217
+// Function ID: 88229
 // Name: renderChatInputSendButton
 // Dependencies: []
 

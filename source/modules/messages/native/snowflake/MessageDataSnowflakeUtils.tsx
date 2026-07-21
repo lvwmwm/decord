@@ -1,7 +1,7 @@
 // Module ID: 9520
-// Function ID: 74113
+// Function ID: 74124
 // Name: castNativeSyntheticEventData
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: castNativeSyntheticEventData, getNativeSyntheticEventData
 
 // Module 9520 (castNativeSyntheticEventData)

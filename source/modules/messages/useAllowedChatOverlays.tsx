@@ -1,5 +1,5 @@
 // Module ID: 10426
-// Function ID: 80306
+// Function ID: 80317
 // Name: ChatOverlays
 // Dependencies: []
 // Exports: default

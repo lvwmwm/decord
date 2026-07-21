@@ -1,5 +1,5 @@
 // Module ID: 10839
-// Function ID: 84104
+// Function ID: 84115
 // Name: computeTabletDrawerWidth
 // Dependencies: []
 // Exports: getDrawerWidth, useDrawerWidth

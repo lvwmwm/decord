@@ -1,9 +1,9 @@
-// Module ID: 15548
-// Function ID: 118632
+// Module ID: 15551
+// Function ID: 118671
 // Name: user
 // Dependencies: []
 
-// Module 15548 (user)
+// Module 15551 (user)
 function UserResult(user) {
   let activities;
   let channel;

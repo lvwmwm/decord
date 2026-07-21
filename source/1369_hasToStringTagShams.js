@@ -1,5 +1,5 @@
 // Module ID: 1369
-// Function ID: 16485
+// Function ID: 16490
 // Name: hasToStringTagShams
 // Dependencies: []
 

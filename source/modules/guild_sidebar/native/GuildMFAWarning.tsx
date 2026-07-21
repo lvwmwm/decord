@@ -1,10 +1,10 @@
-// Module ID: 14901
-// Function ID: 112250
+// Module ID: 14904
+// Function ID: 112284
 // Name: handlePress
 // Dependencies: []
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 14901 (handlePress)
+// Module 14904 (handlePress)
 function handlePress() {
   return _handlePress(...arguments);
 }
@@ -24,7 +24,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.MFAWarning = obj;
-obj.MFAWarningIcon = { FAILED: null, width: "0068bea3a7b26b1d06c599bf3096c534", backgroundColor: "channels-empty" };
+obj.MFAWarningIcon = {};
 const tmp4 = arg1(dependencyMap[4]);
 obj.MFAWarningLink = { color: importDefault(dependencyMap[6]).unsafe_rawColors.BLUE_345, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
 let closure_8 = obj.createStyles(obj);
@@ -36,12 +36,12 @@ export default function GuildMFAWarning() {
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress };
   obj = { style: tmp.MFAWarningIcon, source: importDefault(dependencyMap[12]) };
   const items = [callback2(Image, obj), ];
-  obj = {};
+  obj = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
   const intl = arg1(dependencyMap[14]).intl;
   const items1 = [intl.string(arg1(dependencyMap[14]).t.ZIf8Ag), ];
   const obj1 = { style: tmp.MFAWarningLink };
   const intl2 = arg1(dependencyMap[14]).intl;
-  const items2 = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, intl2.string(arg1(dependencyMap[14]).t.hvVgAZ)];
+  const items2 = [-1402750382, intl2.string(arg1(dependencyMap[14]).t.hvVgAZ)];
   obj1.children = items2;
   items1[1] = callback3(arg1(dependencyMap[15]).LegacyText, obj1);
   obj.children = items1;

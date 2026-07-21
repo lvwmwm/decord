@@ -1,11 +1,13 @@
-// Module ID: 14291
-// Function ID: 107942
+// Module ID: 14294
+// Function ID: 107974
 // Name: useDesignSystemsSettingPredicate
 // Dependencies: [0, 0, 0]
 // Exports: useDesignSystemsSettingPredicate
 
-// Module 14291 (useDesignSystemsSettingPredicate)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemsSettingPredicate.tsx");
+// Module 14294 (useDesignSystemsSettingPredicate)
+import result from "result";
+
+result = result.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemsSettingPredicate.tsx");
 
 export const useDesignSystemsSettingPredicate = function useDesignSystemsSettingPredicate() {
   let staffOrDeveloperSettingPredicate = require(dependencyMap[0]).useStaffOrDeveloperSettingPredicate();

@@ -1,5 +1,5 @@
 // Module ID: 9317
-// Function ID: 72787
+// Function ID: 72798
 // Name: PremiumUpsellTooltipActionSheet
 // Dependencies: []
 // Exports: default
@@ -14,15 +14,15 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { justifyContent: "center", paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const obj1 = { 2147452671: 141669473, -2080407041: 1895825408, -2013297153: 2, -1962964737: "prefer_client_ip", -1879077633: "scalar", borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.img = obj1;
-obj.header = {};
-obj.title = { collapsable: "absolute", preventClipping: 0 };
 const tmp4 = arg1(dependencyMap[3]);
+obj.img = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.header = { "Bool(false)": 7, "Bool(false)": 370 };
+obj.title = {};
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.description = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
-const obj3 = { inputValue: "center", with_counts: "center", with_expiration: 10, position: 10, left: 2, tintColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.nitroWheel = obj3;
 const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
+obj.nitroWheel = { tintColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { tintColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.buttonContainer = { gap: importDefault(dependencyMap[5]).space.PX_8 };
 let closure_8 = obj.createStyles(obj);
 const obj4 = { gap: importDefault(dependencyMap[5]).space.PX_8 };
@@ -71,7 +71,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   const items1 = [tmp6, , , ];
   const obj1 = { style: tmp.header };
   const items2 = [callback(arg1(dependencyMap[8]).NitroWheel, { style: tmp.nitroWheel }), ];
-  const obj3 = { "Bool(false)": "<string:1349648385>", "Bool(false)": "<string:1342177280>", "Bool(false)": "<string:16777216>", "Bool(false)": "<string:38002242>", style: tmp.title, children: title };
+  const obj3 = { body: "Array", variant: "RNIapModule", accessibilityRole: "isArray", unicodeVersion: "_parentSpanId", style: tmp.title, children: title };
   items2[1] = callback(arg1(dependencyMap[9]).Text, obj3);
   obj1.children = items2;
   items1[1] = callback2(handleDismiss, obj1);

@@ -1,7 +1,7 @@
 // Module ID: 1863
-// Function ID: 20527
+// Function ID: 20532
 // Name: DisplayNameFont
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1863 (DisplayNameFont)
 const _module = require(dependencyMap[0]);

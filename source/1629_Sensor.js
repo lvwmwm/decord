@@ -1,5 +1,5 @@
 // Module ID: 1629
-// Function ID: 18210
+// Function ID: 18215
 // Name: Sensor
 // Dependencies: []
 
@@ -20,13 +20,13 @@ export default () => {
         tmp6 = closure_1;
         num2 = 3;
         obj2 = Sensor(closure_1[3]);
-        mutable = obj2.makeMutable({ "Null": null, "Null": 0.6, "Null": "BounceOutRight", "Null": null, "Null": 0.6, "Null": "BounceOutLeft", "Null": null, "Null": 0.6 });
+        mutable = obj2.makeMutable({ -9223372036854775808: null, 0: 0.6, 9223372036854775807: "BounceOutRight", -12057728822: null, 9223372036854775807: 0.6, 9223372036854775807: "BounceOutLeft", 9223372036854775807: null, 9223372036854775807: 0.6 });
       } else {
         tmp2 = Sensor;
         tmp3 = closure_1;
         num = 3;
         obj = Sensor(closure_1[3]);
-        mutable = obj.makeMutable({ String: null, borderRadius: 4, y: 4, isArray: "rgba(0, 0, 0, 0.75)" });
+        mutable = obj.makeMutable({ -133159917712: "ERROR", 0: "ERROR", 0: "NOT_RESPONDER", 0: "NOT_RESPONDER" });
       }
       this.data = mutable;
       return;

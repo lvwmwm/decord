@@ -1,12 +1,12 @@
 // Module ID: 5448
-// Function ID: 46556
+// Function ID: 46564
 // Name: FormIcon
-// Dependencies: [31, 27, 5353, 5337, 4810]
+// Dependencies: [31, 27, 5352, 5336, 4809]
 // Exports: default
 
 // Module 5448 (FormIcon)
 import "module_31";
-import { jsx } from "keys";
+import { jsx } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -17,7 +17,7 @@ export default function FormIcon(color) {
   let style;
   let themedColor;
   ({ style, themedColor } = color);
-  let obj = { "Null": "spring", "Null": "linear", "Null": "easeInEaseOut" };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   const tmp3 = callback();

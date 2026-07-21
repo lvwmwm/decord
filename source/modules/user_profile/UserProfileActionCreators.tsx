@@ -1,10 +1,10 @@
-// Module ID: 7840
-// Function ID: 62518
+// Module ID: 7841
+// Function ID: 62531
 // Name: trackTryOutFeature
 // Dependencies: []
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7840 (trackTryOutFeature)
+// Module 7841 (trackTryOutFeature)
 function trackTryOutFeature(ANIMATED_AVATAR) {
   let obj = importDefault(dependencyMap[7]);
   obj = { feature_name: ANIMATED_AVATAR, feature_tier: constants3.PREMIUM_STANDARD };

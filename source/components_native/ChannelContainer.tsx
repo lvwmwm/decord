@@ -1,5 +1,5 @@
 // Module ID: 10203
-// Function ID: 78740
+// Function ID: 78751
 // Name: NotificationsContainer
 // Dependencies: []
 // Exports: ChannelContainer
@@ -22,7 +22,7 @@ const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ container: { "Null": 4, "Null": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0 } });
+let closure_12 = arg1(dependencyMap[8]).createStyles({ container: { marginLeft: "user", maxWidth: "column", applicationIdToGuildIds: 4, lastFetchTimeMs: "absolute", nextFetchRetryTimeMs: 0 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("components_native/ChannelContainer.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 6751
-// Function ID: 52549
+// Function ID: 52557
 // Name: createDefaultMemberSafetyPaginationState
 // Dependencies: []
 // Exports: getSearchChunkLimit
@@ -12,7 +12,7 @@ let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
-const items = [true, true, true, true];
+const items = ["Array", "findLast", "Array", "_instantiatedWithClient"];
 let closure_7 = { FORWARD: 1, [1]: "FORWARD", BACKWARD: -1, [-1]: "BACKWARD" };
 const tmp2 = () => {
   class GuildMemberSafetyPagination {

@@ -1,21 +1,23 @@
-// Module ID: 13435
-// Function ID: 102034
-// Name: route
+// Module ID: 13437
+// Function ID: 102056
+// Name: useTitle
 // Dependencies: []
 
-// Module 13435 (route)
+// Module 13437 (useTitle)
 const _module = require(dependencyMap[1]);
-let obj = {
+const obj = {
+  y: null,
+  button_action: 16,
+  y: 5,
   useTitle() {
     const intl = require(dependencyMap[2]).intl;
     return intl.string(require(dependencyMap[2]).t.LYju5J);
   },
-  screen: obj
-};
-obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.PROFILE_CUSTOMIZATION,
-  getComponent() {
-    return require(dependencyMap[3]).default;
+  screen: {
+    route: require(dependencyMap[0]).UserSettingsSections.PROFILE_CUSTOMIZATION,
+    getComponent() {
+      return require(dependencyMap[3]).default;
+    }
   }
 };
 const route = _module.createRoute(obj);

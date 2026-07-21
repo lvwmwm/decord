@@ -1,10 +1,10 @@
-// Module ID: 7605
-// Function ID: 60961
+// Module ID: 7606
+// Function ID: 60973
 // Name: SettingsUpsellsConfigRegistry
 // Dependencies: []
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 7605 (SettingsUpsellsConfigRegistry)
+// Module 7606 (SettingsUpsellsConfigRegistry)
 let closure_2 = importAll(dependencyMap[0]);
 const obj = {};
 obj[arg1(dependencyMap[1]).SettingsUpsells.SAFETY_DM_SPAM_FILTER] = importDefault(dependencyMap[2]);

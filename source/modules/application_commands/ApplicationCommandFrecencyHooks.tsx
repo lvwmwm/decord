@@ -1,10 +1,10 @@
-// Module ID: 7922
-// Function ID: 63140
+// Module ID: 7923
+// Function ID: 63153
 // Name: useTopCommands
 // Dependencies: []
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 7922 (useTopCommands)
+// Module 7923 (useTopCommands)
 let closure_2 = importAll(dependencyMap[0]);
 ({ getFilteredTopCommands: closure_3, getTopRealCommands: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[1]);

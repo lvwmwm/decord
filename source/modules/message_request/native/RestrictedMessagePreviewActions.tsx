@@ -1,10 +1,10 @@
-// Module ID: 15453
-// Function ID: 117865
+// Module ID: 15456
+// Function ID: 117904
 // Name: RestrictedMessagePreviewActions
 // Dependencies: []
 // Exports: default
 
-// Module 15453 (RestrictedMessagePreviewActions)
+// Module 15456 (RestrictedMessagePreviewActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[7]).space.PX_8, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
 obj.container = obj;
-const obj1 = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.buttonRow = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -175,7 +175,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const obj8 = { style: tmp.container };
   let tmp37 = null != formatResult;
   if (tmp37) {
-    const obj9 = { children: formatResult };
+    const obj9 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", children: formatResult };
     tmp37 = callback(arg1(dependencyMap[21]).Text, obj9);
   }
   const items9 = [tmp37, ];

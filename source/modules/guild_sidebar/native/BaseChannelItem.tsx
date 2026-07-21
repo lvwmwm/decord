@@ -1,5 +1,5 @@
 // Module ID: 11413
-// Function ID: 88738
+// Function ID: 88750
 // Name: BaseChannelSubtitle
 // Dependencies: []
 // Exports: BaseChannelIcon, BaseChannelName, default
@@ -35,14 +35,14 @@ function useChannelNameTextProps(channelMode) {
   if (channelMode !== obj.UNREAD_IMPORTANT) {
     if (channelMode !== obj.RELEVANT) {
       if (channelMode === obj.UNREAD_LESS_IMPORTANT) {
-        let obj = {};
+        let obj = { hasMaxConnections: "<string:544378919>", isBoostOnlySubscription: "<string:536870912>" };
       } else if (channelMode === obj.MUTED) {
         obj = {};
       } else {
-        obj = channelMode === obj.SELECTED ? {} : {};
+        obj = channelMode === obj.SELECTED ? {} : { hasMaxConnections: "<string:544378919>", isBoostOnlySubscription: "<string:536870912>" };
       }
     }
-    return {};
+    return { hasMaxConnections: "Group 8", isBoostOnlySubscription: 1 };
   }
 }
 function getChannelSubtitleTextProps(channelMode) {
@@ -50,7 +50,7 @@ function getChannelSubtitleTextProps(channelMode) {
     if (channelMode !== obj.RELEVANT) {
       if (channelMode !== obj.SELECTED) {
         const MUTED = obj.MUTED;
-        const obj = {};
+        const obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
       }
       return {};
     }
@@ -68,7 +68,7 @@ let closure_9 = obj.createStyles((arg0) => {
   obj.rowSelected = obj;
   obj = { left: -importDefault(dependencyMap[6]).space.PX_8 };
   obj.unreadIndicator = obj;
-  const obj1 = { 0: 24, 9223372036854775807: 24, -9223372036854775808: null };
+  const obj1 = { <string:1549954009>: "usePubSub", <string:67064148>: "Array", <string:2018617953>: "ERNhYf" };
   let num = 1;
   let num2 = 1;
   if (arg0 === obj.MUTED) {
@@ -88,9 +88,9 @@ let closure_9 = obj.createStyles((arg0) => {
   obj.channelIconUnread = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
   const obj4 = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
   obj.channelIconMuted = { tintColor: importDefault(dependencyMap[6]).colors.ICON_MUTED };
-  obj.channel = { saveToPhotos: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, onVideoLoadStart: 0.000000000000000000000000000000000000000000000000000000000000000000000001207405474077301, U: 15.1, headMetaSocial: null, includeExtra: "\u{1F9D1}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F" };
-  obj.channelNameContainer = { paddingTop: "Array", zIndex: "E2EE_SETTINGS_DEVICE_DELETE", flexDirection: "Array", alignItems: "GUILD_TOOLTIP_SHOWN" };
-  const obj6 = { "Null": false, "Null": false, lineHeight: CHANNEL_TITLE_LINE_HEIGHT };
+  obj.channel = { style: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, type: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054740875319, activeOpacity: 15.1, underlayColor: null, innerRef: "\u{1F9D1}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F" };
+  obj.channelNameContainer = { 1962313087: "Array", 1104954998: "isArray", 290881: "r", 1250711380: "padding" };
+  const obj6 = { lineHeight: CHANNEL_TITLE_LINE_HEIGHT };
   if (arg0 === obj.MUTED) {
     num = 0.5;
   }
@@ -121,7 +121,7 @@ export default function BaseChannelItem(mode) {
   if (unread === undefined) {
     unread = false;
   }
-  let obj = { "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft", "Bool(false)": null, "Bool(false)": 0.6 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(mode, obj);
   let dependencyMap;

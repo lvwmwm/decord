@@ -1,5 +1,5 @@
 // Module ID: 9515
-// Function ID: 74053
+// Function ID: 74064
 // Name: onClose
 // Dependencies: []
 // Exports: default
@@ -22,10 +22,10 @@ const merged = Object.assign(importDefault(dependencyMap[5])(tmp4.Fonts.DISPLAY_
 obj["marginTop"] = 8;
 obj["marginBottom"] = 8;
 obj.title = obj;
-const obj1 = { borderBottomWidth: null, borderBottomColor: null, paddingHorizontal: null, color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj1 = { "Null": "_oneway", "Null": "y", "Null": "isArray", color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.subtitle = obj1;
 obj.view = {};
-obj.rating = {};
+obj.rating = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images" };
 let closure_8 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/notifications/native/NotificationSurveyResponseActionSheet.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 6968
-// Function ID: 55705
+// Module ID: 6969
+// Function ID: 55717
 // Name: _fetchAdUser
 // Dependencies: []
 // Exports: fetchAdUser
 
-// Module 6968 (_fetchAdUser)
+// Module 6969 (_fetchAdUser)
 async function _fetchAdUser(location, arg1) {
   if (null != closure_3.adUser) {
     if (null != closure_3.adUser.advertisingId) {

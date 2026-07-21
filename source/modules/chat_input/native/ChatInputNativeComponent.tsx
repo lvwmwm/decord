@@ -1,5 +1,5 @@
 // Module ID: 11346
-// Function ID: 88204
+// Function ID: 88216
 // Name: ChatInputNativeComponent
 // Dependencies: []
 

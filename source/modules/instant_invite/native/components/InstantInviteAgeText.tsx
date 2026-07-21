@@ -1,5 +1,5 @@
 // Module ID: 11737
-// Function ID: 91158
+// Function ID: 91170
 // Name: InstantInviteAgeText
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
 ({ jsxs: closure_4, jsx: closure_5 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ inviteAgeContainer: {} });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ inviteAgeContainer: { <string:3635438572>: null, <string:1408024149>: null, <string:1708473420>: null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/instant_invite/native/components/InstantInviteAgeText.tsx");
 
@@ -45,7 +45,7 @@ export default function InstantInviteAgeText(style) {
       };
       const intl = arg1(dependencyMap[10]).intl;
       obj1.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.VNe8P/);
-      obj1.hitSlop = { "Null": "Array", "Null": "gradientTop", "Null": "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", "Null": "showReferralNotificationDot" };
+      obj1.hitSlop = {};
       const obj2 = {};
       const intl2 = arg1(dependencyMap[10]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[10]).t.VNe8P/);

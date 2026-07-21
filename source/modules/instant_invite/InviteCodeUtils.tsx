@@ -1,5 +1,5 @@
 // Module ID: 4114
-// Function ID: 34068
+// Function ID: 34073
 // Name: readSnowflake
 // Dependencies: []
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey

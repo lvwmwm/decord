@@ -1,5 +1,5 @@
 // Module ID: 3530
-// Function ID: 27289
+// Function ID: 27294
 // Name: _typeof
 // Dependencies: []
 
@@ -124,7 +124,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -168,7 +168,7 @@ export const DayParser = (Parser) => {
         tmp17 = closure_7(applyResult, "priority", 90);
         tmp18 = closure_5(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
+        tmp19 = closure_7(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -212,7 +212,7 @@ export const DayParser = (Parser) => {
           tmp17 = closure_7(applyResult, "priority", 90);
           tmp18 = closure_5(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
+          tmp19 = closure_7(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -262,7 +262,7 @@ export const DayParser = (Parser) => {
           tmp17 = closure_7(applyResult, "priority", 90);
           tmp18 = closure_5(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
+          tmp19 = closure_7(applyResult, "incompatibleTokens", [null, null, null, null, null, null]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -286,16 +286,16 @@ export const DayParser = (Parser) => {
         if ("EE" !== arg1) {
           if ("EEE" !== arg1) {
             if ("EEEEE" === arg1) {
-              return day.day(arg0, {});
+              return day.day(arg0, { "Bool(true)": null, "Bool(true)": null });
             } else if ("EEEEEE" === arg1) {
-              return day.day(arg0, {}) || day.day(arg0, {});
+              return day.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || day.day(arg0, { "Bool(true)": null, "Bool(true)": null });
             } else {
-              return day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {});
+              return day.day(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || day.day(arg0, {}) || day.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || day.day(arg0, { "Bool(true)": null, "Bool(true)": null });
             }
           }
         }
       }
-      return day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {});
+      return day.day(arg0, {}) || day.day(arg0, { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866011706459902, "Bool(true)": 1758832839923932300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }) || day.day(arg0, { "Bool(true)": null, "Bool(true)": null });
     }
   };
   const items = [obj, , ];

@@ -1,10 +1,10 @@
-// Module ID: 7729
-// Function ID: 61442
+// Module ID: 7730
+// Function ID: 61454
 // Name: getPremiumGroupInviteEmbedText
 // Dependencies: []
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7729 (getPremiumGroupInviteEmbedText)
+// Module 7730 (getPremiumGroupInviteEmbedText)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

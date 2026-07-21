@@ -1,7 +1,7 @@
 // Module ID: 10480
-// Function ID: 81184
+// Function ID: 81195
 // Name: getPostMessageJavaScript
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10480 (getPostMessageJavaScript)

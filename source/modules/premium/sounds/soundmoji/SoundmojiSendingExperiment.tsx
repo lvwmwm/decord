@@ -1,12 +1,12 @@
 // Module ID: 9328
-// Function ID: 72897
+// Function ID: 72908
 // Name: getSoundmojiSendExperiment
 // Dependencies: []
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
 // Module 9328 (getSoundmojiSendExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: true, 0: true, defaultConfig: { paddingHorizontal: null, colors: null }, variations: { [1]: { paddingHorizontal: true, colors: true }, [2]: { paddingHorizontal: null, colors: null } } };
+const obj = { 844175713: "5f09a79d208de30c6568041c7b77048f", 1387159956: "img_search_empty_dark", defaultConfig: { isArray: null, get: null }, variations: { [1]: { isArray: null, get: null }, [2]: { isArray: null, get: null } } };
 let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiSendingExperiment.tsx");

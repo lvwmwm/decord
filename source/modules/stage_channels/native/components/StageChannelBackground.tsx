@@ -1,5 +1,5 @@
 // Module ID: 10760
-// Function ID: 83615
+// Function ID: 83626
 // Name: StageChannelBackground
 // Dependencies: []
 // Exports: default

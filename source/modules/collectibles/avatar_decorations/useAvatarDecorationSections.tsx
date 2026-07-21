@@ -1,10 +1,10 @@
-// Module ID: 7856
-// Function ID: 62603
+// Module ID: 7857
+// Function ID: 62616
 // Name: useAvatarDecorationSections
 // Dependencies: []
 // Exports: default
 
-// Module 7856 (useAvatarDecorationSections)
+// Module 7857 (useAvatarDecorationSections)
 let closure_2 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_4 = importDefault(dependencyMap[2]);

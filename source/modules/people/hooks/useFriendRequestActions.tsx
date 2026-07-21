@@ -1,5 +1,5 @@
 // Module ID: 12029
-// Function ID: 92947
+// Function ID: 92959
 // Name: useFriendRequestActions
 // Dependencies: []
 // Exports: useFriendRequestActions

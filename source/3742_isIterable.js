@@ -1,5 +1,5 @@
 // Module ID: 3742
-// Function ID: 28569
+// Function ID: 28574
 // Name: isIterable
 // Dependencies: []
 // Exports: shallow

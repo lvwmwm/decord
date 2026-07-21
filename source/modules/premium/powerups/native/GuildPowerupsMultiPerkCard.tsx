@@ -1,5 +1,5 @@
 // Module ID: 11594
-// Function ID: 90107
+// Function ID: 90119
 // Name: GuildPowerupsMultiPerkCard
 // Dependencies: []
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 16130
-// Function ID: 124344
+// Module ID: 16138
+// Function ID: 124405
 // Name: BoostedGuildTiers
 // Dependencies: []
 
-// Module 16130 (BoostedGuildTiers)
+// Module 16138 (BoostedGuildTiers)
 let BoostedGuildTiers;
 const importAllResult = importAll(dependencyMap[0]);
 ({ ScrollView: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(function GuildSettingsModalStickers(guil
     const intl = arg1(dependencyMap[8]).intl;
     obj.children = intl.string(arg1(dependencyMap[8]).t.yxVsBJ);
     const items2 = [callback(arg1(dependencyMap[20]).Text, obj), , , , ];
-    obj1 = { style: tmp.label };
+    obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: tmp.label };
     const intl2 = arg1(dependencyMap[8]).intl;
     const obj2 = {};
     let obj6 = arg1(dependencyMap[21]);
@@ -188,14 +188,14 @@ const memoResult = importAllResult.memo(function GuildSettingsModalStickers(guil
                 obj.children = callback2(lib(closure_2[29]), obj1);
                 obj.icon = callback2(callback, obj);
                 const obj2 = {};
-                let obj3 = { style: lib.label, children: tmp2.name };
+                let obj3 = { hasMaxConnections: -1, isBoostOnlySubscription: 75635, style: lib.label, children: tmp2.name };
                 const items = [callback2(tmp2(closure_2[20]).Text, obj3), ];
                 let tmp11 = null;
                 if (null != user) {
                   obj = { style: lib.userRow };
                   const obj4 = { user, size: tmp2(closure_2[30]).AvatarSizes.XSMALL_20, guildId: tmp2 };
                   const items1 = [callback2(tmp2(closure_2[30]).Avatar, obj4), ];
-                  const obj5 = {};
+                  const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: true };
                   obj3 = lib(closure_2[31]);
                   obj5.children = obj3.getName(user);
                   items1[1] = callback2(tmp2(closure_2[20]).Text, obj5);

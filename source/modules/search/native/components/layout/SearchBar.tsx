@@ -1,9 +1,9 @@
-// Module ID: 15194
-// Function ID: 114630
+// Module ID: 15197
+// Function ID: 114664
 // Name: useSearchPlaceholder
 // Dependencies: []
 
-// Module 15194 (useSearchPlaceholder)
+// Module 15197 (useSearchPlaceholder)
 function useSearchPlaceholder(searchContext) {
   const arg1 = searchContext;
   const items = [closure_9];
@@ -78,7 +78,8 @@ let closure_15 = arg1(dependencyMap[11]).createStyles((arg0, minHeight) => {
   }
   const merged = Object.assign(obj1);
   obj.searchBar = obj;
-  obj.icon = { minHeight };
+  const obj2 = { 1398055778: "accessibilityLabel", -693176830: "r", 1644362022: "isArray", -44997984: 24, minHeight };
+  obj.icon = obj2;
   return obj;
 });
 const obj2 = arg1(dependencyMap[11]);

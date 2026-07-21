@@ -1,5 +1,5 @@
 // Module ID: 10162
-// Function ID: 78564
+// Function ID: 78575
 // Name: ArrowSmallRightIcon
 // Dependencies: []
 // Exports: ArrowSmallRightIcon

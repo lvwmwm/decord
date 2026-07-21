@@ -1,10 +1,10 @@
-// Module ID: 14844
-// Function ID: 111877
+// Module ID: 14847
+// Function ID: 111911
 // Name: SubscriptionGatedChannelIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14844 (SubscriptionGatedChannelIcon)
+// Module 14847 (SubscriptionGatedChannelIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_role_subscriptions/native/premium_channel/GuildRoleSubscriptionGatedChannelIcon.tsx");

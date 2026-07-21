@@ -1,5 +1,5 @@
 // Module ID: 8374
-// Function ID: 66698
+// Function ID: 66709
 // Name: ActionSheetDragHandle
 // Dependencies: []
 
@@ -13,7 +13,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp3 = arg1(dependencyMap[2]);
-let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: {}, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
+let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 obj.bar = obj;
 let closure_6 = arg1(dependencyMap[4]).createStyles(obj);

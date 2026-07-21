@@ -1,10 +1,10 @@
-// Module ID: 14109
-// Function ID: 107123
+// Module ID: 14112
+// Function ID: 107155
 // Name: DisplayNameStylesGummyCustomColorSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14109 (DisplayNameStylesGummyCustomColorSheet)
+// Module 14112 (DisplayNameStylesGummyCustomColorSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_5, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_6 } = arg1(dependencyMap[2]));
@@ -16,8 +16,8 @@ obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingT
 obj.body = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.huePickerInset = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 + 2, alignSelf: "stretch" };
-obj.previewWrapper = { "Bool(true)": 20, "Bool(true)": "enable_gdm_all_reaction_notifications" };
-const obj2 = { "Bool(true)": "<string:2731426070>", "Bool(true)": "<string:324075521>", "Bool(true)": "<string:2731426192>", "Bool(true)": "<string:1014104065>", borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.previewWrapper = { "Bool(true)": "channelId", "Bool(true)": "channelId" };
+const obj2 = { justifyContent: "absolute", alignItems: 0, <string:1052178556>: "center", <string:4156880577>: "center", borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.preview = obj2;
 let closure_9 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 + 2, alignSelf: "stretch" };
@@ -47,7 +47,7 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   obj = {};
   const intl = arg1(dependencyMap[13]).intl;
   obj.title = intl.string(arg1(dependencyMap[13]).t.WTqQ5e);
-  obj1 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
+  obj1 = {};
   const intl2 = arg1(dependencyMap[13]).intl;
   obj1.text = intl2.string(arg1(dependencyMap[13]).t.XqMe3N);
   obj1.onPress = callback1;

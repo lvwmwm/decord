@@ -1,5 +1,5 @@
 // Module ID: 3831
-// Function ID: 31981
+// Function ID: 31986
 // Name: BaseIconImage
 // Dependencies: []
 // Exports: BaseIconImage
@@ -8,7 +8,7 @@
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = { xxs: { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version" }, xs: {}, sm: { bhk: null, bic: null }, md: { bhk: "<string:1027735553>", bic: "<string:4143972873>" }, lg: { bhk: "boolean", bic: "string" }, custom: { width: undefined, height: undefined }, refresh_sm: { bhk: null, bic: null } };
+let closure_4 = { xxs: { "Null": "<string:2552889346>", "Null": "<string:2938503170>" }, xs: {}, sm: { "Null": false, "Null": false }, md: {}, lg: { "Null": false, "Null": false }, custom: { width: undefined, height: undefined }, refresh_sm: { "Null": false, "Null": false } };
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {

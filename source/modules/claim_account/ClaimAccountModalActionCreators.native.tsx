@@ -1,7 +1,7 @@
 // Module ID: 8917
-// Function ID: 70359
+// Function ID: 70370
 // Name: openNewUserAgeGateModal
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: openClaimAccountModal, openNewUserAgeGateModal
 
 // Module 8917 (openNewUserAgeGateModal)

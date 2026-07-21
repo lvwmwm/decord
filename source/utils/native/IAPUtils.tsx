@@ -1,10 +1,10 @@
-// Module ID: 7197
-// Function ID: 57913
+// Module ID: 7198
+// Function ID: 57925
 // Name: serializePurchaseResponse
 // Dependencies: []
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 7197 (serializePurchaseResponse)
+// Module 7198 (serializePurchaseResponse)
 function serializePurchaseResponse(originalTransactionDate) {
   importDefault(dependencyMap[10])(null != originalTransactionDate.transactionId, "should have transactionId");
   const obj = { originalTransactionDate: originalTransactionDate.originalTransactionDateIOS };

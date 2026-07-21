@@ -1,5 +1,5 @@
 // Module ID: 1258
-// Function ID: 14212
+// Function ID: 14216
 // Name: parseDateTimeSkeleton
 // Dependencies: []
 
@@ -41,7 +41,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                       if ("w" !== first) {
                         if ("W" !== first) {
                           if ("d" === first) {
-                            obj.day = [][length - 1];
+                            obj.day = [true, true][length - 1];
                           } else {
                             if ("D" !== first) {
                               if ("F" !== first) {
@@ -63,7 +63,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError = new RangeError("`e..eee` (weekday) patterns are not supported");
                                       throw rangeError;
                                     } else {
-                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.LaunchPadMode"][length - 4];
+                                      obj.weekday = [null, null, null, null][length - 4];
                                     }
                                   } else if ("c" === first) {
                                     if (length < 4) {
@@ -71,7 +71,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError1 = new RangeError("`c..ccc` (weekday) patterns are not supported");
                                       throw rangeError1;
                                     } else {
-                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.LaunchPadMode"][length - 4];
+                                      obj.weekday = [null, null, null, null][length - 4];
                                     }
                                   } else if ("a" === first) {
                                     obj.hour12 = true;
@@ -80,24 +80,24 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       if ("B" !== first) {
                                         if ("h" === first) {
                                           obj.hourCycle = "h12";
-                                          obj.hour = [][length - 1];
+                                          obj.hour = [true, true][length - 1];
                                         } else if ("H" === first) {
                                           obj.hourCycle = "h23";
-                                          obj.hour = [][length - 1];
+                                          obj.hour = [true, true][length - 1];
                                         } else if ("K" === first) {
                                           obj.hourCycle = "h11";
-                                          obj.hour = [][length - 1];
+                                          obj.hour = [true, true][length - 1];
                                         } else if ("k" === first) {
                                           obj.hourCycle = "h24";
-                                          obj.hour = [][length - 1];
+                                          obj.hour = [true, true][length - 1];
                                         } else {
                                           if ("j" !== first) {
                                             if ("J" !== first) {
                                               if ("C" !== first) {
                                                 if ("m" === first) {
-                                                  obj.minute = [][length - 1];
+                                                  obj.minute = [true, true][length - 1];
                                                 } else if ("s" === first) {
-                                                  obj.second = [][length - 1];
+                                                  obj.second = [true, true][length - 1];
                                                 } else {
                                                   if ("S" !== first) {
                                                     if ("A" !== first) {
@@ -146,7 +146,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                       throw rangeError7;
                     }
                   }
-                  obj.month = [][length - 1];
+                  obj.month = [true, true, true, true, true][length - 1];
                 }
               }
               const _RangeError9 = RangeError;

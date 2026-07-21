@@ -1,5 +1,5 @@
 // Module ID: 12054
-// Function ID: 93082
+// Function ID: 93094
 // Name: QRCode
 // Dependencies: []
 
@@ -44,7 +44,7 @@ const forwardRefResult = _module.forwardRef((obj, ref) => {
   let level;
   let size;
   let value;
-  const items = [false, false, false, false, false];
+  const items = [];
   obj = {};
   ({ bgColor, fgColor, level, size, value } = obj);
   for (const key10012 in arg0) {
@@ -99,6 +99,6 @@ const forwardRefResult = _module.forwardRef((obj, ref) => {
 });
 forwardRefResult.displayName = "QRCode";
 forwardRefResult.propTypes = { bgColor: _default.oneOfType(items), fgColor: _default2.oneOfType(items1), level: result.default.string, size: result.default.number, value: result.default.string.isRequired };
-forwardRefResult.defaultProps = { isArray: true, prototype: "/assets/modules/instant_invite/native/images", string: 52, y: 52 };
+forwardRefResult.defaultProps = { 0: true, -9223372036854775808: true, 0: true, 0: -767487533 };
 
 export default forwardRefResult;

@@ -1,7 +1,7 @@
 // Module ID: 5613
-// Function ID: 47834
+// Function ID: 47842
 // Name: StorefrontPromotionRewardType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5613 (StorefrontPromotionRewardType)
 const _module = require(dependencyMap[0]);

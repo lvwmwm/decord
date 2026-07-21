@@ -1,5 +1,5 @@
 // Module ID: 9780
-// Function ID: 76011
+// Function ID: 76022
 // Name: useVirtualCurrencyBalanceAnimationData
 // Dependencies: []
 // Exports: useVirtualCurrencyBalanceAnimationData

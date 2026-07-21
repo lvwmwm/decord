@@ -1,5 +1,5 @@
 // Module ID: 839
-// Function ID: 9319
+// Function ID: 9323
 // Name: _enhanceEventWithSdkInfo
 // Dependencies: []
 // Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope

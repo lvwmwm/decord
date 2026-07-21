@@ -1,11 +1,12 @@
 // Module ID: 1332
-// Function ID: 15636
+// Function ID: 15641
 // Name: getProtoFieldClass
-// Dependencies: [57, 15]
+// Dependencies: []
 // Exports: createModifiedProto, getProtoFieldClass
 
 // Module 1332 (getProtoFieldClass)
-const result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
 
 export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, closure_1) {
   const require = closure_1;

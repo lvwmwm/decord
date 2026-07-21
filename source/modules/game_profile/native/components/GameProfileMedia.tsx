@@ -1,5 +1,5 @@
 // Module ID: 8626
-// Function ID: 68327
+// Function ID: 68338
 // Name: ImageItem
 // Dependencies: []
 // Exports: default
@@ -135,14 +135,14 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[6]).space.PX_12, marginHorizontal: -importDefault(dependencyMap[6]).space.PX_16 };
 obj.container = obj;
-obj.scrollView = { "Null": 0.0000000000000000000000000000033526624607783214, "Null": 0.00000000000000000000005624835738502318 };
+obj.scrollView = { "Null": 0.0000000000000000000000000005301149895019736, "Null": 0.00000000000000000000000000000000000000000000004652754736243076 };
 const tmp2 = arg1(dependencyMap[2]);
 obj.scrollViewContent = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009009117306929365, "Bool(false)": -0.00000000000000000000000000000000000010103261629845067, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002625444680254626, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014549093842853, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_HIGH);
-obj.mediaItem = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.mediaImage = {};
-const obj2 = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj.mediaItem = obj2;
+obj.mediaImage = { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" };
+const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.mediaVideo = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
 let closure_11 = obj.createStyles(obj);
 const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
@@ -269,7 +269,7 @@ export default function GameProfileMedia(game) {
   let closure_18 = React.useCallback((arg0) => {
     const current = ref.current;
     if (null != current) {
-      const obj = { max: "x", guildId: "fileFinishedImporting", renderIcon: "o", x: memo2[arg0] };
+      const obj = { x: memo2[arg0] };
       current.scrollTo(obj);
     }
     callback2(arg0);

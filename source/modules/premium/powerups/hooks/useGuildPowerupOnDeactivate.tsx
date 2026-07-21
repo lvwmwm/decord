@@ -1,5 +1,5 @@
 // Module ID: 11563
-// Function ID: 89953
+// Function ID: 89965
 // Name: useGuildPowerupOnDeactivate
 // Dependencies: []
 // Exports: default

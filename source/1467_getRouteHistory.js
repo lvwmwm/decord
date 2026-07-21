@@ -1,5 +1,5 @@
 // Module ID: 1467
-// Function ID: 17023
+// Function ID: 17028
 // Name: getRouteHistory
 // Dependencies: []
 
@@ -84,7 +84,7 @@ arg5.default = function TabRouter(arg0) {
         const obj = { name, key: "" + name + "-" + callback(closure_2[1]).nanoid(), params: callback[name] };
         return obj;
       });
-      const obj = { targetField: "<string:1153327360>", targetAttribute: "name-middle" };
+      const obj = {};
       const tmp4 = callback2(mapped, num, str, callback);
       obj.key = "tab-" + callback(closure_2[1]).nanoid();
       obj.index = num;
@@ -146,7 +146,7 @@ arg5.default = function TabRouter(arg0) {
         if (null == found) {
           found = [];
         }
-        const obj = { targetField: "<string:1153327360>", targetAttribute: "name-middle" };
+        const obj = {};
         const _HermesInternal = HermesInternal;
         str = "tab-";
         obj.key = "tab-" + callback(mapped[1]).nanoid();

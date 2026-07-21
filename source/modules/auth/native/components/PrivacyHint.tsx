@@ -1,10 +1,10 @@
-// Module ID: 14643
-// Function ID: 110415
+// Module ID: 14646
+// Function ID: 110447
 // Name: PrivacyPolicyDescription
 // Dependencies: []
 // Exports: default
 
-// Module 14643 (PrivacyPolicyDescription)
+// Module 14646 (PrivacyPolicyDescription)
 function PrivacyPolicyDescription(style) {
   let obj = { style: style.style };
   const intl = arg1(dependencyMap[8]).intl;
@@ -26,7 +26,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.Y7Kgvf);
   obj.onPress = onToggleConsent.onToggleConsent;
-  obj.hitSlop = {};
+  obj.hitSlop = { onAccessibilityFocus: "absolute", onAccessibilityBlur: null, xOffset: -4 };
   if (asCheckbox) {
     obj = { checked: consent };
     let tmp5Result = tmp5(tmp6(tmp7[10]).FormCheckbox, obj);
@@ -35,7 +35,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
     tmp5Result = tmp5(tmp6(tmp7[11]).FormRow.Radio, obj1);
   }
   const items = [tmp5Result, ];
-  const obj2 = { style: tmp.checkboxLabel };
+  const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.checkboxLabel };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.format(arg1(dependencyMap[8]).t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   items[1] = callback(arg1(dependencyMap[7]).TextWithIOSLinkWorkaround, obj2);

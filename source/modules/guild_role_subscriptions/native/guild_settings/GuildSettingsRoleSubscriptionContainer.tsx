@@ -1,10 +1,10 @@
-// Module ID: 16296
-// Function ID: 125745
+// Module ID: 16304
+// Function ID: 125806
 // Name: ApplicationRejectedNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16296 (ApplicationRejectedNotice)
+// Module 16304 (ApplicationRejectedNotice)
 function ApplicationRejectedNotice(guildId) {
   let reapplyNoticeText;
   let requestRejectedNoticeText;

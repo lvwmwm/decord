@@ -1,5 +1,5 @@
 // Module ID: 10210
-// Function ID: 78889
+// Function ID: 78900
 // Name: canViewPotentiallyNSFWChannel
 // Dependencies: []
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage

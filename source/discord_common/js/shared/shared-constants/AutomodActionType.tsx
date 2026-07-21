@@ -1,7 +1,7 @@
 // Module ID: 10999
-// Function ID: 85560
+// Function ID: 85571
 // Name: AutomodActionType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10999 (AutomodActionType)
 const _module = require(dependencyMap[0]);

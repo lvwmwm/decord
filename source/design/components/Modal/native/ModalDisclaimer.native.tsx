@@ -1,10 +1,10 @@
-// Module ID: 12965
-// Function ID: 98633
+// Module ID: 12967
+// Function ID: 98655
 // Name: ModalDisclaimer
 // Dependencies: []
 // Exports: ModalDisclaimer
 
-// Module 12965 (ModalDisclaimer)
+// Module 12967 (ModalDisclaimer)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -15,6 +15,6 @@ const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/M
 export const ModalDisclaimer = function ModalDisclaimer(children) {
   const tmp = callback();
   let obj = { style: tmp.container, children: jsx(arg1(dependencyMap[4]).Text, obj) };
-  obj = { style: tmp.disclaimer, children: children.children };
+  obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.disclaimer, children: children.children };
   return <View {...obj} />;
 };

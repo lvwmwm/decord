@@ -1,5 +1,5 @@
 // Module ID: 11907
-// Function ID: 92171
+// Function ID: 92183
 // Name: useEntryActivityAndApplication
 // Dependencies: []
 // Exports: default

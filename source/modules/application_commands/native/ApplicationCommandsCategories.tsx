@@ -1,5 +1,5 @@
 // Module ID: 11430
-// Function ID: 88944
+// Function ID: 88956
 // Name: ApplicationCommandsCategories
 // Dependencies: []
 // Exports: default

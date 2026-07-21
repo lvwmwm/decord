@@ -1,5 +1,5 @@
 // Module ID: 11348
-// Function ID: 88211
+// Function ID: 88223
 // Name: ChatInputCover
 // Dependencies: []
 
@@ -52,7 +52,7 @@ const forwardRefResult = importAllResult.forwardRef((enabled) => {
     if (keyboardType !== arg1(dependencyMap[4]).KeyboardTypes.SYSTEM) {
       tmp4 = null;
       if (!isScreenReaderEnabled) {
-        obj = { positionBottom: null, positionRight: null, onPress: memo.openSystemKeyboard };
+        obj = { fontFamily: false, fontSize: false, onPress: memo.openSystemKeyboard };
         obj = { style: isScreenReaderEnabled.absoluteFill };
         obj.children = <closure_5 {...obj} />;
         tmp4 = <closure_4 {...obj} />;

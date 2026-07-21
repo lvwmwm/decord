@@ -1,5 +1,5 @@
 // Module ID: 11581
-// Function ID: 90008
+// Function ID: 90020
 // Name: useGameServerGetExpiringEntitlements
 // Dependencies: []
 // Exports: default

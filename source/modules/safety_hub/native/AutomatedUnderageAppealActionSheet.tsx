@@ -1,5 +1,5 @@
 // Module ID: 11028
-// Function ID: 85861
+// Function ID: 85872
 // Name: items
 // Dependencies: []
 // Exports: default
@@ -24,7 +24,7 @@ const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.learnMore = { marginTop: importDefault(dependencyMap[6]).space.PX_12, textAlign: "center", paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 const obj3 = { marginTop: importDefault(dependencyMap[6]).space.PX_12, textAlign: "center", paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 obj.footer = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };
-const obj5 = { marginEnd: "boolean", width: "string", height: "boolean", alignSelf: "string", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+const obj5 = { 9223372036854775807: false, 0: false, 0: false, 0: false, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.number = obj5;
 let closure_10 = obj.createStyles(obj);
 const obj6 = {};
@@ -100,11 +100,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj2["paddingBottom"] = bottom;
   obj1.style = obj2;
   const obj3 = { style: tmp.header };
-  const obj4 = {};
+  const obj4 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
   const intl = arg1(dependencyMap[7]).intl;
   obj4.children = intl.string(arg1(dependencyMap[7]).t.9SDLnj);
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj4), ];
-  const obj5 = {};
+  const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/images/native/icons/voice_calls/dark_theme" };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj5.children = intl2.string(arg1(dependencyMap[7]).t.yvx//1);
   items5[1] = callback(arg1(dependencyMap[16]).Text, obj5);
@@ -119,7 +119,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
       ({ title, description } = arg0);
       let obj = { label: title, subLabel: description };
       obj = { style: tmp.number };
-      obj = { children: arg1 + 1 };
+      obj = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: arg1 + 1 };
       obj.children = callback(onClose(tmp[16]).Text, obj);
       obj.icon = callback(callback, obj);
       return callback(onClose(tmp[18]).TableRow, obj, arg1);
@@ -132,7 +132,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const intl3 = arg1(dependencyMap[7]).intl;
   obj9.title = intl3.string(arg1(dependencyMap[7]).t.WPwp1b);
   obj9.hasIcons = false;
-  const obj10 = {};
+  const obj10 = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000230329911188219, 0: -172403270113748460000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039776031867697785, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112201225582, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122019556398, 0: 0 };
   const intl4 = arg1(dependencyMap[7]).intl;
   obj10.label = intl4.string(arg1(dependencyMap[7]).t.N9WJMM);
   const intl5 = arg1(dependencyMap[7]).intl;
@@ -154,7 +154,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const intl6 = arg1(dependencyMap[7]).intl;
   obj12.text = intl6.string(arg1(dependencyMap[7]).t.54b8V0);
   const items7 = [callback(arg1(dependencyMap[20]).Button, obj12), ];
-  const obj13 = { style: tmp.learnMore };
+  const obj13 = { hasMaxConnections: "<string:2740060162>", isBoostOnlySubscription: "<string:299071596>", style: tmp.learnMore };
   const intl7 = arg1(dependencyMap[7]).intl;
   obj13.children = intl7.format(arg1(dependencyMap[7]).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
   items7[1] = callback(arg1(dependencyMap[22]).TextWithIOSLinkWorkaround, obj13);

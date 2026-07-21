@@ -1,12 +1,12 @@
 // Module ID: 4169
-// Function ID: 35369
+// Function ID: 35377
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4169 (set)
-const obj = { ELIGIBLE_FOR_ATTEMPTS: new Set(["FORUM_POST_LINK_COPIED", "orbQuantityClaimed", "Array"]) };
-const set = new Set(["FORUM_POST_LINK_COPIED", "orbQuantityClaimed", "Array"]);
-obj.ELIGIBLE_FOR_FULFILLMENT = new Set([null, null]);
+const obj = { ELIGIBLE_FOR_ATTEMPTS: new Set([]) };
+const set = new Set([]);
+obj.ELIGIBLE_FOR_FULFILLMENT = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/EntitlementTenantFulfillmentStatus.tsx");
 

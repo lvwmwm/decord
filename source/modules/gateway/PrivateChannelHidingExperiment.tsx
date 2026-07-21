@@ -1,12 +1,12 @@
-// Module ID: 12480
-// Function ID: 95343
+// Module ID: 12482
+// Function ID: 95365
 // Name: getCachedPrivateChannelObfuscation
 // Dependencies: []
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 12480 (getCachedPrivateChannelObfuscation)
+// Module 12482 (getCachedPrivateChannelObfuscation)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: "r", 0: "UpscaleSmallCapturedFramesExperiment", defaultConfig: {}, variations: { [1]: {}, [2]: {}, [3]: {} } };
+const obj = { 844175713: 1698824191, 1387159956: 1912603230, defaultConfig: { 0: null, -9223372036854775808: null }, variations: { [1]: { 0: null, -9223372036854775808: null }, [2]: { 0: null, -9223372036854775808: null }, [3]: { 0: null, -9223372036854775808: null } } };
 let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/gateway/PrivateChannelHidingExperiment.tsx");

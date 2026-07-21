@@ -1,12 +1,12 @@
 // Module ID: 1136
-// Function ID: 12915
+// Function ID: 12919
 // Name: getDefaultIdleNavigationSpanOptions
 // Dependencies: []
 // Exports: addDefaultOpForSpanFrom, addThreadInfoToSpan, setMainThreadInfo, startIdleNavigationSpan
 
 // Module 1136 (getDefaultIdleNavigationSpanOptions)
 function getDefaultIdleNavigationSpanOptions() {
-  const obj = { "Bool(false)": true, "Bool(false)": 5, "Bool(false)": true, name: closure_3, scope: require(dependencyMap[1]).getCurrentScope() };
+  const obj = { name: closure_3, scope: require(dependencyMap[1]).getCurrentScope() };
   return obj;
 }
 function isSentryInteractionSpan(activeSpan) {
@@ -19,7 +19,7 @@ function clearActiveSpanFromScope(currentScope) {
 }
 const AppState = require(dependencyMap[0]).AppState;
 let closure_3 = "Route Change";
-const obj = {};
+const obj = { construct: "Array", label: "isArray" };
 function startIdleSpan(name) {
   let finalTimeout;
   let idleTimeout;

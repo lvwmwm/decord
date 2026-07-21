@@ -1,5 +1,5 @@
 // Module ID: 9247
-// Function ID: 72269
+// Function ID: 72280
 // Name: map
 // Dependencies: []
 
@@ -8,7 +8,7 @@ let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ portal: {} });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ portal: { GameIconImageSize: "<string:3082955202>", GET_ENTITLEMENT_TICKET: "<string:103629460>", loading: "<string:3630497793>", SoundPlayer: "<string:961609729>" } });
 const obj = { items: [] };
 const obj2 = arg1(dependencyMap[4]);
 obj.keys = new Map();

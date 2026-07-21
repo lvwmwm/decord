@@ -1,5 +1,5 @@
 // Module ID: 883
-// Function ID: 9765
+// Function ID: 9769
 // Name: winterCGHeadersToDict
 // Dependencies: []
 // Exports: httpHeadersToSpanAttributes, httpRequestToRequestData, winterCGRequestToRequestData
@@ -85,8 +85,8 @@ function extractQueryParamsFromUrl(arg0) {
 }
 let closure_0 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_1 = [];
-let closure_2 = ["Array", "paymentData"];
+let closure_1 = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+let closure_2 = [false, false];
 
 export { extractQueryParamsFromUrl };
 export { headersToDict };

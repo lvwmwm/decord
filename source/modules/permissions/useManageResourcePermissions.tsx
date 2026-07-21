@@ -1,5 +1,5 @@
 // Module ID: 8395
-// Function ID: 66804
+// Function ID: 66815
 // Name: canManageResource
 // Dependencies: []
 // Exports: getManageResourcePermissions, useManageResourcePermissions
@@ -76,7 +76,11 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 ({ CREATE_GUILD_EVENT_CORE_PERMISSIONS: closure_7, CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS: closure_8, CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS: closure_9 } = arg1(dependencyMap[4]));
 const Permissions = arg1(dependencyMap[5]).Permissions;
-let closure_11 = {
+const obj = {
+  body: false,
+  location: false,
+  accessibilityRole: false,
+  colors: false,
   canManageGuildExpression() {
     return false;
   },
@@ -116,9 +120,7 @@ export const useManageResourcePermissions = function useManageResourcePermission
   const items3 = [first, tmp6[1], stateFromStores];
   const items4 = [tmp6[3], tmp6[2], stateFromStores];
   callback = React.useCallback((arg0) => callback(arg0, stateFromStores, tmp8, first), items3);
-  if (null == channel) {
-    obj = closure_11;
-  } else {
+  if (null != channel) {
     obj = { canCreateExpressions: first, canCreateGuildEvent: tmp9, canManageAllExpressions: tmp8, canManageAllEvents: tmp10, canManageGuildExpression: callback, canManageGuildEvent: tmp13 };
   }
   return obj;
@@ -156,9 +158,7 @@ export const getManageResourcePermissions = function getManageResourcePermission
   const canResult3 = obj.can(tmp7, guild);
   callback = canResult3;
   currentUser = obj2.getCurrentUser();
-  if (null == guild) {
-    obj = closure_11;
-  } else {
+  if (null != guild) {
     obj = {
       canCreateExpressions: canResult,
       canCreateGuildEvent: canResult2,

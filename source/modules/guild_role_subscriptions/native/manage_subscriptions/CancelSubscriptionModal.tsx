@@ -1,10 +1,10 @@
-// Module ID: 15150
-// Function ID: 114284
+// Module ID: 15153
+// Function ID: 114318
 // Name: CancelSubscriptionModal
 // Dependencies: []
 // Exports: default
 
-// Module 15150 (CancelSubscriptionModal)
+// Module 15153 (CancelSubscriptionModal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

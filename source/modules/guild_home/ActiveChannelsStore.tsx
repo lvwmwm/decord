@@ -1,9 +1,9 @@
-// Module ID: 12510
-// Function ID: 95923
+// Module ID: 12512
+// Function ID: 95945
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12510 (_isNativeReflectConstruct)
+// Module 12512 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -219,7 +219,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
   CHANNEL_DELETE: handleChannelDelete,
   THREAD_DELETE: handleChannelDelete,
   ACTIVE_CHANNELS_FETCH_START: function handleActiveChannelsFetchStart(guildId) {
-    const obj = { "Null": true, "Null": true, fetchedAt: Date.now() };
+    const obj = { "Null": 131122.52832032426, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174, fetchedAt: Date.now() };
     closure_14[guildId.guildId] = obj;
   },
   ACTIVE_CHANNELS_FETCH_SUCCESS: function handleActiveChannelsFetchSuccess(guildId) {

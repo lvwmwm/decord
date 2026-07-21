@@ -1,17 +1,17 @@
-// Module ID: 15693
-// Function ID: 119944
+// Module ID: 15696
+// Function ID: 119983
 // Dependencies: []
 
-// Module 15693
+// Module 15696
 const importAllResult = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { min: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002843270667506078, CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: 139264.00003814697, INVALID_ACCESS_ERR: -6847258386107379000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, GW: 13343571582606402000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, query_length: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.container = obj;
 obj.label = { "Null": "center", "Null": "center" };
-obj1 = { "Bool(false)": "<string:3797024770>", "Bool(false)": "<string:297260519>", "Bool(false)": "/assets/modules/main_tabs_v2/native/sidebar/images", borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj1 = { round: "text-sm/bold", justifyContent: "interactive-text-active", withSpring: 22, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.button = obj1;
 const tmp2 = arg1(dependencyMap[2]);
 obj.buttonText = { color: importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_860 };
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCa
     const result = callback(closure_2[6]).toggleVoiceParticipantsHidden(channelId, false);
   }, items);
   let obj = { style: tmp.container };
-  obj = { "Null": false, "Null": false, "Null": false, style: tmp.label };
+  obj = { delete: null, dispatch: null, raw: null, style: tmp.label };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.8eBJ73);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];

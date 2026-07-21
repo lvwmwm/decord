@@ -1,5 +1,5 @@
 // Module ID: 10973
-// Function ID: 85421
+// Function ID: 85432
 // Name: openDisableCommunication
 // Dependencies: []
 // Exports: openDisableCommunication, openEnableCommunication

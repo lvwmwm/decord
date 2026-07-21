@@ -1,5 +1,5 @@
 // Module ID: 8440
-// Function ID: 67330
+// Function ID: 67341
 // Name: EditGuildEventDetails
 // Dependencies: []
 // Exports: default
@@ -67,7 +67,7 @@ export default function EditGuildEventDetails(guildEvent) {
   obj = {};
   let tmp15 = null;
   if (null != tmp12) {
-    obj = { "Null": "<string:24187203>", "Null": "<string:16777216>", "Null": "<string:1090841937>", style: tmp.error, children: tmp12 };
+    obj = { delete: "571b1cf067821ef4949e09c037a195b6", dispatch: "ic_person_shield", raw: "png", style: tmp.error, children: tmp12 };
     tmp15 = callback3(arg1(dependencyMap[10]).Text, obj);
   }
   const items3 = [tmp15, ];

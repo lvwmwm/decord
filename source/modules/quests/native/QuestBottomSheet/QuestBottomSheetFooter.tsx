@@ -1,10 +1,10 @@
-// Module ID: 13894
-// Function ID: 105067
+// Module ID: 13897
+// Function ID: 105099
 // Name: useQuestRewardClaimHandler
 // Dependencies: []
 // Exports: default
 
-// Module 13894 (useQuestRewardClaimHandler)
+// Module 13897 (useQuestRewardClaimHandler)
 function useQuestRewardClaimHandler(quest) {
   quest = quest.quest;
   const arg1 = quest;
@@ -127,8 +127,7 @@ function WatchTaskButton(arg0) {
   let taskDetails;
   ({ questId, sourceQuestContent, taskDetails } = arg0);
   let obj = arg1(dependencyMap[19]);
-  obj = { flexDirection: "WireType", alignItems: "Array" };
-  obj.onPress = obj.useWatchTaskPressHandler({ questId, sourceQuestContent });
+  obj = { onPress: obj.useWatchTaskPressHandler({ questId, sourceQuestContent }) };
   const watchTaskPressHandler = obj.useWatchTaskPressHandler({ questId, sourceQuestContent });
   obj.text = arg1(dependencyMap[21]).getVideoQuestWatchCtaText(taskDetails);
   return callback2(arg1(dependencyMap[20]).Button, obj);
@@ -137,7 +136,7 @@ function NextButton(arg0) {
   let disabled;
   let onPress;
   ({ onPress, disabled } = arg0);
-  const obj = { flexDirection: "WireType", alignItems: "Array", onPress, disabled };
+  const obj = { onPress, disabled };
   const intl = arg1(dependencyMap[27]).intl;
   obj.text = intl.string(arg1(dependencyMap[27]).t.a9OfTN);
   return callback2(arg1(dependencyMap[20]).Button, obj);
@@ -151,6 +150,9 @@ function DefibButton(arg0) {
   let closure_3 = obj.useTrackQuestContentClickedWithImpression();
   let closure_4 = arg1(dependencyMap[30]).useQuestImpressionId();
   obj = {
+    "Null": "<string:7536642>",
+    "Null": "<string:16777216>",
+    "Null": "<string:67108864>",
     loading,
     disabled,
     icon: callback2(arg1(dependencyMap[31]).RefreshIcon, {}),
@@ -183,8 +185,6 @@ function ClaimButton(arg0) {
   let closure_3 = obj.useTrackQuestContentClickedWithImpression();
   let closure_4 = arg1(dependencyMap[30]).useQuestImpressionId();
   obj = {
-    flexDirection: "WireType",
-    alignItems: "Array",
     disabled,
     loading,
     onPress() {
@@ -256,7 +256,7 @@ function AnimatedFooter(arg0) {
   }, items);
   let obj1 = arg1(dependencyMap[39]);
   const fn = function y() {
-    let obj = { <string:914490330>: null, <string:152437484>: "540091c70b333c8b8937ba1627138192", <string:2922513475>: "wumpus-pikachu", <string:2125688624>: "png", opacity: sharedValue.get() };
+    let obj = { get: null, justifyContent: "540091c70b333c8b8937ba1627138192", guildId: "wumpus-pikachu", style: "png", opacity: sharedValue.get() };
     obj = { translateX: closure_12 };
     const items = [obj];
     obj.transform = items;
@@ -277,7 +277,7 @@ function AnimatedFooter(arg0) {
       value = closure_3.get();
       diff = width - 2.5 * closure_12;
       items[1] = diff - closure_0(useReducedMotion[41]).LARGE_BUTTON_HEIGHT;
-      obj.width = obj2.interpolate(value, ["Text", "lc"], items);
+      obj.width = obj2.interpolate(value, ["replace", "then"], items);
       obj.alignSelf = "flex-end";
       return obj;
     }
@@ -398,7 +398,7 @@ export default function QuestBottomSheetFooter(quest) {
           obj3 = { questId: quest.id, taskDetails: questTaskDetails, sourceQuestContent };
           tmp25Result = callback2(WatchTaskButton, obj3);
         } else if (isMobileActivityQuest) {
-          obj4 = { flexDirection: "WireType", alignItems: "Array", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: arg1(dependencyMap[18]).getPrimaryCtaIcon(quest) };
+          obj4 = { onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: arg1(dependencyMap[18]).getPrimaryCtaIcon(quest) };
           tmp25Result = callback2(arg1(dependencyMap[20]).Button, obj4);
           const obj13 = arg1(dependencyMap[18]);
         } else {

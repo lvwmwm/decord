@@ -1,8 +1,8 @@
-// Module ID: 14883
-// Function ID: 112090
+// Module ID: 14886
+// Function ID: 112124
 // Dependencies: []
 
-// Module 14883
+// Module 14886
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ getScaledSearchBarHeight: closure_5, VIEWABILITY_CONFIG: closure_6 } = arg1(dependencyMap[3]));
@@ -30,13 +30,13 @@ let closure_11 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
   }
   obj.backgroundColor = RED_400;
   obj.shadowColor = importDefault(dependencyMap[8]).colors.BLACK;
-  obj.shadowOffset = {};
+  obj.shadowOffset = { "Null": null, "Null": null };
   obj.shadowOpacity = 0.08;
   obj.shadowRadius = 4;
   obj.borderWidth = 1;
   obj.borderColor = importDefault(dependencyMap[8]).colors.BORDER_SUBTLE;
   obj.unreadBar = obj;
-  obj = { "Bool(false)": 0.0000000000000000000000000000000000000000000000011118729999574496, "Bool(false)": 539696003021858400000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000161951266393956, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000241907557877 };
+  obj = {};
   let num2 = 0;
   if (obj4.isAndroid()) {
     num2 = -1;
@@ -231,9 +231,9 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         num12 = 6;
         obj9 = position(onPress[6]);
         tmp32 = closure_13;
-        items1 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
+        items1 = [null];
         items1[1] = num7;
-        interpolateResult = obj9.interpolate(closure_13.get(), ["Text", "lc"], items1);
+        interpolateResult = obj9.interpolate(closure_13.get(), ["replace", "then"], items1);
         obj3.scale = obj8.withSpring(interpolateResult, position(onPress[16]).ON_PRESS_SPRING);
         items[2] = obj3;
         obj.transform = items;

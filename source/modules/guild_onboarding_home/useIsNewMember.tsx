@@ -1,5 +1,5 @@
 // Module ID: 5606
-// Function ID: 47645
+// Function ID: 47653
 // Name: _getIsNewMember
 // Dependencies: []
 // Exports: default, getIsNewMember

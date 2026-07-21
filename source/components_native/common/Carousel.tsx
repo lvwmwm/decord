@@ -1,9 +1,9 @@
-// Module ID: 7991
-// Function ID: 63508
+// Module ID: 7992
+// Function ID: 63521
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7991 (_callSuper)
+// Module 7992 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -85,7 +85,7 @@ const tmp5 = (Component) => {
   return callback(PageIndicator, items);
 }(importAllResult.Component);
 tmp5.contextType = arg1(dependencyMap[11]).ThemeContext;
-tmp5.defaultProps = { f: "%Int8Array%", i: "headMetaSocial" };
+tmp5.defaultProps = { "Bool(true)": null, "Bool(true)": null };
 const tmp6 = (Component) => {
   class Carousel {
     constructor(arg0) {
@@ -148,7 +148,7 @@ const tmp6 = (Component) => {
   return callback(Carousel, items);
 }(importAllResult.Component);
 tmp6.contextType = arg1(dependencyMap[11]).ThemeContext;
-tmp6.defaultProps = {};
+tmp6.defaultProps = { <string:3095328559>: "numeric", <string:1197558330>: "numeric" };
 const obj1 = { color: importDefault(dependencyMap[9]).colors.ICON_SUBTLE };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("components_native/common/Carousel.tsx");
 

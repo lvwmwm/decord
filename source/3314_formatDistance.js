@@ -1,11 +1,11 @@
 // Module ID: 3314
-// Function ID: 26089
+// Function ID: 26094
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3314 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: false, 0: false }, xSeconds: {}, halfAMinute: "meio minuto", lessThanXMinutes: { -9223372036854775808: true, 0: true }, xMinutes: { -9223372036854775808: true, 0: true }, aboutXHours: { -9223372036854775808: false, 0: false }, xHours: { -9223372036854775808: "medianoche", 0: "mediodia" }, xDays: {}, aboutXWeeks: { -9223372036854775808: "AM", 0: "PM" }, xWeeks: { -9223372036854775808: false, 0: false }, aboutXMonths: {}, xMonths: { -9223372036854775808: false, 0: false }, aboutXYears: { -9223372036854775808: "<string:893911042>", 0: "<string:3288334632>" }, xYears: { -9223372036854775808: "<string:2629304321>", 0: "<string:4153933826>" }, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": null, "Bool(false)": null }, xSeconds: { "Bool(false)": null, "Bool(false)": null }, halfAMinute: "meio minuto", lessThanXMinutes: { "Bool(false)": null, "Bool(false)": null }, xMinutes: { "Bool(false)": null, "Bool(false)": null }, aboutXHours: { "Bool(false)": "backgroundColorGradient", "Bool(false)": "MAX_FORUM_POST_TAGS" }, xHours: { "Bool(false)": "<string:1879048590>", "Bool(false)": "<string:989856496>" }, xDays: { "Bool(false)": "<string:1124204545>", "Bool(false)": null }, aboutXWeeks: { "Bool(false)": true, "Bool(false)": null }, xWeeks: {}, aboutXMonths: { "Bool(false)": 53302272, "Bool(false)": 21065216 }, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: { "Bool(false)": "backgroundColorGradient", "Bool(false)": "MAX_FORUM_POST_TAGS" }, almostXYears: { "Bool(false)": "<string:1124204545>", "Bool(false)": null } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

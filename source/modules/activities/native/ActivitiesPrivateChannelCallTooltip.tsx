@@ -1,5 +1,5 @@
 // Module ID: 11798
-// Function ID: 91555
+// Function ID: 91567
 // Name: items
 // Dependencies: []
 // Exports: default
@@ -12,10 +12,10 @@ let closure_5 = arg1(dependencyMap[3]).EMBEDDED_ACTIVITIES_BLOG_POST_URL;
 const jsx = arg1(dependencyMap[4]).jsx;
 let closure_7 = { duration: 500 };
 let obj = arg1(dependencyMap[5]);
-obj = { sparse: true, unique: "/assets/modules/quests/images", base: 435, min: 218, max: null, length: "92f827adadc1f86811fd4e36c86fdf27", alphanum: "nitro_modal_header_background" };
+obj = { base: "r", min: 435, max: 218, length: null, alphanum: "92f827adadc1f86811fd4e36c86fdf27", token: "nitro_modal_header_background", regex: "png" };
 const items = [{ rotateZ: "225deg" }];
 obj.transform = items;
-let closure_8 = obj.createStyles({ arrow: obj, tooltip: { padding: 16 }, tooltipContainer: { et: null, eu: null, fa: null, ff: null, fi: null }, tooltipText: {}, closeButtonWrapper: { marginTop: 14 } });
+let closure_8 = obj.createStyles({ arrow: obj, tooltip: { padding: 16 }, tooltipContainer: {}, tooltipText: { -2041496735: null, 1548968609: null }, closeButtonWrapper: { marginTop: 14 } });
 let closure_9 = { code: "function ActivitiesPrivateChannelCallTooltipTsx1(){const{withRepeat,withSequence,withTiming,OFFSET,translateBounceOffset,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withRepeat(withSequence(withTiming(OFFSET,{duration:0}),withTiming(OFFSET+translateBounceOffset,TIMING_CONFIG),withTiming(OFFSET,TIMING_CONFIG)),10)}]};}" };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx");
 
@@ -62,7 +62,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl2 = arg1(dependencyMap[10]).intl;
   obj1.title = intl2.string(arg1(dependencyMap[10]).t.HOPqzR);
   const obj3 = { style: tmp.closeButtonWrapper };
-  const obj4 = { borderWidth: "headMetaSocial", borderColor: "VOICE_STATE_UPDATES", borderRadius: "workletEventHandler", justifyContent: "preemptiveExpanded", alignItems: "%Math.min%" };
+  const obj4 = { "Bool(false)": 281018.57583740365, "Bool(false)": 3194708151062737500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 17752983073962420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000855262075521191, color: 143440056900016160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[10]).t.NX+WJN);
   obj4.onPress = onClosePress.onClosePress;

@@ -1,5 +1,5 @@
 // Module ID: 1100
-// Function ID: 12565
+// Function ID: 12569
 // Name: mapSamples
 // Dependencies: []
 // Exports: convertToSentryProfile
@@ -225,7 +225,7 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
     obj = {};
     for (const item10103 of jsThreads) {
       let tmp47 = obj;
-      obj[item10103] = {};
+      obj[item10103] = { 0: "flex", 131072: "Array" };
     }
     obj1 = { samples, frames: obj.frames, stacks: obj.stacks, thread_metadata: obj };
     const _Object = Object;

@@ -1,5 +1,5 @@
 // Module ID: 10058
-// Function ID: 77678
+// Function ID: 77689
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -24,17 +24,17 @@ let closure_10 = importDefault(dependencyMap[7]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: {} };
+obj = { container: { accessibilityRole: Infinity, padding: true, "Null": true } };
 obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guildPlaceholder = obj;
-obj.guildIcon = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
+obj.guildIcon = {};
 obj.iconWrapperBorder = {};
-const obj1 = { 9223372036854775807: "boolean", 0: "string", 0: "boolean", 9223372036854775807: "artboard", 0: "artboard", borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj1 = { 1637436241: false, -512142973: false, 592889185: false, 1519586073: false, 1727916003: false, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.filledIconWrapper = obj1;
 const tmp4 = arg1(dependencyMap[8]);
 obj.emptyIconWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-obj.emptyGuildIcon = { borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj3 = { 307518561: "bf24b57d7a185087812949fbab7718e5", 1732711239: "cs.messages.bf24b57d7a185087812949fbab7718e5.compiled.messages", 1636910992: "jsona", -2073667218: "text-sm/bold", borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.emptyGuildIcon = obj3;
 obj.emptyGuildIconText = {};
 obj.uploadIcon = {};
 let closure_13 = obj.createLegacyClassComponentStyles(obj);
@@ -87,7 +87,7 @@ const tmp5 = (PureComponent) => {
         }
         obj2.source = tmp16Result;
         const items2 = [callback4(closure_9, obj2), ];
-        obj = { "Null": 160961306817940700000000000000000000, "Null": 0.00000000605360159482843, "Null": 1315312532608515200000000000, style: tmp.emptyGuildIconText };
+        obj = { delete: true, dispatch: true, raw: true, style: tmp.emptyGuildIconText };
         const intl = GuildIconUploader(closure_2[15]).intl;
         const obj6 = GuildIconUploader(closure_2[11]);
         const tmp10 = closure_8;
@@ -166,7 +166,7 @@ const tmp5 = (PureComponent) => {
   return callback(GuildIconUploader, items);
 }(importAllResult.PureComponent);
 tmp5.contextType = arg1(dependencyMap[19]).ThemeContext;
-const obj3 = { borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild/native/GuildIconUploader.tsx");
 
 export default tmp5;

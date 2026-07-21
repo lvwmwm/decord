@@ -1,5 +1,5 @@
 // Module ID: 1879
-// Function ID: 20890
+// Function ID: 20895
 // Name: decodeImage
 // Dependencies: []
 
@@ -482,7 +482,7 @@ const tmp = () => {
     return callback(uint8Array, uint8Array);
   }
   function _getBPP(depth) {
-    return [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000004363332115256034, -0.0000000000000000000000000000000000000000000000000000000000000000000000000003251811658649702, null, null, null, null][depth.ctype] * depth.depth;
+    return [null, null, null, null, false, false, false][depth.ctype] * depth.depth;
   }
   function _filterZero(arg0, depth) {
     const tmp = _getBPP(depth);
@@ -1493,7 +1493,7 @@ const tmp = () => {
       const tmp3 = size;
       const uint8Array1 = new Uint8Array(uint8Array.length);
       let num2 = 0;
-      while (arr2[num2] == [null, null, null, null, null, null, null, null][num2]) {
+      while (arr2[num2] == [][num2]) {
         sum = num2 + 1;
         num2 = sum;
         if (sum < 8) {
@@ -2372,7 +2372,7 @@ const tmp = () => {
     }
     const uint32Array = new Uint32Array(buffer.buffer);
     const int16Array = new Int16Array(arg1 * arg2 * 4);
-    const items2 = ["isArray", "paddingHorizontal", "no", "op", "__initData", "style", "filter", "style", "Array", "height", "Text", "View", "i", "Array", "isArray", "accessibilityRole"];
+    const items2 = [];
     let num10 = 0;
     if (0 < items2.length) {
       do {
@@ -2549,7 +2549,7 @@ const tmp = () => {
     const uint8Array = new Uint8Array(tmp10 + 12);
     let num15 = 0;
     do {
-      uint8Array[num15] = [null, null, null, null, null, null, null, null][num15];
+      uint8Array[num15] = [][num15];
       num15 = num15 + 1;
     } while (num15 < 8);
     writeUint(uint8Array, 8, 13);
@@ -3600,7 +3600,7 @@ const tmp = () => {
   }
   function _filterZero(buffer, arg1, arg2, arg3, set) {
     const items = [];
-    let items1 = [];
+    let items1 = ["isArray", "isArray", "construct", "paths", "Array"];
     if (-1 != arg5) {
       const items2 = [arg5];
       items1 = items2;
@@ -3993,7 +3993,9 @@ const tmp = () => {
       num = 0.0001;
     }
     const uint32Array = new Uint32Array(substr.buffer);
-    let obj = { i1: substr.length, bst: stats(substr, obj.i0, obj.i1), est: estats(obj.bst) };
+    let obj = { 1: "constructor", 0: "s", features: "isArray", rulesChannelId: "isArray", publicUpdatesChannelId: "isArray", "Bool(false)": "HermesInternal", "Bool(false)": "Array", i1: substr.length };
+    obj.bst = stats(substr, obj.i0, obj.i1);
+    obj.est = estats(obj.bst);
     const items = [obj];
     if (items.length < arg1) {
       while (true) {
@@ -4023,12 +4025,12 @@ const tmp = () => {
           let tmp11 = splitPixels(substr, uint32Array, tmp7.i0, tmp7.i1, tmp7.est.e, tmp7.est.eMq255);
           if (tmp7.i0 < tmp11) {
             if (tmp7.i1 > tmp11) {
-              obj = { <string:3311599331>: 0, <string:2542227793>: 0, <string:1464976738>: "100%", 866c7c763a3e0c2b57ef52eebbfa2db5: "10%", isArray: "angle", <string:3932422144>: 180, <string:877967286>: null, i0: tmp7.i0, i1: tmp11 };
+              obj = { 1: "onKeyPress", 0: "onKeyPressCapture", features: "onSubmitEditing", rulesChannelId: "onSubmitEditingCapture", publicUpdatesChannelId: "default", "Bool(false)": "default", "Bool(false)": "decimal-pad", i0: tmp7.i0, i1: tmp11 };
               let tmp12 = stats;
               obj.bst = stats(substr, obj.i0, obj.i1);
               let tmp13 = estats;
               obj.est = estats(obj.bst);
-              obj = { <string:3311599331>: 0, <string:2542227793>: 0, <string:1464976738>: "100%", 866c7c763a3e0c2b57ef52eebbfa2db5: "10%", isArray: "angle", <string:3932422144>: 180, <string:877967286>: null, i0: tmp11, i1: tmp7.i1 };
+              obj = { 1: "onKeyPress", 0: "onKeyPressCapture", features: "onSubmitEditing", rulesChannelId: "onSubmitEditingCapture", publicUpdatesChannelId: "default", "Bool(false)": "default", "Bool(false)": "decimal-pad", i0: tmp11, i1: tmp7.i1 };
               let obj1 = { R: [], m: [], N: tmp7.bst.N - obj.bst.N };
               obj.bst = obj1;
               let num7 = 0;
@@ -4171,8 +4173,8 @@ const tmp = () => {
   }
   function stats(substr, i0, i1) {
     let sum = i0;
-    const R = [];
-    const m = ["<string:1010630658>", "<string:1246494722>", "<string:3003122491>", "<string:352322212>"];
+    const R = ["isArray", "construct", "Text", "y", "isArray", "padding", "construct", "op", "op", "style", "Array", "has", "__closure", "url", "add", "Array"];
+    const m = ["<string:1014759426>", "<string:340852738>", "<string:1612335631>", "<string:1612447746>"];
     const N = i1 - i0 >> 2;
     if (i0 < i1) {
       do {

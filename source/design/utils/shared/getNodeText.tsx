@@ -1,5 +1,5 @@
 // Module ID: 3835
-// Function ID: 31989
+// Function ID: 31994
 // Name: getNodeText
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 5568
-// Function ID: 47308
+// Function ID: 47316
 // Dependencies: []
 
 // Module 5568
@@ -11,7 +11,7 @@ const importAllResult = importAll(dependencyMap[2]);
 ({ StyleSheet, View: closure_4 } = arg1(dependencyMap[3]));
 const jsx = arg1(dependencyMap[4]).jsx;
 const tmp2 = arg1(dependencyMap[3]);
-const styles = StyleSheet.create({ page: { minHeight: "100%" }, card: { 9223372036854775807: 10, 9223372036854775807: 10 } });
+const styles = StyleSheet.create({ page: { minHeight: "100%" }, card: { Č: 10, accessibilityDismiss: 10 } });
 
 export default importAllResult.forwardRef(function CardSheet(layout) {
   let enabled;

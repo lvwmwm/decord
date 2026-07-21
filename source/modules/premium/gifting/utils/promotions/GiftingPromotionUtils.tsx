@@ -1,5 +1,5 @@
 // Module ID: 8804
-// Function ID: 69399
+// Function ID: 69410
 // Name: useIsPlanEligibleForGiftingPromotion
 // Dependencies: []
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep

@@ -1,7 +1,7 @@
 // Module ID: 9053
-// Function ID: 71088
+// Function ID: 71099
 // Name: RELATIONSHIP_COUNT_ANIMATION_THRESHOLD
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9053 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
 const _module = require(dependencyMap[0]);

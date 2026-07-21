@@ -1,5 +1,5 @@
 // Module ID: 909
-// Function ID: 9965
+// Function ID: 9969
 // Name: _callOnRequestSpanEnd
 // Dependencies: []
 // Exports: instrumentFetchRequest
@@ -83,7 +83,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
         if (Array.isArray(headers)) {
           const arr4 = callback2(headers);
           if (!headers.find((arg0) => "sentry-trace" === arg0[0])) {
-            const items = [null, tmp3];
+            const items = [, tmp3];
             arr4.push(items);
           }
           let tmp28 = tmp;
@@ -108,7 +108,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             });
           }
           if (tmp30) {
-            const items2 = [90, baggage];
+            const items2 = ["Array", baggage];
             arr4.push(items2);
           }
           return arr4;

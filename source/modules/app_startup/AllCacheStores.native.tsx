@@ -1,5 +1,5 @@
 // Module ID: 6720
-// Function ID: 52240
+// Function ID: 52248
 // Name: noop
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10005
-// Function ID: 77315
+// Function ID: 77326
 // Name: dismissPanel
 // Dependencies: []
 
@@ -13,7 +13,7 @@ let obj = { channelId: "context-not-initialized", channelType: undefined };
 const tmp2 = arg1(dependencyMap[2]);
 obj.connected = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj3 = arg1(dependencyMap[4]);
-obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ bhk: -536870861, bic: -299892737 });
+obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": -536870861, "Null": -299892737 });
 const obj4 = arg1(dependencyMap[4]);
 obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT, locked: false, height: CONTROLS_HEIGHT, pushToTalk: false };
 obj.controlsSpecs = arg1(dependencyMap[4]).createFakeSharedValue(obj);
@@ -48,7 +48,7 @@ obj.morphablePanelMode = arg1(dependencyMap[4]).createFakeSharedValue(arg1(depen
 const obj11 = arg1(dependencyMap[4]);
 obj.mountedCards = new Set();
 const set = new Set();
-obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ <string:2958189153>: -536870861, <string:1661207664>: -299892737 });
+obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ paddingVertical: -536870861, paddingHorizontal: -299892737 });
 const obj12 = arg1(dependencyMap[4]);
 obj.preJoinContentSize = require("module_0");
 const obj13 = arg1(dependencyMap[4]);
@@ -85,12 +85,12 @@ obj.streamOutputSinkStack = {};
 const obj16 = arg1(dependencyMap[4]);
 obj.windowDimensions = arg1(dependencyMap[4]).createFakeSharedValue({});
 const obj17 = arg1(dependencyMap[4]);
-const obj1 = { messagesCached: 0.1, messagesReady: 598135552665634.1, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243437479192007, aria-hidden: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007423058813596583, variant: 278528.2629051211, color: 8391929784060424000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: -241967579701953380000000000000000000000000000000000000000000000000000000000000000000000000000000, mode: VoicePanelModes.PANEL };
+const obj1 = { 1993865571: true, 1386497361: true, -158093675: true, 1694760785: true, -1806456234: true, -70490976: true, -2041385824: true, mode: VoicePanelModes.PANEL };
 obj.wrapperDimensions = arg1(dependencyMap[4]).createFakeSharedValue(obj1);
 const obj18 = arg1(dependencyMap[4]);
 obj.useReducedMotion = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj20 = arg1(dependencyMap[4]);
-obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ "Bool(true)": "8aacc7898585bec38aca6cf682c01533", "Bool(true)": "FolderIcon", "Bool(true)": "png" });
 const obj21 = arg1(dependencyMap[4]);
 obj.panelCardStillInPIP = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const context = importAllResult.createContext(obj);

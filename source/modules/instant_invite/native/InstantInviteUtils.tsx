@@ -1,12 +1,12 @@
 // Module ID: 8474
-// Function ID: 67583
+// Function ID: 67594
 // Name: showInstantInviteActionSheet
 // Dependencies: []
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel
 
 // Module 8474 (showInstantInviteActionSheet)
 function showInstantInviteActionSheet(channel, source) {
-  let obj = {};
+  let obj = { "Bool(false)": -1789836589, "Bool(false)": 1774911489 };
   let obj1 = importDefault(dependencyMap[12]);
   obj = { type: "Instant Invite" };
   source = undefined;

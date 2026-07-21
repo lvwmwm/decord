@@ -1,5 +1,5 @@
 // Module ID: 12234
-// Function ID: 93861
+// Function ID: 93873
 // Name: maybeOpenSpoilerGateForVoiceChannel
 // Dependencies: []
 // Exports: maybeOpenSpoilerGateForVoiceChannel

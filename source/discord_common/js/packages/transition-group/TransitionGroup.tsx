@@ -1,5 +1,5 @@
 // Module ID: 10353
-// Function ID: 79894
+// Function ID: 79905
 // Name: _toPropertyKey
 // Dependencies: []
 
@@ -309,7 +309,7 @@ const tmp3 = (Component) => {
   ];
   return callback(TransitionGroup, items, items1);
 }(importAllResult.Component);
-tmp3.defaultProps = { 1378607046: true, -504327702: true, -1027837358: true, -1133358108: true, -202054462: true };
+tmp3.defaultProps = { "Bool(true)": -1002373119, "Bool(true)": 1358954777, "Bool(true)": 1463887594, "Bool(true)": 1358954806, "Bool(true)": -567392694 };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionGroup.tsx");
 
 export const TransitionGroup = tmp3;

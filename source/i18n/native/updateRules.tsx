@@ -1,10 +1,10 @@
-// Module ID: 15824
-// Function ID: 120968
+// Module ID: 15828
+// Function ID: 121012
 // Name: I18nLink
 // Dependencies: []
 // Exports: default
 
-// Module 15824 (I18nLink)
+// Module 15828 (I18nLink)
 class I18nLink {
   constructor(arg0) {
     node = global.node;

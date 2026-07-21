@@ -1,10 +1,10 @@
-// Module ID: 7453
-// Function ID: 59760
+// Module ID: 7454
+// Function ID: 59772
 // Name: _fetchSocialLayerStorefront
 // Dependencies: []
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAffinity, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7453 (_fetchSocialLayerStorefront)
+// Module 7454 (_fetchSocialLayerStorefront)
 function _fetchSocialLayerStorefront(arg0, Endpoints, arg2) {
   return _fetchSocialLayerStorefront2(...arguments);
 }
@@ -216,7 +216,7 @@ async function _fetchSocialLayerStorefrontEntries(arg0, arg1) {
         obj = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD", applicationId: tmp };
         obj.dispatch(obj);
         const HTTP = callback(closure_2[8]).HTTP;
-        obj = { perkContainer: null, EXTRA_SMALL: null, charactersLength: null, url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
+        obj = { li: 994899974124757700000000000000000000000000000000000000000000000000000000000000000000000, ld: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002004549023389057, lo: 131072.0539264679, url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
         const body = yield HTTP.get(obj).body;
         obj6.succeed();
         const obj1 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS", applicationId: tmp, entries: body.map(callback(closure_2[6]).transformSlayerApplicationStorefrontSummaryServer) };

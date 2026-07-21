@@ -1,5 +1,5 @@
 // Module ID: 8748
-// Function ID: 69145
+// Function ID: 69156
 // Name: NitroIcon
 // Dependencies: []
 // Exports: default

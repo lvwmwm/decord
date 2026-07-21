@@ -1,15 +1,15 @@
-// Module ID: 14013
-// Function ID: 106574
+// Module ID: 14016
+// Function ID: 106606
 // Name: pressable
 // Dependencies: [0, 4294967295, 0, 4294967295, 0, 0, 0, 0]
 
-// Module 14013 (pressable)
-import closure_2 from "__exportStarResult1";
-import { InputModes } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14016 (pressable)
+import closure_2 from "result";
+import { InputModes } from "result";
+import result from "result";
+import result from "result";
 
-__exportStarResult1 = {
+result = {
   useTitle() {
     const intl = arg1(dependencyMap[4]).intl;
     return intl.string(arg1(dependencyMap[4]).t.pS+K2L);
@@ -26,14 +26,14 @@ __exportStarResult1 = {
     }
     return stringResult;
   },
-  onPress: require("__exportStarResult1").handleInputModePress,
+  onPress: require("result").handleInputModePress,
   useSearchTerms() {
     const intl = arg1(dependencyMap[4]).intl;
     const items = [intl.string(arg1(dependencyMap[4]).t.nuFtHH)];
     return items;
   }
 };
-__exportStarResult1 = __exportStarResult1.createPressable(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
+result = result.createPressable(result);
+result = result.fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
 
-export default __exportStarResult1;
+export default result;

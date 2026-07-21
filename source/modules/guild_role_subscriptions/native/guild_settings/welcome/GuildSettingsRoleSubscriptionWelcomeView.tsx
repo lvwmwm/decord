@@ -1,10 +1,10 @@
-// Module ID: 16243
-// Function ID: 125493
+// Module ID: 16251
+// Function ID: 125554
 // Name: ApplicationStatusNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16243 (ApplicationStatusNotice)
+// Module 16251 (ApplicationStatusNotice)
 function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
@@ -58,7 +58,7 @@ class SectionContainer {
     tmp3 = View;
     items = [, , , ];
     items[0] = jsx(View, obj);
-    obj1 = { "Null": false, "Null": 0, "Null": 4 };
+    obj1 = { delete: false, dispatch: 0, raw: 4 };
     obj1.style = tmp.sectionTitle;
     obj1.children = title;
     items[1] = jsx(arg1(dependencyMap[12]).Text, obj1);
@@ -68,7 +68,7 @@ class SectionContainer {
       tmp5 = jsx;
       tmp6 = arg1;
       tmp7 = dependencyMap;
-      obj2 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md" };
+      obj2 = { delete: -1034747437, dispatch: -1274954172, raw: 94480 };
       obj2.style = tmp.sectionFooter;
       obj2.children = footer;
       tmp4 = jsx(arg1(dependencyMap[12]).Text, obj2);
@@ -118,15 +118,13 @@ function StartEarningButton(isTermsAccepted) {
     };
     return obj.openLazy(isTermsAccepted(submitAcceptTermsRequest[17])(submitAcceptTermsRequest[16], submitAcceptTermsRequest.paths), isTermsAccepted(submitAcceptTermsRequest[18]).ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
-  obj = {
-    style: tmp.tos,
-    leading: callback2(arg1(dependencyMap[19]).FormRow.Checkbox, { selected: isTermsAccepted }),
-    label: callback2(arg1(dependencyMap[12]).Text, { children: acceptTermsCheckboxText }),
-    onPress() {
-      return callback(!isTermsAccepted);
-    }
+  obj = { style: tmp.tos, leading: callback2(arg1(dependencyMap[19]).FormRow.Checkbox, { selected: isTermsAccepted }) };
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: acceptTermsCheckboxText };
+  obj.label = callback2(arg1(dependencyMap[12]).Text, obj);
+  obj.onPress = function onPress() {
+    return callback(!isTermsAccepted);
   };
-  obj = { style };
+  const obj1 = { style };
   let tmp9 = eligibleForMonetization;
   if (eligibleForMonetization) {
     tmp9 = true === flag && !isTermsAccepted || true !== flag;
@@ -137,9 +135,9 @@ function StartEarningButton(isTermsAccepted) {
   }
   const items2 = [tmp9, ];
   if (eligibleForMonetization) {
-    const obj1 = {};
-    const obj2 = { style: tmp.startEarningButton };
-    const obj3 = { loading };
+    const obj2 = {};
+    const obj3 = { style: tmp.startEarningButton };
+    const obj4 = { loading };
     let tmp26 = !isTermsAccepted;
     if (!tmp26) {
       tmp26 = !tmp2.canSubmitAcceptance;
@@ -147,47 +145,47 @@ function StartEarningButton(isTermsAccepted) {
     if (!tmp26) {
       tmp26 = !eligibleForMonetization;
     }
-    obj3.disabled = tmp26;
+    obj4.disabled = tmp26;
     const intl2 = arg1(dependencyMap[10]).intl;
-    obj3.text = intl2.string(arg1(dependencyMap[10]).t.NL5ZNS);
-    obj3.onPress = callback;
-    obj2.children = callback2(arg1(dependencyMap[20]).Button, obj3);
-    const items3 = [callback2(closure_6, obj2), ];
+    obj4.text = intl2.string(arg1(dependencyMap[10]).t.NL5ZNS);
+    obj4.onPress = callback;
+    obj3.children = callback2(arg1(dependencyMap[20]).Button, obj4);
+    const items3 = [callback2(closure_6, obj3), ];
     let tmp30 = null != error;
     if (tmp30) {
-      const obj4 = {};
-      const obj5 = { size: 12 };
-      const items4 = [callback2(arg1(dependencyMap[21]).Spacer, obj5), ];
-      const obj6 = { children: error.getAnyErrorMessage() };
-      items4[1] = callback2(importDefault(dependencyMap[9]), obj6);
-      obj4.children = items4;
-      tmp30 = callback3(closure_13, obj4);
+      const obj5 = {};
+      const obj6 = { size: 12 };
+      const items4 = [callback2(arg1(dependencyMap[21]).Spacer, obj6), ];
+      const obj7 = { children: error.getAnyErrorMessage() };
+      items4[1] = callback2(importDefault(dependencyMap[9]), obj7);
+      obj5.children = items4;
+      tmp30 = callback3(closure_13, obj5);
       const tmp38 = importDefault(dependencyMap[9]);
     }
     items3[1] = tmp30;
-    obj1.children = items3;
-    let tmp19Result = callback3(closure_13, obj1);
+    obj2.children = items3;
+    let tmp19Result = callback3(closure_13, obj2);
     const tmp19 = callback3;
     const tmp20 = closure_13;
     const tmp21 = callback2;
     const tmp22 = closure_6;
     const tmp23 = callback2;
   } else {
-    const obj7 = { style: tmp.startEarningButton };
-    const obj8 = { loading };
+    const obj8 = { style: tmp.startEarningButton };
+    const obj9 = { loading };
     const intl = arg1(dependencyMap[10]).intl;
-    obj8.text = intl.string(arg1(dependencyMap[10]).t.NL5ZNS);
-    const obj9 = { source: importDefault(dependencyMap[23]), color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE, size: arg1(dependencyMap[21]).Icon.Sizes.SMALL_20 };
-    obj8.icon = callback2(arg1(dependencyMap[21]).Icon, obj9);
-    const obj10 = { backgroundColor: "#EB5D30" };
-    obj8.pillStyle = obj10;
-    obj8.onPress = callback1;
-    obj7.children = callback2(arg1(dependencyMap[22]).BaseTextButton, obj8);
-    tmp19Result = callback2(closure_6, obj7);
+    obj9.text = intl.string(arg1(dependencyMap[10]).t.NL5ZNS);
+    const obj10 = { source: importDefault(dependencyMap[23]), color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE, size: arg1(dependencyMap[21]).Icon.Sizes.SMALL_20 };
+    obj9.icon = callback2(arg1(dependencyMap[21]).Icon, obj10);
+    const obj11 = { backgroundColor: "#EB5D30" };
+    obj9.pillStyle = obj11;
+    obj9.onPress = callback1;
+    obj8.children = callback2(arg1(dependencyMap[22]).BaseTextButton, obj9);
+    tmp19Result = callback2(closure_6, obj8);
   }
   items2[1] = tmp19Result;
-  obj.children = items2;
-  return callback3(closure_6, obj);
+  obj1.children = items2;
+  return callback3(closure_6, obj1);
 }
 class MarketingSections {
   constructor(arg0) {
@@ -255,13 +253,13 @@ let closure_10 = arg1(dependencyMap[5]).CreatorMonetizationOnboardingMarketingSe
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { flex: 1 }, contentContainer: { accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021729236920285, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012237906228841671 }, heroImage: {}, subtitle: { marginTop: 8 } };
+obj = { container: { flex: 1 }, contentContainer: { -1805531016: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021729236920285, 2095032404: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012237906228841671 }, heroImage: { <string:4069139795>: true, <string:1710685430>: true }, subtitle: { marginTop: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.sm, marginTop: 10 };
 obj.tos = obj;
 obj.startEarningButton = { marginTop: 12 };
 obj.startEarningButtonContainer = { marginTop: 14 };
 obj.startEarningFabContainer = { marginHorizontal: 24 };
-const obj1 = { "Bool(false)": 0, "Bool(false)": -11151, "Bool(false)": 24183295, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
+const obj1 = { accessibilityRole: 0, padding: -11151, "Null": 24183295, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.divider = obj1;
 obj.sectionTitle = {};
 obj.sectionFooter = { marginTop: 36 };
@@ -367,7 +365,7 @@ export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
         const intl2 = arg1(dependencyMap[10]).intl;
         obj5.children = intl2.string(arg1(dependencyMap[10]).t.QYqDQ0);
         const items4 = [callback2(arg1(dependencyMap[12]).Text, obj5), , , ];
-        const obj6 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.subtitle };
+        const obj6 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.subtitle };
         const intl3 = arg1(dependencyMap[10]).intl;
         obj6.children = intl3.string(arg1(dependencyMap[10]).t.41wkMc);
         items4[1] = callback2(arg1(dependencyMap[12]).Text, obj6);

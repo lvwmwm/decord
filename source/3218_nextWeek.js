@@ -1,5 +1,5 @@
 // Module ID: 3218
-// Function ID: 25841
+// Function ID: 25846
 // Name: nextWeek
 // Dependencies: []
 // Exports: default
@@ -7,12 +7,12 @@
 // Module 3218 (nextWeek)
 let closure_0 = [];
 const obj = {
-  "Bool(true)": "limit",
-  "Bool(true)": "Array",
-  "Bool(true)": "isArray",
-  "Bool(true)": "cix",
-  "Bool(true)": "limit",
-  "Bool(true)": "Array",
+  areIntervalsOverlapping: false,
+  clamp: false,
+  closestIndexTo: false,
+  closestTo: false,
+  compareAsc: null,
+  compareDesc: null,
   nextWeek(arg0) {
     return "'v " + closure_0[arg0.getUTCDay(arg0)] + " o' p";
   }

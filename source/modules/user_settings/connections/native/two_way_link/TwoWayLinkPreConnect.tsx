@@ -1,5 +1,5 @@
 // Module ID: 8939
-// Function ID: 70433
+// Function ID: 70444
 // Name: _authorizeLink
 // Dependencies: []
 // Exports: TwoWayLinkPreConnect
@@ -78,10 +78,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
   }
   items3[1] = tmp13;
   obj1.style = items3;
-  const items4 = [callback3(closure_6, obj1), , , ];
-  const obj2 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: twoWayLinkStyles.title, children: title };
-  items4[1] = callback3(arg1(dependencyMap[16]).Text, obj2);
-  items4[2] = callback3(arg1(dependencyMap[16]).Text, { style: twoWayLinkStyles.body, children: body });
+  const items4 = [callback3(closure_6, obj1), callback3(arg1(dependencyMap[16]).Text, { style: twoWayLinkStyles.title, children: title }), callback3(arg1(dependencyMap[16]).Text, { style: twoWayLinkStyles.body, children: body }), ];
   let tmp14 = null != redirectDestination;
   if (tmp14) {
     const obj4 = { style: tmp.redirect };
@@ -95,7 +92,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
   const items5 = [closure_10(closure_7, obj), ];
   const obj6 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj7 = { style: twoWayLinkStyles.footerButton };
-  const obj8 = {};
+  const obj8 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
   const intl2 = arg1(dependencyMap[17]).intl;
   obj8.text = intl2.string(arg1(dependencyMap[17]).t.3PatSz);
   obj8.onPress = callback;

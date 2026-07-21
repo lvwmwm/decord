@@ -1,7 +1,7 @@
 // Module ID: 9439
-// Function ID: 73563
+// Function ID: 73574
 // Name: useCaptchaStore
-// Dependencies: [620167168, 344326144, 94568448, 119603200, 131072, 1904017408]
+// Dependencies: [620167168, 344260608, 94568448, 119603200, 131072, 1904017408]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
 // Module 9439 (useCaptchaStore)

@@ -1,13 +1,9 @@
 // Module ID: 1431
-// Function ID: 16703
+// Function ID: 16708
 // Name: ensureChangeListenerCreated
-// Dependencies: [31, 3, 2, 1455]
+// Dependencies: []
 
 // Module 1431 (ensureChangeListenerCreated)
-import { NetworkConnectionTypes } from "module_31";
-import importDefaultResult from "timestamp";
-import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-
 function ensureChangeListenerCreated() {
   if (null == closure_7) {
     closure_7 = importDefault(dependencyMap[2]).addEventListener(notifyListeners);
@@ -71,6 +67,8 @@ function removeCallback(arg0, _handleNetworkOffline) {
     cleanupChangeListener();
   }
 }
+const NetworkConnectionTypes = require(dependencyMap[0]).NetworkConnectionTypes;
+let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("NetworkUtils");
 importDefaultResult.enableNativeLogger(true);
 let closure_4 = [];
@@ -78,12 +76,13 @@ let closure_5 = [];
 let closure_6 = [];
 let closure_7 = null;
 let closure_8 = false;
-const response = require("result2").fetch();
+const response = importDefault(dependencyMap[2]).fetch();
 response.then((isConnected) => {
   isConnected = isConnected.isConnected;
   let closure_8 = null != isConnected && isConnected;
 });
-const result = APP_LAUNCHER_BUILT_IN_SECTION_ICON.fileFinishedImporting("utils/native/NetworkUtils.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("utils/native/NetworkUtils.tsx");
 
 export default {
   addOnlineCallback(_handleNetworkOnline) {

@@ -1,10 +1,10 @@
-// Module ID: 12793
-// Function ID: 98010
+// Module ID: 12795
+// Function ID: 98032
 // Name: MessageRequestRestrictedGuildPrivacyOption
 // Dependencies: []
 // Exports: useMessageRequestPrivacyOption
 
-// Module 12793 (MessageRequestRestrictedGuildPrivacyOption)
+// Module 12795 (MessageRequestRestrictedGuildPrivacyOption)
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   guild = guild.guild;
   const id = guild.id;

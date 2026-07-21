@@ -1,7 +1,7 @@
 // Module ID: 10355
-// Function ID: 79924
+// Function ID: 79935
 // Name: getEmojiText
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10355 (getEmojiText)

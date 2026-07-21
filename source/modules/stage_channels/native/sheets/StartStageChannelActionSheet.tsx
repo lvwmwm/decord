@@ -1,10 +1,10 @@
-// Module ID: 7475
-// Function ID: 59993
+// Module ID: 7476
+// Function ID: 60005
 // Name: StartStageChannelEventActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 7475 (StartStageChannelEventActionSheet)
+// Module 7476 (StartStageChannelEventActionSheet)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -17,17 +17,17 @@ let closure_12 = arg1(dependencyMap[7]).GuildScheduledEventPrivacyLevel;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { padding: 16 }, header: { guild: 24, body: "recent_games_enabled" }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
+obj = { container: { padding: 16 }, header: { accessibilityRole: 24, GuildBadgeFrog: "recent_games_enabled" }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
 obj = { borderRadius: importDefault(dependencyMap[10]).radii.xs, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.textInput = obj;
 obj.startButton = { marginTop: 16 };
 obj.buttonSubtitle = { "Bool(false)": null, "Bool(false)": null };
 const tmp4 = arg1(dependencyMap[8]);
 obj.ageVerificationNotice = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-const obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-obj.error = { fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
+const obj2 = { getCurrentUser: false, useMemo: false, fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
+obj.error = obj2;
 let closure_15 = obj.createStyles(obj);
-const obj2 = { fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
+const obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/stage_channels/native/sheets/StartStageChannelActionSheet.tsx");
 
 export default function StartStageChannelEventActionSheet(channel) {
@@ -135,7 +135,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   const intl6 = arg1(closure_3[21]).intl;
   obj4.children = intl6.string(arg1(closure_3[21]).t.5FPBOB);
   items2[1] = callback(importDefault(closure_3[24]), obj4);
-  const obj5 = { -449510645: 0, -406513309: 0, 1631422033: 0, -1207873045: 0, 426332259: 0, style: tmp.textInput, maxLength: closure_9, value: first };
+  const obj5 = { style: tmp.textInput, maxLength: closure_9, value: first };
   const intl7 = arg1(closure_3[21]).intl;
   obj5.placeholder = intl7.string(arg1(closure_3[21]).t.ZwWruY);
   obj5.onChange = tmp5[1];
@@ -177,7 +177,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   items2[5] = callback(View, obj8);
   let tmp44 = null != stringResult2 && !shouldAgeVerifyToSpeakForCurrentUser;
   if (tmp44) {
-    const obj10 = { style: tmp.buttonSubtitle };
+    const obj10 = { 9223372036854775807: "{{count}} \u0433\u043E\u0434", 0: "{{count}} \u0433\u043E\u0434\u0430", 9223372036854775807: "{{count}} \u043B\u0435\u0442", 0: "\u0431\u043E\u043B\u044C\u0448\u0435 {{count}} \u0433\u043E\u0434\u0430", style: tmp.buttonSubtitle };
     const intl11 = arg1(closure_3[21]).intl;
     obj10.children = intl11.string(arg1(closure_3[21]).t.gR66jX);
     tmp44 = callback(arg1(closure_3[20]).Text, obj10);

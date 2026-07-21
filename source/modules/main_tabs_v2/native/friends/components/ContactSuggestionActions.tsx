@@ -1,10 +1,10 @@
-// Module ID: 15044
-// Function ID: 113254
+// Module ID: 15047
+// Function ID: 113288
 // Name: ContactSuggestionActions
 // Dependencies: []
 // Exports: ContactSuggestionActions
 
-// Module 15044 (ContactSuggestionActions)
+// Module 15047 (ContactSuggestionActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -20,7 +20,7 @@ obj.easing = Easing3.in(arg1(dependencyMap[3]).Easing.quad);
 const obj1 = { duration: 250 };
 const Easing4 = arg1(dependencyMap[3]).Easing;
 obj1.easing = Easing4.out(arg1(dependencyMap[3]).Easing.quad);
-let closure_11 = { containerRefresh: -1825505279, HomeDrawerStateContext: -2051735970, tierPill: 1363145734 };
+let closure_11 = { "Bool(false)": -0.000000000000000000000000000000000000000000000000000019816979986422295, "Bool(false)": 33005013986796525000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 598008253283124600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 const tmp2 = arg1(dependencyMap[2]);
 const obj2 = {};
 const obj5 = arg1(dependencyMap[4]);
@@ -230,7 +230,7 @@ export const ContactSuggestionActions = function ContactSuggestionActions(user) 
   obj1.children = sharedValue(arg1(dependencyMap[9]).Icon, obj2);
   const items3 = [sharedValue(importDefault(dependencyMap[3]).View, obj1), ];
   obj3 = { style: animatedStyle1 };
-  obj4 = { 9223372036854775807: true, -9223372036854775808: true, 0: true, size: str };
+  obj4 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, size: str };
   const intl = arg1(dependencyMap[12]).intl;
   obj4.text = intl.string(arg1(dependencyMap[12]).t.OYkgVk);
   obj4.onPress = callback1;

@@ -1,9 +1,9 @@
-// Module ID: 5270
-// Function ID: 44816
+// Module ID: 5269
+// Function ID: 44823
 // Name: importDefaultResult2
 // Dependencies: []
 
-// Module 5270 (importDefaultResult2)
+// Module 5269 (importDefaultResult2)
 importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
 let importDefaultResult2 = importDefault(dependencyMap[2]);

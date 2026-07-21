@@ -1,10 +1,10 @@
-// Module ID: 16314
-// Function ID: 125891
+// Module ID: 16322
+// Function ID: 125952
 // Name: resetImperatively
 // Dependencies: []
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16314 (resetImperatively)
+// Module 16322 (resetImperatively)
 let closure_2 = Object.freeze({ name: "", emojiId: undefined, emojiName: undefined, description: undefined, refId: undefined });
 const _module = require(dependencyMap[0]);
 let closure_3 = _module.createWithEqualityFn((arg0) => {

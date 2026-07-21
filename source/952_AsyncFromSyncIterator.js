@@ -1,5 +1,5 @@
 // Module ID: 952
-// Function ID: 10308
+// Function ID: 10312
 // Name: AsyncFromSyncIterator
 // Dependencies: []
 // Exports: instrumentStream
@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    lineClamp: "o",
-    accessibilityRole: "o",
+    "Bool(false)": "o",
+    "Bool(false)": "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -74,7 +74,7 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
         obj.message = "Content blocked: " + blockReason;
         setStatus.setStatus(obj);
         const _HermesInternal2 = HermesInternal;
-        obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
+        obj = { mechanism: { id: null, gameId: null } };
         require(dependencyMap[5]).captureException("Content blocked: " + blockReason, obj);
         flag = true;
         const obj2 = require(dependencyMap[5]);

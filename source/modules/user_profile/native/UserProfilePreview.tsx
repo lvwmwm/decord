@@ -1,10 +1,10 @@
-// Module ID: 8227
-// Function ID: 64966
+// Module ID: 8228
+// Function ID: 64979
 // Name: filterLayer
 // Dependencies: []
 // Exports: default
 
-// Module 8227 (filterLayer)
+// Module 8228 (filterLayer)
 function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
@@ -18,7 +18,7 @@ const tmp2 = arg1(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[5]);
 let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1, arg2) => {
   let obj = {};
-  obj = { et: null, eu: "900d6a1aeefc6f4c571ad9d81203dc5c" };
+  obj = { -9223372036854775808: null, 0: "900d6a1aeefc6f4c571ad9d81203dc5c" };
   let num = 263;
   if (null != arg2) {
     num = arg2;
@@ -163,7 +163,7 @@ export default function UserProfilePreview(hideFrame) {
   const tmp17 = importDefault(dependencyMap[15]);
   dependencyMap = new Set(arr2.map((id) => id.id));
   const items1 = [...arr2, ...additionalBadges.filter((id) => !set.has(id.id))];
-  const tmp22 = callback(React.useState({ bhk: -536870861, bic: -299892737 }), 2);
+  const tmp22 = callback(React.useState({ "Null": -536870861, "Null": -299892737 }), 2);
   const first = tmp22[0];
   callback = first;
   React = tmp22[1];
@@ -209,7 +209,7 @@ export default function UserProfilePreview(hideFrame) {
   obj2 = { theme, primaryColor, secondaryColor };
   obj3 = { style: items3, accessibilityLabel };
   const items3 = [tmp5.profileContainer, memo, style];
-  const obj4 = { style: { flexShrink: 1 } };
+  const obj4 = { 9223372036854775807: null, 9223372036854775807: null, style: { flexShrink: 1 } };
   let tmp29 = null != tmp17Result;
   if (tmp29) {
     obj5 = { frame: tmp17Result, filterLayer, profileThemeType: constants.PREVIEW, frameOrder: arg1(dependencyMap[21]).ProfileFrameLayerOrder.BACK };

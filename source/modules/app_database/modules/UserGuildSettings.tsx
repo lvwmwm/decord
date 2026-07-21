@@ -1,5 +1,5 @@
 // Module ID: 6718
-// Function ID: 52221
+// Function ID: 52229
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -92,7 +92,7 @@ importDefaultResult = new importDefaultResult("ReadStates");
 let tmp5 = () => {
   class UserGuildSettings {
     constructor() {
-      f52229 = this;
+      f52237 = this;
       tmp = closure_3(this, UserGuildSettings);
       this.actions = {
         CONNECTION_OPEN(arg0, arg1) {

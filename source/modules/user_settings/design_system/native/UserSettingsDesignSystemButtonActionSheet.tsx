@@ -1,14 +1,14 @@
-// Module ID: 14298
-// Function ID: 108006
+// Module ID: 14301
+// Function ID: 108038
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14298 (items)
+// Module 14301 (items)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const items = [{ raw: "add", body: "it" }, { raw: "text-sm/medium", body: "text-subtle" }, {}];
-const items1 = [{}, {}];
+const items = [{ <string:2048437162>: "add", <string:2887950716>: "it" }, { <string:2048437162>: "text-sm/medium", <string:2887950716>: "text-subtle" }, {}];
+const items1 = [{ name: 1827029459, padding: -144637951 }, { name: true, padding: true }];
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButtonActionSheet.tsx");
 
@@ -61,8 +61,8 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
   items = [callback(arg1(closure_2[5]).BottomSheetTitleHeader, { title: "Button Settings" }), ];
   obj = {};
   obj = {
-    damping: null,
-    mass: "Secondary Row Button",
+    "Null": null,
+    "Null": "Secondary Row Button",
     children: items.map((label) => {
       const value = label.value;
       let obj = {};
@@ -80,7 +80,7 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     })
   };
   const items1 = [callback(arg1(closure_2[6]).FormSection, obj), , , , , ];
-  const obj1 = { damping: null, mass: null };
+  const obj1 = { "Null": null, "Null": null };
   const items2 = [
     callback(arg1(closure_2[6]).FormHint, { children: "The amount in pixels that the button width will scale when pressed" }),
     items1.map((label) => {
@@ -121,9 +121,9 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
     })
   };
   items1[3] = callback(arg1(closure_2[6]).FormSection, obj4);
-  const obj6 = { damping: "va", mass: "upsellCTADismissed" };
+  const obj6 = { "Null": "Array", "Null": "isArray" };
   const items3 = [callback(arg1(closure_2[6]).FormHint, { children: "Whether to show the example icon on the left (default) or right." }), ];
-  const items4 = ["irish", "plant"];
+  const items4 = [null, null];
   items3[1] = items4.map((label) => {
     let obj = {};
     obj = {
@@ -140,7 +140,7 @@ export default function UserSettingsDesignSystemButtonActionSheet() {
   });
   obj6.children = items3;
   items1[4] = callback2(arg1(closure_2[6]).FormSection, obj6);
-  const obj7 = { damping: "Row Button", mass: "With a custom RowButton.Icon" };
+  const obj7 = { "Null": "Row Button", "Null": "With a custom RowButton.Icon" };
   const items5 = [callback(arg1(closure_2[6]).FormHint, { children: "Whether or not to show a loading state when a button is pressed" }), ];
   const items6 = [true, false];
   items5[1] = items6.map((arg0) => {

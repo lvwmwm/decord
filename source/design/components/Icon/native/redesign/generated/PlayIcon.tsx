@@ -1,10 +1,10 @@
-// Module ID: 8278
-// Function ID: 65360
+// Module ID: 8279
+// Function ID: 65373
 // Name: PlayIcon
 // Dependencies: []
 // Exports: PlayIcon
 
-// Module 8278 (PlayIcon)
+// Module 8279 (PlayIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PlayIcon.tsx");

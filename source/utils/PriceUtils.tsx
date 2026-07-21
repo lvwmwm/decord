@@ -1,5 +1,5 @@
 // Module ID: 5614
-// Function ID: 47835
+// Function ID: 47843
 // Name: formatSingleCurrencyPrice
 // Dependencies: []
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
@@ -119,7 +119,7 @@ let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const SubscriptionIntervalTypes = arg1(dependencyMap[2]).SubscriptionIntervalTypes;
 const CurrencyCodes = arg1(dependencyMap[3]).CurrencyCodes;
-let closure_6 = Object.freeze([]);
+let closure_6 = Object.freeze([true, true, true]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("utils/PriceUtils.tsx");
 
 export { formatSingleCurrencyPrice };
@@ -127,7 +127,7 @@ export { formatDualPriceForBG };
 export { formatPrice };
 export { formatRate };
 export const formatPercent = function formatPercent(arg0, arg1) {
-  return Intl.NumberFormat(arg0, { "Null": 49419008, "Null": 49419008 }).format(arg1);
+  return Intl.NumberFormat(arg0, { "Null": 49445120, "Null": 49445120 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
   const price = arg1(dependencyMap[9]).getPrice(interval_count.id);

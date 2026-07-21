@@ -1,10 +1,10 @@
-// Module ID: 7661
-// Function ID: 61236
+// Module ID: 7662
+// Function ID: 61248
 // Name: checkIsCallActive
-// Dependencies: [4117954560, 4076863517, 33554446, 1996488704, 6]
+// Dependencies: [4134731776, 4076863517, 33554446, 1996488704, 6]
 // Exports: default, useIsCallActiveNullable
 
-// Module 7661 (checkIsCallActive)
+// Module 7662 (checkIsCallActive)
 import _classCallCheck from "_classCallCheck";
 
 function checkIsCallActive(channelId, id) {

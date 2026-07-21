@@ -1,13 +1,15 @@
 // Module ID: 8640
-// Function ID: 68390
+// Function ID: 68401
 // Name: ExperimentalGameControllerLinkIcon
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 0, 0, 0]
 // Exports: ExperimentalGameControllerLinkIcon
 
 // Module 8640 (ExperimentalGameControllerLinkIcon)
-importAll(dependencyMap[0]);
+import "result";
+import result from "result";
+
 const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ExperimentalGameControllerLinkIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/ExperimentalGameControllerLinkIcon.tsx");
 
 export const ExperimentalGameControllerLinkIcon = function ExperimentalGameControllerLinkIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

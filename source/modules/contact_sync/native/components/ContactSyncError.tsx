@@ -1,17 +1,17 @@
 // Module ID: 11712
-// Function ID: 90943
+// Function ID: 90955
 // Name: ContactSyncError
 // Dependencies: [0, 0, 0, 0, 4294967295, 0]
 // Exports: default
 
 // Module 11712 (ContactSyncError)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-let closure_4 = require("__exportStarResult1").createStyles({ container: { justifyContent: "center" }, error: { active: "center", activeIndex: "center" } });
+let closure_4 = result.createStyles({ container: { justifyContent: "center" }, error: { "Null": "center", "Null": "center" } });
 let closure_5 = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
+result = arg1(dependencyMap[6]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
 
 export default function ContactSyncError(error) {
   error = error.error;
@@ -39,6 +39,7 @@ export default function ContactSyncError(error) {
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: items };
   const items = [tmp.container, error.style, animatedStyle];
-  obj.children = jsx(arg1(dependencyMap[5]).Text, { style: tmp.error, children: error });
+  const obj1 = { hasMaxConnections: 1, isBoostOnlySubscription: "center", style: tmp.error, children: error };
+  obj.children = jsx(arg1(dependencyMap[5]).Text, obj1);
   return jsx(importDefault(dependencyMap[3]).View, obj);
 };

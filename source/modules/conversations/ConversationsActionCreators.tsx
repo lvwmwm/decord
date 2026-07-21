@@ -1,5 +1,5 @@
 // Module ID: 9265
-// Function ID: 72366
+// Function ID: 72377
 // Name: _fetchChannelConversations
 // Dependencies: []
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
@@ -41,7 +41,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
   let obj = importDefault(dependencyMap[6]);
   obj = { type: "SET_SELECTED_CONVERSATION", channelId, conversationId };
   obj.dispatch(obj);
-  fetchConversationMessages(channelId, guildId, conversationId, { call: null, get: null });
+  fetchConversationMessages(channelId, guildId, conversationId, { "Null": null, "Null": null });
   const conversationMetadata = conversationMetadata.getConversationMetadata(channelId, conversationId);
   if (flag) {
     let startMessageId;
@@ -67,14 +67,12 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
   obj.dispatch(obj);
 };
 export { fetchConversationMessages };
-export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(channel, guildId, conversationCount) {
-  const ConversationsAnalytics = guildId(dependencyMap[9]).ConversationsAnalytics;
-  let obj = { channelId: channel.id, conversationCount };
-  const result = ConversationsAnalytics.trackEntrypointImpression(obj);
+export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
+  const ConversationsAnalytics = stateFromStores1(dependencyMap[9]).ConversationsAnalytics;
+  const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (closure_5.shouldTriggerOnNextExposure()) {
-    importDefault(dependencyMap[10]).fireSurveyAction(guildId(dependencyMap[11]).SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    importDefault(dependencyMap[10]).fireSurveyAction(stateFromStores1(dependencyMap[11]).SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
     const obj2 = importDefault(dependencyMap[10]);
   }
-  obj = { type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION", channel, guildId, conversationCount };
-  importDefault(dependencyMap[6]).dispatch(obj);
+  importDefault(dependencyMap[6]).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

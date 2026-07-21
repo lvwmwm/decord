@@ -1,5 +1,5 @@
 // Module ID: 1053
-// Function ID: 11273
+// Function ID: 11277
 // Name: breadcrumbsIntegration
 // Dependencies: []
 
@@ -13,7 +13,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ -589444899: "y", 1682592437: "onPlayerStateChange", -782137302: "r", 1126780754: "inactiveDotElement", 1388208580: "handleActivityJoin", 590868542: "japan" }, {});
+    let closure_0 = Object.assign({}, {});
     const obj = {
       name: "Breadcrumbs",
       setup(on) {
@@ -173,7 +173,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                         ({ error: obj7.data, args: obj7.input } = fetchData);
                         obj.startTimestamp = startTimestamp;
                         obj.endTimestamp = endTimestamp;
-                        obj = { x: true, y: true, accessibilityRole: true, lj: true, data: fetchData.fetchData };
+                        obj = { data: fetchData.fetchData };
                         fetchData.emit("beforeOutgoingRequestBreadcrumb", obj, obj);
                         fetchData(closure_1[0]).addBreadcrumb(obj, obj);
                         const obj9 = fetchData(closure_1[0]);
@@ -192,7 +192,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                           status = response.status;
                         }
                         const obj2 = { input: fetchData.args, response, startTimestamp, endTimestamp };
-                        const obj3 = { data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
+                        const obj3 = { "Bool(true)": 0.4, "Bool(true)": "image/webp", "Bool(true)": 0.5, data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
                         fetchData.emit("beforeOutgoingRequestBreadcrumb", obj3, obj2);
                         const obj5 = fetchData(closure_1[0]);
                         fetchData(closure_1[0]).addBreadcrumb(obj3, obj2);

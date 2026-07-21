@@ -1,7 +1,7 @@
 // Module ID: 4259
-// Function ID: 37322
+// Function ID: 37330
 // Name: baseIsSet
-// Dependencies: [4294967295, 0]
+// Dependencies: []
 
 // Module 4259 (baseIsSet)
 

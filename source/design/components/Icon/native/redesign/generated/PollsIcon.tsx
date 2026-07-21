@@ -1,5 +1,5 @@
 // Module ID: 9647
-// Function ID: 75164
+// Function ID: 75175
 // Name: PollsIcon
 // Dependencies: []
 // Exports: PollsIcon

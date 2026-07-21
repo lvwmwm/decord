@@ -1,5 +1,5 @@
 // Module ID: 1890
-// Function ID: 21079
+// Function ID: 21084
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [771751943, 1291845639, 2885681168]
 
@@ -134,13 +134,13 @@ const tmp3 = () => {
 const tmp2 = () => {
   class Database {
     constructor(arg0) {
-      f21103 = this;
+      f21108 = this;
       tmp = closure_4(this, Database);
       this.raw = arg0;
       this.name = arg0.name;
-      this.lastState = f21103(Database[3]).DatabaseState.Open;
+      this.lastState = f21108(Database[3]).DatabaseState.Open;
       this.handle = arg0.handle;
-      Runtime = f21103(Database[4]).Runtime;
+      Runtime = f21108(Database[4]).Runtime;
       this.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (self.handle === arg0) {
           self.lastState = lastState;
@@ -173,7 +173,7 @@ const tmp2 = () => {
         let resolved = Promise.resolve();
       } else {
         self.lastState = callback(Database[3]).DatabaseState.Disabled;
-        const obj = { "Null": null, "Null": null, reason };
+        const obj = { marginEnd: true, marginHorizontal: true, reason };
         resolved = self.execute(obj);
       }
       return resolved;
@@ -266,19 +266,19 @@ const tmp2 = () => {
   items[4] = {
     key: "fullVacuum",
     value() {
-      return this.execute({ <string:36983788>: "notification-center-item", <string:1200175935>: null, <string:2161473874>: null });
+      return this.execute({});
     }
   };
   items[5] = {
     key: "fsInfo",
     value() {
-      return this.execute({});
+      return this.execute({ marginEnd: "center", marginHorizontal: "center" });
     }
   };
   items[6] = {
     key: "incrementalVacuum",
     value() {
-      return this.execute({ <string:36983788>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012728939081184478, <string:1200175935>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001094160028306916, <string:2161473874>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232100200172043 });
+      return this.execute({});
     }
   };
   items[7] = {

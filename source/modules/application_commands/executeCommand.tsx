@@ -1,10 +1,10 @@
-// Module ID: 8176
-// Function ID: 64526
+// Module ID: 8177
+// Function ID: 64539
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, retryCommandMessage
 
-// Module 8176 (_createForOfIteratorHelperLoose)
+// Module 8177 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -237,7 +237,7 @@ async function _executeCommand(arg0, arg1) {
                         let first = filterEmptyResult[0];
                         obj = first;
                         if (null == first) {
-                          obj = { fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" };
+                          obj = { v: "<string:3444703234>", w: "<string:299071619>" };
                         }
                         let type = value.type;
                         let tmp69 = closure_0;

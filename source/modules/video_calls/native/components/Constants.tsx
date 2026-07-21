@@ -1,7 +1,7 @@
 // Module ID: 10518
-// Function ID: 82128
+// Function ID: 82139
 // Name: PIP_GESTURE_ACTIVE_OFFSET
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10518 (PIP_GESTURE_ACTIVE_OFFSET)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 8578
-// Function ID: 68121
+// Function ID: 68132
 // Name: getBadgeTooltip
 // Dependencies: []
 // Exports: getBadgeTooltip

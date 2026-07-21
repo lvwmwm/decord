@@ -1,5 +1,5 @@
 // Module ID: 4495
-// Function ID: 39641
+// Function ID: 39649
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
@@ -9,7 +9,7 @@ let codegenNativeComponent;
 const _module = require(dependencyMap[0]);
 ({ codegenNativeCommands, codegenNativeComponent } = _module);
 let obj = { uiViewClassName: "RNSSearchBar", directEventTypes: { topSearchFocus: { registrationName: "onSearchFocus" }, topSearchBlur: { registrationName: "onSearchBlur" }, topSearchButtonPress: { registrationName: "onSearchButtonPress" }, topCancelButtonPress: { registrationName: "onCancelButtonPress" }, topChangeText: { registrationName: "onChangeText" }, topClose: { registrationName: "onClose" }, topOpen: { registrationName: "onOpen" } } };
-obj = {};
+obj = { "Bool(true)": "true", "Bool(true)": 424, "Bool(true)": 424, "Bool(true)": 100, "Bool(true)": "2026-03-soundmoji-rendering", "Bool(true)": "user", "Bool(true)": "2025-12-proportional-vad-indicator", "Bool(true)": "text", "Bool(true)": "", "Bool(true)": 255, "Bool(true)": 0, "Bool(true)": 256, "Bool(true)": 0, "Bool(true)": 0 };
 obj = { process: require(dependencyMap[1]).default };
 obj.barTintColor = obj;
 obj.tintColor = { process: require(dependencyMap[1]).default };

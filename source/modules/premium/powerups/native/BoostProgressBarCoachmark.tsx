@@ -1,10 +1,10 @@
-// Module ID: 14872
-// Function ID: 112016
+// Module ID: 14875
+// Function ID: 112050
 // Name: BoostProgressBarCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14872 (BoostProgressBarCoachmark)
+// Module 14875 (BoostProgressBarCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;

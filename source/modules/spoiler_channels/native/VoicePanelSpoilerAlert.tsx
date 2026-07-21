@@ -1,5 +1,5 @@
 // Module ID: 12235
-// Function ID: 93863
+// Function ID: 93875
 // Name: VoicePanelSpoilerAlert
 // Dependencies: []
 // Exports: default

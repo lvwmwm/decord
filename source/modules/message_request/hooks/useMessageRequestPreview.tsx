@@ -1,7 +1,7 @@
 // Module ID: 11617
-// Function ID: 90197
+// Function ID: 90209
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6896, 5241, 6850, 566, 22, 8459, 2, 31]
+// Dependencies: [57, 31, 6897, 5240, 6851, 566, 22, 8459, 2, 31]
 // Exports: useMessageRequestPreview
 
 // Module 11617 (_createForOfIteratorHelperLoose)
@@ -136,7 +136,7 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
       if (null != lastMessageIdResult) {
         const message = message.getMessage(id, lastMessageIdResult);
         if (null != message) {
-          const obj = { ENABLE_COMMUNITY_FLOW_MODAL_KEY: true, overflow: true, message };
+          const obj = { 0: null, 9223372036854775807: null, message };
           return obj;
         }
       }

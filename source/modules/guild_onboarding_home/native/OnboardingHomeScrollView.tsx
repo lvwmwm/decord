@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 114296
+// Module ID: 15155
+// Function ID: 114330
 // Name: OnboardingHomeScrollView
 // Dependencies: []
 // Exports: default
 
-// Module 15152 (OnboardingHomeScrollView)
+// Module 15155 (OnboardingHomeScrollView)
 let closure_2 = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -46,7 +46,7 @@ export default function OnboardingHomeScrollView(children) {
     }
     if (!current) {
       const current2 = ref.current;
-      current2.scrollTo({ isArray: "<string:1196490754>", width: "<string:3310486038>" });
+      current2.scrollTo({});
     }
     ref.current = false;
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 14464
-// Function ID: 108980
+// Module ID: 14467
+// Function ID: 109012
 // Name: MultiGuildDevTools
 // Dependencies: []
 // Exports: default
 
-// Module 14464 (MultiGuildDevTools)
+// Module 14467 (MultiGuildDevTools)
 function MultiGuildDevTools() {
   let dismissedCount;
   let guildsCount;
@@ -51,9 +51,9 @@ function MultiGuildDevTools() {
   obj = { style: tmp.container };
   obj = { style: tmp.scrollView };
   obj1 = { style: tmp.section };
-  const obj2 = {};
+  const obj2 = { "Bool(false)": "<string:1091633153>", "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9pbnRs" };
   if (0 === mapped.length) {
-    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { style: true, nativeID: true, collapsableChildren: true });
+    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { <string:1650248762>: true, <string:827482716>: true, <string:1637975680>: true });
   } else {
     mapped1 = mapped.map((detectableAppName) => {
       const obj = { label: detectableAppName.detectableAppName };
@@ -77,18 +77,18 @@ function MultiGuildDevTools() {
   obj1.children = callback2(callback(dependencyMap[11]).TableRowGroup, obj2);
   const items2 = [callback2(closure_3, obj1), , ];
   const obj3 = { style: tmp.section };
-  const obj4 = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9pbnRs", "Bool(false)": null };
-  const obj5 = { style: "837672453878b871665e1e66114aefea", nativeID: "ja.messages.837672453878b871665e1e66114aefea.compiled.messages", collapsableChildren: "jsona", subLabel: String(guildsCount) };
+  const obj4 = { "Bool(false)": "<string:16777808>", "Bool(false)": "<string:39243075>" };
+  const obj5 = { <string:1650248762>: "5f7c1f2fd36ae64fe020491f66a557d1", <string:827482716>: "es-ES.messages.5f7c1f2fd36ae64fe020491f66a557d1.compiled.messages", <string:1637975680>: "jsona", subLabel: String(guildsCount) };
   const items3 = [callback2(callback(dependencyMap[12]).TableRow, obj5), , ];
-  const obj6 = { style: "90d00b19b83abb5315af7cd0e82a3fdd", nativeID: "ko.messages.90d00b19b83abb5315af7cd0e82a3fdd.compiled.messages", collapsableChildren: "jsona", subLabel: String(dismissedCount) };
+  const obj6 = { <string:1650248762>: "463e8dec7c923b7fcc98dc04c7d10d6b", <string:827482716>: "fi.messages.463e8dec7c923b7fcc98dc04c7d10d6b.compiled.messages", <string:1637975680>: "jsona", subLabel: String(dismissedCount) };
   items3[1] = callback2(callback(dependencyMap[12]).TableRow, obj6);
-  const obj7 = { style: true, nativeID: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", collapsableChildren: null, subLabel: str };
+  const obj7 = { <string:1650248762>: true, <string:827482716>: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", <string:1637975680>: null, subLabel: str };
   items3[2] = callback2(callback(dependencyMap[12]).TableRow, obj7);
   obj4.children = items3;
   obj3.children = callback3(callback(dependencyMap[11]).TableRowGroup, obj4);
   items2[1] = callback2(closure_3, obj3);
   const obj8 = { style: tmp.section };
-  const obj9 = {};
+  const obj9 = { "Bool(false)": null, "Bool(false)": null };
   const obj10 = { onPress: callback, icon: callback2(callback(dependencyMap[13]).RefreshIcon, {}), trailing: callback2(callback(dependencyMap[14]).TableRowArrow, {}) };
   const items4 = [callback2(callback(dependencyMap[12]).TableRow, obj10), , , ];
   const obj11 = {

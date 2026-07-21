@@ -1,10 +1,10 @@
-// Module ID: 14924
-// Function ID: 112363
+// Module ID: 14927
+// Function ID: 112397
 // Name: showChannelBadge
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
-// Module 14924 (showChannelBadge)
+// Module 14927 (showChannelBadge)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_sidebar/showChannelBadge.tsx");
 

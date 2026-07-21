@@ -1,5 +1,5 @@
 // Module ID: 10799
-// Function ID: 83855
+// Function ID: 83866
 // Name: isLurkingGuildRoute
 // Dependencies: []
 // Exports: saveLastNonVoiceRoute, saveLastRoute

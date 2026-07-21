@@ -1,5 +1,5 @@
 // Module ID: 910
-// Function ID: 9976
+// Function ID: 9980
 // Name: trpcMiddleware
 // Dependencies: []
 // Exports: trpcMiddleware
@@ -8,7 +8,7 @@
 let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = { mechanism: { onDrawerSlide: "\u{1F47D}", onDrawerStateChanged: 6 } };
+let closure_4 = { mechanism: {} };
 
 export const trpcMiddleware = function trpcMiddleware() {
   if (arguments.length > 0) {
@@ -67,7 +67,7 @@ export const trpcMiddleware = function trpcMiddleware() {
           obj.attributes = obj(obj({}, path(closure_1[7]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "route"), path(closure_1[7]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.rpc.trpc");
           obj.forceTransaction = path.forceTransaction;
           return obj.startSpanManual(obj, () => {
-            let closure_0 = callback(/* F9983 */ function*() { ... });
+            let closure_0 = callback(/* F9987 */ function*() { ... });
             return () => { ... };
           }());
         });

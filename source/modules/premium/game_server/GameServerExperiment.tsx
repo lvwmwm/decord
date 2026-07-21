@@ -1,14 +1,16 @@
 // Module ID: 4039
-// Function ID: 33632
-// Name: experiment
+// Function ID: 33637
+// Name: items
 // Dependencies: []
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 4039 (experiment)
+// Module 4039 (items)
 const _module = require(dependencyMap[0]);
-const obj = { -1174339580: true, -1169096700: true, config: { enabled: true } };
+let obj = { "Bool(false)": "isArray", "Bool(false)": "Array", "Bool(false)": "application", defaultConfig: { enabled: false } };
+obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: true, 炖锅: true, config: { enabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
+obj.treatments = items;
+const experiment = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/game_server/GameServerExperiment.tsx");
 

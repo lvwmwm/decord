@@ -1,10 +1,10 @@
-// Module ID: 13471
-// Function ID: 102249
+// Module ID: 13473
+// Function ID: 102271
 // Name: EditProfileEffectInner
 // Dependencies: []
 // Exports: default
 
-// Module 13471 (EditProfileEffectInner)
+// Module 13473 (EditProfileEffectInner)
 function EditProfileEffectInner(user) {
   let selectedProfileEffect;
   let setSelectedProfileEffect;
@@ -52,7 +52,7 @@ function EditProfileEffectInner(user) {
       isNonUserBotResult = user.isNonUserBot();
     }
     if (!isNonUserBotResult) {
-      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { position: null, display: null });
+      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { "Bool(false)": null, "Bool(false)": null });
       const tmp5 = setSelectedProfileEffect(guildId[24]);
     }
   }, items1);
@@ -154,10 +154,10 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
+obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
 const tmp3 = arg1(dependencyMap[6]);
 obj.title = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.previewContainer = { alignItems: 48, marginBottom: 40, marginHorizontal: 8 };
+obj.previewContainer = { header: null, raw: null, borderRadius: null };
 const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["bottom"] = -1;
@@ -239,7 +239,7 @@ export default function EditProfileEffectActionSheet(isTryItOut) {
   obj = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true };
   const obj1 = { style: tmp.container };
   const items3 = [callback2(View, { style: tmp.bounceOffset }), , ];
-  const obj3 = { style: tmp.title };
+  const obj3 = { "Null": "<string:552206337>", "Null": "<string:621281281>", "Null": "<string:1643511809>", style: tmp.title };
   const intl = arg1(dependencyMap[18]).intl;
   obj3.children = intl.string(arg1(dependencyMap[18]).t./6nv6N);
   items3[1] = callback2(arg1(dependencyMap[17]).Text, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 11184
-// Function ID: 87048
+// Function ID: 87060
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -108,7 +108,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
-obj = { padding: null, enumerable: "\u{1F9BB}\u{1F3FF}", memo: true, applicationIdToGuildIds: {} };
+obj = { "Null": false, "Null": false, "Null": null, applicationIdToGuildIds: {} };
 obj.fetchState = obj.NOT_FETCHED;
 let tmp2 = (PersistedStore) => {
   class MyGuildApplicationsStore {

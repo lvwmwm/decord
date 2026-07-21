@@ -1,10 +1,10 @@
 // Module ID: 9033
-// Function ID: 70982
+// Function ID: 70993
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9033 (set)
-const obj = { ALL: new Set(["MobileCustomMuxIntegration", "filterRoleDeletes"]) };
+const obj = { ALL: new Set(["isEligibleWishlistItemOnMobile", "fetchStaleChannels"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ConsoleHandoffType.tsx");
 

@@ -1,22 +1,22 @@
 // Module ID: 10133
-// Function ID: 78418
+// Function ID: 78429
 // Name: SafetyToolsActionSheetHeader
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 10133 (SafetyToolsActionSheetHeader)
-import closure_2 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_2 from "result";
+import { View } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
-__exportStarResult1 = { navbarContainer: { conversationIds: 8, containerWrapper: null, isRobloxSubgameGame: "\u270A\u{1F3FF}" } };
-__exportStarResult1 = { position: "absolute", left: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.navbarLeft = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = result);
+result = { navbarContainer: { 0: 8, 0: null, 9223372036854775807: "\u270A\u{1F3FF}" } };
+result = { position: "absolute", left: require("result").space.PX_16 };
+result.navbarLeft = result;
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetHeader.tsx");
 
 export default function SafetyToolsActionSheetHeader(channelId) {
   let hasBackButton;
@@ -30,7 +30,7 @@ export default function SafetyToolsActionSheetHeader(channelId) {
   const warningType = channelId.warningType;
   const View = warningType;
   ({ title, hasBackButton } = channelId);
-  const tmp = __exportStarResult1();
+  const tmp = result();
   const items = [channelId, recipientId, warningId, warningType];
   const callback = React.useCallback(() => {
     const result = channelId(recipientId[5]).openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType);

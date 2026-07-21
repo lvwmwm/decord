@@ -1,7 +1,7 @@
 // Module ID: 10898
-// Function ID: 84707
+// Function ID: 84718
 // Name: isPartyFull
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: isPartyFull
 
 // Module 10898 (isPartyFull)

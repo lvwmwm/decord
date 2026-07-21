@@ -1,10 +1,10 @@
-// Module ID: 12717
-// Function ID: 97593
+// Module ID: 12719
+// Function ID: 97615
 // Name: openGuildLimitedAccessInfoModal
 // Dependencies: []
 // Exports: default
 
-// Module 12717 (openGuildLimitedAccessInfoModal)
+// Module 12719 (openGuildLimitedAccessInfoModal)
 importAll(dependencyMap[0]);
 const Keyboard = arg1(dependencyMap[1]).Keyboard;
 const jsx = arg1(dependencyMap[2]).jsx;

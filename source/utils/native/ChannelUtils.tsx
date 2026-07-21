@@ -1,10 +1,10 @@
-// Module ID: 4590
-// Function ID: 40203
+// Module ID: 4589
+// Function ID: 40210
 // Name: getThreadChannelIcon
 // Dependencies: []
 // Exports: getChannelIconComponentWithGuild, getChannelIconWithGuild, getChannelMentionIcon, getSimpleChannelIcon, getSimpleChannelIconComponent
 
-// Module 4590 (getThreadChannelIcon)
+// Module 4589 (getThreadChannelIcon)
 function getThreadChannelIcon(type) {
   if (ChannelTypes.PRIVATE_THREAD === type) {
     return importDefault(dependencyMap[4]);

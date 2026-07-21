@@ -1,5 +1,5 @@
 // Module ID: 11286
-// Function ID: 87824
+// Function ID: 87836
 // Dependencies: []
 
 // Module 11286
@@ -13,7 +13,7 @@ let closure_5 = arg1(dependencyMap[2]).createStyles((arg0, arg1, height) => {
   obj.height = height;
   obj.width = height;
   if (arg0) {
-    obj = {};
+    obj = { "Null": null, "Null": null };
   } else {
     obj = { paddingHorizontal: importDefault(dependencyMap[3]).modules.mobile.CHAT_INPUT_PILL_PADDING, paddingVertical: importDefault(dependencyMap[3]).modules.mobile.CHAT_INPUT_PILL_PADDING };
   }

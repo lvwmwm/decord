@@ -1,15 +1,15 @@
-// Module ID: 15920
-// Function ID: 122044
+// Module ID: 15924
+// Function ID: 122088
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
-// Module 15920 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
+// Module 15924 (_isNativeReflectConstruct)
+import result from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import closure_8 from "result";
+import closure_9 from "result";
+import closure_10 from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -35,9 +35,9 @@ function handleSelectedChannelStoreChange() {
 function handleNoteCreateComplete(arg0) {
   delete r0[r1];
 }
-let closure_2 = [];
-let closure_3 = [];
-let closure_4 = [true];
+let closure_2 = [false, false];
+let closure_3 = [false, false];
+let closure_4 = [null];
 let closure_11 = importDefault(dependencyMap[6]);
 let closure_12 = importDefault(dependencyMap[7]);
 let closure_13 = importDefault(dependencyMap[8]);
@@ -57,7 +57,7 @@ let tmp5 = (Store) => {
   class GuildRoomStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, GuildRoomStore);
+      tmp = result(this, GuildRoomStore);
       obj = closure_8(GuildRoomStore);
       tmp2 = closure_7;
       if (closure_26()) {

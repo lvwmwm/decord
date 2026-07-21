@@ -1,5 +1,5 @@
 // Module ID: 10705
-// Function ID: 83347
+// Function ID: 83358
 // Name: VolumeSlider
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,7 @@ if (obj.isAndroid()) {
 const tmp3 = arg1(dependencyMap[3]);
 obj = { marginRight: num };
 obj = { marginLeft: num };
-let closure_7 = arg1(dependencyMap[5]).createStyles({ volumerSlider: {}, leftIcon: obj, rightIcon: obj, volumerSliderNative: {} });
+let closure_7 = arg1(dependencyMap[5]).createStyles({ volumerSlider: { "Null": 7, "Null": 370 }, leftIcon: obj, rightIcon: obj, volumerSliderNative: {} });
 const obj2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("components_native/common/VolumeSlider.tsx");
 
@@ -34,7 +34,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     maxVolume = closure_4;
   }
   ({ onValueChange: closure_0, onResponderGrant } = maxTrackTintColor);
-  let obj = { -77489715: true, 1638293841: true, -685222964: true, -719459144: true, -459146158: true, 558650775: true };
+  let obj = { with_sku: true, with_application: true, type: true, nonce: true, fill: true, d: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(maxTrackTintColor, obj);
   const tmp5 = callback2();

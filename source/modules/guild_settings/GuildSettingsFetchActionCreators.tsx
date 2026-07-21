@@ -1,5 +1,5 @@
 // Module ID: 8438
-// Function ID: 67320
+// Function ID: 67331
 // Name: _fetchGuildIntegrationsApplications
 // Dependencies: []
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
@@ -22,7 +22,7 @@ export const fetchGuildIntegrationsApplications = function fetchGuildIntegration
 };
 export const fetchGuildEmbed = function fetchGuildEmbed(arg0) {
   const HTTP = arg1(dependencyMap[4]).HTTP;
-  const obj = { lc: null, type: null, end: null, url: Endpoints.GUILD_WIDGET(arg0) };
+  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.GUILD_WIDGET(arg0) };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let obj = callback(closure_2[5]);

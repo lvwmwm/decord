@@ -1,10 +1,10 @@
-// Module ID: 12888
-// Function ID: 98403
+// Module ID: 12890
+// Function ID: 98425
 // Name: LocalImageThumbnail
 // Dependencies: []
 // Exports: default
 
-// Module 12888 (LocalImageThumbnail)
+// Module 12890 (LocalImageThumbnail)
 importAll(dependencyMap[0]);
 let _default = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;

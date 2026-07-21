@@ -1,5 +1,5 @@
 // Module ID: 4422
-// Function ID: 38859
+// Function ID: 38867
 // Name: DefinePropertyOrThrow
 // Dependencies: []
 

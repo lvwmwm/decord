@@ -1,9 +1,9 @@
-// Module ID: 15195
-// Function ID: 114658
+// Module ID: 15198
+// Function ID: 114692
 // Name: items
 // Dependencies: []
 
-// Module 15195 (items)
+// Module 15198 (items)
 const importAllResult = importAll(dependencyMap[0]);
 const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.spinnerColor = obj;
-obj.spinner = { defaultColor: 1091633153, lineClamp: 114455, ellipsizeMode: 1102208593, style: 92434, pointerEvents: 347233874 };
+obj.spinner = { defaultColor: 285213055, lineClamp: 17313345, ellipsizeMode: -1743433472, style: 23644225, pointerEvents: -1743433216 };
 obj.icon = {};
 let closure_11 = obj1.createStyles(obj);
 obj1 = { START: 0, [0]: "START", END: 1, [1]: "END" };
@@ -61,7 +61,7 @@ const memoResult = importAllResult.memo(function SearchBarActivityIcon(searchCon
     constructor() {
       obj = {};
       obj2 = searchContext(closure_2[10]);
-      obj.opacity = obj2.interpolate(closure_2.get(), closure_13, ["width", "height"]);
+      obj.opacity = obj2.interpolate(closure_2.get(), closure_13, [null, null]);
       return obj;
     }
   }
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(function SearchBarActivityIcon(searchCon
   const animatedStyle = obj2.useAnimatedStyle(E);
   let obj4 = arg1(dependencyMap[10]);
   const fn = function v() {
-    const obj = { opacity: searchContext(sharedValue[10]).interpolate(sharedValue.get(), closure_13, ["<string:3813229678>", "<string:153900714>"]) };
+    const obj = { opacity: searchContext(sharedValue[10]).interpolate(sharedValue.get(), closure_13, []) };
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[10]).interpolate, fadeAnimationState: sharedValue, ANIMATION_STATE_INPUT: items };

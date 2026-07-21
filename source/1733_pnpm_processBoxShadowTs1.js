@@ -1,5 +1,5 @@
 // Module ID: 1733
-// Function ID: 19431
+// Function ID: 19436
 // Name: pnpm_processBoxShadowTs1
 // Dependencies: []
 
@@ -17,7 +17,7 @@ let closure_4 = () => {
     const found = mapped.filter((arg0) => "" !== arg0);
     const iter = found[Symbol.iterator]();
     while (iter !== undefined) {
-      let obj = { 0: -536870861, 0: -299892737 };
+      let obj = { -1768816636: -536870861, 1653014532: -299892737 };
       let tmp22 = null;
       let tmp20 = null;
       let flag = false;
@@ -180,7 +180,7 @@ arg5.processBoxShadow = () => {
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp50 = nextResult;
-        let obj = { 0: -536870861, 0: -299892737 };
+        let obj = { -1768816636: -536870861, 1653014532: -299892737 };
         let tmp51 = nextResult;
         for (const key10047 in nextResult) {
           let tmp52 = key10047;

@@ -1,5 +1,5 @@
 // Module ID: 11383
-// Function ID: 88500
+// Function ID: 88512
 // Name: Divider
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_4 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = {};
+  obj = { <string:1454005352>: false, <string:2696307259>: false, <string:3163771387>: false, <string:1733363809>: false };
   const colors = importDefault(dependencyMap[4]).colors;
   obj.backgroundColor = arg0 ? colors.BORDER_SUBTLE : colors.BORDER_MUTED;
   if (arg0) {

@@ -1,5 +1,5 @@
 // Module ID: 10618
-// Function ID: 82815
+// Function ID: 82826
 // Name: FocusedControlsHeader
 // Dependencies: []
 
@@ -49,7 +49,7 @@ function FocusedControlsHeaderGradient() {
   obj = { height: "100%", width };
   obj = {};
   const obj1 = {};
-  const items1 = [callback(arg1(dependencyMap[11]).Stop, { <string:3813802319>: "/assets/design/components/Icon/native/redesign/generated/images", <string:1629385330>: 24, <string:2053329160>: 24 }), callback(arg1(dependencyMap[11]).Stop, {}), callback(arg1(dependencyMap[11]).Stop, {})];
+  const items1 = [callback(arg1(dependencyMap[11]).Stop, { "Bool(false)": null, "Bool(false)": "2deb3f64961131491b7db6bb10903f69", "Bool(false)": "DoorExitIcon" }), callback(arg1(dependencyMap[11]).Stop, { "Bool(false)": "accessibilityLabel", "Bool(false)": "r", "Bool(false)": "isArray" }), callback(arg1(dependencyMap[11]).Stop, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true })];
   obj1.children = items1;
   obj.children = callback2(arg1(dependencyMap[11]).LinearGradient, obj1);
   const items2 = [callback(arg1(dependencyMap[11]).Defs, obj), callback(arg1(dependencyMap[11]).Rect, { width })];
@@ -63,7 +63,7 @@ const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ backgroundGradient: { Icon: true, name: true, style: true, options: true, keys: true }, headerContainer: {} });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ backgroundGradient: { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null }, headerContainer: {} });
 const obj = { easing: arg1(dependencyMap[5]).STANDARD_EASING, duration: 250 };
 let closure_11 = { code: "function FocusedControlsTsx1(){const{reveal,FOCUSED_CONTROLS_HEADER_HEIGHT}=this.__closure;return reveal?0:-FOCUSED_CONTROLS_HEADER_HEIGHT;}" };
 let closure_12 = { code: "function FocusedControlsTsx2(){const{withTiming,offsetY,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withTiming(offsetY.get(),TIMING_CONFIG)}]};}" };

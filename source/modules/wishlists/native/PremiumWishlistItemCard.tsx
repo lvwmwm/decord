@@ -1,5 +1,5 @@
 // Module ID: 9746
-// Function ID: 75826
+// Function ID: 75837
 // Name: PremiumWishlistItemCard
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ export default function PremiumWishlistItemCard(size) {
   let source;
   size = size.size;
   const arg1 = size;
-  let obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
+  let obj = {};
   ({ sku, source } = size);
   Object.setPrototypeOf(null);
   const merged = Object.assign(size, obj);

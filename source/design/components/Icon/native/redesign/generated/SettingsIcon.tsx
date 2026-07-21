@@ -1,5 +1,5 @@
 // Module ID: 5786
-// Function ID: 49457
+// Function ID: 49465
 // Name: SettingsIcon
 // Dependencies: []
 // Exports: SettingsIcon

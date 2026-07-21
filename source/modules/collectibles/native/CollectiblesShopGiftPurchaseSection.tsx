@@ -1,5 +1,5 @@
 // Module ID: 11805
-// Function ID: 91585
+// Function ID: 91597
 // Name: CollectiblesShopGiftPurchaseSection
 // Dependencies: []
 // Exports: default

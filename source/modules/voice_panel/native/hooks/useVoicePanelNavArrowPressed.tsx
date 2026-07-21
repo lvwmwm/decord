@@ -1,10 +1,10 @@
-// Module ID: 15657
-// Function ID: 119614
+// Module ID: 15660
+// Function ID: 119653
 // Name: useVoicePanelNavArrowPressed
 // Dependencies: []
 // Exports: default
 
-// Module 15657 (useVoicePanelNavArrowPressed)
+// Module 15660 (useVoicePanelNavArrowPressed)
 let closure_2 = importAll(dependencyMap[0]);
 const VoicePanelControlsModes = arg1(dependencyMap[1]).VoicePanelControlsModes;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");

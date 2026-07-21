@@ -1,10 +1,10 @@
-// Module ID: 14510
-// Function ID: 109250
+// Module ID: 14513
+// Function ID: 109282
 // Name: handleNewUserOnboarding
 // Dependencies: []
 // Exports: default
 
-// Module 14510 (handleNewUserOnboarding)
+// Module 14513 (handleNewUserOnboarding)
 function handleNewUserOnboarding() {
   arg1(dependencyMap[19]).setNewUser(NewUserTypes.ORGANIC_REGISTERED);
   const obj = arg1(dependencyMap[19]);
@@ -103,7 +103,7 @@ function launchMFA() {
   let arr = importDefault(dependencyMap[27]);
   arr = arr.pop();
   arg1(dependencyMap[29])(dependencyMap[28], dependencyMap.paths).then((openMFAModal) => {
-    const items = [{ <string:3813777505>: "dev-tools-gift-intent-no-recipient", <string:1375428999>: "Selected channel has no other recipient." }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
+    const items = [{ "Bool(false)": -83733303865440500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002806366124281496 }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
     openMFAModal.openMFAModal({ ticket: "ticket", methods: items }, () => {
 
     }, () => {
@@ -148,7 +148,7 @@ export default function DevToolsQuickActionsScreen() {
     obj = { paddingBottom: tmp.content.padding + tmp2.bottom };
     items4[1] = obj;
     obj.contentContainerStyle = items4;
-    obj1 = {};
+    obj1 = { "Bool(false)": -1690173439, "Bool(false)": 268435972 };
     obj2 = {
       label: "Show Dev Widget",
       value: showDevWidget,
@@ -182,8 +182,8 @@ export default function DevToolsQuickActionsScreen() {
     const obj7 = { size: importDefault(closure_2[18]).space.PX_16 };
     items5[3] = callback2(arg1(closure_2[41]).Spacer, obj7);
     const obj8 = {
-      "Bool(false)": "isArray",
-      "Bool(false)": "key",
+      "Bool(false)": null,
+      "Bool(false)": null,
       children: closure_16.map((arg0) => {
           let label;
           let value;
@@ -290,9 +290,9 @@ export default function DevToolsQuickActionsScreen() {
     };
     items8[3] = callback2(arg1(closure_2[48]).TableRow, obj27);
     const obj28 = {
-      "Null": true,
-      "Null": true,
-      "Null": true,
+      <string:1448401072>: true,
+      <string:1686368849>: true,
+      <string:4222676172>: true,
       icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
       onPress() {
           showDevWidget(closure_2[20]).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
@@ -300,9 +300,9 @@ export default function DevToolsQuickActionsScreen() {
     };
     items8[4] = callback2(arg1(closure_2[48]).TableRow, obj28);
     const obj29 = {
-      "Null": 4,
-      "Null": 279,
-      "Null": null,
+      <string:1448401072>: null,
+      <string:1686368849>: null,
+      <string:4222676172>: null,
       icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
       onPress() {
           const socket2 = socket.getSocket();

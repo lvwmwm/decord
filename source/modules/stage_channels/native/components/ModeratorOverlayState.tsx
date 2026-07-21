@@ -1,5 +1,5 @@
 // Module ID: 10612
-// Function ID: 82793
+// Function ID: 82804
 // Name: useModeratorOverlayChannelState
 // Dependencies: []
 // Exports: useModeratorOverlayChannelState

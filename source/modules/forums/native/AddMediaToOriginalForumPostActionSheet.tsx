@@ -1,5 +1,5 @@
 // Module ID: 11111
-// Function ID: 86483
+// Function ID: 86495
 // Name: _upload2
 // Dependencies: []
 // Exports: default
@@ -24,11 +24,11 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = { container: {} };
-obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[11]).radii.md, marginBottom: 32, shadowColor: importDefault(dependencyMap[11]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
+obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[11]).radii.md, marginBottom: 32, shadowColor: importDefault(dependencyMap[11]).colors.BLACK, shadowOffset: { "Null": null, "Null": null }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
 obj.post = obj;
-obj.postContent = {};
-obj.title = { collapsable: "absolute", preventClipping: 0 };
-obj.description = { collapsable: 6, preventClipping: "focus_mode_expires_at_ms" };
+obj.postContent = { cix: "r", forEach: "gift_info" };
+obj.title = {};
+obj.description = { value: null, marginTop: null };
 const tmp3 = arg1(dependencyMap[9]);
 obj.button = { borderRadius: importDefault(dependencyMap[11]).radii.sm };
 obj.buttonMargin = { marginBottom: 10 };
@@ -126,7 +126,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   const obj3 = { threadId, localDeviceMedia: tmp14, style: tmp.postContent };
   obj2.children = callback3(arg1(dependencyMap[33]).ForumPostListDisabled, obj3);
   const items9 = [callback3(View, obj2), , , , , ];
-  const obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj4 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[27]).intl;
   obj4.children = intl.string(arg1(dependencyMap[27]).t.+SZF6S);
   items9[1] = callback3(arg1(dependencyMap[34]).Text, obj4);
@@ -135,7 +135,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   obj5.children = intl2.string(arg1(dependencyMap[27]).t.0Ycgw5);
   items9[2] = callback3(arg1(dependencyMap[34]).Text, obj5);
   const obj6 = { style: tmp.buttonMargin };
-  const obj7 = { renderEmbeds: "e48043bf745ca0395ac959c7415a3757", renderReactions: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages" };
+  const obj7 = { FINISH: "d5c9201b5d59debfcddeffefede24edc", hasMediaOptions: "lt.messages.d5c9201b5d59debfcddeffefede24edc.compiled.messages" };
   const intl3 = arg1(dependencyMap[27]).intl;
   obj7.text = intl3.string(arg1(dependencyMap[27]).t.d611xH);
   obj7.pillStyle = tmp.button;
@@ -145,7 +145,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   obj6.children = callback3(arg1(dependencyMap[35]).BaseTextButton, obj7);
   items9[3] = callback3(View, obj6);
   const obj8 = { style: tmp.buttonMargin };
-  const obj9 = {};
+  const obj9 = { FINISH: true, hasMediaOptions: true };
   const intl4 = arg1(dependencyMap[27]).intl;
   obj9.text = intl4.string(arg1(dependencyMap[27]).t.8rKVHL);
   obj9.pillStyle = tmp.button;
@@ -153,7 +153,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   obj9.disabled = first;
   obj8.children = callback3(arg1(dependencyMap[35]).BaseTextButton, obj9);
   items9[4] = callback3(View, obj8);
-  const obj10 = {};
+  const obj10 = { FINISH: true, hasMediaOptions: true };
   const intl5 = arg1(dependencyMap[27]).intl;
   obj10.text = intl5.string(arg1(dependencyMap[27]).t.ETE/oC);
   obj10.pillStyle = tmp.button;

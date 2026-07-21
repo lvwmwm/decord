@@ -1,7 +1,7 @@
 // Module ID: 3768
-// Function ID: 28948
+// Function ID: 28953
 // Name: AccountNotificationFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 3768 (AccountNotificationFlags)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 10543
-// Function ID: 82360
+// Function ID: 82371
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: []
 // Exports: default, isPrivateChannelWithEnabledActivities

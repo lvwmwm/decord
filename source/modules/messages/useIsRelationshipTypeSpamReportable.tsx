@@ -1,5 +1,5 @@
 // Module ID: 11616
-// Function ID: 90194
+// Function ID: 90206
 // Name: useIsRelationshipTypeSpamReportable
 // Dependencies: []
 // Exports: useIsRelationshipTypeSpamReportable

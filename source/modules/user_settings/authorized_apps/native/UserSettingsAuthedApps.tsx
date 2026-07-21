@@ -1,10 +1,10 @@
-// Module ID: 13718
-// Function ID: 103786
+// Module ID: 13720
+// Function ID: 103808
 // Name: UserSettingsAuthedApps
 // Dependencies: []
 // Exports: DisclosureIcon, default
 
-// Module 13718 (UserSettingsAuthedApps)
+// Module 13720 (UserSettingsAuthedApps)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ActivityIndicator: closure_5, FlatList: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -28,7 +28,7 @@ export default function UserSettingsAuthedApps() {
   function renderHeader() {
     let obj = {};
     obj = {};
-    obj = {};
+    obj = { "Null": "", "Null": "" };
     const intl = tmp(navigation[17]).intl;
     obj.children = intl.string(tmp(navigation[17]).t.HU3RFw);
     const items = [callback2(tmp(navigation[16]).Text, obj), ];
@@ -90,7 +90,7 @@ export default function UserSettingsAuthedApps() {
       if (0 === appAuthTokens.length) {
         obj = { style: tmp.emptyContainer };
         const items2 = [renderHeader(), ];
-        obj = { -9223372036854775808: "interactive-text-default", -9223372036854775808: "5.9.4", 0: 24, style: tmp.emptyText };
+        obj = { "Null": "interactive-text-default", "Null": "5.9.4", "Null": 24, style: tmp.emptyText };
         const intl = arg1(dependencyMap[17]).intl;
         obj.children = intl.string(arg1(dependencyMap[17]).t.E+SM6T);
         items2[1] = callback(arg1(dependencyMap[16]).Text, obj);

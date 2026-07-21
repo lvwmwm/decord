@@ -1,10 +1,10 @@
-// Module ID: 7500
-// Function ID: 60124
+// Module ID: 7501
+// Function ID: 60136
 // Name: ErrorText
 // Dependencies: []
 // Exports: ErrorText
 
-// Module 7500 (ErrorText)
+// Module 7501 (ErrorText)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -26,8 +26,8 @@ export const ErrorText = function ErrorText(children) {
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  obj = { "Bool(true)": null, "Bool(true)": "\u{1F44A}\u{1F3FC}", "Bool(true)": true, style: children.style };
-  const items1 = [callback(arg1(dependencyMap[5]).CircleErrorIcon, { flex: true, flexGrow: true }), callback(arg1(dependencyMap[6]).Text, { children })];
+  obj = { 9223372036854775807: null, 9223372036854775807: "\u{1F44A}\u{1F3FC}", -9223372036854775808: true, style: children.style };
+  const items1 = [callback(arg1(dependencyMap[5]).CircleErrorIcon, { accessibilityRole: true, "": true }), callback(arg1(dependencyMap[6]).Text, { children })];
   obj.children = items1;
   return callback2(arg1(dependencyMap[4]).Stack, obj);
 };

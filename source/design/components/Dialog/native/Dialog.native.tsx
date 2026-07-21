@@ -1,5 +1,5 @@
 // Module ID: 4520
-// Function ID: 39716
+// Function ID: 39724
 // Name: Dialog
 // Dependencies: []
 // Exports: Dialog
@@ -14,7 +14,7 @@ export const Dialog = function Dialog(dialogKey) {
   let onDismiss;
   let zIndex;
   dialogKey = dialogKey.dialogKey;
-  let obj = { fileFinishedImporting: "spring", error: "linear", no: "easeInEaseOut" };
+  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
   ({ onDismiss, zIndex } = dialogKey);
   Object.setPrototypeOf(null);
   const merged = Object.assign(dialogKey, obj);

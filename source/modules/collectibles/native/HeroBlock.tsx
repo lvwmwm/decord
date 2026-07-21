@@ -1,10 +1,10 @@
-// Module ID: 14366
-// Function ID: 108450
+// Module ID: 14369
+// Function ID: 108482
 // Name: SkeletonLoading
 // Dependencies: []
 // Exports: default
 
-// Module 14366 (SkeletonLoading)
+// Module 14369 (SkeletonLoading)
 function SkeletonLoading(accessibilityLabel) {
   const obj = {
     style: callback2().skeletonContainer,
@@ -29,17 +29,17 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[5]));
 const result = 0.75 * arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_WIDTH;
 let obj = arg1(dependencyMap[7]);
-obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: {}, orbsBackgroundGradient: { description: "center", imageUploadSize: null, image: 4, setImage: 4, disabled: "rgba(0, 0, 0, 0.75)" }, fadeOutGradient: {}, heroInfoContainer: { -1369201187: "<string:141856787>", -581843463: "<string:134217728>", 1409835429: "<string:134217728>", -404701909: "<string:134217728>", -304622757: "<string:1912602624>", -2129023389: "Array" } };
-obj = { <string:1454006944>: true, <string:1387159867>: true, <string:2782743027>: true, <string:3321474659>: true, <string:1638260049>: true, <string:3173733384>: true, maxHeight: 240 + result };
-const obj1 = { custom_id: "isArray", max_values: "message", min_values: "textAlign", placeholder: "r", label: "isArray", value: "message", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" }, orbsBackgroundGradient: { enableQualityMetrics: "<string:408361903>", enableOriginDetection: "<string:2920093709>", enabled: "<string:1058778651>", threshold: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, enabled: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, fadeOutGradient: {}, heroInfoContainer: { "Null": "<string:141856807>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:134217728>", "Null": "<string:285212672>", "Null": "<string:38822721>" } };
+obj = { maxHeight: 240 + result };
+const obj1 = { "Null": "y", "Null": "isArray", "Null": "Text", "Null": "Object", "Null": "Reflect", "Null": "r", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.innerContainer = obj1;
-obj.heroLogoContainer = { <string:4266911585>: 132, <string:597500170>: 182, <string:3850199709>: 132 };
-obj.heroLogo = { "Null": true, "Null": 16, "Null": 0.194, "Null": 0 };
+obj.heroLogoContainer = { "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132 };
+obj.heroLogo = {};
 const tmp4 = arg1(dependencyMap[5]);
 obj.heroViewAllIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.orbsInnerContainer = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.orbsTitle = { PX_16: null, ix: null };
+obj.orbsTitle = { 9223372036854775807: null, 0: null };
 obj.productCardsContainer = { zIndex: 1 };
 const obj3 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.skeletonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
@@ -104,7 +104,7 @@ export default function _default(heroBlock) {
         obj3 = {};
         let tmp35 = tmp2;
         if (tmp2) {
-          obj4 = { colors: ["durationMillis", "GUILD_ITEM_BADGE_SIZE"] };
+          obj4 = { colors: [true, true] };
           ({ START: obj17.start, END: obj17.end } = closure_10);
           obj4.style = tmp4.orbsBackgroundGradient;
           tmp35 = callback(importDefault(closure_2[28]), obj4);
@@ -164,7 +164,7 @@ export default function _default(heroBlock) {
         const tmp66 = tmp8;
         const tmp67 = tmp8;
       } else {
-        const obj14 = { byteSwap32: true, STREAM_UPSELL_MODAL: "/assets/images/native/icons", analytics: 16, otherUsernameOnClick: 16, showIconSparkle: null, model: "cb49d7446dbcac5ce6ba16b6a9b83961" };
+        const obj14 = {};
         const intl = arg1(closure_2[31]).intl;
         const obj15 = { category: stateFromStores.name };
         obj14.accessibilityLabel = intl.formatToPlainString(arg1(closure_2[31]).t.FNtLb3, obj15);
@@ -214,7 +214,7 @@ export default function _default(heroBlock) {
           tmp54 = callback(tmp8, obj18);
         }
         const items9 = [tmp54, ];
-        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, {}) };
+        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }) };
         items9[1] = callback(tmp8, obj21);
         obj17.children = items9;
         obj14.children = closure_13(tmp8, obj17);

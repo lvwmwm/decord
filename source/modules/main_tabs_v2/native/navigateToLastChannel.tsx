@@ -1,5 +1,5 @@
 // Module ID: 10875
-// Function ID: 84562
+// Function ID: 84573
 // Name: navigateToLastChannel
 // Dependencies: []
 // Exports: default

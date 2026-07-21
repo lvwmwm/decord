@@ -1,10 +1,17 @@
-// Module ID: 7598
-// Function ID: 60892
+// Module ID: 7599
+// Function ID: 60904
 // Name: getScreens
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 7598 (getScreens)
+// Module 7599 (getScreens)
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import { IN_APP_REPORTS_NODE } from "result";
+import { jsx } from "result";
+import result from "result";
+
 function getScreens(arg0) {
   let callbacks;
   ({ nodeMap: closure_0, reportType: closure_1, reportSubType: closure_2, successNodeId: closure_3, failNodeId: closure_4, callbacks, reportId: closure_5 } = arg0);
@@ -42,12 +49,7 @@ function getScreens(arg0) {
     }
   };
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const IN_APP_REPORTS_NODE = arg1(dependencyMap[3]).IN_APP_REPORTS_NODE;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
+result = result.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
 
 export default function InAppReportModal(arg0) {
   let initialStack;

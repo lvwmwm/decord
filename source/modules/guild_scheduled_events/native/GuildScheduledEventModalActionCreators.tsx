@@ -1,5 +1,5 @@
 // Module ID: 8358
-// Function ID: 66600
+// Function ID: 66611
 // Name: openCreateOrEditGuildEventModal
 // Dependencies: []
 // Exports: closeGuildEventListActionSheet, openGuildEventListActionSheet, openShareEvent, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite

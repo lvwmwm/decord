@@ -1,10 +1,10 @@
-// Module ID: 13486
-// Function ID: 102349
+// Module ID: 13488
+// Function ID: 102371
 // Name: UserProfileLegacyUsernameSwitch
 // Dependencies: []
 // Exports: default
 
-// Module 13486 (UserProfileLegacyUsernameSwitch)
+// Module 13488 (UserProfileLegacyUsernameSwitch)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");

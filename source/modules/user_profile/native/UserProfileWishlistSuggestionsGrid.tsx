@@ -1,5 +1,5 @@
 // Module ID: 12010
-// Function ID: 92814
+// Function ID: 92826
 // Name: UserProfileWishlistSuggestionsGridContent
 // Dependencies: []
 // Exports: default
@@ -57,7 +57,7 @@ function WishlistSuggestionsGridContents(arg0) {
   ({ wishlistId, containerWidth, maxWidth, markAsDismissed } = arg0);
   const tmp = importDefault(dependencyMap[10])("UserProfileWishlistSuggestionsGridContent");
   const tmp2 = callback2();
-  let obj = { 1375303266: null, -313275336: "5e2f785032385a803c0dd3d91ffe95da", containerWidth, maxWidth, sidePadding: closure_5 + PX_16 + 1, gap: closure_6 };
+  let obj = { "Null": null, "Null": "5e2f785032385a803c0dd3d91ffe95da", containerWidth, maxWidth, sidePadding: closure_5 + PX_16 + 1, gap: closure_6 };
   const analyticsLocations = importDefault(dependencyMap[12])().analyticsLocations;
   let obj1 = arg1(dependencyMap[15]);
   obj = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: arg1(dependencyMap[16]).WishlistFetchSource.USER_PROFILE };

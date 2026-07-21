@@ -1,5 +1,5 @@
 // Module ID: 8510
-// Function ID: 67880
+// Function ID: 67891
 // Name: useDisplayNameStylesAccessibleColors
 // Dependencies: []
 // Exports: useDisplayNameStylesAccessibleColors

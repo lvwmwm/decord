@@ -1,9 +1,9 @@
-// Module ID: 15507
-// Function ID: 118313
+// Module ID: 15510
+// Function ID: 118352
 // Name: AnimatedToast
-// Dependencies: [680460288, 656015360, 131072, 3363176448, 1258291240, 3707764738, 1241513985, 2852126738, 33554437, 2063597568, 31, 10440, 3979, 1557, 4994, 477, 14584, 10010, 3989, 4097]
+// Dependencies: [680460288, 656015360, 131072, 3363176448, 1258291240, 3707764738, 1224736769, 2852126738, 33554437, 2063597568, 31, 10440, 3979, 1557, 4993, 477, 14587, 10010, 3989, 4097]
 
-// Module 15507 (AnimatedToast)
+// Module 15510 (AnimatedToast)
 import getAndroidLightImpactEffect from "getAndroidLightImpactEffect";
 
 function AnimatedToast(toast) {
@@ -175,7 +175,7 @@ obj1 = { START: 0, [0]: "START", END: 1, [1]: "END" };
 const items = [, ];
 ({ START: arr[0], END: arr[1] } = obj1);
 let closure_10 = {};
-let closure_11 = { "Null": 1358954496, "Null": 24319559, "Null": -67108864, "Null": -50331649, "Null": 33554431 };
+let closure_11 = { style: 1358954496, blurStyle: 24354011, blurTintRgba: -67108864, android_fallbackColor: -50331649, blurAmount: 33554431 };
 let closure_12 = { code: "function ToastContainerTsx1(){const{position,safeAreaTop,CONTAINER_DISTANCE_VERTICAL,screenHeight,toastHeight,bottomTabsHeight,youBarHeight,interpolate,animationState,ANIMATION_STATE_INPUT,CONTAINER_TOP_POSITION_START,isReducedMotion,withSpring,OPACITY_SPRING_PHYSICS,TOAST_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,screenWidth,CONTAINER_DISTANCE_SIDES}=this.__closure;const verticalPositionEnd=position==='top'?safeAreaTop+CONTAINER_DISTANCE_VERTICAL:screenHeight-toastHeight.get()-bottomTabsHeight-CONTAINER_DISTANCE_VERTICAL-youBarHeight;const translateY=interpolate(animationState.get(),ANIMATION_STATE_INPUT,[position==='top'?CONTAINER_TOP_POSITION_START:screenHeight-bottomTabsHeight-toastHeight.get()-youBarHeight,verticalPositionEnd]);return{opacity:!isReducedMotion?withSpring(animationState.get(),OPACITY_SPRING_PHYSICS):animationState.get(),transform:[{translateY:!isReducedMotion?withSpring(translateY,TOAST_SPRING_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}):translateY}],maxWidth:screenWidth-CONTAINER_DISTANCE_SIDES*2};}" };
 let closure_13 = { code: "function ToastContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 const result = getAndroidLightImpactEffect.fileFinishedImporting("modules/toast/native/ToastContainer.tsx");

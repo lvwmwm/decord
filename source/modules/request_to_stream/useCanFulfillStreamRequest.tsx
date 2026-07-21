@@ -1,5 +1,5 @@
 // Module ID: 10907
-// Function ID: 84747
+// Function ID: 84758
 // Name: canFulfillStreamRequest
 // Dependencies: []
 // Exports: default

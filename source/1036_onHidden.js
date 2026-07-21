@@ -1,5 +1,5 @@
 // Module ID: 1036
-// Function ID: 11164
+// Function ID: 11168
 // Name: onHidden
 // Dependencies: []
 
@@ -21,7 +21,7 @@ arg5.onHidden = function onHidden(arg0) {
       type(type);
     }
   }
-  arg1(arg6[1]).addPageListener("visibilitychange", onHiddenOrPageHide, { -9223372036854775808: null, 0: null });
+  arg1(arg6[1]).addPageListener("visibilitychange", onHiddenOrPageHide, { 9223372036854775807: null, -9223372036854775808: null });
   const obj = arg1(arg6[1]);
-  arg1(arg6[1]).addPageListener("pagehide", onHiddenOrPageHide, { -9223372036854775808: null, 0: null });
+  arg1(arg6[1]).addPageListener("pagehide", onHiddenOrPageHide, { 9223372036854775807: null, -9223372036854775808: null });
 };

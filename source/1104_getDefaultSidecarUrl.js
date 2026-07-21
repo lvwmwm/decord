@@ -1,5 +1,5 @@
 // Module ID: 1104
-// Function ID: 12603
+// Function ID: 12607
 // Name: getDefaultSidecarUrl
 // Dependencies: []
 // Exports: spotlightIntegration

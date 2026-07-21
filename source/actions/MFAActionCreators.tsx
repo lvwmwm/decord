@@ -1,10 +1,10 @@
-// Module ID: 13524
-// Function ID: 102599
+// Module ID: 13526
+// Function ID: 102621
 // Dependencies: [0, 0, 0, 4294967295]
 
-// Module 13524
-import __exportStarResult1 from "__exportStarResult1";
-import { Endpoints } from "__exportStarResult1";
+// Module 13526
+import result from "result";
+import { Endpoints } from "result";
 
 const result = arg1(dependencyMap[4]).fileFinishedImporting("actions/MFAActionCreators.tsx");
 

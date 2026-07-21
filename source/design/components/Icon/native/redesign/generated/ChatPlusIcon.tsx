@@ -1,7 +1,7 @@
 // Module ID: 10859
-// Function ID: 84507
+// Function ID: 84518
 // Name: ChatPlusIcon
-// Dependencies: [2583691306, 1140850710, 1929379869, 3321888810, 4177526823]
+// Dependencies: [2583691306, 1157627926, 1929379869, 3321888810, 4177526823]
 // Exports: ChatPlusIcon
 
 // Module 10859 (ChatPlusIcon)

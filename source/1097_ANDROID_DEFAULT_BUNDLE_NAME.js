@@ -1,5 +1,5 @@
 // Module ID: 1097
-// Function ID: 12556
+// Function ID: 12560
 // Name: ANDROID_DEFAULT_BUNDLE_NAME
 // Dependencies: []
 // Exports: createReactNativeRewriteFrames

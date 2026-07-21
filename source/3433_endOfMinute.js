@@ -1,17 +1,16 @@
 // Module ID: 3433
-// Function ID: 26685
+// Function ID: 26690
 // Name: endOfMinute
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3433 (endOfMinute)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function endOfMinute(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
+  closure_1.default(1, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   defaultResult1.setSeconds(59, 999);
   return defaultResult1;
 };

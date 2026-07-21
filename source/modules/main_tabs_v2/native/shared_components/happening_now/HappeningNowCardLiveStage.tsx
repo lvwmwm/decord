@@ -1,9 +1,9 @@
-// Module ID: 14806
-// Function ID: 111604
+// Module ID: 14809
+// Function ID: 111638
 // Name: HappeningNowLiveStageContent
 // Dependencies: []
 
-// Module 14806 (HappeningNowLiveStageContent)
+// Module 14809 (HappeningNowLiveStageContent)
 let HAPPENING_NOW_CONTENT_HEIGHT;
 let HAPPENING_NOW_STAGE_PREVIEW_HEIGHT;
 let HAPPENING_NOW_STAGE_PREVIEW_WIDTH;
@@ -189,17 +189,17 @@ let closure_5 = tmp2.HappeningNowCardTrackingType;
 const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
-let obj = { content: {}, stagePreviewContainer: obj };
-obj = { paginationHasMore: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, onFinish: 0.00000000000000000000000000000000000000000000000000000000000000000000000120740547407299, poster: 12.1, flexContainer: null, width: HAPPENING_NOW_STAGE_PREVIEW_WIDTH };
+let obj = { content: { enableGameUpdateNotifications: null, fr-RW: null }, stagePreviewContainer: obj };
+obj = { right: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, accessible: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054740832208, call: 12.1, call: null, width: HAPPENING_NOW_STAGE_PREVIEW_WIDTH };
 obj1 = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_800, borderRadius: importDefault(dependencyMap[6]).radii.sm, alignItems: "center", paddingTop: 6 };
 obj.stagePreviewBackground = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.stagePreviewBackgroundNoAudience = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_800, borderRadius: importDefault(dependencyMap[6]).radii.sm, justifyContent: "center", alignItems: "center" };
-const obj2 = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_800, borderRadius: importDefault(dependencyMap[6]).radii.sm, justifyContent: "center", alignItems: "center" };
-obj.avatarStackContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[6]).radii.xl };
+const obj3 = { -1437179192: true, 1697044049: true, -1437140064: true, 1367172194: true, 140588052: true, 1673742417: true, backgroundColor: importDefault(dependencyMap[6]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[6]).radii.xl };
+obj.avatarStackContainer = obj3;
 let closure_9 = obj1.createStyles(obj);
 let closure_10 = { LISTENING: 0, [0]: "LISTENING", WATCHING: 1, [1]: "WATCHING", ON_STAGE: 2, [2]: "ON_STAGE", SHARING: 3, [3]: "SHARING" };
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[6]).radii.xl };
+const obj2 = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_800, borderRadius: importDefault(dependencyMap[6]).radii.sm, justifyContent: "center", alignItems: "center" };
 const memoResult = importAllResult.memo((arg0) => {
   let audienceCount;
   let fullwidth;

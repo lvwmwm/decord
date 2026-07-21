@@ -1,5 +1,5 @@
 // Module ID: 10719
-// Function ID: 83394
+// Function ID: 83405
 // Name: VoiceChatCallScreenHeaderIconInner
 // Dependencies: []
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
@@ -32,7 +32,7 @@ obj = {};
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.headerButton = obj;
 obj.disabledOpacity = { opacity: 0.6 };
-const obj1 = { backgroundColor: null, transform: null, transformOrigin: null, size: null, height: arg1(dependencyMap[7]).NAV_BAR_HEIGHT };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, height: arg1(dependencyMap[7]).NAV_BAR_HEIGHT };
 obj.chatIconContainer = obj1;
 obj.chatIcon = {};
 const tmp3 = arg1(dependencyMap[4]);
@@ -49,7 +49,7 @@ export default function VoiceChatHeaderIcon(disabled) {
   let disabledOpacity = disabled.disabled;
   ({ accessibilityLabel, onPress, source, children } = disabled);
   const tmp = callback2();
-  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, disabled: disabledOpacity, accessibilityLabel, onPress };
+  let obj = { <string:3563180329>: false, <string:1568511577>: false, <string:382146483>: false, disabled: disabledOpacity, accessibilityLabel, onPress };
   const items = [tmp.headerButton, ];
   if (disabledOpacity) {
     disabledOpacity = tmp.disabledOpacity;

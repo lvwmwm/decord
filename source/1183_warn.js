@@ -1,15 +1,11 @@
 // Module ID: 1183
-// Function ID: 13471
+// Function ID: 13475
 // Name: warn
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 1183 (warn)
-import closure_0 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { debug } from "__exportStarResult1";
-
-({ UIManager: closure_1, View: closure_2 } = __exportStarResult1);
+let closure_0 = importAll(dependencyMap[0]);
+({ UIManager: closure_1, View: closure_2 } = arg1(dependencyMap[1]));
 function warn(arg0) {
   let closure_0 = arg0;
   const timerId = setTimeout(() => {
@@ -38,26 +34,28 @@ function hasViewManagerConfig(RNSentryReplayMask) {
   }
   return callResult;
 }
-if (!__exportStarResult1.isExpoGo()) {
+const tmp2 = arg1(dependencyMap[1]);
+if (!obj.isExpoGo()) {
   if (hasViewManagerConfig("RNSentryReplayMask")) {
-    let value = require("__exportStarResult1").get("RNSentryReplayMask", () => ({ uiViewClassName: "RNSentryReplayMask" }));
-    const obj2 = require("__exportStarResult1");
+    let value = arg1(dependencyMap[4]).get("RNSentryReplayMask", () => ({ uiViewClassName: "RNSentryReplayMask" }));
+    const obj2 = arg1(dependencyMap[4]);
   }
   if (!obj3.isExpoGo()) {
     if (hasViewManagerConfig("RNSentryReplayUnmask")) {
-      value = require("__exportStarResult1").get("RNSentryReplayUnmask", () => ({ uiViewClassName: "RNSentryReplayUnmask" }));
-      const obj4 = require("__exportStarResult1");
+      value = arg1(dependencyMap[4]).get("RNSentryReplayUnmask", () => ({ uiViewClassName: "RNSentryReplayUnmask" }));
+      const obj4 = arg1(dependencyMap[4]);
     }
     exports.Mask = value;
     exports.Unmask = value;
     exports.MaskFallback = MaskFallback;
     exports.UnmaskFallback = UnmaskFallback;
   }
-  const debug2 = require("__exportStarResult1").debug;
+  const debug2 = arg1(dependencyMap[3]).debug;
   const _HermesInternal = HermesInternal;
   debug2.warn("[SentrySessionReplay] Can't load " + "RNSentryReplayUnmask" + ".");
   value = UnmaskFallback;
-  const obj3 = require("__exportStarResult1");
+  const obj3 = arg1(dependencyMap[2]);
 }
+const debug = arg1(dependencyMap[3]).debug;
 debug.warn("[SentrySessionReplay] Can't load " + "RNSentryReplayMask" + ".");
 value = MaskFallback;

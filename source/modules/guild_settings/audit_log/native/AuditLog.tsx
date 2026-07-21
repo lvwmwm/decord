@@ -1,9 +1,9 @@
-// Module ID: 16112
-// Function ID: 124202
+// Module ID: 16120
+// Function ID: 124263
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16112 (_isNativeReflectConstruct)
+// Module 16120 (_isNativeReflectConstruct)
 let Fonts;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -52,7 +52,7 @@ function ApplicationHook(applicationId) {
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp2 = null;
   if (null != getOrFetchApplication) {
-    obj = { children: getOrFetchApplication.name };
+    obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: getOrFetchApplication.name };
     tmp2 = callback3(arg1(dependencyMap[20]).Text, obj);
   }
   return tmp2;
@@ -72,11 +72,11 @@ let closure_14 = importDefault(dependencyMap[10]);
 const tmp4 = arg1(dependencyMap[11]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[12]));
 let obj = arg1(dependencyMap[13]);
-obj = { container: { warn: "SERVER_GUIDE_CHANNEL_SELECTED", sk: "canLaunchActivity", Text: "r" }, rowContainer: { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true }, titleContainer: { <string:3114771021>: null, <string:3193432973>: null }, title: { marginHorizontal: 8 } };
-obj = { PX_16: "<string:11497792>", ix: "<string:1107361792>", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+obj = { container: { accessibilityElementsHidden: -197062189, importantForAccessibility: 1912603177, children: 272 }, rowContainer: { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true }, titleContainer: { "Bool(false)": null, "Bool(false)": null }, title: { marginHorizontal: 8 } };
+obj = { 9223372036854775807: "<string:11497792>", 0: "<string:1107361792>", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.discriminator = obj;
-obj.avatar = { -599305822: "isArray", 1817372513: "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 1639456730: "CLIENT_SCRIPT_FAILED_TO_LOAD" };
-const obj1 = { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004696068603577277, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001502526947590655, <string:1585643524>: 995200389781160200000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+obj.avatar = { flexDirection: "isArray", gap: "CONTROL_RADIO_ICON_SIZE_DEFAULT", flex: "tagInverted" };
+const obj1 = { y: "OrientationLockState", ESCAPE: "FIN", y: "ERNhYf", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.timestamp = obj1;
 const tmp5 = arg1(dependencyMap[12]);
 obj.arrow = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -86,16 +86,16 @@ const obj2 = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TE
 obj.changesContainer = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
 obj.changeRow = {};
 obj.changeNumberText = { fontFamily: Fonts.CODE_BOLD };
-const obj4 = { channel: "isArray", flex: "accessibilityRole", format: "replace", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
+const obj4 = { "Null": false, "Null": false, "Bool(false)": false, color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
 obj.changeItemText = obj4;
-const obj3 = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
-obj.colorHook = { borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
+const obj5 = { 2122157199: "Array", -2108594079: "fr-NE", 1371431202: "isStaticChannelRoute", borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
+obj.colorHook = obj5;
 obj.colorsHook = { fontFamily: Fonts.PRIMARY_MEDIUM };
-obj.changeItemContent = { -1034713870: "guildFallbackImage", -421288570: "MAX_AGE" };
-obj.changeItemTextContainer = { alignItems: 15185095647197677000000000000000000000000000000000000000000000000000000000000000000, overflow: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008446218884454378, display: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464 };
-obj.forumTag = { position: false, bottom: false, right: false };
-obj.imageEmoji = { <string:1632221346>: "Array", <string:2722977214>: "isPrivate" };
-obj.textEmoji = { PX_16: null, ix: null };
+obj.changeItemContent = {};
+obj.changeItemTextContainer = { "Null": "md", "Null": "submitHamReportForFirstDM", "Null": "getChannelIconComponent" };
+obj.forumTag = { <string:151424082>: null, <string:1374314758>: "#000000", <string:3429202876>: 0.13 };
+obj.imageEmoji = { y: false, isArray: false };
+obj.textEmoji = { 9223372036854775807: "<string:1854755072>", 0: "construct" };
 let closure_21 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {
   class AuditLog {
@@ -139,7 +139,7 @@ const tmp6 = (PureComponent) => {
       if (null == changeTitle) {
         return null;
       } else {
-        obj = { 1501064855: "<string:3365683539>", -1267889981: "<string:1091633153>", -1145697943: "/assets/design/components/Icon/native/redesign/generated/images", -1266241916: "MERCH_STORE", style: tmp.title };
+        obj = { Opened: null, marginVertical: null, marginStart: null, marginEnd: null, style: tmp.title };
         const intl = AuditLog(target[22]).intl;
         obj = {
           user,
@@ -239,7 +239,10 @@ const tmp6 = (PureComponent) => {
       newValue = newValue.newValue;
       let mapped = null;
       if (Array.isArray(newValue)) {
-        mapped = newValue.map((children) => callback2(callback(closure_3[20]).Text, { children: children.name }, children.id));
+        mapped = newValue.map((name) => {
+          const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: name.name };
+          return callback2(callback(closure_3[20]).Text, obj, name.id);
+        });
       }
       return mapped;
     }
@@ -253,7 +256,7 @@ const tmp6 = (PureComponent) => {
       let mapped = null;
       if (Array.isArray(newValue)) {
         mapped = newValue.map((arg0) => {
-          const obj = { children: callback(closure_3[21]).getStringForPermission(arg0, self.props.log) };
+          const obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: callback(closure_3[21]).getStringForPermission(arg0, self.props.log) };
           return callback2(self(closure_3[20]).Text, obj, arg0);
         });
       }
@@ -375,7 +378,7 @@ const tmp6 = (PureComponent) => {
                           let emojiURL;
                           if (null != oldValue2) {
                             let obj = newValue(closure_3[16]);
-                            obj = { "Bool(true)": "<string:90177538>", "Bool(true)": "<string:3578855426>", "Bool(true)": "<string:745669047>", id: oldValue2 };
+                            obj = { id: oldValue2 };
                             emojiURL = obj.getEmojiURL(obj);
                           }
                           obj = { src: emojiURL, name: oldValue2 };
@@ -386,7 +389,7 @@ const tmp6 = (PureComponent) => {
                           let emojiURL;
                           if (null != newValue) {
                             let obj = newValue(closure_3[16]);
-                            obj = { "Bool(true)": "<string:90177538>", "Bool(true)": "<string:3578855426>", "Bool(true)": "<string:745669047>", id: newValue };
+                            obj = { id: newValue };
                             emojiURL = obj.getEmojiURL(obj);
                           }
                           obj = { src: emojiURL, name: newValue };
@@ -623,7 +626,7 @@ const tmp6 = (PureComponent) => {
   return callback(AuditLog, items);
 }(importAllResult.PureComponent);
 tmp6.contextType = arg1(dependencyMap[39]).ThemeContext;
-const obj5 = { borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
+const obj3 = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
 const items1 = [importDefaultResult];
 const importDefaultResult1 = importDefault(dependencyMap[40]);
 const tmp7 = importDefault(dependencyMap[40]).connectStores(items1, () => ({ theme: importDefaultResult.theme }))(tmp6);

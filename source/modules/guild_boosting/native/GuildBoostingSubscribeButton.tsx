@@ -1,5 +1,5 @@
 // Module ID: 6635
-// Function ID: 50938
+// Function ID: 50946
 // Name: _handleBoostPress
 // Dependencies: []
 // Exports: default
@@ -130,7 +130,7 @@ export default function GuildBoostingSubscribeButton(guild) {
   obj.text = stringResult;
   let tmp14;
   if (tmp5) {
-    tmp14 = jsx(arg1(dependencyMap[19]).LockIcon, { flex: false, flexGrow: null });
+    tmp14 = jsx(arg1(dependencyMap[19]).LockIcon, {});
   }
   obj.icon = tmp14;
   obj.children = jsx(arg1(dependencyMap[17]).Button, obj);

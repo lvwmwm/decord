@@ -1,10 +1,10 @@
-// Module ID: 5331
-// Function ID: 45412
+// Module ID: 5330
+// Function ID: 45419
 // Name: getDefaultPermissionsForChannel
 // Dependencies: []
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5331 (getDefaultPermissionsForChannel)
+// Module 5330 (getDefaultPermissionsForChannel)
 function getDefaultPermissionsForChannel(channel) {
   if (null != channel) {
     const GUILD_VOCAL = constants.GUILD_VOCAL;

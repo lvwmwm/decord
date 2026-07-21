@@ -1,10 +1,10 @@
-// Module ID: 14873
-// Function ID: 112022
+// Module ID: 14876
+// Function ID: 112056
 // Name: GuildThemeMemberCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14873 (GuildThemeMemberCoachmark)
+// Module 14876 (GuildThemeMemberCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

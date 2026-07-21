@@ -1,5 +1,5 @@
 // Module ID: 3219
-// Function ID: 25844
+// Function ID: 25849
 // Dependencies: []
 
 // Module 3219
@@ -14,17 +14,17 @@ obj = {
     return Number(arg0) + ".";
   }
 };
-obj.era = obj.default({ values: { narrow: ["avtakende fullm\u00E5ne", "m\u00E5ne"], abbreviated: ["avtakende fullm\u00E5ne", "m\u00E5ne"], wide: ["a", "BXJCGj"] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [], abbreviated: [], wide: [50087680, 62869760] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [], abbreviated: [null, null, null, null], wide: [null, null, null, null] },
+  values: { narrow: [null, null, null, null], abbreviated: ["<string:3623879455>", "<string:1124074248>", "<string:1207960308>", "<string:1358955260>"], wide: ["<string:3623879455>", "<string:1124074248>", "<string:1207960308>", "<string:1358955260>"] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: ["a", "getInviteError", "a", "QAR", "a", "<string:1107296679>", "fvt", "vt", "<string:24025410>", "<string:24025600>", "<string:204882432>", "<string:820641795>"], abbreviated: [true, true, true, true, true, true, true, true, true, true, true, true], wide: ["1. kvt.", "2. kvt.", "3. kvt.", "4. kvt.", "a dormir", "buenas noches", "cama", "cansancio", "descansar", "dormir", "hotel", "noche"] }, defaultWidth: "wide", formattingValues: { narrow: ["a", "getInviteError", "a", "QAR", "a", "<string:1107296679>", "fvt", "vt", "<string:24025410>", "<string:24025600>", "<string:204882432>", "<string:820641795>"], abbreviated: [true, true, true, true, true, true, true, true, true, true, true, true], wide: [] }, defaultFormattingWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [null, null, null, null, null, null, null], short: [null, null, null, null, null, null, null], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
+obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide", formattingValues: { narrow: [], abbreviated: [], wide: [] }, defaultFormattingWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [null, null, null, null, null, null, null], wide: ["a", "isArray", "accessibilityRole", "children", "r", "body", "ti"] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { unicodeVersion: null, y: null, isArray: null, colors: null, construct: null, y: null, isArray: null, id: null }, abbreviated: { unicodeVersion: null, y: null, isArray: null, colors: null, construct: null, y: null, isArray: null, id: null }, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: { unicodeVersion: null, y: null, isArray: null, colors: null, construct: null, y: null, isArray: null, id: null }, abbreviated: { unicodeVersion: null, y: null, isArray: null, colors: null, construct: null, y: null, isArray: null, id: null }, wide: {} }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

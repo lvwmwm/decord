@@ -1,5 +1,5 @@
 // Module ID: 3774
-// Function ID: 29039
+// Function ID: 29044
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: calculateYearlyPlanMonthlyRateAmount, calculateYearlyPlanMonthsSaved, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, formatInterval, formatIntervalDuration, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getFormattedRateForPlan, getInterval, getIntervalForInvoice, getIntervalString, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBoostOnlySubscription, isNewUser, isNitroLockedState, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumSubscriptionPlan, isSwitchingPlansDisabled, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState
@@ -1296,7 +1296,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
     flag = false;
   }
   if (tmp2 === undefined) {
-    let obj = { gsw: null, rawInput: null, fractionalState: constants5.NONE, startsAt: importDefault(dependencyMap[19])(0), endsAt: importDefault(dependencyMap[19])(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(dependencyMap[19])(0), unactivatedUnits: [] };
+    let obj = { fractionalState: constants5.NONE, startsAt: importDefault(dependencyMap[19])(0), endsAt: importDefault(dependencyMap[19])(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(dependencyMap[19])(0), unactivatedUnits: [] };
     tmp2 = obj;
   }
   let tmp3 = subscriptionPeriodStart;
@@ -1869,7 +1869,7 @@ function formatTrialCtaIntervalDuration(intervalType) {
     num = 1;
   }
   let obj = arg1(dependencyMap[22]);
-  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { useIsActivitiesEnabledForCurrentPlatform: -536870861, AccountLinkManager: -299892737 });
+  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { "Bool(true)": -536870861, "Bool(true)": -299892737 });
   if (constants6.DAY === MONTH) {
     if (num >= 7) {
       if (num % 7 === 0) {
@@ -2288,7 +2288,7 @@ let closure_47 = arg1(dependencyMap[10]).getPremiumGroupProductName;
 const tmp2 = arg1(dependencyMap[8]);
 ({ CurrencyCodes: closure_48, PaymentGatewayToFriendlyName: closure_49, PREPAID_PAYMENT_SOURCES: closure_50 } = arg1(dependencyMap[11]));
 let closure_51 = {};
-let closure_52 = { 9223372036854775807: 0.000000000000000000000001654361582558653, 0: 0.000000000000007105428945787778, 9223372036854775807: 0.00003051758517358394 };
+let closure_52 = { "Null": "cmn", "Null": "hak", "Null": "nan" };
 let importDefaultResult = importDefault(dependencyMap[12]);
 importDefaultResult = new importDefaultResult("PremiumUtils.tsx");
 let obj = { BUNDLE: "bundle", TIER_0: "tier_0", TIER_1: "tier_1", TIER_2: "tier_2", PREMIUM_GUILD: "premium_guild" };

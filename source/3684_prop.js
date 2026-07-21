@@ -1,5 +1,5 @@
 // Module ID: 3684
-// Function ID: 28051
+// Function ID: 28056
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } };
+    obj = { long: { application: 173030459411450930000000, Set: -2086849481348546500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Icon: -2086849481343527800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: 15177101876252350000000000000000000000000000000000000000000000000000000000000000000 }, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, narrow: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, short: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "en";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } }, disjunction: { long: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, narrow: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, short: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } }, unit: { long: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } } }, locale: "en" });
+prop.push({ data: { conjunction: { long: { application: 173030459411450930000000, Set: -2086849481348546500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Icon: -2086849481343527800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: 15177101876252350000000000000000000000000000000000000000000000000000000000000000000 }, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "en" });

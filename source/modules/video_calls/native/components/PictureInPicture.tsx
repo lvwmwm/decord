@@ -1,5 +1,5 @@
 // Module ID: 10530
-// Function ID: 82276
+// Function ID: 82287
 // Name: PictureInPicturePositions
 // Dependencies: []
 
@@ -59,35 +59,36 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   arg1 = insets;
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
   const size = importDefault(dependencyMap[11])(obj);
-  const tmp5 = callback(importAllResult.useState({ width, height }), 2);
+  obj = { MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: "Array", colorBox: "isArray", GUILD_BOOSTING_FAQ: "isArray", MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: "container", claim: "accessibilityLabel", failNodeId: "isArray", width, height };
+  const tmp5 = callback(importAllResult.useState(obj), 2);
   const size2 = tmp5[0];
   importDefault = tmp5[1];
-  let obj2 = arg1(dependencyMap[12]);
+  let obj3 = arg1(dependencyMap[12]);
   const fn = function w() {
     const obj = { marginTop: insets.top, marginBottom: insets(ref[13]).withSpring(insets.bottom, callback()) };
     return obj;
   };
-  obj = { insets, withSpring: arg1(dependencyMap[13]).withSpring, getSpringAnimationConfig: closure_11 };
-  fn.__closure = obj;
+  const tmp4 = importDefault(dependencyMap[9])();
+  fn.__closure = { insets, withSpring: arg1(dependencyMap[13]).withSpring, getSpringAnimationConfig: closure_11 };
   fn.__workletHash = 16677290574613;
   fn.__initData = closure_12;
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj4 = arg1(dependencyMap[14]);
-  const isViewingActivity = obj4.useIsViewingActivity({ channelId: channel.id });
-  let obj6 = arg1(dependencyMap[15]);
-  obj2 = { width: size.width, height: size.height, containerWidth: size2.width, containerHeight: size2.height, snapToCorners: !isViewingActivity };
+  const animatedStyle = obj3.useAnimatedStyle(fn);
+  let obj5 = arg1(dependencyMap[14]);
+  const isViewingActivity = obj5.useIsViewingActivity({ channelId: channel.id });
+  let obj7 = arg1(dependencyMap[15]);
+  obj3 = { width: size.width, height: size.height, containerWidth: size2.width, containerHeight: size2.height, snapToCorners: !isViewingActivity };
   let tmp8;
   if (isViewingActivity) {
     tmp8 = toggleFocus;
   }
-  obj2.onPress = tmp8;
-  const draggablePip = obj6.useDraggablePip(obj2);
+  obj3.onPress = tmp8;
+  const draggablePip = obj7.useDraggablePip(obj3);
   ({ gesture, draggableGridItemStyles } = draggablePip);
   const ref = importAllResult.useRef(null);
   dependencyMap = ref;
-  const obj3 = { style: items, pointerEvents: "box-none" };
+  const obj4 = { style: items, pointerEvents: "box-none" };
   const items = [tmp2.pipOuterContainer, animatedStyle, style];
-  obj4 = {
+  obj5 = {
     ref,
     style: tmp2.pipInnerContainer,
     pointerEvents: "box-none",
@@ -100,23 +101,23 @@ const memoResult = importAllResult.memo((preferredPosition) => {
       }
     }
   };
-  const obj5 = { gesture };
-  obj6 = {};
+  const obj6 = { gesture };
+  obj7 = {};
   const items1 = [draggableGridItemStyles, ];
-  const obj1 = { channelId: channel.id };
+  const obj1 = { insets, withSpring: arg1(dependencyMap[13]).withSpring, getSpringAnimationConfig: closure_11 };
+  const obj2 = { channelId: channel.id };
   const tmp12 = closure_5;
-  const tmp4 = importDefault(dependencyMap[9])();
   let elevationShadow;
-  if (obj13.isIOS()) {
+  if (obj14.isIOS()) {
     elevationShadow = tmp2.elevationShadow;
   }
   items1[1] = elevationShadow;
-  obj6.style = items1;
-  obj6.children = <closure_5>{children}</closure_5>;
-  obj5.children = jsx(importDefault(dependencyMap[12]).View, obj6);
-  obj4.children = jsx(arg1(dependencyMap[16]).GestureDetector, obj5);
-  obj3.children = <tmp12 {...obj4} />;
-  return jsx(importDefault(dependencyMap[12]).View, obj3);
+  obj7.style = items1;
+  obj7.children = <closure_5>{children}</closure_5>;
+  obj6.children = jsx(importDefault(dependencyMap[12]).View, obj7);
+  obj5.children = jsx(arg1(dependencyMap[16]).GestureDetector, obj6);
+  obj4.children = <tmp12 {...obj5} />;
+  return jsx(importDefault(dependencyMap[12]).View, obj4);
 });
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/video_calls/native/components/PictureInPicture.tsx");
 

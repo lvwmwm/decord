@@ -1,5 +1,5 @@
 // Module ID: 5649
-// Function ID: 48298
+// Function ID: 48306
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canInviteToActivity, useFirstMessage, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useSubscribeToGameInvitePostAuthors
@@ -141,7 +141,7 @@ function useGameInvitesChannelApplicationId(arg0) {
   }
   return stateFromStores;
 }
-let closure_3 = [false];
+let closure_3 = ["a"];
 let closure_4 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_6 = importDefault(dependencyMap[2]);

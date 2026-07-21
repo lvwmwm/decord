@@ -1,10 +1,10 @@
-// Module ID: 14295
-// Function ID: 107953
+// Module ID: 14298
+// Function ID: 107985
 // Name: ExampleButton
 // Dependencies: []
 // Exports: default
 
-// Module 14295 (ExampleButton)
+// Module 14298 (ExampleButton)
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
@@ -214,9 +214,9 @@ function ExampleIconToggleButton() {
   const importDefault = tmp[1];
   let obj = arg1(dependencyMap[11]);
   obj = {};
-  obj = { "Bool(false)": 80410, "Bool(false)": 1984034657, icon: importDefault(dependencyMap[14]) };
+  obj = { title: 76415, emoji: 692189025, icon: importDefault(dependencyMap[14]) };
   obj.on = obj;
-  const obj1 = { "Bool(false)": false, "Bool(false)": false, icon: importDefault(dependencyMap[14]) };
+  const obj1 = { title: "marginTop", emoji: "Array", icon: importDefault(dependencyMap[14]) };
   obj.off = obj1;
   const toggleIconButtonProps = obj.useToggleIconButtonProps(obj, first);
   const obj2 = {};
@@ -234,11 +234,11 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ LIGHT_BACKGROUND_GRADIENT_PRESETS: closure_7, DARK_BACKGROUND_GRADIENT_PRESETS: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
-let closure_12 = [];
-let closure_13 = [null, null];
+let closure_12 = [null, null, null];
+let closure_13 = [];
 let closure_14 = [true, true];
-let closure_15 = [null];
-let closure_16 = [];
+let closure_15 = ["FI"];
+let closure_16 = [true, false];
 let obj = arg1(dependencyMap[15]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[16]).space.PX_16 };
@@ -261,7 +261,7 @@ export default function UserSettingsDesignSystemButton() {
   }, []);
   obj = {
     headerRight() {
-      const obj = { <string:523784712>: "text-lg/bold", <string:2925635169>: "Mixed Buttons Example", <string:1649013585>: "text-md/medium", <string:2925664643>: "text-subtle", <string:2050445697>: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout.", onPress: callback, icon: callback(closure_2[9]) };
+      const obj = { "Bool(false)": "text-lg/bold", "Bool(false)": "Mixed Buttons Example", "Bool(false)": "text-md/medium", "Bool(false)": "text-subtle", "Bool(false)": "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout.", onPress: callback, icon: callback(closure_2[9]) };
       return callback2(tmp(closure_2[8]).IconButton, obj);
     }
   };
@@ -270,7 +270,7 @@ export default function UserSettingsDesignSystemButton() {
   const obj1 = {};
   const obj2 = { spacing: 24 };
   const obj3 = {};
-  const obj4 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": "r", "Null": "isArray" }) };
+  const obj4 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:40042497>", <string:140675621>: "<string:1312948226>" }) };
   const items = [
     callback2(arg1(dependencyMap[21]).Stack, obj4),
     callback2(closure_5, {
@@ -284,7 +284,7 @@ export default function UserSettingsDesignSystemButton() {
   obj3.children = items;
   const items1 = [callback3(arg1(dependencyMap[21]).Stack, obj3), , , , , , , , , , , , , , , , , , , ];
   const obj6 = {};
-  const obj7 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": true, "Null": true }) };
+  const obj7 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:2533360038>", <string:140675621>: "<string:1107296761>" }) };
   const items2 = [callback2(arg1(dependencyMap[21]).Stack, obj7), ];
   const obj5 = {
     children: closure_12.map((variant) => {
@@ -303,7 +303,7 @@ export default function UserSettingsDesignSystemButton() {
   obj6.children = items2;
   items1[1] = callback3(arg1(dependencyMap[21]).Stack, obj6);
   const obj9 = {};
-  const obj10 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": "r", "Null": "isArray" }) };
+  const obj10 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:634585089>", <string:140675621>: "<string:542179329>" }) };
   const items3 = [callback2(arg1(dependencyMap[21]).Stack, obj10), ];
   const obj8 = {
     children: closure_14.map((variant) => {
@@ -322,7 +322,7 @@ export default function UserSettingsDesignSystemButton() {
   obj9.children = items3;
   items1[2] = callback3(arg1(dependencyMap[21]).Stack, obj9);
   const obj12 = {};
-  const obj13 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": "_handleGuildMembersChunkBatch", "Null": "<string:2794603008>" }) };
+  const obj13 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, {}) };
   const items4 = [callback2(arg1(dependencyMap[21]).Stack, obj13), ];
   const obj11 = {
     children: closure_15.map((variant) => {
@@ -342,7 +342,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[3] = callback3(arg1(dependencyMap[21]).Stack, obj12);
   const obj15 = {};
   const obj16 = { style: tmp.container };
-  const items5 = [callback2(arg1(dependencyMap[22]).Text, { "Null": false, "Null": false }), callback2(arg1(dependencyMap[22]).Text, { "Null": true, "Null": true })];
+  const items5 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: false, <string:140675621>: false }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:33393920>", <string:140675621>: "<string:2790146560>" })];
   obj16.children = items5;
   const items6 = [callback3(arg1(dependencyMap[21]).Stack, obj16), ];
   const obj14 = {
@@ -365,16 +365,16 @@ export default function UserSettingsDesignSystemButton() {
   items1[4] = callback3(arg1(dependencyMap[21]).Stack, obj15);
   const obj18 = {};
   const obj19 = { style: tmp.container };
-  const items7 = [callback2(arg1(dependencyMap[22]).Text, { "Null": false, "Null": false }), callback2(arg1(dependencyMap[22]).Text, { "Null": true, "Null": true })];
+  const items7 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: false, <string:140675621>: false }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:20116480>", <string:140675621>: "<string:3931308544>" })];
   obj19.children = items7;
   const items8 = [callback3(arg1(dependencyMap[21]).Stack, obj19), ];
   const obj20 = {};
   const obj21 = { style: tmp.buttonContainer };
   const obj22 = {
-    -9223372036854775808: "Array",
-    0: "gradientTop",
-    -9223372036854775808: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED",
-    0: "removeReactionsForEmoji",
+    0: "<string:2018574337>",
+    -9223372036854775808: "<string:1463882195>",
+    0: "<string:1912603136>",
+    9223372036854775807: "create",
     onPress() {
 
     }
@@ -385,10 +385,10 @@ export default function UserSettingsDesignSystemButton() {
   const items9 = [callback2(closure_5, obj21), ];
   const obj24 = { style: tmp.buttonContainer };
   const obj25 = {
-    -9223372036854775808: "wumpus-snowglobe 43",
-    0: 2,
-    -9223372036854775808: 1,
-    0: null,
+    0: "wumpus-snowglobe 43",
+    -9223372036854775808: 2,
+    0: 1,
+    9223372036854775807: null,
     onPress() {
 
     }
@@ -402,15 +402,15 @@ export default function UserSettingsDesignSystemButton() {
   obj18.children = items8;
   items1[5] = callback3(arg1(dependencyMap[21]).Stack, obj18);
   const obj27 = {};
-  const obj28 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": "<string:1604950823>", "Null": false }) };
+  const obj28 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "intl", <string:140675621>: "sa" }) };
   const items10 = [callback2(arg1(dependencyMap[21]).Stack, obj28), ];
   const obj29 = {};
   const obj30 = { style: tmp.buttonContainer };
   const obj31 = {
-    -9223372036854775808: 8,
-    0: false,
-    -9223372036854775808: "start",
-    0: false,
+    0: 8,
+    -9223372036854775808: false,
+    0: "start",
+    9223372036854775807: false,
     onPress() {
 
     },
@@ -420,12 +420,12 @@ export default function UserSettingsDesignSystemButton() {
   const items11 = [callback2(closure_5, obj30), , , ];
   const obj32 = { style: tmp.buttonContainer };
   const obj33 = {
-    9223372036854775807: 8,
-    0: false,
-    9223372036854775807: "start",
-    0: false,
-    0: false,
-    9223372036854775807: true,
+    format: 8,
+    fill: false,
+    t: "start",
+    DARK: false,
+    View: false,
+    T: true,
     onPress() {
 
     },
@@ -443,10 +443,10 @@ export default function UserSettingsDesignSystemButton() {
     })
   };
   const obj35 = {
-    -9223372036854775808: 8,
-    0: false,
-    -9223372036854775808: "start",
-    0: false,
+    0: 8,
+    -9223372036854775808: false,
+    0: "start",
+    9223372036854775807: false,
     onPress() {
 
     }
@@ -474,7 +474,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[7] = callback3(arg1(dependencyMap[21]).Stack, obj38);
   const obj43 = {};
   const obj44 = { style: tmp.container };
-  const items15 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { "Null": null, "Null": null }), callback2(arg1(dependencyMap[22]).Text, { "Null": -0.000000000000007107584598523223, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000160678068369081 })];
+  const items15 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: -2923914319533482000000000000000000000000000000000, <string:140675621>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001725251708701335 }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:2537684993>", <string:140675621>: "<string:3388997949>" })];
   obj44.children = items15;
   const items16 = [callback3(arg1(dependencyMap[21]).Stack, obj44), ];
   const obj42 = { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) };
@@ -488,7 +488,7 @@ export default function UserSettingsDesignSystemButton() {
   obj43.children = items16;
   items1[8] = callback3(arg1(dependencyMap[21]).Stack, obj43);
   const obj46 = {};
-  const obj47 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": -0.000000000000007107431656136684, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002348290892885714 }) };
+  const obj47 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:2218917889>", <string:140675621>: "<string:3388997926>" }) };
   const items17 = [callback2(arg1(dependencyMap[21]).Stack, obj47), ];
   const obj45 = {
     children: closure_12.map((variant) => {
@@ -507,7 +507,7 @@ export default function UserSettingsDesignSystemButton() {
   obj46.children = items17;
   items1[9] = callback3(arg1(dependencyMap[21]).Stack, obj46);
   const obj49 = {};
-  const obj50 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": -0.000000000000007108356616115086, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002441743670410286 }) };
+  const obj50 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:826408961>", <string:140675621>: "<string:3388998064>" }) };
   const items18 = [callback2(arg1(dependencyMap[21]).Stack, obj50), ];
   const obj48 = {
     children: closure_14.map((variant) => {
@@ -529,7 +529,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[10] = callback3(arg1(dependencyMap[21]).Stack, obj49);
   const obj52 = {};
   const obj53 = { style: tmp.container };
-  const items19 = [callback2(arg1(dependencyMap[22]).Text, { "Null": 0.000000000000000000000000000000000000000000089721545515435, "Null": 563535081898017.6 }), callback2(arg1(dependencyMap[22]).Text, { "Null": 563535081898017.6, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000146245827967038 })];
+  const items19 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:1531117569>", <string:140675621>: "<string:1392509295>" }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "Float64Array", <string:140675621>: "StatusDisplayTypes" })];
   obj53.children = items19;
   const items20 = [callback3(arg1(dependencyMap[21]).Stack, obj53), ];
   const obj54 = {};
@@ -562,20 +562,20 @@ export default function UserSettingsDesignSystemButton() {
   items1[11] = callback3(arg1(dependencyMap[21]).Stack, obj52);
   const obj61 = { spacing: 24 };
   const obj62 = { style: tmp.container };
-  const items25 = [callback2(arg1(dependencyMap[22]).Text, { "Null": "diversity", "Null": "Array" }), callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { "Null": null, "Null": null })];
+  const items25 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: null, <string:140675621>: null }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "Array", <string:140675621>: "isArray" }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: null, <string:140675621>: null })];
   obj62.children = items25;
   const items26 = [callback3(arg1(dependencyMap[21]).Stack, obj62), , ];
   const obj63 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj64 = { "Null": null, "Null": 8, style: tmp.buttonContainer, children: closure_12.map((variant) => callback2(closure_19, { variant, showLabel: true }, variant)) };
+  const obj64 = { 0: null, -9223372036854775808: 8, style: tmp.buttonContainer, children: closure_12.map((variant) => callback2(closure_19, { variant, showLabel: true }, variant)) };
   obj63.children = callback2(arg1(dependencyMap[21]).Stack, obj64);
   items26[1] = callback2(closure_6, obj63);
   const obj65 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj66 = { "Null": null, "Null": 8, style: tmp.buttonContainer };
+  const obj66 = { 0: null, -9223372036854775808: 8, style: tmp.buttonContainer };
   const obj67 = {
-    "Null": "Text & Images",
-    "Null": "Automatically play GIFs when possible",
-    "Null": true,
-    "Null": null,
+    0: "Text & Images",
+    9223372036854775807: "Automatically play GIFs when possible",
+    9223372036854775807: true,
+    0: null,
     icon: importDefault(dependencyMap[9]),
     onPress() {
 
@@ -583,10 +583,10 @@ export default function UserSettingsDesignSystemButton() {
   };
   const items27 = [callback2(arg1(dependencyMap[8]).IconButton, obj67), , ];
   const obj68 = {
-    "Null": "Text & Images",
-    "Null": "Automatically play GIFs when possible",
-    "Null": true,
-    "Null": null,
+    0: "Text & Images",
+    9223372036854775807: "Automatically play GIFs when possible",
+    9223372036854775807: true,
+    0: null,
     icon: importDefault(dependencyMap[9]),
     onPress() {
 
@@ -594,10 +594,10 @@ export default function UserSettingsDesignSystemButton() {
   };
   items27[1] = callback2(arg1(dependencyMap[8]).IconButton, obj68);
   const obj69 = {
-    "Null": "Text & Images",
-    "Null": "Automatically play GIFs when possible",
-    "Null": true,
-    "Null": null,
+    0: "Text & Images",
+    9223372036854775807: "Automatically play GIFs when possible",
+    9223372036854775807: true,
+    0: null,
     icon: importDefault(dependencyMap[9]),
     onPress() {
 
@@ -610,10 +610,10 @@ export default function UserSettingsDesignSystemButton() {
   obj61.children = items26;
   items1[12] = callback3(arg1(dependencyMap[21]).Stack, obj61);
   const obj70 = { spacing: 24 };
-  const obj71 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": "<string:1071513602>", "Null": "<string:3829596161>" }) };
+  const obj71 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: true, <string:140675621>: true }) };
   const items28 = [callback2(arg1(dependencyMap[21]).Stack, obj71), , ];
   const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj73 = { "Null": null, "Null": 8, style: tmp.buttonContainer };
+  const obj73 = { 0: null, -9223372036854775808: 8, style: tmp.buttonContainer };
   const obj74 = { image: importDefault(dependencyMap[28]) };
   const items29 = [callback2(ExampleImageButton, obj74), , ];
   const obj60 = { image: importDefault(dependencyMap[27]), label: "Twitter" };
@@ -624,7 +624,7 @@ export default function UserSettingsDesignSystemButton() {
   obj72.children = callback3(arg1(dependencyMap[21]).Stack, obj73);
   items28[1] = callback2(closure_6, obj72);
   const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj78 = { "Null": null, "Null": 8, style: tmp.buttonContainer };
+  const obj78 = { 0: null, -9223372036854775808: 8, style: tmp.buttonContainer };
   const obj79 = { image: importDefault(dependencyMap[25]) };
   const items30 = [callback2(ExampleImageButton, obj79), , ];
   const obj76 = { image: importDefault(dependencyMap[29]) };
@@ -637,17 +637,17 @@ export default function UserSettingsDesignSystemButton() {
   obj70.children = items28;
   items1[13] = callback3(arg1(dependencyMap[21]).Stack, obj70);
   const obj82 = { spacing: 24 };
-  const obj83 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { "Null": true, "Null": true }) };
+  const obj83 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "<string:17584896>", <string:140675621>: "<string:49187072>" }) };
   const items31 = [callback2(arg1(dependencyMap[21]).Stack, obj83), ];
   const obj84 = { direction: "horizontal", style: tmp.container };
-  const items32 = [callback2(ExampleButton, { body: "isArray", title: "mode", accessibilityRole: "registerAsset" }), callback2(ExampleIconButton, { variant: "secondary" })];
+  const items32 = [callback2(ExampleButton, { src: "isArray", aspectRatio: "pos", label: "ix" }), callback2(ExampleIconButton, { variant: "secondary" })];
   obj84.children = items32;
   items31[1] = callback3(arg1(dependencyMap[30]).ButtonGroup, obj84);
   obj82.children = items31;
   items1[14] = callback3(arg1(dependencyMap[21]).Stack, obj82);
   const obj85 = {};
   const obj86 = { style: tmp.container };
-  const items33 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { "Null": null, "Null": null })];
+  const items33 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: null, <string:140675621>: null })];
   obj86.children = items33;
   const items34 = [callback3(arg1(dependencyMap[21]).Stack, obj86), ];
   const obj87 = { theme: "light" };
@@ -655,7 +655,7 @@ export default function UserSettingsDesignSystemButton() {
   obj87.primaryColor = obj91.hex2int("#ffae70");
   let obj92 = arg1(dependencyMap[32]);
   obj87.secondaryColor = obj92.hex2int("#cc2300");
-  const obj88 = { style: { padding: 16 }, start: { max: -536870861, guildId: -299892737 }, end: {}, colors: [1532035073, -1287372395] };
+  const obj88 = { style: { padding: 16 }, start: {}, end: {}, colors: ["socialBadge", "setPingInterval"] };
   const obj81 = { image: importDefault(dependencyMap[27]) };
   const obj89 = {};
   const obj90 = { spacing: 16 };
@@ -677,7 +677,7 @@ export default function UserSettingsDesignSystemButton() {
   obj93.primaryColor = obj.hex2int("#490000");
   obj = arg1(dependencyMap[32]);
   obj93.secondaryColor = obj.hex2int("#cc2300");
-  obj = { style: { padding: 16 }, start: { max: -536870861, guildId: -299892737 }, end: {}, colors: [3328429877496736300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003391710318265841] };
+  obj = { style: { padding: 16 }, start: {}, end: {}, colors: [true, true] };
   const tmp3 = importDefault(dependencyMap[33]);
   obj = {};
   obj = { spacing: 16 };
@@ -691,13 +691,13 @@ export default function UserSettingsDesignSystemButton() {
   items1[16] = callback3(arg1(dependencyMap[21]).Stack, obj91);
   obj = {};
   obj = { style: tmp.container };
-  const items39 = [callback2(arg1(dependencyMap[22]).Text, { "Null": null, "Null": null }), callback2(arg1(dependencyMap[22]).Text, { "Null": "text-subtle", "Null": "By default, stacks buttons vertically. This is best for buttons with text." })];
+  const items39 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: null, <string:140675621>: null }), callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: "text-subtle", <string:140675621>: "By default, stacks buttons vertically. This is best for buttons with text." })];
   obj.children = items39;
   const items40 = [callback3(arg1(dependencyMap[21]).Stack, obj), ];
   obj = { theme: closure_7[0].theme, gradient: closure_7[0] };
   obj = arg1(dependencyMap[31]);
   obj.flags = obj.setThemeFlag(0, arg1(dependencyMap[31]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-  obj = { style: { "Null": "Agree", "Null": "primary" } };
+  obj = { style: { defaultMaxListeners: "Agree", start_duration_secs: "primary" } };
   obj = { absolute: true, gradient: closure_7[0] };
   const items41 = [callback2(arg1(dependencyMap[35]).Gradient, obj), ];
   obj = {};
@@ -717,13 +717,13 @@ export default function UserSettingsDesignSystemButton() {
   items1[17] = callback3(arg1(dependencyMap[21]).Stack, obj);
   obj = {};
   obj = { style: tmp.container };
-  const items43 = [callback2(arg1(dependencyMap[22]).Text, { "Null": null, "Null": "Primary Row Button" }), callback2(arg1(dependencyMap[22]).Text, {})];
+  const items43 = [callback2(arg1(dependencyMap[22]).Text, { <string:1749439162>: null, <string:140675621>: "Primary Row Button" }), callback2(arg1(dependencyMap[22]).Text, {})];
   obj.children = items43;
   const items44 = [callback3(arg1(dependencyMap[21]).Stack, obj), ];
   obj = { theme: closure_8[0].theme, gradient: closure_8[0] };
   obj = arg1(dependencyMap[31]);
   obj.flags = obj.setThemeFlag(0, arg1(dependencyMap[31]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-  obj = { style: { "Null": "Agree", "Null": "primary" } };
+  obj = { style: { defaultMaxListeners: "Agree", start_duration_secs: "primary" } };
   obj = { absolute: true, gradient: closure_8[0] };
   const items45 = [callback2(arg1(dependencyMap[35]).Gradient, obj), ];
   obj = {};
@@ -743,7 +743,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[18] = callback3(arg1(dependencyMap[21]).Stack, obj);
   obj = {};
   obj = { style: tmp.container };
-  const items47 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { "Null": "Array", "Null": "MAX_FILE_SIZE_250_MB" })];
+  const items47 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, {})];
   obj.children = items47;
   const items48 = [callback3(arg1(dependencyMap[21]).Stack, obj), callback2(closure_5, { style: { padding: 48 } })];
   obj.children = items48;

@@ -1,5 +1,5 @@
 // Module ID: 8845
-// Function ID: 69813
+// Function ID: 69824
 // Name: getOptionFromSettingsFiltered
 // Dependencies: []
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption

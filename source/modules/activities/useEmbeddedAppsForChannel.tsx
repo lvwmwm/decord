@@ -1,5 +1,5 @@
 // Module ID: 11168
-// Function ID: 86839
+// Function ID: 86851
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence

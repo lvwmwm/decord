@@ -1,8 +1,8 @@
-// Module ID: 14063
-// Function ID: 106784
+// Module ID: 14066
+// Function ID: 106816
 // Dependencies: []
 
-// Module 14063
+// Module 14066
 let num = 0;
 const importAllResult = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
@@ -15,7 +15,7 @@ if (null != processColorResult) {
 const obj2 = arg1(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[5]).LinearGradientNativeComponent);
 const items = [num, num];
-let closure_8 = { colors: items, locations: [], startPoint: { max: -536870861, guildId: -299892737 }, endPoint: { max: -536870861, guildId: -299892737 } };
+let closure_8 = { colors: items, locations: [], startPoint: {}, endPoint: {} };
 let closure_9 = { code: "function SettingsAppearanceGradientBackgroundTsx1(){const{gradientSize,animatedLinearGradientLoadingProps,themeState,interpolate,tweener,getGradientStartPoint,processColor,interpolateColor}=this.__closure;const{width:width,height:height}=gradientSize.get();if(width===0||height===0){return animatedLinearGradientLoadingProps;}const{themePrev:{colors:colorsPrev,angle:anglePrev},themeCurrent:{colors:colorsCurrent,angle:angleCurrent}}=themeState.get();const angle=90-interpolate(tweener.get(),[0,1],[anglePrev,angleCurrent]);const originPoint=getGradientStartPoint(angle,width,height);return{colors:colorsPrev.map(function(_,i){var _processColor;return(_processColor=processColor(interpolateColor(tweener.get(),[0,1],[colorsPrev[i].hex,colorsCurrent[i].hex])))!==null&&_processColor!==void 0?_processColor:0;}),locations:colorsPrev.map(function(_,i){return interpolate(tweener.get(),[0,1],[colorsPrev[i].stop/100,colorsCurrent[i].stop/100]);}),startPoint:{x:(width/2+originPoint[0])/width,y:(height/2-originPoint[1])/height},endPoint:{x:(width/2-originPoint[0])/width,y:(height/2+originPoint[1])/height}};}" };
 const importDefaultResult = importDefault(dependencyMap[4]);
 const memoResult = importAllResult.memo(function SettingsAppearanceGradientBackground(isDimmed) {
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceGradientBackg
   const tmp3 = importDefault(dependencyMap[10])("SettingsAppearanceGradientBackground");
   StyleSheet = tmp3;
   const items = [tmp3];
-  const memo = importAllResult.useMemo(() => tmp3 ? ["EMAIL_VERIFICATION_MODAL_OPEN"] : [], items);
+  const memo = importAllResult.useMemo(() => [], items);
   closure_5 = memo;
   const items1 = [themes, themeIndex, isDimmed, memo, BACKGROUND_SURFACE_HIGH];
   const tmp5 = function useThemeStateTracker(importAllResult) {
@@ -78,7 +78,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceGradientBackg
   const tweener = tmp5.tweener;
   closure_7 = tweener;
   let obj = arg1(dependencyMap[4]);
-  const sharedValue = obj.useSharedValue({ bhk: -536870861, bic: -299892737 });
+  const sharedValue = obj.useSharedValue({ "Null": -536870861, "Null": -299892737 });
   closure_8 = sharedValue;
   const items2 = [sharedValue];
   const callback = importAllResult.useCallback((nativeEvent) => {
@@ -109,13 +109,13 @@ const memoResult = importAllResult.memo(function SettingsAppearanceGradientBackg
           num2 = 90;
           tmp8 = themes;
           num3 = 11;
-          diff = 90 - obj.interpolate(tweener.get(), ["Text", "lc"], items);
+          diff = 90 - obj.interpolate(tweener.get(), ["replace", "then"], items);
           tmp9 = themes(themeIndex[11])(diff, width, height);
           obj = {};
           obj.colors = colors.map((arg0, arg1) => {
             const obj = colors(closure_2[4]);
             const items = [colors[arg1].hex, colors[arg1].hex];
-            const processColorResult = obj.processColor(colors(closure_2[4]).interpolateColor(store.get(), ["Text", "lc"], items));
+            const processColorResult = obj.processColor(colors(closure_2[4]).interpolateColor(store.get(), ["replace", "then"], items));
             let num = 0;
             if (null != processColorResult) {
               num = processColorResult;
@@ -124,7 +124,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceGradientBackg
           });
           obj.locations = colors.map((arg0, arg1) => {
             const items = [colors[arg1].stop / 100, colors[arg1].stop / 100];
-            return colors(closure_2[4]).interpolate(store.get(), ["Text", "lc"], items);
+            return colors(closure_2[4]).interpolate(store.get(), ["replace", "then"], items);
           });
           obj1 = {};
           num4 = 2;

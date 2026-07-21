@@ -1,5 +1,5 @@
 // Module ID: 11222
-// Function ID: 87372
+// Function ID: 87384
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
@@ -11,10 +11,10 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(false)": "Array", "Bool(false)": "unitType", "Bool(false)": "Array", "Bool(false)": "gradientTop", "Bool(false)": "EMOJI_ROW_NSFW", "Bool(false)": "GUILD_TOP_READ_CHANNELS", "Bool(false)": "emitPresenceUpdate", "Bool(false)": "_instantiatedWithAClient", "Bool(false)": "useIsChannelFocused", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { "Null": "%MapIteratorPrototype%", "Null": "customEmojiSize", "Null": "encode", "Null": "vmafScore", "Null": "ncode", "Null": "B_found_wrong_ending", "Null": "AsyncIterator", "Null": "UNSET_EXPLICIT_CONTENT_REDACTION", "Null": "cc", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.container = obj;
 obj.textContainer = { flexShrink: 1 };
-obj.image = { bhk: 0.000000000000000000000000000000000000000000000000000000000000041334633291766945, bic: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000 };
+obj.image = { "Null": 308491901604568800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000004667261458395371 };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
@@ -32,7 +32,7 @@ export default function EmptyState() {
   obj = { style: tmp.container };
   obj = { style: tmp.image, resizeMode: "contain", source: importDefault(tmp4) };
   const items = [callback(closure_4, obj), ];
-  obj1 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.textContainer };
+  obj1 = { style: tmp.textContainer };
   const intl = arg1(dependencyMap[12]).intl;
   obj1.children = intl.string(arg1(dependencyMap[12]).t.uDnXXj);
   items[1] = callback(arg1(dependencyMap[11]).Text, obj1);

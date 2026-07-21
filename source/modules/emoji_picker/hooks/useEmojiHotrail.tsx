@@ -1,5 +1,5 @@
 // Module ID: 9327
-// Function ID: 72893
+// Function ID: 72904
 // Name: getEmojiHotrail
 // Dependencies: []
 // Exports: default

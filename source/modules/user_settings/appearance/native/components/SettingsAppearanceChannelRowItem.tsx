@@ -1,10 +1,10 @@
-// Module ID: 14055
-// Function ID: 106764
+// Module ID: 14058
+// Function ID: 106796
 // Name: ChannelRowItem
 // Dependencies: []
 // Exports: default
 
-// Module 14055 (ChannelRowItem)
+// Module 14058 (ChannelRowItem)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -14,10 +14,10 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).radii.sm, paddingVertical: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_16, paddingLeft: importDefault(dependencyMap[5]).space.PX_8 };
 obj.channelItemContainer = obj;
-obj.channelItemLeft = {};
+obj.channelItemLeft = { "Null": null, "Null": null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.channelItemUnreadIndicator = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
+const obj2 = { borderRadius: "number", backgroundColor: "number", paddingHorizontal: "mY3Y38", marginRight: importDefault(dependencyMap[5]).space.PX_8 };
 obj.channelItemAvatar = obj2;
 obj.channelItemContent = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
@@ -84,9 +84,7 @@ export default function ChannelRowItem(isUnread) {
   items1[1] = callback(View, obj2);
   const obj5 = { style: tmp2.channelItemContent };
   const obj6 = { style: tmp2.channelItemTop };
-  const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), ];
-  const obj8 = { "Null": null, "Null": null, "Null": null, style: animatedStyles.textMuted, children: timestamp };
-  items3[1] = callback(arg1(dependencyMap[8]).Text, obj8);
+  const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), callback(arg1(dependencyMap[8]).Text, { style: animatedStyles.textMuted, children: timestamp })];
   obj6.children = items3;
   const items4 = [closure_5(View, obj6), ];
   if (null == preview) {

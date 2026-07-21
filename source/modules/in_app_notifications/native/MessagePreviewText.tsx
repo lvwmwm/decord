@@ -1,5 +1,5 @@
 // Module ID: 10241
-// Function ID: 79163
+// Function ID: 79174
 // Name: NativeMessagePreviewContent
 // Dependencies: []
 // Exports: default
@@ -90,13 +90,13 @@ function EmbedCard(embed) {
   const items2 = [tmp12, , , ];
   let tmp16 = null != name1;
   if (tmp16) {
-    const obj3 = { children: name1 };
+    const obj3 = { <string:1643205302>: 1961492483, <string:1415816450>: 1964048387, <string:4283523744>: -398262269, children: name1 };
     tmp16 = callback(arg1(dependencyMap[12]).Text, obj3);
   }
   items2[1] = tmp16;
   let tmp21Result = null != rawTitle;
   if (tmp21Result) {
-    const obj4 = {};
+    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
     let num5 = 1;
     if (null == name) {
       num5 = 1;
@@ -112,7 +112,7 @@ function EmbedCard(embed) {
   items2[2] = tmp21Result;
   let tmp24 = null != embed.rawDescription;
   if (tmp24) {
-    const obj5 = { children: embed.rawDescription };
+    const obj5 = { <string:1643205302>: null, <string:1415816450>: null, <string:4283523744>: null, children: embed.rawDescription };
     tmp24 = callback(arg1(dependencyMap[12]).Text, obj5);
   }
   items2[3] = tmp24;

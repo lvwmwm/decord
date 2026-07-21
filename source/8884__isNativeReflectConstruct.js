@@ -1,5 +1,5 @@
 // Module ID: 8884
-// Function ID: 70055
+// Function ID: 70066
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: hmac

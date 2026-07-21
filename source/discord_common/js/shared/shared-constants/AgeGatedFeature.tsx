@@ -1,9 +1,9 @@
-// Module ID: 4954
-// Function ID: 42536
+// Module ID: 4953
+// Function ID: 42543
 // Name: AgeGatedFeature
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 4954 (AgeGatedFeature)
+// Module 4953 (AgeGatedFeature)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeGatedFeature.tsx");
 

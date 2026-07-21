@@ -1,5 +1,5 @@
 // Module ID: 12103
-// Function ID: 93281
+// Function ID: 93293
 // Name: URLCallout
 // Dependencies: []
 // Exports: URLCallout
@@ -10,7 +10,7 @@ const ScrollView = arg1(dependencyMap[1]).ScrollView;
 ({ jsxs: closure_3, jsx: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 0: null, 0: 0.3, 9223372036854775807: "-100vw", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj = { "Bool(true)": null, "Bool(true)": 0.3, "Bool(true)": "-100vw", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.linkCalloutContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.linkCalloutContainerText = { padding: importDefault(dependencyMap[4]).space.PX_8, paddingVertical: importDefault(dependencyMap[4]).space.PX_12, textAlign: "center" };
@@ -29,7 +29,10 @@ export const URLCallout = function URLCallout(url) {
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   obj = { style: tmp.linkCalloutContainerText, variant: "text-md/normal" };
   const items = [protocol, "//"];
-  const items1 = [callback(arg1(dependencyMap[6]).Text, { children: items }), callback2(arg1(dependencyMap[6]).Text, { children: hostname }), callback2(arg1(dependencyMap[6]).Text, { children: theRestOfTheUrl })];
+  const items1 = [callback(arg1(dependencyMap[6]).Text, { children: items }), , ];
+  const obj1 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: hostname };
+  items1[1] = callback2(arg1(dependencyMap[6]).Text, obj1);
+  items1[2] = callback2(arg1(dependencyMap[6]).Text, { children: theRestOfTheUrl });
   obj.children = items1;
   obj.children = callback(arg1(dependencyMap[6]).Text, obj);
   return callback2(ScrollView, obj);

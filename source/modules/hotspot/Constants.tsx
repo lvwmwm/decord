@@ -1,7 +1,7 @@
 // Module ID: 5598
-// Function ID: 47549
+// Function ID: 47557
 // Name: HotspotLocations
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5598 (HotspotLocations)
 const _module = require(dependencyMap[0]);

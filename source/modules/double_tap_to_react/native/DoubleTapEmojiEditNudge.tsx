@@ -1,5 +1,5 @@
 // Module ID: 9939
-// Function ID: 76876
+// Function ID: 76887
 // Name: DoubleTapEmojiEditNudgeInner
 // Dependencies: []
 // Exports: DoubleTapEmojiEditNudge
@@ -46,7 +46,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
     obj.startExpanded = true;
     const result = obj.openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  obj = {};
+  obj = { "Null": true, "Null": "/assets/images/native/community" };
   const intl = arg1(closure_2[19]).intl;
   obj.children = intl.string(arg1(closure_2[19]).t.1EUr/W);
   const items3 = [callback2(arg1(closure_2[18]).Text, obj), , ];
@@ -79,7 +79,7 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 ({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = { <string:24250455>: 800, isArray: 16 };
+let closure_13 = {};
 const tmp3 = arg1(dependencyMap[7]);
 let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
   let obj = {};
@@ -88,7 +88,7 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
   obj = { fontSize: 12 * arg0, color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.doubleTapTextEmoji = obj;
   obj.doubleTapCustomEmoji = { height: 16 * arg0, width: 16 * arg0 };
-  const obj2 = { "Bool(false)": "channelId", "Bool(false)": "channelId", "Bool(false)": "resizeMode", "Bool(false)": "formatToPlainString", "Bool(false)": "construct", marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+  const obj2 = { 0: -12680549015893852000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000089336156478866, 13103845661: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027326364208348535, -9223372036854775808: 8594338856.250004, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005338744857995803, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
   obj.doubleTapEmojiEditNudgeContainer = obj2;
   obj.editButton = { marginHorizontal: importDefault(dependencyMap[9]).space.PX_4 };
   return obj;

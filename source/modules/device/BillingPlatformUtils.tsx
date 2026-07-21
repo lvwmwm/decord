@@ -1,5 +1,5 @@
 // Module ID: 3787
-// Function ID: 29526
+// Function ID: 29531
 // Name: isPremiumGiftingSupported
 // Dependencies: []
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported

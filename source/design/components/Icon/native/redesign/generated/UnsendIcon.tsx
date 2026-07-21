@@ -1,10 +1,10 @@
-// Module ID: 13888
-// Function ID: 105017
+// Module ID: 13891
+// Function ID: 105049
 // Name: UnsendIcon
 // Dependencies: []
 // Exports: UnsendIcon
 
-// Module 13888 (UnsendIcon)
+// Module 13891 (UnsendIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UnsendIcon.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 10037
-// Function ID: 77551
+// Function ID: 77562
 // Name: _addDirectoryGuildEntry
 // Dependencies: []
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry

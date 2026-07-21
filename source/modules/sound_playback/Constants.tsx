@@ -1,7 +1,7 @@
 // Module ID: 8836
-// Function ID: 69723
+// Function ID: 69734
 // Name: SoundOutputChannel
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8836 (SoundOutputChannel)
 const _module = require(dependencyMap[0]);

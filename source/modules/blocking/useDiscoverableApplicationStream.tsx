@@ -1,5 +1,5 @@
 // Module ID: 9057
-// Function ID: 71102
+// Function ID: 71113
 // Name: getDiscoverableApplicationStream
 // Dependencies: []
 // Exports: default

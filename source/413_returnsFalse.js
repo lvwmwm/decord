@@ -6,8 +6,8 @@
 
 // Module 413 (returnsFalse)
 let closure_3 = [null];
-let closure_4 = [true, true, true, true, true, true, true, true];
-let closure_5 = [];
+let closure_4 = [null, null, null, null, null, null, null, null];
+let closure_5 = ["\u00D7", "bot\u00F3n con marca de cruz"];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

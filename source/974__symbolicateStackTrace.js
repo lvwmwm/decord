@@ -1,5 +1,5 @@
 // Module ID: 974
-// Function ID: 10478
+// Function ID: 10482
 // Name: _symbolicateStackTrace
 // Dependencies: []
 // Exports: default

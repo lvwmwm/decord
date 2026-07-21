@@ -1,5 +1,5 @@
 // Module ID: 12209
-// Function ID: 93751
+// Function ID: 93763
 // Name: ChannelPreview
 // Dependencies: []
 // Exports: default
@@ -10,15 +10,15 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
+obj = { container: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
 obj = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.borderColor = obj;
 obj.title = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.itemContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.guildInfo = {};
-obj.guildName = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391237011617, "Null": 9126805507 };
-obj.topic = {};
+obj.guildInfo = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
+obj.guildName = { "Null": "gSbmdt", "Null": "%Int16ArrayPrototype%" };
+obj.topic = { y: "<string:410124289>", half: "<string:402653184>" };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsChannelPreview.tsx");
@@ -34,7 +34,7 @@ export default function ChannelPreview(stageInstance) {
     if (null != stageInstance) {
       let obj1 = arg1(dependencyMap[7]);
       obj = { style: tmp.container };
-      obj = { 2003551622: true, 1366017591: true, 996410372: true, style: tmp.title };
+      obj = { 1832956803: true, 420134994: true, -1884532042: true, style: tmp.title };
       const intl = arg1(dependencyMap[9]).intl;
       obj.children = intl.string(arg1(dependencyMap[9]).t.InbJ8x);
       const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
@@ -53,7 +53,7 @@ export default function ChannelPreview(stageInstance) {
       items3[1] = callback(arg1(dependencyMap[8]).Text, obj5);
       obj3.children = items3;
       const items4 = [callback2(View, obj3), ];
-      const obj6 = { "Null": "text-overlay-light", "Null": null, "Null": 3, style: tmp.topic, children: stageInstance.topic };
+      const obj6 = { delete: "text-overlay-light", dispatch: null, raw: 3, style: tmp.topic, children: stageInstance.topic };
       items4[1] = callback(arg1(dependencyMap[8]).Text, obj6);
       obj1.children = items4;
       items1[1] = callback2(View, obj1);

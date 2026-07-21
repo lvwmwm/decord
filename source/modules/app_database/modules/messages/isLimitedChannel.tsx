@@ -1,5 +1,5 @@
 // Module ID: 6712
-// Function ID: 52159
+// Function ID: 52167
 // Name: isLimitedChannel
 // Dependencies: []
 // Exports: isLimitedChannelId

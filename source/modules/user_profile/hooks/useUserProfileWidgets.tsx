@@ -1,5 +1,5 @@
 // Module ID: 11986
-// Function ID: 92628
+// Function ID: 92640
 // Name: useUserProfileWidgets
 // Dependencies: []
 // Exports: default

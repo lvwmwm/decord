@@ -1,5 +1,5 @@
 // Module ID: 11231
-// Function ID: 87437
+// Function ID: 87449
 // Name: useAppsInThisServer
 // Dependencies: []
 // Exports: default
@@ -45,7 +45,7 @@ export default function useAppsInThisServer(context) {
   const items1 = [arg1(dependencyMap[6]).ApplicationCommandType.CHAT, arg1(dependencyMap[6]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items1;
   obj.filters = obj;
-  obj1 = { limit: closure_7 };
+  obj1 = { "Bool(false)": "<string:8912898>", "Bool(false)": "<string:2919038977>", "Bool(false)": "<string:2024931329>", limit: closure_7 };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj1.useDiscovery(obj);

@@ -1,5 +1,5 @@
 // Module ID: 3398
-// Function ID: 26579
+// Function ID: 26584
 // Name: compareLocalAsc
 // Dependencies: []
 // Exports: default

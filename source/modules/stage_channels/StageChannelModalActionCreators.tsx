@@ -1,10 +1,10 @@
-// Module ID: 7471
-// Function ID: 59955
+// Module ID: 7472
+// Function ID: 59967
 // Name: connectToStage
 // Dependencies: []
 // Exports: connectOrLurkStage, showUserProfile
 
-// Module 7471 (connectToStage)
+// Module 7472 (connectToStage)
 function connectToStage(channel, flag) {
   if (flag === undefined) {
     flag = false;

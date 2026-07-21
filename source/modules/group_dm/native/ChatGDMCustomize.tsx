@@ -1,5 +1,5 @@
 // Module ID: 10153
-// Function ID: 78482
+// Function ID: 78493
 // Dependencies: []
 
 // Module 10153
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId) =
     let tmp33 = null;
     if (tmp15) {
       const obj3 = { onPress: memo.clear, accessibilityRole: "button" };
-      const obj4 = { "Null": false, "Null": false, "Null": false, style: tmp.iconClear };
+      const obj4 = { delete: false, dispatch: false, raw: false, style: tmp.iconClear };
       const intl = arg1(dependencyMap[15]).intl;
       obj4.children = intl.string(arg1(dependencyMap[15]).t.uY+Nk/);
       obj3.children = callback(arg1(dependencyMap[20]).Text, obj4);

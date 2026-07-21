@@ -1,7 +1,7 @@
 // Module ID: 11187
-// Function ID: 87072
+// Function ID: 87084
 // Name: ApplicationCollectionActiveState
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11187 (ApplicationCollectionActiveState)
 const _module = require(dependencyMap[0]);

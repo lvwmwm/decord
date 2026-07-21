@@ -1,10 +1,10 @@
-// Module ID: 15747
-// Function ID: 120289
+// Module ID: 15756
+// Function ID: 120454
 // Name: useControlAccessoryHeight
 // Dependencies: []
 // Exports: default
 
-// Module 15747 (useControlAccessoryHeight)
+// Module 15756 (useControlAccessoryHeight)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = { code: "function useControlAccessoryHeightTsx1(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_panel/native/hooks/useControlAccessoryHeight.tsx");

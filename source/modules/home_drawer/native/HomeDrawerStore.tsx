@@ -1,9 +1,9 @@
-// Module ID: 14677
-// Function ID: 110681
+// Module ID: 14680
+// Function ID: 110715
 // Name: computeMaxX
 // Dependencies: []
 
-// Module 14677 (computeMaxX)
+// Module 14680 (computeMaxX)
 function computeMaxX(width, left) {
   return width.width - left.left - left.right - DM_WIDTH - 8 + 8;
 }
@@ -14,7 +14,7 @@ const withEqualityFn = _module.createWithEqualityFn((arg0, arg1) => {
   const dependencyMap = arg1;
   const obj = { panelX: require(dependencyMap[2]).makeMutable(0) };
   const obj2 = require(dependencyMap[2]);
-  obj.gestureState = require(dependencyMap[2]).makeMutable({});
+  obj.gestureState = require(dependencyMap[2]).makeMutable({ buttonLabel: true, blur: "/assets/.cache/intl/ZGVzaWdu", backgroundColor: null, padding: "6f26364a343a1fa9a6e8ce73bcba4b45" });
   obj.maxX = 0;
   obj.lastInteractionAt = { current: 0 };
   const obj3 = require(dependencyMap[2]);

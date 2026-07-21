@@ -1,5 +1,5 @@
 // Module ID: 4327
-// Function ID: 38140
+// Function ID: 38148
 // Name: _regeneratorRuntime
 // Dependencies: []
 
@@ -7,7 +7,7 @@
 
 export default function _regeneratorRuntime() {
   function define(arg0, arg1, value) {
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
     return arg0[arg1];
   }
@@ -46,7 +46,7 @@ export default function _regeneratorRuntime() {
     }
   }
   function defineIteratorMethods(prototype) {
-    const items = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001089673160674, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014917618704242618, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000139831141178];
+    const items = ["REWARD", "disableTouchLogging", "taqkwK"];
     const item = items.forEach((arg0) => {
       callback(arg0, arg0, function(arg0) {
         return this._invoke(arg0, arg0);
@@ -102,7 +102,7 @@ export default function _regeneratorRuntime() {
               return nextPromise;
             }
       };
-      tmp = f38169(this, "_invoke", obj);
+      tmp = f38177(this, "_invoke", obj);
       return;
     }
   }
@@ -456,7 +456,7 @@ export default function _regeneratorRuntime() {
                   return nextPromise;
                 }
         };
-        tmp = f38169(this, "_invoke", obj);
+        tmp = f38177(this, "_invoke", obj);
         return;
       }
     }

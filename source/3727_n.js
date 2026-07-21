@@ -1,5 +1,5 @@
 // Module ID: 3727
-// Function ID: 28499
+// Function ID: 28504
 // Name: n
 // Dependencies: []
 
@@ -85,20 +85,20 @@ const fn = function n(moment) {
     weekdays: "niedziela_poniedzia\u0142ek_wtorek_\u015Broda_czwartek_pi\u0105tek_sobota".split("_"),
     weekdaysShort: "ndz_pon_wt_\u015Br_czw_pt_sob".split("_"),
     weekdaysMin: "Nd_Pn_Wt_\u015Ar_Cz_Pt_So".split("_"),
-    longDateFormat: { <string:1122280543>: null, <string:3251850218>: null, <string:306010250>: null, <string:37429971>: null, <string:1812403200>: null, <string:3855182856>: "isArray" },
+    longDateFormat: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null },
     calendar: obj,
-    relativeTime: { ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate },
+    relativeTime: obj,
     dayOfMonthOrdinalParse: /\d{1,2}\./,
     ordinal: "%d.",
-    week: { <string:1431496722>: false, <string:1627556098>: false }
+    week: { "Bool(true)": null, "Bool(true)": null }
   };
   obj = {
-    status: 1962935034,
-    padding: 1929380602,
-    opacity: 1124074234,
-    PX_8: 191998,
-    Symbol: -1278803966,
-    r: 1749549059,
+    intl: "r",
+    flex: "lockEnabled",
+    getChannel: "REVERSE_TRIAL_NITRO_TAB_BADGE",
+    PX_8: "SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH",
+    textAlign: "REVERSE_TRIAL_NITRO_TAB_BADGE",
+    unicodeVersion: "AutocompleteTypes",
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -126,6 +126,7 @@ const fn = function n(moment) {
       }
     }
   };
+  obj = { 9223372036854775807: 1661534209, 0: 1661468674, -9223372036854775808: 1802502146, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate };
   return moment.defineLocale("pl", obj);
 };
 if ("object" === typeof exports) {

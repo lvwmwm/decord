@@ -1,5 +1,5 @@
 // Module ID: 1077
-// Function ID: 12384
+// Function ID: 12388
 // Name: enrichWithThreadInformation
 // Dependencies: []
 // Exports: addProfileToGlobalCache, addProfilesToEnvelope, attachProfiledThreadToEvent, createProfileChunkPayload, createProfilingEvent, findProfiledTransactionsFromEnvelope, getActiveProfilesCount, hasLegacyProfiling, isAutomatedPageLoadSpan, shouldProfileSession, shouldProfileSpanLegacy, startJSSelfProfile, takeProfileFromGlobalCache, validateProfileChunk
@@ -295,7 +295,7 @@ if (tmp6) {
   tmp6 = "getHighEntropyValues" in userAgentData;
 }
 if (tmp6) {
-  const highEntropyValues = userAgentData.getHighEntropyValues([true, true, true, true, true]);
+  const highEntropyValues = userAgentData.getHighEntropyValues(["3", "3:30", "30", "clock", "thirty"]);
   highEntropyValues.then((platform) => {
     let closure_6 = platform.platform || "";
     let closure_8 = platform.architecture || "";

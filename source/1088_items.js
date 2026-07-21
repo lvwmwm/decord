@@ -1,5 +1,5 @@
 // Module ID: 1088
-// Function ID: 12479
+// Function ID: 12483
 // Name: items
 // Dependencies: []
 // Exports: sdkInfoIntegration

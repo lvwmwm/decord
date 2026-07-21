@@ -1,5 +1,5 @@
 // Module ID: 5556
-// Function ID: 47156
+// Function ID: 47164
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getIsModalPresentation
@@ -298,12 +298,12 @@ const tmp5 = (Component) => {
         gestureResponseDistance = num;
       }
       if ("vertical" === gestureDirection) {
-        let obj = { "Null": 148, "Null": null, "Null": 1, "Null": "text-sm/semibold" };
+        let obj = { 1658745313: true, -127830580: true, -1818623150: true, -1106746189: true };
         obj = { bottom: -layout.height + gestureResponseDistance };
         obj.hitSlop = obj;
         return obj;
       } else if ("vertical-inverted" === gestureDirection) {
-        const obj1 = { "Null": null, "Null": null, "Null": null, "Null": null };
+        const obj1 = {};
         const obj2 = { top: -layout.height + gestureResponseDistance };
         obj1.hitSlop = obj2;
         return obj1;
@@ -315,7 +315,7 @@ const tmp5 = (Component) => {
           obj3.hitSlop = obj4;
           obj = obj3;
         } else {
-          obj = {};
+          obj = { local: 0, type: "never", integrationId: "always", joining: true };
           const obj5 = { left: sum };
           obj.hitSlop = obj5;
         }
@@ -436,7 +436,7 @@ const tmp5 = (Component) => {
         obj6.children = callback5(Card(closure_2[11]).PanGestureHandler, Object.assign(obj7, result, obj8));
         items1[1] = callback5(RN.View, obj6);
         obj3.children = items1;
-        items[2] = closure_16(closure_14, Object.assign({ SENDABLE_WITH_PREMIUM: null, REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE: null }, tmp, obj3));
+        items[2] = closure_16(closure_14, Object.assign({ -2041468330: null, 1549952417: null }, tmp, obj3));
         obj.children = items;
         return closure_16(callback(closure_2[14]).Provider, obj);
       } else {
@@ -470,9 +470,7 @@ tmp5.defaultProps = {
     return tmp;
   }
 };
-let obj = { -73375060: false, 1627731025: false, 657281372: false, shadowOffset: { bhk: null, bic: null } };
-obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, shadowOffset: { bhk: false, bic: false } };
-const styles = StyleSheet.create({ container: { flex: 1 }, overlay: { "Bool(false)": null, "Bool(false)": null }, shadow: {}, shadowHorizontal: obj, shadowLeft: { left: 0 }, shadowRight: { right: 0 }, shadowVertical: obj, shadowTop: { top: 0 }, shadowBottom: { bottom: 0 } });
+const styles = StyleSheet.create({ container: { flex: 1 }, overlay: {}, shadow: {}, shadowHorizontal: { shadowOffset: { "Null": 2, "Null": true } }, shadowLeft: { left: 0 }, shadowRight: { right: 0 }, shadowVertical: { shadowOffset: { "Null": 1359020033, "Null": -129930155 } }, shadowTop: { top: 0 }, shadowBottom: { bottom: 0 } });
 
 export default tmp5;
 export const getIsModalPresentation = function getIsModalPresentation(cardStyleInterpolator) {

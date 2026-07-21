@@ -1,17 +1,17 @@
-// Module ID: 14308
-// Function ID: 108087
+// Module ID: 14311
+// Function ID: 108119
 // Name: MyTableRow
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14308 (MyTableRow)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14311 (MyTableRow)
+import closure_3 from "result";
+import closure_4 from "result";
+import result from "result";
+import closure_8 from "result";
+import closure_9 from "result";
+import result from "result";
+import result from "result";
 
 function MyTableRow() {
   let obj = { label: "Notifications", onPress: closure_10 };
@@ -19,10 +19,10 @@ function MyTableRow() {
   obj.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj);
   return callback2(arg1(dependencyMap[7]).TableRow, obj);
 }
-({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = __exportStarResult1);
-({ NOOP: closure_10, StatusTypes: closure_11 } = __exportStarResult1);
-({ jsx: closure_12, jsxs: closure_13 } = __exportStarResult1);
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTableRow.tsx");
+({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = result);
+({ NOOP: closure_10, StatusTypes: closure_11 } = result);
+({ jsx: closure_12, jsxs: closure_13 } = result);
+result = arg1(dependencyMap[27]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTableRow.tsx");
 
 export default function UserSettingsDesignSystemTableRow() {
   let tmp4;
@@ -56,11 +56,11 @@ export default function UserSettingsDesignSystemTableRow() {
   obj5.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj6);
   obj5.label = "Add a Friend";
   items1[2] = callback2(arg1(dependencyMap[7]).TableRow, obj5);
-  const obj7 = { "Null": true, "Null": true, "Null": true };
+  const obj7 = { <string:1448401072>: false, <string:1686368849>: false, <string:4222676172>: false };
   const obj8 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj7.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj8);
   items1[3] = callback2(arg1(dependencyMap[7]).TableRow, obj7);
-  const obj9 = { "Null": "Error", "Null": "Array", "Null": "isArray" };
+  const obj9 = { <string:1448401072>: "Array", <string:1686368849>: "isArray", <string:4222676172>: "key" };
   const obj10 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj9.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj10);
   obj9.trailing = callback2(arg1(dependencyMap[7]).TableRow.Arrow, {});
@@ -68,19 +68,19 @@ export default function UserSettingsDesignSystemTableRow() {
   const obj11 = {};
   const obj12 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj11.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj12);
-  obj11.label = callback2(arg1(dependencyMap[13]).Text, {});
-  const obj13 = { style: {} };
-  const obj14 = { style: { 0: "al", -9223372036854775808: "VideoToggleState", -9223372036854775808: "%Float64ArrayPrototype%", 0: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN" } };
+  obj11.label = callback2(arg1(dependencyMap[13]).Text, { "Null": "text-lg/bold", "Null": "Basic Example", "Null": "text-md/medium" });
+  const obj13 = { style: { "Null": 7, "Null": 370 } };
+  const obj14 = { style: { "Null": 283967490, "Null": -1857945599, "Null": -1358953984, "Null": 1358954904 } };
   const obj15 = {};
   let obj18 = importDefault(dependencyMap[14]);
-  obj15.uri = obj18.getEmojiURL({ "Bool(true)": "text-md/medium", "Bool(true)": "text-subtle", "Bool(true)": "You can also have the menu open on long press instead." });
+  obj15.uri = obj18.getEmojiURL({ USE_THUMBNAIL: "text-md/medium", USE_TIFF: "text-subtle", USE_JPEG: "You can also have the menu open on long press instead." });
   obj14.source = obj15;
   obj14.resizeMode = "contain";
   const items2 = [callback2(closure_6, obj14), callback2(arg1(dependencyMap[13]).Text, { style: { flexShrink: 1 } })];
   obj13.children = items2;
   obj11.subLabel = callback3(closure_5, obj13);
   items1[5] = callback2(arg1(dependencyMap[7]).TableRow, obj11);
-  const obj16 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  const obj16 = { -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true };
   const obj17 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj16.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj17);
   items1[6] = callback2(arg1(dependencyMap[7]).TableRow, obj16);
@@ -122,22 +122,22 @@ export default function UserSettingsDesignSystemTableRow() {
   obj29.label = "Display Name That Is Very Long And Maybe Wrap";
   obj29.trailing = callback2(arg1(dependencyMap[7]).TableRow.TrailingText, { text: "100" });
   items4[5] = callback2(arg1(dependencyMap[7]).TableRow, obj29);
-  const obj31 = { "Null": "al", "Null": "view_preroll_ad_tag_hostname", "Null": "_f" };
+  const obj31 = { <string:1448401072>: 1336541186, <string:1686368849>: 1329659905, <string:4222676172>: 1912603117 };
   const obj32 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj31.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj32);
   items4[6] = callback2(arg1(dependencyMap[7]).TableRow, obj31);
-  const obj33 = {};
+  const obj33 = { <string:1448401072>: 6, <string:1686368849>: 6, <string:4222676172>: 8 };
   const obj34 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj33.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj34);
   obj33.value = tmp4;
   obj33.onValueChange = callback;
   items4[7] = callback2(arg1(dependencyMap[16]).TableSwitchRow, obj33);
-  const obj35 = { -865739866: false, -1594107668: false, 1644430417: false, 223427579: false, 1379557832: false, -2141413364: false };
+  const obj35 = { display: false, width: false, flexDirection: false, flexWrap: false, flex: false, flexBasis: false };
   const obj36 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj35.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj36);
   obj35.onValueChange = closure_10;
   items4[8] = callback2(arg1(dependencyMap[16]).TableSwitchRow, obj35);
-  const obj37 = { "Null": false, "Null": false, "Null": false };
+  const obj37 = { <string:1448401072>: "<string:1912603117>", <string:1686368849>: "a", <string:4222676172>: "r" };
   const obj38 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj37.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj38);
   obj37.checked = tmp6;
@@ -150,7 +150,7 @@ export default function UserSettingsDesignSystemTableRow() {
   items4[10] = callback2(arg1(dependencyMap[17]).TableCheckboxRow, obj39);
   obj18.children = items4;
   items3[1] = callback3(arg1(dependencyMap[12]).TableRowGroup, obj18);
-  const obj41 = { getDeviceAudioEffects: true, XXSMALL: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", parentFreezeValue: null };
+  const obj41 = { maxHeight: true, aspectRatio: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", display: null };
   const obj42 = { onPress: closure_10 };
   const obj43 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj42.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj43);
@@ -167,46 +167,46 @@ export default function UserSettingsDesignSystemTableRow() {
   const items6 = [callback2(arg1(dependencyMap[7]).TableRow, { onPress: closure_10 }), callback2(arg1(dependencyMap[7]).TableRow, { onPress: closure_10 }), callback2(arg1(dependencyMap[7]).TableRow, { onPress: closure_10 })];
   obj46.children = items6;
   items3[3] = callback3(arg1(dependencyMap[12]).TableRowGroup, obj46);
-  const obj50 = { onChange: closure_10 };
-  const items7 = [callback2(arg1(dependencyMap[19]).TableRadioRow, {}), callback2(arg1(dependencyMap[19]).TableRadioRow, { x1: "left", x2: "Open Left", y1: 3 }), callback2(arg1(dependencyMap[19]).TableRadioRow, { x1: "Text", x2: "round", y1: "ti" }), callback2(arg1(dependencyMap[19]).TableRadioRow, { accessibilityElementsHidden: true, importantForAccessibility: "/assets/modules/go_live", position: null, top: "f6e3c365e8a3adf05325d11d5ed6a02b" })];
+  const obj50 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, onChange: closure_10 };
+  const items7 = [callback2(arg1(dependencyMap[19]).TableRadioRow, { 0: "text-md/medium", 9223372036854775807: "text-subtle", 9223372036854775807: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), callback2(arg1(dependencyMap[19]).TableRadioRow, { 0: null, 9223372036854775807: null, 9223372036854775807: null }), callback2(arg1(dependencyMap[19]).TableRadioRow, {}), callback2(arg1(dependencyMap[19]).TableRadioRow, { accessible: true, variant: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", r: null, 1674994086: "e48043bf745ca0395ac959c7415a3757" })];
   obj50.children = items7;
   items3[4] = callback3(arg1(dependencyMap[18]).TableRadioGroup, obj50);
-  const obj51 = { enableAnimation: "<string:3209756673>", landscapeSelector: "<string:2125021596>", GAME_SERVER_WAKE: "<string:306315265>", onChange: closure_10 };
-  const obj52 = {};
+  const obj51 = { onChange: closure_10 };
+  const obj52 = { accessibilityLabel: 1895826010, variant: 3, size: 16956481 };
   const obj53 = { variant: "text-status-online", source: importDefault(dependencyMap[21]) };
   obj52.icon = callback2(arg1(dependencyMap[20]).TableRowIcon, obj53);
   const items8 = [callback2(arg1(dependencyMap[19]).TableRadioRow, obj52), , , ];
-  const obj54 = { 9223372036854775807: "text-md/medium", -9223372036854775808: "text-subtle", 9223372036854775807: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." };
+  const obj54 = { accessibilityLabel: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001352020640417646, variant: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005078364880157146, size: -294832983961146800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
   const obj55 = { variant: "text-status-idle", source: importDefault(dependencyMap[22]) };
   obj54.icon = callback2(arg1(dependencyMap[20]).TableRowIcon, obj55);
   items8[1] = callback2(arg1(dependencyMap[19]).TableRadioRow, obj54);
-  const obj56 = { 9223372036854775807: 1091633153, -9223372036854775808: 151645, 9223372036854775807: 6258 };
+  const obj56 = { accessibilityLabel: null, variant: null, size: null };
   const obj57 = { variant: "text-status-dnd", source: importDefault(dependencyMap[23]) };
   obj56.icon = callback2(arg1(dependencyMap[20]).TableRowIcon, obj57);
   items8[2] = callback2(arg1(dependencyMap[19]).TableRadioRow, obj56);
-  const obj58 = { 9223372036854775807: true, -9223372036854775808: true, 9223372036854775807: true };
+  const obj58 = {};
   const obj59 = { variant: "text-status-offline", source: importDefault(dependencyMap[24]) };
   obj58.icon = callback2(arg1(dependencyMap[20]).TableRowIcon, obj59);
   items8[3] = callback2(arg1(dependencyMap[19]).TableRadioRow, obj58);
   obj51.children = items8;
   items3[5] = callback3(arg1(dependencyMap[18]).TableRadioGroup, obj51);
   const obj60 = { spacing: 12 };
-  const items9 = [callback2(arg1(dependencyMap[13]).Text, { "Null": null, "Null": null }), , , ];
+  const items9 = [callback2(arg1(dependencyMap[13]).Text, { <string:1749439162>: "Array", <string:140675621>: "isArray" }), , , ];
   const obj61 = {};
   const obj62 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon };
   obj61.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj62);
   obj61.label = "Boost your server";
   obj61.onPress = closure_10;
   items9[1] = callback2(arg1(dependencyMap[25]).RowButton, obj61);
-  const obj63 = { 82465207: 131, -1219391903: null, -683715695: "2634e77a356f1f01c169d19e1ee5e0b0", -752588210: "load-issue-light", onPress: closure_10 };
-  items9[2] = callback2(arg1(dependencyMap[25]).RowButton, obj63);
-  const obj64 = { style: { padding: 8 }, start: { max: -536870861, guildId: -299892737 }, end: {}, colors: ["RotateOutDownLeft", "username", "password", "updateAsync", "ang", "eachConnection", "%Uint8ClampedArray%"] };
+  items9[2] = callback2(arg1(dependencyMap[25]).RowButton, { onPress: closure_10 });
+  const obj64 = { style: { padding: 8 }, start: {}, end: {}, colors: [true, true, true, true, true, true, true] };
   const obj1 = { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 };
   const obj47 = { onPress: closure_10 };
   const obj48 = { onPress: closure_10 };
   const obj49 = { onPress: closure_10 };
+  const obj63 = { onPress: closure_10 };
   const tmp5 = callback(React.useState(false), 2);
-  const obj65 = {};
+  const obj65 = { "Bool(false)": true, "Bool(false)": "/assets/images/native/icons", "Bool(false)": 40 };
   const obj66 = { IconComponent: arg1(dependencyMap[8]).SettingsIcon, variant: "translucent" };
   obj65.icon = callback2(arg1(dependencyMap[7]).TableRow.Icon, obj66);
   obj65.onPress = closure_10;

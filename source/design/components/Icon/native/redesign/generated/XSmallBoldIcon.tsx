@@ -1,14 +1,15 @@
-// Module ID: 7653
-// Function ID: 61206
+// Module ID: 7654
+// Function ID: 61218
 // Name: XSmallBoldIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: XSmallBoldIcon
 
-// Module 7653 (XSmallBoldIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 7654 (XSmallBoldIcon)
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/XSmallBoldIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/XSmallBoldIcon.tsx");
 
 export const XSmallBoldIcon = function XSmallBoldIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

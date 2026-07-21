@@ -1,5 +1,5 @@
 // Module ID: 11905
-// Function ID: 92126
+// Function ID: 92138
 // Name: ActivityCardText
 // Dependencies: []
 // Exports: default
@@ -719,18 +719,18 @@ function VoiceCallActivityCard(arg0) {
         const obj2 = stateFromStores(newestAnalyticsLocation[67]);
         channel(newestAnalyticsLocation[68]).openGuildVoiceModal(channel, newestAnalyticsLocation);
       };
-      const obj7 = {};
+      const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
       const obj8 = { style: tmp.voiceCallNameIconWrapper };
-      const obj9 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, channel };
+      const obj9 = { accessible: "%Math%", test: "isArrayBuffer", "Bool(false)": "<string:1153585664>", channel };
       obj8.children = callback2(importDefault(dependencyMap[65]), obj9);
       const items4 = [callback2(closure_7, obj8), tmp3];
       obj7.children = items4;
       obj5.children = callback3(arg1(dependencyMap[18]).Text, obj7);
       let tmp33 = callback2(arg1(dependencyMap[41]).PressableOpacity, obj5);
     } else {
-      const obj10 = {};
+      const obj10 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
       const obj11 = { style: tmp.voiceCallNameIconWrapper };
-      const obj12 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, channel };
+      const obj12 = { accessible: "%Math%", test: "isArrayBuffer", "Bool(false)": "<string:1153585664>", channel };
       obj11.children = callback2(importDefault(dependencyMap[65]), obj12);
       const items5 = [callback2(closure_7, obj11), tmp3];
       obj10.children = items5;
@@ -794,29 +794,29 @@ obj = { card: { gap: 12 }, cardTitle: { marginBottom: 0 } };
 obj = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
 let num = 16;
 obj.cardTitleIcon = obj;
-obj.body = {};
+obj.body = { "Null": "center", "Null": "center", "Bool(false)": "100%" };
 obj.content = { flex: 1 };
 obj.imageContainer = { position: "relative" };
-obj.imageAspectRatio = { badge_text: true, PARTY: 0.001, paddingVertical: 0.001 };
-obj.crunchyrollImageAspectRatio = { badge_text: "<string:1363103842>", PARTY: "<string:4131526215>", paddingVertical: "<string:4127195403>" };
-const tmp4 = arg1(dependencyMap[14]);
-obj.largeImage = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
-const obj2 = { 0: "png", 0: "iconOriginalMd5", 0: "bannerOriginalMd5", 0: "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
+obj.imageAspectRatio = { alignItems: "100%", backgroundColor: "100%", borderRadius: 0.5 };
+obj.crunchyrollImageAspectRatio = {};
+const obj1 = { "Null": "dopoledne", "Null": "odpoledne", "Null": "p\u016Flnoc", borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.largeImage = obj1;
+const obj2 = { calendarIcon: "png", ThemeContext: "iconOriginalMd5", onDrawerSlide: "bannerOriginalMd5", onDrawerStateChanged: "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.smallImageBackground = obj2;
 obj.smallImage = {};
-obj.badges = {};
-const obj3 = { kkvDatabase: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092349256818313, childSpanTimeout: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061976, sectionIndex: -13336029583459642000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+obj.badges = { "Null": -3329, "Null": 12799, "Null": 0, "Null": -59621400, "Null": 285212671 };
+const obj3 = { removeDirectoryGuildEntry: "/assets/images/native/community", body: 62, RulebookSpotIllustration: 65, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.voiceChannelDivider = obj3;
-obj.customButtons = { stiffness: null, damping: null };
-const obj4 = { 975478355: null, 1656971454: null, 2035461794: null, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.customButtons = {};
+const obj4 = { position: false, top: false, left: false, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.streamPreview = obj4;
 obj.voiceActivityCard = { padding: 0 };
-obj.voiceSettings = {};
-const obj5 = { kkvDatabase: "confetti", childSpanTimeout: 60, sectionIndex: "days", itemIndex: true, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
-obj.voiceSettingsDivider = obj5;
-obj.voiceCallContent = { fontWeight: false, style: false };
-const obj6 = {};
-const obj1 = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.voiceSettings = { TypeError: 16, sr: 49 };
+const tmp4 = arg1(dependencyMap[14]);
+obj.voiceSettingsDivider = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
+obj.voiceCallContent = { "Bool(false)": null, "Bool(false)": null };
+const obj6 = { -2146320533: -1655570431, 1244786459: 299071617, -871786476: 38822721 };
+const obj5 = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
 if (obj10.isAndroid()) {
   num = 12;
 }

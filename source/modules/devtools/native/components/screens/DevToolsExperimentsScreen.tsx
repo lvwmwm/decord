@@ -1,5 +1,5 @@
 // Module ID: 10946
-// Function ID: 85090
+// Function ID: 85101
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -422,8 +422,8 @@ let closure_14 = importAllResult.memo((id) => {
       });
     });
     let obj = {
-      0: "Array",
-      0: "isArray",
+      <string:1369782698>: false,
+      <string:3110185467>: false,
       onPress() {
         map(system[21]).overrideBucket(system.system, map, null);
         const obj = map(system[21]);
@@ -517,7 +517,7 @@ const memoResult = importAllResult.memo(() => {
   callback = importAllResult.useCallback((arg0, arg1) => callback(closure_14, { id: bestMatches[arg1].id, experiment: bestMatches[arg1].experiment, override: memo1[bestMatches[arg1].id], start: 0 === arg1, end: arg1 === bestMatches.length - 1 }), items3);
   const obj5 = arg1(dependencyMap[14]);
   if (obj6.isEmpty(memo)) {
-    obj = { OPEN_OVERLAY_VOICE_SETTINGS: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, alignSelf: 139264.00004577637, CHANNEL_DETAILS_TOP_MARGIN: -6565383352457894000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Illustration: arg1(dependencyMap[17]).NoResults };
+    obj = { position: "errExpectingATEXT", width: "j", top: "MiniaturesSpotIllustration", Illustration: arg1(dependencyMap[17]).NoResults };
     let tmp22 = callback2(arg1(dependencyMap[16]).EmptyState, obj);
   } else {
     obj = { style: tmp.container };

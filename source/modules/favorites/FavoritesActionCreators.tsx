@@ -1,5 +1,5 @@
 // Module ID: 10180
-// Function ID: 78622
+// Function ID: 78633
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addFavoriteCategory, addFavoriteChannel, removeFavoriteCategory, setAllFavoriteCategoriesCollapsed, setFavoriteCategoryCollapsed, setFavoriteChannelNickname, setFavoritesGuildVisibility, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels

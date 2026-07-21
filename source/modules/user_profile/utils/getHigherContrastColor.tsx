@@ -1,5 +1,5 @@
 // Module ID: 5507
-// Function ID: 46905
+// Function ID: 46913
 // Name: getHigherContrastColor
 // Dependencies: []
 // Exports: getHigherContrastColor

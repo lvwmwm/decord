@@ -1,26 +1,26 @@
 // Module ID: 11706
-// Function ID: 90932
+// Function ID: 90944
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [57, 31, 27, 653, 11717, 33, 4126, 689, 4965, 4545]
+// Dependencies: [57, 31, 27, 653, 11717, 33, 4126, 689, 4964, 4545]
 // Exports: default
 
 // Module 11706 (NewUserPermissionsOnboarding)
 import "_slicedToArray";
 import module_31 from "module_31";
-import keys from "keys";
+import get ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
 import getFontScale from "getFontScale";
 
 ({ View: closure_2, ScrollView: closure_3 } = module_31);
-({ jsx: closure_4, jsxs: closure_5 } = keys);
+({ jsx: closure_4, jsxs: closure_5 } = get_ActivityIndicator);
 ME = { scrollContainer: { minHeight: "100%" }, container: {} };
 ME = { paddingTop: 80 + require("SuggestedFriendSource").NAV_BAR_HEIGHT };
 ME.alertContainer = ME;
-const obj1 = { alignItems: 16, overflow: 32, flex: 32, flexDirection: "center", alignItems: "center", marginTop: -0.000000000000007112651463380534, backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+const obj1 = { flexDirection: "Array", marginBottom: "BOOST_UPSELL_LOST_LEVEL_HEADER", justifyContent: "y", title: "NONE_MONTH", headerIcon: "Array", trailingIcon: "CONNECTION_INDICATOR_SHOWN", backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 const merged = Object.assign(require("module_33").shadows.SHADOW_HIGH);
 ME.alert = obj1;
 ME.alertContent = {};
-ME.alertTitle = { <string:1500765900>: null, <string:637716783>: null };
+ME.alertTitle = { 0: null, 0: null };
 ME.alertSubtitle = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
 ME.buttonWrapper = { flexDirection: "row" };
 const obj2 = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
@@ -61,7 +61,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   }
   items2[1] = primaryButtonContainer;
   obj6.style = items2;
-  const obj7 = {};
+  const obj7 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
   const intl = arg1(dependencyMap[8]).intl;
   obj7.text = intl.string(arg1(dependencyMap[8]).t.2nYlT2);
   obj7.onPress = onAllow;

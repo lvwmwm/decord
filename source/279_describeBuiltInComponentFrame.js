@@ -71,7 +71,7 @@ function describeNativeComponentFrame(displayName) {
                 }
                 constructResult1.call();
                 arg0.call(constructResult1.prototype);
-                const items = [null, null];
+                const items = [true, true];
               } else {
                 class Fake {
                   constructor() {
@@ -230,80 +230,8 @@ function describeNativeComponentFrame(displayName) {
   }
   return "";
 }
-function describeFiber(tag) {
-  switch (tag.tag) {
-    case 0:
-      let tmp5 = closure_179(tag.type, false);
-      return tmp5;
-    case 1:
-      return closure_179(tag.type, true);
-    case 2:
-      return "";
-    case 3:
-      return "";
-    case 4:
-      return "";
-    case 5:
-      let tmp10 = closure_178(tag.type);
-      return tmp10;
-    case 6:
-      return "";
-    case 7:
-      return "";
-    case 8:
-      return "";
-    case 9:
-      return "";
-    case 10:
-      return "";
-    case 11:
-      return closure_179(tag.type.render, false);
-    case 12:
-      return "";
-    case 13:
-      return closure_178("Suspense");
-    case 14:
-      return "";
-    case 15:
-      tmp5 = closure_179(tag.type, false);
-      return tmp5;
-    case 16:
-      return closure_178("Lazy");
-    case 17:
-      return "";
-    case 18:
-      return "";
-    case 19:
-      return closure_178("SuspenseList");
-    case 20:
-      return "";
-    case 21:
-      return "";
-    case 22:
-      return "";
-    case 23:
-      return "";
-    case 24:
-      return "";
-    case 25:
-      return "";
-    case 26:
-      tmp10 = closure_178(tag.type);
-      return tmp10;
-    case 27:
-      tmp10 = closure_178(tag.type);
-      return tmp10;
-    case 28:
-      return "";
-    case 29:
-      return "";
-    case 30:
-      return "";
-    case 31:
-      return closure_178("Activity");
-    default:
-      return "";
-  }
+function describeFiber(arg0) {
+  return describeBuiltInComponentFrame("Activity");
 }
 function getStackByFiberInDevAndProd(arg0) {
   let _return = arg0;
@@ -1936,7 +1864,7 @@ function popHostContext(arg0) {
   }
   if (ref3.current === arg0) {
     pop(ref3);
-    closure_69._currentValue = null;
+    obj11._currentValue = null;
   }
 }
 function upgradeHydrationErrorsToRecoverable() {
@@ -2154,12 +2082,12 @@ function propagateParentContextChanges(arg0, flags) {
             tmp6 = tmp2;
             if (alternate2.memoizedState.memoizedState !== _return.memoizedState.memoizedState) {
               if (null !== tmp) {
-                let tmp8 = closure_69;
-                arr = tmp.push(closure_69);
+                let tmp8 = obj11;
+                arr = tmp.push(obj11);
                 let items1 = tmp;
               } else {
-                let tmp7 = closure_69;
-                items1 = [closure_69];
+                let tmp7 = obj11;
+                items1 = [obj11];
               }
               tmp4 = items1;
               let tmp10 = alternate2;
@@ -2828,9 +2756,8 @@ function getRootForUpdatedFiber(arg0) {
     return stateNode;
   }
 }
-function initializeUpdateQueue(memoizedState) {
-  const obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, baseState: memoizedState.memoizedState, shared: { $applicationCache: "decimal-pad", $console: "number-pad", $external: "phone-pad" } };
-  memoizedState.updateQueue = obj;
+function initializeUpdateQueue(baseState) {
+  baseState.updateQueue = { baseState: baseState.memoizedState, shared: { <string:2801796165>: "decimal-pad", <string:2264925301>: "number-pad", <string:3120563277>: "phone-pad" } };
 }
 function cloneUpdateQueue(updateQueue, updateQueue2) {
   updateQueue = updateQueue.updateQueue;
@@ -2842,8 +2769,7 @@ function cloneUpdateQueue(updateQueue, updateQueue2) {
   }
 }
 function createUpdate(lane) {
-  const obj = { y: true, isArray: true, color: true, code: true, y: true, lane };
-  return obj;
+  return { lane };
 }
 function enqueueUpdate(updateQueue, next) {
   updateQueue = updateQueue.updateQueue;
@@ -3320,7 +3246,7 @@ function resetHooksOnUnwind(memoizedState) {
   let closure_118 = null;
 }
 function mountWorkInProgressHook() {
-  const obj = { -9223372036854775808: null, 0: null, 0: null, 0: null, 0: null };
+  const obj = {};
   if (null === closure_113) {
     closure_113 = obj;
     closure_111.memoizedState = obj;
@@ -3444,7 +3370,7 @@ function useMemoCache(arg0) {
     tmp2 = obj;
   }
   if (null === updateQueue) {
-    obj = { CUSTOM_THEME_SHARE: 0, TAB_LABEL_TEXT_DEFAULT: 0, "Bool(true)": "100%", "Bool(true)": "10%" };
+    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
     _null.updateQueue = obj;
     updateQueue = obj;
   }
@@ -3620,7 +3546,7 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
       }
       let tmp27 = tmp6;
       if (null !== tmp6) {
-        obj = { fontSize: -536870861, letterSpacing: -299892737 };
+        obj = { <string:3625373795>: -536870861, <string:1634093829>: -299892737 };
         ({ action: obj3.action, hasEagerState: obj3.hasEagerState, eagerState: obj3.eagerState } = iter2);
         obj.next = null;
         tmp6.next = obj;
@@ -3710,7 +3636,7 @@ function pushStoreConsistencyCheck(flags, getSnapshot, value) {
   let obj = { getSnapshot, value };
   const updateQueue = _null.updateQueue;
   if (null === updateQueue) {
-    obj = { CUSTOM_THEME_SHARE: 0, TAB_LABEL_TEXT_DEFAULT: 0, "Bool(true)": "100%", "Bool(true)": "10%" };
+    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
     _null.updateQueue = obj;
     const items = [obj];
     obj.stores = items;
@@ -3764,7 +3690,7 @@ function mountStateImpl(arg0) {
   }
   tmp.baseState = tmp2;
   tmp.memoizedState = tmp2;
-  const obj = { "Bool(false)": "decimal-pad", "Bool(false)": "number-pad", "Bool(false)": "phone-pad", lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
+  const obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
   tmp.queue = obj;
   return tmp;
 }
@@ -3902,7 +3828,7 @@ function mountActionState(action, baseState) {
   const tmp = mountWorkInProgressHook();
   tmp.baseState = baseState;
   tmp.memoizedState = baseState;
-  let obj = { "Bool(false)": "decimal-pad", "Bool(false)": "number-pad", "Bool(false)": "phone-pad", lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
+  let obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
   tmp.queue = obj;
   const bindResult = dispatchSetState.bind(null, closure_111, obj);
   obj.dispatch = bindResult;
@@ -3957,7 +3883,7 @@ function pushSimpleEffect(tag, inst, create, deps) {
   let obj = { tag, create, deps, inst, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
-    obj = { CUSTOM_THEME_SHARE: 0, TAB_LABEL_TEXT_DEFAULT: 0, "Bool(true)": "100%", "Bool(true)": "10%" };
+    obj = { unicodeVersion: "onKeyPress", TypeError: "onKeyPressCapture", body: "onSubmitEditing", variant: "onSubmitEditingCapture" };
     _null.updateQueue = obj;
     updateQueue = obj;
   }
@@ -4226,7 +4152,7 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
   dispatchSetStateInternal(arg0, arg1, arg3, requestUpdateLane(arg0));
 }
 function useHostTransitionStatus() {
-  return readContext(closure_69);
+  return readContext(obj11);
 }
 function updateId() {
   return updateWorkInProgressHook().memoizedState;
@@ -4258,7 +4184,7 @@ function refreshCache(arg0) {
 }
 function dispatchReducerAction(arg0, arg1, action) {
   const tmp = requestUpdateLane(arg0);
-  const obj = { "Null": "decimal-pad", "Null": "number-pad", "Null": "phone-pad", "Null": "default", "Null": "email-address", "Null": "url", lane: tmp, action };
+  const obj = { "Bool(true)": "decimal-pad", "Bool(true)": "number-pad", "Bool(true)": "phone-pad", "Bool(true)": "default", "Bool(true)": "email-address", "Bool(true)": "url", lane: tmp, action };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(arg1, obj);
   } else {
@@ -4273,7 +4199,7 @@ function dispatchSetState(arg0, arg1, arg2) {
   dispatchSetStateInternal(arg0, arg1, arg2, requestUpdateLane(arg0));
 }
 function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
-  const obj = { "Null": "decimal-pad", "Null": "number-pad", "Null": "phone-pad", "Null": "default", "Null": "email-address", "Null": "url", lane, action };
+  const obj = { "Bool(true)": "decimal-pad", "Bool(true)": "number-pad", "Bool(true)": "phone-pad", "Bool(true)": "default", "Bool(true)": "email-address", "Bool(true)": "url", lane, action };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(lastRenderedReducer, obj);
   } else {
@@ -5657,7 +5583,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
       return null;
     } else if (1 & pendingProps.mode) {
       if (536870912 & arg2) {
-        pendingProps.memoizedState = {};
+        pendingProps.memoizedState = { 9223372036854775807: 180, 9223372036854775807: null };
         if (tmp) {
           let cachePool = null;
           if (null !== memoizedState) {
@@ -5683,7 +5609,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
         return null;
       }
     } else {
-      pendingProps.memoizedState = {};
+      pendingProps.memoizedState = { 9223372036854775807: 180, 9223372036854775807: null };
       if (tmp) {
         pushTransition(undefined, null);
       }
@@ -6301,7 +6227,7 @@ function scheduleSuspenseWorkOnFiber(lanes) {
 function initSuspenseListRenderState(memoizedState, isBackwards, tail, last, tailMode) {
   memoizedState = memoizedState.memoizedState;
   if (null === memoizedState) {
-    const obj = { isBackwards, last, tail, tailMode };
+    const obj = { "Null": false, "Null": false, "Null": false, isBackwards, last, tail, tailMode };
     memoizedState.memoizedState = obj;
   } else {
     memoizedState.isBackwards = isBackwards;
@@ -9179,7 +9105,7 @@ function throwAndUnwindWorkLoop(tag, arg1) {
                 } else {
                   const updateQueue2 = current.updateQueue;
                   if (null === updateQueue2) {
-                    let obj = { "Null": "o", "Null": "o" };
+                    let obj = { NewData: "o", NoData: "o" };
                     const _Set2 = Set;
                     const items1 = [arg2];
                     const set1 = new Set(items1);
@@ -10313,11 +10239,11 @@ obj = {
   }
 };
 let closure_31 = SyntheticEvent.extend(obj);
-const items = ["sectionHeaderSize"];
-const items1 = ["<string:1111963217>"];
-const items2 = [212455432868707280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000008387967290424303];
+const items = ["appSmallName"];
+const items1 = ["<string:1368828533>"];
+const items2 = [false, false];
 const items3 = [];
-const obj1 = { touchBank: items3 };
+const obj1 = { 0: "<string:3679518721>", "Null": "<string:3193045660>", "Null": "<string:1917108737>", "Null": "Boolean", touchBank: items3 };
 let closure_35 = {
   instrument(arg0) {
 
@@ -10364,7 +10290,7 @@ let closure_35 = {
 };
 let closure_36 = null;
 let closure_37 = 0;
-const obj2 = { startShouldSetResponder: { phasedRegistrationNames: { <string:4216690575>: "isArray", <string:2643235843>: "mode" }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: {}, dependencies: [null] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: { <string:4216690575>: null, <string:2643235843>: null }, dependencies: [null] }, moveShouldSetResponder: { phasedRegistrationNames: {}, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
+const obj2 = { startShouldSetResponder: { phasedRegistrationNames: { "Null": null, "Null": null }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: {}, dependencies: ["Dragging"] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: {}, dependencies: [null] }, moveShouldSetResponder: { phasedRegistrationNames: { "Null": null, "Null": null }, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
 const obj3 = {
   _getResponder() {
     return closure_36;
@@ -10714,7 +10640,7 @@ let closure_43 = {};
 let closure_44 = {};
 const customBubblingEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customBubblingEventTypes;
 const customDirectEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customDirectEventTypes;
-closure_40 = slice.call(["Array", "isArray"]);
+closure_40 = slice.call([false, false]);
 const result = recomputePluginOrdering();
 const obj6 = { ResponderEventPlugin: obj3, ReactNativeBridgeEventPlugin: obj7 };
 let flag = false;
@@ -10947,7 +10873,7 @@ const obj10 = {
 const get = require(dependencyMap[2]).ReactNativeViewConfigRegistry.get;
 let closure_65 = 3;
 let closure_68 = 0;
-let closure_69 = { $$typeof: forResult };
+const obj11 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, $$typeof: forResult };
 let closure_70 = [];
 let closure_71 = -1;
 let closure_72 = {};
@@ -11124,7 +11050,7 @@ let closure_121 = {
     }
     tmp2.baseState = tmp3;
     tmp2.memoizedState = tmp3;
-    const obj = { "Bool(false)": "decimal-pad", "Bool(false)": "number-pad", "Bool(false)": "phone-pad", lastRenderedReducer, lastRenderedState: tmp3 };
+    const obj = { HierarchyRequestError: "decimal-pad", WrongDocumentError: "number-pad", InvalidCharacterError: "phone-pad", lastRenderedReducer, lastRenderedState: tmp3 };
     tmp2.queue = obj;
     const bindResult = dispatchReducerAction.bind(null, closure_111, obj);
     obj.dispatch = bindResult;
@@ -11188,7 +11114,7 @@ let closure_121 = {
     const tmp = mountWorkInProgressHook();
     tmp.baseState = baseState;
     tmp.memoizedState = baseState;
-    const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+    const obj = {};
     tmp.queue = obj;
     const bindResult = dispatchOptimisticSetState.bind(null, closure_111, true, obj);
     obj.dispatch = bindResult;
@@ -11379,7 +11305,7 @@ let closure_132 = "function" === typeof reportError ? reportError : (message) =>
 };
 let closure_133 = Error("This is not a real error. It's an implementation detail of React's selective hydration feature. If this leaks into userspace, it's a bug in React. Please file an issue.");
 let closure_134 = false;
-let closure_135 = {};
+let closure_135 = { "Null": false, "Null": false, "Null": false, "Null": false };
 let closure_136 = false;
 let closure_137 = false;
 let closure_138 = "function" === typeof WeakSet ? WeakSet : Set;
@@ -11453,7 +11379,7 @@ if ("19.1.0" !== version) {
   };
   const _Map = Map;
   const map2 = new Map();
-  const obj11 = { <string:1103848429>: 3309567, soundshare_unique_pids: 601874432, <string:1033452114>: 4319821, <string:3316274585>: -367009792, <string:3175321650>: 1900146671, currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE };
+  const obj12 = { "Bool(true)": 3309567, "Bool(true)": 601874432, "Bool(true)": 4319821, "Bool(true)": -367009792, "Bool(true)": 1900146671, currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE };
   if (null !== obj10) {
     tmp32.rendererConfig = obj10;
   }
@@ -11461,7 +11387,7 @@ if ("19.1.0" !== version) {
     __REACT_DEVTOOLS_GLOBAL_HOOK__2 = globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__;
     if (!globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__.isDisabled) {
       if (tmp25.supportsFiber) {
-        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj11);
+        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj12);
       }
     }
   }
@@ -11595,7 +11521,7 @@ if ("19.1.0" !== version) {
       tmp21.refCount = tmp21.refCount + 1;
       tmp14.pooledCache = tmp21;
       tmp21.refCount = tmp21.refCount + 1;
-      obj = { GAME_SERVERS: true, statusText: true, cache: tmp21 };
+      obj = { unsafe_rawColors: true, np: true, cache: tmp21 };
       tmp19.memoizedState = obj;
       initializeUpdateQueue(tmp19);
       const result = map2.set(containerTag, tmp14);

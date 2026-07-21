@@ -1,5 +1,5 @@
 // Module ID: 1127
-// Function ID: 12845
+// Function ID: 12849
 // Name: reactRouterV7BrowserTracingIntegration
 // Dependencies: [978, 1136, 791]
 // Exports: reactRouterV7BrowserTracingIntegration, withSentryReactRouterV7Routing, wrapCreateBrowserRouterV7, wrapCreateMemoryRouterV7, wrapUseRoutesV7

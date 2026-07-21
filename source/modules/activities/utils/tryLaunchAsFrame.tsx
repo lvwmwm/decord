@@ -1,5 +1,5 @@
 // Module ID: 10502
-// Function ID: 82018
+// Function ID: 82029
 // Name: tryLaunchAsFrame
 // Dependencies: []
 // Exports: tryLaunchAsFrame

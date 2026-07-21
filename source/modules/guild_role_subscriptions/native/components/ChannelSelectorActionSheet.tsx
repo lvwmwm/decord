@@ -1,10 +1,10 @@
-// Module ID: 16317
-// Function ID: 125935
+// Module ID: 16325
+// Function ID: 125996
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 16317 (_createForOfIteratorHelperLoose)
+// Module 16325 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -130,21 +130,21 @@ const UnreadSetting = arg1(dependencyMap[7]).UnreadSetting;
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj = { "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.titleContainer = obj;
-const tmp3 = arg1(dependencyMap[8]);
-obj.searchContainer = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-const obj2 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
+obj.searchContainer = obj1;
+const obj2 = { color: "isArray", flexGrow: "useStateFromStores", height: "textAlign", textAlignVertical: "r", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 obj.createChannelButton = obj2;
 const obj3 = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
+const tmp3 = arg1(dependencyMap[8]);
 const merged = Object.assign(importDefault(dependencyMap[11])(tmp2.Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[10]).colors.TEXT_LINK, 16));
 obj3["marginStart"] = 8;
 obj.createChannelLabel = obj3;
 const importDefaultResult = importDefault(dependencyMap[11]);
 obj.bodyContainer = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-obj.channelRow = { width: 1, marginHorizontal: "comp_0" };
-obj.selectedIcon = { "Null": "animate_emoji", "Null": "message", "Null": null };
+obj.channelRow = { MKTG_HYPESQUAD_FORM_SUBMITTED: 1, marginInlineEnd: "comp_0" };
+obj.selectedIcon = { "Null": "animate_emoji", "Null": "message", c: null };
 let closure_14 = obj.createStyles(obj);
 const obj4 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ChannelSelectorActionSheet.tsx");
@@ -265,7 +265,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     obj6.color = str;
     obj6.source = importDefault(dependencyMap[29]);
     const items3 = [callback2(arg1(dependencyMap[28]).Icon, obj6), ];
-    const obj7 = { "Null": true, "Null": true, "Null": true, style: tmp.createChannelLabel };
+    const obj7 = { delete: true, dispatch: true, raw: true, style: tmp.createChannelLabel };
     const intl3 = arg1(dependencyMap[20]).intl;
     obj7.children = intl3.string(arg1(dependencyMap[20]).t.d7AN7W);
     items3[1] = callback2(arg1(dependencyMap[19]).Text, obj7);

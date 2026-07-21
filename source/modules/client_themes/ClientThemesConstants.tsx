@@ -1,5 +1,5 @@
 // Module ID: 3941
-// Function ID: 32500
+// Function ID: 32505
 // Name: items1
 // Dependencies: []
 
@@ -17,7 +17,7 @@ let obj = {
   },
   midpointPercentage: 27
 };
-const items = [{ 80: null, 0: null }, { 80: null, 0: null }, { 80: null, 0: null }];
+const items = [{}, {}, {}];
 const items1 = [obj, , , , , , , ];
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -31,7 +31,7 @@ obj = {
   },
   midpointPercentage: 27
 };
-const items2 = [{ 80: null, 0: null }, { 80: null, 0: null }];
+const items2 = [{}, {}];
 items1[1] = obj;
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -45,9 +45,9 @@ obj = {
   },
   midpointPercentage: 50
 };
-const items3 = [{ 80: null, 0: null }, { 80: 3.94, 0: "BG_GRADIENT_CHROMA_GLOW_2" }, { 80: 26.1, 0: "BG_GRADIENT_CHROMA_GLOW_3" }, { 80: 39.82, 0: "BG_GRADIENT_CHROMA_GLOW_4" }];
+const items3 = [{}, {}, {}, {}];
 items1[2] = obj;
-const items4 = [{ 80: true, 0: true }, {}, { 80: "<string:1079188684>", 0: "<string:71259713>" }];
+const items4 = [{}, {}, {}];
 items1[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.HANAMI,
@@ -72,7 +72,7 @@ const obj1 = {
   },
   midpointPercentage: 50
 };
-const items5 = [{ 80: "BG_GRADIENT_FOREST_2", 0: 29.93 }, { 80: "BG_GRADIENT_FOREST_3", 0: 48.64 }, { 80: "BG_GRADIENT_FOREST_4", 0: 67.85 }];
+const items5 = [{}, {}, {}];
 items1[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.SUNRISE,
@@ -97,7 +97,7 @@ const obj2 = {
   },
   midpointPercentage: 50
 };
-const items6 = [{ 80: "BG_GRADIENT_FOREST_5", 0: 83.54 }, { 80: "COMMUNITY_CONTENT", 0: "badgeBackgroundLightTheme" }];
+const items6 = [{}, {}];
 items1[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.COTTON_CANDY,
@@ -122,7 +122,7 @@ const obj3 = {
   },
   midpointPercentage: 50
 };
-const items7 = [{ 80: null, 0: null }, { 80: "ZA", 0: "+27" }, { 80: "BG_GRADIENT_CRIMSON_MOON_1", 0: 16.17 }, { 80: "BG_GRADIENT_CRIMSON_MOON_2", 0: 72 }];
+const items7 = [{}, {}, {}, {}];
 items1[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.LOFI_VIBES,
@@ -147,7 +147,7 @@ const obj4 = {
   },
   midpointPercentage: 27
 };
-const items8 = [{}, { 80: false, 0: false }, { 80: "<string:2726052160>", 0: "<string:3090219012>" }];
+const items8 = [{}, {}, {}];
 items1[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DESERT_KHAKI,
@@ -173,7 +173,7 @@ const obj5 = {
   },
   midpointPercentage: 50
 };
-const items9 = [{ 80: false, 0: false }, { 80: "LANGUAGE", 0: "GENERATED_POOLS_FOR_CURRENT_USER" }];
+const items9 = [{}, {}];
 const items10 = [
   {
     type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -212,7 +212,7 @@ const obj6 = {
   },
   midpointPercentage: 35
 };
-const items11 = [{ 80: false, 0: false }, { 80: "FAMILY_CENTER_LINK_CODE", 0: "LANGUAGE" }, { 80: "warning_id", 0: "CONFUSING_LANGUAGE" }, { 80: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332408009301823, 0: 96.35 }, { 80: "h", 0: "application" }];
+const items11 = [{}, {}, {}, {}, {}];
 items10[1] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CHROMA_GLOW,
@@ -237,7 +237,7 @@ const obj7 = {
   },
   midpointPercentage: 15
 };
-const items12 = [{ 80: "firstItem", 0: "LANGUAGE" }, { 80: "<string:1094728289>", 0: "BG_GRADIENT_RETRO_STORM_2" }, { 80: "<string:641810504>", 0: "<string:822084690>" }, { 80: false, 0: false }, { 80: null, 0: 9 }];
+const items12 = [{}, {}, {}, {}, {}];
 items10[2] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.FOREST,
@@ -262,7 +262,7 @@ const obj8 = {
   },
   midpointPercentage: 50
 };
-const items13 = [{ 80: "Map", 0: "IconComponent" }, { 80: 617066004, 0: -1928380096 }];
+const items13 = [{}, {}];
 items10[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CRIMSON_MOON,
@@ -287,7 +287,7 @@ const obj9 = {
   },
   midpointPercentage: 30
 };
-const items14 = [{ 80: 0.000000000000000000000000000000000000000000000000000000000000000000000001133217000864102, 0: 48.31 }, { 80: false, 0: false }];
+const items14 = [{}, {}];
 items10[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MIDNIGHT_BLURPLE,
@@ -312,7 +312,7 @@ const obj10 = {
   },
   midpointPercentage: 24
 };
-const items15 = [{ 80: null, 0: null }, {}];
+const items15 = [{}, {}];
 items10[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MARS,
@@ -337,7 +337,7 @@ const obj11 = {
   },
   midpointPercentage: 50
 };
-const items16 = [{ 80: "Map", 0: "label" }, { 80: "<string:1311558860>", 0: "<string:806240576>" }];
+const items16 = [{}, {}];
 items10[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DUSK,
@@ -362,7 +362,7 @@ const obj12 = {
   },
   midpointPercentage: 50
 };
-const items17 = [{ 80: null, 0: null }, { 80: 1344442204, 0: -1569570496 }, {}];
+const items17 = [{}, {}, {}];
 items10[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.UNDER_THE_SEA,
@@ -387,7 +387,7 @@ const obj13 = {
   },
   midpointPercentage: 50
 };
-const items18 = [{ 80: true, 0: true }, { 80: 3942650610255696600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -0.00000000000000000000000000000000000021064861087285647 }, { 80: "memo", 0: "s" }, { 80: 1757864160196875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000006836612011437434 }];
+const items18 = [{}, {}, {}, {}];
 items10[8] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.RETRO_STORM,
@@ -412,7 +412,7 @@ const obj14 = {
   },
   midpointPercentage: 61
 };
-const items19 = [{}, { 80: "flex-start", 0: "center" }, {}];
+const items19 = [{}, {}, {}];
 items10[9] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.NEON_NIGHTS,
@@ -437,7 +437,7 @@ const obj15 = {
   },
   midpointPercentage: 50
 };
-const items20 = [{}, {}, { 80: "transform", 0: "Text" }];
+const items20 = [{}, {}, {}];
 items10[10] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.STRAWBERRY_LEMONADE,
@@ -462,7 +462,7 @@ const obj16 = {
   },
   midpointPercentage: 32
 };
-const items21 = [{ 80: null, 0: null }, { 80: true, 0: true }, { 80: "Array", 0: "isArray" }, {}, { 80: null, 0: 1 }];
+const items21 = [{}, {}, {}, {}, {}];
 items10[11] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.AURORA,
@@ -525,7 +525,7 @@ const obj20 = {
   },
   midpointPercentage: 50
 };
-const items24 = [{ 80: true, 0: true }, { 80: 1451180288, 0: -96403455 }];
+const items24 = [{}, {}];
 const items25 = [...items10, obj19, obj20];
 const items26 = [obj19, ...items1, obj20];
 const obj18 = {

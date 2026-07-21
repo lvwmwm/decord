@@ -1,7 +1,7 @@
 // Module ID: 9823
-// Function ID: 76190
+// Function ID: 76201
 // Name: measureView
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: measureViewRef, measureViewRefInView, measureViewRefInWindow
 
 // Module 9823 (measureView)

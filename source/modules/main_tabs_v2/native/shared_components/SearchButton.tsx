@@ -1,5 +1,5 @@
 // Module ID: 11404
-// Function ID: 88710
+// Function ID: 88722
 // Name: SEARCH_BAR_HEIGHT
 // Dependencies: []
 // Exports: SearchButtonContent
@@ -10,7 +10,7 @@ const Pressable = arg1(dependencyMap[1]).Pressable;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[4]).colors.INPUT_BACKGROUND_DEFAULT };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.searchButton = obj;
 obj.roundedCorners = { borderRadius: 20 };
 const tmp3 = arg1(dependencyMap[2]);

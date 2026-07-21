@@ -1,5 +1,5 @@
 // Module ID: 9730
-// Function ID: 75697
+// Function ID: 75708
 // Name: useFormattedSKUPrice
 // Dependencies: []
 // Exports: useFormattedSKUPrice
@@ -50,9 +50,9 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       priceString = stateFromStores.priceString;
     }
     if (null != priceString) {
-      let obj = { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true, normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
+      let obj = { pauseInvites: false, inc: false, EnableServerTrendingNotifications: null, normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
     } else {
-      obj = { "Null": 0, "Null": 0, "Null": "100%", "Null": "10%" };
+      obj = { y: "onKeyPress", isArray: "onKeyPressCapture", mn: "onSubmitEditing", raw: "onSubmitEditingCapture" };
     }
     return obj;
   }, items3);

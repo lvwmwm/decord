@@ -1,10 +1,10 @@
-// Module ID: 4635
-// Function ID: 40275
+// Module ID: 4634
+// Function ID: 40282
 // Name: TextIcon
 // Dependencies: []
 // Exports: TextIcon
 
-// Module 4635 (TextIcon)
+// Module 4634 (TextIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TextIcon.tsx");

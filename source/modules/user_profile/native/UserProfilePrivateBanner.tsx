@@ -1,5 +1,5 @@
 // Module ID: 12017
-// Function ID: 92848
+// Function ID: 92860
 // Name: UserProfilePrivateBanner
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { paddingBottom: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: arg1(dependencyMap[2]).PROFILE_TOP_LAYER_Z_INDEX };
+obj = { createGiftCode: 140, : null, trustProtocol: "ad61eda1bea496e5c4dfb770ef28c56b", getItemProps: "server-invite-envelope", SEO_PAGE_VIEWED: "png", paddingBottom: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: arg1(dependencyMap[2]).PROFILE_TOP_LAYER_Z_INDEX };
 obj.banner = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

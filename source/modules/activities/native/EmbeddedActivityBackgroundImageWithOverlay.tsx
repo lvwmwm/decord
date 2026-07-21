@@ -1,5 +1,5 @@
 // Module ID: 10602
-// Function ID: 82716
+// Function ID: 82727
 // Name: EmbeddedActivityBackgroundImageWithOverlay
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BLACK };
 obj.overlay = obj;
 let closure_8 = obj.createStyles(obj);
-let closure_9 = ["opacity"];
+let closure_9 = [-242739878136961300000000000000000];
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
 

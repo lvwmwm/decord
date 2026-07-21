@@ -1,10 +1,10 @@
-// Module ID: 7714
-// Function ID: 61408
+// Module ID: 7715
+// Function ID: 61420
 // Name: isPublicSystemMessage
 // Dependencies: []
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 7714 (isPublicSystemMessage)
+// Module 7715 (isPublicSystemMessage)
 const _module = require(dependencyMap[0]);
 ({ PUBLIC_GUILD_ANNOUNCEMENTS_GUILD_ID: closure_3, PUBLIC_GUILD_UPDATES_WEBHOOK_USER_ID: closure_4, ENABLE_COMMUNITY_FLOW_MODAL_KEY: closure_5 } = _module);
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;

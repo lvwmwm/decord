@@ -1,5 +1,5 @@
 // Module ID: 5697
-// Function ID: 49044
+// Function ID: 49052
 // Name: GuildBadgeV2
 // Dependencies: []
 // Exports: default, hasGuildBadge

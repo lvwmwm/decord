@@ -1,5 +1,5 @@
 // Module ID: 10025
-// Function ID: 77452
+// Function ID: 77463
 // Name: orderByTotalMemberCount
 // Dependencies: []
 // Exports: guildDirectoryEntryFromServer, rankByDateAdded, rankGuildEntries
@@ -7,11 +7,11 @@
 // Module 10025 (orderByTotalMemberCount)
 function orderByTotalMemberCount(found) {
   const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return importDefault(dependencyMap[2]).orderBy(found, items, [false]);
+  return importDefault(dependencyMap[2]).orderBy(found, items, []);
 }
 function orderByDateAdded(items) {
   items = [(createdAt) => createdAt.createdAt];
-  return importDefault(dependencyMap[2]).orderBy(items, items, [false]);
+  return importDefault(dependencyMap[2]).orderBy(items, items, []);
 }
 const DirectoryEntryTypes = require(dependencyMap[0]).DirectoryEntryTypes;
 const _module = require(dependencyMap[3]);

@@ -33,7 +33,7 @@ function convertPointerEventToMouseEvent(nativeEvent) {
 }
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = Object.freeze({ NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: { -9223372036854775808: "absolute", 0: 0, 9223372036854775807: -1, 0: null, 0: "\u{1F468}\u200D\u{1F4BB}", -9223372036854775808: true, 9223372036854775807: 6 }, RESPONDER_INACTIVE_PRESS_OUT: { -9223372036854775808: "isArray", 0: "key", 9223372036854775807: "constructor", 0: "apply", 0: "isArray", -9223372036854775808: "isArray", 9223372036854775807: "isArray" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: { -9223372036854775808: null, 0: null, 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: null, 9223372036854775807: null }, ERROR: {} });
+let closure_5 = Object.freeze({ NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "constructor", "Bool(false)": "apply" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, ERROR: {} });
 function isActiveSignal(arg0) {
   let tmp = "RESPONDER_ACTIVE_PRESS_IN" === arg0;
   if (!tmp) {

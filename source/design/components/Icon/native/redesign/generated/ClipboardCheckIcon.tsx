@@ -1,10 +1,10 @@
-// Module ID: 14503
-// Function ID: 109206
+// Module ID: 14506
+// Function ID: 109238
 // Name: ClipboardCheckIcon
 // Dependencies: []
 // Exports: ClipboardCheckIcon
 
-// Module 14503 (ClipboardCheckIcon)
+// Module 14506 (ClipboardCheckIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClipboardCheckIcon.tsx");

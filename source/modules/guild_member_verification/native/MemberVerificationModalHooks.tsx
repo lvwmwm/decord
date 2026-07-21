@@ -1,5 +1,5 @@
 // Module ID: 9141
-// Function ID: 71652
+// Function ID: 71663
 // Name: useUserVerificationState
 // Dependencies: []
 // Exports: useSetInitialVerificationEffect

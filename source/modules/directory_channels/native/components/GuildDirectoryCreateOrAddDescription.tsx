@@ -1,5 +1,5 @@
 // Module ID: 10040
-// Function ID: 77601
+// Function ID: 77612
 // Name: GuildDirectoryCreateOrAddDescription
 // Dependencies: []
 // Exports: default
@@ -29,7 +29,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj = {};
   obj = { style: tmp.container, keyboardShouldPersistTaps: "handled" };
   obj = { style: tmp.header };
-  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[11]).intl;
   obj1.children = intl.string(arg1(dependencyMap[11]).t.5bQcoa);
   const items = [callback(arg1(dependencyMap[10]).Text, obj1), ];

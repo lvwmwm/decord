@@ -1,7 +1,7 @@
 // Module ID: 11179
-// Function ID: 86966
+// Function ID: 86978
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: queryData
 
 // Module 11179 (_createForOfIteratorHelperLoose)

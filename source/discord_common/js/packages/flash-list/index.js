@@ -1,9 +1,9 @@
-// Module ID: 7872
-// Function ID: 62673
+// Module ID: 7873
+// Function ID: 62686
 // Name: defaultMVCPConfig
 // Dependencies: []
 
-// Module 7872 (defaultMVCPConfig)
+// Module 7873 (defaultMVCPConfig)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let tmp2;

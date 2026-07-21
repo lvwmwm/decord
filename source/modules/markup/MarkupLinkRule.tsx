@@ -1,9 +1,9 @@
-// Module ID: 4565
-// Function ID: 40002
+// Module ID: 4564
+// Function ID: 40009
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 4565 (_createForOfIteratorHelperLoose)
+// Module 4564 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -314,7 +314,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let importDefaultResult = importDefault(dependencyMap[1]);
 let obj = { max: 50 };
 importDefaultResult = new importDefaultResult(obj);
-const items = ["navigateToCreateThread", "hideLegacyUsername", "DiscoveryBannedSearchWords", "hideLegacyUsername", "PRIVATE_CHANNEL_INTEGRATION_ADDED", "hideLegacyUsername"];
+const items = ["useOnPressDMItem", "__KvStorage", "previousIndicatorWidth", "__KvStorage", "useShouldTrackAnnouncementMessageViews", "__KvStorage"];
 const items1 = [arg1(dependencyMap[3]).AST_KEY.TEXT, arg1(dependencyMap[3]).AST_KEY.UNDERLINE, arg1(dependencyMap[3]).AST_KEY.STRONG, arg1(dependencyMap[3]).AST_KEY.ITALICS, arg1(dependencyMap[3]).AST_KEY.STRIKETHROUGH, arg1(dependencyMap[3]).AST_KEY.INLINE_CODE, arg1(dependencyMap[3]).AST_KEY.SPOILER, arg1(dependencyMap[3]).AST_KEY.LINE_BREAK, arg1(dependencyMap[3]).AST_KEY.TIMESTAMP];
 const items2 = [...items1, arg1(dependencyMap[3]).AST_KEY.EMOJI, arg1(dependencyMap[3]).AST_KEY.CUSTOM_EMOJI];
 const items3 = [arg1(dependencyMap[3]).AST_KEY.LIST, arg1(dependencyMap[3]).AST_KEY.HEADING, arg1(dependencyMap[3]).AST_KEY.BLOCK_QUOTE, arg1(dependencyMap[3]).AST_KEY.SUBTEXT];

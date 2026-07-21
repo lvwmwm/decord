@@ -1,5 +1,5 @@
 // Module ID: 11182
-// Function ID: 87022
+// Function ID: 87034
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -91,13 +91,13 @@ obj = {
     let obj = { surface: collections.surface, activeState: collections.activeState };
     const tmp = getKey(obj);
     const mapped = collections.map((application_directory_collection_items) => {
-      application_directory_collection_items.application_directory_collection_items = callback(closure_1[5]).sortBy(application_directory_collection_items.application_directory_collection_items, ["es-CO", "+uI23H"]);
+      application_directory_collection_items.application_directory_collection_items = callback(closure_1[5]).sortBy(application_directory_collection_items.application_directory_collection_items, ["Set", "shapes"]);
       return application_directory_collection_items;
     });
     let obj1 = importDefault(dependencyMap[5]);
     obj = {};
     const merged = Object.assign(closure_9);
-    obj[tmp] = obj1.sortBy(mapped, ["es-CO", "+uI23H"]);
+    obj[tmp] = obj1.sortBy(mapped, ["Set", "shapes"]);
     closure_9 = obj;
     obj = {};
     const merged1 = Object.assign(closure_10);

@@ -1,10 +1,10 @@
-// Module ID: 7780
-// Function ID: 62088
+// Module ID: 7781
+// Function ID: 62101
 // Name: getURL
 // Dependencies: []
 // Exports: default
 
-// Module 7780 (getURL)
+// Module 7781 (getURL)
 function getURL(arg0) {
   let proxyURL;
   let url;

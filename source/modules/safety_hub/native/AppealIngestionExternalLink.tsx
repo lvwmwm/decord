@@ -1,5 +1,5 @@
 // Module ID: 11035
-// Function ID: 85917
+// Function ID: 85928
 // Name: AppealIngestionExternalLink
 // Dependencies: []
 // Exports: default
@@ -12,10 +12,10 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { marginBottom: 8, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.childButton = obj;
-const obj1 = { "234395307759108106": "<string:3207659522>", "365975655608745985": "<string:3578855426>", "512412940897484800": "<string:1564545463>", reachedLimit: "<string:1912603216>", limit: "toString", hasBailedAst: true, id: true, format_type: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.childContainer = obj1;
-obj.childButtonText = {};
 const tmp3 = arg1(dependencyMap[2]);
+obj.childContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj.childButtonText = {};
+const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.chevron = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_6 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -35,7 +35,7 @@ export default function AppealIngestionExternalLink(text) {
     }
   };
   obj = { style: tmp.childContainer };
-  obj = { "Null": null, "Null": null, "Null": null, style: tmp.childButtonText, children: text.text };
+  obj = { delete: null, dispatch: null, raw: null, style: tmp.childButtonText, children: text.text };
   const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
   const obj1 = { source: arg1(dependencyMap[9]), color: tmp.chevron.color };
   items[1] = callback(arg1(dependencyMap[8]).Icon, obj1);

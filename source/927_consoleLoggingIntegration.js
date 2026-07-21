@@ -1,16 +1,15 @@
 // Module ID: 927
-// Function ID: 10090
+// Function ID: 10094
 // Name: consoleLoggingIntegration
-// Dependencies: [943, 5, 77, 934, 936, 816, 946, 845, 817]
+// Dependencies: []
 
 // Module 927 (consoleLoggingIntegration)
-import _OverloadYield from "_OverloadYield";
-import getSpanStatusFromHttpCode from "getSpanStatusFromHttpCode";
-
+const _module = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = _OverloadYield({}, require("asyncGeneratorStep").SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.log.console");
+let closure_2 = _module({}, require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.log.console");
+const _module1 = require(dependencyMap[8]);
 
-export const consoleLoggingIntegration = getSpanStatusFromHttpCode.defineIntegration(function _consoleLoggingIntegration() {
+export const consoleLoggingIntegration = _module1.defineIntegration(function _consoleLoggingIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];

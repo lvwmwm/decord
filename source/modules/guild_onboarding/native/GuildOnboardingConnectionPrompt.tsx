@@ -1,5 +1,5 @@
 // Module ID: 5459
-// Function ID: 46618
+// Function ID: 46626
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -100,9 +100,9 @@ let obj = arg1(dependencyMap[11]);
 obj = { flex: { flex: 1 } };
 obj = { marginTop: arg1(dependencyMap[12]).NAV_BAR_HEIGHT, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-const obj1 = { flexDirection: 10388343592192675000000000000000000, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.scrollContainer = obj1;
 const tmp3 = arg1(dependencyMap[10]);
+obj.scrollContainer = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
+const obj1 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
 obj.header = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
 const obj2 = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
 obj.title = { marginBottom: importDefault(dependencyMap[13]).space.PX_8 };
@@ -262,7 +262,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
   ({ flex: arr12[0], container: arr12[1] } = tmp);
   if (stateFromStores3) {
     obj = {};
-    const items10 = [tmp.flex, { "Null": null, "Null": null }];
+    const items10 = [tmp.flex, { margin: null, backgroundColor: null }];
     obj.style = items10;
     obj1 = {};
     const intl4 = arg1(dependencyMap[23]).intl;
@@ -278,7 +278,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     items11[1] = obj4;
     obj3.contentContainerStyle = items11;
     obj5 = { style: tmp.header };
-    obj6 = { 1501064855: "<string:3170107394>", -1267889981: "<string:973406210>", -1145697943: "<string:821166084>", -1266241916: "<string:343539713>", style: tmp.title };
+    obj6 = { style: tmp.title };
     const intl = arg1(dependencyMap[23]).intl;
     obj6.children = intl.string(arg1(dependencyMap[23]).t.eDVMrA);
     const items12 = [callback(arg1(dependencyMap[22]).Text, obj6), ];

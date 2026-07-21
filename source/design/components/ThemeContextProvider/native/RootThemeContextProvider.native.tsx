@@ -1,5 +1,5 @@
 // Module ID: 10791
-// Function ID: 83778
+// Function ID: 83789
 // Name: RootThemeContextProvider
 // Dependencies: []
 // Exports: DisableCustomTheme, RootThemeContextProvider

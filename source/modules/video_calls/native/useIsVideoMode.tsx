@@ -1,13 +1,14 @@
 // Module ID: 9048
-// Function ID: 71039
+// Function ID: 71050
 // Name: isVideoMode
 // Dependencies: [0, 4294967295, 0, 0, 4294967295, 0, 0]
 // Exports: default
 
 // Module 9048 (isVideoMode)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+import closure_2 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
 
 function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
   let obj = closure_9;
@@ -22,7 +23,7 @@ function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
     obj2 = closure_5;
   }
   if (obj3 === undefined) {
-    obj3 = __exportStarResult1;
+    obj3 = closure_2;
   }
   if (obj4 === undefined) {
     obj4 = closure_6;
@@ -40,10 +41,10 @@ function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
 }
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[4]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
+result = result.fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
 
 export default function useIsVideoMode() {
-  const items = [closure_3, closure_5, closure_4, closure_6, __exportStarResult1];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(closure_3, closure_5, __exportStarResult1, closure_6, closure_4));
+  const items = [closure_3, closure_5, closure_4, closure_6, closure_2];
+  return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(closure_3, closure_5, closure_2, closure_6, closure_4));
 };
 export { isVideoMode };

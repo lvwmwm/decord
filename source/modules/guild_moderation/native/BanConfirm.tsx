@@ -1,5 +1,5 @@
 // Module ID: 10985
-// Function ID: 85498
+// Function ID: 85509
 // Name: items
 // Dependencies: []
 
@@ -132,7 +132,7 @@ const memoResult = importAllResult.memo(function BanConfirm(arg0) {
   const stateFromStores1 = obj1.useStateFromStores(items2, () => user.getUser(closure_1));
   let closure_5 = importAllResult.useRef(0);
   let closure_6 = importAllResult.useRef("");
-  const tmp7 = callback(stateFromStores1.useState(() => ({ <string:201235365>: null, <string:1376280905>: null })), 2);
+  const tmp7 = callback(stateFromStores1.useState(() => ({ right: null, ti: null })), 2);
   const first = tmp7[0];
   let closure_7 = tmp7[1];
   const items3 = [stateFromStores, stateFromStores1, onBan];
@@ -154,11 +154,11 @@ const memoResult = importAllResult.memo(function BanConfirm(arg0) {
       obj5.username = obj9.getName(stateFromStores1);
       obj4.children = intl.format(arg1(dependencyMap[6]).t.Qd6w7T, obj5);
       items4[1] = callback2(arg1(dependencyMap[15]).Text, obj4);
-      const obj6 = { children: stateFromStores.name };
+      const obj6 = { hasMaxConnections: "isArray", isBoostOnlySubscription: "accessibilityRole", children: stateFromStores.name };
       items4[2] = callback2(arg1(dependencyMap[15]).Text, obj6);
       obj2.children = items4;
       const items5 = [callback3(closure_6, obj2), , , , , ];
-      const obj7 = { "Null": "isArray", "Null": "constructor", "Null": "bind", style: tmp.blurb };
+      const obj7 = { delete: "Array", dispatch: "VOICE_PROCESSING", raw: "Array", style: tmp.blurb };
       const intl2 = arg1(dependencyMap[6]).intl;
       const obj8 = {};
       let obj13 = importDefault(dependencyMap[16]);

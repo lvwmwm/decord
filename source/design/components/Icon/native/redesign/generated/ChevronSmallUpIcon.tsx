@@ -1,10 +1,10 @@
-// Module ID: 12385
-// Function ID: 94672
+// Module ID: 12387
+// Function ID: 94694
 // Name: ChevronSmallUpIcon
 // Dependencies: []
 // Exports: ChevronSmallUpIcon
 
-// Module 12385 (ChevronSmallUpIcon)
+// Module 12387 (ChevronSmallUpIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChevronSmallUpIcon.tsx");

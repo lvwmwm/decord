@@ -1,10 +1,10 @@
-// Module ID: 16117
-// Function ID: 124244
+// Module ID: 16125
+// Function ID: 124305
 // Name: PlatformTypes
 // Dependencies: []
 // Exports: default
 
-// Module 16117 (PlatformTypes)
+// Module 16125 (PlatformTypes)
 let PlatformTypes;
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
@@ -21,7 +21,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGRO
 obj.screenContainer = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.screenContent = { paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
-obj.platformIcon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.platformIcon = {};
 let closure_11 = obj.createStyles(obj);
 const obj1 = { paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx");
@@ -44,7 +44,7 @@ export default function GuildSettingsModalIntegrations(contentContainerStyle) {
   const items1 = [closure_4];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
     if (null == stateFromStores) {
-      let guildPermissionProps = { cix: null, assign: null };
+      let guildPermissionProps = { initialPullTabPosition: null, easterEggSpacing: null };
     } else {
       guildPermissionProps = found.getGuildPermissionProps(stateFromStores);
     }

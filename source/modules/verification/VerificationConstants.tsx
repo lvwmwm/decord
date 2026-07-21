@@ -1,7 +1,7 @@
 // Module ID: 9177
-// Function ID: 71880
+// Function ID: 71891
 // Name: ChangeEmailReasons
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9177 (ChangeEmailReasons)
 const obj = { DISCORD_EMPLOYEE_ASKED_ME_TO: 0, [0]: "DISCORD_EMPLOYEE_ASKED_ME_TO", SOMEONE_ASKED_ME_TO: 1, [1]: "SOMEONE_ASKED_ME_TO", NEW_EMAIL: 2, [2]: "NEW_EMAIL", SOMETHING_ELSE: 3, [3]: "SOMETHING_ELSE" };

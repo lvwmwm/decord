@@ -1,8 +1,8 @@
-// Module ID: 15434
-// Function ID: 117767
+// Module ID: 15437
+// Function ID: 117806
 // Dependencies: []
 
-// Module 15434
+// Module 15437
 let Fonts;
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = importDefault(dependencyMap[12])(message, { <string:2737435628>: null, <string:173132897>: null }).content;
+          const content1 = importDefault(dependencyMap[12])(message, { "Bool(true)": null, "Bool(true)": null }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -134,7 +134,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
     }
   }
   obj = { style: channel.style, children: jsx(arg1(dependencyMap[14]).LegacyText, obj) };
-  obj = { style: flag ? tmp.messageContent : tmp.systemContent, children: stringResult };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, style: flag ? tmp.messageContent : tmp.systemContent, children: stringResult };
   return <View {...obj} />;
 });
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");

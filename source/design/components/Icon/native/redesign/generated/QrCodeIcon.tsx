@@ -1,10 +1,10 @@
-// Module ID: 13662
-// Function ID: 103471
+// Module ID: 13664
+// Function ID: 103493
 // Name: QrCodeIcon
 // Dependencies: []
 // Exports: QrCodeIcon
 
-// Module 13662 (QrCodeIcon)
+// Module 13664 (QrCodeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/QrCodeIcon.tsx");

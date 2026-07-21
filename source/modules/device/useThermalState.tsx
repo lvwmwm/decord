@@ -1,5 +1,5 @@
 // Module ID: 10515
-// Function ID: 82095
+// Function ID: 82106
 // Name: _getThermalState
 // Dependencies: []
 // Exports: default, getThermalState

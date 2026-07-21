@@ -1,10 +1,10 @@
 // Module ID: 6645
-// Function ID: 51024
-// Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
+// Function ID: 51032
+// Name: UserSettingsPremium
 // Dependencies: []
 // Exports: default
 
-// Module 6645 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
+// Module 6645 (UserSettingsPremium)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -20,10 +20,9 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[9]);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = arg1(dependencyMap[10]));
 const jsx = arg1(dependencyMap[11]).jsx;
-let obj = arg1(dependencyMap[12]);
-obj = { "Bool(true)": null, "Bool(true)": 0, "Bool(true)": 0, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
-let closure_20 = obj.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: obj, loadingSpinnerContainer: { 9223372036854775807: 0, 618916762573: 0, 0: 0, 9223372036854775807: 0 } });
 const tmp4 = arg1(dependencyMap[10]);
+let closure_20 = arg1(dependencyMap[12]).createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, loadingSpinnerContainer: { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 } });
+const obj = arg1(dependencyMap[12]);
 const result = arg1(dependencyMap[44]).fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremium.tsx");
 
 export default function UserSettingsPremium(applicationId) {
@@ -260,6 +259,6 @@ export default function UserSettingsPremium(applicationId) {
       }
     }
   }
-  obj8 = { style: tmp.loadingSpinnerContainer, children: <closure_5 /> };
+  obj8 = { style: tmp.loadingSpinnerContainer, children: <closure_5 font={397} dx={97} /> };
   return <closure_6 {...obj8} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 61394
+// Module ID: 7709
+// Function ID: 61406
 // Name: createStageSpeakerSystemMessage
 // Dependencies: []
 // Exports: createStageSpeakerSystemMessage
 
-// Module 7708 (createStageSpeakerSystemMessage)
+// Module 7709 (createStageSpeakerSystemMessage)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 5245
-// Function ID: 44425
+// Module ID: 5244
+// Function ID: 44432
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5245 (_createForOfIteratorHelperLoose)
+// Module 5244 (_createForOfIteratorHelperLoose)
 let ChannelTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -140,7 +140,7 @@ function isValidGuildMember(joinedAt) {
 }
 function stripAndNormalize(arg0) {
   if (null == arg0) {
-    return [null, null];
+    return [true, true];
   } else {
     const stripDiacriticsResult = arg1(dependencyMap[35]).stripDiacritics(arg0);
     const items = [stripDiacriticsResult, ];
@@ -2270,7 +2270,7 @@ obj = {
               }
               return mentionable;
             }).value();
-            obj = { keys: [] };
+            obj = { keys: [true] };
             const obj5 = arg1(dependencyMap[47]);
             const substr = arg1(dependencyMap[47]).matchSorter(valueResult, query, obj).slice(0, limit - closure_7);
             closure_9 = substr;

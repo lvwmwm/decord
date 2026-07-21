@@ -1,5 +1,5 @@
 // Module ID: 8998
-// Function ID: 70827
+// Function ID: 70838
 // Name: FederatedSocialModal
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ let closure_5 = importAll(dependencyMap[2]);
 const WebBrowserType = arg1(dependencyMap[3]).WebBrowserType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(false)": 16, "Bool(false)": 20, "Bool(false)": null } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(true)": 16, "Bool(true)": 20, "Bool(true)": null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 
@@ -71,7 +71,7 @@ export default function FederatedSocialModal(platformType) {
       const exampleHandle = obj1.getExampleHandle(platformType);
       let obj2 = callback(platformType[10]);
       obj = { bottom: true, style: tmp.container };
-      obj = { style: tmp.description };
+      obj = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
       const intl2 = callback(platformType[7]).intl;
       obj1 = { serviceName: name };
       obj.children = intl2.formatToPlainString(callback(platformType[7]).t.7TByKh, obj1);

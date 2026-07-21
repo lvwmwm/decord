@@ -1,10 +1,10 @@
-// Module ID: 8221
-// Function ID: 64951
+// Module ID: 8222
+// Function ID: 64964
 // Name: NameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 8221 (NameplateInner)
+// Module 8222 (NameplateInner)
 function NameplateInner(isFocused) {
   let animatedImageUrl;
   let isPressed;
@@ -131,7 +131,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg4) => {
   let obj = { container: {} };
-  obj = { "Null": null, "Null": null, "Null": null };
+  obj = {};
   let num = 1;
   let num2 = 1;
   if (!arg0) {
@@ -155,7 +155,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg
   }
   obj.opacity = num2;
   obj.gradient = obj;
-  obj = { visible: true, hasSpoiler: true, pointerEvents: true, title: true };
+  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   if (!arg0) {
     if (arg3) {
       if (!arg2) {

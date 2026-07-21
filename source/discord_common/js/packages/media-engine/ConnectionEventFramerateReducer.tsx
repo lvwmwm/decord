@@ -1,5 +1,5 @@
 // Module ID: 4277
-// Function ID: 37452
+// Function ID: 37460
 // Name: logger
 // Dependencies: []
 
@@ -87,7 +87,7 @@ const tmp4 = () => {
     key: "updateRemoteWantsFramerate",
     value() {
       const connection = this.connection;
-      connection.updateVideoQuality([]);
+      connection.updateVideoQuality(["active"]);
     }
   };
   items[4] = {

@@ -316,7 +316,7 @@ function parseRadialGradientCSSString(str) {
             const str52 = str50.toLowerCase();
             const trimmed4 = str51.toLowerCase().trim();
             const items = ["accessibilityLabelledBy", "accessibilityLiveRegion", "accessibilityState"];
-            const items1 = ["ResponderEventPlugin", "ReactNativeBridgeEventPlugin", "<string:1644167512>"];
+            const items1 = [];
             if (items.includes(trimmed3)) {
               if (items1.includes(trimmed4)) {
                 let str26 = "0%";
@@ -714,13 +714,13 @@ function getDirectionForKeyword(formatted) {
   } else {
     formatted = formatted.replace(/\s+/g, " ").toLowerCase();
     if ("to top" === formatted) {
-      return { paddingHorizontal: false, alignItems: false };
+      return { onError: false, hybridRef: false };
     } else if ("to right" === formatted) {
-      return { paddingHorizontal: "<string:2515402609>", alignItems: "LengthDelimited" };
+      return { onError: "<string:2515402609>", hybridRef: "LengthDelimited" };
     } else if ("to bottom" === formatted) {
       return {};
     } else if ("to left" === formatted) {
-      return { paddingHorizontal: 1105662145, alignItems: 1071644672 };
+      return { onError: 1105662145, hybridRef: 1071644672 };
     } else {
       if ("to top right" !== formatted) {
         if ("to right top" !== formatted) {
@@ -733,16 +733,16 @@ function getDirectionForKeyword(formatted) {
                       return null;
                     }
                   }
-                  return { paddingHorizontal: 1105289233, alignItems: 1798307697 };
+                  return { onError: 1105289233, hybridRef: 1798307697 };
                 }
               }
-              return { paddingHorizontal: 1105704685, alignItems: 2145386496 };
+              return { onError: 1105704685, hybridRef: 2145386496 };
             }
           }
-          return { paddingHorizontal: 89884678807936840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 89884678811215600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          return { onError: 89884678807936840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, hybridRef: 89884678811215600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
         }
       }
-      return { paddingHorizontal: 3342436, alignItems: 893378560 };
+      return { onError: 3342436, hybridRef: 893378560 };
     }
     const str9 = formatted.replace(/\s+/g, " ");
   }

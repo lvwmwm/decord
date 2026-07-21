@@ -1,5 +1,5 @@
 // Module ID: 12032
-// Function ID: 92964
+// Function ID: 92976
 // Name: RemediatedUserNotice
 // Dependencies: []
 // Exports: default
@@ -32,7 +32,7 @@ export default function RemediatedUserNotice(user) {
     const items1 = [tmp.container, tmp2.card, user.style];
     obj.style = items1;
     if (isBlocked) {
-      obj = { -9223372036854775808: "SERVER_GUIDE_CHANNEL_SELECTED", 0: "VOLCANO", 0: "r" };
+      obj = { <string:1643205302>: -1488907821, <string:1415816450>: 1912603216, <string:4283523744>: 60 };
       const intl = arg1(dependencyMap[10]).intl;
       obj.children = intl.string(arg1(dependencyMap[10]).t.oC/fU6);
       isBlocked = callback(arg1(dependencyMap[9]).Text, obj);
@@ -40,17 +40,17 @@ export default function RemediatedUserNotice(user) {
     const items2 = [isBlocked, ];
     if (isIgnored) {
       const obj1 = {};
-      const obj2 = { -9223372036854775808: "SERVER_GUIDE_CHANNEL_SELECTED", 0: "VOLCANO", 0: "r" };
+      const obj2 = { <string:1643205302>: -1488907821, <string:1415816450>: 1912603216, <string:4283523744>: 60 };
       const intl2 = arg1(dependencyMap[10]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[10]).t.HXz5An);
-      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, { "Bool(false)": "r", "Bool(true)": "handlePlayerStateChange", "Bool(true)": "groupHeader", "Bool(true)": "scheduledMessageSend", "Bool(true)": "delete" }), ];
+      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, { 272491: "QrCodeIcon", 1377634897: "png", -1750624138: 128, 1169302736: "#ffffff", -1234645957: "#000000" }), ];
       const intl3 = arg1(dependencyMap[10]).intl;
       const obj3 = {
         unignoreHook(children) {
               const obj = {
-                "Null": false,
-                "Null": false,
-                "Null": false,
+                "Bool(true)": "<string:911278084>",
+                "Bool(true)": "<string:16806146>",
+                "Bool(true)": "<string:24379392>",
                 onPress() {
                   return callback(closure_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
                 },

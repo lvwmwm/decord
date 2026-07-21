@@ -1,5 +1,5 @@
 // Module ID: 11297
-// Function ID: 87893
+// Function ID: 87905
 // Name: EmptyStateWithSnowflakeQuery
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
     contentContainerStyle: callback().emptyState,
     data: items,
     renderItem(item) {
-      const obj = { 0: null, 0: null, 0: null, label: item.item, onPress: onPressRow };
+      const obj = { lineClamp: null, maxFontSizeMultiplier: null, bottom: null, label: item.item, onPress: onPressRow };
       return callback(onPressRow(closure_2[13]).TableRow, obj);
     },
     keyboardShouldPersistTaps: "always",

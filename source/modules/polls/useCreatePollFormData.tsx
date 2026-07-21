@@ -1,5 +1,5 @@
 // Module ID: 11311
-// Function ID: 87986
+// Function ID: 87998
 // Name: createPollCreationImageForMedia
 // Dependencies: []
 // Exports: default

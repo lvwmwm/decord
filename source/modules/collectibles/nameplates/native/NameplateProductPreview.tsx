@@ -1,5 +1,5 @@
 // Module ID: 8744
-// Function ID: 69131
+// Function ID: 69142
 // Name: NameplateUser
 // Dependencies: []
 // Exports: default
@@ -69,15 +69,15 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
+obj = { container: { textCenter: "absolute", w_mask: "gift_info", fr: "isArray", entry: "NATIVE_REQUIRED_ASSETS" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.memberListContainer = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.memberListTitle = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { "Bool(true)": "center", "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)", color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.memberListGradient = obj2;
-let closure_8 = obj.createStyles(obj);
 const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
+obj.memberListGradient = { color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_8 = obj.createStyles(obj);
+const obj2 = { color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/collectibles/nameplates/native/NameplateProductPreview.tsx");
 
 export default function NameplateProductPreview(product) {
@@ -120,7 +120,7 @@ export default function NameplateProductPreview(product) {
     items[6] = callback(PlaceholderUser, obj8);
     obj1.children = items;
     const items3 = [callback2(View, obj1), , ];
-    const obj9 = { style: tmp.memberListGradient, start: { max: -536870861, guildId: -299892737 }, end: {} };
+    const obj9 = { style: tmp.memberListGradient, start: {}, end: {} };
     const items4 = [tmp.memberListGradient.color, ];
     const _HermesInternal = HermesInternal;
     items4[1] = "" + tmp.memberListGradient.color + "00";

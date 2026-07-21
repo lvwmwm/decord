@@ -1,10 +1,10 @@
-// Module ID: 15343
-// Function ID: 116837
+// Module ID: 15346
+// Function ID: 116876
 // Name: handleBackButtonPress
 // Dependencies: []
 // Exports: default
 
-// Module 15343 (handleBackButtonPress)
+// Module 15346 (handleBackButtonPress)
 function handleBackButtonPress() {
   const navigation = arg1(dependencyMap[20]).getRootNavigationRef();
   if (null != navigation) {
@@ -353,109 +353,110 @@ function UnconnectedYouScreen(arg0) {
         merged = rect.bottom;
       }
       obj8.paddingBottom = merged;
+      merged = callback2;
+      merged = BackButton;
+      const obj9 = { paddingTop: bound1 };
+      obj8.backButton = callback2(BackButton, obj9);
       merged = merged(merged, obj8);
       merged = arg1;
       merged = closure_2;
       merged = callback2;
-      const obj9 = {};
+      obj10 = {};
       merged = callback2;
-      obj10 = { theme, primaryColor, secondaryColor };
+      const obj11 = { theme, primaryColor, secondaryColor };
       merged = callback2;
-      const obj11 = { value: createUserProfileAnalyticsContext, openedAt: ref1.current };
+      obj12 = { value: createUserProfileAnalyticsContext, openedAt: ref1.current };
       merged = undefined;
       if (null != obj1) {
         merged = obj1.fetchStartedAt;
       }
-      obj11.fetchStartedAt = merged;
+      obj12.fetchStartedAt = merged;
       merged = undefined;
       if (null != obj1) {
         merged = obj1.fetchEndedAt;
       }
-      obj11.fetchEndedAt = merged;
+      obj12.fetchEndedAt = merged;
       merged = undefined;
       if (null != obj1) {
         merged = obj1.isLoaded;
       }
-      obj11.isLoaded = merged;
+      obj12.isLoaded = merged;
       merged = importDefault;
       merged = closure_2;
       merged = closure_21;
-      obj12 = {};
+      const obj13 = {};
       const items8 = [tmp7.container, tmp60];
-      obj12.style = items8;
+      obj13.style = items8;
       merged = closure_14;
-      obj12.nativeID = closure_14;
+      obj13.nativeID = closure_14;
       merged = null != tmp47Result;
       merged = importDefault(closure_2[56]);
       if (merged) {
         merged = callback2;
         merged = importDefault;
         merged = closure_2;
-        const obj13 = { frame: tmp47Result };
+        obj14 = { frame: tmp47Result };
         merged = UserProfileThemeTypes;
-        obj13.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
+        obj14.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
         merged = arg1;
         merged = importDefault(closure_2[57]);
-        obj13.frameOrder = arg1(closure_2[58]).ProfileFrameLayerOrder.BACK;
-        obj13.containerWidth = bound;
-        merged = callback2(merged, obj13);
+        obj14.frameOrder = arg1(closure_2[58]).ProfileFrameLayerOrder.BACK;
+        obj14.containerWidth = bound;
+        merged = callback2(merged, obj14);
       }
       const items9 = [merged, , , , , , ];
       merged = callback2;
       merged = importDefault;
       merged = closure_2;
-      obj14 = { gradientHeight: height, bannerHeight: tmp4Result, style: tmp7.background };
-      items9[1] = callback2(importDefault(closure_2[59]), obj14);
+      const obj15 = { gradientHeight: height, bannerHeight: tmp4Result, style: tmp7.background };
+      items9[1] = callback2(importDefault(closure_2[59]), obj15);
       merged = arg1;
-      let obj32 = arg1(closure_2[41]);
-      merged = !obj32.isYouNavFloating() && tmp94Result;
+      let obj33 = arg1(closure_2[41]);
+      merged = !obj33.isYouNavFloating() && tmp94Result;
       items9[2] = merged;
-      const obj15 = { contentContainerStyle: memo.contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback };
+      obj16 = { contentContainerStyle: memo.contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback };
       merged = closure_15;
-      obj15.scrollEventThrottle = closure_15;
-      obj15.style = tmp7.scrollView;
+      obj16.scrollEventThrottle = closure_15;
+      obj16.style = tmp7.scrollView;
       merged = importDefault;
       merged = closure_2;
       merged = closure_21;
       merged = closure_25;
       merged = closure_21;
-      obj16 = {};
+      obj17 = {};
       const items10 = [tmp7.banner, bannerAnimatedStyle];
-      obj16.style = items10;
-      merged = null;
-      if (!mergedResult) {
-        merged = callback2;
-        merged = BackButton;
-        obj17 = { paddingTop: bound1 };
-        merged = callback2(BackButton, obj17);
-      }
-      const items11 = [merged, , ];
+      obj17.style = items10;
       merged = !mergedResult;
       if (!mergedResult) {
         merged = arg1;
         merged = closure_2;
-        merged = !arg1(closure_2[41]).isYouNavFloating();
+        if (obj37.isYouNavFloating()) {
+          merged = callback2;
+          merged = BackButton;
+          obj18 = { paddingTop: bound1 };
+          merged = callback2(BackButton, obj18);
+        }
         const obj37 = arg1(closure_2[41]);
       }
-      items11[1] = merged;
+      const items11 = [merged, ];
       merged = importDefault;
       merged = closure_2;
       merged = closure_21;
-      obj18 = {};
+      const obj19 = {};
       const items12 = [intl2, bannerImageAnimatedStyle];
-      obj18.style = items12;
+      obj19.style = items12;
       merged = callback2;
       merged = bound;
-      const obj19 = {};
+      obj20 = {};
       merged = sharedValue;
       const items13 = [sharedValue.absoluteFill, ];
-      obj20 = {};
+      const obj21 = {};
       merged = arg1;
       const tmp91 = callback(React.useState(!obj20.isYouNavFloating()), 2);
-      obj20.backgroundColor = arg1(closure_2[60]).int2hex(userProfileBannerBackgroundColor);
-      items13[1] = obj20;
-      obj19.style = items13;
-      const items14 = [callback2(bound, obj19), , ];
+      obj21.backgroundColor = arg1(closure_2[60]).int2hex(userProfileBannerBackgroundColor);
+      items13[1] = obj21;
+      obj20.style = items13;
+      const items14 = [callback2(bound, obj20), , ];
       merged = null != source;
       if (!merged) {
         items14[1] = merged;
@@ -465,133 +466,134 @@ function UnconnectedYouScreen(arg0) {
         if (merged) {
           merged = callback2;
           merged = closure_22;
-          const obj21 = { animatedProps: blurAnimatedProps };
+          const obj22 = { animatedProps: blurAnimatedProps };
           merged = sharedValue;
-          obj21.style = sharedValue.absoluteFillObject;
-          merged = callback2(closure_22, obj21);
+          obj22.style = sharedValue.absoluteFillObject;
+          merged = callback2(closure_22, obj22);
         }
         items14[2] = merged;
-        obj18.children = items14;
-        items11[2] = merged(importDefault(closure_2[14]).View, obj18);
-        obj16.children = items11;
-        const items15 = [merged(importDefault(closure_2[14]).View, obj16), , , ];
+        obj19.children = items14;
+        items11[1] = merged(importDefault(closure_2[14]).View, obj19);
+        obj17.children = items11;
+        const items15 = [merged(importDefault(closure_2[14]).View, obj17), , , ];
         if (mergedResult) {
           merged = importDefault;
           merged = closure_2;
           merged = closure_21;
-          const obj22 = { pointerEvents: "box-none" };
+          const obj23 = { pointerEvents: "box-none" };
           const items16 = [tmp7.profileEffectLayer, , ];
-          const obj23 = { width: bound, height };
-          items16[1] = obj23;
+          const obj24 = { width: bound, height };
+          items16[1] = obj24;
           items16[2] = bannerAnimatedStyle;
-          obj22.style = items16;
+          obj23.style = items16;
           merged = callback2;
-          const obj24 = { height: 1000, width: 600000, alignItems: "MESSAGE_CREATE", skuId: skuId2, paused: tmp24 };
-          const items17 = [callback2(importDefault(closure_2[62]), obj24), , ];
-          merged = callback2;
-          merged = BackButton;
-          obj25 = { paddingTop: bound1 };
-          items17[1] = callback2(BackButton, obj25);
+          obj25 = { skuId: skuId2, unicodeVersion: "info", skuId: "/", paused: tmp24 };
+          const items17 = [callback2(importDefault(closure_2[62]), obj25), ];
           merged = arg1;
-          merged = !arg1(closure_2[41]).isYouNavFloating() && merged;
-          items17[2] = merged;
-          obj22.children = items17;
-          mergedResult = merged(importDefault(closure_2[14]).View, obj22);
+          if (obj53.isYouNavFloating()) {
+            merged = callback2;
+            merged = BackButton;
+            const obj26 = { paddingTop: bound1 };
+            merged = callback2(BackButton, obj26);
+          }
+          items17[1] = merged;
+          obj23.children = items17;
+          mergedResult = merged(importDefault(closure_2[14]).View, obj23);
           const obj53 = arg1(closure_2[41]);
         }
         items15[1] = mergedResult;
         merged = callback2;
         merged = importDefault;
         merged = closure_2;
-        const obj26 = { user, userTheme: tmp11, scrollViewRef: ref };
+        const obj27 = { user, userTheme: tmp11, scrollViewRef: ref };
         const items18 = [tmp7.content, contentAnimatedStyle];
-        obj26.style = items18;
-        obj26.navigateToProfileCustomization = navigateToProfileCustomization;
-        obj26.navigateToCustomStatus = navigateToCustomStatus;
-        obj26.navigateToFriends = navigateToFriends;
-        obj26.navigateToPremium = navigateToPremium;
-        obj26.navigateToShop = navigateToShop;
-        obj26.initialTab = initialTab;
-        obj26.animateAvatar = !tmp24;
-        items15[2] = callback2(importDefault(closure_2[63]), obj26);
+        obj27.style = items18;
+        obj27.navigateToProfileCustomization = navigateToProfileCustomization;
+        obj27.navigateToCustomStatus = navigateToCustomStatus;
+        obj27.navigateToFriends = navigateToFriends;
+        obj27.navigateToPremium = navigateToPremium;
+        obj27.navigateToShop = navigateToShop;
+        obj27.initialTab = initialTab;
+        obj27.animateAvatar = !tmp24;
+        items15[2] = callback2(importDefault(closure_2[63]), obj27);
         merged = callback2;
         merged = arg1;
-        const obj27 = { label: "you_screen" };
-        items15[3] = callback2(arg1(closure_2[64]).TTIFirstContentfulPaint, obj27);
-        obj15.children = items15;
-        items9[3] = merged(merged, obj15);
+        const obj28 = { label: "you_screen" };
+        items15[3] = callback2(arg1(closure_2[64]).TTIFirstContentfulPaint, obj28);
+        obj16.children = items15;
+        items9[3] = merged(merged, obj16);
         merged = null != tmp47Result;
         if (merged) {
           merged = callback2;
           merged = importDefault;
           merged = closure_2;
-          const obj28 = { frame: tmp47Result };
+          const obj29 = { frame: tmp47Result };
           merged = UserProfileThemeTypes;
-          obj28.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
+          obj29.profileThemeType = UserProfileThemeTypes.YOU_SCREEN;
           merged = arg1;
           merged = importDefault(closure_2[57]);
-          obj28.frameOrder = arg1(closure_2[58]).ProfileFrameLayerOrder.FRONT;
-          obj28.containerWidth = bound;
-          merged = callback2(merged, obj28);
+          obj29.frameOrder = arg1(closure_2[58]).ProfileFrameLayerOrder.FRONT;
+          obj29.containerWidth = bound;
+          merged = callback2(merged, obj29);
         }
         items9[4] = merged;
         merged = arg1;
         merged = closure_2;
-        const obj47 = arg1(closure_2[17]);
+        const obj48 = arg1(closure_2[17]);
         merged = arg1(closure_2[41]).isYouNavFloating() && merged;
         items9[5] = merged;
         merged = arg1;
         merged = closure_2;
-        const obj57 = arg1(closure_2[41]);
+        const obj58 = arg1(closure_2[41]);
         merged = arg1(closure_2[41]).isYouNavFloating() && tmp94Result;
         items9[6] = merged;
-        obj12.children = items9;
-        obj11.children = merged(merged, obj12);
-        obj10.children = merged(arg1(closure_2[42]).UserProfileAnalyticsProvider, obj11);
-        obj9.children = merged(arg1(closure_2[55]).ThemeContextProvider, obj10);
-        return merged(arg1(closure_2[52]).LayerScope, obj9);
+        obj13.children = items9;
+        obj12.children = merged(merged, obj13);
+        obj11.children = merged(arg1(closure_2[42]).UserProfileAnalyticsProvider, obj12);
+        obj10.children = merged(arg1(closure_2[55]).ThemeContextProvider, obj11);
+        return merged(arg1(closure_2[52]).LayerScope, obj10);
       } else if (isAnimatedImageURLResult) {
         merged = arg1;
         merged = closure_2;
         merged = closure_21;
-        const obj29 = {
+        const obj30 = {
           onPress() {
                   return callback2(!first1);
                 },
           accessibilityRole: "image"
         };
         const intl3 = arg1(closure_2[22]).intl;
-        obj29.accessibilityLabel = intl3.string(arg1(closure_2[22]).t.3fzj/l);
+        obj30.accessibilityLabel = intl3.string(arg1(closure_2[22]).t.3fzj/l);
         merged = callback2;
         merged = importDefault;
-        const obj30 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
-        const items19 = [callback2(importDefault(closure_2[50]), obj30), ];
+        const obj31 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
+        const items19 = [callback2(importDefault(closure_2[50]), obj31), ];
         tmp28 = !tmp28;
         if (tmp28) {
           source = callback2;
           merged = arg1;
           merged = closure_2;
-          const obj31 = {};
+          const obj32 = {};
           intl2 = arg1(closure_2[22]).intl;
-          obj31.label = intl2.string(arg1(closure_2[22]).t.I5gL2H);
+          obj32.label = intl2.string(arg1(closure_2[22]).t.I5gL2H);
           const items20 = [tmp7.gifTag, ];
-          obj32 = { top: bound1 };
-          items20[1] = obj32;
-          obj31.style = items20;
-          obj31.textStyle = tmp7.gifTagText;
-          tmp28 = callback2(arg1(closure_2[61]).Caption, obj31);
+          obj33 = { top: bound1 };
+          items20[1] = obj33;
+          obj32.style = items20;
+          obj32.textStyle = tmp7.gifTagText;
+          tmp28 = callback2(arg1(closure_2[61]).Caption, obj32);
         }
         items19[1] = tmp28;
-        obj29.children = items19;
-        merged = merged(arg1(closure_2[23]).PressableOpacity, obj29);
+        obj30.children = items19;
+        merged = merged(arg1(closure_2[23]).PressableOpacity, obj30);
       } else {
         merged = callback2;
         merged = importDefault;
         merged = closure_2;
-        const obj33 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
-        merged = callback2(importDefault(closure_2[50]), obj33);
+        const obj34 = { style: intl2, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp24 };
+        merged = callback2(importDefault(closure_2[50]), obj34);
       }
-      const obj41 = arg1(closure_2[60]);
+      const obj42 = arg1(closure_2[60]);
     }
     bound1 = youSettingsCoachmark;
     const tmp52 = importDefault(closure_2[45]);
@@ -644,22 +646,22 @@ let closure_23 = arg1(dependencyMap[16]).createStyles((marginTop) => {
   const merged2 = Object.assign(obj);
   obj.scrollView = obj2;
   obj.profileEffectLayer = {};
-  obj.banner = { minHeight: marginTop };
-  const obj3 = {};
+  const obj3 = { getScaledChannelRowHeight: "Array", isConfigured: "isArray", GameDepthTier8SmallBadge: "max", shouldShowEmojiRow: "names", minHeight: marginTop };
+  obj.banner = obj3;
+  const obj4 = { 9223372036854775807: true, -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true };
   const tmp10 = importDefault(dependencyMap[19]);
   const tmp10Result = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE);
-  obj3.backgroundColor = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9).css();
-  obj.gifTag = obj3;
+  obj4.backgroundColor = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9).css();
+  obj.gifTag = obj4;
   const alphaResult = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9);
   obj.gifTagText = { color: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-  const obj5 = { onChangeContentSize: "default", onEndBlur: "done", onBeginFocus: "go", marginTop };
-  obj.content = obj5;
+  obj.content = { marginTop };
   return obj;
 });
 const obj2 = arg1(dependencyMap[16]);
 let closure_24 = arg1(dependencyMap[16]).createStyles(() => {
   let obj = {};
-  obj = { marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
+  obj = { scale: 2, offset: "center", minimized: "center", active: 161294633293869400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, initialLaunchPadPosition: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005071684980005663, initialPullTabPosition: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115555, marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
   obj.backButton = obj;
   return obj;
 });

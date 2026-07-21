@@ -1,5 +1,5 @@
 // Module ID: 9826
-// Function ID: 76207
+// Function ID: 76218
 // Name: PencilSparkleIcon
 // Dependencies: []
 // Exports: PencilSparkleIcon

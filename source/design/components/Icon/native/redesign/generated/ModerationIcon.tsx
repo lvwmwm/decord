@@ -1,10 +1,10 @@
-// Module ID: 16076
-// Function ID: 123634
+// Module ID: 16084
+// Function ID: 123695
 // Name: ModerationIcon
 // Dependencies: []
 // Exports: ModerationIcon
 
-// Module 16076 (ModerationIcon)
+// Module 16084 (ModerationIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ModerationIcon.tsx");

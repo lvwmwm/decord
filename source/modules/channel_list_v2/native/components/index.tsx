@@ -1,5 +1,5 @@
 // Module ID: 11379
-// Function ID: 88485
+// Function ID: 88497
 // Name: renderChannelBadge
 // Dependencies: []
 

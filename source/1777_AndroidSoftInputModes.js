@@ -1,7 +1,7 @@
 // Module ID: 1777
-// Function ID: 19778
+// Function ID: 19783
 // Name: AndroidSoftInputModes
-// Dependencies: [494338048]
+// Dependencies: []
 
 // Module 1777 (AndroidSoftInputModes)
 const KeyboardControllerNative = require(dependencyMap[0]).KeyboardControllerNative;

@@ -1,5 +1,5 @@
 // Module ID: 9064
-// Function ID: 71127
+// Function ID: 71138
 // Name: ActivityStatusText
 // Dependencies: []
 // Exports: default
@@ -19,7 +19,7 @@ export default function ActivityStatusText(variant) {
   if (str === undefined) {
     str = "text-xs/medium";
   }
-  let obj = { satisfied: "spring", face_holding_back_tears: "linear", sweat_smile: "easeInEaseOut" };
+  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(variant, obj);
   obj = { variant: str, color: "text-muted" };

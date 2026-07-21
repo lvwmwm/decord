@@ -1,10 +1,10 @@
-// Module ID: 15517
-// Function ID: 118393
+// Module ID: 15520
+// Function ID: 118432
 // Name: LaunchPadWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 15517 (LaunchPadWrapper)
+// Module 15520 (LaunchPadWrapper)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6, TouchableOpacity: closure_7, StyleSheet: closure_8 } = arg1(dependencyMap[2]));
@@ -17,7 +17,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.modalWrapper = obj;
-const obj1 = { "Null": "png", "Null": 18, "Null": 18, height: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { Z_FINISH: "INVALID_CHANNEL_TYPE", Z_BLOCK: "package", Z_TREES: "_headers", height: importDefault(dependencyMap[7]).space.PX_8 };
 obj.a11yDismiss = obj1;
 let closure_14 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);
@@ -139,9 +139,7 @@ export default function LaunchPadWrapper(launchPadType) {
   obj3.accessibilityLabel = intl.string(arg1(dependencyMap[21]).t.WAI6xu);
   obj3.onPress = callback;
   obj3.style = tmp.a11yDismiss;
-  const items6 = [callback2(callback, obj3), , ];
-  const obj4 = { "Bool(false)": null, "Bool(false)": null, onPress: callback, style: closure_8.absoluteFillObject };
-  items6[1] = callback2(closure_7, obj4);
+  const items6 = [callback2(callback, obj3), callback2(closure_7, { onPress: callback, style: closure_8.absoluteFillObject }), ];
   const obj5 = {};
   let tmp25 = !tmp4;
   if (tmp25) {

@@ -1,12 +1,12 @@
-// Module ID: 15122
-// Function ID: 114105
+// Module ID: 15125
+// Function ID: 114139
 // Name: CutoutGuildIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15122 (CutoutGuildIcon)
+// Module 15125 (CutoutGuildIcon)
 function CutoutGuildIcon(guild) {
-  let obj = { style: { bhk: "<string:1027735553>", bic: "<string:4143972873>" } };
+  let obj = { style: {} };
   obj = {};
   obj = {};
   const tmp = callback3();
@@ -31,11 +31,11 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Null": true, "Null": "/assets/modules/guild_role_subscriptions/native/images", "Null": 24, "Null": 24, "Null": null, "Null": "7b2c77b138d492ded1f4019723f50b05", borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
+obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIconBG = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
-obj.refreshMorePillContainer = {};
+obj.refreshMorePillContainer = { "Bool(false)": "<string:1895974082>", "Bool(false)": "Array", "Bool(false)": "<string:75847746>", "Bool(false)": "<string:30065664>", "Bool(false)": "wy\u015Bcig", "Bool(false)": "ceremonia de contemplaci\u00F3n de la luna" };
 let closure_11 = obj.createStyles(obj);
 let closure_12 = {};
 let closure_13 = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
@@ -180,7 +180,7 @@ export default function NewContentPill(onPress) {
     obj1.animatedProps = animatedProps;
     obj2 = { onPress: callback, style: tmp.container };
     const items8 = [isFocused(arg1(dependencyMap[18]).ArrowSmallUpIcon, {}), ];
-    obj3 = { "Null": "text-sm/semibold", "Null": "interactive-text-hover", "Null": 3 };
+    obj3 = {};
     const obj4 = { marginLeft: 4 };
     obj3.style = obj4;
     const intl = arg1(dependencyMap[20]).intl;

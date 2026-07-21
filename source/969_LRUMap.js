@@ -1,13 +1,12 @@
 // Module ID: 969
-// Function ID: 10448
+// Function ID: 10452
 // Name: LRUMap
-// Dependencies: [77, 794, 978]
+// Dependencies: []
 
 // Module 969 (LRUMap)
-import _defineProperty from "_defineProperty";
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
-import isHermesEnabled from "isHermesEnabled";
-
+const _module = require(dependencyMap[0]);
+let closure_0 = require(dependencyMap[1]);
+let closure_1 = require(dependencyMap[2]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const LRUMap = () => {
@@ -20,7 +19,7 @@ export const LRUMap = () => {
       return;
     }
   }
-  const registerSpanErrorInstrumentation = LRUMap;
+  let closure_0 = LRUMap;
   let obj = {
     key: "size",
     get() {
@@ -95,5 +94,5 @@ export const LRUMap = () => {
       return items;
     }
   };
-  return isHermesEnabled(LRUMap, items);
+  return callback(LRUMap, items);
 }();

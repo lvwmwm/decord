@@ -1,10 +1,10 @@
-// Module ID: 16440
-// Function ID: 126990
+// Module ID: 16448
+// Function ID: 127051
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 16440 (_createForOfIteratorHelperLoose)
+// Module 16448 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

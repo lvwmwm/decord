@@ -1,19 +1,19 @@
-// Module ID: 16248
-// Function ID: 125553
+// Module ID: 16256
+// Function ID: 125614
 // Name: EligibilityActionSheet
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16248 (EligibilityActionSheet)
-import closure_3 from "__exportStarResult1";
-import { UserSettingsSections } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 16256 (EligibilityActionSheet)
+import closure_3 from "result";
+import { UserSettingsSections } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
-let closure_7 = __exportStarResult1.createStyles({ container: {}, title: {} });
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/EligibilityActionSheet.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = result);
+let closure_7 = result.createStyles({ container: { surrogates: null, paths: null }, title: {} });
+result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/EligibilityActionSheet.tsx");
 
 export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   onRequireModeratorMFAClick = onRequireModeratorMFAClick.onRequireModeratorMFAClick;
@@ -38,7 +38,7 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
     return { actions, sortedByIneligible: true };
   }, items);
   let obj = { startExpanded: true };
-  obj = { "Null": true, "Null": true, "Null": true, style: tmp.title };
+  obj = { delete: true, dispatch: true, raw: true, style: tmp.title };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.3s47iN);
   const items1 = [callback(arg1(dependencyMap[9]).Heading, obj), ];

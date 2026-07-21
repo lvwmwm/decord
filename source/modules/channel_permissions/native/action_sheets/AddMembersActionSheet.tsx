@@ -1,5 +1,5 @@
 // Module ID: 8413
-// Function ID: 67021
+// Function ID: 67032
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
@@ -48,7 +48,7 @@ class AddMembersBody {
       permission = importAll(closure_3[14]).NONE;
     }
     inActionSheet = global.inActionSheet;
-    obj = { position: true, alignSelf: true, opacity: true, position: true, top: true, left: true };
+    obj = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 0: true, 0: true };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     closure_3 = undefined;
@@ -282,7 +282,7 @@ class AddMembersBody {
       const guild = item;
       const index = item.index;
       if ("string" === typeof item) {
-        let obj = { style: tmp5.sectionRowWrapper, children: item };
+        let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: tmp5.sectionRowWrapper, children: item };
         let tmp14Result = callback4(guild(tmp5[22]).Text, obj);
       } else {
         obj = {};
@@ -369,7 +369,7 @@ let obj = arg1(dependencyMap[12]);
 obj = { container: { flex: 1 } };
 obj = { alignItems: "stretch", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.inputContainer = obj;
-obj.tagRoleColor = {};
+obj.tagRoleColor = { 2122157199: 881, -2108594079: 1111556352, 1371431202: 1912603304 };
 const tmp4 = arg1(dependencyMap[11]);
 obj.tagAvatar = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 const obj1 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };

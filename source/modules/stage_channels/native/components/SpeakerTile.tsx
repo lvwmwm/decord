@@ -1,5 +1,5 @@
 // Module ID: 10763
-// Function ID: 83650
+// Function ID: 83661
 // Name: getSizeStyle
 // Dependencies: []
 
@@ -48,13 +48,13 @@ const result1 = obj.HALF * 1.7777777777777777;
 let obj2 = arg1(dependencyMap[5]);
 obj = { container: {}, full: obj1, half: obj2, third: obj3 };
 obj2 = { height: obj.HALF };
-const obj4 = { "Bool(false)": 3, "Bool(false)": "rgb", "Bool(false)": 32, "Bool(false)": 32, "Bool(false)": 20, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.avatarContainer = obj4;
-obj.imageBackground = { "Bool(true)": false, "Bool(true)": "auto", 0: "none", 0: true };
-const obj5 = { width: "/assets/images/native/icons", height: 32, fill: 32, transform: null, video: "4231d943574087a463ee922a711ec0bb", audio: "ic_mobile_device", monitorTypeSurfaces: "png", preferCurrentTab: true, selfBrowserSurface: "/assets/images/native/icons", surfaceSwitching: 24 };
 const obj1 = { height: obj.FULL };
 const obj3 = { height: obj.THIRD };
 const tmp2 = arg1(dependencyMap[4]);
+obj.avatarContainer = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj.imageBackground = {};
+const obj5 = {};
+const obj4 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj5.backgroundColor = arg1(dependencyMap[7]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.BLACK, 0.3);
 obj.nameplateContainer = obj5;
 const obj10 = arg1(dependencyMap[7]);

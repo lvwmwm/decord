@@ -1,5 +1,5 @@
 // Module ID: 4529
-// Function ID: 39763
+// Function ID: 39771
 // Name: getIOSBlurEffect
 // Dependencies: []
 
@@ -78,7 +78,7 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
   if (android_softwareBlurDisabled === undefined) {
     android_softwareBlurDisabled = false;
   }
-  let obj = { height: null, paddingHorizontal: null, borderRadius: null, backgroundColor: null, justifyContent: null, alignItems: null, "Bool(false)": null };
+  let obj = { fileFinishedImporting: true, h: "/assets/design/components/Icon/native/redesign/generated/images", now: 24, opacity: 24, padding: null, hasDiversityParent: "99274532ad7fe616c031212e677b32e8", HermesInternal: "ThreadLockIcon" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(blurAmount, obj);
   ({ blurAmountOverride, blurTintRgbaOverride, blurEffectNameOverride } = callback());

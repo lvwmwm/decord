@@ -1,17 +1,17 @@
-// Module ID: 5356
-// Function ID: 45866
+// Module ID: 5355
+// Function ID: 45873
 // Name: useHeaderDebugOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 5356 (useHeaderDebugOverlay)
+// Module 5355 (useHeaderDebugOverlay)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = {};
+let closure_7 = { "Null": "<string:3227506016>", "Null": 10, "Null": "absolute", 1420452552: -3, 1685830737: -3 };
 let obj = arg1(dependencyMap[3]);
-obj = { tintWash: { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)", top: true, accessibilityRole: null }, badgeContainer: {} };
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { tintWash: { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013759398271256448, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006752834162961708 }, badgeContainer: { justifyContent: false, paddingRight: false, height: false, gap: false } };
+obj = { MKTG_HYPESQUAD_FORM_SUBMITTED: "r", marginInlineEnd: "NATIVE_REQUIRED_ASSETS_ICONS", borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.badge = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.color-os-drawn = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_LINK };
@@ -44,7 +44,7 @@ export default function useHeaderDebugOverlay(arg0, arg1) {
     const obj1 = {};
     const items2 = [tmp3.badge, tmp3["color-" + arg0]];
     obj1.style = items2;
-    const obj2 = { children: tmp };
+    const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: tmp };
     obj1.children = callback(arg1(dependencyMap[6]).Text, obj2);
     obj.children = callback(View, obj1);
     items1[1] = callback(View, obj);

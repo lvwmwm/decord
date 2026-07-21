@@ -1,13 +1,15 @@
-// Module ID: 12789
-// Function ID: 97995
+// Module ID: 12791
+// Function ID: 98017
 // Name: ShareScreenFooter
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 12789 (ShareScreenFooter)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/share/native/ShareScreenFooter.tsx");
+// Module 12791 (ShareScreenFooter)
+import "result";
+import { jsx } from "result";
+import result from "result";
+
+result = result.fileFinishedImporting("modules/share/native/ShareScreenFooter.tsx");
 
 export default function ShareScreenFooter(arg0) {
   let appEntryKey;
@@ -34,7 +36,7 @@ export default function ShareScreenFooter(arg0) {
   const shareChatInputActions = obj.useShareChatInputActions(setText, undefined, appEntryKey);
   ({ textInputRef, isInputFocused, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
   obj = { preview };
-  obj = { text: sendLabel };
+  obj = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", text: sendLabel };
   let tmp4 = !canSend;
   if (!tmp4) {
     tmp4 = disabled;

@@ -1,10 +1,10 @@
-// Module ID: 12961
-// Function ID: 98616
+// Module ID: 12963
+// Function ID: 98638
 // Name: useAccessibilityNativeStackFocusTracking
 // Dependencies: []
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 12961 (useAccessibilityNativeStackFocusTracking)
+// Module 12963 (useAccessibilityNativeStackFocusTracking)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useAccessibilityNativeStackFocusTracking.tsx");
 

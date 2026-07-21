@@ -1,10 +1,10 @@
-// Module ID: 14644
-// Function ID: 110421
+// Module ID: 14647
+// Function ID: 110453
 // Name: PromotionalEmailCheckBox
 // Dependencies: []
 // Exports: default
 
-// Module 14644 (PromotionalEmailCheckBox)
+// Module 14647 (PromotionalEmailCheckBox)
 importAll(dependencyMap[0]);
 ({ View: closure_2, Pressable: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -35,7 +35,7 @@ export default function PromotionalEmailCheckBox(style) {
     obj.style = tmp.checkboxRow;
     const obj1 = { checked: tmp3 };
     const items = [callback2(arg1(dependencyMap[7]).FormCheckbox, obj1), ];
-    const obj2 = { style: tmp.checkboxLabel };
+    const obj2 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.checkboxLabel };
     const intl2 = arg1(dependencyMap[6]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[6]).t.ylFCLt);
     items[1] = callback2(arg1(dependencyMap[8]).Text, obj2);

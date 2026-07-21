@@ -1,7 +1,7 @@
 // Module ID: 9415
-// Function ID: 73270
+// Function ID: 73281
 // Name: cheapWorkletShallowEqual
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9415 (cheapWorkletShallowEqual)
 let closure_0 = { code: "function cheapWorkletShallowEqual_cheapWorkletShallowEqualTsx1(a,b){if(a===b)return true;if(a==null||b==null)return false;for(const key in a){if(a[key]!==b[key])return false;}return true;}" };

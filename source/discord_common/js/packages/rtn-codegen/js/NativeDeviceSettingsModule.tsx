@@ -1,9 +1,9 @@
-// Module ID: 4682
-// Function ID: 40784
+// Module ID: 4681
+// Function ID: 40791
 // Name: enforcing
 // Dependencies: []
 
-// Module 4682 (enforcing)
+// Module 4681 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceSettingsModule");
 const _module = require(dependencyMap[1]);

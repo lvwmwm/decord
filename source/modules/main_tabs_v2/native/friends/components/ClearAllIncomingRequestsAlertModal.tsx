@@ -1,10 +1,10 @@
-// Module ID: 15338
-// Function ID: 116805
+// Module ID: 15341
+// Function ID: 116844
 // Name: handleConfirm
 // Dependencies: []
 // Exports: default
 
-// Module 15338 (handleConfirm)
+// Module 15341 (handleConfirm)
 function handleConfirm() {
   return _handleConfirm(...arguments);
 }

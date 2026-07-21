@@ -1,5 +1,5 @@
 // Module ID: 5865
-// Function ID: 49711
+// Function ID: 49719
 // Name: AvatarDecorationsAbstractUI
 // Dependencies: []
 // Exports: AvatarDecorationsAbstractUI

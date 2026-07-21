@@ -1,7 +1,7 @@
 // Module ID: 1862
-// Function ID: 20526
+// Function ID: 20531
 // Name: DisplayNameEffect
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1862 (DisplayNameEffect)
 const _module = require(dependencyMap[0]);

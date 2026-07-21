@@ -1,5 +1,5 @@
 // Module ID: 5626
-// Function ID: 47996
+// Function ID: 48004
 // Name: _isAccessibleChannelOrThreadPath
 // Dependencies: []
 // Exports: default

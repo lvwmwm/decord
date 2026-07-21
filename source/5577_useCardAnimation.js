@@ -1,5 +1,5 @@
 // Module ID: 5577
-// Function ID: 47355
+// Function ID: 47363
 // Name: useCardAnimation
 // Dependencies: []
 // Exports: default

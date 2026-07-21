@@ -1,9 +1,9 @@
-// Module ID: 15255
-// Function ID: 115157
+// Module ID: 15258
+// Function ID: 115191
 // Name: getVoiceStates
 // Dependencies: []
 
-// Module 15255 (getVoiceStates)
+// Module 15258 (getVoiceStates)
 function getVoiceStates(guildId) {
   let tmp = arg1;
   if (guildId.isGuildStageVoice()) {

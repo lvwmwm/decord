@@ -1,9 +1,9 @@
-// Module ID: 15711
-// Function ID: 120052
+// Module ID: 15715
+// Function ID: 120096
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15711 (_createForOfIteratorHelperLoose)
+// Module 15715 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -109,7 +109,7 @@ function StreamPreview(channelId) {
   const items2 = [closure_12];
   const stateFromStores = obj1.useStateFromStores(items2, () => closure_12.can(constants.CONNECT, closure_3));
   obj = { style: tmp.activityInfoWrapper };
-  obj = { 0: "<string:1230110721>", 0: "<string:297260402>", 0: "<string:38877761>", style: tmp.activityInfoHeader };
+  obj = { style: tmp.activityInfoHeader };
   const intl = arg1(dependencyMap[30]).intl;
   obj1 = {};
   let username = voiceState.nick;
@@ -183,7 +183,7 @@ function ActivityInfo(activity) {
   let tmp13Result = null;
   if (null != first) {
     obj1 = { style: tmp.activityInfoWrapper };
-    obj2 = { 0: "<string:1230110721>", 0: "<string:297260402>", 0: "<string:38877761>", style: tmp.activityInfoHeader };
+    obj2 = { style: tmp.activityInfoHeader };
     const intl = arg1(dependencyMap[30]).intl;
     const obj3 = { n: arr2.length };
     obj2.children = intl.format(arg1(dependencyMap[30]).t.n/IJ6Y, obj3);
@@ -199,12 +199,12 @@ function ActivityInfo(activity) {
     const obj7 = { style: tmp.joinButtonWrapper };
     const tmp21 = importDefault(dependencyMap[28]);
     const tmp23 = callback2;
-    const obj8 = { flexDirection: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004908508887403241, alignItems: 12933388458836838000000000000000000000000, paddingVertical: -0.000000000000007108329477767428, paddingRight: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003157429107939483 };
+    const obj8 = {};
     const intl2 = arg1(dependencyMap[30]).intl;
     const obj9 = { name: first.name };
     obj8.text = intl2.formatToPlainString(arg1(dependencyMap[30]).t.YV/hE8, obj9);
     const obj10 = { variant: "entity" };
-    const obj11 = { 0: "Golive Simulcast without prober 720p@500k", 0: 144.002, -9223372036854775808: null };
+    const obj11 = { position: "Golive Simulcast without prober 720p@500k", backgroundColor: 144.002, borderWidth: null };
     const iconURL = first.getIconURL(20);
     let tmp28;
     if (null != iconURL) {
@@ -431,7 +431,7 @@ function PreJoinTransitioner(transitionState) {
     fn.__closure = obj;
     fn.__workletHash = 2541522666097;
     fn.__initData = closure_34;
-    obj.translateY = obj4.withSpring(transitionState(windowDimensions[36]).interpolate(num, ["Text", "lc"], [null, null]), closure_17, "respect-motion-settings", fn);
+    obj.translateY = obj4.withSpring(transitionState(windowDimensions[36]).interpolate(num, ["replace", "then"], [-1352646144, -128712700]), closure_17, "respect-motion-settings", fn);
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -482,10 +482,10 @@ const tmp2 = arg1(dependencyMap[17]);
 ({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = arg1(dependencyMap[19]));
 let obj1 = arg1(dependencyMap[20]);
 let obj = {};
-obj = { disabled: 1262555392, onPress: 1442840858, accessibilityHint: -1411184234, paddingTop: EDGE_GUTTER + arg1(dependencyMap[21]).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER };
+obj = { paddingTop: EDGE_GUTTER + arg1(dependencyMap[21]).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER };
 obj.contentWrapper = obj;
 obj.channelInfoWrapper = { paddingHorizontal: 16 };
-obj.subheading = { Icon: null, Symbol: null, items: null };
+obj.subheading = { <string:4154869293>: "<string:2255552513>", <string:4191942875>: "<string:16777216>", <string:4225497819>: "%MapPrototype%" };
 obj1 = { borderRadius: importDefault(dependencyMap[22]).radii.lg, backgroundColor: importDefault(dependencyMap[22]).colors.BLACK };
 obj.previewImageWrapper = obj1;
 const obj2 = {};
@@ -501,8 +501,8 @@ obj3["alignItems"] = "center";
 obj3["justifyContent"] = "center";
 obj.joinButtonWrapper = obj3;
 obj.optInChannelsContainer = { marginHorizontal: 16 };
-const tmp3 = arg1(dependencyMap[19]);
-obj.blockedMemberWarning = { gap: importDefault(dependencyMap[22]).space.PX_8, padding: importDefault(dependencyMap[22]).space.PX_8, borderRadius: importDefault(dependencyMap[22]).radii.xs, borderColor: importDefault(dependencyMap[22]).colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: importDefault(dependencyMap[22]).colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: importDefault(dependencyMap[22]).space.PX_16 };
+const obj4 = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[22]).space.PX_8, padding: importDefault(dependencyMap[22]).space.PX_8, borderRadius: importDefault(dependencyMap[22]).radii.xs, borderColor: importDefault(dependencyMap[22]).colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: importDefault(dependencyMap[22]).colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: importDefault(dependencyMap[22]).space.PX_16 };
+obj.blockedMemberWarning = obj4;
 obj.consolePreJoinPadding = { height: 36 };
 let closure_26 = obj1.createStyles(obj);
 let closure_27 = importAllResult.memo((hasMembers) => {
@@ -544,7 +544,7 @@ let closure_30 = importAllResult.memo((blockedUserIds) => {
     obj = { style: tmp.blockedMemberWarning };
     const obj1 = { color: "text-feedback-warning" };
     const items = [callback2(arg1(dependencyMap[45]).CircleErrorIcon, obj1), ];
-    const obj2 = {};
+    const obj2 = { hasMaxConnections: "icon-normal", isBoostOnlySubscription: "connected-screenshare" };
     const obj3 = { flexShrink: 1 };
     obj2.style = obj3;
     const items1 = [stringResult1, " ", ];
@@ -657,7 +657,7 @@ let closure_32 = importAllResult.memo(function VoicePanelPreJoinContentInner(str
 });
 let closure_33 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDimensions,roundToNearestPixel,controlsSpecs,safeArea,withSpring,transitionState,TransitionStates,interpolate,useReducedMotion,MODE_CHANGE_PHYSICS,runOnJS,transitionCleanUp}=this.__closure;const{height:windowHeight}=windowDimensions.get();return{paddingBottom:windowHeight-roundToNearestPixel(windowHeight*0.8)+controlsSpecs.get().height+safeArea.get().bottom,opacity:withSpring(transitionState===TransitionStates.YEETED?0:1),transform:[{translateY:withSpring(interpolate(!useReducedMotion.get()&&transitionState===TransitionStates.YEETED?1:0,[0,1],[0,400]),MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished=false){finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();})}]};}" };
 let closure_34 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
-const obj4 = { gap: importDefault(dependencyMap[22]).space.PX_8, padding: importDefault(dependencyMap[22]).space.PX_8, borderRadius: importDefault(dependencyMap[22]).radii.xs, borderColor: importDefault(dependencyMap[22]).colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: importDefault(dependencyMap[22]).colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: importDefault(dependencyMap[22]).space.PX_16 };
+const tmp3 = arg1(dependencyMap[19]);
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
   const context = importAllResult.useContext(importDefault(dependencyMap[23]));
   const channelId = context.channelId;

@@ -1,5 +1,5 @@
 // Module ID: 1592
-// Function ID: 17757
+// Function ID: 17762
 // Name: _makeShareableClone
 // Dependencies: []
 // Exports: _updatePropsJS

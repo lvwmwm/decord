@@ -1,9 +1,9 @@
-// Module ID: 15987
-// Function ID: 122689
+// Module ID: 15991
+// Function ID: 122733
 // Name: AddAvatarScreen
 // Dependencies: []
 
-// Module 15987 (AddAvatarScreen)
+// Module 15991 (AddAvatarScreen)
 let Fonts;
 let ModalAnimation;
 function AddAvatarScreen() {
@@ -55,11 +55,11 @@ function AddAvatarScreen() {
   obj.style = items1;
   const obj2 = { style: tmp.headerContainer };
   obj3 = {};
-  obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj4 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = callback(dependencyMap[20]).intl;
   obj4.children = intl.string(callback(dependencyMap[20]).t.XQRWvR);
   const items2 = [callback2(callback(dependencyMap[19]).Text, obj4), ];
-  const obj5 = { "Null": true, "Null": true, "Null": true, style: tmp.subtitle };
+  const obj5 = { delete: null, dispatch: null, raw: 20, style: tmp.subtitle };
   const intl2 = callback(dependencyMap[20]).intl;
   obj5.children = intl2.string(callback(dependencyMap[20]).t.fH9TLT);
   items2[1] = callback2(callback(dependencyMap[19]).Text, obj5);
@@ -142,11 +142,11 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[9]).NAV_BAR_HEIGHT + 32 };
 obj.container = obj;
-obj.headerContainer = { -1861163602: true, -738052821: true };
+obj.headerContainer = { <string:29557293>: true, <string:45941405>: true };
 obj.buttonContainer = {};
 obj.title = { "Null": null, "Null": null };
 obj.subtitle = { textAlign: "center" };
-obj.errorContainer = { "Bool(false)": 24, "Bool(false)": "recent_games_enabled" };
+obj.errorContainer = { 0: 24, 0: "recent_games_enabled" };
 const obj1 = {};
 const tmp3 = arg1(dependencyMap[6]);
 const merged = Object.assign(importDefault(dependencyMap[10])(Fonts.DISPLAY_MEDIUM, importDefault(dependencyMap[8]).unsafe_rawColors.RED_400, 12));

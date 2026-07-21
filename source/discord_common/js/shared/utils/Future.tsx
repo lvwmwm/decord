@@ -1,9 +1,9 @@
-// Module ID: 7916
-// Function ID: 63096
+// Module ID: 7917
+// Function ID: 63109
 // Name: Future
 // Dependencies: []
 
-// Module 7916 (Future)
+// Module 7917 (Future)
 let closure_0 = importDefault(dependencyMap[1]);
 class Future {
   constructor() {

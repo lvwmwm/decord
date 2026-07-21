@@ -1,9 +1,9 @@
-// Module ID: 15659
-// Function ID: 119626
+// Module ID: 15662
+// Function ID: 119665
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15659 (_createForOfIteratorHelperLoose)
+// Module 15662 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -155,17 +155,17 @@ let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dep
 let closure_7 = { duration: 100 };
 let obj2 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { position: -4, top: -1924821678, left: 373772613, right: 27446850, bottom: 27446784, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { "Bool(true)": "absolute", "Bool(true)": -1, "Bool(true)": -1, "Bool(true)": -1, "Bool(true)": -1, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.container = obj;
 obj.iconContainer = { flexDirection: "row" };
-const importDefaultResult = importDefault(dependencyMap[3]);
-obj.floatingIconWrapper = { borderRadius: importDefault(dependencyMap[6]).radii.round };
-obj2 = { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version", tintColor: importDefault(dependencyMap[6]).colors.WHITE };
+const obj1 = { "Null": null, "Null": null, "Null": null, "Null": null, <string:903611347>: null, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj.floatingIconWrapper = obj1;
+obj2 = { "Null": "<string:2552889346>", "Null": "<string:2938503170>", tintColor: importDefault(dependencyMap[6]).colors.WHITE };
 obj.floatingIcon = obj2;
 obj.leftMargin = { marginLeft: 4 };
 let closure_8 = obj2.createStyles(obj);
 let closure_9 = { code: "function VoicePanelHeaderUserStateTsx1(){const{withTiming,isHeaderHidden,OPACITY_TIMING}=this.__closure;return{opacity:withTiming(isHeaderHidden.get()?1:0,OPACITY_TIMING)};}" };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.round };
+const importDefaultResult = importDefault(dependencyMap[3]);
 const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   const arg1 = isHeaderHidden;
@@ -200,7 +200,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHea
   fn.__initData = closure_9;
   let tmp7 = null;
   if (null != tmp4) {
-    obj = {};
+    obj = { <string:3156979454>: "Path 3", <string:2337398090>: "ADBE Vector Shape - Group", <string:1360486662>: false };
     const items1 = [tmp2.container, tmp6];
     obj.style = items1;
     obj.children = tmp4;

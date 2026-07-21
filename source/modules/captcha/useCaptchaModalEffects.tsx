@@ -1,10 +1,10 @@
-// Module ID: 15834
-// Function ID: 121029
+// Module ID: 15838
+// Function ID: 121073
 // Name: useCaptchaModalEffects
 // Dependencies: []
 // Exports: default
 
-// Module 15834 (useCaptchaModalEffects)
+// Module 15838 (useCaptchaModalEffects)
 let closure_3 = importAll(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");

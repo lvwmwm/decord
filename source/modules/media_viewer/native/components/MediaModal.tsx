@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 65371
+// Module ID: 8285
+// Function ID: 65384
 // Name: MediaModal
 // Dependencies: []
 // Exports: default
 
-// Module 8284 (MediaModal)
+// Module 8285 (MediaModal)
 let closure_4 = importAll(dependencyMap[0]);
 ({ Image: closure_5, Modal: closure_6, StyleSheet: closure_7, View: closure_8 } = arg1(dependencyMap[1]));
 let closure_9 = importDefault(dependencyMap[2]);
@@ -206,7 +206,7 @@ export default function MediaModal(initialIndex) {
     let source;
     let visible;
     ({ source, index, key, visible, pointerEvents } = hasSpoiler);
-    let obj = { paddingTop: true, opacity: true, base: true, format: true, strict: true, min: true };
+    let obj = { max: true, isoDate: true, timestamp: true, ref: true, automaticallyAdjustContentInsets: true, keyboardShouldPersistTaps: true };
     Object.setPrototypeOf(null);
     const merged = Object.assign(hasSpoiler, obj);
     let tmp4 = mediaPlayerMutedStore;
@@ -319,7 +319,7 @@ export default function MediaModal(initialIndex) {
   const tmp18 = jsx(importDefault(dependencyMap[29]), obj);
   let tmp19 = tmp18;
   if (flag) {
-    const obj1 = { onRequestClose: callback };
+    const obj1 = { <string:1046544972>: null, <string:2334712402>: null, <string:1377263878>: null, <string:2778360554>: null, <string:961729121>: null, onRequestClose: callback };
     obj2 = { style: disableMediaOverlayFooter.absoluteFill, children: tmp18 };
     obj1.children = <contextName {...obj2} />;
     tmp19 = <disableMediaOverlayButton {...obj1} />;

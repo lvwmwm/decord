@@ -1,9 +1,9 @@
-// Module ID: 7796
-// Function ID: 62231
+// Module ID: 7797
+// Function ID: 62244
 // Name: SnowflakeSelectDefaultValueTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7796 (SnowflakeSelectDefaultValueTypes)
+// Module 7797 (SnowflakeSelectDefaultValueTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SnowflakeSelectDefaultValueTypes.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 6821
-// Function ID: 53763
+// Module ID: 6822
+// Function ID: 53775
 // Name: CollectiblesMarketingPlatform
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6821 (CollectiblesMarketingPlatform)
+// Module 6822 (CollectiblesMarketingPlatform)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingPlatform.tsx");
 

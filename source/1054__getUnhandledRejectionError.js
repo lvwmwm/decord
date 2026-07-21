@@ -1,5 +1,5 @@
 // Module ID: 1054
-// Function ID: 11288
+// Function ID: 11292
 // Name: _getUnhandledRejectionError
 // Dependencies: []
 
@@ -60,7 +60,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ scope: null, escapedName: null }, {});
+    let closure_0 = Object.assign({ "Null": null, 0: null }, {});
     const obj = {
       name: "GlobalHandlers",
       setupOnce() {
@@ -152,7 +152,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
                     num = arg0(closure_1[num]);
                     obj = {};
                     obj.originalException = obj;
-                    obj = { onDrawerSlide: "M15 6h-1v2h1V6Z", onDrawerStateChanged: "ptb" };
+                    obj = {};
                     obj.mechanism = obj;
                     num.captureEvent(result, obj);
                     const obj3 = arg0(closure_1[num]);

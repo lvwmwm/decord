@@ -1,5 +1,5 @@
 // Module ID: 11530
-// Function ID: 89805
+// Function ID: 89817
 // Name: experiment
 // Dependencies: []
 // Exports: useIsGameServerPricingEnabled

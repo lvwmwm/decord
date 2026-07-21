@@ -1,7 +1,7 @@
 // Module ID: 6650
-// Function ID: 51061
+// Function ID: 51069
 // Name: AppleProductIds
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6650 (AppleProductIds)
 const _module = require(dependencyMap[0]);

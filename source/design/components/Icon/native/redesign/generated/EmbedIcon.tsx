@@ -1,5 +1,5 @@
 // Module ID: 9017
-// Function ID: 70919
+// Function ID: 70930
 // Name: EmbedIcon
 // Dependencies: []
 // Exports: EmbedIcon

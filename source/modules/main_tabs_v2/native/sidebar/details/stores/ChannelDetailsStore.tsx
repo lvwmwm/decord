@@ -1,5 +1,5 @@
 // Module ID: 9124
-// Function ID: 71434
+// Function ID: 71445
 // Name: createChannelState
 // Dependencies: []
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
@@ -21,7 +21,7 @@ function useChannelState(arg0, arg1) {
     return arg1(value);
   });
 }
-let closure_2 = { "Bool(false)": true, "Bool(false)": true };
+let closure_2 = { style: true, contentInset: true };
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => {
   const obj = { states: new Map() };

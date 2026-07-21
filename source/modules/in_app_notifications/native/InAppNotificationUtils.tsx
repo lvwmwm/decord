@@ -1,5 +1,5 @@
 // Module ID: 10223
-// Function ID: 78986
+// Function ID: 78997
 // Name: hasMedia
 // Dependencies: []
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia

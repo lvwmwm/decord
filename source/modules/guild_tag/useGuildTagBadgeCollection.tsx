@@ -1,10 +1,10 @@
-// Module ID: 16147
-// Function ID: 124467
+// Module ID: 16155
+// Function ID: 124528
 // Name: useGuildTagBadgeCollection
 // Dependencies: []
 // Exports: default
 
-// Module 16147 (useGuildTagBadgeCollection)
+// Module 16155 (useGuildTagBadgeCollection)
 const useMemo = require(dependencyMap[0]).useMemo;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

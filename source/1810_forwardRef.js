@@ -1,5 +1,5 @@
 // Module ID: 1810
-// Function ID: 19935
+// Function ID: 19940
 // Name: forwardRef
 // Dependencies: []
 
@@ -8,7 +8,7 @@ import module_0 from "module_0";
 import closure_11 from "module_0";
 
 let forwardRef;
-let closure_3 = ["state", "isArray", "constructor", "LengthDelimited", "x", "source", "isArray", "", "exports", "mode", "isArray", "constructor"];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 ({ useCallback: closure_5, useMemo: closure_6, forwardRef } = arg1(dependencyMap[1]));
 importDefault(dependencyMap[1]);
@@ -22,7 +22,7 @@ let closure_13 = { code: "function pnpm_indexTsx2(){const{blankSpace,padding,ext
 let closure_14 = { code: "function pnpm_indexTsx3(){const{padding,extraContentPadding}=this.__closure;return padding.value+extraContentPadding.value;}" };
 let closure_15 = { code: "function pnpm_indexTsx4(){const{currentHeight}=this.__closure;return{transform:[{translateY:-currentHeight.value}]};}" };
 const obj2 = arg1(dependencyMap[4]);
-const styles = StyleSheet.create({ commitView: { "Bool(false)": true, "Bool(false)": true } });
+const styles = StyleSheet.create({ commitView: { <string:2709588674>: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, <string:2253543009>: 0.0000000000000000000000000000000000000000000000000000000000000466726142659596 } });
 
 export default forwardRef((onEndVisible) => {
   let contentOffsetY;

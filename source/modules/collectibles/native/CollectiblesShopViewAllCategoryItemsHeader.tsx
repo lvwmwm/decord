@@ -1,19 +1,19 @@
-// Module ID: 14388
-// Function ID: 108555
+// Module ID: 14391
+// Function ID: 108587
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [31, 27, 1849, 33, 4126, 8889, 5428, 1212, 4657, 5387]
+// Dependencies: [31, 27, 1849, 33, 4126, 8889, 5428, 1212, 4656, 5386]
 // Exports: default
 
-// Module 14388 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 14391 (CollectiblesShopViewAllCategoryItemsHeader)
 import "module_31";
-import keys from "keys";
+import get ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import module_33 from "module_33";
 import XSmallIcon from "XSmallIcon";
 
-({ Image: closure_3, View: closure_4 } = keys);
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = _isNativeReflectConstruct);
-let closure_7 = module_33.createStyles({ headerContainer: {}, backButton: { flex: 1 }, logo: {}, dummyRightButton: { flex: 1 } });
+let closure_7 = module_33.createStyles({ headerContainer: {}, backButton: { flex: 1 }, logo: { "Null": null, "Null": null }, dummyRightButton: { flex: 1 } });
 const result = XSmallIcon.fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {

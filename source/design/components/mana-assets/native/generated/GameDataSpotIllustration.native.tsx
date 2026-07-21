@@ -1,5 +1,5 @@
 // Module ID: 6067
-// Function ID: 50014
+// Function ID: 50022
 // Name: GameDataSpotIllustration
 // Dependencies: []
 // Exports: GameDataSpotIllustration

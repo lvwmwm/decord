@@ -1,9 +1,9 @@
-// Module ID: 12633
-// Function ID: 97224
+// Module ID: 12635
+// Function ID: 97246
 // Name: VoiceStateAnalytics
 // Dependencies: []
 
-// Module 12633 (VoiceStateAnalytics)
+// Module 12635 (VoiceStateAnalytics)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

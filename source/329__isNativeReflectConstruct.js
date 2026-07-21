@@ -1,9 +1,12 @@
 // Module ID: 329
 // Function ID: 4909
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [26476544, 16580608, 1399914496, 1912602625, 110, 42, 1908208, 393216, 458752, 983040, 1114112, 1179648]
 
 // Module 329 (_isNativeReflectConstruct)
+import weakSet from "weakSet";
+import get from "get";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,13 +16,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [false, false, false, false, false];
+let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
 const importAllResult = importAll(dependencyMap[6]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 
@@ -35,14 +36,14 @@ export default (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_7(ImageBackground);
+      obj = weakSet(ImageBackground);
       tmp3 = closure_6;
       if (closure_11()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, combined, closure_7(self).constructor);
+        tmp5 = weakSet;
+        constructResult = Reflect.construct(obj, combined, weakSet(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }

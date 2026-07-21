@@ -1,10 +1,10 @@
-// Module ID: 15452
-// Function ID: 117859
+// Module ID: 15455
+// Function ID: 117898
 // Name: RestrictedMessagePreviewHeader
 // Dependencies: []
 // Exports: default
 
-// Module 15452 (RestrictedMessagePreviewHeader)
+// Module 15455 (RestrictedMessagePreviewHeader)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
@@ -30,7 +30,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
   let obj = importDefault(dependencyMap[7]);
   const name = obj.getName(user);
   let obj1 = importDefault(dependencyMap[7]);
-  const userTag = obj1.getUserTag(user, {});
+  const userTag = obj1.getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true });
   const React = userTag;
   const items = [user.id, channel.id, analyticsLocations];
   const callback = React.useCallback(() => {
@@ -71,25 +71,26 @@ export default function RestrictedMessagePreviewHeader(channel) {
   const intl2 = arg1(dependencyMap[18]).intl;
   obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.iXAna6);
   obj2.onPress = callback;
-  obj2.children = callback(arg1(dependencyMap[20]).Text, { children: name });
+  const obj3 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: name };
+  obj2.children = callback(arg1(dependencyMap[20]).Text, obj3);
   items3[1] = callback(arg1(dependencyMap[17]).PressableOpacity, obj2);
   let tmp9 = !user.isProvisional;
   if (tmp9) {
-    const obj3 = { accessibilityRole: "button" };
+    const obj4 = { accessibilityRole: "button" };
     const intl3 = arg1(dependencyMap[18]).intl;
-    obj3.accessibilityHint = intl3.string(arg1(dependencyMap[18]).t.y5MwJy);
-    obj3.onPress = callback1;
-    const obj4 = { children: userTag };
-    obj3.children = callback(arg1(dependencyMap[20]).Text, obj4);
-    tmp9 = callback(arg1(dependencyMap[17]).PressableOpacity, obj3);
+    obj4.accessibilityHint = intl3.string(arg1(dependencyMap[18]).t.y5MwJy);
+    obj4.onPress = callback1;
+    const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: userTag };
+    obj4.children = callback(arg1(dependencyMap[20]).Text, obj5);
+    tmp9 = callback(arg1(dependencyMap[17]).PressableOpacity, obj4);
   }
   items3[2] = tmp9;
-  const obj5 = {};
+  const obj6 = {};
   const intl4 = arg1(dependencyMap[18]).intl;
-  obj5.children = intl4.formatToPlainString(arg1(dependencyMap[18]).t.Qvg+6+, { username: name });
-  items3[3] = callback(arg1(dependencyMap[20]).Text, obj5);
-  const obj6 = { userId: user.id, onPress: callback2, iconSize: arg1(dependencyMap[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
-  items3[4] = callback(importDefault(dependencyMap[21]), obj6);
+  obj6.children = intl4.formatToPlainString(arg1(dependencyMap[18]).t.Qvg+6+, { username: name });
+  items3[3] = callback(arg1(dependencyMap[20]).Text, obj6);
+  const obj7 = { userId: user.id, onPress: callback2, iconSize: arg1(dependencyMap[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
+  items3[4] = callback(importDefault(dependencyMap[21]), obj7);
   items3[5] = callback(importDefault(dependencyMap[23]), { channel, user });
   obj.children = items3;
   return closure_7(View, obj);

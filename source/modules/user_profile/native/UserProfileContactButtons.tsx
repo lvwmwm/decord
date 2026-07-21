@@ -1,5 +1,5 @@
 // Module ID: 12033
-// Function ID: 92969
+// Function ID: 92981
 // Name: FlatFriendButton
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ function FlatFriendButton(label) {
   let icon;
   let isPending;
   label = label.label;
-  let obj = { y: null, x: 4, animated: 4, ref: "rgba(0, 0, 0, 0.75)" };
+  let obj = { animated: "ERROR", ref: "ERROR", style: "NOT_RESPONDER", automaticallyAdjustContentInsets: "NOT_RESPONDER" };
   ({ icon, hasCustomProfileTheme, isPending } = label);
   Object.setPrototypeOf(null);
   const merged = Object.assign(label, obj);
@@ -128,7 +128,7 @@ const RelationshipTypes = arg1(dependencyMap[3]).RelationshipTypes;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.threeButtonLayout = obj;
 obj.flexGrow = { flex: 1 };
 const tmp3 = arg1(dependencyMap[4]);

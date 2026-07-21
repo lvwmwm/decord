@@ -1,9 +1,9 @@
-// Module ID: 12625
-// Function ID: 97058
+// Module ID: 12627
+// Function ID: 97080
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12625 (_isNativeReflectConstruct)
+// Module 12627 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -79,7 +79,7 @@ function handleCounter(lastValue) {
   let accumulated;
   let obj = arg1;
   if (null == arg1) {
-    obj = { "Bool(false)": -536870861, "Bool(false)": -299892737 };
+    obj = { y: -536870861, isArray: -299892737 };
   }
   ({ accumulated, lastValue } = obj);
   obj = {};
@@ -569,7 +569,7 @@ const tmp2 = (arg0) => {
       histogram = new VoiceQuality(closure_2[6]).Histogram();
       obj.speakingAudioLevel = histogram;
       tmp2Result.outboundStats = obj;
-      tmp2Result.duration = { <string:2153876638>: null, <string:1118085201>: 4, left command: 4, right command: "rgba(0, 0, 0, 0.75)" };
+      tmp2Result.duration = { <string:3390132984>: "ERROR", <string:156495013>: "ERROR", <string:4127624198>: "NOT_RESPONDER", <string:4068496046>: "NOT_RESPONDER" };
       tmp2Result.periodicInboundStats = {};
       tmp2Result.inputDeviceStats = {};
       tmp2Result.outputDeviceStats = {};
@@ -634,7 +634,7 @@ const tmp2 = (arg0) => {
         packetsReceived.fecPacketsReceived = packetsReceived.fecPacketsReceived + packetsReceived2.fecPacketsReceived;
         packetsReceived.fecPacketsDiscarded = packetsReceived.fecPacketsDiscarded + packetsReceived2.fecPacketsDiscarded;
         return packetsReceived;
-      }, {});
+      }, { returnKeyType: null, submitBehavior: null, value: null, maxLength: null, style: null });
       return { packets_sent: this.outboundStats.packetsSent, packets_sent_lost: this.outboundStats.packetsLost, packets_received: reduced.packetsReceived, packets_received_lost: reduced.packetsReceivedLost, num_nacks_sent: reduced.nackCount, fec_packets_received: reduced.fecPacketsReceived, fec_packets_discarded: reduced.fecPacketsDiscarded };
     }
   };
@@ -797,7 +797,7 @@ const tmp2 = (arg0) => {
           silent.cng = silent.cng + frameOpStats.frameOpStats.cng;
         }
         return silent;
-      }, { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null });
+      }, { padding: true, surrogates: "/assets/design/components/Icon/native/redesign/generated/images", join: 24, start: 24, join: null, delete: "99274532ad7fe616c031212e677b32e8", useEffect: "ThreadLockIcon" });
       return { frame_op_silent: reduced.silent, frame_op_normal: reduced.normal, frame_op_merged: reduced.merged, frame_op_expanded: reduced.expanded, frame_op_accelerated: reduced.accelerated, frame_op_preemptive_expanded: reduced.preemptiveExpanded, frame_op_cng: reduced.cng };
     }
   };
@@ -871,7 +871,7 @@ const tmp2 = (arg0) => {
         }
         passthroughCount.decryptFailureAfterSuccessCount = passthroughCount.decryptFailureAfterSuccessCount + (num8 - num9);
         return passthroughCount;
-      }, {});
+      }, { RowButtonIconProps: null, textDecorationLine: 0.6, textDecorationColor: "BounceOutRight", flexShrink: null, getEmbeddedActivityLaunchability: 0.6, FITNESS: "BounceOutLeft", wide: null, tall: 0.6 });
       return { decrypt_passthrough_count: reduced.passthroughCount, decrypt_success_count: reduced.decryptSuccessCount, decrypt_failure_count: reduced.decryptFailureCount, decrypt_duration: reduced.decryptDuration, decrypt_attempts: reduced.decryptAttempts, decrypt_missing_key_count: reduced.decryptMissingKeyCount, decrypt_invalid_nonce_count: reduced.decryptInvalidNonceCount, decrypt_failure_after_success_count: reduced.decryptFailureAfterSuccessCount, encrypt_passthrough_count: this.outboundStats.passthroughCount, encrypt_success_count: this.outboundStats.encryptSuccessCount, encrypt_failure_count: this.outboundStats.encryptFailureCount, encrypt_duration: this.outboundStats.encryptDuration, encrypt_attempts: this.outboundStats.encryptAttempts, encrypt_max_attempts: this.outboundStats.encryptMaxAttempts, encrypt_missing_key_count: this.outboundStats.encryptMissingKeyCount };
     }
   };
@@ -917,7 +917,7 @@ const tmp2 = (arg0) => {
     key: "getAudioLevelStats",
     value() {
       const speakingAudioLevel = this.outboundStats.speakingAudioLevel;
-      const report = speakingAudioLevel.getReport(["LT", "LV", "NO", "SE", "SJ", "PX_16", "isArray", "Promise", "isArray"]);
+      const report = speakingAudioLevel.getReport([]);
       return { outbound_audio_level_db_p1: report.percentiles[1], outbound_audio_level_db_p5: report.percentiles[5], outbound_audio_level_db_p10: report.percentiles[10], outbound_audio_level_db_p25: report.percentiles[25], outbound_audio_level_db_p50: report.percentiles[50], outbound_audio_level_db_p75: report.percentiles[75], outbound_audio_level_db_p90: report.percentiles[90], outbound_audio_level_db_p95: report.percentiles[95], outbound_audio_level_db_p99: report.percentiles[99], outbound_audio_level_db_max: report.max, outbound_audio_level_db_mean: report.mean };
     }
   };

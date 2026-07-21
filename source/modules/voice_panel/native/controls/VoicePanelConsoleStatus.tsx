@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 120168
+// Module ID: 15731
+// Function ID: 120333
 // Name: VoicePanelConsoleStatus
 // Dependencies: []
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 15722 (VoicePanelConsoleStatus)
+// Module 15731 (VoicePanelConsoleStatus)
 class VoicePanelConsoleStatus {
   constructor(arg0) {
     state = global.state;

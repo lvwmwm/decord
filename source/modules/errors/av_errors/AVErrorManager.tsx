@@ -1,9 +1,9 @@
-// Module ID: 16392
-// Function ID: 126657
+// Module ID: 16400
+// Function ID: 126718
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16392 (_isNativeReflectConstruct)
+// Module 16400 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -117,7 +117,7 @@ function makeErrorKey(type) {
   }
   return "" + type.type + ":" + errorContextKey;
 }
-let closure_3 = ["gradientTransform"];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

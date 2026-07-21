@@ -1,13 +1,14 @@
 // Module ID: 4127
-// Function ID: 34341
+// Function ID: 34346
 // Name: withTiming
-// Dependencies: []
+// Dependencies: [15, 17, 18, 5]
 
 // Module 4127 (withTiming)
-let closure_2 = require(dependencyMap[0]).CONFIG_NEVER_ANIMATE_TIMING;
+import { CONFIG_NEVER_ANIMATE_TIMING as closure_2 } from "_possibleConstructorReturn";
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 let closure_3 = { code: "function withTiming_timingTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE_TIMING,ReduceMotion,REAwithTiming}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE_TIMING:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithTiming(toValue,configForRea,callback);}" };
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/animation/reanimated/timing/timing.tsx");
+const result = asyncGeneratorStep.fileFinishedImporting("design/animation/reanimated/timing/timing.tsx");
 
 export const withTiming = () => {
   function withTiming(value, timingStandard, onComplete, fn) {

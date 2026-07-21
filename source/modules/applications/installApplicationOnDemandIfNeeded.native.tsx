@@ -1,5 +1,5 @@
 // Module ID: 10820
-// Function ID: 84009
+// Function ID: 84020
 // Name: _installApplicationOnDemandIfNeeded
 // Dependencies: []
 // Exports: installApplicationOnDemandIfNeeded

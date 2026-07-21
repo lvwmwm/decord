@@ -1,10 +1,10 @@
-// Module ID: 15554
-// Function ID: 118664
+// Module ID: 15557
+// Function ID: 118703
 // Name: requestFreezeLock
 // Dependencies: []
 // Exports: default
 
-// Module 15554 (requestFreezeLock)
+// Module 15557 (requestFreezeLock)
 function requestFreezeLock(lockEnabled) {
   const state = state.getState();
   const freezeLock = state.requestFreezeLock({ lockEnabled, key: "external-pip" });

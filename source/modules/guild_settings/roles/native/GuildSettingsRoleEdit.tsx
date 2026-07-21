@@ -1,10 +1,10 @@
-// Module ID: 16185
-// Function ID: 125008
+// Module ID: 16193
+// Function ID: 125069
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16185 (_isNativeReflectConstruct)
+// Module 16193 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +14,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = ["transform"];
+let closure_4 = [false];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -38,7 +38,7 @@ const HOLOGRAPHIC_ROLE_COLORS = arg1(dependencyMap[18]).HOLOGRAPHIC_ROLE_COLORS;
 const tmp3 = arg1(dependencyMap[17]);
 ({ jsx: closure_27, jsxs: closure_28, Fragment: closure_29 } = arg1(dependencyMap[19]));
 let obj = arg1(dependencyMap[20]);
-obj = { container: { <string:1191183569>: true, <string:1224738001>: null } };
+obj = { container: { 314319: "<string:4083789493>", 315874: "<string:3209801398>" } };
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[21]).colors.BACKGROUND_SURFACE_HIGH };
 obj.innerContainer = obj;
 obj.managedRolesWarningContainer = {};
@@ -157,7 +157,7 @@ const tmp5 = (PureComponent) => {
             }
           }
           if (currentStyle === constants.SOLID) {
-            obj = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", textAlign: true, primary_color };
+            obj = { <string:996344831>: false, <string:4132547158>: false, <string:1375429038>: null, primary_color };
             let primary_color1 = primary_color;
             tmp6 = obj;
           } else if (currentStyle === constants.HOLOGRAPHIC) {

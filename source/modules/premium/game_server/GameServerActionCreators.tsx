@@ -1,5 +1,5 @@
 // Module ID: 11504
-// Function ID: 89626
+// Function ID: 89638
 // Name: fetchGameServerCatalog
 // Dependencies: []
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, wakeGameServer
@@ -188,7 +188,7 @@ export const disableGameServerForGuild = function disableGameServerForGuild(arg0
 };
 export const fetchGameServerRegions = function fetchGameServerRegions(arg0) {
   const HTTP = arg1(dependencyMap[7]).HTTP;
-  const obj = { flexShrink: 24, flexBasis: 24, paddingBottom: null, flexDirection: "8ba3e8ee2991f198308400197cdb28bc", url: closure_7.GAME_SERVER_REGIONS(arg0) };
+  const obj = { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "8ba3e8ee2991f198308400197cdb28bc", url: closure_7.GAME_SERVER_REGIONS(arg0) };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let obj = callback(closure_2[4]);

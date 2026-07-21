@@ -1,10 +1,10 @@
-// Module ID: 7704
-// Function ID: 61386
+// Module ID: 7705
+// Function ID: 61398
 // Name: createGuildProductPurchaseSystemMessage
 // Dependencies: []
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 7704 (createGuildProductPurchaseSystemMessage)
+// Module 7705 (createGuildProductPurchaseSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const MessageTypes = arg1(dependencyMap[2]).MessageTypes;

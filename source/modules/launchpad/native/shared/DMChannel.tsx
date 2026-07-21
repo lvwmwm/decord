@@ -1,14 +1,14 @@
-// Module ID: 15545
-// Function ID: 118597
+// Module ID: 15548
+// Function ID: 118636
 // Name: usePrivateChannelPressEvents
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15545 (usePrivateChannelPressEvents)
-import importAllResult from "__exportStarResult1";
-import { UnreadSetting } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15548 (usePrivateChannelPressEvents)
+import importAllResult from "result";
+import { UnreadSetting } from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
 
 function usePrivateChannelPressEvents(channel, flag) {
   flag = channel;
@@ -25,10 +25,10 @@ function usePrivateChannelPressEvents(channel, flag) {
   };
 }
 let obj = { pressable: { flex: 1 } };
-obj = { backgroundColor: require("__exportStarResult1").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj = { backgroundColor: require("result").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.pressableUnderlayColor = obj;
-let closure_6 = __exportStarResult1.createStyles(obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+let closure_6 = result.createStyles(obj);
+result = result.fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
 
 export default importAllResult.memo(function DMChannel(navigationReplace) {
   let channel;

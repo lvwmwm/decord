@@ -1,5 +1,5 @@
 // Module ID: 11429
-// Function ID: 88939
+// Function ID: 88951
 // Name: useCommandDiscoveryManager
 // Dependencies: []
 // Exports: updateInitialSectionId

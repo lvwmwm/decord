@@ -1,5 +1,5 @@
 // Module ID: 11859
-// Function ID: 91810
+// Function ID: 91822
 // Name: ReportContent
 // Dependencies: []
 // Exports: default
@@ -206,7 +206,7 @@ function ReportContent(applicationId) {
         obj5.children = items2;
         const items3 = [callback(closure_6, obj5), ];
         const obj9 = { style: tmp.submitContainer };
-        const obj10 = {};
+        const obj10 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
         const intl6 = applicationId(navigation[10]).intl;
         obj10.text = intl6.string(applicationId(navigation[10]).t.geKm7t);
         obj10.disabled = "" === first2.trim();
@@ -230,7 +230,7 @@ function ReportContent(applicationId) {
         obj11.children = items4;
         const items5 = [callback(closure_6, obj11), ];
         const obj14 = { style: tmp.submitContainer };
-        const obj15 = {};
+        const obj15 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
         const intl3 = applicationId(navigation[10]).intl;
         obj15.text = intl3.string(applicationId(navigation[10]).t.geKm7t);
         obj15.disabled = "" === first4.trim();

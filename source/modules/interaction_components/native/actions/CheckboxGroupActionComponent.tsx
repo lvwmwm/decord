@@ -1,8 +1,8 @@
-// Module ID: 15952
-// Function ID: 122360
+// Module ID: 15956
+// Function ID: 122404
 // Dependencies: []
 
-// Module 15952
+// Module 15956
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const memoResult = importAllResult.memo((type) => {

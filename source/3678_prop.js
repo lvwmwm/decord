@@ -1,5 +1,5 @@
 // Module ID: 3678
-// Function ID: 28045
+// Function ID: 28050
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: {}, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } };
+    obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true } };
+    const obj1 = { long: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, narrow: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, short: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "bg";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: {}, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" } }, disjunction: { long: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191111, "Bool(false)": true } }, unit: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } } }, locale: "bg" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, narrow: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" }, short: { application: "<string:3940566210>", Set: "<string:3942252546>", Icon: "<string:3940548610>", id: "<string:3942252546>" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "bg" });

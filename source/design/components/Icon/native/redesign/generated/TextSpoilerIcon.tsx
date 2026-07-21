@@ -1,10 +1,10 @@
-// Module ID: 4632
-// Function ID: 40269
+// Module ID: 4631
+// Function ID: 40276
 // Name: TextSpoilerIcon
 // Dependencies: []
 // Exports: TextSpoilerIcon
 
-// Module 4632 (TextSpoilerIcon)
+// Module 4631 (TextSpoilerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TextSpoilerIcon.tsx");

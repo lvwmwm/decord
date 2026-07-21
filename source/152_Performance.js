@@ -18,7 +18,7 @@ if (null == fn) {
 if (null == fn) {
   fn = () => Date.now();
 }
-let closure_7 = [1105639455, 1956642816];
+let closure_7 = [null, null];
 const tmp4 = () => {
   class Performance {
     constructor() {

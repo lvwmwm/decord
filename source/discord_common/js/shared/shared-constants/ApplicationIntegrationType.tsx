@@ -1,9 +1,9 @@
-// Module ID: 8172
-// Function ID: 64503
+// Module ID: 8173
+// Function ID: 64516
 // Name: ApplicationIntegrationType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8172 (ApplicationIntegrationType)
+// Module 8173 (ApplicationIntegrationType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationIntegrationType.tsx");
 

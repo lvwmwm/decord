@@ -1,10 +1,10 @@
-// Module ID: 7724
-// Function ID: 61432
+// Module ID: 7725
+// Function ID: 61444
 // Name: createInGameMessageNuxSystemMessage
 // Dependencies: []
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7724 (createInGameMessageNuxSystemMessage)
+// Module 7725 (createInGameMessageNuxSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx");

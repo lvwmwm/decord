@@ -1,7 +1,7 @@
 // Module ID: 8571
-// Function ID: 68096
+// Function ID: 68107
 // Name: BannerPalettePresets
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8571 (BannerPalettePresets)
 let obj = { BOULDER: "Boulder", CASCADE: "Cascade", THUNDER: "Thunder", SOUL: "Soul", MARSH: "Marsh", VOLCANO: "Volcano", EARTH: "Earth", ZEPHYR: "Zephyr", RISING: "Rising" };

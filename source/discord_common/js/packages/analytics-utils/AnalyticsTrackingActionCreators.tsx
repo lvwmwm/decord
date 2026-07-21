@@ -1,7 +1,7 @@
 // Module ID: 635
 // Function ID: 7325
 // Name: queueTrackingEventMaker
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: queueTrackingEventMaker
 
 // Module 635 (queueTrackingEventMaker)

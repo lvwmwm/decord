@@ -1,5 +1,5 @@
 // Module ID: 10263
-// Function ID: 79272
+// Function ID: 79283
 // Name: usePreviewableMediaText
 // Dependencies: []
 // Exports: usePreviewableMediaText
@@ -16,7 +16,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
   const items = [author, previewableMedia];
   return React.useMemo(() => {
     if (0 === previewableMedia.length) {
-      return { RaidLockdownFeedbackType: "o", maxWidth: "o" };
+      return { 1627762769: "o", 1359040893: "o" };
     } else if (1 === previewableMedia.length) {
       const first = previewableMedia[0];
       const type = first.type;

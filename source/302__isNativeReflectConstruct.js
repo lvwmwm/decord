@@ -20,7 +20,7 @@ function numColumnsOrDefault(arg0) {
   }
   return num;
 }
-let closure_4 = [-1073741767, -533178075, -1610612671, -498186864];
+let closure_4 = [true, true, true, true];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);

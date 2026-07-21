@@ -1,10 +1,10 @@
-// Module ID: 4655
-// Function ID: 40315
+// Module ID: 4654
+// Function ID: 40322
 // Name: VoiceNormalIcon
 // Dependencies: []
 // Exports: VoiceNormalIcon
 
-// Module 4655 (VoiceNormalIcon)
+// Module 4654 (VoiceNormalIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceNormalIcon.tsx");

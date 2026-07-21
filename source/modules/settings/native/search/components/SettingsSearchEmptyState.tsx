@@ -1,13 +1,13 @@
-// Module ID: 14457
-// Function ID: 108943
+// Module ID: 14460
+// Function ID: 108975
 // Dependencies: []
 
-// Module 14457
+// Module 14460
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { <string:2930266538>: 3, <string:1666624098>: 2, <string:1675098530>: 0 }, textContainer: { marginTop: 24 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { 9223372036854775807: 3, 0: 2, 0: 0 }, textContainer: { marginTop: 24 } });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   const tmp = callback3();
@@ -18,12 +18,12 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   }, []);
   let obj = { style: tmp.container };
   const items = [callback(arg1(dependencyMap[6]).NoResultsAlt, { resizeMode: "contain" }), ];
-  obj = { headerBackground: false, headerTransparent: false, headerBackVisible: false, style: tmp.textContainer };
-  obj = {};
+  obj = { -630368598: "number", -630400296: "number", -623848933: "mY3Y38", style: tmp.textContainer };
+  obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const intl = arg1(dependencyMap[5]).intl;
   obj.children = intl.string(arg1(dependencyMap[5]).t.zihbmv);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  const obj1 = {};
+  const obj1 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
   const intl2 = arg1(dependencyMap[5]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[5]).t.XclvsB);
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);

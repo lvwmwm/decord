@@ -1,7 +1,7 @@
 // Module ID: 8997
-// Function ID: 70824
+// Function ID: 70835
 // Name: EXAMPLE_DOMAIN
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getDnsName, getHttpName
 
 // Module 8997 (EXAMPLE_DOMAIN)

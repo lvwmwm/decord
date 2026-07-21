@@ -1,5 +1,5 @@
 // Module ID: 12304
-// Function ID: 94282
+// Function ID: 94294
 // Name: Footer
 // Dependencies: []
 // Exports: default
@@ -27,7 +27,7 @@ export default function Footer(showSubscribeButton) {
     obj.children = intl.string(arg1(dependencyMap[7]).t.2bSPbq);
     const items1 = [callback(arg1(dependencyMap[6]).Text, obj), ];
     const obj1 = { style: tmp.button };
-    const obj2 = { "Bool(true)": "RBTree", "Bool(true)": "currentEmbeddedApplication", "Bool(true)": "SyntaxError", "Bool(true)": "RBTree", "Bool(true)": "preemptiveExpanded", text: tmp5, onPress: tmp4 };
+    const obj2 = { -77431875: true, 651579808: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", -1437179293: null, 1640527953: "06ce787c33fd0c9cd370f243d3462ef5", 101339451: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages", text: tmp5, onPress: tmp4 };
     obj1.children = callback(arg1(dependencyMap[8]).Button, obj2);
     items1[1] = callback(View, obj1);
     obj.children = items1;

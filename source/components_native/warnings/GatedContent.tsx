@@ -1,5 +1,5 @@
 // Module ID: 10002
-// Function ID: 77301
+// Function ID: 77312
 // Name: GatedContent
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_
 obj.container = obj;
 obj.title = { textAlign: "center" };
 obj.description = { textAlign: "center" };
-obj.buttonGroup = { alignItems: "flex", justifyContent: "column" };
+obj.buttonGroup = { 0: 0, 0: 8 };
 let closure_5 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/warnings/GatedContent.tsx");
@@ -65,9 +65,7 @@ export default function GatedContent(onAgree) {
   let obj = { spacing: 16, style: tmp.container };
   obj = { align: "center" };
   obj = { style: tmp.title, children: title };
-  const items3 = [channelId(arg1(dependencyMap[6]).Text, obj), subtitle, ];
-  const obj1 = { <string:3422816600>: true, <string:99133337>: true, <string:77661089>: true, <string:3265332897>: true, style: tmp.description, children: description };
-  items3[2] = channelId(arg1(dependencyMap[6]).Text, obj1);
+  const items3 = [channelId(arg1(dependencyMap[6]).Text, obj), subtitle, channelId(arg1(dependencyMap[6]).Text, { style: tmp.description, children: description })];
   obj.children = items3;
   const items4 = [guildId(arg1(dependencyMap[5]).Stack, obj), ];
   const obj2 = { style: tmp.buttonGroup };

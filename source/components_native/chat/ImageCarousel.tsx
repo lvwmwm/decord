@@ -1,5 +1,5 @@
 // Module ID: 9640
-// Function ID: 75060
+// Function ID: 75071
 // Name: useTileEntranceAnimatedStyle
 // Dependencies: []
 
@@ -18,17 +18,17 @@ function useTileEntranceAnimatedStyle(arg0) {
     obj = { duration: 300 };
     const value = sharedValue.get();
     obj.easing = sharedValue(closure_2[10]).STANDARD_EASING;
-    obj.opacity = sharedValue(closure_2[9]).withTiming(value, obj, "animate-always");
+    obj.opacity = sharedValue(closure_2[9]).withTiming(value, obj, "respect-motion-settings");
     obj = {};
     const obj2 = sharedValue(closure_2[9]);
-    obj.scale = sharedValue(closure_2[11]).withSpring(sharedValue.get(), {}, "animate-always");
+    obj.scale = sharedValue(closure_2[11]).withSpring(sharedValue.get(), {}, "respect-motion-settings");
     const items = [obj];
     obj.transform = items;
     return obj;
   };
   obj = { withTiming: arg1(dependencyMap[9]).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: arg1(dependencyMap[10]).STANDARD_EASING, withSpring: arg1(dependencyMap[11]).withSpring };
   fn.__closure = obj;
-  fn.__workletHash = 9754366991991;
+  fn.__workletHash = 14458898683767;
   fn.__initData = closure_14;
   return arg1(dependencyMap[8]).useAnimatedStyle(fn);
 }
@@ -177,7 +177,7 @@ function Tile(onEdit) {
       }
       tmp21 = null;
       if (length > 0) {
-        const obj5 = { listener: "bb53327d21615c77cfbccb9f06aeb711", listenerType: "wumpus-link", passive: "png", style: tmp.altTagText };
+        const obj5 = { "Null": "bb53327d21615c77cfbccb9f06aeb711", "Null": "wumpus-link", "Null": "png", style: tmp.altTagText };
         const intl = onEdit(channelId[20]).intl;
         obj5.children = intl.string(onEdit(channelId[20]).t.QEW81z);
         tmp21 = flag(onEdit(channelId[19]).Text, obj5);
@@ -243,7 +243,7 @@ function Tile(onEdit) {
   obj3.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[20]).t.FxKgb3, obj4);
   obj3.style = tmp.closeButton;
   obj3.onPress = callback1;
-  obj3.hitSlop = {};
+  obj3.hitSlop = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
   const obj5 = { style: items9 };
   const items9 = [tmp.closeContainer, tmp9Result];
   const obj6 = { source: importDefault(dependencyMap[24]), size: arg1(dependencyMap[10]).Icon.Sizes.MEDIUM, color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_500, style: tmp.closeButtonIcon };
@@ -302,14 +302,14 @@ obj1["justifyContent"] = "space-between";
 obj1["alignItems"] = "flex-end";
 obj1["padding"] = 4;
 obj.decorationsContainer = obj1;
-const obj2 = { <string:80135168>: 8, <string:80135680>: 8, <string:778326272>: null, <string:1595151040>: null, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj2 = { <string:80175360>: 5, <string:80175872>: 4, <string:2412663040>: "absolute", <string:1594430144>: 8, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.highlightedTileContainer = obj2;
 obj.closeButton = { top: -1 * IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN };
 obj.scrollview = { paddingTop: IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING };
-const obj4 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX };
-obj.closeContainer = obj4;
 const obj3 = { top: -1 * IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN };
 const tmp4 = arg1(dependencyMap[5]);
+obj.closeContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX };
+const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX };
 obj.closeButtonIcon = { borderRadius: importDefault(dependencyMap[7]).radii.lg, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER, tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj5 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER, tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.altTagText = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4, lineHeight: 20, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX, borderRadius: importDefault(dependencyMap[7]).radii.xs, textTransform: "uppercase" };
@@ -321,7 +321,7 @@ const obj7 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUN
 const obj8 = {};
 obj.footerRightContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 let closure_13 = obj1.createStyles(obj);
-let closure_14 = { code: "function ImageCarouselTsx1(){const{withTiming,animatedStylePropValue,STANDARD_EASING,withSpring}=this.__closure;return{opacity:withTiming(animatedStylePropValue.get(),{duration:300,easing:STANDARD_EASING},'animate-always'),transform:[{scale:withSpring(animatedStylePropValue.get(),{stiffness:80,damping:6,mass:0.3},'animate-always')}]};}" };
+let closure_14 = { code: "function ImageCarouselTsx1(){const{withTiming,animatedStylePropValue,STANDARD_EASING,withSpring}=this.__closure;return{opacity:withTiming(animatedStylePropValue.get(),{duration:300,easing:STANDARD_EASING},'respect-motion-settings'),transform:[{scale:withSpring(animatedStylePropValue.get(),{stiffness:80,damping:6,mass:0.3},'respect-motion-settings')}]};}" };
 const obj9 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 const memoResult = importAllResult.memo((arg0) => {
   let attachments;
@@ -377,7 +377,7 @@ const memoResult = importAllResult.memo((arg0) => {
   obj.marginBottom = num5;
   items2[1] = obj;
   obj.style = items2;
-  obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole", "Bool(true)": "track" };
+  obj = {};
   const intl = arg1(dependencyMap[20]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[20]).t.RhtzFe);
   const items3 = [headerElement, ];

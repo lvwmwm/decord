@@ -1,10 +1,17 @@
-// Module ID: 14758
-// Function ID: 111258
+// Module ID: 14761
+// Function ID: 111292
 // Name: isFavoritesGuildVisible
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14758 (isFavoritesGuildVisible)
+// Module 14761 (isFavoritesGuildVisible)
+import { useIsContentShown } from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import { PremiumTypes } from "result";
+import result from "result";
+
 function isFavoritesGuildVisible(favoriteGuildEnabled, getCurrentUser, getGuildId, favoritesGuildXPEnabled) {
   if (favoritesGuildXPEnabled.favoritesGuildXPEnabled) {
     if (favoritesGuildXPEnabled.isMenuItemDCSelected) {
@@ -32,13 +39,7 @@ function isFavoritesGuildVisible(favoriteGuildEnabled, getCurrentUser, getGuildI
     return false;
   }
 }
-const useIsContentShown = require(dependencyMap[0]).useIsContentShown;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const PremiumTypes = require(dependencyMap[4]).PremiumTypes;
-const _module = require(dependencyMap[11]);
-const result = _module.fileFinishedImporting("modules/favorites/useIsFavoritesGuildVisible.tsx");
+result = result.fileFinishedImporting("modules/favorites/useIsFavoritesGuildVisible.tsx");
 
 export default function useIsFavoritesGuildVisible(location) {
   let obj = require(closure_2[7]);

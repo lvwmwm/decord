@@ -1,13 +1,14 @@
-// Module ID: 15015
-// Function ID: 113091
+// Module ID: 15018
+// Function ID: 113125
 // Name: _fetchNotificationCenterItems
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15015 (_fetchNotificationCenterItems)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { Endpoints } from "__exportStarResult1";
+// Module 15018 (_fetchNotificationCenterItems)
+import closure_3 from "result";
+import closure_4 from "result";
+import { Endpoints } from "result";
+import result from "result";
 
 function _fetchNotificationCenterItems() {
   // CreateGeneratorClosureLongIndex (0x67)
@@ -31,7 +32,7 @@ function _markNotificationCenterRemoteItemAcked() {
 }
 function markNotificationCenterMentionAcked(id) {
   let obj = importDefault(dependencyMap[3]);
-  obj = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": null };
+  obj = { 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 9223372036854775807: null };
   const items = [id];
   obj.ids = items;
   obj.dispatch(obj);
@@ -48,7 +49,7 @@ function _deleteNotificationCenterItem() {
   const _deleteNotificationCenterItem = obj;
   return obj(...arguments);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
+result = result.fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
 
 export const setNotificationCenterActive = function setNotificationCenterActive(active) {
   let obj = importDefault(dependencyMap[3]);

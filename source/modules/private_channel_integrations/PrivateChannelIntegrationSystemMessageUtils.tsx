@@ -1,10 +1,10 @@
-// Module ID: 7676
-// Function ID: 61311
+// Module ID: 7677
+// Function ID: 61323
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
 // Dependencies: []
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 7676 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 7677 (getPrivateChannelIntegrationAddedSystemMessageContent)
 const _module = require(dependencyMap[0]);
 ({ HelpdeskArticles: closure_3, NOOP: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);

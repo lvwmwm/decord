@@ -1,7 +1,7 @@
 // Module ID: 8712
-// Function ID: 68942
+// Function ID: 68953
 // Name: BalanceWidgetMode
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8712 (BalanceWidgetMode)
 const _module = require(dependencyMap[0]);

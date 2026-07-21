@@ -1,7 +1,7 @@
 // Module ID: 6750
-// Function ID: 52548
+// Function ID: 52556
 // Name: ApplicationCommandSectionType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6750 (ApplicationCommandSectionType)
 const _module = require(dependencyMap[0]);

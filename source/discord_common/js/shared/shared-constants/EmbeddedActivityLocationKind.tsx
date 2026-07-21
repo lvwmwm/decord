@@ -1,7 +1,7 @@
 // Module ID: 10808
-// Function ID: 83952
+// Function ID: 83963
 // Name: EmbeddedActivityLocationKind
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10808 (EmbeddedActivityLocationKind)
 const _module = require(dependencyMap[0]);

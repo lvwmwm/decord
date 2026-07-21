@@ -1,5 +1,5 @@
 // Module ID: 1849
-// Function ID: 20270
+// Function ID: 20275
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -456,7 +456,7 @@ function handleConnectionOpen(arg0) {
     });
   });
   if (null != obj[closure_11.getId(closure_11)]) {
-    const obj = { "Null": "FOREST", "Null": "UNACCEPTED", "Null": "UNDETERMINED", "Null": "UNDETERMINED", "Null": "UNDETERMINED", id: closure_18 };
+    const obj = { backgroundColor: "contain", paddingHorizontal: 72, flex: true, alignContent: "#078292", justifyContent: -18, id: closure_18 };
     const prototype = ctor.prototype;
     const tmp10 = new ctor(obj);
     obj[closure_18] = tmp10;
@@ -1131,7 +1131,7 @@ let closure_15 = arg1(dependencyMap[10]).UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 const obj = {};
 let closure_17 = 0;
 let closure_18 = "47835198259242069";
-let closure_19 = [];
+let closure_19 = ["<string:2113994386>", "<string:1191196141>", "isArray", "ref", "_desired", ""];
 let tmp4 = (importDefaultResult) => {
   class UserStore {
     constructor() {

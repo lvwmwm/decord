@@ -1,13 +1,13 @@
-// Module ID: 4677
-// Function ID: 40730
+// Module ID: 4676
+// Function ID: 40737
 // Name: NativePermissionBaseUtils
-// Dependencies: [1553, 2, 27, 4687, 4689, 6, 7, 15, 17, 18]
+// Dependencies: [1553, 2, 27, 4686, 4688, 6, 7, 15, 17, 18]
 
-// Module 4677 (NativePermissionBaseUtils)
+// Module 4676 (NativePermissionBaseUtils)
 import isMetaQuest from "isMetaQuest";
 import result2 from "result2";
-import keys from "keys";
-import module_4687 from "module_4687";
+import getActivityIndicator from "get ActivityIndicator";
+import module_4686 from "module_4686";
 import RNCImageCropPicker from "RNCImageCropPicker";
 import { AnalyticEvents } from "_classCallCheck";
 import _inherits from "_inherits";
@@ -19,7 +19,7 @@ export const NativePermissionBaseUtils = () => {
   class NativePermissionBaseUtils {
     constructor() {
       tmp = result2(this, NativePermissionBaseUtils);
-      tmp2 = new module_4687();
+      tmp2 = new module_4686();
       this.storage = tmp2;
       return;
     }

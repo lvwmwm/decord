@@ -1,39 +1,38 @@
-// Module ID: 15189
-// Function ID: 114559
+// Module ID: 15192
+// Function ID: 114593
 // Name: StyleSheet
-// Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 15189 (StyleSheet)
-import closure_3 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { MIDNIGHT_BORDER_WIDTH } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-
-const StyleSheet = __exportStarResult1.StyleSheet;
-const View = __exportStarResult1.View;
+// Module 15192 (StyleSheet)
+let closure_3 = importDefault(dependencyMap[0]);
+const importAllResult = importAll(dependencyMap[1]);
+const tmp2 = arg1(dependencyMap[2]);
+const StyleSheet = tmp2.StyleSheet;
+const View = tmp2.View;
 ({ getIsChannelDetailsSearchActive: closure_7, setIsChannelDetailsSearchActive: closure_8 } = arg1(dependencyMap[3]));
-({ AnalyticEvents: closure_10, ComponentActions: closure_11, ThemeTypes: closure_12 } = __exportStarResult1);
-({ jsx: closure_13, jsxs: closure_14 } = __exportStarResult1);
+const MIDNIGHT_BORDER_WIDTH = arg1(dependencyMap[4]).MIDNIGHT_BORDER_WIDTH;
+const tmp3 = arg1(dependencyMap[3]);
+({ AnalyticEvents: closure_10, ComponentActions: closure_11, ThemeTypes: closure_12 } = arg1(dependencyMap[5]));
+const tmp4 = arg1(dependencyMap[5]);
+({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
+let importDefaultResult = importDefault(dependencyMap[7]);
 importDefaultResult = new importDefaultResult("SwipeForMemberListWrapper");
 const context = importAllResult.createContext(undefined);
+let obj1 = arg1(dependencyMap[8]);
 let obj = {};
-obj = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.memberListPreview = obj;
-__exportStarResult1 = {};
+obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-__exportStarResult1["overflow"] = "hidden";
-obj.content = __exportStarResult1;
-const obj2 = { 9223372036854775807: 10, 9223372036854775807: 10, backgroundColor: require("__exportStarResult1").colors.MODAL_BACKGROUND };
+obj1["overflow"] = "hidden";
+obj.content = obj1;
+const obj2 = { Č: 10, accessibilityDismiss: 10, backgroundColor: importDefault(dependencyMap[9]).colors.MODAL_BACKGROUND };
 obj.memberListContainer = obj2;
-const tmp3 = arg1(dependencyMap[3]);
-obj.midnightBorder = { borderLeftColor: require("__exportStarResult1").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+const tmp5 = arg1(dependencyMap[6]);
+obj.midnightBorder = { borderLeftColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 obj.midnightRightOverflow = { right: -MIDNIGHT_BORDER_WIDTH };
-let closure_17 = __exportStarResult1.createStyles(obj);
+let closure_17 = obj1.createStyles(obj);
 let closure_18 = { code: "function SwipeForMemberListWrapperTsx1(){const{shownPixels}=this.__closure;return shownPixels.get()>0;}" };
 let closure_19 = { code: "function SwipeForMemberListWrapperTsx2(isVisible,wasVisible){const{mainDisallowGesture,stackDisallowGesture,panelDisallowGesture}=this.__closure;var _stackDisallowGesture;if(isVisible===wasVisible)return;mainDisallowGesture.set(isVisible);(_stackDisallowGesture=stackDisallowGesture)===null||_stackDisallowGesture===void 0||_stackDisallowGesture.set(isVisible);if(!isVisible){panelDisallowGesture.set(false);}}" };
 let closure_20 = { code: "function SwipeForMemberListWrapperTsx3(){const{isChatLockedOpen,mainTranslateX,stackTranslateX}=this.__closure;return!isChatLockedOpen&&mainTranslateX.get()>0||stackTranslateX!=null&&stackTranslateX.get()>0;}" };
@@ -41,7 +40,7 @@ let closure_21 = { code: "function SwipeForMemberListWrapperTsx4(isInactive,wasI
 let closure_22 = { code: "function SwipeForMemberListWrapperTsx5(){const{maxWidth,translateX}=this.__closure;return maxWidth-translateX.get();}" };
 let closure_23 = { code: "function SwipeForMemberListWrapperTsx6(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,MIDNIGHT_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.MIDNIGHT||isChatBesideChannelList)return translateX.get();return translateX.get()-MIDNIGHT_BORDER_WIDTH;}" };
 let closure_24 = { code: "function SwipeForMemberListWrapperTsx7(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?'none':'flex',opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
-const obj3 = { borderLeftColor: require("__exportStarResult1").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+const obj3 = { borderLeftColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/main_tabs_v2/native/channel/SwipeForMemberListWrapper.tsx");
 
 export default function _default(channelId) {
@@ -425,7 +424,7 @@ export default function _default(channelId) {
   obj4.style = items13;
   obj4.accessibilityElementsHidden = !derivedStateFromSharedValue || undefined;
   obj4.importantForAccessibility = "no-hide-descendants";
-  const items14 = [callback2(importDefault(dependencyMap[30]), {}), , ];
+  const items14 = [callback2(importDefault(dependencyMap[30]), { 1644019025: "\u2757", -1094364167: "isArrayBufferToString", -1092475796: "\u{1F318}" }), , ];
   obj5 = { children: callback2(importDefault(dependencyMap[32]), { isShowing: derivedStateFromSharedValue, channelId: tmp3[0], isSearchLocked: false, onBackPress: callback4, componentWidth: tmp6, onChannelDeleted: callback3 }) };
   items14[1] = callback2(arg1(dependencyMap[31]).LayerScope, obj5);
   obj6 = { style: items15 };

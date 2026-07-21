@@ -1,9 +1,9 @@
-// Module ID: 15211
-// Function ID: 114871
+// Module ID: 15214
+// Function ID: 114905
 // Name: SearchNavigatorScreens
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15211 (SearchNavigatorScreens)
+// Module 15214 (SearchNavigatorScreens)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorConstants.tsx");
 

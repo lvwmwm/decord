@@ -1,5 +1,5 @@
 // Module ID: 4489
-// Function ID: 39602
+// Function ID: 39610
 // Name: ScreenStackHeaderSubview
 // Dependencies: []
 // Exports: ScreenStackHeaderBackButtonImage, ScreenStackHeaderCenterView, ScreenStackHeaderLeftView, ScreenStackHeaderRightView, ScreenStackHeaderSearchBarView
@@ -7,9 +7,9 @@
 // Module 4489 (ScreenStackHeaderSubview)
 let Platform;
 let StyleSheet;
-let closure_3 = ["GUILD_DELETE"];
-let closure_4 = ["GUILD_DELETE"];
-let closure_5 = ["GUILD_DELETE"];
+let closure_3 = [null];
+let closure_4 = [null];
+let closure_5 = [null];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 const importDefaultResult = importDefault(dependencyMap[2]);
@@ -138,7 +138,8 @@ const forwardRefResult = importDefaultResult.forwardRef((disableLeftInsetApplica
   return jsx(importDefault(dependencyMap[8]), Object.assign({}, disableLeftInsetApplication, obj));
 });
 forwardRefResult.displayName = "ScreenStackHeaderConfig";
-const styles = StyleSheet.create({ headerSubview: { padding: 0, paddingBottom: 6, flexDirection: 0 }, headerSubviewCenter: { padding: 0, paddingBottom: 6, flexDirection: 0, marginLeft: "Bounce_1" }, headerConfig: { alignItems: undefined } });
+const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, alignItems: undefined };
+const styles = StyleSheet.create({ headerSubview: {}, headerSubviewCenter: {}, headerConfig: obj });
 
 export const ScreenStackHeaderSubview = importDefault(dependencyMap[10]);
 export const ScreenStackHeaderConfig = forwardRefResult;

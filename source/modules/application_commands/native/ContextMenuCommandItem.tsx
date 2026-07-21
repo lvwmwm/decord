@@ -1,16 +1,16 @@
-// Module ID: 15425
-// Function ID: 117715
+// Module ID: 15428
+// Function ID: 117754
 // Name: ContextMenuCommandItem
 // Dependencies: []
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15425 (ContextMenuCommandItem)
+// Module 15428 (ContextMenuCommandItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.commandIcon = obj;
 obj.loadingIcon = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED };

@@ -1,5 +1,5 @@
 // Module ID: 1109
-// Function ID: 12640
+// Function ID: 12644
 // Name: _getClientIntegration
 // Dependencies: []
 
@@ -69,7 +69,7 @@ arg5.feedbackIntegration = function feedbackIntegration() {
       let first = arguments[0];
     }
     ({ buttonOptions, screenshotButtonOptions, colorScheme, themeLight, themeDark } = first);
-    const obj = { name: closure_3, options: fn(first, [false, false, false, false, false]) };
+    const obj = { name: closure_3, options: fn(first, [null, null, null, null, null]) };
     if (!buttonOptions) {
       buttonOptions = {};
     }

@@ -1,5 +1,5 @@
 // Module ID: 5451
-// Function ID: 46572
+// Function ID: 46580
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -120,7 +120,7 @@ const tmp3 = (PureComponent) => {
   };
   return callback(LottieAnimationView, items);
 }(importAll(dependencyMap[6]).PureComponent);
-tmp3.defaultProps = { alignItems: true, display: true, flexDirection: true };
+tmp3.defaultProps = { "Null": "sm", "Null": "Placeholder", "Null": "Click" };
 const importAllResult = importAll(dependencyMap[6]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("components_native/common/LottieAnimationView.tsx");
 

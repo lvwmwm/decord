@@ -1,17 +1,17 @@
-// Module ID: 12911
-// Function ID: 98465
+// Module ID: 12913
+// Function ID: 98487
 // Name: LiveTag
 // Dependencies: []
 // Exports: default
 
-// Module 12911 (LiveTag)
+// Module 12913 (LiveTag)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
+obj = { "Null": "useAlertStore", "Null": "hasConfetti", "Null": "collapseText", "Null": "SOLID", "Null": "saveRoleSettings", "Null": "r", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
 obj.tag = obj;
 const obj1 = { textAlign: "center", color: importDefault(dependencyMap[4]).unsafe_rawColors.WHITE };
 if (obj5.isAndroid()) {
@@ -31,7 +31,7 @@ export default function LiveTag(arg0) {
   const tmp = callback();
   let obj = { style: items };
   const items = [tmp.tag, style];
-  obj = { keFvXM: "/assets/design/components/LottieIcon/native/generated/lotties", address-line1: null, guildId: "3b38f8bf8ac6605b344df2f05c37673a" };
+  obj = { isArray: "/assets/design/components/LottieIcon/native/generated/lotties", Button: null, textAlign: "3b38f8bf8ac6605b344df2f05c37673a" };
   const items1 = [tmp.tagText, textStyle];
   obj.style = items1;
   obj.allowFontScaling = allowFontScaling;

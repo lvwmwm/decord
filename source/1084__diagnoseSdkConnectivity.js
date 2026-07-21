@@ -1,5 +1,5 @@
 // Module ID: 1084
-// Function ID: 12447
+// Function ID: 12451
 // Name: _diagnoseSdkConnectivity
 // Dependencies: []
 // Exports: diagnoseSdkConnectivity
@@ -15,7 +15,7 @@ async function _diagnoseSdkConnectivity() {
       if (!tunnel) {
         str3 = "https://o447951.ingest.sentry.io/api/4509632503087104/envelope/?sentry_version=7&sentry_key=c1dfb07d783ad5325c245c1fd3725390&sentry_client=sentry.javascript.browser%2F1.33.7";
       }
-      yield str3(closure_1[1]).suppressTracing(() => fetch(str3, { "Null": "<string:3999268866>", "Null": "<string:3999268865>", "Null": "<string:474152961>", "Null": "<string:4009755505>" }));
+      yield str3(closure_1[1]).suppressTracing(() => fetch(str3, { "Null": true, "Null": true, "Null": true, "Null": true }));
     } else {
       return "no-dsn-configured";
     }

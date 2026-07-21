@@ -1,10 +1,10 @@
-// Module ID: 5339
-// Function ID: 45566
+// Module ID: 5338
+// Function ID: 45573
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useFlattenedChannels
 
-// Module 5339 (_createForOfIteratorHelperLoose)
+// Module 5338 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

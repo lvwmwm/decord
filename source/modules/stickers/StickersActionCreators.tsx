@@ -1,5 +1,5 @@
 // Module ID: 9593
-// Function ID: 74732
+// Function ID: 74743
 // Name: _fetchStickerPack
 // Dependencies: []
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker

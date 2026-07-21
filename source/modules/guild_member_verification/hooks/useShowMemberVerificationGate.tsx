@@ -1,10 +1,10 @@
-// Module ID: 4616
-// Function ID: 40237
+// Module ID: 4615
+// Function ID: 40244
 // Name: shouldShowMembershipVerificationGate
 // Dependencies: []
 // Exports: useShowMemberVerificationGate
 
-// Module 4616 (shouldShowMembershipVerificationGate)
+// Module 4615 (shouldShowMembershipVerificationGate)
 function shouldShowMembershipVerificationGate(guildId, items) {
   let obj;
   let obj2;

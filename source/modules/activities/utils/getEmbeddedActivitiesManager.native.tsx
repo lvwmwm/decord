@@ -1,5 +1,5 @@
 // Module ID: 10513
-// Function ID: 82065
+// Function ID: 82076
 // Name: getEmbeddedActivitiesManager
 // Dependencies: []
 // Exports: default

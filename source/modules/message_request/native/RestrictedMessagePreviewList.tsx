@@ -1,10 +1,10 @@
-// Module ID: 15454
-// Function ID: 117877
+// Module ID: 15457
+// Function ID: 117916
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15454 (_createForOfIteratorHelperLoose)
+// Module 15457 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -91,8 +91,8 @@ function HiddenMedia(length) {
   const items = [
     Array.from({ length: length.count }, (arg0, arg1) => {
       let obj = { style: tmp.mediaPlaceholderCard };
-      const items = [callback(tmp(closure_2[7]).ImageWarningIcon, { flex: null, flexGrow: "mobile-text-heading-primary" }), ];
-      obj = {};
+      const items = [callback(tmp(closure_2[7]).ImageWarningIcon, {}), ];
+      obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
       const intl = tmp(closure_2[9]).intl;
       obj.children = intl.string(tmp(closure_2[9]).t.B2xSxL);
       items[1] = callback(tmp(closure_2[8]).Text, obj);
@@ -124,16 +124,16 @@ obj.hiddenMedia = obj;
 obj.messageRow = { position: "relative" };
 const tmp2 = arg1(dependencyMap[3]);
 obj.avatarHitbox = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
+const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
+obj.dateDivider = obj2;
+const obj3 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj.dividerLine = obj3;
 const obj1 = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
-obj.dateDivider = { gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
-const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
-obj.dividerLine = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.mediaPlaceholderCard = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.mediaHiddenRow = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
+const obj5 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
+obj.mediaHiddenRow = obj5;
 let closure_10 = obj.createStyles(obj);
-const obj5 = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
+const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewList.tsx");
 
 export default function RestrictedMessagePreviewList(channelId) {
@@ -251,7 +251,7 @@ export default function RestrictedMessagePreviewList(channelId) {
           obj = { style: tmp.dateDivider };
           const obj1 = { style: tmp.dividerLine };
           const items = [items4(memo, obj1), , ];
-          const obj2 = { children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
+          const obj2 = { hasMaxConnections: 15, isBoostOnlySubscription: "center", children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
           items[1] = items4(channelId(analyticsLocations[8]).Text, obj2);
           const obj3 = { style: tmp.dividerLine };
           items[2] = items4(memo, obj3);

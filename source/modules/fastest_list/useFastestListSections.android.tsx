@@ -1,5 +1,5 @@
 // Module ID: 9243
-// Function ID: 72256
+// Function ID: 72267
 // Name: useFastestListSections
 // Dependencies: []
 // Exports: default
@@ -80,7 +80,7 @@ export default function useFastestListSections(fastestListId) {
     const items4 = [];
     const items5 = [];
     if (null == keyExtractor) {
-      let obj = { keys: [null] };
+      let obj = { keys: ["<string:2246337460>"] };
       items.push(obj);
       items2.push("");
       items4.push("");

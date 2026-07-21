@@ -1,5 +1,5 @@
 // Module ID: 10508
-// Function ID: 82037
+// Function ID: 82048
 // Name: handlePressJoinActivity
 // Dependencies: []
 // Exports: maybeJoinEmbeddedActivity

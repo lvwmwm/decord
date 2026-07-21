@@ -1,10 +1,10 @@
-// Module ID: 7854
-// Function ID: 62594
+// Module ID: 7855
+// Function ID: 62607
 // Name: useMaybeFetchCollectiblesCategories
 // Dependencies: []
 // Exports: default
 
-// Module 7854 (useMaybeFetchCollectiblesCategories)
+// Module 7855 (useMaybeFetchCollectiblesCategories)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
 

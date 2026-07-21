@@ -1,29 +1,23 @@
 // Module ID: 5770
-// Function ID: 49402
+// Function ID: 49410
 // Name: useInputClearButtonConfig
 // Dependencies: []
 // Exports: useInputClearButton
 
 // Module 5770 (useInputClearButtonConfig)
-function useInputClearButtonConfig(fieldLabel, state) {
-  fieldLabel = fieldLabel.fieldLabel;
-  if (fieldLabel.isClearable) {
+function useInputClearButtonConfig(isClearable, state) {
+  if (isClearable.isClearable) {
     if (state.hasValue) {
-      if (null != fieldLabel) {
-        if ("" !== fieldLabel) {
-          const intl2 = state(dependencyMap[3]).intl;
-          let obj = { fieldName: fieldLabel };
-          let formatToPlainStringResult = intl2.formatToPlainString(state(dependencyMap[3]).t.7/UFPj, obj);
-        }
-        obj = {};
-        obj = { size: "xs" };
-        obj.content = jsx(state(dependencyMap[4]).CircleXIcon, obj);
-        const obj1 = { onPress: state.clear, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", hitSlop: 4 };
-        obj.pressableProps = obj1;
-        return obj;
-      }
-      const intl = state(dependencyMap[3]).intl;
-      formatToPlainStringResult = intl.string(state(dependencyMap[3]).t.VkKicb);
+      let obj = {};
+      obj = { size: "xs" };
+      obj.content = jsx(state(dependencyMap[3]).CircleXIcon, obj);
+      obj = { onPress: state.clear };
+      const intl = state(dependencyMap[4]).intl;
+      obj.accessibilityLabel = intl.string(state(dependencyMap[4]).t.VkKicb);
+      obj.accessibilityRole = "button";
+      obj.hitSlop = 4;
+      obj.pressableProps = obj;
+      return obj;
     }
   }
 }

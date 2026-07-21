@@ -1,7 +1,7 @@
 // Module ID: 11514
-// Function ID: 89729
+// Function ID: 89741
 // Name: getExpiringGuildEntitlements
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getExpiringGuildEntitlements
 
 // Module 11514 (getExpiringGuildEntitlements)

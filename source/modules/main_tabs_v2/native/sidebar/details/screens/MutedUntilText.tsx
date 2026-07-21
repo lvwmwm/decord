@@ -1,5 +1,5 @@
 // Module ID: 10271
-// Function ID: 79349
+// Function ID: 79360
 // Name: MutedUntilText
 // Dependencies: []
 // Exports: default
@@ -30,14 +30,15 @@ export default function MutedUntilText(arg0) {
       } else {
         return null;
       }
-      let obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.formHintText };
+      let obj = { style: tmp.formHintText };
       const intl5 = arg1(dependencyMap[3]).intl;
       obj = {};
       const _Date = Date;
       const date = new Date(muteConfig.end_time);
       obj.endTime = date.toLocaleString(arg1(dependencyMap[3]).intl.currentLocale, {});
       obj.endTimeHook = function endTimeHook(children) {
-        return callback2(callback(closure_1[4]).Text, { children }, "muted");
+        const obj = { hasMaxConnections: "renderer", isBoostOnlySubscription: "BUTTON_BORDER_WIDTH", children };
+        return callback2(callback(closure_1[4]).Text, obj, "muted");
       };
       obj.children = intl5.format(N2NXMd, obj);
       return jsx(arg1(dependencyMap[4]).Text, obj);
@@ -58,7 +59,7 @@ export default function MutedUntilText(arg0) {
   } else {
     return null;
   }
-  obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.formHintText, children: stringResult };
+  obj = { style: tmp.formHintText, children: stringResult };
   return jsx(arg1(dependencyMap[4]).Text, obj);
 };
 export const MuteSettingType = obj;

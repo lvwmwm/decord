@@ -1,5 +1,5 @@
 // Module ID: 9074
-// Function ID: 71145
+// Function ID: 71156
 // Name: unpackStageChannelParty
 // Dependencies: []
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity

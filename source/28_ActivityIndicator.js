@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 28 (ActivityIndicator)
-let closure_2 = [null, null, null, null, null, null, null];
+let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -57,11 +57,11 @@ class ActivityIndicator {
     tmp8 = importDefault(dependencyMap[4]);
     obj5 = importDefault(dependencyMap[5]);
     obj2.style = obj5.compose(closure_6.container, global.style);
-    obj2.children = jsx(closure_5, Object.assign({}, merged, {}));
+    obj2.children = jsx(closure_5, Object.assign({}, merged, { y: true, createMode: true }));
     return jsx(tmp8, obj2);
   }
 }
 ActivityIndicator.displayName = "ActivityIndicator";
-let closure_6 = importDefault(dependencyMap[5]).create({ container: {}, sizeSmall: { bhk: false, bic: "internal" }, sizeLarge: {} });
+let closure_6 = importDefault(dependencyMap[5]).create({ container: { "Null": null, "Null": null }, sizeSmall: { "Null": 0, "Null": -1048576 }, sizeLarge: {} });
 
 export default ActivityIndicator;

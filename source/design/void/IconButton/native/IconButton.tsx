@@ -1,5 +1,5 @@
 // Module ID: 12272
-// Function ID: 94065
+// Function ID: 94077
 // Name: SquareIconButton
 // Dependencies: []
 
@@ -69,7 +69,7 @@ class SquareIconButton {
 class CircularIconButton {
   constructor(arg0) {
     size = global.size;
-    obj = {};
+    obj = { flexWrap: false, borderRadius: false, padding: false };
     ({ style, disableColor } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
@@ -105,7 +105,7 @@ const jsx = arg1(dependencyMap[1]).jsx;
 let obj = { SMALL_24: 24, [24]: "SMALL_24", MEDIUM_32: 32, [32]: "MEDIUM_32", LARGE_40: 40, [40]: "LARGE_40" };
 let obj1 = arg1(dependencyMap[2]);
 obj = {};
-obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
+obj = { "Null": "number", "Null": "number", "Null": "mY3Y38", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
 obj.container = obj;
 obj.small = { height: obj.SMALL_24, width: obj.SMALL_24 };
 obj.medium = { height: obj.MEDIUM_32, width: obj.MEDIUM_32 };

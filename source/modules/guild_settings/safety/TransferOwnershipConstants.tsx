@@ -1,7 +1,7 @@
 // Module ID: 10980
-// Function ID: 85476
+// Function ID: 85487
 // Name: TransferOwnershipModalScenes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10980 (TransferOwnershipModalScenes)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 16170
-// Function ID: 124775
+// Module ID: 16178
+// Function ID: 124836
 // Name: logTransitionEvent
 // Dependencies: []
 // Exports: default
 
-// Module 16170 (logTransitionEvent)
+// Module 16178 (logTransitionEvent)
 function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
   let obj = importDefault(dependencyMap[14]);
   obj = { flow_type: constants2.GUILD_ROLE_CREATION_MODAL, from_step, to_step: FLOW_DISMISSED, skip };
@@ -362,23 +362,23 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ MAX_ROLE_LENGTH: closure_16, DEFAULT_ROLE_COLOR: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20 } = arg1(dependencyMap[9]));
 const tmp4 = arg1(dependencyMap[9]);
 ({ jsx: closure_21, jsxs: closure_22 } = arg1(dependencyMap[10]));
-let closure_23 = { titleContainer: {}, title: {} };
+let closure_23 = { titleContainer: {}, title: { "Null": null, "Null": null } };
 let obj1 = arg1(dependencyMap[11]);
 let obj = {};
 obj = { marginTop: arg1(dependencyMap[12]).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
 obj.container = obj;
-obj.sceneHeader = { 304631162: 2137063425, -309048237: 95420418, 1382813458: -2075787263 };
-obj.sceneSubtitle = {};
+obj.sceneHeader = {};
+obj.sceneSubtitle = { showInactive: false, GiftCardStack3dIllustration: false, FITNESS: false };
 obj.sceneContent = { flex: 1 };
 obj1 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 obj.sceneInner = obj1;
-obj.colorTrailing = {};
+obj.colorTrailing = { "Null": 7, "Null": 370 };
 obj.colorBlock = {};
 const tmp5 = arg1(dependencyMap[10]);
 obj.sceneFooter = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 obj.nextButton = {};
-const obj3 = { 1415740345: 589823, 1650222166: 1091633152, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.nextButtonFloating = obj3;
+const obj2 = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
+obj.nextButtonFloating = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
 let closure_24 = obj1.createStyles(obj);
 const obj4 = { STEP_DISPLAY: "STEP_DISPLAY", STEP_PERMISSIONS: "STEP_PERMISSIONS", STEP_MEMBERS: "STEP_MEMBERS" };
 let closure_26 = { [obj4.STEP_DISPLAY]: "Role Display", [obj4.STEP_PERMISSIONS]: "Role Permissions", [obj4.STEP_MEMBERS]: "Role Members", ["FLOW_INITIALIZED"]: "Flow Initialized", ["FLOW_DISMISSED"]: "Flow Dismissed", ["FLOW_COMPLETED"]: "Flow Completed" };
@@ -386,7 +386,7 @@ let closure_27 = importAllResult.memo((step) => {
   const keys = Object.keys(obj4);
   let obj = { style: closure_23.titleContainer };
   const sum = keys.indexOf(step.step) + 1;
-  obj = { style: closure_23.title };
+  obj = { Opened: "guild", marginVertical: "2026-02_past_vc_activity_messages", marginStart: "Past VC Activity Messages", marginEnd: "guild", style: closure_23.title };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.format(arg1(dependencyMap[17]).t.8v/u0i, { number: sum, total: keys.length });
   obj.children = callback4(arg1(dependencyMap[16]).Text, obj);
@@ -412,7 +412,7 @@ let closure_28 = {
     }
   }
 };
-const obj2 = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
+const obj3 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
 const obj5 = {
   fullscreen: true,
   render() {

@@ -1,5 +1,5 @@
 // Module ID: 9466
-// Function ID: 73715
+// Function ID: 73726
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews

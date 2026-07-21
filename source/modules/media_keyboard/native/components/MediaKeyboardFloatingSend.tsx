@@ -1,8 +1,8 @@
-// Module ID: 15322
-// Function ID: 116577
+// Module ID: 15325
+// Function ID: 116612
 // Dependencies: []
 
-// Module 15322
+// Module 15325
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
@@ -103,7 +103,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Medi
   const items = [tmp.gradient.color];
   const animatedProps = obj2.useAnimatedProps(fn2);
   const memo = importAllResult.useMemo(() => {
-    const obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
+    const obj = { start: {}, end: {} };
     const obj2 = callback(bottom[11])(tmp.gradient.color);
     const items = [callback(bottom[11])(tmp.gradient.color).alpha(0).hex(), ];
     const alphaResult = callback(bottom[11])(tmp.gradient.color).alpha(0);

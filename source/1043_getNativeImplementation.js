@@ -1,5 +1,5 @@
 // Module ID: 1043
-// Function ID: 11206
+// Function ID: 11210
 // Name: getNativeImplementation
 // Dependencies: []
 

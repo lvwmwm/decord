@@ -1,5 +1,5 @@
 // Module ID: 11236
-// Function ID: 87454
+// Function ID: 87466
 // Name: AppLauncherApplicationViewScreenInner
 // Dependencies: []
 // Exports: default

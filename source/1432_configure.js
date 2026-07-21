@@ -1,5 +1,5 @@
 // Module ID: 1432
-// Function ID: 16722
+// Function ID: 16727
 // Name: configure
 // Dependencies: []
 // Exports: fetch, refresh, useNetInfo, useNetInfoInstance
@@ -58,7 +58,7 @@ function useNetInfo(arg0) {
   if (arg0) {
     configure(arg0);
   }
-  const obj = { "Null": 0, "Null": 0, "Null": "100%", "Null": "10%", type: importAll(dependencyMap[5]).NetInfoStateType.unknown };
+  const obj = { label: "onKeyPress", maxLength: "onKeyPressCapture", isClearable: "onSubmitEditing", "Null": "onSubmitEditingCapture", type: importAll(dependencyMap[5]).NetInfoStateType.unknown };
   const tmp3 = callback(callback2(obj), 2);
   let closure_0 = tmp3[1];
   callback3(() => {
@@ -79,7 +79,7 @@ function useNetInfoInstance() {
   const first = tmp3[0];
   const dependencyMap = first;
   const callback = tmp3[1];
-  let obj = { "Null": 0, "Null": 0, "Null": "100%", "Null": "10%", type: importAll(dependencyMap[5]).NetInfoStateType.unknown };
+  let obj = { label: "onKeyPress", maxLength: "onKeyPressCapture", isClearable: "onSubmitEditing", "Null": "onSubmitEditingCapture", type: importAll(dependencyMap[5]).NetInfoStateType.unknown };
   const tmp5 = callback(callback2(obj), 2);
   const callback2 = tmp5[1];
   const items = [tmp, tmp2];

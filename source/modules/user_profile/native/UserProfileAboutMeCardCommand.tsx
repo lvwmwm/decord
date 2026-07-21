@@ -1,5 +1,5 @@
 // Module ID: 11878
-// Function ID: 91939
+// Function ID: 91951
 // Dependencies: []
 
 // Module 11878
@@ -17,7 +17,7 @@ const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(c
   const importDefault = command;
   const dependencyMap = channel.channel;
   const tmp = callback();
-  const items = [true, command.displayName];
+  const items = [, command.displayName];
   return jsxs(arg1(dependencyMap[5]).Text, {
     variant: "text-md/bold",
     onPress() {

@@ -1,18 +1,20 @@
-// Module ID: 14989
-// Function ID: 112894
+// Module ID: 14992
+// Function ID: 112928
 // Name: Username
 // Dependencies: []
 
-// Module 14989 (Username)
+// Module 14992 (Username)
 function Username(arg0) {
   let userId;
   let username;
   ({ userId, username } = arg0);
-  const obj = {};
+  let obj = {};
   const items = [callback3().usernameRow];
   obj.style = items;
+  obj = { flexDirection: null, alignItems: "", justifyContent: "", marginBottom: "0", channelId: "none", isPreload: "24", limit: "24", userId, userName: username };
   const items1 = [{ flexShrink: 1 }];
-  const items2 = [callback(importDefault(dependencyMap[6]), { userId, userName: username, style: items1 }), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
+  obj.style = items1;
+  const items2 = [callback(importDefault(dependencyMap[6]), obj), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
   obj.children = items2;
   return callback2(View, obj);
 }
@@ -25,7 +27,7 @@ let obj = { userText: {} };
 obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.statusRow = obj;
 obj.statusEmoji = {};
-obj.usernameRow = { x: null, y: null, size: null, flexDirection: null };
+obj.usernameRow = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.statusText = { flexShrink: 1 };
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);
@@ -58,7 +60,7 @@ const memoResult = importAllResult.memo(function YouName(arg0) {
     tmp11 = callback(importDefault(dependencyMap[11]), obj1);
   }
   const items2 = [tmp11, ];
-  obj2 = { "Bool(true)": "<string:2682257408>", "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, style: tmp.statusText };
+  obj2 = { index: "<string:2682257408>", source: null, color: null, style: tmp.statusText, size: null };
   if (null == gameMentionsAsPlainText) {
     gameMentionsAsPlainText = arg1(dependencyMap[13]).humanizeStatus(stateFromStores);
     const obj8 = arg1(dependencyMap[13]);

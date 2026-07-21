@@ -1,5 +1,5 @@
 // Module ID: 10448
-// Function ID: 80649
+// Function ID: 80660
 // Name: ChatUpdatesQueue
 // Dependencies: []
 

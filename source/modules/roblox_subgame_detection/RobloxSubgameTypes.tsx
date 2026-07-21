@@ -1,7 +1,7 @@
 // Module ID: 4298
-// Function ID: 37629
+// Function ID: 37637
 // Name: ROBLOX_PROTOCOL_URL
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
 // Module 4298 (ROBLOX_PROTOCOL_URL)
@@ -20,8 +20,8 @@ const result = _module.fileFinishedImporting("modules/roblox_subgame_detection/R
 
 export const ROBLOX_APPLICATION_ID = "363445589247131668";
 export const ROBLOX_GAME_ID = "363445589247131668";
-export const RobloxMetadataKeys = { "Bool(true)": null, "Bool(true)": true };
-export const NativeRobloxSubgameKeys = { overshootClamping: "<string:1900011077>", damping: "Array" };
+export const RobloxMetadataKeys = { <string:317761149>: 1, <string:2284510399>: null };
+export const NativeRobloxSubgameKeys = {};
 export const ROBLOX_URL_SCHEME = "roblox";
 export { ROBLOX_PROTOCOL_URL };
 export { ROBLOX_WEB_URL };

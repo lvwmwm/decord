@@ -1,12 +1,12 @@
 // Module ID: 9512
-// Function ID: 74031
+// Function ID: 74042
 // Name: trackOpen
 // Dependencies: []
 // Exports: default
 
 // Module 9512 (trackOpen)
 function trackOpen() {
-  importDefault(dependencyMap[5]).track(AnalyticEvents.OPEN_POPOUT, {});
+  importDefault(dependencyMap[5]).track(AnalyticEvents.OPEN_POPOUT, { mustConfirmExternalLink: -12657841733197165000000000000000000000000000000000000000000000000000000000000000000000000000000, direction: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312423307660342 });
 }
 importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).NotificationUserFeedbackReasons;

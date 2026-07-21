@@ -1,5 +1,5 @@
 // Module ID: 11501
-// Function ID: 89609
+// Function ID: 89621
 // Name: openGuildPowerupsModal
 // Dependencies: []
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 7106
-// Function ID: 57109
+// Module ID: 7107
+// Function ID: 57121
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7106 (_isNativeReflectConstruct)
+// Module 7107 (_isNativeReflectConstruct)
 let DiscountUserUsageLimitIntervalTypes;
 let SubscriptionIntervalTypes;
 function _isNativeReflectConstruct() {

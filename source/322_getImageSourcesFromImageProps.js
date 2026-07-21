@@ -1,7 +1,7 @@
 // Module ID: 322
 // Function ID: 4882
 // Name: getImageSourcesFromImageProps
-// Dependencies: [1280442370, 845479939]
+// Dependencies: []
 // Exports: getImageSourcesFromImageProps
 
 // Module 322 (getImageSourcesFromImageProps)

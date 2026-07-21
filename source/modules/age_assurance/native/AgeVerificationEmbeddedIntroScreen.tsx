@@ -1,10 +1,10 @@
-// Module ID: 7559
-// Function ID: 60473
+// Module ID: 7560
+// Function ID: 60485
 // Name: AgeVerificationEmbeddedIntroScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7559 (AgeVerificationEmbeddedIntroScreen)
+// Module 7560 (AgeVerificationEmbeddedIntroScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -37,12 +37,12 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   const obj1 = {};
   const obj2 = {};
   const items1 = [callback(arg1(dependencyMap[11]).ShieldSpotIllustration, {}), ];
-  const obj3 = { marginHorizontal: 1867227482199438700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: 132375884764212380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, justifyContent: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000193619923289274 };
+  const obj3 = { flexDirection: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007294549507901097, alignItems: -0.0000000004659726012341902, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000577052909090916 };
   const obj4 = {};
   let obj7 = arg1(dependencyMap[13]);
   obj4.children = obj7.getAgeVerificationGetStartedTitle(entryPoint);
   const items2 = [callback(arg1(dependencyMap[12]).Text, obj4), ];
-  const obj5 = { style: tmp.header, children: arg1(dependencyMap[13]).getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser) };
+  const obj5 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, style: tmp.header, children: arg1(dependencyMap[13]).getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser) };
   items2[1] = callback(arg1(dependencyMap[12]).Text, obj5);
   obj3.children = items2;
   items1[1] = callback2(arg1(dependencyMap[10]).Stack, obj3);
@@ -50,7 +50,7 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   const items3 = [callback2(arg1(dependencyMap[10]).Stack, obj2), callback(arg1(dependencyMap[14]).AgeVerificationMethodsContainer, { ageVerificationMethods: importDefault(dependencyMap[7])({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods, modalSessionId })];
   obj1.children = items3;
   const items4 = [callback2(arg1(dependencyMap[10]).Stack, obj1), ];
-  const obj6 = { style: tmp.helpLink };
+  const obj6 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.helpLink };
   const intl = arg1(dependencyMap[15]).intl;
   obj7 = {
     handleOnHelpUrlHook() {

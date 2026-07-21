@@ -1,5 +1,5 @@
 // Module ID: 10770
-// Function ID: 83675
+// Function ID: 83686
 // Name: StageSectionHeader
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsxs: closure_5, jsx: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { section: { onTapChannelPromptButton: "0e02f6accc59d44ac3827104886762f1", <string:3493074896>: "boost" }, children: { marginLeft: 12 }, collapseButton: { marginLeft: "auto" } };
+obj = { section: { color: "0e02f6accc59d44ac3827104886762f1", backgroundColor: "boost" }, children: { marginLeft: 12 }, collapseButton: { marginLeft: "auto" } };
 obj = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.collapseIcon = obj;
 const tmp4 = arg1(dependencyMap[2]);
@@ -49,7 +49,7 @@ export default function StageSectionHeader(collapsed) {
   obj = { style: tmp.section };
   const obj1 = { style: tmp.audience, onPress: onToggleCollapse };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj2 = { 1655478700: "SERVER_GUIDE_CHANNEL_SELECTED", 72438626: "PileOverflowProps", 1446732292: "Array" };
+  const obj2 = { handleMessageFocus: "<string:3362914305>", enableHome: "<string:2018574337>", afterMs: "<string:1262555603>" };
   const items = [label, " \u2014 ", count];
   obj2.children = items;
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), , ];

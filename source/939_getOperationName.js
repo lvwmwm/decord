@@ -1,5 +1,5 @@
 // Module ID: 939
-// Function ID: 10174
+// Function ID: 10178
 // Name: getOperationName
 // Dependencies: []
 // Exports: addChatCompletionAttributes, addConversationAttributes, addEmbeddingsAttributes, addResponsesApiAttributes, buildMethodPath, extractRequestParameters, getSpanOperation, isChatCompletionChunk, isChatCompletionResponse, isConversationResponse, isEmbeddingsResponse, isResponsesApiResponse, isResponsesApiStreamEvent, shouldInstrument

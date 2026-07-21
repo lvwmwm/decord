@@ -1,10 +1,10 @@
-// Module ID: 13821
-// Function ID: 104504
+// Module ID: 13824
+// Function ID: 104536
 // Name: BountiesScrollRecapFooter
 // Dependencies: []
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 13821 (BountiesScrollRecapFooter)
+// Module 13824 (BountiesScrollRecapFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -15,9 +15,9 @@ let closure_7 = arg1(dependencyMap[4]).createStyles(() => {
   obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.container = obj;
   obj.headerLabel = { textTransform: "uppercase" };
-  obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
+  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.orbRow = obj;
-  obj.rive = {};
+  obj.rive = { paddingTop: false, justifyContent: false };
   const obj1 = {};
   let num = 0;
   if (obj5.isIOS()) {
@@ -38,9 +38,9 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   let obj = { style: tmp.container, accessibilityLabel: "" + stringResult + ", +" + orbAmount };
   obj = { style: tmp.headerLabel, children: stringResult };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  obj = { <string:2737387298>: 48, <string:1292067942>: 12, <string:1400499127>: 4, style: tmp.orbRow };
-  const items1 = [callback(arg1(dependencyMap[9]).OrbsIcon, {}), ];
-  const obj1 = { style: tmp.orbAmount, children: "+" + orbAmount };
+  obj = { style: tmp.orbRow };
+  const items1 = [callback(arg1(dependencyMap[9]).OrbsIcon, { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003576746115128254, "Null": -16293828138055107000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": NaN }), ];
+  const obj1 = { color: null, textTransform: "secondary", letterSpacing: false, style: tmp.orbAmount, children: "+" + orbAmount };
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);
   obj.children = items1;
   items[1] = callback2(View, obj);
@@ -52,7 +52,7 @@ export const BountiesScrollRecapFooterGradient = function BountiesScrollRecapFoo
   const items = [closure_4];
   obj = { style: callback3().rive };
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  obj = { borderWidth: 7471105, position: 0, alignSelf: 50331648 };
+  obj = {};
   let str = "play";
   if (stateFromStores) {
     str = "halt";

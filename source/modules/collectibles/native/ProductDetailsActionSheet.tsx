@@ -1,5 +1,5 @@
 // Module ID: 8729
-// Function ID: 69043
+// Function ID: 69054
 // Name: PreviewProfileTrigger
 // Dependencies: []
 // Exports: default
@@ -235,7 +235,7 @@ function ProductDetailsActionSheetInner(product) {
     }
   }
   if (tmp45) {
-    let tmp48 = callback3(importDefault(dependencyMap[31]), {});
+    let tmp48 = callback3(importDefault(dependencyMap[31]), { "Bool(false)": "f509ae9aaefafe2bbe9a4b7e1dac8ae9", "Bool(false)": "Mana.compiled.messages" });
   } else {
     tmp48 = null;
     if (null == product.badgeOverride) {
@@ -280,8 +280,8 @@ function ProductDetailsActionSheetInner(product) {
   const tmp45 = selectedProduct.type === arg1(dependencyMap[14]).CollectiblesItemType.PROFILE_FRAME && isProfileFramesEarlyAccessPhase && !hideBadge;
   const obj7 = { value: analyticsLocations };
   const obj8 = {
-    1891290120: null,
-    -475247768: null,
+    ind: null,
+    PX_8: null,
     onExpand() {
       const current = ref1.current;
       let scrollToEndResult;
@@ -361,7 +361,7 @@ const tmp4 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
 let closure_15 = {};
 let obj = arg1(dependencyMap[7]);
-obj = { container: {} };
+obj = { container: { "Bool(false)": true, "Bool(false)": true } };
 obj = { right: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.actionButtons = obj;
 const tmp5 = arg1(dependencyMap[6]);

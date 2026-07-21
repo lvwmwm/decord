@@ -1,5 +1,5 @@
 // Module ID: 10587
-// Function ID: 82612
+// Function ID: 82623
 // Name: useCurrentEmbeddedApplication
 // Dependencies: []
 // Exports: default

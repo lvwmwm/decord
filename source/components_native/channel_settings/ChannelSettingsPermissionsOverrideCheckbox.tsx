@@ -1,9 +1,9 @@
-// Module ID: 15391
-// Function ID: 117426
+// Module ID: 15394
+// Function ID: 117465
 // Name: getAccessibilityLabel
 // Dependencies: []
 
-// Module 15391 (getAccessibilityLabel)
+// Module 15394 (getAccessibilityLabel)
 function getAccessibilityLabel(arg0) {
   if (arg1(dependencyMap[5]).DENY === arg0) {
     const intl3 = arg1(dependencyMap[6]).intl;

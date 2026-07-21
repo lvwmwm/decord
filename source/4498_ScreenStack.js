@@ -1,11 +1,11 @@
 // Module ID: 4498
-// Function ID: 39653
+// Function ID: 39661
 // Name: ScreenStack
 // Dependencies: []
 // Exports: default
 
 // Module 4498 (ScreenStack)
-let closure_4 = [false, false, false, false, false, false, false];
+let closure_4 = [0.5, 0.5, 1, 0, 0, 1, 0];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

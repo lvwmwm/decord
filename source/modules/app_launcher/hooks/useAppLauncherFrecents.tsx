@@ -1,5 +1,5 @@
 // Module ID: 11228
-// Function ID: 87387
+// Function ID: 87399
 // Name: useFrecentApps
 // Dependencies: []
 // Exports: default, useAppLauncherFrecentApps
@@ -113,10 +113,10 @@ let closure_8 = importDefault(dependencyMap[3]);
 const WATCH_YOUTUBE_PROD_APP_ID = arg1(dependencyMap[4]).WATCH_YOUTUBE_PROD_APP_ID;
 const tmp2 = arg1(dependencyMap[5]);
 const BuiltInSectionId = tmp2.BuiltInSectionId;
-const obj = {};
+let obj = {};
 const items = [arg1(dependencyMap[6]).ApplicationCommandType.CHAT, arg1(dependencyMap[6]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 obj.commandTypes = items;
-let closure_12 = { limit: tmp2.DISCOVERY_COMMANDS_QUERY_LIMIT };
+obj = { "Bool(false)": "<string:8912898>", "Bool(false)": "<string:2919038977>", "Bool(false)": "<string:2024931329>", limit: tmp2.DISCOVERY_COMMANDS_QUERY_LIMIT };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/app_launcher/hooks/useAppLauncherFrecents.tsx");
 
 export default function useAppLauncherFrecentCommandsAndApps(arg0) {
@@ -127,7 +127,7 @@ export default function useAppLauncherFrecentCommandsAndApps(arg0) {
   ({ context, onlyActivityApps } = arg0);
   const arg1 = onlyActivityApps;
   let obj = importAll(dependencyMap[7]);
-  obj = { context, filters: obj, options: closure_12, allowFetch: true };
+  obj = { context, filters: obj, options: obj, allowFetch: true };
   const discovery = obj.useDiscovery(obj);
   const commands = discovery.commands;
   const importDefault = commands;
@@ -179,7 +179,7 @@ export const useAppLauncherFrecentApps = function useAppLauncherFrecentApps(cont
   context = context.context;
   ({ onlyActivityApps, allowCommandFetch, includeAuthorizedAppsAndFetch } = context);
   let obj = importAll(dependencyMap[7]);
-  obj = { context, filters: obj, options: closure_12, allowFetch: allowCommandFetch };
+  obj = { context, filters: obj, options: obj, allowFetch: allowCommandFetch };
   const discovery = obj.useDiscovery(obj);
   obj = { loading: discovery.loading, frecentApps: useFrecentApps(obj1) };
   return obj;

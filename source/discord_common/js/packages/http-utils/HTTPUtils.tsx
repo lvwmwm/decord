@@ -200,7 +200,7 @@ function sendRequest(arg0, url) {
       if (!closure_0) {
         callback(err);
         if (null != callback2) {
-          const obj = { "Null": null, "Null": null, err };
+          const obj = { err };
           callback2(obj);
         }
       }
@@ -267,7 +267,7 @@ function sendRequest(arg0, url) {
     callback3(arg1);
     arg3(code);
     if (null != arg4) {
-      const obj = { "Null": null, "Null": null, err: code };
+      const obj = { err: code };
       arg4(obj);
     }
   });
@@ -411,8 +411,8 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 const logger = new arg1(dependencyMap[6]).Logger("HTTPUtils");
-const set = new Set([null, 604120065, -1291779838, 134371073, 1375866628, 1535377774, 1551437219, null]);
-const set1 = new Set(["filter", "View"]);
+const set = new Set([null, null, null, null, null, null, null, "Int16Array"]);
+const set1 = new Set([true, true]);
 const tmp6 = (arg0) => {
   class HTTPResponseError {
     constructor(arg0, arg1) {
@@ -458,7 +458,7 @@ let bindResult3 = makeRequest.bind(null, "del");
 const obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
 if (global.isServerRendering) {
   noop = function noop() {
-    const obj = { 1795124223: "Chrome", 1845456127: "(?:HeadlessChrome)", 1912565759: "Chrome Mobile", 1979675647: "(?:CriOS|CrMo)", 1895788287: "Firefox", headers: {} };
+    const obj = { 9223372036854775807: "<string:1112997890>", 0: "<string:2782242238>", 0: "<string:2780709589>", 9223372036854775807: "<string:1121297877>", 9223372036854775807: "Firefox", headers: {} };
     return Promise.resolve(obj);
   };
   bindResult = noop;

@@ -1,7 +1,7 @@
 // Module ID: 12108
-// Function ID: 93296
+// Function ID: 93308
 // Name: trustDomain
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: trustDomain, trustProtocol
 
 // Module 12108 (trustDomain)

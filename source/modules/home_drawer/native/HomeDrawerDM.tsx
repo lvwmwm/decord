@@ -1,10 +1,10 @@
-// Module ID: 14744
-// Function ID: 111161
+// Module ID: 14747
+// Function ID: 111195
 // Name: HomeDrawerDMExpandedChildren
 // Dependencies: []
 // Exports: default
 
-// Module 14744 (HomeDrawerDMExpandedChildren)
+// Module 14747 (HomeDrawerDMExpandedChildren)
 function HomeDrawerDMExpandedChildren(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -38,7 +38,7 @@ function HomeDrawerDMExpandedChildren(channel) {
   const items3 = [stateFromStores1];
   const memo = React.useMemo(() => {
     if (null == stateFromStores1) {
-      let obj = { overflow: null, flexDirection: null };
+      let obj = { no: null, bottom: null };
     } else {
       obj = {};
       let tmp2 = null == stateFromStores1.end_time;
@@ -69,7 +69,7 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
     }
     let obj = { style: tmp.title };
-    obj = { keFvXM: false, address-line1: false, guildId: false, justifyContent: false, style: tmp.titleText, children: stateFromStores };
+    obj = { isArray: "absolute", Button: "useUserIsTeen", textAlign: "isArrayBufferToString", y: "valueProps", style: tmp.titleText, children: stateFromStores };
     const items = [callback(channel(closure_2[15]).Text, obj), callback(closure_9, { size: "xs" })];
     obj.children = items;
     return callback2(tmp3, obj);
@@ -93,7 +93,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 const NOOP = arg1(dependencyMap[6]).NOOP;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ title: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null }, titleText: { flexShrink: 1 } });
+let closure_12 = arg1(dependencyMap[8]).createStyles({ title: { "Null": true, "Null": true, "Bool(false)": true }, titleText: { flexShrink: 1 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerDM.tsx");
 

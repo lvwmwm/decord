@@ -1,5 +1,5 @@
 // Module ID: 10092
-// Function ID: 78148
+// Function ID: 78159
 // Name: ForumChannelCloseSearchButton
 // Dependencies: []
 
@@ -8,7 +8,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ inputContainer: { parent: "P", overflow: 40 }, cancelButtonContainer: { paddingLeft: 8 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ inputContainer: {}, cancelButtonContainer: { paddingLeft: 8 } });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo((channelId) => {
   let tmp6 = null;
   if (canSearchForumPostsByChannelId) {
     obj = { style: tmp.cancelButtonContainer };
-    obj = { 9223372036854775807: 8817, -9223372036854775808: 1091633408 };
+    obj = {};
     const intl = arg1(dependencyMap[9]).intl;
     obj.text = intl.string(arg1(dependencyMap[9]).t.ETE/oC);
     obj.onPress = function onPress() {

@@ -1,10 +1,10 @@
-// Module ID: 8312
-// Function ID: 65802
+// Module ID: 8313
+// Function ID: 65815
 // Name: generateHydrationId
 // Dependencies: []
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 8312 (generateHydrationId)
+// Module 8313 (generateHydrationId)
 function generateHydrationId(startingIndex, endingIndex) {
   return "hydration-" + startingIndex + "-" + endingIndex;
 }

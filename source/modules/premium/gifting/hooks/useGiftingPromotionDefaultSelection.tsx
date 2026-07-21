@@ -1,7 +1,7 @@
 // Module ID: 9755
-// Function ID: 75879
+// Function ID: 75890
 // Name: useGiftingPromotionDefaultSelectionV2
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: useGiftingPromotionDefaultSelectionV2
 
 // Module 9755 (useGiftingPromotionDefaultSelectionV2)

@@ -1,9 +1,9 @@
-// Module ID: 13388
-// Function ID: 101790
+// Module ID: 13390
+// Function ID: 101812
 // Name: jsx
 // Dependencies: []
 
-// Module 13388 (jsx)
+// Module 13390 (jsx)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -18,9 +18,9 @@ obj.content = obj;
 obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.contentContainer = obj1;
 let closure_9 = obj1.createStyles(obj);
-const obj2 = { raw: 24, body: 24, icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
+const obj2 = { <string:2048437162>: 24, <string:2887950716>: 24, icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
 const items = [obj2, ];
-const obj3 = { raw: "true", body: "vkt", icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
+const obj3 = { <string:2048437162>: 1358954760, <string:2887950716>: -1454293321, icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
 items[1] = obj3;
 const memoResult = importAllResult.memo(() => {
   function getLabel(first) {
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(() => {
     return tmp;
   });
   const arg1 = stateFromStores;
-  const tmp3 = callback(importAllResult.useState({ type: true, isConnected: true }), 2);
+  const tmp3 = callback(importAllResult.useState({ borderRadius: true, borderColor: true }), 2);
   const first = tmp3[0];
   const importDefault = first;
   closure_2 = tmp3[1];
@@ -56,7 +56,7 @@ const memoResult = importAllResult.memo(() => {
   const obj1 = { spacing: 16 };
   let tmp9 = null;
   if (null != stateFromStores) {
-    const obj2 = { "Bool(false)": null, "Bool(false)": null };
+    const obj2 = {};
     const obj3 = {
       icon: jsx(arg1(closure_2[15]).CopyIcon, {}),
       label: getLabel(stateFromStores),

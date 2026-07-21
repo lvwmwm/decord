@@ -1,5 +1,5 @@
 // Module ID: 5675
-// Function ID: 48736
+// Function ID: 48744
 // Name: isForwardMessage
 // Dependencies: []
 // Exports: default, isForwardServerMessage

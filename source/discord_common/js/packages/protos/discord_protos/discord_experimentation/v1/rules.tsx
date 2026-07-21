@@ -1,9 +1,9 @@
-// Module ID: 7778
-// Function ID: 61800
+// Module ID: 7779
+// Function ID: 61813
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7778 (_callSuper)
+// Module 7779 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -38,30 +38,30 @@ let tmp2 = (MessageType) => {
   class Rule$Type {
     constructor() {
       tmp = closure_3(this, Rule$Type);
-      obj = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200452247977626, "Null": 1757981753481072000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009915967012444767 };
+      obj = { 9223372036854775807: "Error", 9223372036854775807: "y", 0: "isArray" };
       obj.T = function T() {
         const items = [null, closure_8];
         return items;
       };
       items = [, , , , , ];
       items[0] = obj;
-      obj = { -1369353863: "headMetaSocial", 1636868177: "scalar", -1293725045: "getElementsByClassName", 140686057: "isArray" };
-      obj.T = function T() {
-        return closure_11;
+      items[1] = {
+        T() {
+              return closure_11;
+            }
       };
-      items[1] = obj;
-      obj1 = { "Null": null, "Null": null, "Null": null };
-      obj1.T = function T() {
+      obj = { 9223372036854775807: -1744830009, 9223372036854775807: -2113928351, 0: 1124073785 };
+      obj.T = function T() {
         return closure_10;
       };
-      items[2] = obj1;
-      items[3] = { 9223372036854775807: true, 0: 6, 9223372036854775807: 86, no: null };
-      obj2 = { "Null": "y", "Null": "isArray", "Null": "flags" };
-      obj2.T = function T() {
+      items[2] = obj;
+      items[3] = { 1347510942: true, 1678385745: 6, 1364379111: 86, 140698458: null };
+      obj1 = { 9223372036854775807: "icon-close", 9223372036854775807: "0 0 16 16", 0: "#2B2233" };
+      obj1.T = function T() {
         const items = [null, closure_9];
         return items;
       };
-      items[4] = obj2;
+      items[4] = obj1;
       items[5] = {};
       items1 = ["E"];
       items1[1] = items;
@@ -234,7 +234,7 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, Override$Type);
       items = [];
-      items[0] = {};
+      items[0] = { 1347510942: "y", 1678385745: "isArray", 1364379111: "construct", 140698458: "Array" };
       items1 = [null];
       items1[1] = items;
       return closure_52(this, Override$Type, items1);
@@ -348,68 +348,67 @@ let tmp6 = (MessageType) => {
   class Filter$Type {
     constructor() {
       tmp = closure_3(this, Filter$Type);
-      obj = {
-        T() {
-              return closure_30;
-            }
+      obj = { 9223372036854775807: null, 0: "\u{1F9D1}\u200D\u{1F33E}", 0: true, 0: 12.1 };
+      obj.T = function T() {
+        return closure_30;
       };
       items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , ];
       items[0] = obj;
-      items[1] = {
-        T() {
-              return closure_25;
-            }
-      };
-      items[2] = {
-        T() {
-              return closure_12;
-            }
-      };
-      obj = { "Null": "<string:2455044098>", "Null": "<string:2089515953>", "Null": "<string:61968267>", "Null": "<string:443433232>" };
+      obj = { 9223372036854775807: 370, 0: 2048, 0: 29249792, 0: 4210 };
       obj.T = function T() {
+        return closure_25;
+      };
+      items[1] = obj;
+      obj1 = { 9223372036854775807: null, 0: "hidden", 0: "center", 0: 280060491941916000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      obj1.T = function T() {
+        return closure_12;
+      };
+      items[2] = obj1;
+      obj2 = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007452008081763636, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029975933746857744, 0: 16125689820649940000000000000000000000000000000000000000000000000000000000000000000, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293867977323397 };
+      obj2.T = function T() {
         return closure_13;
       };
-      items[3] = obj;
-      items[4] = {
+      items[3] = obj2;
+      obj3 = { 9223372036854775807: -766443516, 0: 1412120962, 0: -1219362815, 0: 1144379504 };
+      obj3.T = function T() {
+        return closure_14;
+      };
+      items[4] = obj3;
+      items[5] = {
         T() {
-              return closure_14;
+              return closure_16;
             }
       };
-      obj1 = { "Null": -9518938633034555000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 13339573339292793000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000401021504780262 };
-      obj1.T = function T() {
-        return closure_16;
-      };
-      items[5] = obj1;
       items[6] = {
         T() {
               return closure_18;
             }
       };
-      obj2 = { "Null": null, "Null": 12, "Null": "restricted_schedule", "Null": "message" };
-      obj2.T = function T() {
+      obj4 = { 9223372036854775807: 1090632033, 0: 321997, 0: 208732433, 0: 1358954496 };
+      obj4.T = function T() {
         return closure_23;
       };
-      items[7] = obj2;
-      obj3 = { "Null": 12.1, "Null": null, "Null": "\u{1F9D1}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
-      obj3.T = function T() {
+      items[7] = obj4;
+      obj5 = { 9223372036854775807: true, 0: null, 0: 8, 0: null };
+      obj5.T = function T() {
         return closure_15;
       };
-      items[8] = obj3;
-      obj4 = { "Null": null, "Null": "\u{1F468}\u{1F3FF}\u200D\u{1F9B0}", "Null": true, "Null": null };
-      obj4.T = function T() {
+      items[8] = obj5;
+      obj6 = { 9223372036854775807: null, 0: "\u{1F468}\u{1F3FF}\u200D\u{1F9B0}", 0: true, 0: null };
+      obj6.T = function T() {
         return closure_36;
       };
-      items[9] = obj4;
-      obj5 = { "Null": "\u{1F926}\u{1F3FB}\u200D\u2640\uFE0F", "Null": true, "Null": null, "Null": 9 };
-      obj5.T = function T() {
+      items[9] = obj6;
+      obj7 = { 9223372036854775807: "\u{1F926}\u{1F3FB}\u200D\u2640\uFE0F", 0: true, 0: null, 0: 9 };
+      obj7.T = function T() {
         return closure_37;
       };
-      items[10] = obj5;
-      obj6 = { "Null": true, "Null": true, "Null": true, "Null": true };
-      obj6.T = function T() {
+      items[10] = obj7;
+      obj8 = { 9223372036854775807: true, 0: true, 0: true, 0: true };
+      obj8.T = function T() {
         return closure_39;
       };
-      items[11] = obj6;
+      items[11] = obj8;
       items[12] = {
         T() {
               return closure_40;
@@ -420,26 +419,26 @@ let tmp6 = (MessageType) => {
               return closure_41;
             }
       };
-      obj7 = { "Null": "prefer_client_ip", "Null": "scalar", "Null": 8, "Null": 2 };
-      obj7.T = function T() {
+      obj9 = { 9223372036854775807: "prefer_client_ip", 0: "scalar", 0: 8, 0: 2 };
+      obj9.T = function T() {
         return closure_42;
       };
-      items[14] = obj7;
-      obj8 = { "Null": 2, "Null": "android_version", "Null": "message", "Null": "600" };
-      obj8.T = function T() {
+      items[14] = obj9;
+      obj10 = { 9223372036854775807: 2, 0: "android_version", 0: "message", 0: "600" };
+      obj10.T = function T() {
         return closure_43;
       };
-      items[15] = obj8;
-      obj9 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061765568090083, "Null": 1758568672417068000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012742115516604117, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867147602 };
-      obj9.T = function T() {
+      items[15] = obj10;
+      obj11 = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006176556808973547, 0: 1758568868820504400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012416368359068612, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867147602 };
+      obj11.T = function T() {
         return closure_17;
       };
-      items[16] = obj9;
-      obj10 = { "Null": "__BUNDLE_START_TIME__", "Null": "NO_VOICE_STATES", "Null": "w_mask", "Null": "absolute" };
-      obj10.T = function T() {
+      items[16] = obj11;
+      obj12 = { 9223372036854775807: 1627390656, 0: -1663348295, 0: 17514305, 0: 7405824 };
+      obj12.T = function T() {
         return closure_44;
       };
-      items[17] = obj10;
+      items[17] = obj12;
       items[18] = {
         T() {
               return closure_45;
@@ -450,11 +449,11 @@ let tmp6 = (MessageType) => {
               return closure_46;
             }
       };
-      obj11 = { "Null": false, "Null": false, "Null": false, "Null": false };
-      obj11.T = function T() {
+      obj13 = { 9223372036854775807: false, 0: false, 0: false, 0: false };
+      obj13.T = function T() {
         return closure_47;
       };
-      items[20] = obj11;
+      items[20] = obj13;
       items[21] = {
         T() {
               return closure_49;
@@ -465,28 +464,28 @@ let tmp6 = (MessageType) => {
               return closure_48;
             }
       };
-      obj12 = { "Null": "scalar", "Null": 8, "Null": 2, "Null": "upper_bound" };
-      obj12.T = function T() {
+      obj14 = { 9223372036854775807: "scalar", 0: 8, 0: 2, 0: "upper_bound" };
+      obj14.T = function T() {
         return closure_50;
       };
-      items[23] = obj12;
-      obj13 = { "Null": "upper_bound", "Null": "message", "Null": 2, "Null": "inclusive" };
-      obj13.T = function T() {
+      items[23] = obj14;
+      obj15 = { 9223372036854775807: "upper_bound", 0: "message", 0: 2, 0: "inclusive" };
+      obj15.T = function T() {
         return closure_22;
       };
-      items[24] = obj13;
+      items[24] = obj15;
       items[25] = {
         T() {
               return closure_24;
             }
       };
-      obj14 = { "Null": null, "Null": null, "Null": null, "Null": null };
-      obj14.T = function T() {
+      obj16 = { 9223372036854775807: null, 0: null, 0: null, 0: null };
+      obj16.T = function T() {
         return closure_51;
       };
-      items[26] = obj14;
-      items[27] = { 9223372036854775807: 1090519040, 0: 68598, 9223372036854775807: 113, no: -1649266432 };
-      items1 = [false];
+      items[26] = obj16;
+      items[27] = { 1347510942: 1090519040, 1678385745: 68415, 1364379111: 113, 140698458: -1649266432 };
+      items1 = [true];
       items1[1] = items;
       return closure_52(this, Filter$Type, items1);
     }
@@ -516,15 +515,9 @@ let tmp6 = (MessageType) => {
       if (null == arg3) {
         obj = self.create();
       }
-      const sum = pos.pos + arg1;
-      if (pos.pos < sum) {
-        obj.negate = pos.bool();
-        while (true) {
-          do {
-            let tmp3 = tmp5;
-            let tmp4 = tmp6;
-          } while (pos.pos >= sum);
-        }
+      if (pos.pos < pos.pos + arg1) {
+        [r10052, r10053] = callback(pos.tag(), 2);
+        const tmp3 = callback(pos.tag(), 2);
       }
       return obj;
     }
@@ -703,9 +696,9 @@ let tmp8 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, StaffUsers$Type);
       items = [, ];
-      items[0] = { 9223372036854775807: true, 0: true, 9223372036854775807: true, no: true };
-      items[1] = { 9223372036854775807: 8.773, 0: 5, 9223372036854775807: "client_required_changes", no: "message" };
-      items1 = ["np"];
+      items[0] = { 1347510942: "message", 1678385745: "OPACITY_BLACK_16", 1364379111: 0.1607843137254902, 140698458: "NEUTRAL_44" };
+      items[1] = { 1347510942: 8.773, 1678385745: 5, 1364379111: "client_required_changes", 140698458: "message" };
+      items1 = ["error"];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
       return closure_52(this, StaffUsers$Type, items1);
@@ -716,7 +709,7 @@ let tmp8 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { <string:3104183636>: null, <string:393984123>: null };
+      let obj = { 101415868: null, 5323361: null };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, StaffUsers$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -1383,7 +1376,7 @@ let tmp18 = (MessageType) => {
       tmp = closure_3(this, ClientSystemLocale$Type);
       items = [];
       items[0] = {};
-      items1 = [false];
+      items1 = [true];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_CLIENT" };
       return closure_52(this, ClientSystemLocale$Type, items1);
@@ -1506,9 +1499,10 @@ let tmp20 = (MessageType) => {
   class ClientLocation$Type {
     constructor() {
       tmp = closure_3(this, ClientLocation$Type);
-      obj = { -1369353863: true, 1636868177: true, -1293725045: true, 140686057: true };
-      obj.T = function T() {
-        return closure_21;
+      obj = {
+        T() {
+              return closure_21;
+            }
       };
       items = [];
       items[0] = obj;
@@ -1639,9 +1633,9 @@ let tmp22 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, ClientLocation_Place$Type);
       items = [, , ];
-      items[0] = { 9223372036854775807: 1, 0: "is_bot", 9223372036854775807: "scalar", no: 8 };
+      items[0] = { 1347510942: 1, 1678385745: "is_bot", 1364379111: "scalar", 140698458: 8 };
       items[1] = {};
-      items[2] = { 9223372036854775807: 15816517636413878000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 86222396332329120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 7554152752246741000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, no: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003322817625670204 };
+      items[2] = {};
       items1 = [];
       items1[1] = items;
       return closure_52(this, ClientLocation_Place$Type, items1);
@@ -1652,7 +1646,7 @@ let tmp22 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 102202296: false, 173095521: false, 1364615427: false };
+      let obj = { flex: "fr", paddingVertical: "french", alignItems: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, ClientLocation_Place$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -1772,9 +1766,9 @@ let tmp24 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, ClientLocation_ISORegion$Type);
       items = [, ];
-      items[0] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
+      items[0] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items[1] = {};
-      items1 = ["Array"];
+      items1 = [-1929379470];
       items1[1] = items;
       return closure_52(this, ClientLocation_ISORegion$Type, items1);
     }
@@ -1784,7 +1778,7 @@ let tmp24 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { paddingVertical: "\u{1F9BB}\u{1F3FF}", alignItems: true };
+      let obj = {};
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, ClientLocation_ISORegion$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -1903,12 +1897,12 @@ let tmp26 = (MessageType) => {
       items = [, , ];
       items[0] = obj;
       items[1] = {};
-      obj = { "Null": "limit", "Null": "Array", "Null": "isArray", "Null": "code" };
+      obj = { 9223372036854775807: "Array", 0: "enter", 0: "isArray", 0: "NR" };
       obj.T = function T() {
         return closure_19;
       };
       items[2] = obj;
-      items1 = [null];
+      items1 = ["<string:36242432>"];
       items1[1] = items;
       return closure_52(this, ClientLocation_Location$Type, items1);
     }
@@ -2052,13 +2046,14 @@ let tmp28 = (MessageType) => {
   class UserLocation$Type {
     constructor() {
       tmp = closure_3(this, UserLocation$Type);
-      obj = { -1369353863: true, 1636868177: true, -1293725045: true, 140686057: true };
-      obj.T = function T() {
-        return closure_21;
+      obj = {
+        T() {
+              return closure_21;
+            }
       };
       items = [, ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
+      items[1] = { 1347510942: false, 1678385745: "<string:1907974400>", 1364379111: "r", 140698458: "<string:20839233>" };
       items1 = [null];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
@@ -2320,7 +2315,7 @@ let tmp32 = (MessageType) => {
       tmp = closure_3(this, UserIP$Type);
       items = [, ];
       items[0] = {};
-      items[1] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
+      items[1] = { 1347510942: false, 1678385745: "<string:1907974400>", 1364379111: "r", 140698458: "<string:20839233>" };
       items1 = [null];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
@@ -2452,27 +2447,27 @@ let tmp34 = (MessageType) => {
   class ClientOperatingSystem$Type {
     constructor() {
       tmp = closure_3(this, ClientOperatingSystem$Type);
-      obj = { "Null": true, "Null": true, "Null": true };
+      obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj.T = function T() {
         return closure_26;
       };
       items = [, , , , , , ];
       items[0] = obj;
-      obj = { "Null": 3441, "Null": 225536, "Null": 1967194112 };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
         return closure_26;
       };
       items[1] = obj;
-      obj1 = { "Null": "a", "Null": "isArray", "Null": "then" };
+      items[2] = {
+        T() {
+              return closure_26;
+            }
+      };
+      obj1 = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj1.T = function T() {
         return closure_26;
       };
-      items[2] = obj1;
-      obj2 = { "Null": 3441, "Null": 160000, "Null": -264175616 };
-      obj2.T = function T() {
-        return closure_26;
-      };
-      items[3] = obj2;
+      items[3] = obj1;
       items[4] = {
         T() {
               return closure_26;
@@ -2483,12 +2478,12 @@ let tmp34 = (MessageType) => {
               return closure_26;
             }
       };
-      obj3 = { "Null": "scalar", "Null": 1, "Null": 6 };
-      obj3.T = function T() {
+      obj2 = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj2.T = function T() {
         return closure_26;
       };
-      items[6] = obj3;
-      items1 = [null];
+      items[6] = obj2;
+      items1 = [-647281991];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_CLIENT" };
       return closure_52(this, ClientOperatingSystem$Type, items1);
@@ -2685,13 +2680,14 @@ let tmp36 = (MessageType) => {
   class SDKVersion$Type {
     constructor() {
       tmp = closure_3(this, SDKVersion$Type);
-      obj = { -1369353863: "hash_key", 1636868177: "scalar", -1293725045: 9, 140686057: "GREEN_NEW_37" };
-      obj.T = function T() {
-        return closure_27;
+      obj = {
+        T() {
+              return closure_27;
+            }
       };
       items = [, ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: "FILTER_CATEGORY_GUILD", 0: "FILTER_EVALUATION_MODE_LAZY", 9223372036854775807: 2, no: "max_count" };
+      items[1] = {};
       items1 = [null];
       items1[1] = items;
       return closure_52(this, SDKVersion$Type, items1);
@@ -2832,11 +2828,11 @@ let tmp38 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      items[1] = {
-        T() {
-              return closure_28;
-            }
+      obj = { 9223372036854775807: "<string:3057713154>", 9223372036854775807: "<string:1627390493>", 0: "<string:1639990007>" };
+      obj.T = function T() {
+        return closure_28;
       };
+      items[1] = obj;
       items1 = [];
       items1[1] = items;
       return closure_52(this, SDKVersionRange$Type, items1);
@@ -2968,14 +2964,14 @@ let tmp40 = (MessageType) => {
   class SDKVersionRangeBound$Type {
     constructor() {
       tmp = closure_3(this, SDKVersionRangeBound$Type);
-      obj = { "Null": false, "Null": false, "Null": false };
+      obj = { 9223372036854775807: "<string:2622554114>", 9223372036854775807: "<string:422281>", 0: "<string:2638282752>" };
       obj.T = function T() {
         return closure_29;
       };
       items = [, ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: "#313339", 0: "#fafafa", 9223372036854775807: "2026-04-social-layer-storefront-mobile-purchasing", no: "user" };
-      items1 = ["BUTTONS"];
+      items[1] = {};
+      items1 = ["uploadResumptionCount"];
       items1[1] = items;
       return closure_52(this, SDKVersionRangeBound$Type, items1);
     }
@@ -3102,7 +3098,7 @@ let tmp42 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, SDKVersionSpecifier$Type);
       items = [];
-      items[0] = { 9223372036854775807: 370, 0: 1280, 9223372036854775807: 1326792960, no: null };
+      items[0] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items1 = ["lightingColor"];
       items1[1] = items;
       return closure_52(this, SDKVersionSpecifier$Type, items1);
@@ -3216,33 +3212,33 @@ let tmp44 = (MessageType) => {
   class ClientPlatform$Type {
     constructor() {
       tmp = closure_3(this, ClientPlatform$Type);
-      obj = { "Null": true, "Null": true, "Null": true };
+      obj = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj.T = function T() {
         return closure_31;
       };
       items = [, , , , , ];
       items[0] = obj;
-      obj = { "Null": 3441, "Null": 225536, "Null": 1967194112 };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
         return closure_31;
       };
       items[1] = obj;
-      items[2] = {
-        T() {
-              return closure_31;
-            }
-      };
-      obj1 = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24 };
+      obj1 = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj1.T = function T() {
         return closure_31;
       };
-      items[3] = obj1;
-      items[4] = { 9223372036854775807: "Array", 0: "isArray", 9223372036854775807: "Text", no: "mn" };
-      obj2 = { "Null": false, "Null": false, "Null": false };
+      items[2] = obj1;
+      obj2 = { 9223372036854775807: "<string:3897688066>", 9223372036854775807: "<string:299071618>", 0: "<string:27886913>" };
       obj2.T = function T() {
+        return closure_31;
+      };
+      items[3] = obj2;
+      items[4] = { 1347510942: 1, 1678385745: "stretch", 1364379111: 24, 140698458: "ads" };
+      obj3 = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
+      obj3.T = function T() {
         return closure_35;
       };
-      items[5] = obj2;
+      items[5] = obj3;
       items1 = ["k1"];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_CLIENT" };
@@ -3422,14 +3418,15 @@ let tmp46 = (MessageType) => {
   class PlatformVersion$Type {
     constructor() {
       tmp = closure_3(this, PlatformVersion$Type);
-      obj = { -1369353863: "hash_key", 1636868177: "scalar", -1293725045: 9, 140686057: "GREEN_NEW_37" };
-      obj.T = function T() {
-        return closure_32;
+      obj = {
+        T() {
+              return closure_32;
+            }
       };
       items = [, ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: "FILTER_CATEGORY_GUILD", 0: "FILTER_EVALUATION_MODE_LAZY", 9223372036854775807: 2, no: "max_count" };
-      items1 = [-17762085155217818000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+      items[1] = {};
+      items1 = ["ix"];
       items1[1] = items;
       return closure_52(this, PlatformVersion$Type, items1);
     }
@@ -3569,11 +3566,11 @@ let tmp48 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      items[1] = {
-        T() {
-              return closure_33;
-            }
+      obj = { 9223372036854775807: "<string:3057713154>", 9223372036854775807: "<string:1627390493>", 0: "<string:1639990007>" };
+      obj.T = function T() {
+        return closure_33;
       };
+      items[1] = obj;
       items1 = ["application"];
       items1[1] = items;
       return closure_52(this, PlatformVersionRange$Type, items1);
@@ -3705,14 +3702,14 @@ let tmp50 = (MessageType) => {
   class PlatformVersionRangeBound$Type {
     constructor() {
       tmp = closure_3(this, PlatformVersionRangeBound$Type);
-      obj = { "Null": false, "Null": false, "Null": false };
+      obj = { 9223372036854775807: "<string:2622554114>", 9223372036854775807: "<string:422281>", 0: "<string:2638282752>" };
       obj.T = function T() {
         return closure_34;
       };
       items = [, ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: "#313339", 0: "#fafafa", 9223372036854775807: "2026-04-social-layer-storefront-mobile-purchasing", no: "user" };
-      items1 = ["_secureFramesTransitionPrepareCount"];
+      items[1] = {};
+      items1 = ["ExtendedMemoryLru"];
       items1[1] = items;
       return closure_52(this, PlatformVersionRangeBound$Type, items1);
     }
@@ -3839,18 +3836,18 @@ let tmp52 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, PlatformVersionSpecifier$Type);
       items = [, , ];
-      items[0] = { 9223372036854775807: 131072.00070381176, 0: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004211900767613606, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058658551, no: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003403067985421976 };
-      items[1] = {
-        T() {
-              return callback(closure_1[7]).UInt32Value;
-            }
+      items[0] = { 1347510942: 131072.00070381176, 1678385745: -31148188099889730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1364379111: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058658554, 140698458: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000340354566396045 };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj.T = function T() {
+        return callback(closure_1[7]).UInt32Value;
       };
-      obj = { "Null": "r", "Null": "isArray", "Null": "x" };
+      items[1] = obj;
+      obj = { 9223372036854775807: false, 9223372036854775807: false, 0: false };
       obj.T = function T() {
         return callback(closure_1[7]).UInt64Value;
       };
       items[2] = obj;
-      items1 = ["children"];
+      items1 = ["side"];
       items1[1] = items;
       return closure_52(this, PlatformVersionSpecifier$Type, items1);
     }
@@ -3996,8 +3993,8 @@ let tmp54 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, ClientRequiredChanges$Type);
       items = [, ];
-      items[0] = { -1369353863: 1, 1636868177: "features", -1293725045: "scalar", 140686057: 2, -73316248: 9 };
-      items[1] = { -1369353863: null, 1636868177: "f008a1e156929bb73f7856d4125be1de", -1293725045: "UnknownGameIcon", 140686057: "png", -73316248: true };
+      items[0] = {};
+      items[1] = {};
       items1 = [false];
       items1[1] = items;
       return closure_52(this, ClientRequiredChanges$Type, items1);
@@ -4286,11 +4283,11 @@ let tmp58 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      obj = { "Null": true, "Null": true, "Null": true };
-      obj.T = function T() {
-        return callback(closure_1[7]).UInt32Value;
+      items[1] = {
+        T() {
+              return callback(closure_1[7]).UInt32Value;
+            }
       };
-      items[1] = obj;
       items1 = [];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
@@ -4431,7 +4428,7 @@ let tmp60 = (MessageType) => {
       tmp = closure_3(this, Fixed64Value$Type);
       items = [];
       items[0] = {};
-      items1 = [null];
+      items1 = ["OBJECTS"];
       items1[1] = items;
       return closure_52(this, Fixed64Value$Type, items1);
     }
@@ -4552,7 +4549,7 @@ let tmp62 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      obj = { "Null": null, "Null": null, "Null": null };
+      obj = { 9223372036854775807: null, 9223372036854775807: "f675dc68337355a0cf14fc6856097557", 0: "GameControllerIcon" };
       obj.T = function T() {
         return closure_38;
       };
@@ -4690,8 +4687,8 @@ let tmp64 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, UserHasFlag$Type);
       items = [];
-      items[0] = { 9223372036854775807: true, 0: true, 9223372036854775807: true, no: true };
-      items1 = [1358954755];
+      items[0] = { 1347510942: "code", 1678385745: "y", 1364379111: "isArray", 140698458: "construct" };
+      items1 = ["a"];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
       return closure_52(this, UserHasFlag$Type, items1);
@@ -4807,10 +4804,10 @@ let tmp66 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, UnitIdInRangeByHash$Type);
       items = [, , ];
-      items[0] = { 9223372036854775807: 16, 0: "visible", 9223372036854775807: 1, no: "#0177a4" };
-      items[1] = {};
-      items[2] = { 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, 9223372036854775807: 24, no: null };
-      items1 = ["<string:1099871057>"];
+      items[0] = { 1347510942: 16, 1678385745: "visible", 1364379111: 1, 140698458: "#0177a4" };
+      items[1] = { 1347510942: "/assets/design/components/Icon/native/redesign/generated/images", 1678385745: 24, 1364379111: 24, 140698458: null };
+      items[2] = { 1347510942: true, 1678385745: true, 1364379111: true, 140698458: true };
+      items1 = ["<string:1099873873>"];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_UTILITY" };
       return closure_52(this, UnitIdInRangeByHash$Type, items1);
@@ -4821,7 +4818,7 @@ let tmp66 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { alignSelf: false, alignItems: null, marginBottom: "" };
+      let obj = { alignSelf: "<string:3349217282>", alignItems: "<string:160104449>", marginBottom: "<string:115015681>" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, UnitIdInRangeByHash$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -5066,7 +5063,7 @@ let tmp70 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, Always$Type);
       items = [];
-      items[0] = { 9223372036854775807: "routingFailures", 0: "isArray", 9223372036854775807: "upsellCTADismissed", no: "isArray" };
+      items[0] = { 1347510942: "Gwu134", 1678385745: "isArray", 1364379111: "uploads", 140698458: "isArray" };
       items1 = ["no"];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_UTILITY" };
@@ -5186,7 +5183,7 @@ let tmp72 = (MessageType) => {
       items[1] = {};
       items1 = [null];
       items1[1] = items;
-      items1[2] = { setEmojiId: null, selectedAvatarDecoration: "24b237fc943d3bc35a4b3cb04c57b99f" };
+      items1[2] = { -9223372036854775808: null, 9223372036854775807: "24b237fc943d3bc35a4b3cb04c57b99f" };
       return closure_52(this, UnitIdInExperiment$Type, items1);
     }
   }
@@ -5344,7 +5341,7 @@ let tmp74 = (MessageType) => {
       tmp = closure_3(this, UserPremiumType$Type);
       items = [];
       items[0] = {};
-      items1 = [true];
+      items1 = [false];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_USER" };
       return closure_52(this, UserPremiumType$Type, items1);
@@ -5493,7 +5490,7 @@ let tmp76 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, UnitIdMatchesFilterSnapshot$Type);
       items = [, ];
-      items[0] = { 9223372036854775807: null, 0: null, 9223372036854775807: null, no: null };
+      items[0] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items[1] = {};
       items1 = [null];
       items1[1] = items;
@@ -5658,7 +5655,7 @@ let tmp78 = (MessageType) => {
       items[0] = {};
       items1 = [];
       items1[1] = items;
-      items1[2] = { setEmojiId: "<string:3207331842>", selectedAvatarDecoration: "<string:3578855426>" };
+      items1[2] = { -9223372036854775808: "<string:3207856130>", 9223372036854775807: "<string:2018574338>" };
       return closure_52(this, GuildIds$Type, items1);
     }
   }
@@ -5806,20 +5803,20 @@ let tmp80 = (MessageType) => {
   class GuildMemberCountRange$Type {
     constructor() {
       tmp = closure_3(this, GuildMemberCountRange$Type);
-      obj = { "Null": -1308622269, "Null": "<string:1270415362>", "Null": "<string:1119289345>" };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
         return callback(closure_1[7]).UInt32Value;
       };
       items = [, ];
       items[0] = obj;
-      obj = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391244649793, "Null": 9126805507, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000381982584403264 };
+      obj = { 9223372036854775807: "remotePlatform", 9223372036854775807: "Int8Array", 0: "MiniaturesSpotIllustration" };
       obj.T = function T() {
         return callback(closure_1[7]).UInt32Value;
       };
       items[1] = obj;
       items1 = ["none"];
       items1[1] = items;
-      items1[2] = { setEmojiId: true, selectedAvatarDecoration: true };
+      items1[2] = { -9223372036854775808: true, 9223372036854775807: true };
       return closure_52(this, GuildMemberCountRange$Type, items1);
     }
   }
@@ -5962,14 +5959,14 @@ let tmp82 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      obj = { "Null": null, "Null": null, "Null": null };
+      obj = { 9223372036854775807: null, 9223372036854775807: "f675dc68337355a0cf14fc6856097557", 0: "GameControllerIcon" };
       obj.T = function T() {
         return closure_38;
       };
       items[1] = obj;
       items1 = ["absolute"];
       items1[1] = items;
-      items1[2] = { setEmojiId: "<string:3207331842>", selectedAvatarDecoration: "<string:3578855426>" };
+      items1[2] = { -9223372036854775808: "<string:3207856130>", 9223372036854775807: "<string:2018574338>" };
       return closure_52(this, GuildIdRange$Type, items1);
     }
   }
@@ -6103,7 +6100,7 @@ let tmp84 = (MessageType) => {
       items[0] = {};
       items1 = ["row"];
       items1[1] = items;
-      items1[2] = { setEmojiId: true, selectedAvatarDecoration: true };
+      items1[2] = { -9223372036854775808: true, 9223372036854775807: true };
       return closure_52(this, GuildHasFeature$Type, items1);
     }
   }
@@ -6225,8 +6222,8 @@ let tmp86 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, InstallationIds$Type);
       items = [];
-      items[0] = { -1369353863: 8665591007688065000000000000, 1636868177: 247588173439662600000000000000, -1293725045: 8559299501910212000000, 140686057: 123723149417408850000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -73316248: -1192835493831631000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-      items1 = [null];
+      items[0] = {};
+      items1 = [];
       items1[1] = items;
       items1[2] = { discord_protos.discord_experimentation.v1.filter_category: "FILTER_CATEGORY_CLIENT" };
       return closure_52(this, InstallationIds$Type, items1);

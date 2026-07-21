@@ -1,10 +1,10 @@
-// Module ID: 7886
-// Function ID: 62783
+// Module ID: 7887
+// Function ID: 62796
 // Name: getProfileTheme
 // Dependencies: []
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getUserProfileGradientContainerColors
 
-// Module 7886 (getProfileTheme)
+// Module 7887 (getProfileTheme)
 function getProfileTheme(first) {
   if (null == first) {
     return null;

@@ -1,15 +1,15 @@
-// Module ID: 16338
-// Function ID: 126069
+// Module ID: 16346
+// Function ID: 126130
 // Name: ActionableNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16338 (ActionableNotice)
+// Module 16346 (ActionableNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { HbPHt1: true, shouldShowDiscountUpsell: true, shouldShowDiscountUpsell: true }, message: { "Bool(false)": "Activities and Clear", "Bool(false)": "email_verification" }, actionButton: { -9223372036854775808: "2025-10-force-sdr-emojis-stickers", 0: "percent" } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { "Null": true, "Null": true, "Null": true }, message: { "Bool(false)": "Activities and Clear", "Bool(false)": "email_verification" }, actionButton: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
 

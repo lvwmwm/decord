@@ -1,5 +1,5 @@
 // Module ID: 8740
-// Function ID: 69116
+// Function ID: 69127
 // Name: PX_8
 // Dependencies: []
 // Exports: default
@@ -16,14 +16,14 @@ let closure_8 = arg1(dependencyMap[6]).PROFILE_FRAME_ASPECT_RATIO;
 const PX_8 = importDefault(dependencyMap[9]).space.PX_8;
 let obj = arg1(dependencyMap[10]);
 obj = { tile: {}, framePreview: obj };
-obj = { borderWidth: "<string:1107296833>", width: "p\u00E4iv\u00E4", height: "{{count}} p\u00E4iv\u00E4\u00E4", justifyContent: "<string:39208002>", alignItems: "<string:19595008>", borderRadius: "<string:1275085312>", paddingVertical: PX_8 };
-const obj1 = { 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005171136915227254, 0: 8597148608.001488, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000162423923903524, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { -1302634668: null, 643032929: null, -1061115014: null, 1449681162: null, 687284756: null, 56714916: null, paddingVertical: PX_8 };
+const obj1 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018115528007917002, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018115528007917002, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000460430282723383, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.profileEffect = obj1;
 obj.sampleProfile = { aspectRatio: arg1(dependencyMap[7]).SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
 const tmp3 = arg1(dependencyMap[8]);
 obj.nameplate = { overflow: "hidden", borderTopRightRadius: importDefault(dependencyMap[9]).radii.xs, borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.nameplateTile = { alignItems: "flex-start" };
-obj.nameplateStrip = {};
+obj.nameplateStrip = { "Null": true, "Null": true, "Null": true };
 let closure_12 = obj.createStyles(obj);
 const obj2 = { overflow: "hidden", borderTopRightRadius: importDefault(dependencyMap[9]).radii.xs, borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/collectibles/native/CollectiblesItemMiniPreview.tsx");
@@ -55,7 +55,7 @@ export default function CollectiblesItemMiniPreview(arg0) {
     obj6.style = tmp.sampleProfile;
     obj6.resizeMode = "cover";
     const items1 = [callback(importDefault(dependencyMap[13]), obj6), ];
-    const obj8 = { <string:979172195>: 1000, <string:1377429346>: 600000, <string:3890416569>: "MESSAGE_CREATE", skuId: item.skuId };
+    const obj8 = { tn: null, withPlaceholder: "info", VIDEO_MODAL_ICON_END_CARD: "/", skuId: item.skuId };
     items1[1] = callback(importDefault(dependencyMap[15]), obj8);
     obj5.children = items1;
     obj4.children = callback2(View, obj5);

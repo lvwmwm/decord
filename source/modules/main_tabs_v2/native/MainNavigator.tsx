@@ -1,9 +1,9 @@
-// Module ID: 14600
-// Function ID: 110023
+// Module ID: 14603
+// Function ID: 110055
 // Name: getAuthComponent
 // Dependencies: []
 
-// Module 14600 (getAuthComponent)
+// Module 14603 (getAuthComponent)
 function getAuthComponent() {
   return arg1(dependencyMap[12]).default;
 }
@@ -190,7 +190,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
             }
           };
           obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-          const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { 1642977105: "companion_remote_auth", -1815129063: false } }), ];
+          const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { "Null": "companion_remote_auth", "Null": false } }), ];
           let animation;
           if (null != animation) {
             animation = animation.animation;
@@ -225,7 +225,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     ];
     const obj9 = { name: "account-standing", getComponent: closure_32 };
     const merged = Object.assign(closure_17);
-    obj9.options = { 1996846851: "<string:41043341>", 1642977105: "<string:16777216>" };
+    obj9.options = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122086003363, "Bool(true)": -688316616681342600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     items1[4] = callback(closure_15.Screen, obj9);
     items1[5] = callback(closure_15.Screen, {
       name: "you",
@@ -330,7 +330,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     });
     obj16 = { name: "message-requests", options: stateFromStores(first[43])(), getComponent: closure_30 };
     items1[9] = callback(closure_15.Screen, obj16);
-    const obj10 = { 1996846851: "<string:41043341>", 1642977105: "<string:16777216>" };
+    const obj10 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122086003363, "Bool(true)": -688316616681342600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     const obj11 = {
       name: "you",
       options() {
@@ -408,7 +408,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
           }
         };
         obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-        const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { 1642977105: "companion_remote_auth", -1815129063: false } }), ];
+        const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { "Null": "companion_remote_auth", "Null": false } }), ];
         let animation;
         if (null != animation) {
           animation = animation.animation;

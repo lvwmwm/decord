@@ -1,10 +1,10 @@
-// Module ID: 16193
-// Function ID: 125121
+// Module ID: 16201
+// Function ID: 125182
 // Name: InRolePromptNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16193 (InRolePromptNotice)
+// Module 16201 (InRolePromptNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const RoleFlags = arg1(dependencyMap[2]).RoleFlags;

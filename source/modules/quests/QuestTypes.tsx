@@ -1,9 +1,9 @@
-// Module ID: 5250
-// Function ID: 44528
+// Module ID: 5249
+// Function ID: 44535
 // Name: QuestsVisibleMessagesChangedSource
 // Dependencies: []
 
-// Module 5250 (QuestsVisibleMessagesChangedSource)
+// Module 5249 (QuestsVisibleMessagesChangedSource)
 const values = Object.values(require(dependencyMap[0]).QuestRewardCodePlatforms);
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/quests/QuestTypes.tsx");

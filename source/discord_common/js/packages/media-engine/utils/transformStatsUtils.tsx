@@ -1,7 +1,7 @@
 // Module ID: 4271
-// Function ID: 37373
+// Function ID: 37381
 // Name: formatSinkWantStat
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: formatSinkWantAsInt, formatSinkWantStat
 
 // Module 4271 (formatSinkWantStat)

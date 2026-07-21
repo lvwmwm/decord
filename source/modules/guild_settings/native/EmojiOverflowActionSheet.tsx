@@ -1,21 +1,21 @@
-// Module ID: 16123
-// Function ID: 124313
+// Module ID: 16131
+// Function ID: 124374
 // Name: EmojiOverflowActionSheet
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 33554469, 1962934272, 4096]
 // Exports: default
 
-// Module 16123 (EmojiOverflowActionSheet)
-import closure_3 from "__exportStarResult1";
-import "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 16131 (EmojiOverflowActionSheet)
+import closure_3 from "result";
+import "result";
+import result from "result";
+import result from "result";
+import result from "result";
 import showActionSheet from "showActionSheet";
 
-({ Image: closure_4, View: closure_5 } = __exportStarResult1);
-({ jsx: closure_6, jsxs: closure_7 } = __exportStarResult1);
-let closure_8 = __exportStarResult1.createStyles({ header: {}, emojiImage: { "Null": false, "Null": false, "Null": false } });
-const result = showActionSheet.fileFinishedImporting("modules/guild_settings/native/EmojiOverflowActionSheet.tsx");
+({ Image: closure_4, View: closure_5 } = result);
+({ jsx: closure_6, jsxs: closure_7 } = result);
+let closure_8 = result.createStyles({ header: { alignItems: "<string:44581441>", backgroundColor: "patach", paddingEnd: "<string:1090584576>", borderRadius: "\u{1FAF8}\u{1F3FC}" }, emojiImage: {} });
+result = showActionSheet.fileFinishedImporting("modules/guild_settings/native/EmojiOverflowActionSheet.tsx");
 
 export default function EmojiOverflowActionSheet(emoji) {
   let onClose;
@@ -34,7 +34,7 @@ export default function EmojiOverflowActionSheet(emoji) {
   obj1.uri = obj4.getEmojiURL({ id: emoji.id, animated: emoji.animated, size: 48 });
   obj.source = obj1;
   const items = [callback2(onClose, obj), ];
-  const obj3 = { children: ":" + emoji.name + ":" };
+  const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: ":" + emoji.name + ":" };
   items[1] = callback2(arg1(dependencyMap[7]).Text, obj3);
   obj.children = items;
   const items1 = [callback3(closure_5, obj), ];

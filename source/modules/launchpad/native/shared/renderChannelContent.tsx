@@ -1,10 +1,10 @@
-// Module ID: 15536
-// Function ID: 118566
+// Module ID: 15539
+// Function ID: 118605
 // Name: ChannelContent
 // Dependencies: []
 // Exports: default
 
-// Module 15536 (ChannelContent)
+// Module 15539 (ChannelContent)
 function ChannelContent(arg0) {
   let channel;
   let channelCategoryName;
@@ -52,7 +52,7 @@ function ChannelContent(arg0) {
   items[1] = obj1;
   obj.style = items;
   const obj2 = {};
-  const obj3 = { <string:1509384864>: null, <string:1151137619>: null, <string:1637131815>: null };
+  const obj3 = {};
   let num2 = 0;
   if (tmp9) {
     num2 = 30;
@@ -104,12 +104,12 @@ function ChannelContent(arg0) {
     items2[1] = obj8;
     obj7.style = items2;
     if (tmp3) {
-      const obj9 = { flex: "text-xs/medium", flexGrow: "text-default", style: tmp.channelTraitIcon };
+      const obj9 = { style: tmp.channelTraitIcon };
       tmp3 = callback(arg1(dependencyMap[11]).LockIcon, obj9);
     }
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
-      const obj10 = { flex: "text-xs/medium", flexGrow: "text-default", style: tmp.channelTraitIcon };
+      const obj10 = { style: tmp.channelTraitIcon };
       isNSFWResult = callback(arg1(dependencyMap[12]).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
@@ -168,7 +168,7 @@ function ChannelContent(arg0) {
   }
   const items7 = [tmp43Result, , ];
   const obj18 = {};
-  const items8 = [{ 0: "/assets/design/components/Illustration/native/redesign/generated/images", 0: 160 }, ];
+  const items8 = [{ "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 }, ];
   if (tmp8) {
     const obj19 = { marginTop: 5 };
     tmp8 = obj19;
@@ -205,11 +205,11 @@ if (obj4.isIOS()) {
 }
 obj.marginTop = num;
 obj.channelContent = obj;
-obj.channelContainer = { -9223372036854775808: 1393, 9223372036854775807: -1535160064, -9223372036854775808: -163464863, 0: "y" };
+obj.channelContainer = { d: null, useMemo: null, keys: null, hasDiversityParent: null };
 obj.leftBox = {};
-obj.rightBox = {};
-obj.rightContentAbsolute = { sl: 3375103, so: -8192, sq: 4320799 };
-obj.channelTraits = {};
+obj.rightBox = { "Null": "<string:1459617792>", "Null": "<string:1275068417>" };
+obj.rightContentAbsolute = { <string:3250345558>: 3375103, <string:553825121>: -8192, <string:1935339265>: 4320799 };
+obj.channelTraits = { ty: 8, c: null, o: "\u270A\u{1F3FF}" };
 const obj1 = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
 const obj4 = arg1(dependencyMap[6]);
 let num2 = 0;

@@ -1,5 +1,5 @@
 // Module ID: 8758
-// Function ID: 69239
+// Function ID: 69250
 // Name: useProductDisableState
 // Dependencies: []
 // Exports: useProductDisableState
@@ -29,7 +29,7 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     }
     obj.disabledReason = stringResult;
   } else {
-    obj = { keys: null, paths: null };
+    obj = { accessibilityRole: null, GUILD_WEBHOOKS: null };
   }
   return obj;
 };

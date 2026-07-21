@@ -1,7 +1,7 @@
 // Module ID: 9456
-// Function ID: 73682
+// Function ID: 73693
 // Name: QuestRewardExpirationMode
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9456 (QuestRewardExpirationMode)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 14779
-// Function ID: 111393
+// Module ID: 14782
+// Function ID: 111427
 // Name: usePrivateChannelWave
 // Dependencies: []
 // Exports: default
 
-// Module 14779 (usePrivateChannelWave)
+// Module 14782 (usePrivateChannelWave)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

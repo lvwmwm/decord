@@ -1,5 +1,5 @@
 // Module ID: 12134
-// Function ID: 93472
+// Function ID: 93484
 // Name: MediaViewerItem
 // Dependencies: []
 
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((index) => {
       const current2 = ref.current;
       ({ width, height } = obj);
       const scrollResponder = current2.getScrollResponder();
-      obj = { max: -536870861, guildId: -299892737, width, height, animated: flag };
+      obj = { width, height, animated: flag };
       const result = scrollResponder.scrollResponderZoomTo(obj);
     } else if (null !== ref1.current) {
       const current = ref1.current;

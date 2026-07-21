@@ -1,10 +1,10 @@
-// Module ID: 14762
-// Function ID: 111273
+// Module ID: 14765
+// Function ID: 111307
 // Name: useGuildsBarSelectedGuildScroller
 // Dependencies: []
 // Exports: default
 
-// Module 14762 (useGuildsBarSelectedGuildScroller)
+// Module 14765 (useGuildsBarSelectedGuildScroller)
 let closure_0 = importAll(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guilds_bar/hooks/useGuildsBarSelectedGuildScroller.tsx");

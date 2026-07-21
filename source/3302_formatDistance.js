@@ -1,11 +1,11 @@
 // Module ID: 3302
-// Function ID: 26059
+// Function ID: 26064
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3302 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: false, 0: false }, xSeconds: { -9223372036854775808: 9126831102.875006, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004508498358324087 }, halfAMinute: "et halvt minutt", lessThanXMinutes: { -9223372036854775808: 1039204355, 0: 1514340355 }, xMinutes: { -9223372036854775808: "bannerFields", 0: "PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL" }, aboutXHours: { -9223372036854775808: null, 0: null }, xHours: { -9223372036854775808: "<string:4165140481>", 0: "<string:2030043498>" }, xDays: { -9223372036854775808: 2030043912, 0: 1124074248 }, aboutXWeeks: { -9223372036854775808: 1946157930, 0: 1946157930 }, xWeeks: { -9223372036854775808: "a", 0: "isArray" }, aboutXMonths: { -9223372036854775808: true, 0: true }, xMonths: { -9223372036854775808: 1240596483, 0: 1107361795 }, aboutXYears: { -9223372036854775808: "{{count}} minuty", 0: "{{count}} minut" }, xYears: { -9223372036854775808: "minuta", 0: "minut\u0119" }, overXYears: { -9223372036854775808: 1107361795, 0: 224367 }, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": "%Reflect%", "Bool(false)": "STEALTH" }, xSeconds: { "Bool(false)": 1896611843, "Bool(false)": null }, halfAMinute: "et halvt minutt", lessThanXMinutes: { "Bool(false)": null, "Bool(false)": null }, xMinutes: {}, aboutXHours: {}, xHours: { "Bool(false)": null, "Bool(false)": null }, xDays: {}, aboutXWeeks: { "Bool(false)": "<string:2757623809>", "Bool(false)": "<string:3528196097>" }, xWeeks: {}, aboutXMonths: {}, xMonths: { "Bool(false)": null, "Bool(false)": "mniej ni\u017C {{count}} sekundy" }, aboutXYears: {}, xYears: {}, overXYears: { "Bool(false)": null, "Bool(false)": null }, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

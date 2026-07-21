@@ -1,5 +1,5 @@
 // Module ID: 10395
-// Function ID: 80105
+// Function ID: 80116
 // Name: useChannelSafetyWarning
 // Dependencies: []
 // Exports: useChannelSafetyWarning

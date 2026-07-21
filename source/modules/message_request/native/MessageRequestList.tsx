@@ -1,10 +1,10 @@
-// Module ID: 15431
-// Function ID: 117747
+// Module ID: 15434
+// Function ID: 117786
 // Name: PendingMessageRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 15431 (PendingMessageRequestRow)
+// Module 15434 (PendingMessageRequestRow)
 function PendingMessageRequestRow(isRestricted) {
   let hasSingleMessageRequest;
   let isAcceptLoading;
@@ -151,7 +151,7 @@ function PendingMessageRequestRow(isRestricted) {
         const items5 = [handleSelectRow(closure_5, obj3), ];
         let tmp29 = null;
         if (!isRestricted.isLastRow) {
-          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { ref: null, onChange: null });
+          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { justifyContent: null, alignItems: null });
         }
         items5[1] = tmp29;
         obj.children = items5;
@@ -171,10 +171,10 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.sectionContainer = obj;
 obj.rowContainer = {};
-obj.actionContainer = {};
+obj.actionContainer = { width: "k", resizeMode: "r", paddingRight: "isArray" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.actionButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.acceptButton = { marginRight: 16 };
@@ -206,7 +206,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     obj.bodyText = intl.string(arg1(dependencyMap[6]).t.SXrqTf);
     return callback(importDefault(dependencyMap[23]), obj);
   } else {
-    const items = ["y"];
+    const items = ["<string:4166254596>"];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -227,7 +227,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
       const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = {};
+        obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
         const intl = goToMessageRequestPreview(arr[6]).intl;
         const obj1 = { pendingRequestNumber: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj1);

@@ -1,5 +1,5 @@
 // Module ID: 10673
-// Function ID: 83179
+// Function ID: 83190
 // Name: VideoButton
 // Dependencies: []
 // Exports: default
@@ -147,7 +147,7 @@ class DisconnectStreamButton {
     items = [, ];
     items[0] = View;
     items[1] = closure_10;
-    f83194 = obj.useStateFromStores(items, () => {
+    f83205 = obj.useStateFromStores(items, () => {
       const selectedParticipant = selectedParticipant.getSelectedParticipant(channel.id);
       if (null != selectedParticipant) {
         if (selectedParticipant.type !== constants.ACTIVITY) {
@@ -179,9 +179,9 @@ class DisconnectStreamButton {
       tmp5 = dependencyMap;
       num = 20;
       obj = {};
-      tmp6 = f83194;
+      tmp6 = f83205;
       num2 = 26;
-      obj.source = f83194(dependencyMap[26]);
+      obj.source = f83205(dependencyMap[26]);
       tmp7 = arg1;
       num3 = 21;
       intl = arg1(dependencyMap[21]).intl;
@@ -329,7 +329,7 @@ const ParticipantTypes = arg1(dependencyMap[9]).ParticipantTypes;
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
 obj = {};
-obj = { connectionsList: true, getItemCount: "/assets/images/native/icons/voice_calls", _voiceQualityPeriodicStatsSequenceId: 24, third_party_skus: 24, height: arg1(dependencyMap[12]).CALL_ACTION_BAR_HEIGHT };
+obj = { "Bool(false)": true, "Bool(false)": "/assets/images/native/icons/voice_calls", "Bool(false)": 24, "Bool(false)": 24, height: arg1(dependencyMap[12]).CALL_ACTION_BAR_HEIGHT };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[10]);
 obj.containerForFiveButtonLayout = { height: arg1(dependencyMap[12]).FIVE_BUTTON_LAYOUT_ACTION_BAR_HEIGHT, paddingTop: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_TOP, paddingBottom: arg1(dependencyMap[12]).FIVE_BUTTON_CONTAINER_PADDING_BOTTOM };

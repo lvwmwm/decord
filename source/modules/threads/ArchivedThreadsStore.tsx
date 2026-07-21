@@ -1,9 +1,9 @@
-// Module ID: 7002
-// Function ID: 56068
+// Module ID: 7003
+// Function ID: 56080
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7002 (_isNativeReflectConstruct)
+// Module 7003 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -412,7 +412,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     }
     const value = map.get(tmp3);
     if (null == value) {
-      const obj = { -926844321: "<string:4128768>", -939391918: "isArray", -1394449424: "<string:2335309824>", -870886825: "<string:2851858284>", 191293321: "<string:1514128113>", 1310491158: "<string:1340029796>", threads: [] };
+      const obj = { SharedTransitionType: "<string:4128768>", addData: "isArray", getContextBarCancelReason: "<string:2335309824>", HERO_VIDEO: "<string:2851858284>", getApplication: "<string:1514128113>", SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP: "<string:1340029796>", threads: [] };
       ({ channelId: obj.channelId, sortOrder: obj.sortOrder } = tagFilter);
       obj.tagFilter = tagFilter;
       obj.tagSetting = tagFilter.tagSetting;

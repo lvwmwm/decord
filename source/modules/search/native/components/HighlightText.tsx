@@ -1,5 +1,5 @@
 // Module ID: 10253
-// Function ID: 79230
+// Function ID: 79241
 // Name: HighlightText
 // Dependencies: []
 // Exports: default

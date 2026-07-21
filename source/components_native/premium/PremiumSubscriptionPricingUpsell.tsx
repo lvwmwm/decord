@@ -1,5 +1,5 @@
 // Module ID: 12348
-// Function ID: 94437
+// Function ID: 94449
 // Name: PricingSubheadingCopy
 // Dependencies: []
 // Exports: default
@@ -139,7 +139,7 @@ function PricingSubheadingCopy() {
             originalPriceHook(children) {
                       let tmp = null;
                       if (str3 !== str2) {
-                        const obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.originalPrice, children };
+                        const obj = { style: tmp.originalPrice, children };
                         tmp = callback(tmp(str3[18]).Text, obj, arg1);
                       }
                       return tmp;
@@ -192,7 +192,7 @@ function PricingSubheadingCopy() {
       }
     }
   }
-  obj12 = { style: tmp.cardText };
+  obj12 = { 16667904: null, 16668160: "e56e37c53edc4951356b726ba43f79c4", 16668416: "img_wumpus_nitro_classic_boost", style: tmp.cardText };
   return callback2(arg1(dependencyMap[18]).Text, obj12);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -208,7 +208,7 @@ const CurrencyCodes = arg1(dependencyMap[8]).CurrencyCodes;
 const tmp2 = arg1(dependencyMap[9]);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = arg1(dependencyMap[10]));
 const tmp3 = arg1(dependencyMap[10]);
-let closure_21 = arg1(dependencyMap[11]).createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: {} });
+let closure_21 = arg1(dependencyMap[11]).createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { startExpanded: "<string:410124289>", scrollable: "<string:402653184>", handleDisabled: "<string:16777216>" } });
 const obj = arg1(dependencyMap[11]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("components_native/premium/PremiumSubscriptionPricingUpsell.tsx");
 

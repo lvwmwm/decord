@@ -1,19 +1,18 @@
 // Module ID: 6651
-// Function ID: 51062
+// Function ID: 51070
 // Name: items
 // Dependencies: []
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
 // Module 6651 (items)
 const _module = require(dependencyMap[0]);
-let obj = { y: "r", createBackgroundHighlight: "usePerksCoachmarkDCF", y: "cursorSpine", defaultConfig: { paymentsBlocked: false } };
-obj = { -1174339580: 0.285, -1169096700: "GREEN_NEW_65", config: { paymentsBlocked: true } };
+let obj = { "Bool(false)": "r", "Bool(false)": "showHidden", "Bool(false)": "mobile_products_title", defaultConfig: { paymentsBlocked: false } };
+obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "Text", 炖锅: "__packager_asset", config: { paymentsBlocked: true } };
 const items = [obj];
 obj.treatments = items;
 let closure_2 = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
-const obj1 = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_3 = _module1.createApexExperiment(obj1);
+let closure_3 = _module1.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module2 = require(dependencyMap[3]);
 const result = _module2.fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
 

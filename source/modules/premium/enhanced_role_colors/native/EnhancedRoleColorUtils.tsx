@@ -1,10 +1,10 @@
-// Module ID: 7643
-// Function ID: 61168
+// Module ID: 7644
+// Function ID: 61180
 // Name: processColorStringsInternal
 // Dependencies: []
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7643 (processColorStringsInternal)
+// Module 7644 (processColorStringsInternal)
 function processColorStringsInternal(primaryColor) {
   let tmp10;
   let tmp8;

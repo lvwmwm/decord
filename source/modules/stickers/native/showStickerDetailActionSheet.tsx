@@ -1,5 +1,5 @@
 // Module ID: 9611
-// Function ID: 74844
+// Function ID: 74855
 // Name: hideStickerDetailActionSheet
 // Dependencies: []
 // Exports: hideStickerDetailActionSheet, showStickerDetailActionSheet

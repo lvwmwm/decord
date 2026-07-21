@@ -1,8 +1,8 @@
-// Module ID: 15203
-// Function ID: 114717
+// Module ID: 15206
+// Function ID: 114751
 // Dependencies: []
 
-// Module 15203
+// Module 15206
 const importAllResult = importAll(dependencyMap[0]);
 const SearchFilterAddLocations = arg1(dependencyMap[1]).SearchFilterAddLocations;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo((searchContext) => {
       str = "md";
     }
     obj["size"] = str;
-    obj["icon"] = callback(searchContext(closure_2[9]).FiltersHorizontalIcon, { flex: -1578282752, flexGrow: 34792514 });
+    obj["icon"] = callback(searchContext(closure_2[9]).FiltersHorizontalIcon, {});
     return callback(searchContext(closure_2[8]).IconButton, obj);
   };
   return jsx(arg1(closure_2[6]).ContextMenu, obj);

@@ -1,5 +1,5 @@
 // Module ID: 10290
-// Function ID: 79437
+// Function ID: 79448
 // Name: ChannelIndicator
 // Dependencies: []
 // Exports: default
@@ -17,7 +17,8 @@ obj["top"] = 0;
 obj["bottom"] = 0;
 obj["justifyContent"] = "center";
 obj.indicatorContainer = obj;
-obj.indicator = { borderRadius: importDefault(dependencyMap[4]).radii.round };
+const obj1 = { <string:2331675385>: "<string:678642882>", <string:906602722>: "<string:671088640>", <string:2880073665>: "<string:335544320>", <string:2709289496>: "<string:1090519040>", borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.indicator = obj1;
 let closure_6 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[6]);
 const result = _module2.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");

@@ -1,5 +1,5 @@
 // Module ID: 8102
-// Function ID: 64181
+// Function ID: 64186
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,72 +21,66 @@ let closure_6 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class RadialGradient {
+  class Polyline {
     constructor() {
       self = this;
-      tmp = closure_2(this, RadialGradient);
-      obj = closure_5(RadialGradient);
-      tmp2 = closure_4;
-      if (closure_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+      tmp = closure_2(this, Polyline);
+      length = arguments.length;
+      array = new Array(length);
+      for (let num = 0; num < length; num = num + 1) {
+        array[num] = arguments[num];
       }
-      return tmp2(self, constructResult);
+      items = [];
+      combined = items.concat(array);
+      obj = closure_5(Polyline);
+      tmp3 = closure_4;
+      if (closure_8()) {
+        if (!combined) {
+          combined = [];
+        }
+        tmp5 = closure_5;
+        constructResult = Reflect.construct(obj, combined, closure_5(self).constructor);
+      } else {
+        constructResult = obj.apply(self, combined);
+      }
+      tmp3Result = tmp3(self, constructResult);
+      Polyline = tmp3Result;
+      tmp3Result.setNativeProps = (points) => {
+        points = points.points;
+        if (points) {
+          const _HermesInternal = HermesInternal;
+          points.d = "M" + tmp3Result(closure_1[7])(points);
+        }
+        if (tmp3Result.root) {
+          const root = tmp3Result.root;
+          root.setNativeProps(points);
+        }
+      };
+      return tmp3Result;
     }
   }
-  const importDefault = RadialGradient;
-  callback2(RadialGradient, arg0);
+  const importDefault = Polyline;
+  callback2(Polyline, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        let cx;
-        let cy;
-        let fx;
-        let r;
-        let rx;
-        let ry;
-        const RadialGradient = this;
         const props = this.props;
-        ({ rx, ry, r, cx, cy, fx } = props);
-        if (undefined === fx) {
-          fx = cx;
+        const points = props.points;
+        const obj = { ref: this.refMethod };
+        let combined = points;
+        if (points) {
+          const _HermesInternal = HermesInternal;
+          combined = "M" + Polyline(closure_1[7])(points);
         }
-        let fy = props.fy;
-        let obj = { fx };
-        if (undefined === fy) {
-          fy = cy;
-        }
-        obj.fy = fy;
-        if (!rx) {
-          rx = r;
-        }
-        obj.rx = rx;
-        if (!ry) {
-          ry = r;
-        }
-        obj.ry = ry;
-        obj.cx = cx;
-        obj.cy = cy;
-        obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        return callback3(RadialGradient(closure_1[7]), Object.assign(obj, obj, RadialGradient(closure_1[8])(props, this)));
+        obj.d = combined;
+        return closure_7(Polyline(closure_1[8]), Object.assign(obj, props));
       }
     }
   ];
-  return callback(RadialGradient, items);
+  return callback(Polyline, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "RadialGradient";
-tmp3.defaultProps = {};
+tmp3.displayName = "Polyline";
+tmp3.defaultProps = { points: "" };
 
 export default tmp3;

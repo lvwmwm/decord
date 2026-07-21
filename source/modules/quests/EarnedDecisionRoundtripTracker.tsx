@@ -1,15 +1,9 @@
 // Module ID: 9449
-// Function ID: 73617
+// Function ID: 73628
 // Name: trackRoundtrip
-// Dependencies: [31, 4113, 4199, 653, 6924, 6973, 9467, 5644, 4117]
+// Dependencies: []
 
 // Module 9449 (trackRoundtrip)
-import module_31 from "module_31";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import { AnalyticEvents } from "ME";
-import CodedLinkType from "CodedLinkType";
-
 function trackRoundtrip(apiResponseTimestamp) {
   if (Math.random() <= 0.1) {
     let diff = null;
@@ -39,10 +33,14 @@ function trackRoundtrip(apiResponseTimestamp) {
     const obj5 = arg1(dependencyMap[7]);
   }
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 let tmp2 = () => {
   class EarnedDecisionRoundtripTracker {
     constructor() {
-      tmp = module_31(this, EarnedDecisionRoundtripTracker);
+      tmp = closure_3(this, EarnedDecisionRoundtripTracker);
       map = new Map();
       this.pendingRequests = map;
       return;
@@ -53,7 +51,7 @@ let tmp2 = () => {
     key: "recordEarnedRequestAttempt",
     value(arg0, callerSource) {
       const EarnedDecisionRoundtripTracker = this;
-      const obj = { isBlockedEdit: "Text", allowHeading: "raw", allowList: "textAlign", allowLinks: "r", t2Wbo1: "isArray", dateTimeString: "accessibilityRole", EXPERIMENT_GUILD_EVALUATION_EXPOSED: "apply", initialSendTimestamp: Date.now(), callerSource };
+      const obj = { <string:1245880232>: false, <string:1275069486>: false, <string:1526727829>: 49253888, <string:276825862>: 49553152, <string:118818459>: 49253376, <string:123535643>: 49548032, <string:2351468194>: 49250560, initialSendTimestamp: Date.now(), callerSource };
       const pendingRequests = this.pendingRequests;
       const result = pendingRequests.set(arg0, obj);
       const timerId = setTimeout(() => {
@@ -100,6 +98,6 @@ let tmp2 = () => {
   return callback(EarnedDecisionRoundtripTracker, items);
 }();
 tmp2 = new tmp2();
-const result = CodedLinkType.fileFinishedImporting("modules/quests/EarnedDecisionRoundtripTracker.tsx");
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/EarnedDecisionRoundtripTracker.tsx");
 
 export default tmp2;

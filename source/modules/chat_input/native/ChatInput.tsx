@@ -1,5 +1,5 @@
 // Module ID: 11090
-// Function ID: 86220
+// Function ID: 86231
 // Name: ChatInputScrimGradient
 // Dependencies: []
 
@@ -30,7 +30,7 @@ function ChatInputScrimGradient(scrimBase) {
     str = hex2rgbResult1;
   }
   obj = {};
-  obj = { o: "trackAverageRenderTimeForOffsetProjection", concat: "WebsiteLink", o: "<string:4235330048>", borderRadius: "<string:218103807>", position: "<string:1895825408>" };
+  obj = { backgroundColor: null, opacity: 4, borderRadius: 4, 0: 10, 0: 8 };
   if (inline) {
     let result = tmp7;
   } else {
@@ -41,7 +41,7 @@ function ChatInputScrimGradient(scrimBase) {
   obj.pointerEvents = "none";
   const items = [str, tmp3];
   obj1 = { height: token };
-  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: { max: -536870861, guildId: -299892737 }, end: {}, locations: ["Text", "lc"] }), ];
+  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: {}, end: {}, locations: ["replace", "then"] }), ];
   obj2 = { flex: 1, backgroundColor: tmp3 };
   items1[1] = callback5(View, { style: obj2 });
   obj.children = items1;
@@ -84,7 +84,7 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   obj.borderTopWidth = 1;
   obj.borderColor = importDefault(dependencyMap[21]).colors.BORDER_SUBTLE;
   obj.container = obj;
-  obj.containerInner = { <string:226124958>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, <string:4217921538>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583 };
+  obj.containerInner = {};
   obj = {};
   const merged = Object.assign(arg1 ? {} : {});
   obj.inputDefault = obj;
@@ -96,22 +96,22 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   }
   obj1.backgroundColor = CHAT_INPUT_BACKGROUND;
   obj.input = obj1;
-  obj.rightAccessory = { paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
-  const obj2 = { paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
-  const tmp3 = arg1 ? {} : {};
+  const obj2 = { top: "<string:1459617792>", bottom: "<string:1275068417>", left: "<string:218103808>", paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
+  obj.rightAccessory = obj2;
   obj.refreshButtonAlignment = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
-  obj.accessories = { <string:1367186513>: true, <string:3613500496>: true, <string:3713892945>: true, <string:4272015777>: true };
-  const obj4 = { "Bool(true)": "check_mark", "Bool(true)": "\u7228", "Bool(true)": "<string:655360>", "Bool(true)": "<string:524288>", "Bool(true)": "<string:1107361792>", "Bool(true)": "<string:2929393666>", "Bool(true)": "<string:74645505>", borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
-  obj.floatingContainer = obj4;
+  obj.accessories = { channelId: "pillIcon", selectedAnswerIds: "SIGNED", submitting: "favoriteContainer", editing: "co" };
   const obj3 = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
+  const tmp3 = arg1 ? {} : {};
+  obj.floatingContainer = { borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
+  const obj4 = { borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
   obj.floatingInputBox = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   const obj5 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   obj.floatingInputBoxPressed = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
   obj.floatingInputBoxTyping = { "Null": -536870861, "Null": -299892737 };
-  const obj7 = { <string:226124958>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, <string:4217921538>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
-  obj.floatingMainContents = obj7;
-  const obj8 = { markAsSpoilerTitle: null, keyboardAppearance: null };
   const obj6 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
+  obj.floatingMainContents = { paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
+  const obj8 = { "Bool(true)": "values", "Bool(true)": "Array" };
+  const obj7 = { paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
   let num = -6;
   if (obj12.isAndroid()) {
     num = -5;
@@ -947,7 +947,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   }
   if (tmp85Result) {
     obj11 = {};
-    obj12 = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
+    obj12 = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
     let obj39 = ref(dependencyMap[24]);
     const hex2rgbResult = obj39.hex2rgb(token2, 1);
     let tmp90 = token2;

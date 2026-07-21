@@ -1,5 +1,5 @@
 // Module ID: 9797
-// Function ID: 76069
+// Function ID: 76080
 // Name: NameplatePreview
 // Dependencies: []
 // Exports: NameplatePreview
@@ -13,7 +13,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Bool(true)": 0, "Bool(true)": -3, "Bool(true)": "", "Bool(true)": "", "Bool(true)": "" };
+  obj = {};
   let num = 0;
   if (arg0) {
     num = importDefault(dependencyMap[6]).radii.sm;
@@ -131,7 +131,7 @@ export const NameplatePreview = function NameplatePreview(aria-hidden) {
   const items4 = [tmp16, ];
   let tmp22 = null == tmp12;
   if (tmp22) {
-    const obj5 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: pendingGlobalName };
+    const obj5 = { "Null": true, "Null": 15.1, "Null": 253, children: pendingGlobalName };
     tmp22 = callback(arg1(dependencyMap[17]).Text, obj5);
   }
   items4[1] = tmp22;

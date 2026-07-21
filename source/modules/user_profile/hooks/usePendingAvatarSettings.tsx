@@ -1,10 +1,10 @@
-// Module ID: 7833
-// Function ID: 62421
+// Module ID: 7834
+// Function ID: 62434
 // Name: usePendingAvatarSettings
 // Dependencies: []
 // Exports: default
 
-// Module 7833 (usePendingAvatarSettings)
+// Module 7834 (usePendingAvatarSettings)
 require(dependencyMap[0]).useCallback;
 let closure_4 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[7]);

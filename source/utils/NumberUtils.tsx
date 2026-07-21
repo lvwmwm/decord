@@ -1,5 +1,5 @@
 // Module ID: 1827
-// Function ID: 20012
+// Function ID: 20017
 // Name: shortenAndLocalizeNumber
 // Dependencies: []
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber
@@ -67,7 +67,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   if (arg2 === undefined) {
     obj = {};
   }
-  obj = { "Null": 49419008, "Null": 49419008 };
+  obj = { "Null": 49445120, "Null": 49445120 };
   const merged = Object.assign(obj);
   return Intl.NumberFormat(arg0, obj).format(arg1);
 };

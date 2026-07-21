@@ -1,7 +1,7 @@
 // Module ID: 6794
-// Function ID: 53639
+// Function ID: 53647
 // Name: CollectiblesMarketingType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6794 (CollectiblesMarketingType)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 8566
-// Function ID: 68065
+// Function ID: 68076
 // Name: ExpressiveGradient
 // Dependencies: []
 // Exports: ExpressiveGradient
@@ -22,10 +22,10 @@ const obj2 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT
 obj.nitro-pink = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END };
 const obj3 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END };
 obj.nitro-green = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
-let closure_8 = { max: false, guildId: false };
-let closure_9 = { max: 3211264, guildId: 2042617856 };
-let closure_10 = { max: "message", guildId: "PRIMARY_530" };
-let closure_11 = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
+let closure_8 = {};
+let closure_9 = {};
+let closure_10 = {};
+let closure_11 = {};
 const obj4 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/ExpressiveGradient/native/ExpressiveGradient.native.tsx");
 

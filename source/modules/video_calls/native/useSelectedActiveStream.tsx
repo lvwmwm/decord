@@ -1,10 +1,10 @@
-// Module ID: 12601
-// Function ID: 96854
+// Module ID: 12603
+// Function ID: 96876
 // Name: useSelectedActiveStream
 // Dependencies: []
 // Exports: default
 
-// Module 12601 (useSelectedActiveStream)
+// Module 12603 (useSelectedActiveStream)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");

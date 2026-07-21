@@ -1,9 +1,9 @@
-// Module ID: 12994
-// Function ID: 98857
+// Module ID: 12996
+// Function ID: 98879
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12994 (_createForOfIteratorHelperLoose)
+// Module 12996 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -99,7 +99,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = {};
-let closure_10 = { "Null": "r", "Null": "UpscaleSmallCapturedFramesExperiment" };
+let closure_10 = {};
 let tmp2 = (arg0) => {
   class ZoomedInTelemetryImpl {
     constructor() {

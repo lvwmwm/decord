@@ -1,5 +1,5 @@
 // Module ID: 9549
-// Function ID: 74423
+// Function ID: 74434
 // Name: getMentionTextWithUser
 // Dependencies: []
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery

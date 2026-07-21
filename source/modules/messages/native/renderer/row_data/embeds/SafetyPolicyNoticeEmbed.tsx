@@ -1,5 +1,5 @@
 // Module ID: 12202
-// Function ID: 93735
+// Function ID: 93747
 // Name: createSafetyPolicyNoticeEmbed
 // Dependencies: []
 // Exports: createSafetyPolicyNoticeEmbed

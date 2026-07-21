@@ -1,5 +1,5 @@
 // Module ID: 1184
-// Function ID: 13479
+// Function ID: 13483
 // Name: isNonEmptyString
 // Dependencies: []
 
@@ -156,7 +156,7 @@ export default {
   profiledRootComponent(displayName) {
     let withProfilerResult = displayName;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, {});
+      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, { explicitContentGuilds: null, explicitContentFriendDm: null });
       const obj2 = importAll(dependencyMap[3]);
     }
     return withProfilerResult;

@@ -1,10 +1,10 @@
-// Module ID: 12743
-// Function ID: 97749
+// Module ID: 12745
+// Function ID: 97771
 // Name: isMidjourneyOnboardingFlow
 // Dependencies: []
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, useIsMidjourneyOnboardingFlow
 
-// Module 12743 (isMidjourneyOnboardingFlow)
+// Module 12745 (isMidjourneyOnboardingFlow)
 function isMidjourneyOnboardingFlow() {
   let obj = arg0;
   if (arg0 === undefined) {

@@ -1,5 +1,5 @@
 // Module ID: 4471
-// Function ID: 39486
+// Function ID: 39494
 // Name: getAlertModalItemKey
 // Dependencies: []
 // Exports: showConfirmModal, useDismissModalCallback
@@ -194,7 +194,7 @@ class AlertModal {
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[11]).runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39518, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[11]).runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39526, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;
@@ -238,11 +238,8 @@ class AlertModal {
     obj5 = { spacing: 8, style: items4 };
     items4 = [];
     items4[0] = tmp3.body;
-    obj6 = { onAttached: 7667713, onDetached: 0, onPressHeaderBarButtonItem: 0, onPressHeaderBarButtonMenuItem: 0 };
-    obj6.ref = ref;
-    obj6.children = title;
     items5 = [, ];
-    items5[0] = jsx(arg1(dependencyMap[24]).Text, obj6);
+    items5[0] = jsx(arg1(dependencyMap[24]).Text, { ref, children: title });
     tmp21 = null;
     if (null != content) {
       str2 = "";
@@ -251,10 +248,10 @@ class AlertModal {
         tmp22 = jsx;
         tmp23 = arg1;
         tmp24 = dependencyMap;
-        obj7 = {};
-        obj7.style = tmp3.contentText;
-        obj7.children = content;
-        tmp21 = jsx(arg1(dependencyMap[24]).Text, obj7);
+        obj6 = {};
+        obj6.style = tmp3.contentText;
+        obj6.children = content;
+        tmp21 = jsx(arg1(dependencyMap[24]).Text, obj6);
       }
     }
     items5[1] = tmp21;
@@ -265,9 +262,9 @@ class AlertModal {
     if (null != actions) {
       tmp26 = jsx;
       tmp27 = AlertActions;
-      obj8 = {};
-      obj8.children = actions;
-      tmp25 = jsx(AlertActions, obj8);
+      obj7 = {};
+      obj7.children = actions;
+      tmp25 = jsx(AlertActions, obj7);
     }
     items3[3] = tmp25;
     obj4.children = items3;
@@ -379,11 +376,11 @@ let obj = { root: {} };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_TOP_HIGH);
 obj.content = obj;
-obj.overflow = { -1716629078: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018583985124867038, 1375445090: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000004766925128869462, -698284748: 874213333671322200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1405447249: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002121995796, -1342839484: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002458032051572824 };
+obj.overflow = { 179809: "TEXT_STATUS_ONLINE", 0: "%DataView%", 0: "velocity", 0: "%Float64Array%", 0: "kSplineTableSize" };
 obj.body = { alignItems: "center" };
 obj.contentText = { textAlign: "center" };
 let closure_13 = arg1(dependencyMap[7]).createStyles(obj);
-let closure_14 = { margin: "hidden", resizeMode: null, fadeDuration: null, leftDisabled: "flex", rightDisabled: "column" };
+let closure_14 = {};
 const context = importAllResult.createContext(arg1(dependencyMap[9]).TransitionStates.YEETED);
 const context2 = importAllResult.createContext(arg1(dependencyMap[5]).NOOP);
 const context4 = importAllResult.createContext("");
@@ -414,7 +411,7 @@ const memoResult = importAllResult.memo(() => {
     if (0 === alertStore.length) {
       return [];
     } else {
-      const items = [{ _desired: null, y: null }];
+      const items = [{ "Bool(false)": 0, "Bool(false)": 0 }];
       const substr = alertStore.slice(0, 3);
       const item = substr.forEach((alert, index) => {
         items.push({ type: "alert", alert, key: alert.key, index });

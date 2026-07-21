@@ -1,7 +1,7 @@
 // Module ID: 1876
-// Function ID: 20887
+// Function ID: 20892
 // Name: CollectiblesItemType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1876 (CollectiblesItemType)
 const _module = require(dependencyMap[0]);

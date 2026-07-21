@@ -1,5 +1,5 @@
 // Module ID: 8897
-// Function ID: 70218
+// Function ID: 70229
 // Name: useIsPersistentSecureFramesFingerprint
 // Dependencies: []
 // Exports: useIsPersistentSecureFramesFingerprint

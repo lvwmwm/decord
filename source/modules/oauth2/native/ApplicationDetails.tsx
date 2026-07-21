@@ -1,12 +1,12 @@
 // Module ID: 9014
-// Function ID: 70912
+// Function ID: 70923
 // Name: ApplicationDetailsEntry
 // Dependencies: []
 // Exports: default
 
 // Module 9014 (ApplicationDetailsEntry)
-function ApplicationDetailsEntry(children) {
-  const iconComponent = children.iconComponent;
+function ApplicationDetailsEntry(iconComponent) {
+  iconComponent = iconComponent.iconComponent;
   const tmp = callback2();
   let obj = { style: tmp.entry };
   let iconComponentResult = null;
@@ -15,7 +15,7 @@ function ApplicationDetailsEntry(children) {
     iconComponentResult = iconComponent(obj);
   }
   const items = [iconComponentResult, ];
-  obj = { style: tmp.entryText, children: children.text };
+  obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.entryText, children: iconComponent.text };
   items[1] = callback(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj);
   obj.children = items;
   return closure_5(View, obj);

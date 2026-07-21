@@ -1,5 +1,5 @@
 // Module ID: 9992
-// Function ID: 77267
+// Function ID: 77278
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
@@ -169,8 +169,8 @@ const View = arg1(dependencyMap[1]).View;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { connectedAccountVanityMetadata: { "Null": false, "Null": false }, connectedAccountVanityMetadataItem: {}, connectedAccountVanityMetadataItemIcon: {} };
-obj = { label: "{{date}} '\u0915\u094B' {{time}}", borderRadius: importDefault(dependencyMap[5]).radii.md, disabled: "{{date}}, {{time}}", size: "{{date}}, {{time}}", accessibilityRole: "row", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { connectedAccountVanityMetadata: {}, connectedAccountVanityMetadataItem: { "Null": 7, "Null": 370 }, connectedAccountVanityMetadataItemIcon: {} };
+obj = { "Bool(true)": 11382, "Bool(true)": 11520, "Bool(true)": 11520, "Bool(true)": 5632, "Bool(true)": 6656, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.connectedAccountVanityMetadataTag = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.paypalVerifiedTag = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };

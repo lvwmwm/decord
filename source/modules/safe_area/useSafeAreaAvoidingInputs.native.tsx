@@ -1,5 +1,5 @@
 // Module ID: 9822
-// Function ID: 76178
+// Function ID: 76189
 // Name: _calculateScrollOffset
 // Dependencies: []
 // Exports: default

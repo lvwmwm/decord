@@ -1,5 +1,5 @@
 // Module ID: 10521
-// Function ID: 82141
+// Function ID: 82152
 // Name: getEmbeddedActivityParticipantId
 // Dependencies: []
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual

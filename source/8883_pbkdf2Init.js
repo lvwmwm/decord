@@ -1,11 +1,11 @@
 // Module ID: 8883
-// Function ID: 70044
+// Function ID: 70055
 // Name: pbkdf2Init
 // Dependencies: [0, 4294967295, 0, 0]
 // Exports: pbkdf2, pbkdf2Async
 
 // Module 8883 (pbkdf2Init)
-import "__exportStarResult1";
+import result from "result";
 
 function pbkdf2Init(sha256, B, B, arg3) {
   let asyncTick;
@@ -45,7 +45,7 @@ function pbkdf2Output(PRF, PRFSalt, DK, destroy3, uint8Array1) {
 }
 function _pbkdf2Async() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = __exportStarResult1(tmp);
+  const obj = result(tmp);
   const _pbkdf2Async = obj;
   return obj(...arguments);
 }

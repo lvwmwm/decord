@@ -551,12 +551,12 @@ const fn = () => {
   }
   const arg0 = NaN;
   const nodeType = 4294967295;
-  const items = [null, 128];
-  const items1 = [items, [], ["body", "default"], [true, true], ["_flags", "getQuestPrimaryReward"], ["<string:970085807>", "<string:2194757587>"], , , ];
-  const items2 = [null, 32];
+  const items = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003611766430336784, 128];
+  const items1 = [items, ["head", "last"], ["<string:451346432>", "<string:816775168>"], [6, 7], [true, true], ["<string:2605776899>", "<string:1422811408>"], , , ];
+  const items2 = [1654266245, 32];
   items1[6] = items2;
-  items1[7] = [96, 3.333];
-  items1[8] = ["filter", "map"];
+  items1[7] = ["isArray", "actionedByUser"];
+  items1[8] = [true, true];
   const arg5 = items1;
   let closure_3 = "[object Arguments]";
   let closure_4 = "[object Array]";
@@ -618,10 +618,10 @@ const fn = () => {
   let closure_60 = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
   let closure_61 = /($^)/;
   let closure_62 = /['\n\r\u2028\u2029\\]/g;
-  const items3 = [57304195094616510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]"];
+  const items3 = [true, "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]"];
   const text = `[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?${"(?:\\u200d(?:" + arr4.join("|") + ")[\\ufe0e\\ufe0f]?(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\\ud83c[\\udffb-\\udfff])?)*"}`;
-  const items4 = ["<string:2582676832>", "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]"];
-  const items5 = [88687207, "[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]", "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]", "[\\ud800-\\udfff]"];
+  const items4 = ["channelId", "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]"];
+  const items5 = [true, "[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]", "(?:\\ud83c[\\udde6-\\uddff]){2}", "[\\ud800-\\udbff][\\udc00-\\udfff]", "[\\ud800-\\udfff]"];
   const text1 = `(?:${arr5.join("|")}`;
   const text2 = `(?:${arr6.join("|")}`;
   let closure_63 = RegExp("['\u2019]", "g");
@@ -640,11 +640,11 @@ const fn = () => {
   let closure_66 = RegExp(items7.join("|"), "g");
   let closure_67 = RegExp("[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]");
   let closure_68 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
-  let closure_69 = [];
+  let closure_69 = ["<string:3435973836>", "COLLECTIBLES_VALENTINES_2026_DISCOUNT_ID", "isArray", "<string:2577022944>", "<string:2576980377>", "<string:858996705>", "<string:858993459>", "<string:3436003299>", "<string:3435973836>", "<string:1717977060>", "<string:1717986918>", "activeSubscriptions", "isArray", "<string:2577022952>", "<string:2576980377>", "<string:858996713>", "<string:858993459>", "<string:3436003307>", "<string:3435973836>", "<string:1717977068>", "<string:1717986918>", "<string:24199150>", "<string:838860800>", "<string:2122223406>", "<string:1072586334>", "<string:3570719145>", "<string:1071961300>", "%MapPrototype%", "<string:4064227840>", "<string:505290751>"];
   let closure_70 = -1;
   let obj = { [object Uint32Array]: true, [object Uint16Array]: true, [object Uint8ClampedArray]: true, [object Uint8Array]: true, [object Int32Array]: true, [object Int16Array]: true, [object Int8Array]: true, [object Float64Array]: true, [object Float32Array]: true, [object WeakMap]: false, [object String]: false, [object Set]: false, [object RegExp]: false, [object Object]: false, [object Number]: false, [object Map]: false, [object Function]: false, [object Error]: false, [object Date]: false, [object DataView]: false, [object Boolean]: false, [object ArrayBuffer]: false, [object Array]: false, [object Arguments]: false };
   obj = { [object Uint32Array]: true, [object Uint16Array]: true, [object Uint8ClampedArray]: true, [object Uint8Array]: true, [object Symbol]: true, [object String]: true, [object Set]: true, [object RegExp]: true, [object Object]: true, [object Number]: true, [object Map]: true, [object Int32Array]: true, [object Int16Array]: true, [object Int8Array]: true, [object Float64Array]: true, [object Float32Array]: true, [object Date]: true, [object Boolean]: true, [object DataView]: true, [object ArrayBuffer]: true, [object Array]: true, [object Arguments]: true, [object WeakMap]: false, [object Function]: false, [object Error]: false };
-  let closure_73 = { 1895788287: null, 1962898175: null, 2046785279: null, 2080340735: null, 2113895679: null, -2130739457: null };
+  let closure_73 = { -2097184513: null, -2030074625: null, -2113961985: null, -2046852097: null, -1996519425: null, -1929409793: null };
   let tmp7 = "object" === typeof arg0 && arg0;
   if (tmp7) {
     const _Object = Object;
@@ -747,9 +747,9 @@ const fn = () => {
     }
     let str4 = "length";
     let closure_84 = baseProperty("length");
-    let closure_85 = basePropertyOf({});
-    let closure_86 = basePropertyOf({ aka: "ACK_GRAVITY_CLEAR_READ_STATES_BUTTON", alb: "LL", als: "<string:29708800>", amh: "<string:1010910605>", ara: "<string:1912603051>" });
-    let closure_87 = basePropertyOf({});
+    let closure_85 = basePropertyOf({ "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": "R", "Null": "R", "Null": "R", "Null": "r", "Null": "r", "Null": "r", "Null": "S", "Null": "S", "Null": "S", "Null": "S", "Null": "s", "Null": "s", "Null": "s", "Null": "s", "Null": "T", "Null": "T", "Null": "T", "Null": "t", "Null": "t", "Null": "t", "Null": "U", "Null": "U", "Null": "U", "Null": "U", "Null": "U", "Null": "U", "Null": "u", "Null": "u", "Null": "u", "Null": "u", "Null": "u", "Null": "u", "Null": "W", "Null": "w", "Null": "Y", "Null": "y", "Null": "Y", "Null": "Z", "Null": "Z", "Null": "Z", "Null": "z", "Null": "z", "Null": "z", "Null": "IJ", "Null": "ij", "Null": "Oe", "Null": "oe", "Null": "'n", "Null": "s", "Null": "&amp;", "Null": "&lt;", "Null": "&gt;", "Null": "&quot;", "Null": "&#39;", "Null": "&", "Null": "<", "Null": ">", "Null": "\"", "Null": "'", "Null": "MEDIA_ENGINE_SET_AUDIO_ENABLED", "Null": true, "Null": false, "Null": null, "Null": null, "Null": "", "Null": null, "Null": null, "Null": null, "Null": false, "Null": true, "Null": true, "Null": null, "Null": true, "Null": false, "Null": true, "Null": true, "Null": true, "Null": false, "Null": true, "Null": false, "Null": "pixelCopy", "Null": "LottieFiles AE 3.0.2", "Null": "", "Null": "", "Null": "", "Null": "", "Null": null, "Null": "", "Null": "", "Null": "", "Null": "", "Null": null, "Null": "", "Null": "", "Null": null, "Null": "default", "Null": false, "Null": false, "Null": false, "Null": "indices", "Null": "utf-8", "Null": false, "Null": false, "Null": "&", "Null": true, "Null": false, "Null": null, "Null": false, "Null": null, "Null": null, "Null": null, "Null": "", "Null": "", "Null": 0, "Null": "green", "Null": 2, "Null": "unauthenticated", "Null": 1, "Null": 14, "Null": 0, "Null": 0, "Null": "absolute", "Null": 30, "Null": 30, "Null": null, "Null": 15, "Null": 40, "Null": "center", "Null": "center", "Null": 5, "Null": null, "Null": null, "Null": 0.5, "Null": 3, "Null": "row", "Null": 1, "Null": "center", "Null": "center", "Null": "stretch", "Null": 3, "Null": "guilds", "Null": "message", "Null": null, "Null": "#000000", "Null": 0.14, "Null": 10, "Null": 3, "Null": "#000000", "Null": 86, "Null": 78.33, "Null": -2, "Null": "center", "Null": 20, "Null": 20, "Null": "row", "Null": "center", "Null": "space-between", "Null": 4, "Null": 8, "Null": true, "Null": "/assets/images/native", "Null": 36, "Null": 36, "Null": null });
+    let closure_86 = basePropertyOf({});
+    let closure_87 = basePropertyOf({ 9223372036854775807: true, "Null": "/assets/images/native", "Null": 36, "Null": 36, "Null": null });
     function runInContext(arg0) {
       let _Date;
       let _Function;
@@ -1027,7 +1027,7 @@ const fn = () => {
       function baseAssignValue(arg0, arg1, value) {
         if ("__proto__" == arg1) {
           if (tmp16) {
-            const obj = { value };
+            const obj = { 1560238847: "gif", 1627348735: "png", 1677681151: 500, 1744791039: 1000, value };
             tmp16(arg0, arg1, obj);
           }
         }
@@ -6275,7 +6275,7 @@ const fn = () => {
         let fn5 = identity;
         if (tmp16) {
           fn5 = (arg0, arg1) => {
-            const obj = { 1560238847: true, 1627348735: true, 1677681151: null, 1744791039: null, value: constant(arg1) };
+            const obj = { 1560238847: null, 1627348735: null, 1677681151: null, 1744791039: null, value: constant(arg1) };
             return tmp16(arg0, "toString", obj);
           };
         }
@@ -10613,10 +10613,10 @@ const fn = () => {
         let str18 = "4.18.1";
         lodash.VERSION = "4.18.1";
         baseRestResult24 = arrayEach;
-        baseRestResult24 = arrayEach([], (arg0) => {
+        baseRestResult24 = arrayEach([true, true, true, true, true, true], (arg0) => {
           lodash[arg0].placeholder = lodash;
         });
-        baseRestResult24 = arrayEach([57, 6], (arg0, arg1) => {
+        baseRestResult24 = arrayEach([], (arg0, arg1) => {
           const _Array = arg0;
           LazyWrapper.prototype[arg0] = function(arg0) {
             const self = this;
@@ -10651,7 +10651,7 @@ const fn = () => {
             return reversed[closure_0](arg0).reverse();
           };
         });
-        baseRestResult24 = arrayEach(["<string:3435973836>", "<string:1717977068>", "<string:1717986918>"], (arg0, arg1) => {
+        baseRestResult24 = arrayEach([1072586334, -724248151, 1071961300], (arg0, arg1) => {
           const sum = arg1 + 1;
           const _Array = sum;
           let tmp2 = 1 == sum;
@@ -10666,7 +10666,7 @@ const fn = () => {
             return cloneResult;
           };
         });
-        baseRestResult24 = arrayEach(["channelId", "channelId"], (arg0, arg1) => {
+        baseRestResult24 = arrayEach(["ghostViewSpace", "lastViewedPath"], (arg0, arg1) => {
           let str = "";
           if (arg1) {
             str = "Right";
@@ -10676,7 +10676,7 @@ const fn = () => {
             return this[closure_0](1).value()[0];
           };
         });
-        baseRestResult24 = arrayEach(["channelId", "channelId"], (arg0, arg1) => {
+        baseRestResult24 = arrayEach(["construct", "Array"], (arg0, arg1) => {
           let str = "Right";
           if (arg1) {
             str = "";
@@ -10728,7 +10728,7 @@ const fn = () => {
               const self = this;
               const __wrapped__ = this.__wrapped__;
               if (isMatch) {
-                let items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
+                let items = [null];
               } else {
                 items = arguments;
               }
@@ -10808,7 +10808,7 @@ const fn = () => {
             };
           }
         });
-        baseRestResult24 = arrayEach([], (arg0) => {
+        baseRestResult24 = arrayEach([true, true, true, true, true, true], (arg0) => {
           let closure_0 = prototype[arg0];
           let str = "thru";
           if (obj.test(arg0)) {

@@ -1,5 +1,5 @@
 // Module ID: 10801
-// Function ID: 83879
+// Function ID: 83890
 // Name: getMatchData
 // Dependencies: []
 
@@ -44,7 +44,7 @@ function getMatchData(pathname) {
       const obj2 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj3 = obj2;
     } else {
-      obj3 = { "Bool(false)": "o", "Bool(false)": "o" };
+      obj3 = { children: "o", ao: "o" };
     }
     return obj3;
   }
@@ -55,11 +55,7 @@ const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[3]);
 const withEqualityFn = _module1.createWithEqualityFn((arg0) => {
   const require = arg0;
-  const obj = {
-    bodyStyles: "r",
-    borderGradient: "isArray",
-    showGradient: "x",
-    extraContent: "HTTP",
+  return {
     updatePath(arg0) {
       ({ guildId: closure_1, channelId: closure_2 } = callback(arg0));
       const tmp = callback(arg0);
@@ -71,7 +67,6 @@ const withEqualityFn = _module1.createWithEqualityFn((arg0) => {
       pathname(closure_1[4]).batchUpdates(() => arg0({ path: null, guildId: closure_1, channelId: closure_2, basePath: arg0 }));
     }
   };
-  return obj;
 });
 const _module2 = require(dependencyMap[5]);
 const result = _module2.fileFinishedImporting("modules/routing/KeybindRouterStore.tsx");

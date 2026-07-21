@@ -1,5 +1,5 @@
 // Module ID: 9384
-// Function ID: 73160
+// Function ID: 73171
 // Name: useEmojiAndSource
 // Dependencies: []
 // Exports: useEmojiAndSource
@@ -48,7 +48,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
       }
       obj.joinedEmojiSourceGuildRecord = closure_5.getGuild(guildId);
     } else {
-      obj = { <string:3738052496>: "o", <string:3259460727>: "o" };
+      obj = { alignSelf: "o", padding: "o" };
     }
     return obj;
   });

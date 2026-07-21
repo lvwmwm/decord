@@ -1,7 +1,7 @@
 // Module ID: 11770
-// Function ID: 91359
+// Function ID: 91371
 // Name: setNewUser
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: setNewUser, setNewUserFlowCompleted
 
 // Module 11770 (setNewUser)

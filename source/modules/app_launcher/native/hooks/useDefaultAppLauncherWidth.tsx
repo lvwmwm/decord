@@ -1,5 +1,5 @@
 // Module ID: 10874
-// Function ID: 84560
+// Function ID: 84571
 // Name: useDefaultAppLauncherWidth
 // Dependencies: []
 // Exports: useDefaultAppLauncherWidth

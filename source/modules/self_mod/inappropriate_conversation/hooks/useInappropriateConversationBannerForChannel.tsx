@@ -1,5 +1,5 @@
 // Module ID: 10396
-// Function ID: 80110
+// Function ID: 80121
 // Name: useInappropriateConversationBannerForChannel
 // Dependencies: []
 // Exports: useInappropriateConversationBannerForChannel

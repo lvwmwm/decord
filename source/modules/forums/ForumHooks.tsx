@@ -1,5 +1,5 @@
 // Module ID: 9129
-// Function ID: 71459
+// Function ID: 71470
 // Name: sortForumPostReactionsByPopularityDesc
 // Dependencies: []
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanViewArchivedPosts, useChannelTemplate, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions
@@ -137,7 +137,7 @@ const ForumTimestampFormats = arg1(dependencyMap[16]).ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = arg1(dependencyMap[17]));
 const ChannelFlags = arg1(dependencyMap[18]).ChannelFlags;
 let closure_25 = arg1(dependencyMap[19]).MAX_THREAD_UNREAD_MESSAGE_COUNT;
-let closure_26 = { contentInset: null, automaticallyAdjustContentInsets: null };
+let closure_26 = { 0: null, 0: null };
 const tmp2 = arg1(dependencyMap[17]);
 const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/forums/ForumHooks.tsx");
 
@@ -293,7 +293,7 @@ export const useSomeForumPostReactions = function useSomeForumPostReactions(mess
   }, items);
   let items1 = [];
   if (null != tmp) {
-    let obj = { <string:1751302160>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:3146273726>: "_gameProfileResults", <string:463358356>: "r", <string:1585572706>: "MERCH_STORE", <string:3117334080>: "isArray", emoji: tmp };
+    let obj = { disableAutoBlockNewlines: null, useActiveEvent: "8aacc7898585bec38aca6cf682c01533", fetchDirectoryCounts: "FolderIcon", DISPLAY_MEDIA_UPLOADS: "png", buttonColor: true, emoji: tmp };
     const items2 = [obj];
     items1 = items2;
   }
@@ -330,7 +330,7 @@ export const useMaxPossibleForumPostReactions = function useMaxPossibleForumPost
   }, items);
   let items1 = [];
   if (null != tmp2) {
-    let obj = { <string:1751302160>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:3146273726>: "_gameProfileResults", <string:463358356>: "r", <string:1585572706>: "MERCH_STORE", <string:3117334080>: "isArray", emoji: tmp2 };
+    let obj = { disableAutoBlockNewlines: null, useActiveEvent: "8aacc7898585bec38aca6cf682c01533", fetchDirectoryCounts: "FolderIcon", DISPLAY_MEDIA_UPLOADS: "png", buttonColor: true, emoji: tmp2 };
     const items2 = [obj];
     items1 = items2;
   }
@@ -567,7 +567,7 @@ export const useForumPostFirstMessageMarkup = function useForumPostFirstMessageM
         const obj = { formatInline: flag, noStyleAndInteraction: flag2, textColor: str };
         flag(flag2[31])(firstMessage, obj);
       }
-      return { prepareSecureFramesTransition: null, allowLinks: null };
+      return { <string:1559998563>: null, <string:2717753877>: null };
     }
   }, items);
   const hasSpoilerEmbeds = memo.hasSpoilerEmbeds;

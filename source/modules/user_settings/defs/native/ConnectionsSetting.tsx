@@ -1,26 +1,28 @@
-// Module ID: 13733
-// Function ID: 103874
+// Module ID: 13735
+// Function ID: 103896
 // Name: route
 // Dependencies: [0, 0, 0, 0, 0]
 
-// Module 13733 (route)
+// Module 13735 (route)
+import result from "result";
+
 let obj = {
   useTitle() {
     const intl = require(dependencyMap[2]).intl;
     return intl.string(require(dependencyMap[2]).t.3fe7U5);
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").PuzzlePieceIcon,
+  IconComponent: require("result").PuzzlePieceIcon,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.CONNECTIONS,
+  route: require("result").UserSettingsSections.CONNECTIONS,
   getComponent() {
     return require(dependencyMap[4]).default;
   }
 };
-const route = require("__exportStarResult1").createRoute(obj);
+const route = result.createRoute(obj);
 const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ConnectionsSetting.tsx");
+result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ConnectionsSetting.tsx");
 
 export default route;

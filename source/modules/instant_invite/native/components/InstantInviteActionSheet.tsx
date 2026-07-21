@@ -1,5 +1,5 @@
 // Module ID: 8483
-// Function ID: 67726
+// Function ID: 67737
 // Name: Loading
 // Dependencies: []
 // Exports: default
@@ -36,7 +36,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = {};
-obj = { <string:2072385530>: "redesign/message-preview/semibold", <string:503443283>: "primary", <string:1638258217>: false, <string:1019498760>: 600, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
+obj = { 1011943521: "redesign/message-preview/semibold", 1098867089: "primary", 289264: false, -1062441132: 600, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderHeader = obj;
 const tmp3 = arg1(dependencyMap[9]);
 obj.placeholderLabel = { borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
@@ -179,7 +179,7 @@ export default function InstantInviteActionSheet(channel) {
   }
   const first = callback(React.useState(tmp23), 1)[0];
   obj = { value: analyticsLocations };
-  obj = { <string:466257670>: null, <string:1723177918>: null, <string:1549967611>: null };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   let tmp27 = null != stateFromStores1;
   if (!tmp27) {
     tmp27 = !tmp20;
@@ -222,7 +222,7 @@ export default function InstantInviteActionSheet(channel) {
       const obj9 = { contentContainerStyle: tmp.shareApps, onItemPressed: callback1 };
       const items10 = [callback2(importDefault(dependencyMap[32]), obj9), ];
       const obj10 = { style: tmp.searchAndShareContainer };
-      const obj11 = { "Null": null, "Null": null, onChange: arg1(dependencyMap[34]).searchInviteSuggestions };
+      const obj11 = { <string:1439367743>: false, <string:1856005359>: false, onChange: arg1(dependencyMap[34]).searchInviteSuggestions };
       if (null != targetApplicationId) {
         const intl5 = arg1(dependencyMap[28]).intl;
         let stringResult = intl5.string(arg1(dependencyMap[28]).t.iI1gMg);

@@ -1,5 +1,5 @@
 // Module ID: 11987
-// Function ID: 92633
+// Function ID: 92645
 // Name: useProfileTabIndices
 // Dependencies: [31, 33, 4126, 5468]
 // Exports: useProfileSectionTabs, useProfileTabIndices

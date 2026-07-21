@@ -1,15 +1,15 @@
-// Module ID: 13468
-// Function ID: 102239
+// Module ID: 13470
+// Function ID: 102261
 // Name: EditProfileThemeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13468 (EditProfileThemeActionSheet)
+// Module 13470 (EditProfileThemeActionSheet)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { "Null": null, "Null": null, "Null": null, "Null": null, tintColor: importDefault(dependencyMap[3]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { tintColor: importDefault(dependencyMap[3]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.nitroWheel = obj;
 obj.titleWrapper = { flex: 0 };
 obj.titleContainer = { justifyContent: "flex-start" };

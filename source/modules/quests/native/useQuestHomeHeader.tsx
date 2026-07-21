@@ -1,15 +1,15 @@
-// Module ID: 13777
-// Function ID: 104097
+// Module ID: 13779
+// Function ID: 104119
 // Name: QuestHomeHeaderTitle
 // Dependencies: []
 // Exports: default
 
-// Module 13777 (QuestHomeHeaderTitle)
+// Module 13779 (QuestHomeHeaderTitle)
 function QuestHomeHeaderTitle() {
   const tmp = callback3();
   let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(arg1(dependencyMap[8]).QuestsIcon, { flex: null, flexGrow: "f8bf13e5289aa31d46196df3283f80c3" }), ];
-  obj = { borderBottomColor: "cry", borderBottomWidth: "cry", paddingVertical: "cry", flexGrow: "cry", style: tmp.headerTitle };
+  const items = [callback(arg1(dependencyMap[8]).QuestsIcon, {}), ];
+  obj = { style: tmp.headerTitle };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.JALI2K);
   items[1] = callback(arg1(dependencyMap[9]).Heading, obj);
@@ -74,10 +74,10 @@ let closure_7 = arg1(dependencyMap[4]).CollectiblesMobileShopScreen;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, marginTop: importDefault(dependencyMap[7]).space.PX_8, paddingLeft: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { "Null": true, "Null": true, "Null": true, marginTop: importDefault(dependencyMap[7]).space.PX_8, paddingLeft: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerTitleContainer = obj;
 obj.headerTitle = { flexShrink: 1 };
-const obj1 = { bottom: true, left: true, padding: true, gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { top: true, bottom: true, left: true, gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerRightContainer = obj1;
 let closure_10 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);

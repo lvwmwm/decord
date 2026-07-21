@@ -1,10 +1,10 @@
-// Module ID: 7104
-// Function ID: 57096
+// Module ID: 7105
+// Function ID: 57108
 // Name: dismissGiftIntent
 // Dependencies: []
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 7104 (dismissGiftIntent)
+// Module 7105 (dismissGiftIntent)
 function dismissGiftIntent(FRIEND_ANNIVERSARY, recipientUserId, explicit) {
   let obj = importDefault(dependencyMap[8]);
   obj = { gift_intent_type: FRIEND_ANNIVERSARY, dismiss_type: explicit };
@@ -44,7 +44,7 @@ export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileG
   const arg1 = serverDismissalTimestampMs;
   const id2 = id.getId();
   const HTTP = arg1(dependencyMap[5]).HTTP;
-  const obj = { lc: null, type: null, end: null, url: constants2.GIFT_INTENT_DISMISSALS };
+  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: constants2.GIFT_INTENT_DISMISSALS };
   const value = HTTP.get(obj);
   return value.then((body) => {
     if (id.getId() === callback) {

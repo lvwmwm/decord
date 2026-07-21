@@ -1,5 +1,5 @@
 // Module ID: 3581
-// Function ID: 27744
+// Function ID: 27749
 // Name: lastDayOfWeek
 // Dependencies: []
 // Exports: default

@@ -1,9 +1,9 @@
-// Module ID: 16488
-// Function ID: 127316
+// Module ID: 16496
+// Function ID: 127377
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16488 (_createForOfIteratorHelperLoose)
+// Module 16496 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

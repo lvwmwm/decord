@@ -1,5 +1,5 @@
 // Module ID: 10439
-// Function ID: 80562
+// Function ID: 80573
 // Name: useIsMessageSwipeActionsEnabled
 // Dependencies: []
 // Exports: useIsMessageSwipeActionsEnabled

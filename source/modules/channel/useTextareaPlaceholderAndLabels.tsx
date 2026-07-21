@@ -1,5 +1,5 @@
 // Module ID: 11100
-// Function ID: 86356
+// Function ID: 86367
 // Name: useTextareaPlaceholderAndLabels
 // Dependencies: []
 // Exports: default

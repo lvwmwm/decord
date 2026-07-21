@@ -1,10 +1,10 @@
-// Module ID: 14654
-// Function ID: 110503
+// Module ID: 14657
+// Function ID: 110535
 // Name: useIsHCaptchaModalOpenTracking
 // Dependencies: []
 // Exports: useIsHCaptchaModalOpenTracking
 
-// Module 14654 (useIsHCaptchaModalOpenTracking)
+// Module 14657 (useIsHCaptchaModalOpenTracking)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).doesRegistrationHaveIdentityType;
 ({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: closure_5 } = arg1(dependencyMap[2]));

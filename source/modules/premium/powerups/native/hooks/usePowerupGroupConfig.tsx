@@ -1,5 +1,5 @@
 // Module ID: 11571
-// Function ID: 89981
+// Function ID: 89993
 // Name: usePowerupGroupConfig
 // Dependencies: []
 // Exports: default

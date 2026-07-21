@@ -1,5 +1,5 @@
 // Module ID: 9227
-// Function ID: 72149
+// Function ID: 72160
 // Name: handlePress
 // Dependencies: []
 // Exports: default
@@ -16,26 +16,26 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { 0: "<string:609353730>", 0: "<string:1641248852>", 9223372036854775807: "<string:4008526232>", 0: "<string:1685848065>", 0: "<string:167772160>", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.contentContainer = obj;
-obj.image = {};
+obj.image = { direction: "checkIsOnChannelNavigationRoute", style: "<string:3844887040>", borderWidth: "<string:158435740>" };
 obj.title = { textAlign: "center" };
 obj.body = { textAlign: "center" };
 obj.bodyInner = { gap: 2 };
-const tmp4 = arg1(dependencyMap[3]);
+const obj1 = { 0: "row", 0: 0, 9223372036854775807: 0, 9223372036854775807: "absolute", -9223372036854775808: 90, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
-obj.tooltip = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.tooltip = obj1;
 let closure_9 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const tmp4 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/verification/native/components/ChangeEmailComplete.tsx");
 
 export default function ChangeEmailComplete(email) {
   const tmp = callback3();
-  let obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874, contentContainerStyle: tmp.contentContainer };
+  let obj = { onUnexpectedItemSize: null, minResolutionHeight: null, contentContainerStyle: tmp.contentContainer };
   obj = { style: tmp.image, source: importDefault(dependencyMap[7]) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner };
-  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.string(arg1(dependencyMap[9]).t.8O+nF7);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj1), ];

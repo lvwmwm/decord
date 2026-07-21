@@ -1,14 +1,15 @@
 // Module ID: 12034
-// Function ID: 92982
+// Function ID: 92994
 // Name: UserClockIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: UserClockIcon
 
 // Module 12034 (UserClockIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/UserClockIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/UserClockIcon.tsx");
 
 export const UserClockIcon = function UserClockIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

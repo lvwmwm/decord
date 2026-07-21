@@ -1,7 +1,7 @@
 // Module ID: 8771
-// Function ID: 69304
+// Function ID: 69315
 // Name: UnifiedGiftModalScreens
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8771 (UnifiedGiftModalScreens)
 const _module = require(dependencyMap[0]);

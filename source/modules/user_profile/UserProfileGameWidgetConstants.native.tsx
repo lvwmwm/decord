@@ -1,5 +1,5 @@
 // Module ID: 11975
-// Function ID: 92581
+// Function ID: 92593
 // Name: widgetGameTagMetadata
 // Dependencies: []
 // Exports: getWidgetGameTagMetadata

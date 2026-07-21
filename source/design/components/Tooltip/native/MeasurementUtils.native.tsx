@@ -1,5 +1,5 @@
 // Module ID: 8562
-// Function ID: 68035
+// Function ID: 68046
 // Name: retryMeasurements
 // Dependencies: []
 // Exports: getMeasurements
@@ -27,7 +27,7 @@ export const getMeasurements = function getMeasurements(surfaceRef, arg1) {
   return new Promise((arg0, arg1) => {
     let obj = null;
     if (flag) {
-      obj = { <string:80505088>: null, <string:80502272>: 4, <string:80550656>: 4, <string:80553216>: "rgba(0, 0, 0, 0.75)" };
+      obj = { dispatch: "ERROR", split: "ERROR", location: "NOT_RESPONDER", __initData: "NOT_RESPONDER" };
     }
     closure_3(arg0, arg0, arg1, obj);
   });

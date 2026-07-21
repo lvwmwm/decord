@@ -1,5 +1,5 @@
 // Module ID: 4305
-// Function ID: 37673
+// Function ID: 37681
 // Name: isVoiceChannelFull
 // Dependencies: []
 // Exports: changeStreamRegion, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, toggleSelfStreamHidden, updateStreamSettings

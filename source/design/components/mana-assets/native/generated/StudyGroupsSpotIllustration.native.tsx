@@ -1,5 +1,5 @@
 // Module ID: 6573
-// Function ID: 50773
+// Function ID: 50781
 // Name: StudyGroupsSpotIllustration
 // Dependencies: []
 // Exports: StudyGroupsSpotIllustration

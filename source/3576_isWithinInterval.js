@@ -1,21 +1,20 @@
 // Module ID: 3576
-// Function ID: 27729
+// Function ID: 27734
 // Name: isWithinInterval
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3576 (isWithinInterval)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function isWithinInterval(defaultResult1, start) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  const time = startOfWeek.default(defaultResult1).getTime();
-  defaultResult1 = startOfWeek.default(defaultResult1);
-  const time1 = startOfWeek.default(start.start).getTime();
-  const defaultResult2 = startOfWeek.default(start.start);
-  const time2 = startOfWeek.default(start.end).getTime();
+  closure_1.default(2, arguments);
+  const time = closure_0.default(defaultResult1).getTime();
+  defaultResult1 = closure_0.default(defaultResult1);
+  const time1 = closure_0.default(start.start).getTime();
+  const defaultResult2 = closure_0.default(start.start);
+  const time2 = closure_0.default(start.end).getTime();
   if (time1 <= time2) {
     return time >= time1 && time <= time2;
   } else {
@@ -23,6 +22,6 @@ export default function isWithinInterval(defaultResult1, start) {
     const rangeError = new RangeError("Invalid interval");
     throw rangeError;
   }
-  const defaultResult3 = startOfWeek.default(start.end);
+  const defaultResult3 = closure_0.default(start.end);
 };
 export default exports.default;

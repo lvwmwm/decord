@@ -1,5 +1,5 @@
 // Module ID: 11804
-// Function ID: 91583
+// Function ID: 91595
 // Name: OrbCheckoutAmountTag
 // Dependencies: []
 // Exports: default
@@ -10,9 +10,9 @@ const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { gap: importDefault(dependencyMap[3]).space.PX_4 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[3]).space.PX_4 };
 obj.orbAmountTag = obj;
-obj.orbsIcon = { bhk: "Array", bic: "isPrivate" };
+obj.orbsIcon = { "Null": false, "Null": false };
 let closure_5 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[7]);
 const result = _module2.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
@@ -21,7 +21,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag };
-  obj = { flex: "<string:2417182093>", flexGrow: "NEWSROOM", style: tmp.orbsIcon };
+  obj = { style: tmp.orbsIcon };
   const items = [callback(require(dependencyMap[4]).OrbsIcon, obj), ];
   obj = { variant: "text-md/semibold" };
   if (null == orbAmount) {

@@ -1,5 +1,5 @@
 // Module ID: 1776
-// Function ID: 19761
+// Function ID: 19766
 // Name: useGenericKeyboardHandler
 // Dependencies: []
 // Exports: useFocusedInputHandler, useKeyboardAnimation, useKeyboardController, useKeyboardHandler, useReanimatedFocusedInput, useReanimatedKeyboardAnimation
@@ -14,7 +14,7 @@ function useGenericKeyboardHandler(handler, items) {
   pnpm_indexTs1.__closure = { handler };
   pnpm_indexTs1.__workletHash = 7080794218426;
   pnpm_indexTs1.__initData = closure_5;
-  let closure_2 = require(closure_1[4]).useEvent(pnpm_indexTs1, [true, true, true, true], obj2.useHandler(handler, items).doDependenciesDiffer);
+  let closure_2 = require(closure_1[4]).useEvent(pnpm_indexTs1, ["ScrollViewComponent", "inverted", "keyboardLiftBehavior", "freeze"], obj2.useHandler(handler, items).doDependenciesDiffer);
   callback2(() => {
     keyboardHandlers.setKeyboardHandlers(closure_2);
     return () => callback();
@@ -78,7 +78,7 @@ export const useFocusedInputHandler = function useFocusedInputHandler(handler, i
   pnpm_indexTs2.__closure = { handler };
   pnpm_indexTs2.__workletHash = 16071593392303;
   pnpm_indexTs2.__initData = closure_6;
-  let closure_2 = require(closure_1[4]).useEvent(pnpm_indexTs2, [null, null], obj2.useHandler(handler, items10).doDependenciesDiffer);
+  let closure_2 = require(closure_1[4]).useEvent(pnpm_indexTs2, [], obj2.useHandler(handler, items10).doDependenciesDiffer);
   callback2(() => {
     inputHandlers.setInputHandlers(closure_2);
     return () => callback();

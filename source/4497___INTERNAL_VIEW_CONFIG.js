@@ -1,10 +1,10 @@
 // Module ID: 4497
-// Function ID: 39651
+// Function ID: 39659
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [0, 4294967295]
 
 // Module 4497 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "__exportStarResult1";
+import { codegenNativeComponent } from "result";
 
 const obj = { uiViewClassName: "RNSScreenContainer", validAttributes: {} };
 const _module = require(dependencyMap[1]);

@@ -1,5 +1,5 @@
 // Module ID: 9613
-// Function ID: 74883
+// Function ID: 74894
 // Name: StickerOptionsActionSheet
 // Dependencies: []
 // Exports: default

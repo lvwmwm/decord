@@ -1,5 +1,5 @@
 // Module ID: 10377
-// Function ID: 80027
+// Function ID: 80038
 // Name: useIsSelectedResourceChannel
 // Dependencies: []
 // Exports: default

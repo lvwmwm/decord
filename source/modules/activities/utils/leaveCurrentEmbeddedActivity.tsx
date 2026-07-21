@@ -1,5 +1,5 @@
 // Module ID: 10826
-// Function ID: 84046
+// Function ID: 84057
 // Name: leaveCurrentEmbeddedActivity
 // Dependencies: []
 // Exports: leaveCurrentEmbeddedActivity

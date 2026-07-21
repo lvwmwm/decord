@@ -1,9 +1,9 @@
-// Module ID: 7944
-// Function ID: 63380
+// Module ID: 7945
+// Function ID: 63393
 // Name: EntitlementFeatureNames
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7944 (EntitlementFeatureNames)
+// Module 7945 (EntitlementFeatureNames)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/EntitlementFeatureNames.tsx");
 

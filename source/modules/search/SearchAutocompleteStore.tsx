@@ -1,5 +1,5 @@
 // Module ID: 10071
-// Function ID: 77915
+// Function ID: 77926
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -365,7 +365,7 @@ let tmp6 = (Store) => {
       let value = closure_20.get(obj.getSearchContextId(searchContext));
       if (null == value) {
         obj = { searchContext, query: "" };
-        obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants.EMPTY };
+        obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, type: constants.EMPTY };
         obj.mode = obj;
         obj.tokens = [];
         obj.cursorScope = null;

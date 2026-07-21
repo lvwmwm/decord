@@ -1,5 +1,5 @@
 // Module ID: 3952
-// Function ID: 32635
+// Function ID: 32640
 // Name: _extends
 // Dependencies: []
 
@@ -117,7 +117,7 @@ if (undefined === forwardRef) {
 }
 let closure_8 = forwardRef((innerRef) => {
   ({ navigate: closure_0, onClick: closure_1 } = innerRef);
-  const tmp = _objectWithoutPropertiesLoose(innerRef, []);
+  const tmp = _objectWithoutPropertiesLoose(innerRef, [null, null, null]);
   const tmp2 = _extends({}, tmp, {
     onClick(defaultPrevented) {
       if (callback2) {
@@ -265,7 +265,7 @@ export const NavLink = forwardRef2((aria-current) => {
     str2 = activeClassName;
   }
   ({ activeStyle: closure_3, className: closure_4, exact: closure_5, isActive: closure_6, location: closure_7, sensitive: closure_8, strict: closure_9, style: closure_10, to: closure_11, innerRef: closure_12 } = aria_current);
-  let closure_13 = _objectWithoutPropertiesLoose(aria_current, []);
+  let closure_13 = _objectWithoutPropertiesLoose(aria_current, ["nm", "Array", "isArray", null, null, null, null, null, null, null, null, null]);
   return str2.createElement(require(dependencyMap[5]).__RouterContext.Consumer, null, (location) => {
     if (!location) {
       callback(false);

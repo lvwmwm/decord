@@ -1,7 +1,7 @@
 // Module ID: 4098
-// Function ID: 33941
+// Function ID: 33946
 // Name: IMPACT_LIGHT
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4098 (IMPACT_LIGHT)
 const _module = require(dependencyMap[0]);

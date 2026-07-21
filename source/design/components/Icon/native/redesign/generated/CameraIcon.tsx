@@ -1,5 +1,5 @@
 // Module ID: 9663
-// Function ID: 75256
+// Function ID: 75267
 // Name: CameraIcon
 // Dependencies: []
 // Exports: CameraIcon

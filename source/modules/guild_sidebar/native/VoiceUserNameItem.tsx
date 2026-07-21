@@ -1,16 +1,16 @@
-// Module ID: 14850
-// Function ID: 111906
+// Module ID: 14853
+// Function ID: 111940
 // Name: VoiceUserNameItem
 // Dependencies: []
 // Exports: default
 
-// Module 14850 (VoiceUserNameItem)
+// Module 14853 (VoiceUserNameItem)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { RECONNECT: null, osRequirement: null, maxWidth: null }, tag: {}, measuringTag: { opacity: 0 } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, tag: {}, measuringTag: { opacity: 0 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
 
@@ -74,7 +74,7 @@ export default function VoiceUserNameItem(arg0) {
   }
   const items1 = [nick, ];
   if (isGuest) {
-    const obj2 = { "Null": 1107296850, "Null": 107218, "Null": 160063 };
+    const obj2 = { <string:2077996694>: null, <string:4179938721>: null, <string:3800758922>: null };
     const intl = callback(dependencyMap[9]).intl;
     const items2 = ["\u2196", intl.string(callback(dependencyMap[9]).t.pFO/Ph)];
     obj2.children = items2;

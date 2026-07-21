@@ -1,10 +1,10 @@
-// Module ID: 14107
-// Function ID: 107108
+// Module ID: 14110
+// Function ID: 107140
 // Name: DisplayNameStylesGummyColorPickerSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14107 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14110 (DisplayNameStylesGummyColorPickerSheet)
 import module_0 from "module_0";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -21,9 +21,9 @@ obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingT
 obj.body = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_4, alignSelf: "stretch" };
 obj.colorRowInset = obj1;
-obj.optionContainer = { 1925026477: null, -1346530010: null };
-obj.swatchWrapper = { "Bool(true)": 20, "Bool(true)": "enable_gdm_all_reaction_notifications" };
-const obj2 = { "Bool(false)": "<string:2731426070>", "Bool(false)": "<string:324075521>", "Bool(false)": "<string:2731426192>", "Bool(false)": "<string:1014104065>", "Bool(false)": "<string:1006632960>", "Bool(false)": "<string:285212672>", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.optionContainer = { -9223372036854775808: null, 7741: null };
+obj.swatchWrapper = { "Bool(true)": "channelId", "Bool(true)": "channelId" };
+const obj2 = { iconPosition: "absolute", accessibilityHint: 0, iconOpticalOffsetMargin: "center", onPress: "center", size: null, text: "absolute", borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.swatch = obj2;
 const tmp3 = arg1(dependencyMap[5]);
 obj.swatchSelected = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
@@ -121,7 +121,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   }, items1);
   obj = {};
   obj = { title: displayNameStylesEffectConfig.name };
-  const obj1 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
+  const obj1 = {};
   const intl = arg1(dependencyMap[19]).intl;
   obj1.text = intl.string(arg1(dependencyMap[19]).t.XqMe3N);
   obj1.onPress = callback2;
@@ -153,7 +153,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     tmp19Result = tmp19(importDefault(dependencyMap[20]), obj7);
   }
   const items4 = [tmp19Result, ];
-  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(arg1(dependencyMap[21]).PencilIcon, {}) }) };
+  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(arg1(dependencyMap[21]).PencilIcon, { "Null": 12, "Null": 4 }) }) };
   items4[1] = callback2(closure_5, obj8);
   obj5.children = items4;
   obj4.children = closure_10(first1, obj5);

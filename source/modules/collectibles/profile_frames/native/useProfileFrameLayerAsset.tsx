@@ -1,10 +1,10 @@
-// Module ID: 8250
-// Function ID: 65085
+// Module ID: 8251
+// Function ID: 65098
 // Name: map
 // Dependencies: []
 // Exports: default
 
-// Module 8250 (map)
+// Module 8251 (map)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ Image: closure_4, PixelRatio: closure_5 } = arg1(dependencyMap[2]));

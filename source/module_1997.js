@@ -1,9 +1,9 @@
 // Module ID: 1997
-// Function ID: 22008
+// Function ID: 22013
 // Dependencies: []
 
 // Module 1997
 const _module = require(dependencyMap[0]);
-const obj = { dismissed: "r", lastDismissedVersion: "geq", lastDismissedAtMs: "r", lastDismissedObjectId: "sectionIdsByBotId", numTimesDismissed: "Array", days: "Layouts", scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { runOnJS: "center", format: "center", View: null, accessibilityRole: null, surrogates: null, url: null, scales: [null] };
 
 export default _module.registerAsset(obj);

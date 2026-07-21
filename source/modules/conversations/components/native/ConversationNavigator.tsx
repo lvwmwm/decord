@@ -1,5 +1,5 @@
 // Module ID: 9278
-// Function ID: 72479
+// Function ID: 72490
 // Name: HeaderWithBorder
 // Dependencies: []
 // Exports: default, openConversationNavigator

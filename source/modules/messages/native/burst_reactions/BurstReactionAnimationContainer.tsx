@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 117977
+// Module ID: 15471
+// Function ID: 118016
 // Name: BurstReactionAnimationContainerInner
 // Dependencies: []
 // Exports: default
 
-// Module 15468 (BurstReactionAnimationContainerInner)
+// Module 15471 (BurstReactionAnimationContainerInner)
 let StyleSheet;
 function BurstReactionAnimationContainerInner() {
   function handleComponentFinish() {
@@ -101,7 +101,7 @@ function BurstReactionAnimationContainerInner() {
       const obj2 = { style: lib.fill };
       let tmp7 = null;
       if (first1) {
-        const obj3 = {};
+        const obj3 = { mediumslateblue: true, mediumspringgreen: true, mediumturquoise: true, mediumvioletred: true, midnightblue: true, mintcream: true };
         ({ channelId: obj6.channelId, messageId: obj6.messageId, emoji: obj6.emoji } = first);
         obj3.onComplete = function onComplete() {
           callback();
@@ -153,12 +153,12 @@ obj1["alignItems"] = "center";
 obj1["justifyContent"] = "center";
 obj.fill = obj1;
 obj.dismissTextContainer = {};
-const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[6]).radii.round };
-obj.dismissTextBackground = obj2;
+const tmp3 = arg1(dependencyMap[4]);
+obj.dismissTextBackground = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[6]).radii.round };
 let closure_11 = obj.createStyles(obj);
 let closure_12 = { code: "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}" };
 let closure_13 = { code: "function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}" };
-const tmp3 = arg1(dependencyMap[4]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[6]).radii.round };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationContainer.tsx");
 
 export default function BurstReactionAnimationContainer() {

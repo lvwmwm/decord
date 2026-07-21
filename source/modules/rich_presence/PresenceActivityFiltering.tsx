@@ -1,5 +1,5 @@
 // Module ID: 10437
-// Function ID: 80553
+// Function ID: 80564
 // Name: doesGameHaveRichPresence
 // Dependencies: []
 // Exports: doesGameHaveRichPresence

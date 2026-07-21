@@ -1,5 +1,5 @@
 // Module ID: 3303
-// Function ID: 26061
+// Function ID: 26066
 // Dependencies: []
 
 // Module 3303
@@ -10,9 +10,9 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Bool(false)": "minuta", "Bool(false)": "minut\u0119", "Bool(false)": "minut\u0119", "Bool(false)": null }, defaultWidth: "full" });
 obj.time = obj.default({ formats: {}, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Null": false, "Null": false, "Null": false, "Null": false }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

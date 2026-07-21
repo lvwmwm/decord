@@ -1,5 +1,5 @@
 // Module ID: 9910
-// Function ID: 76656
+// Function ID: 76667
 // Name: ForLaterDeletedMessageCard
 // Dependencies: []
 
@@ -10,16 +10,16 @@ class ForLaterDeletedMessageCard {
     arg1 = savedMessage;
     tmp = closure_13();
     tmp2 = jsxs;
-    obj = { <string:67391839>: "emitUnicodeLocaleId", <string:223427425>: "isArray", <string:1403675080>: "avatarId" };
+    obj = { style: items };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
-    obj.style = items;
     obj = { size: "xs" };
     obj.color = importDefault(dependencyMap[8]).colors.ICON_MUTED;
     items1 = [, , ];
     items1[0] = jsx(arg1(dependencyMap[10]).CircleErrorIcon, obj);
     tmp3 = jsx;
-    obj1 = { style: tmp.deletedText };
+    obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
+    obj1.style = tmp.deletedText;
     if (null != savedMessage.saveData.dueAt) {
       tmp7 = arg1;
       tmp8 = dependencyMap;
@@ -84,7 +84,7 @@ function ForLaterMessageCard(savedMessage) {
       })) {
         obj = { savedMessage, jumpToMessage: callback };
         const tmp8 = callback2(importDefault(dependencyMap[23]), obj);
-        obj = { <string:67391839>: "emitUnicodeLocaleId", <string:223427425>: "isArray", <string:1403675080>: "avatarId", style: tmp.card, onPress: callback };
+        obj = { style: tmp.card, onPress: callback };
         let tmp12 = null;
         if (null != savedMessage.saveData.dueAt) {
           const obj1 = { savedMessage, throttledNow: savedMessage.throttledNow, actions: tmp8 };
@@ -101,7 +101,7 @@ function ForLaterMessageCard(savedMessage) {
         const obj3 = { style: tmp.cardDivider };
         items2[2] = callback2(View, obj3);
         const obj4 = { style: tmp.messagePreview };
-        const obj5 = { thumbHashToDataURL: null, DESIGN: null, childSpanTimeout: null, message: savedMessage.message };
+        const obj5 = { marginEnd: "<string:1010958337>", flexDirection: "<string:3271557550>", alignItems: "<string:16777668>", message: savedMessage.message };
         obj4.children = callback2(arg1(dependencyMap[26]).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
         obj.children = items2;
@@ -121,9 +121,9 @@ const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = { card: {} };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
+obj = { "Null": 0, "Null": -25.119, "Null": 3, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.cardDivider = obj;
-obj1 = { "Bool(false)": "SERVER_GUIDE_CHANNEL_SELECTED", "Bool(false)": "+BNMcF", "Bool(false)": "Array", "Bool(false)": "LIGHT", "Bool(false)": "isArray", "Bool(false)": "isArray", borderBottomLeftRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS };
+obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS };
 obj.messagePreview = obj1;
 obj.deletedCard = {};
 obj.deletedText = { flex: 1 };

@@ -1,9 +1,9 @@
-// Module ID: 13743
-// Function ID: 103930
+// Module ID: 13745
+// Function ID: 103952
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13743 (_isNativeReflectConstruct)
+// Module 13745 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ function Integration(integration) {
   if (tmp4) {
     let tmp15 = tmp2[0] === integration.id;
     if (tmp15) {
-      obj = { "Null": "ars", "Null": "<string:1166889216>", "Null": "Status", style: legacyClassComponentStyles.integrationErrorText };
+      obj = { delete: "%MapPrototype%", dispatch: "<string:1153585408>", raw: "sent", style: legacyClassComponentStyles.integrationErrorText };
       const intl2 = arg1(dependencyMap[21]).intl;
       obj.children = intl2.string(arg1(dependencyMap[21]).t.fEptJP);
       tmp15 = callback4(arg1(dependencyMap[22]).Text, obj);
@@ -42,7 +42,7 @@ function Integration(integration) {
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
     const obj4 = { children: integration.guild.name };
     const items5 = [callback4(arg1(dependencyMap[22]).Text, obj4), ];
-    const obj5 = { encodingConfig: "defineProperty", showRemove: "", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "uri" };
+    const obj5 = { "Null": "defineProperty", "Null": "", "Null": "uri" };
     const tmp19 = closure_20;
     const tmp20 = View;
     const tmp21 = closure_20;
@@ -127,40 +127,40 @@ obj.marginRight = 4;
 obj.connectedApplicationIdentityIcon = obj;
 const tmp4 = arg1(dependencyMap[13]);
 obj.deleteConnectionIcon = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.container = { "Bool(false)": 1, "Bool(false)": "comp_0" };
+obj.container = { "Null": 1, "Null": "comp_0" };
 const obj1 = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.connectedAccountItem = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj3 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopRightRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj.connectedAccountTopContainer = obj3;
-obj.connectedAccountContentContainer = { "Bool(false)": 800, "Bool(false)": 16 };
-const obj4 = { expressionSourceGuild: null, onFinish: "\u{1FAF0}\u{1F3FC}", formCtaIcon: true, getNavigationEntry: null, ANDROID_PANELS_ANIMATION_CONFIG: 14, ActiveThemeType: null, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
+obj.connectedAccountContentContainer = {};
+const obj4 = { GuildRoleSubscriptionListingPreview: null, handleToggleMuteChannel: "\u{1FAF0}\u{1F3FC}", receiveMessage: true, useShouldShowAgeVerificationPopover: null, cancelHttpRequest: 14, GUILD_CHANNEL_RESYNC_FAILED: null, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj.integrationContainer = obj4;
 obj.integrationContainerInternal = {};
-obj.integrationTextRowContainer = { kkvDatabase: 76, HUB_SCHOOL_CLUB: 76, renderMode: null };
-obj.integrationErrorText = { Symbol: 4, hash: null, body: null };
+obj.integrationTextRowContainer = { progress: "fef47f26495822d9e37d120cd2650e58", speed: "family_center_activity_banner_image_teen", loop: "png" };
+obj.integrationErrorText = {};
 obj.integrationCategoryLabel = { marginVertical: 0 };
 obj.integrationGuildIcon = { margin: 8 };
-obj.integrationJoinButton = {};
-const obj5 = { "Null": "50a11b05117d31e1ad224516819cbd87", "Null": "ic_clock", "Null": "png", "Null": true, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+obj.integrationJoinButton = { source: false, style: "ADBE Vector Group", resizeMode: "Group 1" };
+const obj5 = { <string:1013399163>: "50a11b05117d31e1ad224516819cbd87", <string:1407672733>: "ic_clock", <string:180358757>: "png", <string:2968308837>: true, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.divider = obj5;
 obj.alertInfoBox = { marginTop: 8 };
 const obj2 = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 const obj6 = { marginTop: 16 };
 const merged = Object.assign(importDefault(dependencyMap[17])(tmp3.Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[16]).colors.TEXT_DEFAULT, 16));
 obj.alertBodyText = obj6;
-const obj7 = { <string:1658481745>: "RTC_CONNECTION_LOSS_RATE", <string:2790347088>: "handleJoinThreadVoice", <string:1418355163>: "toString", <string:2792263941>: "isArray", <string:853318528>: "toString", <string:1392196194>: "isArray", <string:50570849>: "setDescription", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+const obj7 = { needsOffscreenAlphaCompositing: "accessibilityLabel", renderToHardwareTextureAndroid: "r", pointerEvents: "isArray", position: 24, top: 24, left: null, right: "648b6791176add4ac6a2018a27641a15", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.metadataContainer = obj7;
-obj.metadataItemsContainer = { easing: "SubscriptionIcon", prefill: "png", useNativeDriver: true, delay: "/assets/design/components/Icon/native/redesign/generated/images", flex: 24, width: 24, aspectRatio: null };
-obj.metadataRefreshButton = { <string:252898708>: "<string:978452482>", <string:3355923052>: "<string:1371002236>" };
+obj.metadataItemsContainer = { zIndex: "SubscriptionIcon", horizontal: "png", accessibilityLabel: true, accessibilityRole: "/assets/design/components/Icon/native/redesign/generated/images", hitSlop: 24, duration: 24, easing: null };
+obj.metadataRefreshButton = {};
 obj.metadataRefreshButtonDisabled = { opacity: 0.5 };
 obj.metadataRefreshIcon = {};
-obj.metadataBannerContainer = { 0: -1051609131, 0: 181879079, 9223372036854775807: 1091633153, -9223372036854775808: 151645, 0: 6258 };
+obj.metadataBannerContainer = { color: 1951519608, backgroundColor: 516440359, width: 1091633154, height: 151651, marginTop: 6258 };
 obj.newBadge = { marginRight: 4 };
-obj.rowDivider = { position: 12, bottom: 4 };
+obj.rowDivider = {};
 obj.addDetailsButton = {};
-obj.learnMoreButton = {};
-const importDefaultResult = importDefault(dependencyMap[17]);
-obj.relinkButton = { borderRadius: importDefault(dependencyMap[16]).radii.round };
+obj.learnMoreButton = { 9223372036854775807: 838861158, 9223372036854775807: -385875662 };
+const obj8 = { paddingHorizontal: false, accessible: false, borderRadius: importDefault(dependencyMap[16]).radii.round };
+obj.relinkButton = obj8;
 obj.relinkText = { marginTop: 8 };
 const legacyClassComponentStyles = obj.createLegacyClassComponentStyles(obj);
 const tmp8 = (PureComponent) => {
@@ -388,7 +388,7 @@ const tmp8 = (PureComponent) => {
         items = obj4.generateTwitterMetadataItems(metadata);
       }
       if (null !== createdAtDate) {
-        let obj = {};
+        let obj = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray" };
         const intl2 = ConnectedAccount(closure_2[21]).intl;
         obj = { date: createdAtDate };
         obj.children = intl2.format(ConnectedAccount(closure_2[21]).t.9rfonh, obj);
@@ -399,7 +399,7 @@ const tmp8 = (PureComponent) => {
         const obj = account(closure_2[18]);
         account(closure_2[18]).refresh(account.type, account.id).finally(() => {
           const timerId = setTimeout(() => {
-            state.setState({ "Null": null, "Null": null });
+            state.setState({});
           }, 2000);
         });
       }
@@ -456,7 +456,7 @@ const tmp8 = (PureComponent) => {
           const obj7 = { style: tmp.learnMoreButton };
           tmp = callback4;
           tmp15 = ConnectedAccount;
-          const obj8 = { height: true, accessibilityRole: "yes", hasDiversityParent: "2026-04-collectibles-profile-frames-purchase" };
+          const obj8 = { _monthsRegex: 44, overflow: null, messageHasObscurableMedia: true };
           intl = ConnectedAccount(closure_2[21]).intl;
           string = intl.string;
           obj6 = string(ConnectedAccount(closure_2[21]).t.8O0mlf);
@@ -478,7 +478,7 @@ const tmp8 = (PureComponent) => {
         const obj9 = { accessibilityRole: "button" };
         const intl3 = ConnectedAccount(closure_2[21]).intl;
         obj9.accessibilityLabel = intl3.string(ConnectedAccount(closure_2[21]).t.wzzjk9);
-        obj9.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
+        obj9.hitSlop = {};
         obj9.onPress = handleRefresh;
         obj9.disabled = tmp15;
         const items3 = [tmp.metadataRefreshButton, ];
@@ -588,12 +588,12 @@ const tmp8 = (PureComponent) => {
         const icon = value.icon;
         obj.source = obj3.makeSource(obj4.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);
         obj.disableColor = true;
-        const obj1 = { <string:3747870501>: true, <string:726980327>: true, <string:1299923571>: "isArray" };
+        const obj1 = { <string:2494184035>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045856417437685, <string:4146205778>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004589055092517, <string:2432852520>: 859756496761911200000000000000000000000000000000000000000000000000000000000000000000000000000 };
         const obj2 = { accessibilityRole: "button" };
         const intl2 = ConnectedAccount(closure_2[21]).intl;
         obj2.accessibilityLabel = intl2.string(ConnectedAccount(closure_2[21]).t.DT39A+);
         obj2.onPress = self.handleDisconnect;
-        obj2.hitSlop = { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "WebUserSettings", "Null": "Array", "Null": "MERCH_STORE" };
+        obj2.hitSlop = { flexGrow: "useStickerPackCategories", flexShrink: "%Boolean%", height: "MiniaturesSpotIllustration", left: "add" };
         obj3 = { style: tmp.deleteConnectionIcon, source: callback(closure_2[44]) };
         obj2.children = callback4(ConnectedAccount(closure_2[15]).Icon, obj3);
         obj1.children = callback4(ConnectedAccount(closure_2[37]).PressableOpacity, obj2);
@@ -629,7 +629,7 @@ const tmp8 = (PureComponent) => {
   return callback(ConnectedAccount, items);
 }(importAllResult.PureComponent);
 tmp8.contextType = arg1(dependencyMap[47]).ThemeContext;
-const obj8 = { borderRadius: importDefault(dependencyMap[16]).radii.round };
+const importDefaultResult = importDefault(dependencyMap[17]);
 const result = arg1(dependencyMap[48]).fileFinishedImporting("modules/user_settings/connections/native/ConnectedAccount.tsx");
 
 export default tmp8;

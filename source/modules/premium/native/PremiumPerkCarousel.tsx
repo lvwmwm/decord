@@ -1,5 +1,5 @@
 // Module ID: 12260
-// Function ID: 94006
+// Function ID: 94018
 // Name: PremiumPerkCarousel
 // Dependencies: []
 // Exports: default
@@ -46,7 +46,6 @@ export default function PremiumPerkCarousel(arg0) {
   const items1 = [callback2(arg1(dependencyMap[6]).Text, obj), , ];
   const obj1 = { style: items2, width, onPageChange: callback, pageIndictor: false, scrollViewProps: obj3 };
   const items2 = [tmp.carousel, { height: perkCardHeight + 8 }];
-  const obj3 = { marginTop: true, paddingTop: true, flex: true, flexDirection: true, alignSelf: true, snapToInterval: width + 8 + 0.2 };
   obj1.children = perks.map((arg0, arg1) => {
     const items = [tmp.carouselCard, ];
     let lastCarouselCard = null;

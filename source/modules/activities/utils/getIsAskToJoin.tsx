@@ -1,5 +1,5 @@
 // Module ID: 10900
-// Function ID: 84711
+// Function ID: 84722
 // Name: getIsAskToJoin
 // Dependencies: []
 // Exports: getIsAskToJoin

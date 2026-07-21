@@ -1,5 +1,5 @@
 // Module ID: 926
-// Function ID: 10082
+// Function ID: 10086
 // Name: captureLog
 // Dependencies: []
 // Exports: debug, error, fatal, info, trace, warn

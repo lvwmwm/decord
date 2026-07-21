@@ -1,5 +1,5 @@
 // Module ID: 8361
-// Function ID: 66647
+// Function ID: 66658
 // Name: EditGuildEventModalNavbar
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ header: { intl: "Next", it: null, surrogates: null, T: null, IconComponent: null }, headerTitle: { "Bool(true)": false, "Bool(false)": false }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ header: { duration: 18058521, channel: 302139792, jsx: 302191137, pos: 1153585443, Icon: 1139 }, headerTitle: { "Bool(true)": "<string:1499136004>", "Bool(true)": "<string:2515402753>" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx");
 
@@ -20,9 +20,9 @@ export default function EditGuildEventModalNavbar(screen) {
   screen = screen.screen;
   const tmp = callback4();
   if (arg1(dependencyMap[5]).EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
-    let items = [false, false];
+    let items = [1072117559, 369];
   } else if (arg1(dependencyMap[5]).EditGuildEventScreens.DETAILS === screen) {
-    items = [];
+    items = ["Set", "ml"];
   } else if (arg1(dependencyMap[5]).EditGuildEventScreens.PREVIEW === screen) {
     items = [];
   } else {
@@ -33,7 +33,7 @@ export default function EditGuildEventModalNavbar(screen) {
   obj = { top: true, style: tmp.header };
   obj = { style: tmp.buttonContainer };
   const items1 = [callback2(View, obj), , ];
-  const obj1 = { "Null": 160961306817940700000000000000000000, "Null": 0.00000000605360159482843, "Null": 1315312532608515200000000000, style: tmp.headerTitle };
+  const obj1 = { delete: true, dispatch: true, raw: true, style: tmp.headerTitle };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.format(arg1(dependencyMap[9]).t.42HaFY, { step: tmp8, total: tmp9 });
   items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);

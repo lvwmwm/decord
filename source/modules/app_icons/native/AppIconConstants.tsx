@@ -1,10 +1,10 @@
-// Module ID: 7954
-// Function ID: 63461
+// Module ID: 7955
+// Function ID: 63474
 // Name: getDefaultIcon
 // Dependencies: []
 // Exports: getIconById
 
-// Module 7954 (getDefaultIcon)
+// Module 7955 (getDefaultIcon)
 function getDefaultIcon() {
   const obj = { id: require(dependencyMap[0]).FreemiumAppIconIds.DEFAULT, iconSource: importDefault(dependencyMap[1]) };
   const intl = require(dependencyMap[2]).intl;

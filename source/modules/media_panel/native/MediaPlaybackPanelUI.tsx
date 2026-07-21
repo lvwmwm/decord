@@ -1,10 +1,10 @@
-// Module ID: 15770
-// Function ID: 120557
+// Module ID: 15774
+// Function ID: 120601
 // Name: MediaPlaybackPanelUI
 // Dependencies: []
 // Exports: default
 
-// Module 15770 (MediaPlaybackPanelUI)
+// Module 15774 (MediaPlaybackPanelUI)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const useContext = arg1(dependencyMap[1]).useContext;
@@ -15,7 +15,7 @@ const BORDER_RADIUS_PHYSICS = arg1(dependencyMap[5]).BORDER_RADIUS_PHYSICS;
 const jsx = arg1(dependencyMap[6]).jsx;
 let obj = arg1(dependencyMap[7]);
 obj = { wrapperAnimationPresets: { opacity: 0 }, wrapper: {} };
-obj = { getDismissedRecurringDismissibleContentState: "whitespace", STUDENT_PROMPT: "class", 0: "[ \\t\\n\\r]", 0: "[ \\t\\n\\r]", 0: "other", 755916560016: "optionalWhitespace", 0: "class", borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
+obj = { 9223372036854775807: "whitespace", 0: "class", 0: "[ \\t\\n\\r]", 1477748419870721: "[ \\t\\n\\r]", 0: "other", 0: "optionalWhitespace", "Null": "class", borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
 obj.mask = obj;
 const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW_HOVER);
 obj.maskElevation = {};
@@ -49,7 +49,9 @@ export default function MediaPlaybackPanelUI() {
   ({ wrapperDimensions, wrapperOffset } = useContext(importDefault(dependencyMap[11])));
   let obj = arg1(dependencyMap[12]);
   const fn = function p() {
-    return { width: tmp2.width, height: tmp2.height };
+    const obj = { startJSSelfProfile: "[0-9]", EPHEMERAL_SUCCESS: "[0-9]", hmv: "class", ms: "[0-9a-f]i", y: "[0-9a-f]i", yM: "literal" };
+    ({ width: obj.width, height: obj.height } = tmp2);
+    return obj;
   };
   fn.__closure = { windowDimensions: tmp2 };
   fn.__workletHash = 5768037716653;
@@ -85,10 +87,10 @@ export default function MediaPlaybackPanelUI() {
       if (!obj.cheapWorkletShallowEqual(mode, tmp)) {
         mode = mode.mode;
         if (canShowPIP.PIP === mode) {
-          ({ width, height } = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 });
+          ({ width, height } = mode.canShowPIP ? {} : { "Null": -536870861, "Null": -299892737 });
           obj = { width, height };
           safeAreaState2(tmp[14])(mode, obj);
-          const tmp5 = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 };
+          const tmp5 = mode.canShowPIP ? {} : { "Null": -536870861, "Null": -299892737 };
         } else if (canShowPIP.DISMISSED === mode) {
           obj = { y: tmp2.height };
           safeAreaState2(tmp[14])(safeAreaState2, obj);
@@ -347,10 +349,10 @@ export default function MediaPlaybackPanelUI() {
       if (!obj.cheapWorkletShallowEqual(mode, tmp)) {
         mode = mode.mode;
         if (canShowPIP.PIP === mode) {
-          ({ width, height } = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 });
+          ({ width, height } = mode.canShowPIP ? {} : { "Null": -536870861, "Null": -299892737 });
           obj = { width, height };
           safeAreaState2(tmp[14])(mode, obj);
-          const tmp5 = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 };
+          const tmp5 = mode.canShowPIP ? {} : { "Null": -536870861, "Null": -299892737 };
         } else if (canShowPIP.DISMISSED === mode) {
           obj = { y: tmp2.height };
           safeAreaState2(tmp[14])(safeAreaState2, obj);

@@ -1,14 +1,15 @@
 // Module ID: 9937
-// Function ID: 76865
+// Function ID: 76876
 // Name: useEmojisForReactionRow
 // Dependencies: [0, 0, 0, 0, 4294967295, 0]
 // Exports: useEmojisForReactionRow
 
 // Module 9937 (useEmojisForReactionRow)
-import __exportStarResult1 from "__exportStarResult1";
-import { EmojiIntention } from "__exportStarResult1";
+import closure_3 from "result";
+import { EmojiIntention } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");
+result = result.fileFinishedImporting("modules/reactions/native/useEmojisForReactionRow.tsx");
 
 export const useEmojisForReactionRow = function useEmojisForReactionRow(channel, bound, arg2) {
   bound = channel;

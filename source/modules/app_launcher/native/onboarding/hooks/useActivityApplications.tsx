@@ -1,5 +1,5 @@
 // Module ID: 11147
-// Function ID: 86669
+// Function ID: 86681
 // Name: useActivityApplications
 // Dependencies: []
 // Exports: useActivityApplications

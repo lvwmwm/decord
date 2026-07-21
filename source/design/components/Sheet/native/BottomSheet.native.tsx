@@ -1,9 +1,9 @@
-// Module ID: 4963
-// Function ID: 42638
+// Module ID: 4962
+// Function ID: 42645
 // Name: Background
 // Dependencies: []
 
-// Module 4963 (Background)
+// Module 4962 (Background)
 let Platform;
 function Background(arg0) {
   const merged = Object.assign(arg0);
@@ -36,7 +36,7 @@ let closure_18 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
   obj = { overflow: "hidden", borderTopLeftRadius: closure_13, borderTopRightRadius: closure_13, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj.background = obj;
-  obj.wrapper = {};
+  obj.wrapper = { <string:1660689751>: null, <string:5332066>: null };
   obj = { overflow: "hidden", marginTop: closure_11, marginHorizontal: closure_11, borderTopLeftRadius: closure_12, borderTopRightRadius: closure_12, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj.wrapperWithBorder = obj;
   const obj1 = {};
@@ -172,7 +172,7 @@ let closure_20 = importAllResult.forwardRef((windowDimensions) => {
   const onExpand = windowDimensions.onExpand;
   const dependencyMap = onExpand;
   const borderGradient = windowDimensions.borderGradient;
-  let obj = {};
+  let obj = { "Bool(false)": "formatToPlainString", "Bool(false)": "accessibilityRole", "Bool(false)": "justifyContent", "Bool(false)": "kind", "Bool(false)": "construct", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "Array", "Bool(false)": "construct" };
   ({ wrapperStyle, children, extraContent } = windowDimensions);
   Object.setPrototypeOf(null);
   const merged = Object.assign(windowDimensions, obj);
@@ -288,7 +288,7 @@ const forwardRefResult = importAllResult.forwardRef((scrollable) => {
   const onExpand = scrollable.onExpand;
   const onDismiss = scrollable.onDismiss;
   ({ borderGradient, showGradient } = scrollable);
-  let obj = {};
+  let obj = { pointerEvents: true, generateChannelStageSection: true, headerCenterContainer: true, EXPERT: true, fgClip: true, pendingDisposal: true, playstationVersion: true, handleToggleMuteChannel: true, videoStopped: true, diamond_shape_with_a_dot_inside: true, utf8ToBytes: true, analyticsData: true, rowGap: true, containerSize: true, remoteVideoSsrcs: true, GameDiversityTier2LargeBadge: true, LIVE_ACTIVITY_SETTINGS_UPDATED: true, marginStart: true, NUX_REVEAL_DURATION_MS: true, useTopCommands: true, GameDiversityTier4SmallBadge: true, VENMO_CANCELED: true, flexGrow: true };
   ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, extraContent, contentHeight } = scrollable);
   Object.setPrototypeOf(null);
   const merged = Object.assign(scrollable, obj);

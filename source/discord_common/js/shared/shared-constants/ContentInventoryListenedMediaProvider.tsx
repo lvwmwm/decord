@@ -1,9 +1,9 @@
-// Module ID: 8306
-// Function ID: 65749
+// Module ID: 8307
+// Function ID: 65762
 // Name: ContentInventoryListenedMediaProvider
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8306 (ContentInventoryListenedMediaProvider)
+// Module 8307 (ContentInventoryListenedMediaProvider)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryListenedMediaProvider.tsx");
 

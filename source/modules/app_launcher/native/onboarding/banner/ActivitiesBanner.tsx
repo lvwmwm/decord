@@ -1,5 +1,5 @@
 // Module ID: 11158
-// Function ID: 86757
+// Function ID: 86769
 // Name: ActivitiesBanner
 // Dependencies: []
 // Exports: default

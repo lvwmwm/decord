@@ -1,5 +1,5 @@
 // Module ID: 11980
-// Function ID: 92604
+// Function ID: 92616
 // Name: calculateTotalGaps
 // Dependencies: []
 // Exports: default

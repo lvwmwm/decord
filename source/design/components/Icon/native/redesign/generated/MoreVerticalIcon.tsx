@@ -1,5 +1,5 @@
 // Module ID: 12120
-// Function ID: 93347
+// Function ID: 93359
 // Name: MoreVerticalIcon
 // Dependencies: []
 // Exports: MoreVerticalIcon

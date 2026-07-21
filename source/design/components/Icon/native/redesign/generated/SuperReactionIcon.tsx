@@ -1,10 +1,10 @@
-// Module ID: 8002
-// Function ID: 63572
+// Module ID: 8003
+// Function ID: 63585
 // Name: SuperReactionIcon
 // Dependencies: []
 // Exports: SuperReactionIcon
 
-// Module 8002 (SuperReactionIcon)
+// Module 8003 (SuperReactionIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SuperReactionIcon.tsx");

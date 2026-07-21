@@ -1,5 +1,5 @@
 // Module ID: 8929
-// Function ID: 70395
+// Function ID: 70406
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
@@ -48,7 +48,7 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, {});
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
       },
       render() {
         return callback2(callback(closure_2[10]), {});
@@ -59,7 +59,7 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": false, "Null": false });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { bottom: null, flexDirection: null });
       },
       render(arg0) {
         let callbackCode;

@@ -1,5 +1,5 @@
 // Module ID: 11618
-// Function ID: 90212
+// Function ID: 90224
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -172,7 +172,7 @@ let tmp3 = (Store) => {
     key: "getMessageRequestPreview",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { marginTop: "o", marginRight: "ao", borderColor: "lj" };
+        closure_10[arg0] = { 1451512429: "ERROR", 1399185011: "SETTINGS_AGE_GROUP_RESET_ALERT_ID", -78206406: "IS_QUEST_RELEASE" };
       }
       return closure_10[arg0];
     }
@@ -244,7 +244,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   },
   MESSAGE_DELETE: function handleMessageDelete(channelId) {
     if (isMessagePreviewEnabledForChannel(channelId.channelId)) {
-      closure_10[channelId.channelId] = { marginTop: true, marginRight: true, borderColor: null };
+      closure_10[channelId.channelId] = { 1451512429: null, 1399185011: null, -78206406: null };
     } else {
       return false;
     }

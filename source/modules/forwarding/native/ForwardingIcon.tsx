@@ -1,5 +1,5 @@
 // Module ID: 9872
-// Function ID: 76441
+// Function ID: 76452
 // Name: ForwardingIcon
 // Dependencies: []
 // Exports: default

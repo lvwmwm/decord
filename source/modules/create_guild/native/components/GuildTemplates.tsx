@@ -1,5 +1,5 @@
 // Module ID: 11728
-// Function ID: 91085
+// Function ID: 91097
 // Name: GuildTemplatesHeader
 // Dependencies: []
 // Exports: default
@@ -8,7 +8,7 @@
 function GuildTemplatesHeader() {
   const tmp = callback5();
   let obj = { style: tmp.headerContainer };
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerTitle };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerTitle };
   const intl = arg1(dependencyMap[11]).intl;
   obj.children = intl.string(arg1(dependencyMap[11]).t.5HZu07);
   const items = [callback3(arg1(dependencyMap[10]).Text, obj), ];
@@ -43,7 +43,7 @@ function GuildTemplatesJoinFooter(trigger) {
   };
   const items1 = [tmp.footerSafeAreaContainer, { paddingBottom: importDefault(closure_2[13])().bottom }];
   obj = { style: tmp.footerContainer };
-  const obj1 = { "Null": true, "Null": true, "Null": true, style: tmp.footerTitle };
+  const obj1 = { delete: true, dispatch: true, raw: true, style: tmp.footerTitle };
   const intl3 = arg1(closure_2[11]).intl;
   obj1.children = intl3.string(arg1(closure_2[11]).t.N+Mi/U);
   const items2 = [callback3(arg1(closure_2[10]).Text, obj1), ];
@@ -103,15 +103,15 @@ const tmp6 = arg1(dependencyMap[6]);
 obj.scrollContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.sections = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING, gap: 24 };
-obj.headerContainer = { gestureId: "not_verified", handlerTag: "gr", shouldCancelWhenOutside: null, shouldActivateOnStart: "Group 8" };
-obj.headerTitle = { collapsable: "absolute", preventClipping: 0 };
-obj.headerDescription = { "Bool(false)": null, "Bool(false)": null };
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING, gap: 24 };
-obj.footerSafeAreaContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.headerContainer = { "Null": "not_verified", "Null": "gr", "Null": null, "Null": "Group 8" };
+obj.headerTitle = {};
+obj.headerDescription = { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" };
+const obj3 = { grinning_face: "Array", smiley: "isArray", smile: "max", grin: "names", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.footerSafeAreaContainer = obj3;
 obj.footerContainer = {};
-obj.footerTitle = { "Bool(false)": null, "Bool(false)": null };
+obj.footerTitle = { body: null, ctaLabel: null };
 let closure_16 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING, gap: 24 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/create_guild/native/components/GuildTemplates.tsx");
 
 export default function GuildTemplates(trigger) {

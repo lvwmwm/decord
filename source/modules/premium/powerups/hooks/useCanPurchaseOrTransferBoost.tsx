@@ -1,5 +1,5 @@
 // Module ID: 11526
-// Function ID: 89790
+// Function ID: 89802
 // Name: useCanPurchaseOrTransferBoost
 // Dependencies: []
 // Exports: default

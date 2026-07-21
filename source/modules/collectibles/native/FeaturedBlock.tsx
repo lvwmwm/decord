@@ -1,10 +1,10 @@
-// Module ID: 14367
-// Function ID: 108462
+// Module ID: 14370
+// Function ID: 108494
 // Name: Subblocks
 // Dependencies: []
 // Exports: default
 
-// Module 14367 (Subblocks)
+// Module 14370 (Subblocks)
 function Subblocks(style) {
   const arg1 = style.style;
   const subblocks = style.featuredBlock.subblocks;

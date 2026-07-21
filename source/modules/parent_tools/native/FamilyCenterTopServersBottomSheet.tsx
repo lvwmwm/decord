@@ -1,10 +1,10 @@
-// Module ID: 13678
-// Function ID: 103542
+// Module ID: 13680
+// Function ID: 103564
 // Name: GuildRow
 // Dependencies: []
 // Exports: default
 
-// Module 13678 (GuildRow)
+// Module 13680 (GuildRow)
 function GuildRow(guildActivity) {
   guildActivity = guildActivity.guildActivity;
   const arg1 = guildActivity;

@@ -1,5 +1,5 @@
 // Module ID: 11011
-// Function ID: 85665
+// Function ID: 85676
 // Name: useUserIsConsideredAdult
 // Dependencies: []
 // Exports: default

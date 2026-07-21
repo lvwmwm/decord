@@ -1,5 +1,5 @@
 // Module ID: 9622
-// Function ID: 74923
+// Function ID: 74934
 // Dependencies: []
 
 // Module 9622
@@ -15,13 +15,13 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.listPlaceholder = obj;
-obj1 = { psnrHistogram: "a364dc7a784101f7c8f6791c7b4514ce", articleLink: "back-icon", backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.section = obj1;
 const tmp3 = arg1(dependencyMap[6]);
 obj.sectionSticker = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj3 = { -1503539145: "isArray", -1939774972: "key", 1637878865: "Array", -1530047340: "LIGHT", -1610218492: "limit", -698265966: "limit", borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL };
+const obj3 = { height: "isArray", right: "key", position: "Array", height: "LIGHT", width: "limit", right: "limit", borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL };
 obj.nsfwContainer = obj3;
-obj.nsfwText = {};
+obj.nsfwText = { paddingHorizontal: null, paddingVertical: 1 };
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = importAllResult.memo((height) => {
   const tmp = callback4();
@@ -29,7 +29,7 @@ let closure_14 = importAllResult.memo((height) => {
   const items = [tmp.nsfwContainer, { height: height.height }];
   obj = { source: importDefault(dependencyMap[10]), size: arg1(dependencyMap[9]).Icon.Sizes.SMALL };
   const items1 = [callback2(arg1(dependencyMap[9]).Icon, obj), ];
-  obj = { style: tmp.nsfwText };
+  obj = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001191393554252316, dispatch: 557056.0015292466, raw: 1112527108802911800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.nsfwText };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.uy25Qz);
   items1[1] = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -135,7 +135,7 @@ const memoResult = importAllResult.memo((bottomSheetRef) => {
         index.scrollTo = setTimeout(() => {
           const current = ref.current;
           if (null != current) {
-            const obj = { "Bool(false)": 1000, "Bool(false)": 600000, "Bool(false)": "MESSAGE_CREATE", section: index };
+            const obj = { 0: null, 0: "info", 9223372036854775807: "/", section: index };
             current.scrollToLocation(obj);
           }
           callback(null);

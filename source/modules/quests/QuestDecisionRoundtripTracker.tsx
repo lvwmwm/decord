@@ -1,5 +1,5 @@
 // Module ID: 9445
-// Function ID: 73592
+// Function ID: 73603
 // Name: trackRoundtrip
 // Dependencies: []
 
@@ -93,7 +93,7 @@ let tmp2 = () => {
           }
         }
       }
-      obj = { <string:1451975084>: 49365248, <string:2866586311>: 49363456, <string:2895768266>: 49364224, <string:2832575607>: 35541248, <string:294061139>: 372, <string:1378223408>: 6144, initialSendTimestamp: Date.now(), endpoint, callerSource, previousAdDecision: tmp2, placement: tmp };
+      obj = { <string:1386035793>: "<string:3611820033>", <string:3476809595>: "<string:3338666764>", <string:1435604050>: "<string:3321889412>", <string:1536639238>: "<string:1342177789>", <string:2840920068>: "<string:2046820995>", <string:1973533079>: "<string:3607102032>", initialSendTimestamp: Date.now(), endpoint, callerSource, previousAdDecision: tmp2, placement: tmp };
       const pendingRequests = this.pendingRequests;
       const result = pendingRequests.set(endpoint, obj);
       const timerId = setTimeout(() => {

@@ -1,5 +1,5 @@
 // Module ID: 8677
-// Function ID: 68718
+// Function ID: 68729
 // Name: shouldFetchStorefrontPromotions
 // Dependencies: []
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride

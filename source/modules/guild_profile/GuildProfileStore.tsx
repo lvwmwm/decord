@@ -1,5 +1,5 @@
 // Module ID: 8410
-// Function ID: 66976
+// Function ID: 66987
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -80,7 +80,7 @@ const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 const map = new Map();
 const map1 = new Map();
-obj = { "Bool(false)": 49365248, "Bool(false)": 49363456, "Bool(false)": 49364224, "Bool(false)": 35541248, "Bool(false)": 372, "Bool(false)": 6144 };
+obj = { flex: "<string:3611820033>", op: "<string:3338666764>", String: "<string:3321889412>", then: "<string:1342177789>", mn: "<string:2046820995>", bottom: "<string:3607102032>" };
 obj.fetchStatus = obj.NOT_FETCHED;
 let tmp4 = (Store) => {
   class GuildProfileStore {

@@ -1,16 +1,16 @@
-// Module ID: 14382
-// Function ID: 108528
+// Module ID: 14385
+// Function ID: 108560
 // Name: onRenderFirstOrbsItem
 // Dependencies: []
 // Exports: default
 
-// Module 14382 (onRenderFirstOrbsItem)
+// Module 14385 (onRenderFirstOrbsItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).CollectiblesMobileShopScreen;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { marginVertical: 10388343592192675000000000000000000, marginHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: {} });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopOrbsPage.tsx");
 

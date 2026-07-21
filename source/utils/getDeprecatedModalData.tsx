@@ -1,5 +1,5 @@
 // Module ID: 4335
-// Function ID: 38256
+// Function ID: 38264
 // Name: getDeprecatedModalData
 // Dependencies: []
 // Exports: default

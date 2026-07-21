@@ -1,10 +1,10 @@
-// Module ID: 15100
-// Function ID: 113877
+// Module ID: 15103
+// Function ID: 113911
 // Name: onAddReaction
 // Dependencies: []
 // Exports: default
 
-// Module 15100 (onAddReaction)
+// Module 15103 (onAddReaction)
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
     let obj = id2(dependencyMap[10]);
@@ -43,7 +43,7 @@ function useThread(id) {
       }
       return obj;
     }
-    obj = { position: "decimal-pad", top: "number-pad", zIndex: "phone-pad" };
+    obj = { display: "decimal-pad", marginBottom: "number-pad", padding: "phone-pad" };
   });
   ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
   if (null != id) {
@@ -85,9 +85,9 @@ function AddEmojiButton(channel) {
   const tmp = callback4();
   const items = [channel, onPressEmoji, handleItemInteracted];
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction_picker", {});
+    handleItemInteracted("press_reaction_picker", { <string:2204214729>: null, <string:1672982865>: 0, <string:1370399429>: false, <string:3949021540>: "swf" });
     let obj = channel(handleItemInteracted[19]);
-    obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", pickerIntention: constants.REACTION, onPressEmoji, channel };
+    obj = { flex: "absolute", height: -1, overflow: -1, pickerIntention: constants.REACTION, onPressEmoji, channel };
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
@@ -110,7 +110,7 @@ function AddEmojiButton(channel) {
   obj.disabled = disabled;
   const items2 = [callback2(arg1(dependencyMap[22]).ReactionIcon, { size: "sm" }), ];
   if (showText) {
-    obj = {};
+    obj = { hasMaxConnections: "Show debug log overlay in collectibles shop", isBoostOnlySubscription: "shop_show_debug_overlay" };
     const intl2 = arg1(dependencyMap[21]).intl;
     obj.children = intl2.string(arg1(dependencyMap[21]).t.m9O1gd);
     showText = callback2(arg1(dependencyMap[23]).Text, obj);
@@ -204,7 +204,7 @@ function EmojiReaction(count) {
     return tmp;
   }, items1);
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction", { "Bool(false)": null, "Bool(false)": "<string:29819335>", "Bool(false)": "<string:35914276>", "Bool(false)": "<string:35914276>" });
+    handleItemInteracted("press_reaction", { <string:2204214729>: "isArray", <string:1672982865>: "LIGHT", <string:1370399429>: "channelId", <string:3949021540>: "channelId" });
     const result = messageId(reaction[27]).handleAddOrRemoveReaction(messageId, channel, reaction, isBurstReaction, messageId(reaction[11]).ReactionLocations.MESSAGE);
   }, items2);
   const obj1 = {};
@@ -322,7 +322,7 @@ function ThreadAsCommentsButton(parentMessage) {
   const items1 = [parentMessage, threadData.thread, handleItemInteracted];
   const stateFromStores = obj.useStateFromStores(items, () => closure_11.canWithPartialContext(constants.VIEW_CHANNEL, { channelId: parentMessage.id }));
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_comments", { "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 150 });
+    handleItemInteracted("press_comments", { <string:2204214729>: true, <string:1672982865>: "background-brand", <string:1370399429>: "caught_up", <string:3949021540>: "caught_up" });
     let tmp2 = null != parentMessage;
     if (tmp2) {
       tmp2 = null != threadData.thread;
@@ -382,16 +382,16 @@ const tmp3 = arg1(dependencyMap[7]);
 let closure_19 = 20;
 const tmp4 = arg1(dependencyMap[9]);
 let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
-  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: { 9223372036854775807: "caught_up", 0: "caught_up", 9223372036854775807: "press", 0: "back_to_home_button", 9223372036854775807: "navigate" }, emojisContainer: { 9223372036854775807: "caught_up", 0: "caught_up", 9223372036854775807: "press", 0: "back_to_home_button", 9223372036854775807: "navigate" } };
-  obj = { paddingVertical: true, paddingHorizontal: true, flexGrow: true, display: true, alignContent: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: {}, emojisContainer: {} };
+  obj = { "Null": "Array", "Null": "isArray", "Null": "padding", "Null": "Boolean", "Null": "Array", "Null": "isArray", backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.emojiContainer = obj;
   obj.innerEmojiContainer = { paddingVertical: 5 };
   obj.selectedInnerEmojiContainer = { paddingVertical: 4 };
-  obj.addEmojiContainer = { kkvDatabase: "Array", GuildIncidentAlertTypes: "container" };
+  obj.addEmojiContainer = { "Bool(false)": 5, "Bool(false)": "center" };
   obj.disabled = { opacity: 0.4 };
   obj = { width: closure_19, height: closure_19 };
   obj.defaultEmoji = obj;
-  const obj1 = { "Bool(false)": 13, "Bool(false)": 0.652, "Bool(false)": 0, "Bool(false)": 183.333 };
+  const obj1 = { paddingVertical: 13, paddingHorizontal: 0.652, flexGrow: 0, justifyContent: 183.333 };
   let obj4 = arg1(dependencyMap[14]);
   let num = 16;
   if (!obj4.isAndroid()) {
@@ -400,16 +400,16 @@ let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
   obj1.lineHeight = num;
   obj.emojiText = obj1;
   obj.selectedInnerTextContainer = { paddingBottom: 3.5 };
-  obj.innerTextContainer = { "Bool(true)": true, "Bool(true)": true };
+  obj.innerTextContainer = {};
   obj.emojiImage = { resizeMode: "contain", width: closure_19, height: closure_19 };
   const obj3 = { borderColor: importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_560, backgroundColor: arg1(dependencyMap[15]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_500, 0.3) };
   obj.selected = obj3;
-  obj.gradient = { "Bool(false)": "text-xs/normal", "Bool(false)": "text-muted", "Bool(false)": "press", "Bool(false)": "item_body", "Bool(false)": "navigate" };
-  obj.overflowChevron = {};
-  obj4 = { "Null": 1913716740, "Null": 6, "Null": 25, "Null": -520142591, "Null": 1913716740, "Null": 6, "Null": 26, "Null": -742637311, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  obj.gradient = { a: "<string:1376306053>", s: "<string:1153565118>", d: "<string:2873114881>", f: "<string:24248321>", h: "<string:16777216>" };
+  obj.overflowChevron = { "Null": null, "Null": null };
+  obj4 = { textInputStyle: true, label: true, error: true, value: true, hint: true, onChangeText: true, alpha2: true, countryCode: true, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.comments = obj4;
-  obj.commentCount = { <string:3798027838>: "<string:3310487818>", <string:1627573841>: "<string:21335297>", <string:3151386190>: "<string:27999297>", <string:45572556>: "findCompatibleConfig", <string:1435107624>: "gawron" };
-  const obj5 = { bhk: false, bic: "internal", tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.commentCount = {};
+  const obj5 = { "Null": 0, "Null": -1048576, tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.commentsIcon = obj5;
   return obj;
 });
@@ -531,19 +531,19 @@ export default function ICYMICardInteractionRow(message) {
   const items5 = [channel.id, message.id, callback];
   const items6 = [message, callback];
   const callback1 = React.useCallback((arg0, arg1) => {
-    callback("press_reaction", { "Bool(false)": "FOREST", "Bool(false)": "FOREST", "Bool(false)": "FOREST", "Bool(false)": "FOREST" });
+    callback("press_reaction", {});
     callback2(channel.id, message.id, arg0, arg1);
   }, items5);
   const items7 = [channel, message, callback];
   const callback2 = React.useCallback(() => {
-    callback("press_forward", { "Bool(false)": 1, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": "text-md/semibold" });
+    callback("press_forward", {});
     let obj = message(flag[38]);
     obj = { message, source: "icymi-tab" };
     obj.openForwardModal(obj);
   }, items6);
   const items8 = [str, flag2];
   const callback3 = React.useCallback(() => {
-    callback("press_reply", { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003066947222, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030094435446650105, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018515802956537097, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005576537114386722 });
+    callback("press_reply", { <string:2204214729>: true, <string:1672982865>: true, <string:1370399429>: true, <string:3949021540>: true });
     let obj = message(flag[32]);
     obj.navigateToPost(channel.id, channel.guild_id, message.id);
     obj = { channel, message, shouldMention: true, showMentionToggle: true };
@@ -646,7 +646,7 @@ export default function ICYMICardInteractionRow(message) {
           obj11.colors = items14;
           obj11.locations = [];
           const items15 = [callback2(tmp47, obj11), ];
-          const obj12 = { -318614188: "png", 1020595765: "absolute", 1406296506: -3 };
+          const obj12 = {};
           const items16 = [tmp.overflowChevron];
           obj12.style = items16;
           items15[1] = callback2(arg1(dependencyMap[43]).ChevronSmallRightIcon, obj12);

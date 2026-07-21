@@ -1,7 +1,7 @@
 // Module ID: 8820
-// Function ID: 69536
+// Function ID: 69547
 // Name: FastestListPropsPlaceholderType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8820 (FastestListPropsPlaceholderType)
 const _module = require(dependencyMap[0]);

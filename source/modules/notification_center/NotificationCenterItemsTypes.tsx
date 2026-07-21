@@ -1,9 +1,9 @@
-// Module ID: 6877
-// Function ID: 54550
+// Module ID: 6878
+// Function ID: 54562
 // Name: NotificationCenterScenes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6877 (NotificationCenterScenes)
+// Module 6878 (NotificationCenterScenes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 10684
-// Function ID: 83268
+// Function ID: 83279
 // Name: canUseStreamSetting
 // Dependencies: []
 // Exports: default

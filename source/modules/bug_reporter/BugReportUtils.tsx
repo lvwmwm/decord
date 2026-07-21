@@ -1,5 +1,5 @@
 // Module ID: 10309
-// Function ID: 79583
+// Function ID: 79594
 // Name: _fetchBugReportConfig
 // Dependencies: []
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport

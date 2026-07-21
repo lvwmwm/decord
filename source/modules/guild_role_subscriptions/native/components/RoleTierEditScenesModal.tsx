@@ -1,10 +1,10 @@
-// Module ID: 16304
-// Function ID: 125803
+// Module ID: 16312
+// Function ID: 125864
 // Name: getComponentPropsForScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16304 (getComponentPropsForScreen)
+// Module 16312 (getComponentPropsForScreen)
 function getComponentPropsForScreen(arg0, arg1, arg2) {
   let obj = arg1[arg0];
   let runtimeProps;

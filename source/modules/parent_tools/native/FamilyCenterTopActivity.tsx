@@ -1,10 +1,10 @@
-// Module ID: 13676
-// Function ID: 103530
+// Module ID: 13678
+// Function ID: 103552
 // Name: FamilyCenterTopActivity
 // Dependencies: []
 // Exports: default
 
-// Module 13676 (FamilyCenterTopActivity)
+// Module 13678 (FamilyCenterTopActivity)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,12 +12,12 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { Symbol: 285213929, justifyContent: 815361, Icon: -1974403072, gap: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { 979464370: true, 1637975633: true, 50352554: true, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
 obj.section = { flex: 1 };
-const obj1 = { 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022559825253774328, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007368407965079233, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008445259851458672, 0: 0.0000000000000000000000000000000000000000017043292696008577, gap: importDefault(dependencyMap[6]).space.PX_4, paddingTop: importDefault(dependencyMap[6]).space.PX_12, paddingBottom: importDefault(dependencyMap[6]).space.PX_12 };
+const obj1 = { 0: "row", 9223372036854775807: "center", 0: "cryptorFailureBeforeSuccessCount", 0: "ay", gap: importDefault(dependencyMap[6]).space.PX_4, paddingTop: importDefault(dependencyMap[6]).space.PX_12, paddingBottom: importDefault(dependencyMap[6]).space.PX_12 };
 obj.avatarList = obj1;
-obj.touchableHitBox = { "Null": "<string:27999297>", "Null": "<string:1166889216>" };
+obj.touchableHitBox = {};
 const tmp2 = arg1(dependencyMap[4]);
 obj.guildAvatar = { borderRadius: importDefault(dependencyMap[6]).radii.md, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
 obj.guildAvatarText = { fontSize: 12 };

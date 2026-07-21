@@ -1,5 +1,5 @@
 // Module ID: 9079
-// Function ID: 71158
+// Function ID: 71169
 // Name: ActivityEmoji
 // Dependencies: []
 // Exports: default
@@ -7,7 +7,7 @@
 // Module 9079 (ActivityEmoji)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_5 = arg1(dependencyMap[2]).createStyles({ emoji: {}, text: {} });
+let closure_5 = arg1(dependencyMap[2]).createStyles({ emoji: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, text: {} });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
 

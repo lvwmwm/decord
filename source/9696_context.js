@@ -1,5 +1,5 @@
 // Module ID: 9696
-// Function ID: 75395
+// Function ID: 75406
 // Name: context
 // Dependencies: []
 // Exports: GlobalStateProvider, useGlobalState
@@ -18,7 +18,7 @@ export const GlobalStateProvider = function GlobalStateProvider(arg0) {
   let value;
   ({ children, value } = arg0);
   let obj = arg1(dependencyMap[3]);
-  const sharedValue = obj.useSharedValue({ bhk: -536870861, bic: -299892737 });
+  const sharedValue = obj.useSharedValue({ "Null": -536870861, "Null": -299892737 });
   const arg1 = sharedValue;
   const sharedValue1 = arg1(dependencyMap[3]).useSharedValue({});
   const dependencyMap = sharedValue1;

@@ -77,12 +77,12 @@ function createLayoutAnimation(duration, easeInEaseOut, opacity) {
   return obj;
 }
 let closure_4 = importAll(dependencyMap[0]).isLayoutAnimationEnabled();
-let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: { <string:2639332418>: null, <string:3891880573>: null }, update: { duration: null, useNativeDriver: null }, delete: { <string:2639332418>: null, <string:3891880573>: null } } };
+let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: { animated: true, variant: true }, update: { useNativeDriver: true, interactionStart: true }, delete: { animated: true, variant: true } } };
 obj = {
   configureNext,
   create: createLayoutAnimation,
-  Types: Object.freeze({ flexDirection: "sr-ME", alignSelf: "kw", height: "co", backgroundColor: "pij", alignItems: "quh", justifyContent: "cr" }),
-  Properties: Object.freeze({ borderRadius: 4632200380423486500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderStyle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014904360985116584, backgroundColor: 0.00000000000000000000000000000000000000000304923749242107, height: 1328170706020733300000 }),
+  Types: Object.freeze({ 0: "go", 9223372036854775807: "next", 9223372036854775807: "previous", 0: "search", 0: "send", -9223372036854775808: "postal-address-region" }),
+  Properties: Object.freeze({}),
   checkConfig() {
     console.error("LayoutAnimation.checkConfig(...) has been disabled.");
   },

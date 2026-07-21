@@ -1,5 +1,5 @@
 // Module ID: 11632
-// Function ID: 90286
+// Function ID: 90298
 // Name: MutualFriendRow
 // Dependencies: []
 // Exports: default
@@ -109,10 +109,10 @@ obj.loadingState = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, ali
 obj.emptyState = { alignItems: "center" };
 const obj1 = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, alignItems: "center" };
 obj.activityStatusText = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-const obj2 = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-obj.mutualGuildSubLabel = { gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4 };
+obj.mutualGuildSubLabel = obj3;
 let closure_11 = obj.createStyles(obj);
-const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
+const obj2 = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");
 
 export default function UserProfileMutualsActionSheet(user) {

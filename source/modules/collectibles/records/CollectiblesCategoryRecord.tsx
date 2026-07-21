@@ -1,9 +1,11 @@
 // Module ID: 6770
-// Function ID: 53287
+// Function ID: 53295
 // Name: _isNativeReflectConstruct
-// Dependencies: [3992977434, 3707764757, 1409286145, 369098759, 3154116608, 2080374788, 33554458, 1174405120, 194056, 112259, 174132, 114919]
+// Dependencies: [3992977434, 3707764757, 1409286145, 369098759, 3154116608, 2080374788, 33554458, 1912602624, 621, 2, 1654, 1792]
 
 // Module 6770 (_isNativeReflectConstruct)
+import forwardRef from "forwardRef";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -27,7 +29,9 @@ let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
-const tmp2 = (arg0) => {
+const result = forwardRef.fileFinishedImporting("modules/collectibles/records/CollectiblesCategoryRecord.tsx");
+
+export default (arg0) => {
   class CollectiblesCategoryRecord {
     constructor(arg0) {
       self = this;
@@ -83,7 +87,7 @@ const tmp2 = (arg0) => {
       let products;
       let unpublished_at;
       ({ products, unpublished_at } = arg0);
-      let obj = { "Bool(true)": -624361470, "Bool(true)": -1795686399, "Bool(true)": -668073983, "Bool(true)": 1230569473, "Bool(true)": 1194590210, "Bool(true)": 1143537666, "Bool(true)": 1062600706, "Bool(true)": -2090532862, "Bool(true)": 1143537665, "Bool(true)": 1205731330, "Bool(true)": 765722626, "Bool(true)": -1665728511, "Bool(true)": 1117257729, -9223372036854775808: 1237188610, 0: 1205141506, 0: -732102654, 1725646397713083: 1234042881 };
+      let obj = {};
       ({ hero_ranking, hero_logo_display_config, hero_banner_display_config, hero_banner_url, hero_banner_animated_url, hero_rive_url, hero_logo_url, catalog_banner_url, catalog_banner_animated_url, catalog_banner_rive_url, featured_block_url, logo_url, pdp_bg_url, mobile_banner_url, mobile_bg_url } = arg0);
       Object.setPrototypeOf(null);
       let tmp3 = CollectiblesCategoryRecord;
@@ -203,6 +207,3 @@ const tmp2 = (arg0) => {
   items[1] = obj;
   return callback(CollectiblesCategoryRecord, null, items);
 }(importDefault(dependencyMap[7]));
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/collectibles/records/CollectiblesCategoryRecord.tsx");
-
-export default tmp2;

@@ -1,5 +1,5 @@
 // Module ID: 10766
-// Function ID: 83660
+// Function ID: 83671
 // Name: _isGuestOrLurkerInGuild
 // Dependencies: []
 // Exports: default, isGuestOrLurkerInGuild

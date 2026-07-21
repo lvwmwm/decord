@@ -1,10 +1,10 @@
-// Module ID: 4695
-// Function ID: 40880
+// Module ID: 4694
+// Function ID: 40887
 // Name: calculateTargetDimensions
 // Dependencies: []
 // Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4695 (calculateTargetDimensions)
+// Module 4694 (calculateTargetDimensions)
 function calculateTargetDimensions(videoMetadata, targetResolution) {
   const result = videoMetadata.width / videoMetadata.height;
   if (videoMetadata.width > videoMetadata.height) {
@@ -86,7 +86,7 @@ tmp4.fromCompressionQuality = (arg0) => {
   }
   return VERY_HIGH;
 };
-const obj = { targetBitrate: tmp4.MEDIUM.targetBitrate, videoQuality: tmp4.MEDIUM };
+const obj = { "Bool(true)": 67389, "Bool(true)": 67389, "Bool(true)": 115, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": -1472052736, "Bool(true)": -1472069630, "Bool(false)": 659619842, "Bool(false)": 17191312, "Bool(false)": 1930502417, "Bool(false)": 3000, "Bool(false)": 15, "Bool(false)": 50, "Bool(false)": -428130047, "Bool(false)": 1714487300, targetBitrate: tmp4.MEDIUM.targetBitrate, videoQuality: tmp4.MEDIUM };
 const tmp43 = new tmp4("very_high", 1080, 7000000);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_uploads/native/VideoUploadUtils.tsx");
 
@@ -119,7 +119,7 @@ export const canSkipVideoTranscode = function canSkipVideoTranscode(result, vide
 export const logSourceMetadata = function logSourceMetadata(format) {
   let str = "unknown";
   if (null != format.format) {
-    format = { 1: null, 4096: null }[format.format];
+    format = { <string:3392952442>: null, <string:818946074>: null }[format.format];
     if (null == format) {
       format = format.format;
     }

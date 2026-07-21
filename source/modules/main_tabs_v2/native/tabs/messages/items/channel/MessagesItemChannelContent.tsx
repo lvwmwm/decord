@@ -1,9 +1,9 @@
-// Module ID: 14777
-// Function ID: 111381
+// Module ID: 14780
+// Function ID: 111415
 // Name: MessagesItemChannelContentIcon
 // Dependencies: []
 
-// Module 14777 (MessagesItemChannelContentIcon)
+// Module 14780 (MessagesItemChannelContentIcon)
 function MessagesItemChannelContentIcon(selected) {
   let blocked;
   let favorite;
@@ -48,14 +48,14 @@ const UnreadSetting = arg1(dependencyMap[4]).UnreadSetting;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
-let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: {}, channelIcons: {} };
-obj = { style: "<string:1602561>", statusStyle: "\u7228", onPress: "\u7228", marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
+let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: {}, channelIcons: { "Null": 7, "Null": 370 } };
+obj = { user: true, guildId: true, renderVideoDetails: true, marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
 obj.channelAccessoriesContainer = obj;
 obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
 obj.channelAccessories = obj1;
+const obj2 = { -9223372036854775808: null, 9223372036854775807: "d66ecc5b57601bd45d541b2c12ca7702", 0: "UserPlusIcon", 9223372036854775807: "png", -9223372036854775808: true, gap: importDefault(dependencyMap[7]).space.PX_4 };
+obj.channelNameAndBadge = obj2;
 const tmp2 = arg1(dependencyMap[5]);
-obj.channelNameAndBadge = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-const obj2 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.botTag = { marginRight: importDefault(dependencyMap[7]).space.PX_4 };
 const obj3 = { marginRight: importDefault(dependencyMap[7]).space.PX_4 };
 obj.contentPadded = { paddingRight: importDefault(dependencyMap[7]).space.PX_40 };
@@ -300,7 +300,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     } else {
       tmp67Result = null;
       if (importDefault(dependencyMap[19])(channel.id)) {
-        const obj18 = { keFvXM: "7", address-line1: "channel-row", guildId: "10", style: tmp7.channelText };
+        const obj18 = { isArray: "7", Button: "channel-row", textAlign: "10", style: tmp7.channelText };
         const intl = arg1(dependencyMap[33]).intl;
         obj18.children = intl.string(arg1(dependencyMap[33]).t.FL5T01);
         tmp67Result = callback(arg1(dependencyMap[27]).Text, obj18);

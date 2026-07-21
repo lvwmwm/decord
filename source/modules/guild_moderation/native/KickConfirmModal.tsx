@@ -1,5 +1,5 @@
 // Module ID: 10990
-// Function ID: 85521
+// Function ID: 85532
 // Name: KickConfirmModal
 // Dependencies: []
 // Exports: default

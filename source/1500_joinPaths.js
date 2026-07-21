@@ -1,5 +1,5 @@
 // Module ID: 1500
-// Function ID: 17276
+// Function ID: 17281
 // Name: joinPaths
 // Dependencies: []
 // Exports: default

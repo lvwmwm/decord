@@ -1,5 +1,5 @@
 // Module ID: 9952
-// Function ID: 76908
+// Function ID: 76919
 // Name: StampXIcon
 // Dependencies: []
 // Exports: StampXIcon

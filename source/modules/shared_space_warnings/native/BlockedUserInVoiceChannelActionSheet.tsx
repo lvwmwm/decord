@@ -1,10 +1,10 @@
-// Module ID: 12544
-// Function ID: 96389
+// Module ID: 12546
+// Function ID: 96411
 // Name: BlockedUserInVoiceChannelActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12544 (BlockedUserInVoiceChannelActionSheet)
+// Module 12546 (BlockedUserInVoiceChannelActionSheet)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -23,7 +23,7 @@ obj.container = obj;
 obj.headerImage = {};
 const tmp5 = arg1(dependencyMap[8]);
 obj.headerText = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-obj.centerText = { customStatusActivity: null, hasCustomProfileTheme: null };
+obj.centerText = { "Null": null, "Null": null };
 const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.buttonGroup = { paddingVertical: importDefault(dependencyMap[10]).space.PX_16, gap: 8 };
 let closure_15 = obj.createStyles(obj);
@@ -65,7 +65,7 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   const obj2 = { source: importDefault(dependencyMap[14]), style: tmp.headerImage };
   const items4 = [callback2(closure_3, obj2), , , ];
   const obj3 = { style: tmp.headerText };
-  const obj4 = { style: tmp.centerText };
+  const obj4 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, style: tmp.centerText };
   const intl4 = arg1(dependencyMap[12]).intl;
   obj4.children = intl4.string(arg1(dependencyMap[12]).t.1/gpFh);
   const items5 = [callback2(arg1(dependencyMap[15]).Text, obj4), ];
@@ -136,8 +136,6 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   obj12.text = intl7.string(arg1(dependencyMap[12]).t.Y56/oK);
   const items7 = [callback2(arg1(dependencyMap[21]).Button, obj12), ];
   const obj13 = {
-    key: "r",
-    onCloseCallback: "sectionIdsByBotId",
     onPress() {
       let obj = blockedUserId(stateFromStores[22]);
       obj.hideActionSheet();

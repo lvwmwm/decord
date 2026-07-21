@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 49 (getFabricUIManager)
-let closure_4 = ["top", "center", "bottom", "LZH", "accessibilityState", "allowFontScaling", "aria-busy", "aria-checked", "aria-disabled", "aria-expanded", "aria-label", "aria-selected", "flying_disc", "discarded_events", "updateEmoji", "INVITE_OPTIONS_30_DAYS", "EPOCH_AUTHENTICATOR_LENGTH", "shopLayoutUrlOverride", "onLongPressUsername", "fetchingConnections", "GIFT_BUTTON", "onPressIn", "onPressOut", "onResponderGrant"];
+let closure_4 = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
 arg5.getFabricUIManager = function getFabricUIManager() {
   let tmp = null == closure_3;
   if (tmp) {

@@ -1,5 +1,5 @@
 // Module ID: 1364
-// Function ID: 16340
+// Function ID: 16345
 // Name: PseudoMap
 // Dependencies: []
 
@@ -128,9 +128,7 @@ class PseudoMap {
   clear() {
     obj = Object.create(null);
     obj.size = 0;
-    obj = { FRIEND_REQUESTS: 60, ForYouLoadMore: 0, QUEST_BADGE: 0, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: 0 };
-    obj.value = obj;
-    definePropertyResult = Object.defineProperty(this, "_data", obj);
+    definePropertyResult = Object.defineProperty(this, "_data", { value: obj });
     return;
   }
 }

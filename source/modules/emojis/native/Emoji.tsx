@@ -1,5 +1,5 @@
 // Module ID: 5418
-// Function ID: 46476
+// Function ID: 46484
 // Name: Emoji
 // Dependencies: []
 // Exports: default

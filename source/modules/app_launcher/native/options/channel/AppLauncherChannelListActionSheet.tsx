@@ -1,5 +1,5 @@
 // Module ID: 11300
-// Function ID: 87917
+// Function ID: 87929
 // Name: ChannelIcon
 // Dependencies: []
 // Exports: default
@@ -51,7 +51,7 @@ function ChannelListItem(arg0) {
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
   let obj = { onPress };
-  obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: importDefault(dependencyMap[13])(channel) };
+  obj = { "Null": true, "Null": 15.1, "Null": 253, children: importDefault(dependencyMap[13])(channel) };
   obj.label = callback2(arg1(dependencyMap[15]).Text, obj);
   obj.icon = callback2(ChannelIcon, { channel });
   obj.start = 0 === index;
@@ -103,7 +103,7 @@ export default function AppLauncherChannelListActionSheet(channel) {
       callback2(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
+        current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
       }
     }
   };

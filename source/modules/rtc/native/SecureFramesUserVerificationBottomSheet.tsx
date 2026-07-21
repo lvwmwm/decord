@@ -1,5 +1,5 @@
 // Module ID: 8907
-// Function ID: 70276
+// Function ID: 70287
 // Name: SecureFramesUserVerificationBottomSheet
 // Dependencies: []
 // Exports: default
@@ -17,11 +17,11 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { integrationType: "337f717407aa04f32bdedf504de7310b", useIsUserSecureFramesVerified: "emoji", GET_SOUNDBOARD_SOUNDS: "png", handleSystemJoinMessageReplies: true, useIsActivitiesEnabledForCurrentPlatform: "/assets/modules/premium/native/images/perks", HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: 300, <string:4266785696>: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
+obj = { pointerEvents: "337f717407aa04f32bdedf504de7310b", onLayout: "emoji", variant: "png", color: true, selectable: "/assets/modules/premium/native/images/perks", enableBuildOverrides: 300, mustConfirmExternalLink: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
 obj.iconContainer = obj;
-obj.icon = { <string:1632221346>: null, <string:2722977214>: null };
+obj.icon = { y: "row", isArray: "center" };
 obj.content = {};
-obj.subtitle = { <string:4221627596>: true, <string:1359674961>: true, <string:4183987831>: true };
+obj.subtitle = {};
 obj.buttons = { marginTop: 40 };
 obj.helpMessage = { marginTop: 16 };
 let closure_15 = obj.createStyles(obj);
@@ -148,7 +148,7 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
   if (!loading) {
     obj2.children = memo1;
     const items9 = [tmp20(tmp22, obj2), , , , ];
-    obj3 = { children: tmp14 };
+    obj3 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092, children: tmp14 };
     items9[1] = name(arg1(dependencyMap[29]).Text, obj3);
     obj4 = { style: tmp.subtitle, children: tmp15 };
     items9[2] = name(arg1(dependencyMap[29]).Text, obj4);

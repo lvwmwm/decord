@@ -1,10 +1,10 @@
-// Module ID: 7118
-// Function ID: 57207
+// Module ID: 7119
+// Function ID: 57219
 // Name: useIsInAdultAgeGroup
 // Dependencies: []
 // Exports: default
 
-// Module 7118 (useIsInAdultAgeGroup)
+// Module 7119 (useIsInAdultAgeGroup)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/hooks/useIsInAdultAgeGroup.tsx");
 

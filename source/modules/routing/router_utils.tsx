@@ -1,5 +1,5 @@
 // Module ID: 1198
-// Function ID: 13751
+// Function ID: 13755
 // Name: shouldNavigate
 // Dependencies: []
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, transitionToGuild

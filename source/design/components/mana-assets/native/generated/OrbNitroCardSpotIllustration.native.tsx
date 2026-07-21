@@ -1,5 +1,5 @@
 // Module ID: 6389
-// Function ID: 50497
+// Function ID: 50505
 // Name: OrbNitroCardSpotIllustration
 // Dependencies: []
 // Exports: OrbNitroCardSpotIllustration

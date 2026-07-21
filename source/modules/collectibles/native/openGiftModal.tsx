@@ -1,5 +1,5 @@
 // Module ID: 8766
-// Function ID: 69282
+// Function ID: 69293
 // Name: ShopGiftModalKey
 // Dependencies: []
 // Exports: closeShopGiftModal, openShopGiftModal

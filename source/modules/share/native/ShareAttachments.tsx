@@ -1,10 +1,10 @@
-// Module ID: 12787
-// Function ID: 97978
+// Module ID: 12789
+// Function ID: 98000
 // Name: ShareAttachments
 // Dependencies: []
 // Exports: default
 
-// Module 12787 (ShareAttachments)
+// Module 12789 (ShareAttachments)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -19,10 +19,10 @@ obj2 = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_8 }
 obj.attachmentPreviewContentContainer = obj2;
 const obj1 = { marginHorizontal: -importDefault(dependencyMap[7]).space.PX_16 };
 obj.attachmentPreviewContentContainerRevamp = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { fill: "row", sa: "center", Symbol: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj4 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003785767221382976, "Null": 170069514919085240000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005562684648031156, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.attachmentPreview = obj4;
-obj.leftGradient = {};
-obj.rightGradient = {};
+obj.leftGradient = { "Bool(true)": null, "Bool(true)": "hidden", "Bool(true)": 1, "Bool(true)": true, "Bool(true)": "/assets/images/native/icons", "Bool(true)": 18 };
+obj.rightGradient = { SCROLLING_MOMENTUM: null, GuildRoomBackgrounds: "hidden", showChannelChangeConfirmationAlert: 1, GiftingTier3SmallBadge: true, nextToken: "/assets/images/native/icons", trackForumPostLinkCopied: 18 };
 const obj3 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 obj.gradient = { color: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 let closure_9 = obj2.createStyles(obj);
@@ -116,14 +116,14 @@ export default function ShareAttachments(arg0) {
       containerRevamp = tmp.containerRevamp;
     }
     obj1.style = containerRevamp;
-    obj2 = { start: { max: -536870861, guildId: -299892737 }, end: {} };
+    obj2 = { start: {}, end: {} };
     const items3 = [tmp.gradient.color, memo];
     obj2.colors = items3;
     const items4 = [tmp.leftGradient, animatedStyle];
     obj2.style = items4;
     obj2.pointerEvents = "box-none";
     const items5 = [callback(closure_7, obj2), , ];
-    obj3 = { start: { max: -536870861, guildId: -299892737 }, end: {} };
+    obj3 = { start: {}, end: {} };
     const items6 = [memo, tmp.gradient.color];
     obj3.colors = items6;
     const items7 = [tmp.rightGradient, animatedStyle1];
@@ -162,7 +162,7 @@ export default function ShareAttachments(arg0) {
     obj4.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.RhtzFe);
     obj4.children = attachments.map((uri) => {
       let obj = { style: tmp.attachmentPreview };
-      obj = { uri: uri.uri };
+      obj = { position: true, backgroundColor: true, borderWidth: true, uri: uri.uri };
       const tmp = sharedValue(sharedValue1[11]);
       obj.isImage = tmp(sharedValue1[12]).isImage(uri.uri, uri.mimeType);
       const obj3 = tmp(sharedValue1[12]);

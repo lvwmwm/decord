@@ -1,7 +1,7 @@
 // Module ID: 650
 // Function ID: 7392
 // Name: DesignIds
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 650 (DesignIds)
 const _module = require(dependencyMap[0]);

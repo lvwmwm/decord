@@ -1,11 +1,13 @@
-// Module ID: 16122
-// Function ID: 124310
+// Module ID: 16130
+// Function ID: 124371
 // Name: showEmojiOverflowActionSheet
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 16122 (showEmojiOverflowActionSheet)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_settings/native/showEmojiOverflowActionSheet.tsx");
+// Module 16130 (showEmojiOverflowActionSheet)
+import result from "result";
+
+result = result.fileFinishedImporting("modules/guild_settings/native/showEmojiOverflowActionSheet.tsx");
 
 export default function showEmojiOverflowActionSheet(arg0) {
   let obj = importDefault(dependencyMap[0]);

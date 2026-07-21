@@ -1,17 +1,16 @@
 // Module ID: 3474
-// Function ID: 26849
+// Function ID: 26854
 // Name: isLeapYear
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3474 (isLeapYear)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function isLeapYear(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  const fullYear = startOfWeek.default(defaultResult1).getFullYear();
+  closure_1.default(1, arguments);
+  const fullYear = closure_0.default(defaultResult1).getFullYear();
   let tmp3 = fullYear % 400 === 0;
   if (!tmp3) {
     let tmp4 = fullYear % 4 === 0;

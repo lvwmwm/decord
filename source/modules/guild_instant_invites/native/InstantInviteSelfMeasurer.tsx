@@ -1,12 +1,12 @@
-// Module ID: 15378
-// Function ID: 117206
+// Module ID: 15381
+// Function ID: 117245
 // Dependencies: []
 
-// Module 15378
+// Module 15381
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {} });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { 0: null, 9223372036854775807: null } });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type) {
   let item;
@@ -19,7 +19,7 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
   }
   const importDefault = str;
   const items = [onMeasured, str];
-  let obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": true, "Null": "/assets/images/native/icons" };
+  let obj = { -497917812: false, -125068987: false, -77293308: false, 1382177952: false, -1399870276: false, 341224034: false };
   const items1 = [type.containerStyle, callback().container];
   obj.style = items1;
   obj.onLayout = importAllResult.useCallback((nativeEvent) => {

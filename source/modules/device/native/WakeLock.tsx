@@ -1,5 +1,5 @@
 // Module ID: 10592
-// Function ID: 82638
+// Function ID: 82649
 // Name: useWakeLock
 // Dependencies: []
 // Exports: default

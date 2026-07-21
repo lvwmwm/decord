@@ -1,9 +1,9 @@
 // Module ID: 2146
-// Function ID: 22533
+// Function ID: 22538
 // Dependencies: []
 
 // Module 2146
 const _module = require(dependencyMap[0]);
-const obj = { dismissed: 1124139009, lastDismissedVersion: 131569, lastDismissedAtMs: 131568, lastDismissedObjectId: 119741, numTimesDismissed: 1168231217, days: -989989962, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { runOnJS: true, format: true, View: true, accessibilityRole: true, surrogates: true, url: true, scales: [null] };
 
 export default _module.registerAsset(obj);

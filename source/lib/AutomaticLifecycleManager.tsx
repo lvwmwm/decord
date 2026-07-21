@@ -1,9 +1,9 @@
-// Module ID: 5349
-// Function ID: 45749
+// Module ID: 5348
+// Function ID: 45756
 // Name: AutomaticLifecycleManager
 // Dependencies: []
 
-// Module 5349 (AutomaticLifecycleManager)
+// Module 5348 (AutomaticLifecycleManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

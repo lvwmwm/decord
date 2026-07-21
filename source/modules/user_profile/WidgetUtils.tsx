@@ -1,10 +1,10 @@
-// Module ID: 6854
-// Function ID: 54172
+// Module ID: 6855
+// Function ID: 54184
 // Name: widgetSupportsComment
 // Dependencies: []
 // Exports: addPendingGameToWidget, addWidgetToPending, areWidgetGamesEqual, getGameWidgetSubtitle, getRandomElement, getRandomElements, getWidgetTitle, isGameAllowedInGameWidgets, isGameLimitReached, removePendingGameFromWidget, removeTagFromGame, removeWidgetFromPending, reorderGamesInWidget, reorderWidgets, updatePendingGameComment
 
-// Module 6854 (widgetSupportsComment)
+// Module 6855 (widgetSupportsComment)
 function widgetSupportsComment(arg0) {
   return closure_8.includes(arg0);
 }

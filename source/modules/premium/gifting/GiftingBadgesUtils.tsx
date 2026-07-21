@@ -1,10 +1,10 @@
-// Module ID: 12383
-// Function ID: 94665
+// Module ID: 12385
+// Function ID: 94687
 // Name: getGiftingBadgeProgressPercent
 // Dependencies: []
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 12383 (getGiftingBadgeProgressPercent)
+// Module 12385 (getGiftingBadgeProgressPercent)
 let closure_2 = require(dependencyMap[0]).getSingleRequirementThreshold;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[7]);

@@ -1,10 +1,10 @@
-// Module ID: 15142
-// Function ID: 114241
+// Module ID: 15145
+// Function ID: 114275
 // Name: TruncatedText
 // Dependencies: []
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15142 (TruncatedText)
+// Module 15145 (TruncatedText)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ TouchableOpacity: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -13,11 +13,11 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Null": "start_time", "Null": "message", "Null": "absolute", "Null": "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
+obj = { "Bool(true)": "start_time", "Bool(true)": "message", "Bool(true)": "absolute", "Bool(true)": "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
 obj.toggleTruncateButton = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.arrowButton = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.arrowButtonText = {};
+obj.arrowButtonText = { isArray: null, diversity: null };
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
 obj.arrowButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_11 = obj.createStyles(obj);
@@ -104,7 +104,7 @@ export const ArrowButton = function ArrowButton(arg0) {
   ({ text, onPress } = arg0);
   const tmp = callback5();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
-  obj = { style: tmp.arrowButtonText, children: text };
+  obj = { hasMaxConnections: false, isBoostOnlySubscription: false, style: tmp.arrowButtonText, children: text };
   const items = [callback3(arg1(dependencyMap[7]).Text, obj), ];
   obj = { size: arg1(dependencyMap[10]).Icon.Sizes.SMALL, source: importDefault(dependencyMap[11]), style: tmp.arrowButtonIcon };
   items[1] = callback3(arg1(dependencyMap[10]).Icon, obj);

@@ -1,10 +1,10 @@
-// Module ID: 14279
-// Function ID: 107891
+// Module ID: 14282
+// Function ID: 107923
 // Name: StaffBadgeIcon
 // Dependencies: []
 // Exports: StaffBadgeIcon
 
-// Module 14279 (StaffBadgeIcon)
+// Module 14282 (StaffBadgeIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StaffBadgeIcon.tsx");

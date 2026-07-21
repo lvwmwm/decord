@@ -1,5 +1,5 @@
 // Module ID: 10991
-// Function ID: 85524
+// Function ID: 85535
 // Name: showBanConfirmModal
 // Dependencies: []
 // Exports: default

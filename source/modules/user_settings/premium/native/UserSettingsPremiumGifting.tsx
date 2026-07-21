@@ -1,19 +1,19 @@
-// Module ID: 12364
-// Function ID: 94551
+// Module ID: 12366
+// Function ID: 94573
 // Name: GiftingSectionTitle
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 12364 (GiftingSectionTitle)
-import closure_3 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 12366 (GiftingSectionTitle)
+import closure_3 from "result";
+import importAllResult from "result";
+import result from "result";
+import closure_8 from "result";
+import closure_9 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
 function GiftingSectionTitle(title) {
   title = title.title;
@@ -21,43 +21,43 @@ function GiftingSectionTitle(title) {
     let obj = { title };
     let tmp2Result = tmp2(tmp3(tmp4[11]).TableRowGroupTitle, obj);
   } else {
-    obj = { 1501064855: "/assets/images/native/premium/logos", -1267889981: 158, -1145697943: 32, -1266241916: null, style: tmp.title, children: title };
+    obj = { Opened: "/assets/images/native/premium/logos", marginVertical: 158, marginStart: 32, marginEnd: null, style: tmp.title, children: title };
     tmp2Result = tmp2(tmp3(tmp4[12]).Text, obj);
   }
   return tmp2Result;
 }
-({ Image: closure_5, View: closure_6, ScrollView: closure_7 } = __exportStarResult1);
-({ UserSettingsSections: closure_10, AnalyticsPages: closure_11 } = __exportStarResult1);
-({ PremiumTypes: closure_12, SubscriptionPlans: closure_13 } = __exportStarResult1);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = __exportStarResult1);
+({ Image: closure_5, View: closure_6, ScrollView: closure_7 } = result);
+({ UserSettingsSections: closure_10, AnalyticsPages: closure_11 } = result);
+({ PremiumTypes: closure_12, SubscriptionPlans: closure_13 } = result);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = result);
 let obj = {};
-obj = { paddingHorizontal: require("__exportStarResult1").modules.mobile.GIFTING_SETTINGS_PADDING_HORIZONTAL };
+obj = { paddingHorizontal: require("result").modules.mobile.GIFTING_SETTINGS_PADDING_HORIZONTAL };
 obj.scrollView = obj;
 obj.giftingSettingsContainer = { flex: 1 };
 obj.inventorySectionWrapper = { flex: 1 };
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-obj.inventorySectionWrapperLegacy = __exportStarResult1;
-obj.giftPurchaseSectionWrapper = { "Null": "BUOCPi", "Null": "STALE", "Null": "headMetaSocial" };
-obj.giftPurchaseSectionWrapperLegacy = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-const obj3 = { accessible: 123.002, count: null, "Bool(false)": 1, "Bool(false)": "Golive Simulcast without prober 720p@500k", borderWidth: __exportStarResult1.StyleSheet.hairlineWidth, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW, borderColor: require("__exportStarResult1").colors.BACKGROUND_MOD_NORMAL };
+result = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+obj.inventorySectionWrapperLegacy = result;
+obj.giftPurchaseSectionWrapper = { flexDirection: "FILTER_BEFORE", padding: "package", "Null": "_headers" };
+obj.giftPurchaseSectionWrapperLegacy = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+const obj3 = { "Null": 123.002, "Null": null, "Null": 1, flexDirection: "Golive Simulcast without prober 720p@500k", borderWidth: result.StyleSheet.hairlineWidth, backgroundColor: require("result").colors.BACKGROUND_BASE_LOW, borderColor: require("result").colors.BACKGROUND_MOD_NORMAL };
 obj.emptyGiftLinks = obj3;
 obj.emptyImage = { marginRight: 18 };
 obj.emptyGiftHeader = { lineHeight: 20 };
 obj.emptyGiftDescription = { flex: 1 };
 obj.emptyGiftInformation = { marginTop: 8 };
-obj.title = { marginHorizontal: __exportStarResult1.USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
-obj.titleWrapper = { bm: null, cursor: null };
-const obj2 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-obj.titleWrapperLegacy = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
+obj.title = { marginHorizontal: result.USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.titleWrapper = {};
+const obj2 = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+obj.titleWrapperLegacy = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
 obj.cardText = { lineHeight: 18 };
 obj.tierCard = { marginTop: 16 };
 obj.giftPurchaseButton = {};
 obj.buttonWrapper = { marginTop: 16 };
 obj.loading = { marginTop: 32 };
 obj.warningMargins = { marginHorizontal: 16 };
-let closure_17 = __exportStarResult1.createStyles(obj);
-const obj4 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremiumGifting.tsx");
+let closure_17 = result.createStyles(obj);
+const obj4 = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+result = result.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremiumGifting.tsx");
 
 export default importAllResult.forwardRef(function UserSettingsPremiumGifting(arg0, ref) {
   let analyticsLocation;
@@ -177,7 +177,7 @@ export default importAllResult.forwardRef(function UserSettingsPremiumGifting(ar
                   obj = { style: tmp2.emptyImage, source: tmp3(closure_2[31]) };
                   const items = [callback(_undefined, obj), ];
                   const obj1 = { style: tmp2.emptyGiftDescription, accessible: true };
-                  const obj2 = { "Null": null, "Null": null, "Null": null, style: tmp2.emptyGiftHeader };
+                  const obj2 = { delete: null, dispatch: null, raw: null, style: tmp2.emptyGiftHeader };
                   const intl3 = tmp2(closure_2[32]).intl;
                   obj2.children = intl3.string(tmp2(closure_2[32]).t.B1qgZn);
                   const items1 = [callback(tmp2(closure_2[12]).Text, obj2), ];

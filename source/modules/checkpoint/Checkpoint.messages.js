@@ -1,14 +1,14 @@
 // Module ID: 2684
-// Function ID: 24129
+// Function ID: 24134
 // Name: messagesProxy
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 2684 (messagesProxy)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import result from "result";
+import result from "result";
+import result from "result";
 
-const loader = __exportStarResult1.createLoader({
+const loader = result.createLoader({
   bg() {
     const jsonAsset = require(dependencyMap[0]).loadJsonAsset(require(dependencyMap[1]));
     return jsonAsset.then((arg0) => ({ default: arg0 }));
@@ -134,8 +134,8 @@ const loader = __exportStarResult1.createLoader({
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = __exportStarResult1.makeMessagesProxy(loader);
-const result = __exportStarResult1.fileFinishedImporting("modules/checkpoint/Checkpoint.messages.js");
+const messagesProxy = result.makeMessagesProxy(loader);
+result = result.fileFinishedImporting("modules/checkpoint/Checkpoint.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

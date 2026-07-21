@@ -1,7 +1,7 @@
 // Module ID: 5671
-// Function ID: 48719
+// Function ID: 48727
 // Name: ContentHarmTypeChannel
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5671 (ContentHarmTypeChannel)
 const _module = require(dependencyMap[0]);

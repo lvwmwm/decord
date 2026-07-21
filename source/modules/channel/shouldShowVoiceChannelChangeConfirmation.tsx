@@ -1,5 +1,5 @@
 // Module ID: 12232
-// Function ID: 93857
+// Function ID: 93869
 // Name: shouldShowVoiceChannelChangeConfirmation
 // Dependencies: []
 // Exports: shouldShowVoiceChannelChangeConfirmation

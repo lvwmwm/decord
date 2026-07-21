@@ -1,7 +1,7 @@
 // Module ID: 4222
-// Function ID: 36848
+// Function ID: 36856
 // Name: RTCConnectionEvent
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4222 (RTCConnectionEvent)
 const _module = require(dependencyMap[0]);

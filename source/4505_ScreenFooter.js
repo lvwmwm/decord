@@ -1,5 +1,5 @@
 // Module ID: 4505
-// Function ID: 39674
+// Function ID: 39682
 // Name: ScreenFooter
 // Dependencies: []
 // Exports: FooterComponent

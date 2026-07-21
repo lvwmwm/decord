@@ -1,7 +1,7 @@
 // Module ID: 8916
-// Function ID: 70358
+// Function ID: 70369
 // Name: ClearFriendRequestFilters
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8916 (ClearFriendRequestFilters)
 const _module = require(dependencyMap[0]);

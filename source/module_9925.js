@@ -1,9 +1,9 @@
 // Module ID: 9925
-// Function ID: 76746
+// Function ID: 76757
 // Dependencies: []
 
 // Module 9925
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "6adfcc7a553215ee3085ec15a5a3e3a4", isInternetReachable: "ClockXIcon", details: "png", reachabilityUrl: true, reachabilityMethod: "/assets/design/components/Icon/native/redesign/generated/images", reachabilityHeaders: 24, reachabilityTest: 24, reachabilityShortTimeout: null, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "6adfcc7a553215ee3085ec15a5a3e3a4", "Bool(false)": "ClockXIcon", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", scales: [null] };
 
 export default _module.registerAsset(obj);

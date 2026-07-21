@@ -1,5 +1,5 @@
 // Module ID: 8741
-// Function ID: 69118
+// Function ID: 69129
 // Name: ProfilePreviewWrapper
 // Dependencies: []
 // Exports: IndividualProductPreview
@@ -88,7 +88,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { marginTop: importDefault(dependencyMap[5]).space.PX_12 };
 obj.collectiblePreview = obj;
-obj.profilePreviewContainer = {};
+obj.profilePreviewContainer = { "Bool(false)": "absolute", "Bool(false)": "gift_info", "Bool(false)": "isArray", "Bool(false)": "NATIVE_REQUIRED_ASSETS" };
 obj.profilePreview = { width: "66%" };
 const obj1 = {};
 const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);

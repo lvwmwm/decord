@@ -1,17 +1,17 @@
-// Module ID: 15158
-// Function ID: 114317
+// Module ID: 15161
+// Function ID: 114351
 // Name: ResourcesRow
 // Dependencies: []
 // Exports: default
 
-// Module 15158 (ResourcesRow)
+// Module 15161 (ResourcesRow)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_4 = arg1(dependencyMap[2]).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {} };
-obj = { "Null": 141317.775, "Null": 0.000000000000000000000000000000000000000000000000000000000000041334836965104885, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, "Null": "\u{1F469}\u{1F3FF}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", "Null": true, "Null": null, "Null": 15.1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { accessible: 141317.775, guild: 0.00000000000000000000000000000000000000000000000000000000000004133483696510626, borderRadius: importDefault(dependencyMap[5]).radii.round, httpServerLocation: "\u{1F469}\u{1F3FF}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", description: true, flexDirection: null, paddingRight: 15.1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.channelItem = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

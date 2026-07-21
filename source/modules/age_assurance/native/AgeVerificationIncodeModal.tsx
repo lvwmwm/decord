@@ -1,10 +1,10 @@
-// Module ID: 7533
-// Function ID: 60266
+// Module ID: 7534
+// Function ID: 60278
 // Name: getScreens
-// Dependencies: []
+// Dependencies: [494206976, 365953024, 131072, 527892480, 553648128, 1996488704, 3154116625, 2617245700, 1996488714, 33554449, 2113929216]
 // Exports: default
 
-// Module 7533 (getScreens)
+// Module 7534 (getScreens)
 function getScreens(headerStyle, headerTitle) {
   headerTitle = arg2;
   const importDefault = arg3;

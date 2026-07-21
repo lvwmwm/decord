@@ -1,9 +1,9 @@
-// Module ID: 6964
-// Function ID: 55676
+// Module ID: 6965
+// Function ID: 55688
 // Name: AdCreativeType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6964 (AdCreativeType)
+// Module 6965 (AdCreativeType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdCreativeType.tsx");
 

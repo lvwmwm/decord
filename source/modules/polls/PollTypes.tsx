@@ -1,7 +1,7 @@
 // Module ID: 11315
-// Function ID: 88049
+// Function ID: 88061
 // Name: PollMediaUploadAttachmentStatus
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11315 (PollMediaUploadAttachmentStatus)
 const _module = require(dependencyMap[0]);

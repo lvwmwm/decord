@@ -1,5 +1,5 @@
 // Module ID: 10969
-// Function ID: 85319
+// Function ID: 85330
 // Name: getGuildMemberAgeInRange
 // Dependencies: []
 // Exports: useCanBanMember, useCanKickMember, useCanManageMessages, useNewMemberBadge

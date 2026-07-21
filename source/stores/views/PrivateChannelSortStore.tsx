@@ -1,5 +1,5 @@
 // Module ID: 5601
-// Function ID: 47557
+// Function ID: 47565
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -89,7 +89,7 @@ const secondaryIndexMap = new arg1(dependencyMap[14]).SecondaryIndexMap(function
 let closure_18 = [];
 let closure_19 = [];
 let closure_20 = [];
-const f47567 = () => {
+const f47575 = () => {
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = closure_18 === values;

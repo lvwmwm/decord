@@ -1,12 +1,12 @@
 // Module ID: 12354
-// Function ID: 94529
+// Function ID: 94542
 // Name: usePremiumPlanSelectStore
 // Dependencies: []
 // Exports: setIsPurchasing
 
 // Module 12354 (usePremiumPlanSelectStore)
 const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ handleGuildCreateOrUpdate: null, psnrHistogram: null }));
+const obj = _module.create(() => ({ MKTG_HYPESQUAD_FORM_SUBMITTED: null, RowButton: null }));
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
 

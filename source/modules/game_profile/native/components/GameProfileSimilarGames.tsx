@@ -1,5 +1,5 @@
 // Module ID: 11838
-// Function ID: 91747
+// Function ID: 91759
 // Name: Spacer
 // Dependencies: []
 // Exports: default
@@ -65,7 +65,7 @@ function SimilarGameCard(game) {
     const obj4 = {};
     const items3 = [tmp.coverArtFallback, obj];
     obj4.style = items3;
-    const obj5 = { -9223372036854775808: "decorationStyle", 0: "<string:636567808>", 0: "<string:424738818>", children: game.name };
+    const obj5 = { <string:1643205302>: "flag", <string:1415816450>: "<string:2639347968>", <string:4283523744>: "<string:2622554113>", children: game.name };
     obj4.children = callback(arg1(dependencyMap[9]).Text, obj5);
     tmp13 = callback(closure_6, obj4);
   }
@@ -129,7 +129,7 @@ export default function GameProfileSimilarGames(trackAction) {
   if (tmp3.isFetching) {
     let obj = { style: tmp.container };
     obj = { style: tmp.header };
-    obj = {};
+    obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
     const intl = arg1(dependencyMap[8]).intl;
     obj.children = intl.string(arg1(dependencyMap[8]).t.6rLyQB);
     obj.children = callback(arg1(dependencyMap[9]).Text, obj);
@@ -153,7 +153,7 @@ export default function GameProfileSimilarGames(trackAction) {
     if (0 !== similarGames.length) {
       const obj2 = { style: tmp.container };
       const obj3 = { style: tmp.header };
-      const obj4 = {};
+      const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
       const intl2 = arg1(dependencyMap[8]).intl;
       obj4.children = intl2.string(arg1(dependencyMap[8]).t.6rLyQB);
       obj3.children = callback(arg1(dependencyMap[9]).Text, obj4);

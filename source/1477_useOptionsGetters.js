@@ -1,5 +1,5 @@
 // Module ID: 1477
-// Function ID: 17156
+// Function ID: 17161
 // Name: useOptionsGetters
 // Dependencies: []
 // Exports: default

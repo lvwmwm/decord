@@ -1,9 +1,9 @@
-// Module ID: 7782
-// Function ID: 62097
+// Module ID: 7783
+// Function ID: 62110
 // Name: nativeStyleProperties
 // Dependencies: []
 
-// Module 7782 (nativeStyleProperties)
+// Module 7783 (nativeStyleProperties)
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);

@@ -1,5 +1,5 @@
 // Module ID: 10170
-// Function ID: 78580
+// Function ID: 78591
 // Name: memoResult1
 // Dependencies: []
 
@@ -9,7 +9,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { mainIdentity: {} };
+let obj = { mainIdentity: { "Null": 7, "Null": 370 } };
 obj = { marginRight: importDefault(dependencyMap[5]).space.PX_4 };
 obj.primaryAvatar = obj;
 obj1 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };

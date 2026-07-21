@@ -1,10 +1,10 @@
-// Module ID: 12913
-// Function ID: 98469
+// Module ID: 12915
+// Function ID: 98491
 // Name: generateBoxShadowStyle
 // Dependencies: []
 // Exports: generateBoxShadowStyle
 
-// Module 12913 (generateBoxShadowStyle)
+// Module 12915 (generateBoxShadowStyle)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
@@ -30,7 +30,7 @@ export const generateBoxShadowStyle = (arg0) => {
   }
   return obj;
 };
-export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = {};
-export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { "Bool(false)": "0 0 4px 0 hsl(none 0% 0% / 0.08)", "Bool(false)": "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))", "Bool(false)": "cs", "Bool(false)": "20", "Bool(false)": null, "Bool(false)": "#000000", "Bool(false)": 0.08 };
-export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = { "Bool(false)": "isArray", "Bool(false)": "construct", "Bool(false)": "isArray", "Bool(false)": "context", "Bool(false)": "keys", "Bool(false)": "isArray", "Bool(false)": "Text" };
+export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = { mn: "<string:2754674692>", messageId: "<string:3607772528>", accessibilityRole: "<string:1916780707>", Error: "Date", duration: "isArray", width: "<string:72047169>", height: "<string:1279803904>" };
+export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { mn: "0 0 4px 0 hsl(none 0% 0% / 0.08)", messageId: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))", accessibilityRole: "cs", Error: "20", duration: null, width: "#000000", height: 0.08 };
+export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = {};
 export const NO_ELEVATION_SHADOW_PARAMS = {};

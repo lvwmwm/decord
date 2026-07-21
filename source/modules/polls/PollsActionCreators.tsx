@@ -1,5 +1,5 @@
 // Module ID: 9926
-// Function ID: 76747
+// Function ID: 76758
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -296,7 +296,7 @@ const obj = {
           let obj2 = channelId2(message[17]);
           let obj = { channel_id: channelId2, message_id: messageId2, selected_answer_ids: analyticsSelectedAnswerIds2, selected_text_answers_count: selectedTextAnswersCount2, selected_emoji_answers_count: selectedEmojiAnswersCount2 };
           obj2.trackWithMetadata(constants.POLL_VOTE_SELECTED, obj);
-          obj = { 140599176: true, -1335718063: true, -1978968740: true, 185536522: true, 118130959: true, channelId: channelId2, selectedAnswerIds: set };
+          obj = { channelId: channelId2, selectedAnswerIds: set };
           return obj;
         } else {
           const obj1 = {};

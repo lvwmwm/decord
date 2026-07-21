@@ -1,10 +1,10 @@
-// Module ID: 13791
-// Function ID: 104304
+// Module ID: 13793
+// Function ID: 104326
 // Name: getRecapOrbCountFromPullProgress
 // Dependencies: []
 // Exports: useBountiesRecapOrbCount
 
-// Module 13791 (getRecapOrbCountFromPullProgress)
+// Module 13793 (getRecapOrbCountFromPullProgress)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = { code: "function getRecapOrbCountFromPullProgress_useBountiesRecapOrbCountTsx1(progress,targetOrbAmount){if(targetOrbAmount<=0||!Number.isFinite(targetOrbAmount)){return 0;}const clampedProgress=Math.min(1,Math.max(0,progress));return Math.round(clampedProgress*targetOrbAmount);}" };
@@ -65,14 +65,14 @@ export const useBountiesRecapOrbCount = function useBountiesRecapOrbCount(scroll
       if (recapRevealHeight > 0) {
         const result = scrollY(lastBountyScrollOffset[3]).getRevealProgress(scrollY.get(), lastBountyScrollOffset, recapRevealHeight) / 0.95;
         if (result <= 0.1) {
-          let obj = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, "Bool(false)": -823154013994709700000000000000000000000000000000000000000000000 };
+          let obj = { 9223372036854775807: 1715544575, 0: 1409286699 };
         } else {
           obj = { count: callback(result, targetOrbAmount), revealed: true };
         }
         return obj;
       }
     }
-    return { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, "Bool(false)": -823154013994709700000000000000000000000000000000000000000000000 };
+    return { 9223372036854775807: 1715544575, 0: 1409286699 };
   };
   obj = { enabled, recapRevealHeight, getRevealProgress: arg1(dependencyMap[3]).getRevealProgress, scrollY, lastBountyScrollOffset, RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS: 0.95, getRecapOrbCountFromPullProgress: tmp2, targetOrbAmount };
   fn.__closure = obj;

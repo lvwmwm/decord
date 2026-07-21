@@ -1,5 +1,5 @@
 // Module ID: 11591
-// Function ID: 90100
+// Function ID: 90112
 // Name: GuildPowerupPerksSection
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 876
-// Function ID: 9736
+// Function ID: 9740
 // Name: isURLObjectRelative
 // Dependencies: []
 // Exports: getHttpSpanDetailsFromUrlObject, getSanitizedUrlString, parseStringToURLObject, parseUrl, stripDataUrlContent, stripUrlQueryAndFragment
@@ -16,7 +16,7 @@ function getSanitizedUrlStringFromUrlObject(result) {
     const str = new URL(result);
     str.search = "";
     str.hash = "";
-    const items = [null, null];
+    const items = [];
     if (items.includes(str.port)) {
       str.port = "";
     }

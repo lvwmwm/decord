@@ -1,10 +1,10 @@
-// Module ID: 6999
-// Function ID: 55973
+// Module ID: 7000
+// Function ID: 55985
 // Name: checkReactionResponse
 // Dependencies: []
 // Exports: getReactors, playBurstReaction
 
-// Module 6999 (checkReactionResponse)
+// Module 7000 (checkReactionResponse)
 function checkReactionResponse(arg0, arg1, isRetry) {
   let body;
   let status;

@@ -1,12 +1,12 @@
 // Module ID: 11703
-// Function ID: 90873
+// Function ID: 90885
 // Name: headerTitle
-// Dependencies: [31, 27, 33, 4126, 4965, 689, 4124, 4539, 1212, 2, 31, 27, 33, 4126, 11708, 11709, 2, 5, 31, 27, 4340, 33, 4126, 689, 4965, 4673, 11711, 4124, 1212, 4539, 11712, 11704, 2, 31, 33, 4126, 3989, 4127, 4124, 2, 27, 11696, 5361, 2, 31]
+// Dependencies: [31, 27, 33, 4126, 4964, 689, 4124, 4539, 1212, 2, 31, 27, 33, 4126, 11708, 11709, 2, 5, 31, 27, 4340, 33, 4126, 689, 4964, 4672, 11711, 4124, 1212, 4539, 11712, 11704, 2, 31, 33, 4126, 3989, 4127, 4124, 2, 27, 11696, 5360, 2, 31]
 // Exports: ContactSyncOnboardingModal
 
 // Module 11703 (headerTitle)
 import closure_3 from "module_31";
-import closure_4 from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import module_33 from "module_33";
 import { View } from "_createForOfIteratorHelperLoose";
 import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
@@ -16,7 +16,7 @@ import Button from "Button";
 import { AnalyticEvents } from "getSystemLocale";
 import { NativePermissionTypes } from "result2";
 import module_31 from "module_31";
-import keys from "keys";
+import get ActivityIndicator from "get ActivityIndicator";
 import module_31 from "module_31";
 
 function headerTitle() {
@@ -26,10 +26,10 @@ function headerLeft() {
   return null;
 }
 function OnboardingTrailingLanding() {
-  let obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: keys().landingTrailing };
+  let obj = { style: get_ActivityIndicator().landingTrailing };
   const intl = arg1(dependencyMap[16]).intl;
   obj = {};
-  const tmp = keys();
+  const tmp = get_ActivityIndicator();
   obj.learnMoreUrl = arg1(dependencyMap[17]).getOpenLearnMoreUrl();
   obj.children = intl.format(arg1(dependencyMap[16]).t.84S6+Z, obj);
   return callback5(arg1(dependencyMap[15]).Text, obj);
@@ -72,7 +72,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
     phone = stateFromStores.phone;
   }
   React = phone;
-  const tmp = keys();
+  const tmp = get_ActivityIndicator();
   ({ permissionState, error } = callback3());
   const tmp6 = callback2(React.useState(true), 2);
   const first = tmp6[0];
@@ -199,10 +199,10 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
       }
     });
   }, items1);
-  obj = { style: keys().container };
+  obj = { style: get_ActivityIndicator().container };
   obj = { onNext: callback, error, loading: first };
   let str = "";
-  const tmp = keys();
+  const tmp = get_ActivityIndicator();
   const tmp10 = View;
   const tmp11 = closure_16;
   const tmp9 = closure_16;
@@ -222,7 +222,7 @@ function ContactSyncSuggestionScreen(onComplete) {
   const importDefault = navigation;
   const suggestions = callback3().suggestions;
   const dependencyMap = suggestions;
-  const tmp = keys();
+  const tmp = get_ActivityIndicator();
   arg1(dependencyMap[34]).useBackHandlerMinimizeApp();
   const items = [onComplete, suggestions.length];
   const callback = React.useCallback((skip, friendsAdded) => {
@@ -264,12 +264,12 @@ class ContactSyncModal {
     arg1 = onComplete;
     ({ initialRoutes, openSettingsSheet } = global);
     importDefault = openSettingsSheet;
-    tmp = closure_4(importAll.useState(false), 2);
+    tmp = getActivityIndicator(importAll.useState(false), 2);
     first = tmp[0];
     dependencyMap = first;
     closure_3 = tmp[1];
     tmp3 = useIsOnboarding();
-    closure_4 = tmp3;
+    getActivityIndicator = tmp3;
     items = [];
     items[0] = tmp3;
     effect = importAll.useEffect(() => {
@@ -293,7 +293,7 @@ class ContactSyncModal {
     items3[0] = tmp3;
     items3[1] = memo;
     memo1 = importAll.useMemo(() => function getScreens(isOnboarding) {
-      ({ loading: closure_0, setLoading: closure_1, openSettingsSheet: closure_2, onComplete: closure_3, navigateToLandingPage: closure_4 } = isOnboarding);
+      ({ loading: closure_0, setLoading: closure_1, openSettingsSheet: closure_2, onComplete: closure_3, navigateToLandingPage: getActivityIndicator } = isOnboarding);
       let obj = {};
       obj = { ignoreKeyboard: true, impressionName: callback(closure_2[39]).ImpressionNames.CONTACT_SYNC_START };
       obj = { impression_group: callback(closure_2[39]).ImpressionGroups.CONTACT_SYNC_FLOW };
@@ -323,7 +323,7 @@ class ContactSyncModal {
         headerTitle: closure_20,
         headerLeft: closure_21,
         render() {
-          return callback3(closure_25, { navigateToLandingPage: closure_4 });
+          return callback3(closure_25, { navigateToLandingPage: getActivityIndicator });
         }
       };
       obj[constants.NAME_INPUT] = obj1;
@@ -345,7 +345,7 @@ class ContactSyncModal {
       obj5.headerLeft = function headerLeft(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["navigateToLandingPage"] = closure_4;
+        obj["navigateToLandingPage"] = getActivityIndicator;
         return callback3(callback2(closure_2[41]), obj);
       };
       obj5.render = function render() {
@@ -360,7 +360,7 @@ class ContactSyncModal {
       obj7.headerLeft = function headerLeft(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["navigateToLandingPage"] = closure_4;
+        obj["navigateToLandingPage"] = getActivityIndicator;
         return callback3(callback2(closure_2[41]), obj);
       };
       obj7.render = function render() {
@@ -374,7 +374,7 @@ class ContactSyncModal {
       obj9.headerLeft = function headerLeft(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["navigateToLandingPage"] = closure_4;
+        obj["navigateToLandingPage"] = getActivityIndicator;
         return callback3(callback2(closure_2[41]), obj);
       };
       obj9.headerTitle = closure_20;
@@ -385,7 +385,7 @@ class ContactSyncModal {
       return obj;
     }({ isOnboarding: tmp3, loading: first, setLoading: closure_3, openSettingsSheet, onComplete: memo }), items2);
     effect1 = importAll.useEffect(() => () => {
-      if (!closure_4) {
+      if (!getActivityIndicator) {
         let obj = callback(closure_2[14]);
         obj = { onComplete: module_33 };
         const result = obj.closeContactSyncModal(obj);
@@ -410,11 +410,11 @@ class ContactSyncModal {
 ({ setName: closure_9, useContactSyncModalStore: closure_10, useIsOnboarding: closure_11 } = Text);
 ({ ContactPermissions: closure_12, ContactSyncScenes: closure_13 } = Button);
 ({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = module_31);
-keys = {};
-keys = { "Bool(false)": "isArray", "Bool(false)": "accessibilityRole", "Bool(false)": "value", backgroundColor: require("module_33").colors.BACKGROUND_BASE_LOW, paddingTop: require("_createForOfIteratorHelperLoose").NAV_BAR_HEIGHT + 32 };
-keys.container = keys;
-keys.landingTrailing = { textAlign: "center" };
-keys = keys.createStyles(keys);
+get ActivityIndicator = {};
+get ActivityIndicator = { backgroundColor: require("module_33").colors.BACKGROUND_BASE_LOW, paddingTop: require("_createForOfIteratorHelperLoose").NAV_BAR_HEIGHT + 32 };
+get_ActivityIndicator.container = get_ActivityIndicator;
+get_ActivityIndicator.landingTrailing = { textAlign: "center" };
+get ActivityIndicator = get_ActivityIndicator.createStyles(get_ActivityIndicator);
 const result = module_31.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncModal.tsx");
 
 export default ContactSyncModal;

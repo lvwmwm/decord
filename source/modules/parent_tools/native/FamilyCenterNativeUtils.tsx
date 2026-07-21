@@ -1,5 +1,5 @@
 // Module ID: 11047
-// Function ID: 85964
+// Function ID: 85975
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
 // Dependencies: []
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection

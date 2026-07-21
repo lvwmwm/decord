@@ -1,5 +1,5 @@
 // Module ID: 1105
-// Function ID: 12613
+// Function ID: 12617
 // Name: mobileReplayIntegrationNoop
 // Dependencies: []
 
@@ -62,7 +62,7 @@ if (!fn) {
   };
 }
 let closure_3 = "MobileReplay";
-let closure_4 = {};
+let closure_4 = { 0: "%parseFloat%", -228170655217551392: "isArray", -9223372036854775808: "script", 9223372036854775807: "isArray", 661318738762: "sequenceId", 0: "isArray", 0: "premiumSince" };
 function mobileReplayIntegrationNoop() {
   return {
     name: closure_3,

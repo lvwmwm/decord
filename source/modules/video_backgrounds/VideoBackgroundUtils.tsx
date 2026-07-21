@@ -1,5 +1,5 @@
 // Module ID: 8842
-// Function ID: 69775
+// Function ID: 69786
 // Name: isCustomBackgroundOption
 // Dependencies: []
 // Exports: getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated

@@ -1,7 +1,7 @@
 // Module ID: 9319
-// Function ID: 72794
+// Function ID: 72805
 // Name: toggleGuildExpandedState
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
 // Module 9319 (toggleGuildExpandedState)

@@ -1,12 +1,13 @@
 // Module ID: 8979
-// Function ID: 70742
+// Function ID: 70753
 // Name: _handleStateChange
 // Dependencies: [0, 0, 0, 0]
 // Exports: useAccountLinkStepTracking
 
 // Module 8979 (_handleStateChange)
-import __exportStarResult1 from "__exportStarResult1";
-import { AnalyticEvents } from "__exportStarResult1";
+import closure_2 from "result";
+import { AnalyticEvents } from "result";
+import result from "result";
 
 function _handleStateChange(index, current, platform_type, location_stack) {
   if (null != index) {
@@ -24,7 +25,7 @@ function _handleStateChange(index, current, platform_type, location_stack) {
     current.current = index;
   }
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
+result = result.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
 
 export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CRUNCHYROLL, locationStack) {
   const importDefault = CRUNCHYROLL;
@@ -33,10 +34,10 @@ export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CR
   const items = [locationStack, CRUNCHYROLL];
   const items1 = [locationStack, CRUNCHYROLL];
   const callback = React.useCallback((arg0) => {
-    callback(arg0, __exportStarResult1, arg0, arg1);
+    callback(arg0, closure_2, arg0, arg1);
   }, items);
   const effect = React.useEffect(() => {
-    callback({ index: 0, routeNames: [0.000000000000000000000000000000000000000002491037836387495] }, __exportStarResult1, arg0, arg1);
+    callback({ index: 0, routeNames: ["jsxs"] }, closure_2, arg0, arg1);
   }, items1);
   return callback;
 };

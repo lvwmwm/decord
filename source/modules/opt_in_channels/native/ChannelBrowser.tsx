@@ -1,5 +1,5 @@
 // Module ID: 9968
-// Function ID: 77017
+// Function ID: 77028
 // Name: keyExtractor
 // Dependencies: []
 // Exports: default
@@ -22,23 +22,23 @@ let obj1 = arg1(dependencyMap[11]);
 let obj = { container: { flex: 1 } };
 obj = { marginTop: importDefault(dependencyMap[12]).space.PX_12, marginHorizontal: importDefault(dependencyMap[12]).space.PX_16 };
 obj.header = obj;
-obj1 = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", paddingTop: importDefault(dependencyMap[12]).space.PX_24, paddingBottom: importDefault(dependencyMap[12]).space.PX_8, borderRadius: importDefault(dependencyMap[12]).radii.md };
+obj1 = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", paddingTop: importDefault(dependencyMap[12]).space.PX_24, paddingBottom: importDefault(dependencyMap[12]).space.PX_8, borderRadius: importDefault(dependencyMap[12]).radii.md };
 obj.categoryContainer = obj1;
 obj.categoryTitle = { marginBottom: 0 };
-obj.channelTitle = {};
-obj.selectAllContainer = { 0: "<string:1358954976>", -9223372036854775808: "<string:4282510908>", 9223372036854775807: "<string:1392509361>", 0: "<string:2889329719>", 0: "<string:3865160759>" };
+obj.channelTitle = { "Null": 7, "Null": 370 };
+obj.selectAllContainer = { 9223372036854775807: "postal-code", 9223372036854775807: "Postal Code", 0: "boolean", 9223372036854775807: "boolean", 9223372036854775807: "boolean" };
 const tmp2 = arg1(dependencyMap[10]);
 const items = [{ scale: 0.75 }];
 obj.selectAllCheckbox = { marginRight: importDefault(dependencyMap[12]).space.PX_4, transform: items };
 obj.newBadge = { fontFamily: arg1(dependencyMap[8]).Fonts.DISPLAY_EXTRABOLD };
-const obj2 = { marginRight: importDefault(dependencyMap[12]).space.PX_4, transform: items };
-obj.nuxCard = { marginTop: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_16, borderRadius: importDefault(dependencyMap[12]).radii.md };
-const obj4 = { 814779987: "/assets/images/native/icons", 1377348501: 24, -1897888830: 24, 131209936: null, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj3 = { <string:1369504516>: true, <string:3429008370>: true, accessibilityRole: true, LIGHT: true, st: true, left: true, right: true, marginTop: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_16, borderRadius: importDefault(dependencyMap[12]).radii.md };
+obj.nuxCard = obj3;
+const obj4 = { <string:1457041507>: "/assets/images/native/icons", <string:4018387538>: 24, <string:3109771662>: 24, <string:3019291060>: null, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.nuxCloseContainer = obj4;
-const obj3 = { marginTop: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_16, borderRadius: importDefault(dependencyMap[12]).radii.md };
-obj.nuxHeader = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_SUBTLE, borderBottomLeftRadius: importDefault(dependencyMap[12]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[12]).radii.lg };
-obj.nuxHeaderText = { "Null": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", "Bool(true)": true };
-obj.nuxBody = { collapsable: "/assets/design/components/Illustration/native/redesign/generated/images", preventClipping: 160 };
+const obj5 = { -1086243743: "isArray", 1358955591: "body", 962677392: "message", -519315117: "accessibilityRole", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_SUBTLE, borderBottomLeftRadius: importDefault(dependencyMap[12]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[12]).radii.lg };
+obj.nuxHeader = obj5;
+obj.nuxHeaderText = { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true };
+obj.nuxBody = { value: "/assets/design/components/Illustration/native/redesign/generated/images", marginTop: 160 };
 let closure_15 = obj1.createStyles(obj);
 let closure_16 = importAllResult.memo((channel) => {
   channel = channel.channel;
@@ -77,7 +77,7 @@ let closure_16 = importAllResult.memo((channel) => {
     const obj4 = { checked: stateFromStores };
     obj3.children = callback2(arg1(dependencyMap[32]).FormCheckbox, obj4);
     const items2 = [callback2(View, obj3), ];
-    const obj5 = {};
+    const obj5 = { hasMaxConnections: null, isBoostOnlySubscription: null };
     const intl = arg1(dependencyMap[24]).intl;
     obj5.children = intl.string(arg1(dependencyMap[24]).t.mSQwnW);
     items2[1] = callback2(arg1(dependencyMap[28]).Text, obj5);
@@ -211,7 +211,7 @@ let closure_17 = importAllResult.memo((channel) => {
   }
   const tmp7 = importDefault(dependencyMap[29])(channel);
 });
-const obj5 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_SUBTLE, borderBottomLeftRadius: importDefault(dependencyMap[12]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[12]).radii.lg };
+const obj2 = { marginRight: importDefault(dependencyMap[12]).space.PX_4, transform: items };
 const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/opt_in_channels/native/ChannelBrowser.tsx");
 
 export default function ChannelBrowser(guildId) {
@@ -246,7 +246,7 @@ export default function ChannelBrowser(guildId) {
     const item = channelBrowserSections.forEach((rowCount, section) => {
       if (rowCount.rowCount > 0) {
         let channel = _categories._categories[section].channel;
-        let obj = { section, channel };
+        let obj = { enlargeSquare: "<string:1548877826>", fillAspectRatio: "<string:299071626>", windowWidth: "<string:38822721>", windowHeight: "<string:1602048>", chunkSize: "<string:1572864>", section, channel };
         items.push(obj);
         for (let num = 0; num < rowCount.rowCount; num = num + 1) {
           obj = { isSection: false, section, row: num };
@@ -323,11 +323,11 @@ export default function ChannelBrowser(guildId) {
     obj8.children = intl2.string(arg1(dependencyMap[24]).t.utqWEC);
     obj7.children = callback2(arg1(dependencyMap[28]).Text, obj8);
     const items7 = [callback2(View, obj7), , ];
-    const obj9 = { style: tmp.nuxBody };
+    const obj9 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.nuxBody };
     const intl3 = arg1(dependencyMap[24]).intl;
     obj9.children = intl3.string(arg1(dependencyMap[24]).t.+9etcM);
     items7[1] = callback2(arg1(dependencyMap[28]).Text, obj9);
-    const obj10 = { style: tmp.nuxBody };
+    const obj10 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.nuxBody };
     const intl4 = arg1(dependencyMap[24]).intl;
     obj10.children = intl4.format(arg1(dependencyMap[24]).t.Z0axjk, {});
     items7[2] = callback2(arg1(dependencyMap[28]).Text, obj10);

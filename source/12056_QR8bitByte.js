@@ -1,5 +1,5 @@
 // Module ID: 12056
-// Function ID: 93107
+// Function ID: 93119
 // Name: QR8bitByte
 // Dependencies: []
 

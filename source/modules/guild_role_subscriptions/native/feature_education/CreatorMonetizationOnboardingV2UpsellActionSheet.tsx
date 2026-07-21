@@ -1,17 +1,17 @@
-// Module ID: 14944
-// Function ID: 112486
+// Module ID: 14947
+// Function ID: 112520
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14944 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 14947 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildSettingsSections = arg1(dependencyMap[2]).GuildSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { flexDirection: null, position: null, left: null }, title: { marginBottom: 6 }, description: { marginBottom: 24 }, image: {}, dismissButton: { marginTop: 4 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { flexShrink: null, flexGrow: null, justifyContent: null }, title: { marginBottom: 6 }, description: { marginBottom: 24 }, image: { position: true, height: true }, dismissButton: { marginTop: 4 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/CreatorMonetizationOnboardingV2UpsellActionSheet.tsx");
 
@@ -25,11 +25,11 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
     }
   };
   obj = { style: tmp.container };
-  obj = { 1501064855: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008935732565137, -1267889981: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473819206, -1145697943: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001126549808859, -1266241916: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005965658253026592, style: tmp.title };
+  obj = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(arg1(dependencyMap[8]).t.v+Jm6X);
   const items = [callback(arg1(dependencyMap[7]).Text, obj), , , , ];
-  const obj1 = { style: tmp.description };
+  const obj1 = { Opened: null, marginVertical: 0, marginStart: null, marginEnd: 471.5, style: tmp.description };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[8]).t.kUUFbG);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj1);

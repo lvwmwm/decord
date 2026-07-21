@@ -1,7 +1,7 @@
 // Module ID: 1878
-// Function ID: 20889
+// Function ID: 20894
 // Name: PaletteKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1878 (PaletteKeys)
 const _module = require(dependencyMap[0]);

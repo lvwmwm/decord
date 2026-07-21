@@ -1,11 +1,11 @@
 // Module ID: 1510
-// Function ID: 17351
+// Function ID: 17356
 // Name: isValidKey
 // Dependencies: []
 // Exports: default
 
 // Module 1510 (isValidKey)
-let closure_3 = ["Array", "registerAsset"];
+let closure_3 = [0.949019667682, 0.650980392157];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

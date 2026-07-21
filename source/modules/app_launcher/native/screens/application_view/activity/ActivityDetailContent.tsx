@@ -1,5 +1,5 @@
 // Module ID: 11252
-// Function ID: 87532
+// Function ID: 87544
 // Name: Tag
 // Dependencies: []
 // Exports: default
@@ -125,7 +125,7 @@ obj.activityHeroDetailsLandscape = { flexDirection: "row" };
 obj.heroMediaContainerLandscape = { width: "65%" };
 obj.detailsContainerLandscape = { width: "35%" };
 obj.details = { paddingHorizontal: PX_12 };
-const obj1 = { Symbol: 285213929, justifyContent: 815361, Icon: -1974403072, t: -2143223345, accessible: 285213929, Set: 815361, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
+const obj1 = { 979464370: true, 1637975633: true, 50352554: true, 2018654817: true, 1652817352: true, 827414186: true, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
 obj.tagList = obj1;
 const tmp2 = arg1(dependencyMap[7]);
 obj.tag = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.round };

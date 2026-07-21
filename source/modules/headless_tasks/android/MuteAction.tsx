@@ -1,11 +1,10 @@
-// Module ID: 16492
-// Function ID: 127381
+// Module ID: 16500
+// Function ID: 127442
 // Name: promise
-// Dependencies: [21]
+// Dependencies: []
 
-// Module 16492 (promise)
-import { MuteUntilSeconds } from "DISCORD_EPOCH";
-
+// Module 16500 (promise)
+const MuteUntilSeconds = require(dependencyMap[0]).MuteUntilSeconds;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/headless_tasks/android/MuteAction.tsx");
 

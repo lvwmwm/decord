@@ -1,5 +1,5 @@
 // Module ID: 8336
-// Function ID: 66047
+// Function ID: 66058
 // Name: openInviteModal
 // Dependencies: []
 // Exports: default
@@ -354,7 +354,7 @@ export default function getOnClick(closure_0) {
   if (null != pathname) {
     if (isDiscordHostnameResult) {
       if (obj7.isAppRoute(pathname)) {
-        obj = { GIFT_CODE_EMBED: null, flexShrink: null };
+        obj = {};
         closure_5 = obj;
         if (null != search) {
           obj.search = search;

@@ -1,5 +1,5 @@
 // Module ID: 6217
-// Function ID: 50239
+// Function ID: 50247
 // Name: GiftingTier2SmallBadge
 // Dependencies: []
 // Exports: GiftingTier2SmallBadge

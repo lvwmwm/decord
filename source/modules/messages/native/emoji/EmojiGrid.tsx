@@ -1,5 +1,5 @@
 // Module ID: 9394
-// Function ID: 73203
+// Function ID: 73214
 // Name: Emoji
 // Dependencies: []
 // Exports: EmojiGrid
@@ -33,8 +33,8 @@ obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.gridEmojiFastImage = obj;
 obj.gridEmojiText = {};
-obj.emojiGridRowContainer = { display: null, alignItems: 11 };
-obj.emojiGridContainer = { "Null": null, "Null": null };
+obj.emojiGridRowContainer = { "Null": null, "Null": 11 };
+obj.emojiGridContainer = {};
 let closure_5 = obj.createStyles(obj);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/messages/native/emoji/EmojiGrid.tsx");
 

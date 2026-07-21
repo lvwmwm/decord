@@ -1,5 +1,5 @@
 // Module ID: 10175
-// Function ID: 78603
+// Function ID: 78614
 // Name: RolePill
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.pill = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
@@ -106,7 +106,7 @@ export default function RolePill(role) {
     tmp19 = callback(View, obj6);
   }
   items1[1] = tmp19;
-  const obj7 = { children: name };
+  const obj7 = { hasMaxConnections: null, isBoostOnlySubscription: null, children: name };
   items1[2] = callback(arg1(dependencyMap[12]).Text, obj7);
   obj1.children = items1;
   obj.children = closure_7(View, obj1);

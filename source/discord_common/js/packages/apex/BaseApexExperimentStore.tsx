@@ -1,5 +1,5 @@
 // Module ID: 1189
-// Function ID: 13568
+// Function ID: 13572
 // Name: _toPropertyKey
 // Dependencies: []
 
@@ -201,7 +201,7 @@ const tmp9 = (PersistedStore) => {
           let tmp5 = key10022;
           let tmp6 = closure_29;
           let tmp7 = closure_17;
-          obj = { hashedName: closure_29(key10022), variantId: arg1[key10022] };
+          obj = { "Bool(false)": "<string:1124139010>", "Bool(false)": "843d42ee8ccb539c61b4f45fba39870a", "Bool(false)": "en-GB.messages.843d42ee8ccb539c61b4f45fba39870a.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "<string:58302274>", hashedName: closure_29(key10022), variantId: arg1[key10022] };
           closure_17[key10022] = obj;
         }
         let closure_23 = self.loadTrackedExposures();

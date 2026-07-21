@@ -1,5 +1,5 @@
 // Module ID: 3690
-// Function ID: 28057
+// Function ID: 28062
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" } };
+    obj = { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: { application: 172, Set: 172, Icon: "center", id: 16 }, short: { application: 172, Set: 172, Icon: "center", id: 16 } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" } };
+    const obj2 = { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: {}, short: { application: 172, Set: 172, Icon: "center", id: 16 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "it";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "adult", "Bool(false)": "_isLayoutManagerDirty", "Bool(false)": "isArray", "Bool(false)": "__closure" } } }, locale: "it" });
+prop.push({ data: { conjunction: { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: { application: 172, Set: 172, Icon: "center", id: 16 }, short: { application: 172, Set: 172, Icon: "center", id: 16 } }, disjunction: { long: { application: true, Set: true, Icon: true, id: true }, narrow: { application: true, Set: true, Icon: true, id: true }, short: { application: true, Set: true, Icon: true, id: true } }, unit: { long: { application: 172, Set: 172, Icon: "center", id: 16 }, narrow: {}, short: { application: 172, Set: 172, Icon: "center", id: 16 } } }, locale: "it" });

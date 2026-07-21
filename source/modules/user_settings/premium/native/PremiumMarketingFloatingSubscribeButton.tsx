@@ -1,26 +1,26 @@
 // Module ID: 12307
-// Function ID: 94291
+// Function ID: 94303
 // Name: PremiumMarketingFloatingSubscribeButton
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 12307 (PremiumMarketingFloatingSubscribeButton)
-import closure_3 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { VerticalGradient } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import { View } from "result";
+import closure_5 from "result";
+import { VerticalGradient } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_7, jsxs: closure_8 } = __exportStarResult1);
-__exportStarResult1 = { container: { -856358908: -1, -854523900: 1092747263, -847708156: 137464, -865665020: -735595182, -843775996: 19403049 }, gradient: {} };
-__exportStarResult1 = { paddingTop: require("__exportStarResult1").space.PX_12 };
-__exportStarResult1.buttonContainer = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+({ jsx: closure_7, jsxs: closure_8 } = result);
+result = { container: {}, gradient: { backgroundColor: false, padding: false, borderRadius: false, alignItems: false, borderWidth: false } };
+result = { <string:1211512470>: "<string:544294082>", <string:2892040516>: "<string:16777216>", <string:2181768798>: "useIsDisabled", <string:3077029956>: "displayNameAccessibilityHint", paddingTop: require("result").space.PX_12 };
+result.buttonContainer = result;
+result = result.createStyles(result);
 let closure_10 = { code: "function PremiumMarketingFloatingSubscribeButtonTsx1(){const{withTiming,isVisible,useReducedMotion,FADE_DURATION_MS,ENTER_TRANSLATE_PX}=this.__closure;return{opacity:withTiming(isVisible.get()?1:0,{duration:useReducedMotion?0:FADE_DURATION_MS}),transform:[{translateY:withTiming(isVisible.get()?0:ENTER_TRANSLATE_PX,{duration:useReducedMotion?0:FADE_DURATION_MS})}]};}" };
 let closure_11 = { code: "function PremiumMarketingFloatingSubscribeButtonTsx2(){const{isVisible}=this.__closure;return{pointerEvents:isVisible.get()?'box-none':'none',accessibilityElementsHidden:!isVisible.get(),importantForAccessibility:isVisible.get()?'auto':'no-hide-descendants'};}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingFloatingSubscribeButton.tsx");
+result = result.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingFloatingSubscribeButton.tsx");
 
 export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
   let buttonText;
@@ -29,7 +29,7 @@ export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
   const arg1 = isVisible;
   const backgroundColor = isVisible.backgroundColor;
   const importDefault = backgroundColor;
-  const tmp = __exportStarResult1();
+  const tmp = result();
   let obj = arg1(dependencyMap[8]);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -114,7 +114,8 @@ export default function PremiumMarketingFloatingSubscribeButton(isVisible) {
   items4[1] = obj3;
   items4[2] = isVisible.style;
   obj2.style = items4;
-  obj2.children = callback(arg1(dependencyMap[15]).Button, { text: buttonText, onPress: openPayment });
+  const obj4 = { -77431875: "<string:16777600>", 651579808: "<string:35647043>", -1437179293: "<string:35646720>", 1640527953: "<string:23841536>", 101339451: "<string:9859328>", text: buttonText, onPress: openPayment };
+  obj2.children = callback(arg1(dependencyMap[15]).Button, obj4);
   items3[1] = callback(View, obj2);
   obj.children = items3;
   return callback2(importDefault(dependencyMap[12]).View, obj);

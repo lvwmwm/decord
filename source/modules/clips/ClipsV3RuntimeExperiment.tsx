@@ -1,15 +1,15 @@
-// Module ID: 4667
-// Function ID: 40506
+// Module ID: 4666
+// Function ID: 40513
 // Name: isClipsV3Enabled
 // Dependencies: []
 // Exports: getClipsRuntime, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3MLEnabled
 
-// Module 4667 (isClipsV3Enabled)
+// Module 4666 (isClipsV3Enabled)
 function isClipsV3Enabled(location) {
   return apexExperiment.getConfig({ location }).enableClipsV3;
 }
 const _module = require(dependencyMap[0]);
-const obj = { margin: "react-stripe-js", paddingHorizontal: "3.7.0", defaultConfig: { LONG: null, UNDEFINED: null }, variations: { [1]: { LONG: true, UNDEFINED: true }, [2]: { LONG: null, UNDEFINED: null } } };
+const obj = { bottom: true, name: true, defaultConfig: { "Null": null, "Null": null }, variations: { [1]: { "Null": null, "Null": null }, [2]: { "Null": null, "Null": null } } };
 const apexExperiment = _module.createApexExperiment(obj);
 let closure_1 = null;
 const _module1 = require(dependencyMap[1]);

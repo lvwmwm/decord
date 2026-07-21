@@ -1,22 +1,22 @@
-// Module ID: 13820
-// Function ID: 104501
+// Module ID: 13823
+// Function ID: 104533
 // Name: BountiesScrollPromptFooter
 // Dependencies: []
 // Exports: default
 
-// Module 13820 (BountiesScrollPromptFooter)
+// Module 13823 (BountiesScrollPromptFooter)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);
-let closure_5 = _module1.createStyles(() => ({ root: {}, titleText: { textAlign: "center" }, swipeText: {} }));
+let closure_5 = _module1.createStyles(() => ({ root: { 1652262301: 1916866816, -1100937077: 1442840857 }, titleText: { textAlign: "center" }, swipeText: {} }));
 const _module2 = require(dependencyMap[5]);
 const result = _module2.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptNuxFooter.tsx");
 
 export default function BountiesScrollPromptFooter() {
   const tmp = callback3();
   let obj = { style: tmp.root };
-  obj = { style: tmp.titleText };
+  obj = { hasMaxConnections: false, isBoostOnlySubscription: false, style: tmp.titleText };
   const intl = require(dependencyMap[4]).intl;
   obj.children = intl.string(require(dependencyMap[4]).t.H57f41);
   const items = [callback(require(dependencyMap[3]).Text, obj), ];

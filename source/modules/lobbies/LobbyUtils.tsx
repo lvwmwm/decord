@@ -1,7 +1,7 @@
 // Module ID: 10160
-// Function ID: 78555
+// Function ID: 78566
 // Name: canUnlinkLobbyChannel
-// Dependencies: [555352064, 488505344, 250937344, 131072]
+// Dependencies: [555352064, 488570880, 250937344, 131072]
 // Exports: useCanUnlinkLobbyChannel
 
 // Module 10160 (canUnlinkLobbyChannel)

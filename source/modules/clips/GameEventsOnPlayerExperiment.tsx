@@ -1,12 +1,12 @@
-// Module ID: 4666
-// Function ID: 40504
+// Module ID: 4665
+// Function ID: 40511
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 4666 (apexExperiment)
+// Module 4665 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { margin: null, paddingHorizontal: true, defaultConfig: { enableGameEventsOnPlayer: false }, variations: { [1]: { enableGameEventsOnPlayer: true } } };
+const obj = { bottom: "???", name: "???", defaultConfig: { enableGameEventsOnPlayer: false }, variations: { [1]: { enableGameEventsOnPlayer: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/clips/GameEventsOnPlayerExperiment.tsx");

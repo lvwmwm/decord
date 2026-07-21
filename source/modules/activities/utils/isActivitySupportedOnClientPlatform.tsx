@@ -1,5 +1,5 @@
 // Module ID: 10507
-// Function ID: 82035
+// Function ID: 82046
 // Name: isActivitySupportedOnClientPlatform
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 13721
-// Function ID: 103803
+// Module ID: 13723
+// Function ID: 103825
 // Name: WarningLabel
 // Dependencies: []
 // Exports: default
 
-// Module 13721 (WarningLabel)
+// Module 13723 (WarningLabel)
 function WarningLabel(children) {
   const tmp = callback3();
   let obj = { style: tmp.warningContainer };
@@ -65,10 +65,10 @@ let closure_16 = arg1(dependencyMap[10]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
-obj = { container: {}, section: { marginBottom: 24 }, header: { position: false, top: false, left: false, opacity: false }, appAboutDescription: { width: "100%" } };
+obj = { container: {}, section: { marginBottom: 24 }, header: { borderWidth: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029993938115565256, borderColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034905172952, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494916, top: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004714439513736073 }, appAboutDescription: { width: "100%" } };
 obj = { marginTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.warningContainer = obj;
-const obj1 = { 0: 24, 9223372036854775807: 24, -9223372036854775808: null, color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
+const obj1 = { <string:1549954009>: "usePubSub", <string:67064148>: "Array", <string:2018617953>: "ERNhYf", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
 obj.warningIcon = obj1;
 let closure_19 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[11]);
@@ -156,7 +156,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   const items7 = [stateFromStores2];
   const stateFromStoresObject = obj8.useStateFromStoresObject(items6, () => {
     if (null == stateFromStores2) {
-      let obj = { <string:2494184035>: true, <string:924993106>: true };
+      let obj = { position: true, bottom: true };
     } else {
       obj = { appDMChannelMuteConfig: closure_10.getChannelMuteConfig(null, stateFromStores2), muted: closure_10.isChannelMuted(null, stateFromStores2) };
     }
@@ -187,7 +187,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   if (undefined !== description) {
     tmp18 = null;
     if ("" !== description) {
-      obj4 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.appAboutDescription };
+      obj4 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.appAboutDescription };
       let obj16 = arg1(dependencyMap[42]);
       obj4.children = obj16.parseBioReactWithCachedAST(description);
       tmp18 = callback(arg1(dependencyMap[41]).Text, obj4);
@@ -199,7 +199,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   let tmp23Result = null;
   if (null != stateFromStores2) {
     obj5 = { style: tmp.section };
-    const obj6 = { "Bool(false)": null, "Bool(false)": "1dc3d638940bcdf9b267c8229f603041" };
+    const obj6 = { "Bool(false)": "Array", "Bool(false)": "isArray" };
     obj7 = { label: "Mute DMs" };
     let end_time;
     if (null != appDMChannelMuteConfig) {

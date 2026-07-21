@@ -1,15 +1,16 @@
-// Module ID: 14824
-// Function ID: 111721
+// Module ID: 14827
+// Function ID: 111755
 // Name: useEnsureHydratedUsers
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: useEnsureHydratedUsers
 
-// Module 14824 (useEnsureHydratedUsers)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 14827 (useEnsureHydratedUsers)
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useEnsureHydratedUsers.tsx");
+result = result.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useEnsureHydratedUsers.tsx");
 
 export const useEnsureHydratedUsers = function useEnsureHydratedUsers(guild_id, items1) {
   items1 = guild_id;

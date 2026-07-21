@@ -1,5 +1,5 @@
 // Module ID: 11570
-// Function ID: 89979
+// Function ID: 89991
 // Name: useGuildPowerupColorConfig
 // Dependencies: []
 // Exports: default

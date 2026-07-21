@@ -1,5 +1,5 @@
 // Module ID: 10215
-// Function ID: 78922
+// Function ID: 78933
 // Name: computeThreadNotificationSetting
 // Dependencies: []
 // Exports: useThreadNotificationSetting

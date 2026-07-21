@@ -1,10 +1,10 @@
-// Module ID: 7740
-// Function ID: 61484
+// Module ID: 7741
+// Function ID: 61496
 // Name: getSortedVoiceSessionParticipants
 // Dependencies: []
 // Exports: getVoiceSessionMessageContent, useSortedVoiceSessionParticipants
 
-// Module 7740 (getSortedVoiceSessionParticipants)
+// Module 7741 (getSortedVoiceSessionParticipants)
 function getSortedVoiceSessionParticipants(channel_id) {
   const userAffinitiesMap = userAffinitiesMap.getUserAffinitiesMap();
   const tmp = function getVoiceSessionParticipants(call) {

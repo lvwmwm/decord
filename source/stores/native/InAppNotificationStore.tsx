@@ -1,5 +1,5 @@
 // Module ID: 10205
-// Function ID: 78749
+// Function ID: 78760
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -241,7 +241,7 @@ let tmp3 = () => {
       map1 = new Map();
       obj[AlertDismissalHandler(closure_2[19]).GuildIncidentAlertTypes.DM_RAID] = map1;
       this.dissmissedAlertsMap = obj;
-      this.threshold = { position: "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FE}", minHeight: true };
+      this.threshold = { "Bool(true)": "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FE}", "Bool(true)": true };
       return;
     }
   }
@@ -541,7 +541,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[47]), {
             let obj = arg1(dependencyMap[38]);
             let tryParseChannelPathResult = obj.tryParseChannelPath(tmp);
             if (null == tryParseChannelPathResult) {
-              tryParseChannelPathResult = { y: "o", isArray: "o" };
+              tryParseChannelPathResult = { effectDuration: "o", passiveEffectDuration: "o" };
             }
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
@@ -1013,7 +1013,7 @@ const obj = {
             let obj = arg1(dependencyMap[38]);
             let tryParseChannelPathResult = obj.tryParseChannelPath(tmp);
             if (null == tryParseChannelPathResult) {
-              tryParseChannelPathResult = { y: "o", isArray: "o" };
+              tryParseChannelPathResult = { effectDuration: "o", passiveEffectDuration: "o" };
             }
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {

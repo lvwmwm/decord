@@ -1,18 +1,18 @@
-// Module ID: 12812
-// Function ID: 98109
+// Module ID: 12814
+// Function ID: 98131
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeCrosshairs
 
-// Module 12812 (items)
+// Module 12814 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = ["channelId", "channelId", "channelId", "channelId"];
-let closure_5 = ["r", "giftCardAsset", "WISHLIST_ITEM_CLICKED"];
+let closure_5 = [true, "<string:1329725442>", "<string:1358955076>"];
 let closure_6 = [0.1, 0.6, 0.95, 0.05];
-const items = [{}, {}, {}, {}];
+const items = [{ "Null": null, "Null": null }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }, { "Null": "\u{1F4A0}", "Null": 6 }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }];
 let closure_8 = [true, true, true];
-const items1 = [{}, {}, {}];
+const items1 = [{ "Null": "Array", "Null": "isArray" }, { "Null": "\u{1F4A0}", "Null": 6 }, { "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeCrosshairs.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeCrosshairs = function GuildBadgeCrosshairs(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
+  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

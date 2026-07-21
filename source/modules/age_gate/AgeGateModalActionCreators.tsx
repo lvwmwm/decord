@@ -1,5 +1,5 @@
 // Module ID: 5587
-// Function ID: 47389
+// Function ID: 47397
 // Name: openAgeGateModal
 // Dependencies: []
 // Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal

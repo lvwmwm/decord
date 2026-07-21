@@ -1,5 +1,5 @@
 // Module ID: 8909
-// Function ID: 70291
+// Function ID: 70302
 // Name: XLargeBoldIcon
 // Dependencies: []
 // Exports: XLargeBoldIcon

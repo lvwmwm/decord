@@ -1,5 +1,5 @@
 // Module ID: 9777
-// Function ID: 75997
+// Function ID: 76008
 // Name: _saveGuildIdentityChanges
 // Dependencies: []
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild

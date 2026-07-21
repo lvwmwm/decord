@@ -1,10 +1,10 @@
-// Module ID: 12890
-// Function ID: 98407
+// Module ID: 12892
+// Function ID: 98429
 // Name: Tooltip
 // Dependencies: []
 // Exports: default
 
-// Module 12890 (Tooltip)
+// Module 12892 (Tooltip)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
@@ -89,7 +89,7 @@ export default function Tooltip(arrowHeight) {
   const items3 = [tmp3.container, containerStyle];
   let tmp12 = null;
   if (null != title) {
-    const obj2 = { "Null": false, "Null": false, "Null": false, style: tmp3.title, children: title };
+    const obj2 = { delete: null, dispatch: null, raw: null, style: tmp3.title, children: title };
     tmp12 = callback(arg1(dependencyMap[7]).Heading, obj2);
   }
   const items4 = [tmp12, , ];

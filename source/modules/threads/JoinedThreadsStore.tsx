@@ -1,17 +1,18 @@
 // Module ID: 3758
-// Function ID: 28763
+// Function ID: 28768
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 3758 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import { ALL_CHANNEL_TYPES } from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import { ALL_CHANNEL_TYPES } from "result";
+import closure_8 from "result";
+import importDefaultResult from "result";
+import result from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -112,7 +113,7 @@ let tmp5 = (Store) => {
   class JoinedThreadsStoreClass {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, JoinedThreadsStoreClass);
+      tmp = closure_2(this, JoinedThreadsStoreClass);
       obj = closure_5(JoinedThreadsStoreClass);
       tmp2 = closure_4;
       if (closure_13()) {
@@ -195,9 +196,9 @@ let tmp5 = (Store) => {
     }
   };
   return callback(JoinedThreadsStoreClass, items);
-}(require("__exportStarResult1").Store);
+}(require("result").Store);
 tmp5.displayName = "JoinedThreadsStore";
-tmp5 = new tmp5(require("__exportStarResult1"), {
+tmp5 = new tmp5(require("result"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     importDefaultResult.reset();
     const set = new Set();
@@ -324,6 +325,6 @@ tmp5 = new tmp5(require("__exportStarResult1"), {
     return closure_1;
   }
 });
-const result = require("__exportStarResult1").fileFinishedImporting("modules/threads/JoinedThreadsStore.tsx");
+result = result.fileFinishedImporting("modules/threads/JoinedThreadsStore.tsx");
 
 export default tmp5;

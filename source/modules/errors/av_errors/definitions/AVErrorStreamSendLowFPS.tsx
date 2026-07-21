@@ -1,9 +1,9 @@
-// Module ID: 16401
-// Function ID: 126696
+// Module ID: 16409
+// Function ID: 126757
 // Name: AVErrorStreamSendLowFPSDefinition
 // Dependencies: []
 
-// Module 16401 (AVErrorStreamSendLowFPSDefinition)
+// Module 16409 (AVErrorStreamSendLowFPSDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

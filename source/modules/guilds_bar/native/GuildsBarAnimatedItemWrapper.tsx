@@ -1,10 +1,10 @@
-// Module ID: 14697
-// Function ID: 110898
+// Module ID: 14700
+// Function ID: 110932
 // Name: UnreadIndicator
 // Dependencies: []
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 14697 (UnreadIndicator)
+// Module 14700 (UnreadIndicator)
 class UnreadIndicator {
   constructor(arg0) {
     sharedId = global.sharedId;
@@ -28,7 +28,7 @@ class UnreadIndicator {
     obj = arg1(dependencyMap[6]);
     token = obj.useToken(importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
     closure_4 = token;
-    tmp4 = f110905(closure_6());
+    tmp4 = f110939(closure_6());
     GUILD_ITEM_HIT_SLOP = tmp4;
     tmp5 = MOUNTED === arg1(dependencyMap[7]).TransitionStates.MOUNTED;
     closure_6 = tmp5;
@@ -81,7 +81,7 @@ class UnreadIndicator {
     obj.guildItemSize = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f110906;
+    fn.__initData = f110940;
     items1 = [, , , ];
     items1[0] = tmp5;
     items1[1] = sharedId;
@@ -118,7 +118,7 @@ class UnreadIndicator {
     obj1.runOnJS = arg1(dependencyMap[9]).runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f110906;
+    fn2.__initData = f110940;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
@@ -134,18 +134,18 @@ const IOS_POINTER_STYLE = arg1(dependencyMap[1]).IOS_POINTER_STYLE;
 ({ GUILD_ITEM_HIT_SLOP: closure_5, useGuildWrapperSize: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = { <string:1634937736>: "<string:1094704332>", <string:1733120470>: "ILLO_PINK_30", <string:1453996748>: "<string:2576980529>" };
-let closure_10 = { <string:1634937736>: "ILLO_GREEN_50", <string:1733120470>: 0.5, <string:1453996748>: 13 };
+let closure_9 = { disableNewIOSPicker: "<string:1094704332>", webpackId: "ILLO_PINK_30", connectedEmbeddedActivity: "<string:2576980529>" };
+let closure_10 = { disableNewIOSPicker: "ILLO_GREEN_50", webpackId: 0.5, connectedEmbeddedActivity: 13 };
 const tmp3 = arg1(dependencyMap[3]);
 let closure_11 = arg1(dependencyMap[4]).createStyles(() => {
   let num = arg0;
   if (arg0 === undefined) {
     num = 56;
   }
-  let obj = { draggedElement: { opacity: 0 }, selectedBackgroundOverlay: { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" }, container: { "Null": 16, "Null": 16 } };
-  obj = { top: num / 2, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
+  let obj = { draggedElement: { opacity: 0 }, selectedBackgroundOverlay: { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, container: {} };
+  obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009918204497696196, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002124165697442455, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000783016494387, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009580552205395272, "Bool(false)": 13340553835198480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, top: num / 2, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
   obj.unreadIndicator = obj;
-  obj = { left: num + 16, height: num };
+  obj = { <string:1373155427>: "NativeScreenSharePickerUpdate", <string:3679825084>: "r", <string:2613735068>: "isArray", <string:3714720548>: "Array", <string:1390895509>: "isArray", <string:611104751>: "st", <string:1861833059>: "isArray", <string:1638181730>: "HermesInternal", <string:2506380196>: "isArray", left: num + 16, height: num };
   obj.expandedChildrenWrapper = obj;
   return obj;
 });
@@ -154,7 +154,7 @@ let closure_12 = arg1(dependencyMap[4]).createStyles((arg0, arg1, width, height)
   let obj = {};
   obj = { position: "relative", paddingTop: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingBottom: importDefault(dependencyMap[5]).modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingLeft: 12, height, width: width + closure_5.left + closure_5.right };
   obj.pressableWrapper = obj;
-  obj = { from: "accessibilityRole", get: "filter", body: "h", style: "content", accessible: "isArray", bm: "isArray", width, height: width };
+  obj = { width, height: width };
   let str = "transparent";
   let str2 = "transparent";
   if (!arg1) {

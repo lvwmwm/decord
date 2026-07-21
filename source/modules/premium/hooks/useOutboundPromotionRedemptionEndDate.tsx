@@ -1,10 +1,10 @@
-// Module ID: 12367
-// Function ID: 94580
+// Module ID: 12369
+// Function ID: 94602
 // Name: useOutboundPromotionRedemptionEndDate
 // Dependencies: []
 // Exports: default
 
-// Module 12367 (useOutboundPromotionRedemptionEndDate)
+// Module 12369 (useOutboundPromotionRedemptionEndDate)
 import module_30 from "module_30";
 
 let closure_3 = importAll(dependencyMap[0]);

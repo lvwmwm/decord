@@ -1,14 +1,15 @@
 // Module ID: 12216
-// Function ID: 93775
+// Function ID: 93787
 // Name: InAppReportsUpsellsTableRow
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
 // Module 12216 (InAppReportsUpsellsTableRow)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
+result = result.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
 
 export default function InAppReportsUpsellsTableRow(disabled) {
   let disabledTitle;

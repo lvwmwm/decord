@@ -1,5 +1,5 @@
 // Module ID: 5714
-// Function ID: 49107
+// Function ID: 49115
 // Name: map
 // Dependencies: []
 
@@ -21,7 +21,7 @@ function resolveGuildTemplate(code) {
       obj = { type: "GUILD_TEMPLATE_RESOLVE", code };
       importDefault(dependencyMap[1]).dispatch(obj);
       const HTTP = require(dependencyMap[2]).HTTP;
-      obj = { lc: null, type: null, end: null, url: closure_3.UNRESOLVED_GUILD_TEMPLATE(code) };
+      obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_3.UNRESOLVED_GUILD_TEMPLATE(code) };
       value = HTTP.get(obj);
       const obj2 = importDefault(dependencyMap[1]);
       const cleanupPromise = value.then((body) => {

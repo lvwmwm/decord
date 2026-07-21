@@ -1,5 +1,5 @@
 // Module ID: 3997
-// Function ID: 33163
+// Function ID: 33168
 // Name: createJSONStorage
 // Dependencies: []
 // Exports: combine, devtools, persist, redux, subscribeWithSelector
@@ -48,8 +48,8 @@ function createJSONStorage(arg0) {
 let closure_0 = require(dependencyMap[0]);
 let closure_1 = require(dependencyMap[1]);
 let closure_2 = require(dependencyMap[2]);
-let closure_3 = ["description", "Array", "isArray"];
-let closure_4 = [null];
+let closure_3 = [true, true, true];
+let closure_4 = [];
 const map = new Map();
 function getTrackedConnectionState(arg0) {
   const value = map.get(arg0);

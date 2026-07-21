@@ -1,10 +1,10 @@
-// Module ID: 7397
-// Function ID: 59491
+// Module ID: 7398
+// Function ID: 59503
 // Name: getIllustrationSource
 // Dependencies: []
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 7397 (getIllustrationSource)
+// Module 7398 (getIllustrationSource)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 11917
-// Function ID: 92219
+// Function ID: 92231
 // Name: shouldShowActivityTimeBar
 // Dependencies: []
 // Exports: default

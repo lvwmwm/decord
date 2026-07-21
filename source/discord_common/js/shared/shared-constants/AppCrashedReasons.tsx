@@ -1,9 +1,9 @@
-// Module ID: 13001
-// Function ID: 98950
+// Module ID: 13003
+// Function ID: 98972
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 13001 (set)
+// Module 13003 (set)
 const obj = { ALL: new Set([]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AppCrashedReasons.tsx");

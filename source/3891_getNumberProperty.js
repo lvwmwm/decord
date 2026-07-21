@@ -1,5 +1,5 @@
 // Module ID: 3891
-// Function ID: 32214
+// Function ID: 32219
 // Name: getNumberProperty
 // Dependencies: []
 // Exports: useRiveNumber

@@ -1,16 +1,15 @@
 // Module ID: 3571
-// Function ID: 27714
+// Function ID: 27719
 // Name: isThursday
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3571 (isThursday)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function isThursday(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  return 4 === startOfWeek.default(defaultResult1).getDay();
+  closure_1.default(1, arguments);
+  return 4 === closure_0.default(defaultResult1).getDay();
 };
 export default exports.default;

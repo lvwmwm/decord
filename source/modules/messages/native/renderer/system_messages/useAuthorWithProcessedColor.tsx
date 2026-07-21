@@ -1,10 +1,10 @@
-// Module ID: 7642
-// Function ID: 61165
+// Module ID: 7643
+// Function ID: 61177
 // Name: getMessageAuthorWithProcessedColor
 // Dependencies: [31, 27, 1852, 33]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7642 (getMessageAuthorWithProcessedColor)
+// Module 7643 (getMessageAuthorWithProcessedColor)
 import { processColor } from "module_31";
 import module_33 from "module_33";
 

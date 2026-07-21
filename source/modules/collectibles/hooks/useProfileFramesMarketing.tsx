@@ -1,10 +1,10 @@
-// Module ID: 15501
-// Function ID: 118292
+// Module ID: 15504
+// Function ID: 118331
 // Name: deriveProfileFramesMarketing
 // Dependencies: []
 // Exports: getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 15501 (deriveProfileFramesMarketing)
+// Module 15504 (deriveProfileFramesMarketing)
 function deriveProfileFramesMarketing(arg0) {
   let canViewProfileFramesInCollectiblesShop;
   let hasPaidTier2;

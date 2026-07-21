@@ -1,5 +1,5 @@
 // Module ID: 3586
-// Function ID: 27760
+// Function ID: 27765
 // Name: milliseconds
 // Dependencies: []
 // Exports: default

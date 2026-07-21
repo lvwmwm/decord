@@ -1,5 +1,5 @@
 // Module ID: 9284
-// Function ID: 72533
+// Function ID: 72544
 // Name: modifyRow
 // Dependencies: []
 // Exports: default
@@ -21,13 +21,13 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.container = obj;
-obj1 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.header = obj1;
-const tmp2 = arg1(dependencyMap[4]);
-obj.authorRow = { gap: importDefault(dependencyMap[8]).space.PX_4 };
+const obj2 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[8]).space.PX_4 };
+obj.authorRow = obj2;
 obj.headerTimestamp = { flex: 1 };
 let closure_10 = obj1.createStyles(obj);
-const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_4 };
+const tmp2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/conversations/components/native/ConversationPreviewMessage.tsx");
 
 export default function ConversationPreviewMessage(message) {
@@ -99,7 +99,7 @@ export default function ConversationPreviewMessage(message) {
     items4[2] = callback(arg1(dependencyMap[15]).Text, obj6);
     obj1.children = items4;
     const items6 = [closure_8(View, obj1), ];
-    const obj7 = { -1034289856: "<string:553648726>", -1031355792: "<string:68987969>", modifyRow, message, rowGenerator: importDefaultResult };
+    const obj7 = { i: true, apply: true, modifyRow, message, rowGenerator: importDefaultResult };
     items6[1] = callback(importDefault(dependencyMap[16]), obj7);
     obj.children = items6;
     return closure_8(View, obj);

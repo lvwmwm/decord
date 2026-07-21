@@ -1,5 +1,5 @@
 // Module ID: 11881
-// Function ID: 91958
+// Function ID: 91970
 // Name: BotUserProfileOverflowMenu
 // Dependencies: []
 // Exports: default
@@ -187,7 +187,7 @@ export default function BotUserProfileOverflowMenu(application) {
       trackUserProfileAction({ action: "COPY_USERNAME", analyticsLocations });
       const obj = { action: "COPY_USERNAME", analyticsLocations };
       const obj2 = application(channel[27]);
-      obj2.copy(user(channel[28]).getUserTag(user, {}));
+      obj2.copy(user(channel[28]).getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true }));
       const obj3 = user(channel[28]);
       const result = application(channel[29]).presentUsernameCopied();
       callback();

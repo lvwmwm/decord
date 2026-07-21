@@ -1,5 +1,5 @@
 // Module ID: 1738
-// Function ID: 19471
+// Function ID: 19476
 // Name: eulerToQuaternion
 // Dependencies: []
 // Exports: useAnimatedSensor
@@ -127,7 +127,7 @@ export const useAnimatedSensor = function useAnimatedSensor(arg0, adjustToInterf
   }
   const items = [tmp.current];
   const tmp10 = tmp11(() => {
-    const obj = { -349744400: -0.000000000000000000008579929772795286, -1594137113: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006777906789747229, iosReferenceFrame: arg0(tmp[1]).IOSReferenceFrame.Auto };
+    const obj = { "Null": false, "Null": null, iosReferenceFrame: arg0(tmp[1]).IOSReferenceFrame.Auto };
     return Object.assign(obj, tmp.current);
   }, items);
   const obj = {

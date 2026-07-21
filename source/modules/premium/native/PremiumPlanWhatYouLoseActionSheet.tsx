@@ -1,10 +1,10 @@
-// Module ID: 7395
-// Function ID: 59476
+// Module ID: 7396
+// Function ID: 59488
 // Name: WhatYouLoseItem
 // Dependencies: []
 // Exports: default
 
-// Module 7395 (WhatYouLoseItem)
+// Module 7396 (WhatYouLoseItem)
 function WhatYouLoseItem(arg0) {
   let imageSource;
   let text;
@@ -22,21 +22,21 @@ const View = arg1(dependencyMap[1]).View;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { body: { isArray: "<string:1027735553>", no: "<string:4143972873>" } };
+obj = { body: {} };
 obj = { marginBottom: 8, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.subtitle = { marginBottom: 16, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj2 = { -2046852097: 175177729, -1996519425: 1912602624, -1929409793: 1, -1979740161: 336, -1912632321: 1359070546, -1845522177: 2912753, -1778412545: 1359020032, -1795190017: 960578957, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.item = obj2;
+const obj1 = { marginBottom: 16, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.item = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.itemLabel = { marginTop: 8 };
 obj.footer = { paddingHorizontal: 16 };
 obj.button = { marginBottom: 8 };
-const obj3 = { "Bool(false)": "absolute", "Bool(false)": 0, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
-obj.keepText = obj3;
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj.keepText = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 let closure_8 = obj.createStyles(obj);
 const obj4 = { DOWNGRADE: 0, [0]: "DOWNGRADE", CANCEL: 1, [1]: "CANCEL" };
-const obj1 = { marginBottom: 16, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/premium/native/PremiumPlanWhatYouLoseActionSheet.tsx");
 
 export default function PremiumPlanWhatYouLoseActionSheet(arg0) {

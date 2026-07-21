@@ -1,18 +1,18 @@
-// Module ID: 12837
-// Function ID: 98161
+// Module ID: 12839
+// Function ID: 98183
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeWiltedFlower
 
-// Module 12837 (items)
+// Module 12839 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = ["<string:1105917265>", "disableConstantNumberOfLines", "<string:3620815962>"];
-let closure_5 = ["placeholderTextColor", "editable", "large"];
-const items = [{}, {}, {}];
-let closure_7 = ["bottom", "body"];
-let closure_8 = [];
-const items1 = [{}, {}];
+let closure_4 = [-4315226215028688000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1569498207454278000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019983040032295948];
+let closure_5 = ["disabled", "style", "inputTextStyle"];
+const items = [{}, { "Null": "Array", "Null": "isArray" }, { "Null": "Array", "Null": "isArray" }];
+let closure_7 = ["notification_clicked", "experiment_user_triggered"];
+let closure_8 = [true, true];
+const items1 = [{}, { "Null": "Array", "Null": "isArray" }];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeWiltedFlower.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeWiltedFlower = function GuildBadgeWiltedFlower(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
+  let obj = { 1390895496: "ERROR", -1120325613: "ERROR", 1549155172: "NOT_RESPONDER", 101339490: "NOT_RESPONDER" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

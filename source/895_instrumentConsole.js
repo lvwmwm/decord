@@ -1,7 +1,7 @@
 // Module ID: 895
-// Function ID: 9849
+// Function ID: 9853
 // Name: instrumentConsole
-// Dependencies: [77, 65, 831, 796]
+// Dependencies: []
 
 // Module 895 (instrumentConsole)
 function instrumentConsole() {

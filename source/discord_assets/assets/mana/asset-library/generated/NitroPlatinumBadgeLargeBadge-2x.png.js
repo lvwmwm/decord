@@ -1,7 +1,7 @@
 // Module ID: 6336
-// Function ID: 50418
+// Function ID: 50426
 // Name: vanityUrl
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6336 (vanityUrl)
 const _module = require(dependencyMap[0]);

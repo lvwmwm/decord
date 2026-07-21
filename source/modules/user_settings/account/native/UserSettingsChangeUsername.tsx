@@ -1,18 +1,18 @@
-// Module ID: 13538
-// Function ID: 102697
+// Module ID: 13540
+// Function ID: 102719
 // Name: UsernameStatusMessage
-// Dependencies: [0, 0, 0, 0, 0, 0, 1849, 7655, 9229, 566, 4333, 9228, 1934, 9231, 10086, 1212, 2, 7655, 4343, 3807, 10086, 1212, 2, 7655, 653, 10086]
+// Dependencies: [0, 0, 0, 0, 0, 0, 1849, 7656, 9229, 566, 4333, 9228, 1934, 9231, 10086, 1212, 2, 7656, 4343, 3807, 10086, 1212, 2, 7656, 653, 10086]
 // Exports: default
 
-// Module 13538 (UsernameStatusMessage)
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import { UserSettingsSections } from "__exportStarResult1";
+// Module 13540 (UsernameStatusMessage)
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import result from "result";
+import closure_9 from "result";
+import { UserSettingsSections } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import MobileSetting from "MobileSetting";
-import __exportStarResult1 from "__exportStarResult1";
 import createToggle from "createToggle";
 
 function UsernameStatusMessage(showHint) {
@@ -26,10 +26,13 @@ function UsernameStatusMessage(showHint) {
   const P2 = arg1(dependencyMap[9]).P;
   obj.message = P2.select();
   const withResult = match.with(obj, (children) => callback(showHint(closure_3[11]).Text, { children }));
-  return match.with(obj, (children) => callback(showHint(closure_3[11]).Text, { children })).with(obj, (children) => callback(showHint(closure_3[11]).Text, { children })).otherwise(() => {
+  return match.with(obj, (children) => callback(showHint(closure_3[11]).Text, { children })).with(obj, (children) => {
+    const obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-lg/semibold", children };
+    return callback(showHint(closure_3[11]).Text, obj);
+  }).otherwise(() => {
     let tmp = null;
     if (showHint) {
-      const obj = {};
+      const obj = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
       const intl = showHint(closure_3[12]).intl;
       obj.children = intl.string(showHint(closure_3[12]).t.z7c4bP);
       tmp = callback(showHint(closure_3[11]).Text, obj);
@@ -37,7 +40,7 @@ function UsernameStatusMessage(showHint) {
     return tmp;
   });
 }
-({ View: closure_7, ScrollView: closure_8 } = require("__exportStarResult1"));
+({ View: closure_7, ScrollView: closure_8 } = result);
 ({ jsx: closure_11, jsxs: closure_12 } = _isNativeReflectConstruct);
 MobileSetting = {};
 MobileSetting = { backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.BACKGROUND_BASE_LOW };
@@ -47,10 +50,10 @@ MobileSetting.inputs = {};
 MobileSetting.username = { flex: 2 };
 MobileSetting.discriminator = { flex: 1 };
 MobileSetting.divider = { backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { y: false, isArray: false, backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.INTERACTIVE_BACKGROUND_SELECTED };
+const obj2 = { tabularNumbers: "y", variant: "isArray", backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.INTERACTIVE_BACKGROUND_SELECTED };
 MobileSetting.dividerInner = obj2;
 MobileSetting = MobileSetting.createStyles(MobileSetting);
-const result = createToggle.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
+result = createToggle.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
 
 export default function UserSettingsChangeUsername() {
   let obj5;
@@ -201,7 +204,7 @@ export default function UserSettingsChangeUsername() {
     } else {
       obj1 = { ref, containerStyle: tmp.discriminator, value: `#${tmp13}`, isClearable: false, isDisabled: true };
     }
-    const obj2 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.background };
+    const obj2 = { style: tmp.background };
     const items4 = [callback2(importDefault(dependencyMap[23]), {}), ];
     obj3 = { style: tmp.container };
     const obj4 = {};

@@ -1,5 +1,5 @@
 // Module ID: 5485
-// Function ID: 46794
+// Function ID: 46802
 // Name: RoleDot
 // Dependencies: []
 // Exports: default
@@ -165,13 +165,13 @@ let closure_6 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { roleContainer: {} };
-obj = { 9223372036854775807: -193784249, 9223372036854775807: -184549377, 0: 16777215, 0: 16777216, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { roleContainer: { stiffness: false, damping: false, mass: false } };
+obj = { 9223372036854775807: 410124289, 9223372036854775807: 402653184, 0: 16777216, 0: 21989186, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.role = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.roleDot = { borderRadius: importDefault(dependencyMap[7]).radii.round };
+const obj1 = { <string:827548257>: "r", <string:4257773646>: "_randomPrefix", <string:1364418947>: "r", borderRadius: importDefault(dependencyMap[7]).radii.round };
+obj.roleDot = obj1;
 let closure_12 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
+const tmp3 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
 
 export default function UserProfileRolesCard(userId) {

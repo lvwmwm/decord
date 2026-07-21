@@ -1,11 +1,9 @@
 // Module ID: 1006
-// Function ID: 10979
+// Function ID: 10983
 // Name: _isNativeReflectConstruct
-// Dependencies: [67043328, 67108864, 67436544, 66650112, 4151508992, 3, 4177526788, 1979711491, 1015]
+// Dependencies: [66977792, 67043328, 67108864, 67436544, 66650112, 4151508992, 3, 4177526788, 1979711491]
 
 // Module 1006 (_isNativeReflectConstruct)
-import timestamp from "timestamp";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -33,6 +31,7 @@ let closure_3 = require(dependencyMap[1]);
 let closure_4 = require(dependencyMap[2]);
 let closure_5 = require(dependencyMap[3]);
 let closure_6 = require(dependencyMap[4]);
+let closure_7 = require(dependencyMap[5]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const BrowserClient = (Client) => {
@@ -50,7 +49,7 @@ export const BrowserClient = (Client) => {
         SENTRY_SDK_SOURCE = obj.getSDKSource();
       }
       obj2 = BrowserClient(sendClientReports[7]);
-      applySdkMetadataResult = obj2.applySdkMetadata(tmp2, "browser", ["<string:1723400193>"], SENTRY_SDK_SOURCE);
+      applySdkMetadataResult = obj2.applySdkMetadata(tmp2, "browser", [10388708784503762000000000000000000], SENTRY_SDK_SOURCE);
       _metadata = tmp2._metadata;
       tmp6 = null != _metadata && _metadata.sdk;
       if (tmp6) {
@@ -130,7 +129,7 @@ export const BrowserClient = (Client) => {
     }
   }
   const require = BrowserClient;
-  timestamp(BrowserClient, Client);
+  callback2(BrowserClient, Client);
   let obj = {
     key: "eventFromException",
     value: function eventFromException(arg0, arg1) {

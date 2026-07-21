@@ -1,10 +1,10 @@
-// Module ID: 8134
-// Function ID: 64352
+// Module ID: 8135
+// Function ID: 64365
 // Name: ForumExplicitMediaAlert
 // Dependencies: []
 // Exports: default
 
-// Module 8134 (ForumExplicitMediaAlert)
+// Module 8135 (ForumExplicitMediaAlert)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -35,20 +35,21 @@ export default function ForumExplicitMediaAlert(arg0) {
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.B3vFdU);
   const items1 = [callback(arg1(dependencyMap[6]).Text, obj), , , ];
-  obj = { style: items2 };
+  obj = { reportingObserverIntegration: "primary", rewriteFramesIntegration: false, browserProfilingIntegration: 700 };
   const items2 = [, ];
   ({ body: arr3[0], text: arr3[1] } = tmp);
+  obj.style = items2;
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.children = intl2.string(arg1(dependencyMap[7]).t.i4AbAS);
   items1[1] = callback(arg1(dependencyMap[6]).Text, obj);
   const obj1 = { style: tmp.buttonContainer };
-  const obj2 = {};
+  const obj2 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj2.text = intl3.string(arg1(dependencyMap[7]).t.WAI6xu);
   obj2.onPress = onClose;
   obj1.children = callback(arg1(dependencyMap[8]).Button, obj2);
   items1[2] = callback(View, obj1);
-  const obj3 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.text };
+  const obj3 = { style: tmp.text };
   const intl4 = arg1(dependencyMap[7]).intl;
   obj3.children = intl4.format(arg1(dependencyMap[7]).t.APQGZ+, {
     handleFalsePositiveHook() {

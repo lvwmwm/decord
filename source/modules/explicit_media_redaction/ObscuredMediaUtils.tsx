@@ -1,5 +1,5 @@
 // Module ID: 5666
-// Function ID: 48643
+// Function ID: 48651
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getUnscannedMediaIds, isEligibleForScanning, isMediaObscuredForHarmTypes, messageHasObscurableMedia
@@ -548,7 +548,7 @@ function shouldRedactForSettingValue(arg0) {
 }
 function getChannelIdAndAuthorIdFromMessage(message) {
   if (null == message) {
-    return { 536813311: "o", -783530753: "o" };
+    return { "Bool(true)": "o", "Bool(true)": "o" };
   } else {
     let channel_id = null;
     if ("channel_id" in message) {

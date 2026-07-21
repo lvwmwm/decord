@@ -1,5 +1,5 @@
 // Module ID: 10463
-// Function ID: 81004
+// Function ID: 81015
 // Name: sendVideoProgress
 // Dependencies: []
 // Exports: computeMaxSeekableTime, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing

@@ -1,5 +1,5 @@
 // Module ID: 6129
-// Function ID: 50107
+// Function ID: 50115
 // Name: GameDiversityTier5LargeBadge
 // Dependencies: []
 // Exports: GameDiversityTier5LargeBadge

@@ -1,5 +1,5 @@
 // Module ID: 9358
-// Function ID: 73028
+// Function ID: 73039
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
@@ -7,7 +7,7 @@
 let obj = { uiViewClassName: "EmojiPickerRowView", directEventTypes: { topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" } } };
 obj = { rowData: true };
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ max: null, apply: null }));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ accessibilityRole: null, mn: null }));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 const value = _module1.get("EmojiPickerRowView", () => obj);

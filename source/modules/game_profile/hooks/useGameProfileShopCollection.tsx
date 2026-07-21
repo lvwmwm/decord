@@ -1,5 +1,5 @@
 // Module ID: 11836
-// Function ID: 91728
+// Function ID: 91740
 // Name: useGameProfileShopCollection
 // Dependencies: []
 // Exports: useGameProfileShopCollection

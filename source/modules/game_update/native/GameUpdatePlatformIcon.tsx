@@ -1,5 +1,5 @@
 // Module ID: 11841
-// Function ID: 91777
+// Function ID: 91789
 // Name: GameUpdatePlatformIcon
 // Dependencies: []
 // Exports: GameUpdatePlatformIcon

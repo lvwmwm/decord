@@ -1,5 +1,5 @@
 // Module ID: 9685
-// Function ID: 75357
+// Function ID: 75368
 // Name: GiftingBadgeProgressBanner
 // Dependencies: []
 // Exports: default
@@ -10,13 +10,13 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { flexDirection: 1, alignItems: 58, height: 58, marginHorizontal: "row", position: 15, top: "center", left: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj = { "Null": 1, "Null": 58, "Null": 58, flexDirection: "row", flexWrap: 15, justifyContent: "center", nameplate: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.container = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.iconContainer = { padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { "Null": null, "Null": null, padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
+obj.iconContainer = obj1;
 let closure_6 = obj.createStyles(obj);
-const obj1 = { padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
 
 export default function GiftingBadgeProgressBanner(arg0) {

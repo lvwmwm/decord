@@ -1,10 +1,10 @@
-// Module ID: 7077
-// Function ID: 56645
+// Module ID: 7078
+// Function ID: 56657
 // Name: _stageAttachmentFiles
 // Dependencies: []
 // Exports: default
 
-// Module 7077 (_stageAttachmentFiles)
+// Module 7078 (_stageAttachmentFiles)
 async function _stageAttachmentFiles(arg0, arg1) {
   const fn = function*(arr) {
     let flag = arg1;

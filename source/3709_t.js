@@ -1,5 +1,5 @@
 // Module ID: 3709
-// Function ID: 28106
+// Function ID: 28111
 // Name: t
 // Dependencies: []
 
@@ -11,7 +11,7 @@ const fn = function t(moment) {
     weekdays: "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split("_"),
     weekdaysShort: "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split("_"),
     weekdaysMin: "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_"),
-    longDateFormat: { <string:1122280543>: -2013265571, <string:3251850218>: 1694499265, <string:306010250>: 469762621, <string:37429971>: 1828717015, <string:1812403200>: 1912603118, <string:3855182856>: 0 },
+    longDateFormat: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true },
     calendar: obj,
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
@@ -43,15 +43,15 @@ const fn = function t(moment) {
       }
       return text;
     },
-    week: {}
+    week: { "Bool(true)": null, "Bool(true)": null }
   };
   obj = {
-    status: null,
-    padding: null,
-    opacity: null,
-    PX_8: null,
-    Symbol: null,
-    r: null,
+    intl: -360,
+    flex: -360,
+    getChannel: -420,
+    PX_8: -420,
+    textAlign: -480,
+    unicodeVersion: 11382,
     lastWeek() {
       const dayResult = this.day();
       if (0 !== dayResult) {

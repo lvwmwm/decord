@@ -1,9 +1,9 @@
-// Module ID: 7147
-// Function ID: 57642
+// Module ID: 7148
+// Function ID: 57654
 // Name: _isNativeReflectConstruct
 // Dependencies: [42795008, 368181248, 121307136, 31588352, 196608, 368312320, 369229824, 249757696, 44957696, 248184832, 248315904, 292683776]
 
-// Module 7147 (_isNativeReflectConstruct)
+// Module 7148 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,46 +25,46 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, Nagbar$Type);
       items = [, , , , , , , ];
-      items[0] = {};
+      items[0] = { 1347510942: 5, 1678385745: "banner_asset_url", 1364379111: "scalar", 140698458: 9 };
       items[1] = {};
-      obj = { "Null": null, "Null": null, "Null": null };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
-        const items = [false, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
+        const items = [6965542329722403000000000000000000000000000000000000000000000000000000000000000000000000000000, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
         return items;
       };
       items[2] = obj;
       items[3] = {};
-      obj = { "Null": "version", "Null": "message", "Null": "OPACITY_BLACK_16" };
+      obj = { 9223372036854775807: "message", 9223372036854775807: "NEUTRAL_46", 0: 1 };
       obj.T = function T() {
         return callback(closure_1[7]).HelpArticle;
       };
       items[4] = obj;
-      items[5] = {
-        T() {
-              return callback(closure_1[8]).LocalizedString;
-            }
+      obj1 = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
+      obj1.T = function T() {
+        return callback(closure_1[8]).LocalizedString;
       };
+      items[5] = obj1;
       items[6] = {
         T() {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj1 = { "Null": "butt", "Null": 360, "Null": 0 };
-      obj1.T = function T() {
+      obj2 = { 9223372036854775807: "butt", 9223372036854775807: 360, 0: 0 };
+      obj2.T = function T() {
         return callback(closure_1[9]).UInt64Value;
       };
-      items[7] = obj1;
-      items1 = [492456433];
+      items[7] = obj2;
+      items1 = [2131857280];
       items1[1] = items;
-      obj4 = closure_6(Nagbar$Type);
+      obj5 = closure_6(Nagbar$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj4, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj5, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj4.apply(self, items1);
+        constructResult = obj5.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -74,7 +74,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { 0: null, -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Nagbar$Type(closure_1[10]).MESSAGE_TYPE, obj);

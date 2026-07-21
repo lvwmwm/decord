@@ -1,5 +1,5 @@
 // Module ID: 10417
-// Function ID: 80246
+// Function ID: 80257
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -53,7 +53,7 @@ function startInterval() {
 }
 function getOrCreateChannelState(arg0) {
   if (!(arg0 in closure_19.channels)) {
-    closure_19.channels[arg0] = { base: "spring", includes: "linear", includesSingle: "easeInEaseOut" };
+    closure_19.channels[arg0] = { includesSingle: false, includesOne: false, includesOneSingle: false };
   }
   return closure_19.channels[arg0];
 }

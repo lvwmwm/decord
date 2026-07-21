@@ -1,5 +1,5 @@
 // Module ID: 10477
-// Function ID: 81158
+// Function ID: 81169
 // Name: getFramesManager
 // Dependencies: []
 // Exports: default

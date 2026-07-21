@@ -1,5 +1,5 @@
 // Module ID: 9484
-// Function ID: 73902
+// Function ID: 73913
 // Name: openPinnedMessages
 // Dependencies: []
 // Exports: default

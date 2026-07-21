@@ -1,5 +1,5 @@
 // Module ID: 4548
-// Function ID: 39858
+// Function ID: 39866
 // Name: PillWrapper
 // Dependencies: []
 // Exports: ButtonPill
@@ -44,7 +44,7 @@ function PillWrapper(expressivePressState) {
         obj1 = {};
         const items2 = [closure_6.absoluteFill, tmp3.expressivePill];
         obj1.style = items2;
-        obj2 = { kind: "GroupIcon", String: "png", st: true, ref: expressiveRiveRef };
+        obj2 = { 0: "GroupIcon", "Null": "png", "Null": true, ref: expressiveRiveRef };
         let str = "Mobile Expressive Button Dark Mode";
         if (obj10.isThemeLight(obj2.useThemeContext().theme)) {
           str = "Mobile Expressive Button Lightmode";
@@ -72,7 +72,7 @@ function PillWrapper(expressivePressState) {
     return tmp8(tmp9, obj);
   }
   obj5 = {};
-  const obj6 = { start: { max: -536870861, guildId: -299892737 }, end: {}, style: items6 };
+  const obj6 = { start: {}, end: {}, style: items6 };
   const items6 = [style, gradientPillStyles, closure_6.absoluteFill];
   if ("experimental_premium-basic" === variant) {
     items = items1;
@@ -104,7 +104,7 @@ class BasicButtonPill {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39867(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39875(str, DEFAULT_BUTTON_SIZE);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -144,7 +144,7 @@ class LoadingButtonPill {
     importDefault = undefined;
     closure_2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39867(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39875(str, DEFAULT_BUTTON_SIZE);
     importDefault = importAll.useRef(null);
     tmp4 = closure_3(importAll.useState(flag), 2);
     first = tmp4[0];
@@ -333,7 +333,7 @@ let closure_14 = arg1(dependencyMap[5]).createStyles((arg0, arg1) => {
   const obj4 = { overflow: "hidden", borderRadius: BORDER_RADIUS };
   obj2.expressivePill = obj4;
   obj2.expressiveRiveFill = { color: importDefault(dependencyMap[6]).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
-  obj2.childContainer = { "Null": 0, "Null": 6, "Null": 0, "Null": "Bounce_1", "Null": 5 };
+  obj2.childContainer = {};
   obj2.ellipsis = {};
   return obj2;
 });

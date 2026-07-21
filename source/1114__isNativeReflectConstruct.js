@@ -1,5 +1,5 @@
 // Module ID: 1114
-// Function ID: 12671
+// Function ID: 12675
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: useProfiler, withProfiler
@@ -142,7 +142,7 @@ const tmp3 = (Component) => {
   };
   return callback2(Profiler, items);
 }(_module.Component);
-const merged = Object.assign(tmp3, { defaultProps: {} });
+const merged = Object.assign(tmp3, { defaultProps: { EducationIcon: "hidden", explicitContentGuilds: "all", explicitContentFriendDm: true } });
 
 export const Profiler = tmp3;
 export const UNKNOWN_COMPONENT = "unknown";

@@ -1,5 +1,5 @@
 // Module ID: 5453
-// Function ID: 46585
+// Function ID: 46593
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [null, null, null, null, null, null, null];
+let closure_3 = [null, null, null, null, null, null, 467325092];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

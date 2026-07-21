@@ -1,13 +1,13 @@
-// Module ID: 7497
-// Function ID: 60109
+// Module ID: 7498
+// Function ID: 60121
 // Dependencies: []
 
-// Module 7497
+// Module 7498
 const importAllResult = importAll(dependencyMap[0]);
 const KeyboardThemes = arg1(dependencyMap[1]).KeyboardThemes;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj1 = arg1(dependencyMap[3]);
-let obj = { inputViewContainer: { flex: -4, display: 8 } };
+let obj = { inputViewContainer: { paddingHorizontal: null, accessible: null } };
 obj = { color: importDefault(dependencyMap[4]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.placeholderText = obj;
 obj1 = { color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
@@ -77,7 +77,7 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
   if (flag7 === undefined) {
     flag7 = true;
   }
-  obj = { YEARS: "onRNCSliderValueChangeCapture", MOBILE: "onRNCSliderValueChange", _npmOperationalInternal: 20, connectionsChecksGroups: 5, GUILD_ROOM: "#CCCCCC", reps: null, connectTime: "text-sm/medium", handleDCShownToUser: "text-subtle", fontSize: 1, fontWeight: "absolute", marginBottom: 1, alignSelf: "center", flexDirection: "center", gap: "100%", alignItems: "100%", justifyContent: "white", paddingHorizontal: null, paddingVertical: "large", width: "heading-lg/bold", alignSelf: "text-strong", justifyContent: null, alignItems: "text-sm/medium" };
+  obj = {};
   let tmp3 = null;
   Object.setPrototypeOf(null);
   let merged = Object.assign(helpText, obj);

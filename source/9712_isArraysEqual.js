@@ -1,5 +1,5 @@
 // Module ID: 9712
-// Function ID: 75514
+// Function ID: 75525
 // Name: isArraysEqual
 // Dependencies: []
 // Exports: useVisibleRanges

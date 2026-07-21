@@ -1,15 +1,15 @@
-// Module ID: 13748
-// Function ID: 103985
+// Module ID: 13750
+// Function ID: 104007
 // Name: PlayStationTwoWayLinkUpsell
 // Dependencies: []
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 13748 (PlayStationTwoWayLinkUpsell)
+// Module 13750 (PlayStationTwoWayLinkUpsell)
 importAll(dependencyMap[0]);
 ({ HelpdeskArticles: closure_3, AnalyticsLocations: closure_4, PlatformTypes: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp3 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ upsellImage: { drawerX: true, "Bool(true)": true, "Bool(true)": true } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ upsellImage: { position: true, bottom: true, zIndex: true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationTwoWayLinkUpsell.tsx");
 

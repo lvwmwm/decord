@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 117893
+// Module ID: 15460
+// Function ID: 117932
 // Name: RestrictedBlockedMessageGroup
 // Dependencies: []
 // Exports: default
 
-// Module 15457 (RestrictedBlockedMessageGroup)
+// Module 15460 (RestrictedBlockedMessageGroup)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -29,7 +29,7 @@ export default function RestrictedBlockedMessageGroup(arg0) {
   }, []);
   obj = { style: callback3().toggle, accessibilityRole: "button", accessibilityState: obj, onPress: callback };
   obj = { expanded: first };
-  const obj1 = {};
+  const obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
   const intl = arg1(closure_1[9]).intl;
   obj1.children = intl.format(arg1(closure_1[9]).t.+FcYM/, { count: messages.length });
   obj.children = callback2(arg1(closure_1[8]).Text, obj1);

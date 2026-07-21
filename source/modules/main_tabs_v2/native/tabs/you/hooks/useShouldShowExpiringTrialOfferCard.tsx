@@ -1,10 +1,10 @@
-// Module ID: 15362
-// Function ID: 116989
+// Module ID: 15365
+// Function ID: 117028
 // Name: useShouldShowExpiringTrialOfferCard
 // Dependencies: []
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 15362 (useShouldShowExpiringTrialOfferCard)
+// Module 15365 (useShouldShowExpiringTrialOfferCard)
 let closure_3 = importDefault(dependencyMap[0]);
 const NoticeTypes = arg1(dependencyMap[1]).NoticeTypes;
 const PremiumSubscriptionSKUs = arg1(dependencyMap[2]).PremiumSubscriptionSKUs;

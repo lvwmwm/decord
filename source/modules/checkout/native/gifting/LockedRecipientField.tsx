@@ -1,27 +1,27 @@
 // Module ID: 8806
-// Function ID: 69415
+// Function ID: 69426
 // Name: LockedRecipientField
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 8806 (LockedRecipientField)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import "result";
+import { View } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { marginLeft: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.avatar = { marginEnd: require("__exportStarResult1").space.PX_8 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = result);
+result = {};
+result = { "Null": 7, "Null": 370, marginLeft: require("result").space.PX_16 };
+result.container = result;
+result.avatar = { marginEnd: require("result").space.PX_8 };
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
 
 export default function LockedRecipientField(user) {
   user = user.user;
-  const tmp = __exportStarResult1();
+  const tmp = result();
   let obj = { style: tmp.container };
   obj = { style: tmp.avatar, user, guildId: undefined, size: arg1(dependencyMap[5]).AvatarSizes.NORMAL };
   const items = [callback(arg1(dependencyMap[5]).Avatar, obj), ];

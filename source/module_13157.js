@@ -1,9 +1,14 @@
 // Module ID: 13157
-// Function ID: 99543
+// Function ID: 99561
 // Dependencies: []
 
 // Module 13157
 
-export default Math.trunc || function trunc(arg0) {
-  return +arg0 > 0 ? floor : ceil(+arg0);
+export default (arg0) => {
+  let num = 0;
+  const tmp = require(dependencyMap[0])(arg0);
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
 };

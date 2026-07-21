@@ -1,10 +1,10 @@
-// Module ID: 7442
-// Function ID: 59679
+// Module ID: 7443
+// Function ID: 59691
 // Name: usePremiumPrimaryGradientColors
 // Dependencies: []
 // Exports: default
 
-// Module 7442 (usePremiumPrimaryGradientColors)
+// Module 7443 (usePremiumPrimaryGradientColors)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/premium/native/usePremiumPrimaryGradientColors.tsx");
 

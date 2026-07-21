@@ -1,5 +1,5 @@
 // Module ID: 9172
-// Function ID: 71836
+// Function ID: 71847
 // Name: BaseIdentityVerificationField
 // Dependencies: []
 // Exports: default
@@ -19,7 +19,7 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = callback(icon, obj);
   }
   const items = [tmp4, , ];
-  obj = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158 };
+  obj = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158 };
   const items1 = [tmp.label];
   obj.style = items1;
   obj.children = label;
@@ -32,7 +32,7 @@ function BaseIdentityVerificationField(icon) {
     let tmp11 = obj1;
   } else {
     obj1.style = tmp.ctaButton;
-    const obj3 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696, 0: -1108983296 };
+    const obj3 = {};
     const intl = arg1(dependencyMap[8]).intl;
     obj3.text = intl.string(arg1(dependencyMap[8]).t.13ofGu);
     obj3.onPress = onPress;
@@ -50,10 +50,10 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
-obj.icon = { -412991801: false, 1932219241: false };
-obj.label = {};
-obj.verifiedContainer = {};
-obj.ctaButton = { -9223372036854775808: "parallaxLayout", 0: "headMetaSocial", 0: "enum" };
+obj.icon = {};
+obj.label = { 1454043078: null, 921736901: null, -1762698309: null };
+obj.verifiedContainer = { 996377586: true, 2136058454: "/assets/design/components/Icon/native/redesign/generated/images", 1365401864: 24, 1398910140: 24 };
+obj.ctaButton = { no: true, name: true, kind: true };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");

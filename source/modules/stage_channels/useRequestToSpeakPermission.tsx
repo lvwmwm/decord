@@ -1,5 +1,5 @@
 // Module ID: 10647
-// Function ID: 83117
+// Function ID: 83128
 // Name: useRequestToSpeakPermission
 // Dependencies: []
 // Exports: useRequestToSpeakPermission

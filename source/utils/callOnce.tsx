@@ -1,10 +1,10 @@
-// Module ID: 6905
-// Function ID: 55009
+// Module ID: 6906
+// Function ID: 55021
 // Name: callOnce
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: callOnce
 
-// Module 6905 (callOnce)
+// Module 6906 (callOnce)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("utils/callOnce.tsx");
 

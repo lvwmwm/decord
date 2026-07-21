@@ -1,61 +1,44 @@
 // Module ID: 15811
-// Function ID: 120874
+// Function ID: 120910
 // Dependencies: []
 
 // Module 15811
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "uk",
+  locale: "ru",
   pluralRuleFunction(arg0, arg1) {
     const parts = String(arg0).split(".");
     const first = parts[0];
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr1) {
-      const first1 = parts[0];
-      substr = first1.slice(-1);
-    }
-    if (substr1) {
-      const first2 = parts[0];
-      substr1 = first2.slice(-2);
-    }
-    const substr2 = first.slice(-1);
-    const substr3 = first.slice(-2);
-    if (arg1) {
-      let str8 = "other";
-      if (3 == substr) {
-        str8 = "other";
-        if (13 != substr1) {
-          str8 = "few";
-        }
-      }
-      let str2 = str8;
-    } else {
+    const substr = first.slice(-1);
+    const substr1 = first.slice(-2);
+    let str2 = "other";
+    if (!arg1) {
       if (tmp2) {
-        if (1 == substr2) {
-          str2 = "one";
+        if (1 == substr) {
+          let str3 = "one";
         }
+        str2 = str3;
       }
       if (tmp2) {
-        if (substr2 >= 2) {
-          if (substr2 <= 4) {
-            let str4 = "few";
-            if (substr3 >= 12) {
-              str4 = "few";
+        if (substr >= 2) {
+          if (substr <= 4) {
+            let str5 = "few";
+            if (substr1 >= 12) {
+              str5 = "few";
             }
           }
-          str2 = str4;
+          str3 = str5;
         }
       }
       if (!tmp2) {
         if (tmp2) {
-          if (substr2 >= 5) {
-            str4 = str6;
+          if (substr >= 5) {
+            str5 = str6;
           }
         }
         let str6 = "other";
         if (tmp2) {
           str6 = "other";
-          if (substr3 >= 11) {
+          if (substr1 >= 11) {
             str6 = "other";
           }
         }
@@ -65,3 +48,8 @@ globalThis.IntlMessageFormat.__addLocaleData({
     return str2;
   }
 });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: "package", deviceWidth: "_headers" });
+globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: true, deviceWidth: "/assets/images/native/icons/empty_channel" });
+globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: true, deviceWidth: 20 });
+globalThis.IntlMessageFormat.__addLocaleData({});

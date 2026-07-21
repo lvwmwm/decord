@@ -1,10 +1,10 @@
-// Module ID: 4672
-// Function ID: 40606
+// Module ID: 4671
+// Function ID: 40613
 // Name: openImagePickerUnhandled
 // Dependencies: []
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker
 
-// Module 4672 (openImagePickerUnhandled)
+// Module 4671 (openImagePickerUnhandled)
 let Base64GIFPrefix;
 function openImagePickerUnhandled() {
   return _openImagePickerUnhandled(...arguments);
@@ -24,7 +24,7 @@ async function _openImagePickerUnhandled(preferredMimeType, arg1) {
     }
     ({ width, height } = tmp8);
     const tmp12 = yield new Promise((arg0, arg1) => {
-      arg1(closure_2[10]).launchImageLibrary({}, (assets) => {
+      arg1(closure_2[10]).launchImageLibrary({ "Null": false, "Null": false, "Null": null }, (assets) => {
         let first = null;
         if (null != assets.assets) {
           first = null;

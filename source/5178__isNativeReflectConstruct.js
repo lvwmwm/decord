@@ -1,5 +1,5 @@
 // Module ID: 5178
-// Function ID: 43880
+// Function ID: 43908
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -20,15 +20,15 @@ let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = importDefault(dependencyMap[5]);
 
-export const RVGridLayoutManagerImpl = (RVLayoutManager) => {
-  class RVGridLayoutManagerImpl {
+export const RVLinearLayoutManagerImpl = (RVLayoutManager) => {
+  class RVLinearLayoutManagerImpl {
     constructor(arg0, arg1) {
       self = this;
-      tmp = RVGridLayoutManagerImpl(this, RVGridLayoutManagerImpl);
+      tmp = RVLinearLayoutManagerImpl(this, RVLinearLayoutManagerImpl);
       items = [, ];
       items[0] = RVLayoutManager;
       items[1] = arg1;
-      obj = closure_3(RVGridLayoutManagerImpl);
+      obj = closure_3(RVLinearLayoutManagerImpl);
       tmp2 = closure_2;
       if (closure_6()) {
         tmp4 = globalThis;
@@ -39,22 +39,25 @@ export const RVGridLayoutManagerImpl = (RVLayoutManager) => {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.fullRelayoutRequired = false;
-      tmp2Result.boundedSize = RVLayoutManager.windowSize.width;
+      tmp2Result.hasSize = false;
+      tmp2Result.tallestItemHeight = 0;
+      windowSize = RVLayoutManager.windowSize;
+      tmp2Result.boundedSize = tmp2Result.horizontal ? windowSize.height : windowSize.width;
+      tmp2Result.hasSize = tmp2Result.boundedSize > 0;
       return tmp2Result;
     }
   }
-  let closure_0 = RVGridLayoutManagerImpl;
-  callback2(RVGridLayoutManagerImpl, RVLayoutManager);
+  let closure_0 = RVLinearLayoutManagerImpl;
+  callback2(RVLinearLayoutManagerImpl, RVLayoutManager);
   let obj = {
     key: "updateLayoutParams",
     value: function updateLayoutParams(windowSize) {
       const self = this;
       const items = [windowSize];
-      !function _superPropGet(RVGridLayoutManagerImpl, updateLayoutParams, arg2, arg3) {
-        let prototype = RVGridLayoutManagerImpl;
+      !function _superPropGet(RVLinearLayoutManagerImpl, updateLayoutParams, arg2, arg3) {
+        let prototype = RVLinearLayoutManagerImpl;
         if (1) {
-          prototype = RVGridLayoutManagerImpl.prototype;
+          prototype = RVLinearLayoutManagerImpl.prototype;
         }
         const tmpResult = closure_4(closure_3(prototype), "updateLayoutParams", arg2);
         let fn = tmpResult;
@@ -65,18 +68,18 @@ export const RVGridLayoutManagerImpl = (RVLayoutManager) => {
           }
         }
         return fn;
-      }(RVGridLayoutManagerImpl, "updateLayoutParams", this, 3)(items);
+      }(RVLinearLayoutManagerImpl, "updateLayoutParams", this, 3)(items);
+      windowSize = windowSize.windowSize;
+      self.boundedSize = this.horizontal ? windowSize.height : windowSize.width;
       if (!tmp2) {
-        self.boundedSize = windowSize.windowSize.width;
         if (self.layouts.length > 0) {
-          self.updateAllWidths();
           self.recomputeLayouts(0, self.layouts.length - 1);
           self.requiresRepaint = true;
         }
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  const items = [obj, , , , , ];
   obj = {
     key: "processLayoutInfo",
     value: function processLayoutInfo(arg0, arg1) {
@@ -84,16 +87,25 @@ export const RVGridLayoutManagerImpl = (RVLayoutManager) => {
       const iter = arg0[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
+        let dimensions = nextResult.dimensions;
         let tmp2 = self.layouts[nextResult.index];
-        tmp2.height = nextResult.dimensions.height;
-        tmp2.isHeightMeasured = true;
-        tmp2.isWidthMeasured = true;
+        let tmp3 = tmp2;
+        if (self.horizontal) {
+          let tmp4 = dimensions;
+          let boundedSize = dimensions.width;
+        } else {
+          boundedSize = self.boundedSize;
+        }
+        tmp2.width = boundedSize;
+        let tmp5 = tmp2;
+        tmp3.isHeightMeasured = true;
+        tmp3.isWidthMeasured = true;
+        let tmp6 = dimensions;
+        tmp3.height = dimensions.height;
         // continue
       }
-      if (self.fullRelayoutRequired) {
-        self.updateAllWidths();
-        self.fullRelayoutRequired = false;
-        return 0;
+      if (tmp7) {
+        const result = self.normalizeLayoutHeights(arg0);
       }
     }
   };
@@ -101,271 +113,154 @@ export const RVGridLayoutManagerImpl = (RVLayoutManager) => {
   obj = {
     key: "estimateLayout",
     value: function estimateLayout(arg0) {
+      const self = this;
       const tmp = this.layouts[arg0];
-      tmp.width = this.getWidth(arg0);
-      tmp.height = this.getEstimatedHeight(arg0);
-      tmp.isWidthMeasured = true;
-      tmp.enforcedWidth = true;
+      if (this.horizontal) {
+        let boundedSize = self.getEstimatedWidth(arg0);
+      } else {
+        boundedSize = self.boundedSize;
+      }
+      tmp.width = boundedSize;
+      tmp.height = self.getEstimatedHeight(arg0);
+      tmp.isWidthMeasured = !self.horizontal;
+      tmp.enforcedWidth = !self.horizontal;
     }
   };
   items[2] = obj;
   items[3] = {
-    key: "handleSpanChange",
-    value: function handleSpanChange(arg0) {
-      this.fullRelayoutRequired = true;
-    }
-  };
-  items[4] = {
     key: "getLayoutSize",
     value: function getLayoutSize() {
       const self = this;
       if (0 === this.layouts.length) {
-        return { bhk: -536870861, bic: -299892737 };
+        return { "Null": -536870861, "Null": -299892737 };
       } else {
-        const obj = { width: self.boundedSize, height: self.computeTotalHeightTillRow(self.layouts.length - 1) };
+        const size = self.layouts[self.layouts.length - 1];
+        const obj = {};
+        if (self.horizontal) {
+          let boundedSize = size.x + size.width;
+        } else {
+          boundedSize = self.boundedSize;
+        }
+        obj.width = boundedSize;
+        if (self.horizontal) {
+          const tallestItem = self.tallestItem;
+          let height;
+          if (null != tallestItem) {
+            height = tallestItem.height;
+          }
+          if (null == height) {
+            height = self.boundedSize;
+          }
+          let sum = height;
+        } else {
+          sum = size.y + size.height;
+        }
+        obj.height = sum;
         return obj;
+      }
+    }
+  };
+  items[4] = {
+    key: "normalizeLayoutHeights",
+    value: function normalizeLayoutHeights(arg0) {
+      const self = this;
+      let tmp;
+      const iter = arg0[Symbol.iterator]();
+      while (iter !== undefined) {
+        let tmp2 = self.layouts[iter.next().index];
+        let minHeight = tmp2.minHeight;
+        let tmp4 = minHeight;
+        let num = 0;
+        let tmp3 = tmp2;
+        if (null != minHeight) {
+          num = minHeight;
+        }
+        let tmp5 = tmp2.height > num;
+        let tmp6 = tmp5;
+        if (tmp5) {
+          let tmp7 = tmp2;
+          let height;
+          if (null != tmp) {
+            let tmp10 = tmp;
+            height = tmp8.height;
+          }
+          let tmp11 = height;
+          let num2 = 0;
+          if (null != height) {
+            num2 = height;
+          }
+          tmp6 = tmp3.height > num2;
+        }
+        if (tmp6) {
+          tmp = tmp2;
+        }
+        // continue
+      }
+      if (tmp) {
+        if (tmp.height !== self.tallestItemHeight) {
+          let num3 = tmp.height;
+          if (tmp.height < self.tallestItemHeight) {
+            self.requiresRepaint = true;
+            num3 = 0;
+          }
+          const layouts = self.layouts;
+          for (const item10046 of layouts) {
+            let tmp14 = item10046;
+            let tmp15 = num3;
+            if (num3 > 0) {
+              let tmp16 = item10046;
+              let tmp17 = tmp;
+              tmp14.height = tmp.height;
+            }
+            let tmp18 = item10046;
+            let tmp19 = num3;
+            tmp14.minHeight = num3;
+          }
+          tmp.minHeight = 0;
+          self.tallestItem = tmp;
+          self.tallestItemHeight = tmp.height;
+        }
       }
     }
   };
   items[5] = {
     key: "recomputeLayouts",
     value: function recomputeLayouts(arg0, arg1) {
-      let x;
-      let y;
+      let sum = arg0;
       const self = this;
-      let result = this.locateFirstIndexInRow(Math.max(0, arg0 - 1));
-      const layout = this.getLayout(result);
-      ({ x, y } = layout);
-      if (result <= arg1) {
+      if (arg0 <= arg1) {
         do {
-          let layout1 = self.getLayout(result);
-          let num = x;
-          let tmp4 = result;
-          if (!self.checkBounds(x, layout1.width)) {
-            let result1 = self.processAndReturnTallestItemInRow(result - 1);
-            y = result1.y + result1.height;
-            num = 0;
-          }
-          layout1.x = num;
-          layout1.y = y;
-          x = num + layout1.width;
-          result = result + 1;
-        } while (result <= arg1);
-      }
-      if (arg1 === self.layouts.length - 1) {
-        const result2 = self.processAndReturnTallestItemInRow(arg1);
-      }
-    }
-  };
-  items[6] = {
-    key: "getWidth",
-    value: function getWidth(sum) {
-      const result = this.boundedSize / this.maxColumns;
-      return result * this.getSpan(sum);
-    }
-  };
-  items[7] = {
-    key: "processAndReturnTallestItemInRow",
-    value: function processAndReturnTallestItemInRow(arg0) {
-      const self = this;
-      const result = this.locateFirstIndexInRow(arg0);
-      let flag = false;
-      let num = 0;
-      let sum = result;
-      let tmp4;
-      let num2 = 0;
-      let flag2 = false;
-      if (result <= arg0) {
-        while (true) {
-          let tmp5 = self.layouts[sum];
-          if (!flag) {
-            let _Boolean = Boolean;
-            flag = Boolean(tmp5.isHeightMeasured);
-          }
-          let _Math = Math;
-          let bound = Math.max(num, tmp5.height);
-          let minHeight = tmp5.minHeight;
-          let tmp7 = flag;
-          let num3 = 0;
-          if (null != minHeight) {
-            num3 = minHeight;
-          }
-          let tmp8 = tmp5.height > num3;
-          if (tmp8) {
-            let height;
-            if (null != tmp2) {
-              height = tmp2.height;
+          let layout = self.getLayout(sum);
+          let tmp4 = sum;
+          if (0 === sum) {
+            layout.x = 0;
+            layout.y = 0;
+            let size = tmp2;
+          } else {
+            size = self.getLayout(sum - 1);
+            let num = 0;
+            if (self.horizontal) {
+              num = size.x + size.width;
             }
-            let num4 = 0;
-            if (null != height) {
-              num4 = height;
+            layout.x = num;
+            let num2 = 0;
+            if (!self.horizontal) {
+              num2 = size.y + size.height;
             }
-            tmp8 = tmp5.height > num4;
-            let tmp10 = height;
-            let tmp11 = tmp2;
+            layout.y = num2;
           }
-          if (tmp8) {
-            let tmp2 = tmp5;
+          if (self.horizontal) {
+            if (self.hasSize) {
+              layout.minHeight = self.boundedSize;
+            }
+          } else {
+            layout.width = self.boundedSize;
           }
           sum = sum + 1;
-          let tmp12 = tmp2;
-          tmp4 = tmp2;
-          num2 = bound;
-          flag2 = flag;
-          if (sum >= self.layouts.length) {
-            break;
-          } else {
-            num = bound;
-            tmp4 = tmp2;
-            num2 = bound;
-            flag2 = flag;
-            if (sum > arg0) {
-              break;
-            }
-          }
-        }
-      }
-      if (tmp13) {
-        const _Number = Number;
-        num2 = Number.MAX_SAFE_INTEGER;
-      }
-      if (null == tmp4) {
-        tmp4 = self.layouts[result];
-      }
-      if (flag2) {
-        if (tmp4) {
-          let num5 = tmp4.height;
-          if (num2 - tmp4.height > 1) {
-            self.requiresRepaint = true;
-            num5 = 0;
-          }
-          if (result <= arg0) {
-            self.layouts[result].minHeight = num5;
-            if (num5 > 0) {
-              self.layouts[result].height = num5;
-            }
-            let sum1 = result + 1;
-            if (sum1 < self.layouts.length) {
-              while (sum1 <= arg0) {
-                self.layouts[sum1].minHeight = num5;
-                if (num5 > 0) {
-                  self.layouts[sum1].height = num5;
-                }
-                sum1 = sum1 + 1;
-                if (sum1 >= self.layouts.length) {
-                  break;
-                }
-              }
-            }
-          }
-          tmp4.minHeight = 0;
-        }
-        return tmp4;
-      } else {
-        return tmp4;
-      }
-      const tmp13 = !tmp4 && num2 > 0;
-    }
-  };
-  items[8] = {
-    key: "computeTotalHeightTillRow",
-    value: function computeTotalHeightTillRow(arg0) {
-      const self = this;
-      const result = this.locateFirstIndexInRow(arg0);
-      let num = 0;
-      if (result <= arg0) {
-        const _Math = Math;
-        let bound = Math.max(0, self.layouts[result].height);
-        let sum = result + 1;
-        num = bound;
-        if (sum < self.layouts.length) {
-          num = bound;
-          while (sum <= arg0) {
-            let _Math2 = Math;
-            bound = Math.max(bound, self.layouts[sum].height);
-            sum = sum + 1;
-            num = bound;
-            if (sum >= self.layouts.length) {
-              break;
-            }
-          }
-        }
-      }
-      return this.layouts[result].y + num;
-    }
-  };
-  items[9] = {
-    key: "updateAllWidths",
-    value: function updateAllWidths() {
-      let length;
-      const self = this;
-      let num = 0;
-      if (0 < this.layouts.length) {
-        do {
-          self.layouts[num].width = self.getWidth(num);
-          num = num + 1;
-          length = self.layouts.length;
-        } while (num < length);
+          let tmp2 = size;
+        } while (sum <= arg1);
       }
     }
   };
-  items[10] = {
-    key: "checkBounds",
-    value: function checkBounds(arg0, width) {
-      return arg0 + width <= this.boundedSize + 0.9;
-    }
-  };
-  items[11] = {
-    key: "locateFirstIndexInRow",
-    value: function locateFirstIndexInRow(arg0) {
-      const self = this;
-      if (0 === arg0) {
-        return 0;
-      } else {
-        let tmp = arg0;
-        if (arg0 >= 0) {
-          let tmp2 = arg0;
-          tmp = arg0;
-          if (0 !== self.layouts[arg0].x) {
-            const diff = tmp2 - 1;
-            tmp = diff;
-            while (diff >= 0) {
-              tmp2 = diff;
-              tmp = diff;
-              if (0 === self.layouts[diff].x) {
-                break;
-              }
-            }
-          }
-        }
-        const _Math = Math;
-        return Math.max(tmp, 0);
-      }
-    }
-  };
-  items[12] = {
-    key: "isInLastRow",
-    value: function isInLastRow(arg0) {
-      const self = this;
-      if (0 === this.layouts.length) {
-        return false;
-      } else {
-        const diff = self.layouts.length - 1;
-        let tmp2 = arg0 === diff;
-        if (!tmp2) {
-          let y;
-          if (null != self.layouts[arg0]) {
-            y = tmp3.y;
-          }
-          let y1;
-          if (null != self.layouts[diff]) {
-            y1 = tmp6.y;
-          }
-          tmp2 = y === y1;
-        }
-        return tmp2;
-      }
-    }
-  };
-  return callback(RVGridLayoutManagerImpl, items);
+  return callback(RVLinearLayoutManagerImpl, items);
 }(arg1(dependencyMap[6]).RVLayoutManager);

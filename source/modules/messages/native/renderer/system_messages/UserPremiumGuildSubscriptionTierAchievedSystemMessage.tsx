@@ -1,10 +1,10 @@
-// Module ID: 7685
-// Function ID: 61339
+// Module ID: 7686
+// Function ID: 61351
 // Name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 // Dependencies: []
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 7685 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
+// Module 7686 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");

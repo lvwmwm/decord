@@ -1,9 +1,9 @@
-// Module ID: 16011
-// Function ID: 122882
+// Module ID: 16015
+// Function ID: 122926
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16011 (_isNativeReflectConstruct)
+// Module 16015 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -65,8 +65,8 @@ let tmp2 = (arg0) => {
   };
   items[1] = obj;
   return callback2(ParentalConsentManager, items);
-}(importDefault(dependencyMap[15]));
+}(importDefault(dependencyMap[18]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/age_assurance/native/ParentalConsentManager.tsx");
+const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/age_assurance/native/ParentalConsentManager.tsx");
 
 export default tmp2;

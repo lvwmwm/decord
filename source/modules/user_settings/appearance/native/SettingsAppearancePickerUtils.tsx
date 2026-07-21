@@ -1,12 +1,13 @@
-// Module ID: 14064
-// Function ID: 106794
+// Module ID: 14067
+// Function ID: 106826
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14064 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import { ThemeTypes } from "__exportStarResult1";
+// Module 14067 (_createForOfIteratorHelperLoose)
+import closure_3 from "result";
+import { ThemeTypes } from "result";
+import result from "result";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -233,7 +234,7 @@ function convertCustomBackgroundGradientToAnimatedTheme(theme) {
   obj.colors = padWithLast(mapped, getMaxColors());
   return obj;
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
+result = result.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearancePickerUtils.tsx");
 
 export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThemes(arg0, prop, prop1, memo, BACKGROUND_SURFACE_HIGH) {
   let iter2;

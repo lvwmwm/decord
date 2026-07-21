@@ -1,5 +1,5 @@
 // Module ID: 1519
-// Function ID: 17430
+// Function ID: 17435
 // Name: useFocusedListenersChildrenAdapter
 // Dependencies: []
 // Exports: default
@@ -33,7 +33,7 @@ export default function useFocusedListenersChildrenAdapter(navigation) {
       obj = { handled: true, result: arg0(navigation) };
       return obj;
     } else {
-      return { y: null, isArray: null };
+      return { iconPosition: null, grow: null };
     }
   }, items);
   const items1 = [addListener, callback];

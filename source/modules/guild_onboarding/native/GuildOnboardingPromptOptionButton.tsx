@@ -1,5 +1,5 @@
 // Module ID: 5414
-// Function ID: 46428
+// Function ID: 46436
 // Name: PromptOptionButton
 // Dependencies: []
 // Exports: default
@@ -14,24 +14,24 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[5]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { textAlign: true, flex: true, name: true, raw: true, borderRadius: importDefault(dependencyMap[8]).radii.md };
+obj = { debugger: true, stringify: true, showVoiceSettingsActionSheet: true, maybeOpenAgeGateForVoiceChannel: true, borderRadius: importDefault(dependencyMap[8]).radii.md };
 obj.container = obj;
-obj.optionButton = { flex: "<string:2236743682>", display: "<string:1941427526>", flexDirection: "toString", flexShrink: "toString", alignItems: "call" };
-obj.optionTextEmoji = { CUSTOM_THEME_SHARE: "<string:7471105>", "Bool(true)": "<string:268435456>", "Bool(true)": "<string:1929379840>", "Bool(true)": "isArray" };
+obj.optionButton = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon", BILLING_SUBSCRIPTION: "png", GameDepthTier1SmallBadge: 24, UMWBZr: 24 };
+obj.optionTextEmoji = { numberOfLines: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288229756056495, ellipsizeMode: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009532402967, accessible: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008487983168, accessibilityRole: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200995461696194 };
 obj.optionImageEmoji = {};
 obj.optionText = { flexShrink: 1 };
 const tmp2 = arg1(dependencyMap[6]);
 obj.checkIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.newBadgeWrapper = {};
 obj.newBadge = { fontWeight: "bold" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
-obj.roleCount = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+const obj2 = { "Bool(false)": "Bluesky", "Bool(false)": null, "Bool(false)": true, "Bool(false)": null, "Bool(false)": true, "Bool(false)": true, "Bool(false)": 10, "Bool(false)": "trigger", "Bool(false)": "boolean", "Bool(false)": "color", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+obj.roleCount = obj2;
 let closure_11 = obj.createStyles(obj);
 let closure_12 = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
 let closure_13 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showMemberCount?1:0;const opacity=withDelay(showMemberCount?400:0,withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateX:translateX}]};}" };
 let closure_14 = { code: "function GuildOnboardingPromptOptionButtonTsx3(){const{useReducedMotion,Easing,withTiming,selected,selectedBorderColor,isNew,unselectedBrandBorderColor,unselectedBorderColor,selectedBackgroundColor}=this.__closure;const timing=useReducedMotion?{duration:0}:{duration:200,easing:Easing.out(Easing.ease)};return{borderColor:withTiming(selected?selectedBorderColor:isNew?unselectedBrandBorderColor:unselectedBorderColor,timing),backgroundColor:withTiming(selected?selectedBackgroundColor:'transparent',timing)};}" };
 let closure_15 = { code: "function GuildOnboardingPromptOptionButtonTsx4(){const{useReducedMotion,scale}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale.get()}]};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
 
 export default function PromptOptionButton(option) {
@@ -432,7 +432,7 @@ export default function PromptOptionButton(option) {
     tmp34Result = null != name2;
   }
   if (tmp34Result) {
-    obj4 = { style: { -1861163602: true, -738052821: true } };
+    obj4 = { style: { <string:29557293>: true, <string:45941405>: true } };
     const obj5 = {};
     ({ optionTextEmoji: obj19.textEmojiStyle, optionImageEmoji: obj19.fastImageStyle } = tmp);
     let emojiURL;
@@ -463,11 +463,11 @@ export default function PromptOptionButton(option) {
   }
   const items8 = [tmp34Result, ];
   obj7 = { style: tmp.optionText };
-  obj8 = { children: option.title };
+  obj8 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: option.title };
   const items9 = [callback2(arg1(dependencyMap[21]).Text, obj8), ];
   let tmp46 = null != option.description && option.description.length > 0;
   if (tmp46) {
-    obj9 = { children: option.description };
+    obj9 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: option.description };
     tmp46 = callback2(arg1(dependencyMap[21]).Text, obj9);
   }
   items9[1] = tmp46;

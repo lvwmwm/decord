@@ -1,5 +1,5 @@
 // Module ID: 1721
-// Function ID: 19356
+// Function ID: 19361
 // Name: getCurrentReactOwner
 // Dependencies: []
 // Exports: componentWithRef, isFirstReactRender, isReactRendering

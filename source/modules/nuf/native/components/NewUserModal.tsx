@@ -1,10 +1,10 @@
-// Module ID: 16001
-// Function ID: 122765
+// Module ID: 16005
+// Function ID: 122809
 // Name: NewUserModal
 // Dependencies: []
 // Exports: default
 
-// Module 16001 (NewUserModal)
+// Module 16005 (NewUserModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 let closure_8 = obj.createNativeStackNavigator();
 const tmp2 = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { MIN_SWIPE_VELOCITY: null, USER_SAFETY_TOOLS_UNBLOCK: "c7e2eadc5cd55417a6c70f428f65fac7", routingFailures: "SlashIcon", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj;
 let closure_9 = arg1(dependencyMap[5]).createStyles(obj);
 const obj2 = arg1(dependencyMap[5]);
@@ -68,12 +68,12 @@ export default function NewUserModal(arg0) {
     screenOptions(navigation) {
       closure_5.current = navigation.navigation;
       const obj = {
-        9223372036854775807: "isArray",
-        9223372036854775807: "constructor",
-        0: "apply",
-        9223372036854775807: "isArray",
-        9223372036854775807: "isArray",
-        9223372036854775807: "isArray",
+        1382121521: ":",
+        1016937042: "NR",
+        1383948701: "<string:659620096>",
+        -590737510: "pucketanje prstima",
+        1654717283: "<string:5505024>",
+        -11652782: "<string:1310720>",
         headerStyle: lib.header,
         headerLeft() {
           return null;

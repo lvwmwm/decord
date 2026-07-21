@@ -1,11 +1,11 @@
 // Module ID: 668
-// Function ID: 8268
+// Function ID: 8272
 // Name: DrawerSourceTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 668 (DrawerSourceTypes)
-const frozen = Object.freeze({ START: { max: -536870861, guildId: -299892737 }, END: {} });
-const frozen1 = Object.freeze({ START: { max: -536870861, guildId: -299892737 }, END: {} });
+const frozen = Object.freeze({ START: {}, END: {} });
+const frozen1 = Object.freeze({ START: {}, END: {} });
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("ConstantsIOS.tsx");
 
@@ -32,10 +32,10 @@ export const ActivityPartyApplicationNames = { spotify: "Spotify" };
 export const CACHE_STORE_LAZY_KEY = "CacheStoreLazy";
 export const CACHE_STORE_CHANNELS_LAZY_KEY = "CacheStoreChannelsLazy";
 export const CACHE_STORE_KEY = "CacheStore";
-export const STORAGE_SECURE_KEYS = new Set([2, 13]);
+export const STORAGE_SECURE_KEYS = new Set([]);
 export const MAX_INVITE_AVATARS_TO_SHOW = 6;
 export const INVITE_EMBED_AVATAR_SIZE = 50;
-export const UPLOAD_BANNER_SIZE = {};
+export const UPLOAD_BANNER_SIZE = { "Null": 115172193759225120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002007054351119396 };
 export const UPLOAD_STICKER_SIZE = 320;
 export const UPLOAD_MEDIUM_SIZE = 256;
 export const UPLOAD_SMALL_SIZE = 128;

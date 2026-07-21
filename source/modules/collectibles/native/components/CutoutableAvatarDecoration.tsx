@@ -1,10 +1,10 @@
-// Module ID: 7865
-// Function ID: 62641
+// Module ID: 7866
+// Function ID: 62654
 // Name: CutoutableAvatarDecoration
-// Dependencies: [37093376, 516030464, 513736704, 516096000, 516161536, 305201152, 131072, 964034560, 520093696, 2365587456, 603979778]
+// Dependencies: [37093376, 516096000, 513802240, 516161536, 516227072, 305135616, 131072, 964034560, 520093696, 2365587456, 603979778]
 // Exports: default
 
-// Module 7865 (CutoutableAvatarDecoration)
+// Module 7866 (CutoutableAvatarDecoration)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

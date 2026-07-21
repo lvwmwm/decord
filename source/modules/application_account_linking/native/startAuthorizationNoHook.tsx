@@ -1,5 +1,5 @@
 // Module ID: 10905
-// Function ID: 84722
+// Function ID: 84733
 // Name: _startAuthorizationNoHook
 // Dependencies: []
 // Exports: startAuthorizationNoHook

@@ -1,5 +1,5 @@
 // Module ID: 10478
-// Function ID: 81160
+// Function ID: 81171
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -172,7 +172,7 @@ let tmp5 = (arg0) => {
       applicationId = applicationId.applicationId;
       let obj = callback(closure_2[20]);
       obj.stopFrame({ applicationId });
-      obj = { -9223372036854775808: "subheader_localized", 9223372036854775807: "message", 9223372036854775807: 21, 9223372036854775807: "modal_top_pill_localized", applicationId };
+      obj = { valid: null, dnsWarn: null, rfc5321: null, cfws: null, applicationId };
       callback(closure_2[21]).dispatch(obj);
     }
   };

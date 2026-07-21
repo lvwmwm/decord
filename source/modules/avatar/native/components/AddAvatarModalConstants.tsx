@@ -1,9 +1,9 @@
-// Module ID: 15986
-// Function ID: 122688
+// Module ID: 15990
+// Function ID: 122732
 // Name: ADD_AVATAR_MODAL_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15986 (ADD_AVATAR_MODAL_KEY)
+// Module 15990 (ADD_AVATAR_MODAL_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/avatar/native/components/AddAvatarModalConstants.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 4185
-// Function ID: 36005
+// Function ID: 36013
 // Name: isUserPremiumTypeForClipsEarlyAccess
 // Dependencies: []
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, useIsClipsAvailable, useScreenshotKeybindEnabled
@@ -16,7 +16,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 let obj = arg1(dependencyMap[3]);
-obj = { margin: null, paddingHorizontal: null, defaultConfig: { "Bool(true)": null, "Bool(true)": null }, variations: { [1]: { "Bool(true)": true, "Bool(true)": true }, [2]: { "Bool(true)": null, "Bool(true)": null } } };
+obj = { bottom: 1107296530, name: 112694, defaultConfig: { "Null": null, "Null": null }, variations: { [1]: { "Null": null, "Null": null }, [2]: { "Null": null, "Null": null } } };
 const apexExperiment = obj.createApexExperiment(obj);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 16439
-// Function ID: 126977
+// Module ID: 16447
+// Function ID: 127038
 // Name: ParentalConsentConnectionScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16439 (ParentalConsentConnectionScreen)
+// Module 16447 (ParentalConsentConnectionScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -174,7 +174,7 @@ export default function ParentalConsentConnectionScreen() {
     let tmp43 = callback3(importDefault(dependencyMap[32]), obj7);
   } else {
     const obj8 = { style: tmp.cardSection };
-    const obj9 = { "Null": null, "Null": null, "Null": null, style: tmp.cardTitle };
+    const obj9 = { delete: null, dispatch: null, raw: null, style: tmp.cardTitle };
     const intl4 = arg1(dependencyMap[22]).intl;
     obj9.children = intl4.string(importDefault(dependencyMap[34]).pojgfk);
     const items9 = [callback3(arg1(dependencyMap[33]).Text, obj9), ];

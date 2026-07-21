@@ -1,5 +1,5 @@
 // Module ID: 1839
-// Function ID: 20092
+// Function ID: 20097
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -504,7 +504,9 @@ const tmp5 = () => {
   items[21] = {
     key: "emptyState",
     value() {
-      return { root: {}, version: this.nextVersion(), derived: { memoized: {} } };
+      let obj = { root: {}, version: this.nextVersion(), derived: obj };
+      obj = { <string:3209542653>: -536870861, <string:1383034466>: -299892737, memoized: {} };
+      return obj;
     }
   };
   items[22] = {

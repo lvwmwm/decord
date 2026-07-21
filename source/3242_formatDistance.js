@@ -1,11 +1,11 @@
 // Module ID: 3242
-// Function ID: 25899
+// Function ID: 25904
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3242 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: true, 0: true }, xSeconds: {}, halfAMinute: "medio minuto", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: { -9223372036854775808: true, 0: true }, aboutXHours: {}, xHours: { -9223372036854775808: "medianoche", 0: "mediodia" }, xDays: { -9223372036854775808: null, 0: null }, aboutXWeeks: { -9223372036854775808: "r", 0: "PREMIUM_MARKETING_MOMENT_ACTION_SHEET" }, xWeeks: { -9223372036854775808: false, 0: false }, aboutXMonths: { -9223372036854775808: null, 0: null }, xMonths: {}, aboutXYears: { -9223372036854775808: "<string:2555510785>", 0: "<string:56870673>" }, xYears: { -9223372036854775808: null, 0: null }, overXYears: { -9223372036854775808: null, 0: null }, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: {}, xSeconds: { "Bool(false)": null, "Bool(false)": null }, halfAMinute: "medio minuto", lessThanXMinutes: {}, xMinutes: { "Bool(false)": null, "Bool(false)": null }, aboutXHours: { "Bool(false)": true, "Bool(false)": true }, xHours: { "Bool(false)": "<string:1879048590>", "Bool(false)": "<string:989856496>" }, xDays: { "Bool(false)": "r", "Bool(false)": "serializeHost" }, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: { "Bool(false)": -5489243532071428000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000185 }, overXYears: { "Bool(false)": 1, "Bool(false)": 0 }, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

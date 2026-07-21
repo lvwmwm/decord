@@ -1,5 +1,5 @@
 // Module ID: 1367
-// Function ID: 16437
+// Function ID: 16442
 // Name: uncurryThis
 // Dependencies: []
 // Exports: isAnyArrayBuffer, isArrayBufferView, isAsyncFunction, isBigInt64Array, isBigUint64Array, isBoxedPrimitive, isFloat32Array, isFloat64Array, isGeneratorObject, isInt16Array, isInt32Array, isInt8Array, isMap, isMapIterator, isPromise, isSet, isSetIterator, isUint16Array, isUint32Array, isUint8Array, isUint8ClampedArray, isWeakMap, isWeakSet, isWebAssemblyCompiledModule
@@ -162,7 +162,7 @@ let _SharedArrayBuffer;
 if ("undefined" !== typeof SharedArrayBuffer) {
   _SharedArrayBuffer = SharedArrayBuffer;
 }
-const items = ["children", "screenListeners", "emit"];
+const items = [true, true, true];
 const item = items.forEach((arg0) => {
   const require = arg0;
   Object.defineProperty(exports, arg0, {

@@ -1,5 +1,5 @@
 // Module ID: 10447
-// Function ID: 80647
+// Function ID: 80658
 // Name: fetchChannelInfo
 // Dependencies: []
 // Exports: fetchChannelInfo
@@ -15,6 +15,6 @@ export const fetchChannelInfo = function fetchChannelInfo(guild_id) {
     obj = { type: "FETCH_CHANNEL_INFO", guildId: guild_id };
     obj.dispatch(obj);
     const socket = socket.getSocket();
-    const channelInfo = socket.requestChannelInfo(guild_id, ["Set", "shapes"]);
+    const channelInfo = socket.requestChannelInfo(guild_id, ["<string:584115552>", "<string:843037147>"]);
   }
 };

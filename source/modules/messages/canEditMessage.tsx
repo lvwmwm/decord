@@ -1,5 +1,5 @@
 // Module ID: 9956
-// Function ID: 76914
+// Function ID: 76925
 // Name: canEditMessage
 // Dependencies: []
 // Exports: default

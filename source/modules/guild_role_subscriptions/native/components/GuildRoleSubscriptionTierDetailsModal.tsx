@@ -1,10 +1,10 @@
-// Module ID: 16331
-// Function ID: 126011
+// Module ID: 16339
+// Function ID: 126072
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 16331 (Content)
+// Module 16339 (Content)
 function Content() {
   let tmp10;
   let tmp12;
@@ -67,7 +67,7 @@ function Content() {
   const intl3 = arg1(dependencyMap[11]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[11]).t.rJ6Oad);
   items[2] = callback2(importDefault(dependencyMap[10]), obj3);
-  obj4 = { "Null": "postal-address-country", "Null": "password", "Null": "email", style: tmp.textInput, maxLength: closure_7, value: tmp4 };
+  obj4 = { "Null": "absolute", "Null": -1, a: -1, style: tmp.textInput, maxLength: closure_7, value: tmp4 };
   const intl4 = arg1(dependencyMap[11]).intl;
   obj4.placeholder = intl4.string(arg1(dependencyMap[11]).t.i4/g+E);
   obj4.onChange = tmp5;
@@ -80,7 +80,7 @@ function Content() {
   const intl5 = arg1(dependencyMap[11]).intl;
   obj5.children = intl5.string(arg1(dependencyMap[11]).t.74JctW);
   items[4] = callback2(importDefault(dependencyMap[10]), obj5);
-  obj6 = { "Null": null, "Null": "text-sm/medium", "Null": "text-default", "Null": true, "Null": "no-hide-descendants", style: tmp.textInput, maxLength: closure_6, value: tmp12 };
+  obj6 = { style: tmp.textInput, maxLength: closure_6, value: tmp12 };
   const intl6 = arg1(dependencyMap[11]).intl;
   obj6.placeholder = intl6.string(arg1(dependencyMap[11]).t.3YHwoG);
   obj6.onChange = tmp13;

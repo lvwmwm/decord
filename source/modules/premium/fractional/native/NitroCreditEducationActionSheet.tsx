@@ -1,5 +1,5 @@
 // Module ID: 12329
-// Function ID: 94400
+// Function ID: 94412
 // Name: NitroCreditEducationActionSheet
 // Dependencies: []
 // Exports: default
@@ -14,8 +14,8 @@ let obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.aboutContainer = obj;
 obj.warningIcon = { margin: 16 };
-obj.aboutTextContainer = { 0: 300.5, 9223372036854775807: 175, 0: null };
-obj.helpdeskText = { collapsable: 24, preventClipping: "recent_games_enabled" };
+obj.aboutTextContainer = {};
+obj.helpdeskText = { value: 24, marginTop: "recent_games_enabled" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);
 const result = _module2.fileFinishedImporting("modules/premium/fractional/native/NitroCreditEducationActionSheet.tsx");

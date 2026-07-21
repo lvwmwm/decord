@@ -1,5 +1,5 @@
 // Module ID: 9576
-// Function ID: 74612
+// Function ID: 74623
 // Name: useFrecencySettings
 // Dependencies: []
 // Exports: useFrecencySettings

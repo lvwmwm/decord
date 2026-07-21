@@ -1,10 +1,10 @@
-// Module ID: 15012
-// Function ID: 113015
+// Module ID: 15015
+// Function ID: 113049
 // Name: isHoisted
 // Dependencies: []
 // Exports: NotificationCenterForYou
 
-// Module 15012 (isHoisted)
+// Module 15015 (isHoisted)
 let RootNavigatorScreen;
 let YouBarNavigatorScreens;
 function isHoisted(type) {
@@ -316,7 +316,7 @@ export const NotificationCenterForYou = (panelVariant) => {
       const items4 = [];
       const height = items4;
       if (friendSuggestions.length > 0) {
-        obj = { "Bool(false)": null, "Bool(false)": null, showDivider: items1.length > 0 };
+        obj = { <string:3060159136>: 2018574338, <string:3856097814>: -918482477, showDivider: items1.length > 0 };
         items4.push(obj);
         let num7 = 2;
         if (friendSuggestions.length <= 3) {
@@ -328,7 +328,7 @@ export const NotificationCenterForYou = (panelVariant) => {
           items4.push({ kind: "suggested-friends-row", id: id.user.id, suggestedFriend: id });
         });
         if (friendSuggestions.length > 3) {
-          const obj1 = { "Bool(false)": "/assets/images/native/icons", "Bool(false)": 24, suggestedFriends: friendSuggestions };
+          const obj1 = { <string:3060159136>: "<string:410124289>", <string:3856097814>: "<string:402653184>", suggestedFriends: friendSuggestions };
           items4.push(obj1);
         }
       }
@@ -356,11 +356,11 @@ export const NotificationCenterForYou = (panelVariant) => {
         }
       }
       if (errored) {
-        items5.push({});
+        items5.push({ <string:3060159136>: true, <string:3856097814>: true });
       }
-      const obj3 = { "Bool(false)": null, "Bool(false)": null };
+      const obj3 = {};
       if (items1.length > 0) {
-        items1.unshift({ "Bool(false)": true, "Bool(false)": "/assets/images/native/icons" });
+        items1.unshift({ <string:3060159136>: "/assets/modules/notification_center/native/images", <string:3856097814>: 24 });
       }
       const items6 = [];
       if (items1.length > 0) {

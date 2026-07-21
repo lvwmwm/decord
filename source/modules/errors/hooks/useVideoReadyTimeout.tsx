@@ -1,12 +1,11 @@
 // Module ID: 10567
-// Function ID: 82506
+// Function ID: 82517
 // Name: useVideoReadyTimeout
-// Dependencies: [0]
+// Dependencies: []
 // Exports: default
 
 // Module 10567 (useVideoReadyTimeout)
-import __exportStarResult1 from "__exportStarResult1";
-
+let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = 20 * importDefault(dependencyMap[1]).Millis.SECOND;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");
 
@@ -42,7 +41,7 @@ export default function useVideoReadyTimeout(streamId) {
             const current = ref.current;
             const streamId = current;
             current.start(loading, () => {
-              current(closure_1[6]).videoStreamTimedOut(current, closure_1, closure_6, __exportStarResult1);
+              current(closure_1[6]).videoStreamTimedOut(current, closure_1, closure_6, closure_2);
             });
             return () => {
               current.stop();

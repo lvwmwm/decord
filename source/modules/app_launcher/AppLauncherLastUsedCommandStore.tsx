@@ -1,5 +1,5 @@
 // Module ID: 11229
-// Function ID: 87408
+// Function ID: 87420
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,7 +19,7 @@ let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = 10 * importDefault(dependencyMap[5]).Millis.MINUTE;
-let closure_6 = { disableStickySections: "o", hideTitle: "o" };
+let closure_6 = { 0: "o", 9223372036854775807: "o" };
 let tmp2 = (PersistedStore) => {
   class AppLauncherLastUsedCommandStore {
     constructor() {

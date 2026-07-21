@@ -1,7 +1,7 @@
 // Module ID: 1010
-// Function ID: 11012
+// Function ID: 11016
 // Name: triggerHandlers
-// Dependencies: []
+// Dependencies: [2386821120, 3221226487, 4211082227, 1895826180, 1022, 1651, 1792]
 
 // Module 1010 (triggerHandlers)
 function triggerHandlers(arg0, arg1) {

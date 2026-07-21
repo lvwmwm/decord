@@ -1,21 +1,21 @@
-// Module ID: 14633
-// Function ID: 110356
+// Module ID: 14636
+// Function ID: 110388
 // Name: VerifyPhone
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14633 (VerifyPhone)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { doesRegistrationHaveIdentityType as closure_6 } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { Links } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14636 (VerifyPhone)
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import { doesRegistrationHaveIdentityType as closure_6 } from "result";
+import result from "result";
+import { Links } from "result";
+import { jsx } from "result";
+import result from "result";
 
-({ authStateToRegisterTransitionStep: closure_7, RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/auth/native/components/VerifyPhone.tsx");
+({ authStateToRegisterTransitionStep: closure_7, RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = result);
+result = result.fileFinishedImporting("modules/auth/native/components/VerifyPhone.tsx");
 
 export default function VerifyPhone(phone) {
   let description;

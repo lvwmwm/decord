@@ -1,5 +1,5 @@
 // Module ID: 1651
-// Function ID: 18342
+// Function ID: 18347
 // Name: getEasingFromConfig
 // Dependencies: []
 
@@ -163,7 +163,7 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
 }
 function getElementScrollValue(offsetParent) {
   let parentElement = offsetParent;
-  const obj = { topScreenId: -536870861, belowTopScreenId: -299892737 };
+  const obj = { 9223372036854775807: -536870861, 9223372036854775807: -299892737 };
   if (offsetParent) {
     do {
       let tmp = 0 !== parentElement.scrollTop && 0 === obj.scrollTopOffset;

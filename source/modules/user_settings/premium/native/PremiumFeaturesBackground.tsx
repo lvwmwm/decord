@@ -1,17 +1,17 @@
-// Module ID: 7863
-// Function ID: 62636
+// Module ID: 7864
+// Function ID: 62649
 // Name: PremiumFeaturesBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7863 (PremiumFeaturesBackground)
+// Module 7864 (PremiumFeaturesBackground)
 importAll(dependencyMap[0]);
 const Gradients = arg1(dependencyMap[1]).Gradients;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { "Null": "4ae27cd370cebdaa94f014645ce27672", "Null": "ic_feedback", "Null": "png", "Null": "usernameOnClick", "Null": "bindUserMenu", borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.cardContainer = obj;
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesBackground.tsx");
@@ -24,7 +24,7 @@ export default function PremiumFeaturesBackground(opacity) {
     num = 1;
   }
   const arg1 = num;
-  let obj = { "Null": null, "Null": 4, "Null": 4, "Null": "rgba(0, 0, 0, 0.75)" };
+  let obj = { _compression: "ERROR", onPressOptionItem: "ERROR", Č: "NOT_RESPONDER", GuildBadgeFrog: "NOT_RESPONDER" };
   ({ children, style } = opacity);
   Object.setPrototypeOf(null);
   const merged = Object.assign(opacity, obj);

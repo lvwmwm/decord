@@ -1,5 +1,5 @@
 // Module ID: 9783
-// Function ID: 76028
+// Function ID: 76039
 // Name: LottieIcon
 // Dependencies: []
 

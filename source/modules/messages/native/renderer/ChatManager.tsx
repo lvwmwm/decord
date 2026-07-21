@@ -1,5 +1,5 @@
 // Module ID: 9302
-// Function ID: 72665
+// Function ID: 72676
 // Name: ChatManager
 // Dependencies: []
 

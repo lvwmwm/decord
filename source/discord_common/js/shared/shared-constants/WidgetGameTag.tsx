@@ -1,9 +1,9 @@
-// Module ID: 6858
-// Function ID: 54271
+// Module ID: 6859
+// Function ID: 54283
 // Name: WidgetGameTag
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6858 (WidgetGameTag)
+// Module 6859 (WidgetGameTag)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetGameTag.tsx");
 

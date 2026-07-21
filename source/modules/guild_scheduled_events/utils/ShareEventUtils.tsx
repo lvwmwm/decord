@@ -1,7 +1,7 @@
 // Module ID: 8357
-// Function ID: 66597
+// Function ID: 66608
 // Name: SHARE_EVENT_DETAILS_LINK
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: SHARE_EVENT_DETAILS_LINK, canUseInviteModal
 
 // Module 8357 (SHARE_EVENT_DETAILS_LINK)

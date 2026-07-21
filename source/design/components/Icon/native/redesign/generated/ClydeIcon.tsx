@@ -1,5 +1,5 @@
 // Module ID: 9734
-// Function ID: 75722
+// Function ID: 75733
 // Name: ClydeIcon
 // Dependencies: []
 // Exports: ClydeIcon

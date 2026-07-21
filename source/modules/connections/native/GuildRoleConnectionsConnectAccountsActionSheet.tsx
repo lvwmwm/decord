@@ -1,5 +1,5 @@
 // Module ID: 9974
-// Function ID: 77076
+// Function ID: 77087
 // Name: PlatformIcon
 // Dependencies: []
 
@@ -452,7 +452,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       obj = { source: value(tmp22[30]), style: closure_5.connectionsChecksGroupCheckmark };
       let tmp20Result = tmp20(tmp21(tmp22[21]).Icon, obj);
     } else if (tmp18) {
-      const obj1 = {};
+      const obj1 = { hasMaxConnections: "png", isBoostOnlySubscription: "absolute" };
       const intl2 = tmp21(tmp22[25]).intl;
       obj1.children = intl2.string(tmp21(tmp22[25]).t.5911Lb);
       tmp20Result = tmp20(tmp21(tmp22[24]).Text, obj1);
@@ -720,8 +720,8 @@ const tmp3 = arg1(dependencyMap[12]);
 const tmp4 = arg1(dependencyMap[13]);
 ({ jsx: closure_29, jsxs: closure_30, Fragment: closure_31 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { container: { padding: 12 }, connectionsChecksGroups: {} };
-obj = { onPressEmoji: true, onLongPressEmoji: "/assets/images/native", height: 24, padding: 24, borderRadius: importDefault(dependencyMap[16]).radii.md, backgroundColor: "f2561d66a35f036565003b940731b99f", flexDirection: "ic_verified_check_24px", justifyContent: "png", alignItems: true, alignContent: 20, borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+obj = { container: { padding: 12 }, connectionsChecksGroups: { "Null": 5, "Null": "order" } };
+obj = { animateEmoji: true, scrollFastOptimizationEnabled: "/assets/images/native", scrollFastVelocity: 24, disableAnimationsOnScroll: 24, config: null, paddingTop: "f2561d66a35f036565003b940731b99f", paddingBottom: "ic_verified_check_24px", useTier0UpsellContent: "png", emojiData: true, emojiMargin: 20, borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[16]).radii.md };
 obj.connectionsChecksGroup = obj;
 const tmp5 = arg1(dependencyMap[14]);
 obj.connectionsChecksGroupPassed = { borderColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST };
@@ -730,34 +730,34 @@ obj.connectionsChecksGroupPlatformDisabled = { backgroundColor: importDefault(de
 const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.connectionsChecksGroupRequirementsNotMet = { borderRadius: importDefault(dependencyMap[16]).radii.md, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_FEEDBACK_CRITICAL };
 obj.connectionsChecksGroupTextContainer = { flex: 1 };
-obj.connectionsChecksGroupTextNameContainer = {};
+obj.connectionsChecksGroupTextNameContainer = { "Null": 7, "Null": 370 };
 const obj3 = { borderRadius: importDefault(dependencyMap[16]).radii.md, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_FEEDBACK_CRITICAL };
 obj.connectionsChecksGroupTextNameInfoIcon = { marginLeft: 4, tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_WARNING };
-const obj4 = { marginLeft: 4, tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_WARNING };
-obj.connectionsChecksGroupCheckmark = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_POSITIVE };
-const obj5 = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_POSITIVE };
-obj.connectionsChecksGroupCaret = { tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj5 = { timeRange: null, TimeStampProducer: "\u{1F469}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F467}", GlobalDiscoveryServerTab: 6, tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_POSITIVE };
+obj.connectionsChecksGroupCheckmark = obj5;
+const obj6 = { timeRange: null, TimeStampProducer: "\u{1F469}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F467}", GlobalDiscoveryServerTab: 6, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.connectionsChecksGroupCaret = obj6;
 obj.connectionsCheck = { marginTop: 4 };
 obj.platformIcon = {};
-obj.channelName = { <string:327418114>: "safety_user_sentiment_notice_dismissed_at", <string:1857553135>: "message", <string:152437484>: null };
-const obj6 = { tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.channelNameIcon = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_MUTED };
+obj.channelName = { -9223372036854775808: true, "Null": true, "Null": true };
+const obj7 = { "Bool(false)": 36, "Bool(false)": 36, "Bool(false)": "contain", "Bool(false)": "row", tintColor: importDefault(dependencyMap[16]).colors.TEXT_MUTED };
+obj.channelNameIcon = obj7;
 obj.channelNameText = { overflow: "hidden" };
-obj.header = { "Null": true, "Null": true, "Null": true, "Null": true };
+obj.header = {};
 obj.content = { width: "100%" };
 obj.footerText = { marginBottom: 16 };
-obj.accountConnectedContainer = { hasDiversityParent: "<string:1166872899>", apply: "<string:57774099>", body: "<string:1090519040>" };
+obj.accountConnectedContainer = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004399925962806116, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000207682388845556, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184 };
 obj.accountConnectedPreview = { width: "100%" };
-const obj8 = { "Null": 1, "Null": 24, "Null": 16, borderRadius: importDefault(dependencyMap[16]).radii.xs, borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
-obj.accountConnectedPreviewConnectedUserAccount = obj8;
+const obj4 = { marginLeft: 4, tintColor: importDefault(dependencyMap[16]).colors.TEXT_FEEDBACK_WARNING };
+obj.accountConnectedPreviewConnectedUserAccount = { borderRadius: importDefault(dependencyMap[16]).radii.xs, borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.accountConnectedPrivacy = {};
-const obj9 = { "Null": null, "Null": "0da6e85b52f6338da38daa05a2b6d1cc", "Null": "ic_mic_24px", "Null": "png", "Null": true, "Null": "/assets/modules/stage_channels/native/images", borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+const obj9 = { isInitial: null, Č: "0da6e85b52f6338da38daa05a2b6d1cc", GUILD_WEBHOOKS: "ic_mic_24px", UMWBZr: "png", flexGrow: true, startupPath: "/assets/modules/stage_channels/native/images", borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.accountConnectedPrivacyOptionsContainer = obj9;
-const obj7 = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_MUTED };
+const obj8 = { borderRadius: importDefault(dependencyMap[16]).radii.xs, borderColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.roleGranted = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST };
 obj.roleGrantedName = {};
 obj.verifiedIcon = { marginRight: 8 };
-const obj11 = { <string:1353950905>: "Trinkets Null", <string:3775089832>: 1, <string:978358919>: 0, <string:1431030872>: 180, <string:151213257>: 0, 1525133964: false, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL };
+const obj11 = { paths: "Trinkets Null", category: 1, colors: 0, accessible: 180, fill: 0, marginBottom: false, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL };
 obj.channelsGranted = obj11;
 obj.manageConnectionsButton = { marginTop: 8 };
 obj.loading = {};
@@ -780,7 +780,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     closure_15 = undefined;
     AnalyticEvents = undefined;
     MarketingURLs = undefined;
-    f77131 = undefined;
+    f77142 = undefined;
     jsx = undefined;
     handleClose = function handleClose() {
       let flag = true;
@@ -923,7 +923,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         });
       }
     };
-    tmp = f77134();
+    tmp = f77145();
     importAll = tmp;
     tmp2 = onCloseModal(importAll.useState(closure_33.CHECKS_REQUIRED), 2);
     first = tmp2[0];
@@ -955,7 +955,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj3 = arg1(dependencyMap[41]);
     items2 = [];
     items2[0] = closure_12;
-    f77130 = obj3.useStateFromStores(items2, () => id.getId());
+    f77141 = obj3.useStateFromStores(items2, () => id.getId());
     tmp13 = onCloseModal(importAll.useState(null), 2);
     first2 = tmp13[0];
     UserSettingsSections = first2;
@@ -985,7 +985,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = closure_15;
     stateFromStores2 = obj4.useStateFromStores(items3, () => member.getMember(guildId, closure_21));
-    f77132 = stateFromStores2;
+    f77143 = stateFromStores2;
     obj5 = arg1(dependencyMap[41]);
     items4 = [];
     items4[0] = closure_13;
@@ -993,7 +993,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj6 = arg1(dependencyMap[41]);
     items5 = [];
     items5[0] = closure_10;
-    f77134 = obj6.useStateFromStores(items5, () => locale.locale);
+    f77145 = obj6.useStateFromStores(items5, () => locale.locale);
     values = Object.values(stateFromStores3);
     found = values.filter((channel) => {
       let canResult = closure_16.can(_undefined.VIEW_CHANNEL, channel);
@@ -1257,7 +1257,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             }
             obj8.children = tmp33Result;
             const items1 = [tmp31(tmp32, obj8), ];
-            const obj10 = {};
+            const obj10 = { hasMaxConnections: 1, isBoostOnlySubscription: 1 };
             const intl4 = guildId(initialAttemptedPlatformType[25]).intl;
             const obj11 = { privacyPolicyUrl: first3.PRIVACY, onAuthorizedApplicationsClick: handleManageAuthorizedApplications, onConnectionsClick: handleManageConnections };
             obj10.children = intl4.format(guildId(initialAttemptedPlatformType[25]).t.gsgvxh, obj11);
@@ -1270,7 +1270,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           if (null != found) {
             const obj13 = {};
             const obj14 = { style: tmp.accountConnectedPreview };
-            const obj15 = {};
+            const obj15 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
             const intl = guildId(initialAttemptedPlatformType[25]).intl;
             obj15.children = intl.string(guildId(initialAttemptedPlatformType[25]).t.TOjkEg);
             const items2 = [_undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj15), ];
@@ -1279,7 +1279,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj14.children = items2;
             const items3 = [callback5(closure_8, obj14), ];
             const obj17 = { style: tmp.accountConnectedPrivacy };
-            const obj18 = {};
+            const obj18 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
             const intl2 = guildId(initialAttemptedPlatformType[25]).intl;
             obj18.children = intl2.string(guildId(initialAttemptedPlatformType[25]).t.jndPhX);
             const items4 = [_undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj18), ];
@@ -1294,7 +1294,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           let tmp56 = null;
           if (null != found1) {
             const obj20 = { style: tmp.accountConnectedPreview };
-            const obj21 = {};
+            const obj21 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
             const intl3 = guildId(initialAttemptedPlatformType[25]).intl;
             obj21.children = intl3.string(guildId(initialAttemptedPlatformType[25]).t.TOjkEg);
             const items6 = [_undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj21), ];
@@ -1315,7 +1315,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             const obj23 = { style: tmp.roleGranted };
             const obj24 = { guildId, style: tmp.verifiedIcon, role, size: 24 };
             const items7 = [_undefined2(role(initialAttemptedPlatformType[59]), obj24), ];
-            const obj25 = { -9223372036854775808: "<string:1091680213>", 0: "/assets/design/components/Icon/native/redesign/generated/images", 0: "MERCH_STORE", style: tmp.roleGrantedName, children: role.name };
+            const obj25 = { <string:1643205302>: "<string:1091687288>", <string:1415816450>: "/assets/design/components/Icon/native/redesign/generated/images", <string:4283523744>: "ADDRESS_ZIP", style: tmp.roleGrantedName, children: role.name };
             items7[1] = _undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj25);
             obj23.children = items7;
             const items8 = [callback5(closure_8, obj23), ];

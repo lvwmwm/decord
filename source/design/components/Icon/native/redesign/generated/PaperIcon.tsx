@@ -1,5 +1,5 @@
 // Module ID: 9276
-// Function ID: 72476
+// Function ID: 72487
 // Name: PaperIcon
 // Dependencies: []
 // Exports: PaperIcon

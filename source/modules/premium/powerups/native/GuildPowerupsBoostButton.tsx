@@ -1,5 +1,5 @@
 // Module ID: 11610
-// Function ID: 90169
+// Function ID: 90181
 // Name: GuildPowerupsBoostButton
 // Dependencies: []
 // Exports: GuildPowerupsBoostButton

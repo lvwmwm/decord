@@ -1,5 +1,5 @@
 // Module ID: 1672
-// Function ID: 18556
+// Function ID: 18561
 // Name: SequencedTransition
 // Dependencies: []
 
@@ -40,7 +40,7 @@ arg5.SequencedTransition = function SequencedTransition(name) {
   const items1 = [obj3];
   obj2.transform = items1;
   obj[50] = obj2;
-  const items2 = [{ "Null": null, "Null": null, "Null": null }];
+  const items2 = [{ description: "construct", category: "isArray", no: "isArray" }];
   obj[100] = { transform: items2 };
   obj.style = obj;
   obj.duration = 300;

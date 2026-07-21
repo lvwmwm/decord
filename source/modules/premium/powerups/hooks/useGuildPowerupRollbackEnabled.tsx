@@ -1,5 +1,5 @@
 // Module ID: 11517
-// Function ID: 89742
+// Function ID: 89754
 // Name: useGuildPowerupRollbackEnabled
 // Dependencies: []
 // Exports: default, isGuildPowerupRollbackEnabled

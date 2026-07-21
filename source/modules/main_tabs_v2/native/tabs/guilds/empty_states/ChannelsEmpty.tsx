@@ -1,8 +1,8 @@
-// Module ID: 14951
-// Function ID: 112517
+// Module ID: 14954
+// Function ID: 112551
 // Dependencies: []
 
-// Module 14951
+// Module 14954
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -10,7 +10,7 @@ const Permissions = arg1(dependencyMap[3]).Permissions;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
-let obj = { wrapper: { <string:1191183569>: false, <string:1224738001>: false }, content: { concat: null, colors: null, body: null, duration: null } };
+let obj = { wrapper: { 314319: "y", 315874: "isArray" }, content: { easing: null, isInteraction: null, useNativeDriver: null, size: null } };
 obj = {};
 const merged = Object.assign(arg1(dependencyMap[6]).TextStyleSheet.heading-md/bold);
 obj["fontSize"] = 18;
@@ -19,9 +19,9 @@ obj["marginBottom"] = 8;
 obj.headerText = obj;
 obj.text = { textAlign: "center" };
 obj.buttonWrapper = { marginTop: 24 };
-obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderRadius: importDefault(dependencyMap[7]).radii.xl };
+obj1 = { "Bool(true)": 291136, "Bool(true)": 1514209280, "Bool(true)": 1358955595, borderRadius: importDefault(dependencyMap[7]).radii.xl };
 obj.buttonPill = obj1;
-obj.personalizeButtonWrapper = { <string:80589824>: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", <string:80436992>: "bun run write-native-version" };
+obj.personalizeButtonWrapper = { <string:80547328>: "<string:2552889346>", <string:80609280>: "<string:2938503170>" };
 let closure_10 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   let obj2 = arg1(dependencyMap[12]);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
-    let tmp7Result = tmp7(arg1(dependencyMap[13]).FavoritesSpotIllustration, { bhk: 24, bic: 24 });
+    let tmp7Result = tmp7(arg1(dependencyMap[13]).FavoritesSpotIllustration, { "Null": 24, "Null": 24 });
   } else {
     obj = { source: importDefault(dependencyMap[14]) };
     tmp7Result = tmp7(closure_5, obj);

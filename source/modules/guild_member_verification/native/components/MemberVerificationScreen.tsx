@@ -1,9 +1,9 @@
-// Module ID: 15302
-// Function ID: 116378
+// Module ID: 15305
+// Function ID: 116412
 // Name: Loading
 // Dependencies: []
 
-// Module 15302 (Loading)
+// Module 15305 (Loading)
 function Loading() {
   return <View style={callback().flexLoading}>{jsx(arg1(dependencyMap[9]).ActivityIndicator, {})}</View>;
 }

@@ -1,5 +1,5 @@
 // Module ID: 1557
-// Function ID: 17595
+// Function ID: 17600
 // Name: useSafeAreaInsets
 // Dependencies: []
 // Exports: default, getSafeAreaInsets

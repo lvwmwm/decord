@@ -1,7 +1,7 @@
 // Module ID: 11086
-// Function ID: 86204
+// Function ID: 86215
 // Name: ChannelRecipientPrivateUserDataFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11086 (ChannelRecipientPrivateUserDataFlags)
 const _module = require(dependencyMap[0]);

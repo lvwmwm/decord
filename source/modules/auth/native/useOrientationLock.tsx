@@ -1,10 +1,10 @@
-// Module ID: 14660
-// Function ID: 110538
+// Module ID: 14663
+// Function ID: 110570
 // Name: usePortraitOrientationOnly
 // Dependencies: []
 // Exports: default
 
-// Module 14660 (usePortraitOrientationOnly)
+// Module 14663 (usePortraitOrientationOnly)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
 

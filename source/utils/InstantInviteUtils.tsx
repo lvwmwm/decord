@@ -1,5 +1,5 @@
 // Module ID: 8476
-// Function ID: 67626
+// Function ID: 67637
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
@@ -220,7 +220,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 const ChannelTypes = arg1(dependencyMap[7]).ChannelTypes;
 const InviteTargetTypes = arg1(dependencyMap[8]).InviteTargetTypes;
 let obj = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
-let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: { -314654980: 115172193759228650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 478205037: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200705219596742 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { -314654980: true, 478205037: true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: { -314654980: null, 478205037: null }, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: { -314654980: true, 478205037: true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: { -314654980: "channelId", 478205037: "channelId" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { -314654980: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018419178505942198, 478205037: 1039752086360127000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { -314654980: false, 478205037: false } };
+let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { "Bool(false)": true, "Bool(false)": true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: { "Bool(false)": "useCallback", "Bool(false)": "httpServerLocation" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: { "Bool(false)": 1, "Bool(false)": 20 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { "Bool(false)": "denied", "Bool(false)": "never_ask_again" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { "Bool(false)": "<string:2523987969>", "Bool(false)": "<string:822083584>" } };
 const items = [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(maxAge) {
@@ -542,8 +542,9 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     }(obj10);
     function addQueriedGroupDms(query) {
       ({ rows: closure_0, counts: closure_1 } = query);
-      const obj = callback(closure_2[9]);
-      const item = callback(closure_2[9]).queryGroupDMs({ query: query.query }).forEach((item) => {
+      let obj = callback(closure_2[9]);
+      obj = { marginTop: true, paddingBottom: "/assets/images/native", marginBottom: 24, query: query.query };
+      const item = obj.queryGroupDMs(obj).forEach((item) => {
         numGroupDms.numGroupDms = numGroupDms.numGroupDms + 1;
       });
     }(obj7);
@@ -554,7 +555,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     function addQueriedFriends(query) {
       ({ rows: closure_0, counts: closure_1, omitUserIds: closure_2, shownUserIds: closure_3 } = query);
       let obj = callback(closure_2[9]);
-      obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, query: query.query };
+      obj = { "Bool(false)": 141623300, "Bool(false)": 1107296256, "Bool(false)": 108110, query: query.query };
       const item = obj.queryFriends(obj).forEach((record) => {
         record = record.record;
         let hasItem = set.has(record.id);

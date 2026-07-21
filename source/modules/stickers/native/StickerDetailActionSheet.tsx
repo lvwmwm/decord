@@ -1,5 +1,5 @@
 // Module ID: 9612
-// Function ID: 74847
+// Function ID: 74858
 // Name: StandardStickerDetail
 // Dependencies: []
 
@@ -61,7 +61,8 @@ function StandardStickerDetail(chatInputRef) {
         formatResult = format(t.OzB6e3, obj);
       }
       obj = {};
-      const items = [callback(channel(description[18]).Text, { children: name }), , , , ];
+      const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "Cheerful Choco sparkles", children: name };
+      const items = [callback(channel(description[18]).Text, obj1), , , , ];
       const obj2 = { style: description.description, variant: "text-sm/medium", children: formatResult };
       items[1] = callback(channel(description[18]).Text, obj2);
       const obj3 = { containerWidth: diff };
@@ -147,7 +148,7 @@ function UnavailableStickerDetail(arg0) {
   }, items1);
   const items2 = [callback2(importDefault(dependencyMap[40]), { sticker: renderableSticker, size: 48 }), , ];
   obj = { style: tmp.guildEmojiDescription };
-  obj1 = { children: renderableSticker.name };
+  obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "Cheerful Choco sparkles", children: renderableSticker.name };
   const items3 = [callback2(arg1(dependencyMap[18]).Text, obj1), ];
   obj2 = { style: tmp.description, variant: "text-sm/medium" };
   const intl = arg1(dependencyMap[19]).intl;
@@ -213,17 +214,17 @@ if (obj4.isAndroid()) {
 }
 obj.paddingBottom = num;
 obj.content = obj;
-obj.description = { label: null, DARK: "hidden" };
-obj.guildEmojiTopContainer = {};
+obj.description = { y: null, half: "hidden" };
+obj.guildEmojiTopContainer = { "Null": 7, "Null": 370 };
 obj1 = { marginTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.buttonContainer = obj1;
-obj.guildEmojiDescription = { <string:80590080>: "Group 11", <string:80550400>: 2 };
+obj.guildEmojiDescription = { <string:81253632>: "Group 11", <string:80592640>: 2 };
 const tmp5 = arg1(dependencyMap[10]);
 obj.divider = { marginLeft: 0, marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.moreMenuIcon = { "Null": "isArray", "Null": "handleJoinThreadVoice", "Null": "isArray", "Null": "useActionBarPrimaryButton" };
+obj.moreMenuIcon = { "Bool(false)": -2025455614, "Bool(false)": -2013265614, "Bool(false)": 671088946, "Bool(false)": -117440185 };
 const obj2 = { marginLeft: 0, marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 obj.favoriteContainer = { paddingTop: importDefault(dependencyMap[13]).space.PX_4 };
-obj.starIcon = { <string:1632221346>: "boolean", <string:2722977214>: "string" };
+obj.starIcon = { y: false, isArray: false };
 obj4 = { tintColor: importDefault(dependencyMap[13]).colors.ICON_FEEDBACK_WARNING };
 obj.starIconSelected = obj4;
 const obj3 = { paddingTop: importDefault(dependencyMap[13]).space.PX_4 };
@@ -304,7 +305,7 @@ function GuildStickerDetail(sticker) {
       isFavorite: hasItem,
       handleFavorite: stateFromStores.useCallback(() => {
         function content() {
-          const obj = { style: {}, variant: "text-md/bold" };
+          const obj = { style: { "Null": "noin tunti", "Null": "noin {{count}} tuntia" }, variant: "text-md/bold" };
           const intl = callback(closure_2[19]).intl;
           const string = intl.string;
           const t = callback(closure_2[19]).t;
@@ -384,7 +385,7 @@ function GuildStickerDetail(sticker) {
       isFavorite: hasItem,
       handleFavorite: stateFromStores.useCallback(() => {
         function content() {
-          const obj = { style: {}, variant: "text-md/bold" };
+          const obj = { style: { "Null": "noin tunti", "Null": "noin {{count}} tuntia" }, variant: "text-md/bold" };
           const intl = callback(closure_2[19]).intl;
           const string = intl.string;
           const t = callback(closure_2[19]).t;
@@ -552,7 +553,8 @@ function GuildStickerDetail(sticker) {
         obj = { sticker, size: 48 };
         const items = [callback(channel(closure_2[40]), obj), , ];
         const obj1 = { style: closure_2.guildEmojiDescription };
-        const items1 = [callback(sticker(closure_2[18]).Text, { children: sticker.name }), callback(sticker(closure_2[18]).Text, { style: closure_2.description, variant: "text-sm/medium", children: closure_15 })];
+        const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "Cheerful Choco sparkles", children: sticker.name };
+        const items1 = [callback(sticker(closure_2[18]).Text, obj2), callback(sticker(closure_2[18]).Text, { style: closure_2.description, variant: "text-sm/medium", children: closure_15 })];
         obj1.children = items1;
         items[1] = callback2(tmp4, obj1);
         let tmp4 = tidaWebformEnabled;

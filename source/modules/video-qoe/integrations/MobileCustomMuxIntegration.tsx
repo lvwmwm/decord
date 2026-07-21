@@ -1,9 +1,9 @@
-// Module ID: 13915
-// Function ID: 105749
+// Module ID: 13918
+// Function ID: 105781
 // Name: logger
 // Dependencies: []
 
-// Module 13915 (logger)
+// Module 13918 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("MobileCustomMuxIntegration");
@@ -25,7 +25,7 @@ const tmp3 = () => {
       SessionManager = MobileCustomMuxIntegration(closure_2[3]).SessionManager;
       this.sessionId = SessionManager.generateSessionId();
       this.playerId = "discord-mobile-" + this.sessionId;
-      obj = { flexDirection: true, alignItems: true, backgroundColor: true, borderRadius: true, accessible: "<string:2257477>", guildId: "isArray" };
+      obj = { <string:4156904131>: "Array", <string:4217624902>: "isArray", <string:4132527264>: "body", <string:1396401070>: "header", <string:2898022754>: "accessibilityRole", <string:684246098>: "name" };
       obj.video_series = arg0.contentMetadata.questId;
       obj.video_producer = arg0.contentMetadata.gameId;
       obj.video_brand = arg0.contentMetadata.gameName;

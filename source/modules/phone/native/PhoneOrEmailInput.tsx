@@ -1,5 +1,5 @@
 // Module ID: 9206
-// Function ID: 72042
+// Function ID: 72053
 // Dependencies: []
 
 // Module 9206
@@ -18,7 +18,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
   const dependencyMap = onPressCountrySelector;
   const forceMode = onChange.forceMode;
   let callback = forceMode;
-  let obj = {};
+  let obj = { state: null, body: null, type: null, accessibilityRole: null, __closure: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onChange, obj);
   let combined;

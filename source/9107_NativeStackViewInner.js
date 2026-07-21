@@ -1,5 +1,5 @@
 // Module ID: 9107
-// Function ID: 71335
+// Function ID: 71346
 // Name: NativeStackViewInner
 // Dependencies: []
 // Exports: default
@@ -274,7 +274,7 @@ function SceneView(arg0) {
   if (null != tmp20) {
     preventRemove = tmp20.preventRemove;
   }
-  obj = { "Null": null, "Null": null, style: StyleSheet.absoluteFill };
+  obj = { marginLeft: null, lineHeight: null, style: StyleSheet.absoluteFill };
   const headerLargeTitle = options.headerLargeTitle;
   let tmp23 = null != headerLargeTitle;
   if (tmp23) {
@@ -414,7 +414,7 @@ function SceneView(arg0) {
   obj.children = callback3(callback(dependencyMap[4]).NavigationContext.Provider, obj1);
   return callback3(callback(dependencyMap[7]).Screen, obj, route.key);
 }
-const styles = StyleSheet.create({ container: { flex: 1 }, scene: { RNSVGTSpan: true, OverKeyboardView: true }, absolute: {}, translucent: {}, background: { overflow: "hidden" } });
+const styles = StyleSheet.create({ container: { flex: 1 }, scene: {}, absolute: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" }, translucent: {}, background: { overflow: "hidden" } });
 
 export default function NativeStackView(arg0) {
   const obj = { children: callback3(NativeStackViewInner, Object.assign({}, arg0)) };

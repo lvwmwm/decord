@@ -1,5 +1,5 @@
 // Module ID: 1387
-// Function ID: 16539
+// Function ID: 16544
 // Name: fromGuildPropertiesWithAdditionalFields
 // Dependencies: []
 // Exports: attachSerializedData, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties

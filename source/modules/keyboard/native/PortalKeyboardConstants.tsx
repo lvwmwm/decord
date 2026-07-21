@@ -1,5 +1,5 @@
 // Module ID: 11144
-// Function ID: 86656
+// Function ID: 86668
 // Name: KEYBOARD_ANIMATION_DURATION
 // Dependencies: []
 

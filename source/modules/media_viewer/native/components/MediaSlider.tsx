@@ -1,16 +1,16 @@
-// Module ID: 8277
-// Function ID: 65345
+// Module ID: 8278
+// Function ID: 65358
 // Name: num2
 // Dependencies: []
 // Exports: default
 
-// Module 8277 (num2)
+// Module 8278 (num2)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { <string:76581376>: false, <string:4018557184>: false, <string:76093250>: false, <string:76092672>: false, <string:1129075712>: false }, icon: { marginRight: 16 } };
+obj = { container: { "Bool(false)": "y", "Bool(false)": "isArray", "Bool(false)": "exports", "Bool(false)": "code", "Bool(false)": "y" }, icon: { marginRight: 16 } };
 let num = 16;
 obj = {};
 const tmp2 = arg1(dependencyMap[3]);
@@ -20,17 +20,17 @@ if (obj4.isAndroid()) {
 }
 obj.lineHeight = num2;
 obj.centerText = obj;
-const obj1 = {};
+const obj1 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 const obj4 = arg1(dependencyMap[5]);
 if (obj6.isAndroid()) {
   num = 0;
 }
 obj1.marginHorizontal = num;
 obj.sliderContainer = obj1;
-obj.progressSliderContainer = { panGestureGenerator: null, ae: null, getCountryCode: null, stageInfoTopic: null };
+obj.progressSliderContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 obj.timelineBackgroundSlider = {};
 obj.downloadProgressSlider = {};
-obj.playbackSlider = {};
+obj.playbackSlider = { -9223372036854775808: true, 0: true, 0: true };
 let closure_8 = obj.createStyles(obj);
 const obj6 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/media_viewer/native/components/MediaSlider.tsx");
@@ -114,15 +114,15 @@ export default function MediaSlider(controls) {
     }
     controls.pause(!paused);
   };
-  obj.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
+  obj.hitSlop = {};
   if (paused) {
     let PauseIcon = tmp20(tmp21[12]).PlayIcon;
   } else {
     PauseIcon = tmp20(tmp21[13]).PauseIcon;
   }
-  obj.children = callback2(PauseIcon, { flex: "null", flexGrow: null });
+  obj.children = callback2(PauseIcon, { accessibilityRole: null, "": "sm" });
   const items4 = [callback2(arg1(dependencyMap[10]).PressableOpacity, obj), , , ];
-  const obj1 = { "Bool(false)": "guild_id", "Bool(false)": "guildId", "Bool(false)": "guildId", "Bool(false)": "guildId", "Bool(false)": "guildId" };
+  const obj1 = { ./dist/is-chrome: "guild_id", dup: "guildId", ./dist/is-ios: "guildId", dup: "guildId", width: "guildId" };
   const items5 = [tmp.centerText, { width: tmp8[0] }];
   obj1.style = items5;
   obj1.children = timeFormat;

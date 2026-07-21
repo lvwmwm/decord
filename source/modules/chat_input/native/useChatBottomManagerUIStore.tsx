@@ -1,5 +1,5 @@
 // Module ID: 9305
-// Function ID: 72744
+// Function ID: 72755
 // Name: getChatInputContainerHeight
 // Dependencies: []
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete

@@ -1,5 +1,5 @@
 // Module ID: 11271
-// Function ID: 87711
+// Function ID: 87723
 // Name: useLatch
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 14106
-// Function ID: 107101
+// Module ID: 14109
+// Function ID: 107133
 // Name: EffectTile
 // Dependencies: []
 // Exports: default
 
-// Module 14106 (EffectTile)
+// Module 14109 (EffectTile)
 function EffectTile(arg0) {
   let effectId;
   let onClick;
@@ -43,12 +43,12 @@ function EffectTile(arg0) {
   const obj2 = { userId, userName: stringResult, effectDisplayType: arg1(dependencyMap[20]).EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
   const items1 = [callback2(importDefault(dependencyMap[19]), obj2), , ];
   if (showNewDot) {
-    const obj3 = { Text: 5375, string: 1896939776, y: 8000, style: tmp.tileNewDot };
+    const obj3 = { canSort: "none", GameDepthTier1SmallBadge: "contain", _monthsRegex: "password", style: tmp.tileNewDot };
     showNewDot = callback2(closure_5, obj3);
   }
   items1[1] = showNewDot;
   if (hasItem) {
-    const obj4 = { style: tmp.betaCaption };
+    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.betaCaption };
     const intl3 = arg1(dependencyMap[14]).intl;
     obj4.children = intl3.string(arg1(dependencyMap[14]).t.oW0eUd);
     hasItem = callback2(arg1(dependencyMap[21]).Text, obj4);
@@ -65,21 +65,21 @@ const FLYWHEEL_EFFECTS = arg1(dependencyMap[3]).FLYWHEEL_EFFECTS;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { header: { paddingTop: 4 }, headerTrailing: { "Null": null, "Null": null }, container: { flex: 1 } };
+obj = { header: { paddingTop: 4 }, headerTrailing: { margin: null, backgroundColor: null }, container: { flex: 1 } };
 obj = { padding: importDefault(dependencyMap[6]).space.PX_8, paddingLeft: importDefault(dependencyMap[6]).space.PX_16, alignItems: "center" };
 obj.contentContainer = obj;
-obj.gridContainer = {};
+obj.gridContainer = { 9223372036854775807: "Array", 0: "isArray" };
+const obj1 = { <string:2214447224>: "isArray", <string:1550125183>: "warn", <string:2857803874>: "textAlign", <string:1370110562>: "r", <string:4217569875>: "isArray", <string:3881981674>: "track", <string:3085914449>: "textAlign", <string:1383004514>: "r", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+obj.effectCard = obj1;
 const tmp3 = arg1(dependencyMap[4]);
-obj.effectCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.effectCardSelected = { borderColor: importDefault(dependencyMap[6]).colors.CONTROL_BRAND_FOREGROUND };
 obj.effectName = { textAlign: "center" };
 const obj2 = { borderColor: importDefault(dependencyMap[6]).colors.CONTROL_BRAND_FOREGROUND };
 obj.tileNewDot = { position: "absolute", top: importDefault(dependencyMap[6]).space.PX_8, right: importDefault(dependencyMap[6]).space.PX_8, width: importDefault(dependencyMap[6]).space.PX_8, height: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).space.PX_8 / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowRadius: importDefault(dependencyMap[6]).space.PX_4, shadowOpacity: 1, elevation: 4 };
-const obj4 = { <string:1196532342>: null, <string:1649435100>: null, <string:4082282146>: null, <string:1657055817>: null, <string:4082216610>: null, bottom: importDefault(dependencyMap[6]).space.PX_4 };
-obj.betaCaption = obj4;
-let closure_10 = obj.createStyles(obj);
 const obj3 = { position: "absolute", top: importDefault(dependencyMap[6]).space.PX_8, right: importDefault(dependencyMap[6]).space.PX_8, width: importDefault(dependencyMap[6]).space.PX_8, height: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).space.PX_8 / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowRadius: importDefault(dependencyMap[6]).space.PX_4, shadowOpacity: 1, elevation: 4 };
+obj.betaCaption = { bottom: importDefault(dependencyMap[6]).space.PX_4 };
+let closure_10 = obj.createStyles(obj);
+const obj4 = { bottom: importDefault(dependencyMap[6]).space.PX_4 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEffectPickerSheet.tsx");
 
 export default function DisplayNameStylesEffectPickerSheet(userId) {
@@ -127,8 +127,8 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     const obj4 = { style: tmp.container };
     const obj5 = { style: tmp.contentContainer };
     const obj6 = {
-      pink: -144637951,
-      plum: 17545793,
+      "Bool(false)": "fi",
+      "Bool(false)": "pillIcon",
       style: tmp.gridContainer,
       children: visibleEffectOrder.map((effectId) => {
           const userId = effectId;

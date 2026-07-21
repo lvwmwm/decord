@@ -1,7 +1,7 @@
 // Module ID: 10899
-// Function ID: 84709
+// Function ID: 84720
 // Name: getIsInParty
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getIsInParty
 
 // Module 10899 (getIsInParty)

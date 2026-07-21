@@ -1,14 +1,15 @@
-// Module ID: 14508
-// Function ID: 109247
+// Module ID: 14511
+// Function ID: 109279
 // Name: LettersIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: LettersIcon
 
-// Module 14508 (LettersIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 14511 (LettersIcon)
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/LettersIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/LettersIcon.tsx");
 
 export const LettersIcon = function LettersIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

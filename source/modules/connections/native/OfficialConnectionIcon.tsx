@@ -1,5 +1,5 @@
 // Module ID: 9978
-// Function ID: 77169
+// Function ID: 77180
 // Name: OfficialConnectionIcon
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const View = arg1(dependencyMap[1]).View;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ verifiedCheck: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ verifiedCheck: { "Null": 3375103, "Null": -8192, "Null": 4320799 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/connections/native/OfficialConnectionIcon.tsx");
 

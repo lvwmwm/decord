@@ -1,5 +1,5 @@
 // Module ID: 10825
-// Function ID: 84040
+// Function ID: 84051
 // Name: getEmbeddedActivityLaunchability
 // Dependencies: []
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability

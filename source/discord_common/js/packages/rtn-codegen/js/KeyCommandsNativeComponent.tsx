@@ -1,9 +1,9 @@
-// Module ID: 13375
-// Function ID: 101685
+// Module ID: 13377
+// Function ID: 101707
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 13375 (__INTERNAL_VIEW_CONFIG)
+// Module 13377 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "KeyCommandsView", directEventTypes: { topKeyCommand: { registrationName: "onKeyCommand" } } };
 obj = { keyCommands: true };
 const _module = require(dependencyMap[0]);

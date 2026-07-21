@@ -1,5 +1,5 @@
 // Module ID: 3714
-// Function ID: 28432
+// Function ID: 28437
 // Name: n
 // Dependencies: []
 
@@ -44,7 +44,7 @@ const fn = function n(moment) {
       return "\u03BC" === `${arg0}`.toLowerCase()[0];
     },
     meridiemParse: /[ΠΜ]\.?Μ?\.?/i,
-    longDateFormat: {},
+    longDateFormat: { "Bool(true)": 150995444, "Bool(true)": 167772743, "Bool(true)": 134218311, "Bool(true)": 1157628487, "Bool(true)": 198913, "Bool(true)": 142553 },
     calendarEl: obj,
     calendar(arg0, hours) {
       const obj = this._calendarEl[arg0];
@@ -67,12 +67,18 @@ const fn = function n(moment) {
       }
       return str2.replace("{}", str3);
     },
-    relativeTime: {},
+    relativeTime: { 9223372036854775807: 1660682241, 0: 1660616706, -9223372036854775808: 1984823298, -9223372036854775808: 637534541, 0: 16777656, 9223372036854775807: -973077853, 9223372036854775807: 1073742234, 0: -184548833, 0: 570425804, 0: 570426015, -9223372036854775808: -1056964314, "Bool(false)": 1442841317, "Bool(false)": 654311737, "Bool(false)": 2046820863 },
     dayOfMonthOrdinalParse: /\d{1,2}η/,
     ordinal: "%d\u03B7",
-    week: { <string:1431496722>: false, <string:1627556098>: false }
+    week: { "Bool(true)": null, "Bool(true)": null }
   };
   obj = {
+    intl: "L",
+    flex: -6,
+    getChannel: 24,
+    PX_8: 24,
+    textAlign: "%s p\u00E4\u00E4st\u00E4",
+    unicodeVersion: "%s sitten",
     lastWeek() {
       let str = "[\u03C4\u03B7\u03BD \u03C0\u03C1\u03BF\u03B7\u03B3\u03BF\u03CD\u03BC\u03B5\u03BD\u03B7] dddd [{}] LT";
       if (6 === this.day()) {

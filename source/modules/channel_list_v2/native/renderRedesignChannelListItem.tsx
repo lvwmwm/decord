@@ -1,10 +1,10 @@
-// Module ID: 14890
-// Function ID: 112178
+// Module ID: 14893
+// Function ID: 112212
 // Name: hasGuildActions
 // Dependencies: []
 // Exports: calculateVoiceSummary, getChannelListItemSize, getChannelListSectionFooterSize, getChannelListSectionHasFooterDivider, getChannelListSectionHeaderSize, getFastListRecyclerKey, renderChannelListItem, renderChannelListSectionFooter, renderChannelListSectionHeader
 
-// Module 14890 (hasGuildActions)
+// Module 14893 (hasGuildActions)
 function hasGuildActions(getGuildActionSection) {
   const guildActionSection = getGuildActionSection.getGuildActionSection();
   if (guildActionSection.isEmpty()) {

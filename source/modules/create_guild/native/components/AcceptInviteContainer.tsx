@@ -1,5 +1,5 @@
 // Module ID: 11739
-// Function ID: 91170
+// Function ID: 91182
 // Name: AcceptInviteContainer
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ export default function AcceptInviteContainer(code) {
   const importDefault = onPressClose;
   const inviteInstanceId = code.inviteInstanceId;
   const dependencyMap = inviteInstanceId;
-  let obj = { <string:4217612897>: "spring", <string:2572313248>: "linear", <string:1672009132>: "easeInEaseOut" };
+  let obj = { "Null": false, "Null": false, "Null": false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(code, obj);
   const isRegistration = merged.isRegistration;

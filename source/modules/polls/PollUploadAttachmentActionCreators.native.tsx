@@ -1,5 +1,5 @@
 // Module ID: 11313
-// Function ID: 88025
+// Function ID: 88037
 // Name: _handlePollGifAttachmentAdd
 // Dependencies: []
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment

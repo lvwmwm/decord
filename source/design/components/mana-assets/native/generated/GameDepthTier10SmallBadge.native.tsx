@@ -1,5 +1,5 @@
 // Module ID: 6071
-// Function ID: 50020
+// Function ID: 50028
 // Name: GameDepthTier10SmallBadge
 // Dependencies: []
 // Exports: GameDepthTier10SmallBadge

@@ -1,14 +1,14 @@
-// Module ID: 15361
-// Function ID: 116982
+// Module ID: 15364
+// Function ID: 117021
 // Name: CoachmarkImage
 // Dependencies: []
 // Exports: default
 
-// Module 15361 (CoachmarkImage)
+// Module 15364 (CoachmarkImage)
 function CoachmarkImage() {
   const tmp = callback3();
   let obj = { style: tmp.coachmarkImageContainer };
-  const items = [callback(arg1(dependencyMap[12]).DisplayNameLockeAbstractUI, { "Null": "backdropTint", "Null": "<string:4216275200>", "Null": "<string:3110141953>" }), ];
+  const items = [callback(arg1(dependencyMap[12]).DisplayNameLockeAbstractUI, { "Null": "must be an object", "Null": "!!child \"{{!child}}\" fails because {{reason}}", "Null": "must have at least {{limit}} children" }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(arg1(dependencyMap[13]).BetaTag, obj);
   obj.children = items;
@@ -21,7 +21,7 @@ const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj = { "Null": null, "Null": null, gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.coachmarkImageContainer = obj;
 obj.betaTag = { marginLeft: 0 };
 let closure_9 = obj.createStyles(obj);

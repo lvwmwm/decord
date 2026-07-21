@@ -1,5 +1,5 @@
 // Module ID: 12305
-// Function ID: 94284
+// Function ID: 94296
 // Name: useOpenPremiumMarketingPayment
 // Dependencies: []
 // Exports: default

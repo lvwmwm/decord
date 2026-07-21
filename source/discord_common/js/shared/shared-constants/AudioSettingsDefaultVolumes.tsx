@@ -1,7 +1,7 @@
 // Module ID: 8838
-// Function ID: 69727
+// Function ID: 69738
 // Name: AudioSettingsDefaultVolumes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8838 (AudioSettingsDefaultVolumes)
 const _module = require(dependencyMap[0]);

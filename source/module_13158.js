@@ -1,15 +1,16 @@
 // Module ID: 13158
-// Function ID: 99545
+// Function ID: 99563
 // Dependencies: []
 
 // Module 13158
 
-export default (arg0, arg1) => {
-  const tmp = require(dependencyMap[0])(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = require(dependencyMap[0])(tmp);
+    }
   }
-  return tmp3;
+  return num;
 };

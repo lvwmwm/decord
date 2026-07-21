@@ -1,5 +1,5 @@
 // Module ID: 1098
-// Function ID: 12559
+// Function ID: 12563
 // Name: isSentrySpan
 // Dependencies: []
 

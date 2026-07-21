@@ -1,10 +1,10 @@
-// Module ID: 7757
-// Function ID: 61592
+// Module ID: 7758
+// Function ID: 61604
 // Name: isMessageNewerThanImprovedMarkdownEpoch
 // Dependencies: []
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 7757 (isMessageNewerThanImprovedMarkdownEpoch)
+// Module 7758 (isMessageNewerThanImprovedMarkdownEpoch)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/markup/MarkupEligibilityUtils.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 11548
-// Function ID: 89890
+// Function ID: 89902
 // Name: useGuildPowerupLevelPerks
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ export default function useGuildPowerupLevelPerks(arg0) {
   let obj = arg1;
   const arg1 = arg0;
   if (arg1 === undefined) {
-    obj = {};
+    obj = { 0: "Small", 0: "sm", 9223372036854775807: "Placeholder" };
   }
   const includeEmojis = obj.includeEmojis;
   const importDefault = includeEmojis;

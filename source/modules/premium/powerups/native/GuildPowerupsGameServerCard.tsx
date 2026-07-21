@@ -1,5 +1,5 @@
 // Module ID: 11596
-// Function ID: 90118
+// Function ID: 90130
 // Name: GuildPowerupsGameServerCard
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 9266
-// Function ID: 72380
+// Function ID: 72391
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -59,7 +59,7 @@ let tmp2 = (DeviceSettingsStore) => {
   obj = {
     key: "shouldTriggerOnNextExposure",
     value() {
-      return 2 === closure_5;
+      return closure_5 >= 2;
     }
   };
   items[1] = obj;

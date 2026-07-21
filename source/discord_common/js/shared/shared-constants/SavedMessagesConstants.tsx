@@ -1,7 +1,7 @@
 // Module ID: 9904
-// Function ID: 76612
+// Function ID: 76623
 // Name: SAVED_MESSAGES_MAX
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9904 (SAVED_MESSAGES_MAX)
 const _module = require(dependencyMap[0]);

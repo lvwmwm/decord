@@ -1,9 +1,9 @@
-// Module ID: 5271
-// Function ID: 44821
+// Module ID: 5270
+// Function ID: 44828
 // Name: LazyPromiseInitializer
 // Dependencies: []
 
-// Module 5271 (LazyPromiseInitializer)
+// Module 5270 (LazyPromiseInitializer)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

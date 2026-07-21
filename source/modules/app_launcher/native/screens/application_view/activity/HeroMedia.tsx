@@ -1,5 +1,5 @@
 // Module ID: 11192
-// Function ID: 87197
+// Function ID: 87209
 // Name: useHeroMediaDimensions
 // Dependencies: []
 // Exports: default
@@ -38,7 +38,7 @@ export default function HeroMedia(width) {
   ({ applicationId, containerHeight } = width);
   const tmp = callback();
   const size = useHeroMediaDimensions({ width: width.width });
-  let obj = { applicationId, size: size.width, names: ["SENTRY_BAGGAGE_KEY_PREFIX"] };
+  let obj = { applicationId, size: size.width, names: ["RollOutRight"] };
   const tmp2 = importDefault(dependencyMap[7])(obj);
   let obj1 = arg1(dependencyMap[8]);
   const items = [closure_3];

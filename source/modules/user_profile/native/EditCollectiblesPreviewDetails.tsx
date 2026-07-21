@@ -1,10 +1,10 @@
-// Module ID: 7870
-// Function ID: 62659
+// Module ID: 7871
+// Function ID: 62672
 // Name: EditCollectiblesPreviewDescription
 // Dependencies: []
 // Exports: default
 
-// Module 7870 (EditCollectiblesPreviewDescription)
+// Module 7871 (EditCollectiblesPreviewDescription)
 function EditCollectiblesPreviewDescription(arg0) {
   let nitroJoinCTA;
   let nitroUpgradeCTA;
@@ -59,7 +59,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       let toLocaleDateStringResult;
       if (null != purchase) {
         const purchasedAt = purchase.purchasedAt;
-        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { "Bool(false)": 1238630404, "Bool(false)": 1238630404 });
+        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { paddingTop: null, paddingBottom: null });
       }
       obj3.date = toLocaleDateStringResult;
       obj2.children = intl2.format(arg1(dependencyMap[10]).t.gW9R4B, obj3);
@@ -132,7 +132,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   if (null != previewSkuId) {
     if (null != product) {
       let obj = { style: tmp.productDetailsContainer };
-      obj = {};
+      obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
       let name;
       if (null != product) {
         name = product.name;

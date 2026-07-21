@@ -1,5 +1,5 @@
 // Module ID: 10384
-// Function ID: 80057
+// Function ID: 80068
 // Name: subscribeToSafeAreaInsets
 // Dependencies: []
 // Exports: default

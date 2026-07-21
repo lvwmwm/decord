@@ -1,7 +1,7 @@
 // Module ID: 5670
-// Function ID: 48718
+// Function ID: 48726
 // Name: ObscureReason
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 5670 (ObscureReason)
 const obj = { SPOILER: "spoiler", EXPLICIT_CONTENT: "explicit_content", POTENTIAL_EXPLICIT_CONTENT: "potential_explicit_content", GORE_CONTENT: "gore_content", SELF_HARM_CONTENT: "self_harm_content" };

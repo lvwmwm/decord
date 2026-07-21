@@ -1,10 +1,10 @@
-// Module ID: 13483
-// Function ID: 102331
+// Module ID: 13485
+// Function ID: 102353
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [126746624, 523763712, 883949568, 79429632, 270270464, 131072, 528285696, 452984832, 2248146944, 167772181, 553648154, 503316480, 2969567248, 4177526786, 3087007748, 469762078, 3321888784, 2617245713, 33554434, 4026531840]
+// Dependencies: [126746624, 523829248, 884080640, 79429632, 270270464, 131072, 528285696, 452984832, 2248146944, 167772181, 553648154, 503316480, 2969567248, 4177526786, 3103784964, 469762078, 3321888784, 2617245713, 33554434, 4026531840]
 // Exports: default
 
-// Module 13483 (UserProfilePrimaryGuildEditButton)
+// Module 13485 (UserProfilePrimaryGuildEditButton)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;

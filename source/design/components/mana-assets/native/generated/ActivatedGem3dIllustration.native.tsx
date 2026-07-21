@@ -1,7 +1,7 @@
 // Module ID: 5843
-// Function ID: 49678
+// Function ID: 49686
 // Name: ActivatedGem3dIllustration
-// Dependencies: [131072, 561250304, 1895825408, 4093640724]
+// Dependencies: [131072, 561250304, 1879048192, 4093640724]
 // Exports: ActivatedGem3dIllustration
 
 // Module 5843 (ActivatedGem3dIllustration)

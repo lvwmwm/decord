@@ -1,10 +1,10 @@
-// Module ID: 15178
-// Function ID: 114481
+// Module ID: 15181
+// Function ID: 114515
 // Name: openJoinRequestActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15178 (openJoinRequestActionSheet)
+// Module 15181 (openJoinRequestActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_member_verification/native/openJoinRequestActionSheet.tsx");
 

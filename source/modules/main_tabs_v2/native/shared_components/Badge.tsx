@@ -1,5 +1,5 @@
 // Module ID: 9120
-// Function ID: 71410
+// Function ID: 71421
 // Name: DEFAULT_BADGE_SIZE
 // Dependencies: []
 
@@ -12,7 +12,7 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND
 obj.badge = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.badgeClassic = obj1;
-obj.mask = {};
+obj.mask = { "Null": null, "Null": null };
 let closure_2 = obj1.createStyles(obj);
 const importAllResult = importAll(dependencyMap[0]);
 const memoResult = importAll(dependencyMap[0]).memo(function Badge(size) {

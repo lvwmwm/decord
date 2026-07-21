@@ -1,5 +1,5 @@
 // Module ID: 8753
-// Function ID: 69210
+// Function ID: 69221
 // Name: SegmentedControlItem
 // Dependencies: []
 // Exports: SegmentedControlItem
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 ({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = {};
+let closure_7 = { placeholder: -0.00000000000000000000000000000000000004995869994548859, onChange: 242321384378898780000000000000000000000000000000000000000000000000000000000000000000, isClearable: 427697983194162900000000000000000000000000000000000000000000000000000000000000000000000, scaleX: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006320645731423585 };
 let obj = arg1(dependencyMap[3]);
 let closure_8 = obj.createStyles((arg0) => {
   let obj = {};
@@ -22,7 +22,7 @@ let closure_8 = obj.createStyles((arg0) => {
   obj.flexDirection = "row";
   obj.justifyContent = "center";
   obj.item = obj;
-  obj.label = { <string:3461472865>: "Layer 1", <string:1447977218>: 1, <string:1640807382>: null };
+  obj.label = { "Null": 24182785, "Null": 16777216, "Bool(false)": 113 };
   return obj;
 });
 const tmp4 = arg1(dependencyMap[2]);
@@ -85,7 +85,7 @@ export const SegmentedControlItem = function SegmentedControlItem(index) {
   obj.accessibilityHint = formatToPlainStringResult;
   const obj2 = { style: tmp.label };
   const items1 = [icon, ];
-  const obj3 = { style: animatedStyle };
+  const obj3 = { "Null": 0, "Null": null, "Null": 0, "Null": 96, style: animatedStyle };
   let num3;
   if ("experimental_Large" === variant) {
     num3 = 1.5;

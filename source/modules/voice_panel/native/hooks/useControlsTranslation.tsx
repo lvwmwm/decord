@@ -1,10 +1,10 @@
-// Module ID: 15723
-// Function ID: 120175
+// Module ID: 15732
+// Function ID: 120340
 // Name: useControlsTranslation
 // Dependencies: []
 // Exports: default
 
-// Module 15723 (useControlsTranslation)
+// Module 15732 (useControlsTranslation)
 let closure_3 = importAll(dependencyMap[0]);
 const MODE_CHANGE_PHYSICS = arg1(dependencyMap[1]).MODE_CHANGE_PHYSICS;
 const CALL_TILE_GUTTER = arg1(dependencyMap[2]).CALL_TILE_GUTTER;

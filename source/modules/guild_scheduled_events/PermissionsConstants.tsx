@@ -1,5 +1,5 @@
 // Module ID: 8394
-// Function ID: 66803
+// Function ID: 66814
 // Name: VIEW_CHANNEL
 // Dependencies: []
 

@@ -1,15 +1,15 @@
 // Module ID: 3913
-// Function ID: 32338
+// Function ID: 32343
 // Name: CameraRive
 // Dependencies: []
 
 // Module 3913 (CameraRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Icon Camera: { <string:1630330449>: null, <string:3237829017>: null, <string:1812237488>: null }, Animation Main: {} };
-let closure_8 = { Icon Camera: [], Animation Main: [] };
+let closure_7 = { Icon Camera: { "Bool(false)": "<string:2066808836>", "Bool(false)": "<string:3779571220>", "Bool(false)": "<string:1094716538>" }, Animation Main: {} };
+let closure_8 = { Icon Camera: ["<string:307167234>", "<string:1318518786>"], Animation Main: [] };
 let closure_9 = {
   Icon Camera: function IconCameraBindings(reducedMotionEnabled) {
     let dataBinding;

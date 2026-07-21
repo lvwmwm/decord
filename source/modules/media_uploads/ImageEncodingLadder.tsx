@@ -1,9 +1,9 @@
-// Module ID: 4697
-// Function ID: 40893
+// Module ID: 4696
+// Function ID: 40900
 // Name: getAdaptiveImageCompressionQuality
 // Dependencies: []
 
-// Module 4697 (getAdaptiveImageCompressionQuality)
+// Module 4696 (getAdaptiveImageCompressionQuality)
 function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
   if (ADAPTIVE_COMPRESSION_CONFIG.useAdaptiveCompression) {
     if (null != size.width) {
@@ -50,7 +50,7 @@ function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const CompressionQuality = arg1(dependencyMap[2]).CompressionQuality;
-let obj = {};
+let obj = { "Bool(true)": -1358953372, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 obj = {};
 const tmp2 = () => {
   class ImageEncodingLadder {

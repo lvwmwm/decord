@@ -1,7 +1,7 @@
 // Module ID: 11164
-// Function ID: 86816
+// Function ID: 86828
 // Name: setFrecencySectionSelection
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: setFrecencySectionSelection
 
 // Module 11164 (setFrecencySectionSelection)

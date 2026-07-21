@@ -1,9 +1,9 @@
-// Module ID: 14247
-// Function ID: 107650
+// Module ID: 14250
+// Function ID: 107682
 // Name: _serializeIntlData
 // Dependencies: []
 
-// Module 14247 (_serializeIntlData)
+// Module 14250 (_serializeIntlData)
 function _serializeIntlData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -21,7 +21,7 @@ const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 ({ DebugLogCategory: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
-let closure_9 = obj.create(() => ({ "Bool(false)": null, "Bool(false)": null }));
+let closure_9 = obj.create(() => ({ <string:3869114372>: null, <string:3868262404>: null }));
 const tmp2 = arg1(dependencyMap[2]);
 obj = {
   useTitle() {

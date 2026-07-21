@@ -1,9 +1,9 @@
-// Module ID: 16451
-// Function ID: 127129
+// Module ID: 16459
+// Function ID: 127190
 // Name: DeeplinkSource
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 16451 (DeeplinkSource)
+// Module 16459 (DeeplinkSource)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/deep_link/DeepLinkTypes.tsx");
 

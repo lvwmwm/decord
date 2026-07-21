@@ -1,5 +1,5 @@
 // Module ID: 11973
-// Function ID: 92547
+// Function ID: 92559
 // Name: useGameRelationshipsForUserByType
 // Dependencies: []
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser

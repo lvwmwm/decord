@@ -1,7 +1,5 @@
 // Module ID: 7519
-// Function ID: 60200
+// Function ID: 60210
 // Dependencies: []
 
 // Module 7519
-
-export default require(dependencyMap[0]).default;

@@ -1,13 +1,14 @@
-// Module ID: 7142
-// Function ID: 57570
+// Module ID: 7143
+// Function ID: 57582
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
 
-// Module 7142 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 7143 (_isNativeReflectConstruct)
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,28 +27,28 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, BillingSettingsNitroGiftBanner$Type);
       items = [, , , , , , , , , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
+      items[0] = { 1347510942: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004780256688701622, 1678385745: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473800797, 1364379111: 131072.00412178785, 140698458: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034032482983877397 };
+      items[1] = { 1347510942: null, 1678385745: null, 1364379111: null, 140698458: null };
       items[2] = {};
       items[3] = {};
-      obj = { "Null": null, "Null": null, "Null": null };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
         return callback(closure_1[6]).Gradient;
       };
       items[4] = obj;
       items[5] = {};
-      items[6] = { 9223372036854775807: "d8c3e4c6e3c94e3724597aef8c906754", 0: "img_tier_0_subheader_mobile", 9223372036854775807: "png", no: true };
-      obj = { "Null": "WHITE", "Null": 0.85, "Null": 100 };
+      items[6] = { 1347510942: "d8c3e4c6e3c94e3724597aef8c906754", 1678385745: "img_tier_0_subheader_mobile", 1364379111: "png", 140698458: true };
+      obj = { 9223372036854775807: "WHITE", 9223372036854775807: 0.85, 0: 100 };
       obj.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
       items[7] = obj;
-      obj1 = { "Null": true, "Null": true, "Null": true };
+      obj1 = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj1.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
       items[8] = obj1;
-      obj2 = { "Null": 11, "Null": null, "Null": "Path 11" };
+      obj2 = { 9223372036854775807: 0.000030529750461029825, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000554297494250902, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000221566546435 };
       obj2.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
@@ -57,12 +58,12 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj3 = { "Null": "\u{1F926}\u{1F3FB}", "Null": true, "Null": null };
+      obj3 = { 9223372036854775807: "\u{1F926}\u{1F3FB}", 9223372036854775807: true, 0: null };
       obj3.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
       items[11] = obj3;
-      items1 = [null];
+      items1 = [false];
       items1[1] = items;
       obj6 = closure_6(BillingSettingsNitroGiftBanner$Type);
       tmp2 = closure_5;
@@ -82,7 +83,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Null": null, "Null": 1, "Null": 892, "Null": -9, "Null": 0, "Null": 0 };
+      let obj = { 0: null, 0: 1, 0: 892, 0: -9, 0: 0, 0: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, BillingSettingsNitroGiftBanner$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -193,8 +194,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(BillingSettingsNitroGiftBanner$Type, items);
-}(require("__exportStarResult1").MessageType);
+}(require("result").MessageType);
 tmp2 = new tmp2();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_nitro_gift_banner.tsx");
+result = result.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_nitro_gift_banner.tsx");
 
 export const BillingSettingsNitroGiftBanner = tmp2;

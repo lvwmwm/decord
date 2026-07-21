@@ -1,10 +1,10 @@
-// Module ID: 4959
-// Function ID: 42615
+// Module ID: 4958
+// Function ID: 42622
 // Name: getHighestHoistedRole
 // Dependencies: []
 // Exports: default
 
-// Module 4959 (getHighestHoistedRole)
+// Module 4958 (getHighestHoistedRole)
 function getHighestHoistedRole(guildId, id) {
   let obj;
   let obj2;

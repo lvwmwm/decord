@@ -1,5 +1,5 @@
 // Module ID: 1279
-// Function ID: 14432
+// Function ID: 14436
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -113,12 +113,12 @@ const items = [
     Storage3.remove("UserSettingsSync");
     obj = {};
     if (false === obj[closure_8.TEXT]) {
-      const obj1 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, [false, false, false, false, false, false, false, false]) };
+      const obj1 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["handleContainerLayout", "MZ", "notShownEmojiCount", "placeholderLabel", "removeListeners", "removeListeners", "removeListeners", "HOSTED_FIELDS_INVALID_FIELD_KEY"]) };
       obj.text = obj1;
       const obj5 = importDefault(dependencyMap[8]);
     }
     if (false === obj[closure_8.APPEARANCE]) {
-      const obj2 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["discord_protos.discord_users.v1.GuildFolders", "discord_protos.discord_users.v1.GuildFolder", "discord_protos.discord_users.v1.Favorites"]) };
+      const obj2 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["top", "Array", "isArray"]) };
       obj.appearance = obj2;
       const obj7 = importDefault(dependencyMap[8]);
     }

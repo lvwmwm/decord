@@ -1,15 +1,15 @@
-// Module ID: 15458
-// Function ID: 117898
+// Module ID: 15461
+// Function ID: 117937
 // Name: Settings
 // Dependencies: []
 // Exports: default
 
-// Module 15458 (Settings)
+// Module 15461 (Settings)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
-obj = { containerOuter: { 9223372036854775807: 10, 9223372036854775807: 10 } };
+obj = { containerOuter: { Č: 10, accessibilityDismiss: 10 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, borderRadius: importDefault(dependencyMap[4]).radii.md, flex: 1 };
 obj.containerOuterTablet = obj;
 obj.container = { flex: 1 };

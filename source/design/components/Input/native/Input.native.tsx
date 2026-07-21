@@ -1,10 +1,10 @@
-// Module ID: 7499
-// Function ID: 60122
+// Module ID: 7500
+// Function ID: 60134
 // Name: Input
 // Dependencies: []
 // Exports: Input
 
-// Module 7499 (Input)
+// Module 7500 (Input)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -50,7 +50,7 @@ export const Input = function Input(arg0) {
     items[1] = callback(View, obj);
     let tmp22 = null;
     if (null != description) {
-      obj = { style: tmp.description, children: description };
+      obj = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", style: tmp.description, children: description };
       tmp22 = callback(arg1(dependencyMap[6]).Text, obj);
     }
     items[2] = tmp22;
@@ -64,16 +64,16 @@ export const Input = function Input(arg0) {
     return tmp7(tmp8, obj);
   } else if (null != labelTrailing) {
     const obj2 = { style: tmp.labelWrapper };
-    const obj3 = { nativeID: labelId, children: label };
+    const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true, nativeID: labelId, children: label };
     const items1 = [callback(arg1(dependencyMap[6]).Text, obj3), labelTrailing];
     obj2.children = items1;
     let tmp30Result = callback2(View, obj2);
   } else {
-    const obj4 = { style: tmp.label, nativeID: labelId, accessibilityLabel: combined };
+    const obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.label, nativeID: labelId, accessibilityLabel: combined };
     const items2 = [label, ];
     let tmp12 = null;
     if (required) {
-      const obj5 = { children: [] };
+      const obj5 = { children: [null, null] };
       tmp12 = callback2(arg1(dependencyMap[6]).Text, obj5);
     }
     items2[1] = tmp12;

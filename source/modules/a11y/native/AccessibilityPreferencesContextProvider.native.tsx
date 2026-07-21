@@ -1,10 +1,10 @@
-// Module ID: 13370
-// Function ID: 101632
+// Module ID: 13372
+// Function ID: 101654
 // Name: AccessibilityPreferencesContextProvider
 // Dependencies: []
 // Exports: default
 
-// Module 13370 (AccessibilityPreferencesContextProvider)
+// Module 13372 (AccessibilityPreferencesContextProvider)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

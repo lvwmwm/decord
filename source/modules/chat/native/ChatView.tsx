@@ -1,5 +1,5 @@
 // Module ID: 10375
-// Function ID: 80002
+// Function ID: 80013
 // Dependencies: []
 
 // Module 10375
@@ -14,7 +14,7 @@ let obj1 = arg1(dependencyMap[8]);
 let obj = {};
 obj = { flex: 1, borderTopWidth: arg1(dependencyMap[1]).StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.empty = obj;
-obj.messages = { 9223372036854775807: 10, 9223372036854775807: 10 };
+obj.messages = { Č: 10, accessibilityDismiss: 10 };
 obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.CHANNEL_BACKGROUND_DEFAULT };
 obj.chat = obj1;
 let closure_12 = obj1.createStyles(obj);

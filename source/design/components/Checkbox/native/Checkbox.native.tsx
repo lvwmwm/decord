@@ -1,5 +1,5 @@
 // Module ID: 9013
-// Function ID: 70909
+// Function ID: 70920
 // Name: Checkbox
 // Dependencies: []
 // Exports: Checkbox
@@ -10,7 +10,7 @@ const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module1);
 const _module2 = require(dependencyMap[2]);
-let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: { "Bool(false)": null, "Bool(false)": "absolute" } });
+let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: { enableGameUpdateNotifications: null, EXPERIMENT_GUILD_EVALUATION_EXPOSED: null } });
 const _module3 = require(dependencyMap[8]);
 const result = _module3.fileFinishedImporting("design/components/Checkbox/native/Checkbox.native.tsx");
 
@@ -53,7 +53,7 @@ export const Checkbox = function Checkbox(onToggle) {
     const obj4 = {};
     const intl2 = require(dependencyMap[4]).intl;
     obj4.aria-label = intl2.string(require(dependencyMap[4]).t.EkokLy);
-    obj4.children = [];
+    obj4.children = [null, null];
     required = callback2(require(dependencyMap[7]).Text, obj4);
   }
   items1[1] = required;
@@ -62,7 +62,7 @@ export const Checkbox = function Checkbox(onToggle) {
   const items2 = [callback(closure_3, obj2), ];
   let tmp16 = null != description;
   if (tmp16) {
-    const obj5 = { children: description };
+    const obj5 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, children: description };
     tmp16 = callback(require(dependencyMap[7]).Text, obj5);
   }
   items2[1] = tmp16;

@@ -1,10 +1,10 @@
-// Module ID: 4627
-// Function ID: 40259
+// Module ID: 4626
+// Function ID: 40266
 // Name: ThreadLockIcon
 // Dependencies: []
 // Exports: ThreadLockIcon
 
-// Module 4627 (ThreadLockIcon)
+// Module 4626 (ThreadLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadLockIcon.tsx");

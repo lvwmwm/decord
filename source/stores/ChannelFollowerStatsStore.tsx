@@ -1,5 +1,5 @@
 // Module ID: 9853
-// Function ID: 76258
+// Function ID: 76269
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -67,7 +67,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     closure_6[stats.channelId] = { loadingStatus: constants.SUCCEEDED, lastFetched: Date.now() };
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function handleFollowerStatsFetchFailure(channelId) {
-    const obj = { height: true, accessibilityRole: true, round: true, httpServerLocation: true, borderRadius: true, backgroundColor: true, marginBottom: true, body: true, loadingStatus: constants.FAILED, lastFetched: Date.now() };
+    const obj = { onTapShowAltText: true, serializeHost: true, flexGrow: true, flexShrink: true, alignSelf: true, overflow: true, had_cache_at_startup: true, useTopCommands: true, loadingStatus: constants.FAILED, lastFetched: Date.now() };
     closure_6[channelId.channelId] = obj;
   }
 });

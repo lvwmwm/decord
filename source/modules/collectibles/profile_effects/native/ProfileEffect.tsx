@@ -1,10 +1,10 @@
-// Module ID: 8210
-// Function ID: 64888
+// Module ID: 8211
+// Function ID: 64901
 // Name: usePreloadProfileEffect
 // Dependencies: []
 // Exports: default
 
-// Module 8210 (usePreloadProfileEffect)
+// Module 8211 (usePreloadProfileEffect)
 function usePreloadProfileEffect(arg0) {
   const arg1 = arg0;
   const items = [arg0];
@@ -85,7 +85,7 @@ function StaticEffect(useThumbnail) {
     let obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
   } else {
     obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
-    const obj1 = { marginVertical: 1124139009, borderRadius: 152976, display: 152975 };
+    const obj1 = {};
     const obj2 = {};
     if (useThumbnail) {
       reducedMotionSrc = thumbnailPreviewSrc;

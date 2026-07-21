@@ -1,10 +1,10 @@
-// Module ID: 15232
-// Function ID: 114993
+// Module ID: 15235
+// Function ID: 115027
 // Name: SearchMediaObscurityIcon
 // Dependencies: []
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15232 (SearchMediaObscurityIcon)
+// Module 15235 (SearchMediaObscurityIcon)
 function SearchMediaObscurityIcon(obscureReason) {
   obscureReason = obscureReason.obscureReason;
   const arg1 = obscureReason;
@@ -63,7 +63,7 @@ let closure_8 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_12 = arg1(dependencyMap[5]).createStyles({ container: { "Null": null, "Null": null }, sound: { "Null": null, "Null": null } });
+let closure_12 = arg1(dependencyMap[5]).createStyles({ container: { margin: null, backgroundColor: null }, sound: { margin: null, backgroundColor: null } });
 let closure_13 = importAllResult.memo((containerWidth) => {
   let containerHeight;
   let containerStyle;
@@ -153,7 +153,7 @@ export const SearchAttachmentMediaImage = function SearchAttachmentMediaImage(at
   let channelId;
   attachment = attachment.attachment;
   const arg1 = attachment;
-  let obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
+  let obj = { 469703423: false, 503258367: false, 536813311: false };
   ({ channelId, authorId } = attachment);
   Object.setPrototypeOf(null);
   const merged = Object.assign(attachment, obj);
@@ -177,7 +177,7 @@ export const SearchEmbedMediaImage = function SearchEmbedMediaImage(embed) {
   embed = embed.embed;
   const arg1 = embed;
   ({ sources: closure_1, messageId: closure_2 } = embed);
-  let obj = {};
+  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   ({ channelId, authorId } = embed);
   Object.setPrototypeOf(null);
   const merged = Object.assign(embed, obj);
@@ -263,7 +263,7 @@ export const SearchComponentMediaImage = function SearchComponentMediaImage(unfu
   const importDefault = sources;
   const isBot = unfurledMediaItem.isBot;
   const dependencyMap = isBot;
-  let obj = {};
+  let obj = { accessibilityLabel: null, acceptRequestAccessibilityLabel: null, ignoreRequestAccessibilityLabel: null, acceptedRequestLabel: null, acceptedRequestAccessibilityLabel: null };
   ({ channelId, authorId } = unfurledMediaItem);
   Object.setPrototypeOf(null);
   const merged = Object.assign(unfurledMediaItem, obj);

@@ -1,10 +1,10 @@
-// Module ID: 13799
-// Function ID: 104389
+// Module ID: 13801
+// Function ID: 104411
 // Name: SkipBackwardIcon
 // Dependencies: []
 // Exports: SkipBackwardIcon
 
-// Module 13799 (SkipBackwardIcon)
+// Module 13801 (SkipBackwardIcon)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -23,7 +23,7 @@ export const SkipBackwardIcon = function SkipBackwardIcon(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { 0: "spring", 9223372036854775807: "linear", -9223372036854775808: "easeInEaseOut" };
+  let obj = { 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = {};
@@ -32,11 +32,11 @@ export const SkipBackwardIcon = function SkipBackwardIcon(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 32 32";
   obj["fill"] = "none";
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, fill: str };
+  obj = { fill: str };
   const items = [callback(arg1(dependencyMap[2]).Path, obj), , ];
   const obj1 = { fill: str };
   items[1] = callback(arg1(dependencyMap[2]).Path, obj1);
-  const obj2 = { "Null": null, "Null": null, "Null": null, fill: str };
+  const obj2 = { fill: str };
   items[2] = callback(arg1(dependencyMap[2]).Path, obj2);
   obj["children"] = items;
   return callback2(importDefault(dependencyMap[2]), obj);

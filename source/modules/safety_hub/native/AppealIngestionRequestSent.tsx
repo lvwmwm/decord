@@ -1,5 +1,5 @@
 // Module ID: 11040
-// Function ID: 85944
+// Function ID: 85955
 // Name: AppealIngestionRequestSent
 // Dependencies: []
 // Exports: default
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp5 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ container: { accessibilityRole: "P", guildId: 40 }, actionsHeader: {}, checkboxPng: { <string:2489072230>: true, <string:1664854612>: true, <string:1375441979>: true, <string:996410372>: true } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ container: {}, actionsHeader: { size: false, progress: false }, checkboxPng: { "Bool(false)": "Next", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 

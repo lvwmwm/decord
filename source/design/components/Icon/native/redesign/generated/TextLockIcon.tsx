@@ -1,10 +1,10 @@
-// Module ID: 4633
-// Function ID: 40271
+// Module ID: 4632
+// Function ID: 40278
 // Name: TextLockIcon
 // Dependencies: []
 // Exports: TextLockIcon
 
-// Module 4633 (TextLockIcon)
+// Module 4632 (TextLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TextLockIcon.tsx");

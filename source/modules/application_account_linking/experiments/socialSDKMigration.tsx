@@ -1,5 +1,5 @@
 // Module ID: 4153
-// Function ID: 35097
+// Function ID: 35105
 // Name: useIsRiotSocialSDKMigrationEnabled
 // Dependencies: []
 // Exports: getIsRiotSocialSDKMigrationEnabled, useIsRiotSocialSDKMigrationEnabled
@@ -10,14 +10,14 @@ obj = { enabled: false };
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: obj, variations: obj });
 const _module1 = require(dependencyMap[0]);
-let closure_1 = _module1.createApexExperiment({ defaultConfig: obj, variations: obj });
-const _module2 = require(dependencyMap[0]);
-obj = { 9223372036854775807: null, 0: null };
+obj = { 844175713: "keys", 1387159956: "Symbol" };
 obj.defaultConfig = obj;
 obj.variations = obj;
-let closure_2 = _module2.createApexExperiment(obj);
+let closure_1 = _module1.createApexExperiment(obj);
+const _module2 = require(dependencyMap[0]);
+let closure_2 = _module2.createApexExperiment({ defaultConfig: obj, variations: obj });
 const _module3 = require(dependencyMap[0]);
-const obj1 = { 9223372036854775807: "isArray", 0: "status", defaultConfig: obj, variations: obj };
+const obj1 = { 844175713: "placeId", 1387159956: "timeStarted", defaultConfig: obj, variations: obj };
 const apexExperiment = _module3.createApexExperiment(obj1);
 const _module4 = require(dependencyMap[1]);
 const result = _module4.fileFinishedImporting("modules/application_account_linking/experiments/socialSDKMigration.tsx");

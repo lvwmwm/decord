@@ -1,10 +1,10 @@
 // Module ID: 8940
-// Function ID: 70444
+// Function ID: 70455
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8940 (set)
-const obj = { ALL: new Set(["<string:3848290327>", "<string:970662608>", "<string:3056746528>", "<string:2027224563>"]) };
+const obj = { ALL: new Set(["opacity", "__workletHash", "max", "String"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/TwoWayLinkType.tsx");
 

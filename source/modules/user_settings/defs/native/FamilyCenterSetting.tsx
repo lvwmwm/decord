@@ -1,19 +1,21 @@
-// Module ID: 13644
-// Function ID: 103378
+// Module ID: 13646
+// Function ID: 103400
 // Name: route
-// Dependencies: []
+// Dependencies: [0, 0, 0, 4294967295, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 13644 (route)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[9]);
-obj = {
+// Module 13646 (route)
+import "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
+
+result = {
   useTitle() {
     const intl = arg1(dependencyMap[7]).intl;
     return intl.string(importDefault(dependencyMap[8]).RZqaJn);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[10]).GroupIcon,
+  IconComponent: require("result").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
     let obj = arg1(dependencyMap[3]);
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
@@ -32,7 +34,7 @@ obj = {
       if (null != tmp4) {
         tmp5 = null;
         if (tmp4 >= 0) {
-          obj = { color: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_WARNING };
+          obj = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003067003492, "Null": 6559922923525764000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991587, color: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_WARNING };
           const intl = arg1(dependencyMap[7]).intl;
           obj.accessibilityLabel = intl.string(importDefault(dependencyMap[8]).wucWfE);
           tmp5 = jsx(arg1(dependencyMap[5]).WarningIcon, obj);
@@ -41,15 +43,15 @@ obj = {
     }
     return tmp5;
   },
-  screen: obj
+  screen: result
 };
-obj = {
-  route: arg1(dependencyMap[1]).UserSettingsSections.FAMILY_CENTER,
+result = {
+  route: require("result").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
     return arg1(dependencyMap[11]).default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSetting.tsx");
+result = result.createRoute(result);
+result = result.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSetting.tsx");
 
-export default route;
+export default result;

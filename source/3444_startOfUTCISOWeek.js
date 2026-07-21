@@ -1,17 +1,16 @@
 // Module ID: 3444
-// Function ID: 26752
+// Function ID: 26757
 // Name: startOfUTCISOWeek
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3444 (startOfUTCISOWeek)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function startOfUTCISOWeek(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
+  closure_1.default(1, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   const uTCDay = defaultResult1.getUTCDay();
   let num = 0;
   if (uTCDay < 1) {

@@ -1,5 +1,5 @@
 // Module ID: 1683
-// Function ID: 18628
+// Function ID: 18633
 // Name: updatePropsOnReactJS
 // Dependencies: []
 // Exports: updatePropsJestWrapper

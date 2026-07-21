@@ -1,10 +1,10 @@
-// Module ID: 7880
-// Function ID: 62720
+// Module ID: 7881
+// Function ID: 62733
 // Name: useDisplayProfile
 // Dependencies: []
 // Exports: useDisplayProfileWithFetchEffect
 
-// Module 7880 (useDisplayProfile)
+// Module 7881 (useDisplayProfile)
 function useDisplayProfile(arg0, arg1) {
   arg1 = arg0;
   const importDefault = arg1;

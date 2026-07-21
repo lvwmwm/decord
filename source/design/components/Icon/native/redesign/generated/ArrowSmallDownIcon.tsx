@@ -1,10 +1,10 @@
-// Module ID: 14581
-// Function ID: 109884
+// Module ID: 14584
+// Function ID: 109916
 // Name: ArrowSmallDownIcon
 // Dependencies: [57, 31, 27, 4530, 33, 4126]
 // Exports: ArrowSmallDownIcon
 
-// Module 14581 (ArrowSmallDownIcon)
+// Module 14584 (ArrowSmallDownIcon)
 import "_slicedToArray";
 import { jsx } from "module_31";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

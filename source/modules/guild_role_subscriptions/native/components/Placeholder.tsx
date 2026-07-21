@@ -1,10 +1,10 @@
-// Module ID: 16242
-// Function ID: 125491
+// Module ID: 16250
+// Function ID: 125552
 // Name: Placeholder
 // Dependencies: []
 // Exports: default
 
-// Module 16242 (Placeholder)
+// Module 16250 (Placeholder)
 importAll(dependencyMap[0]);
 const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,7 +1,7 @@
 // Module ID: 10013
-// Function ID: 77391
+// Function ID: 77402
 // Name: isNewLayoutBetter
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10013 (isNewLayoutBetter)
@@ -56,7 +56,7 @@ export default function fitCardsInGrid(arg0) {
   let cardCount;
   let gutterSize;
   ({ cardCount, gutterSize, availableWidth, availableHeight } = arg0);
-  let obj = { icon: null, forEach: null, variant: null, application: null, r: null };
+  let obj = {};
   let num = 1;
   let tmp = obj;
   if (1 <= cardCount) {

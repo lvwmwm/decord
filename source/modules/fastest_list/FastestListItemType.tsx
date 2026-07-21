@@ -1,7 +1,7 @@
 // Module ID: 9244
-// Function ID: 72263
+// Function ID: 72274
 // Name: ITEM
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9244 (ITEM)
 const _module = require(dependencyMap[0]);

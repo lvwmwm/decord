@@ -1,10 +1,10 @@
-// Module ID: 7852
-// Function ID: 62581
+// Module ID: 7853
+// Function ID: 62594
 // Name: useFetchPurchases
 // Dependencies: []
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 7852 (useFetchPurchases)
+// Module 7853 (useFetchPurchases)
 function useFetchPurchases(flag) {
   if (flag === undefined) {
     flag = false;

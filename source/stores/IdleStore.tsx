@@ -1,9 +1,9 @@
-// Module ID: 4941
-// Function ID: 42330
+// Module ID: 4940
+// Function ID: 42337
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4941 (_isNativeReflectConstruct)
+// Module 4940 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ function checkIdleAFK() {
     if (!isSystemIdle()) {
       if (closure_14) {
         let obj = importDefault(dependencyMap[11]);
-        obj.dispatch({ "Null": 1644167670, "Null": -196903041 });
+        obj.dispatch({ "Null": "Array", "Null": "SEARCH_RESULTS_LANGUAGE_CODE_PREFIX" });
       }
     }
     const AfkTimeout = arg1(dependencyMap[9]).AfkTimeout;
@@ -43,7 +43,7 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * importDefault(dependencyMap[10]).Millis.SECOND, closure_9)) {
           if (!isSystemIdle()) {
             if (closure_15) {
-              importDefault(dependencyMap[11]).dispatch({});
+              importDefault(dependencyMap[11]).dispatch({ -2130141102: 112, -1635888395: "center" });
               const obj4 = importDefault(dependencyMap[11]);
             }
           }
@@ -51,7 +51,7 @@ function checkIdleAFK() {
       }
     }
     if (!closure_15) {
-      importDefault(dependencyMap[11]).dispatch({ _onResolve: 15184509661513493000000000000000000000000000000000000000000000000000000000000000000, VOICE_DISCONNECT: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007295684351431581 });
+      importDefault(dependencyMap[11]).dispatch({ -2130141102: "Array", -1635888395: "isArray" });
       const obj5 = importDefault(dependencyMap[11]);
     }
   }

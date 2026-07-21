@@ -1,7 +1,7 @@
 // Module ID: 11723
-// Function ID: 91021
+// Function ID: 91033
 // Name: NewUserTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11723 (NewUserTypes)
 const _module = require(dependencyMap[0]);

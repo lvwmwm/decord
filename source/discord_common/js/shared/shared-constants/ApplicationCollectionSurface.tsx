@@ -1,7 +1,7 @@
 // Module ID: 11186
-// Function ID: 87071
+// Function ID: 87083
 // Name: ApplicationCollectionSurface
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11186 (ApplicationCollectionSurface)
 const _module = require(dependencyMap[0]);

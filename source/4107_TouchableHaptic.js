@@ -1,5 +1,5 @@
 // Module ID: 4107
-// Function ID: 33975
+// Function ID: 33980
 // Name: TouchableHaptic
 // Dependencies: []
 // Exports: TouchableHaptic

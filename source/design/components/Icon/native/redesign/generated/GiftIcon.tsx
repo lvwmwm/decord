@@ -1,5 +1,5 @@
 // Module ID: 8765
-// Function ID: 69280
+// Function ID: 69291
 // Name: GiftIcon
 // Dependencies: []
 // Exports: GiftIcon

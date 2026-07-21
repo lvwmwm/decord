@@ -1,5 +1,5 @@
 // Module ID: 8809
-// Function ID: 69425
+// Function ID: 69436
 // Name: UnifiedGiftModalRecipientSelectScreen
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const UserRowModes = arg1(dependencyMap[2]).UserRowModes;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { <string:1191183569>: true, <string:1224738001>: null, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj = { 314319: "<string:4083789493>", 315874: "<string:3209801398>", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");

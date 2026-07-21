@@ -1,10 +1,10 @@
 // Module ID: 9660
-// Function ID: 75250
+// Function ID: 75261
 // Name: frozen
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9660 (frozen)
-const frozen = Object.freeze({ <string:1373593946>: "Array", <string:3613494152>: "isArray" });
+const frozen = Object.freeze({ left: "Array", right: "isArray" });
 const frozen1 = Object.freeze({});
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/device/native/DeviceConstants.tsx");

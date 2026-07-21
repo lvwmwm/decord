@@ -1,11 +1,13 @@
 // Module ID: 11063
-// Function ID: 86077
+// Function ID: 86088
 // Name: jumpToReferencedMessage
 // Dependencies: [4294967295, 0]
 // Exports: default
 
 // Module 11063 (jumpToReferencedMessage)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
+import result from "result";
+
+result = result.fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
 
 export default function jumpToReferencedMessage(messageReference) {
   messageReference = messageReference.messageReference;

@@ -1,5 +1,5 @@
 // Module ID: 10728
-// Function ID: 83416
+// Function ID: 83427
 // Name: coercePlatformTypeToConsoleType
 // Dependencies: []
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType

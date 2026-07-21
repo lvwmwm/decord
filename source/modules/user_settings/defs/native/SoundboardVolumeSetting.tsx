@@ -1,9 +1,9 @@
-// Module ID: 14018
-// Function ID: 106606
+// Module ID: 14021
+// Function ID: 106638
 // Name: volumeSlider
 // Dependencies: []
 
-// Module 14018 (volumeSlider)
+// Module 14021 (volumeSlider)
 const _module = require(dependencyMap[1]);
 const volumeSlider = _module.createVolumeSlider({
   useTitle() {

@@ -1,10 +1,10 @@
-// Module ID: 7882
-// Function ID: 62730
+// Module ID: 7883
+// Function ID: 62743
 // Name: _fetchProfile
 // Dependencies: []
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7882 (_fetchProfile)
+// Module 7883 (_fetchProfile)
 async function _fetchProfile(arg0, arg1) {
   const fn = function*(userId) {
     let abortSignal;

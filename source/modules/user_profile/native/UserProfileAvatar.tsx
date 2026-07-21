@@ -1,10 +1,10 @@
-// Module ID: 8255
-// Function ID: 65107
+// Module ID: 8256
+// Function ID: 65120
 // Name: OpenableUserProfileAvatar
 // Dependencies: []
 // Exports: OpenableUserProfileAvatar
 
-// Module 8255 (OpenableUserProfileAvatar)
+// Module 8256 (OpenableUserProfileAvatar)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const TrackUserProfileActions = arg1(dependencyMap[2]).TrackUserProfileActions;
@@ -48,7 +48,7 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   const importDefault = user;
   const guildId = animate.guildId;
   const dependencyMap = guildId;
-  let obj = { 0: "spring", -9223372036854775808: "linear", -9223372036854775808: "easeInEaseOut" };
+  let obj = { borderRightColor: false, nextFocusRight: false, isContext: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(animate, obj);
   let importAllResult;

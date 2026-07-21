@@ -1,7 +1,7 @@
 // Module ID: 5471
-// Function ID: 46737
+// Function ID: 46745
 // Name: accountLinkAuthorizationStarted
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
 // Module 5471 (accountLinkAuthorizationStarted)

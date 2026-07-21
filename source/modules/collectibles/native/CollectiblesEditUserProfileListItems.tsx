@@ -1,10 +1,10 @@
-// Module ID: 7859
-// Function ID: 62619
+// Module ID: 7860
+// Function ID: 62632
 // Name: EditCollectibleListItem
 // Dependencies: []
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 7859 (EditCollectibleListItem)
+// Module 7860 (EditCollectibleListItem)
 class EditCollectibleListItem {
   constructor(arg0) {
     ({ size, isSelected, onPress: closure_0, accessibilityRole } = global);
@@ -57,10 +57,10 @@ const tmp2 = arg1(dependencyMap[4]);
 obj.item = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.selected = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-obj.optionCell = { "Null": null, "Null": null };
+obj.optionCell = { margin: null, backgroundColor: null };
 obj.optionCellText = { marginTop: 4 };
-obj.newIcon = { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008111991158780479, "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000002948054652672655, "Null": 572208.501953177 };
-obj.lockIcon = { "Null": "secondaryButton", "Null": true, "Null": "showVotes" };
+obj.newIcon = { "Bool(false)": -87683965523282670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -72920860119297050000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003183015448278953 };
+obj.lockIcon = { "Bool(false)": "secondaryButton", "Bool(false)": true, "Bool(false)": "showVotes" };
 let closure_9 = obj.createStyles(obj);
 const obj2 = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
@@ -122,7 +122,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   let isSelected;
   let isTryItOut;
   skuId = skuId.skuId;
-  let obj = { "Bool(true)": null, @braintree/browser-detection/is-samsung: 4, ../../lib/in-iframe: 4, ./browser-detection: "rgba(0, 0, 0, 0.75)" };
+  let obj = { "Null": "ERROR", "Null": "ERROR", "Null": "NOT_RESPONDER", "Null": "NOT_RESPONDER" };
   ({ isSelected, isTryItOut, children } = skuId);
   Object.setPrototypeOf(null);
   const merged = Object.assign(skuId, obj);

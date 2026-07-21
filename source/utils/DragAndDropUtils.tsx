@@ -1,5 +1,5 @@
 // Module ID: 11444
-// Function ID: 89104
+// Function ID: 89116
 // Name: calculatePositionDeltas
 // Dependencies: []
 // Exports: getPositionUpdates

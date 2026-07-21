@@ -1,10 +1,10 @@
-// Module ID: 6860
-// Function ID: 54282
+// Module ID: 6861
+// Function ID: 54294
 // Name: requestGames
 // Dependencies: []
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6860 (requestGames)
+// Module 6861 (requestGames)
 function requestGames() {
   return _requestGames(...arguments);
 }

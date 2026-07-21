@@ -1,5 +1,5 @@
 // Module ID: 1766
-// Function ID: 19680
+// Function ID: 19685
 // Name: startScreenTransition
 // Dependencies: []
 
@@ -10,10 +10,10 @@ let closure_2 = { code: "function startScreenTransition_Pnpm_animationManagerTs1
 let closure_3 = { code: "function getLockAxis_Pnpm_animationManagerTs2(goBackGesture){if(['swipeRight','swipeLeft','horizontalSwipe'].includes(goBackGesture)){return'x';}else if(['swipeUp','swipeDown','verticalSwipe'].includes(goBackGesture)){return'y';}return undefined;}" };
 let closure_4 = () => {
   function getLockAxis(arg0) {
-    const items = [];
+    const items = [1530527748, 1982005252, -1269759996];
     let str = "x";
     if (!items.includes(arg0)) {
-      const items1 = ["<string:2338425365>", "<string:1373505105>", "<string:1767986917>"];
+      const items1 = ["body", "opacity", "accessibilityRole"];
       let str2;
       if (items1.includes(arg0)) {
         str2 = "y";

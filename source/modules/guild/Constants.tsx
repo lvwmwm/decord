@@ -1,7 +1,7 @@
 // Module ID: 11672
-// Function ID: 90550
+// Function ID: 90562
 // Name: GuildPrompts
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11672 (GuildPrompts)
 const _module = require(dependencyMap[0]);

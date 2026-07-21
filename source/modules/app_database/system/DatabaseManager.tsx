@@ -1,5 +1,5 @@
 // Module ID: 1898
-// Function ID: 21300
+// Function ID: 21305
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -131,7 +131,7 @@ let tmp4 = (Store) => {
               return tmp2Result.handleAuthenticationStoreChanged();
             }
       };
-      items[2] = f21329(closure_3[8]).DispatchBand.Early;
+      items[2] = f21334(closure_3[8]).DispatchBand.Early;
       obj = closure_8(DatabaseManager);
       tmp2 = closure_7;
       if (closure_14()) {
@@ -143,7 +143,7 @@ let tmp4 = (Store) => {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      f21329 = tmp2Result;
+      f21334 = tmp2Result;
       map = new Map();
       tmp2Result.databases = map;
       tmp2Result.activeUserId = null;

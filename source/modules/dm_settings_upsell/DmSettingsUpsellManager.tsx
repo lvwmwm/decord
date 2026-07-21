@@ -1,10 +1,10 @@
-// Module ID: 15886
-// Function ID: 121669
+// Module ID: 15890
+// Function ID: 121713
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 15886 (_isNativeReflectConstruct)
+// Module 15890 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

@@ -1,9 +1,9 @@
-// Module ID: 15027
-// Function ID: 113214
+// Module ID: 15030
+// Function ID: 113248
 // Name: PROFILE_BACKGROUND
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 15027 (PROFILE_BACKGROUND)
+// Module 15030 (PROFILE_BACKGROUND)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/notification_center/Constants.tsx");
 

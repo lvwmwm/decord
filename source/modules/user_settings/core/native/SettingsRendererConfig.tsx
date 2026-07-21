@@ -1,9 +1,9 @@
-// Module ID: 13434
-// Function ID: 102033
+// Module ID: 13436
+// Function ID: 102055
 // Name: MobileSetting
 // Dependencies: []
 
-// Module 13434 (MobileSetting)
+// Module 13436 (MobileSetting)
 let SAFETY_SEND_FRIEND_REQUESTS_EVERYONE;
 let SEND_FRIEND_REQUESTS;
 const MobileSetting = require(dependencyMap[0]).MobileSetting;

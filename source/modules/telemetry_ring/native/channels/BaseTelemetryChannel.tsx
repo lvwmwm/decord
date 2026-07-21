@@ -1,9 +1,9 @@
-// Module ID: 12998
-// Function ID: 98931
+// Module ID: 13000
+// Function ID: 98953
 // Name: BaseTelemetryChannel
 // Dependencies: []
 
-// Module 12998 (BaseTelemetryChannel)
+// Module 13000 (BaseTelemetryChannel)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

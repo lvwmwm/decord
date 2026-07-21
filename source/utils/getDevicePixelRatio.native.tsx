@@ -1,5 +1,5 @@
 // Module ID: 1825
-// Function ID: 20008
+// Function ID: 20013
 // Name: getDevicePixelRatio
 // Dependencies: []
 // Exports: default

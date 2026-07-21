@@ -1,12 +1,12 @@
 // Module ID: 1532
-// Function ID: 17504
+// Function ID: 17509
 // Name: Link
 // Dependencies: []
 // Exports: default
 
 // Module 1532 (Link)
 let Platform;
-let closure_2 = [-1152319487, 1090654548];
+let closure_2 = [];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Platform, Text: closure_5 } = arg1(dependencyMap[2]));

@@ -1,5 +1,5 @@
 // Module ID: 10243
-// Function ID: 79184
+// Function ID: 79195
 // Name: StickerIcon
 // Dependencies: []
 // Exports: StickerIcon

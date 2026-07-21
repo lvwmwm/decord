@@ -1,10 +1,10 @@
-// Module ID: 7864
-// Function ID: 62639
+// Module ID: 7865
+// Function ID: 62652
 // Name: NitroWheelIcon
 // Dependencies: []
 // Exports: NitroWheelIcon
 
-// Module 7864 (NitroWheelIcon)
+// Module 7865 (NitroWheelIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/NitroWheelIcon.tsx");

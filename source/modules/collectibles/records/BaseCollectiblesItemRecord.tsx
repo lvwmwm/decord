@@ -1,39 +1,35 @@
 // Module ID: 1875
-// Function ID: 20880
+// Function ID: 20885
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 1891, 1884, 2, 6]
+// Dependencies: []
 
 // Module 1875 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_1 from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_1884 from "module_1884";
-import _classCallCheck from "_classCallCheck";
-
 function _isNativeReflectConstruct() {
-  let asyncGeneratorStep = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return asyncGeneratorStep;
+    return closure_0;
   }
   const result = _isNativeReflectConstruct();
 }
-const result = _classCallCheck.fileFinishedImporting("modules/collectibles/records/BaseCollectiblesItemRecord.tsx");
-
-export default (arg0) => {
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+const tmp2 = (arg0) => {
   class BaseCollectiblesItemRecord {
     constructor(arg0) {
       self = this;
       tmp = BaseCollectiblesItemRecord(this, BaseCollectiblesItemRecord);
-      obj = _createForOfIteratorHelperLoose(BaseCollectiblesItemRecord);
-      tmp2 = _defineProperties;
+      obj = closure_3(BaseCollectiblesItemRecord);
+      tmp2 = closure_2;
       if (closure_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = _createForOfIteratorHelperLoose;
-        constructResult = Reflect.construct(obj, [], _createForOfIteratorHelperLoose(self).constructor);
+        tmp5 = closure_3;
+        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
@@ -42,7 +38,7 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  let asyncGeneratorStep = BaseCollectiblesItemRecord;
+  let closure_0 = BaseCollectiblesItemRecord;
   callback2(BaseCollectiblesItemRecord, arg0);
   const items = [
     {
@@ -58,4 +54,7 @@ export default (arg0) => {
     }
   ];
   return callback(BaseCollectiblesItemRecord, null, items);
-}(require("result2"));
+}(importDefault(dependencyMap[5]));
+const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/records/BaseCollectiblesItemRecord.tsx");
+
+export default tmp2;

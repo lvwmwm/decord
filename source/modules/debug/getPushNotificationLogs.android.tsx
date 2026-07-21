@@ -1,5 +1,5 @@
 // Module ID: 10312
-// Function ID: 79611
+// Function ID: 79622
 // Name: getPushNotificationLogs
 // Dependencies: []
 // Exports: default

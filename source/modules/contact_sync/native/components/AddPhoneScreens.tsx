@@ -1,5 +1,5 @@
 // Module ID: 11721
-// Function ID: 90980
+// Function ID: 90992
 // Name: AddPhoneScreen
 // Dependencies: []
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
@@ -20,7 +20,7 @@ const tmp2 = arg1(dependencyMap[6]);
 obj.redesignContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 obj.header = { alignItems: "center" };
 obj.title = { textAlign: "center" };
-obj.subtitle = { action: null, messageReference: null, medium: null };
+obj.subtitle = {};
 let closure_11 = obj.createStyles(obj);
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
@@ -30,7 +30,7 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   const callback = obj.useNavigation();
   const tmp = callback5();
   obj = { style: tmp.header };
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = callback(dependencyMap[12]).intl;
   obj.children = intl.string(callback(dependencyMap[12]).t.Xgb497);
   const items = [callback3(callback(dependencyMap[11]).Text, obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 13376
-// Function ID: 101687
+// Module ID: 13378
+// Function ID: 101709
 // Name: ThemedStatusBar
 // Dependencies: []
 // Exports: default
 
-// Module 13376 (ThemedStatusBar)
+// Module 13378 (ThemedStatusBar)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

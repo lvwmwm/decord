@@ -1,10 +1,10 @@
-// Module ID: 7837
-// Function ID: 62478
+// Module ID: 7838
+// Function ID: 62491
 // Name: setPendingChanges
 // Dependencies: []
 // Exports: setPendingChanges
 
-// Module 7837 (setPendingChanges)
+// Module 7838 (setPendingChanges)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

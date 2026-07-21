@@ -1,5 +1,5 @@
 // Module ID: 11475
-// Function ID: 89364
+// Function ID: 89376
 // Name: ChatWarningIcon
 // Dependencies: [553648135, 3690987520, 3456106540, 3942645804, 3154116650, 33554436]
 // Exports: ChatWarningIcon

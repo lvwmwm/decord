@@ -1,5 +1,5 @@
 // Module ID: 11707
-// Function ID: 90934
+// Function ID: 90946
 // Name: ContactSyncLandingImage
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ leftContainer: { "Null": false, "Null": false, "Null": false, "Null": false }, landingImageLeft: {}, rightContainer: {}, landingImageRight: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ leftContainer: {}, landingImageLeft: { paddingStart: "merchantId", backgroundColor: "NR" }, rightContainer: {}, landingImageRight: { paddingStart: 1985159506, backgroundColor: -1524176199 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncLandingImage.tsx");
 

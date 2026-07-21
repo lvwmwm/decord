@@ -1,5 +1,5 @@
 // Module ID: 10403
-// Function ID: 80134
+// Function ID: 80145
 // Name: MoreTipsModalScreen
 // Dependencies: []
 // Exports: default
@@ -28,7 +28,7 @@ function MoreTipsModalScreen(learnMore) {
   obj.children = items;
   const items1 = [callback2(closure_4, obj), , ];
   const obj2 = {};
-  const obj3 = { style: tmp.header };
+  const obj3 = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51, style: tmp.header };
   const intl = arg1(dependencyMap[9]).intl;
   obj3.children = intl.string(arg1(dependencyMap[9]).t.K5FKtc);
   const items2 = [callback(arg1(dependencyMap[8]).Text, obj3), actionItems];

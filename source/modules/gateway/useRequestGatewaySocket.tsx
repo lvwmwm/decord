@@ -1,10 +1,10 @@
-// Module ID: 13359
-// Function ID: 101599
+// Module ID: 13361
+// Function ID: 101621
 // Name: useRequestGatewaySocket
 // Dependencies: []
 // Exports: useRequestGatewaySocket
 
-// Module 13359 (useRequestGatewaySocket)
+// Module 13361 (useRequestGatewaySocket)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");
 

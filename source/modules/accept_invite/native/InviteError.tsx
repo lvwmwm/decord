@@ -1,5 +1,5 @@
 // Module ID: 11744
-// Function ID: 91213
+// Function ID: 91225
 // Name: InviteErrorBase
 // Dependencies: []
 // Exports: default
@@ -50,7 +50,7 @@ function InviteErrorBase(invite) {
   items[1] = callback(arg1(dependencyMap[12]).Text, obj1);
   const obj2 = { style: tmp.expiredBody, children: stringResult };
   items[2] = callback(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = {};
+  const obj3 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
   const intl4 = arg1(dependencyMap[11]).intl;
   obj3.text = intl4.string(arg1(dependencyMap[11]).t.wcqOoF);
   obj3.onPress = function handlePressClose() {
@@ -81,18 +81,18 @@ function InviteDisabledError(onPressClose) {
     items[1] = callback(importDefault(dependencyMap[17]), obj3);
     obj1.children = items;
     const items1 = [callback2(closure_4, obj1), , , ];
-    const obj4 = { style: tmp.disabledTitle };
+    const obj4 = { delete: -1663348269, dispatch: 113, raw: 7405824, style: tmp.disabledTitle };
     const intl = arg1(dependencyMap[11]).intl;
     obj4.children = intl.string(arg1(dependencyMap[11]).t.jlLX2Z);
     items1[1] = callback(arg1(dependencyMap[12]).Text, obj4);
-    const obj5 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.disabledBody };
+    const obj5 = { delete: null, dispatch: 1, raw: 1, style: tmp.disabledBody };
     const intl2 = arg1(dependencyMap[11]).intl;
     const obj6 = {};
     const tmp11 = importDefault(dependencyMap[17]);
     obj6.articleLink = importDefault(dependencyMap[19]).getArticleURL(constants2.INVITE_DISABLED);
     obj5.children = intl2.format(arg1(dependencyMap[11]).t.RXSeLl, obj6);
     items1[2] = callback(arg1(dependencyMap[18]).TextWithIOSLinkWorkaround, obj5);
-    const obj7 = {};
+    const obj7 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
     const intl3 = arg1(dependencyMap[11]).intl;
     obj7.text = intl3.string(arg1(dependencyMap[11]).t.yD/zkn);
     obj7.onPress = function handlePressClose() {
@@ -110,13 +110,13 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { expiredImage: {}, expiredTitle: { USER_AGE_GATE_UNDERAGE: "selectedSubPage", SMS_CODE_LENGTH: "isArrayBuffer", actionRow: "SERVER_GUIDE_CHANNEL_SELECTED" }, expiredBody: { minWidth: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003118994293922103, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001730733719044114 }, disabledView: { "Null": null, "Null": null } };
+obj = { expiredImage: { size: false, progress: false }, expiredTitle: { "Bool(false)": true, "Bool(false)": null, "Bool(false)": null }, expiredBody: { -519529133: "allow_multiselect", 996616402: "Array" }, disabledView: { margin: null, backgroundColor: null } };
 obj = { tintColor: importDefault(dependencyMap[5]).colors.WHITE };
 obj.disabledPauseIcon = obj;
 const tmp5 = arg1(dependencyMap[3]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.disabledTitle = {};
-obj.disabledBody = { collapsable: 52881784.83212474, preventClipping: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.disabledBody = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");

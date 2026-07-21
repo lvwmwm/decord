@@ -1,13 +1,12 @@
-// Module ID: 6830
-// Function ID: 53963
+// Module ID: 6831
+// Function ID: 53975
 // Name: USER_SETTING_ACTION_SHEET_KEY
-// Dependencies: [6842, 6843]
+// Dependencies: []
 
-// Module 6830 (USER_SETTING_ACTION_SHEET_KEY)
-import arrayIncludes from "arrayIncludes";
-
-const items = [require("baseUniq").MessageEmbedTypes.IMAGE, require("baseUniq").MessageEmbedTypes.VIDEO, require("baseUniq").MessageEmbedTypes.GIFV];
-const result = arrayIncludes.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionConstants.tsx");
+// Module 6831 (USER_SETTING_ACTION_SHEET_KEY)
+const items = [require(dependencyMap[0]).MessageEmbedTypes.IMAGE, require(dependencyMap[0]).MessageEmbedTypes.VIDEO, require(dependencyMap[0]).MessageEmbedTypes.GIFV];
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionConstants.tsx");
 
 export const USER_SETTING_ACTION_SHEET_KEY = "SensitiveMediaFilterSetting";
 export const EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY = "ExplicitMediaFalsePositiveActionSheet";

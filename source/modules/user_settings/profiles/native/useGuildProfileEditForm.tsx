@@ -1,11 +1,11 @@
-// Module ID: 13490
-// Function ID: 102369
+// Module ID: 13492
+// Function ID: 102391
 // Name: useGuildProfileEditForm
 // Dependencies: []
 // Exports: default
 
-// Module 13490 (useGuildProfileEditForm)
-let closure_3 = ["construct"];
+// Module 13492 (useGuildProfileEditForm)
+let closure_3 = [true];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

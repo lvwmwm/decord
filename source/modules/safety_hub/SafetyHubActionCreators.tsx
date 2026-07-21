@@ -1,5 +1,5 @@
 // Module ID: 11021
-// Function ID: 85779
+// Function ID: 85790
 // Name: _getSafetyHubData
 // Dependencies: []
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification

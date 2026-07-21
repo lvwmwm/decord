@@ -1,5 +1,5 @@
 // Module ID: 8681
-// Function ID: 68772
+// Function ID: 68783
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds

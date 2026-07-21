@@ -1,5 +1,5 @@
 // Module ID: 8586
-// Function ID: 68150
+// Function ID: 68161
 // Name: clearGameProfilePendingReturn
 // Dependencies: []
 

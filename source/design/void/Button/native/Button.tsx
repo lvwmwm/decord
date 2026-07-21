@@ -1,5 +1,5 @@
 // Module ID: 1276
-// Function ID: 14386
+// Function ID: 14390
 // Name: getButtonColorsToTextStyles
 // Dependencies: []
 
@@ -90,7 +90,7 @@ class ButtonText {
       tmp7 = importDefault;
       tmp8 = dependencyMap;
       num = 11;
-      obj = { 1659072849: "\u{1F4A0}", -2074948600: 6 };
+      obj = { 1665765569: "\u{1F4A0}", 1419417945: 6 };
       tmp10 = getTextStyles;
       obj1 = {};
       obj1.color = color;
@@ -417,7 +417,7 @@ const getThemedRippleConfig = arg1(dependencyMap[3]).getThemedRippleConfig;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { button: { <string:2316633720>: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", <string:1071949164>: "keyboardAppearance", <string:4278189657>: "TypeMismatchError", <string:433744978>: "SUPPRESSED_BY_COOLDOWN", <string:1446667501>: "setInAppMessageSoundsEnabled", <string:2445169578>: "distance" }, buttonShrink: {} };
+obj = { button: {}, buttonShrink: {} };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
 obj.buttonBrandDefault = obj;
 const tmp3 = arg1(dependencyMap[4]);
@@ -485,7 +485,7 @@ obj.buttonWhiteDisabled = obj19;
 obj.buttonFilled = {};
 obj.buttonLink = {};
 obj.buttonLinkDefault = {};
-obj20 = { cursor: "<string:1166889475>", context: "<string:41007362>", bottom: "<string:1090519040>", borderColor: arg1(dependencyMap[8]).BUTTON_OUTLINED_BORDER };
+obj20 = { 9223372036854775807: "<string:1153585667>", 9223372036854775807: "<string:41007478>", 0: "<string:1090519040>", borderColor: arg1(dependencyMap[8]).BUTTON_OUTLINED_BORDER };
 obj.buttonOutlined = obj20;
 obj.buttonXsmall = { minHeight: 24 };
 obj.buttonSmall = { minHeight: 32 };

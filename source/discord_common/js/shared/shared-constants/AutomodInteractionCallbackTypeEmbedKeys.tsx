@@ -1,7 +1,7 @@
 // Module ID: 6740
-// Function ID: 52475
+// Function ID: 52483
 // Name: AutomodInteractionCallbackTypeEmbedKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6740 (AutomodInteractionCallbackTypeEmbedKeys)
 const _module = require(dependencyMap[0]);

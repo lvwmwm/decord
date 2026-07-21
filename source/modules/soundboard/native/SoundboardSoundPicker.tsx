@@ -1,8 +1,8 @@
-// Module ID: 15617
-// Function ID: 119232
+// Module ID: 15620
+// Function ID: 119271
 // Dependencies: []
 
-// Module 15617
+// Module 15620
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -13,10 +13,10 @@ const EXPRESSION_FOOTER_HEIGHT = arg1(dependencyMap[7]).EXPRESSION_FOOTER_HEIGHT
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp3 = arg1(dependencyMap[8]);
-let obj = { title: { marginBottom: 8 }, container: { -1034713870: null, -421288570: null } };
+let obj = { title: { marginBottom: 8 }, container: { 9223372036854775807: "values", 9223372036854775807: "Array" } };
 obj = { paddingHorizontal: arg1(dependencyMap[6]).SOUND_ROW_HORIZONTAL_PADDING, padding: importDefault(dependencyMap[10]).space.PX_8, width: "100%" };
 obj.header = obj;
-obj.body = {};
+obj.body = { paddingTop: false, justifyContent: false };
 let closure_13 = arg1(dependencyMap[9]).createStyles(obj);
 const obj2 = arg1(dependencyMap[9]);
 const memoResult = importAllResult.memo(function SoundboardSoundPicker(channel) {
@@ -68,11 +68,11 @@ const memoResult = importAllResult.memo(function SoundboardSoundPicker(channel) 
   let obj9 = arg1(dependencyMap[20]);
   let isIOSResult = obj9.isIOS();
   if (isIOSResult) {
-    obj1 = { 9223372036854775807: true, 0: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", 9223372036854775807: null, animatedSheetIndex: sharedValue1 };
+    obj1 = { <string:1555098828>: true, <string:3182058578>: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", <string:4224476795>: null, animatedSheetIndex: sharedValue1 };
     isIOSResult = callback3(importDefault(dependencyMap[21]), obj1);
   }
   const items3 = [isIOSResult, ];
-  obj2 = { paddingHorizontal: null, backgroundColor: null, height: null, animatedIndex: sharedValue1 };
+  obj2 = { reactionSelectedIndex: null, enableHome: null, useIsVerifiedAdult: null, animatedIndex: sharedValue1 };
   const tmp16 = importDefault(dependencyMap[18]);
   const tmp20 = callback4;
   const tmp25 = callback4;
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPicker(channel) 
   }
   obj2.footer = tmp26;
   obj4 = { style: tmp.container };
-  const obj5 = { 0: null, 9223372036854775807: null, style: tmp.title };
+  const obj5 = { -32: null, 0: null, style: tmp.title };
   const intl = arg1(dependencyMap[25]).intl;
   obj5.children = intl.string(arg1(dependencyMap[25]).t.ABjMWI);
   const items4 = [callback3(arg1(dependencyMap[24]).Text, obj5), , , ];

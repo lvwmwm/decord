@@ -1,5 +1,5 @@
 // Module ID: 9469
-// Function ID: 73766
+// Function ID: 73777
 // Name: resolveVoiceChannelListInviteEmbedData
 // Dependencies: []
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed

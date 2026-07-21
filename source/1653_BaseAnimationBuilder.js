@@ -1,18 +1,19 @@
 // Module ID: 1653
-// Function ID: 18367
+// Function ID: 18372
 // Name: BaseAnimationBuilder
-// Dependencies: []
+// Dependencies: [6, 7, 57, 1631, 1679, 1680]
 
 // Module 1653 (BaseAnimationBuilder)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 let closure_4 = { code: "function pnpm_BaseAnimationBuilderTs1(delay,animation){const{withDelay,reduceMotion}=this.__closure;return withDelay(delay,animation,reduceMotion);}" };
 let closure_5 = { code: "function pnpm_BaseAnimationBuilderTs2(_,animation){const{getReduceMotionFromConfig,reduceMotion}=this.__closure;animation.reduceMotion=getReduceMotionFromConfig(reduceMotion);return animation;}" };
 
 export const BaseAnimationBuilder = () => {
   class BaseAnimationBuilder {
     constructor() {
-      tmp = closure_2(this, BaseAnimationBuilder);
+      tmp = _classCallCheck(this, BaseAnimationBuilder);
       this.reduceMotionV = BaseAnimationBuilder(closure_1[2]).ReduceMotion.System;
       this.randomizeDelay = false;
       this.build = () => {

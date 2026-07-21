@@ -1,5 +1,5 @@
 // Module ID: 8975
-// Function ID: 70733
+// Function ID: 70744
 // Name: PlayStationLinkError
 // Dependencies: []
 // Exports: PlayStationLinkError

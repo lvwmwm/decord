@@ -1,7 +1,7 @@
 // Module ID: 11185
-// Function ID: 87070
+// Function ID: 87082
 // Name: ApplicationCollectionPlatforms
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11185 (ApplicationCollectionPlatforms)
 const _module = require(dependencyMap[0]);

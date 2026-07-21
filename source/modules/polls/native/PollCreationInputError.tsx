@@ -1,5 +1,5 @@
 // Module ID: 11325
-// Function ID: 88100
+// Function ID: 88112
 // Name: PollCreationInputError
 // Dependencies: []
 // Exports: default
@@ -9,8 +9,8 @@ let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { onTapButtonActionComponent: 0, onTapSelectActionComponent: 0, onTapWelcomeReply: null } };
-obj = { height: "<string:1459617792>", backgroundColor: "<string:1275068417>", color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_CRITICAL };
+obj = { container: { headerIcons: 0, RowButtonIconProps: 0, headerLabel: null } };
+obj = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.icon = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

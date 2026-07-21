@@ -1,5 +1,5 @@
 // Module ID: 11191
-// Function ID: 87101
+// Function ID: 87113
 // Name: AppRowLabel
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ function AppRowLabel(renderedName) {
   const tmp = callback4();
   if (renderedName.showsPromoted) {
     let obj = { style: tmp.appRowLabelWithPromotedContainer };
-    obj = { <string:2195412908>: null, <string:1614302748>: null, <string:4055242192>: null, <string:3322189872>: null, style: tmp.appRowLabelWithPromotedTextContainer, children: renderedName };
+    obj = { "Null": null, "Null": null, "Null": null, "Null": null, style: tmp.appRowLabelWithPromotedTextContainer, children: renderedName };
     const items = [callback2(arg1(dependencyMap[16]).Text, obj), ];
     const obj1 = { style: tmp.promotedLabel };
     const obj2 = {};
@@ -248,7 +248,7 @@ function ActivityItem(context) {
     width = heroMediaDimensions.width;
   }
   obj.size = width;
-  obj.names = ["SENTRY_BAGGAGE_KEY_PREFIX"];
+  obj.names = ["RollOutRight"];
   const tmp4Result = importDefault(dependencyMap[27])(obj);
   const id = React.useId();
   let obj2 = arg1(dependencyMap[28]);
@@ -400,7 +400,7 @@ function RecommendationItem(onPress) {
     width = heroMediaDimensions.width;
   }
   obj.size = width;
-  obj.names = ["SENTRY_BAGGAGE_KEY_PREFIX"];
+  obj.names = ["RollOutRight"];
   let tmp5Result = importDefault(dependencyMap[27])(obj);
   if (null != item.overrideImageUrl) {
     obj = { state: "loaded", url: item.overrideImageUrl };
@@ -561,31 +561,31 @@ let obj = arg1(dependencyMap[15]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
 obj.container = obj;
-const obj1 = { width: 787152897, accessibilityRole: 1027735553, replace: -570424772, jsx: 1107296827, padding: 135388, start: 88713, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+const obj1 = { alignItems: -1224736449, flex: 1107296557, style: 146556, option: 146456, selected: 34630722, selectedItemName: 22683904, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.topBackgroundFill = obj1;
-obj.sectionHeader = { "Null": 800, "Null": 16 };
+obj.sectionHeader = {};
 const tmp6 = arg1(dependencyMap[12]);
 obj.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.searchBarContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING };
 const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.divider = { borderColor: importDefault(dependencyMap[13]).colors.BORDER_STRONG, borderTopWidth: 1, marginTop: importDefault(dependencyMap[13]).space.PX_24 };
-const obj4 = { "Bool(true)": 16777923, "Bool(true)": 50, "Bool(true)": 1119879168, gap: importDefault(dependencyMap[13]).space.PX_4 };
+const obj4 = { display: "body_localized", alignItems: "message", flexDirection: "p\u0159ibli\u017En\u011B {{count}} hodin", gap: importDefault(dependencyMap[13]).space.PX_4 };
 obj.appRowLabelWithPromotedContainer = obj4;
 obj.appRowLabelWithPromotedTextContainer = { flexShrink: 1 };
-const obj5 = { accessibilityRole: 40, jsxs: 12, join: 4, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
-obj.promotedLabel = obj5;
-const obj6 = { "Bool(true)": "<string:1091633474>", "Bool(true)": "adjustable", "Bool(true)": "<string:1348288785>", "Bool(true)": "<string:410124290>", "Bool(true)": "<string:402653184>", borderRadius: importDefault(dependencyMap[13]).radii.md, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.activityItemContainer = obj6;
 const obj3 = { borderColor: importDefault(dependencyMap[13]).colors.BORDER_STRONG, borderTopWidth: 1, marginTop: importDefault(dependencyMap[13]).space.PX_24 };
+obj.promotedLabel = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
+const obj5 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
+obj.activityItemContainer = { borderRadius: importDefault(dependencyMap[13]).radii.md, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+const obj6 = { borderRadius: importDefault(dependencyMap[13]).radii.md, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 obj.activityImageContainer = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-const obj8 = { "Bool(true)": "default", "Bool(true)": "done", enableQualityMetrics: "go", padding: importDefault(dependencyMap[13]).space.PX_12 };
-obj.activityDetailsContainer = obj8;
-obj.activityItemTupleContainer = {};
-obj.activityItemTupleShelfItemContainer = { useState: false, textAlign: false };
-obj.activityItemImage = {};
-obj.submittingOverlay = { 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, 0: false };
-let closure_25 = obj.createStyles(obj);
 const obj7 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+obj.activityDetailsContainer = { padding: importDefault(dependencyMap[13]).space.PX_12 };
+obj.activityItemTupleContainer = {};
+obj.activityItemTupleShelfItemContainer = { "Bool(false)": false, "Bool(false)": false };
+obj.activityItemImage = {};
+obj.submittingOverlay = {};
+let closure_25 = obj.createStyles(obj);
+const obj8 = { padding: importDefault(dependencyMap[13]).space.PX_12 };
 const result = arg1(dependencyMap[86]).fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx");
 
 export default function AppLauncherHomeScreen(route) {
@@ -1156,7 +1156,7 @@ export default function AppLauncherHomeScreen(route) {
       obj.style = obj;
       return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[45]), obj);
     } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
-      const obj1 = { alignItems: "238a115f1ad03e07bad0181bb5c110d4", justifyContent: "ic_playstation_device_ps5_32px", backgroundColor: "png" };
+      const obj1 = { USER_REGISTRATION: true, borderColor: true, borderWidth: true };
       const items = [tmp4.sectionHeader, ];
       let tmp50 = null;
       if (0 !== index) {
@@ -1276,7 +1276,7 @@ export default function AppLauncherHomeScreen(route) {
     let obj = callback(closure_3[53]);
     obj = { query, source: closure_10 };
     obj.trackWithMetadata(constants.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj);
-  }, 400, { flex: null, marginRight: null }), items6);
+  }, 400, {}), items6);
   const APP_LAUNCHER_IN_TEXT = memo;
   callback4 = React.useRef(null);
   const effect1 = React.useEffect(() => () => {

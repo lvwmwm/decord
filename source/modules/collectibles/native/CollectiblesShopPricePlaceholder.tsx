@@ -1,5 +1,5 @@
 // Module ID: 8720
-// Function ID: 69017
+// Function ID: 69028
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: []
 // Exports: CollectiblesShopPricePlaceholder
@@ -9,7 +9,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { "Bool(false)": "Group 11", "Bool(false)": 2, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+obj = { "Null": "Group 11", "Null": 2, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.skeletonContainer = obj;
 let closure_5 = obj.createStyles(obj);
 let closure_6 = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };

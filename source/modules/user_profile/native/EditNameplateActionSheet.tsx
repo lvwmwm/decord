@@ -1,10 +1,10 @@
-// Module ID: 13480
-// Function ID: 102307
+// Module ID: 13482
+// Function ID: 102329
 // Name: EditNameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 13480 (EditNameplateInner)
+// Module 13482 (EditNameplateInner)
 function EditNameplateInner(user) {
   let selectedNameplate;
   let setSelectedNameplate;
@@ -139,7 +139,7 @@ function NameplateActionSheetPreview(arg0) {
   obj.accessible = true;
   obj = { style: tmp.nameplateGradientContainer };
   const items1 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), ];
-  const obj1 = { style: tmp.nameplatePreviewGradient, start: { max: null, guildId: null }, end: { max: "/assets/images/native/icons", guildId: 32 } };
+  const obj1 = { style: tmp.nameplatePreviewGradient, start: {}, end: {} };
   const items2 = [tmp.nameplatePreviewGradient.color, "" + tmp.nameplatePreviewGradient.color + "00"];
   obj1.colors = items2;
   items1[2] = callback2(importDefault(dependencyMap[28]), obj1);
@@ -147,7 +147,7 @@ function NameplateActionSheetPreview(arg0) {
   const items3 = [callback3(View, obj), callback2(arg1(dependencyMap[29]).NameplatePreview, { nameplate: memo, user, guildId, animate: true, aria-hidden: true }), ];
   const obj2 = { style: tmp.nameplateGradientContainer };
   const items4 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), ];
-  const obj3 = { style: tmp.nameplatePreviewGradient, start: { max: "r", guildId: "isArray" }, end: { max: null, guildId: null } };
+  const obj3 = { style: tmp.nameplatePreviewGradient, start: {}, end: {} };
   const tmp11 = importDefault(dependencyMap[28]);
   const tmp4 = callback3;
   const tmp5 = View;
@@ -171,15 +171,15 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
+obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
 const tmp2 = arg1(dependencyMap[7]);
 obj.title = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.nameplatePreviewContainer = {};
+obj.nameplatePreviewContainer = { 9223372036854775807: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0443", 0: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0456\u0432", 0: "\u0431\u0456\u043B\u044C\u0448\u0435 {{count}} \u0440\u043E\u043A\u0456\u0432", 9223372036854775807: "\u0431\u0456\u043B\u044C\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 {{count}} \u0440\u0456\u043A" };
 obj.nameplateGradientContainer = { width: "100%" };
-const obj2 = { "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.nameplatePreviewGradient = obj2;
-let closure_13 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.nameplatePreviewGradient = { color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_13 = obj.createStyles(obj);
+const obj2 = { color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/user_profile/native/EditNameplateActionSheet.tsx");
 
 export default function EditNameplateActionSheet(arg0) {
@@ -218,7 +218,7 @@ export default function EditNameplateActionSheet(arg0) {
   obj = { scrollable: true, ref: obj.useBottomSheetRef().bottomSheetRef, onExpand: callback, startExpanded: true };
   const obj1 = { style: tmp.container };
   const items1 = [callback2(View, { style: tmp.bounceOffset }), , ];
-  const obj3 = { style: tmp.title };
+  const obj3 = { "Null": "<string:552206337>", "Null": "<string:621281281>", "Null": "<string:1643511809>", style: tmp.title };
   const intl = arg1(dependencyMap[17]).intl;
   obj3.children = intl.string(arg1(dependencyMap[17]).t.BwdeM1);
   items1[1] = callback2(arg1(dependencyMap[16]).Text, obj3);

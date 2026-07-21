@@ -1,5 +1,5 @@
 // Module ID: 11324
-// Function ID: 88097
+// Function ID: 88109
 // Name: EditPollCreationImageAltTextModal
 // Dependencies: []
 // Exports: default
@@ -18,7 +18,7 @@ obj.container = obj;
 obj.header = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.separator = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.contentContainer = { markAsSpoilerTitle: null, keyboardAppearance: null };
+obj.contentContainer = { "Bool(true)": "values", "Bool(true)": "Array" };
 const obj1 = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.imageContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.formContainer = { paddingHorizontal: 16 };
@@ -59,7 +59,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   }, items);
   let obj = { top: true, style: tmp.container };
   obj = { style: tmp.header };
-  obj = { <string:1650260896>: false, <string:525459414>: false, <string:1556898752>: false, onPress: arg1(dependencyMap[8]).closeEditPollCreationImageAltTextModal };
+  obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, onPress: arg1(dependencyMap[8]).closeEditPollCreationImageAltTextModal };
   const intl = arg1(dependencyMap[10]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.cpT0Cq);
   const obj1 = { source: importDefault(dependencyMap[12]) };
@@ -88,7 +88,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   const intl4 = arg1(dependencyMap[10]).intl;
   obj9.children = intl4.string(arg1(dependencyMap[10]).t./2Gnoa);
   items4[1] = callback2(importDefault(dependencyMap[15]), obj9);
-  const obj10 = { "Bool(true)": true, "Bool(true)": false, "Bool(true)": false, value: first, onChange: tmp5[1], clearButtonVisibility: arg1(dependencyMap[11]).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
+  const obj10 = { "Bool(false)": "#ffa813", "Bool(false)": "absolute", "Bool(false)": null, value: first, onChange: tmp5[1], clearButtonVisibility: arg1(dependencyMap[11]).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
   const intl5 = arg1(dependencyMap[10]).intl;
   obj10.accessibilityLabel = intl5.string(arg1(dependencyMap[10]).t./2Gnoa);
   items4[2] = callback2(arg1(dependencyMap[16]).FormInput, obj10);

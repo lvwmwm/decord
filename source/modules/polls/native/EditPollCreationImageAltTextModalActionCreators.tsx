@@ -1,5 +1,5 @@
 // Module ID: 11323
-// Function ID: 88094
+// Function ID: 88106
 // Name: openEditPollCreationImageAltTextModal
 // Dependencies: []
 // Exports: closeEditPollCreationImageAltTextModal, openEditPollCreationImageAltTextModal

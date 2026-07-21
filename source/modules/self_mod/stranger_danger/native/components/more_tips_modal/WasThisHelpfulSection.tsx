@@ -1,5 +1,5 @@
 // Module ID: 10404
-// Function ID: 80145
+// Function ID: 80156
 // Name: WasThisHelpfulSection
 // Dependencies: []
 // Exports: default
@@ -27,7 +27,7 @@ const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colo
 obj.buttonIconInactive = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj4 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.buttonIconActive = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.toastContainer = {};
+obj.toastContainer = { MKTG_HYPESQUAD_FORM_SUBMITTED: false, marginInlineEnd: false };
 let closure_13 = obj.createStyles(obj);
 const obj5 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/WasThisHelpfulSection.tsx");
@@ -84,7 +84,7 @@ export default function WasThisHelpfulSection(channelId) {
     channelId(senderId[13]).trackCtaEvent(obj);
   }, items3);
   obj = { style: tmp.container };
-  obj = {};
+  obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.L84yVm);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj), ];

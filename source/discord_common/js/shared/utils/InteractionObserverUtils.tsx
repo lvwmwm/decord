@@ -1,10 +1,10 @@
-// Module ID: 6933
-// Function ID: 55272
+// Module ID: 6934
+// Function ID: 55284
 // Name: __handleIntersections
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 6933 (__handleIntersections)
+// Module 6934 (__handleIntersections)
 function __handleIntersections(arr) {
   const weakMap = arg1;
   const item = arr.forEach((target) => {

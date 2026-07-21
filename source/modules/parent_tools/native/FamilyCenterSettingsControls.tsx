@@ -1,10 +1,10 @@
-// Module ID: 13686
-// Function ID: 103581
+// Module ID: 13688
+// Function ID: 103603
 // Name: SpendingLimitRow
 // Dependencies: []
 // Exports: default
 
-// Module 13686 (SpendingLimitRow)
+// Module 13688 (SpendingLimitRow)
 function SpendingLimitRow(teenId) {
   let subLabel;
   let trailing;
@@ -99,7 +99,7 @@ function FamilyCenterSettingsTeenControls() {
   const intl = arg1(handleOpenSettings[8]).intl;
   obj1.children = intl.string(importDefault(handleOpenSettings[9]).ahKIJO);
   const items = [callback(arg1(handleOpenSettings[7]).Text, obj1), ];
-  obj2 = {};
+  obj2 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
   const intl2 = arg1(handleOpenSettings[8]).intl;
   obj3 = {
     openSettingsHook(children) {
@@ -138,7 +138,7 @@ function FamilyCenterSettingsTeenControls() {
     const tmp9 = callback2;
   }
   items1[1] = isFamilyCenterV3Enabled;
-  const obj8 = { buildPermissionContext: "r", AccountAgeTier8LargeBadge: "useTrackPdpClick", PROGRESS_ANIMATION: "SPLIT_COMPLEMENTARY", isAgeVerificationIncodeEnabled: "guildBoostCurrentUserCountWrapper", homeIcon: "r", parseServerPerks: "useTrackPdpClick" };
+  const obj8 = { __initData: "accessibilityLabel", marginBottom: "r", np: "isArray", replace: 24, header: 24, channelId: null };
   const intl4 = arg1(handleOpenSettings[8]).intl;
   obj8.text = intl4.formatToPlainString(importDefault(handleOpenSettings[9]).w0JA3P, { count: activeLinkUserIds.length });
   obj8.onPress = function onPress() {
@@ -206,7 +206,7 @@ function FamilyCenterSettingsParentalControls() {
   const intl = arg1(closure_2[8]).intl;
   obj.children = intl.string(importDefault(closure_2[9]).ahKIJO);
   const items1 = [callback(arg1(closure_2[7]).Text, obj), , ];
-  obj1 = {};
+  obj1 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
   const intl2 = arg1(closure_2[8]).intl;
   obj1.children = intl2.string(importDefault(closure_2[9]).Sv236e);
   items1[1] = callback(arg1(closure_2[7]).Text, obj1);

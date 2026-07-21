@@ -1,5 +1,5 @@
 // Module ID: 4485
-// Function ID: 39576
+// Function ID: 39584
 // Name: Suspender
 // Dependencies: []
 // Exports: Freeze

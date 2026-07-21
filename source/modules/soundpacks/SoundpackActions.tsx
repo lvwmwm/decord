@@ -1,10 +1,10 @@
-// Module ID: 15939
-// Function ID: 122240
+// Module ID: 15943
+// Function ID: 122284
 // Name: setSoundpack
 // Dependencies: []
 // Exports: setSoundpack
 
-// Module 15939 (setSoundpack)
+// Module 15943 (setSoundpack)
 let closure_2 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/soundpacks/SoundpackActions.tsx");

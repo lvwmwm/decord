@@ -1,9 +1,9 @@
-// Module ID: 6994
-// Function ID: 55921
+// Module ID: 6995
+// Function ID: 55933
 // Name: ServiceNotificationPriority
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6994 (ServiceNotificationPriority)
+// Module 6995 (ServiceNotificationPriority)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx");
 

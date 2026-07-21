@@ -1,9 +1,9 @@
-// Module ID: 4706
-// Function ID: 40932
+// Module ID: 4705
+// Function ID: 40939
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 4706 (GUILD_PRODUCT_EDIT_MODAL_KEY)
+// Module 4705 (GUILD_PRODUCT_EDIT_MODAL_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 8551
-// Function ID: 67971
+// Function ID: 67982
 // Name: useTieredTenureBadgeForUser
 // Dependencies: []
 // Exports: useTieredTenureBadgeForUser

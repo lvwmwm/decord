@@ -1,5 +1,5 @@
 // Module ID: 10807
-// Function ID: 83922
+// Function ID: 83933
 // Name: getOrFetchApplicationForLaunch
 // Dependencies: []
 // Exports: confirmActivityLaunchChecks

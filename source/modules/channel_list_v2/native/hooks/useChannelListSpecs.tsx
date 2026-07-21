@@ -1,10 +1,10 @@
-// Module ID: 14856
-// Function ID: 111927
+// Module ID: 14859
+// Function ID: 111961
 // Name: useChannelListSpecs
 // Dependencies: []
 // Exports: default
 
-// Module 14856 (useChannelListSpecs)
+// Module 14859 (useChannelListSpecs)
 let closure_3 = importAll(dependencyMap[0]);
 ({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

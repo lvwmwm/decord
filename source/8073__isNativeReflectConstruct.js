@@ -1,9 +1,13 @@
 // Module ID: 8073
-// Function ID: 64031
+// Function ID: 64037
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 5, 11]
 
 // Module 8073 (_isNativeReflectConstruct)
+import result from "result";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import checkLogForPII from "checkLogForPII";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,18 +17,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
-  class FePointLight {
+const tmp2 = (arg0) => {
+  class FeMorphology {
     constructor() {
       self = this;
-      tmp = closure_2(this, FePointLight);
-      obj = closure_5(FePointLight);
-      tmp2 = closure_4;
+      tmp = result(this, FeMorphology);
+      obj = closure_5(FeMorphology);
+      tmp2 = checkLogForPII;
       if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
@@ -39,20 +40,20 @@ const tmp2 = (Component) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FePointLight;
-  callback2(FePointLight, Component);
+  const arg1 = FeMorphology;
+  callback2(FeMorphology, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FePointLight(closure_1[6]).warnUnimplementedFilter();
+        const result = FeMorphology(closure_1[5]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FePointLight, items);
-}(arg1(dependencyMap[5]).Component);
-tmp2.displayName = "FePointLight";
-tmp2.defaultProps = {};
+  return callback(FeMorphology, items);
+}(importDefault(dependencyMap[6]));
+tmp2.displayName = "FeMorphology";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
 export default tmp2;

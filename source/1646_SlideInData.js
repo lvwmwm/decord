@@ -1,5 +1,5 @@
 // Module ID: 1646
-// Function ID: 18337
+// Function ID: 18342
 // Name: SlideInData
 // Dependencies: []
 
@@ -7,28 +7,28 @@
 let obj = { SlideInRight: { style: { [0]: { transform: items }, [100]: { transform: items1 } } }, SlideInLeft: obj, SlideInUp: { style: { [0]: { transform: items4 }, [100]: { transform: items5 } } }, SlideInDown: obj };
 const items = [{ translateX: "100vw" }];
 const items1 = [{ translateX: "0%" }];
-obj = { 9223372036854775807: null, 0: 0.3, 0: "-40%" };
+obj = { "Null": null, "Null": 0.3, "Null": "-40%" };
 const items2 = [{ translateX: "-100vw" }];
 const items3 = [{ translateX: "0%" }];
 obj.style = { [0]: { transform: items2 }, [100]: { transform: items3 } };
 const items4 = [{ translateY: "-100vh" }];
 const items5 = [{ translateY: "0%" }];
-obj = { 9223372036854775807: null, 0: 0.3, 0: "40%" };
+obj = { "Null": null, "Null": 0.3, "Null": "40%" };
 const items6 = [{ translateY: "100vh" }];
 const items7 = [{ translateY: "0%" }];
 obj.style = { [0]: { transform: items6 }, [100]: { transform: items7 } };
 const obj1 = { SlideOutRight: { style: { [0]: { transform: items8 }, [100]: { transform: items9 } } }, SlideOutLeft: obj2, SlideOutUp: obj3, SlideOutDown: obj4 };
 const items8 = [{ translateX: "0%" }];
 const items9 = [{ translateX: "100vw" }];
-const obj2 = { 9223372036854775807: null, 0: 0.3, 0: "RotateOutDownRight" };
+const obj2 = { "Null": null, "Null": 0.3, "Null": "RotateOutDownRight" };
 const items10 = [{ translateX: "0%" }];
 const items11 = [{ translateX: "-100vw" }];
 obj2.style = { [0]: { transform: items10 }, [100]: { transform: items11 } };
-const obj3 = { 9223372036854775807: null, 0: 0.3, 0: "RotateOutUpLeft" };
+const obj3 = { "Null": null, "Null": 0.3, "Null": "RotateOutUpLeft" };
 const items12 = [{ translateY: "0%" }];
 const items13 = [{ translateY: "-100vh" }];
 obj3.style = { [0]: { transform: items12 }, [100]: { transform: items13 } };
-const obj4 = { 9223372036854775807: null, 0: 0.3, 0: "-40%" };
+const obj4 = { "Null": null, "Null": 0.3, "Null": "-40%" };
 const items14 = [{ translateY: "0%" }];
 const items15 = [{ translateY: "100vh" }];
 obj4.style = { [0]: { transform: items14 }, [100]: { transform: items15 } };

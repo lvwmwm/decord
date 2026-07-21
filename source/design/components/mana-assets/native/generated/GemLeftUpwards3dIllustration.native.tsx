@@ -1,12 +1,14 @@
 // Module ID: 6163
-// Function ID: 50158
+// Function ID: 50166
 // Name: GemLeftUpwards3dIllustration
 // Dependencies: [4294967295, 0, 4294967295, 0]
 // Exports: GemLeftUpwards3dIllustration
 
 // Module 6163 (GemLeftUpwards3dIllustration)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx");
 
 export const GemLeftUpwards3dIllustration = function GemLeftUpwards3dIllustration(width) {
   let accessibilityLabel;

@@ -1,5 +1,5 @@
 // Module ID: 9541
-// Function ID: 74314
+// Function ID: 74325
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -312,9 +312,9 @@ obj.scrollViewContentContainer = { paddingBottom: 16 };
 obj.avatarContainer = { height: 40 };
 obj.avatar = { marginRight: 12 };
 obj.titleInput = { padding: 8 };
-const obj1 = { overflow: 25, flex: "soundboard_picker_collapsed_sections", fontFamily: tmp4.Fonts.DISPLAY_SEMIBOLD, color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj1 = { getGuildAcronym: 25, getCellMetricsApprox: "soundboard_picker_collapsed_sections", fontFamily: tmp4.Fonts.DISPLAY_SEMIBOLD, color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.titleInputText = obj1;
-const obj2 = { "Bool(true)": -9518938622735303000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 13342840532887100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, "Bool(true)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004841917874073096, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000785152684037, "Bool(true)": -7047488208051022000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj2 = { "Bool(false)": "Array", "Bool(false)": "ADDRESS_ZIP", "Bool(false)": "isArray", "Bool(false)": "UNSET_EXPLICIT_CONTENT_REDACTION", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer", color: importDefault(dependencyMap[20]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.contentInput = obj2;
 const tmp5 = arg1(dependencyMap[18]);
 obj.mentionText = { color: importDefault(dependencyMap[20]).unsafe_rawColors.BRAND_500 };
@@ -322,8 +322,8 @@ obj.postButtonWrapper = { marginLeft: "auto" };
 obj.tags = {};
 obj.tagIcon = { marginRight: 8 };
 obj.editor = {};
-obj.editorBody = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
-obj.usernameToChannel = {};
+obj.editorBody = {};
+obj.usernameToChannel = { "Null": true, "Null": true, "Null": true };
 obj.channelName = { "Bool(false)": null, "Bool(false)": 0 };
 const obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -332,11 +332,11 @@ obj4["borderTopColor"] = importDefault(dependencyMap[20]).colors.BORDER_SUBTLE;
 obj4["backgroundColor"] = importDefault(dependencyMap[20]).colors.BACKGROUND_BASE_LOW;
 obj4["top"] = undefined;
 obj.actionsContainer = obj4;
-obj.actions = { 0: null, 9223372036854775807: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", 9223372036854775807: true, 9223372036854775807: null, 9223372036854775807: 11 };
-const obj3 = { color: importDefault(dependencyMap[20]).unsafe_rawColors.BRAND_500 };
-obj.actionButton = { color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL };
+obj.actions = { 0: null, 9223372036854775807: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", -9223372036854775808: true, 0: null, -9223372036854775808: 11 };
+const obj5 = { position: "<string:24248787>", left: "<string:268435456>", top: "<string:1358954496>", height: "<string:1667363182>", width: "<string:17514305>", alignItems: "a61f8b298e0ebb5630c0a628e2bf4153", justifyContent: "<string:4294705152>", backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL, scrollable: "<string:4294930742>", startExpanded: "<string:659685375>", handleDisabled: "<string:1602192>", aspectRatio: "<string:1572864>", color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT };
+obj.actionButton = obj5;
 obj.mediaButton = { marginRight: 8 };
-const obj5 = { color: importDefault(dependencyMap[20]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_MOD_NORMAL };
+const obj3 = { color: importDefault(dependencyMap[20]).unsafe_rawColors.BRAND_500 };
 obj.horizontalAutocomplete = { backgroundColor: importDefault(dependencyMap[20]).colors.BACKGROUND_SURFACE_HIGH };
 obj.nameError = {};
 obj.messageError = { marginTop: 8 };
@@ -390,7 +390,7 @@ export default function ForumComposer(parentChannel) {
   let closure_36;
   let closure_37;
   let closure_38;
-  let obj19;
+  let obj20;
   let memo2;
   function MediaPostMultipleThumbnailActionSheetImporter() {
     return parentChannel(threadSettingsDraft[51])(threadSettingsDraft[50], threadSettingsDraft.paths);
@@ -705,10 +705,11 @@ export default function ForumComposer(parentChannel) {
   ({ setFocusedInput: closure_31, focusLastInput } = focusHandlers);
   callback4 = focusLastInput;
   blurLastInput = focusHandlers.blurLastInput;
+  obj = { start: str4.length, end: null };
   const animatedScrollHandler = obj11.useAnimatedScrollHandler(W);
   const tmp46 = null != name1 && threadSettingsDraft.name.length > 0;
   const tmp47 = stateFromStores4.length > 0;
-  [tmp63, closure_34] = callback(React.useState({}), 2);
+  [tmp63, closure_34] = callback(React.useState(obj), 2);
   const callback8 = React.useCallback((nativeEvent) => {
     const merged = Object.assign(nativeEvent.nativeEvent.selection);
     _undefined2({});
@@ -727,36 +728,36 @@ export default function ForumComposer(parentChannel) {
       }
     }
   }, []);
-  let obj15 = arg1(dependencyMap[46]);
-  closure_35 = obj15.usePressEmojiHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
   let obj16 = arg1(dependencyMap[46]);
-  closure_36 = obj16.usePressGIFHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
-  let obj17 = arg1(dependencyMap[47]);
-  const tmp62 = callback(React.useState({}), 2);
-  let obj18 = arg1(dependencyMap[48]);
-  closure_37 = obj18.useBackspaceHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7 });
+  closure_35 = obj16.usePressEmojiHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
+  let obj17 = arg1(dependencyMap[46]);
+  closure_36 = obj17.usePressGIFHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7, focusTextInput: callback, setSelection: callback9 });
+  let obj18 = arg1(dependencyMap[47]);
+  const tmp62 = callback(React.useState(obj), 2);
+  let obj19 = arg1(dependencyMap[48]);
+  closure_37 = obj19.useBackspaceHandler({ selection: tmp63, draftContent: str4, handleTextChange: callback7 });
   const tmp67 = callback(React.useState(0), 2);
   closure_38 = tmp67[1];
-  obj19 = parentChannel;
+  obj20 = parentChannel;
   const callback10 = React.useCallback((nativeEvent) => {
     callback3(nativeEvent.nativeEvent.layout.height);
   }, []);
   if (isEdit) {
-    obj19 = thread;
+    obj20 = thread;
   }
-  const items15 = [obj19];
+  const items15 = [obj20];
   memo2 = React.useMemo(() => {
     let parserState = null;
-    if (null != obj19) {
-      parserState = parentChannel(threadSettingsDraft[28]).createParserState(obj19);
+    if (null != obj20) {
+      parserState = parentChannel(threadSettingsDraft[28]).createParserState(obj20);
       const obj = parentChannel(threadSettingsDraft[28]);
     }
     return parserState;
   }, items15);
-  const items16 = [tmp22[0], obj19, memo2, renderErrorResult.mentionText];
+  const items16 = [tmp22[0], obj20, memo2, renderErrorResult.mentionText];
   const memo3 = React.useMemo(() => {
     if (0 !== str4.length) {
-      if (null != obj19) {
+      if (null != obj20) {
         if (null != memo2) {
           const parts = str4.split(closure_31);
           let mapped = null;
@@ -779,28 +780,28 @@ export default function ForumComposer(parentChannel) {
     }
     return null;
   }, items16);
-  if (null == obj19) {
+  if (null == obj20) {
     return null;
   } else {
     renderErrorResult = arg1;
     renderErrorResult = dependencyMap;
     obj = { content: first1 };
     renderErrorResult = arg1(dependencyMap[40]).renderError(tmp26[0], obj);
-    const obj46 = arg1(dependencyMap[40]);
-    obj = { content: str4, tags: first2 };
-    renderErrorResult = arg1(dependencyMap[40]).renderError(tmp27[0], obj);
-    if (obj19.isMediaChannel()) {
+    const obj47 = arg1(dependencyMap[40]);
+    obj1 = { content: str4, tags: first2 };
+    renderErrorResult = arg1(dependencyMap[40]).renderError(tmp27[0], obj1);
+    if (obj20.isMediaChannel()) {
       const items17 = [arg1(dependencyMap[49]).DismissibleContent.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE];
       let items18 = items17;
     } else {
       items18 = [];
     }
-    obj1 = {};
+    obj2 = {};
     const items19 = [renderErrorResult.container, ];
-    obj2 = { paddingTop: insets.top, paddingBottom: insets.bottom + tmp67[0] };
-    items19[1] = obj2;
-    obj1.style = items19;
-    obj3 = {
+    obj3 = { paddingTop: insets.top, paddingBottom: insets.bottom + tmp67[0] };
+    items19[1] = obj3;
+    obj2.style = items19;
+    obj4 = {
       channel: parentChannel,
       height: 44,
       onClose,
@@ -818,22 +819,22 @@ export default function ForumComposer(parentChannel) {
       submitting: first,
       title: tmp71
     };
-    const items20 = [callback4(importDefault(dependencyMap[52]), obj3), ];
-    obj4 = {};
-    obj5 = { onScroll: animatedScrollHandler, contentContainerStyle: renderErrorResult.scrollViewContentContainer };
-    obj6 = { ref };
-    ({ titleInput: obj26.style, titleInputText: obj26.inputTextStyle } = renderErrorResult);
-    obj6.showTopContainer = false;
+    const items20 = [callback4(importDefault(dependencyMap[52]), obj4), ];
+    obj5 = {};
+    obj6 = { onScroll: animatedScrollHandler, contentContainerStyle: renderErrorResult.scrollViewContentContainer };
+    obj7 = { ref };
+    ({ titleInput: obj27.style, titleInputText: obj27.inputTextStyle } = renderErrorResult);
+    obj7.showTopContainer = false;
     const intl = arg1(dependencyMap[42]).intl;
-    obj6.placeholder = intl.string(arg1(dependencyMap[42]).t.lU4dDS);
-    obj6.placeholderTextColor = tmp6;
-    obj6.large = true;
-    obj6.multiline = true;
-    obj6.value = first1;
-    obj6.clearButtonVisibility = arg1(dependencyMap[55]).ClearButtonVisibility.NEVER;
-    obj6.maxLength = closure_21;
-    obj6.onChange = callback1;
-    obj6.onBlur = function onBlur() {
+    obj7.placeholder = intl.string(arg1(dependencyMap[42]).t.lU4dDS);
+    obj7.placeholderTextColor = tmp6;
+    obj7.large = true;
+    obj7.multiline = true;
+    obj7.value = first1;
+    obj7.clearButtonVisibility = arg1(dependencyMap[55]).ClearButtonVisibility.NEVER;
+    obj7.maxLength = closure_21;
+    obj7.onChange = callback1;
+    obj7.onBlur = function onBlur() {
       if (!isEdit) {
         let name;
         if (null != threadSettingsDraft) {
@@ -859,7 +860,7 @@ export default function ForumComposer(parentChannel) {
         }
       }
     };
-    obj6.onFocus = function onFocus() {
+    obj7.onFocus = function onFocus() {
       let tmp = tmp8 !== parentChannel(threadSettingsDraft[57]).KeyboardTypes.MEDIA;
       if (tmp) {
         tmp = tmp8 !== parentChannel(threadSettingsDraft[57]).KeyboardTypes.EXPRESSION;
@@ -873,25 +874,25 @@ export default function ForumComposer(parentChannel) {
       }
       const tmp8 = _undefined(parentChannel(threadSettingsDraft[44]).PostComposerInputs.TITLE);
     };
-    obj6.autoFocus = true;
-    obj6.autoCorrect = true;
-    obj6.textContentType = "none";
-    obj6.returnKeyType = "next";
-    obj6.onNext = callback;
-    const items21 = [callback4(arg1(dependencyMap[54]).FormInput, obj6), , ];
+    obj7.autoFocus = true;
+    obj7.autoCorrect = true;
+    obj7.textContentType = "none";
+    obj7.returnKeyType = "next";
+    obj7.onNext = callback;
+    const items21 = [callback4(arg1(dependencyMap[54]).FormInput, obj7), , ];
     let tmp84 = null;
     if (null != renderErrorResult) {
-      obj7 = { style: renderErrorResult.nameError, children: renderErrorResult };
-      tmp84 = callback4(importDefault(dependencyMap[59]), obj7);
+      obj8 = { style: renderErrorResult.nameError, children: renderErrorResult };
+      tmp84 = callback4(importDefault(dependencyMap[59]), obj8);
     }
     items21[1] = tmp84;
-    obj8 = { style: renderErrorResult.editor };
+    obj9 = { style: renderErrorResult.editor };
     let tmp91Result = null != stateFromStores;
     if (tmp91Result) {
-      obj9 = {
+      obj10 = {
         style: renderErrorResult.avatarContainer,
         onPress() {
-              const obj = { userId: stateFromStores.id, channelId: obj19.id };
+              const obj = { userId: stateFromStores.id, channelId: obj20.id };
               let id;
               if (null != message) {
                 id = message.id;
@@ -901,7 +902,7 @@ export default function ForumComposer(parentChannel) {
               return thread(threadSettingsDraft[60])(obj);
             }
       };
-      obj10 = { animate: true, style: renderErrorResult.avatar, user: stateFromStores };
+      obj11 = { animate: true, style: renderErrorResult.avatar, user: stateFromStores };
       let guildId;
       if (null != parentChannel) {
         guildId = parentChannel.getGuildId();
@@ -910,60 +911,60 @@ export default function ForumComposer(parentChannel) {
       if (null != guildId) {
         tmp97 = guildId;
       }
-      obj10.guildId = tmp97;
-      obj10.avatarDecoration = stateFromStores.avatarDecoration;
+      obj11.guildId = tmp97;
+      obj11.avatarDecoration = stateFromStores.avatarDecoration;
       const intl2 = arg1(dependencyMap[42]).intl;
-      obj11 = { nickname: str5 };
-      obj10.accessibilityLabel = intl2.formatToPlainString(arg1(dependencyMap[42]).t.LvU3nj, obj11);
-      obj9.children = callback4(arg1(dependencyMap[55]).Avatar, obj10);
-      tmp91Result = callback4(analyticsLocations, obj9);
+      obj12 = { nickname: str5 };
+      obj11.accessibilityLabel = intl2.formatToPlainString(arg1(dependencyMap[42]).t.LvU3nj, obj12);
+      obj10.children = callback4(arg1(dependencyMap[55]).Avatar, obj11);
+      tmp91Result = callback4(analyticsLocations, obj10);
       const tmp91 = callback4;
       const tmp92 = analyticsLocations;
       const tmp93 = callback4;
     }
     const items22 = [tmp91Result, ];
-    obj12 = { style: renderErrorResult.editorBody };
+    obj13 = { style: renderErrorResult.editorBody };
     renderErrorResult = createForumPost;
     renderErrorResult = stateFromStores3;
-    obj13 = { style: renderErrorResult.usernameToChannel };
+    obj14 = { style: renderErrorResult.usernameToChannel };
     renderErrorResult = arg1;
     renderErrorResult = dependencyMap;
     renderErrorResult = createForumPost;
     renderErrorResult = stateFromStores3;
     const intl3 = arg1(dependencyMap[42]).intl;
-    obj14 = { nickname: str5, channelName: tmp10 };
-    obj13.accessibilityLabel = intl3.formatToPlainString(arg1(dependencyMap[42]).t.QicUf+, obj14);
+    const obj15 = { nickname: str5, channelName: tmp10 };
+    obj14.accessibilityLabel = intl3.formatToPlainString(arg1(dependencyMap[42]).t.QicUf+, obj15);
     renderErrorResult = callback4;
-    obj15 = { name: str5, color: tmp29, colors: tmp31 };
-    const items23 = [callback4(arg1(dependencyMap[61]).RoleLabel, obj15), ];
+    obj16 = { name: str5, color: tmp29, colors: tmp31 };
+    const items23 = [callback4(arg1(dependencyMap[61]).RoleLabel, obj16), ];
     renderErrorResult = createForumPost;
-    obj16 = { style: renderErrorResult.channelName };
+    obj17 = { style: renderErrorResult.channelName };
     const intl4 = arg1(dependencyMap[42]).intl;
-    obj17 = { channelName: tmp10 };
-    const items24 = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, intl4.format(arg1(dependencyMap[42]).t.6Y1Kev, obj17)];
-    obj16.children = items24;
-    items23[1] = createForumPost(arg1(dependencyMap[62]).Text, obj16);
-    obj13.children = items23;
-    const items25 = [createForumPost(stateFromStores3, obj13), , ];
+    obj18 = { channelName: tmp10 };
+    const items24 = [-1402750382, intl4.format(arg1(dependencyMap[42]).t.6Y1Kev, obj18)];
+    obj17.children = items24;
+    items23[1] = createForumPost(arg1(dependencyMap[62]).Text, obj17);
+    obj14.children = items23;
+    const items25 = [createForumPost(stateFromStores3, obj14), , ];
     renderErrorResult = null;
     if (null != renderErrorResult) {
       renderErrorResult = callback4;
       renderErrorResult = importDefault;
       renderErrorResult = dependencyMap;
-      obj18 = { style: renderErrorResult.messageError, children: renderErrorResult };
-      renderErrorResult = callback4(importDefault(dependencyMap[59]), obj18);
+      obj19 = { style: renderErrorResult.messageError, children: renderErrorResult };
+      renderErrorResult = callback4(importDefault(dependencyMap[59]), obj19);
     }
     items25[1] = renderErrorResult;
     renderErrorResult = arg1;
     renderErrorResult = dependencyMap;
     renderErrorResult = callback4;
-    obj19 = { ref: ref1, style: renderErrorResult.contentInput, multiline: true, scrollEnabled: false };
+    obj20 = { ref: ref1, style: renderErrorResult.contentInput, multiline: true, scrollEnabled: false };
     const intl5 = arg1(dependencyMap[42]).intl;
-    obj19.placeholder = intl5.string(arg1(dependencyMap[42]).t.8IPnv1);
-    obj19.placeholderTextColor = tmp6;
-    obj19.onChangeText = callback7;
-    obj19.onSelectionChange = callback8;
-    obj19.onFocus = function onFocus() {
+    obj20.placeholder = intl5.string(arg1(dependencyMap[42]).t.8IPnv1);
+    obj20.placeholderTextColor = tmp6;
+    obj20.onChangeText = callback7;
+    obj20.onSelectionChange = callback8;
+    obj20.onFocus = function onFocus() {
       if (tmp8 === parentChannel(threadSettingsDraft[57]).KeyboardTypes.MEDIA) {
         let obj = parentChannel(threadSettingsDraft[58]);
         obj = { type: parentChannel(threadSettingsDraft[57]).KeyboardTypes.SYSTEM };
@@ -973,29 +974,29 @@ export default function ForumComposer(parentChannel) {
       }
       _undefined(parentChannel(threadSettingsDraft[44]).PostComposerInputs.CONTENT);
     };
-    obj19.showSoftInputOnFocus = tmp8 !== arg1(dependencyMap[57]).KeyboardTypes.EXPRESSION;
+    obj20.showSoftInputOnFocus = tmp8 !== arg1(dependencyMap[57]).KeyboardTypes.EXPRESSION;
     renderErrorResult = str4;
     if (null != memo3) {
       renderErrorResult = callback4;
       renderErrorResult = stateFromStores;
-      const obj20 = { children: memo3 };
-      renderErrorResult = callback4(stateFromStores, obj20);
+      const obj21 = { children: memo3 };
+      renderErrorResult = callback4(stateFromStores, obj21);
     }
-    obj19.children = renderErrorResult;
-    items25[2] = renderErrorResult(arg1(dependencyMap[55]).TextInput, obj19);
-    obj12.children = items25;
-    items22[1] = renderErrorResult(renderErrorResult, obj12);
-    obj8.children = items22;
-    items21[2] = createForumPost(stateFromStores3, obj8);
-    obj5.children = items21;
-    const items26 = [createForumPost(importDefault(dependencyMap[32]).ScrollView, obj5), , , , ];
+    obj20.children = renderErrorResult;
+    items25[2] = renderErrorResult(arg1(dependencyMap[55]).TextInput, obj20);
+    obj13.children = items25;
+    items22[1] = renderErrorResult(renderErrorResult, obj13);
+    obj9.children = items22;
+    items21[2] = createForumPost(stateFromStores3, obj9);
+    obj6.children = items21;
+    const items26 = [createForumPost(importDefault(dependencyMap[32]).ScrollView, obj6), , , , ];
     renderErrorResult = callback4;
     renderErrorResult = closure_36;
-    const obj21 = { tags: first2 };
-    items26[1] = callback4(closure_36, obj21);
+    const obj22 = { tags: first2 };
+    items26[1] = callback4(closure_36, obj22);
     renderErrorResult = callback4;
     renderErrorResult = closure_37;
-    const obj22 = {
+    const obj23 = {
       channel: parentChannel,
       tags: first2,
       onTagsSave: callback2,
@@ -1015,26 +1016,26 @@ export default function ForumComposer(parentChannel) {
       isEdit,
       onLayout: callback10
     };
-    items26[2] = callback4(closure_37, obj22);
+    items26[2] = callback4(closure_37, obj23);
     renderErrorResult = callback4;
     renderErrorResult = importDefault;
     renderErrorResult = dependencyMap;
-    const obj23 = {};
+    const obj24 = {};
     const items27 = [renderErrorResult.horizontalAutocomplete, ];
-    const obj24 = { bottom: insets.bottom };
-    items27[1] = obj24;
-    obj23.style = items27;
-    obj23.onPressAutocompleteItem = pressHorizontalAutocompleteItemHandler;
-    obj23.text = str4;
-    obj23.selection = tmp63;
-    obj23.channel = obj19;
+    const obj25 = { bottom: insets.bottom };
+    items27[1] = obj25;
+    obj24.style = items27;
+    obj24.onPressAutocompleteItem = pressHorizontalAutocompleteItemHandler;
+    obj24.text = str4;
+    obj24.selection = tmp63;
+    obj24.channel = obj20;
     class W {
       constructor(arg0) {
         return closure_24.set(parentChannel.contentOffset.y);
       }
     }
     renderErrorResult = callback4;
-    const obj25 = {
+    const obj26 = {
       contentTypes: items18,
       children(markAsDismissed) {
           const parentChannel = markAsDismissed.markAsDismissed;
@@ -1052,11 +1053,11 @@ export default function ForumComposer(parentChannel) {
           return tmp;
         }
     };
-    items26[4] = callback4(importDefault(dependencyMap[65]), obj25);
-    obj4.children = items26;
-    items20[1] = createForumPost(callback5, obj4);
-    obj1.children = items20;
-    return createForumPost(stateFromStores3, obj1);
+    items26[4] = callback4(importDefault(dependencyMap[65]), obj26);
+    obj5.children = items26;
+    items20[1] = createForumPost(callback5, obj5);
+    obj2.children = items20;
+    return createForumPost(stateFromStores3, obj2);
   }
-  const pressHorizontalAutocompleteItemHandler = obj17.usePressHorizontalAutocompleteItemHandler({ draftContent: tmp22[0], handleTextChange: callback7, setSelection: callback9, channel: parentChannel });
+  const pressHorizontalAutocompleteItemHandler = obj18.usePressHorizontalAutocompleteItemHandler({ draftContent: tmp22[0], handleTextChange: callback7, setSelection: callback9, channel: parentChannel });
 };

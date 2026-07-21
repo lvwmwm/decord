@@ -1,10 +1,10 @@
-// Module ID: 13734
-// Function ID: 103877
+// Module ID: 13736
+// Function ID: 103899
 // Name: PuzzlePieceIcon
 // Dependencies: []
 // Exports: PuzzlePieceIcon
 
-// Module 13734 (PuzzlePieceIcon)
+// Module 13736 (PuzzlePieceIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PuzzlePieceIcon.tsx");

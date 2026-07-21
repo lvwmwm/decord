@@ -1,9 +1,9 @@
-// Module ID: 14932
-// Function ID: 112426
+// Module ID: 14935
+// Function ID: 112460
 // Name: getStageChannelAccessibilityProps
 // Dependencies: []
 
-// Module 14932 (getStageChannelAccessibilityProps)
+// Module 14935 (getStageChannelAccessibilityProps)
 function getStageChannelAccessibilityProps(arg0) {
   let channel;
   let channelName;
@@ -17,7 +17,7 @@ function getStageChannelAccessibilityProps(arg0) {
       let obj = { channelName, userCount, limit: channel.userLimit };
       formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[11]).t.rhh6Ev, obj);
     }
-    obj = { positionBottom: false, positionRight: false, accessibilityLabel: formatToPlainStringResult };
+    obj = { fontFamily: null, fontSize: null, accessibilityLabel: formatToPlainStringResult };
     return obj;
   }
   if (userCount > 0) {
@@ -38,7 +38,7 @@ let closure_12 = importDefault(dependencyMap[7]);
 ({ MAX_STAGE_VOICE_USER_LIMIT: closure_13, Permissions: closure_14 } = arg1(dependencyMap[8]));
 const jsx = arg1(dependencyMap[10]).jsx;
 const tmp2 = arg1(dependencyMap[8]);
-let obj = { voiceStates: { "Null": true, "Null": true } };
+let obj = { voiceStates: {} };
 obj = { marginVertical: arg1(dependencyMap[9]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[13]).radii.md };
 obj.container = obj;
 let closure_16 = arg1(dependencyMap[12]).createStyles(obj);

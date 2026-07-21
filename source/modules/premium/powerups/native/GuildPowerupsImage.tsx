@@ -1,17 +1,17 @@
 // Module ID: 11545
-// Function ID: 89878
+// Function ID: 89890
 // Name: GuildPowerupsImage
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 11545 (GuildPowerupsImage)
-import closure_3 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
 
-let closure_5 = __exportStarResult1.createStyles({ image: {} });
-const result = __exportStarResult1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+let closure_5 = result.createStyles({ image: { backgroundColor: "<string:1124139010>", borderRadius: "a862b6233b8adb8343f06086abc5314a", height: "cs.messages.a862b6233b8adb8343f06086abc5314a.compiled.messages", overflow: "jsona" } });
+result = result.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
   let imageUrl;

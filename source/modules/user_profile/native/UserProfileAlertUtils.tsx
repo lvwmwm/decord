@@ -1,5 +1,5 @@
 // Module ID: 11642
-// Function ID: 90344
+// Function ID: 90356
 // Name: confirmCancelFriendRequest
 // Dependencies: []
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection

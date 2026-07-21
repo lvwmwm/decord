@@ -1,5 +1,5 @@
 // Module ID: 8428
-// Function ID: 67129
+// Function ID: 67140
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
@@ -52,8 +52,8 @@ obj = { paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, padding
 obj.inputContainer = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.inputDescContainer = { flexDirection: "row", paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_12 };
-obj.inputDescText = { -9223372036854775808: null, 0: null };
-const obj2 = { <string:1632221346>: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", <string:2722977214>: "bun run write-native-version", borderRadius: importDefault(dependencyMap[11]).radii.round };
+obj.inputDescText = { "Bool(false)": "values", "Bool(false)": "Array" };
+const obj2 = { y: "<string:2552889346>", isArray: "<string:2938503170>", borderRadius: importDefault(dependencyMap[11]).radii.round };
 obj.tagRoleColor = obj2;
 const obj1 = { flexDirection: "row", paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_12 };
 obj.tagAvatar = { borderRadius: importDefault(dependencyMap[11]).radii.sm };
@@ -196,7 +196,7 @@ export default function AddMembersBody(pendingAdditions) {
   let tmp32 = null;
   if (null != inputDesc) {
     obj4 = { style: tmp3.inputDescContainer };
-    obj5 = { style: tmp3.inputDescText, children: inputDesc };
+    obj5 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp3.inputDescText, children: inputDesc };
     obj4.children = callback2(arg1(dependencyMap[24]).Text, obj5);
     tmp32 = callback2(closure_7, obj4);
   }
@@ -313,7 +313,7 @@ export default function AddMembersBody(pendingAdditions) {
   obj11.renderSectionHeader = function renderSectionHeader(section) {
     let tmp2 = null;
     if (section.section.data.length > 0) {
-      const obj = { style: callback4.sectionRowWrapper, children: tmp };
+      const obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: callback4.sectionRowWrapper, children: tmp };
       tmp2 = callback4(guild(tmp3[24]).Text, obj);
     }
     return tmp2;

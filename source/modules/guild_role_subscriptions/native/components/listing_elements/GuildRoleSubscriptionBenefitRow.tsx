@@ -1,10 +1,10 @@
-// Module ID: 14007
-// Function ID: 106527
+// Module ID: 14010
+// Function ID: 106559
 // Name: getEmojiId
 // Dependencies: []
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14007 (getEmojiId)
+// Module 14010 (getEmojiId)
 function getEmojiId(benefit) {
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;
@@ -44,7 +44,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, textContainer: { markAsSpoilerTitle: null, keyboardAppearance: null }, description: { marginTop: 2 }, channelTitle: {}, channelIcon: { <string:3164495994>: 24, <string:3295308737>: 24, <string:2657122919>: null } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, textContainer: { "Bool(true)": "values", "Bool(true)": "Array" }, description: { marginTop: 2 }, channelTitle: { "Null": 7, "Null": 370 }, channelIcon: { decryptEncodedCiphertext: "usePubSub", GUILD_SOUNDBOARD: "Array", deleteOne: "ERNhYf" } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionBenefitRow.tsx");
 
@@ -56,7 +56,7 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   const items = [closure_4];
   const items1 = [benefit.ref_id];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(benefit.ref_id), items1);
-  obj = {};
+  obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const intl = arg1(dependencyMap[11]).intl;
   obj.children = "[" + intl.string(arg1(dependencyMap[11]).t.bz1PZX) + "]";
   let tmp4 = callback(arg1(dependencyMap[8]).Text, obj);

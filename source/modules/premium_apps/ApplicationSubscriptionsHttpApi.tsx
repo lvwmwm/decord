@@ -1,5 +1,5 @@
 // Module ID: 10806
-// Function ID: 83902
+// Function ID: 83913
 // Name: _getApplicationSubscriptionGroupListingsForApplication
 // Dependencies: []
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
@@ -53,7 +53,7 @@ export const fetchApplication = function fetchApplication(applicationId, signal)
   const obj4 = signal(dependencyMap[2]);
   return value.then((body) => {
     let obj = callback(closure_2[3]);
-    obj = { marginBottom: "rgba(0, 0, 0, 0.5)", flexDirection: 24, alignItems: "flex", application: body.body };
+    obj = { 9223372036854775807: "rgba(0, 0, 0, 0.5)", 0: 24, -9223372036854775808: "flex", application: body.body };
     obj.dispatch(obj);
     return body.body;
   }).catch((arg0) => {

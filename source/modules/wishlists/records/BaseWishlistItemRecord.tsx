@@ -1,5 +1,5 @@
 // Module ID: 8671
-// Function ID: 68648
+// Function ID: 68659
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -52,7 +52,7 @@ const tmp3 = (importDefaultResult) => {
         let sku_name;
         let sku_product_line;
         sku = sku.sku;
-        let obj = { position: true, alignSelf: true, tintColor: true, width: true, height: true, paddingVertical: true };
+        let obj = { _monthsRegex: true, borderWidth: true, manualActivation: true, visibleNewlyAddedEmojis: true, connectionsChecksGroupTextNameContainer: true, NEW_EVENT_WINDOW_MILLISECONDS: true };
         ({ sku_id, sku_product_line, sku_name, is_owned, gifter_user_id } = sku);
         Object.setPrototypeOf(null);
         let tmp2 = BaseWishlistItemRecord;

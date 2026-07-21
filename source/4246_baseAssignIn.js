@@ -1,7 +1,7 @@
 // Module ID: 4246
-// Function ID: 37297
+// Function ID: 37305
 // Name: baseAssignIn
-// Dependencies: []
+// Dependencies: [0, 0]
 
 // Module 4246 (baseAssignIn)
 

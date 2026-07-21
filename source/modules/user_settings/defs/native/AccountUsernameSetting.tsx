@@ -1,9 +1,9 @@
-// Module ID: 13537
-// Function ID: 102691
+// Module ID: 13539
+// Function ID: 102713
 // Name: route
 // Dependencies: []
 
-// Module 13537 (route)
+// Module 13539 (route)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[4]).jsx;
@@ -30,7 +30,7 @@ obj = {
     }
     let tmp3 = null;
     if (null != first) {
-      obj = { children: first };
+      obj = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray", children: first };
       tmp3 = jsx(arg1(dependencyMap[8]).Text, obj);
     }
     return tmp3;

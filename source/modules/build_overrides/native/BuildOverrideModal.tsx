@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 97804
+// Module ID: 12756
+// Function ID: 97826
 // Name: BuildOverrideModal
 // Dependencies: []
 // Exports: default
 
-// Module 12754 (BuildOverrideModal)
+// Module 12756 (BuildOverrideModal)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,12 +12,12 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { __packager_asset: null, httpServerLocation: 94, scales: 133, hash: 90, name: 0, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.content = { borderRadius: null, borderColor: null, borderWidth: null };
-const obj1 = { rawDataLength: "/assets/design/components/Icon/native/redesign/generated/images", target_channel_id: 24, xOffset: 24, yOffset: null, shadowColorIos: "2deb3f64961131491b7db6bb10903f69", shadowOpacity: "DoorExitIcon", shadowRadius: "png", borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+obj.content = { -162440032: true, 1373004206: true, 1650565510: true };
+const obj1 = { "Null": "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0443 \u043D\u0430\u0437\u0430\u0434", "Null": "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u044B \u043D\u0430\u0437\u0430\u0434", alignItems: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434 \u043D\u0430\u0437\u0430\u0434", paddingLeft: "\u0447\u0435\u0440\u0435\u0437 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0443", position: "\u0447\u0435\u0440\u0435\u0437 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u044B", right: "\u0447\u0435\u0440\u0435\u0437 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434", bottom: "gr", borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.imageWrapper = obj1;
-obj.text = { "Bool(false)": null, "Bool(false)": "absolute" };
+obj.text = { "Bool(false)": null, "Bool(false)": null };
 obj.buildOverrideName = { marginTop: 8 };
 obj.buildOverrideExpiration = { lineHeight: 24 };
 obj.buildOverrideInvalid = { marginTop: 8 };
@@ -64,7 +64,7 @@ export default function BuildOverrideModal(overrideUrl) {
   }
   const tmp2 = importDefault(dependencyMap[6])();
   const durationResult = obj2.duration(obj3.diff(expiresAt));
-  obj = { <string:2958189153>: null, <string:1661207664>: null, style: tmp.container };
+  obj = { paddingVertical: null, paddingHorizontal: null, style: tmp.container };
   obj = { style: tmp.content };
   obj1 = { style: tmp.imageWrapper };
   obj2 = { source: tmp3Result };

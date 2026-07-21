@@ -1,5 +1,5 @@
 // Module ID: 9372
-// Function ID: 73098
+// Function ID: 73109
 // Name: getPremiumUpsellType
 // Dependencies: []
 // Exports: default
@@ -144,12 +144,12 @@ let closure_14 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj["shadowColor"] = arg0 ? unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2 : unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2;
   obj["shadowOpacity"] = 0.6;
   obj.containerShadow = obj;
-  const obj1 = { bhk: false, bic: "internal", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj1 = { "Null": 0, "Null": -1048576, marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
   obj.nitroWheel = obj1;
-  const obj2 = { "Null": "png", "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "_gameProfileResults", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj2 = { 1364605794: "24c4788690396bae9cc4c1af395a6a87", 1398890993: "BicycleIcon", 306464658: "png", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
   obj.labelContainer = obj2;
   obj.text = {};
-  obj.nitroWheelButton = {};
+  obj.nitroWheelButton = { variant: 24, color: 24, accessibilityRole: null };
   obj.nitroWheelDisabled = { opacity: 0.6 };
   obj.button = { alignSelf: "center", borderRadius: importDefault(dependencyMap[10]).radii.round };
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);

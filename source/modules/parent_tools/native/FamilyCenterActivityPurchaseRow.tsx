@@ -1,16 +1,16 @@
-// Module ID: 13681
-// Function ID: 103559
+// Module ID: 13683
+// Function ID: 103581
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [2382364725, 2030043143, 872415285, 3439329301, 1761607707, 2801795125, 2952790042]
+// Dependencies: []
 // Exports: default
 
-// Module 13681 (FamilyCenterActivityPurchaseRow)
+// Module 13683 (FamilyCenterActivityPurchaseRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { pointerEvents: 1019560481, collapsable: 543817730, channels: 1091633153, labels: 151645, distance: 6258, parent: 6144, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { "Null": "<string:208749762>", "Null": "<string:1107296256>", "Null": "text-default", "Null": "text-sm/medium", "Null": "<string:3877871443>", "Null": "<string:1361289113>", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj.textContainer = {};
 let closure_6 = obj.createStyles(obj);
@@ -67,9 +67,9 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.subscriptionPlanId = subscriptionPlanId;
     const items = [tmp8(importDefault(dependencyMap[8]), obj), ];
     const obj1 = { style: tmp.textContainer };
-    const obj2 = { mode: 0.706, edges: 0.000000000000000018217984681393575, "Bool(false)": -0.000030517578125, "Bool(false)": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: combined };
+    const obj2 = { "Null": 0.706, "Null": 0.000000000000000018217984681379375, "Null": -0.000030517578125, "Null": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: combined };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj2), ];
-    const obj3 = { children: formatPriceResult };
+    const obj3 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44", children: formatPriceResult };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);

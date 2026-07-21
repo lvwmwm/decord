@@ -1,5 +1,5 @@
 // Module ID: 10628
-// Function ID: 82930
+// Function ID: 82941
 // Name: RNCPushNotificationIOS
 // Dependencies: [2473901162, 3751920, 2031616, 1769472]
 
@@ -225,7 +225,7 @@ const tmp5 = () => {
         if (alert) {
           let obj = { alert: alert.alert, badge: alert.badge, sound: alert.sound };
         } else {
-          obj = {};
+          obj = { UNDEFINED: "Small", BEGAN: "sm", START: "Placeholder" };
         }
         return store.requestPermissions(obj);
       }

@@ -1,12 +1,12 @@
-// Module ID: 14684
-// Function ID: 110721
+// Module ID: 14687
+// Function ID: 110755
 // Dependencies: []
 
-// Module 14684
+// Module 14687
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).createStyles({ wrapper: { alignSelf: 16, minHeight: 16, flexDirection: "center" } });
+let closure_6 = arg1(dependencyMap[2]).createStyles({ wrapper: {} });
 const obj2 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   let gesture;

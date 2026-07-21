@@ -1,9 +1,9 @@
-// Module ID: 14120
-// Function ID: 107190
+// Module ID: 14123
+// Function ID: 107222
 // Name: slider
 // Dependencies: []
 
-// Module 14120 (slider)
+// Module 14123 (slider)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;
@@ -20,7 +20,7 @@ obj = {
   },
   useProps: function useSaturationSettingProps() {
     return React.useMemo(() => {
-      const obj = { Array: true, memo: true, rejectWithError: true, fileFinishedImporting: true, body: true, value: saturation.saturation, onSlidingComplete: callback(closure_1[4]).setSaturation, startIcon: callback2(callback(closure_1[5]).CircleMinusIcon, {}), endIcon: callback2(callback(closure_1[6]).CirclePlusIcon, {}) };
+      const obj = { subLabel: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000002635550177452878, value: saturation.saturation, onValueChange: 292062.0972035229, disabled: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000382680721467197, icon: 258069997799067900000000000000000000000000000000000000000000000000000000000000000000, onSlidingComplete: callback(closure_1[4]).setSaturation, startIcon: callback2(callback(closure_1[5]).CircleMinusIcon, {}), endIcon: callback2(callback(closure_1[6]).CirclePlusIcon, {}) };
       return obj;
     }, []);
   }

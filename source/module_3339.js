@@ -1,5 +1,5 @@
 // Module ID: 3339
-// Function ID: 26155
+// Function ID: 26160
 // Dependencies: []
 
 // Module 3339
@@ -10,9 +10,9 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: {}, defaultWidth: "medium" });
-obj.dateTime = obj.default({ formats: { "Null": 50260736, "Null": 104940544, "Null": 104857602, "Null": 35323906 }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": "values", "Bool(false)": "round" }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, defaultWidth: "medium" });
+obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

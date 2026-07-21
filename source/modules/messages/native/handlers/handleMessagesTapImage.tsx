@@ -1,5 +1,5 @@
 // Module ID: 9958
-// Function ID: 76918
+// Function ID: 76929
 // Name: handleMessagesTapImage
 // Dependencies: []
 // Exports: handleMessagesTapImage

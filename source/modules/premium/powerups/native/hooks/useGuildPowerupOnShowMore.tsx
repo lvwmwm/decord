@@ -1,5 +1,5 @@
 // Module ID: 11589
-// Function ID: 90095
+// Function ID: 90107
 // Name: useGuildPowerupOnShowMore
 // Dependencies: []
 // Exports: default

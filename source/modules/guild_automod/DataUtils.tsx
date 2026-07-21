@@ -1,5 +1,5 @@
 // Module ID: 11002
-// Function ID: 85607
+// Function ID: 85618
 // Name: _transformMetadataToCamelCase
 // Dependencies: []
 

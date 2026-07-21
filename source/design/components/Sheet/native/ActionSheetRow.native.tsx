@@ -1,5 +1,5 @@
 // Module ID: 5500
-// Function ID: 46875
+// Function ID: 46883
 // Name: ActionSheetRowIcon
 // Dependencies: []
 // Exports: ActionSheetSwitchRow
@@ -11,7 +11,7 @@ class ActionSheetRow {
     if (str === undefined) {
       str = "default";
     }
-    obj = { id: null, type: 4, name: 4, hasWishlist: "rgba(0, 0, 0, 0.75)" };
+    obj = { TIMESTAMP_HOUR_CYCLE: "ERROR", consentRequired: "ERROR", QUEST_VIDEO_PROGRESS: "NOT_RESPONDER", slowClickIgnoreSelectors: "NOT_RESPONDER" };
     ({ arrow, icon } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     obj = {};

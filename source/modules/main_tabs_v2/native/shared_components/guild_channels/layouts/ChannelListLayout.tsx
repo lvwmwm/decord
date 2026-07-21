@@ -1,5 +1,5 @@
 // Module ID: 10248
-// Function ID: 79213
+// Function ID: 79224
 // Name: getLayoutStyles
 // Dependencies: []
 // Exports: getScaledChannelRowHeight, isLayoutCozy, makeSizeStyle, useMessagesTabLayout

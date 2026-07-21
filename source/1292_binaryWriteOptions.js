@@ -1,5 +1,5 @@
 // Module ID: 1292
-// Function ID: 15110
+// Function ID: 15115
 // Name: binaryWriteOptions
 // Dependencies: []
 // Exports: binaryWriteOptions

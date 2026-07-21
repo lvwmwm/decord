@@ -1,5 +1,5 @@
 // Module ID: 9333
-// Function ID: 72927
+// Function ID: 72938
 // Name: EducationCoachmarkImg
 // Dependencies: []
 // Exports: default
@@ -20,7 +20,7 @@ const jsx = arg1(dependencyMap[5]).jsx;
 let closure_9 = arg1(dependencyMap[6]).DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE;
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { channelId: "<string:140661248>", messageId: "<string:1091687032>", emoji: "/assets/.cache/intl/aW50bA==", reactions: "<string:4220666625>", isSelectedBurst: "<string:4220583937>", flexDirection: "<string:3552378881>", alignItems: "<string:1279393793>", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.upsellImageContainer = obj;
 let closure_10 = obj.createStyles(obj);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/reactions/native/useBurstToggleCoachmark.tsx");

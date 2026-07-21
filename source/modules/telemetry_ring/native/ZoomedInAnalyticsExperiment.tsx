@@ -1,10 +1,10 @@
-// Module ID: 12995
-// Function ID: 98874
+// Module ID: 12997
+// Function ID: 98896
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isZoomedExperimentEnabled
 
-// Module 12995 (apexExperiment)
+// Module 12997 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

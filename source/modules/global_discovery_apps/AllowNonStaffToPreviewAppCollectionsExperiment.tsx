@@ -1,11 +1,11 @@
 // Module ID: 11226
-// Function ID: 87382
+// Function ID: 87394
 // Name: apexExperiment
 // Dependencies: []
 
 // Module 11226 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { margin: "/assets/modules/premium/native/images/perks", paddingHorizontal: 300.5, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { bottom: null, name: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/global_discovery_apps/AllowNonStaffToPreviewAppCollectionsExperiment.tsx");

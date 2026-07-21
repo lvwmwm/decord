@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 108946
+// Module ID: 14461
+// Function ID: 108978
 // Name: SettingSearchBar
 // Dependencies: []
 // Exports: default
 
-// Module 14458 (SettingSearchBar)
+// Module 14461 (SettingSearchBar)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -19,7 +19,7 @@ const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/na
 export default function SettingSearchBar() {
   const tmp = callback();
   const callback = React.useCallback(() => {
-    store.setState({ "Null": "resizeMode", "Null": "formatToPlainString", "Null": "construct" });
+    store.setState({ presentation: "resizeMode", animation: "formatToPlainString", animation: "construct" });
     const result = callback(closure_1[6]).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {

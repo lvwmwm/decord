@@ -1,5 +1,5 @@
 // Module ID: 10119
-// Function ID: 78325
+// Function ID: 78336
 // Name: useSafetyToolsButtonTooltipForChannel
 // Dependencies: []
 // Exports: useSafetyToolsButtonTooltipForChannel

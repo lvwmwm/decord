@@ -1,5 +1,5 @@
 // Module ID: 9643
-// Function ID: 75082
+// Function ID: 75093
 // Name: UploadPreviewActionSheet
 // Dependencies: []
 // Exports: default
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = { contentContainer: { padding: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.md, width: "100%" };
 obj.imageWrap = obj;
-const obj1 = { sy: "flex", shapes: "wrap", borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
+const obj1 = { <string:4223779917>: true, <string:2053078631>: true, borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
 obj.imageContainer = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -170,7 +170,7 @@ export default function UploadPreviewActionSheet(onAdd) {
     if (isVideo) {
       const uri = item.uri;
       if (uri.startsWith("file://")) {
-        const obj5 = { -1722719574: "Placeholder", -1433578068: "Click", -1631209298: "%Uint8ClampedArrayPrototype%", -152852658: "_cachedAllEvents", -1314225837: "EvalError" };
+        const obj5 = {};
         ({ width: obj11.width, height: obj11.height } = size);
         obj5.style = {};
         obj7 = { uri: item.uri };
@@ -198,7 +198,7 @@ export default function UploadPreviewActionSheet(onAdd) {
           }
           items5[2] = tmp33Result;
           if (null != onRemove) {
-            const obj9 = { icon: spoiler(arg1(dependencyMap[39]).TrashIcon, {}) };
+            const obj9 = { icon: spoiler(arg1(dependencyMap[39]).TrashIcon, { accessibilityRole: null, "": null }) };
             const intl6 = arg1(dependencyMap[32]).intl;
             obj9.text = intl6.string(arg1(dependencyMap[32]).t.40jBO/);
             obj9.onPress = callback;
@@ -207,7 +207,7 @@ export default function UploadPreviewActionSheet(onAdd) {
           } else {
             tmp54 = null;
             if (null != onAdd) {
-              const obj10 = { icon: spoiler(arg1(dependencyMap[30]).ImageFileIcon, {}) };
+              const obj10 = { icon: spoiler(arg1(dependencyMap[30]).ImageFileIcon, { accessibilityRole: null, "": null }) };
               const intl5 = arg1(dependencyMap[32]).intl;
               obj10.text = intl5.string(arg1(dependencyMap[32]).t.s7oPyG);
               obj10.onPress = callback1;

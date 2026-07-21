@@ -1,5 +1,5 @@
 // Module ID: 11114
-// Function ID: 86519
+// Function ID: 86531
 // Name: set
 // Dependencies: []
 // Exports: useForumChannelStore, useForumChannelStoreApi

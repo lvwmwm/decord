@@ -1,9 +1,9 @@
-// Module ID: 7146
-// Function ID: 57619
+// Module ID: 7147
+// Function ID: 57631
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7146 (_callSuper)
+// Module 7147 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -37,25 +37,25 @@ let tmp2 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, PremiumTabPopoverCTAButton$Type);
       items = [, , , , ];
-      items[0] = { 9223372036854775807: "YELLOW_NEW_72", 0: 1, 9223372036854775807: "light_url", no: "scalar" };
+      items[0] = { 1347510942: "YELLOW_NEW_72", 1678385745: 1, 1364379111: "light_url", 140698458: "scalar" };
       items[1] = {
         T() {
-              const items = [false, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
+              const items = [6965542329722403000000000000000000000000000000000000000000000000000000000000000000000000000000, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
               return items;
             }
       };
       items[2] = {};
-      obj = { "Null": 0.975, "Null": "PRIMARY_230", "Null": 0.975 };
+      obj = { 9223372036854775807: 190359829595963920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000015072128512635997, 0: 0.95 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj = { "Null": 2417, "Null": -1854455552, "Null": 24182788 };
+      obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null };
       obj.T = function T() {
         return callback(closure_1[8]).UInt64Value;
       };
       items[4] = obj;
-      items1 = [true];
+      items1 = [22205581309057230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
       items1[1] = items;
       return closure_9(this, PremiumTabPopoverCTAButton$Type, items1);
     }
@@ -65,7 +65,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Null": 24, "Null": 8, "Null": 3 };
+      let obj = { listenersCollapsed: "r", SETTINGS_VOICE_AND_VIDEO: "LAUNCH_PAD_END_TRANSLATION_THRESHOLD", getGlobalDismissTimestamp: "Array" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTabPopoverCTAButton$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -217,9 +217,9 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, PremiumTabPopover$Type);
       items = [, , , , , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
-      obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006403427937624729, "Null": 9126805520.75, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001427678768759017 };
+      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
+      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
+      obj = { 9223372036854775807: "onPressBack", 9223372036854775807: "pow", 0: "MiniaturesSpotIllustration" };
       obj.T = function T() {
         return callback(closure_1[10]).ThemeAwareAsset;
       };
@@ -229,8 +229,8 @@ let tmp4 = (MessageType) => {
               return closure_8;
             }
       };
-      items[4] = { 9223372036854775807: null, 0: "bd0899bbe9025729a8e812d462104779", 9223372036854775807: "img_bundle_subheader_mobile", no: "png" };
-      obj = { "Null": "#E6E6E7", "Null": "OPACITY_BLUE_52", "Null": 0.5215686274509804 };
+      items[4] = { 1347510942: null, 1678385745: "bd0899bbe9025729a8e812d462104779", 1364379111: "img_bundle_subheader_mobile", 140698458: "png" };
+      obj = { 9223372036854775807: "#E6E6E7", 9223372036854775807: "OPACITY_BLUE_52", 0: 0.5215686274509804 };
       obj.T = function T() {
         return callback(closure_1[11]).HelpArticle;
       };
@@ -245,7 +245,7 @@ let tmp4 = (MessageType) => {
               return callback(closure_1[7]).LocalizedString;
             }
       };
-      items1 = ["<string:4072184695>"];
+      items1 = [-346357756];
       items1[1] = items;
       return closure_9(this, PremiumTabPopover$Type, items1);
     }
@@ -255,7 +255,7 @@ let tmp4 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+      let obj = { "Bool(true)": "fr", "Bool(false)": "french", "Bool(false)": true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTabPopover$Type(closure_1[9]).MESSAGE_TYPE, obj);

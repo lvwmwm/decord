@@ -1,5 +1,5 @@
 // Module ID: 10351
-// Function ID: 79869
+// Function ID: 79880
 // Name: ChatInputReplyBarNoAuthor
 // Dependencies: []
 
@@ -19,7 +19,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     obj.children = intl3.string(arg1(dependencyMap[12]).t.5IEsGx);
     const items = [callback(arg1(dependencyMap[11]).Text, obj), ];
     obj1 = { style: tmp.floatingRightActions };
-    obj2 = { 664304466: "PRIMARY_460", 1507090923: 1 };
+    obj2 = { "Bool(false)": "PRIMARY_460", "Bool(false)": 1 };
     const intl4 = arg1(dependencyMap[12]).intl;
     obj2.accessibilityLabel = intl4.string(arg1(dependencyMap[12]).t.jSnJGT);
     let tmp20;
@@ -39,7 +39,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     const tmp18 = closure_5;
     const tmp19 = callback;
   } else {
-    const obj4 = { 664304466: "PRIMARY_460", 1507090923: 1 };
+    const obj4 = { "Bool(false)": "PRIMARY_460", "Bool(false)": 1 };
     const intl = arg1(dependencyMap[12]).intl;
     obj4.accessibilityLabel = intl.string(arg1(dependencyMap[12]).t.jSnJGT);
     obj4.onPress = onCancelReplying;
@@ -48,7 +48,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     const obj6 = { source: importDefault(dependencyMap[14]), size: arg1(dependencyMap[6]).Icon.Sizes.SMALL_20 };
     obj5.children = callback(arg1(dependencyMap[6]).Icon, obj6);
     const items1 = [callback(closure_5, obj5), ];
-    const obj7 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 242, style: tmp.contextButtonText };
+    const obj7 = { "Null": true, "Null": 15.1, "Null": 242, style: tmp.contextButtonText };
     const intl2 = arg1(dependencyMap[12]).intl;
     obj7.children = intl2.string(arg1(dependencyMap[12]).t.5IEsGx);
     items1[1] = callback(arg1(dependencyMap[11]).Text, obj7);
@@ -67,7 +67,7 @@ class ChatInputReplyBar {
     defineProperty = undefined;
     StyleSheet = undefined;
     View = undefined;
-    f79875 = undefined;
+    f79886 = undefined;
     closure_7 = undefined;
     AnalyticEvents = undefined;
     Routes = undefined;
@@ -122,14 +122,14 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = arg1(dependencyMap[9]);
     tmp = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp2 = f79878();
+    tmp2 = f79889();
     obj2 = arg1(dependencyMap[10]);
     token = obj2.useToken(closure_1(dependencyMap[8]).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
     obj3 = arg1(dependencyMap[10]);
     bound = require("module_0");
     obj4 = arg1(dependencyMap[15]);
     items = [];
-    items[0] = f79875;
+    items[0] = f79886;
     stateFromStores = obj4.useStateFromStores(items, () => roleStyle.roleStyle);
     closure_1 = stateFromStores;
     obj5 = arg1(dependencyMap[16]);
@@ -147,7 +147,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f79875 = defineProperty.useMemo(() => {
+    f79886 = defineProperty.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
@@ -484,21 +484,21 @@ let closure_14 = arg1(dependencyMap[7]).createStyles((arg0) => {
 const obj3 = arg1(dependencyMap[7]);
 let closure_15 = arg1(dependencyMap[7]).createStyles(() => {
   let obj = {};
-  obj = { "Bool(true)": 16777923, "Bool(true)": 50, "Bool(true)": 1119879168, paddingHorizontal: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
+  obj = { display: "body_localized", alignItems: "message", flexDirection: "p\u0159ibli\u017En\u011B {{count}} hodin", paddingHorizontal: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
   obj.contextBarRow = obj;
-  obj.floatingReplyTextWrapper = {};
+  obj.floatingReplyTextWrapper = { "Bool(false)": null, "Bool(false)": null };
   obj.contextCancelIconWrapper = {};
-  obj.contextButtonText = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  obj.contextButtonText = { <string:2277974433>: null, <string:4153897662>: null, <string:1378584774>: null, <string:2126418462>: null, <string:2428301906>: null, <string:3169997796>: null };
   obj = { borderBottomWidth: closure_4.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
   obj.floatingContextBar = obj;
-  obj.replyMentionButton = { RotateOutDownLeft: "png", self_video: true, self_stream: "/assets/images/channel_following/light", WIN32_DEPRECATED_MESSAGE: 280 };
+  obj.replyMentionButton = { "Null": "png", "Null": true, "Null": "/assets/images/channel_following/light", "Null": 280 };
   obj.replyMentionButtonActive = { color: importDefault(dependencyMap[8]).colors.CONTROL_BRAND_FOREGROUND };
   const obj1 = { color: importDefault(dependencyMap[8]).colors.CONTROL_BRAND_FOREGROUND };
   obj.replyMentionIcon = { width: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(dependencyMap[8]).colors.TEXT_MUTED, marginRight: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
   const obj2 = { width: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, height: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE, tintColor: importDefault(dependencyMap[8]).colors.TEXT_MUTED, marginRight: importDefault(dependencyMap[8]).modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_MARGIN_RIGHT };
   obj.replyMentionIconActive = { tintColor: importDefault(dependencyMap[8]).colors.CONTROL_BRAND_FOREGROUND };
-  obj.floatingRightActions = { "Bool(false)": 16777216, "Bool(false)": 38162242, "Bool(false)": 43753984, "Bool(false)": -1210756864, "Bool(false)": 151208209, "Bool(false)": 410124290 };
-  obj.floatingMentionGroup = { <string:3461472865>: false, <string:1447977218>: false, <string:1640807382>: false };
+  obj.floatingRightActions = { opacity: 16777216, body: 38172226, borderRadius: 43761152, accessible: -747089664, mn: 142950673, ks: 410124290 };
+  obj.floatingMentionGroup = { "Null": false, "Null": false, "Bool(false)": false };
   const obj3 = { tintColor: importDefault(dependencyMap[8]).colors.CONTROL_BRAND_FOREGROUND };
   obj.floatingDivider = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
   const obj4 = { width: closure_4.hairlineWidth, alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };

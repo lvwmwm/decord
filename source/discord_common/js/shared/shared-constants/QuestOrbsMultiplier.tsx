@@ -1,7 +1,7 @@
 // Module ID: 10456
-// Function ID: 80925
+// Function ID: 80936
 // Name: QuestOrbsMultiplier
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10456 (QuestOrbsMultiplier)
 const _module = require(dependencyMap[0]);

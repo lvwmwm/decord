@@ -1,5 +1,5 @@
 // Module ID: 5477
-// Function ID: 46747
+// Function ID: 46755
 // Name: ConnectionCardView
 // Dependencies: []
 // Exports: default
@@ -15,13 +15,13 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFA
 obj.card = obj;
 const tmp4 = arg1(dependencyMap[2]);
 obj.leftContent = { marginRight: importDefault(dependencyMap[4]).space.PX_12 };
-const obj2 = { 0: "boolean", 9223372036854775807: "string", -9223372036854775808: "boolean", 0: "artboard", 9223372036854775807: "artboard", marginRight: importDefault(dependencyMap[4]).space.PX_12 };
+const obj2 = { <string:1549954009>: false, <string:67064148>: false, <string:2018617953>: false, <string:2856019144>: false, <string:1399038036>: false, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
 obj.icon = obj2;
 obj.textContent = { flex: 1 };
-const obj1 = { marginRight: importDefault(dependencyMap[4]).space.PX_12 };
-obj.connectedStatus = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj.connectedStatus = obj3;
 let closure_6 = obj.createStyles(obj);
-const obj3 = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { marginRight: importDefault(dependencyMap[4]).space.PX_12 };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_onboarding/native/ConnectionCardView.tsx");
 
 export default function ConnectionCardView(description) {
@@ -39,14 +39,15 @@ export default function ConnectionCardView(description) {
   obj = { style: tmp.icon, children: icon };
   const items = [callback(closure_2, obj), ];
   const obj1 = { style: tmp.textContent };
-  const items1 = [callback(arg1(dependencyMap[5]).Text, { children: displayName }), ];
+  const obj2 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, children: displayName };
+  const items1 = [callback(arg1(dependencyMap[5]).Text, obj2), ];
   let tmp4 = null != description;
   if (tmp4) {
     tmp4 = description.length > 0;
   }
   if (tmp4) {
-    const obj2 = { children: description };
-    tmp4 = callback(arg1(dependencyMap[5]).Text, obj2);
+    const obj3 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, children: description };
+    tmp4 = callback(arg1(dependencyMap[5]).Text, obj3);
   }
   items1[1] = tmp4;
   obj1.children = items1;
@@ -54,22 +55,22 @@ export default function ConnectionCardView(description) {
   obj.children = items;
   const items2 = [callback2(closure_2, obj), ];
   if (isLoading) {
-    const obj3 = { size: "small" };
-    let tmp11 = callback(closure_3, obj3);
+    const obj4 = { size: "small" };
+    let tmp11 = callback(closure_3, obj4);
   } else if (isConnected) {
-    const obj4 = { style: tmp.connectedStatus };
-    const obj5 = {};
+    const obj5 = { style: tmp.connectedStatus };
+    const obj6 = { hasMaxConnections: "center", isBoostOnlySubscription: "center" };
     const intl2 = arg1(dependencyMap[6]).intl;
-    obj5.children = intl2.string(arg1(dependencyMap[6]).t.LV+CXH);
-    const items3 = [callback(arg1(dependencyMap[5]).Text, obj5), callback(arg1(dependencyMap[7]).CircleCheckIcon, {})];
-    obj4.children = items3;
-    tmp11 = callback2(closure_2, obj4);
+    obj6.children = intl2.string(arg1(dependencyMap[6]).t.LV+CXH);
+    const items3 = [callback(arg1(dependencyMap[5]).Text, obj6), callback(arg1(dependencyMap[7]).CircleCheckIcon, {})];
+    obj5.children = items3;
+    tmp11 = callback2(closure_2, obj5);
   } else {
-    const obj6 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696, onPress: onConnect };
+    const obj7 = { onPress: onConnect };
     const intl = arg1(dependencyMap[6]).intl;
-    obj6.text = intl.string(arg1(dependencyMap[6]).t.S0W8Z5);
-    obj6.disabled = !canConnect;
-    tmp11 = callback(arg1(dependencyMap[8]).Button, obj6);
+    obj7.text = intl.string(arg1(dependencyMap[6]).t.S0W8Z5);
+    obj7.disabled = !canConnect;
+    tmp11 = callback(arg1(dependencyMap[8]).Button, obj7);
   }
   items2[1] = tmp11;
   obj.children = items2;

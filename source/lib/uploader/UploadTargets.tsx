@@ -1,10 +1,10 @@
-// Module ID: 4704
-// Function ID: 40913
+// Module ID: 4703
+// Function ID: 40920
 // Name: MessageAttachmentUploadTarget
 // Dependencies: []
 // Exports: getUploadTarget
 
-// Module 4704 (MessageAttachmentUploadTarget)
+// Module 4703 (MessageAttachmentUploadTarget)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

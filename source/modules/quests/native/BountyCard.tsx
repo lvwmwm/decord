@@ -1,9 +1,9 @@
-// Module ID: 13842
-// Function ID: 104632
+// Module ID: 13845
+// Function ID: 104664
 // Name: CARD_WIDTH
 // Dependencies: []
 
-// Module 13842 (CARD_WIDTH)
+// Module 13845 (CARD_WIDTH)
 let num = 0;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -17,25 +17,25 @@ let closure_12 = arg1(dependencyMap[6]).createStyles(() => {
   let obj = {};
   obj = { gap: importDefault(dependencyMap[7]).space.PX_12 };
   obj.tile = obj;
-  obj.card = {};
+  obj.card = { no: "isArray", body: "defineProperty", enabled: "start", accessibilityRole: "r" };
   obj = {};
   const merged = Object.assign(closure_6.absoluteFillObject);
   obj.cardImage = obj;
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj.previewVideo = {};
   obj.badge = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_12, left: importDefault(dependencyMap[7]).space.PX_12, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, paddingVertical: importDefault(dependencyMap[7]).space.PX_4, color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+  const obj3 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4 };
+  obj.badgeContent = obj3;
   const obj1 = {};
   const obj2 = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_12, left: importDefault(dependencyMap[7]).space.PX_12, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, paddingVertical: importDefault(dependencyMap[7]).space.PX_4, color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  obj.badgeContent = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
   obj.badgeText = { textTransform: "uppercase", color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
   const obj4 = { textTransform: "uppercase", color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
   obj.startButton = { position: "absolute", bottom: importDefault(dependencyMap[7]).space.PX_8, left: importDefault(dependencyMap[7]).space.PX_8, right: importDefault(dependencyMap[7]).space.PX_8 };
-  obj.cardFooter = { "Null": "row", "Null": "center", "Null": "space-between" };
-  const obj6 = { x: null, "Null": null, "Null": null, gap: importDefault(dependencyMap[7]).space.PX_4 };
-  obj.advertiserRow = obj6;
+  obj.cardFooter = { "Bool(true)": "row", "Bool(true)": "center", FadeInLeft: "space-between" };
+  const obj5 = { position: "absolute", bottom: importDefault(dependencyMap[7]).space.PX_8, left: importDefault(dependencyMap[7]).space.PX_8, right: importDefault(dependencyMap[7]).space.PX_8 };
+  obj.advertiserRow = { gap: importDefault(dependencyMap[7]).space.PX_4 };
   obj.advertiserName = { flexShrink: 1 };
-  obj.advertiserIcon = { <string:1415356514>: "e2f2314b317d679f7a97eb76ebf6b124", <string:3609742505>: "UnsendIcon" };
+  obj.advertiserIcon = { revealed: 1665208787, flexDirection: 1912603216 };
   return obj;
 });
 const obj2 = arg1(dependencyMap[6]);
@@ -80,12 +80,12 @@ const memoResult = importAllResult.memo((bounty) => {
   let scaledImageUrl = null;
   if (null != bounty.imagePreview) {
     let obj1 = arg1(dependencyMap[10]);
-    obj = { flex: true, flexDirection: true, alignItems: true, assetUrl: bounty.imagePreview };
+    obj = { flexDirection: true, alignItems: true, position: true, assetUrl: bounty.imagePreview };
     scaledImageUrl = obj1.getScaledImageUrl(obj);
   }
   if (tmp7) {
     let obj3 = arg1(dependencyMap[10]);
-    obj = { flex: true, flexDirection: true, alignItems: true, assetUrl: videoPreview };
+    obj = { flexDirection: true, alignItems: true, position: true, assetUrl: videoPreview };
     scaledImageUrl = obj3.getScaledFirstFrameImageUrl(obj);
   }
   [tmp11, closure_4] = callback(React.useState(false), 2);
@@ -228,7 +228,7 @@ const memoResult = importAllResult.memo((bounty) => {
   }, items5);
   const obj2 = { style: tmp.card, radius: token, onPress: callback, android_ripple: { color: "transparent" } };
   if (tmp40Result) {
-    obj3 = { "Bool(true)": "45%", "Bool(true)": "center", "Bool(true)": "center", "Bool(true)": "absolute", "Bool(true)": 124, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "center", "Bool(true)": "flex-start", "Bool(true)": "absolute", onReadyForDisplay: callback2 };
+    obj3 = { onReadyForDisplay: callback2 };
     const obj4 = { uri: videoPreview };
     obj3.source = obj4;
     obj3.style = tmp.previewVideo;
@@ -290,7 +290,7 @@ const memoResult = importAllResult.memo((bounty) => {
   const items9 = [tmp36(arg1(dependencyMap[12]).Card, obj2), ];
   const obj13 = { style: tmp.cardFooter };
   const obj14 = { style: tmp.advertiserRow };
-  const obj15 = { -9223372036854775808: true, 0: true, 0: true, style: tmp.advertiserName };
+  const obj15 = { <string:1643205302>: true, <string:1415816450>: true, <string:4283523744>: true, style: tmp.advertiserName };
   const advertiserName = bounty.advertiserName;
   let str2 = "";
   if (null != advertiserName) {
@@ -302,7 +302,7 @@ const memoResult = importAllResult.memo((bounty) => {
   items10[1] = callback2(arg1(dependencyMap[19]).CircleCheckIcon, obj16);
   obj14.children = items10;
   const items11 = [tmp36(tmp18, obj14), ];
-  const obj17 = {};
+  const obj17 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>" };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj17.children = intl3.string(arg1(dependencyMap[17]).t.o6FLcF);
   items11[1] = callback2(arg1(dependencyMap[16]).Text, obj17);

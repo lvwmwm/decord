@@ -1,10 +1,10 @@
-// Module ID: 14170
-// Function ID: 107288
+// Module ID: 14173
+// Function ID: 107320
 // Name: trackSettingsUpdated
 // Dependencies: []
 // Exports: default, setLowQualityImageMode, setStickerAutocomplete
 
-// Module 14170 (trackSettingsUpdated)
+// Module 14173 (trackSettingsUpdated)
 function trackSettingsUpdated(data_saving_mode, videoUploadQuality, viewImageDescriptions, lowQualityImageMode, dataSavingMode) {
   let obj = importDefault(dependencyMap[10]);
   obj = { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: data_saving_mode };
@@ -37,7 +37,7 @@ const VideoQualitySettings = arg1(dependencyMap[5]).VideoQualitySettings;
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { flex: { flex: 1 }, nitroUpsell: {} };
+obj = { flex: { flex: 1 }, nitroUpsell: { "Null": 7, "Null": 370 } };
 obj = { tintColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
 obj.nitroIcon = obj;
 let closure_15 = obj.createStyles(obj);
@@ -153,7 +153,7 @@ export default function UserSettingsText() {
     let obj = { style: tmp2.nitroUpsell };
     obj = { source: callback(videoUploadQuality[19]), size: tmp2(videoUploadQuality[18]).Icon.Sizes.SMALL, style: tmp2.nitroIcon };
     const items = [callback2(tmp2(videoUploadQuality[18]).Icon, obj), ];
-    obj = { style: { marginLeft: 4 } };
+    obj = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", style: { marginLeft: 4 } };
     const intl = tmp2(videoUploadQuality[21]).intl;
     obj.children = intl.format(tmp2(videoUploadQuality[21]).t.uW1zul, {
       onClick() {

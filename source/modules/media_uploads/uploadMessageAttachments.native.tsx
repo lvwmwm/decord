@@ -1,10 +1,14 @@
-// Module ID: 7073
-// Function ID: 56561
+// Module ID: 7074
+// Function ID: 56573
 // Name: _uploadMessageAttachments
-// Dependencies: []
+// Dependencies: [653, 4320, 2, 57, 5, 1348]
 // Exports: uploadMessageAttachments
 
-// Module 7073 (_uploadMessageAttachments)
+// Module 7074 (_uploadMessageAttachments)
+import ME from "ME";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 async function _uploadMessageAttachments(arg0, arg1) {
   const fn = function*(shouldUploadFailureSendNotification) {
     let message;
@@ -12,7 +16,7 @@ async function _uploadMessageAttachments(arg0, arg1) {
     ({ channelId: closure_0, message, nonce } = shouldUploadFailureSendNotification);
     let closure_2 = shouldUploadFailureSendNotification.shouldUploadFailureSendNotification;
     let tmp4;
-    let closure_4;
+    let _createForOfIteratorHelperLoose;
     yield undefined;
     if (!set.has(nonce)) {
       tmp4 = nonce(closure_2[2]);
@@ -23,11 +27,11 @@ async function _uploadMessageAttachments(arg0, arg1) {
       let obj = {};
       const merged = Object.assign(message);
       obj["key"] = combined;
-      closure_4 = callback(closure_2[3]).createMessageRecord(obj);
+      _createForOfIteratorHelperLoose = callback(closure_2[3]).createMessageRecord(obj);
       tmp4.on("start", (file) => {
         set.add(nonce);
         let obj = nonce(closure_2[4]);
-        obj = { type: "UPLOAD_START", channelId: closure_0, file, uploader: tmp4, message: closure_4 };
+        obj = { type: "UPLOAD_START", channelId: closure_0, file, uploader: tmp4, message: _createForOfIteratorHelperLoose };
         obj.dispatch(obj);
       });
       tmp4.on("compression-progress", (file) => {
@@ -89,10 +93,8 @@ async function _uploadMessageAttachments(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
 const set = new Set();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/media_uploads/uploadMessageAttachments.native.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/media_uploads/uploadMessageAttachments.native.tsx");
 
 export const uploadMessageAttachments = function uploadMessageAttachments(arg0) {
   return _uploadMessageAttachments(...arguments);

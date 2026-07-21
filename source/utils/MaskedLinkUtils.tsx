@@ -1,5 +1,5 @@
 // Module ID: 8329
-// Function ID: 66001
+// Function ID: 66012
 // Name: isLinkTrusted
 // Dependencies: []
 // Exports: handleClick, isLinkTrusted

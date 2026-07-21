@@ -1,5 +1,5 @@
 // Module ID: 11527
-// Function ID: 89794
+// Function ID: 89806
 // Name: useFeaturedExpiringPowerup
 // Dependencies: []
 // Exports: default

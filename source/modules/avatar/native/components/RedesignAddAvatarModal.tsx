@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 122786
+// Module ID: 16007
+// Function ID: 122830
 // Name: RedesignAddAvatarModal
 // Dependencies: []
 // Exports: default
 
-// Module 16003 (RedesignAddAvatarModal)
+// Module 16007 (RedesignAddAvatarModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -20,7 +20,7 @@ obj.container = obj;
 obj.contentContainer = { "Bool(true)": false, "Bool(true)": false };
 const tmp3 = arg1(dependencyMap[6]);
 obj.growContainer = { flexGrow: 2, minHeight: importDefault(dependencyMap[8]).space.PX_24 };
-obj.headerContainer = { -1861163602: true, -738052821: true };
+obj.headerContainer = { <string:29557293>: true, <string:45941405>: true };
 obj.buttonContainer = { width: "100%" };
 const obj1 = { flexGrow: 2, minHeight: importDefault(dependencyMap[8]).space.PX_24 };
 obj.title = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, textAlign: "center" };
@@ -78,7 +78,7 @@ export default function RedesignAddAvatarModal(route) {
   obj.contentContainerStyle = items1;
   const obj2 = { style: tmp.headerContainer };
   obj3 = {};
-  obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj4 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[18]).intl;
   obj4.children = intl.string(arg1(dependencyMap[18]).t.XQRWvR);
   const items2 = [callback2(arg1(dependencyMap[17]).Text, obj4), ];
@@ -98,7 +98,7 @@ export default function RedesignAddAvatarModal(route) {
   items3[1] = callback2(importDefault(dependencyMap[19]), obj6);
   const obj7 = { style: tmp.errorContainer };
   if (first) {
-    const obj8 = {};
+    const obj8 = { hasMaxConnections: 1, isBoostOnlySubscription: "center" };
     const intl3 = arg1(dependencyMap[18]).intl;
     obj8.children = intl3.string(arg1(dependencyMap[18]).t.XyLlVm);
     first = callback2(arg1(dependencyMap[17]).Text, obj8);
@@ -108,7 +108,7 @@ export default function RedesignAddAvatarModal(route) {
   obj2.children = items3;
   const items4 = [callback3(closure_6, obj2), callback2(importDefault(dependencyMap[12]), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), callback2(closure_6, { style: tmp.growContainer }), ];
   const obj10 = { style: tmp.buttonContainer };
-  const obj11 = {};
+  const obj11 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
   const intl4 = arg1(dependencyMap[18]).intl;
   obj11.text = intl4.string(arg1(dependencyMap[18]).t.PDTjLN);
   obj11.onPress = function onPress() {

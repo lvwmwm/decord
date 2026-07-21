@@ -1,5 +1,5 @@
 // Module ID: 4023
-// Function ID: 33492
+// Function ID: 33497
 // Name: formatSize
 // Dependencies: []
 // Exports: formatKbSize
@@ -53,7 +53,7 @@ function formatSize(result, arg1) {
   }
 }
 let closure_2 = 1024;
-let closure_3 = {};
+let closure_3 = { children: "hidden", color: "all", variant: true };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("utils/FileSizeUtils.tsx");
 

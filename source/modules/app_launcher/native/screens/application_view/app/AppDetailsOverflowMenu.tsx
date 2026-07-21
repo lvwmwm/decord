@@ -1,5 +1,5 @@
 // Module ID: 11242
-// Function ID: 87505
+// Function ID: 87517
 // Name: AppDetailsOverflowMenu
 // Dependencies: []
 // Exports: default

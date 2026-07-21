@@ -1,5 +1,5 @@
 // Module ID: 11645
-// Function ID: 90355
+// Function ID: 90367
 // Name: UserProfileConfirmRemoveGameFriend
 // Dependencies: []
 // Exports: default

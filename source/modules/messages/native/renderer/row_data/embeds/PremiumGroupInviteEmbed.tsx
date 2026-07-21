@@ -1,10 +1,10 @@
-// Module ID: 7727
-// Function ID: 61439
+// Module ID: 7728
+// Function ID: 61451
 // Name: createPremiumGroupInviteEmbed
 // Dependencies: []
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 7727 (createPremiumGroupInviteEmbed)
+// Module 7728 (createPremiumGroupInviteEmbed)
 const _module = require(dependencyMap[0]);
 ({ HELP_CENTER_LINK: closure_3, PremiumGroupInviteState: closure_4 } = _module);
 const _module1 = require(dependencyMap[8]);

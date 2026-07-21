@@ -1,10 +1,10 @@
-// Module ID: 7726
-// Function ID: 61437
+// Module ID: 7727
+// Function ID: 61449
 // Name: createPremiumGroupInviteSystemMessage
 // Dependencies: []
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7726 (createPremiumGroupInviteSystemMessage)
+// Module 7727 (createPremiumGroupInviteSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let obj = arg1(dependencyMap[2]);

@@ -1,15 +1,15 @@
-// Module ID: 15112
-// Function ID: 114029
+// Module ID: 15115
+// Function ID: 114063
 // Name: UploadPlaceholder
 // Dependencies: []
 // Exports: default
 
-// Module 15112 (UploadPlaceholder)
+// Module 15115 (UploadPlaceholder)
 function UploadPlaceholder() {
   let obj = { style: callback4(false).uploadContainer };
   obj = { source: importDefault(dependencyMap[10]), size: arg1(dependencyMap[9]).IconSizes.SMALL };
   const items = [callback2(arg1(dependencyMap[9]).Icon, obj), ];
-  obj = {};
+  obj = { hasMaxConnections: 8, isBoostOnlySubscription: 32 };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.3UB9ad);
   items[1] = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -38,11 +38,11 @@ let closure_13 = arg1(dependencyMap[8]).createICYMIStyles((gap) => {
   }
   obj.top = num;
   obj.bubbles = obj;
-  obj = { "Bool(true)": 8589934638.125008, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006062541975139607, "Bool(true)": 51410469676720440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200588841366632, "Bool(true)": 246085429289397300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[6]).radii.round };
+  obj = { borderRadius: importDefault(dependencyMap[6]).radii.round };
   obj.middleBubble = obj;
   obj.bottomBubble = { borderRadius: importDefault(dependencyMap[6]).radii.round };
-  const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.round };
-  obj.title = { gap: importDefault(dependencyMap[6]).space.PX_8 };
+  const obj2 = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj.title = obj2;
   obj.timestamp = {};
   obj.cardContainer = { position: "relative", marginLeft: gap.inset };
   const obj4 = { gap: gap.margin, padding: gap.margin, borderRadius: importDefault(dependencyMap[6]).radii.lg };
@@ -53,17 +53,16 @@ let closure_13 = arg1(dependencyMap[8]).createICYMIStyles((gap) => {
   obj4.marginBottom = num3;
   obj4.overflow = "hidden";
   obj.card = obj4;
-  const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_8 };
+  const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.round };
   const obj3 = { position: "relative", marginLeft: gap.inset };
   obj.textOnly = { paddingVertical: gap.margin + importDefault(dependencyMap[6]).space.PX_12 };
-  const obj6 = { padding: 0, paddingBottom: 6, flexDirection: 0, gap: gap.margin };
-  obj.emojiTextContainer = obj6;
+  obj.emojiTextContainer = { gap: gap.margin };
   obj.emojiText = { flexShrink: 1 };
   obj.leftAlign = { justifyContent: "flex-start" };
   const obj5 = { paddingVertical: gap.margin + importDefault(dependencyMap[6]).space.PX_12 };
   obj.uploadContainer = { marginHorizontal: gap.margin, marginBottom: gap.margin, minHeight: importDefault(dependencyMap[6]).space.PX_48, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG, borderWidth: 1, borderRadius: importDefault(dependencyMap[6]).radii.lg, gap: importDefault(dependencyMap[6]).space.PX_4, flexDirection: "row" };
-  const obj8 = { lo: true, lt: true, lv: "<string:2801860610>", mg: "<string:3578855426>", mh: "<string:3443593655>", borderRadius: importDefault(dependencyMap[6]).radii.md };
-  obj.buttonIcon = obj8;
+  const obj7 = { "Bool(true)": "mi", "Bool(true)": "stackSymbols", "Bool(true)": "__RRWEB_EXCLUDE_SHADOW_DOM__", "Bool(true)": "_headers", "Bool(true)": "png", borderRadius: importDefault(dependencyMap[6]).radii.md };
+  obj.buttonIcon = obj7;
   return obj;
 });
 const obj2 = arg1(dependencyMap[8]);
@@ -158,7 +157,7 @@ export default function GravityCustomStatusEntryRow(id) {
   let obj10 = arg1(dependencyMap[15]);
   const items1 = [closure_6];
   const stateFromStores1 = obj10.useStateFromStores(items1, () => hexWithOpacityResult.getUser(userId));
-  const tmp25 = callback(React.useState({ bhk: -536870861, bic: -299892737 }), 2);
+  const tmp25 = callback(React.useState({ "Null": -536870861, "Null": -299892737 }), 2);
   const size = tmp25[0];
   closure_7 = tmp25[1];
   const items2 = [variant];
@@ -194,7 +193,7 @@ export default function GravityCustomStatusEntryRow(id) {
     }
     obj2 = { contentId: id, userId, type: "hotwheels_custom_status", renderForScreenshot };
     const obj3 = { style: tmp.title };
-    obj4 = {};
+    obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
     let tmp40;
     if (null != displayNameStylesFont) {
       obj5 = { fontFamily: displayNameStylesFont };

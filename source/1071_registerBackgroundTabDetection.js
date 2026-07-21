@@ -1,5 +1,5 @@
 // Module ID: 1071
-// Function ID: 12299
+// Function ID: 12303
 // Name: registerBackgroundTabDetection
 // Dependencies: []
 

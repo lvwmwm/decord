@@ -1,10 +1,10 @@
-// Module ID: 13438
-// Function ID: 102065
+// Module ID: 13440
+// Function ID: 102087
 // Name: EditUserProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 13438 (EditUserProfileBanner)
+// Module 13440 (EditUserProfileBanner)
 function EditUserProfileBanner(user) {
   let disabled;
   let isTryItOut;

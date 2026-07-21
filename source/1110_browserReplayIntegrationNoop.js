@@ -1,5 +1,5 @@
 // Module ID: 1110
-// Function ID: 12650
+// Function ID: 12654
 // Name: browserReplayIntegrationNoop
 // Dependencies: []
 // Exports: browserReplayIntegration
@@ -47,7 +47,7 @@ export const browserReplayIntegration = function browserReplayIntegration() {
         mask = [];
       }
       obj.mask = items.concat(closure_2(mask));
-      const items1 = [null];
+      const items1 = ["thirty"];
       let unmask = first.unmask;
       if (!unmask) {
         unmask = [];

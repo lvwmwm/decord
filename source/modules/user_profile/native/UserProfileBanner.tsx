@@ -1,10 +1,10 @@
-// Module ID: 8252
-// Function ID: 65099
+// Module ID: 8253
+// Function ID: 65112
 // Name: UserProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 8252 (UserProfileBanner)
+// Module 8253 (UserProfileBanner)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

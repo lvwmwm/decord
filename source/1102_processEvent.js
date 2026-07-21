@@ -1,12 +1,10 @@
 // Module ID: 1102
-// Function ID: 12582
+// Function ID: 12586
 // Name: processEvent
-// Dependencies: [57, 77, 1000]
+// Dependencies: []
 // Exports: viewHierarchyIntegration
 
 // Module 1102 (processEvent)
-import _slicedToArray from "_slicedToArray";
-
 function processEvent(arg0, arg1) {
   arg1 = arg0;
   const dependencyMap = arg1;
@@ -59,6 +57,7 @@ function processEvent(arg0, arg1) {
     return lib;
   });
 }
+let closure_2 = importDefault(dependencyMap[0]);
 let fn = this;
 if (this) {
   fn = this.__awaiter;

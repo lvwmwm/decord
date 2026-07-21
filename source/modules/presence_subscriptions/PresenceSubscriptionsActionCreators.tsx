@@ -1,7 +1,7 @@
 // Module ID: 10445
-// Function ID: 80615
+// Function ID: 80626
 // Name: subscribe
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: subscribe
 
 // Module 10445 (subscribe)

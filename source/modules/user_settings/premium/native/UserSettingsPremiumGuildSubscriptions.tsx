@@ -1,5 +1,5 @@
 // Module ID: 12311
-// Function ID: 94327
+// Function ID: 94339
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
@@ -32,13 +32,13 @@ const FractionalPremiumStates = arg1(dependencyMap[13]).FractionalPremiumStates;
 const tmp4 = arg1(dependencyMap[12]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { upsellSection: { position: "relative" }, background: {} };
-obj = { zIndex: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", borderRadius: true, position: null, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
+obj = { upsellSection: { position: "relative" }, background: { -9223372036854775808: true, 0: true } };
+obj = { <string:1673945475>: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", <string:1711008972>: true, <string:2697769059>: null, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
 obj.scroller = obj;
-obj.subscriptionHeader = { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "canLaunchActivity" };
+obj.subscriptionHeader = { "Null": "isArray", "Null": "accessibilityRole" };
 obj.blurb = { lineHeight: 18 };
 obj.blurbNotLast = { marginBottom: 8 };
-obj.boostingUnavailablePill = { position: "center", height: "center" };
+obj.boostingUnavailablePill = { <string:1711008972>: "center", <string:2697769059>: "center" };
 obj.externalManagement = { marginTop: 8 };
 let closure_21 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

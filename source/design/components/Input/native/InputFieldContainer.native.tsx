@@ -1,5 +1,5 @@
 // Module ID: 5775
-// Function ID: 49419
+// Function ID: 49427
 // Name: useInputStyles
 // Dependencies: []
 // Exports: InputFieldContainer
@@ -53,7 +53,7 @@ importAll(dependencyMap[0]);
 ({ Platform, StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = {};
+let closure_7 = { placeholder: null, onChange: null, isClearable: null, scaleX: null };
 let obj = arg1(dependencyMap[5]);
 let closure_8 = obj.createStyles(() => {
   let str = arg0;
@@ -119,25 +119,26 @@ let closure_8 = obj.createStyles(() => {
   obj10["color"] = flag ? colors.TEXT_MUTED : colors.TEXT_DEFAULT;
   obj10["flexGrow"] = 1;
   obj5.text = obj10;
-  const obj11 = {};
+  const obj11 = { position: null, shadowRadius: null };
   const merged1 = Object.assign(tmp3);
   obj11["paddingEnd"] = obj[str];
   obj11["zIndex"] = 1;
   obj11["pointerEvents"] = "none";
   obj5.leadingText = obj11;
-  const obj12 = {};
+  const obj12 = { "Null": null, "Null": null };
   const merged2 = Object.assign(tmp3);
   obj12["paddingStart"] = obj[str];
   obj12["zIndex"] = 1;
   obj12["pointerEvents"] = "none";
   obj5.trailingText = obj12;
   obj5.leadingIcon = { paddingTop: obj[str], paddingBottom: obj[str], paddingStart: obj[str], paddingEnd: obj[str], justifyContent: "center", zIndex: 1, pointerEvents: "none" };
-  obj5.trailingIcon = { paddingTop: obj[str], paddingBottom: obj[str], paddingStart: obj[str], paddingEnd: obj[str], justifyContent: "center", zIndex: 1, pointerEvents: "none" };
-  const obj13 = {};
+  const obj13 = { "Bool(true)": "<string:3082955202>", "Bool(true)": "<string:103629460>", "Bool(true)": "<string:3630497793>", "Bool(true)": "<string:961609729>", paddingTop: obj[str], paddingBottom: obj[str], paddingStart: obj[str], paddingEnd: obj[str], justifyContent: "center", zIndex: 1, pointerEvents: "none" };
+  obj5.trailingIcon = obj13;
+  const obj14 = {};
   const merged3 = Object.assign(tmp3);
-  obj13["borderRightWidth"] = 1;
-  obj13["borderRightColor"] = importDefault(dependencyMap[3]).colors.BORDER_STRONG;
-  obj5.splitBorder = obj13;
+  obj14["borderRightWidth"] = 1;
+  obj14["borderRightColor"] = importDefault(dependencyMap[3]).colors.BORDER_STRONG;
+  obj5.splitBorder = obj14;
   return obj5;
 });
 const tmp4 = arg1(dependencyMap[2]);

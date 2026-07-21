@@ -1,5 +1,5 @@
 // Module ID: 11307
-// Function ID: 87960
+// Function ID: 87972
 // Name: UnsavedChangesAlertModal
 // Dependencies: []
 // Exports: default
@@ -74,7 +74,7 @@ obj.safeAreaContainer = obj;
 obj.header = {};
 obj.actionButton = {};
 obj.postButton = { justifyContent: "flex-end" };
-obj.title = {};
+obj.title = { end: null, apply: null };
 obj.label = { fontSize: 14 };
 obj.answerInputsContainer = {};
 obj1 = {};
@@ -260,7 +260,7 @@ export default function PollCreation(channel) {
   obj3.source = importDefault(closure_2[33]);
   obj3.style = tmp4.actionButton;
   const items3 = [callback(arg1(closure_2[32]).HeaderActionButton, obj3), , ];
-  obj4 = { alignItems: "cry", justifyContent: "cry", backgroundColor: "cry", style: tmp4.title };
+  obj4 = { style: tmp4.title };
   const intl2 = arg1(closure_2[8]).intl;
   obj4.children = intl2.string(arg1(closure_2[8]).t.Flr51u);
   items3[1] = callback(arg1(closure_2[12]).Text, obj4);

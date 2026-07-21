@@ -1,10 +1,10 @@
-// Module ID: 6930
-// Function ID: 55260
+// Module ID: 6931
+// Function ID: 55272
 // Name: trackingConfigWithDefaults
 // Dependencies: []
 // Exports: trackingConfigWithDefaults
 
-// Module 6930 (trackingConfigWithDefaults)
+// Module 6931 (trackingConfigWithDefaults)
 let closure_0 = importDefault(dependencyMap[0]);
 const LinkType = arg1(dependencyMap[1]).LinkType;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13530
-// Function ID: 102648
+// Module ID: 13532
+// Function ID: 102670
 // Name: useIsSafetyHubLoading
 // Dependencies: []
 // Exports: default
 
-// Module 13530 (useIsSafetyHubLoading)
+// Module 13532 (useIsSafetyHubLoading)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");
 

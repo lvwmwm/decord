@@ -1,5 +1,5 @@
 // Module ID: 9489
-// Function ID: 73941
+// Function ID: 73952
 // Name: openGuildHighlightNotificationForPush
 // Dependencies: []
 // Exports: openGuildHighlightNotificationForPush

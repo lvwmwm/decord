@@ -1,5 +1,5 @@
 // Module ID: 11498
-// Function ID: 89584
+// Function ID: 89596
 // Name: GuildProgressHeader
 // Dependencies: []
 // Exports: default
@@ -30,7 +30,7 @@ const tmp2 = arg1(dependencyMap[5]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { padding: 16 }, header: { gestureId: 2137063425, handlerTag: 95420418, shouldCancelWhenOutside: -2075787263 }, headerTitle: { "Null": null, "Null": null } };
+obj = { container: { padding: 16 }, header: {}, headerTitle: { "Null": null, "Null": null } };
 obj = { color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
 obj.headerSubtitle = obj;
 obj.footer = { marginTop: 4 };
@@ -228,7 +228,7 @@ export default function GuildProgressActionSheet(guild) {
   const tmp23 = View;
   const tmp24 = callback;
   const tmp25 = View;
-  const obj14 = { left: null, startAndEndHeight: null, children: closure_15(View, obj7) };
+  const obj14 = { marginVertical: null, GUILDS_EMPTY_NUX: null, children: closure_15(View, obj7) };
   return callback(arg1(dependencyMap[32]).ActionSheet, obj14);
 };
 export { GuildProgressHeader };

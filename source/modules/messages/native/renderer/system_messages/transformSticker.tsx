@@ -1,10 +1,10 @@
-// Module ID: 7678
-// Function ID: 61318
+// Module ID: 7679
+// Function ID: 61330
 // Name: transform
 // Dependencies: []
 // Exports: default, transformSticker
 
-// Module 7678 (transform)
+// Module 7679 (transform)
 function transform(id, isPreview) {
   let obj = {};
   const merged = Object.assign(id);

@@ -1,9 +1,9 @@
-// Module ID: 15624
-// Function ID: 119289
+// Module ID: 15627
+// Function ID: 119328
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15624 (_createForOfIteratorHelperLoose)
+// Module 15627 (_createForOfIteratorHelperLoose)
 let SOUND_BUTTON_HEIGHT;
 let SOUND_ROW_HORIZONTAL_PADDING;
 let SOUND_ROW_SPACING;
@@ -162,9 +162,9 @@ const tmp2 = arg1(dependencyMap[3]);
 const sum = SOUND_BUTTON_HEIGHT + 8;
 const tmp3 = arg1(dependencyMap[4]);
 let obj = { row: { height: sum, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING } };
-obj = { <string:2455078130>: null, <string:3010507342>: null, <string:2625958512>: null, <string:1391091974>: null, <string:2075753400>: null, <string:2959330403>: null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING };
+obj = { "Null": null, "Null": null, display: null, flexDirection: null, justifyContent: null, alignItems: null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING };
 obj.sectionHeader = obj;
-obj.sectionIcon = { -1437189274: null, 1389932780: null, 96994568: null, 1385486178: null };
+obj.sectionIcon = {};
 obj.soundButtonNotFirst = { marginLeft: SOUND_ROW_SPACING };
 let closure_10 = arg1(dependencyMap[5]).createStyles(obj);
 const obj2 = arg1(dependencyMap[5]);
@@ -343,7 +343,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
         tmp6 = lib2(channel(closure_2[13]).PremiumUpsellGradientBackground, {});
       }
       const items = [tmp6, getSectionIcon(items1[arg0]), ];
-      obj = { resizeMode: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009148008793522939, source: 9126805510, disableColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001614860017614924, children: isSectionLocked(items1[arg0]) };
+      obj = { 1366204667: "onDragStart", 1449395199: "j", 1689692731: "MiniaturesSpotIllustration", children: isSectionLocked(items1[arg0]) };
       items[2] = lib2(channel(closure_2[24]).Text, obj);
       obj.children = items;
       obj.children = closure_8(closure_4, obj);

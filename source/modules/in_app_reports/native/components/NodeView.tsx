@@ -1,23 +1,23 @@
-// Module ID: 7601
-// Function ID: 60913
+// Module ID: 7602
+// Function ID: 60925
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 7601 (_createForOfIteratorHelperLoose)
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import { REMEDIATION_ELEMENT_TYPES } from "__exportStarResult1";
-import { IN_APP_REPORTS_NODE } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { Permissions } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7602 (_createForOfIteratorHelperLoose)
+import closure_4 from "result";
+import closure_5 from "result";
+import result from "result";
+import closure_8 from "result";
+import closure_9 from "result";
+import closure_10 from "result";
+import { REMEDIATION_ELEMENT_TYPES } from "result";
+import { IN_APP_REPORTS_NODE } from "result";
+import result from "result";
+import { Permissions } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -103,14 +103,14 @@ function HeaderView(node) {
   let header;
   let subheader;
   ({ header, subheader, description } = node.node);
-  const tmp = __exportStarResult1();
+  const tmp = result();
   let obj = { style: tmp.headerContainer };
   let tmp5 = null != header;
   if (tmp5) {
     tmp5 = "" !== header;
   }
   if (tmp5) {
-    obj = { applicationCommandLoadingLeftWrapper: 0.00000000000028764308907332124, uniform: 0.00000000000028762154107337967, EMPTY_GAME_SERVER_TAB: -4799163886135795000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, overflow: 0.01879802246047183, teen_identity: 3683271663567148000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ref: node.headerRef, style: tmp.header, children: header };
+    obj = { ref: node.headerRef, style: tmp.header, children: header };
     tmp5 = callback2(arg1(dependencyMap[15]).Text, obj);
   }
   const items = [tmp5, , ];
@@ -127,7 +127,7 @@ function HeaderView(node) {
   if (null != description) {
     tmp13 = null;
     if (description.length > 0) {
-      const obj1 = { style: tmp.description, children: description };
+      const obj1 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.description, children: description };
       tmp13 = callback2(arg1(dependencyMap[15]).Text, obj1);
     }
   }
@@ -137,7 +137,7 @@ function HeaderView(node) {
 }
 function InfoView(node) {
   const info = node.node.info;
-  const tmp = __exportStarResult1();
+  const tmp = result();
   let tmp3 = null;
   if (null != info) {
     let obj = {};
@@ -147,7 +147,7 @@ function InfoView(node) {
     obj.style = items;
     obj = { size: "md", color: tmp.infoBox.backgroundColor };
     const items1 = [callback2(arg1(dependencyMap[17]).CircleInformationIcon, obj), ];
-    const obj1 = { style: tmp.infoBoxText, children: tmp2(info) };
+    const obj1 = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001191393554252316, dispatch: 557056.0015292466, raw: 1112527108802911800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.infoBoxText, children: tmp2(info) };
     items1[1] = callback2(arg1(dependencyMap[15]).Text, obj1);
     obj.children = items1;
     tmp3 = callback3(closure_6, obj);
@@ -164,7 +164,7 @@ function ChildItem(child) {
   obj.child = 0;
   obj.nodeMap = 0;
   const importDefault = Object.assign(child, obj);
-  const tmp2 = __exportStarResult1();
+  const tmp2 = result();
   [tmp4, tmp5] = callback(child, 2);
   obj = arg1(dependencyMap[18]);
   const items = [closure_8];
@@ -175,13 +175,13 @@ function ChildItem(child) {
   obj = { style: tmp2.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0] };
   const obj1 = { style: tmp2.childContainer };
   const obj2 = { style: tmp2.childContent };
-  const obj3 = { "Null": null, "Null": null, "Null": null, style: tmp2.childButtonText, children: tmp4 };
+  const obj3 = { delete: null, dispatch: null, raw: null, style: tmp2.childButtonText, children: tmp4 };
   const items1 = [callback2(arg1(dependencyMap[15]).Text, obj3), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
-    const obj4 = { style: tmp2.debugText, children: report_type };
+    const obj4 = { delete: null, dispatch: null, raw: null, style: tmp2.debugText, children: report_type };
     stateFromStores = callback2(arg1(dependencyMap[15]).Text, obj4);
   }
   items1[1] = stateFromStores;
@@ -226,29 +226,29 @@ function hasAnyRemediationElement(node) {
 function NullComponent() {
   return null;
 }
-({ View: closure_6, ScrollView: closure_7 } = __exportStarResult1);
-({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = __exportStarResult1);
-({ jsx: closure_16, jsxs: closure_17 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.scrollView = { animations: true, USER_SHEET: true, zIndex: true };
-__exportStarResult1.childrenContainer = { <string:2857788036>: false, <string:1659423825>: false, <string:72441083>: false };
-__exportStarResult1.headerContainer = { flexDirection: "<string:1908422942>", justifyContent: "a", alignItems: "<string:37365569>" };
-__exportStarResult1.header = { "Null": null, "Null": null };
-__exportStarResult1.subheader = {};
-__exportStarResult1.description = {};
-__exportStarResult1.infoBox = { backgroundColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345, borderRadius: require("__exportStarResult1").radii.xs, borderColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
-__exportStarResult1.infoBoxText = { -9223372036854775808: null, -9223372036854775808: null, -9223372036854775808: null, -9223372036854775808: null };
-const obj1 = { backgroundColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345, borderRadius: require("__exportStarResult1").radii.xs, borderColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
-__exportStarResult1.childButton = { marginBottom: 8, borderRadius: require("__exportStarResult1").radii.xs };
-const obj3 = { "234395307759108106": "<string:3207659522>", "365975655608745985": "<string:3578855426>", "512412940897484800": "<string:1564545463>", reachedLimit: "<string:1912603216>", limit: "toString", hasBailedAst: true, id: true, format_type: true, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.xs };
-__exportStarResult1.childContainer = obj3;
-__exportStarResult1.childContent = { flex: 1 };
-__exportStarResult1.childButtonText = { lineHeight: 20 };
-__exportStarResult1.debugText = {};
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
+({ View: closure_6, ScrollView: closure_7 } = result);
+({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = result);
+({ jsx: closure_16, jsxs: closure_17 } = result);
+result = {};
+result = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOWER };
+result.container = result;
+result.scrollView = { duration: true, dampingRatio: true, stiffness: true };
+result.childrenContainer = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+result.headerContainer = { 0: "<string:1908422942>", 0: "a", 0: "<string:37392705>" };
+result.header = { "Null": null, "Null": null };
+result.subheader = { hour: "<string:410124289>", minute: "<string:402653184>", second: "<string:16777216>" };
+result.description = {};
+const obj1 = { 1895788287: 32, 1962898175: 32, 2046785279: "flex-start", 2080340735: "center", 2113895679: "flex", -2097184513: "row", -2030074625: 10, -2113961985: 8, -2046852097: 56, backgroundColor: require("result").unsafe_rawColors.BLUE_345, borderRadius: require("result").radii.xs, borderColor: require("result").unsafe_rawColors.BLUE_345 };
+result.infoBox = obj1;
+result.infoBoxText = {};
+result.childButton = { marginBottom: 8, borderRadius: require("result").radii.xs };
+const obj2 = { marginBottom: 8, borderRadius: require("result").radii.xs };
+result.childContainer = { backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("result").radii.xs };
+result.childContent = { flex: 1 };
+result.childButtonText = { lineHeight: 20 };
+result.debugText = {};
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 
 export default function NodeView(node) {
   let history;
@@ -256,7 +256,7 @@ export default function NodeView(node) {
   let reportId;
   let reportSubType;
   const arg1 = node;
-  let should_submit_data = __exportStarResult1();
+  let should_submit_data = callback4();
   let obj = arg1(dependencyMap[21]);
   const navigation = obj.useNavigation();
   const importDefault = navigation;
@@ -332,6 +332,7 @@ export default function NodeView(node) {
   const first2 = tmp15[0];
   let closure_17 = tmp15[1];
   const tmp17 = callback(React.useState(false), 2);
+  const callback4 = tmp17[1];
   const items2 = [node, tmp7, first2];
   callback = React.useCallback((destination) => {
     let obj = { nodeRef: node.id, destination };
@@ -392,7 +393,7 @@ export default function NodeView(node) {
     if (is_auto_submit) {
       lib(true);
       const obj = { nodeRef: node.id };
-      const items = [null, node.id];
+      const items = ["<string:2246337460>", node.id];
       obj.destination = items;
       onSubmit(obj);
     }
@@ -409,7 +410,7 @@ export default function NodeView(node) {
           type = button.type;
         }
         if ("next" === type) {
-          const items = [null, tmp2.button.target];
+          const items = ["<string:2246337460>", tmp2.button.target];
           return callback1(items);
         }
       }
@@ -497,7 +498,7 @@ export default function NodeView(node) {
   if (userIsTeen) {
     userIsTeen = null != getElementForType(node, "share_with_parents");
   }
-  obj = { id: null, value: null, type: null, style: should_submit_data.container };
+  obj = { sections: null, count: null, countMessages: null, style: should_submit_data.container };
   obj = { style: should_submit_data.scrollView };
   obj1 = { element: getElementForType(node, "success") };
   const items8 = [first2(importDefault(dependencyMap[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , ];
@@ -570,7 +571,6 @@ export default function NodeView(node) {
   }
   items8[10] = tmp62;
   const obj10 = {};
-  const __exportStarResult1 = tmp17[1];
   const tmp30 = closure_17;
   const tmp31 = closure_17;
   const tmp32 = history;
@@ -774,12 +774,12 @@ export default function NodeView(node) {
     if ("done" !== type) {
       if ("cancel" !== type) {
         if ("next" === type) {
-          const items = [null, type.target];
+          const items = ["<string:2246337460>", type.target];
           callback1(items);
         } else if ("submit" === type) {
           function handleSubmit() {
             callback2(true);
-            const items = [null];
+            const items = ["<string:2246337460>"];
             items[1] = items.successNodeId;
             const promise = callback(callback3(items));
             const nextPromise = callback(callback3(items)).then(() => {
@@ -814,7 +814,7 @@ export default function NodeView(node) {
         }
       }
     }
-    const items1 = [null, -1];
+    const items1 = ["<string:2246337460>", -1];
     callback1(items1);
   };
   items10[1] = should_submit_data(should_submit_data, obj21);

@@ -1,12 +1,11 @@
-// Module ID: 14197
-// Function ID: 107423
+// Module ID: 14200
+// Function ID: 107455
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 14197 (apexExperiment)
+// Module 14200 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: true, 0: true, defaultConfig: { enabled: true }, variations: { [1]: { enabled: false } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: true }, variations: { [1]: { enabled: false } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/voice_calls/CallKitMetricCollectionExperiment.tsx");
 

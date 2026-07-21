@@ -1,7 +1,7 @@
 // Module ID: 11506
-// Function ID: 89656
+// Function ID: 89668
 // Name: GameServerStatus
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11506 (GameServerStatus)
 const _module = require(dependencyMap[0]);

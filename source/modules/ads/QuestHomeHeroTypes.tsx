@@ -1,5 +1,5 @@
 // Module ID: 9464
-// Function ID: 73711
+// Function ID: 73722
 // Name: questHomeHeroFromServer
 // Dependencies: []
 // Exports: questHomeHeroFromServer

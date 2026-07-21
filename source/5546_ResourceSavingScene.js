@@ -1,5 +1,5 @@
 // Module ID: 5546
-// Function ID: 47092
+// Function ID: 47100
 // Name: ResourceSavingScene
 // Dependencies: []
 // Exports: default
@@ -7,12 +7,12 @@
 // Module 5546 (ResourceSavingScene)
 let Platform;
 let StyleSheet;
-let closure_0 = [false, false, false];
+let closure_0 = [];
 let closure_1 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ Platform, StyleSheet, View: closure_2 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
-const styles = StyleSheet.create({ container: { 9223372036854775807: 10, 9223372036854775807: 10 }, attached: { flex: 1 }, detached: { "Null": "front", "Null": 20 } });
+const styles = StyleSheet.create({ container: { Č: 10, accessibilityDismiss: 10 }, attached: { flex: 1 }, detached: {} });
 
 export default function ResourceSavingScene(visible) {
   let children;
@@ -28,7 +28,7 @@ export default function ResourceSavingScene(visible) {
     str2 = "auto";
   }
   obj.pointerEvents = str2;
-  obj = { -9223372036854775808: null, 9223372036854775807: null };
+  obj = {};
   if (visible) {
     str = "auto";
   }

@@ -1,5 +1,5 @@
 // Module ID: 3636
-// Function ID: 27904
+// Function ID: 27909
 // Name: startOfToday
 // Dependencies: []
 // Exports: default

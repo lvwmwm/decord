@@ -338,7 +338,8 @@ function parallelImpl(items, stopTogether) {
 function delayImpl(delay) {
   let tmp = arg2(arg6[13]);
   tmp = new tmp(0);
-  return timingImpl(tmp, { delay });
+  const obj = { isArray: -1, ao: -1, test: false, y: "auto.ai.google_genai", delay };
+  return timingImpl(tmp, obj);
 }
 arg5.default = {
   Value: arg2(arg6[13]),

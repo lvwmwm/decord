@@ -1,10 +1,10 @@
-// Module ID: 16191
-// Function ID: 125116
+// Module ID: 16199
+// Function ID: 125177
 // Name: useGuildSettingsRoleExampleMessage
 // Dependencies: []
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 16191 (useGuildSettingsRoleExampleMessage)
+// Module 16199 (useGuildSettingsRoleExampleMessage)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const MessageStates = arg1(dependencyMap[2]).MessageStates;
@@ -21,7 +21,7 @@ export const useGuildSettingsRoleExampleMessage = function useGuildSettingsRoleE
     obj["state"] = constants.SENT;
     obj["id"] = "31337";
     const messageRecord = obj.createMessageRecord(obj);
-    const obj1 = {};
+    const obj1 = { y: "94dc9b38f111b503d8ad130993060a96", video_session_id: "intro_header_dark", y: "png", GDM_BLOCKED_USER_WARNING_VIEWED: true };
     const intl = arg0(closure_3[5]).intl;
     obj1.username = intl.string(arg0(closure_3[5]).t.cqpybK);
     const tmp3 = new closure_5(obj1);

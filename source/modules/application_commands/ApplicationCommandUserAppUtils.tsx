@@ -1,10 +1,10 @@
-// Module ID: 7755
-// Function ID: 61589
+// Module ID: 7756
+// Function ID: 61601
 // Name: getEphemeralReasonMessage
 // Dependencies: []
 // Exports: getEphemeralReasonMessage
 
-// Module 7755 (getEphemeralReasonMessage)
+// Module 7756 (getEphemeralReasonMessage)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/application_commands/ApplicationCommandUserAppUtils.tsx");
 

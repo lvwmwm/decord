@@ -1,9 +1,9 @@
-// Module ID: 13910
-// Function ID: 105274
+// Module ID: 13913
+// Function ID: 105306
 // Name: logger
 // Dependencies: []
 
-// Module 13910 (logger)
+// Module 13913 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("SimpleMuxWrapper");

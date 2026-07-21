@@ -1,10 +1,10 @@
-// Module ID: 14342
-// Function ID: 108297
+// Module ID: 14345
+// Function ID: 108329
 // Name: HapticButton
 // Dependencies: []
 // Exports: default
 
-// Module 14342 (HapticButton)
+// Module 14345 (HapticButton)
 function HapticButton(text) {
   const arg1 = text.type;
   return callback(arg1(dependencyMap[4]).Button, {
@@ -19,7 +19,7 @@ importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-let closure_5 = obj.createStyles({ container: { overflow: "center", flex: "center" } });
+let closure_5 = obj.createStyles({ container: { paddingTop: "center", color: "center" } });
 obj = { type: importDefault(dependencyMap[6]).IMPACT_LIGHT, label: "IMPACT_LIGHT" };
 const items = [obj, , , , , , , , ];
 obj = { type: importDefault(dependencyMap[6]).IMPACT_MEDIUM, label: "IMPACT_MEDIUM" };
@@ -86,7 +86,7 @@ const obj29 = { type: importDefault(dependencyMap[6]).EFFECT_DOUBLE_CLICK, label
 items3[11] = { type: importDefault(dependencyMap[6]).EFFECT_HEAVY_CLICK, label: "EFFECT_HEAVY_CLICK" };
 const obj30 = { type: importDefault(dependencyMap[6]).EFFECT_HEAVY_CLICK, label: "EFFECT_HEAVY_CLICK" };
 items3[12] = { type: importDefault(dependencyMap[6]).EFFECT_TICK, label: "EFFECT_TICK" };
-const items4 = [{}, {}, { 0: -515396076, 9223372036854775807: 1900008570, 9223372036854775807: 10 }, {}, {}, { 0: true, 9223372036854775807: true, 9223372036854775807: true }];
+const items4 = [{}, {}, { 0: -515396076, -9223372036854775808: 1900008570, 0: 10 }, {}, {}, { 0: true, -9223372036854775808: true, 0: true }];
 const obj31 = { type: importDefault(dependencyMap[6]).EFFECT_TICK, label: "EFFECT_TICK" };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemHaptics.tsx");
 
@@ -107,7 +107,7 @@ export default function UserSettingsDesignSystemHaptics() {
   const obj3 = {};
   const items2 = [
     callback(arg1(dependencyMap[9]).Text, {}),
-    callback(arg1(dependencyMap[9]).Text, { "Bool(false)": "/assets/modules/collectibles/native/images", "Bool(false)": 375, "Bool(false)": 162 }),
+    callback(arg1(dependencyMap[9]).Text, { deer: "/assets/modules/collectibles/native/images", Ufm9XX: 375, playstationVersion: 162 }),
     items1.map((label) => {
       label = label.label;
       return callback2(closure_11, { type: label.type, label }, label);
@@ -120,7 +120,7 @@ export default function UserSettingsDesignSystemHaptics() {
   const obj5 = {};
   const items3 = [
     callback(arg1(dependencyMap[9]).Text, {}),
-    callback(arg1(dependencyMap[9]).Text, { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessibilityRole" }),
+    callback(arg1(dependencyMap[9]).Text, { deer: 750888.9130273163, Ufm9XX: 17835840536987025000000000000000000000000000000000000000000000000000000000000000, playstationVersion: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004383619097214926 }),
     items2.map((label) => {
       label = label.label;
       return callback2(closure_11, { type: label.type, label }, label);
@@ -132,8 +132,8 @@ export default function UserSettingsDesignSystemHaptics() {
   const obj6 = {};
   const obj7 = {};
   const items4 = [
-    callback(arg1(dependencyMap[9]).Text, {}),
-    callback(arg1(dependencyMap[9]).Text, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }),
+    callback(arg1(dependencyMap[9]).Text, { <string:1749439162>: null, <string:140675621>: null }),
+    callback(arg1(dependencyMap[9]).Text, { deer: true, Ufm9XX: true, playstationVersion: true }),
     items3.map((label) => {
       label = label.label;
       return callback2(closure_11, { type: label.type, label }, label);
@@ -145,7 +145,7 @@ export default function UserSettingsDesignSystemHaptics() {
   const obj8 = {};
   const obj9 = {};
   const items5 = [
-    callback(arg1(dependencyMap[9]).Text, { "Null": null, "Null": null }),
+    callback(arg1(dependencyMap[9]).Text, { <string:1749439162>: null, <string:140675621>: null }),
     callback(arg1(dependencyMap[9]).Text, {}),
     items4.map((description) => {
       let label;

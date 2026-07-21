@@ -1,10 +1,10 @@
-// Module ID: 7624
-// Function ID: 61089
+// Module ID: 7625
+// Function ID: 61101
 // Name: isFirstMessageInMediaPost
 // Dependencies: []
 // Exports: useIsFirstMessageInMediaPost
 
-// Module 7624 (isFirstMessageInMediaPost)
+// Module 7625 (isFirstMessageInMediaPost)
 function isFirstMessageInMediaPost(id) {
   let tmp = null != id;
   if (tmp) {

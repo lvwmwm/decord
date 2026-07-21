@@ -1,13 +1,12 @@
-// Module ID: 12711
-// Function ID: 97575
+// Module ID: 12713
+// Function ID: 97597
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12711 (apexExperiment)
-let obj = { 709992699: "AbortSignal", 918971119: null, 1179805793: "\u{1F9BB}\u{1F3FF}", resetSilenceWarningAfterNMinutes: undefined };
+// Module 12713 (apexExperiment)
+let obj = { resetSilenceWarningAfterNMinutes: undefined };
 const _module = require(dependencyMap[0]);
-obj = { 9223372036854775807: "native_modal", 0: "api_error" };
-obj.defaultConfig = obj;
+obj = { defaultConfig: obj };
 obj = {};
 const obj1 = {};
 const merged = Object.assign(obj);

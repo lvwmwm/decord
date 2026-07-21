@@ -1,5 +1,5 @@
 // Module ID: 11014
-// Function ID: 85679
+// Function ID: 85690
 // Name: ClassificationHeader
 // Dependencies: []
 // Exports: default
@@ -79,7 +79,7 @@ function ClassificationActionsTaken(arg0) {
     let tmp11 = null;
     if (null != classificationExpiration) {
       const obj2 = { style: tmp2.classificationActionDescription };
-      const obj3 = { variant: "text-xs/normal", children: ["Date", "padding"] };
+      const obj3 = { variant: "text-xs/normal", children: [] };
       const items4 = [callback2(arg1(dependencyMap[9]).Text, obj3), ];
       const obj4 = { variant: "text-xs/normal" };
       const intl2 = arg1(dependencyMap[11]).intl;
@@ -111,7 +111,7 @@ function ClassificationActionsTakenRows(action) {
   return callback(closure_15, {
     children: descriptions.map((children) => {
       let obj = { style: lib.classificationActionDescription };
-      const items = [callback2(lib(closure_2[9]).Text, { variant: "text-xs/normal", children: ["Date", "padding"] }), ];
+      const items = [callback2(lib(closure_2[9]).Text, { variant: "text-xs/normal", children: [] }), ];
       obj = { variant: "text-xs/normal", children };
       items[1] = callback(lib(closure_2[9]).Text, obj);
       obj.children = items;
@@ -156,7 +156,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj.children = callback(arg1(dependencyMap[16]).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent };
-  const obj3 = {};
+  const obj3 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000 };
   const intl = arg1(dependencyMap[11]).intl;
   obj3.children = intl.format(arg1(dependencyMap[11]).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
   obj2.children = callback(arg1(dependencyMap[9]).Text, obj3);
@@ -177,7 +177,7 @@ function LetUsKnow(arg0) {
   const intl = arg1(dependencyMap[11]).intl;
   obj = {
     letUsKnowHook(children) {
-      const obj = { <string:1641826129>: "no-hide-descendants", <string:1536381433>: "text-xs/semibold", <string:217770353>: 1, onPress: children.onPressLetUsKnow, children };
+      const obj = { -1398216365: "no-hide-descendants", 1403823626: "text-xs/semibold", -1397974005: 1, onPress: children.onPressLetUsKnow, children };
       return callback(children(closure_2[9]).Text, obj, arg1);
     }
   };
@@ -218,29 +218,29 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.root = obj;
+const obj1 = { -2036989357: "<string:354549762>", 996371416: "<string:3477209090>", 5330602: "<string:587203104>", paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
+obj.container = obj1;
 const tmp4 = arg1(dependencyMap[6]);
-obj.container = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
-const obj1 = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
 obj.header = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-obj.headerText = { -1638638898: 40, -1162050051: "center" };
+obj.headerText = { overflow: 40, flexWrap: "center" };
 const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
 obj.sectionContainer = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj3 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.actionsTaken = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj4 = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.classificationDetailContainer = { gap: importDefault(dependencyMap[8]).space.PX_32 };
-obj.letUsKnowContainer = { -1861163602: true, -738052821: true };
-const obj6 = { -9223372036854775808: 1393, 9223372036854775807: -1535160064, -9223372036854775808: -163464863, 0: "y", gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+const obj4 = { alignSelf: "4ae27cd370cebdaa94f014645ce27672", margin: "ic_feedback", height: "png", paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.actionsTaken = obj4;
+const obj5 = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[8]).space.PX_32 };
+obj.classificationDetailContainer = obj5;
+obj.letUsKnowContainer = { <string:29557293>: true, <string:45941405>: true };
+const obj6 = { d: null, useMemo: null, keys: null, hasDiversityParent: null, gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.classificationPolicyCard = obj6;
-const obj7 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
-obj.classificationPolicyCardIcon = obj7;
+const obj3 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.classificationPolicyCardIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
 obj.classificationPolicyCardContent = { flex: 1 };
-const obj5 = { gap: importDefault(dependencyMap[8]).space.PX_32 };
+const obj7 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
 obj.classificationActionDescription = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj8 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.redirectButtonWrapper = { marginTop: importDefault(dependencyMap[8]).space.PX_32 };
+const obj9 = { 9223372036854775807: 1974796291, 0: -180158461, marginTop: importDefault(dependencyMap[8]).space.PX_32 };
+obj.redirectButtonWrapper = obj9;
 let closure_16 = obj.createStyles(obj);
-const obj9 = { marginTop: importDefault(dependencyMap[8]).space.PX_32 };
+const obj8 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/safety_hub/native/ClassificationDetail.tsx");
 
 export default function ConnectedClassificationDetail(classificationId) {

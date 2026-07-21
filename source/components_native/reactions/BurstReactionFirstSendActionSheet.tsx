@@ -1,10 +1,10 @@
-// Module ID: 7059
-// Function ID: 56445
+// Module ID: 7060
+// Function ID: 56457
 // Name: onDismiss
 // Dependencies: []
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7059 (onDismiss)
+// Module 7060 (onDismiss)
 function onDismiss() {
   importDefault(dependencyMap[5]).hideActionSheet();
 }
@@ -13,7 +13,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const View = tmp3.View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(false)": "key", "Bool(false)": "<string:1642700113>", "Bool(false)": "<string:3294712249>", "Bool(false)": "EDIT_GDM" } };
+obj = { container: { <string:2253552573>: "EASTER_EGG", <string:1661282977>: "include_google_sku_ids", <string:1372364883>: "Map", <string:1415750022>: "isArray" } };
 obj = {};
 const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
 obj["flex"] = 1;
@@ -21,13 +21,13 @@ obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj["top"] = -120;
 obj.fill = obj;
-const obj1 = { 0: false, 0: false, 0: false, tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
-obj.nitroWheel = obj1;
+const tmp4 = arg1(dependencyMap[2]);
+obj.nitroWheel = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 obj.textContainer = {};
-obj.body = { bm: null, cursor: null };
+obj.body = {};
 obj.content = { paddingHorizontal: 16 };
 let closure_6 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[2]);
+const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
 
 export default function BurstReactionFirstSendActionSheet(arg0) {

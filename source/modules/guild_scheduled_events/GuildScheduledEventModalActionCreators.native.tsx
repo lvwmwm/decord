@@ -1,5 +1,5 @@
 // Module ID: 8346
-// Function ID: 66456
+// Function ID: 66467
 // Name: openGuildEventDetails
 // Dependencies: []
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite

@@ -1,5 +1,5 @@
 // Module ID: 10650
-// Function ID: 83124
+// Function ID: 83135
 // Name: MicrophoneArrowRightIcon
 // Dependencies: []
 // Exports: MicrophoneArrowRightIcon

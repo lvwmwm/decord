@@ -1,10 +1,10 @@
-// Module ID: 16413
-// Function ID: 126748
+// Module ID: 16421
+// Function ID: 126809
 // Name: getOutboundVideoStats
 // Dependencies: []
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 16413 (getOutboundVideoStats)
+// Module 16421 (getOutboundVideoStats)
 function getOutboundVideoStats(arg0) {
   const connectionStats = store.getConnectionStats(arg0);
   let tmp2 = null;
@@ -78,7 +78,7 @@ function getCurrentScreenshareCaptureMethod(arg0) {
   if (null != connectionStats) {
     if (null != lastConnectionStats) {
       const obj = {};
-      const items = [];
+      const items = [true, true, 805252863, 838807807, 369038591, 402593535, 872362751, 922694911, 956242431];
       for (let num3 = 0; num3 < items.length; num3 = num3 + 1) {
         let tmp3 = items[num3];
         let screenshare = lastConnectionStats.stats.screenshare;

@@ -1,10 +1,10 @@
-// Module ID: 14917
-// Function ID: 112320
+// Module ID: 14920
+// Function ID: 112354
 // Name: GuildPowerupsProgressBar
 // Dependencies: []
 // Exports: default
 
-// Module 14917 (GuildPowerupsProgressBar)
+// Module 14920 (GuildPowerupsProgressBar)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -25,12 +25,12 @@ const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["padding"] = 2;
 obj.fillContainer = obj2;
-const obj3 = { "Bool(true)": -2130705821, "Bool(true)": 16777670, "Bool(true)": 48, "Bool(true)": 12, "Bool(true)": 0, "Bool(true)": 150, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj3 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.fill = obj3;
-obj.fillShadow = { shadowOffset: {} };
-const obj4 = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
+obj.fillShadow = { shadowOffset: { "Null": null, "Null": null } };
+const obj4 = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 obj.textContainer = obj4;
-obj.rightContent = {};
+obj.rightContent = { "Null": 7, "Null": 370 };
 let closure_11 = obj1.createStyles(obj);
 let closure_12 = { code: "function GuildPowerupsProgressBarTsx1(){const{animatedFillPercent,animatedFillOpacity}=this.__closure;return{width:animatedFillPercent.get()+\"%\",opacity:animatedFillOpacity.get()};}" };
 const importDefaultResult = importDefault(dependencyMap[6]);
@@ -143,7 +143,7 @@ export default function GuildPowerupsProgressBar(guildId) {
   items7[2] = animatedStyle;
   const items8 = [callback(View, obj3), ];
   const obj5 = { style: tmp.textContainer };
-  const obj6 = {};
+  const obj6 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images" };
   if (num >= tmp3) {
     const intl5 = arg1(dependencyMap[15]).intl;
     const _HermesInternal = HermesInternal;
@@ -155,7 +155,7 @@ export default function GuildPowerupsProgressBar(guildId) {
   obj6.children = combined;
   const items9 = [callback(arg1(dependencyMap[18]).Text, obj6), ];
   const obj7 = { style: tmp.rightContent };
-  const obj8 = { style: { opacity: 0.7 }, children: formatToPlainStringResult };
+  const obj8 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", style: { opacity: 0.7 }, children: formatToPlainStringResult };
   const items10 = [callback(arg1(dependencyMap[18]).Text, obj8), ];
   const obj9 = { size: "sm", color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
   items10[1] = callback(arg1(dependencyMap[19]).ChevronSmallRightIcon, obj9);

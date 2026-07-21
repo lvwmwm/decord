@@ -1,9 +1,9 @@
-// Module ID: 6887
-// Function ID: 54712
+// Module ID: 6888
+// Function ID: 54724
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6887 (_createForOfIteratorHelperLoose)
+// Module 6888 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -96,7 +96,7 @@ importDefaultResult = new importDefaultResult("Guilds");
 let tmp4 = () => {
   class Guilds {
     constructor() {
-      f54731 = this;
+      f54743 = this;
       tmp = closure_4(this, Guilds);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {

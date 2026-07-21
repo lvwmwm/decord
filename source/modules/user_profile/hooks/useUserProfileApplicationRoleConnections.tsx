@@ -1,5 +1,5 @@
 // Module ID: 12003
-// Function ID: 92755
+// Function ID: 92767
 // Name: useUserProfileApplicationRoleConnections
 // Dependencies: []
 // Exports: default

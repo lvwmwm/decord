@@ -1,10 +1,10 @@
-// Module ID: 5323
-// Function ID: 45284
+// Module ID: 5322
+// Function ID: 45291
 // Name: createTextStyle
 // Dependencies: []
 // Exports: default
 
-// Module 5323 (createTextStyle)
+// Module 5322 (createTextStyle)
 const Fonts = require(dependencyMap[0]).Fonts;
 let closure_1 = { "Bool(false)": "center", "Bool(false)": 0.5, "Bool(false)": 0, "Bool(false)": 3, "Bool(false)": 4, "Bool(false)": "flag", "Bool(false)": 4, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": 0 };
 let closure_2 = {};

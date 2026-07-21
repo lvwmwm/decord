@@ -1,10 +1,10 @@
-// Module ID: 13474
-// Function ID: 102274
+// Module ID: 13476
+// Function ID: 102296
 // Name: COLLECTIBLES_PREVIEW_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 13474 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13476 (COLLECTIBLES_PREVIEW_SIZE)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -110,7 +110,7 @@ export default function UserProfileFrameEditButton(arg0) {
       const intl6 = arg1(dependencyMap[18]).intl;
       obj1.buttonText = intl6.string(arg1(dependencyMap[18]).t.MKDeyL);
       obj1.onPress = NOOP;
-      obj1.leading = jsx(arg1(dependencyMap[20]).ActivityIndicator, {});
+      obj1.leading = jsx(arg1(dependencyMap[20]).ActivityIndicator, { font: 397, dx: 97 });
       obj1.loading = true;
       obj1.disabled = true;
       obj1.hideArrow = true;

@@ -1,5 +1,5 @@
 // Module ID: 10064
-// Function ID: 77698
+// Function ID: 77709
 // Dependencies: []
 
 // Module 10064
@@ -10,7 +10,7 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = { row: {}, rowInner: { flex: 1 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderAvatar = obj;
-obj1 = { 1689281484: "NT", -1438909492: "ME", backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+obj1 = { "Bool(true)": true, "Bool(true)": true, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderText = obj1;
 obj.placeholderBody = {};
 let closure_5 = obj1.createStyles(obj);

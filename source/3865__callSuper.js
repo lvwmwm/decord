@@ -1,5 +1,5 @@
 // Module ID: 3865
-// Function ID: 32113
+// Function ID: 32118
 // Name: _callSuper
 // Dependencies: []
 
@@ -60,7 +60,7 @@ export const ModuleNotFoundError = (arg0) => {
         tmp8 = closure_6;
         tmp9 = ModuleNotFoundError;
         tmp10 = closure_2;
-        return closure_2(closure_6(self, ModuleNotFoundError, []));
+        return closure_2(closure_6(self, ModuleNotFoundError, [null]));
       } else {
         items = [];
         str7 = "Make sure react-native-nitro-modules/NitroModules is correctly autolinked (run `npx react-native config` to verify)";

@@ -1,9 +1,9 @@
-// Module ID: 4809
-// Function ID: 41956
+// Module ID: 4808
+// Function ID: 41963
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4809 (_isNativeReflectConstruct)
+// Module 4808 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -134,7 +134,7 @@ function calculateStartTime(startTime, position) {
 }
 function sendStoppedPlayerState(accountId) {
   let obj = importDefault(dependencyMap[18]);
-  obj = { "Bool(true)": true, "Bool(true)": "/assets/images/platforms", "Bool(true)": 255, "Bool(true)": 255, "Bool(true)": null, "Bool(true)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(true)": "img_account_sync_youtube_white", "Bool(true)": "png", accountId };
+  obj = { left: true, right: "/assets/images/platforms", alignItems: 255, "Bool(false)": 255, "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", "Bool(false)": "png", accountId };
   obj.dispatch(obj);
 }
 function findSpotifyActivity(arg0) {
@@ -361,7 +361,7 @@ function setSpeaking(id, arg1) {
   if (id === store.getId()) {
     const result = currentClientInVoiceChannel.isCurrentClientInVoiceChannel();
     let obj = arg1(dependencyMap[25]);
-    obj = { 0: "ERROR", 9223372036854775807: "ERROR", 0: "NOT_RESPONDER", userId: id };
+    obj = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, userId: id };
     if (result) {
       if (obj.getIsSpeaking(obj)) {
         if (null != closure_23) {

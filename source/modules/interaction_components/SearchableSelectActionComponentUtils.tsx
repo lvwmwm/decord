@@ -1,10 +1,10 @@
-// Module ID: 7795
-// Function ID: 62222
+// Module ID: 7796
+// Function ID: 62235
 // Name: getSnowflakeSelectDefaultValues
 // Dependencies: []
 // Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables
 
-// Module 7795 (getSnowflakeSelectDefaultValues)
+// Module 7796 (getSnowflakeSelectDefaultValues)
 function getSnowflakeSelectDefaultValues(defaultValues, guildId) {
   let items = arg2;
   if (arg2 === undefined) {

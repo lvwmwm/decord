@@ -1,5 +1,5 @@
 // Module ID: 8906
-// Function ID: 70272
+// Function ID: 70283
 // Name: SecureFramesCopyIcon
 // Dependencies: []
 // Exports: default

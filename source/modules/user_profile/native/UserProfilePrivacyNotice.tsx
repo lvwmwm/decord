@@ -1,5 +1,5 @@
 // Module ID: 11992
-// Function ID: 92660
+// Function ID: 92672
 // Name: usePrivacyNoticeContentTypes
 // Dependencies: []
 // Exports: default, useIsPrivacyNoticeVisible
@@ -36,7 +36,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefault(dependencyMap[7]).space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj.icon = { fontSize: "0 0 4px 0 hsl(none 0% 0% / 0.08)", lineHeight: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" };
+obj.icon = { <string:996353750>: "0 0 4px 0 hsl(none 0% 0% / 0.08)", <string:2169656156>: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" };
 obj.text = { flex: 1 };
 obj.closeButton = { flexShrink: 0 };
 let closure_9 = obj.createStyles(obj);
@@ -50,14 +50,19 @@ export default function UserProfilePrivacyNotice() {
   let callback = tmp3[1];
   const ProfileVisibility = callback(dependencyMap[12]).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
-  callback = React.useCallback((children) => callback2(callback(closure_1[15]).Text, {
-    onPress() {
-      let obj = callback(closure_1[16]);
-      obj = { screen: constants.DATA_AND_PRIVACY };
-      return obj.openUserSettings(obj);
-    },
-    children
-  }, arg1), []);
+  callback = React.useCallback((children) => {
+    const obj = {
+      hasMaxConnections: false,
+      isBoostOnlySubscription: false,
+      onPress() {
+        let obj = callback(closure_1[16]);
+        obj = { screen: constants.DATA_AND_PRIVACY };
+        return obj.openUserSettings(obj);
+      },
+      children
+    };
+    return callback2(callback(closure_1[15]).Text, obj, arg1);
+  }, []);
   if (tmp3[0] !== callback(dependencyMap[13]).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE) {
     return null;
   } else {
@@ -70,9 +75,9 @@ export default function UserProfilePrivacyNotice() {
       dqQ7AN = callback(dependencyMap[9]).t.dqQ7AN;
     }
     obj = { style: tmp.container };
-    obj = { style: tmp.icon, children: callback3(callback(dependencyMap[17]).CircleInformationIcon, { flex: "/assets/design/components/Icon/native/redesign/generated/images", flexGrow: 24 }) };
+    obj = { style: tmp.icon, children: callback3(callback(dependencyMap[17]).CircleInformationIcon, {}) };
     const items = [callback3(View, obj), , ];
-    const obj1 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.text };
+    const obj1 = { delete: -1034747437, dispatch: -1274954172, raw: 94480, style: tmp.text };
     const intl = callback(dependencyMap[9]).intl;
     const obj2 = { privacySettingsLink: callback };
     obj1.children = intl.format(dqQ7AN, obj2);
@@ -84,7 +89,7 @@ export default function UserProfilePrivacyNotice() {
       return callback(constants.USER_DISMISS);
     };
     obj3.style = tmp.closeButton;
-    obj3.children = callback3(callback(dependencyMap[19]).XSmallIcon, { flex: "/assets/design/components/Icon/native/redesign/generated/images", flexGrow: 24 });
+    obj3.children = callback3(callback(dependencyMap[19]).XSmallIcon, {});
     items[2] = callback3(callback(dependencyMap[18]).PressableOpacity, obj3);
     obj.children = items;
     return callback4(View, obj);

@@ -1,5 +1,5 @@
 // Module ID: 11455
-// Function ID: 89238
+// Function ID: 89250
 // Name: usePendingGameProfileReturn
 // Dependencies: []
 // Exports: default

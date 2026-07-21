@@ -1,28 +1,27 @@
 // Module ID: 161
 // Function ID: 2461
 // Name: _isNativeReflectConstruct
-// Dependencies: [180, 183, 70]
+// Dependencies: []
 
 // Module 161 (_isNativeReflectConstruct)
-import Timing from "Timing";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_70 from "module_70";
-
 function _isNativeReflectConstruct() {
-  let Timing = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return Timing;
+    return closure_0;
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = importDefault(dependencyMap[6]);
 const importDefaultResult1 = importDefault(dependencyMap[7]);
-let closure_6 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": -1273973744, "Bool(true)": -1406091899, "Bool(true)": -1363101585, "Bool(true)": "COMMANDS_MIGRATION_UPSELL_MODAL", "Bool(true)": "application_user_id", "Bool(true)": "isArray", "Bool(true)": "isArray" };
-let obj = {};
+let closure_6 = {};
+let obj = { "Bool(false)": true, "Bool(false)": 2, "Bool(false)": true, "Bool(false)": "/assets/images/auth", "Bool(false)": 1920, "Bool(false)": 1080, "Bool(false)": null, "Bool(false)": "c2620d71d0c18f7cbdf536c0e7d3a788", "Bool(false)": "background-splash-dev", "Bool(false)": "jpg", "Bool(false)": "emoticon", "Bool(false)": null, "Bool(false)": true, "Bool(false)": 3, "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", "Bool(false)": null, "Bool(false)": "f14c54685496e4b330372e883666fa1c", "Bool(false)": "ko.messages.f14c54685496e4b330372e883666fa1c.compiled.messages", "Bool(false)": "jsona", "Bool(false)": 164, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": null };
 let closure_7 = importDefaultResult1("name");
 let closure_8 = importDefaultResult1("code");
 const tmp4 = (arg0) => {
@@ -33,7 +32,7 @@ const tmp4 = (arg0) => {
       items = [];
       items[0] = arg0;
       obj = closure_3(DOMException);
-      tmp2 = module_70;
+      tmp2 = closure_2;
       if (closure_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
@@ -73,7 +72,7 @@ const tmp4 = (arg0) => {
       return tmp2Result;
     }
   }
-  let Timing = DOMException;
+  let closure_0 = DOMException;
   callback2(DOMException, arg0);
   let obj = {
     key: "name",

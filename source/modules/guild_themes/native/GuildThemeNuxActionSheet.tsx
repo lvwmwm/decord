@@ -1,10 +1,10 @@
-// Module ID: 14865
-// Function ID: 111972
+// Module ID: 14868
+// Function ID: 112006
 // Name: GuildThemeNuxActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14865 (GuildThemeNuxActionSheet)
+// Module 14868 (GuildThemeNuxActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -113,11 +113,11 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj.onDismiss = callback3;
   obj.contentStyles = tmp.container;
   const items7 = [callback3(importDefault(closure_2[17]), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
-  obj = { alignItems: "r", justifyContent: "isArray", backgroundColor: "useRef", style: tmp.title };
+  obj = { style: tmp.title };
   const intl3 = arg1(closure_2[15]).intl;
   obj.children = intl3.string(arg1(closure_2[15]).t.Q9zFy9);
   items7[1] = callback3(arg1(closure_2[18]).Text, obj);
-  obj1 = { style: tmp.description };
+  obj1 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
   const intl4 = arg1(closure_2[15]).intl;
   obj1.children = intl4.string(arg1(closure_2[15]).t.XLpBLj);
   items7[2] = callback3(arg1(closure_2[18]).Text, obj1);

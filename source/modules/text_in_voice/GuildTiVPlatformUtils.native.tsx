@@ -1,8 +1,8 @@
-// Module ID: 7481
-// Function ID: 60040
+// Module ID: 7482
+// Function ID: 60052
 // Dependencies: []
 
-// Module 7481
+// Module 7482
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
 

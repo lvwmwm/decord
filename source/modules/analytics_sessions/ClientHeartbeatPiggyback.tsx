@@ -1,5 +1,5 @@
 // Module ID: 6698
-// Function ID: 51865
+// Function ID: 51873
 // Name: getClientHeartbeatPiggybackProperties
 // Dependencies: []
 // Exports: getClientHeartbeatPiggybackProperties

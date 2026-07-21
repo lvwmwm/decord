@@ -1,5 +1,5 @@
 // Module ID: 12248
-// Function ID: 93921
+// Function ID: 93933
 // Name: ReferredFriendAvatar
 // Dependencies: []
 // Exports: ReferralProgramPerkCard
@@ -77,7 +77,7 @@ obj = {};
 obj = { width: 320, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, alignItems: "center" };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
 obj.container = obj;
-obj.progressIndicatorContainer = { -9223372036854775808: 25937473, 0: 569860352, 9223372036854775807: 1355038993, -9223372036854775808: -2039349246, -9223372036854775808: 939524096, -9223372036854775808: 16777216 };
+obj.progressIndicatorContainer = { channelInfo: true, textInput: "/assets/images/native/premium/logos", updateDmSafetyAlertsSetting: 134, shrink: 56, grow: null, Component: "5491d41ca2212b1f11c074c452801d84" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.availableReferralSlot = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
@@ -121,16 +121,16 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   obj = { nReferralsSent: stateFromStores.size };
   const items4 = [callback(importDefault(dependencyMap[20]), obj), callback(ProgressIndicator, { referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer };
-  const obj2 = { style: tmp.heading };
+  const obj2 = { hasMaxConnections: "Array", isBoostOnlySubscription: "isInTreatment", style: tmp.heading };
   const intl = arg1(dependencyMap[10]).intl;
   obj2.children = intl.string(arg1(dependencyMap[10]).t.USo4s7);
   const items5 = [callback(arg1(dependencyMap[8]).Text, obj2), ];
-  obj3 = { style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
+  obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
   items5[1] = callback(arg1(dependencyMap[21]).TextWithIOSLinkWorkaround, obj3);
   obj1.children = items5;
   items4[2] = callback2(View, obj1);
   const obj4 = { style: tmp.buttonContainer };
-  const obj5 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
+  const obj5 = {};
   let tmp14 = false === stateFromStores1;
   if (!tmp14) {
     tmp14 = tmp7;

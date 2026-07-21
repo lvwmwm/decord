@@ -1,10 +1,10 @@
-// Module ID: 13874
-// Function ID: 104954
+// Module ID: 13877
+// Function ID: 104986
 // Name: QuestDockMode
 // Dependencies: []
 // Exports: useExternalScrollEventHandler
 
-// Module 13874 (QuestDockMode)
+// Module 13877 (QuestDockMode)
 const importAllResult = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;

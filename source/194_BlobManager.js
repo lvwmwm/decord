@@ -1,11 +1,12 @@
 // Module ID: 194
 // Function ID: 2804
 // Name: BlobManager
-// Dependencies: []
+// Dependencies: [1946157062, 6, 7, 101, 44, 50547]
 
 // Module 194 (BlobManager)
+import _classCallCheck from "_classCallCheck";
+
 let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
 const tmp2 = () => {
   class BlobManager {
     constructor() {
@@ -147,6 +148,6 @@ const tmp2 = () => {
   };
   return callback(BlobManager, null, items);
 }();
-tmp2.isAvailable = importDefault(dependencyMap[3]);
+tmp2.isAvailable = require("_isNativeReflectConstruct");
 
 export default tmp2;

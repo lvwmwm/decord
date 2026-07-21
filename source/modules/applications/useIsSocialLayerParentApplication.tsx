@@ -1,5 +1,5 @@
 // Module ID: 8952
-// Function ID: 70575
+// Function ID: 70586
 // Name: getIsSocialLayerParentApplication
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10267
-// Function ID: 79326
+// Function ID: 79337
 // Name: MuteSettings
 // Dependencies: []
 // Exports: MuteSettingsHint, default
@@ -108,7 +108,8 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl4 = arg1(dependencyMap[8]).intl;
     const obj1 = {
       mutedHook(children) {
-          return callback2(callback(closure_2[7]).Text, { children }, arg1);
+          const obj = { hasMaxConnections: 1, isBoostOnlySubscription: "center", children };
+          return callback2(callback(closure_2[7]).Text, obj, arg1);
         }
     };
     obj.children = intl4.format(arg1(dependencyMap[8]).t.O34r15, obj1);
@@ -118,7 +119,8 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl3 = arg1(dependencyMap[8]).intl;
     const obj3 = {
       notificationHook(children) {
-          return callback2(callback(closure_2[7]).Text, { children }, arg1);
+          const obj = { hasMaxConnections: -5, isBoostOnlySubscription: 16, children };
+          return callback2(callback(closure_2[7]).Text, obj, arg1);
         }
     };
     obj2.children = intl3.format(arg1(dependencyMap[8]).t.nRwUIL, obj3);

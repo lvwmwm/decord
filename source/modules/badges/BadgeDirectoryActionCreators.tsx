@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 65187
+// Module ID: 8264
+// Function ID: 65200
 // Name: urlUserId
 // Dependencies: []
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8263 (urlUserId)
+// Module 8264 (urlUserId)
 function urlUserId(arg0) {
   let tmp = arg0;
   const currentUser = currentUser.getCurrentUser();

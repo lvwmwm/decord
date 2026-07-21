@@ -1,5 +1,5 @@
 // Module ID: 4136
-// Function ID: 34366
+// Function ID: 34371
 // Dependencies: []
 
 // Module 4136
@@ -287,7 +287,7 @@ const obj = {
   },
   removeRecipient(id, id2) {
     const HTTP = id2(dependencyMap[8]).HTTP;
-    const obj = { lc: null, type: null, end: null, url: closure_11.CHANNEL_RECIPIENT(id, id2) };
+    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_11.CHANNEL_RECIPIENT(id, id2) };
     return HTTP.del(obj);
   },
   setDMOwner(arg0, owner) {
@@ -430,7 +430,7 @@ const obj = {
   },
   convertToGuild(arg0) {
     const HTTP = arg1(dependencyMap[8]).HTTP;
-    const obj = { lc: null, type: null, end: null, url: closure_11.CHANNEL_CONVERT(arg0) };
+    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_11.CHANNEL_CONVERT(arg0) };
     return HTTP.post(obj);
   },
   preload(arg0, channelId) {

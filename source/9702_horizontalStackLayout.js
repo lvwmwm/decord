@@ -1,5 +1,5 @@
 // Module ID: 9702
-// Function ID: 75419
+// Function ID: 75430
 // Name: horizontalStackLayout
 // Dependencies: []
 // Exports: useHorizontalStackLayout, verticalStackLayout
@@ -85,7 +85,7 @@ let closure_9 = () => {
       const items1 = [Number.MIN_VALUE, validLength, validLength, validLength - 1, -1];
       let result = Math.floor(10000 * obj.interpolate(value, items, items1)) / 100;
       const items2 = [-1, 0, validLength - 1, validLength];
-      const items3 = [1904345090, -83427325, 1 - (validLength - 1) * opacityInterval, 0.25];
+      const items3 = [, , 1 - (validLength - 1) * opacityInterval, 0.25];
       let interpolateResult = callback(closure_1[2]).interpolate(value, items2, items3);
       const obj2 = callback(closure_1[2]);
     } else if ("right" !== snapDirection) {
@@ -99,13 +99,13 @@ let closure_9 = () => {
       items4[2] = 1 - Number.MIN_VALUE;
       items4[3] = 1;
       items4[4] = 1.5;
-      const items5 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, validLength - 1, validLength, validLength];
+      const items5 = [null, validLength - 1, validLength, validLength];
       const _Number4 = Number;
       items5[4] = Number.MIN_VALUE;
       result = Math.floor(10000 * callback(closure_1[2]).interpolate(value, items4, items5)) / 100;
       const obj4 = callback(closure_1[2]);
       const items6 = [-validLength, 1 - validLength, 0, 1];
-      const items7 = [1904345090, 1 - (validLength - 1) * opacityInterval, 1, 0.25];
+      const items7 = [, 1 - (validLength - 1) * opacityInterval, 1, 0.25];
       interpolateResult = callback(closure_1[2]).interpolate(value, items6, items7);
       const obj5 = callback(closure_1[2]);
     }

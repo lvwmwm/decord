@@ -1,5 +1,5 @@
 // Module ID: 11273
-// Function ID: 87723
+// Function ID: 87735
 // Name: LayoutAnimation
 // Dependencies: []
 // Exports: useOptionEnteringAnimation

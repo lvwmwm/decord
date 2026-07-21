@@ -1,5 +1,5 @@
 // Module ID: 10614
-// Function ID: 82804
+// Function ID: 82815
 // Name: useCurrentUserStageRoles
 // Dependencies: []
 // Exports: default

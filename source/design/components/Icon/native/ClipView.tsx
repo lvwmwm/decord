@@ -1,10 +1,10 @@
-// Module ID: 7866
-// Function ID: 62645
+// Module ID: 7867
+// Function ID: 62658
 // Name: SolidCutout
 // Dependencies: []
 // Exports: default
 
-// Module 7866 (SolidCutout)
+// Module 7867 (SolidCutout)
 let StyleSheet;
 function SolidCutout(arg0) {
   let backgroundColor;

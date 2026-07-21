@@ -1,9 +1,9 @@
-// Module ID: 6955
-// Function ID: 55572
+// Module ID: 6956
+// Function ID: 55584
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6955 (_isNativeReflectConstruct)
+// Module 6956 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -80,7 +80,7 @@ let tmp3 = (Store) => {
     value() {
       let tmp = null;
       if (closure_10) {
-        const obj = { bucket: TREATMENT_1.TREATMENT_1 };
+        const obj = { style: "/assets/design/components/Icon/native/redesign/generated/images", source: 24, muted: 24, paused: null, bucket: TREATMENT_1.TREATMENT_1 };
         tmp = obj;
       }
       return tmp;

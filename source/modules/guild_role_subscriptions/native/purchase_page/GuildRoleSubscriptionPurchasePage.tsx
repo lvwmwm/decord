@@ -1,10 +1,10 @@
-// Module ID: 15136
-// Function ID: 114210
+// Module ID: 15139
+// Function ID: 114244
 // Name: Separator
 // Dependencies: []
 // Exports: default
 
-// Module 15136 (Separator)
+// Module 15139 (Separator)
 function Separator() {
   return callback(closure_6, { style: callback2().separator });
 }
@@ -52,7 +52,7 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
-obj.heroImage = { padding: null, Math: null };
+obj.heroImage = { "Null": null, "Null": null };
 const tmp5 = arg1(dependencyMap[6]);
 obj.guildIconContainer = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
@@ -61,16 +61,16 @@ const obj2 = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.contentCard = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.md, borderTopRightRadius: importDefault(dependencyMap[8]).radii.md };
 obj.loadingContainer = {};
 obj.socialContainer = { flexDirection: "row" };
-const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.xl, accessibilityRole: null, y: null, y: null, bottom: null };
+const obj4 = { 0: null, 0: 16, 9223372036854775807: "hidden", 0: 64, 0: null, 9223372036854775807: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.xl };
 obj.socialBadge = obj4;
-obj.socialBadgeIcon = { PREMIUM_TENURE_72_MONTH: 4, FILES_OR_LINKS_NUM_COLUMNS: -1472642815 };
-const obj5 = { merged_presences: 4, readStateType: -1472642815, tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.socialBadgeArrow = obj5;
-const obj6 = { 0: "Array", 9223372036854775807: "isArray", 9223372036854775807: "constructor", -9223372036854775808: "Boolean", backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.separator = obj6;
-obj.moneyBirbPlaceholder = { handleDisabled: false, scrollable: false, startExpanded: false };
-obj.gatedChannel = {};
+obj.socialBadgeIcon = {};
 const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.md, borderTopRightRadius: importDefault(dependencyMap[8]).radii.md };
+obj.socialBadgeArrow = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj6 = { bounces: null, originWhitelist: "91cf7e45c8979413a0ad2486eb772598", allowsInlineMediaPlayback: "ic_nitro_wheel", style: "png", backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER };
+obj.separator = obj6;
+obj.moneyBirbPlaceholder = {};
+obj.gatedChannel = { -9223372036854775808: null, "Null": null, "Null": null };
+const obj5 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.gatedChannelIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 let closure_17 = obj.createStyles(obj);
 const obj7 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
@@ -143,7 +143,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                               obj = { size: guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20, style: tmp.gatedChannelIcon, source: guildId(stateFromStores1[23]).getChannelIcon(stateFromStores1) };
                               items[1] = callback(guildId(stateFromStores1[11]).Icon, obj);
                               items[2] = callback(guildId(stateFromStores1[11]).Spacer, { size: 3 });
-                              obj = { children: closure_4 };
+                              obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/modules/polls/native/images", children: closure_4 };
                               items[3] = callback(guildId(stateFromStores1[12]).Text, obj);
                               obj.children = items;
                               return callback2(closure_6, obj);
@@ -161,14 +161,14 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             obj6 = { size: arg1(dependencyMap[25]).GuildIconSizes.XLARGE, guild: stateFromStores, style: tmp.guildIcon };
             obj5.children = callback(importDefault(dependencyMap[25]), obj6);
             const items5 = [callback(closure_6, obj5), , , , , , , , , , ];
-            obj7 = {};
+            obj7 = { hasMaxConnections: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000511090567818282, isBoostOnlySubscription: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000392111416998092 };
             const intl3 = arg1(dependencyMap[10]).intl;
             const obj8 = { serverName: stateFromStores.name };
             obj7.children = intl3.format(arg1(dependencyMap[10]).t.mqCkpl, obj8);
             items5[1] = callback(arg1(dependencyMap[12]).Text, obj7);
             const obj9 = { size: 8 };
             items5[2] = callback(arg1(dependencyMap[11]).Spacer, obj9);
-            const obj10 = { -9223372036854775808: "<string:261029890>", 0: "<string:3578855426>", 0: "<string:3728806327>", children: subscriptionsSettings.description };
+            const obj10 = { <string:1643205302>: "<string:254083074>", <string:1415816450>: "<string:2018574338>", <string:4283523744>: "<string:3393262035>", children: subscriptionsSettings.description };
             items5[3] = callback(arg1(dependencyMap[26]).TruncatedText, obj10);
             let tmp38Result = hasItem;
             if (!hasItem) {
@@ -215,7 +215,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             items5[5] = callback(arg1(dependencyMap[11]).Spacer, obj17);
             items5[6] = callback(LegalDisclaimer, {});
             items5[7] = callback(Separator, {});
-            const obj18 = {};
+            const obj18 = { hasMaxConnections: 15, isBoostOnlySubscription: "center" };
             const obj19 = { textTransform: "uppercase" };
             obj18.style = obj19;
             obj18.children = formatResult;

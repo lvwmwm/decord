@@ -1,5 +1,5 @@
 // Module ID: 5616
-// Function ID: 47850
+// Function ID: 47858
 // Name: add
 // Dependencies: []
 
@@ -909,7 +909,7 @@
     const self = this;
     if (LN10) {
       if ("object" === typeof LN10) {
-        const items = ["person_gesturing_no", "throttle", 1000000000, "rounding"];
+        const items = ["persistantItemData", "markRenderYielded", 1000000000, "rounding"];
         let num = 0;
         items[4] = 0;
         items[5] = 8;
@@ -2137,7 +2137,7 @@
       obj = {};
     }
     if (obj) {
-      const items = ["person_gesturing_no", "throttle", "GUILD_DISCOVERY_TAG", "setScene", "rawExePath"];
+      const items = ["persistantItemData", "markRenderYielded", "INTL_TESTING", "HOSTED_FIELDS_INVALID_FIELD_KEY", "canUseHighVideoUploadQuality"];
       class Decimal {
         constructor(arg0) {
           self = this;
@@ -2332,7 +2332,7 @@
     Decimal.config(obj);
     return Decimal;
   }
-  let cloneResult = clone({ "Bool(false)": true, "Bool(false)": "/assets/images/native/icons", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null });
+  let cloneResult = clone({ Ì: true, Í: "/assets/images/native/icons", Î: 24, Ï: 24, Ḯ: null });
   cloneResult.Decimal = cloneResult;
   cloneResult.default = cloneResult;
   cloneResult = new cloneResult(1);

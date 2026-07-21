@@ -1,10 +1,10 @@
-// Module ID: 7058
-// Function ID: 56442
+// Module ID: 7059
+// Function ID: 56454
 // Name: replaceAnimationColors
 // Dependencies: []
 // Exports: replaceAnimationColors
 
-// Module 7058 (replaceAnimationColors)
+// Module 7059 (replaceAnimationColors)
 const _module = require(dependencyMap[1]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/messages/BurstReactionEffectUtils.tsx");

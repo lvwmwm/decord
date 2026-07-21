@@ -1,5 +1,5 @@
 // Module ID: 5641
-// Function ID: 48219
+// Function ID: 48227
 // Name: canReviewGuildMemberApplications
 // Dependencies: [31, 1348, 3756, 482, 566, 1327]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications

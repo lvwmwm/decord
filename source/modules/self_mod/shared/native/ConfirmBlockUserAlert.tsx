@@ -1,5 +1,5 @@
 // Module ID: 10136
-// Function ID: 78429
+// Function ID: 78440
 // Name: ConfirmBlockUserAlert
 // Dependencies: []
 // Exports: default
@@ -84,7 +84,7 @@ export default function ConfirmBlockUserAlert(userId) {
       return callback(userId(onCancel[14]).Button, obj);
     }
   };
-  obj = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", style: tmp.header };
+  obj = { delete: "accessibilityLabel", dispatch: "r", raw: "isArray", style: tmp.header };
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.format(arg1(dependencyMap[15]).t.x5pOn9, { name });
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj), , ];

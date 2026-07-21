@@ -1,10 +1,10 @@
-// Module ID: 12534
-// Function ID: 96288
+// Module ID: 12536
+// Function ID: 96310
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [872415253, 3137339413, 17, 4261412880, 671088688, 33554448, 1946157056]
+// Dependencies: [872415253, 3137339413, 17, 16, 671088689, 33554448, 1946157056]
 // Exports: useHasXboxMonthlyOrbsPerk
 
-// Module 12534 (hasCrepeMonthlyOrbsPerk)
+// Module 12536 (hasCrepeMonthlyOrbsPerk)
 function hasCrepeMonthlyOrbsPerk(currentUser) {
   if (obj.canUseMonthlyOrbs(currentUser)) {
     if (!obj2.isPremiumExactly(currentUser, PremiumTypes.TIER_2)) {

@@ -1,20 +1,10 @@
 // Module ID: 5683
-// Function ID: 48898
+// Function ID: 48906
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 653, 491, 507, 2, 1355, 662, 4317, 5256, 2, 5, 4198, 3757]
+// Dependencies: []
 // Exports: default, useSubscribeGuildMembers
 
 // Module 5683 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import ME from "ME";
-import v1 from "v1";
-import closure_7 from "_isNativeReflectConstruct";
-import result2 from "result2";
-import set from "set";
-import MAX_FAVORITES from "MAX_FAVORITES";
-import { jsx } from "canViewChannel";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,9 +14,17 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [false];
+let closure_3 = [];
+let closure_4 = importDefault(dependencyMap[0]);
+let closure_5 = importDefault(dependencyMap[1]);
+let closure_6 = importDefault(dependencyMap[2]);
+let closure_7 = importDefault(dependencyMap[3]);
+let closure_8 = importDefault(dependencyMap[4]);
+let closure_9 = importDefault(dependencyMap[5]);
+let closure_10 = importAll(dependencyMap[6]);
+const jsx = arg1(dependencyMap[7]).jsx;
 let closure_12 = false;
-const result = _isNativeReflectConstruct.fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
+const result = arg1(dependencyMap[12]).fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
 
 export default function subscribeGuildMembers(arg0) {
   const arg1 = arg0;
@@ -44,16 +42,16 @@ export default function subscribeGuildMembers(arg0) {
       class WrappedComponent {
         constructor(arg0) {
           self = this;
-          tmp = ME(this, WrappedComponent);
+          tmp = closure_5(this, WrappedComponent);
           items = [];
           items[0] = Component;
-          obj = result2(WrappedComponent);
+          obj = closure_8(WrappedComponent);
           tmp2 = closure_7;
           if (closure_13()) {
             tmp4 = globalThis;
             _Reflect = Reflect;
-            tmp5 = result2;
-            constructResult = Reflect.construct(obj, items, result2(self).constructor);
+            tmp5 = closure_8;
+            constructResult = Reflect.construct(obj, items, closure_8(self).constructor);
           } else {
             constructResult = obj.apply(self, items);
           }

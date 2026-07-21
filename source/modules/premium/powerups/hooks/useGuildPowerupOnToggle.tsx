@@ -1,5 +1,5 @@
 // Module ID: 11558
-// Function ID: 89923
+// Function ID: 89935
 // Name: useGuildPowerupOnToggle
 // Dependencies: []
 // Exports: default

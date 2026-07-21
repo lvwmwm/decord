@@ -1,5 +1,5 @@
 // Module ID: 8705
-// Function ID: 68900
+// Function ID: 68911
 // Name: getProductPurchaseState
 // Dependencies: []
 // Exports: useProductPurchaseState
@@ -44,7 +44,7 @@ function getProductPurchaseState(closure_5, skuId) {
     obj = { isPurchased: null != everyResult && everyResult, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != someResult && someResult };
     return obj;
   } else {
-    obj = { 0: "postal-address-country", 9223372036854775807: "password", -9223372036854775808: "email", isPurchased: tmp };
+    obj = { <string:3951289864>: "absolute", <string:2363720547>: -1, <string:121561170>: -1, isPurchased: tmp };
     return obj;
   }
   const tmp2 = importDefault(dependencyMap[1]);

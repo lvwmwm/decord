@@ -1,5 +1,5 @@
 // Module ID: 8516
-// Function ID: 67899
+// Function ID: 67910
 // Name: getBotLabel
 // Dependencies: []
 
@@ -103,12 +103,9 @@ class BotTag {
     obj.accessibilityLabel = stringResult;
     items1 = [, ];
     items1[0] = tmp6;
-    obj1 = { -985534194: false, 1392510081: false, -1314149359: false };
     items2 = [];
     items2[0] = tmp12;
-    obj1.style = items2;
-    obj1.children = tmp3;
-    items1[1] = jsx(arg1(dependencyMap[8]).Text, obj1);
+    items1[1] = jsx(arg1(dependencyMap[8]).Text, { style: items2, children: tmp3 });
     obj.children = items1;
     return jsxs(View, obj);
   }
@@ -119,7 +116,7 @@ const BotTagTypes = arg1(dependencyMap[2]).BotTagTypes;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj = { useIdentityRegistrationStep: 1895826078, GiftingTier5SmallBadge: 1, crystal_ball: 30465, channels: 2621440, isStreamInfoOverlayEnabled: 2621440, EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: 2293760, overflow: 7798784, Č: 0, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.tag = obj;
 obj.verifiedTagLeftPadding = { paddingLeft: 1 };
 const tmp3 = arg1(dependencyMap[3]);

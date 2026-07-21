@@ -1,12 +1,13 @@
-// Module ID: 14649
-// Function ID: 110470
+// Module ID: 14652
+// Function ID: 110502
 // Name: AndroidRemoteAuthCrypto
 // Dependencies: [0, 0, 0, 0, 0]
 
-// Module 14649 (AndroidRemoteAuthCrypto)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 14652 (AndroidRemoteAuthCrypto)
+import closure_2 from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import result from "result";
 
 let closure_5 = {};
 let tmp2 = () => {
@@ -61,6 +62,6 @@ let tmp2 = () => {
   return callback2(AndroidRemoteAuthCrypto, items);
 }();
 tmp2 = new tmp2();
-const result = require("__exportStarResult1").fileFinishedImporting("modules/remote_auth/RemoteAuthCrypto.android.tsx");
+result = result.fileFinishedImporting("modules/remote_auth/RemoteAuthCrypto.android.tsx");
 
 export default tmp2;

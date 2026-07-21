@@ -1,5 +1,5 @@
 // Module ID: 10316
-// Function ID: 79633
+// Function ID: 79644
 // Name: formatString
 // Dependencies: []
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages

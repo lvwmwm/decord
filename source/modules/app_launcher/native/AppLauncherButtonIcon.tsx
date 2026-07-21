@@ -1,5 +1,5 @@
 // Module ID: 11339
-// Function ID: 88159
+// Function ID: 88171
 // Name: AppLauncherButtonIcon
 // Dependencies: []
 // Exports: AppLauncherButtonIcon

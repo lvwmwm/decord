@@ -1,5 +1,5 @@
 // Module ID: 12004
-// Function ID: 92759
+// Function ID: 92771
 // Name: WishlistEmptyState
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ class WishlistEmptyState {
     shouldShowMRNotice = global.shouldShowMRNotice;
     closure_0 = undefined;
     obj = closure_0(dependencyMap[20]);
-    tmp = f92762(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
+    tmp = f92774(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
     obj2 = closure_0(dependencyMap[21]);
     obj3 = closure_0(dependencyMap[22]);
     str = "mobile-text-heading-primary";
@@ -46,7 +46,8 @@ class WishlistEmptyState {
     obj2.children = intl.string(closure_0(dependencyMap[28]).t.HGnLLT);
     items1 = [, , ];
     items1[0] = jsx(closure_0(dependencyMap[27]).Text, obj2);
-    obj3 = { style: tmp.emptyStateText };
+    obj3 = { hasMaxConnections: false, isBoostOnlySubscription: false };
+    obj3.style = tmp.emptyStateText;
     intl2 = closure_0(dependencyMap[28]).intl;
     obj3.children = intl2.string(closure_0(dependencyMap[28]).t./X1ny6);
     items1[1] = jsx(closure_0(dependencyMap[27]).Text, obj3);
@@ -119,12 +120,12 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
     flag = false;
   }
   let obj = {};
-  obj = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
+  obj = { top: "<string:3435973836>", bottom: "<string:1903247380>", left: "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
   obj.headerRow = obj;
-  obj = { gap: importDefault(dependencyMap[19]).space.PX_8 };
+  obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[19]).space.PX_8 };
   obj.headerButtons = obj;
-  obj.gridWrapper = { "Null": null, "Null": null };
-  obj.itemsContainer = { "Bool(false)": null, "Bool(false)": "82ae7189682c36bee3dc3a129ab02a11", "Bool(false)": "img_app_crash_darker", "Bool(false)": "png" };
+  obj.gridWrapper = { @braintree/wrap-promise: "BLURPLE_19", onPress: 1 };
+  obj.itemsContainer = {};
   const obj1 = { alignItems: "center", paddingTop: importDefault(dependencyMap[19]).space.PX_48 };
   const space = importDefault(dependencyMap[19]).space;
   obj1.paddingBottom = flag ? space.PX_40 : space.PX_48;
@@ -136,8 +137,8 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
   const space2 = importDefault(dependencyMap[19]).space;
   obj2.marginTop = flag ? space2.PX_20 : space2.PX_24;
   obj.emptyStateCta = obj2;
-  const obj3 = { o: "isArray", getChannel: "options", TypeError: "loadJsonAsset", jsx: "a", duration: "isArray", useMemo: "__packager_asset", then: "id", padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
-  obj.disclaimer = obj3;
+  obj.disclaimer = { padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
+  const obj3 = { padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
   obj.disclaimerTop = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };
   const obj4 = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };
   obj.disclaimerBottom = { marginTop: importDefault(dependencyMap[19]).space.PX_16 };

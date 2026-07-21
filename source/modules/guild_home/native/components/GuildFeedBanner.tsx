@@ -1,9 +1,9 @@
-// Module ID: 15153
-// Function ID: 114302
+// Module ID: 15156
+// Function ID: 114336
 // Name: GuildFeedBanner
 // Dependencies: []
 
-// Module 15153 (GuildFeedBanner)
+// Module 15156 (GuildFeedBanner)
 function GuildFeedBanner(guild) {
   let hideDescription;
   let hideMemberCount;
@@ -173,7 +173,7 @@ function GuildFeedBanner(guild) {
       };
       const obj14 = { style: tmp.publicIcon, source: importDefault(dependencyMap[30]) };
       const items12 = [callback(arg1(dependencyMap[26]).Icon, obj14), ];
-      const obj15 = {};
+      const obj15 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
       class G {
         constructor() {
           obj = { opacity: closure_1.get() };
@@ -193,7 +193,7 @@ function GuildFeedBanner(guild) {
       if (null != discoverableGuild.memberCount) {
         const obj17 = { style: tmp.dotOnline };
         const items14 = [callback(height, obj17), ];
-        const obj18 = {};
+        const obj18 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387 };
         const intl2 = arg1(dependencyMap[29]).intl;
         ({ presenceCount: obj27.online, memberCount: obj27.offline } = discoverableGuild);
         obj18.children = intl2.format(arg1(dependencyMap[29]).t.QCNv6P, {});
@@ -239,7 +239,7 @@ obj.avatar = obj;
 obj1 = { paddingBottom: 24, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj1;
 obj.description = { marginTop: 4 };
-const obj2 = { <string:3810092247>: "spriteIndex", <string:2204282508>: "y", <string:3426243031>: "isArray", marginTop: GUILD_FEED_CARD_MARGIN_HORIZONTAL };
+const obj2 = { 865667171: null, -1257885358: null, -1219931278: null, marginTop: GUILD_FEED_CARD_MARGIN_HORIZONTAL };
 obj.textContainer = obj2;
 obj.content = { width: "100%" };
 obj.icon = { marginLeft: 8 };
@@ -247,12 +247,12 @@ const tmp4 = arg1(dependencyMap[6]);
 obj.headerContainer = { alignItems: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 const obj3 = { alignItems: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.headerBorder = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.lg, marginTop: -16 };
-const obj5 = { androidScheme: null, iosScheme: null, enabled: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+const obj5 = { "Null": 145.5, "Null": null, "Null": "fa8d8980f41bbcb7aeb9d5dc519482cb", borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guildIconContainer = obj5;
 const obj4 = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.lg, marginTop: -16 };
 obj.dotOnline = { borderRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360 };
-obj.publicInfo = { "Bool(true)": 54801408, "Bool(true)": -225361408, "Bool(true)": 854917122 };
-obj.publicIcon = {};
+obj.publicInfo = { 33964765073235: "<string:1107297123>", -9223372036854775808: "n\u00E4stan ett \u00E5r", -9223372036854775808: "n\u00E4stan {{count}} \u00E5r" };
+obj.publicIcon = { -9223372036854775808: "cl", 0: "effectiveConnectionSpeedBuckets", 9223372036854775807: "proto" };
 obj.memberInfo = {};
 obj.title = { maxWidth: "90%" };
 let closure_13 = obj1.createStyles(obj);

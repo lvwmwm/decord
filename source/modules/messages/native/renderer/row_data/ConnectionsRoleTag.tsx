@@ -1,10 +1,10 @@
-// Module ID: 7905
-// Function ID: 62908
+// Module ID: 7906
+// Function ID: 62921
 // Name: createConnectionsRoleTag
 // Dependencies: []
 // Exports: createConnectionsRoleTag
 
-// Module 7905 (createConnectionsRoleTag)
+// Module 7906 (createConnectionsRoleTag)
 const processColor = require(dependencyMap[0]).processColor;
 const DEFAULT_ROLE_COLOR_HEX = require(dependencyMap[1]).DEFAULT_ROLE_COLOR_HEX;
 const _module = require(dependencyMap[4]);

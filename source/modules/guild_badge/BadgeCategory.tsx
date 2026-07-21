@@ -1,7 +1,7 @@
 // Module ID: 5699
-// Function ID: 49050
+// Function ID: 49058
 // Name: BadgeCategory
-// Dependencies: []
+// Dependencies: [2365587463, 905969666]
 // Exports: getBadgeCategory
 
 // Module 5699 (BadgeCategory)

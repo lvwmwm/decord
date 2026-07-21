@@ -1,5 +1,5 @@
 // Module ID: 10992
-// Function ID: 85526
+// Function ID: 85537
 // Name: BanConfirmModal
 // Dependencies: [297467904, 283115520, 720961536, 441974784, 250871808, 361562112, 131072]
 // Exports: default

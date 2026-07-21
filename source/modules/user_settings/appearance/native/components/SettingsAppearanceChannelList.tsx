@@ -1,10 +1,10 @@
-// Module ID: 14054
-// Function ID: 106760
+// Module ID: 14057
+// Function ID: 106792
 // Name: ChannelListPreview
 // Dependencies: []
 // Exports: default
 
-// Module 14054 (ChannelListPreview)
+// Module 14057 (ChannelListPreview)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -16,7 +16,7 @@ const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj["borderRadius"] = importDefault(dependencyMap[4]).radii.xl;
 obj["overflow"] = "hidden";
 obj.channelPreviewGradient = obj;
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.xl, accessibilityLabel: "selectableItemBackgroundBorderless", variant: "ERROR", bottom: "RESPONDER_INACTIVE_PRESS_IN", variant: "ERROR", marginTop: importDefault(dependencyMap[4]).space.PX_8 };
+const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_8, borderRadius: importDefault(dependencyMap[4]).radii.xl };
 const merged1 = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_HIGH);
 obj1["shadowColor"] = "#000000";
 obj.channelPreviewCardContainer = obj1;

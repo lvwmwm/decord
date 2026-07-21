@@ -1,11 +1,13 @@
-// Module ID: 8222
-// Function ID: 64958
+// Module ID: 8223
+// Function ID: 64971
 // Name: getNameplateAssets
 // Dependencies: [0, 0]
 // Exports: getNameplateAssets
 
-// Module 8222 (getNameplateAssets)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
+// Module 8223 (getNameplateAssets)
+import result from "result";
+
+result = result.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
 
 export const getNameplateAssets = function getNameplateAssets(nameplate) {
   const skuId = nameplate.skuId;

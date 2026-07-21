@@ -1,5 +1,5 @@
 // Module ID: 8333
-// Function ID: 66026
+// Function ID: 66037
 // Name: isChangelogChannel
 // Dependencies: []
 // Exports: default

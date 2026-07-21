@@ -1,10 +1,10 @@
-// Module ID: 15381
-// Function ID: 117270
+// Module ID: 15384
+// Function ID: 117309
 // Name: openAddModeratorsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15381 (openAddModeratorsActionSheet)
+// Module 15384 (openAddModeratorsActionSheet)
 function openAddModeratorsActionSheet(channel) {
   let flag = arg1;
   if (arg1 === undefined) {

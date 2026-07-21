@@ -1,10 +1,10 @@
-// Module ID: 13461
-// Function ID: 102204
+// Module ID: 13463
+// Function ID: 102226
 // Name: UserProfileEditFormTextField
 // Dependencies: []
 // Exports: default
 
-// Module 13461 (UserProfileEditFormTextField)
+// Module 13463 (UserProfileEditFormTextField)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTextField.tsx");
@@ -21,7 +21,7 @@ export default function UserProfileEditFormTextField(inputRef) {
     numberOfLines = 1;
   }
   inputRef = inputRef.inputRef;
-  let obj = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true };
+  let obj = { grow: true, shrink: true, size: true, variant: true, display: true, flexDirection: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(inputRef, obj);
   obj = { label, description, errorMessage, containerStyle };

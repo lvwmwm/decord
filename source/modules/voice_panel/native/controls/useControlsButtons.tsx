@@ -1,10 +1,10 @@
-// Module ID: 15725
-// Function ID: 120180
+// Module ID: 15734
+// Function ID: 120345
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15725 (_createForOfIteratorHelperLoose)
+// Module 15734 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -167,41 +167,41 @@ export default function useControlsButtons() {
     const items = [];
     const push = items.push;
     if (treatment) {
-      let obj = { _desired: "<string:422422>", y: "<string:393216>", render: redux.video };
+      let obj = { render: redux.video };
       push(obj);
       if (!tmp) {
         obj = { render: redux.micConnected };
         items.push(obj);
       }
       if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
-        const obj1 = { _desired: 358254285552180500000000000000000000, y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115524, render: redux.screenshare };
+        const obj1 = { render: redux.screenshare };
         items.push(obj1);
       } else {
-        const obj2 = { _desired: -1, y: -1, render: redux.chat };
+        const obj2 = { render: redux.chat };
         items.push(obj2);
       }
       if (tmp) {
-        const obj3 = { _desired: true, y: true, render: redux.ptt };
+        const obj3 = { "Bool(false)": "shelfItem", "Bool(false)": "NATIVE_REQUIRED_ASSETS_ICONS", render: redux.ptt };
         items.push(obj3);
       }
       if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
-        const obj4 = { _desired: 358254285552180500000000000000000000, y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115524, render: redux.screenshare };
+        const obj4 = { render: redux.screenshare };
         items.push(obj4);
       } else {
-        const obj5 = { _desired: 196607, y: 273743872, render: redux.soundboard };
+        const obj5 = { render: redux.soundboard };
         items.push(obj5);
       }
-      const obj6 = { render: redux.disconnectCancel };
+      const obj6 = { "Bool(false)": "<string:3174913>", "Bool(false)": "isFetchingFriendsForGuild", render: redux.disconnectCancel };
       items.push(obj6);
     } else {
-      obj = { _desired: "56%", y: "56%", render: redux.mic };
+      obj = { render: redux.mic };
       push(obj);
-      const obj7 = { _desired: "center", y: "center", render: redux.connect };
+      const obj7 = { "Bool(false)": "column", "Bool(false)": null, render: redux.connect };
       items.push(obj7);
       const obj8 = { render: redux.chat };
       items.push(obj8);
       if (obj12.isMetaQuest()) {
-        const obj9 = { _desired: "<string:2371027200>", y: "<string:1195740485>", render: redux.drawerToggle };
+        const obj9 = { render: redux.drawerToggle };
         items.push(obj9);
       }
       const mapped = items.map((type) => {

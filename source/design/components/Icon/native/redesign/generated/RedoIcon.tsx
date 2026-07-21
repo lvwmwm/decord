@@ -1,10 +1,10 @@
-// Module ID: 13884
-// Function ID: 105011
+// Module ID: 13887
+// Function ID: 105043
 // Name: RedoIcon
 // Dependencies: []
 // Exports: RedoIcon
 
-// Module 13884 (RedoIcon)
+// Module 13887 (RedoIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RedoIcon.tsx");

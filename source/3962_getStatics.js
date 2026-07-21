@@ -1,5 +1,5 @@
 // Module ID: 3962
-// Function ID: 32809
+// Function ID: 32814
 // Name: getStatics
 // Dependencies: []
 
@@ -14,8 +14,8 @@ function getStatics(arg0) {
   return tmp2;
 }
 let closure_2 = {};
-let closure_3 = {};
-let obj = { "Null": "y", "Null": "onPlayerStateChange", "Null": "r", "Null": "inactiveDotElement", "Null": "handleActivityJoin", "Null": "japan" };
+let closure_3 = { "Null": "force", "Null": "forceChange", "Null": "rotation", "Null": "rotationChange", "Null": "scale", "Null": "scaleChange", "Null": "duration" };
+let obj = {};
 obj = {};
 obj[require(dependencyMap[0]).ForwardRef] = {};
 obj[require(dependencyMap[0]).Memo] = obj;

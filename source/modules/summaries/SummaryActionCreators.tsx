@@ -1,16 +1,17 @@
 // Module ID: 9519
-// Function ID: 74073
+// Function ID: 74084
 // Name: fetchSummary
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries
 
 // Module 9519 (fetchSummary)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import { Routes } from "__exportStarResult1";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import closure_7 from "result";
+import { Routes } from "result";
+import result from "result";
 
 function fetchSummary(channelId, summaryId) {
   return _fetchSummary(...arguments);
@@ -149,10 +150,10 @@ function _deleteSummary() {
   const _deleteSummary = obj;
   return obj(...arguments);
 }
-let closure_9 = 30 * require("__exportStarResult1").Millis.SECOND;
+let closure_9 = 30 * require("result").Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-const result = require("__exportStarResult1").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
+result = result.fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
 
 export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries, deleteSummary };
 export { fetchSummary };

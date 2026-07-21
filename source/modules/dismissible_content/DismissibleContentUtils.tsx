@@ -1,5 +1,5 @@
 // Module ID: 1336
-// Function ID: 15659
+// Function ID: 15664
 // Name: addVersionedDismissedContent
 // Dependencies: []
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
@@ -12,7 +12,7 @@ function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismi
 }
 function addTimeRecurringDismissedContent(GUILD_POWERUP_NOTIFICATION, nextNumTimesDismissed) {
   let obj = nextNumTimesDismissed(dependencyMap[11]);
-  obj = { surrogates: true, accessible: true, _oneway: true, lastDismissedAtMs: Date.now().toString(), numTimesDismissed: nextNumTimesDismissed };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, lastDismissedAtMs: Date.now().toString(), numTimesDismissed: nextNumTimesDismissed };
   return obj.updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, obj);
 }
 function addSnowflakeBoundDismissedContent(GUILD_POWERUP_NOTIFICATION, lastDismissedObjectId, nextNumTimesDismissed1) {
@@ -262,39 +262,39 @@ export { addTimeRecurringDismissedContent };
 export { addSnowflakeBoundDismissedContent };
 export const UNSAFE_addGuildDismissedContent = function UNSAFE_addGuildDismissedContent(content, guildId, numTimesDismissed) {
   let obj = guildId(dependencyMap[11]);
-  obj = { importantForAccessibility: "rules", accessibilityRole: "message", "Bool(false)": 1, "Bool(false)": "log", lastDismissedAtMs: Date.now().toString(), numTimesDismissed };
+  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, lastDismissedAtMs: Date.now().toString(), numTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const UNSAFE_removeGuildDismissedContent = function UNSAFE_removeGuildDismissedContent(content, guildId, numTimesDismissed) {
   let obj = guildId(dependencyMap[11]);
-  obj = { importantForAccessibility: "<string:27999297>", accessibilityRole: "M8.99998 2L9.99998 2V1L8.99998 1V2Z", "Bool(false)": "<string:944898048>", "Bool(false)": "<string:1903368479>", lastDismissedAtMs: Date.now().toString(), numTimesDismissed };
+  obj = { "Bool(false)": "<string:28000321>", "Bool(false)": "M7 1v1H6v1H5v8H3v-1H1v4h1v1h6V1H7Z", "Bool(false)": "<string:626130944>", "Bool(false)": "<string:1904843807>", lastDismissedAtMs: Date.now().toString(), numTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const UNSAFE_addTimeRecurringGuildDismissedContent = function UNSAFE_addTimeRecurringGuildDismissedContent(content, guildId, guildNextNumTimesDismissed) {
   let obj = guildId(dependencyMap[11]);
-  obj = { importantForAccessibility: "<string:27999297>", accessibilityRole: "M8.99998 2L9.99998 2V1L8.99998 1V2Z", "Bool(false)": "<string:944898048>", "Bool(false)": "<string:1903368479>", lastDismissedAtMs: Date.now().toString(), numTimesDismissed: guildNextNumTimesDismissed };
+  obj = { "Bool(false)": "<string:28000321>", "Bool(false)": "M7 1v1H6v1H5v8H3v-1H1v4h1v1h6V1H7Z", "Bool(false)": "<string:626130944>", "Bool(false)": "<string:1904843807>", lastDismissedAtMs: Date.now().toString(), numTimesDismissed: guildNextNumTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const UNSAFE_removeTimeRecurringGuildDismissedContent = function UNSAFE_removeTimeRecurringGuildDismissedContent(content, guildId, numTimesDismissed) {
   let obj = guildId(dependencyMap[11]);
-  obj = { importantForAccessibility: "<string:1196490754>", accessibilityRole: "<string:3310486038>", "Bool(false)": "<string:1917160705>", "Bool(false)": null, numTimesDismissed };
+  obj = { numTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const UNSAFE_addSnowflakeBoundGuildDismissedContent = function UNSAFE_addSnowflakeBoundGuildDismissedContent(content, lastDismissedObjectId, guildId, guildNextNumTimesDismissed) {
   let obj = lastDismissedObjectId(dependencyMap[11]);
-  obj = { "Bool(true)": "<string:1196490754>", "Bool(false)": "<string:3310486038>", lastDismissedAtMs: Date.now().toString(), lastDismissedObjectId, numTimesDismissed: guildNextNumTimesDismissed };
+  obj = { lastDismissedAtMs: Date.now().toString(), lastDismissedObjectId, numTimesDismissed: guildNextNumTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const UNSAFE_removeSnowflakeBoundGuildDismissedContent = function UNSAFE_removeSnowflakeBoundGuildDismissedContent(content, guildId, numTimesDismissed) {
   let obj = guildId(dependencyMap[11]);
-  obj = { importantForAccessibility: "<string:1196490754>", accessibilityRole: "<string:3310486038>", "Bool(false)": "<string:1917160705>", "Bool(false)": null, numTimesDismissed };
+  obj = { numTimesDismissed };
   return obj.updateGuildDismissedContent(content, guildId, obj);
 };
 export const isVersionedDismissibleContentDismissed = function isVersionedDismissibleContentDismissed(id, latestVersion) {
   let versionedDismissibleContentCurrentVersion = latestVersion;
   let obj = latestVersion(dependencyMap[12]);
   if (obj.disableNewUserDismissibleContent(id)) {
-    return { childSpanTimeout: true, _resetProfilerInfo: true };
+    return { "Bool(true)": 131122.52832032426, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
   } else {
     const userContent = store.settings.userContent;
     let lastDismissedVersion;
@@ -314,7 +314,7 @@ export const isVersionedDismissibleContentDismissed = function isVersionedDismis
 export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurringDismissibleContentDismissed(id, cooldownConfig) {
   let obj = cooldownConfig(dependencyMap[12]);
   if (obj.disableNewUserDismissibleContent(id)) {
-    return { "Null": true, "Null": true };
+    return { "Bool(false)": 131122.52832032426, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
   } else {
     const userContent = store.settings.userContent;
     let lastDismissedAtMs;

@@ -1,5 +1,5 @@
 // Module ID: 11345
-// Function ID: 88200
+// Function ID: 88212
 // Name: GiftIconTrinketsAnimation
 // Dependencies: []
 
@@ -10,9 +10,9 @@ const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let closure_6 = arg1(dependencyMap[4]).createStyles((width) => {
   const sum = arg1(dependencyMap[5]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[5]).SMALL_BUTTON_PADDING + 2;
-  const container = { left: false, accessibilityRole: false, exports: false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, width: sum, height: sum };
+  const container = { includeFrecency: "<string:3193044996>", lastUsedCommandId: "<string:1917108737>", lastUsedTimeMs: "type", alignItems: "apply", flexDirection: "<string:1348682001>", gap: "<string:410124290>", position: "<string:402653184>", padding: "<string:16777216>", width: sum, height: sum };
   const containerRefresh = { width, height: width };
-  return { container, containerRefresh, trinkets: { String: null, lc: null, content: null, surrogates: null, justifyContent: null, padding: null, applicationId: null }, trinketsRefresh: {} };
+  return { container, containerRefresh, trinkets: { "Bool(false)": "<string:1602305>", "Bool(false)": "<string:1572864>", "Bool(false)": "<string:2359296>", "Bool(false)": "<string:822149120>", "Bool(false)": "<string:2576980378>", "Bool(false)": "<string:1070176665>", "Bool(false)": "<string:296462929>" }, trinketsRefresh: {} };
 });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((trinketsAnimationUrl) => {

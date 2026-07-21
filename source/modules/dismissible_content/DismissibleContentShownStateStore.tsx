@@ -1,5 +1,5 @@
 // Module ID: 1340
-// Function ID: 15736
+// Function ID: 15741
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, removeCandidateContent, useIsAnyContentShown, useIsContentShown
@@ -15,7 +15,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function initState() {
-  const obj = { -1631700398: null, 1375297828: "\u{1F9BB}\u{1F3FF}", -111020123: true, candidates: new Map(), recentlyShown: [] };
+  const obj = { names: false, surrogates: false, hasDiversityParent: null, candidates: new Map(), recentlyShown: [] };
   const map = new Map();
   obj.currentlyShown = new Set();
   const set = new Set();

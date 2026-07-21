@@ -1,5 +1,5 @@
 // Module ID: 10617
-// Function ID: 82812
+// Function ID: 82823
 // Name: CALL_ACTION_BAR_HEIGHT
 // Dependencies: []
 // Exports: useGetActionBarHeight, useGetStageRTCPanelHeight

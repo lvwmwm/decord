@@ -1,7 +1,7 @@
 // Module ID: 9970
-// Function ID: 77046
+// Function ID: 77057
 // Name: categoryCollapse
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
 // Module 9970 (categoryCollapse)

@@ -1,10 +1,10 @@
-// Module ID: 4702
-// Function ID: 40906
+// Module ID: 4701
+// Function ID: 40913
 // Name: getTimeFormat
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getTimeFormat
 
-// Module 4702 (getTimeFormat)
+// Module 4701 (getTimeFormat)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("utils/native/TimeUtils.tsx");
 

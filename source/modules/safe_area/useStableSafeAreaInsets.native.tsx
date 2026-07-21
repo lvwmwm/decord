@@ -1,5 +1,5 @@
 // Module ID: 10597
-// Function ID: 82695
+// Function ID: 82706
 // Name: getStableSafeAreaInsets
 // Dependencies: []
 // Exports: default

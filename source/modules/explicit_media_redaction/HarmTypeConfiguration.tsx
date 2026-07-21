@@ -1,5 +1,5 @@
 // Module ID: 5669
-// Function ID: 48711
+// Function ID: 48719
 // Name: ContentHarmType
 // Dependencies: []
 
@@ -81,7 +81,7 @@ obj[obj.EXPLICIT] = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
-    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    obj1 = { 536813311: null, -773110529: null, -775094268: null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -170,7 +170,7 @@ const obj1 = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
-    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    obj1 = { 536813311: null, -773110529: null, -775094268: null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -259,7 +259,7 @@ obj[obj.GORE] = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
-    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    obj1 = { 536813311: null, -773110529: null, -775094268: null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -348,7 +348,7 @@ const obj2 = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
-    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    obj1 = { 536813311: null, -773110529: null, -775094268: null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];

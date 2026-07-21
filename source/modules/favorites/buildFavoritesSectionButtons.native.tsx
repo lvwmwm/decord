@@ -1,5 +1,5 @@
 // Module ID: 10179
-// Function ID: 78610
+// Function ID: 78621
 // Name: _addChannelToFavorites
 // Dependencies: []
 // Exports: default

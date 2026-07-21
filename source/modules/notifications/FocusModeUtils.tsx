@@ -1,5 +1,5 @@
 // Module ID: 10217
-// Function ID: 78936
+// Function ID: 78947
 // Name: useFocusModeEnabled
 // Dependencies: []
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled

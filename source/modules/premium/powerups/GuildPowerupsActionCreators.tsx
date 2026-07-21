@@ -1,5 +1,5 @@
 // Module ID: 11509
-// Function ID: 89665
+// Function ID: 89677
 // Name: guildPowerupsAckNotification
 // Dependencies: []
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications

@@ -1,10 +1,10 @@
-// Module ID: 7105
-// Function ID: 57107
+// Module ID: 7106
+// Function ID: 57119
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isFriendshipAnniversaryBackendPersistenceEnabled
 
-// Module 7105 (apexExperiment)
+// Module 7106 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

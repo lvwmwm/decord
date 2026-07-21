@@ -1,5 +1,5 @@
 // Module ID: 10431
-// Function ID: 80429
+// Function ID: 80440
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -122,7 +122,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       }
       let userViewInfo = tmp3.userViewInfo;
       if (null == userViewInfo) {
-        userViewInfo = { "Bool(true)": -536870861, "Bool(true)": -299892737 };
+        userViewInfo = { 9223372036854775807: -536870861, 9223372036854775807: -299892737 };
       }
       ({ eligibleAt, viewCount } = userViewInfo);
       const _Date = Date;

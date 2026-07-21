@@ -1,15 +1,16 @@
 // Module ID: 8990
-// Function ID: 70783
+// Function ID: 70794
 // Name: CrunchyrollLinkDiscordError
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 8990 (CrunchyrollLinkDiscordError)
-import "__exportStarResult1";
-import { CrunchyrollLinkModalScenes as closure_2 } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import { CrunchyrollLinkModalScenes as closure_2 } from "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
+result = result.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
 
 export default function CrunchyrollLinkDiscordError(onClose) {
   let obj = arg1(dependencyMap[3]);

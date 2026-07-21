@@ -1,5 +1,5 @@
 // Module ID: 11656
-// Function ID: 90401
+// Function ID: 90413
 // Name: JoinRequestRejectionReasonActionSheet
 // Dependencies: [270401536, 45154304, 764215296, 659619840, 131072, 2356412416, 2415919144, 2432696365, 33554477, 1996488704, 31, 27, 33, 10382, 10386, 3989, 2, 3747312, 2031616]
 
@@ -41,7 +41,7 @@ class JoinRequestRejectionReasonActionSheet {
     items1 = [, ];
     items1[0] = jsx(require("module_3989").TextArea, obj2);
     obj3 = { direction: "horizontal", style: tmp2.buttonGroup };
-    obj4 = {};
+    obj4 = { FINISH: true, hasMediaOptions: true };
     intl2 = arg1(dependencyMap[9]).intl;
     obj4.text = intl2.string(arg1(dependencyMap[9]).t.ETE/oC);
     obj4.onPress = bottomSheetClose;

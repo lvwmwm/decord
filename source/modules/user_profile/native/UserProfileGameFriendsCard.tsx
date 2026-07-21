@@ -1,5 +1,5 @@
 // Module ID: 11996
-// Function ID: 92677
+// Function ID: 92689
 // Name: UserProfileGameFriendsCard
 // Dependencies: []
 // Exports: default
@@ -63,7 +63,7 @@ export default function UserProfileGameFriendsCard(arg0) {
     obj1.style = items;
     const intl3 = arg1(closure_2[4]).intl;
     obj1.title = intl3.string(arg1(closure_2[4]).t.Uv/eTx);
-    const obj2 = { children: formatResult };
+    const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: formatResult };
     obj1.children = jsx(arg1(closure_2[7]).Text, obj2);
     return jsx(importDefault(closure_2[6]), obj1);
   }

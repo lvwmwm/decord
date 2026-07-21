@@ -1,7 +1,7 @@
 // Module ID: 12011
-// Function ID: 92821
+// Function ID: 92833
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [788070400, 778698752, 541196288, 357957632, 359268352, 516423680, 584056832, 584122368, 359727104, 560463872]
+// Dependencies: [788070400, 778698752, 541261824, 357957632, 359268352, 516489216, 584056832, 584122368, 359727104, 560463872]
 // Exports: default
 
 // Module 12011 (useWishlistSuggestionsDismissibleContent)

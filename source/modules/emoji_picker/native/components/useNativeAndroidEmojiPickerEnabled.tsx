@@ -1,7 +1,7 @@
 // Module ID: 9337
-// Function ID: 72946
+// Function ID: 72957
 // Name: useNativeAndroidEmojiPickerEnabled
-// Dependencies: [79429632, 95027200, 37093376, 348585984]
+// Dependencies: []
 // Exports: default
 
 // Module 9337 (useNativeAndroidEmojiPickerEnabled)

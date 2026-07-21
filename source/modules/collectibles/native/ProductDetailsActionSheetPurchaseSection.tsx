@@ -1,5 +1,5 @@
 // Module ID: 8763
-// Function ID: 69258
+// Function ID: 69269
 // Name: GiftButton
 // Dependencies: []
 // Exports: default
@@ -111,7 +111,7 @@ function VCButton(balance) {
           obj5.openLazy(callback(closure_2[25])(closure_2[28], closure_2.paths), "FractionalNitroCollectedActionSheet", obj);
           const tmp11 = callback(closure_2[25])(closure_2[28], closure_2.paths);
         } else {
-          obj1 = { 139585039: null, 805462532: null, 1400038225: null, product: lib, orbBalancePriorToPurchase: callback };
+          obj1 = { withSpring: null, channelId: null, onPress: null, product: lib, orbBalancePriorToPurchase: callback };
           lib(closure_2[29]).open(obj1);
           const obj3 = lib(closure_2[29]);
         }
@@ -211,9 +211,9 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_8 };
 obj.container = obj;
-const obj1 = { -1680055435: null, 1935228496: null, borderColor: importDefault(dependencyMap[11]).colors.BORDER_MUTED };
+const obj1 = { 307518561: "<string:41007478>", 1732711239: "<string:1090519040>", borderColor: importDefault(dependencyMap[11]).colors.BORDER_MUTED };
 obj.containerFramesEA = obj1;
-obj.gradientOverlay = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
+obj.gradientOverlay = { backgroundColor: "<string:408361903>", opacity: "<string:2920093709>", borderRadius: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
 const tmp5 = arg1(dependencyMap[9]);
 obj.purchaseSection = { gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.disclaimer = { opacity: 0.75 };
@@ -221,7 +221,7 @@ const obj2 = { gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.buttonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[11]).space.PX_12 };
 const obj3 = { flexDirection: "row", gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.framesEAContainer = { flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_8 };
-obj.orbsButtonLabel = {};
+obj.orbsButtonLabel = { "Null": 7, "Null": 370 };
 obj.orbsButtonText = { flexShrink: 1 };
 let closure_21 = obj.createStyles(obj);
 const obj4 = { flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_8 };
@@ -319,7 +319,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
   }
   if (tmp22Result) {
     obj2 = {};
-    obj3 = { colors: ["index", "formatToPlainString"], locations: ["CLIENT_SCRIPT_FAILED_TO_LOAD", "consumedRequestToRespondToSeriousThermalState"], start: { max: -536870861, guildId: -299892737 }, end: {} };
+    obj3 = { colors: [-68870627513428090000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022688656900512932], locations: ["has", "np"], start: {}, end: {} };
     const items3 = [tmp.gradientOverlay, ];
     let tmp28 = !isThemeDarkResult;
     if (tmp28) {
@@ -336,14 +336,14 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     const tmp24 = callback2;
     const tmp27 = importDefault(dependencyMap[53]);
     obj6 = {};
-    obj7 = {};
-    obj8 = { stopColor: token };
+    obj7 = { accessibilityActions: null, onAccessibilityAction: null, applicationId: null, isGameRelationship: null, isNameplatedRow: null, canShowDisplayNameStyles: null, canShowDisplayNameStylesFont: null };
+    obj8 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, stopColor: token };
     const items5 = [callback2(arg1(dependencyMap[54]).Stop, obj8), ];
-    obj9 = { stopColor: token };
+    obj9 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, stopColor: token };
     items5[1] = callback2(arg1(dependencyMap[54]).Stop, obj9);
     obj7.children = items5;
     obj6.children = callback3(arg1(dependencyMap[54]).RadialGradient, obj7);
-    const items6 = [callback2(arg1(dependencyMap[54]).Defs, obj6), callback2(arg1(dependencyMap[54]).Rect, { 1359503646: false, 979597923: false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false })];
+    const items6 = [callback2(arg1(dependencyMap[54]).Defs, obj6), callback2(arg1(dependencyMap[54]).Rect, { <string:1359503789>: true, <string:1751376737>: true, <string:2807217887>: true, <string:1374019962>: true, <string:39977987>: true })];
     obj5.children = items6;
     items4[1] = callback3(importDefault(dependencyMap[54]), obj5);
     obj2.children = items4;
@@ -427,7 +427,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
           const sum = arraySpreadResult + 1;
           obj3.value = items1;
           const obj4 = { style: tmp.framesEAContainer };
-          const obj5 = {};
+          const obj5 = { hasMaxConnections: true, isBoostOnlySubscription: true };
           const intl8 = product(onTrackPress[17]).intl;
           const obj6 = {};
           let obj14 = analyticsLocations(onTrackPress[57]);

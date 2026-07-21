@@ -1,9 +1,9 @@
-// Module ID: 7764
-// Function ID: 61672
+// Module ID: 7765
+// Function ID: 61684
 // Name: IconButton
 // Dependencies: []
 
-// Module 7764 (IconButton)
+// Module 7765 (IconButton)
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -43,7 +43,7 @@ const forwardRefResult = importAllResult.forwardRef((grow, ref) => {
     obj["size"] = "lg";
     obj["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
     const items = [callback(ref(dependencyMap[5]).BaseIconButton, obj), ];
-    const obj1 = { "Null": 1, "Null": 22, "Null": "exposure_tracking", style: tmp3.label, maxFontSizeMultiplier, children: label };
+    const obj1 = { delete: 1, dispatch: 22, raw: "exposure_tracking", style: tmp3.label, maxFontSizeMultiplier, children: label };
     items[1] = callback(ref(dependencyMap[6]).Text, obj1);
     obj["children"] = items;
     let tmp10 = callback2(ref(dependencyMap[4]).BaseButton, obj);

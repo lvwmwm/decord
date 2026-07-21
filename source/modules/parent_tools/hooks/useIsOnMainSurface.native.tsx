@@ -1,10 +1,10 @@
-// Module ID: 15552
-// Function ID: 118654
+// Module ID: 15555
+// Function ID: 118693
 // Name: getActiveRoute
 // Dependencies: []
 // Exports: useIsOnMainSurface
 
-// Module 15552 (getActiveRoute)
+// Module 15555 (getActiveRoute)
 function getActiveRoute(routes) {
   let index;
   if (null != routes) {

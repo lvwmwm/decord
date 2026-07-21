@@ -1,10 +1,10 @@
-// Module ID: 13716
-// Function ID: 103770
+// Module ID: 13718
+// Function ID: 103792
 // Name: _addRestrictedScheduleRule
 // Dependencies: []
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 13716 (_addRestrictedScheduleRule)
+// Module 13718 (_addRestrictedScheduleRule)
 function _addRestrictedScheduleRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

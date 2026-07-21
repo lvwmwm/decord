@@ -1,10 +1,18 @@
 // Module ID: 9234
-// Function ID: 72215
+// Function ID: 72226
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [3, 1184, 2, 57, 31, 1450, 2, 31, 8820, 3972, 2, 31, 5230, 9244, 9245, 2, 9240, 2, 57]
 // Exports: default
 
 // Module 9234 (_createForOfIteratorHelperLoose)
+import timestamp from "timestamp";
+import isNonEmptyString from "isNonEmptyString";
+import { View } from "result2";
+import { getI18NCountryName } from "_slicedToArray";
+import module_31 from "module_31";
+import useWindowDimensions from "useWindowDimensions";
+import _slicedToArray from "_slicedToArray";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -84,13 +92,8 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const getI18NCountryName = arg1(dependencyMap[3]).getI18NCountryName;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
+({ jsx: closure_7, jsxs: closure_8 } = module_31);
+let closure_9 = useWindowDimensions.createStyles((arg0) => {
   let obj = {};
   obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
   const space = importDefault(dependencyMap[6]).space;
@@ -104,8 +107,7 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj.searchFieldContainer = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/phone/native/CountryCallingCodeSelect.tsx");
+const result = _slicedToArray.fileFinishedImporting("modules/phone/native/CountryCallingCodeSelect.tsx");
 
 export default function CountryCallingCodeSelect(onCountrySelected) {
   onCountrySelected = onCountrySelected.onCountrySelected;
@@ -120,9 +122,9 @@ export default function CountryCallingCodeSelect(onCountrySelected) {
     let phoneCountryCodes;
     alpha2 = alpha2.alpha2;
     ({ phoneCountryCodes, name: closure_1 } = alpha2);
-    let closure_3 = callback(alpha2);
+    let timestamp = callback(alpha2);
     return phoneCountryCodes.map((code) => {
-      let obj = { translatedName: closure_3, key: "" + arg1 + "-" + code, country: obj };
+      let obj = { translatedName: timestamp, key: "" + arg1 + "-" + code, country: obj };
       obj = { code, alpha2, name: closure_1 };
       return obj;
     });

@@ -1,10 +1,10 @@
-// Module ID: 4685
-// Function ID: 40797
+// Module ID: 4684
+// Function ID: 40804
 // Name: isActionPickSupported
 // Dependencies: [6, 7]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 4685 (isActionPickSupported)
+// Module 4684 (isActionPickSupported)
 import _defineProperties from "_defineProperties";
 
 const result = _defineProperties.fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");

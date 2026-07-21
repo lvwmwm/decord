@@ -1,41 +1,29 @@
 // Module ID: 15806
-// Function ID: 120864
+// Function ID: 120899
 // Dependencies: []
 
 // Module 15806
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "ro",
+  locale: "nl",
   pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    let substr = Number(parts[0]) == arg0;
-    if (substr) {
-      const first = parts[0];
-      substr = first.slice(-2);
-    }
-    if (arg1) {
-      let str5 = "other";
+    String(arg0);
+    let str = "other";
+    if (!arg1) {
+      let str2 = "other";
       if (1 == arg0) {
-        str5 = "one";
-      }
-      let str2 = str5;
-    } else if (1 != arg0) {
-      if (tmp2) {
-        if (0 != arg0) {
-          let str4 = "other";
-          if (1 != arg0) {
-            str4 = "other";
-            if (substr >= 1) {
-              str4 = "other";
-            }
-          }
+        str2 = "other";
+        if (tmp2) {
+          str2 = "one";
         }
-        str2 = str4;
       }
-      str4 = "few";
-    } else {
-      str2 = "one";
+      str = str2;
     }
-    return str2;
+    return str;
   }
 });
 globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: null, deviceWidth: null });
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({});
+globalThis.IntlMessageFormat.__addLocaleData({ *-*-*: null, deviceWidth: null });

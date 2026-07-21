@@ -1,5 +1,5 @@
 // Module ID: 10773
-// Function ID: 83684
+// Function ID: 83695
 // Name: StreamPreviewTile
 // Dependencies: []
 
@@ -139,17 +139,17 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { liveContainer: {}, titleIcon: { marginRight: 6 } };
+let obj = { liveContainer: { "Bool(false)": "isArray", "Bool(false)": "Text", "Bool(false)": "marginTop" }, titleIcon: { marginRight: 6 } };
 obj = {};
 let obj4 = arg1(dependencyMap[8]);
 obj.backgroundColor = obj4.hexOpacityToRgba(importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj.borderRadius = importDefault(dependencyMap[9]).radii.sm;
 obj.usernameContainer = obj;
-obj1 = { <string:1373095266>: 0.001, <string:1347517852>: 0.001, <string:1373069732>: null, <string:2715639170>: "/", <string:1644077513>: null, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj1 = { renderVideoDetails: 0.001, channelId: 0.001, selectedAnswerIds: null, submitting: "/", editing: null, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.usernamePosition = obj1;
+const obj2 = { paddingTop: false, justifyContent: false, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_600 };
+obj.streamPreview = obj2;
 const tmp5 = arg1(dependencyMap[6]);
-obj.streamPreview = { backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_600 };
-const obj2 = { backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_600 };
 obj.screenshareContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 obj4 = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 obj.stageStreamContainer = obj4;

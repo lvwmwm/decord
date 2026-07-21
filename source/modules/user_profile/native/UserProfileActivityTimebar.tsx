@@ -1,5 +1,5 @@
 // Module ID: 11932
-// Function ID: 92263
+// Function ID: 92275
 // Name: UserProfileActivityTimebar
 // Dependencies: []
 // Exports: default
@@ -15,7 +15,7 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_M
 obj.bar = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.progress = { backgroundColor: importDefault(dependencyMap[5]).colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: "100%", minWidth: 4 };
-obj.textRow = { 1449229240: "row", 371666258: "center" };
+obj.textRow = { "Bool(false)": false, "Bool(false)": 0 };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: "100%", minWidth: 4 };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_profile/native/UserProfileActivityTimebar.tsx");

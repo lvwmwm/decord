@@ -1,5 +1,5 @@
 // Module ID: 1153
-// Function ID: 13131
+// Function ID: 13135
 // Name: ignoreRequireCycleLogs
 // Dependencies: []
 // Exports: ignoreRequireCycleLogs
@@ -16,6 +16,6 @@ export const ignoreRequireCycleLogs = function ignoreRequireCycleLogs(version) {
     tmp = version.minor < 70;
   }
   if (tmp) {
-    LogBox.ignoreLogs([null]);
+    LogBox.ignoreLogs(["<string:3221226569>"]);
   }
 };

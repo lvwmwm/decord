@@ -1,10 +1,10 @@
-// Module ID: 15330
-// Function ID: 116720
+// Module ID: 15333
+// Function ID: 116759
 // Name: IncomingRequestRowActions
 // Dependencies: []
 // Exports: IncomingRequestRowActions
 
-// Module 15330 (IncomingRequestRowActions)
+// Module 15333 (IncomingRequestRowActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -47,7 +47,7 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
   let obj4 = arg1(dependencyMap[4]);
   class E {
     constructor() {
-      obj = {};
+      obj = { "Bool(false)": 8, "Bool(false)": "text-md/bold", "Bool(false)": "text-brand" };
       if (animate) {
         tmp2 = user;
         tmp3 = pressed;
@@ -223,7 +223,7 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     },
     style: animatedStyle
   };
-  obj4 = { pink: -144637951, plum: 17545793 };
+  obj4 = { "Bool(false)": "fi", "Bool(false)": "pillIcon" };
   const obj5 = { icon: importDefault(dependencyMap[9]), onPress: callback1, accessibilityLabel: ignoreRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
   const items3 = [animate(arg1(dependencyMap[8]).IconButton, obj5), ];
   obj6 = { icon: importDefault(dependencyMap[10]), onPress: callback, accessibilityLabel: acceptRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
@@ -241,7 +241,7 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
   obj8 = {};
   const intl = arg1(dependencyMap[12]).intl;
   obj8.text = intl.string(arg1(dependencyMap[12]).t.n8nU4W);
-  obj9 = { Text: 5375, string: 1896939776, y: 8000 };
+  obj9 = { canSort: "none", GameDepthTier1SmallBadge: "contain", _monthsRegex: "password" };
   let tmp18 = null;
   if (animate) {
     tmp18 = animatedStyle2;
@@ -257,7 +257,7 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
     const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
   };
-  obj10.children = animate(arg1(dependencyMap[13]).Text, { "Bool(true)": "f508ffa8fec7b43f0c7e1765658cd955", "Bool(true)": "ic_message", "Bool(true)": "png" });
+  obj10.children = animate(arg1(dependencyMap[13]).Text, { jumped: "f508ffa8fec7b43f0c7e1765658cd955", recipients: "ic_message", unit: "png" });
   obj9.children = animate(importDefault(dependencyMap[4]).View, obj10);
   obj8.icon = animate(importDefault(dependencyMap[4]).View, obj9);
   obj8.onPress = callback2;

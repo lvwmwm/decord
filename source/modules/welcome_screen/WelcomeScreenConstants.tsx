@@ -1,7 +1,7 @@
 // Module ID: 11679
-// Function ID: 90617
+// Function ID: 90629
 // Name: WELCOME_SCREEN_TYPE
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11679 (WELCOME_SCREEN_TYPE)
 const _module = require(dependencyMap[0]);

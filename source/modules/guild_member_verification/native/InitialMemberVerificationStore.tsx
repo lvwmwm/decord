@@ -1,5 +1,5 @@
 // Module ID: 9142
-// Function ID: 71660
+// Function ID: 71671
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: setInitialVerification

@@ -1,10 +1,10 @@
-// Module ID: 15948
-// Function ID: 122310
+// Module ID: 15952
+// Function ID: 122354
 // Name: LabelLayoutComponent
 // Dependencies: []
 // Exports: default
 
-// Module 15948 (LabelLayoutComponent)
+// Module 15952 (LabelLayoutComponent)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

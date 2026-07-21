@@ -1,5 +1,5 @@
 // Module ID: 9283
-// Function ID: 72528
+// Function ID: 72539
 // Name: ConversationPreviewSkeleton
 // Dependencies: []
 // Exports: default
@@ -11,15 +11,15 @@ let closure_5 = arg1(dependencyMap[2]).MOBILE_PREVIEW_MESSAGE_COUNT;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[5]).space.PX_8, marginTop: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[5]).space.PX_8, marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.row = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.rowSpacing = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
-const obj2 = { bhk: "<string:1027735553>", bic: "<string:4143972873>", borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.avatar = obj2;
 const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
+obj.avatar = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.lines = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj4 = { <string:1632221346>: 141317.025, <string:2722977214>: 0.0000000000000000000000000000000000000000000000000000000000000413348369651203, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+const obj4 = { y: 141317.025, isArray: 0.00000000000000000000000000000000000000000000000000000000000004133483696512167, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.lineName = obj4;
 const obj3 = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.lineText = { height: 10, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };

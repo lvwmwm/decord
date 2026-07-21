@@ -1,10 +1,10 @@
-// Module ID: 13322
-// Function ID: 101224
+// Module ID: 13324
+// Function ID: 101246
 // Name: transformApplication
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
-// Module 13322 (transformApplication)
+// Module 13324 (transformApplication)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/rpc/helpers/transformApplication.tsx");
 

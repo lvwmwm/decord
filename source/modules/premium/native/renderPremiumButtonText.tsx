@@ -1,10 +1,10 @@
-// Module ID: 12380
-// Function ID: 94642
+// Module ID: 12382
+// Function ID: 94664
 // Name: PremiumText
 // Dependencies: []
 // Exports: default
 
-// Module 12380 (PremiumText)
+// Module 12382 (PremiumText)
 function PremiumText(basePlanId) {
   let isCurrentPlan;
   let isGift;
@@ -93,7 +93,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 0: "String", 0: "Array", 0: "construct", 0: "Array", 0: "isArray" };
+obj = { "Bool(true)": "String", "Bool(true)": "Array", "Bool(true)": "construct", "Bool(true)": "Array", 9223372036854775807: "isArray" };
 const tmp4 = arg1(dependencyMap[3]);
 obj.borderColor = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.3);
 obj.discount = obj;

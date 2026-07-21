@@ -1,5 +1,5 @@
 // Module ID: 9399
-// Function ID: 73234
+// Function ID: 73245
 // Name: NODE_SIZE
 // Dependencies: []
 
@@ -15,15 +15,15 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
 let obj = { itemInner: obj };
-obj = { "Null": null, "Null": null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
+obj = { margin: null, backgroundColor: null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.ICON_TRANSPARENT };
 obj.fadedItem = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.activeItem = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
-const obj3 = { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000745429332806459, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004665176389013497, "Bool(true)": 141317.275, isLowQuality: null, APP_MESSAGE_EMBED: null, nameUnformatted: null, pK/WG0: null, display: null, alsoPublishToEventListener: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
+const obj3 = { <string:1401708816>: 0.000000000000000000000000000000000000000001525050860536844, <string:2085500511>: 0.00000000000000000000000000000000000000000000000000000000000004665176389013498, <string:3635438091>: 141317.275, <string:1330024018>: false, <string:2356957445>: false, <string:80489538>: "isArray", <string:80491008>: "key", <string:1284003840>: "Array", <string:277479363>: "construct", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.lockContainer = obj3;
-const obj4 = { bhk: null, bic: 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
+const obj4 = { "Null": null, "Null": 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.lock = obj4;
 let closure_10 = obj1.createStyles(obj);
 let closure_11 = { code: "function EmojiPickerCategoriesItemTsx1(){const{withTiming,categoryIndexActive,index,timingStandard,styleColorActive,styleColorTransparent}=this.__closure;return{opacity:withTiming(categoryIndexActive.get()===index?1:0.5,timingStandard),backgroundColor:categoryIndexActive.get()===index?styleColorActive:styleColorTransparent};}" };

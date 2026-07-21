@@ -1,5 +1,5 @@
 // Module ID: 10925
-// Function ID: 84938
+// Function ID: 84949
 // Name: QuestCollectibleRewardModalMessages
 // Dependencies: []
 // Exports: openQuestCollectibleRewardModal

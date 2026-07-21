@@ -1,10 +1,10 @@
-// Module ID: 15743
-// Function ID: 120280
+// Module ID: 15752
+// Function ID: 120445
 // Name: MobilePhoneShareIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15743 (MobilePhoneShareIcon)
+// Module 15752 (MobilePhoneShareIcon)
 let closure_3 = importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -20,8 +20,8 @@ const tmp2 = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.circle = obj;
-obj.iconContainer = {};
-obj.icon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.iconContainer = { <string:1446693987>: null, <string:1666068817>: "no-hide-descendants", <string:1370110668>: true, <string:1549880881>: "/assets/.cache/intl/ZGVzaWdu", <string:1638698833>: null };
+obj.icon = {};
 let closure_10 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");

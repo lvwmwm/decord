@@ -1,7 +1,7 @@
 // Module ID: 10342
-// Function ID: 79822
+// Function ID: 79833
 // Name: defaultFormatter
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: defaultFormatter
 
 // Module 10342 (defaultFormatter)

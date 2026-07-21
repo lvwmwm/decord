@@ -1,14 +1,14 @@
-// Module ID: 7614
-// Function ID: 61005
+// Module ID: 7615
+// Function ID: 61017
 // Name: RowManager
 // Dependencies: []
 
-// Module 7614 (RowManager)
+// Module 7615 (RowManager)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 ({ RowType: closure_6, SeparatorType: closure_7, LoadingType: closure_8 } = arg1(dependencyMap[3]));
-const obj = {};
+const obj = { <string:1445889125>: null, <string:2116980062>: null, <string:1645524270>: null, <string:156410107>: null, <string:1627819014>: null };
 const merged = Object.assign(arg1(dependencyMap[4]).DEFAULT_OPTIONS);
 const tmp2 = arg1(dependencyMap[3]);
 const tmp4 = () => {

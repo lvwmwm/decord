@@ -1,9 +1,9 @@
-// Module ID: 15523
-// Function ID: 118489
+// Module ID: 15526
+// Function ID: 118528
 // Name: HistorySeparator
 // Dependencies: []
 
-// Module 15523 (HistorySeparator)
+// Module 15526 (HistorySeparator)
 function HistorySeparator() {
   const tmp = callback2();
   let obj = { style: tmp.guildHistorySeparatorWrapper, children: callback(closure_5, obj) };
@@ -30,7 +30,7 @@ obj.privateChannelIcon = {};
 obj.badgeWrapper = {};
 obj.guildWrapper = {};
 obj.guildHistorySeparatorWrapper = {};
-obj1 = { bhk: true, bic: true, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
+obj1 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.guildHistorySeparator = obj1;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
@@ -48,7 +48,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
   const callback1 = importAllResult.useCallback(() => {
     guildId(closure_2[9]).transitionToGuild(guildId);
   }, items1);
-  obj = { @braintree/browser-detection/is-ios-wkwebview: 366, @braintree/browser-detection/supports-popups: null, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
+  obj = { guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
   obj.children = callback(importDefault(dependencyMap[10]), obj);
   return callback(closure_5, obj);
 });

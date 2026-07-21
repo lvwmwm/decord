@@ -1,5 +1,5 @@
 // Module ID: 11640
-// Function ID: 90340
+// Function ID: 90352
 // Name: GuildIconPile
 // Dependencies: []
 // Exports: GuildIconPile

@@ -1,5 +1,5 @@
 // Module ID: 11683
-// Function ID: 90631
+// Function ID: 90643
 // Name: GuildDirectoryNicknameUpsell
 // Dependencies: []
 // Exports: default
@@ -36,7 +36,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: arg1(closure_2[14]).GuildIconSizes.XLARGE };
   const items2 = [callback2(importDefault(closure_2[14]), obj1), , , , ];
   const obj2 = { style: tmp.header };
-  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(closure_2[16]).intl;
   const obj4 = {};
   let name;
@@ -113,9 +113,9 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
+obj = { SDK_VERSION: null, numberOfLines: null, marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT };
 obj.container = obj;
-obj.guildIcon = { height: 52881784.83212474, zIndex: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.guildIcon = { dampingRatio: 52881784.83212474, stiffness: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj.title = { "Null": null, "Null": null };
 obj.description = { textAlign: "center" };
 obj.header = {};

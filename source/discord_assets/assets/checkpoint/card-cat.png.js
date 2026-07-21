@@ -1,9 +1,9 @@
-// Module ID: 7826
-// Function ID: 62399
+// Module ID: 7827
+// Function ID: 62412
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7826 (metadata)
+// Module 7827 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/checkpoint/card-cat.png.js");
 

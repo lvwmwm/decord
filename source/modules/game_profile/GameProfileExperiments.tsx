@@ -1,11 +1,11 @@
-// Module ID: 6971
-// Function ID: 55715
+// Module ID: 6972
+// Function ID: 55727
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 6971 (apexExperiment)
+// Module 6972 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { -926844321: null, -615011102: null }, variations: { [1]: { -926844321: null, -615011102: null }, [2]: { -926844321: true, -615011102: true } } });
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { "Bool(false)": null, "Bool(false)": null }, variations: { [1]: { "Bool(false)": null, "Bool(false)": null }, [2]: { "Bool(false)": null, "Bool(false)": null } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/game_profile/GameProfileExperiments.tsx");
 

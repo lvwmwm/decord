@@ -1,5 +1,5 @@
 // Module ID: 11195
-// Function ID: 87205
+// Function ID: 87217
 // Name: useViewableAppLauncherHomeItems
 // Dependencies: []
 // Exports: useViewableAppLauncherHomeItems

@@ -1,5 +1,5 @@
 // Module ID: 9610
-// Function ID: 74842
+// Function ID: 74853
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
@@ -7,7 +7,7 @@
 let obj = { uiViewClassName: "StickerPickerRowView", directEventTypes: { topPressSticker: { registrationName: "onPressSticker" }, topLongPressSticker: { registrationName: "onLongPressSticker" } } };
 obj = { rowData: true };
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ 0: null, 9223372036854775807: null }));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 const value = _module1.get("StickerPickerRowView", () => obj);

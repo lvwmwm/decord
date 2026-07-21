@@ -1,5 +1,5 @@
 // Module ID: 11912
-// Function ID: 92201
+// Function ID: 92213
 // Name: UserProfileActivityCardBadges
 // Dependencies: []
 // Exports: default

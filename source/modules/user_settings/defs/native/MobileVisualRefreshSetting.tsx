@@ -1,9 +1,9 @@
-// Module ID: 14088
-// Function ID: 106968
+// Module ID: 14091
+// Function ID: 107000
 // Name: toggle
 // Dependencies: []
 
-// Module 14088 (toggle)
+// Module 14091 (toggle)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const name = arg1(dependencyMap[3]).MobileVisualRefreshExperiment.definition.name;
@@ -39,7 +39,7 @@ obj = {
       let obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: name };
       dispatch(obj);
     } else {
-      obj = { hasIcons: 1359151103, onPress: 255954963, text: 16777474, experimentName: name };
+      obj = { <string:1348643829>: 1359151103, <string:2734253049>: -46034905, <string:1231311278>: 16777473, experimentName: name };
       dispatch(obj);
     }
   }

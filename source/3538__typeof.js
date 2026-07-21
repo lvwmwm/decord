@@ -1,5 +1,5 @@
 // Module ID: 3538
-// Function ID: 27416
+// Function ID: 27421
 // Name: _typeof
 // Dependencies: []
 
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -280,14 +280,14 @@ export const DayPeriodParser = (Parser) => {
         if ("BB" !== arg1) {
           if ("BBB" !== arg1) {
             if ("BBBBB" === arg1) {
-              return dayPeriod.dayPeriod(arg0, {});
+              return dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
             } else {
-              return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+              return dayPeriod.dayPeriod(arg0, { "Bool(true)": 52931328, "Bool(true)": -213302784 }) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
             }
           }
         }
       }
-      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, { "Bool(true)": null, "Bool(true)": null });
     }
   };
   const items = [obj, ];

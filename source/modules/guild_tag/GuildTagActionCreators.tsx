@@ -1,12 +1,12 @@
-// Module ID: 12798
-// Function ID: 98076
+// Module ID: 12800
+// Function ID: 98098
 // Name: _adoptGuildIdentity
 // Dependencies: [0, 0]
 // Exports: adoptGuildIdentity
 
-// Module 12798 (_adoptGuildIdentity)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 12800 (_adoptGuildIdentity)
+import result from "result";
+import closure_4 from "result";
 
 function _adoptGuildIdentity() {
   // CreateGeneratorClosureLongIndex (0x67)

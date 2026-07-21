@@ -1,11 +1,11 @@
-// Module ID: 7561
-// Function ID: 60492
+// Module ID: 7562
+// Function ID: 60504
 // Name: _isNativeReflectConstruct
-// Dependencies: [496173056, 131072, 401604608, 31, 27, 1353, 4945, 1354, 33, 4126]
+// Dependencies: [496238592, 131072, 401604608, 31, 27, 1353, 4944, 1354, 33, 4126]
 
-// Module 7561 (_isNativeReflectConstruct)
+// Module 7562 (_isNativeReflectConstruct)
 import module_31 from "module_31";
-import keys from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

@@ -1,5 +1,5 @@
 // Module ID: 3773
-// Function ID: 29015
+// Function ID: 29020
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl

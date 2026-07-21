@@ -1,5 +1,5 @@
 // Module ID: 11690
-// Function ID: 90695
+// Function ID: 90707
 // Name: HubProgressHeader
 // Dependencies: []
 // Exports: default
@@ -10,12 +10,11 @@ const View = arg1(dependencyMap[1]).View;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: closure_4, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { container: obj, icon: { bhk: null, bic: null } };
-obj = { "Null": "text-sm/semibold", "Null": null, "Null": 1, height: arg1(dependencyMap[3]).GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT };
-const tmp3 = arg1(dependencyMap[2]);
-obj.innerContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { container: { height: arg1(dependencyMap[3]).GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT }, icon: { "Null": "row", "Null": "center" } };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj.innerContainer = obj;
 let closure_7 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressHeader.tsx");
 
 export default function HubProgressHeader(guild) {

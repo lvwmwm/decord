@@ -1,5 +1,5 @@
 // Module ID: 4293
-// Function ID: 37495
+// Function ID: 37503
 // Name: TypedEventEmitter
 // Dependencies: []
 

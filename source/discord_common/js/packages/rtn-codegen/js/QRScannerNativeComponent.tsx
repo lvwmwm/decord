@@ -1,9 +1,9 @@
-// Module ID: 12753
-// Function ID: 97802
+// Module ID: 12755
+// Function ID: 97824
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 12753 (__INTERNAL_VIEW_CONFIG)
+// Module 12755 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDQRScanner", directEventTypes: { topQRCodeFound: { registrationName: "onQRCodeFound" } } };
 obj = {};
 const _module = require(dependencyMap[0]);

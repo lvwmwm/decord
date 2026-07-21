@@ -1,10 +1,10 @@
-// Module ID: 12379
-// Function ID: 94635
+// Module ID: 12381
+// Function ID: 94657
 // Name: GiftPurchaseButton
 // Dependencies: []
 // Exports: default
 
-// Module 12379 (GiftPurchaseButton)
+// Module 12381 (GiftPurchaseButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

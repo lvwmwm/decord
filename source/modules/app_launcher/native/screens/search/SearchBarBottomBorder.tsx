@@ -1,21 +1,21 @@
 // Module ID: 11205
-// Function ID: 87232
+// Function ID: 87244
 // Name: usePinnedSearchBarBottomBorder
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: usePinnedSearchBarBottomBorder
 
 // Module 11205 (usePinnedSearchBarBottomBorder)
-import closure_3 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
 
-__exportStarResult1 = {};
-__exportStarResult1 = { borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
-__exportStarResult1.border = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+result = {};
+result = { borderBottomColor: require("result").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
+result.border = result;
+result = result.createStyles(result);
 let closure_6 = { code: "function SearchBarBottomBorderTsx1(){const{withSpring,scrollPosition,triggerScrollHeight,springStandard}=this.__closure;return{opacity:withSpring(scrollPosition.get()>triggerScrollHeight?1:0,springStandard)};}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx");
+result = result.fileFinishedImporting("modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx");
 
 export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomBorder(arg0) {
   let key;
@@ -37,7 +37,7 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
   const callback = React.useCallback((offset) => {
     const result = sharedValue.set(offset.offset);
   }, items1);
-  const tmp = __exportStarResult1();
+  const tmp = result();
   const fn = function u() {
     const obj = {};
     let num = 0;

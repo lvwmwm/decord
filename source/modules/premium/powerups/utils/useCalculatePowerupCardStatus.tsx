@@ -1,5 +1,5 @@
 // Module ID: 11541
-// Function ID: 89867
+// Function ID: 89879
 // Name: useCalculatePowerupCardStatus
 // Dependencies: []
 // Exports: useCalculatePowerupCardStatus

@@ -1,5 +1,5 @@
 // Module ID: 12166
-// Function ID: 93573
+// Function ID: 93585
 // Name: createResolvingGuildInvite
 // Dependencies: []
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite

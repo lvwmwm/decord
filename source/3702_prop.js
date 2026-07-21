@@ -1,5 +1,5 @@
 // Module ID: 3702
-// Function ID: 28069
+// Function ID: 28074
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "L", "Bool(false)": "header", "Bool(false)": "heading-xl/extrabold", "Bool(false)": "mobile-text-heading-primary" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "L", "Bool(false)": "header", "Bool(false)": "heading-xl/extrabold", "Bool(false)": "mobile-text-heading-primary" } };
+    obj = { long: { application: "<string:1959460867>", Set: "<string:1959460867>", Icon: "<string:3679518723>", id: "<string:4294735004>" }, narrow: {}, short: { application: "<string:1959460867>", Set: "<string:1959460867>", Icon: "<string:3679518723>", id: "<string:4294735004>" } };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null } };
+    const obj1 = { long: { application: "isArray", Set: "nm", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "nm", Icon: "content", id: "a" }, short: { application: "isArray", Set: "nm", Icon: "content", id: "a" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "tr";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "L", "Bool(false)": "header", "Bool(false)": "heading-xl/extrabold", "Bool(false)": "mobile-text-heading-primary" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "L", "Bool(false)": "header", "Bool(false)": "heading-xl/extrabold", "Bool(false)": "mobile-text-heading-primary" } }, disjunction: { long: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "<string:3991883267>", "Bool(false)": "<string:3956998146>", "Bool(false)": null, "Bool(false)": null } }, unit: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } } }, locale: "tr" });
+prop.push({ data: { conjunction: { long: { application: "<string:1959460867>", Set: "<string:1959460867>", Icon: "<string:3679518723>", id: "<string:4294735004>" }, narrow: {}, short: { application: "<string:1959460867>", Set: "<string:1959460867>", Icon: "<string:3679518723>", id: "<string:4294735004>" } }, disjunction: { long: { application: "isArray", Set: "nm", Icon: "content", id: "a" }, narrow: { application: "isArray", Set: "nm", Icon: "content", id: "a" }, short: { application: "isArray", Set: "nm", Icon: "content", id: "a" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "tr" });

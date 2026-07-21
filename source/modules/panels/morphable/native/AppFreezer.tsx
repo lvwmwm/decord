@@ -1,10 +1,10 @@
-// Module ID: 15123
-// Function ID: 114120
+// Module ID: 15126
+// Function ID: 114154
 // Name: jsx
 // Dependencies: []
 // Exports: default
 
-// Module 15123 (jsx)
+// Module 15126 (jsx)
 importAll(dependencyMap[0]);
 let closure_2 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,5 +1,5 @@
 // Module ID: 5788
-// Function ID: 49460
+// Function ID: 49468
 // Name: getSanitizedRestrictedGuilds
 // Dependencies: []
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
@@ -50,7 +50,7 @@ export const getSanitizedActivityJoiningRestrictedGuilds = function getSanitized
 };
 export const computeFlags = function computeFlags(setting) {
   if ((setting & closure_7) === closure_7) {
-    let obj = {};
+    let obj = { accessibilityLabel: "Small", 1286240338: "sm", 2018080851: "Placeholder" };
   } else {
     obj = { all: false, mutualFriends: (setting & constants2.MUTUAL_FRIENDS) === constants2.MUTUAL_FRIENDS, mutualGuilds: (setting & constants2.MUTUAL_GUILDS) === constants2.MUTUAL_GUILDS };
   }

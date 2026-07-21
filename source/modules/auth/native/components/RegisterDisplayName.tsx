@@ -1,10 +1,10 @@
-// Module ID: 14626
-// Function ID: 110282
+// Module ID: 14629
+// Function ID: 110314
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14626 (_createForOfIteratorHelperLoose)
+// Module 14629 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -102,8 +102,8 @@ const tmp4 = arg1(dependencyMap[7]);
 obj.button = { marginTop: importDefault(dependencyMap[9]).space.PX_24 };
 obj.page = { flex: 1 };
 let closure_14 = obj.createStyles(obj);
-let closure_15 = [true, true, true, true, true, true, true];
-let closure_16 = [null, null];
+let closure_15 = [];
+let closure_16 = [];
 const obj1 = { marginTop: importDefault(dependencyMap[9]).space.PX_24 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
 

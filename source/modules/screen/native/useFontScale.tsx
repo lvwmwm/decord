@@ -1,5 +1,5 @@
 // Module ID: 4545
-// Function ID: 39847
+// Function ID: 39855
 // Name: getFontScale
 // Dependencies: []
 // Exports: getFontScale, useFontScale

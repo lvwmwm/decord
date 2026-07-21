@@ -1,5 +1,5 @@
 // Module ID: 4184
-// Function ID: 35997
+// Function ID: 36005
 // Name: isClipsEnabled
 // Dependencies: []
 // Exports: isDecoupledClipsEnabled, useIsDecoupledClipsEnabled

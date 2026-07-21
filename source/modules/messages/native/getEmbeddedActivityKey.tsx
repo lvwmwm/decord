@@ -1,7 +1,7 @@
 // Module ID: 9303
-// Function ID: 72687
+// Function ID: 72698
 // Name: getEmbeddedActivityKey
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default, parseEmbeddedActivityKey
 
 // Module 9303 (getEmbeddedActivityKey)

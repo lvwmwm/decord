@@ -1,5 +1,5 @@
 // Module ID: 10400
-// Function ID: 80127
+// Function ID: 80138
 // Name: SafetyWarningBanner
 // Dependencies: []
 
@@ -95,9 +95,9 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingVertical: importDefault(dependencyMap[4]).space.PX_12 };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.container = obj;
-obj.contentContainer = {};
-obj.safetyShieldIconContainer = { bhk: 8, bic: 16 };
-obj.safetyShieldIcon = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null };
+obj.contentContainer = { "Null": 7, "Null": 370 };
+obj.safetyShieldIconContainer = { "Null": 8, "Null": 16 };
+obj.safetyShieldIcon = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.textContainer = { flex: 1, marginLeft: importDefault(dependencyMap[4]).space.PX_16, marginRight: importDefault(dependencyMap[4]).space.PX_40 };
 const obj1 = { flex: 1, marginLeft: importDefault(dependencyMap[4]).space.PX_16, marginRight: importDefault(dependencyMap[4]).space.PX_40 };

@@ -1,5 +1,5 @@
 // Module ID: 11522
-// Function ID: 89761
+// Function ID: 89773
 // Name: usePerksCoachmarkDCF
 // Dependencies: []
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF

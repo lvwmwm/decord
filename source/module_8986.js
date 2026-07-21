@@ -1,9 +1,9 @@
 // Module ID: 8986
-// Function ID: 70775
+// Function ID: 70786
 // Dependencies: []
 
 // Module 8986
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: true, isInternetReachable: "/assets/design/components/Icon/native/redesign/generated/images", details: 24, reachabilityUrl: 24, reachabilityMethod: null, reachabilityHeaders: "1d8ebef8a3957ec5bd51e54121ce2c75", reachabilityTest: "GlobeEarthIcon", reachabilityShortTimeout: "png", scales: [] };
+const obj = { "Bool(false)": "<string:2907832322>", "Bool(false)": "create", "Bool(false)": "registerAsset", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

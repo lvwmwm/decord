@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 121002
+// Module ID: 15832
+// Function ID: 121046
 // Name: getTimeZone
 // Dependencies: []
 // Exports: default
 
-// Module 15828 (getTimeZone)
+// Module 15832 (getTimeZone)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("lib/getTimeZone.native.tsx");
 

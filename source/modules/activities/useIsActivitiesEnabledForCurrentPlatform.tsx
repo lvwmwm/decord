@@ -1,5 +1,5 @@
 // Module ID: 10506
-// Function ID: 82031
+// Function ID: 82042
 // Name: isActivitiesAllowed
 // Dependencies: []
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform

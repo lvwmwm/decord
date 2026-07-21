@@ -1,10 +1,10 @@
-// Module ID: 12399
-// Function ID: 94738
+// Module ID: 12401
+// Function ID: 94760
 // Name: TierFeatures
 // Dependencies: []
 // Exports: default
 
-// Module 12399 (TierFeatures)
+// Module 12401 (TierFeatures)
 let BoostedGuildTiers;
 function TierFeatures(features) {
   const tmp = callback4();
@@ -53,9 +53,9 @@ function TierFeatures(features) {
     }
     items[2] = cardFeatureLast;
     obj.style = items;
-    obj = { accessible: null, replace: null, "Bool(false)": null, style: closure_10.cardFeatureIcon };
+    obj = { borderColor: "<string:141706434>", borderRadius: "<string:33554432>", borderStyle: "<string:1358954496>", style: closure_10.cardFeatureIcon };
     const items1 = [callback(isIncluded.IconComponent, obj), ];
-    obj = { MAX_DICE_COUNT: "<string:2802384898>", onIndexChange: "<string:3578855426>", TEST_PSEUDOMAP: "<string:3426816439>" };
+    obj = { "Bool(true)": "<string:2803236866>", "Bool(true)": "<string:2018574338>", "Bool(true)": "<string:3342930387>" };
     let cardFeatureExcludedCopy = !isIncluded.isIncluded;
     if (cardFeatureExcludedCopy) {
       cardFeatureExcludedCopy = tmp.cardFeatureExcludedCopy;
@@ -87,8 +87,8 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = { tier: BoostedGuildTiers.TIER_1 };
 obj = {
-  "Bool(true)": "isArray",
-  "Bool(true)": "isArray",
+  guildId: "info",
+  channelId: "/",
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -122,8 +122,8 @@ items[2] = {
   }
 };
 const obj3 = {
-  "Bool(true)": null,
-  "Bool(true)": null,
+  guildId: null,
+  channelId: null,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -301,8 +301,8 @@ items2[1] = {
   }
 };
 const obj14 = {
-  "Bool(true)": "isArray",
-  "Bool(true)": "isArray",
+  guildId: "info",
+  channelId: "/",
   IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -421,8 +421,8 @@ items2[8] = {
   }
 };
 const obj21 = {
-  "Bool(true)": null,
-  "Bool(true)": null,
+  guildId: null,
+  channelId: null,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -510,8 +510,8 @@ items3[2] = {
   }
 };
 const obj27 = {
-  "Bool(true)": null,
-  "Bool(true)": null,
+  guildId: null,
+  channelId: null,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -524,8 +524,8 @@ const obj27 = {
 };
 items3[3] = obj27;
 const obj28 = {
-  "Bool(true)": false,
-  "Bool(true)": false,
+  guildId: null,
+  channelId: null,
   IconComponent: arg1(dependencyMap[11]).StageIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -619,8 +619,8 @@ items3[9] = {
   }
 };
 const obj34 = {
-  "Bool(true)": "isArray",
-  "Bool(true)": "isArray",
+  guildId: "info",
+  channelId: "/",
   IconComponent: arg1(dependencyMap[15]).LinkIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -631,7 +631,7 @@ items3[10] = obj34;
 obj23.features = items3;
 items1[2] = obj23;
 let obj37 = arg1(dependencyMap[17]);
-const obj35 = { cardWrapper: { flex: "/assets/modules/guild_boosting/native/images", alignItems: 23 } };
+const obj35 = { cardWrapper: { getCategoryRecord: "/assets/modules/guild_boosting/native/images", showName: 23 } };
 const obj33 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
@@ -642,37 +642,37 @@ const obj33 = {
 };
 obj35.card = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height: "100%" };
 obj35.cardContent = {};
-obj37 = { -630435074: "<string:1091633474>", 979692825: "adjustable", -1101813162: "<string:1348288785>", borderRadius: importDefault(dependencyMap[18]).radii.lg };
+obj37 = { borderRadius: importDefault(dependencyMap[18]).radii.lg };
 obj35.pressableWrapper = obj37;
 obj35.cardHeading = {};
 obj35.cardTierName = { marginRight: 10 };
 obj35.cardTierBoostcount = { opacity: 0.7 };
-obj35.cardFeatures = {};
-obj35.cardFeaturesInvisible = { 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, 0: false };
-obj35.cardFeaturesWrapper = { isArray: null, track: 16, style: "center" };
-obj35.cardFeature = {};
+obj35.cardFeatures = { isArray: null, diversity: null };
+obj35.cardFeaturesInvisible = {};
+obj35.cardFeaturesWrapper = {};
+obj35.cardFeature = { "Bool(false)": "<string:1883373569>", "Bool(false)": "<string:1895825684>", "Bool(false)": "<string:1358954831>", "Bool(false)": "<string:2906719178>" };
 obj35.cardFeatureExcluded = { opacity: 0.5 };
 obj35.cardFeatureExcludedCopy = { textDecorationLine: "line-through" };
 obj35.cardFeatureLast = { marginBottom: 0 };
 const obj36 = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height: "100%" };
 obj35.cardsScroller = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardsScrollerContent = {};
-obj35.cardFeatureIcon = { PREMIUM_TENURE_72_MONTH: false, FILES_OR_LINKS_NUM_COLUMNS: false, remoteVideoSsrcs: false };
-obj35.cardFooter = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-obj35.cardFooterIcon = { -725635501: "r", 1424518954: "%JSONStringify%", -281171472: "isArray", -1079104812: "isArrayBuffer", 335024466: "isArray" };
+obj35.cardFeatureIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj35.cardFooter = { 1585096451: null, 1039032302: null, 1636983294: null };
+obj35.cardFooterIcon = { transform: "r", Path: "%Math%", withTiming: "isArray", body: "isArrayBuffer", flags: "isArray" };
 const obj38 = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardTierBadge = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.cardTierBadgeCopy = { textTransform: "uppercase" };
 const obj39 = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.sparkleStar = { position: "absolute", tintColor: arg1(dependencyMap[20]).DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK };
 obj35.sparkleStarPointed = {};
-obj35.sparkleStarElongated = { <string:1632221346>: "column", <string:2722977214>: "center" };
+obj35.sparkleStarElongated = { y: "column", isArray: "center" };
 obj35.sparkleStarPointed1 = {};
 obj35.sparkleStarPointed2 = {};
 obj35.sparkleStarPointed3 = {};
-obj35.sparkleStarElongated1 = { ff: -1210756864, fi: -1146273519 };
-obj35.gradientHighlight = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005006416183871819, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003147073768801056, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755311580135296 };
-obj35.gradientHighlightTop = { ff: null, fi: "36d299b9a20b89def78675ec02a95049" };
+obj35.sparkleStarElongated1 = { ig: "Array", ik: "isArray" };
+obj35.gradientHighlight = { was: false, visible: false, hasSpoiler: false };
+obj35.gradientHighlightTop = { ig: null, ik: "36d299b9a20b89def78675ec02a95049" };
 obj35.gradientHighlightBottom = {};
 let closure_13 = obj37.createStyles(obj35);
 let closure_14 = { code: "function GuildBoostingMarketingTierCardsTsx1(){const{withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing}=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};}" };
@@ -720,14 +720,14 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     stringResult = string(t.agC5xg);
   }
   obj = { style: tmp.cardWrapper, ref };
-  obj = { angle: 45, angleCenter: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 } };
+  obj = { angle: 45, angleCenter: {} };
   const isThemeDarkResult = obj.isThemeDark(importDefault(dependencyMap[24])());
   const tmp10 = View;
   const tmp11 = callback2;
   const tmp9 = callback3;
   const items1 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj.colors = items1;
-  obj.locations = ["Text", "lc"];
+  obj.locations = ["replace", "then"];
   obj.style = tmp.card;
   obj.useAngle = true;
   const obj1 = { style: tmp.pressableWrapper };
@@ -737,7 +737,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   let obj7 = ref(dependencyMap[28]);
   obj4.children = obj7.getTierName(tier, { useLevels: false });
   const items2 = [callback2(ref(dependencyMap[23]).Text, obj4), ];
-  const obj5 = { style: tmp.cardTierBoostcount };
+  const obj5 = { "Null": "Shooting Lines_03", "Null": 1, "Null": 1, style: tmp.cardTierBoostcount };
   const intl2 = ref(dependencyMap[7]).intl;
   obj5.children = intl2.format(ref(dependencyMap[7]).t.gDsyB9, { numSubscriptions: closure_6[tier] });
   items2[1] = callback2(ref(dependencyMap[23]).Text, obj5);
@@ -748,7 +748,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
   obj7.children = items4;
   items3[1] = callback3(View, obj7);
   const obj9 = { style: tmp.cardFooter };
-  const obj10 = { children: stringResult };
+  const obj10 = { "Null": null, "Null": null, children: stringResult };
   const items5 = [callback2(ref(dependencyMap[23]).Text, obj10), ];
   if (isExpanded) {
     let ChevronLargeDownIcon = tmp19(tmp20[29]).ChevronLargeUpIcon;
@@ -791,7 +791,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const tmp40 = importDefault(dependencyMap[26]);
       items7[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj13.colors = items7;
-      obj13.start = { max: -536870861, guildId: -299892737 };
+      obj13.start = {};
       obj13.end = {};
       obj13.locations = [false, false, false];
       const items8 = [, ];
@@ -807,7 +807,7 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const obj25 = ref(dependencyMap[31]);
       items10[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj14.colors = items10;
-      obj14.start = { max: -536870861, guildId: -299892737 };
+      obj14.start = {};
       obj14.end = {};
       obj14.locations = [false, false, false];
       const items11 = [, ];
@@ -845,10 +845,10 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     obj19 = { angle: 3, angleCenter: {} };
     const items16 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
     obj19.colors = items16;
-    obj19.locations = ["Text", "lc"];
+    obj19.locations = ["replace", "then"];
     obj19.style = tmp.cardTierBadge;
     obj19.useAngle = true;
-    obj20 = { style: tmp.cardTierBadgeCopy };
+    obj20 = { "Null": "r", "Null": "BLgIrk", "Null": "<string:1912722296>", style: tmp.cardTierBadgeCopy };
     const intl3 = ref(dependencyMap[7]).intl;
     const string2 = intl3.string;
     if (tmp5) {

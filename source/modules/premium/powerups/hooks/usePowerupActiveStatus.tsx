@@ -1,5 +1,5 @@
 // Module ID: 11520
-// Function ID: 89751
+// Function ID: 89763
 // Name: usePowerupsActiveStatuses
 // Dependencies: []
 // Exports: default, isPowerupActiveStatusActive

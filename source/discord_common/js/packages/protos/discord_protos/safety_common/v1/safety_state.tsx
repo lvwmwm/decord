@@ -1,5 +1,5 @@
 // Module ID: 1868
-// Function ID: 20777
+// Function ID: 20782
 // Name: _callSuper
 // Dependencies: []
 
@@ -38,7 +38,7 @@ let tmp2 = (MessageType) => {
   class NormalState$Type {
     constructor() {
       tmp = closure_3(this, NormalState$Type);
-      items = [];
+      items = [null];
       items[1] = [];
       return closure_15(this, NormalState$Type, items);
     }
@@ -94,7 +94,7 @@ let tmp4 = (MessageType) => {
   class RestrictedState$Type {
     constructor() {
       tmp = closure_3(this, RestrictedState$Type);
-      obj = { "Null": "CONFUSING_LANGUAGE", "Null": "findLastKey", "Null": "y" };
+      obj = { 9223372036854775807: "CONTAINS_SELF_HARM_CONTENT", 9223372036854775807: "XLargeIcon", 0: "y" };
       obj.T = function T() {
         return callback(closure_1[7]).Timestamp;
       };
@@ -349,7 +349,7 @@ let tmp8 = (MessageType) => {
   class TempBannedState$Type {
     constructor() {
       tmp = closure_3(this, TempBannedState$Type);
-      obj = { "Null": "_handleGuildMembersChunkBatch", "Null": "<string:2408202496>", "Null": "<string:3110141954>" };
+      obj = { 9223372036854775807: "braintree:merchantId", 9223372036854775807: "<string:2410955008>", 0: "<string:3110141954>" };
       obj.T = function T() {
         return callback(closure_1[7]).Timestamp;
       };
@@ -724,7 +724,7 @@ let tmp12 = (MessageType) => {
   class SafetyState$Type {
     constructor() {
       tmp = closure_3(this, SafetyState$Type);
-      obj = { "Null": "<string:1167785986>", "Null": "<string:3242328066>", "Null": "<string:3238003759>", "Null": "<string:1090520111>" };
+      obj = { 9223372036854775807: "<string:1170079746>", 0: "<string:1514274818>", 0: "<string:1509950539>", 0: "<string:1090520139>" };
       obj.T = function T() {
         return closure_10;
       };
@@ -745,12 +745,12 @@ let tmp12 = (MessageType) => {
               return closure_13;
             }
       };
-      obj = { "Null": null, "Null": 4, "Null": true, "Null": "/assets/.cache/intl/ZGVzaWdu" };
+      obj = { 9223372036854775807: null, 0: 4, 0: true, 0: "/assets/.cache/intl/ZGVzaWdu" };
       obj.T = function T() {
         return closure_14;
       };
       items[4] = obj;
-      obj1 = { "Null": "Path 2", "Null": "ADBE Vector Shape - Group", "Null": false };
+      obj1 = { 9223372036854775807: true, 9223372036854775807: true, 0: true };
       obj1.T = function T() {
         const items = [, closure_8];
         return items;

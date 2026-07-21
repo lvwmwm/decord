@@ -1,5 +1,5 @@
 // Module ID: 9537
-// Function ID: 74283
+// Function ID: 74294
 // Name: openCreateForumPostModal
 // Dependencies: []
 // Exports: closeCreateForumPostModal, openCreateForumPostModal

@@ -1,8 +1,8 @@
-// Module ID: 13103
-// Function ID: 99435
+// Module ID: 13105
+// Function ID: 99457
 // Dependencies: []
 
-// Module 13103
+// Module 13105
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 const _module2 = require(dependencyMap[2]);
@@ -14,7 +14,7 @@ if ("undefined" === typeof process) {
 }
 window.process.nextTick = setImmediate;
 if (null == global.location) {
-  global.location = { <string:80568576>: "222_social", <string:80501760>: null };
+  global.location = { duration: null, body: null };
 }
 if (!global.self) {
   global.self = global;

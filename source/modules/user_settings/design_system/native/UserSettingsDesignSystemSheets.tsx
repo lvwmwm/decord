@@ -1,10 +1,10 @@
-// Module ID: 14338
-// Function ID: 108268
+// Module ID: 14341
+// Function ID: 108300
 // Name: DemoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14338 (DemoActionSheet)
+// Module 14341 (DemoActionSheet)
 function DemoActionSheet() {
   let tmp11;
   let tmp12;
@@ -45,11 +45,11 @@ function DemoActionSheet() {
   const obj3 = {};
   const items = [callback2(arg1(dependencyMap[11]).TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
   const obj4 = {
-    -9223372036854775808: true,
-    -9223372036854775808: true,
-    0: true,
-    9223372036854775807: true,
-    0: true,
+    "Null": true,
+    "Null": true,
+    "Null": true,
+    "Null": true,
+    "Null": false,
     value: tmp8,
     onChange: tmp9,
     onClear() {
@@ -91,8 +91,8 @@ function DemoPromoSheet() {
   obj.text = intl.string(arg1(dependencyMap[16]).t.BddRzS);
   const tmp2 = callback2(arg1(dependencyMap[15]).Button, obj);
   if (tmp) {
-    obj = {};
-    obj = { placeholder: true, autoComplete: true, errorMessage: true };
+    obj = { position: "Array", top: "__getAnimatedValue", left: "RPC_SUBSCRIPTION_REQUESTED", width: "cy" };
+    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
     const obj1 = { uri: importDefault(dependencyMap[18]) };
     obj.src = obj1;
     obj.graphic = obj;
@@ -109,7 +109,7 @@ const ScrollView = arg1(dependencyMap[2]).ScrollView;
 const NOOP = arg1(dependencyMap[3]).NOOP;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { overflow: "center", flex: "center" } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { paddingTop: "center", color: "center" } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSheets.tsx");
 
@@ -119,8 +119,8 @@ export default function UserSettingsDesignSystemSheets() {
   obj = {};
   const obj1 = {};
   const items = [
-    callback2(arg1(dependencyMap[21]).Text, { "Null": true, "Null": true }),
-    callback2(arg1(dependencyMap[21]).Text, {}),
+    callback2(arg1(dependencyMap[21]).Text, { <string:1749439162>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015883700883776342, <string:140675621>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024178615811139436 }),
+    callback2(arg1(dependencyMap[21]).Text, { deer: false, Ufm9XX: false, playstationVersion: false }),
     callback2(arg1(dependencyMap[15]).Button, {
       onPress() {
         callback(closure_2[13]).openLazy(() => Promise.resolve(closure_10), "demo-sheet");
@@ -133,7 +133,7 @@ export default function UserSettingsDesignSystemSheets() {
   const items1 = [callback2(arg1(dependencyMap[20]).Card, obj), ];
   const obj3 = {};
   const obj4 = {};
-  const items2 = [callback2(arg1(dependencyMap[21]).Text, { "Null": true, "Null": true }), callback2(arg1(dependencyMap[21]).Text, {}), callback2(arg1(dependencyMap[15]).Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
+  const items2 = [callback2(arg1(dependencyMap[21]).Text, { <string:1749439162>: 9519616, <string:140675621>: 2122711042 }), callback2(arg1(dependencyMap[21]).Text, { deer: -1924071423, Ufm9XX: 687293001, playstationVersion: -1680539646 }), callback2(arg1(dependencyMap[15]).Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
   obj4.children = items2;
   obj3.children = callback3(arg1(dependencyMap[10]).Stack, obj4);
   items1[1] = callback2(arg1(dependencyMap[20]).Card, obj3);

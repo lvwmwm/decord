@@ -1,10 +1,10 @@
-// Module ID: 12390
-// Function ID: 94708
+// Module ID: 12392
+// Function ID: 94730
 // Name: orderMarketablePerksForDisplay
 // Dependencies: []
 // Exports: default
 
-// Module 12390 (orderMarketablePerksForDisplay)
+// Module 12392 (orderMarketablePerksForDisplay)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).GAME_SERVER_POWERUP_SKU_ID;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/utils/orderMarketablePerksForDisplay.tsx");

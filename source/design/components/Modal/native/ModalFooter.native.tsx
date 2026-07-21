@@ -1,5 +1,5 @@
 // Module ID: 11060
-// Function ID: 86072
+// Function ID: 86083
 // Name: ModalFooter
 // Dependencies: []
 // Exports: ModalFooter
@@ -8,7 +8,7 @@
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles({ footer: { <string:2605776900>: "<string:1874853890>", <string:2971099654>: "<string:289538050>", <string:1097894993>: "<string:1870266369>" } });
+let closure_2 = arg1(dependencyMap[3]).createStyles({ footer: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Modal/native/ModalFooter.native.tsx");
 

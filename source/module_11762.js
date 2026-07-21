@@ -1,9 +1,9 @@
 // Module ID: 11762
-// Function ID: 91318
+// Function ID: 91330
 // Dependencies: []
 
 // Module 11762
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: 32, isInternetReachable: 32, details: null, reachabilityUrl: "cf9fbd33b5f8251873e494b446828ceb", reachabilityMethod: "invite", reachabilityHeaders: "png", reachabilityTest: 1, reachabilityShortTimeout: 30, scales: [] };
+const obj = { "Bool(false)": "<string:1943238802>", "Bool(false)": "Array", "Bool(false)": "s", "Bool(false)": "warn", "Bool(false)": "BMU", "Bool(false)": "<string:2631618816>", "Bool(false)": "container", "Bool(false)": "isArray", scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

@@ -1,5 +1,5 @@
 // Module ID: 12189
-// Function ID: 93691
+// Function ID: 93703
 // Name: getRequestToStreamText
 // Dependencies: []
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText

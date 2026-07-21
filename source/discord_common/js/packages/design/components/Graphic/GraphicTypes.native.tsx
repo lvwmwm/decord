@@ -1,7 +1,7 @@
 // Module ID: 3938
-// Function ID: 32452
+// Function ID: 32457
 // Name: isImage
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: isImage, isRive
 
 // Module 3938 (isImage)

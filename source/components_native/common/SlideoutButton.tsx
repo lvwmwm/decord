@@ -1,5 +1,5 @@
 // Module ID: 9422
-// Function ID: 73339
+// Function ID: 73350
 // Name: SlideoutButton
 // Dependencies: []
 
@@ -36,7 +36,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { button: {} };
-obj = {};
+obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
 const tmp3 = arg1(dependencyMap[3]);
 obj.color = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.6);
 obj.fontFamily = arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD;

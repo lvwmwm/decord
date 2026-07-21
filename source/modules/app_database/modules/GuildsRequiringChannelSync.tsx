@@ -1,9 +1,9 @@
-// Module ID: 6889
-// Function ID: 54770
+// Module ID: 6890
+// Function ID: 54782
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6889 (_createForOfIteratorHelperLoose)
+// Module 6890 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -274,7 +274,7 @@ let tmp6 = () => {
     value(arg0, arg1) {
       let done;
       if (arg0.length !== arg1.length) {
-        return { "Bool(false)": true, "Bool(false)": true };
+        return { ty: 131122.52832032426, s: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
       } else {
         const _Set = Set;
         const set = new Set();
@@ -297,7 +297,7 @@ let tmp6 = () => {
             let iter4 = tmp3();
             iter3 = iter4;
           }
-          return { "Bool(false)": true, "Bool(false)": true };
+          return { ty: 131122.52832032426, s: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239785558174 };
         }
         const obj = { rolesAreDifferent: false, allRoleIds: set };
         return obj;

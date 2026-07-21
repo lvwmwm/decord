@@ -1,10 +1,10 @@
-// Module ID: 15729
-// Function ID: 120230
+// Module ID: 15738
+// Function ID: 120395
 // Name: ConnectButton
 // Dependencies: []
 // Exports: default
 
-// Module 15729 (ConnectButton)
+// Module 15738 (ConnectButton)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -89,7 +89,7 @@ export default function ConnectButton(props) {
   obj.style = tmp.connectButton;
   const items2 = [tmp.connectText];
   obj.children = React.useMemo(() => {
-    const obj = { style: tmp.connectText };
+    const obj = { hasMaxConnections: null, isBoostOnlySubscription: "flex-start", style: tmp.connectText };
     const intl = tmp(guildId[17]).intl;
     obj.children = intl.string(tmp(guildId[17]).t.96ANUN);
     return isChannelContentGated(tmp(guildId[18]).Text, obj);

@@ -1,9 +1,9 @@
-// Module ID: 4812
-// Function ID: 42082
+// Module ID: 4811
+// Function ID: 42089
 // Name: getPlatformUserUrl
 // Dependencies: []
 
-// Module 4812 (getPlatformUserUrl)
+// Module 4811 (getPlatformUserUrl)
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
 const ApplicationIdentityConnections = require(dependencyMap[1]).ApplicationIdentityConnections;
 let obj = { type: PlatformTypes.TWITCH, name: "Twitch" };
@@ -15,7 +15,7 @@ obj.enabled = true;
 obj.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://www.twitch.tv/" + encodeURIComponent(name.name);
 };
-obj.domains = [];
+obj.domains = [0.000000000000000000000000000000000007147017436167971, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003231545365222523];
 const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
 obj = { type: PlatformTypes.YOUTUBE, name: "YouTube" };
 const _module1 = require(dependencyMap[2]);
@@ -25,7 +25,7 @@ obj.enabled = true;
 obj.getPlatformUserUrl = function getPlatformUserUrl(id) {
   return "https://www.youtube.com/channel/" + encodeURIComponent(id.id);
 };
-obj.domains = [true, true];
+obj.domains = [null, null];
 items[1] = obj;
 const obj2 = { type: PlatformTypes.BATTLENET, name: "Battle.net" };
 const _module2 = require(dependencyMap[2]);
@@ -45,7 +45,7 @@ obj2.migrationData = {
   }
 };
 items[2] = obj2;
-const obj4 = { startOpacity: "emojisByCategory", endOpacity: "SlideInRight", <string:1676436440>: "LANGUAGE", <string:1364435195>: "FormDivider", <string:2858512560>: "y", <string:3100116818>: "CommonActions", <string:1396335227>: "connectedViewTag", type: PlatformTypes.BLUESKY };
+const obj4 = { 0: "eligibleToReceivePremiumRewards", 9223372036854775807: "stuffed_flatbread", 0: "SELF_HARM", 9223372036854775807: "trackFeedSessionCompleted", 0: "y", 9223372036854775807: "pendingReply", 0: "onTransitionEnd", type: PlatformTypes.BLUESKY };
 const obj3 = { lightPNG: require(dependencyMap[11]), darkPNG: require(dependencyMap[11]), whitePNG: require(dependencyMap[12]), lightSVG: require(dependencyMap[13]), darkSVG: require(dependencyMap[13]), whiteSVG: require(dependencyMap[14]), blackSVG: require(dependencyMap[13]) };
 obj4.icon = { lightPNG: require(dependencyMap[16]), darkPNG: require(dependencyMap[16]), whitePNG: require(dependencyMap[17]), lightSVG: require(dependencyMap[18]), darkSVG: require(dependencyMap[18]), whiteSVG: require(dependencyMap[19]) };
 obj4.getPlatformUserUrl = function getPlatformUserUrl(id) {
@@ -121,7 +121,7 @@ obj15.color = _module7.unsafe_getRawColor("PLATFORM_REDDIT");
 const obj14 = { lightPNG: require(dependencyMap[35]), darkPNG: require(dependencyMap[36]), whitePNG: require(dependencyMap[36]), lightSVG: require(dependencyMap[37]), darkSVG: require(dependencyMap[38]), whiteSVG: require(dependencyMap[38]) };
 obj15.icon = { lightPNG: require(dependencyMap[39]), darkPNG: require(dependencyMap[39]), whitePNG: require(dependencyMap[40]), lightSVG: require(dependencyMap[41]), darkSVG: require(dependencyMap[41]), whiteSVG: require(dependencyMap[42]) };
 obj15.enabled = true;
-obj15.domains = ["numberOfPointers"];
+obj15.domains = [];
 obj15.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://www.reddit.com/u/" + encodeURIComponent(name.name);
 };
@@ -132,7 +132,7 @@ const _module8 = require(dependencyMap[2]);
 obj17.color = _module8.unsafe_getRawColor("PLATFORM_FACEBOOK");
 const obj16 = { lightPNG: require(dependencyMap[39]), darkPNG: require(dependencyMap[39]), whitePNG: require(dependencyMap[40]), lightSVG: require(dependencyMap[41]), darkSVG: require(dependencyMap[41]), whiteSVG: require(dependencyMap[42]) };
 obj17.icon = { lightPNG: require(dependencyMap[43]), darkPNG: require(dependencyMap[43]), whitePNG: require(dependencyMap[44]), lightSVG: require(dependencyMap[45]), darkSVG: require(dependencyMap[45]), whiteSVG: require(dependencyMap[46]) };
-obj17.domains = ["onGestureHandlerEvent"];
+obj17.domains = ["hoverEffect"];
 obj17.enabled = true;
 items[9] = obj17;
 const obj19 = { type: PlatformTypes.TWITTER_LEGACY, name: "Twitter" };
@@ -144,7 +144,7 @@ obj19.enabled = false;
 obj19.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://twitter.com/" + encodeURIComponent(name.name);
 };
-obj19.domains = ["userSelect"];
+obj19.domains = ["rippleColor"];
 obj19.hasMetadata = true;
 items[10] = obj19;
 const obj21 = { type: PlatformTypes.TWITTER, name: "X" };
@@ -156,7 +156,7 @@ obj21.enabled = true;
 obj21.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://x.com/" + encodeURIComponent(name.name);
 };
-obj21.domains = [true];
+obj21.domains = ["children"];
 obj21.hasMetadata = true;
 items[11] = obj21;
 const obj23 = { type: PlatformTypes.SPOTIFY, name: "Spotify" };
@@ -192,7 +192,7 @@ obj29.enabled = true;
 obj29.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://github.com/" + encodeURIComponent(name.name);
 };
-obj29.domains = [null];
+obj29.domains = ["<string:1801416046>"];
 items[15] = obj29;
 const obj31 = { type: PlatformTypes.PLAYSTATION, name: "PlayStation Network" };
 const _module15 = require(dependencyMap[2]);
@@ -254,11 +254,11 @@ obj40.getPlatformUserUrl = function getPlatformUserUrl(id) {
   return "https://roblox.com/users/" + encodeURIComponent(id.id) + "/profile";
 };
 items[20] = obj40;
-const obj42 = { 0: true, 0: "/assets/images/platforms", 0: 24, -9223372036854775808: 24, 9223372036854775807: null, type: PlatformTypes.PAYPAL };
+const obj42 = { "Bool(false)": true, REANIMATED_WORKLET: "/assets/images/platforms", NATIVE_ANIMATED_EVENT: 24, JS_FUNCTION_OLD_API: 24, JS_FUNCTION_NEW_API: null, type: PlatformTypes.PAYPAL };
 const obj41 = { lightPNG: require(dependencyMap[87]), darkPNG: require(dependencyMap[88]), whitePNG: require(dependencyMap[89]), lightSVG: require(dependencyMap[90]), darkSVG: require(dependencyMap[91]), whiteSVG: require(dependencyMap[92]) };
 obj42.icon = { lightPNG: require(dependencyMap[93]), darkPNG: require(dependencyMap[93]), whitePNG: require(dependencyMap[94]), lightSVG: require(dependencyMap[95]), darkSVG: require(dependencyMap[95]), whiteSVG: require(dependencyMap[96]) };
 items[21] = obj42;
-const obj44 = { 0: "svg", 0: true, 0: "/assets/images/platforms", -9223372036854775808: 255, 9223372036854775807: 255, type: PlatformTypes.EBAY };
+const obj44 = { "Bool(false)": "svg", REANIMATED_WORKLET: true, NATIVE_ANIMATED_EVENT: "/assets/images/platforms", JS_FUNCTION_OLD_API: 255, JS_FUNCTION_NEW_API: 255, type: PlatformTypes.EBAY };
 const obj43 = { lightPNG: require(dependencyMap[93]), darkPNG: require(dependencyMap[93]), whitePNG: require(dependencyMap[94]), lightSVG: require(dependencyMap[95]), darkSVG: require(dependencyMap[95]), whiteSVG: require(dependencyMap[96]) };
 obj44.icon = { lightPNG: require(dependencyMap[97]), darkPNG: require(dependencyMap[97]), whitePNG: require(dependencyMap[98]), lightSVG: require(dependencyMap[99]), darkSVG: require(dependencyMap[99]), whiteSVG: require(dependencyMap[100]) };
 obj44.getPlatformUserUrl = function getPlatformUserUrl(name) {
@@ -268,7 +268,7 @@ items[22] = obj44;
 const obj46 = { type: PlatformTypes.TIKTOK };
 const obj45 = { lightPNG: require(dependencyMap[97]), darkPNG: require(dependencyMap[97]), whitePNG: require(dependencyMap[98]), lightSVG: require(dependencyMap[99]), darkSVG: require(dependencyMap[99]), whiteSVG: require(dependencyMap[100]) };
 obj46.icon = { lightPNG: require(dependencyMap[101]), darkPNG: require(dependencyMap[102]), whitePNG: require(dependencyMap[102]), lightSVG: require(dependencyMap[103]), darkSVG: require(dependencyMap[104]), whiteSVG: require(dependencyMap[104]) };
-obj46.domains = ["<string:2899537275>"];
+obj46.domains = ["accessible"];
 obj46.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://www.tiktok.com/@" + encodeURIComponent(name.name);
 };
@@ -277,12 +277,12 @@ const obj48 = { type: PlatformTypes.INSTAGRAM, name: "Instagram" };
 const obj47 = { lightPNG: require(dependencyMap[101]), darkPNG: require(dependencyMap[102]), whitePNG: require(dependencyMap[102]), lightSVG: require(dependencyMap[103]), darkSVG: require(dependencyMap[104]), whiteSVG: require(dependencyMap[104]) };
 obj48.icon = { lightPNG: require(dependencyMap[105]), darkPNG: require(dependencyMap[105]), whitePNG: require(dependencyMap[106]), lightSVG: require(dependencyMap[107]), darkSVG: require(dependencyMap[107]), whiteSVG: require(dependencyMap[108]) };
 obj48.enabled = false;
-obj48.domains = [false];
+obj48.domains = [true];
 obj48.getPlatformUserUrl = function getPlatformUserUrl(name) {
   return "https://www.instagram.com/" + encodeURIComponent(name.name);
 };
 items[24] = obj48;
-const obj50 = { startOpacity: "<string:3084210432>", endOpacity: "<string:380715281>", <string:1676436440>: "<string:4285661185>", <string:1364435195>: "<string:4278190080>", <string:2858512560>: "<string:16777216>", <string:3100116818>: "<string:37952066>", <string:1396335227>: "<string:27091456>", type: PlatformTypes.MASTODON };
+const obj50 = { 0: "<string:3547877632>", 9223372036854775807: "<string:3748610321>", 0: "<string:4285661185>", 9223372036854775807: "<string:4278190080>", 0: "<string:16777216>", 9223372036854775807: "<string:37957954>", 0: "<string:27071232>", type: PlatformTypes.MASTODON };
 const obj49 = { lightPNG: require(dependencyMap[105]), darkPNG: require(dependencyMap[105]), whitePNG: require(dependencyMap[106]), lightSVG: require(dependencyMap[107]), darkSVG: require(dependencyMap[107]), whiteSVG: require(dependencyMap[108]) };
 obj50.icon = { lightPNG: require(dependencyMap[109]), darkPNG: require(dependencyMap[109]), whitePNG: require(dependencyMap[110]), lightSVG: require(dependencyMap[111]), darkSVG: require(dependencyMap[111]), whiteSVG: require(dependencyMap[112]) };
 obj50.getPlatformUserUrl = function getPlatformUserUrl(id) {

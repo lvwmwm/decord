@@ -1,5 +1,5 @@
 // Module ID: 11566
-// Function ID: 89966
+// Function ID: 89978
 // Name: useGuildPowerupConfigureCallback
 // Dependencies: []
 // Exports: default

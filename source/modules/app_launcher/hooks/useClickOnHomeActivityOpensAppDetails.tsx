@@ -1,5 +1,5 @@
 // Module ID: 11197
-// Function ID: 87210
+// Function ID: 87222
 // Name: useClickOnHomeActivityOpensAppDetails
 // Dependencies: []
 // Exports: useClickOnHomeActivityOpensAppDetails

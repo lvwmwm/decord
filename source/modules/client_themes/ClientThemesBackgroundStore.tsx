@@ -1,25 +1,9 @@
 // Module ID: 3940
-// Function ID: 32475
+// Function ID: 32480
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3946, 1194, 3949, 1838, 653, 1198, 3950, 3963, 566, 686, 2, 6, 7, 15, 17, 18, 1849, 3947, 1387, 566, 686]
+// Dependencies: []
 
 // Module 3940 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import { isGuildTextChannelType } from "ME";
-import shouldNavigate from "shouldNavigate";
-import matchPath from "matchPath";
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_15 } from "isPseudoGuildId";
-import { SystemThemeState } from "initialize";
-import dispatcher from "dispatcher";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -48,7 +32,7 @@ function handleUserStoreChange() {
   const obj = importDefault(dependencyMap[18]);
 }
 function handleSelectivelySyncedStoreChange() {
-  if (_isNativeReflectConstruct.shouldSync("appearance")) {
+  if (closure_8.shouldSync("appearance")) {
     const ClientThemeSettings = arg1(dependencyMap[19]).ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     if (null == backgroundGradientPresetId) {
@@ -74,7 +58,7 @@ function handleSameAsDeviceThemeToggle() {
   return isSyncedModeThemesEnabled();
 }
 function handleUserSettingsProtoStoreUpdate() {
-  if (_isNativeReflectConstruct.shouldSync("appearance")) {
+  if (closure_8.shouldSync("appearance")) {
     const ClientThemeSettings = arg1(dependencyMap[19]).ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     let result = useSystemTheme.useSystemTheme !== SystemThemeState.ON;
@@ -108,6 +92,20 @@ function handleUserSettingsProtoStoreUpdate() {
     return false;
   }
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+let closure_11 = importDefault(dependencyMap[8]);
+const isGuildTextChannelType = arg1(dependencyMap[9]).isGuildTextChannelType;
+let closure_13 = importDefault(dependencyMap[10]);
+let closure_14 = importDefault(dependencyMap[11]);
+let closure_15 = arg1(dependencyMap[12]).BACKGROUND_GRADIENT_PRESETS_MAP;
+const SystemThemeState = arg1(dependencyMap[13]).SystemThemeState;
 let closure_19 = true;
 let closure_20 = false;
 let tmp2 = (PersistedStore) => {
@@ -115,15 +113,15 @@ let tmp2 = (PersistedStore) => {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = _classCallCheck(this, ClientThemesBackgroundStore);
+      tmp = closure_3(this, ClientThemesBackgroundStore);
       items1 = [...items];
-      obj = _getPrototypeOf(ClientThemesBackgroundStore);
-      tmp2 = _possibleConstructorReturn;
+      obj = closure_6(ClientThemesBackgroundStore);
+      tmp2 = closure_5;
       if (closure_21()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = _getPrototypeOf;
-        constructResult = Reflect.construct(obj, items1, _getPrototypeOf(self).constructor);
+        tmp5 = closure_6;
+        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -161,10 +159,10 @@ let tmp2 = (PersistedStore) => {
           tmp2 = closure_15[gradientPresetId.gradientPresetId];
         }
       }
-      self.waitFor(shouldNavigate, _isNativeReflectConstruct, closure_9, closure_10, _createForOfIteratorHelperLoose, matchPath);
-      const items = [matchPath];
+      self.waitFor(closure_13, closure_8, closure_9, closure_10, closure_11, closure_14);
+      const items = [closure_14];
       self.syncWith(items, closure_23);
-      const items1 = [_isNativeReflectConstruct];
+      const items1 = [closure_8];
       self.syncWith(items1, closure_24);
     }
   };
@@ -237,10 +235,10 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(ClientThemesBackgroundStore, items);
-}(require("fromGuildPropertiesWithAdditionalFields").PersistedStore);
+}(importDefault(dependencyMap[23]).PersistedStore);
 tmp2.displayName = "ClientThemesBackgroundStore";
 tmp2.persistKey = "ClientThemesBackgroundStore";
-tmp2 = new tmp2(require("initialize"), {
+tmp2 = new tmp2(importDefault(dependencyMap[24]), {
   UPDATE_BACKGROUND_GRADIENT_PRESET: function handleUpdateBackgroundGradientPreset(presetId) {
     presetId = presetId.presetId;
     let tmp;
@@ -292,6 +290,6 @@ tmp2 = new tmp2(require("initialize"), {
   SET_SAME_AS_DEVICE_THEME_ENABLED: handleSameAsDeviceThemeToggle,
   CLEAR_SYNCED_CLIENT_THEMES: handleSameAsDeviceThemeToggle
 });
-const result = dispatcher.fileFinishedImporting("modules/client_themes/ClientThemesBackgroundStore.tsx");
+const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/client_themes/ClientThemesBackgroundStore.tsx");
 
 export default tmp2;

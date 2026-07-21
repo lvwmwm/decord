@@ -1,5 +1,5 @@
 // Module ID: 5883
-// Function ID: 49738
+// Function ID: 49746
 // Name: AvatarSpellcastExample
 // Dependencies: []
 // Exports: AvatarSpellcastExample

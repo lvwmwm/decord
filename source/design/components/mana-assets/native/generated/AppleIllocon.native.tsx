@@ -1,7 +1,7 @@
 // Module ID: 5855
-// Function ID: 49696
+// Function ID: 49704
 // Name: AppleIllocon
-// Dependencies: [131072, 561250304, 1895825408, 20]
+// Dependencies: [131072, 561250304, 1879048192, 20]
 // Exports: AppleIllocon
 
 // Module 5855 (AppleIllocon)

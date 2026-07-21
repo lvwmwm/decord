@@ -1,5 +1,5 @@
 // Module ID: 11724
-// Function ID: 91022
+// Function ID: 91034
 // Name: onCreateGuild
 // Dependencies: []
 // Exports: default
@@ -147,8 +147,8 @@ function getScreens() {
     render(guildId) {
       guildId = guildId.guildId;
       const obj = {
-        position: true,
-        left: true,
+        position: null,
+        left: null,
         onCancel: closure_9,
         onSuccess() {
           return callback(guildId);

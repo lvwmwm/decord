@@ -1,10 +1,10 @@
-// Module ID: 7909
-// Function ID: 62914
+// Module ID: 7910
+// Function ID: 62927
 // Name: getCommandUserAvatar
 // Dependencies: []
 // Exports: createExecutedCommand
 
-// Module 7909 (getCommandUserAvatar)
+// Module 7910 (getCommandUserAvatar)
 function getCommandUserAvatar(interaction, getGuildId) {
   let guildId;
   let guildMemberAvatar;
@@ -178,7 +178,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
         const obj12 = require(dependencyMap[13]);
       }
       obj4 = { userId: message.interaction.user.id, username: obj.username, usernameColor: tmp31, avatarURL: tmp3, targetUsernameColor: tmp27, content: formatToPartsResult };
-      obj5 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, color: processColor(semanticColor) };
+      obj5 = { PIN_PERMISSION_MIGRATION_COMPLETE: "isArray", clearCommunicationDisabledNotice: "resolve", fetchCollectiblesCategories: "title", color: processColor(semanticColor) };
       obj4.commandNameBackgroundStyles = obj5;
       obj4.showAppsIcon = true;
       return obj4;

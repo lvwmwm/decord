@@ -1,5 +1,5 @@
 // Module ID: 9187
-// Function ID: 71936
+// Function ID: 71947
 // Name: LinkButton
 // Dependencies: []
 // Exports: default
@@ -56,7 +56,7 @@ const AuthStates = arg1(dependencyMap[6]).AuthStates;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
 let closure_12 = arg1(dependencyMap[8]).createStyles((arg0) => {
-  let obj = { password: { marginTop: 24 }, button: {}, hint: { marginTop: 4 }, link: { -9223372036854775808: "Array", 0: "ACCOUNT_CONFIRM_PASSWORD" }, separator: { width: "selectedStreamId", marginHorizontal: "change" } };
+  let obj = { password: { marginTop: 24 }, button: {}, hint: { marginTop: 4 }, link: {}, separator: { MKTG_HYPESQUAD_FORM_SUBMITTED: "last_payment_error", marginInlineEnd: "$" } };
   obj = { marginTop: 32 };
   let num = 0;
   if (arg0) {
@@ -162,7 +162,7 @@ export default function Login(isMultiAccount) {
   const tmp13 = callback2(React.useState(""), 2);
   let tmp28Result = null;
   if (arg1(dependencyMap[30]).hasWebAuthn) {
-    obj = { "Null": true, "Null": true, "Null": true, icon: callback3(arg1(dependencyMap[32]).KeyIcon, {}) };
+    obj = { icon: callback3(arg1(dependencyMap[32]).KeyIcon, {}) };
     let tmp32 = tmp8;
     if (!tmp8) {
       tmp32 = first1;
@@ -189,6 +189,9 @@ export default function Login(isMultiAccount) {
   }
   obj2 = {};
   const obj3 = {
+    test: null,
+    marginBottom: false,
+    start: "guilds-bar-view",
     alpha2: stateFromStores.alpha2,
     countryCode: callback2(str.split(" "), 1)[0],
     onChange(arg0, arg1) {
@@ -250,7 +253,7 @@ export default function Login(isMultiAccount) {
   obj5.onPress = function onPress() {
     return _undefined((arg0) => !arg0);
   };
-  obj5.hitSlop = { <string:2958189153>: 800, <string:1661207664>: 16 };
+  obj5.hitSlop = {};
   obj4.trailingPressableProps = obj5;
   obj4.returnKeyType = "done";
   obj4.errorMessage = tmp26;

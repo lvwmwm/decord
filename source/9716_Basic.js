@@ -1,5 +1,5 @@
 // Module ID: 9716
-// Function ID: 75528
+// Function ID: 75539
 // Name: Basic
 // Dependencies: [131072, 108593152, 117440512, 251658240]
 // Exports: Basic
@@ -31,7 +31,7 @@ export const Basic = function Basic(data) {
       }
       if ("string" !== typeof height) {
         let obj = {};
-        const items = [{ cel-gaulish: "<string:1900025036>", ces: "form" }, , ];
+        const items = [{ 1862235647: "<string:1900025036>", 1929343231: "checkIsOnChannelNavigationRoute" }, , ];
         obj = {};
         if (tmp) {
           obj.flexDirection = "row";

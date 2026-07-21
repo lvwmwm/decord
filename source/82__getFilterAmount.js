@@ -48,7 +48,7 @@ function _getFilterAmount(arg0, arg1) {
 }
 function parseDropShadow(offsetX) {
   if ("string" !== typeof offsetX) {
-    let obj = { 0: -536870861, 0: -299892737 };
+    let obj = { -1768816636: -536870861, 1653014532: -299892737 };
     let tmp25;
     const keys = Object.keys();
     if (keys !== undefined) {
@@ -127,7 +127,7 @@ function parseDropShadow(offsetX) {
     }
     return tmp38;
   } else {
-    obj = { 0: -536870861, 0: -299892737 };
+    obj = { -1768816636: -536870861, 1653014532: -299892737 };
     let num = 0;
     let flag = false;
     const parts = offsetX.split(/\s+(?![^(]*\))/);

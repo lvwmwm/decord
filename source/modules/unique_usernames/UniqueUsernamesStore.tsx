@@ -1,11 +1,11 @@
-// Module ID: 13542
-// Function ID: 102725
+// Module ID: 13544
+// Function ID: 102747
 // Name: _isNativeReflectConstruct
-// Dependencies: [31, 27, 7655, 653, 33, 4126, 689, 7529, 1920, 4124]
+// Dependencies: [31, 27, 7656, 653, 33, 4126, 689, 7530, 1920, 4124]
 
-// Module 13542 (_isNativeReflectConstruct)
+// Module 13544 (_isNativeReflectConstruct)
 import module_31 from "module_31";
-import keys from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import MobileSetting from "MobileSetting";
 import ME from "ME";
 import module_33 from "module_33";
@@ -21,11 +21,12 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_7 = { error: undefined };
-let obj = {};
+let obj = { "Null": null, "Null": 16, "Null": 5, error: undefined };
+obj = {};
 importDefaultResult = new importDefaultResult({});
 obj.validations = importDefaultResult;
-obj.suggestions = { migration: { suggestion: { username: undefined } }, registration: { suggestion: { username: undefined }, source: undefined, fetched: false } };
+obj = { "Bool(false)": "absolute", "Bool(false)": -1, "Bool(false)": -1, suggestion: { username: undefined } };
+obj.suggestions = { migration: obj, registration: { suggestion: { username: undefined }, source: undefined, fetched: false } };
 let tmp4 = (Store) => {
   class UniqueUsernamesStore {
     constructor() {
@@ -120,7 +121,7 @@ let tmp4 = (Store) => {
   return callback(UniqueUsernamesStore, items);
 }(require("openIncodeAgeVerificationModal").Store);
 tmp4.displayName = "UniqueUsernamesStore";
-obj = {
+tmp4 = new tmp4(require("wrapURL"), {
   UNIQUE_USERNAME_ATTEMPT_SUCCESS: function handleUniqueUsernameAttemptSuccess(taken) {
     const validations = obj.validations;
     const obj = { taken: taken.taken };
@@ -133,7 +134,7 @@ obj = {
     ({ username, error, retryAfter } = statusCode);
     if (429 === statusCode.statusCode) {
       let validations = obj.validations;
-      let obj = { error };
+      let obj = { "Null": null, "Null": 16, "Null": 5, error };
       let num = 7;
       if (null != retryAfter) {
         num = retryAfter;
@@ -151,12 +152,14 @@ obj = {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: undefined } };
+    const obj = { "Bool(false)": "absolute", "Bool(false)": -1, "Bool(false)": -1, suggestion: { username: undefined } };
+    obj.suggestions.migration = obj;
     obj.suggestions.registration = { suggestion: { username: undefined }, source: undefined, fetched: false };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;
-    obj.suggestions.migration = { suggestion };
+    const obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003076984559, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000636598737303, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971384466157509, suggestion };
+    obj.suggestions.migration = obj;
     let prop;
     if (null != suggestion) {
       prop = suggestion.invalid_current_username;
@@ -179,8 +182,7 @@ obj = {
       const result = validations.set(suggestion.username, obj);
     }
   }
-};
-tmp4 = new tmp4(require("wrapURL"), obj);
+});
 const result = Text.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesStore.tsx");
 
 export default tmp4;

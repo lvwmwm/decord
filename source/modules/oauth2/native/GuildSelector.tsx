@@ -1,5 +1,5 @@
 // Module ID: 9010
-// Function ID: 70879
+// Function ID: 70890
 // Name: styles
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 const Permissions = arg1(dependencyMap[2]).Permissions;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { selectorGroup: { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001261344141645, "Bool(true)": 17917957937422630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -7552086520862065000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
+obj = { selectorGroup: { overflow: 2, flex: 2, flexDirection: 0 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.select = obj;
 const tmp2 = arg1(dependencyMap[3]);
@@ -53,7 +53,7 @@ export default function GuildSelector(onGuildChange) {
   }, items);
   const found = guilds.find((id) => id.id === selectedGuildId);
   let obj = { style: tmp.selectorGroup };
-  obj = {};
+  obj = { hasMaxConnections: "/assets/images/native/premium/illustrations", isBoostOnlySubscription: 51 };
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.1DXFFd);
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj), , , ];

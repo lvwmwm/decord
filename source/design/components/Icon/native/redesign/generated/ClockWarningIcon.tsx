@@ -1,5 +1,5 @@
 // Module ID: 10987
-// Function ID: 85516
+// Function ID: 85527
 // Name: ClockWarningIcon
 // Dependencies: []
 // Exports: ClockWarningIcon

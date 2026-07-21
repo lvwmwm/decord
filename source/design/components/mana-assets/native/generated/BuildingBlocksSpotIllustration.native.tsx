@@ -1,12 +1,14 @@
 // Module ID: 5915
-// Function ID: 49786
+// Function ID: 49794
 // Name: BuildingBlocksSpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: BuildingBlocksSpotIllustration
 
 // Module 5915 (BuildingBlocksSpotIllustration)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BuildingBlocksSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BuildingBlocksSpotIllustration.native.tsx");
 
 export const BuildingBlocksSpotIllustration = function BuildingBlocksSpotIllustration(width) {
   let accessibilityLabel;

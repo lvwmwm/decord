@@ -1,13 +1,11 @@
 // Module ID: 1767
-// Function ID: 19688
+// Function ID: 19693
 // Name: createViewDescriptorPaper
-// Dependencies: [5, 29]
+// Dependencies: []
 
 // Module 1767 (createViewDescriptorPaper)
-import asyncGeneratorStep from "asyncGeneratorStep";
-
+const _module = require(dependencyMap[0]);
 let closure_2 = { code: "function createViewDescriptorPaper_Pnpm_styleUpdaterTs1(screenId){return{tag:screenId,name:'RCTView'};}" };
-asyncGeneratorStep = asyncGeneratorStep.isFabric();
 let tmp3 = () => {
   function createViewDescriptorPaper(tag) {
     return { tag, name: "RCTView" };
@@ -18,7 +16,7 @@ let tmp3 = () => {
   return createViewDescriptorPaper;
 }();
 let closure_3 = { code: "function createViewDescriptorFabric_Pnpm_styleUpdaterTs2(screenId){return{shadowNodeWrapper:screenId};}" };
-if (asyncGeneratorStep) {
+if (isFabricResult) {
   tmp3 = () => {
     function createViewDescriptorFabric(shadowNodeWrapper) {
       return { shadowNodeWrapper };

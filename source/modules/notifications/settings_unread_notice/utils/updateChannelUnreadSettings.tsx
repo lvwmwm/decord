@@ -1,7 +1,7 @@
 // Module ID: 10422
-// Function ID: 80285
+// Function ID: 80296
 // Name: updateChannelUnreadSettings
-// Dependencies: []
+// Dependencies: [344784896, 264896512, 371392512, 358088704, 500563968, 499449856, 442564608, 438304768]
 // Exports: default
 
 // Module 10422 (updateChannelUnreadSettings)

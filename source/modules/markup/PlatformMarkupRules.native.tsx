@@ -1,9 +1,9 @@
-// Module ID: 4589
-// Function ID: 40187
+// Module ID: 4588
+// Function ID: 40194
 // Name: decorateWithIcon
 // Dependencies: []
 
-// Module 4589 (decorateWithIcon)
+// Module 4588 (decorateWithIcon)
 function decorateWithIcon(content) {
   let mapped = content;
   if (null != content) {
@@ -39,7 +39,7 @@ const Image = require(dependencyMap[0]).Image;
 let closure_4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
 let obj = { escape: obj };
 obj = {
-  requiredFirstCharacters: ["Array"],
+  requiredFirstCharacters: [true],
   match(arg0, allowEscape) {
     if (false === allowEscape.allowEscape) {
       return null;
@@ -67,7 +67,7 @@ obj["match"] = function match(arg0) {
   return regex.exec(arg0);
 };
 obj["parse"] = function parse() {
-  return { type: "<string:3578920962>", v: "<string:297260419>" };
+  return { 0: "<string:3444703234>", 9223372036854775807: "<string:299071619>" };
 };
 obj.invisibleUnicode = obj;
 obj.text = {
@@ -100,7 +100,7 @@ obj.emoji = {
 };
 obj.customEmoji = {
   order: importDefault(dependencyMap[4]).order,
-  requiredFirstCharacters: [false],
+  requiredFirstCharacters: [-0.00000000000000000000000000000000000000000000000000000000031878467929140456],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
@@ -116,7 +116,7 @@ obj.customEmoji = {
     let obj = importDefault(dependencyMap[5]);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    obj = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, "Bool(true)": 139264.00004577637, "Bool(true)": -25434752635618074000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: tmp3 };
+    obj = { USE_THUMBNAIL: "errExpectingATEXT", USE_TIFF: "j", USE_JPEG: "MiniaturesSpotIllustration", id: tmp3 };
     const emojiURL1 = importDefault(dependencyMap[5]).getEmojiURL(obj);
     const obj1 = { id: tmp3, alt: tmp2 };
     if (flag) {
@@ -168,7 +168,7 @@ obj.attachmentLink = {
 };
 const obj1 = {
   order: importDefault(dependencyMap[4]).order,
-  requiredFirstCharacters: [false],
+  requiredFirstCharacters: [-0.00000000000000000000000000000000000000000000000000000000031878467929140456],
   match(arg0) {
     return /^<(a)?:(\w+):(\d+)>/.exec(arg0);
   },
@@ -184,7 +184,7 @@ const obj1 = {
     let obj = importDefault(dependencyMap[5]);
     obj = { id: tmp3, animated: "a" === tmp, size: 48 };
     let emojiURL = obj.getEmojiURL(obj);
-    obj = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, "Bool(true)": 139264.00004577637, "Bool(true)": -25434752635618074000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, id: tmp3 };
+    obj = { USE_THUMBNAIL: "errExpectingATEXT", USE_TIFF: "j", USE_JPEG: "MiniaturesSpotIllustration", id: tmp3 };
     const emojiURL1 = importDefault(dependencyMap[5]).getEmojiURL(obj);
     const obj1 = { id: tmp3, alt: tmp2 };
     if (flag) {

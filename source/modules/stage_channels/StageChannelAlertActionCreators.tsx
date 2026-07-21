@@ -1,5 +1,5 @@
 // Module ID: 12231
-// Function ID: 93855
+// Function ID: 93867
 // Name: openStageChannelAudienceNoticeModal
 // Dependencies: []
 // Exports: openStageChannelAudienceNoticeModal

@@ -1,5 +1,5 @@
 // Module ID: 9876
-// Function ID: 76467
+// Function ID: 76478
 // Name: makeAutocompleterSearchParams
 // Dependencies: []
 // Exports: useShareSearchResults
@@ -66,7 +66,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => {
     let obj = {};
-    obj = { position: "BG_GRADIENT_RETRO_RAINCLOUD_1", left: 73.12, right: null };
+    obj = { offset: "BG_GRADIENT_RETRO_RAINCLOUD_1", svn/YX: 73.12, STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY: "BG_GRADIENT_HANAMI_1" };
     const items = ["user:" + stateFromStores];
     obj.blacklist = new Set(items);
     obj.searchOptions = obj;

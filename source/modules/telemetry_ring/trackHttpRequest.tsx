@@ -1,10 +1,10 @@
-// Module ID: 15829
-// Function ID: 121004
+// Module ID: 15833
+// Function ID: 121048
 // Name: trackHttpRequest
 // Dependencies: []
 // Exports: default
 
-// Module 15829 (trackHttpRequest)
+// Module 15833 (trackHttpRequest)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/telemetry_ring/trackHttpRequest.tsx");

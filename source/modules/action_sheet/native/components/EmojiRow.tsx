@@ -1,5 +1,5 @@
 // Module ID: 9936
-// Function ID: 76860
+// Function ID: 76871
 // Name: EmojiRow
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[2]).ACTION_SHEET_MAX_WIDTH;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ emojiRowContainer: {}, emojiRow: {} });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ emojiRowContainer: { top: null, bottom: "center", left: "flex-start" }, emojiRow: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/action_sheet/native/components/EmojiRow.tsx");
 

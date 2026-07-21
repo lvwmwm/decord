@@ -1,10 +1,10 @@
-// Module ID: 13710
-// Function ID: 103722
+// Module ID: 13712
+// Function ID: 103744
 // Name: FamilyCenterParentalControlsContentAndSocial
 // Dependencies: []
 // Exports: default
 
-// Module 13710 (FamilyCenterParentalControlsContentAndSocial)
+// Module 13712 (FamilyCenterParentalControlsContentAndSocial)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;

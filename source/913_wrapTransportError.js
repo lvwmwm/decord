@@ -1,5 +1,5 @@
 // Module ID: 913
-// Function ID: 10000
+// Function ID: 10004
 // Name: wrapTransportError
 // Dependencies: []
 // Exports: wrapTransportError, wrapTransportOnClose, wrapTransportOnMessage, wrapTransportSend

@@ -1,10 +1,10 @@
-// Module ID: 7681
-// Function ID: 61330
+// Module ID: 7682
+// Function ID: 61342
 // Name: pickHelloSticker
 // Dependencies: []
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7681 (pickHelloSticker)
+// Module 7682 (pickHelloSticker)
 let closure_2 = importDefault(dependencyMap[0]);
 const WELCOME_STICKERS = arg1(dependencyMap[1]).WELCOME_STICKERS;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

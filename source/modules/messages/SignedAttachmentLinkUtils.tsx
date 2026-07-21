@@ -1,5 +1,5 @@
 // Module ID: 9573
-// Function ID: 74581
+// Function ID: 74592
 // Name: isAttachmentUrl
 // Dependencies: []
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
@@ -122,7 +122,7 @@ export const removeSignedUrlParameters = function removeSignedUrlParameters(toUR
   if (null == toURLSafeResult) {
     return toURLSafeResult;
   } else {
-    const items = ["sh", "zsh", "basic"];
+    const items = ["basic", "bbcode", "blade"];
     let num = 0;
     if (0 < items.length) {
       do {

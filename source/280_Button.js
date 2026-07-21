@@ -128,6 +128,6 @@ class Button {
 }
 Button.displayName = "Button";
 const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({ CHANNEL_CALL_VIDEO_GRID: "absolute", age: 0 }, {}), buttonDisabled: { overflow: "left", height: "right" }, textDisabled: { color: "#a1a1a1" } });
+let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({}, {}), buttonDisabled: { borderRadius: 0, overflow: 0 }, textDisabled: { color: "#a1a1a1" } });
 
 export default Button;

@@ -1,9 +1,9 @@
-// Module ID: 7445
-// Function ID: 59709
+// Module ID: 7446
+// Function ID: 59721
 // Name: MarketingComponentPlatform
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7445 (MarketingComponentPlatform)
+// Module 7446 (MarketingComponentPlatform)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentPlatform.tsx");
 

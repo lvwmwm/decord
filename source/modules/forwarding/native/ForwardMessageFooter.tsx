@@ -1,5 +1,5 @@
 // Module ID: 9885
-// Function ID: 76526
+// Function ID: 76537
 // Name: ForwardMessageFooter
 // Dependencies: []
 // Exports: ForwardMessageFooter
@@ -70,7 +70,7 @@ export const ForwardMessageFooter = function ForwardMessageFooter(message) {
   obj = {};
   const obj5 = arg1(dependencyMap[5]);
   obj.preview = jsx(arg1(dependencyMap[11]).ForwardPreview, { message, channel: selectedDestinationChannel, forwardOptions });
-  obj1 = { text: sendLabel, disabled: !canSend };
+  obj1 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", text: sendLabel, disabled: !canSend };
   let tmp14;
   if (!isSending) {
     tmp14 = callback1;

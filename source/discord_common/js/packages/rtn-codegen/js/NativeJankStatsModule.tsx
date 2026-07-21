@@ -1,9 +1,9 @@
-// Module ID: 15963
-// Function ID: 122436
+// Module ID: 15967
+// Function ID: 122480
 // Name: enforcing
 // Dependencies: []
 
-// Module 15963 (enforcing)
+// Module 15967 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeJankStatsModule");
 const _module = require(dependencyMap[1]);

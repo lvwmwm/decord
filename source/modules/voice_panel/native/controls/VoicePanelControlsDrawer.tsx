@@ -1,9 +1,9 @@
-// Module ID: 15749
-// Function ID: 120301
+// Module ID: 15758
+// Function ID: 120466
 // Name: renderChat
 // Dependencies: []
 
-// Module 15749 (renderChat)
+// Module 15758 (renderChat)
 function renderChat(shown) {
   let obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback2(importDefault(dependencyMap[9]), obj) };
   obj = { shown };

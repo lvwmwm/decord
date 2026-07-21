@@ -1,10 +1,10 @@
-// Module ID: 6945
-// Function ID: 55496
+// Module ID: 6946
+// Function ID: 55508
 // Name: _firstPartyTasksFromServer
 // Dependencies: []
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 6945 (_firstPartyTasksFromServer)
+// Module 6946 (_firstPartyTasksFromServer)
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
   const keys = Object.keys(tasks);

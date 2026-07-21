@@ -1,5 +1,5 @@
 // Module ID: 8549
-// Function ID: 67951
+// Function ID: 67962
 // Name: getTenureBadgeRequirementString
 // Dependencies: []
 // Exports: useTenureBadgeRequirementString

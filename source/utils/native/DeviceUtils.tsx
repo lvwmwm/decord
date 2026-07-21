@@ -1,5 +1,5 @@
 // Module ID: 4108
-// Function ID: 33981
+// Function ID: 33986
 // Name: getSystemVersion
 // Dependencies: []
 // Exports: getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS

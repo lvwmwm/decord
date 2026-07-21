@@ -1,10 +1,10 @@
-// Module ID: 14636
-// Function ID: 110378
+// Module ID: 14639
+// Function ID: 110410
 // Name: AccountDisabledOrDeletionScheduled
 // Dependencies: []
 // Exports: default
 
-// Module 14636 (AccountDisabledOrDeletionScheduled)
+// Module 14639 (AccountDisabledOrDeletionScheduled)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const LoginStates = arg1(dependencyMap[3]).LoginStates;
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Bool(true)": "2026-03-age-verification-google-wallet", "Bool(true)": null, "Bool(true)": "everyone" };
+  obj = {};
   const space = importDefault(dependencyMap[6]).space;
   obj.paddingBottom = arg0 ? space.PX_8 : space.PX_16;
   let num = 0;
@@ -32,9 +32,9 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   }
   obj.justifyContent = str2;
   obj.container = obj;
-  obj.image = { -1788894762: "Array", -164173734: "summaryId" };
-  obj.title = { collapsable: "absolute", preventClipping: 0 };
-  obj.description = {};
+  obj.image = { SCROLLING_MOMENTUM: "user", GuildRoomBackgrounds: "row" };
+  obj.title = {};
+  obj.description = { hour: "r", minute: "isArray", second: "warn" };
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -109,7 +109,7 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   obj = { style: tmp6.container };
   obj1 = {};
   const items4 = [callback(arg1(dependencyMap[13]).WumpTrash, { style: tmp6.image }), , ];
-  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp6.title, children: stringResult };
+  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp6.title, children: stringResult };
   items4[1] = callback(arg1(dependencyMap[14]).Text, obj3);
   const obj4 = { style: tmp6.description, children: string2Result };
   items4[2] = callback(arg1(dependencyMap[14]).Text, obj4);

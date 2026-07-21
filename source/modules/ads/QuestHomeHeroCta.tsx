@@ -1,7 +1,7 @@
 // Module ID: 9465
-// Function ID: 73713
+// Function ID: 73724
 // Name: questHomeHeroCtaFromServer
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: questHomeHeroCtaFromServer
 
 // Module 9465 (questHomeHeroCtaFromServer)

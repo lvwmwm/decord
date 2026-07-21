@@ -1,9 +1,9 @@
-// Module ID: 13307
-// Function ID: 101104
+// Module ID: 13309
+// Function ID: 101126
 // Name: handler
 // Dependencies: []
 
-// Module 13307 (handler)
+// Module 13309 (handler)
 let closure_0 = importDefault(dependencyMap[0]);
 let obj = {};
 obj = {

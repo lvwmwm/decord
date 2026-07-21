@@ -1,5 +1,5 @@
 // Module ID: 1283
-// Function ID: 14978
+// Function ID: 14983
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -26,9 +26,9 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, Versions$Type);
       items = [, , ];
       items[0] = {};
-      items[1] = { 9223372036854775807: 0, 0: 29709089, 9223372036854775807: 675628429, no: 625 };
-      items[2] = { 9223372036854775807: -42.712, 0: 3, 9223372036854775807: "favorite_stickers", no: "message" };
-      items1 = [34];
+      items[1] = { 1347510942: 0, 1678385745: 29250337, 1364379111: -1325579070, 140698458: 625 };
+      items[2] = { 1347510942: -42.712, 1678385745: 3, 1364379111: "favorite_stickers", 140698458: "message" };
+      items1 = [];
       items1[1] = items;
       obj = closure_6(Versions$Type);
       tmp2 = closure_5;
@@ -48,7 +48,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 983589860: "spring", -1298214829: "linear", 1441712373: "easeInEaseOut" };
+      let obj = { <string:348294315>: false, <string:1473732916>: false, <string:3991323447>: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Versions$Type(closure_1[6]).MESSAGE_TYPE, obj);

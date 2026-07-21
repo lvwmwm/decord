@@ -1,10 +1,10 @@
-// Module ID: 5230
-// Function ID: 44204
+// Module ID: 5229
+// Function ID: 44211
 // Name: Layer
 // Dependencies: []
 // Exports: LayerScope
 
-// Module 5230 (Layer)
+// Module 5229 (Layer)
 function Layer(zIndex) {
   zIndex = zIndex.zIndex;
   const arg1 = zIndex;

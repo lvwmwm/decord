@@ -1,10 +1,10 @@
-// Module ID: 15715
-// Function ID: 120138
+// Module ID: 15724
+// Function ID: 120303
 // Name: trackVoicePanelTabOpened
 // Dependencies: []
 // Exports: default
 
-// Module 15715 (trackVoicePanelTabOpened)
+// Module 15724 (trackVoicePanelTabOpened)
 let closure_2 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");

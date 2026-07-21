@@ -1,5 +1,5 @@
 // Module ID: 11976
-// Function ID: 92583
+// Function ID: 92595
 // Name: WidgetGameTagIconRole
 // Dependencies: []
 // Exports: buildWidgetGameTagMetadata

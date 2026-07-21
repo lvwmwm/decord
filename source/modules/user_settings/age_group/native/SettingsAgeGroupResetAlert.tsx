@@ -1,15 +1,15 @@
-// Module ID: 13554
-// Function ID: 102801
+// Module ID: 13556
+// Function ID: 102823
 // Name: SettingsAgeGroupResetAlert
 // Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 13554 (SettingsAgeGroupResetAlert)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13556 (SettingsAgeGroupResetAlert)
+import closure_3 from "result";
+import result from "result";
 
-({ jsx: closure_4, jsxs: closure_5 } = require("__exportStarResult1"));
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = result);
+result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
 
 export default function SettingsAgeGroupResetAlert() {
   function _handleConfirm(arg0) {

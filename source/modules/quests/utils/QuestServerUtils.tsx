@@ -1,10 +1,10 @@
-// Module ID: 6943
-// Function ID: 55477
+// Module ID: 6944
+// Function ID: 55489
 // Name: questConfigFromServer
 // Dependencies: []
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questWithUserStatusFromServer, questsEntitlementsFromServer
 
-// Module 6943 (questConfigFromServer)
+// Module 6944 (questConfigFromServer)
 function questConfigFromServer(body) {
   const match = arg1(dependencyMap[1]).match(body);
   const str = arg1(dependencyMap[1]);

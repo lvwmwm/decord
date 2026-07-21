@@ -1,5 +1,5 @@
 // Module ID: 6680
-// Function ID: 51393
+// Function ID: 51401
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
 // Dependencies: []
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge

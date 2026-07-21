@@ -1,9 +1,9 @@
-// Module ID: 14984
-// Function ID: 112848
+// Module ID: 14987
+// Function ID: 112882
 // Name: YouBarMaskedBackground
 // Dependencies: []
 
-// Module 14984 (YouBarMaskedBackground)
+// Module 14987 (YouBarMaskedBackground)
 function YouBarMaskedBackground(barWidth) {
   let avatarSize;
   let backgroundColor;
@@ -13,7 +13,7 @@ function YouBarMaskedBackground(barWidth) {
   let obj = { style: { position: "absolute" } };
   obj = { style: obj };
   obj = { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor: "transparent" };
-  const obj1 = { bottom: YOU_BAR_HEIGHT / 2 - 1 };
+  const obj1 = { BLUETOOTH_CONNECT: "%MapPrototype%", BLUETOOTH_SCAN: "isArray", BLUETOOTH_ADVERTISE: "isArrayBuffer", ACCESS_MEDIA_LOCATION: "GUILD_INCIDENT_ALERT_MODE_DISABLED", ACCEPT_HANDOVER: "MultipleChoicePrompt", ACTIVITY_RECOGNITION: "isArray", bottom: YOU_BAR_HEIGHT / 2 - 1 };
   const tmp = callback3();
   const items = [callback(View, { style: obj1 }), callback(View, { style: { top: YOU_BAR_HEIGHT / 2, left: diff - 1 } }), ];
   const obj3 = { style: obj4 };
@@ -24,9 +24,9 @@ function YouBarMaskedBackground(barWidth) {
   const obj8 = importDefault(dependencyMap[8])("#000000");
   const items1 = [importDefault(dependencyMap[8])("#000000").alpha(0).hex(), "#000000"];
   obj3.colors = items1;
-  obj3.start = { max: -536870861, guildId: -299892737 };
+  obj3.start = {};
   obj3.end = {};
-  obj3.locations = ["Text", "lc"];
+  obj3.locations = ["replace", "then"];
   obj3.pointerEvents = "none";
   items[2] = callback(tmp4, obj3);
   obj.children = items;
@@ -62,7 +62,7 @@ function YouBarAnimatedBackground(arg0) {
   const style = [{ position: "absolute" }, tmp.youRowFloating, , , ];
   obj = { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor };
   style[2] = obj;
-  style[3] = { GET_SOUNDBOARD_SOUNDS: -536870861, DISCOVERY_SETUP_SUCCESS_MODAL: -299892737 };
+  style[3] = { contextualGuildId: -536870861, paddingTop: -299892737 };
   style[4] = animatedStyle;
   return callback(importDefault(dependencyMap[11]).View, { style });
 }

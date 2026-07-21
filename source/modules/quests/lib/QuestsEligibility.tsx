@@ -1,5 +1,5 @@
 // Module ID: 10454
-// Function ID: 80915
+// Function ID: 80926
 // Name: getIsEligibleForQuests
 // Dependencies: [6, 7]
 // Exports: getIsEligibleForQuests

@@ -1,10 +1,10 @@
-// Module ID: 7768
-// Function ID: 61681
+// Module ID: 7769
+// Function ID: 61693
 // Name: FacebookNeutralIcon
 // Dependencies: []
 // Exports: FacebookNeutralIcon
 
-// Module 7768 (FacebookNeutralIcon)
+// Module 7769 (FacebookNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FacebookNeutralIcon.tsx");

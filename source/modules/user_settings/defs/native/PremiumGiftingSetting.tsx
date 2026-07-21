@@ -1,9 +1,9 @@
-// Module ID: 13772
-// Function ID: 104064
+// Module ID: 13774
+// Function ID: 104086
 // Name: route
 // Dependencies: []
 
-// Module 13772 (route)
+// Module 13774 (route)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[7]);

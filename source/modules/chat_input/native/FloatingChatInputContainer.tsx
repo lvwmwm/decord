@@ -1,5 +1,5 @@
 // Module ID: 11095
-// Function ID: 86307
+// Function ID: 86318
 // Name: FloatingChatInputContainer
 // Dependencies: []
 // Exports: default

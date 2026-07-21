@@ -1,5 +1,5 @@
 // Module ID: 8567
-// Function ID: 68067
+// Function ID: 68078
 // Name: CoachmarkImg
 // Dependencies: []
 // Exports: default
@@ -34,7 +34,7 @@ const View = arg1(dependencyMap[2]).View;
 const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[5]).jsx;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ image: {}, imageContainer: {} });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ image: {}, imageContainer: { accessibilityRole: true, padding: true, "Null": true } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/premium/tiered_tenure_badging/native/TieredTenureBadgeCoachmark.tsx");
 

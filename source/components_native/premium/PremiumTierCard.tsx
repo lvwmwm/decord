@@ -1,10 +1,10 @@
-// Module ID: 12376
-// Function ID: 94631
+// Module ID: 12378
+// Function ID: 94653
 // Name: textLogoTier2
 // Dependencies: []
 // Exports: default
 
-// Module 12376 (textLogoTier2)
+// Module 12378 (textLogoTier2)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const getPremiumGradientColor = arg1(dependencyMap[2]).getPremiumGradientColor;
@@ -12,7 +12,7 @@ const PremiumTypes = arg1(dependencyMap[3]).PremiumTypes;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { header: {}, textLogoTier0: {}, textLogoTier1: { bhk: null, bic: null }, textLogoTier2: {}, wumpusLogo: { "Bool(true)": "white", <string:80574720>: "M249.5 78L246 81.2322V85.7808L249.5 89L253 85.7678V81.2322L249.5 78Z", <string:80504576>: "white", <string:80590080>: true }, wumpusLogoTier0: {}, wumpusLogoTier1: { bhk: "https://www.googleapis.com/youtube/v3/liveBroadcasts", bic: null }, wumpusLogoTier2: {} };
+obj = { header: {}, textLogoTier0: { "Null": "<string:40927553>", "Null": "<string:617500928>" }, textLogoTier1: { "Null": null, "Null": null }, textLogoTier2: {}, wumpusLogo: { "Null": "white", "Null": "M82.5 96L79 99.8199V105.195L82.5 109L86 105.18V99.8199L82.5 96Z", "Null": "white", "Null": "M249.5 78L246 81.2322V85.7808L249.5 89L253 85.7678V81.2322L249.5 78Z" }, wumpusLogoTier0: { "Null": "white", "Null": true }, wumpusLogoTier1: { "Null": "https://www.googleapis.com/youtube/v3/liveBroadcasts", "Null": null }, wumpusLogoTier2: { "Null": 16, "Null": 16 } };
 obj = { padding: 16, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.xs, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.body = obj;
 const tmp4 = arg1(dependencyMap[4]);
@@ -29,7 +29,7 @@ export default function _default(children) {
   const tmp2 = importDefault(dependencyMap[8])("PremiumTierCard");
   let obj = {};
   obj = { style: tmp.header, start: arg1(dependencyMap[10]).HorizontalGradient.START, end: arg1(dependencyMap[10]).HorizontalGradient.END, colors: getPremiumGradientColor(premiumType) };
-  obj = { "Bool(true)": "r", "Bool(true)": "ron", "Bool(true)": "Array" };
+  obj = { mediaContentContainer: "r", pQ3bLk: "BWD8fs", LANDING_FRAME_NAME: "Array" };
   let obj3 = arg1(dependencyMap[11]);
   obj.accessibilityLabel = obj3.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {

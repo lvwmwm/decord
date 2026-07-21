@@ -1,5 +1,5 @@
 // Module ID: 8393
-// Function ID: 66791
+// Function ID: 66802
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType

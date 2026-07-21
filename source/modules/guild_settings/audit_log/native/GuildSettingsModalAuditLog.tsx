@@ -1,10 +1,10 @@
-// Module ID: 16092
-// Function ID: 123769
+// Module ID: 16100
+// Function ID: 123830
 // Name: ConnectedGuildSettingsModalAuditLog
 // Dependencies: []
 // Exports: default
 
-// Module 16092 (ConnectedGuildSettingsModalAuditLog)
+// Module 16100 (ConnectedGuildSettingsModalAuditLog)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ View: closure_6, FlatList: closure_7 } = arg1(dependencyMap[2]));
@@ -19,13 +19,13 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = { listView: { marginVertical: 12 }, spinner: { marginTop: 40 } };
-obj = { "Bool(false)": null, "Bool(false)": "center", "Bool(false)": "center", borderRadius: importDefault(dependencyMap[11]).radii.md, backgroundColor: importDefault(dependencyMap[11]).colors.INPUT_BACKGROUND_DEFAULT };
+obj = { "Bool(false)": null, <string:1650218555>: "center", <string:3159512224>: "center", borderRadius: importDefault(dependencyMap[11]).radii.md, backgroundColor: importDefault(dependencyMap[11]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.filterTextWrapper = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.filtersWrapper = { paddingTop: importDefault(dependencyMap[11]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_8 };
 obj.firstAuditRow = { marginTop: 0 };
 obj.lastAuditRow = { marginBottom: 0 };
-obj.filterTrailing = { absolute: 29705613, wide: 6257, componentStyles: -1621032704, tall: 1095374929 };
+obj.filterTrailing = { paths: 29246658, has: 6257, TypeError: -1621032704, Symbol: 1095339345 };
 let closure_18 = obj.createStyles(obj);
 const obj1 = { paddingTop: importDefault(dependencyMap[11]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_8 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLog.tsx");
@@ -95,14 +95,14 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     }
   }, items3);
   closure_8 = memo;
-  const tmp6 = callback(React.useState({ USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE: "o", position: "o" }), 2);
+  const tmp6 = callback(React.useState({ USER_VERIFICATION_MODAL_FLOW: "o", number: "o" }), 2);
   const first = tmp6[0];
   closure_9 = first;
   closure_10 = tmp6[1];
   const items4 = [actionFilter, userIdFilter, navigation];
   callback = React.useCallback(() => {
     let obj = guildId(stateFromStores[16]);
-    obj = { url: "header", body: "text-md/medium", retries: "mobile-text-heading-primary" };
+    obj = { position: "header", width: "text-md/medium", aspectRatio: "mobile-text-heading-primary" };
     obj = {};
     const intl = guildId(stateFromStores[15]).intl;
     obj.label = intl.string(guildId(stateFromStores[15]).t.hxnY/q);
@@ -151,7 +151,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
         const obj = { current: log.id, prev: ref.current };
         callback(obj);
       } else {
-        callback({ USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE: "o", position: "o" });
+        callback({ USER_VERIFICATION_MODAL_FLOW: "o", number: "o" });
       }
     };
     obj.log = item;
@@ -184,7 +184,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     if (!isInitialLoading) {
       obj1 = {};
       obj2 = { style: tmp.filtersWrapper };
-      obj3 = { 0: null, 0: null };
+      obj3 = { bind: null, cursor: null };
       const obj4 = { variant: "text-md/semibold" };
       const intl = arg1(dependencyMap[15]).intl;
       obj4.children = intl.string(arg1(dependencyMap[15]).t.kP6oFy);

@@ -1,5 +1,5 @@
 // Module ID: 10464
-// Function ID: 81014
+// Function ID: 81025
 // Name: formatWatchRemainingDurationShort
 // Dependencies: []
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText

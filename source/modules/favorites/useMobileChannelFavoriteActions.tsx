@@ -1,5 +1,5 @@
 // Module ID: 10334
-// Function ID: 79763
+// Function ID: 79774
 // Name: useMobileChannelFavoriteActions
 // Dependencies: []
 // Exports: default

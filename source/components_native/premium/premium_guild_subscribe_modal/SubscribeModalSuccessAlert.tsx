@@ -1,10 +1,10 @@
-// Module ID: 12435
-// Function ID: 94901
+// Module ID: 12437
+// Function ID: 94923
 // Name: PremiumPaymentGuildAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 12435 (PremiumPaymentGuildAnimation)
+// Module 12437 (PremiumPaymentGuildAnimation)
 class PremiumPaymentGuildAnimation {
   constructor(arg0) {
     ({ nextScene, onSceneComplete, loop } = global);
@@ -23,18 +23,18 @@ const Gradients = arg1(dependencyMap[4]).Gradients;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { wrapper: { "Bool(true)": "r", "Bool(true)": "NEW_THREAD_PERMISSIONS", "Bool(true)": "isArray", "Bool(true)": "isArray" }, animation: { "Null": null, "Null": null, "Null": null }, text: { "Bool(false)": null, "Bool(false)": null } };
+obj = { wrapper: { "Null": 1931542530, "Null": 0, "Null": 2, "Null": 3 }, animation: {}, text: { "Bool(false)": "errExpectingATEXT", "Bool(false)": "j" } };
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.activated = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.activatedBackground = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { -9223372036854775808: "r", 0: "%MapPrototype%", 0: "isArray", 9223372036854775807: "isArrayBuffer", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj.activatedBackground = obj1;
 obj.activatedImage = { width: 220 };
 obj.successInfo = { marginTop: 24 };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { ENTRY: "entry", IDLE: "idle" };
-let closure_12 = { [obj2.ENTRY]: {}, [obj2.IDLE]: {} };
+let closure_12 = { [obj2.ENTRY]: { paths: null, accessible: "center" }, [obj2.IDLE]: { paths: null, accessible: null } };
 PremiumPaymentGuildAnimation.Scenes = obj2;
-const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const tmp3 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
 
 export default function SubscribeModalSuccessAlert(arg0) {

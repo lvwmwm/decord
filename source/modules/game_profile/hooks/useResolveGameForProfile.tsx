@@ -1,5 +1,5 @@
 // Module ID: 8584
-// Function ID: 68145
+// Function ID: 68156
 // Name: useResolveGameForProfile
 // Dependencies: []
 // Exports: default

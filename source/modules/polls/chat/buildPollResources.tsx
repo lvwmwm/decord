@@ -1,8 +1,8 @@
-// Module ID: 7901
-// Function ID: 62898
+// Module ID: 7902
+// Function ID: 62911
 // Dependencies: []
 
-// Module 7901
+// Module 7902
 const _module = require(dependencyMap[1]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/polls/chat/buildPollResources.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 13629
-// Function ID: 103252
+// Module ID: 13631
+// Function ID: 103274
 // Name: setConversationSuggestionsEnabled
 // Dependencies: [0, 0, 0, 0, 4294967295]
 
-// Module 13629 (setConversationSuggestionsEnabled)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13631 (setConversationSuggestionsEnabled)
+import closure_3 from "result";
+import result from "result";
 
 function setConversationSuggestionsEnabled(arg0) {
   const arg1 = arg0;
   arg1(dependencyMap[4]).batchUpdates(() => state.setState({ isEnabled: arg0 }));
 }
-let closure_4 = __exportStarResult1.createWithEqualityFn(() => ({ isEnabled: true }));
-require("__exportStarResult1").NativeModules.IntentsHandler;
-__exportStarResult1 = {
+let closure_4 = result.createWithEqualityFn(() => ({ isEnabled: true }));
+require("result").NativeModules.IntentsHandler;
+result = {
   useTitle() {
     const intl = arg1(dependencyMap[9]).intl;
     return intl.string(arg1(dependencyMap[9]).t.J8foZq);
   },
-  parent: require("__exportStarResult1").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("result").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useIOSConversationSuggestionsSettingValue() {
     const effect = React.useEffect(() => {
       const conversationSuggestionsEnabled = conversationSuggestionsEnabled.getConversationSuggestionsEnabled();
@@ -44,8 +44,8 @@ __exportStarResult1 = {
     return !arg1(dependencyMap[6]).isAndroid();
   }
 };
-__exportStarResult1 = arg1(dependencyMap[8]).createToggle(__exportStarResult1);
+result = arg1(dependencyMap[8]).createToggle(result);
 const obj2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/IOSConversationSuggestionsSetting.tsx");
+result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/IOSConversationSuggestionsSetting.tsx");
 
-export default __exportStarResult1;
+export default result;

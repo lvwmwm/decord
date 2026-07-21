@@ -1,10 +1,10 @@
-// Module ID: 12737
-// Function ID: 97714
+// Module ID: 12739
+// Function ID: 97736
 // Name: AddFriendModalScene
 // Dependencies: []
 // Exports: default
 
-// Module 12737 (AddFriendModalScene)
+// Module 12739 (AddFriendModalScene)
 function AddFriendModalScene(onSkip) {
   onSkip = onSkip.onSkip;
   const arg1 = onSkip;
@@ -54,7 +54,7 @@ function AddFriendModalScene(onSkip) {
       let obj = sourceMetadata(contactSyncAccount[16]);
       userTag = obj.getUserTag(currentUser);
     }
-    sourceMetadata(contactSyncAccount[12]).track(constants.FRIEND_ADD_VIEWED, { 9223372036854775807: null, 9223372036854775807: null });
+    sourceMetadata(contactSyncAccount[12]).track(constants.FRIEND_ADD_VIEWED, {});
     const intl = onSkip(contactSyncAccount[17]).intl;
     obj = { url: "https://discord.com/", username: userTag };
     const obj2 = sourceMetadata(contactSyncAccount[12]);
@@ -75,7 +75,7 @@ function AddFriendModalScene(onSkip) {
     navigation.setOptions(obj);
   }, items1);
   obj = { keyboardShouldPersistTaps: "handled" };
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.GWMTSE);
   const items2 = [callback2(arg1(dependencyMap[22]).Text, obj), , , ];
@@ -86,7 +86,7 @@ function AddFriendModalScene(onSkip) {
   obj2 = { style: tmp.input, autoFocusInput: false };
   items2[2] = callback2(importDefault(dependencyMap[23]), obj2);
   const obj3 = { style: tmp.otherOptionsContainer };
-  const obj4 = { alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010816814205333764, justifyContent: 9126805508.5, backgroundColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002865925076100407 };
+  const obj4 = { USER_REGISTRATION: "remotePlatform", borderColor: "per", borderWidth: "MiniaturesSpotIllustration" };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[17]).t.dukg0Z);
   const items3 = [callback2(arg1(dependencyMap[22]).Text, obj4), ];

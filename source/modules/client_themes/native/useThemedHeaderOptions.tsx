@@ -1,12 +1,12 @@
-// Module ID: 15306
-// Function ID: 116419
+// Module ID: 15309
+// Function ID: 116453
 // Name: headerBackground
 // Dependencies: []
 // Exports: default
 
-// Module 15306 (headerBackground)
+// Module 15309 (headerBackground)
 function headerBackground(arg0) {
-  return jsx(importDefault(dependencyMap[2]), {});
+  return jsx(importDefault(dependencyMap[2]), { id: "Small", text: "sm", variant: "Placeholder" });
 }
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;

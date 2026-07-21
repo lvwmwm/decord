@@ -1,5 +1,5 @@
 // Module ID: 10495
-// Function ID: 81926
+// Function ID: 81937
 // Name: BaseSocket
 // Dependencies: []
 
@@ -21,7 +21,7 @@ const tmp3 = () => {
       date = new Date(0);
       obj.expires = date;
       this.authorization = obj;
-      this.application = { 0: null, -9223372036854775808: "\u{1F9BB}\u{1F3FF}", 9223372036854775807: true };
+      this.application = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": null };
       abortController = new AbortController();
       this.abortController = abortController;
       checkRpcVersionResult = this.checkRpcVersion(arg1);

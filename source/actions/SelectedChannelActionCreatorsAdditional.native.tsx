@@ -1,10 +1,10 @@
-// Module ID: 4943
-// Function ID: 42362
+// Module ID: 4942
+// Function ID: 42369
 // Name: selectVoiceChannelAdditional
 // Dependencies: []
 // Exports: selectVoiceChannelAdditional
 
-// Module 4943 (selectVoiceChannelAdditional)
+// Module 4942 (selectVoiceChannelAdditional)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

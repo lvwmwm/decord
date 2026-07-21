@@ -1,11 +1,12 @@
 // Module ID: 1156
-// Function ID: 13139
+// Function ID: 13143
 // Name: init
-// Dependencies: []
+// Dependencies: [77, 1136, 1142, 794, 1134, 1137, 1098, 6, 7, 15, 17, 102, 18, 1128, 794, 1111, 1168]
 // Exports: close, crashedLastRun, flush, init, nativeCrash, withScope, wrap
 
 // Module 1156 (init)
-let closure_2 = importAll(dependencyMap[0]);
+import _defineProperty from "_defineProperty";
+
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -62,7 +63,7 @@ if (!fn) {
     return _Promise;
   };
 }
-const obj = { maxQueueSize: arg1(dependencyMap[1]).DEFAULT_BUFFER_SIZE };
+const obj = { <string:1396335227>: null, <string:1669053777>: "center", <string:1369455452>: 24, <string:2690797105>: null, <string:1615264854>: "\u{1F61B}", <string:2493765777>: 6.1, <string:4205792510>: 24, <string:1382965599>: "bold", <string:1594361353>: 20, <string:988460899>: "left", <string:2349205843>: 1, <string:1631125766>: "column", <string:3363328366>: "space-between", <string:189898849>: "center", <string:1403937030>: null, <string:3991323447>: "uppercase", maxQueueSize: require("getDefaultIdleNavigationSpanOptions").DEFAULT_BUFFER_SIZE };
 
 export const init = function init(maxQueueSize) {
   let obj = callback(dependencyMap[2]);
@@ -125,7 +126,7 @@ export const init = function init(maxQueueSize) {
       }
       const obj10 = callback(dependencyMap[6]);
     }
-    let closure_2 = combined;
+    let _defineProperty = combined;
     const _Object = Object;
     const _Object2 = Object;
     obj = {};
@@ -252,7 +253,7 @@ export const wrap = function wrap(displayName, profilerProps) {
   }
   obj.name = str;
   obj.updateProps = {};
-  let closure_2 = Object.assign(merged, obj);
+  let _defineProperty = Object.assign(merged, obj);
   if (obj2.isWeb()) {
     let ReactNativeProfiler = tmp3(tmp4[11]).Profiler;
   } else {

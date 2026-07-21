@@ -1,5 +1,5 @@
 // Module ID: 10382
-// Function ID: 80044
+// Function ID: 80055
 // Name: useChannelSafeAreaHeightSharedValue
 // Dependencies: []
 // Exports: default

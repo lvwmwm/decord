@@ -1,9 +1,9 @@
-// Module ID: 7145
-// Function ID: 57607
+// Module ID: 7146
+// Function ID: 57619
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7145 (_isNativeReflectConstruct)
+// Module 7146 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,24 +25,24 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PremiumTabTooltip$Type);
       items = [, , , , ];
-      items[0] = {};
-      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
-      obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006403427937624729, "Null": 9126805520.75, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001427678768759017 };
+      items[0] = { 1347510942: 9, 1678385745: 18, 1364379111: "help_article", 140698458: "message" };
+      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
+      obj = { 9223372036854775807: "onPressBack", 9223372036854775807: "pow", 0: "MiniaturesSpotIllustration" };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
       items[2] = obj;
-      obj = { "Null": "3", "Null": 3, "Null": "mobile_body" };
+      obj = { 9223372036854775807: "3", 9223372036854775807: 3, 0: "mobile_body" };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj1 = { "Null": null, "Null": 9, "Null": null };
+      obj1 = { 9223372036854775807: null, 9223372036854775807: 9, 0: null };
       obj1.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[4] = obj1;
-      items1 = ["now"];
+      items1 = ["pos"];
       items1[1] = items;
       obj4 = closure_6(PremiumTabTooltip$Type);
       tmp2 = closure_5;
@@ -62,7 +62,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 0: "\u{1F9BB}\u{1F3FF}", 0: true };
+      let obj = { "Bool(true)": null, "Bool(true)": null };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTabTooltip$Type(closure_1[8]).MESSAGE_TYPE, obj);

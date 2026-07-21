@@ -1,5 +1,5 @@
 // Module ID: 9763
-// Function ID: 75921
+// Function ID: 75932
 // Name: PremiumGiftingPromotionSuccessActions
 // Dependencies: []
 // Exports: default
@@ -17,11 +17,11 @@ obj = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.nameplateContainer = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.nameplateWrapper = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { 1414937445: null, 710171746: null, -1884505083: null, 1632514476: null, -1072868960: null, 1549977185: null, 651579746: null, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.nameplateWrapper = obj2;
 obj.singleAvatarContainer = {};
 let closure_10 = obj.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftingPromotionSuccessActions.tsx");
 
 export default function PremiumGiftingPromotionSuccessActions(purchase) {
@@ -79,7 +79,7 @@ export default function PremiumGiftingPromotionSuccessActions(purchase) {
   if (isNameplateRecord(first)) {
     obj = { style: tmp.nameplateContainer };
     obj1 = { style: tmp.nameplateWrapper };
-    obj2 = { "Null": null, "Null": null, "Null": null };
+    obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
     const tmp23 = importDefault(dependencyMap[15]);
     obj2.nameplate = arg1(dependencyMap[16]).getNameplateData(first);
     obj1.children = callback(tmp23, obj2);

@@ -1,5 +1,5 @@
 // Module ID: 10139
-// Function ID: 78448
+// Function ID: 78459
 // Name: playVibingWumpusMusic
 // Dependencies: [31, 33, 689, 3831, 10151]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic

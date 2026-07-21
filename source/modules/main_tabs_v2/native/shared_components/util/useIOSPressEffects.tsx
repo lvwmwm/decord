@@ -1,12 +1,12 @@
 // Module ID: 5432
-// Function ID: 46525
+// Function ID: 46533
 // Name: SPRING_CONFIG
 // Dependencies: []
 // Exports: useIOSPressEffects
 
 // Module 5432 (SPRING_CONFIG)
 let closure_3 = importAll(dependencyMap[0]);
-const obj = { margin: "hidden", resizeMode: null, fadeDuration: null, leftDisabled: "flex", rightDisabled: "column" };
+const obj = {};
 let closure_5 = { code: "function useIOSPressEffectsTsx1(){const{withSpring,interpolate,sharedPressState,sharedWidthScale,SPRING_CONFIG,withOpacity}=this.__closure;const scale=withSpring(interpolate(sharedPressState.get(),[0,1],[1,sharedWidthScale.get()]),SPRING_CONFIG);if(withOpacity){return{transform:[{scale:scale}],opacity:withSpring(interpolate(sharedPressState.get(),[0,1],[1,0.5]),SPRING_CONFIG)};}else{return{transform:[{scale:scale}]};}}" };
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/useIOSPressEffects.tsx");
 
@@ -54,9 +54,9 @@ export const useIOSPressEffects = function useIOSPressEffects(arg0) {
       obj = arg0(width[4]);
       obj2 = arg0(width[2]);
       value = width.get();
-      items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
+      items = [null];
       items[1] = closure_3.get();
-      withSpringResult = obj.withSpring(obj2.interpolate(value, ["Text", "lc"], items), width);
+      withSpringResult = obj.withSpring(obj2.interpolate(value, ["replace", "then"], items), width);
       obj = {};
       if (closure_1) {
         obj1 = {};
@@ -70,7 +70,7 @@ export const useIOSPressEffects = function useIOSPressEffects(arg0) {
         obj7 = arg0(width[2]);
         tmp6 = width;
         tmp7 = width;
-        obj1.opacity = obj6.withSpring(obj7.interpolate(width.get(), ["Text", "lc"], []), width);
+        obj1.opacity = obj6.withSpring(obj7.interpolate(width.get(), ["replace", "then"], []), width);
         tmp3 = obj1;
       } else {
         obj2 = {};

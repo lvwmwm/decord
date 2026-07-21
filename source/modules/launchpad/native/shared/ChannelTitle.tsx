@@ -1,8 +1,8 @@
-// Module ID: 15537
-// Function ID: 118569
+// Module ID: 15540
+// Function ID: 118608
 // Dependencies: []
 
-// Module 15537
+// Module 15540
 const importAllResult = importAll(dependencyMap[0]);
 const UnreadSetting = arg1(dependencyMap[1]).UnreadSetting;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -38,10 +38,10 @@ const memoResult = importAllResult.memo(function ChannelTitle(unread) {
         unreadOrConnected = tmp2.unreadOrConnected;
       }
     }
-    const obj = { -1801050300: true, -179023775: true, -78029668: true, color: unreadOrConnected };
+    const obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, color: unreadOrConnected };
     return obj;
   }, items);
-  const obj = { -985534194: null, 1392510081: null, -1314149359: null, variant: importDefault(dependencyMap[5])().channelName.text.variant, style: memo };
+  const obj = { 607091792: null, -1965327279: null, 353120781: null, variant: importDefault(dependencyMap[5])().channelName.text.variant, style: memo };
   let str = "";
   if (null != title) {
     str = title;

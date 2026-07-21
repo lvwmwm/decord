@@ -1,5 +1,5 @@
 // Module ID: 10471
-// Function ID: 81068
+// Function ID: 81079
 // Name: canLaunchFrame
 // Dependencies: []
 // Exports: canLaunchFrame

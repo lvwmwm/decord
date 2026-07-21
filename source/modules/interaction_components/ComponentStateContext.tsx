@@ -1,22 +1,10 @@
-// Module ID: 7787
-// Function ID: 62126
+// Module ID: 7788
+// Function ID: 62139
 // Name: isInteractionComponent
-// Dependencies: [7788, 1881, 2, 1348, 1917, 1910, 1838, 3765, 1849, 7788, 1881, 5245, 4315, 4355, 4316, 7796, 1327, 2, 1348, 1910, 1838, 1849]
+// Dependencies: []
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7787 (isInteractionComponent)
-import closure_3 from "_isNativeReflectConstruct";
-import importAllResult from "PermissionOverwriteType";
-import result2 from "result2";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import { jsx } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 7788 (isInteractionComponent)
 function isInteractionComponent(type) {
   type = type.type;
   if (arg1(dependencyMap[10]).ComponentType.BUTTON === type) {
@@ -101,7 +89,7 @@ function useShouldDisableInteractiveComponents(channel_id) {
     return isLurkingResult;
   }, items3);
   const obj3 = arg1(dependencyMap[13]);
-  const items4 = [_createForOfIteratorHelperLoose, closure_10];
+  const items4 = [closure_8, closure_10];
   const stateFromStores2 = arg1(dependencyMap[13]).useStateFromStores(items4, () => {
     const currentUser = currentUser.getCurrentUser();
     let guild_id;
@@ -216,7 +204,7 @@ function useComponentStateForMessage(channel_id, arg1, type) {
   let obj = arg1(dependencyMap[13]);
   const items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => interactionComponentState.getInteractionComponentState(arg0.id, arg2.id));
-  const items1 = [result2];
+  const items1 = [closure_5];
   const items2 = [channel_id];
   const stateFromStores1 = arg1(dependencyMap[13]).useStateFromStores(items1, () => interaction.getInteraction(arg0), items2);
   const tmp3 = useShouldDisableInteractiveComponents(channel_id.channel_id) || arg1;
@@ -289,7 +277,7 @@ function useComponentStateForModal(customId, id) {
     }
     return tmp;
   }, items1);
-  let result2 = callback;
+  let closure_5 = callback;
   importDefault(dependencyMap[19])(() => {
     if (null == stateFromStores) {
       callback(arg2);
@@ -317,8 +305,18 @@ function getParentsNotSupported(arg0) {
     throw error;
   };
 }
+let closure_3 = importDefault(dependencyMap[0]);
+const importAllResult = importAll(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+let closure_11 = importDefault(dependencyMap[8]);
+const jsx = arg1(dependencyMap[9]).jsx;
 const context = importAllResult.createContext(null);
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/interaction_components/ComponentStateContext.tsx");
+const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/interaction_components/ComponentStateContext.tsx");
 
 export { getActionComponentState };
 export { useShouldDisableInteractiveComponents };
@@ -333,7 +331,7 @@ export const ComponentStateContextProvider = function ComponentStateContextProvi
   let closure_3 = validators;
   const validationErrors = children.validationErrors;
   const setValidationErrors = children.setValidationErrors;
-  let result2 = setValidationErrors;
+  let closure_5 = setValidationErrors;
   let flag = children.shouldDisableInteractiveComponents;
   if (flag === undefined) {
     flag = false;

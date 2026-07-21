@@ -1,5 +1,5 @@
 // Module ID: 11788
-// Function ID: 91507
+// Function ID: 91519
 // Name: EmojiIcon
 // Dependencies: []
 // Exports: default
@@ -43,7 +43,7 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ AnalyticsObjects: closure_8, AnalyticsPages: closure_9, AnalyticsSections: closure_10 } = arg1(dependencyMap[4]));
 const jsx = arg1(dependencyMap[5]).jsx;
 const tmp3 = arg1(dependencyMap[4]);
-let closure_12 = arg1(dependencyMap[6]).createStyles({ emoji: {}, imageEmoji: { <string:1632221346>: null, <string:2722977214>: null }, textEmoji: { PX_16: "LengthDelimited", ix: "Array" } });
+let closure_12 = arg1(dependencyMap[6]).createStyles({ emoji: { borderBottomWidth: 2, shadowColor: "30 days", height: "guild", alignSelf: "2026-05_default_invite_expiration_guild_web", backgroundColor: "Default Invite Expiration Guild Web", marginBottom: 20 }, imageEmoji: { y: false, isArray: false }, textEmoji: { 9223372036854775807: false, 0: false } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/forums/native/ForumTagFilterActionSheet.tsx");
 

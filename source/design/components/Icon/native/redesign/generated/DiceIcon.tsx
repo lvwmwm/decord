@@ -1,5 +1,5 @@
 // Module ID: 8697
-// Function ID: 68866
+// Function ID: 68877
 // Name: DiceIcon
 // Dependencies: []
 // Exports: DiceIcon

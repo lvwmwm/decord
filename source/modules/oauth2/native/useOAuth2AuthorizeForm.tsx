@@ -1,5 +1,5 @@
 // Module ID: 8944
-// Function ID: 70458
+// Function ID: 70469
 // Name: useOAuth2AuthorizeForm
 // Dependencies: []
 // Exports: default
@@ -690,7 +690,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       if (null != AUTHORIZE_SCOPES) {
         callback2(AUTHORIZE_SCOPES);
       } else {
-        callback({ paddingBottom: null, type: null });
+        callback({});
         if (null != dismissOAuthModal) {
           dismissOAuthModal();
         }

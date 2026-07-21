@@ -1,9 +1,9 @@
-// Module ID: 6864
-// Function ID: 54307
+// Module ID: 6865
+// Function ID: 54319
 // Name: frozen
 // Dependencies: [6, 7]
 
-// Module 6864 (frozen)
+// Module 6865 (frozen)
 import importAllResult from "_classCallCheck";
 import importAllResult1 from "_classCallCheck";
 import importAllResult2 from "_classCallCheck";

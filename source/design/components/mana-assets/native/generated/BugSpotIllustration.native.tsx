@@ -1,12 +1,14 @@
 // Module ID: 5913
-// Function ID: 49783
+// Function ID: 49791
 // Name: BugSpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: BugSpotIllustration
 
 // Module 5913 (BugSpotIllustration)
+import result from "result";
+
 const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BugSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BugSpotIllustration.native.tsx");
 
 export const BugSpotIllustration = function BugSpotIllustration(width) {
   let accessibilityLabel;

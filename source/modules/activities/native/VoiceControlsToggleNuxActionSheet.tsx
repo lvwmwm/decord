@@ -1,10 +1,10 @@
-// Module ID: 15653
-// Function ID: 119575
+// Module ID: 15656
+// Function ID: 119614
 // Name: VoiceControlsToggleActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15653 (VoiceControlsToggleActionSheet)
+// Module 15656 (VoiceControlsToggleActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,8 +18,8 @@ obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm, overflow: "hidde
 obj.videoContainer = obj;
 obj.bottomSheetWrapper = { paddingHorizontal: 24 };
 obj.contentContainer = {};
-obj.title = { "Null": "center", "Null": "center" };
-obj.body = {};
+obj.title = {};
+obj.body = { "Null": "isArray", "Null": "skuId", "Null": "textAlign" };
 let closure_11 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/activities/native/VoiceControlsToggleNuxActionSheet.tsx");
@@ -60,7 +60,7 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
   };
   const obj2 = { style: tmp.videoContainer, src: closure_10, poster: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.png", width: first, height: first / num, muted: true, paused: stateFromStores };
   const items1 = [callback2(importDefault(dependencyMap[11]), obj2), , , ];
-  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   obj3.children = intl.string(arg1(dependencyMap[13]).t.pT6hue);
   items1[1] = callback2(arg1(dependencyMap[12]).Text, obj3);

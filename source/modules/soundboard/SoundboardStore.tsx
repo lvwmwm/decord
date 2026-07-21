@@ -1,9 +1,9 @@
-// Module ID: 4575
-// Function ID: 40075
+// Module ID: 4574
+// Function ID: 40082
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4575 (_isNativeReflectConstruct)
+// Module 4574 (_isNativeReflectConstruct)
 import module_2026 from "module_2026";
 
 function _isNativeReflectConstruct() {

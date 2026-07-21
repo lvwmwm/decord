@@ -1,7 +1,7 @@
 // Module ID: 1009
-// Function ID: 11011
+// Function ID: 11015
 // Name: addClsInstrumentationHandler
-// Dependencies: [66715648, 4168679424, 4127195139, 134217731, 4227858436, 16777219, 150994948, 83886084, 4261412868, 4278190083, 1375731715]
+// Dependencies: [66781184, 66715648, 4168679424, 4127195139, 134217731, 4227858436, 16777219, 150994948, 83886084, 4261412868, 4278190083]
 
 // Module 1009 (addClsInstrumentationHandler)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

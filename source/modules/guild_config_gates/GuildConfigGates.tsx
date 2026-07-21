@@ -1,10 +1,10 @@
-// Module ID: 16201
-// Function ID: 125233
+// Module ID: 16209
+// Function ID: 125294
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 16201 (importDefaultResult1)
+// Module 16209 (importDefaultResult1)
 const importDefaultResult1 = importDefault(dependencyMap[1]);
 const Endpoints = arg1(dependencyMap[2]).Endpoints;
 let obj = arg1(dependencyMap[3]);

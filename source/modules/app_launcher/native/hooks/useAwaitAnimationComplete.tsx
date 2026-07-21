@@ -1,5 +1,5 @@
 // Module ID: 11274
-// Function ID: 87735
+// Function ID: 87747
 // Name: AwaitAnimationContext
 // Dependencies: []
 // Exports: AwaitAnimationContext, useAwaitAnimationCompletion

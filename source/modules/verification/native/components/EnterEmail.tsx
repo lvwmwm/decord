@@ -1,5 +1,5 @@
 // Module ID: 9220
-// Function ID: 72087
+// Function ID: 72098
 // Name: EnterEmail
 // Dependencies: []
 // Exports: default
@@ -19,9 +19,9 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { flex: "<string:2236743682>", display: "<string:1941427526>" };
+obj.container = { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon" };
 obj.title = { textAlign: "center" };
-obj.prompt = { action: null, messageReference: null, medium: null };
+obj.prompt = {};
 obj.input = {};
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
@@ -78,9 +78,9 @@ export default function EnterEmail(isChangeEmail) {
   }, items2);
   let tmp11Result = null;
   if (null != stateFromStores) {
-    obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.background };
+    obj = { style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     if (null != stateFromStores.email) {
       const intl2 = arg1(dependencyMap[16]).intl;
       let stringResult = intl2.string(arg1(dependencyMap[16]).t.Vm8akB);

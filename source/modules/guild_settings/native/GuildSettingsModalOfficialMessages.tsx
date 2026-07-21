@@ -1,10 +1,10 @@
-// Module ID: 16352
-// Function ID: 126151
+// Module ID: 16360
+// Function ID: 126212
 // Name: MessagePreview
 // Dependencies: []
 // Exports: default
 
-// Module 16352 (MessagePreview)
+// Module 16360 (MessagePreview)
 function MessagePreview(theme) {
   let animatedStyles;
   let selectedColor;
@@ -42,7 +42,7 @@ function MessagePreview(theme) {
   items3[1] = callback2(arg1(dependencyMap[30]).Text, { style: items4, children: memo });
   obj3.children = items3;
   const items5 = [callback3(View, obj3), ];
-  const obj5 = { 669602241: true, 1470947939: true, style: { color: hexResult } };
+  const obj5 = { style: { color: hexResult } };
   const intl2 = arg1(dependencyMap[12]).intl;
   obj5.children = intl2.string(arg1(dependencyMap[12]).t.Mi9Kbe);
   items5[1] = callback2(arg1(dependencyMap[30]).Text, obj5);
@@ -69,7 +69,7 @@ obj = { gap: importDefault(dependencyMap[11]).space.PX_8, height: "100%" };
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.segmentedControlContainer = { gap: importDefault(dependencyMap[11]).space.PX_16, alignItems: "center", paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
-obj.trailingColorContainer = { padding: 0, paddingBottom: 6, flexDirection: 0 };
+obj.trailingColorContainer = {};
 obj.colorBlock = {};
 const obj1 = { gap: importDefault(dependencyMap[11]).space.PX_16, alignItems: "center", paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
 obj.chatSection = { paddingHorizontal: arg1(dependencyMap[6]).TABLE_ROW_PADDING, gap: importDefault(dependencyMap[11]).space.PX_8 };
@@ -78,7 +78,7 @@ obj.chatContainer = { paddingVertical: importDefault(dependencyMap[11]).space.PX
 const obj3 = { paddingVertical: importDefault(dependencyMap[11]).space.PX_24, borderRadius: importDefault(dependencyMap[11]).radii.xl, borderWidth: tmp2.StyleSheet.hairlineWidth };
 obj.chatContainerInner = { flexDirection: "row", backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, gap: importDefault(dependencyMap[11]).space.PX_8 };
 obj.chatContent = { flex: 1 };
-obj.chatHeader = { <string:3461472865>: "replace", <string:1447977218>: "marginBottom", <string:1640807382>: "key" };
+obj.chatHeader = {};
 obj.chatTimestamp = { marginTop: -8 };
 let closure_14 = obj.createStyles(obj);
 let obj7 = arg1(dependencyMap[16]);

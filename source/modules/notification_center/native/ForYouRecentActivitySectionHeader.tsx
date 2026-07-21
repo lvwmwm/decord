@@ -1,10 +1,10 @@
-// Module ID: 15037
-// Function ID: 113225
+// Module ID: 15040
+// Function ID: 113259
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: []
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15037 (ForYouRecentActivitySectionHeader)
+// Module 15040 (ForYouRecentActivitySectionHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -20,7 +20,7 @@ const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/notificatio
 export const ForYouRecentActivitySectionHeader = function ForYouRecentActivitySectionHeader() {
   const tmp = callback();
   let obj = { style: tmp.container };
-  obj = { paddingHorizontal: true, height: true, alignItems: true, justifyContent: true, style: tmp.textHeader };
+  obj = { style: tmp.textHeader };
   const intl = arg1(dependencyMap[6]).intl;
   obj.children = intl.string(arg1(dependencyMap[6]).t.yM9Krm);
   obj.children = jsx(arg1(dependencyMap[5]).Text, obj);

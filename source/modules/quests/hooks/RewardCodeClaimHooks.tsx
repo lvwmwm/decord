@@ -1,5 +1,5 @@
 // Module ID: 10913
-// Function ID: 84810
+// Function ID: 84821
 // Name: useHandleRedemptionLinkClick
 // Dependencies: []
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler

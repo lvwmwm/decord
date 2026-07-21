@@ -1,5 +1,5 @@
 // Module ID: 10983
-// Function ID: 85489
+// Function ID: 85500
 // Dependencies: [31, 33, 9102, 9104, 1212, 10985, 2, 31, 27, 1910, 33, 4126, 566, 10175, 2, 57, 31, 27, 653]
 
 // Module 10983
@@ -48,7 +48,7 @@ export default importAllResult.memo(function KickConfirm(arg0) {
   const items2 = [getSystemLocale];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => user.getUser(closure_1));
   let closure_5 = importAllResult.useRef("");
-  const tmp7 = callback(stateFromStores1.useState(() => ({ "Bool(true)": null, "Bool(true)": null })), 2);
+  const tmp7 = callback(stateFromStores1.useState(() => ({ "Null": null, "Null": null })), 2);
   const first = tmp7[0];
   let closure_6 = tmp7[1];
   const items3 = [stateFromStores, onKick, stateFromStores1];
@@ -70,11 +70,11 @@ export default importAllResult.memo(function KickConfirm(arg0) {
       obj5.user = obj9.getName(stateFromStores1);
       obj4.children = intl.formatToPlainString(arg1(dependencyMap[14]).t.1Ie87p, obj5);
       items4[1] = callback2(arg1(dependencyMap[13]).Text, obj4);
-      const obj6 = { children: stateFromStores.name };
+      const obj6 = { hasMaxConnections: "isArray", isBoostOnlySubscription: "accessibilityRole", children: stateFromStores.name };
       items4[2] = callback2(arg1(dependencyMap[13]).Text, obj6);
       obj2.children = items4;
       const items5 = [callback3(closure_6, obj2), , , , ];
-      const obj7 = { "Null": "isArray", "Null": "constructor", "Null": "bind", style: tmp.blurb };
+      const obj7 = { delete: "Array", dispatch: "VOICE_PROCESSING", raw: "Array", style: tmp.blurb };
       const intl2 = arg1(dependencyMap[14]).intl;
       const obj8 = {};
       let obj13 = importDefault(dependencyMap[15]);

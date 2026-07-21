@@ -1,12 +1,13 @@
 // Module ID: 10944
-// Function ID: 85083
+// Function ID: 85094
 // Name: getExperimentServerAssignment
 // Dependencies: [0, 4294967295, 0, 0, 0, 0]
 // Exports: useExperimentAssignment, useExperimentServerAssignment
 
 // Module 10944 (getExperimentServerAssignment)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+import closure_2 from "result";
+import closure_4 from "result";
+import result from "result";
 
 function getExperimentServerAssignment(arg0, id) {
   let name = arg0;
@@ -27,7 +28,7 @@ function getExperimentServerAssignment(arg0, id) {
   }
 }
 let closure_3 = importDefault(dependencyMap[1]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/experiments/client_override_hooks/useExperimentAssignments.tsx");
+result = result.fileFinishedImporting("modules/experiments/client_override_hooks/useExperimentAssignments.tsx");
 
 export const useExperimentAssignment = function useExperimentAssignment(experiment, arg1) {
   arg1 = experiment;

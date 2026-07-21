@@ -1,5 +1,5 @@
 // Module ID: 9877
-// Function ID: 76478
+// Function ID: 76489
 // Name: getQuickSwitcherOptions
 // Dependencies: []
 // Exports: search, selectResult, switchToResult, toggle

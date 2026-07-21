@@ -1,9 +1,9 @@
-// Module ID: 15419
-// Function ID: 117650
+// Module ID: 15422
+// Function ID: 117689
 // Name: UnmuteOptions
 // Dependencies: []
 
-// Module 15419 (UnmuteOptions)
+// Module 15422 (UnmuteOptions)
 function UnmuteOptions(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -20,7 +20,7 @@ function UnmuteOptions(channel) {
   obj = {};
   obj = { disableColor: true, source: importDefault(dependencyMap[16]) };
   obj.icon = callback(arg1(dependencyMap[15]).Icon, obj);
-  const obj1 = {};
+  const obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const intl = arg1(dependencyMap[18]).intl;
   const obj2 = {};
   const tmp = callback3();
@@ -177,11 +177,11 @@ const ChannelSettingsSections = arg1(dependencyMap[6]).ChannelSettingsSections;
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
+obj = { head_shaking_horizontally: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", disappointed: true, pensive: null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.options = { marginBottom: 16 };
-obj.trailing = {};
-obj.hint = {};
+obj.trailing = { "Null": 7, "Null": 370 };
+obj.hint = { disablePowerupForGuild: false, Layers: false };
 let closure_13 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);
 const memoResult = importAllResult.memo(() => {

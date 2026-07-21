@@ -1,5 +1,5 @@
 // Module ID: 10821
-// Function ID: 84016
+// Function ID: 84027
 // Name: openOAuth2Modal
 // Dependencies: []
 // Exports: installApplication, installPrivateChannelIntegration

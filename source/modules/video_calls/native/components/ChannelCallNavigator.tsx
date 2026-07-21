@@ -1,5 +1,5 @@
 // Module ID: 10608
-// Function ID: 82746
+// Function ID: 82757
 // Name: getScreens
 // Dependencies: []
 // Exports: default
@@ -8,16 +8,13 @@
 let StyleSheet;
 function getScreens(channel) {
   const arg1 = channel.channel;
-  const obj = {
-    "Null": 0,
-    "Null": 57277807836949920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
-    "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000494,
-    "Null": 0,
-    render() {
-      return callback(closure_21, { channel });
+  return {
+    [closure_9.MAIN_CALL_SCREEN]: {
+      render() {
+        return callback(closure_21, { channel });
+      }
     }
   };
-  return { [closure_9.MAIN_CALL_SCREEN]: obj };
 }
 function CallWithVoiceChat(channel) {
   channel = channel.channel;
@@ -67,7 +64,7 @@ function CallWithVoiceChat(channel) {
       num = value;
     }
     const items = [-result, 0];
-    obj.opacity = result(tmp10[12]).interpolate(num, items, [true, true]);
+    obj.opacity = result(tmp10[12]).interpolate(num, items, [1580547965, 1074678202]);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[12]).interpolate, translateX, width: result };
@@ -233,7 +230,7 @@ let closure_11 = arg1(dependencyMap[7]).OAUTH2_AUTHORIZE_MODAL_KEY;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { flex: { default: null, jumbo: null } };
+obj = { flex: { <string:2786488292>: null, <string:1399406675>: null } };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["right"] = undefined;

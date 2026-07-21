@@ -1,5 +1,5 @@
 // Module ID: 11512
-// Function ID: 89684
+// Function ID: 89696
 // Name: maybeGetLevelUnlockedPopoutDCF
 // Dependencies: []
 // Exports: useAutoDismissGuildPowerupsNotifications

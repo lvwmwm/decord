@@ -1,7 +1,7 @@
 // Module ID: 10610
-// Function ID: 82771
+// Function ID: 82782
 // Name: OAUTH2_AUTHORIZE_MODAL_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10610 (OAUTH2_AUTHORIZE_MODAL_KEY)
 const _module = require(dependencyMap[0]);

@@ -1,12 +1,12 @@
-// Module ID: 12938
-// Function ID: 98547
+// Module ID: 12940
+// Function ID: 98569
 // Name: items
 // Dependencies: []
 
-// Module 12938 (items)
+// Module 12940 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = [null];
-const items = [{ "Null": 2.5, "Null": "relative", "Null": -16 }];
+let closure_3 = ["e"];
+const items = [{ navigationReplace: 2.5, openTextInVoiceIfVoiceChannel: "relative", hideFrame: -16 }];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
   const obj = { dotLottie: ref(dependencyMap[3]), animation: "all", ref, layers: closure_3, markers: items };

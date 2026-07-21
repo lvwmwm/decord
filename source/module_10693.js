@@ -1,9 +1,9 @@
 // Module ID: 10693
-// Function ID: 83280
+// Function ID: 83291
 // Dependencies: []
 
 // Module 10693
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "<string:3279028225>", isInternetReachable: "<string:1543503872>", details: "<string:16777216>", reachabilityUrl: "<string:20079938>", reachabilityMethod: "<string:30638080>", reachabilityHeaders: "<string:3084210432>", reachabilityTest: "<string:35014481>", reachabilityShortTimeout: "NEWSROOM", scales: [] };
+const obj = { "Bool(false)": "Array", "Bool(false)": "en-MG", "Bool(false)": "isArray", "Bool(false)": "GEN_AI_GENERATE_TEXT_DO_GENERATE_OPERATION_ATTRIBUTE", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer", "Bool(false)": "GEN_AI_USAGE_INPUT_TOKENS_CACHE_WRITE_ATTRIBUTE", "Bool(false)": "BigInt", scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

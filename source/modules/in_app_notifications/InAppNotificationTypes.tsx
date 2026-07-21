@@ -1,7 +1,7 @@
 // Module ID: 10302
-// Function ID: 79515
+// Function ID: 79526
 // Name: InAppNotificationAccessoryTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10302 (InAppNotificationAccessoryTypes)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 3976
-// Function ID: 32979
+// Function ID: 32984
 // Name: createPresetAppearance
 // Dependencies: []
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSingleColorGuildThemeGradientColors
@@ -28,7 +28,7 @@ function getToneAdjustedColor(arg0, arg1) {
   return result.hex();
 }
 function getGuildThemeToneRange(theme) {
-  return theme === ThemeTypes.LIGHT ? { Boolean: "CUSTOM_STATUS_MANAGER", Text: "LoadMore" } : { Boolean: false, Text: false };
+  return theme === ThemeTypes.LIGHT ? { sk: true, Text: true } : { sk: false, Text: false };
 }
 function getThemeAdjustedToneColor(first, theme) {
   const tmp = getGuildThemeToneRange(theme);
@@ -38,7 +38,7 @@ function getThemeAdjustedToneColor(first, theme) {
   return result.hex();
 }
 const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
-let obj = { enabledOOP: true, allowHook: true, supportsOutOfProcessOverlay: true, flex: true, gap: true, alignSelf: true, position: true, top: true, maxWidth: true, alignSelf: true };
+let obj = {};
 const items = [, , , , , , , , , ];
 ({ TWILIGHT: arr[0], DENIM: arr[1], OCEAN: arr[2], BLURPLE: arr[3], OBSIDIAN: arr[4], PLUM: arr[5], FIRE: arr[6], GOLD_DUST: arr[7], MOSS: arr[8], JADE: arr[9] } = obj);
 obj = {};

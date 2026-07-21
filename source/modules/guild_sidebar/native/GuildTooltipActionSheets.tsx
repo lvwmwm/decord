@@ -1,10 +1,10 @@
-// Module ID: 14938
-// Function ID: 112461
+// Module ID: 14941
+// Function ID: 112495
 // Name: NUFChannelsActionSheetImporter
 // Dependencies: []
 // Exports: default
 
-// Module 14938 (NUFChannelsActionSheetImporter)
+// Module 14941 (NUFChannelsActionSheetImporter)
 function NUFChannelsActionSheetImporter() {
   return arg1(dependencyMap[5])(dependencyMap[4], dependencyMap.paths);
 }

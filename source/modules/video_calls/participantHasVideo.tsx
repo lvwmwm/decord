@@ -1,5 +1,5 @@
 // Module ID: 10011
-// Function ID: 77384
+// Function ID: 77395
 // Name: participantHasVideo
 // Dependencies: []
 // Exports: useCanRenderParticipantVideo

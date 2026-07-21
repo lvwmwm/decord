@@ -1,10 +1,10 @@
-// Module ID: 7808
-// Function ID: 62288
+// Module ID: 7809
+// Function ID: 62301
 // Name: calculateTimestampDurations
 // Dependencies: []
 // Exports: formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getTrendingType, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7808 (calculateTimestampDurations)
+// Module 7809 (calculateTimestampDurations)
 function calculateTimestampDurations(end, now) {
   const bound = Math.max(end - now, 0);
   const result = bound / importDefault(dependencyMap[0]).Millis.SECOND;
@@ -420,12 +420,12 @@ export const isValidStreak = function isValidStreak(id) {
 export const getMarathonDescription = function getMarathonDescription(entry) {
   const tmp = getEntryDuration(entry);
   if (null == tmp) {
-    return { "": "o", colors: "o" };
+    return { SUPPRESS_JOIN_NOTIFICATIONS: "o", SUPPRESS_PREMIUM_SUBSCRIPTIONS: "o" };
   } else {
     const _Math = Math;
     const rounded = Math.round(tmp / importDefault(dependencyMap[0]).Seconds.HOUR);
     if (rounded <= 0) {
-      let obj = { "": "o", colors: "o" };
+      let obj = { SUPPRESS_JOIN_NOTIFICATIONS: "o", SUPPRESS_PREMIUM_SUBSCRIPTIONS: "o" };
     } else {
       obj = {};
       const intl = require(dependencyMap[2]).intl;

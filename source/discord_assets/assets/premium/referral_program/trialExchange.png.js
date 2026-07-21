@@ -1,9 +1,9 @@
-// Module ID: 7734
-// Function ID: 61460
+// Module ID: 7735
+// Function ID: 61472
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7734 (metadata)
+// Module 7735 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/referral_program/trialExchange.png.js");
 

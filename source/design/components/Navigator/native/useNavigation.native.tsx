@@ -1,5 +1,5 @@
 // Module ID: 1456
-// Function ID: 16980
+// Function ID: 16985
 // Name: useNavigation
 // Dependencies: []
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation

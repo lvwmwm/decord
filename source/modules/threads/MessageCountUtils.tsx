@@ -1,10 +1,10 @@
-// Module ID: 7627
-// Function ID: 61111
+// Module ID: 7628
+// Function ID: 61123
 // Name: shouldUseOldMaxMessageCount
 // Dependencies: []
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel
 
-// Module 7627 (shouldUseOldMaxMessageCount)
+// Module 7628 (shouldUseOldMaxMessageCount)
 function shouldUseOldMaxMessageCount(arg0) {
   return importDefault(dependencyMap[1]).compare("992549565104128000", arg0) > -1;
 }

@@ -1,5 +1,5 @@
 // Module ID: 11870
-// Function ID: 91881
+// Function ID: 91893
 // Name: TraitEmoji
 // Dependencies: []
 // Exports: default
@@ -37,8 +37,8 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Null": null, "Null": 1, "Null": null, "Null": "\u{1F44E}\u{1F3FC}" } };
-obj = { values: true, x: true, resolve: true, length: true, to: true, ao: true, useState: true, from: true, registerAsset: true, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { container: {} };
+obj = { accessibilityRole: 0, name: 3, error: 4, borderRadius: importDefault(dependencyMap[4]).radii.lg, top: 7, bottom: 1, accessibilityRole: null, HTTP: 0, surrogates: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.trait = obj;
 obj.emojiImage = {};
 let closure_7 = obj.createStyles(obj);

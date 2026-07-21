@@ -1,14 +1,12 @@
-// Module ID: 12715
-// Function ID: 97587
+// Module ID: 12717
+// Function ID: 97609
 // Name: windowSourceMatches
-// Dependencies: [1953825491, 683]
+// Dependencies: []
 // Exports: default
 
-// Module 12715 (windowSourceMatches)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 12717 (windowSourceMatches)
 let closure_0 = importDefault(dependencyMap[0]);
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
+const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
 
 export default function windowSourceMatches(str) {
   if (null == arg1) {

@@ -1,5 +1,5 @@
 // Module ID: 10580
-// Function ID: 82568
+// Function ID: 82579
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: clearVoiceChannelEffectForUser

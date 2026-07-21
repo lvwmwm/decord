@@ -1,5 +1,5 @@
 // Module ID: 10595
-// Function ID: 82647
+// Function ID: 82658
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -348,7 +348,7 @@ class BaseActivityWebView {
           return obj(...arguments);
         }
         if (closure_28) {
-          let closure_0 = [null];
+          let closure_0 = [3.787];
           function fetchAndParseCSP() {
             return _fetchAndParseCSP(...arguments);
           }();
@@ -565,7 +565,7 @@ class BaseActivityWebView {
             items14[0] = obj5;
             obj4.pathHandlers = items14;
             obj2.androidAssetLoaderConfig = obj4;
-            obj2.originWhitelist = ["<string:1982989120>"];
+            obj2.originWhitelist = [];
             str10 = "never";
             obj2.overScrollMode = "never";
             obj2.scrollEnabled = false;
@@ -650,7 +650,7 @@ export default function EmbeddedActivityWebView(channelId) {
   const importDefault = currentEmbeddedActivity;
   const applicationId = channelId.applicationId;
   const importAll = applicationId;
-  let obj = { round: "spring", runOnJS: "linear", filter: "easeInEaseOut" };
+  let obj = { paddingHorizontal: false, textAlign: false, player_playback_mode: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(channelId, obj);
   const tmp3 = useHasInvalidUrlErrorState();

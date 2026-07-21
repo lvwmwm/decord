@@ -1,5 +1,5 @@
 // Module ID: 8959
-// Function ID: 70676
+// Function ID: 70687
 // Name: ConnectAccountStep
 // Dependencies: []
 // Exports: ConnectedAccountCard, default
@@ -15,16 +15,16 @@ let obj = arg1(dependencyMap[6]);
 obj = { container: {}, header: {}, headerIcons: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.md };
 obj.card = obj;
-obj.cardName = {};
-obj.cardInfo = { minWidth: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002083014728617223, textAlign: -0.00000000000000021706246366567451, fontSize: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452188837802891, marginBottom: 1758272659704396000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+obj.cardName = { flexShrink: null, flexGrow: null };
+obj.cardInfo = { flexShrink: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003595318688921973, flexGrow: -0.00000000000000021706246343574996, borderColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452188837802891, borderBottomWidth: 1758272005026274300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 const tmp2 = arg1(dependencyMap[5]);
 obj.platformIcon = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj2 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.platformIconSmall = obj2;
-const obj3 = { <string:3444758704>: "<string:141641101>", <string:1640095385>: "<string:1090519040>", <string:1945719179>: "100%", <string:1446730851>: "<string:1166889217>", <string:126153300>: "_handleGuildMembersChunkBatch", <string:1806464968>: "<string:275841280>", <string:1446732972>: "<string:1358954496>", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.infoNotice = obj3;
-obj.infoText = { flex: 1 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.infoNotice = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj.infoText = { flex: 1 };
+const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_INFO, borderColor: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.divider = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 let closure_10 = obj.createStyles(obj);
 const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
@@ -88,15 +88,15 @@ export default function ConnectAccountStep(clientId) {
     items4[2] = callback(arg1(dependencyMap[14]).Avatar, obj5);
     obj2.children = items4;
     const items5 = [callback2(View, obj2), , ];
-    const obj6 = {};
+    const obj6 = { hasMaxConnections: "gr", isBoostOnlySubscription: null };
     const intl = arg1(dependencyMap[17]).intl;
     obj6.children = intl.string(arg1(dependencyMap[17]).t.uT1CPa);
     items5[1] = callback(arg1(dependencyMap[16]).Text, obj6);
-    obj7 = { children: str };
+    obj7 = { hasMaxConnections: false, isBoostOnlySubscription: false, children: str };
     items5[2] = callback(arg1(dependencyMap[16]).Text, obj7);
     obj1.children = items5;
     const items6 = [callback2(View, obj1), , , ];
-    const obj8 = {};
+    const obj8 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
     const intl2 = arg1(dependencyMap[17]).intl;
     const obj9 = { applicationName: str, platformName };
     obj8.children = intl2.format(arg1(dependencyMap[17]).t.aJRE/Q, obj9);
@@ -108,11 +108,9 @@ export default function ConnectAccountStep(clientId) {
       tmp24 = callback(arg1(dependencyMap[14]).Icon, obj11);
     }
     const items7 = [tmp24, , ];
-    const obj12 = { 0: true, 0: true, 0: true, style: tmp.cardName, children: platformName };
+    const obj12 = { flexShrink: true, flexGrow: true, zIndex: true, style: tmp.cardName, children: platformName };
     items7[1] = callback(arg1(dependencyMap[16]).Text, obj12);
     const obj13 = {
-      9223372036854775807: 32768000,
-      -9223372036854775808: 30653696,
       onPress() {
           platformType(closure_2[19])({ platformType, location: "OAuth2 Connect Account Step" });
         }
@@ -125,7 +123,7 @@ export default function ConnectAccountStep(clientId) {
     const obj14 = { style: tmp.infoNotice };
     const obj15 = { color: importDefault(dependencyMap[7]).colors.ICON_FEEDBACK_INFO, size: "sm" };
     const items8 = [callback(arg1(dependencyMap[20]).CircleInformationIcon, obj15), ];
-    const obj16 = { style: tmp.infoText };
+    const obj16 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise", style: tmp.infoText };
     const intl4 = arg1(dependencyMap[17]).intl;
     const obj17 = { platformName, applicationName: str };
     obj16.children = intl4.format(arg1(dependencyMap[17]).t.8psEFX, obj17);
@@ -153,7 +151,7 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
   const value = obj.get(platformType);
   if (null == value) {
     obj = { style: tmp.container };
-    obj = {};
+    obj = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
     const intl = arg1(dependencyMap[17]).intl;
     let obj1 = { platformName };
     obj.children = intl.format(arg1(dependencyMap[17]).t.+oaRw3, obj1);
@@ -179,7 +177,7 @@ export const ConnectedAccountCard = function ConnectedAccountCard(arg0) {
     items1[2] = callback(arg1(dependencyMap[21]).CheckmarkLargeIcon, obj8);
     obj2.children = items1;
     items[1] = callback2(View, obj2);
-    const obj9 = {};
+    const obj9 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
     const intl3 = arg1(dependencyMap[17]).intl;
     const obj10 = { applicationName };
     obj9.children = intl3.format(arg1(dependencyMap[17]).t.pyRNXJ, obj10);

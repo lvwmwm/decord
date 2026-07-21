@@ -1,5 +1,5 @@
 // Module ID: 11677
-// Function ID: 90581
+// Function ID: 90593
 // Name: _fetchWelcomeScreen
 // Dependencies: []
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed

@@ -1,9 +1,9 @@
-// Module ID: 12980
-// Function ID: 98798
+// Module ID: 12982
+// Function ID: 98820
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12980 (_isNativeReflectConstruct)
+// Module 12982 (_isNativeReflectConstruct)
 let Platform;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,17 +27,17 @@ const Fonts = arg1(dependencyMap[8]).Fonts;
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { disabled: { opacity: 0.5 }, topContainer: {}, inputViewTitle: { marginRight: 5 } };
+obj = { disabled: { opacity: 0.5 }, topContainer: { "Bool(false)": 107378, "Bool(false)": -1783082751, "Bool(false)": 37536833, "Bool(false)": -347995904, "Bool(false)": -989855310 }, inputViewTitle: { marginRight: 5 } };
 obj = { fontSize: 10, color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 obj.inputViewError = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.inputBorder = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
-const obj2 = { indicatorSpace: false, indicatorSize: false, pageIndictor: false, width: false, paddingTop: false, color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj2 = { "Bool(false)": "30", "Bool(false)": "true", "Bool(false)": "am", "Bool(false)": "30", "Bool(false)": "true", color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
 obj.inputView = obj2;
-obj.inputViewBorder = {};
+obj.inputViewBorder = { "Null": "noin tunti", "Null": "noin {{count}} tuntia" };
 const obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
 obj.inputViewBorderActive = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
-obj.inputContainer = { y: null, processOptOut: "99274532ad7fe616c031212e677b32e8", setNotificationCenterActive: "ThreadLockIcon" };
+obj.inputContainer = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
 obj.bottomContainer = { marginTop: 5 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
 obj.charactersLength = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
@@ -294,7 +294,7 @@ const tmp5 = (PureComponent) => {
       ({ trailingButton, clearButtonVisibility, clearButtonAccessibilityLabel } = this.props);
       if (null == trailingButton) {
         if (clearButtonVisibility === constants2.ALWAYS) {
-          let obj = { premiumType: "al", onPress: self.handleClear, style: tmp.clearButton, claimableRewards: "isArrayBuffer", isSelected: "BGYkaH" };
+          let obj = { "Null": 1839726594, "Null": 1912668161, "Null": 48, "Null": 32, "Null": -1035681198, style: tmp.clearButton, onPress: self.handleClear };
           if (null == clearButtonAccessibilityLabel) {
             const intl = InputView(closure_2[15]).intl;
             clearButtonAccessibilityLabel = intl.string(InputView(closure_2[15]).t.VkKicb);
@@ -474,7 +474,7 @@ const tmp5 = (PureComponent) => {
   return callback(InputView, items, items1);
 }(importAllResult.PureComponent);
 tmp5.contextType = arg1(dependencyMap[20]).ThemeContext;
-tmp5.defaultProps = {};
+tmp5.defaultProps = { "Null": null, abt: null, abu: null, abv: "20", abw: "true", abx: "az", aby: "30", abz: "true", aca: "bal", acb: "20", acd: "true" };
 const obj6 = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("design/void/InputView/native/InputView.tsx");
 

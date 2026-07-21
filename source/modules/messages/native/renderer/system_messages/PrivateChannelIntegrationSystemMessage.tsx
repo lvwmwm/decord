@@ -1,10 +1,10 @@
-// Module ID: 7711
-// Function ID: 61401
+// Module ID: 7712
+// Function ID: 61413
 // Name: createPrivateChannelIntegrationSystemMessage
 // Dependencies: []
 // Exports: createPrivateChannelIntegrationSystemMessage
 
-// Module 7711 (createPrivateChannelIntegrationSystemMessage)
+// Module 7712 (createPrivateChannelIntegrationSystemMessage)
 const MessageTypes = require(dependencyMap[0]).MessageTypes;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/PrivateChannelIntegrationSystemMessage.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 15471
-// Function ID: 117996
+// Module ID: 15474
+// Function ID: 118035
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15471 (_isNativeReflectConstruct)
+// Module 15474 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -83,7 +83,7 @@ obj3["backgroundColor"] = importDefault(dependencyMap[18]).colors.BACKGROUND_SCR
 obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj2.alertWrapper = obj3;
-obj2.alertContentWrapper = { 9223372036854775807: 0, 618916762573: 0, 0: 0, 9223372036854775807: 0 };
+obj2.alertContentWrapper = { 9223372036854775807: 0, 618913616341: 0, 0: 0, 9223372036854775807: 0 };
 let closure_21 = arg1(dependencyMap[17]).createLegacyClassComponentStyles(obj2);
 const tmp10 = (PureComponent) => {
   class AlertWrapper {
@@ -128,10 +128,10 @@ const tmp10 = (PureComponent) => {
         closure_10.parallel(items).start(arg0);
       };
       tmp2Result.componentWillLeave = (arg0) => {
-        let obj = { easing: closure_11.linear };
+        let obj = { GET_PLATFORM_BEHAVIORS: "BACKROOM_SEAT_1", externalPipEnabled: null, selectedStreamId: true, expBCP47Syntax: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.linear };
         const items = [closure_10.timing(tmp2Result.state.opacity, obj)];
         if (!tmp2Result.props.useReducedMotion) {
-          obj = { easing: closure_11.in(closure_11.ease) };
+          obj = { GET_PLATFORM_BEHAVIORS: "BACKROOM_SEAT_1", externalPipEnabled: null, selectedStreamId: true, expBCP47Syntax: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", easing: closure_11.in(closure_11.ease) };
           items.push(closure_10.timing(tmp2Result.state.scale, obj));
         }
         closure_10.parallel(items).start(arg0);

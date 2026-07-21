@@ -1,5 +1,5 @@
 // Module ID: 11968
-// Function ID: 92484
+// Function ID: 92496
 // Name: UserProfileEditNote
 // Dependencies: []
 // Exports: default
@@ -93,7 +93,7 @@ export default function UserProfileEditNote(userId) {
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.mQKv+v);
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj), ];
-  const obj1 = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "eac553938fe05ac1b820e85a05890a1f", value: first, onChange: tmp5[1], maxLength: NOTE_MAX_LENGTH };
+  const obj1 = { "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, value: first, onChange: tmp5[1], maxLength: NOTE_MAX_LENGTH };
   const intl2 = arg1(dependencyMap[12]).intl;
   const string = intl2.string;
   const t = arg1(dependencyMap[12]).t;

@@ -1,5 +1,5 @@
 // Module ID: 6583
-// Function ID: 50788
+// Function ID: 50796
 // Name: TabletSpotIllustration
 // Dependencies: []
 // Exports: TabletSpotIllustration

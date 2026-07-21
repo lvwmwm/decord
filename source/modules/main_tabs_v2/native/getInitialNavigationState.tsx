@@ -1,5 +1,5 @@
 // Module ID: 3981
-// Function ID: 33061
+// Function ID: 33066
 // Name: wrapRouteForRootNavigator
 // Dependencies: []
 // Exports: computeInitialNavigationState, default, getInitialAuthState

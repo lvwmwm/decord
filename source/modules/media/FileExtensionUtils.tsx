@@ -1,15 +1,15 @@
-// Module ID: 8328
-// Function ID: 65999
+// Module ID: 5412
+// Function ID: 46418
 // Name: decideFileExtension
 // Dependencies: []
 // Exports: decideFileExtension
 
-// Module 8328 (decideFileExtension)
-let closure_2 = {};
+// Module 5412 (decideFileExtension)
+let closure_2 = { "Null": 30, "Null": 30, "Null": null, "Null": "b845947570ae5a0cc8ded11809e80b37", "Null": "ic_loading_emoji_light", "Null": "png", had_cache_at_startup: true, useTrackAppLauncherHomeItemImpression: "/assets/design/components/Icon/native/redesign/generated/images", PRESENCES_WRITE: 24 };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 
-export const decideFileExtension = function decideFileExtension(closure_0) {
+export const decideFileExtension = function decideFileExtension(closure_0, closure_1, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -40,24 +40,24 @@ export const decideFileExtension = function decideFileExtension(closure_0) {
   }
   if (null == tmp) {
     let tmp8;
-    if (null != arg1) {
-      tmp8 = closure_2[arg1.toLowerCase(arg1)];
-      if (null == tmp8) {
-        const str7 = arg1.split("/")[1];
-        let formatted1;
-        if (null != str7) {
-          formatted1 = str7.toLowerCase();
-        }
-        let str8 = "jpg";
-        if ("jpeg" !== formatted1) {
-          let tmp11;
-          if (null != formatted1) {
-            tmp11 = formatted1;
+    if (null != closure_1) {
+      const str6 = closure_1.toLowerCase();
+      if (obj2.test(str6)) {
+        tmp8 = closure_2[str6];
+        if (null == tmp8) {
+          const tmp10 = str6.split("/")[1];
+          let str8 = "jpg";
+          if ("jpeg" !== tmp10) {
+            let tmp11;
+            if (null != tmp10) {
+              tmp11 = tmp10;
+            }
+            str8 = tmp11;
           }
-          str8 = tmp11;
+          tmp8 = str8;
         }
-        tmp8 = str8;
       }
+      const obj2 = /^(image|video)\//;
     }
     tmp = tmp8;
   }
@@ -65,26 +65,26 @@ export const decideFileExtension = function decideFileExtension(closure_0) {
     const toURLSafeResult1 = importDefault(dependencyMap[0]).toURLSafe(closure_0);
     let tmp14;
     if (null != toURLSafeResult1) {
-      let formatted2;
+      let formatted1;
       if (null != toURLSafeResult1.pathname) {
         const parts = str10.split(".");
         if (null != parts) {
           const str12 = parts.pop();
           if (null != str12) {
-            formatted2 = str12.toLowerCase();
+            formatted1 = str12.toLowerCase();
           }
         }
       }
       let tmp13;
-      if (null != formatted2) {
-        if (formatted2.length <= 5) {
-          tmp13 = formatted2;
+      if (null != formatted1) {
+        if (formatted1.length <= 5) {
+          tmp13 = formatted1;
         }
       }
       tmp14 = tmp13;
     }
     tmp = tmp14;
-    const obj2 = importDefault(dependencyMap[0]);
+    const obj3 = importDefault(dependencyMap[0]);
   }
   return tmp;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15349
-// Function ID: 116897
+// Module ID: 15352
+// Function ID: 116936
 // Name: CoachmarkImg
 // Dependencies: []
 // Exports: default
 
-// Module 15349 (CoachmarkImg)
+// Module 15352 (CoachmarkImg)
 function CoachmarkImg(arg0) {
   let decorationAsset;
   let source;

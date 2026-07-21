@@ -1,10 +1,10 @@
-// Module ID: 15025
-// Function ID: 113200
+// Module ID: 15028
+// Function ID: 113234
 // Name: escapeMarkdown
 // Dependencies: []
 // Exports: default
 
-// Module 15025 (escapeMarkdown)
+// Module 15028 (escapeMarkdown)
 function escapeMarkdown(name) {
   if (undefined !== name) {
     return name.replace(closure_10, "\\$&");

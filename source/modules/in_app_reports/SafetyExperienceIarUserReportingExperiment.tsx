@@ -1,13 +1,13 @@
 // Module ID: 11882
-// Function ID: 91976
+// Function ID: 91988
 // Name: items
 // Dependencies: []
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
 // Module 11882 (items)
 const _module = require(dependencyMap[0]);
-let obj = { y: true, createBackgroundHighlight: true, y: true, defaultConfig: { enabled: false } };
-obj = { -1174339580: true, -1169096700: true, config: { enabled: true } };
+let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, defaultConfig: { enabled: false } };
+obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: null, 炖锅: null, config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
 const experiment = _module.createExperiment(obj);

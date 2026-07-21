@@ -1,9 +1,9 @@
-// Module ID: 7447
-// Function ID: 59733
+// Module ID: 7448
+// Function ID: 59745
 // Name: MarketingComponentType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 7447 (MarketingComponentType)
+// Module 7448 (MarketingComponentType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentType.tsx");
 

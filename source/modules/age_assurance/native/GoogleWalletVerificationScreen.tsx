@@ -1,10 +1,10 @@
-// Module ID: 7569
-// Function ID: 60550
+// Module ID: 7570
+// Function ID: 60562
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [496697344, 270270464, 268435456, 496762880, 353173504, 297467904, 325255168, 496828416, 131072, 1433665536, 905969683, 1526726658, 33554451, 4026531840, 7447, 3840, 4352, 4608, 14592, 1536]
+// Dependencies: [496762880, 270270464, 268435456, 496828416, 353107968, 297467904, 325189632, 496893952, 131072, 1416888320, 905969683, 1509949442, 33554451, 4026531840, 7447, 3840, 4352, 4608, 14592, 1536]
 // Exports: default
 
-// Module 7569 (GoogleWalletVerificationScreen)
+// Module 7570 (GoogleWalletVerificationScreen)
 import weakMap from "weakMap";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -12,7 +12,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const ActivityIndicator = arg1(dependencyMap[3]).ActivityIndicator;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let closure_9 = { "Bool(false)": "72af9903f630d67fa106808d11ca96fb", "Bool(false)": "speaker" };
+let closure_9 = { <string:2414968305>: "72af9903f630d67fa106808d11ca96fb", <string:2854291185>: "speaker" };
 const result = weakMap.fileFinishedImporting("modules/age_assurance/native/GoogleWalletVerificationScreen.tsx");
 
 export default function GoogleWalletVerificationScreen(modalSessionId) {
@@ -67,7 +67,7 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     obj1 = {};
     const obj2 = { size: "large" };
     const items3 = [callback3(ActivityIndicator, obj2), ];
-    const obj3 = {};
+    const obj3 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1 };
     const intl = arg1(closure_2[10]).intl;
     obj3.children = intl.string(importDefault(closure_2[11]).MlFuBI);
     items3[1] = callback3(arg1(closure_2[15]).Text, obj3);
@@ -79,10 +79,10 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     const obj4 = {};
     const obj5 = {};
     const obj6 = {};
-    const obj7 = { children: first.message };
+    const obj7 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, children: first.message };
     const items4 = [callback3(arg1(closure_2[15]).Text, obj7), ];
     const obj8 = {};
-    const obj9 = {};
+    const obj9 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
     const intl2 = arg1(closure_2[10]).intl;
     obj9.text = intl2.string(importDefault(closure_2[11]).fEUKEv);
     obj9.onPress = function onPress() {

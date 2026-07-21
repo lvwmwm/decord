@@ -1,5 +1,5 @@
 // Module ID: 12326
-// Function ID: 94392
+// Function ID: 94404
 // Name: handlePress
 // Dependencies: []
 // Exports: default
@@ -19,9 +19,9 @@ let closure_5 = require(dependencyMap[1]).getPremiumGroupProductName;
 const jsx = require(dependencyMap[2]).jsx;
 const _module1 = require(dependencyMap[3]);
 let obj = {};
-obj = { 1834026050: -14, -659493785: -14, -1437152157: 0.75, -319042460: -4, 1649697712: 16, 72458410: 0.75, 1006330628: 14, -680106838: -14, 1196532421: 0.875, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.premiumGroupBanner = obj;
-obj.pgUnavailable = { markAsSpoilerTitle: null, keyboardAppearance: null };
+obj.pgUnavailable = { "Bool(true)": "values", "Bool(true)": "Array" };
 obj.pgUnavailableText = { textAlign: "center" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);

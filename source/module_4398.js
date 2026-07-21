@@ -1,5 +1,5 @@
 // Module ID: 4398
-// Function ID: 38812
+// Function ID: 38820
 // Dependencies: []
 
 // Module 4398
@@ -25,7 +25,7 @@ if (Object.keys) {
     }
     return tmp;
   }
-  obj = { nm: null, Array: "flex-start", padding: 20, cix: 20, space: null, container: 0, useStateFromStores: 8, HermesInternal: null, error: null, r: 4, 0: 4, 9223372036854775807: null, 9223372036854775807: "flex", 9223372036854775807: "row", -9223372036854775808: "center", "Null": "center", "Null": 1, "Null": "100%", "Null": 40, "Null": 12, "Null": 21, "Null": "Fill", "Null": 9 };
+  obj = {};
   const _window = window;
   let str3 = "undefined";
   let str4 = typeof window;

@@ -1,5 +1,5 @@
 // Module ID: 11342
-// Function ID: 88176
+// Function ID: 88188
 // Name: useChatInputFloatingBounce
 // Dependencies: []
 // Exports: default

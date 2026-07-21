@@ -1,5 +1,5 @@
 // Module ID: 11666
-// Function ID: 90439
+// Function ID: 90451
 // Name: useDerivedColors
 // Dependencies: []
 
@@ -114,8 +114,9 @@ function LockPill(safeAreaBottom) {
     tmp4 = derivedValue;
     const obj7 = safeAreaBottom(voiceMessageAnimationState[11]);
     const fn2 = function s() {
-      const tmp = derivedValue(arg0.get(), 2);
-      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [73333494645339100000000000000000000000000000000000000000000000000000000000000000000000000000, 1537887429904.0002, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004521675952103735, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004866120817357706] : ["<string:1207960381>", "l\u00E1ska", "l\u00EDb\u00ED", "<string:1769668611>"]);
+      derivedValue(arg0.get(), 2);
+      const items = [];
+      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
     };
     obj = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25 };
     fn2.__closure = obj;
@@ -141,10 +142,10 @@ function LockPill(safeAreaBottom) {
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = [, , -8, -8];
+      const items = ["<string:53040003>", "<string:806589490>", -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -158,7 +159,7 @@ function LockPill(safeAreaBottom) {
       const obj2 = arg0(tmp9[11]);
       obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       const obj3 = arg0(tmp9[11]);
-      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
       obj.tintColor = tmp9.get();
       return obj;
     };
@@ -225,8 +226,9 @@ function LockPill(safeAreaBottom) {
     tmp4 = derivedValue;
     const obj7 = safeAreaBottom(voiceMessageAnimationState[11]);
     const fn2 = function s() {
-      const tmp = derivedValue(arg0.get(), 2);
-      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [73333494645339100000000000000000000000000000000000000000000000000000000000000000000000000000, 1537887429904.0002, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004521675952103735, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004866120817357706] : ["<string:1207960381>", "l\u00E1ska", "l\u00EDb\u00ED", "<string:1769668611>"]);
+      derivedValue(arg0.get(), 2);
+      const items = [];
+      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
     };
     obj = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25 };
     fn2.__closure = obj;
@@ -252,10 +254,10 @@ function LockPill(safeAreaBottom) {
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = [, , -8, -8];
+      const items = ["<string:53040003>", "<string:806589490>", -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -269,7 +271,7 @@ function LockPill(safeAreaBottom) {
       const obj2 = arg0(tmp9[11]);
       obj.height = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
       const obj3 = arg0(tmp9[11]);
-      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginTop = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [null, null, null, null]);
       obj.tintColor = tmp9.get();
       return obj;
     };
@@ -350,7 +352,7 @@ let closure_23 = arg1(dependencyMap[17]).createStyles((width) => {
   const obj2 = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj.lockContainer = { width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, shadowColor: importDefault(dependencyMap[18]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: arg1(dependencyMap[19]).DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj.lockParentContainer = { position: "absolute", right: closure_15, width };
-  const obj4 = { alignSelf: 24, fontSize: 24, marginBottom: null, tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
+  const obj4 = { alignSelf: "usePubSub", fontSize: "Array", marginBottom: "ERNhYf", tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
   obj.chevon = obj4;
   return obj;
 });
@@ -575,7 +577,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   const importDefault = exiting;
   let obj = arg1(dependencyMap[21]);
   const tmp2 = callback5(obj.useToken(importDefault(dependencyMap[18]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const insets = importDefault(dependencyMap[31])({ <string:2893524121>: null, <string:2857788003>: null }).insets;
+  const insets = importDefault(dependencyMap[31])({ MKTG_HYPESQUAD_FORM_SUBMITTED: null, afterMs: null }).insets;
   const tmp3 = importDefault(dependencyMap[32])();
   const dependencyMap = tmp3;
   const diff = insets.bottom - tmp3.bottom;
@@ -734,8 +736,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   ce.__workletHash = 14315468936108;
   ce.__initData = closure_51;
   const derivedValue = obj8.useDerivedValue(ce);
-  const tmp = importDefault;
-  const tmp11 = useDerivedColors(voiceMessageAnimationState, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600, importDefault(dependencyMap[18]).unsafe_rawColors.RED_500, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600);
+  let obj10 = arg1(dependencyMap[11]);
   function ue() {
     return tmp3.bottom + 1.6 * closure_14;
   }
@@ -744,54 +745,55 @@ let closure_53 = importAllResult.memo((channelId) => {
   ue.__workletHash = 5416150236821;
   ue.__initData = closure_52;
   obj1 = {};
-  const derivedValue1 = arg1(dependencyMap[11]).useDerivedValue(ue);
+  const derivedValue1 = obj10.useDerivedValue(ue);
   obj2 = { style: items1, pointerEvents: "none" };
   const items1 = [tmp2.container, animatedStyle5];
-  const items2 = [callback2(memoResult, { height: derivedValue, radius: result, voiceMessageAnimationState }), callback2(memoResult, { height: derivedValue1, offsetThreshold: 30, radius: result, voiceMessageAnimationState })];
+  obj3 = { -1135386015: null, 833392556: null, 1381785934: null, height: derivedValue, radius: result, voiceMessageAnimationState };
+  const items2 = [callback2(memoResult, obj3), callback2(memoResult, { height: derivedValue1, offsetThreshold: 30, radius: result, voiceMessageAnimationState })];
   obj2.children = items2;
   const items3 = [callback3(importDefault(dependencyMap[11]).View, obj2), , ];
-  obj3 = { style: items4 };
+  obj4 = { style: items4 };
   const items4 = [tmp2.contentContainer, { bottom }, animatedStyle4];
   const items5 = [callback2(closure_33, { initialAnimation, recordingAnimation, exiting }), ];
-  obj4 = { style: tmp2.innerContainer };
-  obj5 = { style: items6, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
+  obj5 = { style: tmp2.innerContainer };
+  obj6 = { style: items6, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
   const items6 = [tmp2.trashContainer, animatedStyle];
   const intl = arg1(dependencyMap[24]).intl;
-  obj5.accessibilityLabel = intl.string(arg1(dependencyMap[24]).t.RdK9sV);
-  obj5.onPressIn = function onPressIn() {
+  obj6.accessibilityLabel = intl.string(arg1(dependencyMap[24]).t.RdK9sV);
+  obj6.onPressIn = function onPressIn() {
     return channelId(tmp3[39]).triggerHaptic();
   };
-  obj5.onPress = function onPress() {
+  obj6.onPress = function onPress() {
     const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
     ComponentDispatch.dispatchKeyed(constants.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
   };
-  obj6 = { style: animatedStyle1, source: importDefault(dependencyMap[40]), size: arg1(dependencyMap[12]).Icon.Sizes.MEDIUM };
-  obj5.children = callback2(closure_19, obj6);
-  const items7 = [callback2(closure_20, obj5), , ];
-  obj7 = { style: tmp2.voiceChatContainer, children: callback2(importDefault(dependencyMap[41]), { isRecording: tmp5, initialAnimation, backgroundColor: tmp11 }) };
-  items7[1] = callback2(importDefault(dependencyMap[11]).View, obj7);
-  obj8 = { ref, style: items8, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
+  obj7 = { style: animatedStyle1, source: importDefault(dependencyMap[40]), size: arg1(dependencyMap[12]).Icon.Sizes.MEDIUM };
+  obj6.children = callback2(closure_19, obj7);
+  const items7 = [callback2(closure_20, obj6), , ];
+  obj8 = { style: tmp2.voiceChatContainer, children: callback2(importDefault(dependencyMap[41]), { isRecording: tmp5, initialAnimation, backgroundColor: useDerivedColors(voiceMessageAnimationState, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600, importDefault(dependencyMap[18]).unsafe_rawColors.RED_500, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600, importDefault(dependencyMap[18]).unsafe_rawColors.BRAND_600) }) };
+  items7[1] = callback2(importDefault(dependencyMap[11]).View, obj8);
+  const obj9 = { ref, style: items8, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
   const items8 = [tmp2.sendContainer, animatedStyle2];
   const intl2 = arg1(dependencyMap[24]).intl;
-  obj8.accessibilityLabel = intl2.string(arg1(dependencyMap[24]).t.+8GStU);
-  obj8.onPress = function onPress() {
+  obj9.accessibilityLabel = intl2.string(arg1(dependencyMap[24]).t.+8GStU);
+  obj9.onPress = function onPress() {
     const ComponentDispatch = channelId(tmp3[35]).ComponentDispatch;
     ComponentDispatch.dispatchKeyed(constants.VOICE_MESSAGE_SEND, channelId, { isCancelling: false });
   };
-  const obj9 = { style: animatedStyle3 };
+  obj10 = { style: animatedStyle3 };
   if (tmp5) {
     let tmp35 = tmp34[42];
   } else {
     tmp35 = tmp34[43];
   }
-  obj9.source = tmp(tmp35);
-  obj9.size = arg1(dependencyMap[12]).Icon.Sizes.MEDIUM;
-  obj8.children = callback2(closure_19, obj9);
-  items7[2] = callback2(closure_20, obj8);
-  obj4.children = items7;
-  items5[1] = callback3(recordingAnimation, obj4);
-  obj3.children = items5;
-  items3[1] = callback3(importDefault(dependencyMap[11]).View, obj3);
+  obj10.source = importDefault(tmp35);
+  obj10.size = arg1(dependencyMap[12]).Icon.Sizes.MEDIUM;
+  obj9.children = callback2(closure_19, obj10);
+  items7[2] = callback2(closure_20, obj9);
+  obj5.children = items7;
+  items5[1] = callback3(recordingAnimation, obj5);
+  obj4.children = items5;
+  items3[1] = callback3(importDefault(dependencyMap[11]).View, obj4);
   items3[2] = callback2(LockPill, { safeAreaBottom: bottom, initialAnimation, voiceMessageAnimationState });
   obj1.children = items3;
   return callback3(closure_18, obj1);

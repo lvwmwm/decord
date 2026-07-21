@@ -1,5 +1,5 @@
 // Module ID: 8767
-// Function ID: 69285
+// Function ID: 69296
 // Name: CollectiblesShopGiftModal
 // Dependencies: []
 // Exports: default

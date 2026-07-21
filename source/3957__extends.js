@@ -1,5 +1,5 @@
 // Module ID: 3957
-// Function ID: 32685
+// Function ID: 32690
 // Name: _extends
 // Dependencies: []
 // Exports: Prompt, Redirect, useHistory, useParams, useRouteMatch, withRouter
@@ -417,7 +417,7 @@ const tmp7 = (Component) => {
   const dependencyMap = fn;
   _inheritsLoose(fn, Component);
   fn.computeRootMatch = (arg0) => {
-    const obj = { "Null": "Array", "Null": "isArray", params: {}, isExact: "/" === arg0 };
+    const obj = { ref: false, variant: false, params: {}, isExact: "/" === arg0 };
     return obj;
   };
   const prototype = fn.prototype;
@@ -816,7 +816,7 @@ export const withRouter = function withRouter(displayName) {
   const require = displayName;
   const fn = function t(wrappedComponentRef) {
     wrappedComponentRef = wrappedComponentRef.wrappedComponentRef;
-    let closure_1 = callback(wrappedComponentRef, ["<string:1115553793>"]);
+    let closure_1 = callback(wrappedComponentRef, [27676160]);
     return <Consumer.Consumer>{(arg0) => {
       if (!arg0) {
         callback(false);

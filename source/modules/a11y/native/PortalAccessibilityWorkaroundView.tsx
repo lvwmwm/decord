@@ -1,5 +1,5 @@
 // Module ID: 11657
-// Function ID: 90406
+// Function ID: 90418
 // Name: PortalAccessibilityWorkaroundView
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ export default function PortalAccessibilityWorkaroundView(arg0) {
   let obj = arg1(dependencyMap[3]);
   obj = null;
   if (obj.isIosFabric()) {
-    obj = { "Bool(true)": "png", "Bool(true)": 8 };
+    obj = { 0: "png", "Bool(true)": 8 };
   }
   obj = {};
   const merged = Object.assign(arg0);

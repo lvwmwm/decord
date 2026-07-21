@@ -1,5 +1,5 @@
 // Module ID: 11535
-// Function ID: 89828
+// Function ID: 89840
 // Name: openGuildPowerupRollbackSheet
 // Dependencies: []
 // Exports: default

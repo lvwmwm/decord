@@ -1,5 +1,5 @@
 // Module ID: 8663
-// Function ID: 68544
+// Function ID: 68555
 // Name: WishlistNUXAddedItemActionSheet
 // Dependencies: []
 // Exports: default
@@ -76,23 +76,23 @@ export default function WishlistNUXAddedItemActionSheet(product) {
   obj = { style: tmp.container };
   const items4 = [callback(importDefault(dependencyMap[15]), { renderPreview: callback2 }), , ];
   const obj1 = { style: tmp.textContainer };
-  const obj2 = { 1655478700: false, 72438626: false, 1446732292: false };
+  const obj2 = {};
   const intl = arg1(dependencyMap[17]).intl;
   obj2.children = intl.string(arg1(dependencyMap[17]).t.3T2jbf);
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj2), ];
-  const obj3 = { style: tmp.subtitle };
+  const obj3 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[17]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[17]).t.SXb73A);
   items5[1] = callback(arg1(dependencyMap[16]).Text, obj3);
   obj1.children = items5;
   items4[1] = callback2(View, obj1);
   const obj4 = { direction: "horizontal" };
-  const obj5 = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "Array", "Bool(true)": "accessibilityRole", "Bool(true)": "s" };
+  const obj5 = {};
   const intl3 = arg1(dependencyMap[17]).intl;
   obj5.text = intl3.string(arg1(dependencyMap[17]).t.tM4PUv);
   obj5.onPress = callback;
   const items6 = [callback(arg1(dependencyMap[19]).Button, obj5), ];
-  const obj6 = { borderWidth: "1\u5E74", borderColor: "{{count}}\u5E74", borderRadius: "1\u5E74\u4EE5\u4E0A", justifyContent: "{{count}}\u5E74\u4EE5\u4E0A", alignItems: "1\u5E74\u8FD1\u304F" };
+  const obj6 = { "Bool(false)": "<string:16777594>", "Bool(false)": "<string:39349315>", "Bool(false)": "<string:39348992>", "Bool(false)": "<string:23841536>", color: "<string:2906718464>" };
   const intl4 = arg1(dependencyMap[17]).intl;
   obj6.text = intl4.string(arg1(dependencyMap[17]).t.TxBQzD);
   obj6.onPress = callback1;

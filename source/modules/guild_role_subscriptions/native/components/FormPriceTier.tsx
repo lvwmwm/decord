@@ -1,10 +1,10 @@
-// Module ID: 16332
-// Function ID: 126016
+// Module ID: 16340
+// Function ID: 126077
 // Name: FormPriceTier
 // Dependencies: []
 // Exports: default
 
-// Module 16332 (FormPriceTier)
+// Module 16340 (FormPriceTier)
 importAll(dependencyMap[0]);
 ({ LoadingState: closure_3, usePriceTiersAvailableInGuild: closure_4 } = arg1(dependencyMap[1]));
 const CurrencyCodes = arg1(dependencyMap[2]).CurrencyCodes;

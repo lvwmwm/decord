@@ -1,10 +1,10 @@
-// Module ID: 7648
-// Function ID: 61183
+// Module ID: 7649
+// Function ID: 61195
 // Name: getQuickReactionLabel
 // Dependencies: []
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7648 (getQuickReactionLabel)
+// Module 7649 (getQuickReactionLabel)
 function getQuickReactionLabel() {
   const DoubleTapReactionEmoji = arg1(dependencyMap[3]).DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.getSetting();

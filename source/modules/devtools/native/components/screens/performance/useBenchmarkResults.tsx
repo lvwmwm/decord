@@ -1,10 +1,10 @@
-// Module ID: 14577
-// Function ID: 109868
+// Module ID: 14580
+// Function ID: 109900
 // Name: useBenchmarkResults
 // Dependencies: []
 // Exports: default
 
-// Module 14577 (useBenchmarkResults)
+// Module 14580 (useBenchmarkResults)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");

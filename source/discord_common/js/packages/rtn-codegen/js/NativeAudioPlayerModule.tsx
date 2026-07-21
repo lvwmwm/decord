@@ -1,9 +1,9 @@
-// Module ID: 13342
-// Function ID: 101431
+// Module ID: 13344
+// Function ID: 101453
 // Name: enforcing
 // Dependencies: []
 
-// Module 13342 (enforcing)
+// Module 13344 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioPlayerModule");
 const _module = require(dependencyMap[1]);

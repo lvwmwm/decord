@@ -1,12 +1,12 @@
-// Module ID: 14746
-// Function ID: 111176
+// Module ID: 14749
+// Function ID: 111210
 // Dependencies: []
 
-// Module 14746
+// Module 14749
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = {};
-obj = { "Null": 0.044, "Null": 1, "Null": "absolute", "Null": 0, "Null": "hidden", marginTop: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN, backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE };
+obj = { FITNESS: 15, GameIconImageSize: "badges", ExclusiveGesture: "message", paddingVertical: 0.044, paddingStart: 1, marginTop: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN, backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE };
 obj.separator = obj;
 let closure_5 = arg1(dependencyMap[2]).createStyles(obj);
 let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };

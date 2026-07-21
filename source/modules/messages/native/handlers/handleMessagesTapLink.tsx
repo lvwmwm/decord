@@ -1,5 +1,5 @@
 // Module ID: 9475
-// Function ID: 73799
+// Function ID: 73810
 // Name: handleMessagesTapURLLink
 // Dependencies: []
 // Exports: handleMessagesTapLink

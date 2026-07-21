@@ -1,5 +1,5 @@
 // Module ID: 5869
-// Function ID: 49717
+// Function ID: 49725
 // Name: AvatarGraggleExample
 // Dependencies: []
 // Exports: AvatarGraggleExample

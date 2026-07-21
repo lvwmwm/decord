@@ -1,15 +1,15 @@
 // Module ID: 8450
-// Function ID: 67440
+// Function ID: 67451
 // Name: getNextShownUpcomingEventNoticeType
 // Dependencies: [0, 4294967295, 0, 0]
 // Exports: getNextShownUpcomingEventNoticeType
 
 // Module 8450 (getNextShownUpcomingEventNoticeType)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import result from "result";
+import result from "result";
 
-({ UpcomingGuildEventNoticeTypes: closure_2, NEW_EVENT_WINDOW_MILLISECONDS: closure_3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: closure_5 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
+({ UpcomingGuildEventNoticeTypes: closure_2, NEW_EVENT_WINDOW_MILLISECONDS: closure_3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: closure_5 } = result);
+result = result.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
 export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, arg3) {
   let obj = importDefault(dependencyMap[1])();

@@ -1,5 +1,5 @@
 // Module ID: 1689
-// Function ID: 18692
+// Function ID: 18697
 // Name: isWorkletEventHandler
 // Dependencies: []
 
@@ -39,7 +39,7 @@ export const NativeEventsManager = () => {
       tmp = closure_2(this, NativeEventsManager);
       definePropertyResult = Object.defineProperty(this, closure_5, { writable: true, value: undefined });
       definePropertyResult1 = Object.defineProperty(this, closure_6, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(this, closure_7, {});
+      definePropertyResult2 = Object.defineProperty(this, closure_7, { 1644126463: "center", 1711236095: "100%" });
       closure_4(this, closure_5)[closure_5] = arg0;
       closure_4(this, closure_6)[closure_6] = arg1;
       tmp5 = closure_4(this, closure_7);

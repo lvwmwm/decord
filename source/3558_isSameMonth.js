@@ -1,18 +1,17 @@
 // Module ID: 3558
-// Function ID: 27675
+// Function ID: 27680
 // Name: isSameMonth
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3558 (isSameMonth)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function isSameMonth(defaultResult1, defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
-  const defaultResult2 = startOfWeek.default(defaultResult1);
+  closure_1.default(2, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
+  const defaultResult2 = closure_0.default(defaultResult1);
   const fullYear = defaultResult1.getFullYear();
   let tmp3 = fullYear === defaultResult2.getFullYear();
   if (tmp3) {

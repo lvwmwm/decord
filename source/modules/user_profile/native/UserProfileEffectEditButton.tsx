@@ -1,10 +1,10 @@
-// Module ID: 13470
-// Function ID: 102246
+// Module ID: 13472
+// Function ID: 102268
 // Name: UserProfileEffectEditButton
 // Dependencies: []
 // Exports: default
 
-// Module 13470 (UserProfileEffectEditButton)
+// Module 13472 (UserProfileEffectEditButton)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const COLLECTIBLES_PREVIEW_SIZE = arg1(dependencyMap[2]).COLLECTIBLES_PREVIEW_SIZE;
@@ -97,7 +97,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
     const intl5 = arg1(dependencyMap[13]).intl;
     obj1.buttonText = intl5.string(arg1(dependencyMap[13]).t.MKDeyL);
     obj1.onPress = NOOP;
-    obj1.leading = callback(arg1(dependencyMap[15]).ActivityIndicator, {});
+    obj1.leading = callback(arg1(dependencyMap[15]).ActivityIndicator, { font: 397, dx: 97 });
     obj1.loading = true;
     obj1.disabled = true;
     obj1.hideArrow = true;
@@ -118,7 +118,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
       obj5.style = tmp.sampleProfile;
       obj5.resizeMode = "cover";
       const items1 = [callback(importDefault(dependencyMap[16]), obj5), ];
-      const obj7 = { <string:979172195>: 1000, <string:1377429346>: 600000, <string:3890416569>: "MESSAGE_CREATE", skuId: profilePreviewValue.skuId };
+      const obj7 = { tn: null, withPlaceholder: "info", VIDEO_MODAL_ICON_END_CARD: "/", skuId: profilePreviewValue.skuId };
       items1[1] = callback(importDefault(dependencyMap[18]), obj7);
       obj4.children = items1;
       let tmp22 = callback2(View, obj4);

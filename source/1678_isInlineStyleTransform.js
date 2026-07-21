@@ -1,5 +1,5 @@
 // Module ID: 1678
-// Function ID: 18591
+// Function ID: 18596
 // Name: isInlineStyleTransform
 // Dependencies: []
 // Exports: getInlineStyle

@@ -1,5 +1,5 @@
 // Module ID: 11760
-// Function ID: 91292
+// Function ID: 91304
 // Name: HubEmailConnectionGuildSelectRow
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ class HubEmailConnectionGuildSelectRow {
 function HubEmailConnectionGuildSelectHeader() {
   const tmp = callback4();
   let obj = { style: tmp.header };
-  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.mOMeiR);
   obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -80,13 +80,13 @@ obj.guildIcon = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.separator = { height: 8 };
 obj.header = {};
 obj.title = { "Null": null, "Null": null };
+const obj2 = { grinning_face: "Array", smiley: "isArray", smile: "max", grin: "names", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj.footerSafeAreaContainer = obj2;
+obj.footerContainer = {};
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.footerSafeAreaContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.footerContainer = { accessibilityLabel: null, width: null, marginTop: null, alignItems: null };
-const obj3 = { "Null": -716111871, "Null": -247393865, "Null": 1912603216, "Null": 32, color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
-obj.error = obj3;
+obj.error = { color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
 let closure_11 = obj.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj3 = { color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelect.tsx");
 
 export default function HubEmailConnectionGuildSelect(onClose) {

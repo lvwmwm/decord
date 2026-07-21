@@ -1,5 +1,5 @@
 // Module ID: 10427
-// Function ID: 80310
+// Function ID: 80321
 // Name: isVoiceEmbeddedActivity
 // Dependencies: []
 // Exports: default

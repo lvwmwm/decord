@@ -1,10 +1,10 @@
-// Module ID: 14317
-// Function ID: 108129
+// Module ID: 14320
+// Function ID: 108161
 // Name: route
 // Dependencies: [57, 31, 27, 33, 4126]
 
-// Module 14317 (route)
-import keys from "keys";
+// Module 14320 (route)
+import get ActivityIndicator from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let obj = {
@@ -20,7 +20,7 @@ obj = {
     return require(dependencyMap[3]).default;
   }
 };
-const route = keys.createRoute(obj);
+const route = get_ActivityIndicator.createRoute(obj);
 const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsContextMenuSetting.tsx");
 
 export default route;

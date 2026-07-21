@@ -1,5 +1,5 @@
 // Module ID: 10919
-// Function ID: 84898
+// Function ID: 84909
 // Name: CancelButton
 // Dependencies: []
 // Exports: default, openQuestOrbsRewardModal
@@ -120,7 +120,7 @@ const tmp2 = arg1(dependencyMap[3]);
 let closure_17 = "QuestOrbsRewardModal";
 let obj1 = arg1(dependencyMap[14]);
 let obj = {};
-obj = { label: true, subLabel: true, onPress: true, marginHorizontal: importDefault(dependencyMap[15]).space.PX_16 };
+obj = { marginHorizontal: importDefault(dependencyMap[15]).space.PX_16 };
 obj.closeButton = obj;
 obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
 obj.closeButtonIcon = obj1;
@@ -131,20 +131,20 @@ let closure_19 = arg1(dependencyMap[14]).createStyles(() => {
   obj = { flex: 1, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   obj.root = obj;
   obj.background = closure_7.absoluteFillObject;
-  obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
+  obj = { margin: null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   const merged = Object.assign(closure_7.absoluteFillObject);
   obj.loading = obj;
-  obj.header = { padding: false, paddingBottom: false, flexDirection: false };
+  obj.header = { <string:1334598284>: false, <string:3229045644>: false, <string:2213734789>: false };
   obj.main = { flex: 2 };
   obj.animation = { flex: 3 };
-  obj.body = { gap: importDefault(dependencyMap[15]).space.PX_16 };
-  const obj1 = { gap: importDefault(dependencyMap[15]).space.PX_16 };
+  const obj1 = { padding: null, Date: null, apply: null, gap: importDefault(dependencyMap[15]).space.PX_16 };
+  obj.body = obj1;
   obj.title = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   const obj2 = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   obj.buttonsContainer = { padding: importDefault(dependencyMap[15]).space.PX_24, gap: importDefault(dependencyMap[15]).space.PX_16 };
   const items = [{ translateY: 3 }];
   obj.orbsIconAndroid = { transform: items };
-  obj.orbsIconIOS = { scales: 2, then: "text-sm/semibold" };
+  obj.orbsIconIOS = { iconPosition: 2, style: "text-sm/semibold" };
   return obj;
 });
 let closure_20 = importAllResult.memo((uri) => {
@@ -194,7 +194,7 @@ let closure_22 = importAllResult.memo((animate) => {
     flag = true;
   }
   let obj = arg1(dependencyMap[21]);
-  obj = { -1762871448: null, -1076975364: null, -1437189275: null, style };
+  obj = { <string:1707113641>: null, <string:1403672123>: null, <string:1311855202>: null, style };
   obj = { uri, onLoad, animate: flag };
   obj.children = callback3(obj.isAndroid() ? closure_21 : closure_20, obj);
   return callback3(closure_8, obj);
@@ -216,7 +216,7 @@ let closure_23 = importAllResult.memo((style) => {
   const items = [callback3(importDefault(dependencyMap[19]), obj), ];
   let tmp3 = !useReducedMotion && isAppActive;
   if (tmp3) {
-    const obj1 = { <string:4149331553>: true, <string:1514947227>: true, <string:1054146564>: true, <string:1699807236>: true, <string:3334490350>: true, <string:3334668292>: true, <string:3334799364>: true };
+    const obj1 = {};
     const obj2 = { uri: importDefault(dependencyMap[24]) };
     obj1.source = obj2;
     obj1.style = style;
@@ -386,7 +386,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj6.children = tmp39Result;
     items6[1] = callback3(closure_8, obj6);
     const obj8 = { style: tmp.body };
-    const obj9 = { style: tmp.title };
+    const obj9 = { hasMaxConnections: "png", isBoostOnlySubscription: 1, style: tmp.title };
     const intl = arg1(dependencyMap[18]).intl;
     const obj10 = {};
     let num6 = 0;
@@ -419,7 +419,7 @@ export default function QuestOrbsRewardModal(quest) {
               return closure_16(variant.Fragment, obj, "balance");
             },
         profileDecoHook() {
-              const obj = {};
+              const obj = { hasMaxConnections: "<string:3362914305>", isBoostOnlySubscription: "<string:2018574337>" };
               const intl = balance(closure_2[18]).intl;
               obj.children = intl.string(balance(closure_2[18]).t.pGDUH9);
               return callback3(balance(closure_2[39]).Text, obj, "profileDeco");
@@ -452,13 +452,13 @@ export default function QuestOrbsRewardModal(quest) {
     obj8.children = items7;
     items6[2] = closure_16(closure_8, obj8);
     const obj14 = { style: tmp.buttonsContainer };
-    const obj15 = { <string:4217742945>: "RBTree", <string:1655330464>: "currentEmbeddedApplication", <string:1722587473>: "SyntaxError", onPress: memo.primary.handler };
+    const obj15 = { paddingVertical: true, display: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", flexDirection: null, onPress: memo.primary.handler };
     const intl3 = arg1(dependencyMap[18]).intl;
     obj15.text = intl3.string(memo.primary.text);
     const items8 = [callback3(arg1(dependencyMap[41]).Button, obj15), ];
     let tmp59 = null != memo.secondary;
     if (tmp59) {
-      const obj16 = { <string:4217742945>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488626, <string:1655330464>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007645008054038882, <string:1722587473>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002136451970181684, onPress: memo.secondary.handler };
+      const obj16 = { paddingVertical: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488606, display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000076436369851344, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002134690713675183, onPress: memo.secondary.handler };
       const intl4 = arg1(dependencyMap[18]).intl;
       obj16.text = intl4.string(memo.secondary.text);
       tmp59 = callback3(arg1(dependencyMap[41]).Button, obj16);

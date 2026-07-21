@@ -1,10 +1,10 @@
-// Module ID: 13655
-// Function ID: 103430
+// Module ID: 13657
+// Function ID: 103452
 // Name: FamilyCenterActivityBannerButton
 // Dependencies: []
 // Exports: default
 
-// Module 13655 (FamilyCenterActivityBannerButton)
+// Module 13657 (FamilyCenterActivityBannerButton)
 function FamilyCenterActivityBannerButton() {
   let obj = arg1(dependencyMap[4]);
   const hasActiveLinks = obj.useHasActiveLinks();
@@ -34,7 +34,7 @@ let obj = arg1(dependencyMap[3]);
 let closure_7 = obj.createStyles({ container: { width: "100%" } });
 let obj1 = arg1(dependencyMap[3]);
 obj = {};
-obj = { position: false, zIndex: false, overflow: false, stateMachine: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020304490458102812, fit: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000563, alignment: 203623658834105270000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.md };
+obj = { position: true, zIndex: true, overflow: true, position: true, zIndex: true, alignItems: true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.md };
 obj.container = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj.art = obj1;
@@ -72,7 +72,7 @@ export default function FamilyCenterActivityBanner() {
   const items = [callback(closure_4, obj), , , ];
   obj1 = { style: tmp3.header, variant: "heading-lg/semibold", children: ageSpecificText };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-  obj2 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp3.description, children: ageSpecificText1 };
+  obj2 = { style: tmp3.description, children: ageSpecificText1 };
   items[2] = callback(arg1(dependencyMap[14]).TextWithIOSLinkWorkaround, obj2);
   let tmp15 = null;
   if (!hasMaxConnections) {

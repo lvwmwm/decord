@@ -1,10 +1,10 @@
-// Module ID: 7101
-// Function ID: 57077
+// Module ID: 7102
+// Function ID: 57089
 // Name: ALLOWED_TYPES
 // Dependencies: []
 // Exports: isAllowedType
 
-// Module 7101 (ALLOWED_TYPES)
+// Module 7102 (ALLOWED_TYPES)
 const items = [require(dependencyMap[0]).AutocompleterResultTypes.USER, require(dependencyMap[0]).AutocompleterResultTypes.TEXT_CHANNEL, require(dependencyMap[0]).AutocompleterResultTypes.VOICE_CHANNEL, require(dependencyMap[0]).AutocompleterResultTypes.GROUP_DM];
 const arr = Array.from(items);
 const _module = require(dependencyMap[1]);

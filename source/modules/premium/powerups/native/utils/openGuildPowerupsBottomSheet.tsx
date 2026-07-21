@@ -1,7 +1,7 @@
 // Module ID: 11539
-// Function ID: 89856
+// Function ID: 89868
 // Name: openGuildPowerupsBottomSheet
-// Dependencies: [45154304, 270270464, 491585536, 79429632]
+// Dependencies: [45154304, 270270464, 491651072, 79429632]
 // Exports: default
 
 // Module 11539 (openGuildPowerupsBottomSheet)

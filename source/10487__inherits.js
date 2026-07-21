@@ -1,5 +1,5 @@
 // Module ID: 10487
-// Function ID: 81223
+// Function ID: 81234
 // Name: _inherits
 // Dependencies: []
 
@@ -544,7 +544,7 @@ const fn = () => {
                   }
                 }
                 tmp4 = new tmp4();
-                constructor[cloneResult[arg0].name] = /* F81262 */ function() { ... };
+                constructor[cloneResult[arg0].name] = /* F81273 */ function() { ... };
               }(num);
               num = num + 1;
               length = flattenResult.length;
@@ -6416,7 +6416,7 @@ const fn = () => {
           if (species) {
             const _Object = Object;
             const _Symbol4 = Symbol;
-            Object.defineProperty(Buffer, Symbol.species, { 1403228943: false, 830090965: false });
+            Object.defineProperty(Buffer, Symbol.species, { "Bool(false)": "Array", "Bool(false)": "create" });
           }
         }
         Buffer.byteLength = byteLength;
@@ -7255,10 +7255,10 @@ const fn = () => {
             }
             let flag = false;
             let closure_4 = false;
-            let items = [null, "borderRadius"];
+            let items = [537171358830907500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 546024957129728100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
             if (isArray(inspect)) {
               closure_4 = true;
-              items = [null, null];
+              items = ["fish_cake", "lvl"];
               flag = true;
             }
             let str14 = "";
@@ -7615,8 +7615,8 @@ const fn = () => {
           return closure_4[formatted];
         };
         arg1.inspect = inspect;
-        inspect.colors = { bold: [null, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008759466039198], italic: [], underline: [], inverse: [], white: [], grey: [], black: [], blue: [], cyan: [], green: [null, null], magenta: [], red: [], yellow: ["body", "lick"] };
-        inspect.styles = { variant: "y", tabularNumbers: "LastReceivedChangelogId", variant: "HighlightsOff", grow: "HighlightsOff", shrink: "CTA", size: "RowType", placeholder: "isArray", onChange: "isArray" };
+        inspect.colors = { bold: ["<string:1459883753>", "<string:619141975>"], italic: [], underline: [], inverse: [], white: [], grey: [], black: [], blue: [], cyan: [], green: [null, null], magenta: [], red: [], yellow: ["eight_spoked_asterisk", -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001210478947821964] };
+        inspect.styles = {};
         arg1.isArray = isArray;
         arg1.isBoolean = isBoolean;
         arg1.isNull = isNull;
@@ -7654,7 +7654,7 @@ const fn = () => {
           return tmp;
         };
         arg1.isBuffer = arg2(11);
-        let closure_5 = ["tongue", null, null, null, null, null, null, null, null, null, null, null];
+        let closure_5 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002863952740579513, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008197992837849339, 65201410957849740000000000000000000000000000000000000000000000000000000000000000000000000000, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018840310770397674, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000746476034397588, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010169698013374787, 32970176812940210000000000000000000000000000000000000000000000000000000000000000000, -2923732167771603000000000000000000000000000000000, -1510245421690417400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 15189623906356050000000000000000000000000000000000000000000000000000000000000000000, -0.00000000002983140264688723, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006314598175131455];
         arg1.log = () => {
           const date = new Date();
           const items = [pad(date.getHours()), pad(date.getMinutes()), pad(date.getSeconds())];
@@ -7817,7 +7817,7 @@ const fn = () => {
           return tmp2;
         };
         obj.isSafe = (arg0) => undefined !== obj.safeCharCodes[arg0];
-        obj.namedHtml = { style: "must be an object", status: "!!child \"{{!child}}\" fails because {{reason}}", getChannel: "must have at least {{limit}} children", scales: "must have less than or equal to {{limit}} children", surrogates: "must have {{limit}} children", set: "!!\"{{!child}}\" is not allowed", st: "missing required peer \"{{peer}}\"", "": "conflict with forbidden peer \"{{peer}}\"", withSpring: "must contain at least one of {{peers}}", slice: "contains a conflict between exclusive peers {{peers}}" };
+        obj.namedHtml = { <string:3705958059>: "setGroups", <string:2885833433>: "ce", <string:1951574863>: "SOLID", <string:1386958815>: "ur", <string:3832471412>: "setGroups", <string:36849751>: "ce", <string:21393854>: "baby", <string:2982500030>: "SyntaxError", <string:1373924849>: "SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH", <string:996410367>: "%FunctionPrototype%" };
         obj = {};
         let num = 32;
         do {
@@ -7895,7 +7895,7 @@ const fn = () => {
         let closure_6 = null;
         let closure_7 = null;
         let obj = { Set: arg2(18) };
-        obj = { language: {} };
+        obj = { "Null": "text-default", 0: "\u2022", -9223372036854775808: "backdrop", 0: "backdrop", 193: 0.473, "Bool(true)": 1, "Bool(true)": null, "Bool(true)": 16, "Bool(true)": 4, language: {} };
         obj.defaults = obj;
         const tmp2 = () => {
           class _class {
@@ -8026,7 +8026,7 @@ const fn = () => {
                 tmp6 = cloneResult;
                 if ("any" !== arg0._type) {
                   cloneResult1 = arg0.clone();
-                  items = [-81684484590967260000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015781067145611694, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007786888776839818, -356812946121278740000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005487804050428471, 6307134440830300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 315608710510518300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -90410722847399830000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006766172015054903, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000689773907053748, 1589780678794472500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 5988216287923711000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 45509016969793746000000000000000000000000000000000000000000];
+                  items = [false, false, false, false, false, false, false, false, false, false, false, false, false];
                   num = 0;
                   tmp6 = cloneResult1;
                   if (0 < items.length) {
@@ -8480,7 +8480,7 @@ const fn = () => {
               self = this;
               arg0 = arg0;
               if (!arg1) {
-                obj = { 0: false, 0: false, 0: false };
+                obj = { enabled: 2592000000, filter: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017747812660838788, context: 15185008279890887000000000000000000000000000000000000000000000000000000000000000000 };
                 tmp2 = arg3;
                 obj.reference = arg3;
                 tmp = obj;
@@ -8768,7 +8768,7 @@ const fn = () => {
               obj = { type: this._type };
               keys = Object.keys(this._flags);
               if (keys.length) {
-                items = [];
+                items = ["ballot_box", "ballot_box_with_ballot", "file_cabinet", "clipboard"];
                 if (items.some((arg0) => {
                   const _flags = self._flags;
                   return _flags.hasOwnProperty(arg0);
@@ -9533,9 +9533,16 @@ const fn = () => {
       };
     },
     (arg0, arg1) => {
-      let obj = { "Bool(false)": "<string:402587649>", "Bool(false)": "<string:4237819906>", "Bool(false)": "<string:402653185>", "Bool(false)": "<string:3718053890>", "Bool(false)": "<string:3717988354>", "Bool(false)": "<string:3719561218>", "Bool(false)": "<string:3718119426>", "Bool(false)": "<string:3718316034>", timestamp: {} };
-      obj = { "Bool(true)": "<string:341180417>", "Bool(true)": "<string:2084700162>", invert: { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002201007777832523, "Bool(true)": 110339800089982670000000000000000000000000000000000000000 } };
-      arg1.errors = { messages: { wrapArrays: true }, any: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, alternatives: { base: "not matching any of the allowed alternatives" }, array: {}, boolean: { base: "must be a boolean" }, binary: {}, date: obj, function: {}, lazy: {}, object: { rename: {} }, number: {}, string: { regex: obj } };
+      let obj = { "Null": "SOLID", "Null": "CUSTOM_THEME_SHARE", messages: { wrapArrays: true }, any: {}, alternatives: { base: "not matching any of the allowed alternatives" }, array: {}, boolean: { base: "must be a boolean" }, binary: { replace: -571998206, unicodeVersion: -571801598, now: -570490878, errBackslashEnd: -570425342 } };
+      obj = { "Bool(true)": "AutocompleteTypes", "Bool(true)": "for", "Bool(true)": "_handleNotificationAuthorizationStatusUpdate", "Bool(true)": "%StringPrototype%", "Bool(true)": "MAX_FORUM_TAGS", "Bool(true)": "getBlockedUsersForVoiceChannel", "Bool(true)": "recordCanvas", "Bool(true)": "%AsyncFunction%", timestamp: {} };
+      obj.date = obj;
+      obj.function = {};
+      obj.lazy = {};
+      obj.object = { rename: {} };
+      obj.number = {};
+      obj = { 1660871264: "<string:1916932352>", 135483883: "<string:1040187680>", invert: { 1660871264: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011194797203065158, 135483883: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048011636341817426 } };
+      obj.string = { regex: obj };
+      arg1.errors = obj;
     },
     (arg0, arg1, arg2) => {
       const fn = (arg0) => {
@@ -10077,7 +10084,7 @@ const fn = () => {
             if (!arg0) {
               str = "javascript";
             }
-            items = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014586893424638584, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008448051057928283];
+            items = ["BLURRY", "YOUTUBE_URL"];
             index = items.indexOf(str);
             assertResult = closure_2.assert(-1 !== index, `"type" must be one of "${arr.join("\", \"")}"`);
             cloneResult = self.clone();
@@ -10214,7 +10221,7 @@ const fn = () => {
           const obj2 = arg2(25);
           obj = {};
           obj.uriRegex = obj.createUriRegex();
-          obj.ipRegex = obj2.createIpRegex([-0.00000000000000000000000000040303061419922536, 0.000000000000000000000000000000000000000000000000000000000000000000000018019669406980303, 1.611], "optional");
+          obj.ipRegex = obj2.createIpRegex([], "optional");
           obj.String = (arg0) => {
             class _class {
               constructor() {
@@ -10395,7 +10402,7 @@ const fn = () => {
                 if (obj.invert) {
                   str4 = ".invert";
                 }
-                items = [null];
+                items = ["contentLength"];
                 items[1] = str4;
                 str5 = ".base";
                 if (obj.name) {
@@ -10548,7 +10555,7 @@ const fn = () => {
                   }
                   if (!version) {
                     tmp12 = closure_8;
-                    _class = closure_8.createIpRegex([-0.00000000000000000000000000040303061419922536, 0.000000000000000000000000000000000000000000000000000000000000000000000018019669406980303, 1.611], obj.cidr);
+                    _class = closure_8.createIpRegex([], obj.cidr);
                   }
                 } else {
                   str2 = "optional";
@@ -10766,7 +10773,7 @@ const fn = () => {
               }
               guid(arg0) {
                 self = this;
-                arg0 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+                arg0 = { "Null": true, "Null": true, "Null": true, "Null": true };
                 obj = {};
                 _class = obj;
                 items = [];
@@ -11056,9 +11063,9 @@ const fn = () => {
           obj.indexOf = Array.prototype.indexOf;
           obj.defaultThreshold = 16;
           obj.maxIPv6Groups = 8;
-          obj.categories = { "Bool(true)": "HOSTED_FIELDS_TOKENIZATION_FAIL_ON_DUPLICATE", "Bool(true)": "This credit card already exists in the merchant's vault.", "Bool(true)": null, "Bool(true)": "HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED", "Bool(true)": "CVV verification failed during tokenization.", "Bool(true)": null, "Bool(true)": "HOSTED_FIELDS_FAILED_TOKENIZATION" };
-          obj.diagnoses = { mass: true, stiffness: true, overshootClamping: true, restSpeedThreshold: true, restDisplacementThreshold: true, damping: true, buttonRadius: true, badgeRadius: true, cutoutInset: true, isActive: true, disableTint: true, showBadge: true, isSmallSize: true, backgroundColor: true, tintColor: true, borderRadius: true, alignItems: true, justifyContent: true, height: true, width: true, position: true, zIndex: true, top: true, left: true, width: true, height: true, removeEmptyStateButton: true, removeEmptyStateImage: true, marginBottom: true, width: true, height: true, marginBottom: true, width: true, resizeMode: true, type: true, style: true, avError: true, removeSplashImage: true, removeCloseButton: true, stream: true, gestureEnabled: true, minimumZoomScale: true, maximumZoomScale: true, useSurfaceDirectRenderer: true, streamId: true, onSize: true, onReady: true, fontSize: true, lineHeight: true, color: true, textAlign: true, fontWeight: true, backgroundColor: true, paddingLeft: true };
-          obj.components = { marginLeft: null, height: null, borderRadius: null, overflow: null, borderWidth: null, borderColor: null, flex: null };
+          obj.categories = {};
+          obj.diagnoses = {};
+          obj.components = { <string:2510567478>: null, <string:2349205842>: null, <string:3933102598>: null, <string:1633618001>: null, <string:2858242396>: null, <string:173144929>: null, <string:1654678022>: null };
           if (undefined !== nextTick) {
             if (nextTick) {
               if ("function" === typeof nextTick.nextTick) {
@@ -11188,8 +11195,8 @@ const fn = () => {
                 }
                 obj = { now: obj.components.localpart, prev: obj.components.localpart, stack: items2 };
                 const items2 = [obj.components.localpart];
-                const obj1 = { 1318212010: "\u{1F9BB}\u{1F3FF}", -1604952989: true };
-                const obj2 = { locals: [null], domains: [null] };
+                const obj1 = { "Null": null, "Null": null };
+                const obj2 = { locals: ["<string:2246337460>"], domains: ["<string:2246337460>"] };
                 typeError = 0;
                 let str7 = "";
                 let num = 0;
@@ -14725,7 +14732,7 @@ const fn = () => {
               return _class;
             }(tmp),
           (arg0) => JSON.parse(arg0),
-          renameDefaults: { <string:2690014307>: true, <string:3428998245>: false, <string:3630361816>: false },
+          renameDefaults: { GameIconImageSize: "#ffa813", SvgWithCssUri: "absolute", marginLeft: null },
           (arr) => {
               const sorted = arr.sort();
               const obj = {};
@@ -16561,10 +16568,41 @@ const fn = () => {
       fn.call(arg1, arg2(3).Buffer);
     },
     (arg0, arg1) => {
-      const items = [{}, "/Users/jeff/projects/joi-browser"];
+      const obj = { height: "r", borderRadius: 130, overflow: 82, borderWidth: null, borderColor: "3c9f06960d8f7bccd426e0e87c7d7947", flex: "screenshare_splash", width: "png", alignItems: null, justifyContent: 14 };
+      const items = [{ componentStack: "<string:542179330>", error: "<string:141623606>", eventId: "<string:16777216>", instrumentPageLoad: "%MapPrototype%", instrumentNavigation: "<string:2418496256>", instrumentNavigation: "<string:1153582274>", instrumentPageLoad: "HH:mm:ss zzzz" }, "/Users/jeff/projects/joi-browser"];
       const items1 = [items];
-      const items2 = [{ w: 300, guildId: 120 }, { w: null, guildId: "a3a7de10a959d0177fccd05afcb73752" }];
-      arg0.exports = { _args: items1, _npmOperationalInternal: {}, _npmUser: {}, _phantomChildren: {}, _requested: {}, _requiredBy: [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012340477675130861], _resolved: "https://registry.npmjs.org/joi/-/joi-10.0.5.tgz", _shasum: "2e43af9bf24d2d5745852e9ab968c85be357bd6a", _shrinkwrap: null, _spec: "joi@10.0.5", _where: "/Users/jeff/projects/joi-browser", bugs: { url: "https://github.com/hapijs/joi/issues" }, dependencies: { "Bool(true)": 50, "Bool(true)": null, "Bool(true)": 800, "Bool(true)": 16 }, description: "Object schema validation", devDependencies: { "Null": null, "Null": null, "Null": null }, directories: {}, dist: { "Null": "hidden", "Null": true }, engines: { node: ">=4.0.0" }, gitHead: "abfe727885af779a676e6a205ee15cdc8b435691", homepage: "https://github.com/hapijs/joi", keywords: [-274877903, 239847079, -1649266112], license: "BSD-3-Clause", main: "lib/index.js", maintainers: items2, name: "joi", optionalDependencies: {}, readme: "ERROR: No README data found!", repository: {}, scripts: { id: false, y1: false, x1: false, x2: false, y2: false }, version: "10.0.5" };
+      obj._args = items1;
+      obj._npmOperationalInternal = { <string:1759381587>: 14, <string:1390443996>: 18 };
+      obj._npmUser = { "Bool(true)": "center", "Bool(true)": 50 };
+      obj._phantomChildren = {};
+      obj._requested = { componentStack: "<string:542179330>", error: "<string:141623606>", eventId: "<string:16777216>", instrumentPageLoad: "%MapPrototype%", instrumentNavigation: "<string:2418496256>", instrumentNavigation: "<string:1153582274>", instrumentPageLoad: "HH:mm:ss zzzz" };
+      obj._requiredBy = ["<string:4000225165>"];
+      obj._resolved = "https://registry.npmjs.org/joi/-/joi-10.0.5.tgz";
+      obj._shasum = "2e43af9bf24d2d5745852e9ab968c85be357bd6a";
+      obj._shrinkwrap = null;
+      obj._spec = "joi@10.0.5";
+      obj._where = "/Users/jeff/projects/joi-browser";
+      obj.bugs = { url: "https://github.com/hapijs/joi/issues" };
+      obj.dependencies = {};
+      obj.description = "Object schema validation";
+      obj.devDependencies = { mass: false, stiffness: false, damping: false };
+      obj.directories = {};
+      obj.dist = { "Bool(true)": null, "Bool(true)": "a3a7de10a959d0177fccd05afcb73752" };
+      obj.engines = { node: ">=4.0.0" };
+      obj.gitHead = "abfe727885af779a676e6a205ee15cdc8b435691";
+      obj.homepage = "https://github.com/hapijs/joi";
+      obj.keywords = [0.352, -401614368897352650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1111047007163629400000000000000000000000000000000000000000];
+      obj.license = "BSD-3-Clause";
+      obj.main = "lib/index.js";
+      const items2 = [{}, {}];
+      obj.maintainers = items2;
+      obj.name = "joi";
+      obj.optionalDependencies = {};
+      obj.readme = "ERROR: No README data found!";
+      obj.repository = {};
+      obj.scripts = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
+      obj.version = "10.0.5";
+      arg0.exports = obj;
     }
   ];
   return (items) => {

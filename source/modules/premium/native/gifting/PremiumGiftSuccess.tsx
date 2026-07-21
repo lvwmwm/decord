@@ -1,5 +1,5 @@
 // Module ID: 9759
-// Function ID: 75904
+// Function ID: 75915
 // Name: PremiumGiftSuccess
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType
 const tmp2 = arg1(dependencyMap[4]);
 let closure_10 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
   obj.bodyContainer = obj;
   obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: arg0 + importDefault(dependencyMap[6]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_8 };
   const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_TOP_LOW);

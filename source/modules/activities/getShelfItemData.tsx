@@ -1,5 +1,5 @@
 // Module ID: 10499
-// Function ID: 82003
+// Function ID: 82014
 // Name: getShelfItemData
 // Dependencies: []
 // Exports: default

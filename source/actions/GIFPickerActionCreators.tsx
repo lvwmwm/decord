@@ -1,5 +1,5 @@
 // Module ID: 9568
-// Function ID: 74540
+// Function ID: 74551
 // Name: trackSearchStart
 // Dependencies: []
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, initializeSearch, removeFavoriteGIF, search, trackSelectGIF
@@ -19,7 +19,7 @@ function trackSearchStart(arg0) {
   obj.gif_provider = arg1(dependencyMap[5]).getProviderForAPIRequest();
   obj3.trackWithMetadata(constants.SEARCH_STARTED, obj);
 }
-function trackSearchResultViewed(totalResults, type) {
+function trackSearchResultViewed(arg0, type) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -28,13 +28,13 @@ function trackSearchResultViewed(totalResults, type) {
   obj = Object.create(null);
   obj.startTime = 0;
   const merged = Object.assign(obj, obj);
-  obj = { totalResults: totalResults.length };
+  obj = { <string:520483923>: 180, <string:1688739144>: null, totalResults: arg0.length };
   let obj2 = type(dependencyMap[6]);
   const obj1 = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
   const merged2 = Object.assign(merged);
-  obj1["results"] = totalResults.length;
+  obj1["results"] = arg0.length;
   const result = obj2.calculateAnalyticsMetadata(analyticsID, type, obj1);
   if (null == startTime) {
     obj2 = {};
@@ -76,7 +76,7 @@ function doSearchRequest(q, arg1, limit) {
   });
 }
 function resetSearch() {
-  importDefault(dependencyMap[8]).dispatch({ 1654742353: "np", 760298154: 72 });
+  importDefault(dependencyMap[8]).dispatch({ 9223372036854775807: "properties", 9223372036854775807: 72 });
 }
 function gifUrlKey(uri) {
   let str = uri;

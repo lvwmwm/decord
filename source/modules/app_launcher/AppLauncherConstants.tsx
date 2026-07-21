@@ -1,7 +1,7 @@
 // Module ID: 11247
-// Function ID: 87525
+// Function ID: 87537
 // Name: CommandListSortOrder
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11247 (CommandListSortOrder)
 const _module = require(dependencyMap[0]);

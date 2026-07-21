@@ -1,10 +1,10 @@
-// Module ID: 7603
-// Function ID: 60958
+// Module ID: 7604
+// Function ID: 60970
 // Name: Arrow
 // Dependencies: []
 // Exports: default
 
-// Module 7603 (Arrow)
+// Module 7604 (Arrow)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

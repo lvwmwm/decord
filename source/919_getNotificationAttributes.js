@@ -1,5 +1,5 @@
 // Module ID: 919
-// Function ID: 10047
+// Function ID: 10051
 // Name: getNotificationAttributes
 // Dependencies: []
 // Exports: buildTypeSpecificAttributes

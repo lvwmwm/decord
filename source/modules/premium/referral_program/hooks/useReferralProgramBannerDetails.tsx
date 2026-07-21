@@ -1,5 +1,5 @@
 // Module ID: 12249
-// Function ID: 93931
+// Function ID: 93943
 // Name: MAX_REFERRALS_SENT
 // Dependencies: []
 // Exports: useReferralProgramBannerDetails

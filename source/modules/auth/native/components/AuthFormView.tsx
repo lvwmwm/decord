@@ -1,5 +1,5 @@
 // Module ID: 9211
-// Function ID: 72066
+// Function ID: 72077
 // Name: AuthFormView
 // Dependencies: []
 // Exports: default
@@ -42,7 +42,7 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0) => {
   }
   obj.flex = num;
   obj.content = obj;
-  obj.subHeader = { "Null": null, "Null": null };
+  obj.subHeader = {};
   return obj;
 });
 const obj = arg1(dependencyMap[3]);
@@ -61,7 +61,7 @@ export default function AuthFormView(arg0) {
   const tmp2 = callback3(tmp);
   const callback = React.useContext(callback(dependencyMap[6]).WideAuthScrollContext);
   if (tmp) {
-    let obj = {};
+    let obj = { <string:402654302>: "toString", <string:1375732935>: "o", <string:905970805>: "ao", -9223372036854775808: "valueOf", 9223372036854775807: "WireType" };
     obj = { top: 0 };
     obj.contentInset = obj;
     obj.onScroll = function onScroll(nativeEvent) {
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     obj.style = items2;
     const obj3 = { backgroundImageSource, backgroundImageCover };
     const items3 = [callback2(importDefault(dependencyMap[8]), obj3), callback2(importDefault(dependencyMap[9]), {}), ];
-    const obj4 = { "Null": null, "Null": null, "Null": null, "Null": null };
+    const obj4 = {};
     const obj5 = { top: 0 };
     obj4.contentInset = obj5;
     obj4.style = tmp2.flex;

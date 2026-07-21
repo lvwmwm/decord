@@ -1,13 +1,13 @@
 // Module ID: 10575
-// Function ID: 82540
+// Function ID: 82551
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 10575 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDVideoRenderer", directEventTypes: { topSize: { registrationName: "onSize" }, topReady: { registrationName: "onReady" } } };
-obj = { reverse: null, hanidec: null };
+obj = { style: null, accessibilityRole: null };
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ "Bool(false)": null, "Bool(false)": null }));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ value: null, padding: null }));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 const value = _module1.get("DCDVideoRenderer", () => obj);

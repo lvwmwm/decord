@@ -1,7 +1,7 @@
 // Module ID: 671
-// Function ID: 8271
+// Function ID: 8275
 // Name: MessageReferenceTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 671 (MessageReferenceTypes)
 const _module = require(dependencyMap[0]);

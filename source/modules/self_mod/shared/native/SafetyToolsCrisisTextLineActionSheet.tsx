@@ -1,5 +1,5 @@
 // Module ID: 10131
-// Function ID: 78410
+// Function ID: 78421
 // Name: SafetyToolsCrisisTextLineActionSheet
 // Dependencies: []
 // Exports: default
@@ -39,7 +39,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.children = intl2.string(arg1(dependencyMap[7]).t.uicS5l);
   const items = [callback(arg1(dependencyMap[8]).Text, obj), , ];
-  const obj1 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
+  const obj1 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj1.text = intl3.string(arg1(dependencyMap[7]).t.lkUb4S);
   obj1.onPress = function onPress() {
@@ -47,7 +47,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     trackAnalyticsEvent(trackAnalyticsEvent(closure_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
   };
   items[1] = callback(arg1(dependencyMap[9]).Button, obj1);
-  const obj2 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
+  const obj2 = { body: "row", hasDiversityParent: 8, padding: 16, View: "center" };
   const intl4 = arg1(dependencyMap[7]).intl;
   obj2.text = intl4.string(arg1(dependencyMap[7]).t.ogLlvy);
   obj2.onPress = function onPress() {

@@ -1,7 +1,7 @@
 // Module ID: 12233
-// Function ID: 93859
+// Function ID: 93871
 // Name: deferJoinActivityApplication
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: default
 
 // Module 12233 (deferJoinActivityApplication)

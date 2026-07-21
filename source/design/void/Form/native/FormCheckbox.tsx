@@ -1,12 +1,12 @@
 // Module ID: 5446
-// Function ID: 46552
+// Function ID: 46560
 // Name: FormCheckbox
-// Dependencies: [31, 27, 5353, 5337, 4810]
+// Dependencies: [31, 27, 5352, 5336, 4809]
 // Exports: default
 
 // Module 5446 (FormCheckbox)
 import "module_31";
-import { jsx } from "keys";
+import { jsx } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

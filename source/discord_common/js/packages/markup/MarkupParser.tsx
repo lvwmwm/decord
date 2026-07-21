@@ -1,9 +1,9 @@
-// Module ID: 7667
-// Function ID: 61262
+// Module ID: 7668
+// Function ID: 61274
 // Name: reactParserFor
 // Dependencies: []
 
-// Module 7667 (reactParserFor)
+// Module 7668 (reactParserFor)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
 for (const key10030 in arg1(arg6[2])) {

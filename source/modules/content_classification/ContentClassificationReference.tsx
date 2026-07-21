@@ -1,5 +1,5 @@
 // Module ID: 10525
-// Function ID: 82201
+// Function ID: 82212
 // Name: isAgeRestrictedClassificationReference
 // Dependencies: []
 // Exports: isAgeRestrictedClassificationReference

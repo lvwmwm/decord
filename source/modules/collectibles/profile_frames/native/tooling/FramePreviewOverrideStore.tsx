@@ -1,9 +1,9 @@
-// Module ID: 8235
-// Function ID: 65009
+// Module ID: 8236
+// Function ID: 65022
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 8235 (_createForOfIteratorHelperLoose)
+// Module 8236 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -200,25 +200,25 @@ let closure_8 = 0;
 let obj = arg1(dependencyMap[8]);
 obj = obj.create((arg0) => {
   const arg1 = arg0;
-  const obj = { playerState: true, onDataReceived: true, baseURL: true };
+  const obj = { INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true };
   let closure_1 = callback(async () => {
     function isStale() {
       return sum !== sum;
     }
     const sum = sum + 1;
-    sum({ <string:3265944474>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534382790983078, <string:1635944669>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045861640054744 });
+    sum({ "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534382790983078, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045861640054744 });
     const tmp3 = yield function readManifest() {
       return callback(...arguments);
     }();
     if (!isStale()) {
       if (null == tmp3) {
-        sum({ <string:3265944474>: "50acfdf084b8dccbfa3fd235ea0ab8ff", <string:1635944669>: "PauseIcon" });
+        sum({ "Null": "50acfdf084b8dccbfa3fd235ea0ab8ff", "Null": "PauseIcon" });
       } else {
         const tmp5 = yield function buildOverride(arg0) {
           return callback2(...arguments);
         }(tmp3);
         if (!isStale()) {
-          const obj = { playerState: true, onDataReceived: true, baseURL: true, override: tmp5 };
+          const obj = { INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true, override: tmp5 };
           sum(obj);
         }
       }
@@ -229,7 +229,7 @@ obj = obj.create((arg0) => {
   };
   obj.clear = function clear() {
     closure_8 = closure_8 + 1;
-    arg0({ playerState: true, onDataReceived: true, baseURL: true });
+    arg0({ INVITE_OPTIONS_6_HOURS: true, EmojiButtonMouseEntered: true, attachment: true });
   };
   return obj;
 });

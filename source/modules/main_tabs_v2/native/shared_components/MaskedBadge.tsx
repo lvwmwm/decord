@@ -1,5 +1,5 @@
 // Module ID: 9119
-// Function ID: 71407
+// Function ID: 71418
 // Name: MaskedBadge
 // Dependencies: []
 // Exports: default
@@ -8,7 +8,7 @@
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
-obj = { maskStyle: { position: "relative", right: undefined }, unreadDot: { bhk: -536870861, bic: -299892737 }, badgeStyle: {}, unreadBadge: {} };
+obj = { maskStyle: { position: "relative", right: undefined }, unreadDot: { "Null": -536870861, "Null": -299892737 }, badgeStyle: { isArray: null, diversity: null }, unreadBadge: {} };
 obj = { backgroundColor: importDefault(dependencyMap[3]).unsafe_rawColors.PRIMARY_400 };
 obj.lowPriorityBadge = obj;
 let closure_5 = obj.createStyles(obj);

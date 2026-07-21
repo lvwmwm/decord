@@ -1,10 +1,10 @@
-// Module ID: 15188
-// Function ID: 114553
+// Module ID: 15191
+// Function ID: 114587
 // Name: ThreadChannelStarterMessage
 // Dependencies: []
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15188 (ThreadChannelStarterMessage)
+// Module 15191 (ThreadChannelStarterMessage)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const ReferencedMessageState = arg1(dependencyMap[1]).ReferencedMessageState;

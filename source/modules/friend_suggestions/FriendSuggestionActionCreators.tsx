@@ -1,8 +1,8 @@
-// Module ID: 6900
-// Function ID: 54989
+// Module ID: 6901
+// Function ID: 55001
 // Dependencies: []
 
-// Module 6900
+// Module 6901
 let closure_3 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");

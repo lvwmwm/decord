@@ -1,10 +1,10 @@
-// Module ID: 8204
-// Function ID: 64865
+// Module ID: 8205
+// Function ID: 64878
 // Name: getCachedSourceFromURI
 // Dependencies: []
 // Exports: useDominantColorFromImage
 
-// Module 8204 (getCachedSourceFromURI)
+// Module 8205 (getCachedSourceFromURI)
 function getCachedSourceFromURI(avatarURI) {
   let value = importDefaultResult1.get(avatarURI);
   if (null == value) {

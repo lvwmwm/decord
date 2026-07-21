@@ -1,5 +1,5 @@
 // Module ID: 10024
-// Function ID: 77435
+// Function ID: 77446
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -123,7 +123,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     closure_8[channelId] = obj;
   },
   GUILD_DIRECTORY_SEARCH_CLEAR: function handleSearchClear(channelId) {
-    closure_8[channelId.channelId] = { "Bool(true)": null, "Bool(true)": false };
+    closure_8[channelId.channelId] = { User: "<string:3349217282>", getLastRouteChangeSourceLocationStack: "<string:160104449>" };
   },
   GUILD_DIRECTORY_CACHED_SEARCH: function handleUpdateQuery(mostRecentQuery) {
     closure_8[mostRecentQuery.channelId] = { fetching: false, mostRecentQuery: mostRecentQuery.query };

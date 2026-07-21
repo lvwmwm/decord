@@ -1,5 +1,5 @@
 // Module ID: 11783
-// Function ID: 91413
+// Function ID: 91425
 // Name: useGradientAnimatedStyle
 // Dependencies: []
 // Exports: default
@@ -28,9 +28,9 @@ const HorizontalGradient = arg1(dependencyMap[1]).HorizontalGradient;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = importDefault(dependencyMap[3]).createAnimatedComponent(importDefault(dependencyMap[4]));
-let closure_8 = { <string:1634937736>: "center", <string:1733120470>: 14, <string:1453996748>: "2026-04-channel-pinning" };
+let closure_8 = { disableNewIOSPicker: "center", webpackId: 14, connectedEmbeddedActivity: "2026-04-channel-pinning" };
 const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ gradient: { flexDirection: "user", columnGap: 45, flexWrap: 45, marginTop: "relative", flexDirection: "100%" }, left: { left: 0 }, right: { right: 0 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ gradient: { paddingHorizontal: "user", paddingTop: 45, marginBottom: 45, MINUTES_30: "relative", HOURS_1: "100%" }, left: { left: 0 }, right: { right: 0 } });
 let closure_10 = { code: "function TabsGradientNativeTsx1(){const{withSpring,visible,SPRING_CONFIG}=this.__closure;return{opacity:withSpring(visible.get()?1:0,SPRING_CONFIG)};}" };
 let closure_11 = { code: "function TabsGradientNativeTsx2(){const{itemDimensions,state}=this.__closure;const items=itemDimensions.get();const itemWidths=items.reduce(function(s,layout){var _layout$width;return s+((_layout$width=layout===null||layout===void 0?void 0:layout.width)!==null&&_layout$width!==void 0?_layout$width:0);},0);const itemsSpacing=items.length*state.itemSpacing;return itemWidths+itemsSpacing;}" };
 let closure_12 = { code: "function TabsGradientNativeTsx3(){const{scrollOffset,totalItemWidth,pageWidth}=this.__closure;return scrollOffset.get()>0&&totalItemWidth.get()>pageWidth;}" };

@@ -1,10 +1,10 @@
-// Module ID: 15014
-// Function ID: 113074
+// Module ID: 15017
+// Function ID: 113108
 // Name: PAGE_SIZE_WITH_MENTIONS
 // Dependencies: []
 // Exports: useNotificationCenterItemsLoader
 
-// Module 15014 (PAGE_SIZE_WITH_MENTIONS)
+// Module 15017 (PAGE_SIZE_WITH_MENTIONS)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

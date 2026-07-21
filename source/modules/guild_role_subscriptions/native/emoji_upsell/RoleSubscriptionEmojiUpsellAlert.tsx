@@ -1,5 +1,5 @@
 // Module ID: 9345
-// Function ID: 72982
+// Function ID: 72993
 // Name: RoleSubscriptionEmojiUpsellAlert
 // Dependencies: []
 // Exports: default

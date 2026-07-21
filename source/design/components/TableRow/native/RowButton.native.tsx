@@ -1,9 +1,9 @@
-// Module ID: 7492
-// Function ID: 60082
+// Module ID: 7493
+// Function ID: 60094
 // Name: RowButtonWrapper
 // Dependencies: []
 
-// Module 7492 (RowButtonWrapper)
+// Module 7493 (RowButtonWrapper)
 class RowButton {
   constructor(arg0) {
     flag = global.arrow;
@@ -19,7 +19,7 @@ class RowButton {
       str = "secondary";
     }
     ({ icon, experimental_withBlurBackground } = global);
-    obj = { applicationCommandLoadingLeftWrapper: true, useIsScreenIndexFrozenSharedValue: true, MOBILE_THREAD_EMBED_BACKGROUND: true, marginVertical: true, useIsActivitiesEnabledForCurrentPlatform: true, USER_SHEET: true };
+    obj = { fetchGroupListingsForGuild: true, useIsMobileGameCollectionExperimentEnabled: true, GIFS_SEARCH: true, marginVertical: true, useId: true, getMaxTotalAttachmentSize: true };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp3 = importDefault(dependencyMap[4])("RowButton");
@@ -79,7 +79,7 @@ function RowButtonWrapper(isRefreshEnabled) {
     flag = false;
   }
   ({ onPress, disabled, children } = isRefreshEnabled);
-  let obj = {};
+  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(isRefreshEnabled, obj);
   const arg1 = merged;
@@ -100,10 +100,6 @@ function RowButtonWrapper(isRefreshEnabled) {
   }, items1);
   if (isRefreshEnabled.experimental_withBlurBackground) {
     obj = {
-      -1437189533: "<string:2020689293>",
-      1669052497: "<string:16777216>",
-      1655323219: "ars",
-      1280565223: "<string:2226930176>",
       onPress,
       onPressIn(arg0) {
           if (null != merged.onPressIn) {
@@ -140,7 +136,7 @@ function RowButtonWrapper(isRefreshEnabled) {
       }
       str2 = variant;
     }
-    obj1 = { padding: "heading-md/medium", flex: "header", justifyContent: "heading-lg/bold", onPress, style: tmp3.card, disabled };
+    obj1 = { onPress, style: tmp3.card, disabled };
     const merged2 = Object.assign(merged);
     obj1["variant"] = str2;
     obj1["border"] = str;

@@ -1,21 +1,23 @@
-// Module ID: 12963
-// Function ID: 98625
+// Module ID: 12965
+// Function ID: 98647
 // Name: StepModal
-// Dependencies: []
+// Dependencies: [161, 219, 0, 4, 65, 57, 6, 7, 15, 17]
 // Exports: StepModal
 
-// Module 12963 (StepModal)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { height: "100%" } };
-obj = { count: false, space: false, push: false, sk: false, borderRadius: false, type: false, height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT };
-obj.stepContainer = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
+// Module 12965 (StepModal)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import WebSocketModule from "WebSocketModule";
+import { View } from "result";
+import log from "log";
+import _toConsumableArray from "_toConsumableArray";
+import _getPrototypeOf from "_getPrototypeOf";
+
+({ jsx: closure_6, jsxs: closure_7 } = log);
+_toConsumableArray = { container: { height: "100%" } };
+_toConsumableArray = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, height: require("_slicedToArray").NAV_BAR_HEIGHT };
+_toConsumableArray.stepContainer = _toConsumableArray;
+_toConsumableArray = _toConsumableArray.createStyles(_toConsumableArray);
+const result = _getPrototypeOf.fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
 
 export const StepModal = function StepModal(steps) {
   steps = steps.steps;
@@ -26,7 +28,7 @@ export const StepModal = function StepModal(steps) {
   obj.steps = 0;
   obj.onWillFocus = 0;
   const merged = Object.assign(steps, obj);
-  const tmp3 = callback3();
+  const tmp3 = _toConsumableArray();
   const tmp4 = importDefault(closure_2[6])();
   const tmp5 = callback(React.useState(0), 2);
   closure_2 = tmp5[1];

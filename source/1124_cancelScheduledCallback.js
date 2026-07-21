@@ -1,5 +1,5 @@
 // Module ID: 1124
-// Function ID: 12758
+// Function ID: 12762
 // Name: cancelScheduledCallback
 // Dependencies: []
 // Exports: createReactRouterV6CompatibleTracingIntegration, createV6CompatibleWithSentryReactRouterRouting, createV6CompatibleWrapCreateBrowserRouter, createV6CompatibleWrapCreateMemoryRouter, createV6CompatibleWrapUseRoutes
@@ -78,9 +78,9 @@ function shouldSkipNavigation(locationKey, arg1, routeName) {
       obj.shouldUpdate = !tmp18;
       return obj;
     }
-    return { "Bool(true)": null, "Bool(true)": null };
+    return { 820108214: null, -1597926610: null };
   } else {
-    return { "Bool(true)": null, "Bool(true)": null };
+    return { 820108214: null, -1597926610: null };
   }
 }
 function addResolvedRoutesToParent(arr, children) {
@@ -354,7 +354,7 @@ function wrapPatchRoutesOnNavigation(arg0) {
                     const obj2 = arg0(path[8]);
                   }
                   if (tmp3) {
-                    obj = { "Null": "webpBlob", "Null": "tea", "Null": "STARTED_ONBOARDING", -1823311079: "LIGHT", 1643696424: "isArray", pathname: path };
+                    obj = { pathname: path };
                     const _Array = Array;
                     callback(activeRootSpan, obj, Array.from(closure_16), true, closure_10);
                   }
@@ -385,7 +385,7 @@ function wrapPatchRoutesOnNavigation(arg0) {
                     }
                   }
                   if (tmp9) {
-                    obj = { "Null": "webpBlob", "Null": "tea", "Null": "STARTED_ONBOARDING", -1823311079: "LIGHT", 1643696424: "isArray", pathname: tmp9 };
+                    obj = { pathname: tmp9 };
                     const _Array = Array;
                     callback2(activeRootSpan, obj, Array.from(closure_16), false, closure_10);
                   }
@@ -819,7 +819,7 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
   const require = instrumentPageLoad;
   const dependencyMap = _6;
   let obj = require(dependencyMap[5]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentPageLoad, { isArray: null, scales: null }));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentPageLoad, { gap: null, ao: null }));
   let closure_2 = result;
   ({ useEffect: closure_3, useLocation: closure_4, useNavigationType: closure_5, createRoutesFromChildren: closure_6, matchRoutes: closure_7, stripBasename: closure_8, enableAsyncRouteHandlers } = instrumentPageLoad);
   let closure_9 = undefined !== enableAsyncRouteHandlers && enableAsyncRouteHandlers;

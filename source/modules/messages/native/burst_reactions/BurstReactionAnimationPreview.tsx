@@ -1,10 +1,10 @@
-// Module ID: 7061
-// Function ID: 56451
+// Module ID: 7062
+// Function ID: 56463
 // Name: BurstReactionAnimationPreview
 // Dependencies: []
 // Exports: default
 
-// Module 7061 (BurstReactionAnimationPreview)
+// Module 7062 (BurstReactionAnimationPreview)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimationPreview.tsx");

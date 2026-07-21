@@ -1,7 +1,7 @@
 // Module ID: 9273
-// Function ID: 72473
+// Function ID: 72484
 // Name: QuestionTypeEnum
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9273 (QuestionTypeEnum)
 const _module = require(dependencyMap[0]);

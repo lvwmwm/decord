@@ -1,5 +1,5 @@
 // Module ID: 9646
-// Function ID: 75153
+// Function ID: 75164
 // Name: MediaKeyboardActionSheet
 // Dependencies: []
 // Exports: default
@@ -81,9 +81,6 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   const items3 = [onViewAll, memo];
   const memo1 = React.useMemo(() => {
     let obj = {
-      "Bool(true)": "AbortSignal",
-      "Bool(true)": null,
-      "Bool(true)": "\u{1F9BB}\u{1F3FF}",
       onHeightChange() {
 
       }

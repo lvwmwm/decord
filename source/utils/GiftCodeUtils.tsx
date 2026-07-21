@@ -1,5 +1,5 @@
 // Module ID: 4362
-// Function ID: 38660
+// Function ID: 38668
 // Name: unambiguousRegex
 // Dependencies: []
 // Exports: findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getGiftCodeURL, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
@@ -167,9 +167,9 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ PremiumTypes: closure_13, SubscriptionIntervalTypes: closure_14 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
 const items = [importDefault(dependencyMap[6]).escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...items1.map((arg0) => importDefault(dependencyMap[6]).escape(arg0))];
-const items1 = [];
+const items1 = [0.5, 1];
 const regExp = new RegExp("(?: |^|https?://)(?:" + items.join("|") + ")/([a-z0-9-]+)", "gi");
-const items2 = [];
+const items2 = [1, 0];
 const items3 = [...items2.map((arg0) => importDefault(dependencyMap[6]).escape(arg0))];
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const items4 = [require("module_4"), require("module_4"), require("module_5"), "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"];

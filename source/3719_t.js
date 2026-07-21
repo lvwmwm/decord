@@ -1,5 +1,5 @@
 // Module ID: 3719
-// Function ID: 28456
+// Function ID: 28461
 // Name: t
 // Dependencies: []
 
@@ -92,14 +92,14 @@ const fn = function t(moment) {
   obj.weekdaysShort = "ned._pon._uto._sri._\u010Det._pet._sub.".split("_");
   obj.weekdaysMin = "ne_po_ut_sr_\u010De_pe_su".split("_");
   obj.weekdaysParseExact = true;
-  obj.longDateFormat = {};
+  obj.longDateFormat = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
   obj = {
-    status: "<string:2399142639>",
-    padding: "<string:1056965364>",
-    opacity: "<string:2684355311>",
-    PX_8: "<string:1140851444>",
-    Symbol: "<string:1241514735>",
-    r: "A h:mm",
+    intl: "<string:386400258>",
+    flex: "<string:4274520065>",
+    getChannel: "<string:4274585602>",
+    PX_8: "<string:191889410>",
+    textAlign: "<string:3947757571>",
+    unicodeVersion: "<string:3892314863>",
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -130,7 +130,7 @@ const fn = function t(moment) {
   obj.relativeTime = { ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "dan", dd: translate, M: "mjesec", MM: translate, y: "godinu", yy: translate };
   obj.dayOfMonthOrdinalParse = /\d{1,2}\./;
   obj.ordinal = "%d.";
-  obj.week = {};
+  obj.week = { "Bool(true)": null, "Bool(true)": null };
   return moment.defineLocale("hr", obj);
 };
 if ("object" === typeof exports) {

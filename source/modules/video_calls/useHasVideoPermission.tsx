@@ -1,5 +1,5 @@
 // Module ID: 10674
-// Function ID: 83208
+// Function ID: 83219
 // Name: useHasVideoPermission
 // Dependencies: []
 // Exports: default, getVideoPermission

@@ -1,5 +1,5 @@
 // Module ID: 11340
-// Function ID: 88161
+// Function ID: 88173
 // Name: renderChatInputActionButtonGiftAndThread
 // Dependencies: []
 

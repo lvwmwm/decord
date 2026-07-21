@@ -1,5 +1,5 @@
 // Module ID: 11240
-// Function ID: 87499
+// Function ID: 87511
 // Name: AppLauncherBackButton
 // Dependencies: []
 // Exports: default

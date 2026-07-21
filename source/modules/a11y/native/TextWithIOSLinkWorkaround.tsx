@@ -1,5 +1,5 @@
 // Module ID: 5457
-// Function ID: 46610
+// Function ID: 46618
 // Name: findLinks
 // Dependencies: []
 // Exports: TextWithIOSLinkWorkaround
@@ -31,7 +31,7 @@ let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ column: { "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ column: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/a11y/native/TextWithIOSLinkWorkaround.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 4576
-// Function ID: 40138
+// Module ID: 4575
+// Function ID: 40145
 // Name: MAX_LENGTH_SOUND_NAME
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 4576 (MAX_LENGTH_SOUND_NAME)
+// Module 4575 (MAX_LENGTH_SOUND_NAME)
 const obj = { SUCCESS: 0, [0]: "SUCCESS", INTERRUPTED: 1, [1]: "INTERRUPTED" };
 const items = [, ];
 ({ SUCCESS: arr[0], INTERRUPTED: arr[1] } = obj);

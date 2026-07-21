@@ -1,9 +1,9 @@
-// Module ID: 13352
-// Function ID: 101567
+// Module ID: 13354
+// Function ID: 101589
 // Name: USE_ALT_GATEWAY_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 13352 (USE_ALT_GATEWAY_KEY)
+// Module 13354 (USE_ALT_GATEWAY_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/gateway/GatewayAltEndpointCache.tsx");
 

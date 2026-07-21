@@ -1,9 +1,9 @@
-// Module ID: 7504
-// Function ID: 60131
+// Module ID: 7505
+// Function ID: 60143
 // Name: getLengthRemainingTextColor
 // Dependencies: []
 
-// Module 7504 (getLengthRemainingTextColor)
+// Module 7505 (getLengthRemainingTextColor)
 function getLengthRemainingTextColor(maxLength, diff) {
   let str = "text-muted";
   let str2 = "text-muted";
@@ -26,7 +26,7 @@ const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { area: { "Bool(true)": "Array", "Bool(true)": "x" } };
+let obj = { area: { width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012573722530706516, gap: 1757869454880814000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
 obj = { position: "absolute", bottom: importDefault(dependencyMap[4]).space.PX_4, right: importDefault(dependencyMap[4]).space.PX_16 };
 obj.maxLengthIndicator = obj;
 let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
@@ -37,7 +37,7 @@ const forwardRefResult = importAllResult.forwardRef((isDisabled) => {
   let inputProps;
   let isFocused;
   let obj = arg1(dependencyMap[5]);
-  obj = { "Null": null, "Null": null, isDisabled: isDisabled.isDisabled };
+  obj = { <string:1439367743>: "heading-md/medium", <string:1856005359>: "text-default", isDisabled: isDisabled.isDisabled };
   const inputStyles = obj.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;

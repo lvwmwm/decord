@@ -1,9 +1,9 @@
-// Module ID: 14981
-// Function ID: 112787
+// Module ID: 14984
+// Function ID: 112821
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 14981 (_isNativeReflectConstruct)
+// Module 14984 (_isNativeReflectConstruct)
 let Dimensions;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -24,7 +24,7 @@ const importAllResult = importAll(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 const height = Dimensions.get("window").height;
-let closure_15 = { max: -536870861, guildId: -299892737 };
+let closure_15 = {};
 let closure_16 = importAllResult.memo((arg0) => {
   let active;
   let hideContent;
@@ -93,7 +93,7 @@ let closure_16 = importAllResult.memo((arg0) => {
   obj = {};
   obj = null;
   if (hideContent) {
-    obj = { "Null": null, "Null": null };
+    obj = { left: 19, right: "header_localized" };
   }
   obj.style = obj;
   obj.children = importAllResult.cloneElement(renderRow(item, index, tmp6), { sortHandlers: { onLongPress: callback, onPressOut } });
@@ -118,7 +118,7 @@ let closure_17 = importAllResult.memo((listPageY) => {
   const obj = {};
   const items1 = [
     importAllResult.useMemo(() => {
-      const obj = { "Null": "Array", "Null": "isArray", "Null": "x", "Null": "keys", "Null": "track", "Null": "Array", height: frameHeight, marginTop: listPageY - wrapperPageY };
+      const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, height: frameHeight, marginTop: listPageY - wrapperPageY };
       return obj;
     }, items),
     sortRowStyle,
@@ -157,7 +157,7 @@ const tmp4 = (Component) => {
       tmp2Result._wrapperRef = closure_7.createRef();
       tmp2Result._listRef = closure_7.createRef();
       tmp2Result.scrollContainerHeight = closure_14;
-      obj = { fetchApexExperimentsMetadata: null, ALIGNMENT_MAP: null, ar: null };
+      obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
       valueXY = new closure_9.ValueXY(closure_15);
       obj.pan = valueXY;
       tmp2Result.state = obj;
@@ -329,7 +329,7 @@ const tmp4 = (Component) => {
       };
       tmp2Result.cancel = () => {
         if (!tmp2Result.moved) {
-          tmp2Result.setState({ fetchApexExperimentsMetadata: null, ALIGNMENT_MAP: null, ar: null });
+          tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
         }
       };
       tmp2Result.scrollTo = (arg0) => {
@@ -374,7 +374,7 @@ const tmp4 = (Component) => {
               if (null !== sum1) {
                 tmp2Result.scrollValue = sum1;
                 const scrollResponder = tmp2Result.scrollResponder;
-                const obj = { "Bool(false)": "x", "Bool(false)": "fileFinishedImporting", "Bool(false)": "o", y: tmp2Result.scrollValue };
+                const obj = { <string:3438175103>: 1092747263, <string:3622265520>: 142182, <string:1640027473>: -1907003820, y: tmp2Result.scrollValue };
                 scrollResponder.scrollTo(obj);
               }
               tmp2Result.checkTargetElement();
@@ -410,7 +410,7 @@ const tmp4 = (Component) => {
             let obj = { frameX, frameY, frameWidth, frameHeight, pageX, pageY };
             frameX.wrapperLayout = obj;
             const pan = frameX.state.pan;
-            pan.setValue({ max: -536870861, guildId: -299892737 });
+            pan.setValue({});
             const result = frameX(closure_1[8]).DeprecatedLayoutAnimation();
             frameX.moveY = frameX.layout.pageY;
             obj = { active: frameX, hovering: true, hoverIndex: frameX.rowData.index };
@@ -421,7 +421,7 @@ const tmp4 = (Component) => {
       obj1 = { dx: tmp2Result.state.pan.x, dy: tmp2Result.state.pan.y };
       items1 = [true];
       items1[1] = obj1;
-      f112814 = closure_9.event(items1, { useNativeDriver: false });
+      f112848 = closure_9.event(items1, { useNativeDriver: false });
       obj2 = {
         onStartShouldSetPanResponder() {
               return true;
@@ -451,7 +451,7 @@ const tmp4 = (Component) => {
               }
             },
         onPanResponderTerminate() {
-              tmp2Result.setState({ fetchApexExperimentsMetadata: null, ALIGNMENT_MAP: null, ar: null });
+              tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
             },
         onPanResponderRelease() {
               tmp2Result.moved = false;
@@ -482,7 +482,7 @@ const tmp4 = (Component) => {
                     obj = { row: tmp2Result.state.active.rowData, from: index, to: diff };
                     props2.onRowMoved(obj);
                   }
-                  tmp2Result.setState({ fetchApexExperimentsMetadata: null, ALIGNMENT_MAP: null, ar: null });
+                  tmp2Result.setState({ "Bool(true)": null, "Bool(true)": null, "Bool(true)": null });
                   const _Math = Math;
                   const bound = Math.max(0, tmp2Result.scrollContainerHeight - tmp2Result.listLayout.height + tmp22);
                   if (tmp2Result.scrollValue > bound) {

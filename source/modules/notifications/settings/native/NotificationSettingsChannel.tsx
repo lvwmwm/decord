@@ -1,5 +1,5 @@
 // Module ID: 10273
-// Function ID: 79359
+// Function ID: 79370
 // Name: NotificationSettingsChannel
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { head_shaking_horizontally: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", disappointed: true, pensive: null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.screenContainer = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);

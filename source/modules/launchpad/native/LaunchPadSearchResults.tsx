@@ -1,9 +1,9 @@
-// Module ID: 15530
-// Function ID: 118537
+// Module ID: 15533
+// Function ID: 118576
 // Name: renderItemJSX
 // Dependencies: []
 
-// Module 15530 (renderItemJSX)
+// Module 15533 (renderItemJSX)
 function renderItemJSX(result) {
   result = result.result;
   if (null == result) {
@@ -50,7 +50,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let closure_12 = { bottom: 24 };
 let obj1 = arg1(dependencyMap[7]);
-let obj = { listContainer: { minHeight: 16 }, list: { <string:2823905889>: null, <string:2001293998>: null } };
+let obj = { listContainer: { minHeight: 16 }, list: { right: true, height: true } };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.guildIcon = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
@@ -265,7 +265,7 @@ const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
   const items2 = [fontScale, results, tmp8];
   obj = { style: tmp.listContainer };
   if (results.length > 0) {
-    obj = { 9223372036854775807: false, 0: false, -9223372036854775808: false, ref, style: tmp.list, sectionSize: tmp8.category.height, itemSize: tmp10, renderSection: renderSearchResultsSection, renderItem: callback };
+    obj = { ref, style: tmp.list, sectionSize: tmp8.category.height, itemSize: tmp10, renderSection: renderSearchResultsSection, renderItem: callback };
     const items3 = [results.length];
     obj.sections = items3;
     obj.footerSize = 16;

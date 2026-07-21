@@ -1,5 +1,5 @@
 // Module ID: 10754
-// Function ID: 83521
+// Function ID: 83532
 // Name: Text
 // Dependencies: []
 // Exports: default
@@ -152,12 +152,12 @@ const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 const tmp3 = arg1(dependencyMap[9]);
 obj["backgroundColor"] = arg1(dependencyMap[11]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, 0.7);
 obj.container = obj;
-obj.scroller = { 0: "P", 0: 40 };
+obj.scroller = {};
 obj.indent = { marginLeft: 16 };
 obj.row = { flexDirection: "row" };
 obj1 = { color: importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, fontSize: 14 };
 obj.text = obj1;
-obj.buttonClose = {};
+obj.buttonClose = { y: "r", attributesByChannelId: "gift_info" };
 let closure_18 = obj1.createStyles(obj);
 let closure_19 = importAllResult.memo((data) => {
   data = data.data;

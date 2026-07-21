@@ -1,7 +1,7 @@
 // Module ID: 12006
-// Function ID: 92791
+// Function ID: 92803
 // Name: WishlistVisibility
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 12006 (WishlistVisibility)
 const _module = require(dependencyMap[0]);

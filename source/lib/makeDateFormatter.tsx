@@ -1,5 +1,5 @@
 // Module ID: 3817
-// Function ID: 31709
+// Function ID: 31714
 // Name: makeLongFormatter
 // Dependencies: []
 // Exports: default
@@ -104,7 +104,7 @@ function getLocaleData() {
   }
   ({ week, ordinal, longDateFormat } = _config);
   if (undefined === week) {
-    week = { <string:1431496722>: false, <string:1627556098>: false };
+    week = {};
   }
   obj = { months: convertMomentValue("month", months), monthsShort: convertMomentValue("month", monthsShort), weekdays: convertMomentValue("day", weekdays), weekdaysShort: convertMomentValue("day", weekdaysShort), weekdaysMin: convertMomentValue("day", weekdaysMin), meridiem, ordinal: convertMomentOrdinal(ordinal), longDateFormat, longFormatters: [], week };
   return obj;
@@ -182,7 +182,7 @@ export default function makeFormatter(arg0, addResult) {
   }
   const items = [];
   importDefault = items;
-  obj = { isArray: "bow", isArray: 30, test: "days", withSpring: "default", isArray: "done", isArray: "go", textAlign: "next", withSpring: "previous", isArray: "search", isArray: "send", _desired: "postal-address-region", withTiming: "postal-address-locality" };
+  obj = {};
   dependencyMap = arr;
   if (arr.length > 0) {
     while (true) {

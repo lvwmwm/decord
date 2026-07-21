@@ -1,5 +1,5 @@
 // Module ID: 6655
-// Function ID: 51174
+// Function ID: 51182
 // Name: usePremiumPlanPurchasedStore
 // Dependencies: []
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
@@ -8,7 +8,7 @@
 let closure_3 = importDefault(dependencyMap[0]);
 ({ PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY: closure_4, PremiumTypes: closure_5 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
-obj = obj.create(() => ({ a: 0.12841855, s: 0.008856452, d: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011104589879530045, f: -36044734960262730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }));
+obj = obj.create(() => ({ type: true, reason: true, month: true, day: true }));
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/native/PremiumPlanPurchasedStore.tsx");
 
@@ -73,7 +73,7 @@ export const reset = function reset() {
     onPaymentDismiss(obj);
   }
   arg1(dependencyMap[3]).batchUpdates(() => {
-    const obj = { g: 0.12841855, z: 0.008856452, x: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011104589879530045 };
+    const obj = { "Null": true, "Null": true, "Null": true };
     let str = null;
     if (null != closure_0) {
       str = null;

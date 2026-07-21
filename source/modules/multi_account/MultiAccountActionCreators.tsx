@@ -1,5 +1,5 @@
 // Module ID: 11445
-// Function ID: 89108
+// Function ID: 89120
 // Name: validateMultiAccountTokens
 // Dependencies: []
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens

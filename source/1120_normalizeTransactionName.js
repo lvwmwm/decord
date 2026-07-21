@@ -1,5 +1,5 @@
 // Module ID: 1120
-// Function ID: 12722
+// Function ID: 12726
 // Name: normalizeTransactionName
 // Dependencies: []
 // Exports: reactRouterV3BrowserTracingIntegration
@@ -72,7 +72,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 export const reactRouterV3BrowserTracingIntegration = function reactRouterV3BrowserTracingIntegration(instrumentNavigation) {
   let instrumentPageLoad;
   let obj = require(dependencyMap[1]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, { isArray: null, scales: null }));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, { gap: null, ao: null }));
   const require = result;
   ({ history: closure_1, routes: closure_2, match: closure_3, instrumentPageLoad } = instrumentNavigation);
   let closure_4 = undefined === instrumentPageLoad || instrumentPageLoad;

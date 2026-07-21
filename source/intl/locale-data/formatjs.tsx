@@ -1,5 +1,5 @@
 // Module ID: 3677
-// Function ID: 28013
+// Function ID: 28018
 // Name: formatjsLocales
 // Dependencies: []
 

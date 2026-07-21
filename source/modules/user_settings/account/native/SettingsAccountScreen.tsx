@@ -1,23 +1,23 @@
-// Module ID: 13499
-// Function ID: 102433
+// Module ID: 13501
+// Function ID: 102455
 // Name: PasswordlessUpsell
 // Dependencies: []
 
-// Module 13499 (PasswordlessUpsell)
+// Module 13501 (PasswordlessUpsell)
 function PasswordlessUpsell() {
   const tmp = callback5();
   let obj = callback(dependencyMap[11]);
   const callback = obj.useNavigation();
   obj = { style: tmp.upsellPasswordless };
-  obj = { display: "<string:2020689293>", flexDirection: "<string:16777216>" };
-  const obj1 = { style: {} };
-  const obj2 = { style: { bhk: null, bic: null } };
+  obj = {};
+  const obj1 = { style: { stiffness: false, damping: false } };
+  const obj2 = { style: {} };
   const obj3 = { source: callback(dependencyMap[14]), resizeMode: "contain", style: tmp.upsellImagePasswordless };
   obj2.children = callback3(importDefault(dependencyMap[13]), obj3);
   const items = [callback3(View, obj2), ];
   const obj4 = { style: { flex: 1 } };
   const obj5 = { style: {} };
-  const obj6 = {};
+  const obj6 = { hasMaxConnections: "win", isBoostOnlySubscription: "<string:2650624>" };
   const intl = callback(dependencyMap[16]).intl;
   obj6.children = intl.string(callback(dependencyMap[16]).t.+Svv46);
   const items1 = [callback3(callback(dependencyMap[15]).Heading, obj6), , ];
@@ -124,7 +124,7 @@ const WebAuthnScreens = arg1(dependencyMap[7]).WebAuthnScreens;
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[8]));
 let obj1 = arg1(dependencyMap[9]);
 let obj = {};
-obj = { mediaType: true, includeBase64: true, disableNewIOSPicker: true, borderColor: importDefault(dependencyMap[10]).colors.REDESIGN_INPUT_CONTROL_SELECTED, borderRadius: importDefault(dependencyMap[10]).radii.lg };
+obj = { 2013265920: true, 2080374784: true, -2080374784: true, borderColor: importDefault(dependencyMap[10]).colors.REDESIGN_INPUT_CONTROL_SELECTED, borderRadius: importDefault(dependencyMap[10]).radii.lg };
 obj.upsellPasswordless = obj;
 obj.upsellImagePasswordless = {};
 obj1 = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_16 };

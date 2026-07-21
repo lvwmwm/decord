@@ -76,7 +76,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = { EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: 570425343, canManageWebhooks: 35190849, canManageGuild: 666194432, markPotentialBadState: 672213460 };
+let closure_9 = { isArray: false, fileFinishedImporting: false, string: false, y: false };
 
 export default (arg0) => {
   class AnimatedColor {

@@ -1,7 +1,7 @@
 // Module ID: 1555
-// Function ID: 17591
+// Function ID: 17596
 // Name: KeyboardTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1555 (KeyboardTypes)
 const _module = require(dependencyMap[0]);

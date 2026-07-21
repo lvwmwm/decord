@@ -1,15 +1,15 @@
-// Module ID: 12823
-// Function ID: 98132
+// Module ID: 12825
+// Function ID: 98154
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeBunny
 
-// Module 12823 (items)
+// Module 12825 (items)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = [null, null];
 let closure_6 = [true, true];
-const items = [{}, {}];
+const items = [{ "Null": "r", "Null": "NATIVE_REQUIRED_ASSETS_ICONS" }, { "Null": "Array", "Null": "isArray" }];
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeBunny.tsx");
 
@@ -22,7 +22,7 @@ export const GuildBadgeBunny = function GuildBadgeBunny(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { TOTAL_PREMIUM_GROUP_USERS: "spring", SUBMIT_UNAUTHENTICATED_REPORT_MENU: "linear", badge_text: "easeInEaseOut" };
+  let obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
   const memo = React.useMemo(() => "badge-bunny-clip-" + callback(closure_1[2]).v4(), []);
@@ -36,11 +36,11 @@ export const GuildBadgeBunny = function GuildBadgeBunny(primaryTintColor) {
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { clipPath: "url(#" + memo + ")" };
-  const items = [callback(arg1(dependencyMap[4]).Path, { d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z", fill: primaryColorsTransformed[1] }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": "M9 12V15H11V12H9Z", "Bool(false)": "#FF7FC0" }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": "M10 1.00002H9V2.00002H10V1.00002Z", "Bool(false)": "#FF7FC0" }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": "r", "Bool(false)": "isArray" }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { d: "M2 14H1V13H2V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, { d: "M15 14H14V13H15V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { "Bool(false)": null, "Bool(false)": null }), callback(arg1(dependencyMap[4]).Path, { d: "M14 14H12V15H14V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, { d: "M4 14H2V15H4V14Z", fill: primaryColorsTransformed[0] })];
+  const items = [callback(arg1(dependencyMap[4]).Path, { d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z", fill: primaryColorsTransformed[1] }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { d: "M2 14H1V13H2V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, { d: "M15 14H14V13H15V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, {}), callback(arg1(dependencyMap[4]).Path, { d: "M14 14H12V15H14V14Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[4]).Path, { d: "M4 14H2V15H4V14Z", fill: primaryColorsTransformed[0] })];
   obj1.children = items;
   const items1 = [callback2(arg1(dependencyMap[4]).G, obj1), ];
   const obj7 = {};
-  const obj8 = { id: memo, children: callback(arg1(dependencyMap[4]).Rect, {}) };
+  const obj8 = { id: memo, children: callback(arg1(dependencyMap[4]).Rect, { fillRule: "shapes", transform: "Array", type: "isArray" }) };
   obj7.children = callback(arg1(dependencyMap[4]).ClipPath, obj8);
   items1[1] = callback(arg1(dependencyMap[4]).Defs, obj7);
   obj["children"] = items1;

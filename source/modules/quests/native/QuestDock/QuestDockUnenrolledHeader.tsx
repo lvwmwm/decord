@@ -1,9 +1,9 @@
-// Module ID: 13957
-// Function ID: 106089
+// Module ID: 13960
+// Function ID: 106121
 // Name: questDockHeaderLayoutAnimation
 // Dependencies: []
 
-// Module 13957 (questDockHeaderLayoutAnimation)
+// Module 13960 (questDockHeaderLayoutAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ AccessibilityInfo: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -14,7 +14,7 @@ const ThemeTypes = arg1(dependencyMap[5]).ThemeTypes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let obj = { questDockHeader: { height: tmp3.QUEST_DOCK_COLLAPSED_HEIGHT }, wreathImage: { PREMIUM_TENURE_72_MONTH: "<string:1077782>", FILES_OR_LINKS_NUM_COLUMNS: "<string:786432>", remoteVideoSsrcs: "<string:1091633152>" }, questDockHeaderPrimary: {}, logo: { marginTop: 2 }, questDockHeaderSecondary: { marginRight: -536870861, columnGap: -299892737 }, questDockHeaderContentCollapsed: {}, questDockHeaderContentExpanded: {}, questDockHeaderActionDisclosures: { "Null": "Array", "Null": "isArray", "Null": "hasDiversityParent", "Null": "it" }, questDockHeaderActionDisclosuresIcon: { <string:1632221346>: "Array", <string:2722977214>: "isPrivate" } };
+let obj = { questDockHeader: { height: tmp3.QUEST_DOCK_COLLAPSED_HEIGHT }, wreathImage: { "Bool(false)": "png", "Bool(false)": 99, "Bool(false)": "absolute" }, questDockHeaderPrimary: {}, logo: { marginTop: 2 }, questDockHeaderSecondary: { isArray: -536870861, diversity: -299892737 }, questDockHeaderContentCollapsed: {}, questDockHeaderContentExpanded: {}, questDockHeaderActionDisclosures: {}, questDockHeaderActionDisclosuresIcon: { y: false, isArray: false } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.questDockHeaderActionSeparator = obj;
 obj.questDockHeaderTertiaryContent = { opacity: 0.7 };
@@ -276,7 +276,7 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledHeader() {
     obj7.resizeMode = "contain";
     obj7.style = tmp19.wreathImage;
     const items3 = [callback2(importDefault(dependencyMap[26]), obj7), ];
-    const obj8 = { <string:1565653857>: false, <string:2698404513>: false, <string:1365398370>: false, assetUrl: questGameLogotypeAssetUrl, style: tmp19.logo };
+    const obj8 = { assetUrl: questGameLogotypeAssetUrl, style: tmp19.logo };
     items3[1] = callback2(importDefault(dependencyMap[29]), obj8);
     obj6.children = items3;
     items2[1] = callback3(closure_6, obj6);

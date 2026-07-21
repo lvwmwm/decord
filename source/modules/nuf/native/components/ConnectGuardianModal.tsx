@@ -1,10 +1,10 @@
-// Module ID: 16006
-// Function ID: 122816
+// Module ID: 16010
+// Function ID: 122860
 // Name: ConnectGuardianModal
 // Dependencies: []
 // Exports: default
 
-// Module 16006 (ConnectGuardianModal)
+// Module 16010 (ConnectGuardianModal)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -68,11 +68,11 @@ export default function ConnectGuardianModal(route) {
   } else {
     obj = { style: tmp.container };
     const obj1 = { style: tmp.header };
-    const obj2 = { "Null": 24, "Null": 24, "Null": null, style: tmp.title };
+    const obj2 = { style: tmp.title };
     const intl = arg1(closure_2[12]).intl;
     obj2.children = intl.string(importDefault(closure_2[13]).ITlV6p);
     const items2 = [callback(arg1(closure_2[11]).Text, obj2), ];
-    const obj3 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.description };
+    const obj3 = { style: tmp.description };
     const intl2 = arg1(closure_2[12]).intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
     obj3.children = intl2.format(importDefault(closure_2[13]).F4GT2S, obj4);
@@ -80,7 +80,7 @@ export default function ConnectGuardianModal(route) {
     obj1.children = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj5 = { style: tmp.cardSection };
-    const obj6 = { style: tmp.scanPrompt };
+    const obj6 = { delete: "contain", dispatch: 8, raw: 4, style: tmp.scanPrompt };
     const intl3 = arg1(closure_2[12]).intl;
     obj6.children = intl3.string(importDefault(closure_2[13]).Mi60fm);
     const items4 = [callback(arg1(closure_2[11]).Text, obj6), ];
@@ -96,7 +96,7 @@ export default function ConnectGuardianModal(route) {
     const obj10 = { paddingBottom: importDefault(closure_2[7])().bottom + importDefault(closure_2[6]).space.PX_16 };
     items5[1] = obj10;
     obj9.style = items5;
-    const obj11 = {};
+    const obj11 = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Bool(true)": null };
     const intl4 = arg1(closure_2[12]).intl;
     obj11.text = intl4.string(arg1(closure_2[12]).t.3PatSz);
     obj11.onPress = function onPress() {

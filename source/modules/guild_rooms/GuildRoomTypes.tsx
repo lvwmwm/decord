@@ -1,9 +1,9 @@
-// Module ID: 12566
-// Function ID: 96692
+// Module ID: 12568
+// Function ID: 96714
 // Name: GuildRoomObjectTypes
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 12566 (GuildRoomObjectTypes)
+// Module 12568 (GuildRoomObjectTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_rooms/GuildRoomTypes.tsx");
 

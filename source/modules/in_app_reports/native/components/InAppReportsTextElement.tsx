@@ -1,10 +1,10 @@
-// Module ID: 7612
-// Function ID: 61001
+// Module ID: 7613
+// Function ID: 61013
 // Name: TextElement
 // Dependencies: []
 // Exports: default
 
-// Module 7612 (TextElement)
+// Module 7613 (TextElement)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ export default function TextElement(element) {
       obj = { style: tmp.container };
       let tmp6 = null != header;
       if (tmp6) {
-        obj = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window", style: tmp.header, children: header };
+        obj = { style: tmp.header, children: header };
         tmp6 = callback(arg1(dependencyMap[5]).Text, obj);
       }
       const items = [tmp6, ];

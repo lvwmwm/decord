@@ -1,14 +1,14 @@
-// Module ID: 8261
-// Function ID: 65182
+// Module ID: 8262
+// Function ID: 65195
 // Name: set
 // Dependencies: [1348, 653, 621]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId
 
-// Module 8261 (set)
-import keys from "keys";
+// Module 8262 (set)
+import module_621 from "module_621";
 
 const set = new Set(Object.values(require("_isNativeReflectConstruct").LEGACY_BADGE_ID_MAP));
-const result = keys.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
+const result = module_621.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
 
 export const legacyBadgeIdToBadgeId = function legacyBadgeIdToBadgeId(arg0) {
   return require(dependencyMap[0]).LEGACY_BADGE_ID_MAP[arg0];

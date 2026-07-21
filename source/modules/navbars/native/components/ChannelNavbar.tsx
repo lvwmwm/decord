@@ -1,5 +1,5 @@
 // Module ID: 11794
-// Function ID: 91527
+// Function ID: 91539
 // Name: ChannelTitleContent
 // Dependencies: []
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
@@ -108,25 +108,25 @@ const StaticChannelRoute = arg1(dependencyMap[10]).StaticChannelRoute;
 const tmp3 = arg1(dependencyMap[11]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
 let obj1 = arg1(dependencyMap[13]);
-let obj = { navbarTitleContainer: { position: "r", left: "application_user_id", bottom: "content", zIndex: "isArray" } };
+let obj = { navbarTitleContainer: { useIsVerifiedAdult: "r", createTimeToFullDisplay: "MediaViewerDimensionsProvider", isBLEND: "content", page_session_id: "isArray" } };
 obj = {};
 const tmp4 = arg1(dependencyMap[12]);
 const merged = Object.assign(importDefault(dependencyMap[14])(tmp2.Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[15]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 obj["flexShrink"] = 1;
 obj.navbarTitlePrimaryText = obj;
-obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": null, color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
+obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj.navbarTitleSecondaryText = obj1;
 obj.channelIcon = {};
 const importDefaultResult = importDefault(dependencyMap[14]);
 obj.channelIconColor = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
-const obj3 = { iconPosition: true, style: true, horizontal: true, showsHorizontalScrollIndicator: true, style: true, tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
-obj.homeIcon = obj3;
+const obj2 = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
+obj.homeIcon = { tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj.premiumIcon = { marginRight: 4 };
-obj.status = {};
-obj.channelTextContainer = {};
+obj.status = { "Null": null, "Null": null };
+obj.channelTextContainer = { SDK_VERSION: null, numberOfLines: null };
 obj.channelNameContainer = { flexGrow: 1 };
 obj.channelName = { textAlign: "left" };
-obj.flexRow = {};
+obj.flexRow = { "Null": 7, "Null": 370 };
 let closure_18 = obj1.createStyles(obj);
 function ChannelTitleWrapper(arg0) {
   let children;
@@ -154,7 +154,7 @@ function ChannelTitleWrapper(arg0) {
   }
   return tmp5;
 }
-const obj2 = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
+const obj3 = { tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 const memoResult = importAllResult.memo((threadDraft) => {
   let channelId;
   let onPressTitle;

@@ -1,14 +1,15 @@
-// Module ID: 14621
-// Function ID: 110263
+// Module ID: 14624
+// Function ID: 110295
 // Name: useAuthFlowBackHandler
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14621 (useAuthFlowBackHandler)
-import __exportStarResult1 from "__exportStarResult1";
-import { RegistrationTransitionActionTypes as closure_3 } from "__exportStarResult1";
+// Module 14624 (useAuthFlowBackHandler)
+import closure_2 from "result";
+import { RegistrationTransitionActionTypes as closure_3 } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/auth/native/components/utils/useAuthFlowBackHandler.tsx");
+result = result.fileFinishedImporting("modules/auth/native/components/utils/useAuthFlowBackHandler.tsx");
 
 export default function useAuthFlowBackHandler(arg0) {
   const arg1 = arg0;

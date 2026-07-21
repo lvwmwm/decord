@@ -1,9 +1,9 @@
-// Module ID: 4740
-// Function ID: 41135
+// Module ID: 4739
+// Function ID: 41142
 // Name: DiscordImagePng
 // Dependencies: []
 
-// Module 4740 (DiscordImagePng)
+// Module 4739 (DiscordImagePng)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -59,7 +59,7 @@ const tmp2 = () => {
   const obj1 = { key: "hasSrgbIccProfile" };
   let closure_0 = callback(async function() {
     let tmp2;
-    const tmp = yield callback(closure_2[4]).load(this.originalBuffer, {});
+    const tmp = yield callback(closure_2[4]).load(this.originalBuffer, { onCompleteFirstLayout: "Small", onMessageAccessibilityAction: "sm", onMediaPlayFinishedAnalytics: "Placeholder" });
     if (null == tmp.icc) {
       return true;
     } else {

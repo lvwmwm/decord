@@ -1,5 +1,5 @@
 // Module ID: 9999
-// Function ID: 77291
+// Function ID: 77302
 // Name: UserProfileSection
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { titleContainer: {}, title: { flexDirection: "row" }, section: {} };
+obj = { titleContainer: { 0: false, 9223372036854775807: false, -9223372036854775808: false }, title: { flexDirection: "row" }, section: {} };
 obj = { borderWidth: 1, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.contentContainer = obj;
 let closure_5 = obj.createStyles(obj);
@@ -23,7 +23,7 @@ export default function UserProfileSection(title) {
   let style;
   let trailingIcon;
   title = title.title;
-  let obj = { -9223372036854775808: true, 9223372036854775807: true, 0: true, 0: true, 0: true, 9223372036854775807: true };
+  let obj = { nm: true, T: true, ip: true, items: true, body: true, style: true };
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
   Object.setPrototypeOf(null);
   const merged = Object.assign(title, obj);
@@ -49,7 +49,7 @@ export default function UserProfileSection(title) {
     if (null != title) {
       obj1 = { style: tmp3.titleContainer };
       obj2 = { style: tmp3.title };
-      const obj3 = { useEffect: -4793965641866621000000000000000, top: 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376844, children: title };
+      const obj3 = { children: title };
       const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), headerIcon];
       obj2.children = items1;
       const items2 = [callback2(View, obj2), trailingIcon];

@@ -1,5 +1,5 @@
 // Module ID: 1037
-// Function ID: 11167
+// Function ID: 11171
 // Name: _sendStandaloneLcpSpan
 // Dependencies: []
 // Exports: trackLcpAsStandaloneSpan

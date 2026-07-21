@@ -1,5 +1,5 @@
 // Module ID: 11605
-// Function ID: 90161
+// Function ID: 90173
 // Name: BoostTier1Icon
 // Dependencies: []
 // Exports: BoostTier1Icon

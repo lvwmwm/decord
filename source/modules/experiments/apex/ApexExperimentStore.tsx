@@ -1,5 +1,5 @@
 // Module ID: 1188
-// Function ID: 13541
+// Function ID: 13545
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -119,7 +119,7 @@ let tmp3 = (importDefaultResult) => {
           if (variantId !== self.lastEmittedDebugVariantId) {
             self.lastEmittedDebugVariantId = variantId;
             let obj = callback(closure_2[10]);
-            obj = { "Bool(false)": "<string:1747386369>", "Bool(false)": "<string:3595632642>", "Bool(false)": "<string:974668034>", apex_debug_variant: variantId };
+            obj = { apex_debug_variant: variantId };
             obj.track(constants.EXPERIMENT_APEX_DEBUGGING_EVENT, obj);
           }
         }

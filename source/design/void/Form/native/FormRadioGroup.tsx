@@ -1,10 +1,10 @@
-// Module ID: 7515
-// Function ID: 60181
+// Module ID: 7516
+// Function ID: 60193
 // Name: FormRadioGroup
 // Dependencies: []
 // Exports: default
 
-// Module 7515 (FormRadioGroup)
+// Module 7516 (FormRadioGroup)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -20,7 +20,7 @@ export default function FormRadioGroup(arg0) {
   let title;
   let value;
   ({ title, children, hint } = arg0);
-  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  let obj = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "99274532ad7fe616c031212e677b32e8", width: "ThreadLockIcon" };
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

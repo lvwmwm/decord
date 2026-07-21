@@ -1,5 +1,5 @@
 // Module ID: 1670
-// Function ID: 18546
+// Function ID: 18551
 // Name: addPxToTransform
 // Dependencies: []
 // Exports: TransitionGenerator, createAnimationWithInitialValues, createCustomKeyFrameAnimation
@@ -56,7 +56,7 @@ export const createCustomKeyFrameAnimation = function createCustomKeyFrameAnimat
       tmp2.transform = closure_7(tmp2.transform);
     }
   }
-  const obj = { 9223372036854775807: "form__input", 0: null, 0: "name", style: definitions, name: generateNextCustomKeyframeName() };
+  const obj = { style: definitions, name: generateNextCustomKeyframeName() };
   const keys = Object.keys(definitions);
   for (let num = 1; num < keys.length; num = num + 1) {
     let tmp5 = definitions[keys[num]];

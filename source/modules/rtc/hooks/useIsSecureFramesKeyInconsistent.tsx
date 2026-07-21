@@ -1,5 +1,5 @@
 // Module ID: 8900
-// Function ID: 70244
+// Function ID: 70255
 // Name: useIsSecureFramesKeyInconsistent
 // Dependencies: [57, 31, 27, 4198, 1849, 8891]
 // Exports: useAlertIfSecureFramesKeyInconsistent
@@ -7,14 +7,14 @@
 // Module 8900 (useIsSecureFramesKeyInconsistent)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
-import keys from "keys";
+import getActivityIndicator from "get ActivityIndicator";
 import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
 
 function useIsSecureFramesKeyInconsistent(userId) {
   const arg1 = userId.userId;
-  const items = [module_31, keys];
+  const items = [module_31, getActivityIndicator];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [module_31, keys];
+    const items = [module_31, getActivityIndicator];
     return userId(closure_1[4]).getIsSecureFramesKeyInconsistent(userId, items);
   });
 }
@@ -31,7 +31,7 @@ export const useAlertIfSecureFramesKeyInconsistent = function useAlertIfSecureFr
   const onAlertOpen = channelId.onAlertOpen;
   let module_31 = onAlertOpen;
   const tmp = useIsSecureFramesKeyInconsistent({ userId });
-  let keys = tmp;
+  let getActivityIndicator = tmp;
   const useIsSecureFramesKeyInconsistent = React.useRef(null);
   const items = [channelId, tmp, nickname, onAlertOpen, userId];
   const effect = React.useEffect(() => {

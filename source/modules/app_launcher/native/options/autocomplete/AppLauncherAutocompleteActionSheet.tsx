@@ -1,5 +1,5 @@
 // Module ID: 11283
-// Function ID: 87795
+// Function ID: 87807
 // Name: Item
 // Dependencies: []
 // Exports: default
@@ -58,7 +58,7 @@ function Item(arg0) {
     obj = { children: children.choice.displayName };
     return callback2(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["GUILD_CREATION_INTENT_SELECTED", label.label, "\""];
+    const items = [true, label.label, "\""];
     return callback2(ListItem, {
       label: callback3(label(closure_2[20]).Text, { children: items }),
       onPress() {
@@ -84,7 +84,7 @@ function Item(arg0) {
     obj = { children: children.choice.displayName };
     return callback2(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["GUILD_CREATION_INTENT_SELECTED", label.label, "\""];
+    const items = [true, label.label, "\""];
     return callback2(ListItem, {
       label: callback3(label(closure_2[20]).Text, { children: items }),
       onPress() {
@@ -120,9 +120,9 @@ let closure_7 = importDefault(dependencyMap[4]);
 arg1(dependencyMap[5]).AutoCompleteResultTypes;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]).debounce(importDefault(dependencyMap[9]), arg1(dependencyMap[6]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { flex: null, marginRight: null });
+let closure_11 = importDefault(dependencyMap[8]).debounce(importDefault(dependencyMap[9]), arg1(dependencyMap[6]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { -809188780: null, 163101889: null });
 const importDefaultResult = importDefault(dependencyMap[8]);
-let obj = { commandChoiceLoadingContainer: { markAsSpoilerTitle: null, keyboardAppearance: null } };
+let obj = { commandChoiceLoadingContainer: { "Bool(true)": "values", "Bool(true)": "Array" } };
 obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[11]).radii.lg, alignSelf: "flex-start" };
 obj.commandChoiceLoadingItem = obj;
 obj.emptyState = { backgroundColor: "transparent" };
@@ -202,7 +202,7 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
     callback(obj);
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ "Null": 1715544575, "Null": 1409286699 });
     }
   }, items3);
   const items4 = [onChoiceSelect, memo];

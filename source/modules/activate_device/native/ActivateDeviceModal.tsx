@@ -1,10 +1,10 @@
-// Module ID: 12758
-// Function ID: 97815
+// Module ID: 12760
+// Function ID: 97837
 // Name: ActivateDeviceModal
 // Dependencies: []
 // Exports: default
 
-// Module 12758 (ActivateDeviceModal)
+// Module 12760 (ActivateDeviceModal)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = { ACTIVATE_DEVICE: "activate-device" };

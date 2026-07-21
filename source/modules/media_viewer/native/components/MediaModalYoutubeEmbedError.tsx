@@ -1,5 +1,5 @@
 // Module ID: 12129
-// Function ID: 93423
+// Function ID: 93435
 // Dependencies: []
 
 // Module 12129
@@ -8,7 +8,7 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: importDefault(dependencyMap[4]).space.PX_32 };
+obj = { 156462689: false, 17206278: false, -1226153415: false, -1806412188: false, -1594137162: false, backgroundColor: importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: importDefault(dependencyMap[4]).space.PX_32 };
 obj.container = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_16 };
 obj.text = obj1;
@@ -19,7 +19,7 @@ const memoResult = importAllResult.memo(function MediaModalYoutubeEmbedError(vid
   const tmp = callback3();
   let obj = { style: tmp.container };
   const items = [callback(arg1(dependencyMap[5]).StreamFailed, { resizeMode: "contain" }), , ];
-  obj = { "Null": false, "Null": false, "Null": false, style: tmp.text };
+  obj = { delete: null, dispatch: null, raw: null, style: tmp.text };
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.u7vKPs);
   items[1] = callback(arg1(dependencyMap[6]).Text, obj);

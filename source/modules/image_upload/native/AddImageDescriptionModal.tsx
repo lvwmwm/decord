@@ -1,5 +1,5 @@
 // Module ID: 9821
-// Function ID: 76169
+// Function ID: 76180
 // Name: AddDescription
 // Dependencies: []
 // Exports: default
@@ -116,7 +116,7 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.contentContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.imageContainer = { alignItems: "center", borderRadius: importDefault(dependencyMap[7]).radii.sm };
-const obj2 = { <string:2700863331>: "OPT_OUT_PRICE_INCREASE", <string:4217621604>: "isArray", height: undefined, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { width: 9, paddingHorizontal: "sh", height: undefined, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.image = obj2;
 const obj1 = { alignItems: "center", borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.placeholderText = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };

@@ -1,7 +1,7 @@
 // Module ID: 10917
-// Function ID: 84883
+// Function ID: 84894
 // Name: useInGameQuestConnectState
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: useInGameQuestConnectState
 
 // Module 10917 (useInGameQuestConnectState)

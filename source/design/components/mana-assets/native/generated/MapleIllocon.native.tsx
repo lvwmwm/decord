@@ -1,5 +1,5 @@
 // Module ID: 6287
-// Function ID: 50344
+// Function ID: 50352
 // Name: MapleIllocon
 // Dependencies: []
 // Exports: MapleIllocon

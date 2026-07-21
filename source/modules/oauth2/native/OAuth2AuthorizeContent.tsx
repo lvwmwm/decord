@@ -1,5 +1,5 @@
 // Module ID: 9989
-// Function ID: 77220
+// Function ID: 77231
 // Name: isNearBottom
 // Dependencies: []
 // Exports: default
@@ -20,15 +20,15 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { fill: { flex: 1 } };
-obj = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.scrollView = obj;
-obj.scrollViewContentLandscape = { -9223372036854775808: "none", 9223372036854775807: "absolute", 9223372036854775807: null, -9223372036854775808: true, -9223372036854775808: true };
-obj.scrollViewContentPortrait = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000466726142652036, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002445585643256, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016296927674613, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027813423229544 };
+obj.scrollViewContentLandscape = { grow: null, width: null, height: true, borderRadius: null, overflow: "" };
+obj.scrollViewContentPortrait = { "Null": "<string:17552193>", "Null": "<string:493961472>", "Null": "<string:72417282>", "Null": "<string:1283408144>" };
 obj.header = { paddingTop: 24 };
-obj.bodyContainer = { start: null, length: null, body: null };
+obj.bodyContainer = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.footerPortrait = { <string:665584387>: null, <string:1674034581>: null, <string:2443246435>: null };
+obj.footerPortrait = {};
 const obj1 = { marginHorizontal: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.separator = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 let closure_9 = obj.createStyles(obj);

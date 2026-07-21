@@ -1,10 +1,10 @@
-// Module ID: 15679
-// Function ID: 119776
+// Module ID: 15682
+// Function ID: 119815
 // Name: getConsoleInfo
 // Dependencies: []
 // Exports: default
 
-// Module 15679 (getConsoleInfo)
+// Module 15682 (getConsoleInfo)
 function getConsoleInfo(type) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {

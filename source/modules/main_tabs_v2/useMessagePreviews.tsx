@@ -1,10 +1,10 @@
-// Module ID: 14082
-// Function ID: 106892
+// Module ID: 14085
+// Function ID: 106924
 // Name: useMessagePreviewSetting
 // Dependencies: []
 // Exports: default
 
-// Module 14082 (useMessagePreviewSetting)
+// Module 14085 (useMessagePreviewSetting)
 function useMessagePreviewSetting(guild_id) {
   const arg1 = guild_id;
   const items = [closure_3];

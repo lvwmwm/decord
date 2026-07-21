@@ -1,5 +1,5 @@
 // Module ID: 11456
-// Function ID: 89245
+// Function ID: 89257
 // Name: useRequiredLinkedLobbyApplicationAuthorization
 // Dependencies: []
 // Exports: default

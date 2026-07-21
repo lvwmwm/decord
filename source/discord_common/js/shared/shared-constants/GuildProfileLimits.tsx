@@ -1,9 +1,9 @@
-// Module ID: 5398
-// Function ID: 46040
+// Module ID: 5397
+// Function ID: 46047
 // Name: MAX_TRAITS
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 5398 (MAX_TRAITS)
+// Module 5397 (MAX_TRAITS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileLimits.tsx");
 

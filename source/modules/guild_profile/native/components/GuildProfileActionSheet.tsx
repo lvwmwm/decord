@@ -1,5 +1,5 @@
 // Module ID: 8570
-// Function ID: 68082
+// Function ID: 68093
 // Name: GuildProfileActionSheet
 // Dependencies: []
 // Exports: default
@@ -16,7 +16,7 @@ const VerticalGradient = arg1(dependencyMap[6]).VerticalGradient;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { loadingContainer: { paddingTop: 40 }, footerContainer: {} };
+obj = { loadingContainer: { paddingTop: 40 }, footerContainer: { MKTG_HYPESQUAD_FORM_SUBMITTED: true, marginInlineEnd: true } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.scrollView = obj;
 let closure_14 = obj.createStyles(obj);
@@ -193,7 +193,7 @@ export default function GuildProfileActionSheet(guildId) {
       return items;
     }, items6);
     obj5 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, ref: bottomSheetRef, startHeight };
-    obj6 = { start: VerticalGradient.START, end: { max: false, guildId: false }, style: tmp.footerContainer, colors: memo };
+    obj6 = { start: VerticalGradient.START, end: {}, style: tmp.footerContainer, colors: memo };
     let tmp38;
     if (enabled) {
       tmp38 = handleFooterLayout;
@@ -290,6 +290,6 @@ export default function GuildProfileActionSheet(guildId) {
     }, items3);
     return { startHeight, handleContentLayout, handleFooterLayout };
   }(obj);
-  tmp20 = callback(closure_5, { style: tmp.loadingContainer, children: callback(closure_6, {}) });
+  tmp20 = callback(closure_5, { style: tmp.loadingContainer, children: callback(closure_6, { font: 397, dx: 97 }) });
   tmp19 = null;
 };

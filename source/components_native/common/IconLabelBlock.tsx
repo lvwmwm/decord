@@ -1,9 +1,9 @@
-// Module ID: 15407
-// Function ID: 117553
+// Module ID: 15410
+// Function ID: 117592
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15407 (_isNativeReflectConstruct)
+// Module 15410 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -25,12 +25,12 @@ const importAllResult = importAll(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { wrapper: { gestureId: "ldpi", handlerTag: "mdpi", shouldCancelWhenOutside: "hdpi" } };
-obj = { 0: null, -9223372036854775808: null, 9223372036854775807: null, 0: null, color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
+obj = { wrapper: { "Null": "<string:815617>", "Null": "<string:3932160>", "Null": "<string:1627455488>" } };
+obj = { color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
 obj.error = obj;
-const tmp4 = arg1(dependencyMap[8]);
-obj.label = { color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
-obj.iconUploaderWrapper = { "Null": 0, "Null": "100%" };
+const obj1 = { "Bool(false)": null, "Bool(false)": "\u{1F595}", color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
+obj.label = obj1;
+obj.iconUploaderWrapper = { 663976015: "handleHeaderLayout", 664037462: "gay-Latn-ID" };
 obj.text = { marginTop: 9 };
 let closure_14 = obj.createLegacyClassComponentStyles(obj);
 const tmp5 = (PureComponent) => {
@@ -78,7 +78,7 @@ const tmp5 = (PureComponent) => {
       const text = this.props.text;
       let tmp4 = null;
       if (null != text) {
-        const obj = {};
+        const obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/images/native/icons/voice_calls/dark_theme" };
         const items = [tmp.text, tmp2];
         obj.style = items;
         obj.accessibilityRole = tmp3;
@@ -150,7 +150,7 @@ const tmp5 = (PureComponent) => {
   return callback(IconLabelBlock, items);
 }(importAllResult.PureComponent);
 tmp5.contextType = arg1(dependencyMap[15]).ThemeContext;
-const obj1 = { color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
+const tmp4 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
 
 export default tmp5;

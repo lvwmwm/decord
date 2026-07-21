@@ -1,10 +1,10 @@
-// Module ID: 7063
-// Function ID: 56456
+// Module ID: 7064
+// Function ID: 56468
 // Name: FadeOutLottieAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 7063 (FadeOutLottieAnimation)
+// Module 7064 (FadeOutLottieAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

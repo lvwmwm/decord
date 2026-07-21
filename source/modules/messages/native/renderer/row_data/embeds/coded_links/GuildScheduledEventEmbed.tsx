@@ -1,5 +1,5 @@
 // Module ID: 12170
-// Function ID: 93586
+// Function ID: 93598
 // Name: createGuildScheduledEventEmbed
 // Dependencies: []
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed

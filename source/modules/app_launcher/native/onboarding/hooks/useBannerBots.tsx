@@ -1,5 +1,5 @@
 // Module ID: 11175
-// Function ID: 86874
+// Function ID: 86886
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useBannerBots
@@ -94,7 +94,9 @@ export const useBannerBots = function useBannerBots(context) {
   context = context.context;
   let arg1;
   let obj = function useAppsMap(context) {
-    const apps = first1(closure_1[5]).useApplicationsInContext({ context: context.context }).apps;
+    let obj = first1(closure_1[5]);
+    obj = { 2018655073: "y", 1636040136: "isArray", 91574711: "Reflect", -1185715871: "container", -1814212491: "s", context: context.context };
+    const apps = obj.useApplicationsInContext(obj).apps;
     const first1 = apps;
     const items = [apps];
     return React.useMemo(() => {
@@ -114,9 +116,10 @@ export const useBannerBots = function useBannerBots(context) {
       return map;
     }, items);
   }({ context });
-  const apps = arg1(dependencyMap[5]).useApplicationsInContext({ context }).apps;
-  const obj2 = arg1(dependencyMap[5]);
-  const obj3 = function useCommandsMap(context) {
+  let obj1 = arg1(dependencyMap[5]);
+  obj = { 2018655073: "y", 1636040136: "isArray", 91574711: "Reflect", -1185715871: "container", -1814212491: "s", context };
+  const apps = obj1.useApplicationsInContext(obj).apps;
+  const obj4 = function useCommandsMap(context) {
     const commands = first1(closure_1[5]).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
     const first1 = commands;
     const items = [commands];
@@ -164,7 +167,7 @@ export const useBannerBots = function useBannerBots(context) {
   obj.guildId = guild_id;
   obj.fetchesShelf = true;
   const activityApplications = arg1(dependencyMap[6]).useActivityApplications(obj);
-  const obj4 = arg1(dependencyMap[6]);
+  const obj5 = arg1(dependencyMap[6]);
   const items = [closure_4];
   const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => recentApplicationCommandMetadata.getRecentApplicationCommandMetadata());
   let value = null;
@@ -179,7 +182,7 @@ export const useBannerBots = function useBannerBots(context) {
   let tmp9 = value;
   if (!iter.done) {
     while (true) {
-      value = obj3.get(iter2.value);
+      value = obj4.get(iter2.value);
       let tmp12 = tmp7;
       let tmp13 = tmp8;
       if (null != value) {
@@ -258,6 +261,6 @@ export const useBannerBots = function useBannerBots(context) {
       tmp22 = tmp19;
     }
   }
-  obj = { firstBotApplication: tmp22, secondBotApplication: found };
-  return obj;
+  obj1 = { firstBotApplication: tmp22, secondBotApplication: found };
+  return obj1;
 };

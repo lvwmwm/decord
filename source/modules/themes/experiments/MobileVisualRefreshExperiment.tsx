@@ -1,12 +1,11 @@
 // Module ID: 1324
-// Function ID: 15539
+// Function ID: 15544
 // Name: useIsMobileVisualRefreshExperimentEnabled
 // Dependencies: []
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
 // Module 1324 (useIsMobileVisualRefreshExperimentEnabled)
-const obj = { margin: null, paddingHorizontal: null, defaultConfig: { "Null": true, "Null": false, "Null": false }, variations: { [0]: { "Null": true, "Null": false, "Null": false }, [1]: { "Null": true, "Null": true, "Null": true }, [2]: { "Null": true, "Null": true, "Null": true }, [3]: { "Null": true, "Null": true, "Null": true }, [4]: {} } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
+const tmp2 = importDefault(dependencyMap[0])({ defaultConfig: { height: "#ffa813", flex: "absolute", padding: null }, variations: { [0]: { height: "#ffa813", flex: "absolute", padding: null }, [1]: { height: true, flex: true, padding: true }, [2]: { height: "sm", flex: "Placeholder", padding: "Click" }, [3]: { height: "sm", flex: "Placeholder", padding: "Click" }, [4]: { height: "Small", flex: "sm", padding: "Placeholder" } } });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");
 
 export default function useIsMobileVisualRefreshExperimentEnabled(location) {
@@ -20,5 +19,5 @@ export const isMobileVisualRefreshEnabled = function isMobileVisualRefreshEnable
   return tmp2.getConfig({ location: YouBannerDecorations }).enabled;
 };
 export const resolveRefreshToken = function resolveRefreshToken(CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, chatInputFloating) {
-  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: chatInputFloating ? ["EMAIL_VERIFICATION_MODAL_OPEN"] : [] });
+  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: [] });
 };

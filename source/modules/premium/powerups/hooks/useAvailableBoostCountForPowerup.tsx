@@ -1,5 +1,5 @@
 // Module ID: 11559
-// Function ID: 89928
+// Function ID: 89940
 // Name: useAvailableBoostCountForPowerup
 // Dependencies: []
 // Exports: default

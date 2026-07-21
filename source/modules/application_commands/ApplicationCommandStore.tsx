@@ -1,9 +1,9 @@
-// Module ID: 7016
-// Function ID: 56293
+// Module ID: 7017
+// Function ID: 56305
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7016 (_isNativeReflectConstruct)
+// Module 7017 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,7 +19,7 @@ function handleInit() {
 }
 function getOrCreateChannelState(arg0) {
   if (!(arg0 in closure_10)) {
-    const obj = { "Null": "row", "Null": "center", "Null": "space-between", "Null": 4, "Null": 8, "Null": true, "Null": "/assets/images/native", optionStates: {}, initialValues: {} };
+    const obj = { optionStates: {}, initialValues: {} };
     closure_10[arg0] = obj;
   }
   return closure_10[arg0];
@@ -75,7 +75,7 @@ function handleSetActiveCommand(channelId) {
     if (null != options) {
       const options1 = command.options;
       const item = options1.forEach((name) => {
-        obj[name.name] = { eachRight: "<string:1358954496>", isTestEnv: "<string:3460437575>", FRAG_LOAD_ERROR: "<string:3456106914>", JOIN_SERVER: "<string:1912603042>" };
+        obj[name.name] = { getApplication: "<string:1140850688>", setBarStyle: "<string:1358954496>", strokeContainer: "<string:1027775707>", getFramesFromEvent: "<string:1023410594>" };
       });
     }
     tmp.optionStates = obj;
@@ -196,7 +196,7 @@ function handleUpdateOptionStates(channelId) {
             }
           }
         } else {
-          let obj1 = { <string:2195416551>: "<string:1358954496>", <string:1684033052>: "<string:3460437575>", <string:3246022526>: "<string:3456106914>", <string:1663560017>: "<string:1912603042>", location: undefined, length: undefined };
+          let obj1 = { PanResponder: "<string:1140850688>", SharedTransitionType: "<string:1358954496>", addData: "<string:1027775707>", registerGuildVisibilityMethod: "<string:1023410594>", location: undefined, length: undefined };
           obj[tmp9] = obj1;
           tmp10 = tmp3;
           tmp11 = tmp4;

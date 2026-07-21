@@ -1,5 +1,5 @@
 // Module ID: 11080
-// Function ID: 86154
+// Function ID: 86165
 // Name: sharedClientThemeToThemeSettings
 // Dependencies: []
 // Exports: default
@@ -63,7 +63,7 @@ const PremiumTypes = arg1(dependencyMap[5]).PremiumTypes;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { contentWrapper: { width: null, marginHorizontal: null }, centeredText: { textAlign: "center" }, ctaContainer: {}, nitroWheelButton: {} };
+obj = { contentWrapper: { MKTG_HYPESQUAD_FORM_SUBMITTED: null, marginInlineEnd: null }, centeredText: { textAlign: "center" }, ctaContainer: { 1311854946: 3327, -1326658460: 160000, 1382179270: 659619840, -1399870276: 74711440 }, nitroWheelButton: { variant: 24, color: 24, accessibilityRole: null } };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.getNitroButton = obj;
 let closure_14 = obj.createStyles(obj);

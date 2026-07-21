@@ -1,5 +1,5 @@
 // Module ID: 12125
-// Function ID: 93387
+// Function ID: 93399
 // Name: rowModifierShared
 // Dependencies: []
 // Exports: default
@@ -39,7 +39,7 @@ function MeasureMessage(message) {
         modifyRow(arg0) {
           callback3(arg0, closure_3);
           if (arg0) {
-            arg0.truncation = { marginRight: "channelId", marginBottom: "channelId", ref: "channelId" };
+            arg0.truncation = { flexDirection: "channelId", marginRight: "channelId", marginBottom: "channelId" };
           }
         },
         rowGenerator: closure_16,
@@ -73,7 +73,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let importDefaultResult = importDefault(dependencyMap[10]);
 importDefaultResult = new importDefaultResult();
-let obj = { <string:4039649257>: "RBTree", <string:1470947945>: "helpdeskArticleUrl", <string:478287371>: "%ReferenceErrorPrototype%", <string:979591246>: "RBTree", <string:3092425302>: "preemptiveExpanded", <string:1635498363>: "%Math.min%", <string:51008340>: "isArrayBuffer", <string:1318218694>: "MID_STREAMING_QUALITY", <string:1549183590>: "INTERACTIONS", <string:1638984908>: "STUDENT_PROMPT", <string:2715636838>: "INTERACTIONS", <string:2715443710>: "customSendHandler", <string:1750245854>: "Uint16Array", <string:1641854320>: "RBTree", <string:2397786858>: "currentEmbeddedApplication", <string:3076589212>: "SyntaxError", <string:1565669985>: "RBTree", forcedTheme: ThemeTypes.DARK };
+let obj = { 190295266: true, 1310491158: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", 1446667104: null, 2075939498: "8321c7573efa1c0254c4a9b939ac0953", 1415674813: "ko.messages.8321c7573efa1c0254c4a9b939ac0953.compiled.messages", -654114733: "jsona", 1716400491: true, -866363734: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", -1521307412: true, 1641849646: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", -1194765590: null, -1218378100: "06ce787c33fd0c9cd370f243d3462ef5", -2041431455: "lt.messages.06ce787c33fd0c9cd370f243d3462ef5.compiled.messages", 1635499425: "jsona", 101274478: "user-code-input", 956368524: true, 1689709154: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", forcedTheme: ThemeTypes.DARK };
 importDefaultResult.setOptions(obj);
 const tmp3 = arg1(dependencyMap[9]);
 let closure_17 = arg1(dependencyMap[12]).createStyles({ dummyLayout: {} });

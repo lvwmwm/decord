@@ -1,10 +1,10 @@
-// Module ID: 6956
-// Function ID: 55584
+// Module ID: 6957
+// Function ID: 55596
 // Name: isAdSessionExpired
 // Dependencies: []
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession
 
-// Module 6956 (isAdSessionExpired)
+// Module 6957 (isAdSessionExpired)
 function isAdSessionExpired(closure_4) {
   const timestamp = Date.now();
   if (timestamp < closure_4.createdAtTimestamp) {

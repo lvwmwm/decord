@@ -1,11 +1,11 @@
 // Module ID: 3666
-// Function ID: 27984
+// Function ID: 27989
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3666 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: 423755779, 0: -1946156307 }, xSeconds: { -9223372036854775808: "1 \u5206\u9418", 0: "{{count}} \u5206\u9418" }, halfAMinute: "\u534A\u5206\u9418", lessThanXMinutes: { -9223372036854775808: 708968451, 0: -1728052280 }, xMinutes: { -9223372036854775808: 725745667, 0: -1711275064 }, xHours: { -9223372036854775808: -1740505085, 0: -1895824442 }, aboutXHours: { -9223372036854775808: -1723727869, 0: -1879047226 }, xDays: { -9223372036854775808: "\u5927\u7D04 1 \u500B\u6708", 0: "\u5927\u7D04 {{count}} \u500B\u6708" }, aboutXWeeks: { -9223372036854775808: 1061289987, 0: -318766147 }, xWeeks: { -9223372036854775808: "isArray", 0: "x" }, aboutXMonths: { -9223372036854775808: "isArray", 0: "x" }, xMonths: { -9223372036854775808: "isArray", 0: "set" }, aboutXYears: { -9223372036854775808: null, 0: null }, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": true, "Bool(false)": true }, xSeconds: { "Bool(false)": "adding", "Bool(false)": "AccountAgeTier6LargeBadge" }, halfAMinute: "\u534A\u5206\u9418", lessThanXMinutes: { "Bool(false)": 1978990595, "Bool(false)": -12451837 }, xMinutes: { "Bool(false)": 1979056131, "Bool(false)": -1522401277 }, xHours: { "Bool(false)": false, "Bool(false)": false }, aboutXHours: { "Bool(false)": false, "Bool(false)": false }, xDays: { "Bool(false)": null, "Bool(false)": null }, aboutXWeeks: { "Bool(false)": false, "Bool(false)": false }, xWeeks: { "Bool(false)": null, "Bool(false)": null }, aboutXMonths: { "Bool(false)": null, "Bool(false)": null }, xMonths: {}, aboutXYears: {}, xYears: { "Bool(false)": null, "Bool(false)": null }, overXYears: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004247010784068177, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000527719133354038 }, almostXYears: { "Bool(false)": "a", "Bool(false)": "getAnswer" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

@@ -1,5 +1,5 @@
 // Module ID: 10453
-// Function ID: 80723
+// Function ID: 80734
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useIsQuestEligibleForMembersListPopout, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem
@@ -87,7 +87,7 @@ function _arrayLikeToArray(arg0, arg1) {
 function useQuests(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { "Bool(false)": -164623554552828680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -176818055613306630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj = { 496650185: null, -2100141380: null };
   }
   const arg1 = obj;
   let importDefault;
@@ -662,12 +662,12 @@ function useTaskPlatformScreen(quest, questTaskDetails) {
       const withResult1 = match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP);
       const obj2 = { currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP };
       const withResult2 = match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE);
-      const obj3 = { <string:703202315>: "o", <string:1634610414>: "o", selectedPlatform: constants.CONSOLE };
+      const obj3 = { <string:887743427>: "o", <string:1634607342>: "o", selectedPlatform: constants.CONSOLE };
       const withResult3 = match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP);
-      const obj4 = { <string:703202315>: "o", <string:1634610414>: "o", selectedPlatform: constants.DESKTOP };
+      const obj4 = { <string:887743427>: "o", <string:1634607342>: "o", selectedPlatform: constants.DESKTOP };
       const withResult4 = match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with(obj3, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE);
       const withResult5 = match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with(obj3, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj4, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP);
-      return match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with(obj3, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj4, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ "Bool(false)": null, "Bool(false)": "\u{1F9BB}\u{1F3FF}", "Bool(false)": true }, () => {
+      return match.with(obj, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with(obj3, () => callback(closure_2[19]).TaskPlatformScreen.CONSOLE).with(obj4, () => callback(closure_2[19]).TaskPlatformScreen.DESKTOP).with({ -9223372036854775808: false, 9223372036854775807: false, 0: null }, () => {
         if (closure_4) {
           if (closure_3) {
             let SELECT = callback(closure_2[19]).TaskPlatformScreen.SELECT;
@@ -762,7 +762,7 @@ const tmp2 = arg1(dependencyMap[10]);
 const PremiumTypes = arg1(dependencyMap[12]).PremiumTypes;
 let closure_27 = -1;
 let closure_28 = {};
-let closure_29 = {};
+let closure_29 = { -9223372036854775808: true, 0: true };
 let closure_30 = { DESC: 0, [0]: "DESC", ASC: 1, [1]: "ASC" };
 let obj = { ALL: "all", CLAIMED: "claimed", PREVIEW_TOOL: "preview_tool" };
 function useQuestTaskDetails(quest) {
@@ -833,7 +833,7 @@ export const useFilteredQuests = function useFilteredQuests(ALL, importAllResult
   if (importAllResult === undefined) {
     tmp = closure_28;
   }
-  const tmp2 = useQuests({ "Bool(false)": "it-SM", "Bool(false)": "dist" });
+  const tmp2 = useQuests({});
   let quests = tmp2.quests;
   ({ excludedQuests, isFetchingCurrentQuests, hasFetched } = tmp2);
   const map = new Map(quests.map((id) => {

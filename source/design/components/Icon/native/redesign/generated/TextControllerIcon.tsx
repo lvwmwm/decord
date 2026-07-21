@@ -1,10 +1,10 @@
-// Module ID: 4634
-// Function ID: 40273
+// Module ID: 4633
+// Function ID: 40280
 // Name: TextControllerIcon
 // Dependencies: []
 // Exports: TextControllerIcon
 
-// Module 4634 (TextControllerIcon)
+// Module 4633 (TextControllerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TextControllerIcon.tsx");

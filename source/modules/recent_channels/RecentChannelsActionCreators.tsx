@@ -1,5 +1,5 @@
 // Module ID: 9972
-// Function ID: 77069
+// Function ID: 77080
 // Name: _bulkClearRecents
 // Dependencies: []
 // Exports: bulkClearRecents

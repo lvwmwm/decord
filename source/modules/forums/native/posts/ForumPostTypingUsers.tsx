@@ -1,5 +1,5 @@
 // Module ID: 11132
-// Function ID: 86605
+// Function ID: 86617
 // Name: ForumPostTypingUsers
 // Dependencies: []
 // Exports: default
@@ -9,10 +9,10 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { paddingVertical: null, paddingHorizontal: 0, gap: 360, maxWidth: 0 }, lastTypingUser: { marginEnd: 0 } };
+obj = { container: { positionBottom: null, positionRight: 0, text: 360, state: 0 }, lastTypingUser: { marginEnd: 0 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.typingUser = obj;
-const obj1 = { "Null": "e341a934511095337dabafab8c60034b", "Null": "empty_photos", "Null": "png", "Null": 54, "Null": 660, "Null": "100%", "Null": 275, "Null": "relative", "Null": "flex", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingVertical: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj1 = { 9223372036854775807: "e341a934511095337dabafab8c60034b", 9223372036854775807: "empty_photos", 9223372036854775807: "png", 0: 54, 0: 660, 9223372036854775807: "100%", 0: 275, 9223372036854775807: "relative", 0: "flex", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingVertical: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.dots = obj1;
 obj.typingText = { flexShrink: 1 };
 const tmp3 = arg1(dependencyMap[2]);

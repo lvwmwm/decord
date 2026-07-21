@@ -1,10 +1,10 @@
-// Module ID: 15042
-// Function ID: 113243
+// Module ID: 15045
+// Function ID: 113277
 // Name: renderChannelWrapper
 // Dependencies: []
 // Exports: renderChannelWrapper
 
-// Module 15042 (renderChannelWrapper)
+// Module 15045 (renderChannelWrapper)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -30,7 +30,7 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
   const scaledChannelRowHeight = obj.getScaledChannelRowHeight(fontScale.fontScale, layout, isThreadResult);
   const layoutStyles = fontScale(dependencyMap[3]).getLayoutStyles(layout, launchpad);
   obj = {};
-  const items = [{ 865632396: false, -1346350121: false, 0: false, 0: false }, , ];
+  const items = [{ -9223372036854775808: true, 0: true, 0: true, 0: true }, , ];
   obj = {};
   if (null != channel) {
     if (channel.isThread()) {

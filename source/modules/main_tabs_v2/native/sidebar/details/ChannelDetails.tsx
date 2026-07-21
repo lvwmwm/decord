@@ -1,9 +1,9 @@
-// Module ID: 15190
-// Function ID: 114593
+// Module ID: 15193
+// Function ID: 114627
 // Name: PX_8
 // Dependencies: []
 
-// Module 15190 (PX_8)
+// Module 15193 (PX_8)
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -26,7 +26,7 @@ obj1 = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: imp
 obj.information = obj1;
 const tmp5 = arg1(dependencyMap[6]);
 obj.linkedLobby = { marginTop: importDefault(dependencyMap[7]).space.PX_12, marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-obj.search = {};
+obj.search = { SDK_VERSION: null, numberOfLines: null };
 const obj2 = { marginTop: importDefault(dependencyMap[7]).space.PX_12, marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
 obj.searchLocked = { marginTop: tmp4.CHANNEL_DETAILS_TOP_MARGIN, marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
 obj.autocompleteSuggestions = { zIndex: 10 };

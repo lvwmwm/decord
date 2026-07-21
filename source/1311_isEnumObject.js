@@ -1,5 +1,5 @@
 // Module ID: 1311
-// Function ID: 15248
+// Function ID: 15253
 // Name: isEnumObject
 // Dependencies: []
 // Exports: listEnumNames, listEnumNumbers

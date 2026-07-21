@@ -1,11 +1,11 @@
-// Module ID: 12952
-// Function ID: 98568
+// Module ID: 12954
+// Function ID: 98590
 // Name: items
 // Dependencies: []
 
-// Module 12952 (items)
+// Module 12954 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = [null];
+let closure_3 = ["e"];
 const items = [{}];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {

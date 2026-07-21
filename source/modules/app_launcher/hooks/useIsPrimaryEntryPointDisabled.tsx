@@ -1,15 +1,16 @@
 // Module ID: 11255
-// Function ID: 87555
+// Function ID: 87567
 // Name: useIsPrimaryEntryPointDisabled
 // Dependencies: [0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 11255 (useIsPrimaryEntryPointDisabled)
-import __exportStarResult1 from "__exportStarResult1";
-import { Permissions } from "__exportStarResult1";
+import closure_3 from "result";
+import { Permissions } from "result";
+import result from "result";
 
 let closure_4 = importDefault(dependencyMap[1]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
+result = result.fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
 
 export default function useIsPrimaryEntryPointDisabled(arg0) {
   let activityAction;
@@ -68,7 +69,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   let stringResult;
   let flag2 = flag;
   if (activityAction !== arg1(dependencyMap[5]).ActivityAction.LEAVE) {
-    const tmp14 = application instanceof __exportStarResult1 ? application.embeddedActivityConfig : application.embedded_activity_config;
+    const tmp14 = application instanceof closure_3 ? application.embeddedActivityConfig : application.embedded_activity_config;
     importDefault(dependencyMap[7]);
     arg1(dependencyMap[8]);
     if (null != tmp14) {

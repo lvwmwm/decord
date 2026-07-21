@@ -1,20 +1,16 @@
 // Module ID: 3260
-// Function ID: 25949
+// Function ID: 25954
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3260 (formatDistance)
-let obj = { "Null": "cix", "Null": "Array", "Null": "isArray", one: { "Null": 457375745, "Null": 452985287, "Null": 452985287 } };
-obj = { "Null": "isArrayBuffer", "Null": "NewMemberActionTypes", "Null": "%Int32Array%", one: { "Null": "Array", "Null": "CREATE_GUILD_EVENT_CORE_PERMISSIONS", "Null": "%SetIteratorPrototype%" } };
-obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007294852114686083, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010469639027733765, "Null": null, one: { "Null": true, "Null": true, "Null": true } };
-const obj1 = { "Null": 1, "Null": "AM", "Null": "PM", one: { "Null": "pono\u0107", "Null": "podne", "Null": "ujutro" } };
-const obj2 = { "Null": false, "Null": false, "Null": false, one: {} };
-const obj3 = { "Null": null, "Null": null, "Null": null, one: {} };
-const obj4 = { "Null": null, "Null": null, "Null": null, one: {} };
-const obj5 = { "Null": " m\u00E1sodperccel ezel\u0151tt", "Null": " m\u00E1sodperc m\u00FAlva", "Null": " m\u00E1sodperce", one: { "Null": "isArray", "Null": "WireType", "Null": "memo" } };
-const obj6 = { "Null": "a", "Null": "controller", "Null": "Label", one: {} };
-let closure_0 = { lessThanXSeconds: obj, xSeconds: { one: {} }, halfAMinute: "pola minute", lessThanXMinutes: obj, xMinutes: { one: { "Null": false, "Null": false, "Null": false } }, aboutXHours: { one: {} }, xHours: { one: { "Null": -125411636021298050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 598135891501056.3, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001435190634207667 } }, xDays: obj, aboutXWeeks: obj1, xWeeks: obj2, aboutXMonths: obj3, xMonths: { one: { "Null": null, "Null": null, "Null": null } }, aboutXYears: obj4, xYears: obj5, overXYears: obj6, almostXYears: { one: {} } };
+let obj = { "Null": true, "Null": true, "Null": true, one: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004991997722842597, "Bool(false)": 65231064099078050000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002888147924957354 } };
+obj = { "Null": false, "Null": false, "Null": false, one: {} };
+obj = { "Null": "absolute", "Null": 28, "Null": 28, one: {} };
+const obj1 = { "Null": "pono\u0107", "Null": "podne", "Null": "ujutro", one: { "Bool(false)": "<string:41420800>", "Bool(false)": "<string:51145472>", "Bool(false)": "<string:49412352>" } };
+const obj2 = { "Null": "center", "Null": "center", "Null": 100, one: { "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray" } };
+let closure_0 = { lessThanXSeconds: { one: {} }, xSeconds: obj, halfAMinute: "pola minute", lessThanXMinutes: obj, xMinutes: { one: {} }, aboutXHours: { one: {} }, xHours: obj, xDays: { one: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } }, aboutXWeeks: { one: {} }, xWeeks: { one: { "Bool(false)": null, "Bool(false)": "'ju\u010Der u' p", "Bool(false)": "'danas u' p" } }, aboutXMonths: { one: { "Bool(false)": 0.2, "Bool(false)": 16, "Bool(false)": "premium_tab_popover" } }, xMonths: { one: {} }, aboutXYears: { one: { "Bool(false)": "Boolean", "Bool(false)": "a", "Bool(false)": "isArray" } }, xYears: obj1, overXYears: { one: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } }, almostXYears: obj2 };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   let one;

@@ -1,10 +1,10 @@
-// Module ID: 8266
-// Function ID: 65202
+// Module ID: 8267
+// Function ID: 65215
 // Name: _openMediaModal
 // Dependencies: []
 // Exports: openMediaModal
 
-// Module 8266 (_openMediaModal)
+// Module 8267 (_openMediaModal)
 async function _openMediaModal(arg0, arg1) {
   const fn = function*(arg0) {
     let initialIndex;
@@ -19,7 +19,7 @@ async function _openMediaModal(arg0, arg1) {
       openAs = "modal";
     }
     Object.setPrototypeOf(null);
-    let closure_6 = Object.assign(arg0, { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null });
+    let closure_6 = Object.assign(arg0, { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24, "Null": null, "Null": "99274532ad7fe616c031212e677b32e8", "Null": "ThreadLockIcon" });
     let setMediaViewerSources;
     let MediaViewerAnalytics;
     let initVideoStateStore;
@@ -42,7 +42,7 @@ async function _openMediaModal(arg0, arg1) {
         if (null != arg0) {
           let size = arg0;
         } else {
-          size = { max: -536870861, guildId: -299892737, width: arg0(closure_2[4]).getWindowDimensions().width };
+          size = { width: arg0(closure_2[4]).getWindowDimensions().width };
           const obj = arg0(closure_2[4]);
           size.height = arg0(closure_2[4]).getWindowDimensions().height;
           const obj2 = arg0(closure_2[4]);

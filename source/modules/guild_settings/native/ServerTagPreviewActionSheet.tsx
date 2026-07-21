@@ -1,10 +1,10 @@
-// Module ID: 12796
-// Function ID: 98066
+// Module ID: 12798
+// Function ID: 98088
 // Name: ServerTagPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12796 (ServerTagPreviewActionSheet)
+// Module 12798 (ServerTagPreviewActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildProfileFetchStatus = arg1(dependencyMap[2]).GuildProfileFetchStatus;

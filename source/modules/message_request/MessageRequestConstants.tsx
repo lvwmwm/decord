@@ -1,7 +1,7 @@
 // Module ID: 11465
-// Function ID: 89324
+// Function ID: 89336
 // Name: MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11465 (MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL)
 const _module = require(dependencyMap[0]);

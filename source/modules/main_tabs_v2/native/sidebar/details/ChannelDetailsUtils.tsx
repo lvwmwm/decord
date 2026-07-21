@@ -1,5 +1,5 @@
 // Module ID: 10869
-// Function ID: 84533
+// Function ID: 84544
 // Name: getChannelDetailsButtons
 // Dependencies: []
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen

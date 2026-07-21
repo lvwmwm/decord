@@ -1,14 +1,14 @@
 // Module ID: 8971
-// Function ID: 70727
+// Function ID: 70738
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8971 (set)
-const obj = { PLAYSTATION_APPLICATION_IDS: new Set([true, true]) };
-const set = new Set([true, true]);
-obj.IMPLICIT_IDENTIFY_PREMIUM_APPLICATION_IDS = new Set(["USE_DATA_FOR_QUESTS"]);
-const set1 = new Set(["USE_DATA_FOR_QUESTS"]);
-obj.ALL = new Set(["String", "construct", "isArray"]);
+const obj = { PLAYSTATION_APPLICATION_IDS: new Set([false, false]) };
+const set = new Set([false, false]);
+obj.IMPLICIT_IDENTIFY_PREMIUM_APPLICATION_IDS = new Set([]);
+const set1 = new Set([]);
+obj.ALL = new Set([null, null, null]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ConsoleOAuthApplications.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 9090
-// Function ID: 71196
+// Function ID: 71207
 // Dependencies: []
 
 // Module 9090
@@ -14,7 +14,7 @@ const UserRowModes = arg1(dependencyMap[7]).UserRowModes;
 const ReadStateTypes = arg1(dependencyMap[8]).ReadStateTypes;
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 const tmp2 = arg1(dependencyMap[9]);
-let obj = { guildIcon: { borderRadius: -536870861, borderWidth: -299892737 }, subLabel: {}, subLabelIcon: { 0: 20, 9223372036854775807: "relative", -9223372036854775808: 10 } };
+let obj = { guildIcon: { "Null": -536870861, "Null": -299892737 }, subLabel: { ty: 8, c: null, o: "\u270A\u{1F3FF}" }, subLabelIcon: { <string:1549954009>: null, <string:67064148>: null, <string:2018617953>: null } };
 obj = { marginHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
 obj.subLabelSeparator = obj;
 obj.threadName = { flexShrink: 1 };
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   let closure_5 = subLabel;
   const label = channel.label;
   let closure_6 = label;
-  let obj = { "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 132, "Bool(false)": null, "Bool(false)": "\u{1F9D1}\u200D\u{1F680}", "Bool(false)": true, "Bool(false)": 12.1, flexDirection: 133, justifyContent: null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   let closure_7;
@@ -134,12 +134,12 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
       let obj = { style: tmp4.subLabel };
       obj = { color: flag2(onPress[11]).colors.TEXT_SUBTLE, style: tmp4.subLabelIcon };
       const items = [callback(TextIcon, obj), , ];
-      obj = { __packager_asset: 87878205788868150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008920646734650617, isArray: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012008576514210759, push: 3408618214873407000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, create: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000895184583640078, style: tmp4.threadName, children: stateFromStores1 };
+      obj = { "Bool(false)": "boolean", "Bool(false)": "boolean", "Bool(false)": "number", "Bool(false)": "number", "Bool(false)": "number", style: tmp4.threadName, children: stateFromStores1 };
       items[1] = callback(channel(onPress[18]).Text, obj);
       let tmp20 = null;
       if (null != stateFromStores2) {
         const obj1 = {};
-        const obj2 = { "Null": true, ti: true, tk: true, tl: true, style: tmp4.subLabelSeparator };
+        const obj2 = { EMOJI_REACTIONS_ON_MESSAGES: null, paddingVertical: null, PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: null, authorization: null, style: tmp4.subLabelSeparator };
         const items1 = [callback(channel(onPress[18]).Text, obj2), ];
         const obj3 = { children: channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(stateFromStores2)) };
         items1[1] = callback(channel(onPress[18]).Text, obj3);
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
     }
     return tmp2;
   }, items8);
-  obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: memo1 };
+  obj = { "Null": true, "Null": 15.1, "Null": 253, children: memo1 };
   obj = {};
   const obj4 = arg1(dependencyMap[12]);
   const merged1 = Object.assign(merged);

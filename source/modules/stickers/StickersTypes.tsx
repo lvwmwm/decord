@@ -1,10 +1,10 @@
-// Module ID: 4797
-// Function ID: 41690
+// Module ID: 4796
+// Function ID: 41697
 // Name: StickerFormat
 // Dependencies: []
 // Exports: isAnimatedSticker, isCustomSticker
 
-// Module 4797 (StickerFormat)
+// Module 4796 (StickerFormat)
 const TypeTag = require(dependencyMap[0]).TypeTag;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/stickers/StickersTypes.tsx");

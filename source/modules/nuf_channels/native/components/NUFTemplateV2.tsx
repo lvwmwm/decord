@@ -1,15 +1,15 @@
-// Module ID: 12577
-// Function ID: 96749
+// Module ID: 12579
+// Function ID: 96771
 // Name: NUFActionSheetTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 12577 (NUFActionSheetTemplate)
+// Module 12579 (NUFActionSheetTemplate)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { overflow: "center", flex: "center" }, title: { collapsable: "absolute", preventClipping: 0 }, description: {}, illustration: { CHANNEL_LINK: 0, el-CY: "100%", GUILD_ROOM: 106 } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { paddingTop: "center", color: "center" }, title: {}, description: { marginTop: 19272960, marginRight: 94976, width: 6553600, height: 1966080 }, illustration: { line: "handleHeaderLayout", column: "gay-Latn-ID", type: "<string:3260153856>" } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplateV2.tsx");
 

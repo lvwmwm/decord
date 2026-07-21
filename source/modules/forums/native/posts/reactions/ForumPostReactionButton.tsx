@@ -1,5 +1,5 @@
 // Module ID: 10324
-// Function ID: 79698
+// Function ID: 79709
 // Name: BurstReactionButton
 // Dependencies: []
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
@@ -132,7 +132,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsxs: closure_5, jsx: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { flex: null, accessible: "space-around", Symbol: "center", justifyContent: 1, View: 24, a: 16, accessible: 480, useEffect: "center", sa: 311, h: null, apply: 1, body: 345, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_DEFAULT };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_DEFAULT };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.selected = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
@@ -155,7 +155,7 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   const items = [callback3().container, containerStyle];
   obj.style = items;
   obj.onPress = importDefault(dependencyMap[5])({ threadId }).onTapReactionCount;
-  const items1 = ["fill", count];
+  const items1 = [null, count];
   obj.children = callback(arg1(dependencyMap[8]).Text, { children: items1 });
   return callback2(arg1(dependencyMap[6]).PressableOpacity, obj);
 };

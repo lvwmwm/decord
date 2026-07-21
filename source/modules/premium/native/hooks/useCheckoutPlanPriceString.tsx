@@ -1,19 +1,19 @@
-// Module ID: 7112
-// Function ID: 57133
+// Module ID: 7113
+// Function ID: 57145
 // Name: useCheckoutPlanPriceString
 // Dependencies: []
 // Exports: useCheckoutPlanPriceString
 
-// Module 7112 (useCheckoutPlanPriceString)
+// Module 7113 (useCheckoutPlanPriceString)
 let closure_2 = importAll(dependencyMap[0]);
 const useNativeCheckoutStore = arg1(dependencyMap[1]).useNativeCheckoutStore;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
 
-export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(productId, stateFromStores) {
-  stateFromStores = productId;
+export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(productId, first) {
+  first = productId;
   let priceString;
-  if (null != stateFromStores) {
-    priceString = stateFromStores.priceString;
+  if (null != first) {
+    priceString = first.priceString;
   }
   let tmp2 = null;
   if (null != priceString) {

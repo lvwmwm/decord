@@ -1,7 +1,7 @@
 // Module ID: 1880
-// Function ID: 20956
+// Function ID: 20961
 // Name: isActivityParticipantValidGuildMember
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 1880 (isActivityParticipantValidGuildMember)

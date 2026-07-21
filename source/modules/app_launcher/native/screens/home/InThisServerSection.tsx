@@ -1,5 +1,5 @@
 // Module ID: 11219
-// Function ID: 87360
+// Function ID: 87372
 // Name: AppInThisServer
 // Dependencies: []
 // Exports: default
@@ -13,6 +13,9 @@ function AppInThisServer(onAppSelected) {
   let obj = arg1(dependencyMap[10]);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
+    mediaContentContainer: null,
+    pQ3bLk: 4,
+    LANDING_FRAME_NAME: "column",
     accessibilityLabel: application.name,
     onPress() {
       let tmp = null != onAppSelected;
@@ -40,7 +43,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: {}, scrollView: {}, scrollViewContentContainer: { gap: 8 } };
+obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { "Null": null, "Null": null }, scrollView: {}, scrollViewContentContainer: { gap: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj["paddingLeft"] = 12;
@@ -50,7 +53,7 @@ obj["flexDirection"] = "row";
 obj["justifyContent"] = "center";
 obj["alignItems"] = "center";
 obj.appCardContainer = obj;
-obj.iconContainer = { 0: null, 9223372036854775807: null };
+obj.iconContainer = { "Bool(false)": null, "Bool(false)": null };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/app_launcher/native/screens/home/InThisServerSection.tsx");

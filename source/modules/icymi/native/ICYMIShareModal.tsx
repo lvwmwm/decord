@@ -1,10 +1,10 @@
-// Module ID: 15103
-// Function ID: 113926
+// Module ID: 15106
+// Function ID: 113960
 // Name: Screenshot
 // Dependencies: []
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15103 (Screenshot)
+// Module 15106 (Screenshot)
 function Screenshot(setUri) {
   setUri = setUri.setUri;
   const arg1 = setUri;
@@ -28,7 +28,7 @@ function Screenshot(setUri) {
     }, 500);
   }, items);
   let obj = arg1(dependencyMap[19]);
-  obj = { style: {} };
+  obj = { style: { flexWrap: "<string:659619840>", overflow: "<string:1774928528>", paddingTop: "<string:687276033>" } };
   obj = { style: items1 };
   const items1 = [tmp.preview, { width: importDefault(dependencyMap[17])().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
@@ -93,7 +93,7 @@ function GravityShareFooter(arg0) {
     obj = { style: tmp12 };
     const obj1 = { inputRef: textInputRef, text: first, onChange: tmp4, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend: callback, disabled: isSending };
     const items2 = [callback2(importDefault(dependencyMap[26]), obj1), ];
-    const obj2 = { text: stringResult, disabled: tmp13 };
+    const obj2 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)", text: stringResult, disabled: tmp13 };
     let tmp22;
     if (!isSending) {
       tmp22 = callback;

@@ -1,10 +1,10 @@
-// Module ID: 8259
-// Function ID: 65126
+// Module ID: 8260
+// Function ID: 65139
 // Name: getProfileProperties
 // Dependencies: []
 // Exports: maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8259 (getProfileProperties)
+// Module 8260 (getProfileProperties)
 function getProfileProperties(arg0) {
   let guildMember;
   let guildMemberProfile;

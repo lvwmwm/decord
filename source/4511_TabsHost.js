@@ -1,5 +1,5 @@
 // Module ID: 4511
-// Function ID: 39686
+// Function ID: 39694
 // Name: TabsHost
 // Dependencies: []
 // Exports: default
@@ -8,7 +8,7 @@
 let Platform;
 let StyleSheet;
 let jsx;
-let closure_3 = [];
+let closure_3 = ["FILTER_BEFORE", "HappeningNowCardsDisabled", "_headers", "H"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

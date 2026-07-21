@@ -1,5 +1,5 @@
 // Module ID: 11405
-// Function ID: 88712
+// Function ID: 88724
 // Name: useInvitesDisabledPermission
 // Dependencies: []
 // Exports: useShouldShowInvitesDisabledNotif

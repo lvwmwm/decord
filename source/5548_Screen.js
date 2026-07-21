@@ -1,5 +1,5 @@
 // Module ID: 5548
-// Function ID: 47096
+// Function ID: 47104
 // Name: Screen
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ let closure_4 = importAll(dependencyMap[1]);
 ({ StyleSheet, View: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const styles = StyleSheet.create({ container: { RNSVGTSpan: true, OverKeyboardView: true }, content: { flex: 1 }, absolute: {} });
+const styles = StyleSheet.create({ container: {}, content: { flex: 1 }, absolute: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" } });
 
 export default function Screen(headerShown) {
   let children;

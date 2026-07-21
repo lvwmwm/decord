@@ -1,9 +1,9 @@
-// Module ID: 7606
-// Function ID: 60970
+// Module ID: 7607
+// Function ID: 60982
 // Name: items
 // Dependencies: []
 
-// Module 7606 (items)
+// Module 7607 (items)
 const obj = {
   getTitle() {
     const intl = require(dependencyMap[0]).intl;

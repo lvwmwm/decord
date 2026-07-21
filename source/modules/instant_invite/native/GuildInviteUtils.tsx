@@ -1,5 +1,5 @@
 // Module ID: 12019
-// Function ID: 92878
+// Function ID: 92890
 // Name: _sendGuildInvite
 // Dependencies: []
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows

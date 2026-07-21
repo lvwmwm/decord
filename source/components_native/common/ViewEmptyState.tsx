@@ -1,29 +1,29 @@
 // Module ID: 9235
-// Function ID: 72227
+// Function ID: 72238
 // Name: ViewEmptyState
-// Dependencies: []
+// Dependencies: [0, 0, 4294967295, 0, 4294967295, 0, 0, 0, 0]
 // Exports: default
 
 // Module 9235 (ViewEmptyState)
-importAll(dependencyMap[0]);
-({ View: closure_2, Image: closure_3 } = arg1(dependencyMap[1]));
+import "result";
+import result from "result";
+import result from "result";
+import result from "result";
+
+({ View: closure_2, Image: closure_3 } = result);
 const Fonts = arg1(dependencyMap[2]).Fonts;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
+({ jsx: closure_4, jsxs: closure_5 } = result);
 let obj = arg1(dependencyMap[4]);
-obj = { emptyContainer: { ref: true, horizontal: true, showsHorizontalScrollIndicator: true, style: true }, emptyImage: { bhk: true, bic: false }, fixOpticalIllusion: { "Null": "<string:1149894658>", "Null": "<string:3617390594>" } };
+obj = { emptyContainer: { 9223372036854775807: null, height: null, backgroundColor: null, borderWidth: null }, emptyImage: {}, fixOpticalIllusion: {} };
 obj = {};
-const tmp4 = arg1(dependencyMap[3]);
-const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+const merged = Object.assign(require("result")(Fonts.DISPLAY_SEMIBOLD, require("result").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 obj["textAlign"] = "center";
 obj["marginTop"] = 32;
 obj["opacity"] = 0.8;
 obj.emptyLabel = obj;
 obj.emptyText = { fontFamily: Fonts.PRIMARY_MEDIUM };
 let closure_6 = obj.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[5]);
-const obj1 = { fontFamily: Fonts.PRIMARY_MEDIUM };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
+result = result.fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
 
 export default function ViewEmptyState(arg0) {
   let label;

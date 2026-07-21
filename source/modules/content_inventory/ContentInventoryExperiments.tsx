@@ -1,23 +1,24 @@
-// Module ID: 12497
-// Function ID: 95771
+// Module ID: 12499
+// Function ID: 95793
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 12497 (apexExperiment)
+// Module 12499 (apexExperiment)
 const _module = require(dependencyMap[1]);
-let obj = { margin: "displayName", paddingHorizontal: "value", defaultConfig: { getUserVerificationFooterText: null, face_with_hand_over_mouth: null }, variations: { [0]: { getUserVerificationFooterText: null, face_with_hand_over_mouth: null } } };
+let obj = { bottom: 1904843910, name: 6, defaultConfig: { 9223372036854775807: null, -9223372036854775808: null }, variations: { [0]: { 9223372036854775807: null, -9223372036854775808: null } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[2]);
-obj = { y: 16, createBackgroundHighlight: 16, y: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
-const obj1 = { -1174339580: null, -1169096700: "Group 4", config: {} };
+obj = { "Bool(false)": 16, "Bool(false)": 16, "Bool(false)": null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
+const obj1 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "Group 5", 炖锅: 1, config: {} };
 const items = [obj1, ];
-const obj2 = { -1174339580: -1952366081, -1169096700: -2140012542, config: {} };
+const obj2 = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: 24, 炖锅: -60, config: {} };
 items[1] = obj2;
 obj.treatments = items;
 const experiment = _module1.createExperiment(obj);
 const _module2 = require(dependencyMap[1]);
-const apexExperiment1 = _module2.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj3 = { 844175713: 1912603312, 1387159956: 128, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment1 = _module2.createApexExperiment(obj3);
 const _module3 = require(dependencyMap[4]);
 const result = _module3.fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 

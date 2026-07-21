@@ -1,5 +1,5 @@
 // Module ID: 8444
-// Function ID: 67366
+// Function ID: 67377
 // Name: guildEventDetailsParser
 // Dependencies: []
 

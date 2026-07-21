@@ -1,9 +1,9 @@
-// Module ID: 15013
-// Function ID: 113054
+// Module ID: 15016
+// Function ID: 113088
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15013 (_isNativeReflectConstruct)
+// Module 15016 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,9 +14,9 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleLoadFinished() {
-  obj.hasNewMentions = false;
-  obj.isDataStale = false;
-  obj.isRefreshing = false;
+  closure_11.hasNewMentions = false;
+  closure_11.isDataStale = false;
+  closure_11.isRefreshing = false;
 }
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
@@ -26,7 +26,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 let closure_10 = 90 * importDefault(dependencyMap[7]).Millis.DAY;
-let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, localItemAcks: {} };
+let closure_11 = { localItemAcks: {} };
 let tmp2 = (PersistedStore) => {
   class NotificationCenterStore {
     constructor() {
@@ -146,16 +146,17 @@ let tmp2 = (PersistedStore) => {
 }(importDefault(dependencyMap[10]).PersistedStore);
 tmp2.displayName = "NotificationCenterStore";
 tmp2.persistKey = "NotificationCenterStore";
-obj = {
+tmp2 = new tmp2(importDefault(dependencyMap[11]), {
   MESSAGE_CREATE: function handleMessageCreate(message) {
     if (closure_9.hasMention(message.message.id)) {
-      obj.hasNewMentions = true;
+      closure_11.hasNewMentions = true;
     }
   },
   NOTIFICATION_CENTER_SET_TAB: function handleSetTab(tab) {
     const obj = {};
-    const merged = Object.assign(obj);
+    const merged = Object.assign(closure_11);
     obj["tab"] = tab.tab;
+    closure_11 = obj;
   },
   NOTIFICATION_CENTER_ITEMS_LOCAL_ACK: function handleAck(localIds) {
     localIds = localIds.localIds;
@@ -169,12 +170,11 @@ obj = {
     });
   },
   NOTIFICATION_CENTER_REFRESH: function handleRefreshData() {
-    obj.isRefreshing = true;
+    closure_11.isRefreshing = true;
   },
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: handleLoadFinished,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: handleLoadFinished
-};
-tmp2 = new tmp2(importDefault(dependencyMap[11]), obj);
+});
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/notification_center/NotificationCenterStore.tsx");
 
 export default tmp2;

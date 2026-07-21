@@ -1,7 +1,7 @@
 // Module ID: 10328
-// Function ID: 79751
+// Function ID: 79762
 // Name: LockUnlockedIcon
-// Dependencies: []
+// Dependencies: [3120562193, 469762065, 3187671056, 1711276049, 33554472, 4026531840]
 // Exports: LockUnlockedIcon
 
 // Module 10328 (LockUnlockedIcon)

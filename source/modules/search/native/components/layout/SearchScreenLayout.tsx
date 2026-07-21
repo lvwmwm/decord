@@ -1,9 +1,9 @@
-// Module ID: 15204
-// Function ID: 114722
+// Module ID: 15207
+// Function ID: 114756
 // Name: SearchFreezeContainer
 // Dependencies: []
 
-// Module 15204 (SearchFreezeContainer)
+// Module 15207 (SearchFreezeContainer)
 function SearchFreezeContainer(visible) {
   let children;
   let containerStyle;

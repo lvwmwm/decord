@@ -1,5 +1,5 @@
 // Module ID: 11997
-// Function ID: 92686
+// Function ID: 92698
 // Name: VerifiedIcon
 // Dependencies: []
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
@@ -53,11 +53,11 @@ const REFRESH_SMALL_16 = arg1(dependencyMap[8]).Icon.Sizes.REFRESH_SMALL_16;
 let obj1 = arg1(dependencyMap[8]);
 const iconSize = obj1.getIconSize(REFRESH_SMALL_16);
 let obj2 = arg1(dependencyMap[9]);
-let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: { columnGap: CARD_ROWS_COLUMN_GAP }, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: { 9223372036854775807: "safety_user_sentiment_notice_dismissed_at", 9223372036854775807: "message", 0: null }, connectedAccountNameText: { "Null": false, "Null": false }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: {}, connectionMetadata: { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "staticUrl", "Null": "Array", "Null": "MERCH_STORE" } };
+let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: { columnGap: CARD_ROWS_COLUMN_GAP }, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: { 9223372036854775807: true, 9223372036854775807: true, 0: true }, connectedAccountNameText: { <string:3944309467>: null, <string:714355284>: null }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: { "Null": 3375103, "Null": -8192, "Null": 4320799 }, connectionMetadata: { query: -918482477, type: 1912602979, guildId: 24, limit: 24 } };
 obj = { paddingBottom: CARD_PADDING - 12 };
 obj1 = { color: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.metadataItem = obj1;
-obj.poweredByContainer = {};
+obj.poweredByContainer = { headerIcons: -747089664, RowButtonIconProps: 4211, headerLabel: 4096 };
 obj2 = {};
 const tmp5 = arg1(dependencyMap[7]);
 obj2.borderRadius = arg1(dependencyMap[8]).getIconSize(arg1(dependencyMap[8]).Icon.Sizes.MEDIUM);
@@ -288,7 +288,7 @@ let closure_18 = importAllResult.memo((userId) => {
       const items8 = [closure_14(platformUserUrl, obj12), , ];
       let tmp59 = null;
       if (null != createdAtDate) {
-        const obj15 = {};
+        const obj15 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
         const intl = arg1(dependencyMap[27]).intl;
         const obj16 = { date: createdAtDate };
         obj15.children = intl.format(arg1(dependencyMap[27]).t.9rfonh, obj16);
@@ -457,7 +457,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items[1] = tmp34;
     const obj3 = { style: tmp.poweredByContainer };
-    const obj4 = {};
+    const obj4 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
     const intl2 = arg1(dependencyMap[27]).intl;
     const obj5 = {
       applicationHook() {
@@ -488,13 +488,13 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     const obj10 = { style: tmp.connectionInfoContainer };
     let tmp12 = null;
     if (null != applicationRoleConnection.platform_name) {
-      const obj11 = { children: applicationRoleConnection.platform_name };
+      const obj11 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold", children: applicationRoleConnection.platform_name };
       tmp12 = callback(arg1(dependencyMap[28]).Text, obj11);
     }
     const items2 = [tmp12, , , ];
     let tmp16 = null;
     if (null != applicationRoleConnection.platform_username) {
-      const obj12 = { children: applicationRoleConnection.platform_username };
+      const obj12 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: applicationRoleConnection.platform_username };
       tmp16 = callback(arg1(dependencyMap[28]).Text, obj12);
     }
     items2[1] = tmp16;
@@ -508,7 +508,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items2[2] = tmp20;
     const obj14 = { style: tmp.poweredByContainer };
-    const obj15 = {};
+    const obj15 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
     const intl = arg1(dependencyMap[27]).intl;
     const obj16 = {
       applicationHook() {

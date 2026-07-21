@@ -1,5 +1,5 @@
 // Module ID: 12031
-// Function ID: 92955
+// Function ID: 92967
 // Name: trackFriendsListItemAction
 // Dependencies: [670, 2, 6]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote

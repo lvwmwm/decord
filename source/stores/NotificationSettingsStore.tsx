@@ -1,5 +1,5 @@
 // Module ID: 10207
-// Function ID: 78827
+// Function ID: 78838
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -25,7 +25,7 @@ let closure_6 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 const DesktopNotificationTypes = tmp2.DesktopNotificationTypes;
 ({ NotificationPermissionTypes: closure_8, TTSNotificationTypes } = tmp2);
-let obj = { padding: true, display: true, flexDirection: true, alignItems: true, justifyContent: true, marginEnd: true, marginLeft: true, maxWidth: true, desktopType: arg1(dependencyMap[6]).isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER };
+let obj = { width: true, height: true, backgroundColor: true, borderRadius: true, alignItems: true, justifyContent: true, position: true, right: true, desktopType: arg1(dependencyMap[6]).isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER };
 let tmp3 = (DeviceSettingsStore) => {
   class NotificationSettingsStore {
     constructor() {

@@ -1,5 +1,5 @@
 // Module ID: 1857
-// Function ID: 20440
+// Function ID: 20445
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -233,7 +233,7 @@ let tmp5 = (importDefaultResult) => {
         storeCountry = importDefaultResult.storeCountry;
       }
       tmp2Result.storeCountry = obj8.parseStoreCountry(storeCountry);
-      obj = { "": true, "": false, channel: false };
+      obj = { "": "#ffa813", "": "absolute", channel: null };
       obj.value = function value(arg0) {
         if (arg0 <= 1073741824) {
           return ((tmp2Result.flags | tmp2Result.publicFlags) & arg0) === arg0;
@@ -248,11 +248,11 @@ let tmp5 = (importDefaultResult) => {
           return obj4.has(callback(closure_3[14]).combine(deserializeResult, deserializeResult1), deserializeResult2);
         }
       };
-      obj1 = { "": true, "": false, channel: false };
+      obj1 = { "": "#ffa813", "": "absolute", channel: null };
       obj1.value = function value() {
         return tmp2Result.hasFlag(constants.STAFF);
       };
-      obj2 = { "": true, "": false, channel: false };
+      obj2 = { "": "#ffa813", "": "absolute", channel: null };
       obj2.value = function value() {
         let tmp = !tmp2Result.hasFlag(constants.STAFF);
         if (tmp) {
@@ -260,7 +260,7 @@ let tmp5 = (importDefaultResult) => {
         }
         return tmp;
       };
-      obj3 = { "": true, "": false, channel: false };
+      obj3 = { "": "#ffa813", "": "absolute", channel: null };
       obj3.value = function value() {
         let hasFlagResult = tmp2Result.hasFlag(constants.STAFF);
         if (!hasFlagResult) {

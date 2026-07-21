@@ -1,5 +1,5 @@
 // Module ID: 3498
-// Function ID: 26917
+// Function ID: 26922
 // Name: intervalToDuration
 // Dependencies: []
 // Exports: default

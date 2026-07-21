@@ -1,6 +1,6 @@
 // Module ID: 10888
-// Function ID: 84588
-// Dependencies: [5338, 4141, 653, 478]
+// Function ID: 84599
+// Dependencies: [5337, 4141, 653, 478]
 
 // Module 10888
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

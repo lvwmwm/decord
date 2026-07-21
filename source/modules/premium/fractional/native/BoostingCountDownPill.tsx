@@ -1,5 +1,5 @@
 // Module ID: 12328
-// Function ID: 94397
+// Function ID: 94409
 // Name: handlePress
 // Dependencies: []
 // Exports: default
@@ -18,12 +18,12 @@ const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = _module1);
 const _module2 = require(dependencyMap[2]);
 let obj = {};
-obj = { 1834026050: -14, -659493785: -14, -1437152157: 0.75, -319042460: -4, 1649697712: 16, 72458410: 0.75, 1006330628: 14, -680106838: -14, 1196532421: 0.875, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.fractionalPremiumBanner = obj;
-const obj1 = { "Bool(false)": "sticker", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/premium/guild_boosting/perks", "Bool(false)": 24, "Bool(false)": 24, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
+const obj1 = { 1686368849: 2034307539, -1331639198: 1912603050, 1384378961: 24, -1558734823: 24, 1369504610: 1280065793, 996344831: 1750204417, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
 obj.fpDurationPill = obj1;
-obj.fpDurationText = { 1377929130: true, -1532433124: true };
-obj.fpUnavailable = { markAsSpoilerTitle: null, keyboardAppearance: null };
+obj.fpDurationText = { zIndex: true, useAngle: true };
+obj.fpUnavailable = { "Bool(true)": "values", "Bool(true)": "Array" };
 obj.fpUnavailableTextNoCountdown = { textAlign: "center" };
 let closure_7 = _module2.createStyles(obj);
 const _module3 = require(dependencyMap[9]);

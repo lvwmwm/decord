@@ -1,5 +1,5 @@
 // Module ID: 9082
-// Function ID: 71167
+// Function ID: 71178
 // Name: useNameplate
 // Dependencies: []
 // Exports: useNameplate

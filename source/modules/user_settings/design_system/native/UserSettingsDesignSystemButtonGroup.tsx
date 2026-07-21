@@ -1,10 +1,10 @@
-// Module ID: 14302
-// Function ID: 108051
+// Module ID: 14305
+// Function ID: 108083
 // Name: UserSettingsDesignSystemButtonGroup
 // Dependencies: []
 // Exports: default
 
-// Module 14302 (UserSettingsDesignSystemButtonGroup)
+// Module 14305 (UserSettingsDesignSystemButtonGroup)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -20,11 +20,11 @@ export default function UserSettingsDesignSystemButtonGroup() {
   obj = { spacing: 24 };
   const obj1 = {};
   const obj2 = {};
-  const items = [callback(arg1(dependencyMap[5]).Text, { "Null": "Experimental Blur Background Row Button", "Null": "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), callback(arg1(dependencyMap[5]).Text, { "Bool(false)": false, "Bool(false)": "Collapsible Floating Action Button", "Bool(false)": "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable." }), ];
+  const items = [callback(arg1(dependencyMap[5]).Text, { <string:1749439162>: "Experimental Blur Background Row Button", <string:140675621>: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), callback(arg1(dependencyMap[5]).Text, { deer: false, Ufm9XX: "Collapsible Floating Action Button", playstationVersion: "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable." }), ];
   const obj3 = {};
   const obj4 = {
-    "Bool(true)": "A really long label that takes up all of the space and then some",
-    "Bool(true)": "A really long sublabel that takes up all of the space and then some",
+    ddd: "A really long label that takes up all of the space and then some",
+    ind: "A really long sublabel that takes up all of the space and then some",
     onPress() {
 
     }
@@ -44,7 +44,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const items2 = [callback(closure_3, obj1), , ];
   const obj6 = {};
   const obj7 = {};
-  const items3 = [callback(arg1(dependencyMap[5]).Text, {}), callback(arg1(dependencyMap[5]).Text, { "Bool(false)": "Custom node for label - A really long label that takes up all of the space and then some", "Bool(false)": 0, "Bool(false)": 24 }), ];
+  const items3 = [callback(arg1(dependencyMap[5]).Text, {}), callback(arg1(dependencyMap[5]).Text, { deer: "Custom node for label - A really long label that takes up all of the space and then some", Ufm9XX: 0, playstationVersion: 24 }), ];
   const obj8 = { direction: "horizontal" };
   const obj9 = {
     icon: importDefault(dependencyMap[9]),
@@ -70,9 +70,9 @@ export default function UserSettingsDesignSystemButtonGroup() {
   const items5 = [callback(arg1(dependencyMap[5]).Text, {}), callback(arg1(dependencyMap[5]).Text, {}), callback(arg1(dependencyMap[5]).Text, {}), , , ];
   const obj13 = { direction: "horizontal" };
   const obj14 = {
-    "Bool(true)": "isExpanded",
-    "Bool(true)": "PRIVATE_CHANNEL_INTEGRATION_ADDED",
-    "Bool(true)": "isExpanded",
+    ddd: 1459290114,
+    ind: 1808465922,
+    ty: 943783937,
     onPress() {
 
     }
@@ -88,7 +88,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
   obj13.children = items6;
   items5[3] = callback2(arg1(dependencyMap[6]).ButtonGroup, obj13);
   items5[4] = callback(arg1(dependencyMap[5]).Text, {});
-  items5[5] = callback(arg1(dependencyMap[5]).Text, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false });
+  items5[5] = callback(arg1(dependencyMap[5]).Text, { deer: true, Ufm9XX: true, playstationVersion: true });
   obj12.children = items5;
   obj11.children = callback2(arg1(dependencyMap[4]).Stack, obj12);
   items2[2] = callback(closure_3, obj11);

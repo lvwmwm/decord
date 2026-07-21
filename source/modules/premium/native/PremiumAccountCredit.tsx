@@ -1,10 +1,10 @@
-// Module ID: 7412
-// Function ID: 59560
+// Module ID: 7413
+// Function ID: 59572
 // Name: AccountCreditTier
 // Dependencies: []
 // Exports: default
 
-// Module 7412 (AccountCreditTier)
+// Module 7413 (AccountCreditTier)
 function AccountCreditTier(arg0) {
   let currentSubscription;
   let hasPremiumGroup;
@@ -61,13 +61,13 @@ function AccountCreditTier(arg0) {
   obj2 = { size: arg1(dependencyMap[10]).GameIconSizes.SMALL, skuId: result };
   const items1 = [callback(importDefault(dependencyMap[10]), obj2), , ];
   const obj3 = { style: tmp.textContainer };
-  obj4 = { "Null": null, "Null": null, "Null": null, style: tmp.headerText };
+  obj4 = { delete: null, dispatch: null, raw: null, style: tmp.headerText };
   const intl4 = arg1(dependencyMap[8]).intl;
   obj4.children = intl4.format(arg1(dependencyMap[8]).t.LzobT9, { planName: tierDisplayNameByPlanId });
   const items2 = [callback(arg1(dependencyMap[11]).Text, obj4), ];
   let tmp29 = !(null != currentSubscription && currentSubscription.isPurchasedExternally);
   if (tmp29) {
-    const obj5 = { style: tmp.subText, children: stringResult };
+    const obj5 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.subText, children: stringResult };
     tmp29 = callback(arg1(dependencyMap[11]).Text, obj5);
   }
   items2[1] = tmp29;
@@ -89,11 +89,11 @@ let obj = arg1(dependencyMap[5]);
 obj = { title: { marginBottom: 12 } };
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.creditList = obj;
-obj.creditItem = {};
-obj.textContainer = { -412991801: "buffered", 1932219241: "isArray", -1769568180: "isArray", 1372909666: "CONSOLES_DEVICES_COMMAND" };
+obj.creditItem = { 822894183: "center", 400842798: "center", 1120077519: "100%" };
+obj.textContainer = { ICON_VOICE_MUTED: null, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: null, useIsVerifiedAdult: null, showName: null };
 obj.headerText = { lineHeight: 20 };
 obj.subText = { lineHeight: 16 };
-obj.timeText = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739451375 };
+obj.timeText = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739553683 };
 const tmp3 = arg1(dependencyMap[4]);
 obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.creditDescription = { marginTop: 8 };
@@ -132,7 +132,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       const valueResult = found.groupBy((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId).value();
       View = valueResult;
       obj = { style };
-      obj = { 1501064855: "SERVER_GUIDE_CHANNEL_SELECTED", -1267889981: "EAPLAY", -1145697943: "r", -1266241916: "FULL", style: tmp.title };
+      obj = { Opened: -918482477, marginVertical: 1912603017, marginStart: 51, marginEnd: 36, style: tmp.title };
       const intl = arg1(closure_2[8]).intl;
       obj.children = intl.string(arg1(closure_2[8]).t.YugZY0);
       const items1 = [callback(arg1(closure_2[11]).Text, obj), , , ];

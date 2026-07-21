@@ -1,12 +1,13 @@
 // Module ID: 9804
-// Function ID: 76104
+// Function ID: 76115
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0]
 // Exports: handleDocumentSelection
 
 // Module 9804 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import { AnalyticEvents } from "__exportStarResult1";
+import closure_3 from "result";
+import { AnalyticEvents } from "result";
+import result from "result";
 
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -93,7 +94,7 @@ function _handleDocumentSelection() {
   const _handleDocumentSelection = obj;
   return obj(...arguments);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("utils/native/FilePickerUtils.tsx");
+result = result.fileFinishedImporting("utils/native/FilePickerUtils.tsx");
 
 export const handleDocumentSelection = function handleDocumentSelection(arg0) {
   return _handleDocumentSelection(...arguments);

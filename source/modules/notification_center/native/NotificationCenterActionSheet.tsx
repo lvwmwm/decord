@@ -1,10 +1,10 @@
-// Module ID: 15007
-// Function ID: 112989
+// Module ID: 15010
+// Function ID: 113023
 // Name: NotificationCenterActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15007 (NotificationCenterActionSheet)
+// Module 15010 (NotificationCenterActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const UserSettingsSections = arg1(dependencyMap[2]).UserSettingsSections;

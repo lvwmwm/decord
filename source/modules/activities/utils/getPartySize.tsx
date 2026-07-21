@@ -1,14 +1,12 @@
 // Module ID: 10896
-// Function ID: 84703
+// Function ID: 84714
 // Name: getPartySize
-// Dependencies: [1953825491, 683]
+// Dependencies: []
 // Exports: getPartySize
 
 // Module 10896 (getPartySize)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
 let closure_0 = importDefault(dependencyMap[0]);
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/activities/utils/getPartySize.tsx");
+const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/utils/getPartySize.tsx");
 
 export const getPartySize = function getPartySize(activity) {
   if (null != activity) {
@@ -22,5 +20,5 @@ export const getPartySize = function getPartySize(activity) {
       }
     }
   }
-  return { POLL_VOTE_SELECTED: false, GIF_PICKER_GUTTER_SPACING: false };
+  return { ix: "<string:1876819969>", from: "<string:2170814465>" };
 };

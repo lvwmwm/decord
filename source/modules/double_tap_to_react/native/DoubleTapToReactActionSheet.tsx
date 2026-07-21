@@ -1,5 +1,5 @@
 // Module ID: 11415
-// Function ID: 88751
+// Function ID: 88763
 // Name: EmojiConfetti
 // Dependencies: []
 // Exports: default
@@ -110,13 +110,13 @@ function EmojiConfetti(children) {
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;
   let obj = { style: callback6().burstContainer };
-  obj = { 1286424402: true, -704095584: true, -705178107: true, 928372124: true, emojiComponent };
+  obj = { -9223372036854775808: true, 0: true, 0: true, 0: true, emojiComponent };
   const items = [callback4(EmojiConfetti, obj), , , ];
-  obj = { themeColorContainer: null, abuf: null, ORDER_UPDATE: null, emojiComponent };
+  obj = { fetchReferralEligibleUsers: null, STREAM_START: null, CHECKBOX_BACKGROUND_DEFAULT: null, emojiComponent };
   items[1] = callback4(EmojiConfetti, obj);
-  const obj1 = { yqX4Dr: null, _handleContentOnLayout: null, fullScreenSwipeEnabled: null, emojiComponent };
+  const obj1 = { "Null": null, "Null": null, "Null": null, emojiComponent };
   items[2] = callback4(EmojiConfetti, obj1);
-  const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, emojiComponent };
+  const obj2 = { url: null, query: null, trackedActionData: null, emojiComponent };
   items[3] = callback4(EmojiConfetti, obj2);
   obj.children = items;
   return callback5(View, obj);
@@ -131,7 +131,7 @@ const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[7]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { emoji: {}, selectedCustomEmoji: { bhk: null, bic: null } };
+obj = { emoji: {}, selectedCustomEmoji: { "Null": "row", "Null": "center" } };
 obj = {};
 let obj3 = arg1(dependencyMap[10]);
 let num = 36;
@@ -167,7 +167,7 @@ const obj2 = { paddingHorizontal: importDefault(dependencyMap[11]).space.PX_4, p
 obj.header = { marginBottom: importDefault(dependencyMap[11]).space.PX_8, gap: importDefault(dependencyMap[11]).space.PX_8 };
 obj6 = { marginTop: importDefault(dependencyMap[11]).space.PX_8, marginBottom: importDefault(dependencyMap[11]).space.PX_24 };
 obj.emojiName = obj6;
-obj.burstContainer = {};
+obj.burstContainer = { 0: "PaperIcon", 9223372036854775807: "png", -9223372036854775808: "row", 0: "flex-end", 0: null, 0: "absolute" };
 let closure_13 = obj.createStyles(obj);
 let closure_14 = { code: "function DoubleTapToReactActionSheetTsx1(){const{sizeValue,left,rotationValue,top,positionValue,opacityValue}=this.__closure;return{position:'absolute',transform:[{scale:sizeValue.get()},{rotate:(left===true?-1:1)*rotationValue.get()+\"deg\"}],top:top===true?-positionValue.get():positionValue.get(),left:left===true?-positionValue.get()*1.5:positionValue.get()*1.5,opacity:opacityValue.get()};}" };
 let closure_15 = { code: "function DoubleTapToReactActionSheetTsx2(){const{interpolate,sharedSaveValue}=this.__closure;return{transform:[{scale:interpolate(sharedSaveValue.get(),[0,1],[1,1.3])},{translateY:interpolate(sharedSaveValue.get(),[0,1],[0,-20])}]};}" };
@@ -205,14 +205,14 @@ export default function DoubleTapToReactActionSheet(emoji) {
       obj = {};
       obj = {};
       obj3 = useState(closure_2[12]);
-      obj.scale = obj3.interpolate(useSharedValue.get(), ["Text", "lc"], [1077146943, 113]);
+      obj.scale = obj3.interpolate(useSharedValue.get(), ["replace", "then"], [1077146943, 113]);
       items = [, ];
       items[0] = obj;
       obj1 = {};
       obj5 = useState(closure_2[12]);
       items1 = [0.229];
       items1[1] = -20;
-      obj1.translateY = obj5.interpolate(useSharedValue.get(), ["Text", "lc"], items1);
+      obj1.translateY = obj5.interpolate(useSharedValue.get(), ["replace", "then"], items1);
       items[1] = obj1;
       obj.transform = items;
       return obj;
@@ -259,13 +259,13 @@ export default function DoubleTapToReactActionSheet(emoji) {
         obj = { duration: 0 };
         const obj2 = callback(first[13]);
         const withTimingResult = callback(first[13]).withTiming(0.7, obj);
-        const result2 = set(obj.withSequence(withTimingResult, callback(first[16]).withSpring(1, {})));
+        const result2 = set(obj.withSequence(withTimingResult, callback(first[16]).withSpring(1, { <string:1661206353>: true, <string:1362777659>: true, <string:1650665174>: "new-message" })));
         const obj4 = callback(first[16]);
         const obj5 = callback(first[12]);
         obj = { duration: 0 };
         const obj6 = callback(first[13]);
         const withTimingResult1 = callback(first[13]).withTiming(0.6, obj);
-        const result3 = sharedValue2.set(obj5.withSequence(withTimingResult1, callback(first[16]).withSpring(1, {})));
+        const result3 = sharedValue2.set(obj5.withSequence(withTimingResult1, callback(first[16]).withSpring(1, { "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", "Null": null, "Null": "9490c9b4e5e2b7f4c641436c34a86917" })));
         const obj8 = callback(first[16]);
       }
       const _setTimeout = setTimeout;
@@ -397,7 +397,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
   items9[1] = memo(callback(dependencyMap[27]).Text, obj6);
   obj3.children = items9;
   const items10 = [callback1(closure_6, obj3), , , , , ];
-  const obj7 = { style: tmp.emojiName, children: ":" + first.name + ":" };
+  const obj7 = { hasMaxConnections: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011639146972644495, isBoostOnlySubscription: 173030459411399400000000, style: tmp.emojiName, children: ":" + first.name + ":" };
   items10[1] = memo(callback(dependencyMap[27]).Text, obj7);
   const obj8 = { style: tmp.header };
   const obj9 = { style: tmp.alignCenter };
@@ -411,7 +411,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
   obj10.children = intl2.string(callback(dependencyMap[28]).t.yIax8g);
   items10[3] = memo(callback(dependencyMap[27]).Text, obj10);
   items10[4] = memo(importDefault(dependencyMap[30]), { style: tmp.emojiSelectRow, selectedEmoji: first, onPressEmoji: callback });
-  const obj12 = { 9223372036854775807: "WireType", 9223372036854775807: "Array", 0: "isArray", 0: "accessibilityRole" };
+  const obj12 = {};
   const obj11 = { style: tmp.emojiSelectRow, selectedEmoji: first, onPressEmoji: callback };
   const tmp16 = memo;
   const tmp17 = importDefault(dependencyMap[21]);

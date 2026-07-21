@@ -1,5 +1,5 @@
 // Module ID: 11660
-// Function ID: 90425
+// Function ID: 90437
 // Name: useChatPlaceholderAnimatedStyles
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 109635
+// Module ID: 14554
+// Function ID: 109667
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14551 (items)
+// Module 14554 (items)
 let GUILD_TAG_BADGE_PALETTE_PRESETS;
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
@@ -26,7 +26,7 @@ let closure_9 = found.map((arg0) => {
   return { name, value };
 });
 const items = [{ label: "Untinted", primary: undefined, secondary: undefined }, ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary) => ({ label: "P" + arg1 + 1, primary: primary.primary, secondary: primary.secondary }))];
-let closure_11 = [];
+let closure_11 = [false, false, false];
 let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, flex: 1 };
@@ -35,11 +35,11 @@ const tmp4 = arg1(dependencyMap[4]);
 obj.contentContainer = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 obj.controlRow = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_8 };
-const obj3 = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj3 = { -9223372036854775808: null, 7741: null, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.grid = obj3;
-const obj4 = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030752360877, @braintree/browser-detection/is-android: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031829936914, @braintree/browser-detection/is-chrome: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000950654114574347, @braintree/browser-detection/is-chrome-os: NaN, @braintree/browser-detection/is-ie9: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001086461841685, @braintree/browser-detection/is-ios: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018151637685555885, @braintree/browser-detection/is-ios-wkwebview: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000890029543407535, gap: importDefault(dependencyMap[6]).space.PX_4, padding: importDefault(dependencyMap[6]).space.PX_8 };
+const obj4 = { alignItems: null, position: null, width: null, zIndex: null, bottom: null, name: null, description: null, gap: importDefault(dependencyMap[6]).space.PX_4, padding: importDefault(dependencyMap[6]).space.PX_8 };
 obj.tile = obj4;
-obj.badgeBox = { <string:2700829420>: "Array", <string:1661207633>: "isArray", <string:1365420630>: "Text" };
+obj.badgeBox = { "Bool(true)": "isArray", "Bool(true)": "warn", 266603034: "textAlign" };
 let closure_12 = obj.createStyles(obj);
 const obj2 = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_8 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesScreen.tsx");
@@ -60,8 +60,8 @@ export default function DevToolsGuildTagBadgesScreen() {
   const items = [null, closure_9.length, " badge kinds. Tint: ", tmp5.label, " \u00B7 Size: ", tmp6, "px. 2c = two-color badge."];
   const items1 = [callback2(arg1(dependencyMap[8]).Text, { variant: "text-md/normal", children: items }), , , ];
   obj = {
-    <string:3603769293>: true,
-    <string:3453288331>: true,
+    1644319569: null,
+    -2041488286: null,
     children: callback3(tmp6, {
       style: tmp.controlRow,
       children: items.map((label) => {

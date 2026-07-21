@@ -1,5 +1,5 @@
 // Module ID: 1906
-// Function ID: 21369
+// Function ID: 21374
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: findFirstVoiceChannelId, handleConnectionOpen

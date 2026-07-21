@@ -1,7 +1,7 @@
 // Module ID: 9532
-// Function ID: 74222
+// Function ID: 74233
 // Name: countContentTypes
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 9532 (countContentTypes)

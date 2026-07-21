@@ -1,9 +1,9 @@
-// Module ID: 6969
-// Function ID: 55710
+// Module ID: 6970
+// Function ID: 55722
 // Name: enforcing
 // Dependencies: []
 
-// Module 6969 (enforcing)
+// Module 6970 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAdsModule");
 const _module = require(dependencyMap[1]);

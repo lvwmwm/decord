@@ -1,10 +1,10 @@
-// Module ID: 5256
-// Function ID: 44535
+// Module ID: 5255
+// Function ID: 44542
 // Name: normalizeSection
 // Dependencies: []
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 5256 (normalizeSection)
+// Module 5255 (normalizeSection)
 function normalizeSection(str) {
   str = "";
   if (null != str) {

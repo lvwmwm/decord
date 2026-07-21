@@ -1,10 +1,10 @@
-// Module ID: 7472
-// Function ID: 59970
+// Module ID: 7473
+// Function ID: 59982
 // Name: openStageChannel
 // Dependencies: []
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
-// Module 7472 (openStageChannel)
+// Module 7473 (openStageChannel)
 function openStageChannel(isGuildStageVoice) {
   if (isGuildStageVoice.isGuildStageVoice()) {
     let obj = require(dependencyMap[9]);

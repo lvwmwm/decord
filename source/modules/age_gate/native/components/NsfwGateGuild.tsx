@@ -1,5 +1,5 @@
 // Module ID: 9341
-// Function ID: 72972
+// Function ID: 72983
 // Name: NsfwGateGuild
 // Dependencies: []
 // Exports: default
@@ -16,10 +16,10 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { 9223372036854775807: "isArray", 9223372036854775807: "op", -9223372036854775808: "start", 9223372036854775807: "r", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.header = { collapsable: "absolute", preventClipping: 0 };
-obj.description = { collapsable: 52881784.83212474, preventClipping: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.header = {};
+obj.description = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj.image = { marginBottom: 16 };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[6]);
@@ -71,9 +71,9 @@ export default function NsfwGateGuild(guildId) {
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, children: stringResult };
   items1[2] = callback(arg1(dependencyMap[15]).Text, obj1);
-  const obj2 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.description, children: stringResult1 };
+  const obj2 = { delete: null, dispatch: 1, raw: 1, style: tmp.description, children: stringResult1 };
   items1[3] = callback(arg1(dependencyMap[15]).Text, obj2);
-  const obj3 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.description, children: intl3.format(arg1(dependencyMap[9]).t.Z12LNW, obj) };
+  const obj3 = { delete: null, dispatch: 1, raw: 1, style: tmp.description, children: intl3.format(arg1(dependencyMap[9]).t.Z12LNW, obj) };
   items1[4] = callback(arg1(dependencyMap[15]).Text, obj3);
   const obj4 = { onPress: guildId.onClose, size: "md" };
   const intl4 = arg1(dependencyMap[9]).intl;

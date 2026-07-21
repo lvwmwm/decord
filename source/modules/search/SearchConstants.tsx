@@ -1,5 +1,5 @@
 // Module ID: 9095
-// Function ID: 71297
+// Function ID: 71308
 // Name: SearchAutocompleteSelectAnalyticsActions
 // Dependencies: []
 
@@ -43,8 +43,8 @@ export const NATIVE_SEARCH_HISTORY_STORAGE_KEY = "SearchHistoryStore";
 export const WEB_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore_Web";
 export const NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore";
 export const SearchFilter = obj;
-export const SEARCH_QUERY_DEFAULT_FILTERS = { 9223372036854775807: 9, 9223372036854775807: "hero_art_image_link_dark_theme" };
-export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: [] }, [obj.File]: { has: ["<string:71040322>"] }, [obj.Messages]: {}, [obj.Link]: { has: [true] }, [obj.Pins]: { pinned: true } };
+export const SEARCH_QUERY_DEFAULT_FILTERS = {};
+export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: [] }, [obj.File]: { has: ["accessibility"] }, [obj.Messages]: {}, [obj.Link]: { has: [true] }, [obj.Pins]: { pinned: true } };
 export const SEARCH_PINNED_MESSAGES_LINE_CLAMP = 10;
 export const SEARCH_MESSAGES_DEFAULT_LINE_CLAMP = 4;
 export const SearchTabs = obj;

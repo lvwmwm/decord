@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 104971
+// Module ID: 13879
+// Function ID: 105003
 // Name: useConnectionBannerHeight
 // Dependencies: []
 // Exports: useConnectionBannerHeight
 
-// Module 13876 (useConnectionBannerHeight)
+// Module 13879 (useConnectionBannerHeight)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[0]).ConnectivityIndicatorState;
 const CONNECTION_BANNER_HEIGHT = arg1(dependencyMap[1]).CONNECTION_BANNER_HEIGHT;

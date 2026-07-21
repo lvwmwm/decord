@@ -1,5 +1,5 @@
 // Module ID: 9552
-// Function ID: 74435
+// Function ID: 74446
 // Name: MediaPostThumbnailActionSheet
 // Dependencies: []
 // Exports: default
@@ -13,11 +13,11 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
+const obj1 = { paddingTop: false, justifyContent: false, alignItems: false, flexDirection: false, backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.topContainer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
-obj.topContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.setAsThumbnailContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.contentContainer = {};
+obj.contentContainer = { parent: null, bm: null };
 obj.title = { marginTop: 24 };
 obj.description = { textAlign: "center" };
 let closure_7 = obj.createStyles(obj);
@@ -38,7 +38,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   const items = [tmp.contentContainer, { paddingBottom: importDefault(dependencyMap[6])().bottom }];
   const obj1 = { style: tmp.topContainer };
   const obj2 = { style: tmp.setAsThumbnailContainer };
-  const obj3 = {};
+  const obj3 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const intl = arg1(dependencyMap[10]).intl;
   obj3.children = intl.string(arg1(dependencyMap[10]).t.ews2pj);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), callback(arg1(dependencyMap[11]).Checkbox, { selected: true })];
@@ -50,7 +50,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   obj4.children = intl2.string(arg1(dependencyMap[10]).t.WJisip);
   items2[1] = callback(arg1(dependencyMap[9]).Text, obj4);
   items2[2] = callback(arg1(dependencyMap[11]).Spacer, { size: 12 });
-  const obj5 = { style: tmp.description };
+  const obj5 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, style: tmp.description };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[10]).t.X6ZH6d);
   items2[3] = callback(arg1(dependencyMap[9]).Text, obj5);

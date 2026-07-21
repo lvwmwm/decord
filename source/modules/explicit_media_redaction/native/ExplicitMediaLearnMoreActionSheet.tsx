@@ -1,5 +1,5 @@
 // Module ID: 11010
-// Function ID: 85653
+// Function ID: 85664
 // Name: ExplicitMediaLearnMoreActionSheet
 // Dependencies: []
 // Exports: default
@@ -108,7 +108,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   obj1 = { style: tmp.art, children: callback(arg1(dependencyMap[20]).ShieldSpotIllustration, {}) };
   const items4 = [callback(View, obj1), , ];
   const obj2 = { style: tmp.info };
-  const obj3 = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.infoHeader };
+  const obj3 = { style: tmp.infoHeader };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[10]).t.sGW77l);
   const items5 = [callback(arg1(dependencyMap[21]).Text, obj3), ];
@@ -129,7 +129,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   obj2.children = items5;
   items4[1] = closure_9(View, obj2);
   const obj5 = { style: tmp.buttonsContainer };
-  const obj6 = {};
+  const obj6 = { "Bool(true)": "rgb(0, 122, 255)", "Bool(true)": "rgb(242, 242, 242)" };
   if (memo) {
     obj6.text = stringResult;
     obj6.onPress = function handleAgeVerifyButtonPress() {
@@ -164,7 +164,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     }
   }
   const items6 = [callback(tmp4(tmp2[22]).Button, tmp22), , ];
-  const obj7 = { 9223372036854775807: null, -9223372036854775808: null };
+  const obj7 = { "Bool(true)": null, "Bool(true)": null };
   const intl7 = arg1(dependencyMap[10]).intl;
   obj7.text = intl7.string(arg1(dependencyMap[10]).t.bmbHPA);
   obj7.onPress = function onPress() {
@@ -172,7 +172,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     messageId(attachmentId[12]).hideActionSheet();
   };
   items6[1] = callback(arg1(dependencyMap[22]).Button, obj7);
-  const obj8 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.linkSubtext, children: callback1() };
+  const obj8 = { style: tmp.linkSubtext, children: callback1() };
   items6[2] = callback(arg1(dependencyMap[23]).TextWithIOSLinkWorkaround, obj8);
   obj5.children = items6;
   items4[2] = closure_9(View, obj5);

@@ -1,32 +1,31 @@
 // Module ID: 3484
-// Function ID: 26878
+// Function ID: 26883
 // Name: getOverlappingDaysInIntervals
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3484 (getOverlappingDaysInIntervals)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 let closure_2 = 86400000;
 
 export default function getOverlappingDaysInIntervals(arg0, arg1) {
   let obj = arg0;
   obj = arg1;
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
+  closure_1.default(2, arguments);
   if (!arg0) {
     obj = {};
   }
   if (!obj) {
     obj = {};
   }
-  const time = startOfWeek.default(obj.start).getTime();
-  const defaultResult1 = startOfWeek.default(obj.start);
-  const time1 = startOfWeek.default(obj.end).getTime();
-  const defaultResult2 = startOfWeek.default(obj.end);
-  let time2 = startOfWeek.default(obj.start).getTime();
-  const defaultResult3 = startOfWeek.default(obj.start);
-  let time3 = startOfWeek.default(obj.end).getTime();
+  const time = closure_0.default(obj.start).getTime();
+  const defaultResult1 = closure_0.default(obj.start);
+  const time1 = closure_0.default(obj.end).getTime();
+  const defaultResult2 = closure_0.default(obj.end);
+  let time2 = closure_0.default(obj.start).getTime();
+  const defaultResult3 = closure_0.default(obj.start);
+  let time3 = closure_0.default(obj.end).getTime();
   if (time <= time1) {
     if (time2 <= time3) {
       if (time < time3) {

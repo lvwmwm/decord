@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 63578
+// Module ID: 8007
+// Function ID: 63591
 // Name: BoostGemIcon
 // Dependencies: []
 // Exports: BoostGemIcon
 
-// Module 8006 (BoostGemIcon)
+// Module 8007 (BoostGemIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BoostGemIcon.tsx");

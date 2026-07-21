@@ -1,10 +1,10 @@
-// Module ID: 7993
-// Function ID: 63524
+// Module ID: 7994
+// Function ID: 63537
 // Name: isSamePremiumType
 // Dependencies: []
 // Exports: default
 
-// Module 7993 (isSamePremiumType)
+// Module 7994 (isSamePremiumType)
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;
@@ -44,8 +44,8 @@ obj = { borderRadius: importDefault(dependencyMap[11]).radii.lg };
 obj.card = obj;
 obj.logoContainer = { marginBottom: 8 };
 obj.logo = { marginRight: 4 };
-obj.priceContainer = { transparent: false, animationType: false, url: false, body: false };
-obj.discountPriceText = { "Bool(true)": "<string:2041856273>", "Bool(true)": "<string:1124139009>" };
+obj.priceContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.discountPriceText = { enabled: "key", disableUI: "Text" };
 obj.featureList = { marginTop: 8 };
 const obj1 = {};
 const tmp5 = arg1(dependencyMap[9]);
@@ -55,15 +55,15 @@ obj.featureLabel = obj1;
 obj.featureRow = { paddingVertical: 7 };
 obj.featureIcon = {};
 obj.button = { marginTop: 16 };
-obj.currentPlanLabel = { fetchGuildStickersWithCreator: true, hour: null, minute: true, second: "no-hide-descendants" };
+obj.currentPlanLabel = { 1403688035: true, -1961128130: null, 1650961124: true, 979130026: "no-hide-descendants" };
 obj.trialSubTextContainer = {};
 const obj2 = {};
 const importDefaultResult = importDefault(dependencyMap[12]);
 const merged1 = Object.assign(importDefault(dependencyMap[12])(Fonts.DISPLAY_MEDIUM, importDefault(dependencyMap[11]).unsafe_rawColors.WHITE, 12));
 obj2["textAlign"] = "center";
 obj.trialSubText = obj2;
-obj.pill = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-obj.buttonIcon = {};
+obj.pill = { force: "auto.ai.mcp_server", trackAnalytics: false, shouldMention: "auto.db.supabase.auth", isMentionLowImportance: "Portugu\u00EAs", messageId: "Portuguese" };
+obj.buttonIcon = { 1449338582: null, -865846725: 1, 1710029728: 0 };
 let closure_20 = obj.createStyles(obj);
 let closure_21 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 function PriceText(fractionalPremiumInfo) {
@@ -208,7 +208,7 @@ function PriceText(fractionalPremiumInfo) {
     return tmp8Result;
   }
   const obj8 = { accessible: true, style: tmp.priceContainer };
-  const obj9 = {};
+  const obj9 = { hasMaxConnections: 20, isBoostOnlySubscription: 20 };
   let priceString3;
   if (null != tmp2) {
     priceString3 = tmp2.priceString;
@@ -371,7 +371,7 @@ export default function PremiumFeaturesCard(premiumType) {
   const tmp21 = importDefault(dependencyMap[29])(premiumType, flag, UNSPECIFIED);
   const tmp37 = callback2;
   if (flag3) {
-    let tmp39Result = tmp39(tmp40(tmp41[35]), {});
+    let tmp39Result = tmp39(tmp40(tmp41[35]), { variant: null, selectable: null, style: null });
   } else {
     const obj5 = { premiumType, style: tmp3.logo };
     tmp39Result = tmp39(tmp40(tmp41[36]), obj5);
@@ -420,7 +420,7 @@ export default function PremiumFeaturesCard(premiumType) {
   } else {
     if (tmp32) {
       obj11 = { style: tmp3.currentPlanLabel };
-      const obj12 = {};
+      const obj12 = { hasMaxConnections: "<string:3362914305>", isBoostOnlySubscription: "<string:2018574337>" };
       const intl5 = arg1(dependencyMap[17]).intl;
       obj12.children = intl5.string(arg1(dependencyMap[17]).t.j+wlhy);
       obj11.children = callback2(arg1(dependencyMap[16]).Text, obj12);

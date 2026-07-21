@@ -1,7 +1,7 @@
 // Module ID: 10916
-// Function ID: 84880
+// Function ID: 84891
 // Name: createGameSheetHook
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: createGameSheetHook
 
 // Module 10916 (createGameSheetHook)

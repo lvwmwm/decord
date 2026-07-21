@@ -1,5 +1,5 @@
 // Module ID: 1212
-// Function ID: 13899
+// Function ID: 13903
 // Name: getSystemLocale
 // Dependencies: []
 // Exports: getSystemLocale, useSyncMessages
@@ -23,7 +23,7 @@ const Fonts = arg1(dependencyMap[1]).Fonts;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
 obj = { fontFamily: Fonts.CODE_NORMAL };
-let closure_3 = { strong: obj, italic: { fontStyle: "italic" }, code: obj, del: { notClaimed: null, notEmailVerified: "9ba137dcd88d29dfd923fc4a2e32469d" } };
+let closure_3 = { strong: obj, italic: { fontStyle: "italic" }, code: obj, del: { "Null": null, "Null": "9ba137dcd88d29dfd923fc4a2e32469d" } };
 const systemLocale = getSystemLocale("en-US");
 let obj2 = arg1(dependencyMap[6]);
 const normalizedLocale = obj2.getNormalizedLocale(systemLocale, "en-US");

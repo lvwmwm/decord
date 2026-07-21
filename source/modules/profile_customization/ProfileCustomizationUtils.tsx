@@ -1,10 +1,10 @@
-// Module ID: 7839
-// Function ID: 62491
+// Module ID: 7840
+// Function ID: 62504
 // Name: getProfilePreviewValue
 // Dependencies: []
 // Exports: announcePendingAvatarChange, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 7839 (getProfilePreviewValue)
+// Module 7840 (getProfilePreviewValue)
 function getProfilePreviewValue(arg0) {
   let guildId;
   let guildValue;

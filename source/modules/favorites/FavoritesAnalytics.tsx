@@ -1,15 +1,16 @@
 // Module ID: 10181
-// Function ID: 78661
+// Function ID: 78672
 // Name: setNextFavoritesGuildViewSource
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled
 
 // Module 10181 (setNextFavoritesGuildViewSource)
-import __exportStarResult1 from "__exportStarResult1";
-import { AnalyticEvents } from "__exportStarResult1";
+import closure_3 from "result";
+import { AnalyticEvents } from "result";
+import result from "result";
 
 let closure_5 = "manual_browsing";
-const result = require("__exportStarResult1").fileFinishedImporting("modules/favorites/FavoritesAnalytics.tsx");
+result = result.fileFinishedImporting("modules/favorites/FavoritesAnalytics.tsx");
 
 export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(arg0) {
   if (!obj.isFavoritesGuildId(guildId.getGuildId())) {

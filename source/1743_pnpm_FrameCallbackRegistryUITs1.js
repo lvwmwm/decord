@@ -1,5 +1,5 @@
 // Module ID: 1743
-// Function ID: 19513
+// Function ID: 19518
 // Name: pnpm_FrameCallbackRegistryUITs1
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 5963
-// Function ID: 49858
+// Function ID: 49866
 // Name: ConnectionCablesSpotIllustration
 // Dependencies: []
 // Exports: ConnectionCablesSpotIllustration

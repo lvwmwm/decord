@@ -1,5 +1,5 @@
 // Module ID: 842
-// Function ID: 9355
+// Function ID: 9359
 // Name: withActiveSpan
 // Dependencies: []
 // Exports: continueTrace, startInactiveSpan, startSpan, startSpanManual, suppressTracing
@@ -124,7 +124,7 @@ function createChildOrRootSpan(arg0) {
     const sentryNonRecordingSpan = new SentryNonRecordingSpan();
     if (forceTransaction) {
       const _Object = Object;
-      let obj3 = { CHAT: null, RESPONSES: null, transaction: spanArguments.name };
+      let obj3 = { getApplication: "arguments", setBarStyle: "press", transaction: spanArguments.name };
       obj2 = require(dependencyMap[17]);
       const merged1 = Object.assign(obj3, obj2.getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
       obj3 = require(dependencyMap[17]);

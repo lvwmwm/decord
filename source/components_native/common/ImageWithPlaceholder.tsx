@@ -1,24 +1,24 @@
 // Module ID: 8648
-// Function ID: 68451
+// Function ID: 68462
 // Name: ImagePlaceholderVersions
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: ImageWithPlaceholder
 
 // Module 8648 (ImagePlaceholderVersions)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import result from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
 
-const View = __exportStarResult1.View;
+const View = result.View;
 let closure_4 = { flex: 1 };
 const obj = { THUMBHASH: 1, [1]: "THUMBHASH" };
-if (__exportStarResult1.isAndroid()) {
-  let importDefaultResult = require("__exportStarResult1");
+if (result.isAndroid()) {
+  let importDefaultResult = require("result");
 } else {
-  importDefaultResult = __exportStarResult1.requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
+  importDefaultResult = result.requireNativeComponent("DCDImageWithThumbhashPlaceholderView");
 }
-const result = __exportStarResult1.fileFinishedImporting("components_native/common/ImageWithPlaceholder.tsx");
+result = result.fileFinishedImporting("components_native/common/ImageWithPlaceholder.tsx");
 
 export const ImagePlaceholderVersions = obj;
 export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
@@ -28,7 +28,7 @@ export const ImageWithPlaceholder = function ImageWithPlaceholder(arg0) {
   let style;
   let uri;
   ({ uri, placeholder, placeholderVersion, alt, style } = arg0);
-  let obj = {};
+  let obj = { <string:80591872>: null, <string:80584960>: null, <string:80609536>: null, <string:80614656>: null, <string:80625664>: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   if (null != placeholder) {

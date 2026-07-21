@@ -1,5 +1,5 @@
 // Module ID: 1630
-// Function ID: 18218
+// Function ID: 18223
 // Name: createMapperRegistry
 // Dependencies: []
 // Exports: startMapper, stopMapper

@@ -1,9 +1,9 @@
-// Module ID: 15251
-// Function ID: 115112
+// Module ID: 15254
+// Function ID: 115146
 // Name: SearchableMembersScreen
 // Dependencies: []
 
-// Module 15251 (SearchableMembersScreen)
+// Module 15254 (SearchableMembersScreen)
 function SearchableMembersScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
@@ -255,7 +255,7 @@ const tmp2 = arg1(dependencyMap[9]);
 ({ RelationshipTypes: closure_16, SearchTypes: closure_17 } = arg1(dependencyMap[11]));
 const jsx = arg1(dependencyMap[12]).jsx;
 const tmp3 = arg1(dependencyMap[11]);
-let closure_19 = arg1(dependencyMap[13]).createStyles({ container: {}, userList: { backgroundColor: "transparent" } });
+let closure_19 = arg1(dependencyMap[13]).createStyles({ container: { SDK_VERSION: null, numberOfLines: null }, userList: { backgroundColor: "transparent" } });
 const obj2 = arg1(dependencyMap[13]);
 const memoResult = importAllResult.memo(function MembersScreen(searchContext) {
   searchContext = searchContext.searchContext;

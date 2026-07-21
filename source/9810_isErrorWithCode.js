@@ -1,10 +1,10 @@
 // Module ID: 9810
-// Function ID: 76120
+// Function ID: 76131
 // Name: isErrorWithCode
 // Dependencies: []
 
 // Module 9810 (isErrorWithCode)
-arg5.errorCodes = Object.freeze({ -9223372036854775808: 24, -9223372036854775808: 32, 0: null });
+arg5.errorCodes = Object.freeze({ source: 24, width: 32, height: null });
 arg5.isErrorWithCode = function isErrorWithCode(arg0) {
   let tmp = arg0 instanceof Error;
   if (!tmp) {

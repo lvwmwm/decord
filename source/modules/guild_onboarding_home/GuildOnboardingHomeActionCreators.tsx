@@ -1,5 +1,5 @@
 // Module ID: 11372
-// Function ID: 88397
+// Function ID: 88409
 // Name: _fetchGuildHomeSettings
 // Dependencies: []
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel

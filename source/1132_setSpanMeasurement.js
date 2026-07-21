@@ -1,5 +1,5 @@
 // Module ID: 1132
-// Function ID: 12900
+// Function ID: 12904
 // Name: setSpanMeasurement
 // Dependencies: []
 // Exports: createChildSpanJSON, getBundleStartTimestampMs, getLatestChildSpanEndTimestamp, getTimeOriginMilliseconds, isNearToNow, setSpanDurationAsMeasurement, setSpanDurationAsMeasurementOnSpan

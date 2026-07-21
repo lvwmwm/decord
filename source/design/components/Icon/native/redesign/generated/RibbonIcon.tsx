@@ -1,5 +1,5 @@
 // Module ID: 11977
-// Function ID: 92599
+// Function ID: 92611
 // Name: RibbonIcon
 // Dependencies: []
 // Exports: RibbonIcon

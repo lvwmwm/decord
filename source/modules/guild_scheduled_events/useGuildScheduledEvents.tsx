@@ -1,5 +1,5 @@
 // Module ID: 8448
-// Function ID: 67387
+// Function ID: 67398
 // Name: useGuildUpcomingEvents
 // Dependencies: []
 // Exports: default, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents

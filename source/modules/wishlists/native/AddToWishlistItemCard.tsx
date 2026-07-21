@@ -1,5 +1,5 @@
 // Module ID: 12016
-// Function ID: 92843
+// Function ID: 92855
 // Name: AddToWishlistItemCard
 // Dependencies: []
 // Exports: default
@@ -26,7 +26,7 @@ export default function AddToWishlistItemCard(sku) {
   const importDefault = wishlistId;
   const analyticsLocations = sku.analyticsLocations;
   const dependencyMap = analyticsLocations;
-  let obj = { rejectWithError: "spring", flexDirection: "linear", raw: "easeInEaseOut" };
+  let obj = { getPurchase: false, SEPA_TOKENIZATION_FAILED: false, BRAND_600: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(sku, obj);
   let callback = merged;

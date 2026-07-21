@@ -1,10 +1,10 @@
-// Module ID: 16293
-// Function ID: 125737
+// Module ID: 16301
+// Function ID: 125798
 // Name: ImagePlusIcon
 // Dependencies: []
 // Exports: ImagePlusIcon
 
-// Module 16293 (ImagePlusIcon)
+// Module 16301 (ImagePlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImagePlusIcon.tsx");

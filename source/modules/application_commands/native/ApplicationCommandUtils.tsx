@@ -1,5 +1,5 @@
 // Module ID: 11326
-// Function ID: 88103
+// Function ID: 88115
 // Name: getApplicationCommandsIconSource
 // Dependencies: []
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview

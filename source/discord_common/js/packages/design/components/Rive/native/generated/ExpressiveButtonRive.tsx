@@ -1,15 +1,15 @@
 // Module ID: 3923
-// Function ID: 32398
+// Function ID: 32403
 // Name: ExpressiveButtonRive
 // Dependencies: []
 
 // Module 3923 (ExpressiveButtonRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Mobile Expressive Button Lightmode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Ambient_Lightmode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Mobile Expressive Button Dark Mode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Ambient: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 } };
-let closure_8 = { Mobile Expressive Button Lightmode: [1358955054], Ambient_Lightmode: [1358955054], Mobile Expressive Button Dark Mode: [1358955054], Ambient: [1358955054] };
+let closure_7 = { Mobile Expressive Button Lightmode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient_Lightmode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Mobile Expressive Button Dark Mode: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient: { Array: "BG_GRADIENT_DESERT_KHAKI_1", r: 12.92, a: "BG_GRADIENT_DESERT_KHAKI_2", y: 32.92, call: "BG_GRADIENT_DESERT_KHAKI_3" } };
+let closure_8 = { Mobile Expressive Button Lightmode: [], Ambient_Lightmode: [], Mobile Expressive Button Dark Mode: [], Ambient: [] };
 let closure_9 = {
   Mobile Expressive Button Lightmode: function MobileExpressiveButtonLightmodeBindings(arg0) {
     let dataBinding;

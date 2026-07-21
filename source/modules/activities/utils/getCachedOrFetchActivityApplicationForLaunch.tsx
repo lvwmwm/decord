@@ -1,5 +1,5 @@
 // Module ID: 10805
-// Function ID: 83896
+// Function ID: 83907
 // Name: _getCachedOrFetchActivityApplicationForLaunch
 // Dependencies: []
 // Exports: default

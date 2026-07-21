@@ -1,10 +1,10 @@
-// Module ID: 7531
-// Function ID: 60250
+// Module ID: 7532
+// Function ID: 60262
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: []
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 7531 (AgeVerificationModalEntryPoint)
+// Module 7532 (AgeVerificationModalEntryPoint)
 let closure_2 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/age_assurance/AgeVerificationAnalyticsUtils.tsx");

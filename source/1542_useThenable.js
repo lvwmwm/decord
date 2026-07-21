@@ -1,5 +1,5 @@
 // Module ID: 1542
-// Function ID: 17551
+// Function ID: 17556
 // Name: useThenable
 // Dependencies: []
 // Exports: default

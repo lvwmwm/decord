@@ -1,9 +1,9 @@
-// Module ID: 6813
-// Function ID: 53712
+// Module ID: 6814
+// Function ID: 53724
 // Name: WideBannerBlockRecord
 // Dependencies: []
 
-// Module 6813 (WideBannerBlockRecord)
+// Module 6814 (WideBannerBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

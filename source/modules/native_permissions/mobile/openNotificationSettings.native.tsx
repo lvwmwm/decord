@@ -1,5 +1,5 @@
 // Module ID: 10629
-// Function ID: 82964
+// Function ID: 82975
 // Name: openNotificationSettings
 // Dependencies: []
 // Exports: default

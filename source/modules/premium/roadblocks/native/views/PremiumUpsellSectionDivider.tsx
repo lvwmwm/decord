@@ -1,5 +1,5 @@
 // Module ID: 9352
-// Function ID: 73003
+// Function ID: 73014
 // Name: PremiumUpsellSectionDivider
 // Dependencies: []
 // Exports: default
@@ -25,14 +25,13 @@ let closure_8 = obj.createStyles((arg0) => {
   }
   obj.marginBottom = num2;
   obj.container = obj;
-  obj = { "Null": null, "Null": null };
+  obj = { margin: null, backgroundColor: null };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj.lockContainer = obj;
-  const obj1 = { "Bool(true)": null, "Bool(true)": "15492a52206e63f9d08f70b19c6b74cb", "Bool(true)": "ic_nitro_basic_wheel_gradient", borderRadius: importDefault(dependencyMap[5]).radii.round };
-  obj.lockGradient = obj1;
-  obj.lock = { "Null": "flex", "Null": "center", "Null": "center" };
+  obj.lockGradient = { borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj.lock = { backgroundColor: "<string:3192994401>", borderRadius: "<string:684289>", height: "<string:141754368>" };
   obj.divider = { height: 1 };
-  const obj2 = { textTransform: 1485193761, lineHeight: -1039007742, fontSize: -430899199, textAlign: 7406221, paddingTop: 16777216 };
+  const obj2 = { EMOJI_REACTIONS_ON_MESSAGES: null, paddingVertical: false, isInitial: false, ModalActionCreators: false, YOUTUBE: null };
   let num3;
   if (arg0 === obj.START) {
     num3 = 0;

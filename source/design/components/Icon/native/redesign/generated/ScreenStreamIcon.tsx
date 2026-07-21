@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 63575
+// Module ID: 8005
+// Function ID: 63588
 // Name: ScreenStreamIcon
 // Dependencies: []
 // Exports: ScreenStreamIcon
 
-// Module 8004 (ScreenStreamIcon)
+// Module 8005 (ScreenStreamIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ScreenStreamIcon.tsx");

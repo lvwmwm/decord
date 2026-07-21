@@ -1,5 +1,5 @@
 // Module ID: 9776
-// Function ID: 75994
+// Function ID: 76005
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
 // Dependencies: []
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing

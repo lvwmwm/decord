@@ -1,5 +1,5 @@
 // Module ID: 10450
-// Function ID: 80676
+// Function ID: 80687
 // Name: bucketVariantType
 // Dependencies: []
 // Exports: getLegacyExperiments, useLegacyExperiments

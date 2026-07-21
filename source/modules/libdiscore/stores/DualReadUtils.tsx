@@ -1,5 +1,5 @@
 // Module ID: 1840
-// Function ID: 20170
+// Function ID: 20175
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: runDualReadValidation
@@ -387,11 +387,11 @@ function logErrorsToAnalytics(store_name, items) {
             function appendArrayMismatches(combined, primaryValue, shadowValue) {
               let obj = combined(appendDeepMismatches[4]);
               if (!obj.areArraysShallowEqual(primaryValue, shadowValue)) {
-                obj = { Icon: null, bottom: null, id: false, fieldName: combined, primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
+                obj = { fieldName: combined, primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
                 appendMismatch(obj);
               }
             }
-            let obj = { type: -536870861, handle: -299892737, mismatchedFields: [] };
+            let obj = { 9223372036854775807: -536870861, 9223372036854775807: -299892737, mismatchedFields: [] };
             const tmp = callback(items);
             const iter = tmp();
             let iter2 = iter;

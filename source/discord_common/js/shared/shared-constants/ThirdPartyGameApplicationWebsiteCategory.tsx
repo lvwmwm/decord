@@ -1,7 +1,7 @@
 // Module ID: 8596
-// Function ID: 68256
+// Function ID: 68267
 // Name: ThirdPartyGameApplicationWebsiteCategory
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8596 (ThirdPartyGameApplicationWebsiteCategory)
 const _module = require(dependencyMap[0]);

@@ -1,16 +1,17 @@
-// Module ID: 13598
-// Function ID: 103036
+// Module ID: 13600
+// Function ID: 103058
 // Name: AgeConfirmationNotice
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 13598 (AgeConfirmationNotice)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ SafetySettingsNoticeAction: closure_5, SafetySettingsNoticeType: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");
+// Module 13600 (AgeConfirmationNotice)
+import closure_3 from "result";
+import { View } from "result";
+import result from "result";
+import { jsx } from "result";
+
+({ SafetySettingsNoticeAction: closure_5, SafetySettingsNoticeType: closure_6 } = result);
+result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");
 
 export default function AgeConfirmationNotice() {
   let obj = arg1(dependencyMap[4]);
@@ -37,7 +38,7 @@ export default function AgeConfirmationNotice() {
   obj.marginBottom = importDefault(dependencyMap[10]).space.PX_8;
   obj.style = obj;
   const obj1 = { messageType: arg1(dependencyMap[11]).HelpMessageTypes.INFO, borderRadius: importDefault(dependencyMap[10]).radii.lg };
-  const obj2 = {};
+  const obj2 = { "Bool(true)": null, "Bool(true)": null };
   const intl = arg1(dependencyMap[13]).intl;
   obj2.text = intl.string(arg1(dependencyMap[13]).t.FDSSia);
   obj2.onPress = callback;

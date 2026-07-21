@@ -1,5 +1,5 @@
 // Module ID: 10325
-// Function ID: 79706
+// Function ID: 79717
 // Name: useNativeForumPostHandlers
 // Dependencies: []
 // Exports: default

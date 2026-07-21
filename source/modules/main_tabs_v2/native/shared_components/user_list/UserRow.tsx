@@ -1,5 +1,5 @@
 // Module ID: 8826
-// Function ID: 69559
+// Function ID: 69570
 // Name: handleCall
 // Dependencies: []
 
@@ -83,7 +83,7 @@ function UserRowSubLabel(arg0) {
     }
   }
   if (!isGameRelationship) {
-    obj = { encodingConfig: "defineProperty", showRemove: "", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "uri" };
+    obj = { "Null": "defineProperty", "Null": "", "Null": "uri" };
     let obj4 = arg1(dependencyMap[24]);
     obj.children = obj4.getUserTag(user);
     callback(arg1(dependencyMap[23]).Text, obj);
@@ -106,7 +106,7 @@ function UserRowSubLabel(arg0) {
     obj3.source = obj4;
     obj3.disableColor = true;
     const items1 = [callback(arg1(dependencyMap[22]).Icon, obj3, stateFromStores.id), ];
-    const obj5 = { encodingConfig: "PRIMARY_430", showRemove: 1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "use_blur", children: stateFromStores.name };
+    const obj5 = { "Null": "PRIMARY_430", "Null": 1, "Null": "use_blur", children: stateFromStores.name };
     items1[1] = callback(arg1(dependencyMap[23]).Text, obj5);
     obj2.children = items1;
     closure_15(View, obj2);
@@ -129,14 +129,14 @@ const tmp2 = arg1(dependencyMap[9]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let closure_17 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let obj1 = arg1(dependencyMap[11]);
-let closure_18 = obj1.createStyles({ avatar: { borderRadius: -536870861, borderWidth: -299892737 }, actions: { flexDirection: "row" }, action: {}, buttonWrapper: { marginLeft: 8 }, labelContainer: {}, roleDot: {}, usernameLabelContainer: {}, usernameLabel: { "Null": 10388343592192675000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 } });
+let closure_18 = obj1.createStyles({ avatar: { "Null": -536870861, "Null": -299892737 }, actions: { flexDirection: "row" }, action: {}, buttonWrapper: { marginLeft: 8 }, labelContainer: { "Null": 7, "Null": 370 }, roleDot: {}, usernameLabelContainer: {}, usernameLabel: {} });
 const tmp3 = arg1(dependencyMap[10]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[12]).colors.TEXT_SUBTLE };
 obj.activityText = obj;
 obj1 = { cornerRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.gameContainer = obj1;
-obj.gameIcon = { bhk: "Array", bic: "isPrivate" };
+obj.gameIcon = { "Null": false, "Null": false };
 let closure_19 = arg1(dependencyMap[11]).createStyles(obj);
 let closure_20 = "Friends_v2";
 const obj3 = arg1(dependencyMap[11]);
@@ -356,7 +356,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         items.push(obj, obj14);
         obj15 = { style: tmp4.actions };
         const obj16 = { style: tmp4.buttonWrapper };
-        const obj17 = {};
+        const obj17 = { "Bool(true)": null, "Bool(true)": null };
         obj5 = type(NONE[33]);
         const intl3 = type(NONE[28]).intl;
         obj17.text = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);
@@ -571,7 +571,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const tmp25 = importDefault(dependencyMap[43])(obj);
   let obj9 = arg1(dependencyMap[44]);
   const displayNameStylesFont = obj9.useDisplayNameStylesFont({ displayNameStyles: tmp25 });
-  obj = {};
+  obj = { y: null, isArray: null };
   let obj11 = arg1(dependencyMap[24]);
   const humanizeStatusResult = obj11.humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let combined;

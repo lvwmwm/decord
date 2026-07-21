@@ -1,16 +1,16 @@
-// Module ID: 14619
-// Function ID: 110251
+// Module ID: 14622
+// Function ID: 110283
 // Name: submitDateOfBirth
 // Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 14619 (submitDateOfBirth)
-import { AgeGateAnalyticAction } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14622 (submitDateOfBirth)
+import { AgeGateAnalyticAction } from "result";
+import result from "result";
+import result from "result";
 
-({ AnalyticEvents: closure_4, Endpoints: closure_5 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/age_gate/AgeGateActionCreators.tsx");
+({ AnalyticEvents: closure_4, Endpoints: closure_5 } = result);
+result = result.fileFinishedImporting("modules/age_gate/AgeGateActionCreators.tsx");
 
 export const submitDateOfBirth = function submitDateOfBirth(format, source) {
   const require = source;

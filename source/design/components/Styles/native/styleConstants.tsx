@@ -1,7 +1,7 @@
 // Module ID: 4547
-// Function ID: 39857
+// Function ID: 39865
 // Name: IOS_POINTER_STYLE
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4547 (IOS_POINTER_STYLE)
 const _module = require(dependencyMap[0]);

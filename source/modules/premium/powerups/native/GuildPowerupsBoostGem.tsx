@@ -1,5 +1,5 @@
 // Module ID: 11543
-// Function ID: 89874
+// Function ID: 89886
 // Name: GuildPowerupsBoostGem
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
-obj = { <string:173102256>: "isArray", <string:1549034243>: "nm", <string:3972818102>: "useMemo", <string:374453936>: "r", <string:4221592070>: "isArray", <string:1637461585>: "c", <string:657281462>: "uri", borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SECONDARY_ALT };
+obj = { 0: "P", 0: "header", 9223372036854775807: "heading-xl/semibold", 0: "mobile-text-heading-primary", -9223372036854775808: 1, 9223372036854775807: "de.", 9223372036854775807: "du.", borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SECONDARY_ALT };
 obj.boostGemContainer = obj;
 let closure_4 = _module.createStyles(obj);
 const _module1 = require(dependencyMap[5]);

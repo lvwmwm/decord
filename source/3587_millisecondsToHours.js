@@ -1,5 +1,5 @@
 // Module ID: 3587
-// Function ID: 27762
+// Function ID: 27767
 // Name: millisecondsToHours
 // Dependencies: []
 // Exports: default

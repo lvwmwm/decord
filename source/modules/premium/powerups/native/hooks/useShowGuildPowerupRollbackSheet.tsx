@@ -1,5 +1,5 @@
 // Module ID: 11532
-// Function ID: 89814
+// Function ID: 89826
 // Name: useShowGuildPowerupRollbackSheet
 // Dependencies: []
 // Exports: default

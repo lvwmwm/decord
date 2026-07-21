@@ -1,11 +1,12 @@
 // Module ID: 1008
-// Function ID: 11005
+// Function ID: 11009
 // Name: makeFetchTransport
-// Dependencies: []
+// Dependencies: [1015, 1014, 1020]
 // Exports: makeFetchTransport
 
 // Module 1008 (makeFetchTransport)
-let closure_2 = require(dependencyMap[0]);
+import WINDOW from "WINDOW";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const makeFetchTransport = function makeFetchTransport(bufferSize) {
@@ -13,7 +14,7 @@ export const makeFetchTransport = function makeFetchTransport(bufferSize) {
   async function _makeRequest(body, arg1) {
     closure_2 = closure_2 + length;
     closure_3 = closure_3 + 1;
-    let obj = { "Bool(false)": "auto.browser.global_handlers.onunhandledrejection", "Bool(false)": "a", "Bool(false)": "p", body: body.body, headers: headers.headers };
+    let obj = { "Bool(false)": "16/9", "Bool(false)": "", "Bool(false)": "", body: body.body, headers: headers.headers };
     let tmp2 = tmp;
     if (closure_2 <= 60000) {
       tmp2 = closure_3 < 15;

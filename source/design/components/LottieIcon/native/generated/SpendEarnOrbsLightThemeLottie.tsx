@@ -1,12 +1,12 @@
 // Module ID: 9782
-// Function ID: 76026
+// Function ID: 76037
 // Name: items
 // Dependencies: []
 
 // Module 9782 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = [true, true];
-const items = [{ "Null": "<string:1107296256>", "Null": "*/*", "Null": "audio/*" }, { "Null": "application/msword", "Null": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Null": "image/*" }];
+let closure_3 = [1375732809, "csv"];
+const items = [{ navigationReplace: 0, openTextInVoiceIfVoiceChannel: null, hideFrame: "center" }, { navigationReplace: null, openTextInVoiceIfVoiceChannel: "url(#grad)", hideFrame: 26 }];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
   const obj = { dotLottie: ref(dependencyMap[3]), ref, layers: closure_3, markers: items };

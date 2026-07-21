@@ -1,5 +1,5 @@
 // Module ID: 10855
-// Function ID: 84453
+// Function ID: 84464
 // Name: RoleMembersActionSheet
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { gap: importDefault(dependencyMap[7]).space.PX_4, paddingTop: importDefault(dependencyMap[7]).space.PX_12, paddingBottom: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[7]).space.PX_4, paddingTop: importDefault(dependencyMap[7]).space.PX_12, paddingBottom: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
 obj.header = obj;
 obj.headerText = { flex: 1 };
 obj.roleDot = { paddingTop: 0 };

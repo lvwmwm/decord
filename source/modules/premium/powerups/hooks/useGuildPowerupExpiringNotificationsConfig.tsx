@@ -1,5 +1,5 @@
 // Module ID: 11579
-// Function ID: 89999
+// Function ID: 90011
 // Name: useGuildPowerupExpiringNotificationsConfig
 // Dependencies: []
 // Exports: default

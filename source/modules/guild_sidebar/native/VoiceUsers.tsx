@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 111883
+// Module ID: 14850
+// Function ID: 111917
 // Name: AudienceItem
 // Dependencies: []
 // Exports: default, getAudienceItemHeight
 
-// Module 14847 (AudienceItem)
+// Module 14850 (AudienceItem)
 function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
@@ -18,7 +18,7 @@ function AudienceItem(arg0) {
   }
   obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
   obj = { style: tmp.listenersIconWrapper, children: callback(arg1(dependencyMap[12]).HeadphonesIcon, obj1) };
-  const obj1 = { sticker: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007814793789109754, animated: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115644, style: tmp.headphonesIcon };
+  const obj1 = { "Null": true, "Null": true, style: tmp.headphonesIcon };
   const items = [callback(View, obj), ];
   const obj2 = { style: tmp.listenersText, variant: closure_7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj2);
@@ -35,7 +35,7 @@ let closure_8 = arg1(dependencyMap[4]).createStyles((arg0) => {
   const colors = importDefault(dependencyMap[5]).colors;
   const tmp = arg0 ? colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT : colors.BACKGROUND_BASE_LOWEST;
   const round = importDefault(dependencyMap[5]).radii.round;
-  let obj = { listeners: {}, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
+  let obj = { listeners: { keyboard: "<string:40825153>", updateAccount: "<string:617500928>", NEW_USER_INTENT_START: "<string:27410755>", GET_ENTITLEMENT_TICKET: "<string:40968960>", lineClamp: "<string:18973696>", getCategoryRecord: "<string:2722185984>" }, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
   obj = { backgroundColor: tmp, borderRadius: round };
   const merged = Object.assign(arg1(dependencyMap[6]).makeSizeStyle(20));
   obj.listenersIconWrapper = obj;

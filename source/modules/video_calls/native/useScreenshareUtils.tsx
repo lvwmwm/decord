@@ -1,5 +1,5 @@
 // Module ID: 10678
-// Function ID: 83216
+// Function ID: 83227
 // Name: handleCloseScreenshare
 // Dependencies: []
 // Exports: default, tryStartScreenShare

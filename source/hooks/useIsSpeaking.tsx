@@ -1,5 +1,5 @@
 // Module ID: 10523
-// Function ID: 82192
+// Function ID: 82203
 // Name: _checkIsSpeaking
 // Dependencies: []
 // Exports: default, getIsSpeaking

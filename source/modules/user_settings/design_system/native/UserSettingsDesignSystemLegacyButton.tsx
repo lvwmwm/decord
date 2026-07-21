@@ -1,10 +1,10 @@
-// Module ID: 14300
-// Function ID: 108033
+// Module ID: 14303
+// Function ID: 108065
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14300 (_createForOfIteratorHelperLoose)
+// Module 14303 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -118,7 +118,7 @@ function ComparisonRow(entry) {
   const items2 = [callback(arg1(dependencyMap[4]).Text, obj), ];
   const obj1 = { style: tmp.comparisonButtons };
   const obj2 = { style: tmp.comparisonSide };
-  const items3 = [callback2(arg1(dependencyMap[4]).Text, { "Bool(false)": "Header Button", "Bool(false)": "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button.", "Bool(false)": false }), ];
+  const items3 = [callback2(arg1(dependencyMap[4]).Text, { deer: "Header Button", Ufm9XX: "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button.", playstationVersion: false }), ];
   const obj3 = { look: entry.look, color: entry.color, size: arg1(dependencyMap[3]).ButtonSizes.MEDIUM, shrink: true, text: combined };
   let darkText = null;
   if (hasItem) {
@@ -136,7 +136,7 @@ function ComparisonRow(entry) {
   const items4 = [callback(closure_3, obj2), ];
   if (null != redesignVariant) {
     const obj4 = { style: tmp.comparisonSide };
-    const items5 = [callback2(arg1(dependencyMap[4]).Text, { "Bool(false)": -1899019521, "Bool(false)": 685965313, "Bool(false)": 18939905 }), ];
+    const items5 = [callback2(arg1(dependencyMap[4]).Text, { deer: -1903738113, Ufm9XX: 664600577, playstationVersion: 18939905 }), ];
     const obj5 = {
       variant: redesignVariant,
       size: "md",
@@ -149,7 +149,7 @@ function ComparisonRow(entry) {
     obj4.children = items5;
     let tmp23 = callback(closure_3, obj4);
   } else {
-    const obj6 = { style: tmp.comparisonSide, children: callback2(arg1(dependencyMap[4]).Text, { "Bool(false)": "<string:2355167488>", "Bool(false)": "<string:38769217>", "Bool(false)": "<string:4294603008>" }) };
+    const obj6 = { style: tmp.comparisonSide, children: callback2(arg1(dependencyMap[4]).Text, { deer: "<string:2355167488>", Ufm9XX: "<string:38770753>", playstationVersion: "<string:4294603008>" }) };
     tmp23 = callback2(closure_3, obj6);
   }
   items4[1] = tmp23;
@@ -303,7 +303,7 @@ const obj42 = { backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColor
 obj39.comparisonRow = { gap: 4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
 const obj43 = { gap: 4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
 obj39.comparisonButtons = { gap: importDefault(dependencyMap[7]).space.PX_12 };
-obj39.comparisonSide = {};
+obj39.comparisonSide = { "Bool(false)": null, "Bool(false)": null };
 const obj44 = { gap: importDefault(dependencyMap[7]).space.PX_12 };
 obj39.container = { paddingBottom: importDefault(dependencyMap[7]).space.PX_48 };
 const obj45 = { paddingBottom: importDefault(dependencyMap[7]).space.PX_48 };
@@ -369,7 +369,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
   }
   const obj1 = { style: tmp.container };
   const obj2 = { spacing: 4, style: tmp.header };
-  const items1 = [callback2(arg1(dependencyMap[4]).Text, { "Null": null, "Null": "lg" }), callback2(arg1(dependencyMap[4]).Text, { "Bool(false)": null, "Bool(false)": "end", "Bool(false)": "Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" })];
+  const items1 = [callback2(arg1(dependencyMap[4]).Text, { <string:1749439162>: null, <string:140675621>: "lg" }), callback2(arg1(dependencyMap[4]).Text, { deer: null, Ufm9XX: "end", playstationVersion: "Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" })];
   obj2.children = items1;
   const items2 = [callback(arg1(dependencyMap[8]).Stack, obj2), , , ];
   const entries = Object.entries(obj);
@@ -381,7 +381,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
     return callback2(callback(closure_1[9]).FormSection, obj, "cmp-" + tmp);
   });
   const obj3 = { spacing: 4, style: tmp.header };
-  const items3 = [callback2(arg1(dependencyMap[4]).Text, { "Null": "st", "Null": "r" }), callback2(arg1(dependencyMap[4]).Text, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true })];
+  const items3 = [callback2(arg1(dependencyMap[4]).Text, { <string:1749439162>: "st", <string:140675621>: "r" }), callback2(arg1(dependencyMap[4]).Text, { deer: "<string:553648487>", Ufm9XX: "<string:1095962449>", playstationVersion: "This is a custom button" })];
   obj3.children = items3;
   items2[2] = callback(arg1(dependencyMap[8]).Stack, obj3);
   const entries1 = Object.entries(obj);

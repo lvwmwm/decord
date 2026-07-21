@@ -1,10 +1,10 @@
-// Module ID: 13804
-// Function ID: 104404
+// Module ID: 13806
+// Function ID: 104426
 // Name: resolveBountyRewardClaimErrorMessage
 // Dependencies: []
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 13804 (resolveBountyRewardClaimErrorMessage)
+// Module 13806 (resolveBountyRewardClaimErrorMessage)
 function resolveBountyRewardClaimErrorMessage(code) {
   code = undefined;
   if (null != code) {
@@ -26,7 +26,7 @@ function resolveBountyRewardClaimErrorMessage(code) {
   message = intl.string(require(dependencyMap[1]).t.uLjCfn);
 }
 let closure_3 = require(dependencyMap[0]).BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;
-const set = new Set([452984833]);
+const set = new Set([null]);
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/quests/native/BountiesModal/bountyError.tsx");
 

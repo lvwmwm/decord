@@ -1,10 +1,10 @@
-// Module ID: 12460
-// Function ID: 95228
+// Module ID: 12462
+// Function ID: 95250
 // Name: supportsZstd
 // Dependencies: [29, 1352, 4026, 1857]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 12460 (supportsZstd)
+// Module 12462 (supportsZstd)
 import { NativeModules } from "_objectWithoutProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

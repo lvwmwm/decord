@@ -1,10 +1,10 @@
-// Module ID: 7928
-// Function ID: 63289
+// Module ID: 7929
+// Function ID: 63302
 // Name: getIsPrivate
 // Dependencies: []
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 7928 (getIsPrivate)
+// Module 7929 (getIsPrivate)
 function getIsPrivate(threadSettingsDraft, privateThreadMode) {
   let tmp = privateThreadMode === obj.PrivateOnly;
   if (!tmp) {

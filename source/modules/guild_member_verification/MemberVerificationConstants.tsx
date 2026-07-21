@@ -1,9 +1,9 @@
-// Module ID: 4618
-// Function ID: 40248
+// Module ID: 4617
+// Function ID: 40255
 // Name: items
 // Dependencies: []
 
-// Module 4618 (items)
+// Module 4617 (items)
 const items = [{ field_type: require(dependencyMap[0]).VerificationFormFieldTypes.VERIFICATION }];
 const items1 = [require(dependencyMap[0]).VerificationFormFieldTypes.TERMS];
 const obj = { field_type: require(dependencyMap[0]).VerificationFormFieldTypes.VERIFICATION };

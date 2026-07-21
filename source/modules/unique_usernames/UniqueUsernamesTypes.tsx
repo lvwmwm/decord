@@ -1,9 +1,9 @@
-// Module ID: 13539
-// Function ID: 102713
+// Module ID: 13541
+// Function ID: 102735
 // Name: NameValidationState
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 13539 (NameValidationState)
+// Module 13541 (NameValidationState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesTypes.tsx");
 

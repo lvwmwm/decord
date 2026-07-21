@@ -1,8 +1,8 @@
-// Module ID: 14743
-// Function ID: 111153
+// Module ID: 14746
+// Function ID: 111187
 // Dependencies: []
 
-// Module 14743
+// Module 14746
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   const channel = stateFromStoresObject.channel;
   const dependencyMap = channel;
   const dmRecipient = stateFromStoresObject.dmRecipient;
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ top: null, left: null });
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ <string:3577514597>: null, <string:3965960815>: null });
   const items2 = [channel, dmRecipient];
   ({ badge, cutouts } = importDefault(dependencyMap[15])({ mentionCount: stateFromStores }));
   const memo = importAllResult.useMemo(() => {
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
       }
     }
   }), items3);
-  obj = {};
+  obj = { -9223372036854775808: null, 0: null, 0: "k" };
   let isMultiUserDMResult = null != channel;
   const tmp5 = importDefault(dependencyMap[15])({ mentionCount: stateFromStores });
   const tmp8 = jsx;

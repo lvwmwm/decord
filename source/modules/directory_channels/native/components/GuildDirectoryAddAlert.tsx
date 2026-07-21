@@ -1,5 +1,5 @@
 // Module ID: 10043
-// Function ID: 77620
+// Function ID: 77631
 // Name: GuildDirectoryAddAlert
 // Dependencies: []
 // Exports: default
@@ -14,7 +14,7 @@ obj = { marginBottom: 16, borderRadius: importDefault(dependencyMap[4]).radii.sm
 obj.guildIcon = obj;
 obj.title = { "Null": null, "Null": null };
 obj.description = { textAlign: "center" };
-obj.container = {};
+obj.container = { "Null": null, "Null": null };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddAlert.tsx");
@@ -34,7 +34,7 @@ export default function GuildDirectoryAddAlert(arg0) {
   const tmp2 = importDefault(dependencyMap[5]);
   obj.size = arg1(dependencyMap[7]).GuildIconSizes.XLARGE;
   const items = [callback(importDefault(dependencyMap[7]), obj), , ];
-  const obj1 = { 1501064855: null, -1267889981: "238a115f1ad03e07bad0181bb5c110d4", -1145697943: "ic_playstation_device_ps5_32px", -1266241916: "png", style: tmp.title };
+  const obj1 = { Opened: 20, marginVertical: 20, marginStart: 8, marginEnd: 0.6, style: tmp.title };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[6]).t.CueiPY);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj1);

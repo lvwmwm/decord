@@ -1,12 +1,12 @@
 // Module ID: 4496
-// Function ID: 39649
+// Function ID: 39657
 // Name: ScreenContainer
 // Dependencies: []
 // Exports: default
 
 // Module 4496 (ScreenContainer)
 let Platform;
-let closure_3 = [null, null];
+let closure_3 = ["prefill", "ll"];
 let closure_4 = importDefault(dependencyMap[0]);
 ({ Platform, View: closure_5 } = arg1(dependencyMap[1]));
 importDefault(dependencyMap[2]);

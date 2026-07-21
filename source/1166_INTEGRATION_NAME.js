@@ -1,5 +1,5 @@
 // Module ID: 1166
-// Function ID: 13261
+// Function ID: 13265
 // Name: INTEGRATION_NAME
 // Dependencies: []
 // Exports: reactNativeNavigationIntegration
@@ -99,7 +99,7 @@ export const reactNativeNavigationIntegration = function reactNativeNavigationIn
         currentRoute.setCurrentRoute(componentId.componentName);
       }
       const tmp13Result = 3(obj, currentRoute(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component");
-      obj = { "Null": "OFFICIAL_3RD_PARTY_MERCH", "Null": "<string:4148232448>" };
+      obj = {};
       const _HermesInternal = HermesInternal;
       obj.message = "Navigation to " + componentId.componentName;
       const obj1 = {};

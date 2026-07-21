@@ -1,5 +1,5 @@
 // Module ID: 11458
-// Function ID: 89264
+// Function ID: 89276
 // Name: useChangelogIdFromChannel
 // Dependencies: []
 // Exports: default

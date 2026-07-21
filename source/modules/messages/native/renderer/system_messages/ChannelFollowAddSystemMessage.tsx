@@ -1,10 +1,10 @@
-// Module ID: 7686
-// Function ID: 61341
+// Module ID: 7687
+// Function ID: 61353
 // Name: createChannelFollowAddSystemMessage
 // Dependencies: []
 // Exports: createChannelFollowAddSystemMessage
 
-// Module 7686 (createChannelFollowAddSystemMessage)
+// Module 7687 (createChannelFollowAddSystemMessage)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelFollowAddSystemMessage.tsx");
 

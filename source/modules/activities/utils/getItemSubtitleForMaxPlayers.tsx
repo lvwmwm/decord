@@ -1,5 +1,5 @@
 // Module ID: 11258
-// Function ID: 87563
+// Function ID: 87575
 // Name: getItemSubtitleForMaxPlayers
 // Dependencies: []
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter

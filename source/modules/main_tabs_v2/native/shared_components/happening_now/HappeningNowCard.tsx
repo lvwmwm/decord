@@ -1,10 +1,10 @@
-// Module ID: 14060
-// Function ID: 106777
+// Module ID: 14063
+// Function ID: 106809
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
 // Dependencies: []
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14060 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14063 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 let HAPPENING_NOW_BADGE_SIZE;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -45,13 +45,13 @@ let closure_21 = obj.createStyles((arg0, arg1, arg2, arg3) => {
       obj = obj2;
     }
   } else if ("full" === arg0) {
-    obj = {};
+    obj = { width: "allNodes", height: "R", body: "isWeakSet" };
   }
   const obj3 = {};
   const merged = Object.assign(obj);
   obj3.card = { padding: closure_5, paddingRight: closure_14, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: closure_6, flexDirection: "row", alignItems: "center" };
-  obj3.cardBadgeWrapper = { "Null": 3375103, "Null": -8192, "Null": 4320799 };
-  const obj5 = { cix: 0, y: 0, isArray: 0, width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE };
+  obj3.cardBadgeWrapper = { "Bool(false)": 3375103, "Bool(false)": -8192, "Bool(false)": 4320799 };
+  const obj5 = { width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE };
   let prop;
   if (!arg3) {
     prop = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
@@ -131,12 +131,12 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
   let children;
   let noMargin;
   displayNameFont = displayNameFont.displayNameFont;
-  let obj = { icon: "spring", label: "linear", subLabel: "easeInEaseOut" };
+  let obj = {};
   ({ children, noMargin } = displayNameFont);
   Object.setPrototypeOf(null);
   const merged = Object.assign(displayNameFont, obj);
   const tmp3 = callback();
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  obj = {};
   let str = "text-sm/semibold";
   if (tmp4) {
     str = "text-md/medium";

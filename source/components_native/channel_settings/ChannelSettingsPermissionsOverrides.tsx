@@ -1,10 +1,10 @@
-// Module ID: 15385
-// Function ID: 117352
+// Module ID: 15388
+// Function ID: 117391
 // Name: ChannelSettingsPermissionsOverrides
 // Dependencies: []
 // Exports: default
 
-// Module 15385 (ChannelSettingsPermissionsOverrides)
+// Module 15388 (ChannelSettingsPermissionsOverrides)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

@@ -1,5 +1,5 @@
 // Module ID: 10823
-// Function ID: 84028
+// Function ID: 84039
 // Name: SuccessResultModal
 // Dependencies: []
 // Exports: default
@@ -20,15 +20,15 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.scrollView = { flex: 1 };
-const obj1 = { position: "a", zIndex: "Rpc", bottom: "a", right: "gpu_driver_version", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
-obj.scrollViewContentContainer = obj1;
-obj.inner = {};
+const tmp4 = arg1(dependencyMap[7]);
+obj.scrollViewContentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.inner = { duration: "2ec8d4d40c93ceea32933ae4e505df6e", channel: "ChatPlusIcon", jsx: "png", pos: true };
 obj.text = {};
-obj.footer = { "Bool(false)": "BRAND_230", "Bool(false)": 1, "Bool(false)": "hours", "Bool(false)": "scalar" };
+obj.footer = { scales: "order", paddingHorizontal: "scalar", resizeMode: 13, Button: "user_id_range" };
 obj.footerLandscape = {};
 obj.footerPortrait = {};
 let closure_16 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[7]);
+const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/oauth2/native/SuccessResult.tsx");
 
 export default function SuccessResultModal(guild) {

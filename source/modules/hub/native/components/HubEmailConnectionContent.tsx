@@ -1,5 +1,5 @@
 // Module ID: 11754
-// Function ID: 91251
+// Function ID: 91263
 // Name: HubEmailConnectionContent
 // Dependencies: []
 // Exports: default
@@ -16,7 +16,7 @@ const MarketingURLs = arg1(dependencyMap[6]).MarketingURLs;
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { paddingHorizontal: 16 }, header: {}, scrollViewContainer: { flexGrow: 2 }, title: { collapsable: "absolute", preventClipping: 0 }, description: { collapsable: 24, preventClipping: "recent_games_enabled" }, input: { marginBottom: 32 } };
+obj = { container: { paddingHorizontal: 16 }, header: { size: "<string:3192994401>", progress: "<string:684289>", loading: "<string:141754368>" }, scrollViewContainer: { flexGrow: 2 }, title: {}, description: { value: 24, marginTop: "recent_games_enabled" }, input: { marginBottom: 32 } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.textInput = obj;
 const tmp4 = arg1(dependencyMap[7]);
@@ -84,7 +84,7 @@ export default function HubEmailConnectionContent(arg0) {
   const tmp15 = _signup;
   const tmp5 = callback(React.useState(null), 2);
   const items1 = [callback2(ref, { style: tmp.header, children: callback2(arg1(closure_2[16]).StudyGroupsSpotIllustration, { scale: 0.75 }) }), , , ];
-  const obj5 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.title, children: formatToPlainStringResult };
+  const obj5 = { style: tmp.title, children: formatToPlainStringResult };
   items1[1] = callback2(arg1(closure_2[17]).Text, obj5);
   const obj6 = { style: tmp.description };
   const intl3 = arg1(closure_2[14]).intl;
@@ -94,7 +94,7 @@ export default function HubEmailConnectionContent(arg0) {
     }
   });
   items1[2] = callback2(arg1(closure_2[18]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { 1565656732: "SERVER_GUIDE_CHANNEL_SELECTED", 1627789217: "handleToggleCaptions", -939043845: "Array", 2075722756: "rename", 2144239957: "isArray", -1178910014: "LOGIN_HANDOFF" };
+  const obj8 = {};
   const obj4 = { style: tmp.header, children: callback2(arg1(closure_2[16]).StudyGroupsSpotIllustration, { scale: 0.75 }) };
   const obj7 = {
     onClick() {

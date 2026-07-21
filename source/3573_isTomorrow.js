@@ -1,5 +1,5 @@
 // Module ID: 3573
-// Function ID: 27720
+// Function ID: 27725
 // Name: isTomorrow
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 8304
-// Function ID: 65734
+// Module ID: 8305
+// Function ID: 65747
 // Name: isPlayedGameEntry
 // Dependencies: [5, 653, 507]
 // Exports: isConsoleEntry, isLaunchedActivityEntry, isListeningLikeEntry, isRecentActivityEntry
 
-// Module 8304 (isPlayedGameEntry)
+// Module 8305 (isPlayedGameEntry)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function isPlayedGameEntry(content_type) {

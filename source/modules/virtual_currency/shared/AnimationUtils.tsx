@@ -1,7 +1,7 @@
 // Module ID: 9788
-// Function ID: 76050
+// Function ID: 76061
 // Name: EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getDesiredAnimationConfigs
 
 // Module 9788 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)

@@ -1,10 +1,10 @@
-// Module ID: 15003
-// Function ID: 112969
+// Module ID: 15006
+// Function ID: 113003
 // Name: IconWithBadge
 // Dependencies: []
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15003 (IconWithBadge)
+// Module 15006 (IconWithBadge)
 function IconWithBadge(includeNotificationsCount) {
   let flag = includeNotificationsCount.includeNotificationsCount;
   if (flag === undefined) {
@@ -60,8 +60,7 @@ function IconWithBadge(includeNotificationsCount) {
     items4 = [];
   }
   obj2.cutouts = items4;
-  const obj3 = { accessible: true, replace: "/assets/images/native/icons", "Bool(false)": 24, style: tmp.backIcon };
-  obj2.children = callback(includeNotificationsCount.Icon, obj3);
+  obj2.children = callback(includeNotificationsCount.Icon, { style: tmp.backIcon });
   const items5 = [callback(importDefault(dependencyMap[9]), obj2), ];
   let tmp12 = null;
   if (sum > 0) {
@@ -80,8 +79,8 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { badgeWrapper: {}, backIcon: { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" } };
-obj = { "Null": 1.1, "Null": 27, "Null": "dm_spam_filter_v2", "Null": "enum", flexDirection: null, alignItems: "\u2639\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+obj = { badgeWrapper: {}, backIcon: {} };
+obj = { _monthsRegex: 1.1, display: 27, CONNECTIONS_CALLBACK: "dm_spam_filter_v2", isFinalAmount: "enum", trackForumPostLinkCopied: null, video_source_codec: "\u2639\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
 obj.iconWithBadge = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -117,7 +116,7 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
   let obj = { style: callback2().iconWithBadge };
-  const items = [callback(arg1(dependencyMap[13]).XLargeIcon, {}), ];
+  const items = [callback(arg1(dependencyMap[13]).XLargeIcon, { accessibilityRole: "<string:1359020033>", "": "<string:1014141084>" }), ];
   let tmp3 = null;
   if (count > 0) {
     obj = { value: count };

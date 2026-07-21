@@ -1,9 +1,9 @@
-// Module ID: 8318
-// Function ID: 65910
+// Module ID: 8319
+// Function ID: 65923
 // Name: ContentInventoryAuthorType
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 8318 (ContentInventoryAuthorType)
+// Module 8319 (ContentInventoryAuthorType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryAuthorType.tsx");
 

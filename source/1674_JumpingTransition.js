@@ -1,7 +1,7 @@
 // Module ID: 1674
-// Function ID: 18560
+// Function ID: 18565
 // Name: JumpingTransition
-// Dependencies: []
+// Dependencies: [1618]
 
 // Module 1674 (JumpingTransition)
 arg5.JumpingTransition = function JumpingTransition(name) {
@@ -29,7 +29,7 @@ arg5.JumpingTransition = function JumpingTransition(name) {
   const items1 = [obj3];
   obj2.transform = items1;
   obj[50] = obj2;
-  const items2 = [{ "Null": null, "Null": null, "Null": null }];
+  const items2 = [{ description: "construct", category: "isArray", no: "isArray" }];
   obj[100] = { transform: items2 };
   obj.style = obj;
   obj.duration = 300;

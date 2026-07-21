@@ -1,7 +1,7 @@
 // Module ID: 5490
-// Function ID: 46821
+// Function ID: 46829
 // Name: _copy
-// Dependencies: [355729408, 270270464, 360644608]
+// Dependencies: []
 // Exports: copy, getString
 
 // Module 5490 (_copy)

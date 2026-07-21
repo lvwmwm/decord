@@ -1,9 +1,9 @@
-// Module ID: 13335
-// Function ID: 101340
+// Module ID: 13337
+// Function ID: 101362
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13335 (_isNativeReflectConstruct)
+// Module 13337 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -41,14 +41,14 @@ let obj = arg1(dependencyMap[17]);
 obj = obj.create((arg0) => {
   const arg1 = arg0;
   const obj = {
-    SCREENSHARE_STATE_UPDATE: "843d42ee8ccb539c61b4f45fba39870a",
-    notificationSoundPackId: "en-GB.messages.843d42ee8ccb539c61b4f45fba39870a.compiled.messages",
-    _forceFlush: "jsona",
-    mediaEventSubscriptions: "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",
-    _$esjava$bra: "Greek",
-    getCustomGuildScore: "el",
-    billingAgreementDetails: "simple",
-    STREAM_WATCH: true,
+    alignItems: "<string:1124139010>",
+    justifyContent: "843d42ee8ccb539c61b4f45fba39870a",
+    position: "en-GB.messages.843d42ee8ccb539c61b4f45fba39870a.compiled.messages",
+    left: "jsona",
+    right: "<string:58302274>",
+    marginBottom: "<string:40371712>",
+    height: "<string:38031872>",
+    width: "<string:1091672672>",
     activeMediaPlayerSource: undefined,
     mediaSourceMessage: undefined,
     progress: undefined,
@@ -217,7 +217,7 @@ let tmp7 = (arg0) => {
   items[5] = {
     key: "userDidClosePip",
     value() {
-      MediaPlayerManager(closure_2[18]).batchUpdates(() => state.setState({ aspectRatio: true, alignItems: true }));
+      MediaPlayerManager(closure_2[18]).batchUpdates(() => state.setState({ backgroundColor: null, width: null }));
     }
   };
   items[6] = {
@@ -226,7 +226,7 @@ let tmp7 = (arg0) => {
       const MediaPlayerManager = this;
       MediaPlayerManager(closure_2[18]).batchUpdates(() => {
         self.pauseCurrentPlayer();
-        state.setState({ aspectRatio: true, alignItems: true });
+        state.setState({ backgroundColor: null, width: null });
       });
     }
   };
@@ -263,7 +263,7 @@ let tmp7 = (arg0) => {
         let isPlaying;
         let wasPipClosedByUser;
         if (null == lib) {
-          store.setState({ "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, "Bool(false)": -823154013994709700000000000000000000000000000000000000000000000 });
+          store.setState({ LIVE_ACTIVITY_SETTINGS_UPDATED: 1715544575, paddingBottom: 1409286699 });
         }
         let id;
         if (null != lib) {
@@ -366,7 +366,7 @@ let tmp7 = (arg0) => {
           tmp8 = source;
         }
         if (!tmp6(tmp7, tmp8)) {
-          const obj = { "Null": "Not Eligible", "Null": "Not Eligible", "Null": "long-animation-frame", "Null": true, "Null": "onunhandledrejection", "Null": "db.vacuum" };
+          const obj = {};
           let tmp11;
           if (null != source) {
             tmp11 = source;

@@ -1,10 +1,10 @@
-// Module ID: 7902
-// Function ID: 62901
+// Module ID: 7903
+// Function ID: 62914
 // Name: formatSharedClientThemeData
 // Dependencies: []
 // Exports: formatSharedClientThemeData
 
-// Module 7902 (formatSharedClientThemeData)
+// Module 7903 (formatSharedClientThemeData)
 const Image = require(dependencyMap[0]).Image;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");

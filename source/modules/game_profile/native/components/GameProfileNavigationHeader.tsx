@@ -1,5 +1,5 @@
 // Module ID: 11862
-// Function ID: 91843
+// Function ID: 91855
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
@@ -12,16 +12,16 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { value: 35741696, onChange: 20087808, maxLength: 20087552, autoFocus: -239844096, autoCorrect: -240844798, autoCapitalize: -240713726, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.headerContainer = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.headerRow = { gap: importDefault(dependencyMap[4]).space.PX_8 };
-const obj2 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[4]).radii.sm };
+const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj.headerRow = obj1;
+const obj2 = { "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.icon = obj2;
-const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const tmp3 = arg1(dependencyMap[2]);
 obj.titleContainer = { gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.headerRight = {};
-obj.rankPillContainer = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
+obj.headerRight = { "Null": 7, "Null": 370 };
+obj.rankPillContainer = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GameProfileNavigationHeaderTsx1(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 let closure_11 = { code: "function GameProfileNavigationHeaderTsx2(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
@@ -121,7 +121,7 @@ export default function GameProfileNavigationHeader(game) {
     }
     const items3 = [tmp16, , ];
     const obj3 = { style: tmp.titleContainer };
-    const obj4 = { -9223372036854775808: 201326592, 0: 1358954496, 0: -126609849, children: name };
+    const obj4 = { children: name };
     const items4 = [callback(arg1(dependencyMap[9]).Heading, obj4), ];
     let l30Rank;
     if (null != game) {

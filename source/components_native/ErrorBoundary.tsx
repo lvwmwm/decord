@@ -1,9 +1,9 @@
-// Module ID: 13371
-// Function ID: 101641
+// Module ID: 13373
+// Function ID: 101663
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13371 (_isNativeReflectConstruct)
+// Module 13373 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -58,7 +58,7 @@ let closure_13 = importDefault(dependencyMap[9]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[10]));
 const tmp4 = arg1(dependencyMap[10]);
-let closure_16 = arg1(dependencyMap[11]).createLegacyClassComponentStyles({ buttons: {}, debugLogsContainer: { sl: false, so: false, sq: false, screenShareQualityResolution: false, getFrequentlyUsedReactionEmojisWithoutFetchingLatest: false, GUILD_TOP_READ_CHANNELS: false, FILE_UPLOAD_POWERUP_ROLLBACK_MODAL: false }, error: { "Null": null, "Null": "absolute" }, text: { textAlign: "center" } });
+let closure_16 = arg1(dependencyMap[11]).createLegacyClassComponentStyles({ buttons: {}, debugLogsContainer: { <string:3250345558>: false, <string:553825121>: false, <string:1935339265>: false, <string:3495584001>: false, <string:3842455059>: false, <string:1801652740>: false, <string:4244922114>: false }, error: {}, text: { textAlign: "center" } });
 const tmp5 = (PureComponent) => {
   class ErrorBoundary {
     constructor(arg0) {
@@ -77,7 +77,7 @@ const tmp5 = (PureComponent) => {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.state = { message: "o", test: "o" };
+      tmp2Result.state = { bottom: "o", y: "o" };
       tmp2Result.discordErrorsSet = false;
       return tmp2Result;
     }
@@ -99,7 +99,7 @@ const tmp5 = (PureComponent) => {
       obj = { extra };
       callback(closure_2[16]).captureCrash(error, obj);
       const obj2 = callback(closure_2[16]);
-      callback(closure_2[17]).dispatch({ 0: "TreehouseIcon", 9223372036854775807: "png" });
+      callback(closure_2[17]).dispatch({ "Null": "TreehouseIcon", "Null": "png" });
     }
   };
   items[1] = obj;
@@ -150,7 +150,7 @@ const tmp5 = (PureComponent) => {
         const intl2 = ErrorBoundary(closure_2[15]).intl;
         obj.body = intl2.string(ErrorBoundary(closure_2[15]).t.CvQlAH);
         ({ text: obj.titleStyle, text: obj.bodyStyle } = tmp);
-        obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.error };
+        obj = { style: tmp.error };
         let message;
         if (null != error) {
           message = error.message;

@@ -1,16 +1,16 @@
-// Module ID: 12882
-// Function ID: 98371
+// Module ID: 12884
+// Function ID: 98393
 // Name: IconPill
-// Dependencies: [131072, 4201840640, 1560281092, 33554482, 1912602624, 1274, 2, 3741680, 2031616]
+// Dependencies: [131072, 4201840640, 1593835524, 33554482, 1912602624, 1274, 2, 3741680, 2031616]
 // Exports: default
 
-// Module 12882 (IconPill)
+// Module 12884 (IconPill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { flex: "category", flexDirection: "Array", paddingHorizontal: "isArray", paddingVertical: "constructor", backgroundColor: require("STATUS_PADDING").colors.BACKGROUND_SURFACE_HIGH, marginTop: "isArray", borderRadius: require("STATUS_PADDING").radii.md };
+obj = { backgroundColor: require("STATUS_PADDING").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("STATUS_PADDING").radii.md };
 obj.pillContainer = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.pillIcon = { tintColor: require("STATUS_PADDING").colors.TEXT_SUBTLE, marginRight: 4 };

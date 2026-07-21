@@ -1,9 +1,11 @@
-// Module ID: 13268
-// Function ID: 100795
+// Module ID: 13270
+// Function ID: 100817
 // Name: activityInstanceConnectedParticipants
-// Dependencies: []
+// Dependencies: [870055936, 131072, 334495744, 1352, 1348, 1838, 3756, 1906, 4142]
 
-// Module 13268 (activityInstanceConnectedParticipants)
+// Module 13270 (activityInstanceConnectedParticipants)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function activityInstanceConnectedParticipants() {
   const currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
   if (null == currentEmbeddedActivity) {
@@ -54,7 +56,7 @@ obj = {
     };
   }
 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/rpc/helpers/activityInstanceConnectedParticipants.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/rpc/helpers/activityInstanceConnectedParticipants.tsx");
 
 export { activityInstanceConnectedParticipants };
 export const activityInstanceConnectedParticipantsScope = obj;

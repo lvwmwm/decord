@@ -1,5 +1,5 @@
 // Module ID: 10569
-// Function ID: 82523
+// Function ID: 82534
 // Name: isDiscordVisible
 // Dependencies: []
 // Exports: default

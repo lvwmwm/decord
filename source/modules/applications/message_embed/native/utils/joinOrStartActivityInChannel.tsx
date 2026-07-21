@@ -1,5 +1,5 @@
 // Module ID: 11078
-// Function ID: 86146
+// Function ID: 86157
 // Name: _joinOrStartActivityInChannel
 // Dependencies: []
 // Exports: joinOrStartActivityInChannel

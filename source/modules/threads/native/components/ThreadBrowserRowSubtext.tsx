@@ -1,10 +1,10 @@
-// Module ID: 15270
-// Function ID: 115273
+// Module ID: 15273
+// Function ID: 115307
 // Name: MessageContent
 // Dependencies: []
 // Exports: ThreadSubtext
 
-// Module 15270 (MessageContent)
+// Module 15273 (MessageContent)
 function MessageContent(arg0) {
   let message;
   let thread;
@@ -35,7 +35,7 @@ function MessageContent(arg0) {
   const timestampAccessibilityLabel = arg1(dependencyMap[12]).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = importDefault(dependencyMap[13])(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel };
-  obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, style: tmp.subtextContent };
+  obj = { end: true, label: true, start: true, showPrivateThreads: true, showCreateThreads: true, avatar: true, style: tmp.subtextContent };
   const intl = arg1(dependencyMap[16]).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
@@ -64,7 +64,7 @@ function MessageContent(arg0) {
       return closure_9(closure_17, obj, arg1);
     },
     messageTextHook(arg0, arg1) {
-      const obj = { children: callback(closure_2[22])(message, { alignItems: null, marginTop: null }).content };
+      const obj = { children: callback(closure_2[22])(message, { l: null, View: null }).content };
       return callback2(message(closure_2[21]).LegacyText, obj, arg1);
     }
   };
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     shouldShowRoleDot = callback(arg1(dependencyMap[21]).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
-  const obj1 = { experimental_useNativeText: !arg1(dependencyMap[24]).isFabric() };
+  const obj1 = { hasMaxConnections: "r", isBoostOnlySubscription: "accessibilityRole", experimental_useNativeText: !arg1(dependencyMap[24]).isFabric() };
   let tmp10;
   if (tmp3) {
     tmp10 = processColorStringsArray;

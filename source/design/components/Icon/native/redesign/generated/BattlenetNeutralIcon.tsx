@@ -1,14 +1,15 @@
 // Module ID: 8607
-// Function ID: 68278
+// Function ID: 68289
 // Name: BattlenetNeutralIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: BattlenetNeutralIcon
 
 // Module 8607 (BattlenetNeutralIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/BattlenetNeutralIcon.tsx");
+result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/BattlenetNeutralIcon.tsx");
 
 export const BattlenetNeutralIcon = function BattlenetNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

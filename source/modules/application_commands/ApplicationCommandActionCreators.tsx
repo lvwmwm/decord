@@ -1,10 +1,10 @@
-// Module ID: 7014
-// Function ID: 56258
+// Module ID: 7015
+// Function ID: 56270
 // Name: updateOptionStates
 // Dependencies: []
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionValidationStates, updateRegistry
 
-// Module 7014 (updateOptionStates)
+// Module 7015 (updateOptionStates)
 function updateOptionStates(id, changedOptionStates) {
   let obj = importDefault(dependencyMap[5]);
   obj = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates };

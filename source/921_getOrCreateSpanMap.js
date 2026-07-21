@@ -1,5 +1,5 @@
 // Module ID: 921
-// Function ID: 10053
+// Function ID: 10057
 // Name: getOrCreateSpanMap
 // Dependencies: []
 // Exports: cleanupPendingSpansForTransport, completeSpanWithResults, storeSpanForRequest

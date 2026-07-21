@@ -1,5 +1,5 @@
 // Module ID: 1007
-// Function ID: 10992
+// Function ID: 10996
 // Name: exceptionFromError
 // Dependencies: []
 

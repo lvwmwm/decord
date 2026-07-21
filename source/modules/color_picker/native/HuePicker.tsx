@@ -1,24 +1,24 @@
-// Module ID: 13450
-// Function ID: 102138
+// Module ID: 13452
+// Function ID: 102160
 // Name: HuePicker
 // Dependencies: []
 // Exports: default
 
-// Module 13450 (HuePicker)
+// Module 13452 (HuePicker)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = ["Array", "isArray", "isArray", "LOGIN_HANDOFF", "item_source", "encodedReceipt", "bj/2kV"];
+let closure_8 = [146, 348, 0, 0.18, 1, 0.6583, 1];
 let obj = arg1(dependencyMap[4]);
-obj = { container: { "Null": null, "Null": null }, containerFullWidth: {} };
-obj = { "Bool(true)": 1996489027, justify: 1358954819, align: -2025735951, backgroundColor: 1358954759, marginTop: 911522033, padding: -1533462887, alignItems: 1635670926, borderColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { container: { margin: null, backgroundColor: null }, containerFullWidth: {} };
+obj = { borderColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.slider = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.colorBar = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.colorBarFullWidth = { width: "100%" };
-obj.colorBarInner = { 9223372036854775807: null, 0: null };
-obj.colorBarInnerFullWidth = { 0: 18, 9223372036854775807: 18 };
+obj.colorBarInner = {};
+obj.colorBarInnerFullWidth = { 0: true, -9223372036854775808: true };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function setSatVal_HuePickerTsx1({x:x}){const{hue,normalizeValue,barWidth,onPanUpdate,runOnJS}=this.__closure;hue.set(normalizeValue(x/barWidth.get())*360);onPanUpdate!=null&&runOnJS(onPanUpdate)();}" };
 let closure_11 = { code: "function HuePickerTsx2(){const{onPanFinalize,runOnJS}=this.__closure;onPanFinalize!=null&&runOnJS(onPanFinalize)();}" };
@@ -174,7 +174,7 @@ export default function HuePicker(hue) {
       };
     }(hue, sharedValue3, onPanUpdate, onPanFinalize).gesture
   };
-  obj3 = { colors: memo, start: { max: false, guildId: false }, end: { max: 3211264, guildId: 2042617856 } };
+  obj3 = { colors: memo, start: {}, end: {} };
   const items4 = [tmp.colorBar, ];
   let colorBarFullWidth = flag;
   const obj7 = arg1(dependencyMap[7]);

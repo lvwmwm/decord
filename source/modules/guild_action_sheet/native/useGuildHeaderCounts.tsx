@@ -1,10 +1,10 @@
-// Module ID: 12854
-// Function ID: 98236
+// Module ID: 12856
+// Function ID: 98258
 // Name: useThrottledDispatch
 // Dependencies: []
 // Exports: useGuildHeaderCounts
 
-// Module 12854 (useThrottledDispatch)
+// Module 12856 (useThrottledDispatch)
 function useThrottledDispatch(arg0, arg1, arg2) {
   arg1 = arg0;
   const importDefault = arg1;

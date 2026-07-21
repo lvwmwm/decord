@@ -1,5 +1,5 @@
 // Module ID: 4186
-// Function ID: 36012
+// Function ID: 36020
 // Name: isClientClipsCapable
 // Dependencies: []
 // Exports: default

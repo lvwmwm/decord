@@ -1,5 +1,5 @@
 // Module ID: 5559
-// Function ID: 47184
+// Function ID: 47192
 // Name: Color
 // Dependencies: []
 
@@ -37,7 +37,7 @@ class Color {
       if (null == global) {
         str10 = "rgb";
         self.model = "rgb";
-        self.color = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
+        self.color = [null, null, null];
         num15 = 1;
         self.valpha = 1;
       } else {
@@ -275,7 +275,7 @@ function zeroArray(callResult, channels) {
 }
 let closure_2 = require(dependencyMap[0]);
 const _module = require(dependencyMap[1]);
-let closure_4 = [true, true, true];
+let closure_4 = [1342177280, 1929379840, 100];
 let obj = {};
 const keys = Object.keys(require(dependencyMap[2]));
 const iter = keys[Symbol.iterator]();

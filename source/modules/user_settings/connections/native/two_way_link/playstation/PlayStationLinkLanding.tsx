@@ -1,5 +1,5 @@
 // Module ID: 8966
-// Function ID: 70711
+// Function ID: 70722
 // Name: PlayStationLinkLanding
 // Dependencies: []
 // Exports: PlayStationLinkLanding

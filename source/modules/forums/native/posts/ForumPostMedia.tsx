@@ -1,5 +1,5 @@
 // Module ID: 11122
-// Function ID: 86563
+// Function ID: 86575
 // Name: ForumPostMediaAndroid
 // Dependencies: []
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail
@@ -54,7 +54,7 @@ class ForumPostMediaSpoiler {
       obj1.style = tmp.spoilerIconContainer;
       tmp11 = jsx;
       num2 = 10;
-      obj2 = {};
+      obj2 = { "Bool(false)": 800, "Bool(false)": 16, "Bool(false)": "100%" };
       obj2.style = tmp.spoilerIcon;
       obj1.children = jsx(importDefault(dependencyMap[10]), obj2);
       items[1] = jsx(View, obj1);
@@ -174,7 +174,7 @@ obj = { mediaContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.thumbnailBorder = obj;
 obj.thumbnail = {};
-obj.spoilerIconContainer = {};
+obj.spoilerIconContainer = { 140660728: "<string:1071648866>", 732320089: "%MapPrototype%", -1335636893: "<string:487932160>", -11652782: "<string:7405572>", -1437179133: "<string:553648128>", -2081271454: "<string:39383106>" };
 const tmp3 = arg1(dependencyMap[5]);
 obj.spoilerIcon = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
 obj.gridMediaContainer = {};

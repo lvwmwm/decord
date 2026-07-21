@@ -1,5 +1,5 @@
 // Module ID: 11802
-// Function ID: 91566
+// Function ID: 91578
 // Name: ProfileEffectAssetPreview
 // Dependencies: []
 // Exports: default
@@ -97,7 +97,7 @@ function BundleAssetPreview(height) {
 function NameplateAssetPreview(item) {
   let obj = arg1(dependencyMap[15]);
   const nameplateData = obj.getNameplateData(item.item);
-  obj = { alignItems: null, "Null": null, "Null": null, nameplate: nameplateData, style: callback6().nameplate };
+  obj = { display: null, flexDirection: null, alignItems: null, nameplate: nameplateData, style: callback6().nameplate };
   return callback(importDefault(dependencyMap[16]), obj);
 }
 function CollectibleProductPreview(arg0) {
@@ -262,17 +262,17 @@ const BUNDLE_PREVIEW_CONFIG = tmp2.BUNDLE_PREVIEW_CONFIG;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { externalProductImage: {} };
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { "Bool(false)": 0, "Bool(false)": -245.426, "Bool(false)": 3, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.bundlePreviewContainer = obj;
 obj.bundlePreviewScale = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.productContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-const obj2 = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
 obj.productDetailsContainer = obj2;
-obj.productPreviewContainer = { "Null": null, "Null": null };
+obj.productPreviewContainer = { margin: null, backgroundColor: null };
+const obj3 = { ty: 8, c: null, o: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj.productDetails = obj3;
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-obj.productDetails = { gap: importDefault(dependencyMap[6]).space.PX_12 };
-const obj3 = { gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.productDetailsTextContainer = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.errorContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
@@ -290,9 +290,9 @@ let closure_10 = obj8.createStyles((arg0) => {
 });
 let obj9 = arg1(dependencyMap[5]);
 const obj6 = {};
-const obj7 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755987663096558, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, "Null": 139264.00004577637, "Null": -8157701880056440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 13343562689782770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+const obj7 = { "Bool(false)": "PlaystationNeutralIcon", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj6.profileEffectContainer = obj7;
-obj8 = { "Null": 424738817, "Null": 94835, "Null": 327680, "Null": -465436672, aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
+obj8 = { y: true, isArray: true, string: true, raw: true, aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
 obj6.profileEffect = obj8;
 let closure_11 = obj9.createStyles(obj6);
 const obj5 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };

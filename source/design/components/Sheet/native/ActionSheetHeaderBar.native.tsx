@@ -1,10 +1,10 @@
-// Module ID: 5223
-// Function ID: 44177
+// Module ID: 5222
+// Function ID: 44184
 // Name: ActionSheetHeaderBar
 // Dependencies: []
 // Exports: ActionSheetHeaderBar
 
-// Module 5223 (ActionSheetHeaderBar)
+// Module 5222 (ActionSheetHeaderBar)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, StyleSheet: closure_4, TouchableWithoutFeedback: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -14,7 +14,7 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, marginBottom) 
   let obj = {};
   obj = { marginBottom };
   if ("floating" === arg0) {
-    obj = { <string:3798200520>: null, <string:391272364>: null, <string:1692895692>: null };
+    obj = { bottom: "M7 1v1h2V1H7Z", sr: "<string:1414594560>", ks: "<string:1907712401>" };
   }
   const merged = Object.assign(obj);
   obj.header = obj;

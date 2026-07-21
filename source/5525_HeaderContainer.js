@@ -1,5 +1,5 @@
 // Module ID: 5525
-// Function ID: 47047
+// Function ID: 47055
 // Name: HeaderContainer
 // Dependencies: []
 // Exports: default
@@ -9,7 +9,7 @@ let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ Animated: closure_4, StyleSheet, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ header: {} });
+const styles = StyleSheet.create({ header: { color: "<string:3082955202>", fontFamily: "<string:103629460>", fontSize: "<string:3630497793>", lineHeight: "<string:961609729>" } });
 
 export default function HeaderContainer(getFocusedRoute) {
   let scenes;

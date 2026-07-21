@@ -1,13 +1,14 @@
 // Module ID: 6293
-// Function ID: 50353
+// Function ID: 50361
 // Name: MiniaturesSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MiniaturesSpotIllustration
 
 // Module 6293 (MiniaturesSpotIllustration)
-import { jsx } from "__exportStarResult1";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");
+result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");
 
 export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(width) {
   let accessibilityLabel;

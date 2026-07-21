@@ -1,5 +1,5 @@
 // Module ID: 12045
-// Function ID: 93019
+// Function ID: 93031
 // Name: onCopy
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { padding: 16 }, emptyStateContainer: { -9223372036854775808: 589823, 0: 1091633152 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { onTextFlushed: 0, onPasteImage: null, onPasteCommand: 6, onRequestSend: "done" }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 } };
+obj = { container: { padding: 16 }, emptyStateContainer: {}, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: {}, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.settingsButton = obj;
 let closure_7 = obj.createStyles(obj);
@@ -35,7 +35,7 @@ export default function _default(link) {
   obj.body = intl2.string(callback(dependencyMap[9]).t.DXgdcD);
   const items1 = [callback2(callback(dependencyMap[7]).RefreshEmptyState, obj), , , ];
   const obj1 = { style: tmp.linkContainer };
-  const obj2 = { TypeError: 1, jsx: 2, then: "OPACITY_WHITE_76", memo: 0.76, duration: "#6C77F8", useMemo: "OPACITY_BLACK_76", onPress: onCopy };
+  const obj2 = { "Bool(false)": 1, "Bool(false)": 2, "Bool(false)": "OPACITY_WHITE_76", "Bool(false)": 0.76, "Bool(false)": "#6C77F8", "Bool(false)": "OPACITY_BLACK_76", onPress: onCopy };
   let str = "";
   if (null != link) {
     str = link;

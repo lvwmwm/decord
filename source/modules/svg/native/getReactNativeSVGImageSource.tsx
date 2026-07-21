@@ -1,5 +1,5 @@
 // Module ID: 11941
-// Function ID: 92319
+// Function ID: 92331
 // Name: getReactNativeSVGImageSource
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 10315
-// Function ID: 79618
+// Function ID: 79629
 // Name: getDisplayName
 // Dependencies: []
 // Exports: default
@@ -166,11 +166,11 @@ export default function serializeAppStartLogs(arg0) {
                 let tmp11 = tmp;
                 if (!tmp) {
                   tmp11 = diff > 5 && !function isSuperNoisyLog(arg0) {
-                    const items = [false, false];
+                    const items = [0.951, -6123292348295626000000000000000000000000000000000000000000000000000000000000000000000];
                     return items.some(() => { ... });
                   }(str);
                   const tmp12 = diff > 5 && !function isSuperNoisyLog(arg0) {
-                    const items = [false, false];
+                    const items = [0.951, -6123292348295626000000000000000000000000000000000000000000000000000000000000000000000];
                     return items.some(() => { ... });
                   }(str);
                 }

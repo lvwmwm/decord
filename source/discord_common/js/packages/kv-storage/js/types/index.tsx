@@ -1,7 +1,7 @@
 // Module ID: 1889
-// Function ID: 21078
+// Function ID: 21083
 // Name: TableId
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1889 (TableId)
 const _module = require(dependencyMap[0]);

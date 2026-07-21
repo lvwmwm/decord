@@ -1,5 +1,5 @@
 // Module ID: 11407
-// Function ID: 88720
+// Function ID: 88732
 // Name: useIsHubForGuild
 // Dependencies: []
 // Exports: default

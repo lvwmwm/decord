@@ -1,23 +1,23 @@
 // Module ID: 11337
-// Function ID: 88150
+// Function ID: 88162
 // Name: EnteringAnimation
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
 // Module 11337 (EnteringAnimation)
-import "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import "result";
+import result from "result";
+import closure_5 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ View: closure_3, StyleSheet: closure_4 } = __exportStarResult1);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = __exportStarResult1);
-let closure_9 = __exportStarResult1.createStyles(() => {
+({ View: closure_3, StyleSheet: closure_4 } = result);
+({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = result);
+let closure_9 = result.createStyles(() => {
   const sum = arg1(dependencyMap[5]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[5]).SMALL_BUTTON_PADDING + 2;
   let obj = {};
-  obj = { "Null": "buffered", "Null": "prototype", "Null": "isArray", "Null": "_merge", "Null": "row", "Null": "center", borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round, width: sum, height: sum, marginLeft: 4 };
+  obj = { 1395890530: 1107361951, 1924466225: 182018, -447573442: 108084, 1634907593: 30336067, -1030006659: 30336000, -1051907770: 38994176, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round, width: sum, height: sum, marginLeft: 4 };
   obj.fakeButton = obj;
   obj = { borderRadius: importDefault(dependencyMap[6]).radii.round, width: sum, height: sum, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, marginLeft: 4 };
   obj.glowMask = obj;
@@ -60,7 +60,7 @@ let closure_13 = () => {
   ExitingAnimation.__initData = closure_12;
   return ExitingAnimation;
 }();
-const result = __exportStarResult1.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingChatInputButtonAnimation.tsx");
+result = result.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingChatInputButtonAnimation.tsx");
 
 export const APP_LAUNCHER_ONBOARDING_CHAT_INPUT_BUTTON_ANIMATION_DURATION_MS = 7000;
 export const AppLauncherOnboardingChatInputButtonAnimation = function AppLauncherOnboardingChatInputButtonAnimation(channelId) {

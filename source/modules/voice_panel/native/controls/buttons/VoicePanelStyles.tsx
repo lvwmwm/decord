@@ -1,10 +1,10 @@
-// Module ID: 15727
-// Function ID: 120216
+// Module ID: 15736
+// Function ID: 120381
 // Name: useVoicePanelButtonStyles
 // Dependencies: []
 // Exports: useVoicePanelButtonStyles
 
-// Module 15727 (useVoicePanelButtonStyles)
+// Module 15736 (useVoicePanelButtonStyles)
 const _module = require(dependencyMap[0]);
 let closure_3 = _module.createStyles((arg0, arg1) => {
   let obj = {};

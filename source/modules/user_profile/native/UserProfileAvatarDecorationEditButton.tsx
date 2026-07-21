@@ -1,10 +1,10 @@
-// Module ID: 13469
-// Function ID: 102242
+// Module ID: 13471
+// Function ID: 102264
 // Name: COLLECTIBLES_PREVIEW_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 13469 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13471 (COLLECTIBLES_PREVIEW_SIZE)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const NOOP = arg1(dependencyMap[4]).NOOP;
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
+obj = { "Null": 1963065347, "Null": 1963720707, "Null": -582811645, "Null": -1291844714, "Null": -1291844747, height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
 obj.previewContainer = obj;
 const tmp2 = arg1(dependencyMap[1]);
 obj.noneIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
@@ -94,7 +94,7 @@ export default function UserProfileAvatarDecorationEditButton(user) {
     const intl5 = arg1(dependencyMap[13]).intl;
     obj1.buttonText = intl5.string(arg1(dependencyMap[13]).t.MKDeyL);
     obj1.onPress = NOOP;
-    obj1.leading = <userAvatarDecoration />;
+    obj1.leading = <userAvatarDecoration font={397} dx={97} />;
     obj1.loading = true;
     obj1.disabled = true;
     obj1.hideArrow = true;

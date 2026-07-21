@@ -1,5 +1,5 @@
 // Module ID: 3692
-// Function ID: 28059
+// Function ID: 28064
 // Name: prop
 // Dependencies: []
 
@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true }, narrow: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true } };
+    obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
-    const obj1 = { long: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, short: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+    const obj2 = { long: {}, narrow: {}, short: {} };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "ko";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true }, narrow: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": true } }, disjunction: { long: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, narrow: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" }, short: { "Bool(false)": "adult", "Bool(false)": "_computeEmojiUsability", "Bool(false)": "cc", "Bool(false)": "cellIndex" } }, unit: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } } }, locale: "ko" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: {} } }, locale: "ko" });

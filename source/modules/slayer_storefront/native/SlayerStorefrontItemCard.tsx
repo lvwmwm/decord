@@ -1,19 +1,19 @@
-// Module ID: 8203
-// Function ID: 64860
+// Module ID: 8204
+// Function ID: 64873
 // Name: SlayerStorefrontItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 8203 (SlayerStorefrontItemCard)
+// Module 8204 (SlayerStorefrontItemCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ImageBackground: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { <string:1683030020>: "r", <string:336773166>: "REACTION_BACKGROUND_DEFAULT", <string:3372221535>: "AMEX_NETWORK_ERROR", <string:1962935391>: "y", <string:1979712697>: "setDescription", <string:1996489913>: "u6709", <string:3925869753>: "Array", borderRadius: importDefault(dependencyMap[4]).radii.md, shadowOffset: {} };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.md, shadowOffset: { "Null": "<string:2754674692>", "Null": "<string:3607772528>" } };
 obj.cardContainer = obj;
 obj.cardImageBackground = {};
-obj.cardImage = {};
+obj.cardImage = { "Null": "/assets/.cache/intl/ZGVzaWdu", "Null": null, "Null": "89c1f821400ffcc75deeeab8c6315a88" };
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
@@ -78,7 +78,7 @@ export default function SlayerStorefrontItemCard(sku) {
         let tmp13 = <closure_4 {...obj} />;
         const tmp12 = importDefault(dependencyMap[8]);
       } else {
-        const obj4 = { colors: tmp4, start: { max: -536870861, guildId: -299892737 }, end: {}, style: cardImage.cardImageBackground };
+        const obj4 = { colors: tmp4, start: {}, end: {}, style: cardImage.cardImageBackground };
         const obj5 = {};
         const obj6 = {};
         const tmp18 = importDefault(dependencyMap[9]);

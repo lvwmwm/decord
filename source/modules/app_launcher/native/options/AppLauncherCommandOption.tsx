@@ -1,5 +1,5 @@
 // Module ID: 11275
-// Function ID: 87740
+// Function ID: 87752
 // Name: AppLauncherCommandOption
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).AppLauncherOptionAutoFocusType;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { dismissableOptionWrapper: {}, optionViewContainer: { flex: 1 } };
+obj = { dismissableOptionWrapper: { "Null": 7, "Null": 370 }, optionViewContainer: { flex: 1 } };
 obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.dismissButton = obj;
 obj.option = { flex: 1 };

@@ -1,5 +1,5 @@
 // Module ID: 11898
-// Function ID: 92093
+// Function ID: 92105
 // Name: formatDuration
 // Dependencies: []
 // Exports: default

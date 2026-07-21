@@ -1,10 +1,10 @@
-// Module ID: 13354
-// Function ID: 101590
+// Module ID: 13356
+// Function ID: 101612
 // Name: DiscordGestureHandlerRootView
 // Dependencies: []
 // Exports: default
 
-// Module 13354 (DiscordGestureHandlerRootView)
+// Module 13356 (DiscordGestureHandlerRootView)
 importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const jsx = arg1(dependencyMap[2]).jsx;

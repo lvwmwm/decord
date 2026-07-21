@@ -1,5 +1,5 @@
 // Module ID: 11644
-// Function ID: 90353
+// Function ID: 90365
 // Name: UserProfileConfirmRemoveFriend
 // Dependencies: []
 // Exports: default

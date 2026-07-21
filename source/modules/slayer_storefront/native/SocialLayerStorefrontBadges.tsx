@@ -1,5 +1,5 @@
 // Module ID: 9733
-// Function ID: 75720
+// Function ID: 75731
 // Name: ExclusiveBadge
 // Dependencies: []
 // Exports: ExclusiveBadge
@@ -27,7 +27,7 @@ export const ExclusiveBadge = function ExclusiveBadge() {
   let obj = { style: tmp.exclusiveBadge };
   obj = { size: "xs", color: importDefault(dependencyMap[4]).colors.WHITE };
   const items = [callback(arg1(dependencyMap[6]).ClydeIcon, obj), ];
-  obj = { style: tmp.exclusiveBadgeText };
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.exclusiveBadgeText };
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(arg1(dependencyMap[8]).t.RiDMFz);
   items[1] = callback(arg1(dependencyMap[7]).Text, obj);

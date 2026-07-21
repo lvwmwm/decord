@@ -1,5 +1,5 @@
 // Module ID: 10307
-// Function ID: 79531
+// Function ID: 79542
 // Name: handleClose
 // Dependencies: []
 // Exports: default
@@ -222,7 +222,7 @@ class BugCreateScreen {
     tmp33 = closure_7;
     obj2 = { spacing: 24, style: tmp.container };
     obj3 = { spacing: 8 };
-    obj4 = {};
+    obj4 = { hasMaxConnections: true, isBoostOnlySubscription: true };
     intl = arg1(dependencyMap[14]).intl;
     obj4.children = intl.string(arg1(dependencyMap[14]).t.tM969v);
     items6 = [, ];
@@ -300,8 +300,7 @@ class BugCreateScreen {
         obj = { style: tmp.priorityIcon };
         obj = {};
         const tmp = screenshot(tmp[25]);
-        const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, id: emoji };
-        obj.uri = screenshotUri(tmp[26]).getEmojiURL(obj1);
+        obj.uri = screenshotUri(tmp[26]).getEmojiURL({ id: emoji });
         obj.source = obj;
         obj.resizeMode = "contain";
         obj.icon = first5(tmp, obj);
@@ -424,26 +423,26 @@ let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-let closure_13 = Object.freeze({ <string:1308623995>: 24, <string:1291846779>: 24, <string:1358955643>: null });
+let closure_13 = Object.freeze({ body: 24, T: 24, body: null });
 let obj = arg1(dependencyMap[7]);
-obj = { container: { padding: 16 }, attachmentCarousel: { conversationId: "percent", EditProfileFrameRow: 0 }, attachmentContainer: {} };
-obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj = { container: { padding: 16 }, attachmentCarousel: {}, attachmentContainer: {} };
+obj = { borderRadius: importDefault(dependencyMap[8]).radii.round, borderWidth: "then", containerWidth: "title", reactionEmojiWidth: "r", digitWidth: "isArray", padding: "then", display: "title", flexDirection: "r" };
 const tmp3 = arg1(dependencyMap[6]);
 const importDefaultResult = importDefault(dependencyMap[9]);
 const importDefaultResultResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK);
 obj.backgroundColor = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5).css();
 obj.closeContainer = obj;
-obj.priorityIcon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.priorityIcon = {};
 obj.offButton = { marginBottom: 24 };
-const alphaResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
-obj.submittingOverlay = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
+const obj1 = { "Bool(false)": "<string:268435457>", "Bool(false)": "<string:1358954496>", "Bool(false)": "<string:7554242>", "Bool(false)": "isArray", "Bool(false)": "<string:268435456>", "Bool(false)": "<string:1107296256>", "Bool(false)": "text-md/normal", "Bool(false)": "text-strong", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
+obj.submittingOverlay = obj1;
 obj.submittingText = { marginTop: 8 };
 let closure_14 = obj.createStyles(obj);
 let closure_15 = 5 * importDefault(dependencyMap[10]).Millis.SECOND;
 let closure_16 = 10 * importDefault(dependencyMap[10]).Millis.SECOND;
 let closure_17 = 5 * importDefault(dependencyMap[10]).Millis.SECOND;
 const MINUTE = importDefault(dependencyMap[10]).Millis.MINUTE;
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };
+const alphaResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
 const result = arg1(dependencyMap[47]).fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");
 
 export default function BugReportModal(screenshotUri) {

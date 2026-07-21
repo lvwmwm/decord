@@ -1,14 +1,14 @@
 // Module ID: 9888
-// Function ID: 76544
+// Function ID: 76555
 // Name: MessagePreview
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
 // Exports: ForwardPreview
 
 // Module 9888 (MessagePreview)
-import closure_3 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import { View } from "result";
+import result from "result";
+import result from "result";
 
 function MessagePreview(content) {
   let attachmentCount;
@@ -44,33 +44,33 @@ function MessagePreview(content) {
     tmp.setOptions({});
     return tmp;
   }, []);
-  obj = { -1034289856: "<string:553648726>", -1031355792: "<string:68987969>", modifyRow: callback };
+  obj = { i: true, apply: true, modifyRow: callback };
   const obj1 = { messageSnapshots: [], content: content.contentMessage.content };
   const tmp = importDefault(dependencyMap[5])();
   obj.message = message.merge(obj1);
   obj.rowGenerator = memo;
   return callback(importDefault(dependencyMap[8]), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { x: null, "Null": null, "Null": null, gap: require("__exportStarResult1").space.PX_12 };
-__exportStarResult1.forwardPreview = __exportStarResult1;
-__exportStarResult1.quote = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.contentWrapper = { padding: "EMTLOT", T: "ChatArrowRightIcon", container: "png", _desired: "SERVER_GUIDE_CHANNEL_SELECTED" };
-const obj1 = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.attachmentPreview = { borderRadius: require("__exportStarResult1").radii.sm };
-const obj2 = { borderRadius: require("__exportStarResult1").radii.sm };
-__exportStarResult1.attachmentPreviewVideo = { backgroundColor: require("__exportStarResult1").colors.BLACK };
-__exportStarResult1.videoThumbnail = { "Bool(false)": null, "Bool(false)": "stretch", "Bool(false)": "row", "Bool(false)": 10 };
-__exportStarResult1.playIcon = {};
-__exportStarResult1.attachmentPreviewOverflow = { position: "relative" };
-const obj4 = { gap: "contain", padding: false, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_STRONG, borderRadius: require("__exportStarResult1").radii.sm, marginTop: false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": true, "Bool(true)": 0.5 };
-__exportStarResult1.overflowCount = obj4;
-__exportStarResult1.attachmentRow = {};
-__exportStarResult1.largeIcon = { bhk: false, bic: "internal" };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const obj3 = { backgroundColor: require("__exportStarResult1").colors.BLACK };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = result);
+result = {};
+result = { gap: require("result").space.PX_12 };
+result.forwardPreview = result;
+result.quote = { backgroundColor: require("result").colors.BORDER_SUBTLE };
+result.contentWrapper = { position: null, width: null, top: null, left: null };
+const obj1 = { backgroundColor: require("result").colors.BORDER_SUBTLE };
+result.attachmentPreview = { borderRadius: require("result").radii.sm };
+const obj2 = { borderRadius: require("result").radii.sm };
+result.attachmentPreviewVideo = { backgroundColor: require("result").colors.BLACK };
+result.videoThumbnail = { "Bool(false)": null, "Bool(false)": "stretch", "Bool(false)": "row", "Bool(false)": 10 };
+result.playIcon = {};
+result.attachmentPreviewOverflow = { position: "relative" };
+const obj4 = { 0: "contain", -9223372036854775808: false, 0: false, -1055617191: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, -9223372036854775808: false, 0: false, 9223372036854775807: true, 9223372036854775807: true, 0: 140, backgroundColor: require("result").colors.BACKGROUND_MOD_STRONG, borderRadius: require("result").radii.sm };
+result.overflowCount = obj4;
+result.attachmentRow = { "Null": -747089664, "Null": 4211, "Bool(false)": 4096 };
+result.largeIcon = { "Null": 0, "Null": -1048576 };
+result = result.createStyles(result);
+const obj3 = { backgroundColor: require("result").colors.BLACK };
+result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
 
 export const ForwardPreview = function ForwardPreview(message) {
   let attachments;
@@ -81,7 +81,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let hasContent;
   message = message.message;
   ({ channel, forwardOptions } = message);
-  const tmp = __exportStarResult1();
+  const tmp = result();
   let obj = arg1(dependencyMap[9]);
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
@@ -138,7 +138,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj1.width = 56;
           obj1.height = 56;
           const items1 = [callback(importDefault(dependencyMap[19]), obj1), ];
-          const obj3 = { -318614188: null, 1020595765: "null", 1406296506: null, style: tmp.playIcon };
+          const obj3 = { Gateway: true, communicationDisabledUntilTimestamp: true, withMutualGuilds: true, style: tmp.playIcon };
           items1[1] = callback(arg1(dependencyMap[16]).CirclePlayIcon, obj3);
           obj.children = items1;
           let tmp11 = callback2(View, obj);
@@ -225,7 +225,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       obj15.children = tmp11;
       const items3 = [callback(importDefault(dependencyMap[21]), obj15), ];
       const obj16 = { style: tmp.overflowCount };
-      const items4 = ["fill", length - 1];
+      const items4 = [null, length - 1];
       obj16.children = items4;
       items3[1] = callback2(arg1(dependencyMap[22]).Text, obj16);
       obj14.children = items3;

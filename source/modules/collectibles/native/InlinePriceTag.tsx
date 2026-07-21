@@ -1,5 +1,5 @@
 // Module ID: 8756
-// Function ID: 69227
+// Function ID: 69238
 // Name: PriceTag
 // Dependencies: []
 // Exports: default
@@ -114,7 +114,7 @@ function BundleDiscountV2(discountPercentage) {
   if (discountPercentage >= arg1(dependencyMap[11]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
     let obj = { style: tmp.discount };
     obj = {};
-    const items = ["accessibilityRole", discountPercentage, "%"];
+    const items = [true, discountPercentage, "%"];
     obj.children = items;
     obj.children = callback2(arg1(dependencyMap[8]).Text, obj);
     tmp2 = callback(closure_4, obj);
@@ -130,8 +130,8 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { priceTag: {}, strikedPrice: { notClaimed: null, notEmailVerified: "9ba137dcd88d29dfd923fc4a2e32469d", notPhoneVerified: "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages" }, strikedOrbPrice: { notClaimed: null, notEmailVerified: "9ba137dcd88d29dfd923fc4a2e32469d", notPhoneVerified: "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages", newAccount: "jsona" }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: {}, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
-obj = { "Bool(true)": "center", "Bool(true)": 40, "Bool(true)": 56, "Bool(true)": true, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { priceTag: { "Null": 7, "Null": 370 }, strikedPrice: { "Null": null, "Null": "9ba137dcd88d29dfd923fc4a2e32469d", "Null": "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages" }, strikedOrbPrice: { "Null": null, "Null": "9ba137dcd88d29dfd923fc4a2e32469d", "Null": "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages", "Null": "jsona" }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: { "Null": 7, "Null": 370 }, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
+obj = { marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.subscribeNowPressable = obj;
 obj.androidTextPadding = { paddingBottom: 2 };
 obj.orbsIcon = { marginRight: 4 };
@@ -242,7 +242,7 @@ export default function InlinePriceTag(arg0) {
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8.style = items3;
         const items4 = [callback(arg1(closure_2[25]).NitroWheelIcon, obj8), ];
-        obj9 = {};
+        obj9 = { hasMaxConnections: null, isBoostOnlySubscription: null };
         let androidTextPadding;
         if (obj26.isAndroid()) {
           androidTextPadding = tmp.androidTextPadding;

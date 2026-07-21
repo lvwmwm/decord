@@ -1,5 +1,5 @@
 // Module ID: 9517
-// Function ID: 74057
+// Function ID: 74068
 // Name: showLongPressURLActionSheet
 // Dependencies: []
 // Exports: default
@@ -78,7 +78,7 @@ export default function showLongPressURLActionSheet(urlString) {
     const intl5 = require(dependencyMap[1]).intl;
     obj4.label = intl5.string(require(dependencyMap[1]).t.aW2YlJ);
     obj4.onPress = function onPress() {
-      callback(channelId[6])({ guildId: callback, channelId, messageId: closure_3, navigationSettings: { 9223372036854775807: null, 9223372036854775807: null } });
+      callback(channelId[6])({ guildId: callback, channelId, messageId: closure_3, navigationSettings: { justifyContent: null, flexDirection: null } });
     };
     items1.unshift(obj4);
   }

@@ -1,5 +1,5 @@
 // Module ID: 10255
-// Function ID: 79243
+// Function ID: 79254
 // Name: createInlineChannelReact
 // Dependencies: []
 // Exports: createInlineChannelReact, inlineChannelMentionReact

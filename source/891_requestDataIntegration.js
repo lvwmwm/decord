@@ -1,11 +1,11 @@
 // Module ID: 891
-// Function ID: 9827
+// Function ID: 9831
 // Name: requestDataIntegration
 // Dependencies: []
 
 // Module 891 (requestDataIntegration)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = { 65588306: "LIGHT", -1437179133: "<string:4227858432>", 1627959138: "<string:2731364671>", -397454708: "M144.616 190.007V96.608l197.822 69.184-197.822 69.185v-44.97Z", -480137012: "<string:24183040>" };
+let closure_2 = {};
 const _module = require(dependencyMap[0]);
 
 export const requestDataIntegration = _module.defineIntegration(function _requestDataIntegration() {

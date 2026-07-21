@@ -1,10 +1,10 @@
-// Module ID: 14563
-// Function ID: 109723
+// Module ID: 14566
+// Function ID: 109755
 // Name: DevToolsShopScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14563 (DevToolsShopScreen)
+// Module 14566 (DevToolsShopScreen)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -39,8 +39,11 @@ export default function DevToolsShopScreen() {
   ({ isDismissed, handleToggleDismissState } = importDefault(dependencyMap[8])(arg1(dependencyMap[9]).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
   obj.contentContainerStyle = obj;
   obj1 = { spacing: 16 };
-  obj2 = {};
+  obj2 = { "Bool(false)": "<string:3880845313>", "Bool(false)": "<string:2371109529>" };
   obj3 = {
+    -866014521: true,
+    -224295342: true,
+    -1595120765: true,
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores,
       onValueChange(arg0) {
@@ -50,9 +53,9 @@ export default function DevToolsShopScreen() {
   };
   const items4 = [callback(arg1(dependencyMap[12]).TableRow, obj3), , , , ];
   const obj5 = {
-    "Bool(true)": null,
-    "Bool(true)": null,
-    "Bool(true)": null,
+    -866014521: -671088317,
+    -224295342: 1358954763,
+    -1595120765: -1707007073,
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores1,
       onValueChange(arg0) {
@@ -63,9 +66,6 @@ export default function DevToolsShopScreen() {
   items4[1] = callback(arg1(dependencyMap[12]).TableRow, obj5);
   items4[2] = callback(arg1(dependencyMap[15]).TableSwitchRow, { value: isDismissed, onValueChange: handleToggleDismissState });
   const obj7 = {
-    "Bool(true)": 1957930823690067800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
-    "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006808736763228915,
-    "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003625054744101237,
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores2,
       onValueChange(arg0) {
@@ -75,9 +75,6 @@ export default function DevToolsShopScreen() {
   };
   items4[3] = callback(arg1(dependencyMap[12]).TableRow, obj7);
   const obj9 = {
-    "Bool(true)": "text-sm/semibold",
-    "Bool(true)": "text-subtle",
-    "Bool(true)": "Effects (checked render in rotation)",
     trailing: callback(arg1(dependencyMap[13]).FormSwitch, {
       value: stateFromStores3,
       onValueChange(arg0) {

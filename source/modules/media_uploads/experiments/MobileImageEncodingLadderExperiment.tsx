@@ -1,10 +1,10 @@
-// Module ID: 4701
-// Function ID: 40904
+// Module ID: 4700
+// Function ID: 40911
 // Name: getMobileImageEncodingLadderConfig
 // Dependencies: []
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 4701 (getMobileImageEncodingLadderConfig)
+// Module 4700 (getMobileImageEncodingLadderConfig)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: { useImageEncodingLadder: false }, variations: { [0]: { useImageEncodingLadder: false }, [1]: { useImageEncodingLadder: true } } });
 const _module1 = require(dependencyMap[1]);

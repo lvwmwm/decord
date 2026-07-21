@@ -1,5 +1,5 @@
 // Module ID: 10546
-// Function ID: 82376
+// Function ID: 82387
 // Name: IgnoreThermalStateAlert
 // Dependencies: []
 // Exports: IgnoreThermalStateAlert
@@ -8,7 +8,7 @@
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).createStyles({ text: { action: null, messageReference: null, medium: null }, header: { textAlign: "center" } });
+let closure_5 = arg1(dependencyMap[2]).createStyles({ text: {}, header: { textAlign: "center" } });
 const obj = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/native/IgnoreThermalStateAlert.tsx");
 
@@ -30,7 +30,7 @@ export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfir
   };
   const intl2 = arg1(dependencyMap[4]).intl;
   obj["confirmText"] = intl2.string(arg1(dependencyMap[4]).t.oEAioF);
-  obj = { "Null": false, "Null": 0, "Null": 4, style: tmp3.header };
+  obj = { delete: false, dispatch: 0, raw: 4, style: tmp3.header };
   const intl3 = arg1(dependencyMap[4]).intl;
   obj.children = intl3.string(arg1(dependencyMap[4]).t.v5X4fZ);
   const items = [callback(arg1(dependencyMap[6]).Text, obj), ];

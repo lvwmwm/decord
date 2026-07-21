@@ -1,5 +1,5 @@
 // Module ID: 856
-// Function ID: 9603
+// Function ID: 9607
 // Name: setLogAttribute
 // Dependencies: []
 // Exports: _INTERNAL_captureLog

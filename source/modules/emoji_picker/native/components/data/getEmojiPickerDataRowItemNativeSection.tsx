@@ -1,5 +1,5 @@
 // Module ID: 9350
-// Function ID: 72999
+// Function ID: 73010
 // Name: getEmojiPickerDataRowItemNativeSection
 // Dependencies: []
 // Exports: default

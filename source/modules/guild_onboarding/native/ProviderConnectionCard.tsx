@@ -1,5 +1,5 @@
 // Module ID: 5478
-// Function ID: 46749
+// Function ID: 46757
 // Name: ProviderConnectionCard
 // Dependencies: []
 // Exports: default
@@ -73,7 +73,7 @@ export default function ProviderConnectionCard(connection) {
         }
         if (null == icon) {
           const source = obj2.makeSource(null);
-          obj = { source, style: { bhk: "boolean", bic: "string" }, disableColor: true };
+          obj = { source, style: { "Null": false, "Null": false }, disableColor: true };
           return callback(connection(_location[13]).Icon, obj);
         } else {
           icon = value.icon;
@@ -82,7 +82,7 @@ export default function ProviderConnectionCard(connection) {
         }
         const obj2 = connection(_location[11]);
       } else {
-        return callback(connection(_location[14]).LinkIcon, { flex: null, flexGrow: null });
+        return callback(connection(_location[14]).LinkIcon, { accessibilityRole: 4, "": 6 });
       }
     }, items1);
     obj = { displayName: stringResult, description, icon: memo, isLoading: loading, isConnected: hasConnection, canConnect, onConnect: callback };

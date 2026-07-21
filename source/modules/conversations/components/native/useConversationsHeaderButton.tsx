@@ -1,5 +1,5 @@
 // Module ID: 9262
-// Function ID: 72341
+// Function ID: 72352
 // Name: useConversationsHeaderButton
 // Dependencies: []
 // Exports: useConversationsHeaderButton
@@ -102,9 +102,8 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
     }
     if (tmp) {
       ref.current = arg0.id;
-      const ConversationsAnalytics = arg0(isTopicalNavEnabled[9]).ConversationsAnalytics;
-      const obj = { channelId: arg0.id, conversationCount: stateFromStores1 };
-      const result = ConversationsAnalytics.trackEntrypointImpression(obj);
+      const result = arg0(isTopicalNavEnabled[7]).trackTopicalNavigationEntrypointImpression(arg0.id, stateFromStores1);
+      const obj = arg0(isTopicalNavEnabled[7]);
     }
   }, items8);
   const items9 = [isTopicalNavEnabled, conversationBackoffRef, , ];
@@ -114,11 +113,11 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
     if (isTopicalNavEnabled) {
       const obj = {
         source: null,
-        IconComponent: arg0(isTopicalNavEnabled[10]).PaperIcon,
+        IconComponent: arg0(isTopicalNavEnabled[9]).PaperIcon,
         onPress() {
             const current = ref.current;
             current.cancel();
-            const ConversationsAnalytics = lib(closure_1[9]).ConversationsAnalytics;
+            const ConversationsAnalytics = lib(closure_1[10]).ConversationsAnalytics;
             let obj = { channelId: lib.id, conversationIds: [], isFocusMode: false };
             const result = ConversationsAnalytics.trackTopicsUnitImpression(obj);
             obj = { channelId: lib.id, guildId: lib.guild_id };

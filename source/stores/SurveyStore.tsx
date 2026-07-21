@@ -1,5 +1,5 @@
 // Module ID: 9269
-// Function ID: 72416
+// Function ID: 72427
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -124,7 +124,7 @@ function meetsSurveyRequirements(closure_22) {
   }
   let guild_size = closure_22.guild_size;
   if (undefined === guild_size) {
-    guild_size = [null, null];
+    guild_size = [true, true];
   }
   let guild_permissions = closure_22.guild_permissions;
   if (undefined === guild_permissions) {
@@ -433,7 +433,7 @@ let closure_11 = importDefault(dependencyMap[7]);
 let closure_12 = importDefault(dependencyMap[8]);
 let closure_13 = importDefault(dependencyMap[9]);
 ({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = arg1(dependencyMap[10]));
-let obj = { height: null, flex: null, justifyContent: null, width: null, height: null, hiddenSurveys: {} };
+let obj = { hiddenSurveys: {} };
 let closure_19 = false;
 let closure_20 = false;
 let closure_21 = {};

@@ -1,5 +1,5 @@
 // Module ID: 11827
-// Function ID: 91686
+// Function ID: 91698
 // Name: useHandleBuyNow
 // Dependencies: []
 // Exports: default, useHandleBuyNow

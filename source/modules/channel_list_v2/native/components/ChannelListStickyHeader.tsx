@@ -1,10 +1,10 @@
-// Module ID: 14859
-// Function ID: 111951
+// Module ID: 14862
+// Function ID: 111985
 // Name: ChannelListStickyHeader
 // Dependencies: []
 // Exports: default
 
-// Module 14859 (ChannelListStickyHeader)
+// Module 14862 (ChannelListStickyHeader)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -19,7 +19,7 @@ let closure_10 = arg1(dependencyMap[6]).createStyles((arg0) => {
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = { chevron: { borderRadius: -536870861, borderWidth: -299892737 } };
+  let obj = { chevron: { "Null": -536870861, "Null": -299892737 } };
   obj = { gap: importDefault(dependencyMap[7]).space.PX_8, paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
   if (flag) {
     let num = 0;
@@ -44,14 +44,14 @@ let closure_10 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.flex = { flexShrink: 1 };
   const obj1 = { height: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
   obj.header = { gap: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-  const obj2 = { gap: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-  obj.subheader = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
-  const obj4 = {};
+  const obj3 = { "Null": 7, "Null": 370, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
+  obj.subheader = obj3;
+  const obj4 = { "Null": true, "Null": true };
   const colors = importDefault(dependencyMap[7]).colors;
   obj4.backgroundColor = arg0 ? colors.TEXT_SUBTLE : colors.BACKGROUND_MOD_STRONG;
   obj4.borderRadius = importDefault(dependencyMap[7]).radii.round;
   obj.ellipse = obj4;
-  const obj3 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj2 = { gap: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
   obj.joinButton = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginVertical: importDefault(dependencyMap[7]).space.PX_4 };
   return obj;
 });
@@ -148,14 +148,14 @@ export default function ChannelListStickyHeader(guild) {
     tmp28 = null;
     if (tmp5 > 0) {
       obj5 = { style: tmp2.subheader };
-      const obj6 = { activeAnimationType: "M44.2994 29.7789H30.1249C29.6356 29.7789 29.239 30.18 29.239 30.6745C29.239 31.1692 29.6356 31.5701 30.1249 31.5701H44.2994C44.7885 31.5701 45.1853 31.1692 45.1853 30.6745C45.1853 30.18 44.7885 29.7789 44.2994 29.7789Z", activeAnimationOptions: "white", activeSlideAlignment: "white", activeSlideOffset: "0.723776", variant: token1 };
+      const obj6 = { 0: "M44.2994 29.7789H30.1249C29.6356 29.7789 29.239 30.18 29.239 30.6745C29.239 31.1692 29.6356 31.5701 30.1249 31.5701H44.2994C44.7885 31.5701 45.1853 31.1692 45.1853 30.6745C45.1853 30.18 44.7885 29.7789 44.2994 29.7789Z", 277100062655927424: "white", 0: "white", -9223372036854775808: "0.723776", variant: token1 };
       const intl2 = arg1(dependencyMap[16]).intl;
       const obj7 = { count: tmp5 };
       obj6.children = intl2.format(arg1(dependencyMap[16]).t.zRl6XR, obj7);
       const items4 = [callback(arg1(dependencyMap[17]).Text, obj6), , ];
       const obj8 = { style: tmp2.ellipse };
       items4[1] = callback(View, obj8);
-      const obj9 = { activeAnimationType: "M44.2994 29.7789H30.1249C29.6356 29.7789 29.239 30.18 29.239 30.6745C29.239 31.1692 29.6356 31.5701 30.1249 31.5701H44.2994C44.7885 31.5701 45.1853 31.1692 45.1853 30.6745C45.1853 30.18 44.7885 29.7789 44.2994 29.7789Z", activeAnimationOptions: "white", activeSlideAlignment: "white", activeSlideOffset: "0.723776", variant: token1 };
+      const obj9 = { 0: "M44.2994 29.7789H30.1249C29.6356 29.7789 29.239 30.18 29.239 30.6745C29.239 31.1692 29.6356 31.5701 30.1249 31.5701H44.2994C44.7885 31.5701 45.1853 31.1692 45.1853 30.6745C45.1853 30.18 44.7885 29.7789 44.2994 29.7789Z", 277100062655927424: "white", 0: "white", -9223372036854775808: "0.723776", variant: token1 };
       const intl3 = arg1(dependencyMap[16]).intl;
       obj9.children = intl3.string(arg1(dependencyMap[16]).t.1g9A/f);
       items4[2] = callback(arg1(dependencyMap[17]).Text, obj9);

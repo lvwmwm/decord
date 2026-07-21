@@ -1,5 +1,5 @@
 // Module ID: 11367
-// Function ID: 88374
+// Function ID: 88386
 // Name: getControlsDefaultWidth
 // Dependencies: []
 

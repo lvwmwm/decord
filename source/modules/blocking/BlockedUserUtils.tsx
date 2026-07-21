@@ -1,10 +1,10 @@
-// Module ID: 14723
-// Function ID: 111054
+// Module ID: 14726
+// Function ID: 111088
 // Name: voiceStateHasBlockedUsers
 // Dependencies: []
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds
 
-// Module 14723 (voiceStateHasBlockedUsers)
+// Module 14726 (voiceStateHasBlockedUsers)
 function voiceStateHasBlockedUsers(userId) {
   return blockedOrIgnored.isBlockedOrIgnored(userId.userId);
 }

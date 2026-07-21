@@ -1,5 +1,5 @@
 // Module ID: 8460
-// Function ID: 67476
+// Function ID: 67487
 // Name: GuildEventRecurrence
 // Dependencies: []
 // Exports: default
@@ -12,13 +12,13 @@ let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: {}, eventHeader: {} };
+obj = { container: { NONE_MONTH: "<string:1153579434>", analyticsData: "<string:1509311682>", lineHeight: "<string:1164378113>", startupPath: "<string:309395458>" }, eventHeader: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.active = obj;
 obj.actions = {};
+const obj1 = { <string:3229045644>: "/assets/images/native/icons", <string:2213734789>: 24, <string:377789268>: 24, <string:2578848111>: null, <string:2889504644>: "d7e806908635ad007fa68ad7fb2ccc9f", borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj.secondarySmallButton = obj1;
 const tmp2 = arg1(dependencyMap[5]);
-obj.secondarySmallButton = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.secondarySmallIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_STRONG };
 let closure_10 = obj.createStyles(obj);
 const obj2 = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_STRONG };
@@ -117,8 +117,8 @@ export default function GuildEventRecurrence(recurrenceId) {
     items4[1] = active;
     obj.style = items4;
     const obj1 = {
-      positionBottom: false,
-      positionRight: false,
+      fontFamily: null,
+      fontSize: null,
       accessibilityLabel: sum1,
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
@@ -143,7 +143,7 @@ export default function GuildEventRecurrence(recurrenceId) {
       tmp10 = callback(arg1(dependencyMap[16]).Text, obj4);
     }
     const items6 = [tmp10, ];
-    obj5 = { positionBottom: false, positionRight: false };
+    obj5 = { fontFamily: null, fontSize: null };
     const intl3 = arg1(dependencyMap[13]).intl;
     const _HermesInternal3 = HermesInternal;
     obj5.accessibilityLabel = "" + intl3.string(arg1(dependencyMap[13]).t.HIgA5a) + ", " + sum1;

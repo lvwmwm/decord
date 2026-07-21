@@ -1,9 +1,9 @@
-// Module ID: 12450
-// Function ID: 95072
+// Module ID: 12452
+// Function ID: 95094
 // Name: Opcode
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 12450 (Opcode)
+// Module 12452 (Opcode)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/gateway/GatewaySocketOpcode.tsx");
 

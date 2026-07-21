@@ -1,22 +1,22 @@
-// Module ID: 13446
-// Function ID: 102112
+// Module ID: 13448
+// Function ID: 102134
 // Name: styles
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 13446 (styles)
-import { View } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13448 (styles)
+import { View } from "result";
+import { jsx } from "result";
+import result from "result";
+import importAllResult from "result";
+import result from "result";
 
 let obj = {};
-obj = { borderRadius: require("__exportStarResult1").radii.xl };
+obj = { borderRadius: require("result").radii.xl };
 obj.colorBlock = obj;
-const styles = __exportStarResult1.createStyles(obj);
-const result = __exportStarResult1.fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
+const styles = result.createStyles(obj);
+result = result.fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
 
-export default require("__exportStarResult1").memo((color) => {
+export default require("result").memo((color) => {
   let selected;
   let style;
   color = color.color;

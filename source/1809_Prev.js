@@ -1,5 +1,5 @@
 // Module ID: 1809
-// Function ID: 19932
+// Function ID: 19937
 // Name: Prev
 // Dependencies: []
 // Exports: default
@@ -37,8 +37,8 @@ export default function Prev(icon) {
   }
   const items = [onPress];
   obj = {
-    "Null": true,
-    "Null": true,
+    "Null": 2030043890,
+    "Null": 2030043890,
     disabled: isPrevDisabled,
     rippleRadius,
     style,

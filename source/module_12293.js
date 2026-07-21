@@ -1,9 +1,9 @@
 // Module ID: 12293
-// Function ID: 94173
+// Function ID: 94185
 // Dependencies: []
 
 // Module 12293
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "f23", isInternetReachable: "setDescription", details: "genericMediaFlag", reachabilityUrl: "r", reachabilityMethod: "handleGuildMembersChunkBatch", reachabilityHeaders: "isArray", reachabilityTest: "FAILED_TO_MENTION_SOME_ROLES_IN_THREAD", reachabilityShortTimeout: "isArray", scales: [] };
+const obj = { "Bool(false)": -1663348269, "Bool(false)": 17514306, "Bool(false)": 17514240, "Bool(false)": -1708064512, "Bool(false)": -1717986919, "Bool(false)": 1950341529, "Bool(false)": 12, "Bool(false)": 8, scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

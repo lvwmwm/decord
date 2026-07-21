@@ -1,5 +1,5 @@
 // Module ID: 8651
-// Function ID: 68459
+// Function ID: 68470
 // Name: _getShopCollection
 // Dependencies: []
 // Exports: getGameAnnouncements, getShopCollection

@@ -1,10 +1,10 @@
-// Module ID: 13992
-// Function ID: 106336
+// Module ID: 13995
+// Function ID: 106368
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useApplicationId, useChannelAccessFormat, useChannelBenefits, useClearEditStateOnUnmount, useCreateOrUpdateListingFromEditState, useDescription, useEditStateIds, useHasChanges, useHasChangesForEditStateIds, useImage, useIntangibleBenefits, useName, usePriceTier, useRole, useRoleColor, useRoleIcon, useSubscriptionPlan, useTierEmojiIds, useTrialInterval, useTrialLimit
 
-// Module 13992 (_createForOfIteratorHelperLoose)
+// Module 13995 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

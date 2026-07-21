@@ -1,10 +1,10 @@
-// Module ID: 15527
-// Function ID: 118526
-// Dependencies: [31, 27, 10247, 4322, 33, 4126, 15531, 4545]
+// Module ID: 15530
+// Function ID: 118565
+// Dependencies: [31, 27, 10247, 4322, 33, 4126, 15534, 4545]
 
-// Module 15527
+// Module 15530
 import module_31 from "module_31";
-import importAllResult from "keys";
+import importAllResult from "get ActivityIndicator";
 import { Image } from "hairlineWidth";
 import ReadStateTypes from "ReadStateTypes";
 import getFontScale from "getFontScale";
@@ -117,7 +117,7 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
     const obj2 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / 2, fill: "white" };
     let tmp17 = callback2(arg1(dependencyMap[5]).Circle, obj2);
   } else {
-    const obj3 = { max: -536870861, guildId: -299892737, width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
+    const obj3 = { width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
     tmp17 = callback2(arg1(dependencyMap[5]).Rect, obj3);
   }
   const items1 = [tmp17, , , , , ];

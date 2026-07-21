@@ -1,14 +1,15 @@
 // Module ID: 8419
-// Function ID: 67096
+// Function ID: 67107
 // Name: BottomSheetTextInput
 // Dependencies: [0, 0, 4294967295, 0, 0, 0]
 // Exports: BottomSheetTextInput
 
 // Module 8419 (BottomSheetTextInput)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+import closure_3 from "result";
+import { jsx } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Sheet/native/BottomSheetTextInput.native.tsx");
+result = result.fileFinishedImporting("design/components/Sheet/native/BottomSheetTextInput.native.tsx");
 
 export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   let onBlur;
@@ -16,7 +17,7 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   let onFocus;
   let onFocus2;
   const arg1 = ref.ref;
-  let obj = { batchSize: "spring", blockStart: "linear", blockEnd: "easeInEaseOut" };
+  let obj = { -1411405115: false, 1045705639: false, -977753741: false };
   ({ onFocus, onBlur } = ref);
   Object.setPrototypeOf(null);
   const merged = Object.assign(ref, obj);

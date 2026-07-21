@@ -1,5 +1,5 @@
 // Module ID: 3736
-// Function ID: 28545
+// Function ID: 28550
 // Name: t
 // Dependencies: []
 
@@ -84,7 +84,7 @@ const fn = function t(moment) {
       return arg0 + "\u65E5";
     },
     relativeTime: {},
-    week: { <string:1431496722>: false, <string:1627556098>: false }
+    week: { "Bool(true)": null, "Bool(true)": null }
   });
 };
 if ("object" === typeof exports) {

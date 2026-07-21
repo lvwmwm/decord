@@ -1,10 +1,10 @@
-// Module ID: 6869
-// Function ID: 54312
+// Module ID: 6870
+// Function ID: 54324
 // Name: compare
 // Dependencies: []
 // Exports: compare
 
-// Module 6869 (compare)
+// Module 6870 (compare)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/modules/content_classification/lib/AgeRestrictionUtils.tsx");
 

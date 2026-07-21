@@ -1,5 +1,5 @@
 // Module ID: 11945
-// Function ID: 92348
+// Function ID: 92360
 // Name: getCurrentActivityGamePlatform
 // Dependencies: []
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 7184
-// Function ID: 57830
+// Module ID: 7185
+// Function ID: 57842
 // Name: hasTrailingError
 // Dependencies: []
 // Exports: default
 
-// Module 7184 (hasTrailingError)
+// Module 7185 (hasTrailingError)
 let Platform;
 let StyleSheet;
 function hasTrailingError(found) {
@@ -26,7 +26,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { collapsable: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", style: true, preventClipping: null, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { "Bool(true)": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Bool(true)": true, "Bool(true)": null, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.titledSectionHeader = obj;
 obj.titledSectionNoBorder = { marginTop: 24 };
 obj.titledSectionNoBorderOrMargin = {};

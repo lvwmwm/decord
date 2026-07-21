@@ -1,7 +1,7 @@
 // Module ID: 10902
-// Function ID: 84715
+// Function ID: 84726
 // Name: getCurrentUserPresenceActivity
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10902 (getCurrentUserPresenceActivity)

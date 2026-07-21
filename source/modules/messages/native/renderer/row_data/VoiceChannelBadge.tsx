@@ -1,10 +1,10 @@
-// Module ID: 7903
-// Function ID: 62903
+// Module ID: 7904
+// Function ID: 62916
 // Name: createVoiceChannelBadge
 // Dependencies: []
 // Exports: createVoiceChannelBadge
 
-// Module 7903 (createVoiceChannelBadge)
+// Module 7904 (createVoiceChannelBadge)
 const Image = require(dependencyMap[0]).Image;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

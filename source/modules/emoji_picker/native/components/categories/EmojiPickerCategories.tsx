@@ -1,5 +1,5 @@
 // Module ID: 9398
-// Function ID: 73217
+// Function ID: 73228
 // Name: EXPRESSION_FOOTER_HEIGHT
 // Dependencies: []
 
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     if (null != closure_10.current) {
       const current = ref.current;
       if (null != current) {
-        const obj = { "Bool(false)": 435355650, "Bool(false)": 1231421441, "Bool(false)": 2137063425, item };
+        const obj = { 0: "P", 0: "DISPLAY_MEDIA_UPLOADS", 9223372036854775807: "%ErrorPrototype%", item };
         current.scrollToLocation(obj);
       }
     }
@@ -207,8 +207,8 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
         tmp2 = categories;
         num = 7;
         obj = bottomSheetRef(categories[7]);
-        tmp3 = f73225;
-        tmp4 = obj.runOnJS(f73225)();
+        tmp3 = f73236;
+        tmp4 = obj.runOnJS(f73236)();
       }
       return;
     }
@@ -295,7 +295,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   const tmp16 = importDefault(dependencyMap[12])();
   const tmp18 = sharedValue;
   const obj4 = { gesture: memo1 };
-  obj5 = { <string:2471231180>: "missed_messages_default", <string:2711707967>: "222_social", <string:374976602>: null, <string:1670994100>: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj5 = { 50352482: "missed_messages_default", -1135455135: "222_social", 1635499387: null, 91181654: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
   obj4.children = sharedValue(importDefault(dependencyMap[15]), obj5);
   const items8 = [sharedValue(arg1(dependencyMap[13]).GestureDetector, obj4), , ];
   let tmp22 = null;

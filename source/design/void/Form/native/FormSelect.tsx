@@ -1,15 +1,15 @@
-// Module ID: 7507
-// Function ID: 60139
+// Module ID: 7508
+// Function ID: 60151
 // Name: OptionButton
 // Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 7507 (OptionButton)
-import closure_2 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { Fonts } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7508 (OptionButton)
+import closure_2 from "result";
+import result from "result";
+import { Fonts } from "result";
+import result from "result";
+import result from "result";
 
 function OptionButton(item) {
   let accessibilityRole;
@@ -51,26 +51,26 @@ function OptionButton(item) {
 function extractKey(value) {
   return "" + value.value;
 }
-({ View: closure_3, FlatList: closure_4 } = __exportStarResult1);
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+({ View: closure_3, FlatList: closure_4 } = result);
+({ jsx: closure_5, jsxs: closure_6 } = result);
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { borderWidth: __exportStarResult1.StyleSheet.hairlineWidth, shadowColor: require("__exportStarResult1").colors.BLACK, shadowOffset: { bhk: "0 0 4px 0 hsl(none 0% 0% / 0.08)", bic: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST };
+obj = { borderWidth: result.StyleSheet.hairlineWidth, shadowColor: require("result").colors.BLACK, shadowOffset: { "Null": "0 0 4px 0 hsl(none 0% 0% / 0.08)", "Null": "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, backgroundColor: require("result").colors.BACKGROUND_BASE_LOWEST };
 obj.button = obj;
-obj.buttonSelected = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BRAND };
-const obj1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BRAND };
-obj.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: require("__exportStarResult1").colors.TEXT_MUTED };
-const obj2 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: require("__exportStarResult1").colors.TEXT_MUTED };
-obj.labelSelected = { color: require("__exportStarResult1").unsafe_rawColors.BRAND_100 };
+obj.buttonSelected = { backgroundColor: require("result").colors.BACKGROUND_BRAND };
+const obj1 = { backgroundColor: require("result").colors.BACKGROUND_BRAND };
+obj.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: require("result").colors.TEXT_MUTED };
+const obj2 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, color: require("result").colors.TEXT_MUTED };
+obj.labelSelected = { color: require("result").unsafe_rawColors.BRAND_100 };
 let closure_7 = obj.createStyles(obj);
-const obj3 = { color: require("__exportStarResult1").unsafe_rawColors.BRAND_100 };
-const obj4 = { row: { flex: "<string:2236743682>", display: "<string:1941427526>" } };
+const obj3 = { color: require("result").unsafe_rawColors.BRAND_100 };
+const obj4 = { row: { paddingHorizontal: "166185917b52ede00e3e20d3f1f7faeb", accessible: "CheckmarkSmallIcon" } };
 const obj7 = arg1(dependencyMap[4]);
-obj4.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: require("__exportStarResult1").colors.TEXT_MUTED };
+obj4.label = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: require("result").colors.TEXT_MUTED };
 obj4.optionsWrapper = {};
 obj4.optionsContainer = { paddingHorizontal: 12 };
 let closure_8 = obj7.createStyles(obj4);
-const result = __exportStarResult1.fileFinishedImporting("design/void/Form/native/FormSelect.tsx");
+result = result.fileFinishedImporting("design/void/Form/native/FormSelect.tsx");
 
 export default function FormSelect(onChange) {
   let label;

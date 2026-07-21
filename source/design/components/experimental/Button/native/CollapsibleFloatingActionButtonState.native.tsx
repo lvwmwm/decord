@@ -1,5 +1,5 @@
 // Module ID: 8373
-// Function ID: 66694
+// Function ID: 66705
 // Name: useCollapsibleFloatingActionButtonState
 // Dependencies: []
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState

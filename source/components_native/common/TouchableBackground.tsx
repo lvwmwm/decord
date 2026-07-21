@@ -1,5 +1,5 @@
 // Module ID: 11414
-// Function ID: 88747
+// Function ID: 88759
 // Name: TouchableBackground
 // Dependencies: []
 // Exports: default
@@ -27,7 +27,7 @@ export default function TouchableBackground(onPressOut) {
   let callback = onPressIn;
   onPressOut = onPressOut.onPressOut;
   const React = onPressOut;
-  let obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+  let obj = { 0: true, 0: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, -9223372036854775808: true };
   ({ pressableStyle, style, children } = onPressOut);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);

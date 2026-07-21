@@ -1,10 +1,10 @@
-// Module ID: 14888
-// Function ID: 112150
+// Module ID: 14891
+// Function ID: 112184
 // Name: useActiveEventOrStageInstanceChannel
 // Dependencies: []
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 14888 (useActiveEventOrStageInstanceChannel)
+// Module 14891 (useActiveEventOrStageInstanceChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
 

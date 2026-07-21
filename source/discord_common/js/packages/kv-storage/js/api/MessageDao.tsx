@@ -1,11 +1,12 @@
 // Module ID: 1897
-// Function ID: 21263
+// Function ID: 21268
 // Name: makeCell
 // Dependencies: [0, 0, 0, 0, 0]
 
 // Module 1897 (makeCell)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import closure_2 from "result";
+import closure_3 from "result";
+import result from "result";
 
 function makeCell(arg0, arg1, data) {
   const tmp = makeStorageId(data.id);
@@ -18,7 +19,7 @@ function makeStorageId(id) {
 const tmp3 = () => {
   class MessageDaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, MessageDaoTransaction);
+      tmp = closure_2(this, MessageDaoTransaction);
       this.transaction = arg0;
       return;
     }
@@ -134,7 +135,9 @@ const tmp3 = () => {
   ];
   return callback(MessageDaoTransaction, items, items1);
 }();
-const tmp2 = () => {
+result = result.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
+
+export const MessageDao = () => {
   class MessageDao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -142,7 +145,7 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, MessageDao);
+      tmp = closure_2(self, MessageDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
@@ -270,7 +273,4 @@ const tmp2 = () => {
   };
   return callback(MessageDao, items);
 }();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
-
-export const MessageDao = tmp2;
 export const MessageDaoTransaction = tmp3;

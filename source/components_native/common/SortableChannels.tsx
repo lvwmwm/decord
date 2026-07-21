@@ -1,9 +1,9 @@
-// Module ID: 16163
-// Function ID: 124619
+// Module ID: 16171
+// Function ID: 124680
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16163 (_createForOfIteratorHelperLoose)
+// Module 16171 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -255,7 +255,7 @@ let closure_18 = (Component) => {
       } else {
         layout = Component.list.state.active.layout;
         obj = {};
-        obj = { "Bool(false)": true, "Bool(false)": "/assets/modules/guild_settings/roles/native/images", "Bool(false)": 375, "Bool(false)": 280, "Bool(false)": null, "Bool(false)": "385febe027093418da10e0784f3891bd", "Bool(false)": "illustration-dark" };
+        obj = {};
         activeOpacity = Component.activeOpacity;
         num = 0.8;
         if (null != activeOpacity) {
@@ -309,7 +309,7 @@ const tmp5 = (Component) => {
               onMoveCancel();
             }
           }
-          obj.setState({ ../../../lib/assets: "ellipseGroup", ../../../lib/assign: "OPEN_TO_PLAY", ../../../lib/braintree-error: "headMetaSocial" });
+          obj.setState({ style: true, showTopContainer: true, multiline: true });
         }
       };
       obj.handleWrapperLayout = () => {
@@ -423,7 +423,7 @@ const tmp5 = (Component) => {
         const onRowActive = props.onRowActive;
         if (!props.disableSorting) {
           const pan = obj.state.pan;
-          pan.setValue({ max: -536870861, guildId: -299892737 });
+          pan.setValue({});
           obj.moveY = layout.layout.pageY + layout.layout.frameHeight / 2;
           const index = layout.rowData.index;
           const obj = { active: layout, activeIndex: index, hoveringIndex: index };
@@ -658,7 +658,7 @@ const tmp5 = (Component) => {
         }
         return tmp2;
       };
-      obj = { max: -536870861, guildId: -299892737 };
+      obj = {};
       valueXY = new closure_9.ValueXY(obj);
       panResponder = obj.createPanResponder(Component, obj, valueXY);
       obj.listener = valueXY.addListener((arg0) => {
@@ -673,7 +673,7 @@ const tmp5 = (Component) => {
       obj.scrollValue = 0;
       obj4 = SortableChannels(closure_1[9]);
       obj.scrollContainerHeight = 1.2 * obj4.getWindowDimensions().height;
-      obj1 = { rate: "ellipseGroup", getDisplayedInviteCode: "OPEN_TO_PLAY", ar-EH: "headMetaSocial" };
+      obj1 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
       obj1.panResponder = panResponder;
       obj1.pan = valueXY;
       obj.state = obj1;
@@ -746,7 +746,7 @@ const tmp5 = (Component) => {
           if (null != onHoverChange) {
             onHoverChange("-1");
           }
-          self.setState({ ../../../lib/assets: "ellipseGroup", ../../../lib/assign: "OPEN_TO_PLAY", ../../../lib/braintree-error: "headMetaSocial" });
+          self.setState({ style: true, showTopContainer: true, multiline: true });
         },
         onPanResponderRelease() {
           let active;
@@ -770,13 +770,13 @@ const tmp5 = (Component) => {
               tmp3 = index;
             }
             if (tmp3 === index) {
-              return self.setState({ ../../../lib/assets: "ellipseGroup", ../../../lib/assign: "OPEN_TO_PLAY", ../../../lib/braintree-error: "headMetaSocial" });
+              return self.setState({ style: true, showTopContainer: true, multiline: true });
             } else {
               obj = { row: active.rowData, from: index - 1, to: tmp3 - 1 };
               if (null != onRowMoved) {
                 onRowMoved(obj);
               }
-              self.setState({ ../../../lib/assets: "ellipseGroup", ../../../lib/assign: "OPEN_TO_PLAY", ../../../lib/braintree-error: "headMetaSocial" });
+              self.setState({ style: true, showTopContainer: true, multiline: true });
               const _Math = Math;
               const bound = Math.max(0, self.scrollContainerHeight - self.listLayout.height + active.layout.frameHeight);
               if (self.scrollValue > bound) {

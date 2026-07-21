@@ -1,16 +1,16 @@
 // Module ID: 11232
-// Function ID: 87449
+// Function ID: 87461
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11232 (set)
 const obj = { ALL: new Set([]) };
 const set = new Set([]);
 obj.APPLICATION_DIRECTORY = new Set([]);
 const set1 = new Set([]);
-obj.APP_LAUNCHER_IN_TEXT = new Set(["heart", "ily", "kisses"]);
-const set2 = new Set(["heart", "ily", "kisses"]);
-obj.APP_LAUNCHER_IN_VOICE_BANNER = new Set([null]);
+obj.APP_LAUNCHER_IN_TEXT = new Set([-722862079, 1112604673, -246463996]);
+const set2 = new Set([-722862079, 1112604673, -246463996]);
+obj.APP_LAUNCHER_IN_VOICE_BANNER = new Set([true]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectoryCollectionType.tsx");
 

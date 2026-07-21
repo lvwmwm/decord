@@ -1,5 +1,5 @@
 // Module ID: 9295
-// Function ID: 72596
+// Function ID: 72607
 // Name: updateContextMenuState
 // Dependencies: []
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, useActiveContextMenu, useContextMenuState

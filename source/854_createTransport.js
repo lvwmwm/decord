@@ -1,5 +1,5 @@
 // Module ID: 854
-// Function ID: 9586
+// Function ID: 9590
 // Name: createTransport
 // Dependencies: []
 
@@ -33,7 +33,7 @@ arg5.createTransport = function createTransport(bufferSize) {
             closure_1 = arg0(closure_1[1]).createEnvelope(arg0[0], items);
             function recordEnvelopeLoss(arg0) {
               const items = arg0;
-              if (obj.envelopeContainsItemType(closure_1, [true])) {
+              if (obj.envelopeContainsItemType(closure_1, [null])) {
                 if (tmp(tmp2[3]).DEBUG_BUILD) {
                   const debug = items(closure_1[4]).debug;
                   const _HermesInternal = HermesInternal;

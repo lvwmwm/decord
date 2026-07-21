@@ -1,5 +1,5 @@
 // Module ID: 10176
-// Function ID: 78606
+// Function ID: 78617
 // Name: InstantInviteUsesLabel
 // Dependencies: []
 // Exports: default
@@ -18,6 +18,8 @@ export default function InstantInviteUsesLabel(style) {
     const _HermesInternal = HermesInternal;
     combined = "" + uses + "/" + maxUses;
   }
-  const children = [0.00000000000000000000001426893241145739, combined];
-  return jsxs(arg1(dependencyMap[2]).Text, { style: style.style, children });
+  const obj = { hasMaxConnections: false, isBoostOnlySubscription: false, style: style.style };
+  const items = [, combined];
+  obj.children = items;
+  return jsxs(arg1(dependencyMap[2]).Text, obj);
 };

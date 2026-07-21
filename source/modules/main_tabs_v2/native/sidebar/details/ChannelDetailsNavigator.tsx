@@ -1,9 +1,9 @@
-// Module ID: 15366
-// Function ID: 117017
+// Module ID: 15369
+// Function ID: 117056
 // Name: ConnectedCreateThreadHeaderButton
 // Dependencies: []
 
-// Module 15366 (ConnectedCreateThreadHeaderButton)
+// Module 15369 (ConnectedCreateThreadHeaderButton)
 function ConnectedCreateThreadHeaderButton(channelId) {
   const arg1 = channelId.channelId;
   let obj = arg1(dependencyMap[8]);

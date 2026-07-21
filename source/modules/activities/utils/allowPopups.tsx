@@ -1,5 +1,5 @@
 // Module ID: 10601
-// Function ID: 82714
+// Function ID: 82725
 // Name: allowPopups
 // Dependencies: []
 // Exports: allowPopups

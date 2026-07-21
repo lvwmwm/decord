@@ -1,10 +1,10 @@
-// Module ID: 13529
-// Function ID: 102639
+// Module ID: 13531
+// Function ID: 102661
 // Name: AutomatedUnderageAppealStatus
 // Dependencies: []
 // Exports: default
 
-// Module 13529 (AutomatedUnderageAppealStatus)
+// Module 13531 (AutomatedUnderageAppealStatus)
 function AutomatedUnderageAppealStatus() {
   let obj = arg1(dependencyMap[10]);
   const items = [closure_8];
@@ -44,7 +44,7 @@ function AutomatedUnderageAppealStatus() {
       obj.type = callback(closure_3[9]).HelpMessageTypes.INFO;
       return obj;
     } else {
-      return { marginRight: "o", alignItems: "o" };
+      return { "Null": "o", "Null": "o" };
     }
   }(obj.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus())).type;
   let tmp3 = null;
@@ -66,7 +66,7 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_12, paddingVertical: importDefault(dependencyMap[12]).space.PX_12 };
 obj.container = obj;
-obj.loadingIndicator = { "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0 };
+obj.loadingIndicator = { 1400600855: 0, 685900264: 0, 140617204: 0 };
 const tmp4 = arg1(dependencyMap[5]);
 obj.body = { gap: importDefault(dependencyMap[12]).space.PX_8 };
 let closure_14 = obj.createStyles(obj);
@@ -111,7 +111,7 @@ export default function SafetyHubPage(visible) {
     const items1 = [, ];
     ({ container: arr4[0], loadingIndicator: arr4[1] } = tmp);
     obj.style = items1;
-    obj.children = callback(closure_6, {});
+    obj.children = callback(closure_6, { font: 397, dx: 97 });
     let tmp6 = callback(closure_5, obj);
   } else {
     tmp6 = null;

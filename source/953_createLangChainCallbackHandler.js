@@ -1,5 +1,5 @@
 // Module ID: 953
-// Function ID: 10321
+// Function ID: 10325
 // Name: createLangChainCallbackHandler
 // Dependencies: []
 // Exports: createLangChainCallbackHandler
@@ -29,12 +29,12 @@ export const createLangChainCallbackHandler = function createLangChainCallbackHa
     }
     const obj = {
       lc_serializable: false,
-      lc_namespace: [null, null, null],
+      lc_namespace: ["<string:8471360>", "<string:117768193>", "<string:132972545>"],
       lc_secrets: undefined,
       lc_attributes: undefined,
       lc_aliases: undefined,
       lc_serializable_keys: undefined,
-      lc_id: [null, null, null],
+      lc_id: ["<string:8471360>", "<string:117768193>", "<string:132972545>"],
       lc_kwargs: {},
       name: "SentryCallbackHandler",
       ignoreLLM: false,
@@ -175,12 +175,12 @@ export const createLangChainCallbackHandler = function createLangChainCallbackHa
           return obj;
         },
       toJSON() {
-          const obj = { "Bool(false)": "ktz", "Bool(false)": "av" };
+          const obj = { style: null, lineClamp: 0 };
           obj.id = obj.lc_id;
           return obj;
         },
       toJSONNotImplemented() {
-          const obj = { "Bool(false)": "ktz", "Bool(false)": "av" };
+          const obj = { style: null, lineClamp: 0 };
           obj.id = obj.lc_id;
           return obj;
         }

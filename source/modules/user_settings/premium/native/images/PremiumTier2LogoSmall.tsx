@@ -1,5 +1,5 @@
 // Module ID: 12291
-// Function ID: 94170
+// Function ID: 94182
 // Name: PremiumTier2LogoSmall
 // Dependencies: []
 // Exports: default

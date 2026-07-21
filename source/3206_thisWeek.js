@@ -1,5 +1,5 @@
 // Module ID: 3206
-// Function ID: 25804
+// Function ID: 25809
 // Name: thisWeek
 // Dependencies: []
 // Exports: default
@@ -15,7 +15,7 @@ function thisWeek(arg0) {
 }
 let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
 let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
-let closure_2 = ["<string:80413184>", "<string:80412160>", "<string:80411392>", "<string:59666432>", "<string:80413184>", "<string:80411392>", "<string:1965115136>"];
+let closure_2 = [null, null, null, null, null, null, null];
 let closure_3 = {
   lastWeek: function lastWeekFormatToken(defaultResult1, defaultResult2, date) {
     const defaultResult = closure_0.default(defaultResult1);

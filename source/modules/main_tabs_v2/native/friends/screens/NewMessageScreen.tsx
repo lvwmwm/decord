@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 116450
+// Module ID: 15316
+// Function ID: 116484
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15313 (_createForOfIteratorHelperLoose)
+// Module 15316 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -248,7 +248,7 @@ function useChannelForParticipants(first) {
     }
     if (tmp) {
       let obj = first(closure_2[18]);
-      obj = { channelId: stateFromStores.id, messages: [], jump: undefined };
+      obj = { paths: "c8f47b968e51eb4d5f2964cb9e696a2a", Symbol: "ChannelsFollowedIcon", cix: "png", channel: true, backgroundColor: "/assets/design/components/Icon/native/redesign/generated/images", flexDirection: 24, justifyContent: 24, marginTop: null, marginBottom: "b83c9486cfaf14d2dd0ad9edbe75c34d", channel: "WebhookPlusIcon", channelId: stateFromStores.id, messages: [], jump: undefined };
       obj.dispatch(obj);
     }
   }, items4);
@@ -364,13 +364,13 @@ if (obj6.isAndroid()) {
 }
 obj1.alignItems = str;
 obj.header = obj1;
-obj.emptyContainer = { "Null": null, "Null": null };
+obj.emptyContainer = { "Null": "values", "Null": "Array" };
 obj.emptyKeyboardView = { flexGrow: 1 };
-const obj2 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001153953053535477, "Null": 0.00000000000000000000000000000000000000000000004689095813645179, "Null": -44890842246276977000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002407817175865411, marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
-obj.addFriendsButtonContainer = obj2;
+const obj6 = arg1(dependencyMap[15]);
+obj.addFriendsButtonContainer = { marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
 let closure_20 = obj1.createStyles(obj);
 let closure_21 = { code: "function NewMessageScreenTsx1(){const{numInGroup,NUM_IN_GROUP_THRESHOLD,withTiming}=this.__closure;const show=numInGroup>=NUM_IN_GROUP_THRESHOLD;return{opacity:withTiming(show?1:0),maxHeight:withTiming(show?20:0)};}" };
-const obj6 = arg1(dependencyMap[15]);
+const obj2 = { marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
 const result = arg1(dependencyMap[42]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/NewMessageScreen.tsx");
 
 export default function NewMessageScreen(navigation) {

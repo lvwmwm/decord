@@ -1,10 +1,10 @@
-// Module ID: 7677
-// Function ID: 61316
+// Module ID: 7678
+// Function ID: 61328
 // Name: computeIsStickerReplyEnabled
 // Dependencies: []
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7677 (computeIsStickerReplyEnabled)
+// Module 7678 (computeIsStickerReplyEnabled)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

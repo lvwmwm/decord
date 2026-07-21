@@ -1,5 +1,5 @@
 // Module ID: 10300
-// Function ID: 79502
+// Function ID: 79513
 // Name: useProgressAnimation
 // Dependencies: []
 // Exports: default
@@ -88,7 +88,7 @@ obj.progressBarWarning = { backgroundColor: importDefault(dependencyMap[5]).unsa
 const obj3 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300 };
 obj.progressTrack = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };
 obj.progressContainerTop = {};
-obj.progressContainerBottom = { "Null": 124911620, "Null": 218103808, "Null": 16777216 };
+obj.progressContainerBottom = {};
 let closure_7 = obj.createStyles(obj);
 let closure_8 = { code: "function NotificationProgressTsx1(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
 const obj4 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };

@@ -1,9 +1,9 @@
-// Module ID: 15294
-// Function ID: 116300
+// Module ID: 15297
+// Function ID: 116334
 // Name: DirectMessageIcon
 // Dependencies: []
 
-// Module 15294 (DirectMessageIcon)
+// Module 15297 (DirectMessageIcon)
 function DirectMessageIcon(channel) {
   const arg1 = channel.channel;
   let obj = arg1(dependencyMap[11]);
@@ -69,8 +69,7 @@ function ThreadParentChannelLink(channel) {
   obj.children = intl.format(arg1(dependencyMap[18]).t.YbkB3U, {
     channelName: tmp,
     channelNameHook() {
-      const obj = { -9223372036854775808: "r", 0: "isArray", 0: "op", children: tmp };
-      return callback(channel(navigation[17]).Text, obj);
+      return callback(channel(navigation[17]).Text, { children: tmp });
     }
   });
   obj.children = callback(arg1(dependencyMap[17]).Text, obj);
@@ -98,7 +97,7 @@ function ChannelSubtitle(channel) {
   if (null != stateFromStores) {
     tmp4 = null;
     if ("" !== stateFromStores) {
-      obj = { -9223372036854775808: "contain", 0: "100%", 0: 34, children: stateFromStores };
+      obj = { <string:1643205302>: "contain", <string:1415816450>: "100%", <string:4283523744>: 34, children: stateFromStores };
       tmp4 = callback(arg1(dependencyMap[17]).Text, obj);
     }
   }
@@ -180,7 +179,7 @@ function ChannelNameHeaderContent(channel) {
           const items = [, ];
           ({ channelIcon: arr[0], channelTypeBox: arr[1] } = tmp);
           obj4.style = items;
-          obj4.children = callback(channelIconComponent, { flex: "row", flexGrow: "center" });
+          obj4.children = callback(channelIconComponent, { accessibilityRole: "<string:2556498100>", "": "<string:26556738>" });
           tmp7 = callback(stateFromStores2, obj4);
         }
         return tmp7;
@@ -194,7 +193,7 @@ function ChannelNameHeaderContent(channel) {
     let tmp11Result = tmp11(importDefault(dependencyMap[22]), obj1);
     const tmp17 = importDefault(dependencyMap[22]);
   } else {
-    obj2 = { "Null": 201326592, "Null": 1358954496, "Null": -126609849, "Null": 218103807, children: tmp2 };
+    obj2 = { children: tmp2 };
     tmp11Result = tmp11(arg1(dependencyMap[17]).Text, obj2);
   }
   const items9 = [tmp11Result, memo];
@@ -243,9 +242,9 @@ const tmp2 = arg1(dependencyMap[7]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[8]));
 let obj1 = arg1(dependencyMap[9]);
 let obj = {};
-obj = { x: null, "Null": null, "Null": null, gap: importDefault(dependencyMap[10]).space.PX_12 };
+obj = { gap: importDefault(dependencyMap[10]).space.PX_12 };
 obj.container = obj;
-obj.channelIcon = {};
+obj.channelIcon = { "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": "warn", "Bool(false)": "textAlign" };
 obj1 = { borderRadius: importDefault(dependencyMap[10]).modules.mobile.CHANNEL_NAME_CHANNEL_ICON_RADIUS, borderWidth: importDefault(dependencyMap[10]).modules.mobile.CHANNEL_NAME_CHANNEL_BORDER_WIDTH, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.channelTypeBox = obj1;
 obj.channelData = { flex: 1 };

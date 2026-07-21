@@ -1,7 +1,7 @@
 // Module ID: 4340
-// Function ID: 38331
+// Function ID: 38339
 // Name: NativePermissionStatus
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 4340 (NativePermissionStatus)
 const _module = require(dependencyMap[0]);

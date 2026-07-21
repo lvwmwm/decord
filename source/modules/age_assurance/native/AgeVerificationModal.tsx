@@ -1,10 +1,10 @@
-// Module ID: 7550
-// Function ID: 60416
+// Module ID: 7551
+// Function ID: 60428
 // Name: AgeVerifyScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7550 (AgeVerifyScreen)
+// Module 7551 (AgeVerifyScreen)
 function AgeVerifyScreen(onComplete) {
   onComplete = onComplete.onComplete;
   const arg1 = onComplete;
@@ -48,7 +48,7 @@ function AgeVerifyScreen(onComplete) {
       }
     }
   }, items2);
-  obj = { "Null": "text-default", "Null": "\u2022", "Null": "backdrop", 0: "backdrop", 0: 7, source: { uri: onComplete.webviewUrl }, onMessage: callback2 };
+  obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, source: { uri: onComplete.webviewUrl }, onMessage: callback2 };
   return jsx(importDefault(dependencyMap[6]), obj);
 }
 function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {

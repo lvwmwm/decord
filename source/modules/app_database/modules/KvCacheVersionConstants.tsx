@@ -1,7 +1,7 @@
 // Module ID: 476
 // Function ID: 6166
 // Name: HELLO_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 476 (HELLO_KEY)
 const _module = require(dependencyMap[0]);

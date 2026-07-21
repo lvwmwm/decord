@@ -1,7 +1,7 @@
 // Module ID: 8598
-// Function ID: 68263
+// Function ID: 68274
 // Name: SteamReleaseStatus
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8598 (SteamReleaseStatus)
 const _module = require(dependencyMap[0]);

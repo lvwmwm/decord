@@ -1,5 +1,5 @@
 // Module ID: 1447
-// Function ID: 16846
+// Function ID: 16851
 // Name: fit
 // Dependencies: []
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
@@ -148,7 +148,7 @@ async function _isPNGAnimated(type, arg1) {
   }
 }
 let closure_3 = importDefault(dependencyMap[0]);
-const items = [["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"]];
+const items = [[null, null, null]];
 importDefault(dependencyMap[3]).memoize((arg0) => {
   const arg1 = arg0;
   return new Promise((arg0, arg1) => {

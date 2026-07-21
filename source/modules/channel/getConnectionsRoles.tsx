@@ -1,10 +1,10 @@
-// Module ID: 4939
-// Function ID: 42315
+// Module ID: 4938
+// Function ID: 42322
 // Name: ChannelTypes
 // Dependencies: []
 // Exports: default
 
-// Module 4939 (ChannelTypes)
+// Module 4938 (ChannelTypes)
 let ChannelTypes;
 let Permissions;
 let closure_2 = importDefault(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 1069
-// Function ID: 12280
+// Function ID: 12284
 // Name: addPreviousTraceSpanLink
 // Dependencies: []
 // Exports: linkTraces

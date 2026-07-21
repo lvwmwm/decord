@@ -1,10 +1,10 @@
-// Module ID: 14745
-// Function ID: 111170
+// Module ID: 14748
+// Function ID: 111204
 // Name: useBaseChannelUnreadBadgeState
 // Dependencies: []
 // Exports: useChannelUnreadBadgeState
 
-// Module 14745 (useBaseChannelUnreadBadgeState)
+// Module 14748 (useBaseChannelUnreadBadgeState)
 function useBaseChannelUnreadBadgeState(channel, muted) {
   muted = channel;
   const dependencyMap = muted;

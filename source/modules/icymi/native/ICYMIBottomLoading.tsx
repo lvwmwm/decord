@@ -1,10 +1,10 @@
-// Module ID: 15115
-// Function ID: 114048
+// Module ID: 15118
+// Function ID: 114082
 // Name: ICYMIBottomLoading
 // Dependencies: []
 // Exports: ICYMIBottomLoading
 
-// Module 15115 (ICYMIBottomLoading)
+// Module 15118 (ICYMIBottomLoading)
 importAll(dependencyMap[0]);
 ({ View: closure_2, ActivityIndicator: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

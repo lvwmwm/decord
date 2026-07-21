@@ -1,10 +1,10 @@
-// Module ID: 7490
-// Function ID: 60073
+// Module ID: 7491
+// Function ID: 60085
 // Name: FormCTA
 // Dependencies: []
 // Exports: default
 
-// Module 7490 (FormCTA)
+// Module 7491 (FormCTA)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const Fonts = arg1(dependencyMap[2]).Fonts;
@@ -14,9 +14,9 @@ obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs, paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 obj.form = obj;
 obj.title = { fontSize: importDefault(dependencyMap[5]).space.PX_16, lineHeight: 18, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, fontFamily: Fonts.PRIMARY_SEMIBOLD };
-const obj2 = { PX_16: null, ix: null, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_MEDIUM };
-obj.description = obj2;
 const obj1 = { fontSize: importDefault(dependencyMap[5]).space.PX_16, lineHeight: 18, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, fontFamily: Fonts.PRIMARY_SEMIBOLD };
+obj.description = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_MEDIUM };
+const obj2 = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.icon = { width: importDefault(dependencyMap[5]).space.PX_40, height: importDefault(dependencyMap[5]).space.PX_40 };
 obj.completedIcon = { opacity: 0.3 };
 const obj3 = { width: importDefault(dependencyMap[5]).space.PX_40, height: importDefault(dependencyMap[5]).space.PX_40 };
@@ -109,7 +109,7 @@ export default function FormCTA(arg0) {
     obj1.icon = tmp3Result;
     let tmp21Result = tmp16(arg1(dependencyMap[9]).RowButton, obj1);
   } else {
-    const obj4 = { 0: null, 0: null, variant, onPress, onLongPress };
+    const obj4 = { bind: null, cursor: null, variant, onPress, onLongPress };
     const items4 = [tmp.form, style];
     obj4.DEPRECATED_style = items4;
     const obj5 = { checked: completed };

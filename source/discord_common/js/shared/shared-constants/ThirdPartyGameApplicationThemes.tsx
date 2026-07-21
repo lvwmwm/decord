@@ -1,7 +1,7 @@
 // Module ID: 8583
-// Function ID: 68144
+// Function ID: 68155
 // Name: ThirdPartyGameApplicationThemes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8583 (ThirdPartyGameApplicationThemes)
 const _module = require(dependencyMap[0]);

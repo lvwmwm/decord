@@ -1,8 +1,8 @@
-// Module ID: 14770
-// Function ID: 111344
+// Module ID: 14773
+// Function ID: 111378
 // Dependencies: []
 
-// Module 14770
+// Module 14773
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("design/components/LottieIcon/native/generated/index.tsx");
 for (const key10021 in arg1(arg6[1])) {

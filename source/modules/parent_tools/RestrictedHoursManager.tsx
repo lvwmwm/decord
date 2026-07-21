@@ -1,17 +1,11 @@
-// Module ID: 15844
-// Function ID: 121096
+// Module ID: 15848
+// Function ID: 121140
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [131079, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15844 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
+// Module 15848 (_isNativeReflectConstruct)
+import tmp2 from "result";
+import result from "result";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -130,77 +124,20 @@ function handleScheduleUpdate() {
 function handleScreenDowntimeReminderChanged() {
   scheduleUpcomingWarning();
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
 let closure_11 = false;
 let closure_12 = null;
 let closure_13 = null;
 let closure_14 = null;
-let tmp2 = (arg0) => {
-  class RestrictedHoursManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = __exportStarResult1(this, RestrictedHoursManager);
-      items1 = [...items];
-      obj = closure_6(RestrictedHoursManager);
-      tmp2 = closure_5;
-      if (closure_15()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      map = new Map();
-      result = map.set(closure_9, closure_21);
-      tmp2Result.stores = result.set(closure_10, closure_21);
-      obj = { POST_CONNECTION_OPEN: closure_21, CURRENT_USER_UPDATE: closure_21, NOTIFICATIONS_SET_SCREEN_DOWNTIME_REMINDER: closure_22, LOGOUT: closure_20 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = RestrictedHoursManager;
-  callback2(RestrictedHoursManager, arg0);
-  let obj = {
-    key: "_initialize",
-    value() {
-      let closure_11 = callback5();
-      let obj = callback(closure_2[12]);
-      obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: closure_11 };
-      obj.dispatch(obj);
-      if (closure_11) {
-        const result = RestrictedHoursManager(closure_2[14]).openRestrictedHoursModal();
-        const obj3 = RestrictedHoursManager(closure_2[14]);
-      }
-      const interval = setInterval(closure_19, 60000);
-      callback6();
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "_terminate",
-    value() {
-      if (null != closure_12) {
-        const _clearInterval = clearInterval;
-        clearInterval(closure_12);
-        closure_12 = null;
-      }
-      if (null != closure_13) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(closure_13);
-        closure_13 = null;
-      }
-      let closure_14 = null;
-      const result = RestrictedHoursManager(closure_2[14]).closeRestrictedHoursModal();
-      let closure_11 = false;
-    }
-  };
-  items[1] = obj;
-  return callback(RestrictedHoursManager, items);
-}(importDefault(dependencyMap[15]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/parent_tools/RestrictedHoursManager.tsx");
+result = result.fileFinishedImporting("modules/parent_tools/RestrictedHoursManager.tsx");
 
 export default tmp2;
 export { getCurrentRestrictedHoursState };

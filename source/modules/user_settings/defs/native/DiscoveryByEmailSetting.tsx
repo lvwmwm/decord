@@ -1,9 +1,9 @@
-// Module ID: 13628
-// Function ID: 103247
+// Module ID: 13630
+// Function ID: 103269
 // Name: toggle
 // Dependencies: []
 
-// Module 13628 (toggle)
+// Module 13630 (toggle)
 const FriendDiscoveryFlags = require(dependencyMap[1]).FriendDiscoveryFlags;
 const _module = require(dependencyMap[6]);
 const toggle = _module.createToggle({

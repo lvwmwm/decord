@@ -1,7 +1,7 @@
 // Module ID: 685
-// Function ID: 8464
+// Function ID: 8468
 // Name: setDeveloperOptionSettings
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: setDeveloperOptionSettings, setRoutingKeyTags
 
 // Module 685 (setDeveloperOptionSettings)

@@ -1,9 +1,9 @@
-// Module ID: 14372
-// Function ID: 108483
+// Module ID: 14375
+// Function ID: 108515
 // Name: metadata
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 14372 (metadata)
+// Module 14375 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/orb_coachmark_asset_2x.png.js");
 

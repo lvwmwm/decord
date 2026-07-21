@@ -1,5 +1,5 @@
 // Module ID: 10797
-// Function ID: 83840
+// Function ID: 83851
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = ["bind", "messageId", "k"];
+let closure_2 = [843069865, 171798692, 1071686615];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

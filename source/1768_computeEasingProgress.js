@@ -1,5 +1,5 @@
 // Module ID: 1768
-// Function ID: 19699
+// Function ID: 19704
 // Name: computeEasingProgress
 // Dependencies: []
 
@@ -75,13 +75,13 @@ arg5.getSwipeSimulator = () => {
     const signResult = Math.sign(value.translationX);
     const signResult1 = Math.sign(value.translationY);
     if (isTransitionCanceled) {
-      let point2 = { max: -536870861, guildId: -299892737 };
+      let point2 = {};
     } else {
       point2 = { x: signResult * screenDimensions.width, y: signResult1 * screenDimensions.height };
     }
     const point3 = { x: Math.abs(point2.x - point.x), y: Math.abs(point2.y - point.y) };
-    let closure_10 = { max: null, guildId: null };
-    const point4 = { max: "Array", guildId: "activeTimestamp" };
+    let closure_10 = {};
+    const point4 = {};
     if ("x" === arg2) {
       point4.y = 0;
       point4.x = point4.x + 400 * point3.x / screenDimensions.width;

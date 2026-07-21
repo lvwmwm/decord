@@ -1,13 +1,9 @@
 // Module ID: 886
-// Function ID: 9789
+// Function ID: 9793
 // Name: _mergeOptions
-// Dependencies: [57, 65, 77, 830, 842, 816, 817]
+// Dependencies: []
 
 // Module 886 (_mergeOptions)
-import _slicedToArray from "_slicedToArray";
-import _toConsumableArray from "_toConsumableArray";
-import _toConsumableArray from "_toConsumableArray";
-
 function _mergeOptions() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
@@ -27,48 +23,48 @@ function _mergeOptions() {
       if (!allowUrls1) {
         allowUrls1 = [];
       }
-      obj.allowUrls = items.concat(_slicedToArray(allowUrls), _slicedToArray(allowUrls1));
+      obj.allowUrls = items.concat(callback(allowUrls), callback(allowUrls1));
       const items1 = [];
       let denyUrls = first.denyUrls;
       if (!denyUrls) {
         denyUrls = [];
       }
       let denyUrls1 = obj.denyUrls;
-      const tmp = _slicedToArray;
-      const tmp3 = _slicedToArray;
-      const tmp4 = _slicedToArray;
-      const tmpResult = _slicedToArray(allowUrls);
+      const tmp = callback;
+      const tmp3 = callback;
+      const tmp4 = callback;
+      const tmpResult = callback(allowUrls);
       if (!denyUrls1) {
         denyUrls1 = [];
       }
-      obj.denyUrls = items1.concat(_slicedToArray(denyUrls), _slicedToArray(denyUrls1));
+      obj.denyUrls = items1.concat(callback(denyUrls), callback(denyUrls1));
       const items2 = [];
       let ignoreErrors = first.ignoreErrors;
       if (!ignoreErrors) {
         ignoreErrors = [];
       }
       let ignoreErrors1 = obj.ignoreErrors;
-      const tmp4Result = _slicedToArray(denyUrls);
-      const tmp6 = _slicedToArray;
-      const tmp7 = _slicedToArray;
+      const tmp4Result = callback(denyUrls);
+      const tmp6 = callback;
+      const tmp7 = callback;
       if (!ignoreErrors1) {
         ignoreErrors1 = [];
       }
-      const tmp7Result = _slicedToArray(ignoreErrors);
-      const tmp9 = _slicedToArray;
-      obj.ignoreErrors = items2.concat(tmp7Result, _slicedToArray(ignoreErrors1), _slicedToArray(first.disableErrorDefaults ? [] : items));
+      const tmp7Result = callback(ignoreErrors);
+      const tmp9 = callback;
+      obj.ignoreErrors = items2.concat(tmp7Result, callback(ignoreErrors1), callback(first.disableErrorDefaults ? [] : items));
       const items3 = [];
       let ignoreTransactions = first.ignoreTransactions;
       if (!ignoreTransactions) {
         ignoreTransactions = [];
       }
       let ignoreTransactions1 = obj.ignoreTransactions;
-      const tmp11 = _slicedToArray;
-      const tmp9Result = _slicedToArray(ignoreErrors1);
+      const tmp11 = callback;
+      const tmp9Result = callback(ignoreErrors1);
       if (!ignoreTransactions1) {
         ignoreTransactions1 = [];
       }
-      obj.ignoreTransactions = items3.concat(_slicedToArray(ignoreTransactions), _slicedToArray(ignoreTransactions1));
+      obj.ignoreTransactions = items3.concat(callback(ignoreTransactions), callback(ignoreTransactions1));
       return obj;
     }
     obj = {};
@@ -81,7 +77,7 @@ function _getEventFilterUrl(exception) {
   if (null != exception) {
     values = exception.values;
   }
-  const reversed = _slicedToArray(null != values ? values : []).reverse();
+  const reversed = closure_2(null != values ? values : []).reverse();
   const found = reversed.find((mechanism) => {
     mechanism = mechanism.mechanism;
     let parent_id;
@@ -139,9 +135,11 @@ function _getEventFilterUrl(exception) {
   }
   return tmp6;
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const items = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/, /^ResizeObserver loop completed with undelivered notifications.$/, /^Cannot redefine property: googletag$/, /^Can't find variable: gmo$/, /^undefined is not an object \(evaluating 'a\.[A-Z]'\)$/, "can't redefine non-configurable property \"solana\"", "vv().getRestrictions is not a function. (In 'vv().getRestrictions(1,a)', 'vv().getRestrictions' is undefined)", "Can't find variable: _AutofillCallbackHandler", /^Non-Error promise rejection captured with value: Object Not Found Matching Id:\d+, MethodName:simulateEvent, ParamCount:\d+$/, /^Java exception was raised during method invocation$/];
-const defineIntegrationResult = _toConsumableArray.defineIntegration(() => {
+const _module = require(dependencyMap[1]);
+const defineIntegrationResult = _module.defineIntegration(() => {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];
@@ -298,9 +296,10 @@ const defineIntegrationResult = _toConsumableArray.defineIntegration(() => {
     return obj;
   }
 });
+const _module1 = require(dependencyMap[1]);
 
 export const eventFiltersIntegration = defineIntegrationResult;
-export const inboundFiltersIntegration = _toConsumableArray.defineIntegration(() => {
+export const inboundFiltersIntegration = _module1.defineIntegration(() => {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];

@@ -1,5 +1,5 @@
 // Module ID: 9747
-// Function ID: 75829
+// Function ID: 75840
 // Name: SocialLayerStorefrontWishlistItemCard
 // Dependencies: []
 // Exports: default
@@ -11,12 +11,12 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { "Null": null, "Null": null, "Null": null, gap: null, flexGrow: null, flexShrink: null, flexDirection: null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.applicationIcon = obj;
-const obj1 = { 9223372036854775807: "a", 0: "isArray", 0: "x", 9223372036854775807: "position", 0: "k", 9223372036854775807: "a", shadowColor: undefined, shadowOffset: { bhk: -536870861, bic: -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
-obj.nestedCard = obj1;
-let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
+obj.nestedCard = { shadowColor: undefined, shadowOffset: { "Null": -536870861, "Null": -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
+let closure_9 = obj.createStyles(obj);
+const obj1 = { shadowColor: undefined, shadowOffset: { "Null": -536870861, "Null": -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/wishlists/native/SocialLayerStorefrontWishlistItemCard.tsx");
 
 export default function SocialLayerStorefrontWishlistItemCard(sku) {
@@ -30,7 +30,7 @@ export default function SocialLayerStorefrontWishlistItemCard(sku) {
   const importDefault = wishlistOwnerId;
   const size = sku.size;
   const dependencyMap = size;
-  let obj = {};
+  let obj = { duration: null, damping: null, stiffness: null, mass: null, EARN: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(sku, obj);
   let React;

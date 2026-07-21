@@ -1,5 +1,5 @@
 // Module ID: 11225
-// Function ID: 87376
+// Function ID: 87388
 // Name: GlobalSearchCoachmark
 // Dependencies: []
 // Exports: default
@@ -14,9 +14,9 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.appsIcon = obj;
-const obj1 = { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>", tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
-obj.appsIconImage = obj1;
+obj.appsIconImage = { tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
 let closure_8 = obj.createStyles(obj);
+const obj1 = { tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx");
 
 export default function GlobalSearchCoachmark(markAsDismissed) {

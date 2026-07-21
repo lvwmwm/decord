@@ -1,5 +1,5 @@
 // Module ID: 8639
-// Function ID: 68386
+// Function ID: 68397
 // Name: GameProfileLinkAccount
 // Dependencies: []
 // Exports: default
@@ -17,19 +17,19 @@ const tmp2 = arg1(dependencyMap[3]);
 obj.headerText = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 obj.card = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_16 };
-obj.cardImagesContainer = { gap: importDefault(dependencyMap[5]).space.PX_8 };
-const obj4 = { 1449229240: "row", 371666258: "center", gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj3 = { 2018342988: "git", 663976015: "git+https://github.com/mrousavy/nitro.git", 664037462: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", 1833066845: "bun run write-native-version", gap: importDefault(dependencyMap[5]).space.PX_8 };
+obj.cardImagesContainer = obj3;
+const obj4 = { "Bool(false)": false, "Bool(false)": 0, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ellipseGroup = obj4;
-const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_8 };
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_16 };
 obj.ellipse = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.round };
-const obj6 = { bhk: null, bic: null, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj6 = { "Null": "row", "Null": "center", borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.cardImageApplication = obj6;
-const obj5 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.cardContent = { gap: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24 };
+const obj7 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, gap: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24 };
+obj.cardContent = obj7;
 obj.cardText = { textAlign: "center" };
 let closure_8 = obj.createStyles(obj);
-const obj7 = { gap: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24 };
+const obj5 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.round };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/game_profile/native/components/GameProfileLinkAccount.tsx");
 
 export default function GameProfileLinkAccount(trackAction) {
@@ -57,7 +57,7 @@ export default function GameProfileLinkAccount(trackAction) {
           if (null != stateFromStores) {
             const iconSource = connectionApp.getIconSource(48);
             obj = { style: tmp.container };
-            obj = { style: tmp.headerText };
+            obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.headerText };
             const intl4 = arg1(dependencyMap[10]).intl;
             obj.children = intl4.string(arg1(dependencyMap[10]).t.VDAhr+);
             const items2 = [callback(arg1(dependencyMap[9]).Text, obj), ];
@@ -83,7 +83,7 @@ export default function GameProfileLinkAccount(trackAction) {
             }
             const items5 = [tmp12, , ];
             const obj9 = { style: tmp.cardContent };
-            const obj10 = { style: tmp.cardText };
+            const obj10 = { hasMaxConnections: -0.00000000003092285168288388, isBoostOnlySubscription: -1020848100503384400000000000000000000000, style: tmp.cardText };
             const intl = arg1(dependencyMap[10]).intl;
             const obj11 = { gameName: connectionApp.name };
             obj10.children = intl.formatToPlainString(arg1(dependencyMap[10]).t.hUbQT2, obj11);
@@ -94,7 +94,7 @@ export default function GameProfileLinkAccount(trackAction) {
             items6[1] = callback(arg1(dependencyMap[9]).Text, obj12);
             obj9.children = items6;
             items5[1] = callback2(View, obj9);
-            const obj13 = { 9223372036854775807: null, -9223372036854775808: null };
+            const obj13 = { "Bool(true)": null, "Bool(true)": null };
             const intl3 = arg1(dependencyMap[10]).intl;
             obj13.text = intl3.string(arg1(dependencyMap[10]).t.jynBQ5);
             obj13.onPress = tmp4;

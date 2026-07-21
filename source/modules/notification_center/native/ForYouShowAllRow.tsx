@@ -1,10 +1,10 @@
-// Module ID: 15046
-// Function ID: 113266
+// Module ID: 15049
+// Function ID: 113300
 // Name: ForYouShowAllRow
 // Dependencies: []
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15046 (ForYouShowAllRow)
+// Module 15049 (ForYouShowAllRow)
 function ForYouShowAllRow(panelVariant) {
   let children;
   let count;
@@ -79,7 +79,7 @@ let closure_10 = arg1(dependencyMap[5]).createStyles((layout) => {
   }
   obj2.marginBottom = num;
   obj.nameText = obj2;
-  const obj3 = { flexWrap: -716111870, gap: 373772727, position: 114, width: 0, height: 200687872, overflow: -1825505279, borderRadius: importDefault(dependencyMap[7]).radii.round };
+  const obj3 = { stroke: true, strokeWidth: true, strokeDasharray: true, strokeLinecap: true, position: true, bottom: true, borderRadius: importDefault(dependencyMap[7]).radii.round };
   const merged = Object.assign(sizeStyle);
   obj3["marginRight"] = layoutStyles.icon.margin.marginRight + 4;
   obj.avatar = obj3;

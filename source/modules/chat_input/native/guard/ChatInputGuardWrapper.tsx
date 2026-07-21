@@ -1,5 +1,5 @@
 // Module ID: 11453
-// Function ID: 89223
+// Function ID: 89235
 // Name: ChatInputGuardWrapper
 // Dependencies: []
 // Exports: default

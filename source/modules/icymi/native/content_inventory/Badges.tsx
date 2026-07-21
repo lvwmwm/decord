@@ -1,5 +1,5 @@
 // Module ID: 11918
-// Function ID: 92221
+// Function ID: 92233
 // Name: ActiveTimestamp
 // Dependencies: []
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
@@ -55,7 +55,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { icon: {} };
-obj = { "Bool(true)": 18, "Bool(true)": 49, "Bool(true)": -469762048, "Bool(true)": 1208895, "Bool(true)": -1179648, "Bool(true)": 3276799, "Bool(true)": 0, "Bool(true)": 1363141632, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingLeft: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingLeft: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.badgeContainer = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.text = { color: importDefault(dependencyMap[5]).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };

@@ -1,17 +1,16 @@
 // Module ID: 3407
-// Function ID: 26607
+// Function ID: 26612
 // Name: endOfDay
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3407 (endOfDay)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function endOfDay(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
+  closure_1.default(1, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   defaultResult1.setHours(23, 59, 59, 999);
   return defaultResult1;
 };

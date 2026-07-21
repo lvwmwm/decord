@@ -1,18 +1,17 @@
 // Module ID: 3426
-// Function ID: 26664
+// Function ID: 26669
 // Name: startOfYear
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3426 (startOfYear)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function startOfYear(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  closure_1.default(1, arguments);
   const date = new Date(0);
-  date.setFullYear(startOfWeek.default(defaultResult1).getFullYear(), 0, 1);
+  date.setFullYear(closure_0.default(defaultResult1).getFullYear(), 0, 1);
   date.setHours(0, 0, 0, 0);
   return date;
 };

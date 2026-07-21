@@ -1,9 +1,12 @@
 // Module ID: 3524
-// Function ID: 27201
+// Function ID: 27206
 // Name: _typeof
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [3388, 3578, 3208, 3355, 3208]
 
 // Module 3524 (_typeof)
+import isSameDay from "isSameDay";
+import subDays from "subDays";
+
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
     const _Symbol = Symbol;
@@ -125,15 +128,13 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
+    const obj = { consumed: true, ForcedColorsPreference: true, MOBILE_NITRO_HOME_SETTINGS_BADGE: true, NOTIFICATION_WARNING: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
   }
   return arg0;
 }
-_interopRequireDefault(require("__exportStarResult1"));
-_interopRequireDefault(require("__exportStarResult1"));
 
 export const LocalWeekParser = (Parser) => {
   class LocalWeekParser {
@@ -164,7 +165,7 @@ export const LocalWeekParser = (Parser) => {
         tmp17 = closure_10(applyResult, "priority", 100);
         tmp18 = closure_8(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_10(applyResult, "incompatibleTokens", [null, "i", "e", "t", "T", "y", "Y", "u", "q", "Q", "M", "L", "w"]);
+        tmp19 = closure_10(applyResult, "incompatibleTokens", [122160909, 37093743, 1379273570, 29360650, 657395556, 74007083, 1150812161, -2108620798, 1779646986, 1631059972, 357629955, 671240019, 1661080577]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -208,7 +209,7 @@ export const LocalWeekParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 100);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", [null, "i", "e", "t", "T", "y", "Y", "u", "q", "Q", "M", "L", "w"]);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [122160909, 37093743, 1379273570, 29360650, 657395556, 74007083, 1150812161, -2108620798, 1779646986, 1631059972, 357629955, 671240019, 1661080577]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -258,7 +259,7 @@ export const LocalWeekParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 100);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", [null, "i", "e", "t", "T", "y", "Y", "u", "q", "Q", "M", "L", "w"]);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [122160909, 37093743, 1379273570, 29360650, 657395556, 74007083, 1150812161, -2108620798, 1779646986, 1631059972, 357629955, 671240019, 1661080577]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -308,4 +309,4 @@ export const LocalWeekParser = (Parser) => {
   };
   _defineProperties(LocalWeekParser.prototype, items);
   return LocalWeekParser;
-}(require("__exportStarResult1").Parser);
+}(require("requiredArgs").Parser);

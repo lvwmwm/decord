@@ -1,5 +1,5 @@
 // Module ID: 11440
-// Function ID: 89048
+// Function ID: 89060
 // Name: getOrRefreshPushSyncToken
 // Dependencies: []
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus

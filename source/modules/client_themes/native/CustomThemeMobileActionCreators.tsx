@@ -1,7 +1,7 @@
 // Module ID: 11081
-// Function ID: 86170
+// Function ID: 86181
 // Name: updateCustomTheme
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
 // Module 11081 (updateCustomTheme)

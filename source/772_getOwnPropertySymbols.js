@@ -1,7 +1,7 @@
 // Module ID: 772
-// Function ID: 8841
+// Function ID: 8845
 // Name: getOwnPropertySymbols
-// Dependencies: [2046820356, 2063597572]
+// Dependencies: []
 
 // Module 772 (getOwnPropertySymbols)
 if (getOwnPropertySymbols) {

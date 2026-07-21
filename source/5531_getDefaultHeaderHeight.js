@@ -1,5 +1,5 @@
 // Module ID: 5531
-// Function ID: 47058
+// Function ID: 47066
 // Name: getDefaultHeaderHeight
 // Dependencies: []
 // Exports: default

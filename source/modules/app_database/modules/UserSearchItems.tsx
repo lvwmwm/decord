@@ -1,9 +1,9 @@
-// Module ID: 6894
-// Function ID: 54887
+// Module ID: 6895
+// Function ID: 54899
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 6909, 3986, 2, 6, 7, 15, 17, 18, 27, 6912]
+// Dependencies: [57, 5, 6910, 3986, 2, 6, 7, 15, 17, 18, 27, 6913]
 
-// Module 6894 (_createForOfIteratorHelperLoose)
+// Module 6895 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import enforcing from "enforcing";
@@ -99,7 +99,7 @@ let closure_12 = false;
 let tmp4 = () => {
   class UserSearchItems {
     constructor() {
-      f54894 = this;
+      f54906 = this;
       tmp = asyncGeneratorStep(this, UserSearchItems);
       this.actions = {
         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,

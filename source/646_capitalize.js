@@ -67,7 +67,7 @@ const fn = function() {
   function trim(arg0) {
     return String(arg0).replace(/^ +| +$/g, "");
   }
-  const obj = { "Bool(true)": null, "Bool(true)": null };
+  const obj = { "Null": null, "Null": null };
   let self = obj[typeof window];
   if (self) {
     self = window;
@@ -275,7 +275,7 @@ const fn = function() {
         versionResult = tmp23.version();
       }
       let version = versionResult;
-      const items1 = [{}, "Trident", {}, "iCab", , , , , ];
+      const items1 = [{ borderRadius: "Galaxy S7 Edge", id: "SM-G935" }, "Trident", { borderRadius: "Kindle Fire", id: "(?:Cloud9|Silk-Accelerated)" }, "iCab", , , , , ];
       let str13 = "Presto";
       items1[4] = "Presto";
       items1[5] = "NetFront";
@@ -301,7 +301,7 @@ const fn = function() {
           return tmp;
         });
       }(items1);
-      const items2 = [, , , , , , , , , , , , , , , , , { "Bool(false)": false, "Bool(false)": false }, "Midori", "Nook Browser", "PaleMoon", "PhantomJS", "Raven", "Rekonq", "RockMelt", {}, "SeaMonkey", { "Bool(false)": null, "Bool(false)": "\u{1F43E}" }, "Sleipnir", "SlimBrowser", {}, "Sunrise", "Swiftfox", "Vivaldi", "Waterfox", "WebPositive", {}, {}, "Opera Mini", {}, "Opera", {}, "Chromium", "Chrome", {}, {}, {}, {}, { "Bool(false)": null, "Bool(false)": "\u{1F1E7}\u{1F1EB}" }, {}, "Safari"];
+      const items2 = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, { borderRadius: "Text", id: "Path" }, "Midori", "Nook Browser", "PaleMoon", "PhantomJS", "Raven", "Rekonq", "RockMelt", {}, "SeaMonkey", {}, "Sleipnir", "SlimBrowser", {}, "Sunrise", "Swiftfox", "Vivaldi", "Waterfox", "WebPositive", { borderRadius: null, id: 0 }, {}, "Opera Mini", {}, "Opera", {}, "Chromium", "Chrome", {}, { borderRadius: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008088821719080336, id: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033539212433587693 }, {}, {}, {}, {}, "Safari"];
       let text1 = function getName(items2) {
         return callback(items2, (arg0, pattern) => {
           let tmp = arg0;
@@ -321,33 +321,33 @@ const fn = function() {
           return tmp;
         });
       }(items2);
-      const items3 = [{ "Bool(false)": null, "Bool(false)": null }, "BlackBerry", {}, { "Bool(false)": "/developers/applications/select/game-identity", "Bool(false)": "APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS" }, { "Bool(false)": null, "Bool(false)": null }, { "Bool(false)": null, "Bool(false)": null }, { "Bool(false)": "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)", "Bool(false)": "gg sans" }, { "Bool(false)": 16, "Bool(false)": 12 }, { "Bool(false)": true, "Bool(false)": true }, {}, { "Bool(false)": "macos", "Bool(false)": "windows" }, "Google TV", "Lumia", "iPad", "iPod", "iPhone", "Kindle", { "Bool(false)": "Array", "Bool(false)": "url" }, "Nexus", "Nook", "PlayBook", "PlayStation Vita", "PlayStation", "TouchPad", "Transformer", { "Bool(false)": null, "Bool(false)": null }, "Wii", "Xbox One", {}, "Xoom"];
+      const items3 = [{}, "BlackBerry", { borderRadius: null, id: null }, {}, {}, { borderRadius: null, id: "/developers/applications/select/game-identity" }, { borderRadius: "r", id: "isSoftAcked" }, { borderRadius: "pack", id: "postRollDismissTimer" }, { borderRadius: null, id: null }, { borderRadius: 100, id: 50 }, { borderRadius: "<string:1716715520>", id: "<string:1770176230>" }, "Google TV", "Lumia", "iPad", "iPod", "iPhone", "Kindle", { borderRadius: "status", id: "Text" }, "Nexus", "Nook", "PlayBook", "PlayStation Vita", "PlayStation", "TouchPad", "Transformer", { borderRadius: 1, id: 10 }, "Wii", "Xbox One", { borderRadius: true, id: true }, "Xoom"];
       product = getProduct(items3);
       let closure_2 = product;
-      obj = { Apple: { "Null": true, "Null": true, "Null": true }, Alcatel: {}, Archos: {}, Amazon: {} };
+      obj = { Apple: {}, Alcatel: {}, Archos: {}, Amazon: { 470968434: null, 1614702536: null } };
       obj = { Transformer: 1 };
       obj.Asus = obj;
       obj1 = { Nook: 1 };
       obj.Barnes & Noble = obj1;
       obj2 = { PlayBook: 1 };
       obj.BlackBerry = obj2;
-      obj.Google = {};
+      obj.Google = { "Bool(true)": null, "Bool(true)": null };
       obj3 = { TouchPad: 1 };
       obj.HP = obj3;
       obj.HTC = {};
       obj.Huawei = {};
       obj.Lenovo = {};
       obj.LG = {};
-      obj.Microsoft = {};
+      obj.Microsoft = { 0: null, 0: null };
       const obj4 = { Xoom: 1 };
       obj.Motorola = obj4;
-      obj.Nintendo = {};
+      obj.Nintendo = { gap: null, PX_16: null };
       const obj5 = { Lumia: 1 };
       obj.Nokia = obj5;
       obj.Oppo = {};
-      obj.Samsung = { -517349148: false, 1423223081: false, -1351789851: false, -412523703: false };
-      obj.Sony = {};
-      obj.Xiaomi = {};
+      obj.Samsung = {};
+      obj.Sony = { "Bool(true)": null, 9223372036854775807: null };
+      obj.Xiaomi = { <string:1758796284>: null, <string:1972249684>: null };
       const tmp31 = function getManufacturer(arg0) {
         return callback(arg0, (arg0, arg1, arg2) => {
           let tmp = arg0;
@@ -370,7 +370,7 @@ const fn = function() {
           return tmp;
         });
       }(obj);
-      const items4 = [, , , , {}, "Debian", {}, "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "];
+      const items4 = [, , , , {}, "Debian", { borderRadius: 0.0000000004656613931258713, id: 44601502360113210000000000000000000000000000 }, "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "];
       let str86 = function getOS(items4) {
         return callback(items4, (arg0, pattern) => {
           let tmp = arg0;
@@ -503,7 +503,7 @@ const fn = function() {
           if (!version) {
             isMatch2 = qualify;
             isMatch2 = text1;
-            const items7 = [12637489948065770000000000000000000000000000000000000000000000000000, 12627677722708216000000000000000000000, qualify(text1)];
+            const items7 = [-1996947454, -182255615, qualify(text1)];
             str = "(?:Firefox|Minefield|NetFront)";
             items7[3] = "(?:Firefox|Minefield|NetFront)";
             version = getVersion(items7);
@@ -836,7 +836,7 @@ const fn = function() {
                     isMatch2 = items.push(`masking as ${tmp29} ${tmp27}`);
                     text1 = "IE";
                     version = "11.0";
-                    items10 = ["<string:686751746>"];
+                    items10 = [false];
                     str86 = "Windows";
                     isMatch2 = tmp4;
                   }
@@ -962,7 +962,7 @@ const fn = function() {
                       isMatch2 = "WebKit" == items12;
                     }
                     if (isMatch2) {
-                      let items12 = [];
+                      let items12 = ["1409898408042303629"];
                     }
                     if (isMatch3) {
                       if (!isMatch) {
@@ -1533,9 +1533,9 @@ const fn = function() {
                     isMatch2 = str86;
                     if (!str86) {
                       obj = {
+                        "Null": false,
+                        "Null": false,
                         "Null": null,
-                        "Null": "\u{1F9BB}\u{1F3FF}",
-                        "Null": true,
                         toString() {
                                             return "null";
                                           }
@@ -1864,7 +1864,7 @@ const fn = function() {
                   }
                   const obj74 = /\bIE\b/;
                 }
-                items12 = [null];
+                items12 = ["r"];
                 isMatch2 = items;
                 isMatch2 = items.push(isMatch2);
                 arr13 = str;

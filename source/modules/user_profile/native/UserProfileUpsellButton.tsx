@@ -1,10 +1,10 @@
-// Module ID: 13443
-// Function ID: 102093
+// Module ID: 13445
+// Function ID: 102115
 // Name: UserProfileUpsellButton
 // Dependencies: []
 // Exports: default
 
-// Module 13443 (UserProfileUpsellButton)
+// Module 13445 (UserProfileUpsellButton)
 let closure_3 = importAll(dependencyMap[0]);
 ({ AnalyticsPages: closure_4, UpsellTypes: closure_5, AnalyticsSections: closure_6, AnalyticEvents: closure_7 } = arg1(dependencyMap[1]));
 const PremiumUpsellTypes = arg1(dependencyMap[2]).PremiumUpsellTypes;
@@ -46,7 +46,7 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = intl.string(arg1(dependencyMap[10]).t.pj0XBN);
   }
   obj.text = label;
-  obj = { style: callback().nitroWheel };
+  obj = { "Null": 12, "Null": 4, style: callback().nitroWheel };
   obj.icon = jsx(arg1(dependencyMap[11]).NitroWheelIcon, obj);
   return jsx(arg1(dependencyMap[8]).Button, obj);
 };

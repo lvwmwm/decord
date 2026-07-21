@@ -1,5 +1,5 @@
 // Module ID: 11846
-// Function ID: 91785
+// Function ID: 91797
 // Name: NintendoSwitchNeutralIcon
 // Dependencies: [57, 31, 27, 33, 4126, 689]
 // Exports: NintendoSwitchNeutralIcon

@@ -1,15 +1,15 @@
 // Module ID: 3935
-// Function ID: 32440
+// Function ID: 32445
 // Name: ThemeAwareNitroWishlistingWumpusRive
 // Dependencies: []
 
 // Module 3935 (ThemeAwareNitroWishlistingWumpusRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Nitro Wishlist: { type: null, revision: null } };
-let closure_8 = { Nitro Wishlist: [1358955054] };
+let closure_7 = { Nitro Wishlist: {} };
+let closure_8 = { Nitro Wishlist: [] };
 let closure_9 = {
   Nitro Wishlist: function NitroWishlistBindings(reducedMotionEnabled) {
     let dataBinding;

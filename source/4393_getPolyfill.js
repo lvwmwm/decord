@@ -1,5 +1,5 @@
 // Module ID: 4393
-// Function ID: 38798
+// Function ID: 38806
 // Name: getPolyfill
 // Dependencies: []
 

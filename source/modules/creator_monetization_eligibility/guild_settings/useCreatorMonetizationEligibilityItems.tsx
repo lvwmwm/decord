@@ -1,15 +1,16 @@
-// Module ID: 16249
-// Function ID: 125558
+// Module ID: 16257
+// Function ID: 125619
 // Name: useCreatorMonetizationEligibilityItems
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16249 (useCreatorMonetizationEligibilityItems)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { HelpdeskArticles } from "__exportStarResult1";
+// Module 16257 (useCreatorMonetizationEligibilityItems)
+import closure_3 from "result";
+import closure_4 from "result";
+import { HelpdeskArticles } from "result";
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
+result = result.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
 
 export default function useCreatorMonetizationEligibilityItems(arg0) {
   let obj = arg1;

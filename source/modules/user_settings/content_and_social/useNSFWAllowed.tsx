@@ -1,10 +1,10 @@
-// Module ID: 7920
-// Function ID: 63136
+// Module ID: 7921
+// Function ID: 63149
 // Name: useNSFWAllowed
 // Dependencies: []
 // Exports: useNSFWAllowed
 
-// Module 7920 (useNSFWAllowed)
+// Module 7921 (useNSFWAllowed)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_settings/content_and_social/useNSFWAllowed.tsx");
 

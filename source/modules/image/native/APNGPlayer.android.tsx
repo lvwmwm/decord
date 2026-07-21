@@ -1,10 +1,10 @@
-// Module ID: 7949
-// Function ID: 63405
+// Module ID: 7950
+// Function ID: 63418
 // Name: useAPNGPlayerControls
 // Dependencies: []
 // Exports: useAPNGPlayerControls
 
-// Module 7949 (useAPNGPlayerControls)
+// Module 7950 (useAPNGPlayerControls)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const forwardRefResult = importAllResult.forwardRef((onLoad) => {

@@ -1,10 +1,10 @@
-// Module ID: 4585
-// Function ID: 40173
+// Module ID: 4584
+// Function ID: 40180
 // Name: staticRouteToTranslation
 // Dependencies: []
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 4585 (staticRouteToTranslation)
+// Module 4584 (staticRouteToTranslation)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");
 

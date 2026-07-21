@@ -1,9 +1,9 @@
-// Module ID: 16088
-// Function ID: 123728
+// Module ID: 16096
+// Function ID: 123789
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16088 (_isNativeReflectConstruct)
+// Module 16096 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,10 +26,10 @@ const UPLOAD_MEDIUM_SIZE = arg1(dependencyMap[9]).UPLOAD_MEDIUM_SIZE;
 const tmp4 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
-obj = { assetWrapper: { "Null": null, "Null": null } };
+obj = { assetWrapper: { @braintree/wrap-promise: "BLURPLE_19", onPress: 1 } };
 obj = { borderRadius: importDefault(dependencyMap[12]).radii.xs, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 obj.asset = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": "emailAddress", "Bool(false)": "none", "Bool(false)": "email-address", "Bool(false)": true, shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
+const obj1 = { 9223372036854775807: -1022541383, 9223372036854775807: 1091633153, -9223372036854775808: 89874, 0: 22642, 9223372036854775807: 20480, -9223372036854775808: -398327552, 9223372036854775807: "<string:2833973250>", shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { y: null, isArray: null } };
 obj.uploadIconWrapper = obj1;
 obj.uploadIcon = {};
 const tmp5 = arg1(dependencyMap[10]);

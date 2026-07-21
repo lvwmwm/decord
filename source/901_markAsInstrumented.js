@@ -1,5 +1,5 @@
 // Module ID: 901
-// Function ID: 9890
+// Function ID: 9894
 // Name: markAsInstrumented
 // Dependencies: []
 
@@ -112,7 +112,7 @@ function instrumentAuthOperation(arg0, arg1) {
                 if (error.error) {
                   let obj = { code: error(closure_1[6]).SPAN_STATUS_ERROR };
                   error.setStatus(obj);
-                  obj = { mechanism: { onDrawerSlide: 30562881, onDrawerStateChanged: 1944928512 } };
+                  obj = { mechanism: { id: "auto.ai.openai.stream-response", gameId: "repeat" } };
                   error(closure_1[7]).captureException(error.error, obj);
                   const obj3 = error(closure_1[7]);
                 }
@@ -127,7 +127,7 @@ function instrumentAuthOperation(arg0, arg1) {
           self.setStatus({ code: self(closure_1[6]).SPAN_STATUS_ERROR });
           self.end();
           const obj = { code: self(closure_1[6]).SPAN_STATUS_ERROR };
-          self(closure_1[7]).captureException(self, { mechanism: { onDrawerSlide: 30562881, onDrawerStateChanged: 1944928512 } });
+          self(closure_1[7]).captureException(self, { mechanism: { id: "auto.ai.openai.stream-response", gameId: "repeat" } });
           throw self;
         });
         const then = catchPromise.then;
@@ -184,10 +184,10 @@ let closure_3 = require(dependencyMap[1]);
 let closure_4 = require(dependencyMap[2]);
 let closure_5 = require(dependencyMap[3]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_6 = [false, false, false, false, false, false, false, false, false, false];
-let closure_7 = [true, true, true, true, true, true];
-const obj = { -109657773: 0, "Bool(true)": false, "Bool(true)": false, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": false, "Bool(true)": "auto.ai.openai.stream", "Bool(true)": "", "Bool(true)": "", 270655: false, 1090759249: "", 288601: 0, 1024908370: 0, 1006453118: "0", -865796092: false, 1672107579: "auto.ai.openai", 167926866: null, 1549034243: "100", 1388190818: 0, 1374965325: 0, -262076264: 100, 1743464274: false, 1389650274: 0, -1478966462: "0" };
-const items = ["Array", "isArray", "Text", "limit", "application"];
+let closure_6 = [];
+let closure_7 = [-275578878, -805306367, -1337196543, -989854917, false, false];
+const obj = {};
+const items = [true, true, true, true, true];
 function instrumentSupabaseClient(auth) {
   if (auth) {
     const _Function = Function;

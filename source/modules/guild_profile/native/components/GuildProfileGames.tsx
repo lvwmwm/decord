@@ -1,5 +1,5 @@
 // Module ID: 8579
-// Function ID: 68123
+// Function ID: 68134
 // Name: ClickableGameIcon
 // Dependencies: []
 // Exports: default
@@ -43,7 +43,7 @@ function FavoriteGame(game) {
   ({ activityLevel, clickable } = game);
   let obj = { style: styles().favoriteGame };
   const items = [callback(ClickableGameIcon, { game, activityLevel, enabled: clickable }), ];
-  obj = { children: game.name };
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true, children: game.name };
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);
   obj.children = items;
   return callback2(View, obj);
@@ -125,11 +125,11 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011057372712917999, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011179501722384846, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017725617934124522 }, favoriteGame: { <string:3798027838>: 8, <string:1627573841>: null, <string:3151386190>: "\u270A\u{1F3FF}", <string:45572556>: true }, lastItem: {} };
-obj = { o: "center", concat: null, o: 4, borderRadius: importDefault(dependencyMap[4]).radii.xs, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SCRIM };
+obj = { container: {}, favoriteGame: { <string:18940595>: 8, <string:24337135>: null, <string:332421729>: "\u270A\u{1F3FF}", <string:82118454>: true }, lastItem: { 1912565759: "isArray", 1979675647: "warn", 1895788287: "textAlign" } };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SCRIM, opacity: "<string:2920093709>", borderRadius: importDefault(dependencyMap[4]).radii.xs, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 };
 obj.lastItemOverlay = obj;
 obj.lastItemImage = { position: "absolute" };
-obj.lastItemText = { 654971313: "color", 1675324214: "boolean", 1408999628: "string", -1399258108: "boolean", 1650568311: "string" };
+obj.lastItemText = { [Symbol.iterator]: "boolean", MANUAL_ENABLE: "string", solidBackground: "boolean", cardStyle: "string", product: "boolean" };
 const styles = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGames.tsx");

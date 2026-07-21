@@ -1,7 +1,7 @@
 // Module ID: 10997
-// Function ID: 85558
+// Function ID: 85569
 // Name: AutomodTriggerType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10997 (AutomodTriggerType)
 const _module = require(dependencyMap[0]);

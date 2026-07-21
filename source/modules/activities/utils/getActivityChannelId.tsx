@@ -1,5 +1,5 @@
 // Module ID: 11943
-// Function ID: 92344
+// Function ID: 92356
 // Name: getActivityChannelId
 // Dependencies: []
 // Exports: default

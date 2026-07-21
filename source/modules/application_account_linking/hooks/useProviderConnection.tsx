@@ -1,5 +1,5 @@
 // Module ID: 5481
-// Function ID: 46762
+// Function ID: 46770
 // Name: useProviderConnection
 // Dependencies: []
 // Exports: useProviderConnection

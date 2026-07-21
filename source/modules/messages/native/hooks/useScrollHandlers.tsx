@@ -1,5 +1,5 @@
 // Module ID: 10852
-// Function ID: 84295
+// Function ID: 84306
 // Name: useScrollHandlers
 // Dependencies: []
 // Exports: default

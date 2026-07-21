@@ -1,5 +1,5 @@
 // Module ID: 10615
-// Function ID: 82807
+// Function ID: 82818
 // Name: useStageChannelConnectAction
 // Dependencies: []
 // Exports: default, useStageChannelStartEvent

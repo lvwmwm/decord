@@ -1,9 +1,9 @@
-// Module ID: 14772
-// Function ID: 111349
+// Module ID: 14775
+// Function ID: 111383
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
 // Dependencies: []
 
-// Module 14772 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 14775 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -38,7 +38,7 @@ let closure_15 = arg1(dependencyMap[11]).createStyles((arg0) => {
   obj.rowDefault = { backgroundColor: importDefault(dependencyMap[12]).colors.PANEL_BG };
   const obj1 = { backgroundColor: importDefault(dependencyMap[12]).colors.PANEL_BG };
   obj.rowActive = { backgroundColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
-  const obj3 = { ks: true, from: "/assets/modules/stage_channels/native/images", ks: 25, cix: 24, ks: null, done: "b252f7dc065300671ba9347414eb0bad", borderColor: importDefault(dependencyMap[12]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.md };
+  const obj3 = { channels: true, selectedChannelId: "/assets/modules/stage_channels/native/images", selectedVoiceChannelId: 25, height: 24, flexDirection: null, paddingLeft: "b252f7dc065300671ba9347414eb0bad", borderColor: importDefault(dependencyMap[12]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.md };
   obj.selectedBorder = obj3;
   const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
   obj.rowSelected = { borderRadius: importDefault(dependencyMap[12]).radii.md, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED };

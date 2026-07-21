@@ -1,5 +1,5 @@
 // Module ID: 5502
-// Function ID: 46884
+// Function ID: 46892
 // Name: TableSwitchRow
 // Dependencies: []
 // Exports: TableSwitchRow
@@ -26,7 +26,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
     disabled = false;
   }
   const variant = value.variant;
-  let obj = {};
+  let obj = { "Bool(true)": null, "Bool(true)": 0.6, "Bool(true)": "BounceOutRight", "Bool(true)": null, "Bool(true)": 0.6, "Bool(true)": "BounceOutLeft", "Bool(true)": null, "Bool(true)": 0.6 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let callback;

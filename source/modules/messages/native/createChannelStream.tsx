@@ -1,5 +1,5 @@
 // Module ID: 11084
-// Function ID: 86190
+// Function ID: 86201
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -269,7 +269,7 @@ export default function createChannelStream(forceRender) {
         let obj2 = self(closure_2[9]);
         flag = true;
       }
-      obj = { roleStyle };
+      obj = { padding: true, backgroundColor: null, overflow: null, mass: true, stiffness: true, damping: true, roleStyle };
       obj.message = obj;
       obj.content = [];
       let tmp28 = items[closure_13.length - 1];

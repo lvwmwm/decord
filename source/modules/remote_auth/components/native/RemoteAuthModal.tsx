@@ -1,10 +1,10 @@
-// Module ID: 12747
-// Function ID: 97773
+// Module ID: 12749
+// Function ID: 97795
 // Name: RemoteAuthBody
 // Dependencies: []
 // Exports: default
 
-// Module 12747 (RemoteAuthBody)
+// Module 12749 (RemoteAuthBody)
 function RemoteAuthBody(remoteAuthFingerprint) {
   let tmp4;
   function transitionStep(arg0) {
@@ -93,7 +93,7 @@ function RemoteAuthLogin(arg0) {
     }).catch(() => {
       callback(constants.NOT_FOUND);
     });
-  }, 1000, { flex: true, marginRight: true });
+  }, 1000, { -809188780: null, 163101889: null });
   obj4.disabled = tmp6;
   const items1 = [callback2(arg1(closure_2[18]).Button, obj4, "" + tmp6), ];
   const obj5 = { variant: "secondary" };
@@ -122,7 +122,7 @@ function RemoteAuthLoginSucceeded() {
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.HbwTOZ);
   items[1] = callback2(arg1(dependencyMap[14]).Heading, obj);
-  const obj1 = { style: tmp.caption };
+  const obj1 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: tmp.caption };
   const intl2 = arg1(dependencyMap[15]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[15]).t.wKknJ0);
   items[2] = callback2(arg1(dependencyMap[14]).Text, obj1);
@@ -145,7 +145,7 @@ function RemoteAuthNotFound() {
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.NShI3Q);
   items[1] = callback2(arg1(dependencyMap[14]).Heading, obj);
-  const obj1 = { style: tmp.caption };
+  const obj1 = { delete: 14789019781002023000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494975, raw: -120145600412238510000000000000000000000000000000000000000000000000000000000, style: tmp.caption };
   const intl2 = arg1(dependencyMap[15]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[15]).t.Ygezov);
   items[2] = callback2(arg1(dependencyMap[14]).Text, obj1);
@@ -169,17 +169,17 @@ const Endpoints = arg1(dependencyMap[3]).Endpoints;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { background: {}, container: { "Bool(true)": "center", "Bool(true)": "absolute", "Bool(true)": 0 }, imageStyle: { resizeMode: "cover" }, logo: {}, mainImage: {} };
+obj = { background: {}, container: { padding: null, borderWidth: null, borderStyle: null }, imageStyle: { resizeMode: "cover" }, logo: {}, mainImage: { size: "isArray", progress: "accessibilityRole" } };
 obj = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
 obj.warningCaption = obj;
-obj.caption = { isResolvedUpload: "center", getChatLayout: true, outputType: "/assets/images/native/premium/guild_boosting", STREAM_WATCH: 24 };
+obj.caption = {};
 const tmp3 = arg1(dependencyMap[4]);
-obj.mainCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1632221346>: "y", <string:2722977214>: "isArray" } };
+obj.mainCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { y: "MASTERPASS_FLOW_FAILED", isArray: "Could not initialize Masterpass flow." } };
 obj.buttonGroup = { paddingVertical: 0 };
-obj.loadingContainer = {};
+obj.loadingContainer = { "Bool(false)": 1974796291, "Bool(false)": -180158461 };
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { LOADING: 0, [0]: "LOADING", NOT_FOUND: 1, [1]: "NOT_FOUND", LOADED: 2, [2]: "LOADED", SUCCEEDED: 3, [3]: "SUCCEEDED" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1632221346>: "y", <string:2722977214>: "isArray" } };
+const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { y: "MASTERPASS_FLOW_FAILED", isArray: "Could not initialize Masterpass flow." } };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/remote_auth/components/native/RemoteAuthModal.tsx");
 
 export default function RemoteAuth(arg0) {

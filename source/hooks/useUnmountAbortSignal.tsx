@@ -1,5 +1,5 @@
 // Module ID: 5631
-// Function ID: 48030
+// Function ID: 48038
 // Name: useUnmountAbortSignal
 // Dependencies: []
 // Exports: default, useUnmountAbortSignalWithDelay

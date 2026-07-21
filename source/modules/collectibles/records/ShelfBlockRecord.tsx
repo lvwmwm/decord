@@ -1,9 +1,9 @@
-// Module ID: 6811
-// Function ID: 53704
+// Module ID: 6812
+// Function ID: 53716
 // Name: ShelfBlockRecord
 // Dependencies: []
 
-// Module 6811 (ShelfBlockRecord)
+// Module 6812 (ShelfBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

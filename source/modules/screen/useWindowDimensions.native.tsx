@@ -1,5 +1,5 @@
 // Module ID: 1450
-// Function ID: 16926
+// Function ID: 16931
 // Name: useWindowDimensions
 // Dependencies: []
 // Exports: default, getWindowDimensions

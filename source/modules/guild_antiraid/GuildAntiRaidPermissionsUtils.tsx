@@ -1,5 +1,5 @@
 // Module ID: 10227
-// Function ID: 79022
+// Function ID: 79033
 // Name: canReportRaid
 // Dependencies: []
 // Exports: useCanEnableRaidAlerts, useCanReportRaid, useShowMentionRaidLimitUpsell

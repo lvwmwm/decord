@@ -1,5 +1,5 @@
 // Module ID: 6189
-// Function ID: 50197
+// Function ID: 50205
 // Name: GiftCardAvatar3dIllustration
 // Dependencies: []
 // Exports: GiftCardAvatar3dIllustration

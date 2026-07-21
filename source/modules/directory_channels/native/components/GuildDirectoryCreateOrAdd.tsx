@@ -1,5 +1,5 @@
 // Module ID: 10032
-// Function ID: 77489
+// Function ID: 77500
 // Name: GuildDirectoryCreateOrAddHeader
 // Dependencies: []
 // Exports: default
@@ -20,7 +20,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   obj.items = items.map((id) => ({ id, label: id, page: null }));
   obj = { style: tmp.header };
   const segmentedControlState = obj.useSegmentedControlState(obj);
-  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { Opened: 24, marginVertical: 24, marginStart: null, marginEnd: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj1.children = intl3.format(arg1(dependencyMap[13]).t.9SKJdF, { guildName: directoryGuildName });
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj1), , ];
@@ -40,7 +40,7 @@ function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   items[1] = obj;
   obj.style = items;
   obj = { style: tmp.footerContainer };
-  const obj1 = { "Null": true, "Null": true, "Null": true, style: tmp.footerTitle };
+  const obj1 = { delete: true, dispatch: true, raw: true, style: tmp.footerTitle };
   const intl = arg1(dependencyMap[13]).intl;
   obj1.children = intl.string(arg1(dependencyMap[13]).t.pgCZRP);
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj1), ];
@@ -67,12 +67,12 @@ obj.guildIcon = obj;
 obj.header = {};
 obj.title = { "Null": null, "Null": null };
 obj.description = { textAlign: "center" };
-obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj1 = { grinning_face: "Array", smiley: "isArray", smile: "max", grin: "names", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.footerSafeAreaContainer = obj1;
-obj.footerContainer = { trailingIcon: "absolute", dmsDisabled: -8, invitesDisabled: -8 };
+obj.footerContainer = { InfoBoxLooks: "absolute", allowAnyViewerClips: -8, isReactNativeDocumentElementInstanceHandle: -8 };
 obj.footerTitle = {};
-const obj2 = { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015792711243, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023685210035362718, 0: 217054453170611950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
-obj.segmentedControl = obj2;
+const tmp3 = arg1(dependencyMap[5]);
+obj.segmentedControl = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo((guild) => {
   let end;
@@ -112,7 +112,7 @@ let closure_14 = importAllResult.memo((guild) => {
   obj.end = end;
   return callback2(arg1(dependencyMap[9]).TableRow, obj);
 });
-const tmp3 = arg1(dependencyMap[5]);
+const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");
 
 export default function GuildDirectoryCreateOrAdd(arg0) {

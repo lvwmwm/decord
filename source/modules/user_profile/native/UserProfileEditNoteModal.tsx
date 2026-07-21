@@ -1,5 +1,5 @@
 // Module ID: 11967
-// Function ID: 92479
+// Function ID: 92491
 // Name: UserProfileEditNoteModal
 // Dependencies: []
 // Exports: default
@@ -33,7 +33,7 @@ export default function UserProfileEditNoteModal(arg0) {
   const intl = arg1(dependencyMap[5]).intl;
   obj1.title = intl.string(arg1(dependencyMap[5]).t.sHHsOM);
   obj1.headerTitle = function headerTitle() {
-    const obj = { useEffect: "isArray", top: "accessibilityRole" };
+    const obj = {};
     const intl = callback(closure_2[5]).intl;
     obj.children = intl.string(callback(closure_2[5]).t.sHHsOM);
     return handleClose(callback(closure_2[6]).Text, obj);

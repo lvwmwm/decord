@@ -1,5 +1,5 @@
 // Module ID: 9419
-// Function ID: 73285
+// Function ID: 73296
 // Name: MessageReactions
 // Dependencies: []
 // Exports: default
@@ -20,7 +20,7 @@ export default function MessageReactions(emoji) {
   if (isSelectedBurst === undefined) {
     isSelectedBurst = false;
   }
-  let obj = {};
+  let obj = { call: null, getCurrentUser: null, call: null, bottom: null, flex: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(emoji, obj);
   let arg1;

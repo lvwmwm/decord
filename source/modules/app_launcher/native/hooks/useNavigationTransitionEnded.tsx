@@ -1,5 +1,5 @@
 // Module ID: 11237
-// Function ID: 87461
+// Function ID: 87473
 // Name: useNavigationTransitionEnded
 // Dependencies: []
 // Exports: default

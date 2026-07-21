@@ -1,5 +1,5 @@
 // Module ID: 11125
-// Function ID: 86582
+// Function ID: 86594
 // Name: getForumPostShouldObscure
 // Dependencies: []
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure

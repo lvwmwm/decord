@@ -1,10 +1,10 @@
-// Module ID: 7883
-// Function ID: 62748
+// Module ID: 7884
+// Function ID: 62761
 // Name: preloadUserBannerImage
 // Dependencies: []
 // Exports: default
 
-// Module 7883 (preloadUserBannerImage)
+// Module 7884 (preloadUserBannerImage)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 

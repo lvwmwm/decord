@@ -1,7 +1,7 @@
 // Module ID: 601
 // Function ID: 7031
 // Name: keys
-// Dependencies: []
+// Dependencies: [6, 7, 4]
 
 // Module 601 (keys)
 

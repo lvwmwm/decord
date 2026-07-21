@@ -1,16 +1,16 @@
 // Module ID: 930
-// Function ID: 10106
+// Function ID: 10110
 // Name: createConsolaReporter
 // Dependencies: []
 // Exports: createConsolaReporter
 
 // Module 930 (createConsolaReporter)
 let closure_2 = require(dependencyMap[0]);
-let closure_3 = ["gradientTransform", "ImpressionGroups", "stageInfo", "browser", "getApplicationCodedLinkData", "_shortMonthsParse"];
+let closure_3 = [];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = [];
+let closure_4 = ["button", "type", "level", "message", "args", "tag"];
 let closure_5 = {};
-let closure_6 = {};
+let closure_6 = { blush: 1955349247, innocent: 1955332098, slight_smile: 1849753602, slightly_smiling_face: 285213147, upside_down: 1105970513, upside_down_face: 93563 };
 
 export const createConsolaReporter = function createConsolaReporter() {
   if (arguments.length > 0) {

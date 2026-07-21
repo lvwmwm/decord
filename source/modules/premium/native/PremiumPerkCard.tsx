@@ -1,10 +1,10 @@
-// Module ID: 7422
-// Function ID: 59643
+// Module ID: 7423
+// Function ID: 59655
 // Name: usePerkCardHeight
 // Dependencies: []
 // Exports: default, usePremiumPerkCard
 
-// Module 7422 (usePerkCardHeight)
+// Module 7423 (usePerkCardHeight)
 function usePerkCardHeight(NARROW) {
   return arg1(dependencyMap[5]).useFontScale() > 1 ? frozen[NARROW].scaledFontHeight : frozen[NARROW].height;
 }
@@ -16,7 +16,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const obj = { NARROW: 0, [0]: "NARROW", WIDE: 1, [1]: "WIDE" };
-const frozen = Object.freeze({ [obj.NARROW]: { marginBottom: "cd214b5502d42e0d86b5bf4c01260ed5", fontFamily: "grey_server_boosts", marginBottom: "png" }, [obj.WIDE]: { marginBottom: "/assets/modules/premium/native/images/perks", fontFamily: 300, marginBottom: 175 } });
+const frozen = Object.freeze({ [obj.NARROW]: {}, [obj.WIDE]: {} });
 const tmp4 = arg1(dependencyMap[4]);
 let closure_13 = arg1(dependencyMap[30]).createStyles((arg0) => {
   let obj = {};
@@ -41,7 +41,7 @@ let closure_13 = arg1(dependencyMap[30]).createStyles((arg0) => {
   const merged1 = Object.assign(tmp2);
   obj.description = obj2;
   obj.button = {};
-  obj.imageContainer = {};
+  obj.imageContainer = { fr: true, fs: true, ha: true };
   const obj1 = { width: "100%", borderTopLeftRadius: importDefault(dependencyMap[31]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[31]).radii.sm };
   obj.imageOverlayText = { color: importDefault(dependencyMap[31]).colors.WHITE, fontSize: 14 };
   const obj4 = { color: importDefault(dependencyMap[31]).colors.WHITE, fontSize: 14 };
@@ -130,7 +130,7 @@ export default function PremiumPerkCard(variant) {
       tmp28 = callback(importDefault(dependencyMap[34]), obj7);
     }
     const items4 = [tmp28, tmp6, , , ];
-    const obj8 = { bottom: false, <string:51007960>: false, <string:1650218083>: false };
+    const obj8 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
     const items5 = [tmp4.title, titleStyle];
     obj8.style = items5;
     obj8.children = title;

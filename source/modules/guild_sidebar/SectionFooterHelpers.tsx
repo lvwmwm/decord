@@ -1,10 +1,10 @@
-// Module ID: 14936
-// Function ID: 112451
+// Module ID: 14939
+// Function ID: 112485
 // Name: isSectionFooterWithDivider
 // Dependencies: []
 // Exports: getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 14936 (isSectionFooterWithDivider)
+// Module 14939 (isSectionFooterWithDivider)
 function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled, section) {
   if (section === optInChannelsEnabled(dependencyMap[5]).SECTION_INDEX_GUILD_ACTIONS) {
     const guildActionSection = getGuildActionSection.getGuildActionSection();

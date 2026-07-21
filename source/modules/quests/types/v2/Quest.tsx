@@ -1,10 +1,10 @@
-// Module ID: 6944
-// Function ID: 55493
+// Module ID: 6945
+// Function ID: 55505
 // Name: questCosponsorMetadataFromServer
 // Dependencies: []
 // Exports: questFromServerV2
 
-// Module 6944 (questCosponsorMetadataFromServer)
+// Module 6945 (questCosponsorMetadataFromServer)
 function questCosponsorMetadataFromServer(cosponsor_metadata) {
   if (null != cosponsor_metadata) {
     const obj = {};

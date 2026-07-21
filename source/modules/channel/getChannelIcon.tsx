@@ -1,5 +1,5 @@
 // Module ID: 11940
-// Function ID: 92316
+// Function ID: 92328
 // Name: getChannelIconURL
 // Dependencies: []
 // Exports: getChannelIconSource, getChannelIconURL

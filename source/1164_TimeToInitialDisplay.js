@@ -1,5 +1,5 @@
 // Module ID: 1164
-// Function ID: 13205
+// Function ID: 13209
 // Name: TimeToInitialDisplay
 // Dependencies: []
 // Exports: createTimeToFullDisplay, createTimeToInitialDisplay, updateInitialDisplaySpan
@@ -61,7 +61,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
       return found;
     } else {
       const _Object = Object;
-      obj = { startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
+      obj = { 1641015498: true, 611078649: true, startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
       const startInactiveSpanResult = obj3.startInactiveSpan(Object.assign(obj, isAutoInstrumented));
       const arg1 = startInactiveSpanResult;
       if (startInactiveSpanResult) {
@@ -110,7 +110,7 @@ function startTimeToFullDisplaySpan(arg0) {
           return found1;
         } else {
           const _Object = Object;
-          const obj = { startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
+          const obj = { 1641015498: "channelId", 611078649: "toString", startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
           const startInactiveSpanResult = obj4.startInactiveSpan(Object.assign(obj, first));
           const dependencyMap = startInactiveSpanResult;
           if (startInactiveSpanResult) {

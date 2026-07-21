@@ -1,7 +1,7 @@
 // Module ID: 6736
-// Function ID: 52471
+// Function ID: 52479
 // Name: AutomodMessageEmbedKeys
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 6736 (AutomodMessageEmbedKeys)
 const _module = require(dependencyMap[0]);

@@ -1,5 +1,5 @@
 // Module ID: 11420
-// Function ID: 88849
+// Function ID: 88861
 // Name: AutocompleteLabel
 // Dependencies: []
 
@@ -25,14 +25,14 @@ const obj1 = { fontSize: 16, color: importDefault(dependencyMap[9]).colors.INTER
 obj.trailing = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 const obj2 = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 obj.username = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.emoji = { bhk: "boolean", bic: "string" };
+obj.emoji = { "Null": false, "Null": false };
 obj.emojiImage = { resizeMode: "contain" };
-const obj4 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
+const obj4 = { paddingVertical: true, paddingHorizontal: true, flexGrow: true, color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
 obj.emojiText = obj4;
+const obj5 = { "Null": "a", "Null": "isArray", "Null": "paddingHorizontal", "Null": "to", "Null": "a", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.stickerContainer = obj5;
+obj.commandChoiceLoadingContainer = { "Bool(true)": "values", "Bool(true)": "Array" };
 const obj3 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.stickerContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.commandChoiceLoadingContainer = { markAsSpoilerTitle: null, keyboardAppearance: null };
-const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.commandChoiceLoadingItem = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[9]).radii.lg, alignSelf: "flex-start" };
 obj.autocompleteIcon = { opacity: 0.6 };
 let closure_10 = obj.createStyles(obj);
@@ -127,7 +127,7 @@ const obj7 = {
     const tmp8 = jsx(arg1(dependencyMap[13]).Icon, obj);
     const channelName = arg1(dependencyMap[20]).computeChannelName(channel, closure_7, closure_6);
     obj = { onPress: onPress.onPress, accessibilityRole: "menuitem", leading: tmp8, label: <AutocompleteLabel text={channelName} /> };
-    const obj1 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.trailing };
+    const obj1 = { style: tmp.trailing };
     let name = null != category;
     if (name) {
       name = category.name;

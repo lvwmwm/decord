@@ -1,5 +1,5 @@
 // Module ID: 8617
-// Function ID: 68292
+// Function ID: 68303
 // Name: GameProfileStoreLinksActionSheet
 // Dependencies: []
 // Exports: default
@@ -33,7 +33,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   const intl = arg1(dependencyMap[11]).intl;
   obj2.children = intl.string(arg1(dependencyMap[11]).t./4gj6r);
   const items = [callback(arg1(dependencyMap[10]).Text, obj2), ];
-  const obj3 = { style: tmp.headerText };
+  const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.headerText };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj3.children = intl2.format(arg1(dependencyMap[11]).t.0acM2Y, { gameName: gameName.gameName });
   items[1] = callback(arg1(dependencyMap[10]).Text, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 6363
-// Function ID: 50458
+// Function ID: 50466
 // Name: NitroWordmarkLogo
 // Dependencies: []
 // Exports: NitroWordmarkLogo

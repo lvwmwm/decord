@@ -1,10 +1,10 @@
-// Module ID: 7530
-// Function ID: 60247
+// Module ID: 7531
+// Function ID: 60259
 // Name: set
 // Dependencies: []
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 7530 (set)
+// Module 7531 (set)
 const HelpdeskArticles = require(dependencyMap[0]).HelpdeskArticles;
 const items = [require(dependencyMap[1]).AgeVerificationModalEntryPoint.NSFW_GUILD];
 let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };

@@ -1,10 +1,10 @@
-// Module ID: 7363
-// Function ID: 59337
+// Module ID: 7364
+// Function ID: 59349
 // Name: isTestModeForApplication
 // Dependencies: []
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 7363 (isTestModeForApplication)
+// Module 7364 (isTestModeForApplication)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/game_store/TestModeUtils.tsx");

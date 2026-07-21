@@ -1,10 +1,10 @@
-// Module ID: 13350
-// Function ID: 101553
+// Module ID: 13352
+// Function ID: 101575
 // Name: createLock
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: createLock, createObservableLock
 
-// Module 13350 (createLock)
+// Module 13352 (createLock)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/MutexUtils.tsx");
 

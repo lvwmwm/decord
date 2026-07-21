@@ -1,9 +1,9 @@
 // Module ID: 2041
-// Function ID: 22240
+// Function ID: 22245
 // Dependencies: []
 
 // Module 2041
 const _module = require(dependencyMap[0]);
-const obj = { dismissed: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", lastDismissedVersion: null, lastDismissedAtMs: "277cee809330c511936d96d22ff4ddc7", lastDismissedObjectId: "fi.messages.277cee809330c511936d96d22ff4ddc7.compiled.messages", numTimesDismissed: "jsona", days: "de-BE", scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { runOnJS: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", format: null, View: "17cd48318004f5d5807e97fb34409723", accessibilityRole: "hu.messages.17cd48318004f5d5807e97fb34409723.compiled.messages", surrogates: "jsona", url: "Current Override", scales: [null] };
 
 export default _module.registerAsset(obj);

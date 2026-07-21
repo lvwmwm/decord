@@ -1,5 +1,5 @@
 // Module ID: 10868
-// Function ID: 84524
+// Function ID: 84535
 // Name: ChannelMembersActionSheet
 // Dependencies: []
 // Exports: default
@@ -16,10 +16,10 @@ let closure_8 = importDefault(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { -926844321: "Group 11", 1381477602: 2 } };
+obj = { container: { position: "Group 11", padding: 2 } };
 obj = { paddingVertical: importDefault(dependencyMap[10]).space.PX_12 };
 obj.sectionRowWrapper = obj;
-obj.warning = {};
+obj.warning = { 0: 838861158, 0: -385875662 };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
@@ -143,7 +143,7 @@ export default function ChannelMembersActionSheet(arg0) {
           let data;
           let title;
           ({ title, data } = section.section);
-          let obj = { style: tmp.sectionRowWrapper };
+          let obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "accessible", "Bool(false)": "name", "Bool(false)": "Array", style: tmp.sectionRowWrapper };
           const intl = callback(tmp[16]).intl;
           obj = { numberOfItems: data.length, sectionTitle: title };
           obj.children = intl.format(callback(tmp[16]).t.u8CWLl, obj);

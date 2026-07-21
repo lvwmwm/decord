@@ -1,9 +1,9 @@
-// Module ID: 14552
-// Function ID: 109645
+// Module ID: 14555
+// Function ID: 109677
 // Name: SurveyOverrideInfoActionSheet
 // Dependencies: []
 
-// Module 14552 (SurveyOverrideInfoActionSheet)
+// Module 14555 (SurveyOverrideInfoActionSheet)
 function SurveyOverrideInfoActionSheet(survey) {
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Last Survey Data" }) };
   obj = { hasIcons: true };
@@ -45,7 +45,7 @@ function SurveyOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Survey Override" }) };
-  obj = { "Bool(false)": "<string:960565506>", "Bool(false)": "<string:16777748>", "Bool(false)": "550a2030cc096bcb50a6945a95ee1b56", "Bool(false)": "zh-CN.messages.550a2030cc096bcb50a6945a95ee1b56.compiled.messages", "Bool(false)": "jsona", onChange: tmp[1] };
+  obj = { -12885172: false, -9223372036854775808: false, 0: false, 0: false, 706246040: false, onChange: tmp[1] };
   const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
   obj = {};
   let str = "Fetch Survey";
@@ -82,11 +82,11 @@ function SurveyInfo() {
   const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
   const tmp2 = importDefault(dependencyMap[18])(stateFromStores);
   const arg1 = tmp2;
-  obj = { "Bool(false)": "Product not found", "Bool(false)": "heading-md/semibold" };
+  obj = { "Bool(false)": "Hide first # of categories", "Bool(false)": "text-lg/semibold" };
   obj = {
-    "Bool(false)": true,
-    "Bool(false)": true,
-    "Bool(false)": true,
+    9223372036854775807: true,
+    -9223372036854775808: true,
+    0: true,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_13 };
@@ -126,8 +126,7 @@ function ChangelogOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Changelog Override" }) };
-  obj = { "Bool(false)": 16777504, "Bool(false)": 38595139, "Bool(false)": 25918976, "Bool(false)": 30653696, "Bool(false)": 1995264, onChange: tmp[1] };
-  const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
+  const items = [callback2(arg1(dependencyMap[13]).TextInput, { onChange: tmp[1] }), ];
   obj = {};
   let str = "Fetch Changelog";
   if ("" === first) {
@@ -158,8 +157,11 @@ function ChangelogOverrideActionSheet() {
   return closure_10(arg1(dependencyMap[8]).ActionSheet, obj);
 }
 function ChangelogInfo() {
-  let obj = { "Bool(false)": null, "Bool(false)": null };
+  let obj = { "Bool(false)": "<string:2902459525>", "Bool(false)": "<string:1107297490>" };
   obj = {
+    9223372036854775807: "useMessageCount",
+    -9223372036854775808: "%WeakMap%",
+    0: "generateNonce",
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_16 };
@@ -168,8 +170,6 @@ function ChangelogInfo() {
   };
   const items = [callback2(arg1(dependencyMap[20]).TableRow, obj), ];
   obj = {
-    borderTopWidth: false,
-    borderColor: false,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_15 };

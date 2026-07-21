@@ -1,7 +1,7 @@
 // Module ID: 699
-// Function ID: 8696
+// Function ID: 8700
 // Name: isKey
-// Dependencies: [743, 744]
+// Dependencies: []
 
 // Module 699 (isKey)
 let closure_2 = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;

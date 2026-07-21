@@ -1,5 +1,5 @@
 // Module ID: 11375
-// Function ID: 88435
+// Function ID: 88447
 // Name: ActionChannelInfo
 // Dependencies: []
 
@@ -10,7 +10,7 @@ function ActionChannelInfo(action) {
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(action.channelId));
   if (null == stateFromStores) {
-    obj = {};
+    obj = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl2 = arg1(dependencyMap[15]).intl;
     obj = {};
     const intl3 = arg1(dependencyMap[15]).intl;
@@ -18,7 +18,7 @@ function ActionChannelInfo(action) {
     obj.children = intl2.format(arg1(dependencyMap[15]).t.MkzlDL, obj);
     let obj1 = obj;
   } else {
-    obj1 = {};
+    obj1 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl = arg1(dependencyMap[15]).intl;
     const obj2 = { channelName: tmp2 };
     obj1.children = intl.format(arg1(dependencyMap[15]).t.MkzlDL, obj2);
@@ -347,14 +347,14 @@ const Routes = arg1(dependencyMap[7]).Routes;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[8]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { animatedContainer: { overflow: "hidden" }, measurement: { -1350914179: 1996489027, -1351079902: 1358954819 } };
-obj = { "Bool(false)": null, "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132, "Bool(false)": 0, "Bool(false)": 0, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST };
+let obj = { animatedContainer: { overflow: "hidden" }, measurement: {} };
+obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
 obj.text = {};
 obj.wrap = {};
-obj.emoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
-obj.textEmoji = { borderRadius: null, borderColor: "absolute" };
-obj1 = { paddingVertical: "PlusSmallIcon", paddingHorizontal: "png", justifyContent: true, alignItems: "/assets/design/components/Icon/native/redesign/generated/images", marginVertical: 24, marginLeft: 24, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
+obj.emoji = {};
+obj.textEmoji = { "Bool(false)": null, "Bool(false)": null };
+obj1 = { 9223372036854775807: "PlusSmallIcon", 9223372036854775807: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", -9223372036854775808: 24, 9223372036854775807: 24, 0: null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
 obj.emojiPlaceholder = obj1;
 const tmp2 = arg1(dependencyMap[9]);
 obj.circle = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };

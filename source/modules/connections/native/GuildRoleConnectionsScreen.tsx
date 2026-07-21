@@ -1,5 +1,5 @@
 // Module ID: 9983
-// Function ID: 77185
+// Function ID: 77196
 // Name: GuildRoleConnectionsScreen
 // Dependencies: []
 // Exports: default
@@ -20,19 +20,19 @@ let obj = arg1(dependencyMap[9]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
-obj.content = {};
+obj.content = { 822894183: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 400842798: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, 1120077519: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 };
 obj.infoText = { marginTop: 24 };
-obj.verifiedRoles = {};
-const obj1 = { onPressEmoji: true, onLongPressEmoji: "/assets/images/native", height: 24, padding: 24, borderRadius: importDefault(dependencyMap[10]).radii.md, backgroundColor: "f2561d66a35f036565003b940731b99f", flexDirection: "ic_verified_check_24px", justifyContent: "png", alignItems: true, alignContent: 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
+obj.verifiedRoles = { paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000011816418034244918, width: "allNodes", marginTop: "R" };
+const obj1 = { animateEmoji: true, scrollFastOptimizationEnabled: "/assets/images/native", scrollFastVelocity: 24, disableAnimationsOnScroll: 24, config: null, paddingTop: "f2561d66a35f036565003b940731b99f", paddingBottom: "ic_verified_check_24px", useTier0UpsellContent: "png", emojiData: true, emojiMargin: 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.verifiedRole = obj1;
 const tmp4 = arg1(dependencyMap[8]);
 obj.verifiedRoleHasRole = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 const obj2 = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.verifiedRolePressed = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED };
 obj.verifiedRoleIcon = { marginRight: 12 };
-const obj4 = { title: "<string:70245697>", fullscreen: "<string:658592000>", headerShown: "icon-muted", mostRecentQuery: "text-lg/normal", fetching: null, fetching: "mobile-text-heading-primary", mostRecentQuery: true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
+const obj4 = { onCreate: false, guildTemplate: false, autoFocus: false, onHubGuildInfoSet: false, isCommunityIntent: false, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, paddingHorizontal: false };
 obj.roleCheckmark = obj4;
-obj.verifiedRoleName = {};
+obj.verifiedRoleName = { "Bool(true)": -146028888078.88293, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012366668433734714, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000145176880826883 };
 obj.platformIconContainer = { flexDirection: "row" };
 obj.cutout = { marginRight: -6 };
 let closure_16 = obj.createStyles(obj);
@@ -80,7 +80,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     const found = stateFromStores.filter((tags) => null === tags.tags.guild_connections);
     obj = { style: tmp.container };
     obj = { contentContainerStyle: tmp.content };
-    obj1 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.infoText };
+    obj1 = { delete: "String", dispatch: "kind", raw: "justifyContent", style: tmp.infoText };
     const intl = arg1(dependencyMap[26]).intl;
     obj2 = { helpdeskArticleUrl: importDefault(dependencyMap[27]).getArticleURL(constants.CONNECTION_DETAILS) };
     obj1.children = intl.format(arg1(dependencyMap[26]).t.Y+TsEV, obj2);
@@ -138,7 +138,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
             tmp5 = callback(stateFromStores1, obj);
           }
           const items = [tmp5, callback(onCloseModal(tmp[29]), { style: tmp.verifiedRoleIcon, guildId, role: id, size: 24 }), , ];
-          const obj2 = { -9223372036854775808: null, 0: 103, 0: 153, style: tmp.verifiedRoleName, children: id.name };
+          const obj2 = { <string:1643205302>: null, <string:1415816450>: 103, <string:4283523744>: 153, style: tmp.verifiedRoleName, children: id.name };
           items[2] = callback(guildId(tmp[30]).Text, obj2);
           const obj3 = {
             style: tmp.platformIconContainer,

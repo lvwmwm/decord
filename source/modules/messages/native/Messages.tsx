@@ -1,5 +1,5 @@
 // Module ID: 10428
-// Function ID: 80312
+// Function ID: 80323
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -156,7 +156,6 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   let resolvingGiftCodes;
   let roleStyle;
   let saturation;
-  let tmp20;
   let tmp56;
   let tmp57;
   let unloadableContentEntryMessageIds;
@@ -207,10 +206,16 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   const stateFromStores3 = obj3.useStateFromStores(items4, () => theme.theme, []);
   let obj4 = ref(dependencyMap[64]);
   const isMessageSwipeActionsEnabled = obj4.useIsMessageSwipeActionsEnabled();
+  const linkedLobby = channel.linkedLobby;
+  let application_id;
   const tmp15 = importDefault(dependencyMap[63])("Messages");
-  function useFetchMessageApplications(stateFromStores) {
+  if (null != linkedLobby) {
+    application_id = linkedLobby.application_id;
+  }
+  function useFetchMessageApplications(stateFromStores, application_id) {
     const channel = stateFromStores;
-    const items = [stateFromStores];
+    stateFromStores = application_id;
+    const items = [stateFromStores, application_id];
     const memo = stateFromStores1.useMemo(() => {
       const set = new Set();
       const arg0 = set;
@@ -219,22 +224,25 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           set.add(applicationId.applicationId);
         }
       });
+      if (null != arg1) {
+        set.add(arg1);
+      }
       return Array.from(set);
     }, items);
-    stateFromStores = memo;
-    let closure_2 = stateFromStores1.useRef([]);
+    const id = memo;
+    let closure_3 = stateFromStores1.useRef([]);
     const items1 = [memo];
     const effect = stateFromStores1.useEffect(() => {
       if (!obj.areArraysShallowEqual(memo, ref.current)) {
-        const obj2 = memo(ref[60]);
-        const found = memo(ref[58])(memo).filter(arg0(ref[61]).isNotNullish);
-        const arr = memo(ref[58])(memo);
+        const obj2 = arg1(memo[60]);
+        const found = arg1(memo[58])(memo).filter(arg0(memo[61]).isNotNullish);
+        const arr = arg1(memo[58])(memo);
         const applications = obj2.fetchApplications(found.uniq().value(), false);
         ref.current = memo;
         const iter = found.uniq();
       }
     }, items1);
-  }(stateFromStores);
+  }(stateFromStores, application_id);
   const tmp17 = function useMessageAuthorActivities(stateFromStores) {
     const channel = stateFromStores;
     const items = [stateFromStores];
@@ -253,11 +261,10 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     const items2 = [memo];
     return channel(id[57]).useStateFromStoresObject(items1, () => memo(closure_2[58]).mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items2);
   }(stateFromStores);
-  [tmp20, r10117] = callback(importDefault(dependencyMap[65])(stateFromStores, channel), 2);
   let obj5 = ref(dependencyMap[57]);
   const items5 = [closure_45];
   const stateFromStores4 = obj5.useStateFromStores(items5, () => store6.getInvites(), []);
-  const tmp19 = callback(importDefault(dependencyMap[65])(stateFromStores, channel), 2);
+  const tmp20 = callback(importDefault(dependencyMap[65])(stateFromStores, channel), 2);
   const fetchVoiceChannelInviteStartTimes = ref(dependencyMap[66]).useFetchVoiceChannelInviteStartTimes(stateFromStores4);
   const obj7 = ref(dependencyMap[66]);
   const items6 = [closure_16];
@@ -362,7 +369,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   const obj18 = ref(dependencyMap[57]);
   const codedLinksExperimentEmbeds = ref(dependencyMap[67]).useCodedLinksExperimentEmbeds();
   const obj19 = ref(dependencyMap[67]);
-  quests = ref(dependencyMap[68]).useQuests({ "Bool(false)": "value", "Bool(false)": "\"{{!key}}\" " });
+  quests = ref(dependencyMap[68]).useQuests({ 496650185: "<string:3137732610>", -2100141380: "<string:1254293505>" });
   ({ quests, isFetchingCurrentQuests } = quests);
   const found = stateFromStores.filter((type) => type.type === constants2.PREMIUM_REFERRAL);
   const mapped = found.map((referralTrialOfferId) => referralTrialOfferId.referralTrialOfferId);
@@ -830,7 +837,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   }
   obj5.referralTrialOfferId = guildId;
   obj5.isPremiumTier2User = stateFromStores8;
-  obj5.activityInviteMessageIds = tmp20;
+  obj5.activityInviteMessageIds = tmp20[0];
   obj5.guildInviteColorsFetched = colorStore;
   obj5.isAgeVerified = isAgeVerified;
   obj5.guildEmojis = guildId;

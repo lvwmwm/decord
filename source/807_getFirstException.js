@@ -1,5 +1,5 @@
 // Module ID: 807
-// Function ID: 9047
+// Function ID: 9051
 // Name: getFirstException
 // Dependencies: []
 
@@ -58,7 +58,7 @@ arg5.addExceptionMechanism = function addExceptionMechanism(arg0, data) {
     const mechanism = tmp.mechanism;
     const _Object = Object;
     const _Object2 = Object;
-    tmp.mechanism = Object.assign({}, { "Null": "Array", "Null": "CREATE_GUILD" }, mechanism, data);
+    tmp.mechanism = Object.assign({}, {}, mechanism, data);
     if (data) {
       if ("data" in data) {
         data = undefined;

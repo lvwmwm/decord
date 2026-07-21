@@ -1,13 +1,14 @@
 // Module ID: 417
 // Function ID: 5857
 // Name: extractSingleTouch
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 0, 0, 0, 4294967295, 0]
 
 // Module 417 (extractSingleTouch)
+import { jsx } from "result";
+
 let touchableHandleBlur;
 let touchableHandleFocus;
 importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
 function extractSingleTouch(nativeEvent) {
   let changedTouches;
   let touches;
@@ -32,11 +33,11 @@ function extractSingleTouch(nativeEvent) {
   }
   first = first1;
 }
-let obj = {};
-let closure_3 = Object.assign({}, obj, { 9223372036854775807: null, 9223372036854775807: null });
-let closure_4 = Object.assign({}, obj, {});
+let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Null": null };
+let closure_3 = Object.assign({}, obj, {});
+let closure_4 = Object.assign({}, obj, { "Bool(true)": "Small", "Bool(true)": "sm", "Bool(true)": "Placeholder" });
 let closure_5 = Object.assign({}, obj, { RESPONDER_ACTIVE_LONG_PRESS_IN: true });
-let closure_6 = { NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: { -9223372036854775808: "absolute", 0: 0, 9223372036854775807: -1, 0: null, 0: "\u{1F468}\u200D\u{1F4BB}", -9223372036854775808: true, 9223372036854775807: 6 }, RESPONDER_INACTIVE_PRESS_OUT: { -9223372036854775808: "isArray", 0: "key", 9223372036854775807: "constructor", 0: "apply", 0: "isArray", -9223372036854775808: "isArray", 9223372036854775807: "isArray" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: { -9223372036854775808: null, 0: null, 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: null, 9223372036854775807: null }, error: {} };
+let closure_6 = { NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "constructor", "Bool(false)": "apply" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, error: {} };
 obj = {
   componentDidMount() {
     const isTV = importDefault(dependencyMap[3]).isTV;
@@ -127,7 +128,7 @@ obj = {
       if (self.touchableGetPressRectOffset) {
         let result = self.touchableGetPressRectOffset();
       } else {
-        result = { scales: false, useMemo: false, space: false, Text: false };
+        result = {};
       }
       ({ left, top, right, bottom } = result);
       let touchableGetHitSlopResult = null;
@@ -441,7 +442,7 @@ obj = {
   withoutDefaultFocusAndBlur: {}
 };
 ({ touchableHandleFocus, touchableHandleBlur } = obj);
-obj.withoutDefaultFocusAndBlur = importDefault(dependencyMap[0])(obj, [false, false]);
+obj.withoutDefaultFocusAndBlur = require("result")(obj, ["<string:28222976>", "<string:19552256>"]);
 
 export default {
   Mixin: obj,

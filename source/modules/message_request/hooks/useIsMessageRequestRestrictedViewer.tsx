@@ -1,5 +1,5 @@
 // Module ID: 11462
-// Function ID: 89290
+// Function ID: 89302
 // Name: useIsMessageRequestRestrictedViewer
 // Dependencies: []
 // Exports: useIsMessageRequestRestrictedViewer

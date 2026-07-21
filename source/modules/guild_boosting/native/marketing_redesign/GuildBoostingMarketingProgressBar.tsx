@@ -1,10 +1,10 @@
-// Module ID: 12394
-// Function ID: 94717
+// Module ID: 12396
+// Function ID: 94739
 // Name: BoostedGuildTiers
 // Dependencies: []
 // Exports: default
 
-// Module 12394 (BoostedGuildTiers)
+// Module 12396 (BoostedGuildTiers)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,13 +15,13 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { "Null": true, "Null": true, "Null": true, "Null": true, paddingHorizontal: arg1(dependencyMap[7]).MARKER_DIMENSIONS / 2 + 34 };
 obj.progressBarContainer = obj;
-obj.progressBar = { alignSelf: "isArray", resizeMode: "Array", height: "x" };
+obj.progressBar = { "Null": "isArray", "Null": "Array", "Null": "x" };
 const tmp2 = arg1(dependencyMap[5]);
 obj.progressBarScrubber = { height: 8, top: arg1(dependencyMap[7]).MARKER_DIMENSIONS / 2 - 4, marginHorizontal: arg1(dependencyMap[7]).MARKER_DIMENSIONS / 2 + 2 };
 const obj1 = { height: 8, top: arg1(dependencyMap[7]).MARKER_DIMENSIONS / 2 - 4, marginHorizontal: arg1(dependencyMap[7]).MARKER_DIMENSIONS / 2 + 2 };
 obj.progressBarTrack = { backgroundColor: importDefault(dependencyMap[8]).colors.SPINE_DEFAULT };
 obj.progressBarFill = {};
-obj.progressBarGradientFill = {};
+obj.progressBarGradientFill = { 2122157199: 1929379840, -2108594079: 0, 1371431202: 14 };
 let closure_10 = obj.createStyles(obj);
 const items = [, , , ];
 ({ NONE: arr[0], TIER_1: arr[1], TIER_2: arr[2], TIER_3: arr[3] } = BoostedGuildTiers);

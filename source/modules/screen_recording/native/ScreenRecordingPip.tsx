@@ -1,10 +1,10 @@
-// Module ID: 14590
-// Function ID: 109932
+// Module ID: 14593
+// Function ID: 109964
 // Name: DraggableContainer
 // Dependencies: []
 // Exports: default
 
-// Module 14590 (DraggableContainer)
+// Module 14593 (DraggableContainer)
 function DraggableContainer(children) {
   const x = children.x;
   const arg1 = x;
@@ -164,6 +164,8 @@ function ScreenRecordingPip(surveyConfig) {
     const items3 = [callback2(arg1(dependencyMap[18]).Text, obj3), ];
     if (tmp6) {
       const obj4 = {
+        "Bool(true)": "<string:503578626>",
+        "Bool(true)": "<string:2018574338>",
         onPress() {
 
             }
@@ -173,7 +175,7 @@ function ScreenRecordingPip(surveyConfig) {
       const obj5 = {};
       if (isStepCompleted) {
         obj5.style = tmp.doneButton;
-        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, {});
+        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, { accessibilityRole: 20, "": 20 });
         let tmp31 = obj5;
       } else {
         obj5.style = tmp.stopButton;
@@ -210,7 +212,7 @@ obj = { widgetContainer: { position: "absolute" } };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, gap: importDefault(dependencyMap[6]).space.PX_8, padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.xl };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_MOBILE_NAVIGATOR_X);
 obj.widget = obj;
-obj.stepText = {};
+obj.stepText = { overflow: 1, flexWrap: 61 };
 const tmp2 = arg1(dependencyMap[4]);
 obj.stopButton = { padding: importDefault(dependencyMap[6]).space.PX_8, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.WHITE, borderRadius: importDefault(dependencyMap[6]).radii.round };
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_8, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.WHITE, borderRadius: importDefault(dependencyMap[6]).radii.round };

@@ -1,7 +1,7 @@
 // Module ID: 8751
-// Function ID: 69187
+// Function ID: 69198
 // Name: roundIfClose
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8751 (roundIfClose)
 let closure_0 = { code: "function roundIfClose_MathUtilsTsx1(num,precision){const decimalPart=num-Math.floor(num);if(decimalPart>=1-precision){return Math.ceil(num);}if(decimalPart<=precision){return Math.floor(num);}return num;}" };

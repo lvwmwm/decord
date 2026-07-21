@@ -1,5 +1,5 @@
 // Module ID: 9087
-// Function ID: 71180
+// Function ID: 71191
 // Name: GroupDMRow
 // Dependencies: []
 // Exports: default
@@ -46,7 +46,7 @@ export default function GroupDMRow(channel) {
   obj["disabled"] = flag2;
   let tmp10;
   if (null != recipientsLabel) {
-    const obj1 = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null, children: recipientsLabel };
+    const obj1 = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null, children: recipientsLabel };
     tmp10 = jsx(arg1(dependencyMap[7]).Text, obj1);
   }
   obj["subLabel"] = tmp10;

@@ -1,12 +1,11 @@
 // Module ID: 11061
-// Function ID: 86074
+// Function ID: 86085
 // Name: apexExperiment
 // Dependencies: []
 
 // Module 11061 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { 9223372036854775807: -9518924866060983000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002463361800157, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/parent_tools/FamilyCenterConnectionPrereqExperiment.tsx");
 

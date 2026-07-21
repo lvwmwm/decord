@@ -17,7 +17,7 @@ export default () => {
       this._highestMeasuredCellIndex = 0;
       this._measuredCellsLength = 0;
       this._measuredCellsCount = 0;
-      this._orientation = { 9223372036854775807: null, -9223372036854775808: null };
+      this._orientation = { alignSelf: null, height: null };
       return;
     }
   }

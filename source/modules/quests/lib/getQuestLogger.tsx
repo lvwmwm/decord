@@ -1,10 +1,10 @@
-// Module ID: 6942
-// Function ID: 55475
+// Module ID: 6943
+// Function ID: 55487
 // Name: getQuestLogger
 // Dependencies: []
 // Exports: getQuestLogger
 
-// Module 6942 (getQuestLogger)
+// Module 6943 (getQuestLogger)
 let closure_2 = importDefault(dependencyMap[0]);
 const NOOP = arg1(dependencyMap[1]).NOOP;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");

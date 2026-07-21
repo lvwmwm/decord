@@ -1,5 +1,5 @@
 // Module ID: 1265
-// Function ID: 14279
+// Function ID: 14283
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: makeReactFormatter

@@ -1,10 +1,10 @@
-// Module ID: 4711
-// Function ID: 40957
+// Module ID: 4710
+// Function ID: 40964
 // Name: _shouldConvertToWebP
 // Dependencies: []
 // Exports: maybeConvertToWebP
 
-// Module 4711 (_shouldConvertToWebP)
+// Module 4710 (_shouldConvertToWebP)
 function _shouldConvertToWebP() {
   return _shouldConvertToWebP2(...arguments);
 }

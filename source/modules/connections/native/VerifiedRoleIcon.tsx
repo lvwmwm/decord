@@ -1,5 +1,5 @@
 // Module ID: 5506
-// Function ID: 46903
+// Function ID: 46911
 // Name: VerifiedRoleIcon
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const WHITE = importDefault(dependencyMap[4]).unsafe_rawColors.WHITE;
 const PRIMARY_630 = importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_630;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.iconContainer = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

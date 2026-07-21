@@ -1,5 +1,5 @@
 // Module ID: 8983
-// Function ID: 70766
+// Function ID: 70777
 // Name: CrunchyrollLinkLanding
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ let closure_4 = arg1(dependencyMap[1]).CrunchyrollLinkModalScenes;
 ({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ image: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ image: { "Null": 80, "Null": 80 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
 

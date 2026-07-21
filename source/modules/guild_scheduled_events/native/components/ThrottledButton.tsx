@@ -1,5 +1,5 @@
 // Module ID: 12082
-// Function ID: 93179
+// Function ID: 93191
 // Name: useThrottledActionHandler
 // Dependencies: []
 // Exports: default
@@ -41,7 +41,7 @@ export default function ThrottledButton(throttleMs) {
   if (num === undefined) {
     num = 500;
   }
-  let obj = { 0: null, 9223372036854775807: 4, 0: 4, 0: "rgba(0, 0, 0, 0.75)" };
+  let obj = { bottom: "ERROR", sr: "ERROR", ks: "NOT_RESPONDER", ao: "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(throttleMs, obj);
   const tmp3 = useThrottledActionHandler(num);

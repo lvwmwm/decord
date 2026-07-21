@@ -1,10 +1,10 @@
-// Module ID: 5392
-// Function ID: 45985
+// Module ID: 5391
+// Function ID: 45992
 // Name: TermsFieldListItem
 // Dependencies: []
 // Exports: default
 
-// Module 5392 (TermsFieldListItem)
+// Module 5391 (TermsFieldListItem)
 function TermsFieldListItem(arg0) {
   let rowNumber;
   let rule;
@@ -12,7 +12,7 @@ function TermsFieldListItem(arg0) {
   ({ rowNumber, rule, rulesChannelId } = arg0);
   const tmp = callback3();
   let obj = { style: tmp.termsRow };
-  obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.termsRowNumber, children: "" + rowNumber + "." };
+  obj = { style: tmp.termsRowNumber, children: "" + rowNumber + "." };
   const items = [callback(arg1(dependencyMap[5]).Text, obj), ];
   obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(dependencyMap[6]).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
   items[1] = callback(arg1(dependencyMap[5]).Text, obj);
@@ -24,7 +24,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
+obj = { <string:2675968041>: 5, <string:191172098>: "order", <string:3775423492>: "scalar", backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
 obj.termsContainer = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.firstItem = { borderTopLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[4]).radii.sm };
@@ -32,7 +32,7 @@ const obj1 = { borderTopLeftRadius: importDefault(dependencyMap[4]).radii.sm, bo
 obj.lastItem = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
 obj.termsRow = { flexDirection: "row" };
 obj.termsRowContent = {};
-obj.termsRowNumber = { bh: "Array", bhk: "isArray", bic: "getChannel" };
+obj.termsRowNumber = {};
 obj.title = { marginBottom: 16 };
 let closure_8 = obj.createStyles(obj);
 const obj2 = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
@@ -45,7 +45,7 @@ export default function TermsFieldList(rules) {
   const tmp = callback3();
   const dependencyMap = tmp;
   let obj = {};
-  obj = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.title };
+  obj = { style: tmp.title };
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.prJqwT);
   const items = [

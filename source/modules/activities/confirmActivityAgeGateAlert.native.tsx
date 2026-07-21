@@ -1,5 +1,5 @@
 // Module ID: 10810
-// Function ID: 83955
+// Function ID: 83966
 // Name: ConfirmActivityGateContent
 // Dependencies: []
 // Exports: confirmActivityAgeGateAlert
@@ -18,8 +18,8 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { alertContainer: { isArray: 2063597892, context: 1107296879, paths: 148200 } };
-obj = { "Null": "<string:289538050>", "Null": "<string:2046820676>", borderRadius: "<string:1107296879>", border: "#29CC7A", color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj = { alertContainer: {} };
+obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.alertBodyText = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

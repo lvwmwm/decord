@@ -1,5 +1,5 @@
 // Module ID: 11241
-// Function ID: 87501
+// Function ID: 87513
 // Name: getActivityLaunchURL
 // Dependencies: []
 // Exports: getActivityLaunchURL, getApplicationInstallURL

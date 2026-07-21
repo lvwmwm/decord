@@ -1,5 +1,5 @@
 // Module ID: 10497
-// Function ID: 81941
+// Function ID: 81952
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getActiveAnalyticsSessionIDs, trackFrameSessionEnd, trackFrameSessionStart

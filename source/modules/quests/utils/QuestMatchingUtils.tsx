@@ -1,5 +1,5 @@
 // Module ID: 10465
-// Function ID: 81018
+// Function ID: 81029
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestByApplicationId, getQuestsFromActivities

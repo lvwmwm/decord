@@ -1,9 +1,9 @@
-// Module ID: 15520
-// Function ID: 118416
+// Module ID: 15523
+// Function ID: 118455
 // Name: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS
 // Dependencies: []
 
-// Module 15520 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
+// Module 15523 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
 let LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
 let LAUNCH_PAD_PULL_TAB_WIDTH;
 const Pressable = arg1(dependencyMap[1]).Pressable;
@@ -15,7 +15,7 @@ const CHAT_INPUT_HEIGHT = arg1(dependencyMap[3]).CHAT_INPUT_HEIGHT;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, borderTopLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderBottomLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderWidth: 1, borderTopWidth: 1, borderColor: "rgba(0, 0, 0, 0.08)" };
+obj = { "Null": null, "Null": null, width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, borderTopLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderBottomLeftRadius: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS, borderWidth: 1, borderTopWidth: 1, borderColor: "rgba(0, 0, 0, 0.08)" };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_MOBILE_NAVIGATOR_X);
 obj.pullTab = obj;
 obj.pullTabButton = { width: LAUNCH_PAD_PULL_TAB_WIDTH, height: LAUNCH_PAD_PULL_TAB_HEIGHT, justifyContent: "center", alignItems: "center" };
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function LaunchPadPullTab(launchPadShare
       value1 = launchPadSharedState.get();
       items3 = [0.229];
       items3[1] = -closure_4.get().width - 16;
-      interpolateResult = obj.interpolate(value1, ["Text", "lc"], items3);
+      interpolateResult = obj.interpolate(value1, ["replace", "then"], items3);
       return;
     }
   }

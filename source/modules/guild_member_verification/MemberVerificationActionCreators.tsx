@@ -1,9 +1,9 @@
-// Module ID: 5396
-// Function ID: 46000
+// Module ID: 5395
+// Function ID: 46007
 // Name: _fetchVerificationForm
 // Dependencies: []
 
-// Module 5396 (_fetchVerificationForm)
+// Module 5395 (_fetchVerificationForm)
 async function _fetchVerificationForm(guildId, code, arg2) {
   let inviteKeyForGuildId = code;
   if (null == inviteKeyForGuildId) {

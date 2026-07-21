@@ -1,11 +1,11 @@
 // Module ID: 862
-// Function ID: 9632
+// Function ID: 9636
 // Name: createMetricContainerEnvelopeItem
 // Dependencies: []
 
 // Module 862 (createMetricContainerEnvelopeItem)
 function createMetricContainerEnvelopeItem(items) {
-  const obj = { -9223372036854775808: 55739657, 9223372036854775807: 1104668969, 9223372036854775807: 115270, item_count: items.length };
+  const obj = { -824876486: false, 509723217: false, 1627466321: false, item_count: items.length };
   items = [obj, { items }];
   return items;
 }

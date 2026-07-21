@@ -1,5 +1,5 @@
 // Module ID: 4541
-// Function ID: 39818
+// Function ID: 39826
 // Name: getIconSize
 // Dependencies: []
 

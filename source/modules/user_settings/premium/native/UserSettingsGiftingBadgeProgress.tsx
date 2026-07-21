@@ -1,10 +1,10 @@
-// Module ID: 12382
-// Function ID: 94653
+// Module ID: 12384
+// Function ID: 94675
 // Name: GiftingBadgeIntro
 // Dependencies: []
 // Exports: default
 
-// Module 12382 (GiftingBadgeIntro)
+// Module 12384 (GiftingBadgeIntro)
 function GiftingBadgeIntro(analyticsLocation) {
   const arg1 = analyticsLocation.analyticsLocation;
   const tmp = callback5(importDefault(dependencyMap[7])("UserSettingsGiftingBadgeProgress"));
@@ -40,7 +40,7 @@ function GiftingBadgeIntro(analyticsLocation) {
           }
           const items = [tmp3, ];
           obj = { style: tmp.badgeCopy };
-          const obj1 = {};
+          const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: true };
           const name = simple_icon_url.name;
           let str = "";
           if (null != name) {
@@ -98,33 +98,33 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj.wrapper = obj;
   obj = { gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.progressContainer = obj;
-  obj.progressRow = { gap: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj1 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[6]).space.PX_4 };
+  obj.progressRow = obj1;
   obj.progressTitleText = { flex: 1 };
-  const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressBarContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
   const obj2 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
   obj.progressBarTrack = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
-  const obj5 = { bottom: true, left: true, padding: true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj5 = { top: true, bottom: true, left: true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressLabels = obj5;
   const obj4 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
   obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-  obj.dropdownRow = { padding: "Next", paddingBottom: null, flexDirection: null };
-  const obj7 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
-  obj.badgesRow = obj7;
-  const obj8 = { -2080373617: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391313658985, 1392510095: 9126805507, -1949266993: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002495254851323827, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
-  obj.badgeItem = obj8;
+  obj.dropdownRow = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
   const obj6 = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
+  obj.badgesRow = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj8 = { to: 9126831853.500006, Z_NO_FLUSH: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000405821085137641, Z_PARTIAL_FLUSH: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001415335349591403, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj.badgeItem = obj8;
+  const obj7 = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
   obj.badgeItemActive = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
-  obj.badgeCopy = {};
+  obj.badgeCopy = { 1652262301: 1916866816, -1100937077: 1442840857 };
   const obj9 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
   obj.footerText = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   const obj10 = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   obj.introContent = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
-  const obj12 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-  obj.introGrid = obj12;
-  const obj13 = { -2080373617: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391313658985, 1392510095: 9126805507, -1949266993: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002495254851323827, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  const obj11 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
+  obj.introGrid = { paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  const obj13 = { to: 9126831853.500006, Z_NO_FLUSH: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000405821085137641, Z_PARTIAL_FLUSH: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001415335349591403, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.introGridItem = obj13;
   return obj;
 });
@@ -224,7 +224,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       tmp23 = callback3(importDefault(closure_2[15]), obj5);
     }
     const items1 = [tmp23, , ];
-    const obj7 = { "Null": 0.184, "Null": 1, "Null": "auto", style: tmp.progressTitleText, children: formatToPlainStringResult };
+    const obj7 = { style: tmp.progressTitleText, children: formatToPlainStringResult };
     items1[1] = callback3(arg1(closure_2[12]).Text, obj7);
     let simple_icon_url1;
     if (null != nextTier) {
@@ -252,7 +252,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj11.children = callback3(closure_6, obj12);
     const items4 = [callback3(closure_6, obj11), ];
     const obj14 = { style: tmp.progressLabels };
-    const obj15 = {};
+    const obj15 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
     const intl3 = arg1(closure_2[13]).intl;
     const obj16 = {};
     let tmp48 = tmp49;
@@ -336,7 +336,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
               }
               obj1.children = str;
               const items2 = [callback3(analyticsLocation(closure_2[12]).Text, obj1), ];
-              const obj2 = {};
+              const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
               const intl = analyticsLocation(closure_2[13]).intl;
               const obj3 = { count: callback2(key) };
               obj2.children = intl.format(closure_10(closure_2[14]).qvx9E4, obj3);
@@ -348,7 +348,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
             })
       };
       const items7 = [callback3(closure_6, obj24), ];
-      const obj25 = { style: tmp.footerText };
+      const obj25 = { delete: null, dispatch: null, raw: null, style: tmp.footerText };
       const intl6 = arg1(closure_2[13]).intl;
       obj25.children = intl6.string(importDefault(closure_2[14]).4Yp0mI);
       items7[1] = callback3(arg1(closure_2[12]).Text, obj25);

@@ -1,5 +1,5 @@
 // Module ID: 11686
-// Function ID: 90651
+// Function ID: 90663
 // Name: keyExtractor
 // Dependencies: []
 // Exports: default
@@ -41,7 +41,7 @@ function renderItem(item) {
   }
 }
 function GuildDirectoryHeaderRowItem(children) {
-  const obj = { "Null": null, "Null": null, "Null": null, style: callback3().categorySectionText, children: children.children };
+  const obj = { delete: null, dispatch: null, raw: null, style: callback3().categorySectionText, children: children.children };
   return callback(arg1(dependencyMap[15]).Text, obj);
 }
 function GuildDirectoryHeader(guild) {
@@ -56,7 +56,7 @@ function GuildDirectoryHeader(guild) {
   obj.style = tmp.backgroundImage;
   const items = [callback(closure_6, obj), ];
   const obj1 = { style: tmp.textWrapper };
-  const obj2 = { "Null": true, "Null": true, "Null": true, style: tmp.headerTitle };
+  const obj2 = { delete: true, dispatch: true, raw: true, style: tmp.headerTitle };
   const intl = arg1(dependencyMap[17]).intl;
   obj2.children = intl.string(arg1(dependencyMap[17]).t.IT7qoC);
   const items1 = [callback(arg1(dependencyMap[15]).Text, obj2), , , ];
@@ -65,7 +65,7 @@ function GuildDirectoryHeader(guild) {
   const intl2 = arg1(dependencyMap[17]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[17]).t.5PoYts);
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
-  const obj4 = { variant: "primary-overlay", icon: callback(arg1(dependencyMap[19]).MagnifyingGlassIcon, { flex: 7471105, flexGrow: -2013265920 }) };
+  const obj4 = { variant: "primary-overlay", icon: callback(arg1(dependencyMap[19]).MagnifyingGlassIcon, {}) };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[17]).t.nL2wKD);
   obj4.onPress = guild.onPressSearch;
@@ -105,7 +105,7 @@ function GuildDirectoryFooter(hideFooter) {
       obj = { style: tmp.footer };
       const obj1 = { style: tmp.addIcon, children: callback(arg1(dependencyMap[25]).PlusMediumIcon, {}) };
       const items = [callback(closure_5, obj1), ];
-      const obj2 = {};
+      const obj2 = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
       const intl2 = arg1(dependencyMap[17]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[17]).t.H9jxS1);
       items[1] = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -138,15 +138,15 @@ obj.border = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.list = obj1;
 obj.headerWrapper = { overflow: "hidden", height: GUILD_DIRECTORY_BASE_HEADER_HEIGHT };
-obj.backgroundImage = {};
+obj.backgroundImage = { <string:4069139795>: true, <string:1710685430>: true };
 obj.textWrapper = {};
-obj.headerTitle = { collapsable: "absolute", preventClipping: 0 };
+obj.headerTitle = {};
 obj.headerDescription = {};
 obj.footer = {};
-obj.addIcon = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
-obj.categorySectionText = { 0: "selectedStreamId", 9223372036854775807: "change" };
+const obj2 = { active: "r", activeIndex: "PAYMENT_GATEWAY", hoveringIndex: "r", "Null": "PAYMENT_GATEWAY", "Null": "r", "Null": "CONFERENCE_MODE_GUILDS", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj.addIcon = obj2;
+obj.categorySectionText = {};
 let closure_23 = obj1.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectory.tsx");
 
 export default function GuildDirectory(channel) {

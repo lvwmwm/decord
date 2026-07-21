@@ -1,5 +1,5 @@
 // Module ID: 11466
-// Function ID: 89325
+// Function ID: 89337
 // Name: useRequireConfirmationOnAccept
 // Dependencies: []
 // Exports: default

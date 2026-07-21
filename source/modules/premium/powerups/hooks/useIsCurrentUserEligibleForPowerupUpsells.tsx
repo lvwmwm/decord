@@ -1,10 +1,10 @@
-// Module ID: 14871
-// Function ID: 112007
+// Module ID: 14874
+// Function ID: 112041
 // Name: checkPowerupUpsellEligibility
 // Dependencies: []
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 14871 (checkPowerupUpsellEligibility)
+// Module 14874 (checkPowerupUpsellEligibility)
 function checkPowerupUpsellEligibility(stateFromStores, stateFromStoresArray, arr2) {
   stateFromStoresArray = stateFromStores;
   let tmp = null != stateFromStores;

@@ -1,5 +1,5 @@
 // Module ID: 5544
-// Function ID: 47088
+// Function ID: 47096
 // Name: useHeaderHeight
 // Dependencies: []
 // Exports: default

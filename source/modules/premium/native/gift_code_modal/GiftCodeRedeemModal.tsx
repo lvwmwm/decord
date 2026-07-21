@@ -1,20 +1,20 @@
-// Module ID: 8190
-// Function ID: 64752
+// Module ID: 8191
+// Function ID: 64765
 // Name: GiftCodeRedeemModal
 // Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 8190 (GiftCodeRedeemModal)
-import "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 8191 (GiftCodeRedeemModal)
+import "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import { jsx } from "result";
+import result from "result";
+import result from "result";
 
 const obj = { START: "giftcode-start", SUCCESS: "giftcode-success", ERROR: "giftcode-error" };
-__exportStarResult1 = __exportStarResult1.getHeaderNoTitle();
-const result = __exportStarResult1.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
+result = result.getHeaderNoTitle();
+result = result.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
 
 export default function GiftCodeRedeemModal(code) {
   code = code.code;

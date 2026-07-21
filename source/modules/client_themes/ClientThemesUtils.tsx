@@ -1,18 +1,19 @@
 // Module ID: 3971
-// Function ID: 32891
+// Function ID: 32896
 // Name: getThemeForColor
-// Dependencies: []
+// Dependencies: [2432696335, 33554447, 1929379840, 31, 3983]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
 // Module 3971 (getThemeForColor)
+import calculateFromWidth from "calculateFromWidth";
+
 let PROTO_THEME_MAP_WEB_REFRESH;
 const _module = require(dependencyMap[0]);
 ({ LEGACY_STANDARD_BACKGROUND_THEMES: closure_2, REFRESH_STANDARD_BACKGROUND_THEMES: closure_3 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ PROTO_THEME_MAP_MOBILE: closure_4, PROTO_THEME_MAP_WEB_REFRESH } = _module1);
 const ThemeTypes = require(dependencyMap[2]).ThemeTypes;
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
+const result = calculateFromWidth.fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 
 export const getThemeForColor = function getThemeForColor(l) {
   if (l.l <= 0.3) {

@@ -1,7 +1,7 @@
 // Module ID: 8480
-// Function ID: 67708
+// Function ID: 67719
 // Name: SHARE_APPS_KEY
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8480 (SHARE_APPS_KEY)
 let obj = { TWITTER: "twitter", WHATSAPP: "whatsapp", GMAIL: "googlegmail", LINE: "line", MESSENGER: "fb-messenger", TELEGRAM: "tg" };

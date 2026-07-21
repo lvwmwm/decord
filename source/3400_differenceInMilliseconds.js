@@ -1,18 +1,17 @@
 // Module ID: 3400
-// Function ID: 26586
+// Function ID: 26591
 // Name: differenceInMilliseconds
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3400 (differenceInMilliseconds)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function differenceInMilliseconds(defaultResult1, defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  const time = startOfWeek.default(defaultResult1).getTime();
-  defaultResult1 = startOfWeek.default(defaultResult1);
-  return time - startOfWeek.default(defaultResult1).getTime();
+  closure_1.default(2, arguments);
+  const time = closure_0.default(defaultResult1).getTime();
+  defaultResult1 = closure_0.default(defaultResult1);
+  return time - closure_0.default(defaultResult1).getTime();
 };
 export default exports.default;

@@ -1,10 +1,10 @@
-// Module ID: 16125
-// Function ID: 124320
+// Module ID: 16133
+// Function ID: 124381
 // Name: HeaderRow
 // Dependencies: []
 // Exports: ConnectedHeaderRow
 
-// Module 16125 (HeaderRow)
+// Module 16133 (HeaderRow)
 function HeaderRow(guild) {
   let description;
   let isUploading;
@@ -70,21 +70,22 @@ function HeaderRow(guild) {
   const items1 = [canCreateExpressions, , ];
   let tmp16 = null != tmp5;
   if (tmp16) {
-    const obj3 = { "Null": "ars", "Null": "<string:1166889216>", "Null": "Status", style: tmp.errorText, children: tmp5 };
+    const obj3 = { delete: "%MapPrototype%", dispatch: "<string:1153585408>", raw: "sent", style: tmp.errorText, children: tmp5 };
     tmp16 = callback3(arg1(dependencyMap[17]).Text, obj3);
   }
   items1[1] = tmp16;
   const obj4 = { style: tmp.uploadInstructionsContainer };
-  const items2 = [callback3(arg1(dependencyMap[17]).Text, { children: description }), , ];
-  const obj5 = { style: tmp.uploadInstructionsHeading };
+  const obj5 = { hasMaxConnections: "<string:3086024708>", isBoostOnlySubscription: "<string:625475588>", children: description };
+  const items2 = [callback3(arg1(dependencyMap[17]).Text, obj5), , ];
+  const obj6 = { style: tmp.uploadInstructionsHeading };
   const intl6 = arg1(dependencyMap[13]).intl;
   const tmp10 = closure_6;
   const tmp6 = callback(React.useState(""), 2);
   const tmp7 = callback3;
   const tmp8 = closure_15;
   const tmp9 = callback2;
-  obj5.children = intl6.string(arg1(dependencyMap[13]).t.jrXfyw).toUpperCase();
-  items2[1] = callback3(arg1(dependencyMap[17]).Text, obj5);
+  obj6.children = intl6.string(arg1(dependencyMap[13]).t.jrXfyw).toUpperCase();
+  items2[1] = callback3(arg1(dependencyMap[17]).Text, obj6);
   items2[2] = callback3(closure_7, {
     style: tmp.uploadInstructionsList,
     data: items,

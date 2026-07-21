@@ -1,5 +1,5 @@
 // Module ID: 1128
-// Function ID: 12851
+// Function ID: 12855
 // Name: _captureAppStart
 // Dependencies: []
 // Exports: _clearRootComponentCreationTimestampMs, _setRootComponentCreationTimestampMs, appStartIntegration, captureAppStart
@@ -527,7 +527,7 @@ export const appStartIntegration = function appStartIntegration() {
                   let tmp30 = callback;
                   let tmp31 = closure_1;
                   let obj3 = callback(closure_1[1]);
-                  obj = { "Bool(false)": "r", "Bool(false)": "popAll" };
+                  obj = {};
                   let num4 = 5;
                   obj.op = callback(closure_1[5]).UI_LOAD;
                   let startInactiveSpanResult = obj3.startInactiveSpan(obj);

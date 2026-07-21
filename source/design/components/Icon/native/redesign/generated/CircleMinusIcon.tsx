@@ -1,10 +1,10 @@
-// Module ID: 14077
-// Function ID: 106875
+// Module ID: 14080
+// Function ID: 106907
 // Name: CircleMinusIcon
-// Dependencies: [7655, 1212, 10086, 3801, 2, 1188, 1194, 7655]
+// Dependencies: [7656, 1212, 10086, 3801, 2, 1188, 1194, 7656]
 // Exports: CircleMinusIcon
 
-// Module 14077 (CircleMinusIcon)
+// Module 14080 (CircleMinusIcon)
 import "MobileSetting";
 import { View } from "getSystemLocale";
 import createToggle from "createToggle";
@@ -24,7 +24,7 @@ export const CircleMinusIcon = function CircleMinusIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { disableCalls: "spring", _coerce: "linear", HOSTED_FIELDS_FIELD_NOT_PRESENT: "easeInEaseOut" };
+  let obj = { body: false, borderRadius: false, accessibilityRole: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
@@ -33,7 +33,7 @@ export const CircleMinusIcon = function CircleMinusIcon(color) {
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
   const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), {}];
+  const items2 = [...items1.flat(), { force: null, trackAnalytics: null }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);

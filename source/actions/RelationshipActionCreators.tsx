@@ -1,5 +1,5 @@
 // Module ID: 8915
-// Function ID: 70319
+// Function ID: 70330
 // Name: showAlert
 // Dependencies: []
 
@@ -207,7 +207,7 @@ obj = {
   },
   fetchRelationships() {
     const HTTP = arg1(dependencyMap[11]).HTTP;
-    const obj = { lc: null, type: null, end: null, url: closure_6.USER_RELATIONSHIPS() };
+    const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_6.USER_RELATIONSHIPS() };
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = callback(closure_3[14]);

@@ -1,5 +1,5 @@
 // Module ID: 12190
-// Function ID: 93697
+// Function ID: 93709
 // Name: getCanSendInvite
 // Dependencies: []
 // Exports: getCanSendInvite

@@ -1,5 +1,5 @@
 // Module ID: 11576
-// Function ID: 89991
+// Function ID: 90003
 // Name: getGuildPowerupsBoostInfoText
 // Dependencies: []
 // Exports: getGuildPowerupsBoostInfoText

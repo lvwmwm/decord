@@ -1,5 +1,5 @@
 // Module ID: 4558
-// Function ID: 39930
+// Function ID: 39938
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
@@ -137,15 +137,15 @@ function createNotifCenterV2MessagePreviewRules(closure_28, closure_28, roleStyl
   const items = [importDefault(dependencyMap[3]).notifCenterV2MessagePreviewRules, ];
   let obj = {};
   obj = {};
-  const merged = Object.assign(require(dependencyMap[5]).DEFAULT_RULES[closure_0(undefined, closure_2[0]).AST_KEY.MENTION]);
+  const merged = Object.assign(importDefault(dependencyMap[5]).RULES[closure_0(undefined, closure_2[0]).AST_KEY.MENTION]);
   obj["react"] = tmp[closure_0(undefined, closure_2[0]).AST_KEY.MENTION].react;
   obj[require(dependencyMap[0]).AST_KEY.MENTION] = obj;
   obj = {};
-  const merged1 = Object.assign(require(dependencyMap[5]).DEFAULT_RULES[closure_0(undefined, closure_2[0]).AST_KEY.CHANNEL_MENTION]);
+  const merged1 = Object.assign(importDefault(dependencyMap[5]).RULES[closure_0(undefined, closure_2[0]).AST_KEY.CHANNEL_MENTION]);
   obj["react"] = tmp[closure_0(undefined, closure_2[0]).AST_KEY.CHANNEL_MENTION].react;
   obj[require(dependencyMap[0]).AST_KEY.CHANNEL_MENTION] = obj;
   const obj1 = {};
-  const merged2 = Object.assign(require(dependencyMap[5]).DEFAULT_RULES[closure_0(undefined, closure_2[0]).AST_KEY.ITALICS]);
+  const merged2 = Object.assign(importDefault(dependencyMap[5]).RULES[closure_0(undefined, closure_2[0]).AST_KEY.ITALICS]);
   obj1["react"] = tmp[closure_0(undefined, closure_2[0]).AST_KEY.ITALICS].react;
   obj[require(dependencyMap[0]).AST_KEY.ITALICS] = obj1;
   items[1] = obj;
@@ -155,18 +155,18 @@ function createWidgetMessageRules() {
   const items = [importDefault(dependencyMap[3]).lockscreenWidgetMessageRules, ];
   let obj = {};
   obj = {};
-  const merged = Object.assign(require(dependencyMap[5]).DEFAULT_RULES[closure_0(undefined, closure_2[0]).AST_KEY.MENTION]);
+  const merged = Object.assign(importDefault(dependencyMap[5]).RULES[closure_0(undefined, closure_2[0]).AST_KEY.MENTION]);
   obj["react"] = require(dependencyMap[1]).plainMentionRenderer;
   obj[require(dependencyMap[0]).AST_KEY.MENTION] = obj;
   obj = {};
-  const merged1 = Object.assign(importDefault(dependencyMap[6]).RULES.spoiler);
+  const merged1 = Object.assign(importDefault(dependencyMap[5]).RULES.spoiler);
   obj["react"] = require(dependencyMap[1]).plainSpoilerRenderer;
   obj[require(dependencyMap[0]).AST_KEY.SPOILER] = obj;
   items[1] = obj;
   return importDefault(dependencyMap[2])(items);
 }
 const items = [require(dependencyMap[0]).AST_KEY.URL, require(dependencyMap[0]).AST_KEY.AUTOLINK, require(dependencyMap[0]).AST_KEY.LINK, "mailto", "tel"];
-const _module = require(dependencyMap[7]);
+const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/markup/CustomMarkup.native.tsx");
 
 export { createRules };

@@ -1,5 +1,5 @@
 // Module ID: 1035
-// Function ID: 11150
+// Function ID: 11154
 // Name: extractNetworkProtocol
 // Dependencies: []
 // Exports: extractNetworkProtocol, getBrowserPerformanceAPI, isMeasurementValue, listenForWebVitalReportEvents, msToSec, startAndEndSpan, startStandaloneWebVitalSpan, supportsWebVital

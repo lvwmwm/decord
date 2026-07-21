@@ -1,22 +1,9 @@
 // Module ID: 8871
-// Function ID: 69916
+// Function ID: 69927
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8880, 8886, 65, 6, 7, 15, 17, 18, 8880, 8881, 8888, 2]
+// Dependencies: []
 
 // Module 8871 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import asciiToBase16 from "asciiToBase16";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _toConsumableArray from "_toConsumableArray";
-import closure_10 from "_classCallCheck";
-import closure_11 from "_defineProperties";
-import { RTCConnectionStates } from "_possibleConstructorReturn";
-import result2 from "result2";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -166,7 +153,7 @@ function handleUserUpdate(userId) {
       if (!isKeyVerifiedResult) {
         isKeyVerifiedResult = keyVerified.isKeyVerified(userId, uint8Array);
       }
-      const items = [authStore, _toConsumableArray];
+      const items = [authStore, closure_9];
       if (isKeyVerifiedResult) {
         isKeyVerifiedResult = !obj.getIsSecureFramesKeyInconsistent(userId, items);
       }
@@ -189,6 +176,17 @@ function handleReset() {
   map1.clear();
   let closure_15 = false;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
+let closure_8 = importDefault(dependencyMap[6]);
+let closure_9 = importDefault(dependencyMap[7]);
+let closure_10 = importDefault(dependencyMap[8]);
+let closure_11 = importDefault(dependencyMap[9]);
+const RTCConnectionStates = arg1(dependencyMap[10]).RTCConnectionStates;
 const map = new Map();
 const map1 = new Map();
 let closure_15 = false;
@@ -197,15 +195,15 @@ let tmp4 = (Store) => {
   class SecureFramesVerifiedStore {
     constructor() {
       self = this;
-      tmp = _classCallCheck(this, SecureFramesVerifiedStore);
-      obj = _getPrototypeOf(SecureFramesVerifiedStore);
-      tmp2 = _possibleConstructorReturn;
+      tmp = closure_2(this, SecureFramesVerifiedStore);
+      obj = closure_5(SecureFramesVerifiedStore);
+      tmp2 = closure_4;
       if (closure_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = _getPrototypeOf;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -219,7 +217,7 @@ let tmp4 = (Store) => {
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(asciiToBase16, _isNativeReflectConstruct, _toConsumableArray, closure_10, closure_11);
+      this.waitFor(closure_7, closure_8, closure_9, closure_10, closure_11);
     }
   };
   const items = [obj, , , ];
@@ -244,9 +242,9 @@ let tmp4 = (Store) => {
     }
   };
   return callback(SecureFramesVerifiedStore, items);
-}(require("number").Store);
+}(importDefault(dependencyMap[14]).Store);
 tmp4.displayName = "SecureFramesVerifiedStore";
-tmp4 = new tmp4(require("getLens"), {
+tmp4 = new tmp4(importDefault(dependencyMap[15]), {
   CONNECTION_OPEN: handleReset,
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     channelId = channelId.channelId;
@@ -305,6 +303,6 @@ tmp4 = new tmp4(require("getLens"), {
   SECURE_FRAMES_VERIFIED_KEY_DELETE: handleUserUpdate,
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: handleUserUpdate
 });
-const result = result2.fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
+const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
 
 export default tmp4;

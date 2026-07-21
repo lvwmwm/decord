@@ -1,18 +1,17 @@
 // Module ID: 3562
-// Function ID: 27687
+// Function ID: 27692
 // Name: isSameYear
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3562 (isSameYear)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function isSameYear(defaultResult1, defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(2, arguments);
-  defaultResult1 = startOfWeek.default(defaultResult1);
+  closure_1.default(2, arguments);
+  defaultResult1 = closure_0.default(defaultResult1);
   const fullYear = defaultResult1.getFullYear();
-  return fullYear === startOfWeek.default(defaultResult1).getFullYear();
+  return fullYear === closure_0.default(defaultResult1).getFullYear();
 };
 export default exports.default;

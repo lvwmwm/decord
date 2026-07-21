@@ -1,10 +1,10 @@
-// Module ID: 14385
-// Function ID: 108544
+// Module ID: 14388
+// Function ID: 108576
 // Name: CollectiblesShopViewAllCategoryItemsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14385 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 14388 (CollectiblesShopViewAllCategoryItemsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopViewAllCategoryItemsScreen.tsx");

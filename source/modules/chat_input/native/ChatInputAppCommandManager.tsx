@@ -1,5 +1,5 @@
 // Module ID: 11449
-// Function ID: 89137
+// Function ID: 89149
 // Name: ChatInputAppCommandManager
 // Dependencies: []
 

@@ -1,12 +1,10 @@
 // Module ID: 9932
-// Function ID: 76837
+// Function ID: 76848
 // Name: _submitPollVote
-// Dependencies: [2]
+// Dependencies: []
 // Exports: endPollEarly, submitPollVote
 
 // Module 9932 (_submitPollVote)
-import result2 from "result2";
-
 function _submitPollVote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -19,6 +17,7 @@ function _endPollEarly() {
   const _endPollEarly = obj;
   return obj(...arguments);
 }
+let closure_2 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 

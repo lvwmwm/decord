@@ -1,5 +1,5 @@
 // Module ID: 5514
-// Function ID: 46931
+// Function ID: 46939
 // Name: _callSuper
 // Dependencies: []
 
@@ -29,7 +29,7 @@ function getEmojiSourceData() {
 }
 async function _getEmojiSourceData(arg0, arg1) {
   const HTTP = callback(closure_2[8]).HTTP;
-  let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, url: closure_9.EMOJI_SOURCE_DATA(arg0) };
+  let obj = { children: "%WeakMap%", cutouts: "SAFETY_SEND_FRIEND_REQUESTS_MUTUAL_FRIENDS", borderRadius: "WeakMap", style: "Window", url: closure_9.EMOJI_SOURCE_DATA(arg0) };
   const body = yield HTTP.get(obj).body;
   let type;
   if (null != body) {

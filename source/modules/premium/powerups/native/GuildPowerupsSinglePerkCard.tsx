@@ -1,5 +1,5 @@
 // Module ID: 11592
-// Function ID: 90103
+// Function ID: 90115
 // Name: GuildPowerupsSinglePerkCard
 // Dependencies: []
 // Exports: default

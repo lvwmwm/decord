@@ -1,10 +1,10 @@
-// Module ID: 13790
-// Function ID: 104273
+// Module ID: 13792
+// Function ID: 104295
 // Name: set
 // Dependencies: []
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 13790 (set)
+// Module 13792 (set)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const AppState = arg1(dependencyMap[2]).AppState;

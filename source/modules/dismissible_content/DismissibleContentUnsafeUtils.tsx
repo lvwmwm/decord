@@ -1,5 +1,5 @@
 // Module ID: 3944
-// Function ID: 32537
+// Function ID: 32542
 // Name: UNSAFE_isDismissibleContentDismissed
 // Dependencies: []
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
@@ -135,7 +135,7 @@ class UNSAFE_isSnowflakeBoundDismissibleContentDismissed {
   constructor(arg0, arg1) {
     obj = arg1(dependencyMap[4]);
     if (obj.disableNewUserDismissibleContent(global)) {
-      return { "Bool(false)": true, "Bool(false)": true };
+      return {};
     } else {
       tmp = closure_4;
       userContent = closure_4.settings.userContent;

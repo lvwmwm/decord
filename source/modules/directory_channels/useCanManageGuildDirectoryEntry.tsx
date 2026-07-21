@@ -1,5 +1,5 @@
 // Module ID: 10028
-// Function ID: 77465
+// Function ID: 77476
 // Name: useCanManageGuildDirectoryEntry
 // Dependencies: []
 // Exports: default, useCanCreateOrAddGuildInDirectory

@@ -1,5 +1,5 @@
 // Module ID: 10953
-// Function ID: 85161
+// Function ID: 85172
 // Name: PopoutCheck
 // Dependencies: []
 // Exports: default
@@ -121,7 +121,7 @@ class PopoutChecks {
                 tmp35 = callback(guildId(closure_2[24]).Avatar, obj3);
               }
               items1[1] = tmp35;
-              const obj4 = {};
+              const obj4 = { hasMaxConnections: null, isBoostOnlySubscription: "43b86c9ce273868bacca6aeb06ae392b" };
               let name;
               if (null != value) {
                 name = value.name;
@@ -186,20 +186,20 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[10]);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
-obj = { container: {} };
-obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
+obj = { container: { 822894183: 105819235161232360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 400842798: 15186805446270135000000000000000000000000000000000000000000000000000000000000000000, 1120077519: 15177104137936768000000000000000000000000000000000000000000000000000000000000000000 } };
+obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
 obj.header = obj;
-obj.verifiedContainer = {};
+obj.verifiedContainer = { <string:2320653409>: false, <string:1642905260>: false, <string:2709934496>: false };
 obj.headerTextContainer = {};
-obj.verifiedCheck = {};
+obj.verifiedCheck = { "Null": 3375103, "Null": -8192, "Null": 4320799 };
 obj.loadingSpinner = { marginVertical: 40 };
-obj.popoutCheck = {};
+obj.popoutCheck = { headerIcons: "png", RowButtonIconProps: "startFetchingBlockedDomains", headerLabel: "isArray", showHeaderCloseButton: "NR", hideDontShowAgainCheckbox: "isArray" };
 const tmp4 = arg1(dependencyMap[11]);
 obj.popoutCheckIcon = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
 obj.popoutChecksGroup = {};
 const obj1 = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
 obj.popoutChecksGroupBottomMargin = { borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.popoutCheckGroupName = {};
+obj.popoutCheckGroupName = { "Null": 7, "Null": 370 };
 obj.popoutCheckGroupPlatformIcon = { marginRight: 8 };
 obj.button = { marginBottom: 8 };
 obj.botTag = { marginLeft: 4 };
@@ -299,14 +299,14 @@ export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
       obj3.children = callback2(importDefault(dependencyMap[35]), obj4);
       const items7 = [callback2(closure_6, obj3), ];
       obj5 = { style: tmp.headerTextContainer };
-      const obj6 = {};
+      const obj6 = { hasMaxConnections: "<string:1091687288>", isBoostOnlySubscription: "/assets/design/components/Icon/native/redesign/generated/images" };
       let name;
       if (null != stateFromStores3) {
         name = stateFromStores3.name;
       }
       obj6.children = name;
       const items8 = [callback2(arg1(dependencyMap[17]).Text, obj6), ];
-      const obj7 = { children: formatResult };
+      const obj7 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: formatResult };
       items8[1] = callback2(arg1(dependencyMap[17]).Text, obj7);
       obj5.children = items8;
       items7[1] = closure_17(closure_6, obj5);

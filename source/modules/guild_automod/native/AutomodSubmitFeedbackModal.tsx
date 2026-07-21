@@ -1,5 +1,5 @@
 // Module ID: 11000
-// Function ID: 85561
+// Function ID: 85572
 // Name: Navbar
 // Dependencies: []
 // Exports: default
@@ -22,7 +22,7 @@ function SubmitFeedbackScreen(onSubmit) {
   ({ feedback: closure_0, onChange: closure_1 } = onSubmit);
   let dependencyMap;
   function label(children) {
-    const obj = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", style: tmp.formRow, children };
+    const obj = { delete: "<string:1340029796>", dispatch: "<string:1072076685>", raw: "<string:16821057>", style: tmp.formRow, children };
     return callback2(callback(tmp[13]).Text, obj);
   }
   const tmp = callback4();
@@ -104,12 +104,12 @@ const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { surrogates: "absolute", paths: 2, data: 10, flags: -12, start: 3, names: 31, surrogates: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.header = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.headerTitle = { textAlign: "center" };
-obj.headerSubtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
+obj.headerSubtitle = {};
 obj.closeButtonContainer = { marginVertical: 14 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.formBody = { marginTop: 24, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
@@ -133,19 +133,20 @@ export default function AutomodSubmitFeedbackModal(onCloseModal) {
   const items = [first, onCloseModal, automodDecision];
   const screens = React.useMemo(() => function getScreens(arg0) {
     ({ onCloseModal: closure_0, feedback: closure_1, onChange: closure_2, onSubmit: closure_3 } = arg0);
-    return {
-      ["SUBMIT_FEEDBACK"]: {
-        customNavbar() {
-          return callback(closure_10, { onClose: closure_0 });
-        },
-        headerLeft() {
-          return null;
-        },
-        render() {
-          return callback(closure_11, { feedback: closure_1, onChange: closure_2, onSubmit: closure_3 });
-        }
+    const obj = {
+      resizeMode: "<string:503578626>",
+      Button: "<string:2018574338>",
+      customNavbar() {
+        return callback(closure_10, { onClose: closure_0 });
+      },
+      headerLeft() {
+        return null;
+      },
+      render() {
+        return callback(closure_11, { feedback: closure_1, onChange: closure_2, onSubmit: closure_3 });
       }
     };
+    return { ["SUBMIT_FEEDBACK"]: obj };
   }({
     onCloseModal,
     feedback: first,

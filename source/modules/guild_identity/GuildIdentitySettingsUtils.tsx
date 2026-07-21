@@ -1,10 +1,10 @@
-// Module ID: 13496
-// Function ID: 102420
+// Module ID: 13498
+// Function ID: 102442
 // Name: canResetThemeColors
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: canResetThemeColors
 
-// Module 13496 (canResetThemeColors)
+// Module 13498 (canResetThemeColors)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_identity/GuildIdentitySettingsUtils.tsx");
 

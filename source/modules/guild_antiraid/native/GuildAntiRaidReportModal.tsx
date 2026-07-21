@@ -1,17 +1,17 @@
-// Module ID: 12848
-// Function ID: 98191
+// Module ID: 12850
+// Function ID: 98213
 // Name: ReportModal
 // Dependencies: []
 // Exports: default
 
-// Module 12848 (ReportModal)
+// Module 12850 (ReportModal)
 function ReportModal(onSubmit) {
   ({ raidTypes: closure_0, onChange: closure_1 } = onSubmit);
   const tmp = callback4();
   const dependencyMap = tmp;
   const items = [tmp];
   let closure_3 = React.useCallback((arg0) => {
-    const obj = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", style: tmp.formRow, children: callback4(arg0) };
+    const obj = { delete: "<string:1340029796>", dispatch: "<string:1072076685>", raw: "<string:16821057>", style: tmp.formRow, children: callback4(arg0) };
     return callback5(callback(tmp[8]).Text, obj);
   }, items);
   let obj = { style: tmp.container };
@@ -59,9 +59,9 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { surrogates: "absolute", paths: 2, data: 10, flags: -12, start: 3, names: 31, surrogates: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.headerSubtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
+obj.headerSubtitle = {};
 obj.formBody = { marginTop: 24 };
 obj.formRow = { paddingVertical: 2 };
 const tmp3 = arg1(dependencyMap[4]);

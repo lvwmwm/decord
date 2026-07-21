@@ -1,11 +1,11 @@
 // Module ID: 892
-// Function ID: 9833
+// Function ID: 9837
 // Name: items
 // Dependencies: []
 
 // Module 892 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+const items = [false, false, false, false, false, false, false, false, false, false, false, false];
 arg5.getClientIPAddress = function getClientIPAddress(arg0) {
   const obj = {};
   const items = obj;

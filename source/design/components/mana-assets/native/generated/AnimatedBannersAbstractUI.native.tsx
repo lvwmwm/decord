@@ -1,7 +1,7 @@
 // Module ID: 5851
-// Function ID: 49690
+// Function ID: 49698
 // Name: AnimatedBannersAbstractUI
-// Dependencies: [131072, 561250304, 1895825408, 4227858452]
+// Dependencies: [131072, 561250304, 1879048192, 4227858452]
 // Exports: AnimatedBannersAbstractUI
 
 // Module 5851 (AnimatedBannersAbstractUI)

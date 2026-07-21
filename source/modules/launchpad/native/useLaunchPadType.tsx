@@ -1,5 +1,5 @@
 // Module ID: 10441
-// Function ID: 80565
+// Function ID: 80576
 // Name: useLaunchPadType
 // Dependencies: []
 // Exports: default

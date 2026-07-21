@@ -1,5 +1,5 @@
 // Module ID: 948
-// Function ID: 10260
+// Function ID: 10264
 // Name: AsyncFromSyncIterator
 // Dependencies: []
 // Exports: instrumentAsyncIterableStream, instrumentMessageStream
@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    lineClamp: "o",
-    accessibilityRole: "o",
+    "Bool(false)": "o",
+    "Bool(false)": "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -80,7 +80,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         obj.message = str4;
         setStatus.setStatus(obj);
         let obj1 = require(dependencyMap[4]);
-        obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
+        obj = { mechanism: { id: -37057201859176220000000000000000000000000000000000000000000000000000000000000000000000000000, gameId: 219408260989583100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
         obj1.captureException(type.error, obj);
         flag = true;
       }
@@ -417,7 +417,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
   });
   applyResult.on("error", (arg0, self) => {
     let obj = self(arg2[4]);
-    obj.captureException(arg0, { mechanism: { onDrawerSlide: null, onDrawerStateChanged: null } });
+    obj.captureException(arg0, { mechanism: {} });
     if (self.isRecording()) {
       obj = { code: self(arg2[3]).SPAN_STATUS_ERROR, message: "stream_error" };
       self.setStatus(obj);

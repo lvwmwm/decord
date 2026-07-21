@@ -1,7 +1,7 @@
 // Module ID: 8582
-// Function ID: 68143
+// Function ID: 68154
 // Name: GameFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8582 (GameFlags)
 const _module = require(dependencyMap[0]);

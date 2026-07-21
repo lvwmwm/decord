@@ -1,13 +1,13 @@
-// Module ID: 12628
-// Function ID: 97117
+// Module ID: 12630
+// Function ID: 97139
 // Name: VoiceDuration
 // Dependencies: []
 
-// Module 12628 (VoiceDuration)
+// Module 12630 (VoiceDuration)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = [];
-let closure_5 = ["<string:1962935264>", "next", "sk", "slice"];
+let closure_5 = [false, false, false, false];
 const tmp2 = () => {
   class VoiceDuration {
     constructor(arg0, arg1) {

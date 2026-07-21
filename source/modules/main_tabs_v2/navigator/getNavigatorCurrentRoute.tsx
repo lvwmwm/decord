@@ -1,5 +1,5 @@
 // Module ID: 10876
-// Function ID: 84564
+// Function ID: 84575
 // Name: getNavigatorCurrentRoute
 // Dependencies: []
 // Exports: default

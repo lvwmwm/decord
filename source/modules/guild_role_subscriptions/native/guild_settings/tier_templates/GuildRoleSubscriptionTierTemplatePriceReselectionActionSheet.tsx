@@ -1,10 +1,10 @@
-// Module ID: 16350
-// Function ID: 126138
+// Module ID: 16358
+// Function ID: 126199
 // Name: PriceOptionRow
 // Dependencies: []
 // Exports: default
 
-// Module 16350 (PriceOptionRow)
+// Module 16358 (PriceOptionRow)
 function PriceOptionRow(selected) {
   let accessibilityRole;
   let accessibilityState;
@@ -39,7 +39,7 @@ function PriceOptionRow(selected) {
   }
   obj.source = tmp7(tmp10);
   const items1 = [tmp6(importDefault(dependencyMap[10]), obj), ];
-  const obj1 = {};
+  const obj1 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
   const intl = arg1(dependencyMap[14]).intl;
   const obj2 = {};
   const tmp8 = importDefault(dependencyMap[10]);
@@ -62,11 +62,11 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.md, borderTopRightRadius: importDefault(dependencyMap[7]).radii.md };
 obj.container = obj;
-const obj1 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.sm, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED };
-obj.rowContainer = obj1;
 const tmp3 = arg1(dependencyMap[5]);
+obj.rowContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.sm, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED };
+const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.sm, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED };
 obj.containerSelected = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
-obj.rowStatusIcon = { "Null": false, "Null": false, lv: false };
+obj.rowStatusIcon = { 0: false, 0: false, 0: false };
 const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.confirmButton = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.backToTemplates = { alignSelf: "center" };
@@ -84,14 +84,14 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   const tmp2 = callback(React.useState(0), 2);
   const callback = tmp2[0];
   const React = tmp2[1];
-  let obj = {};
+  let obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011331524067088385, "Null": 0.3 };
   obj = { style: tmp.container };
   obj = { contentContainerStyle: { paddingBottom: importDefault(dependencyMap[17])().bottom } };
   const obj1 = {};
   const intl = arg1(dependencyMap[14]).intl;
   obj1.children = intl.format(arg1(dependencyMap[14]).t.5WZ9Ct, { tierName: selectedTemplate.listings[0].name });
   const items = [callback2(arg1(dependencyMap[13]).Text, obj1), callback2(arg1(dependencyMap[20]).Spacer, { size: 12 }), , , , , , , ];
-  const obj3 = {};
+  const obj3 = { hasMaxConnections: "editingMessageId", isBoostOnlySubscription: "turquoise" };
   const intl2 = arg1(dependencyMap[14]).intl;
   const obj4 = {};
   let obj7 = arg1(dependencyMap[15]);
@@ -133,7 +133,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
     style: tmp.backToTemplates,
     activeOpacity: 0.5
   };
-  obj7 = {};
+  obj7 = { hasMaxConnections: 1626341378, isBoostOnlySubscription: -1035927550 };
   const intl3 = arg1(dependencyMap[14]).intl;
   obj7.children = intl3.string(arg1(dependencyMap[14]).t.h26VOI);
   obj6.children = callback2(arg1(dependencyMap[13]).Text, obj7);

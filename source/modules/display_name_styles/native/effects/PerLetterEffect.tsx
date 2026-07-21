@@ -1,5 +1,5 @@
 // Module ID: 8513
-// Function ID: 67891
+// Function ID: 67902
 // Name: PerLetterEffect
 // Dependencies: []
 // Exports: default
@@ -57,7 +57,8 @@ export default function PerLetterEffect(name) {
     name = accessibilityLabel;
   }
   obj["accessibilityLabel"] = name;
-  obj["style"] = name.textStyle;
+  const items1 = [name.textStyle, { lineHeight: undefined }];
+  obj["style"] = items1;
   obj["children"] = memo;
   obj.children = jsx(arg1(dependencyMap[6]).Text, obj);
   return <closure_4 {...obj} />;

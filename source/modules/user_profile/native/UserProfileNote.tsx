@@ -1,5 +1,5 @@
 // Module ID: 11961
-// Function ID: 92448
+// Function ID: 92460
 // Name: UserProfileNote
 // Dependencies: []
 // Exports: default
@@ -69,9 +69,9 @@ export default function UserProfileNote(style) {
   }
   items[1] = tmp10;
   obj.titleStyle = items;
-  obj.titleIcon = <PaperPlusIcon />;
+  obj.titleIcon = <PaperPlusIcon accessibilityRole={4} ={1} />;
   if (tmp2) {
-    const obj2 = { children: note };
+    const obj2 = { hasMaxConnections: 1, isBoostOnlySubscription: 1, children: note };
     tmp2 = jsx(arg1(dependencyMap[12]).Text, obj2);
   }
   obj.children = tmp2;

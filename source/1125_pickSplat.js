@@ -1,5 +1,5 @@
 // Module ID: 1125
-// Function ID: 12813
+// Function ID: 12817
 // Name: pickSplat
 // Dependencies: []
 // Exports: clearNavigationContext, getActiveRootSpan, getNavigationContext, initializeRouterUtils, resolveRouteNameAndSource, setNavigationContext, transactionNameHasWildcard

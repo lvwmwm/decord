@@ -1,10 +1,10 @@
-// Module ID: 13475
-// Function ID: 102277
+// Module ID: 13477
+// Function ID: 102299
 // Name: EditProfileFrameInner
 // Dependencies: []
 // Exports: default
 
-// Module 13475 (EditProfileFrameInner)
+// Module 13477 (EditProfileFrameInner)
 function EditProfileFrameInner(user) {
   let selectedProfileFrame;
   let setSelectedProfileFrame;
@@ -47,7 +47,7 @@ function EditProfileFrameInner(user) {
       isNonUserBotResult = user.isNonUserBot();
     }
     if (!isNonUserBotResult) {
-      setSelectedProfileFrame(guildId[23])(user.id, user.getAvatarURL(null, 80), { position: null, display: null });
+      setSelectedProfileFrame(guildId[23])(user.id, user.getAvatarURL(null, 80), { "Bool(false)": null, "Bool(false)": null });
       const tmp5 = setSelectedProfileFrame(guildId[23]);
     }
   }, items1);
@@ -149,10 +149,10 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
+obj.bounceOffset = { "Null": "row", "Null": "center", "Null": "flex-start", flexDirection: 40, gap: null };
 const tmp3 = arg1(dependencyMap[6]);
 obj.title = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.previewContainer = { alignItems: 48, marginBottom: 40, marginHorizontal: 8 };
+obj.previewContainer = { header: null, raw: null, borderRadius: null };
 const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["bottom"] = -1;

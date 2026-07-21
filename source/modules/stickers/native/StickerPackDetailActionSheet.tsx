@@ -1,5 +1,5 @@
 // Module ID: 9600
-// Function ID: 74800
+// Function ID: 74811
 // Dependencies: []
 
 // Module 9600
@@ -11,8 +11,8 @@ const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[4]).ACTION_SHEET_MAX_WIDTH;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-const obj = { "Bool(false)": "r", "Bool(false)": "lG6a5x", "Bool(false)": "isArray", height: undefined };
-let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: { assets: false, page: false, hasReachedEnd: false, lastAssetIndex: false, first: false, groupTypes: false, assetType: false, display: false }, header: obj, stickers: {}, popoutContainer: {} });
+const obj = { "Null": "r", "Null": "y1", "Null": "isArray", height: undefined };
+let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: {}, header: obj, stickers: {}, popoutContainer: {} });
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(stickerPack) {
   stickerPack = stickerPack.stickerPack;
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(st
     obj.track(rounded.OPEN_POPOUT, obj);
   }, items1);
   obj = {};
-  obj = {};
+  obj = { quality: "Small", videoQuality: "sm", saveToPhotos: "Placeholder" };
   const obj1 = {};
   const obj2 = { stickerPack, style: tmp.header };
   const chunkResult = obj.chunk(stickerPack.stickers, rounded);

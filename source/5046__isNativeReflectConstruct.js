@@ -1,5 +1,5 @@
 // Module ID: 5046
-// Function ID: 43037
+// Function ID: 43057
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,15 +18,32 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+let closure_6 = { code: "function changeEventCalculator_Pnpm_panGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={changeX:current.translationX,changeY:current.translationY};}else{changePayload={changeX:current.translationX-previous.translationX,changeY:current.translationY-previous.translationY};}return{...current,...changePayload};}" };
+let closure_7 = () => {
+  function changeEventCalculator(translationX, translationX2) {
+    if (undefined === translationX2) {
+      let obj = {};
+      ({ translationX: obj2.changeX, translationY: obj2.changeY } = translationX);
+    } else {
+      obj = { changeX: translationX.translationX - translationX2.translationX, changeY: translationX.translationY - translationX2.translationY };
+    }
+    return Object.assign({}, translationX, obj);
+  }
+  changeEventCalculator.__closure = {};
+  changeEventCalculator.__workletHash = 1947784830943;
+  changeEventCalculator.__initData = closure_6;
+  return changeEventCalculator;
+}();
 
-export const TapGesture = (BaseGesture) => {
-  class TapGesture {
+export const PanGesture = (ContinousBaseGesture) => {
+  class PanGesture {
     constructor() {
       self = this;
-      tmp = TapGesture(this, TapGesture);
-      obj = closure_3(TapGesture);
+      tmp = PanGesture(this, PanGesture);
+      obj = closure_3(PanGesture);
       tmp2 = closure_2;
-      if (closure_5()) {
+      if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -36,64 +53,159 @@ export const TapGesture = (BaseGesture) => {
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.config = {};
-      tmp2Result.handlerName = "TapGestureHandler";
-      result = tmp2Result.shouldCancelWhenOutside(true);
+      tmp2Result.handlerName = "PanGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = TapGesture;
-  callback2(TapGesture, BaseGesture);
+  let closure_0 = PanGesture;
+  callback2(PanGesture, ContinousBaseGesture);
   let obj = {
+    key: "activeOffsetY",
+    value: function activeOffsetY(items, items2) {
+      const self = this;
+      if (Array.isArray(items)) {
+        self.config.activeOffsetYStart = items[0];
+        self.config.activeOffsetYEnd = items[1];
+      } else if (items < 0) {
+        self.config.activeOffsetYStart = items;
+      } else {
+        self.config.activeOffsetYEnd = items;
+      }
+      return self;
+    }
+  };
+  const items = [obj, , , , , , , , , , , , , ];
+  obj = {
+    key: "activeOffsetX",
+    value: function activeOffsetX(items) {
+      const self = this;
+      if (Array.isArray(items)) {
+        self.config.activeOffsetXStart = items[0];
+        self.config.activeOffsetXEnd = items[1];
+      } else if (items < 0) {
+        self.config.activeOffsetXStart = items;
+      } else {
+        self.config.activeOffsetXEnd = items;
+      }
+      return self;
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "failOffsetY",
+    value: function failOffsetY(failOffsetY) {
+      const self = this;
+      if (Array.isArray(failOffsetY)) {
+        self.config.failOffsetYStart = failOffsetY[0];
+        self.config.failOffsetYEnd = failOffsetY[1];
+      } else if (failOffsetY < 0) {
+        self.config.failOffsetYStart = failOffsetY;
+      } else {
+        self.config.failOffsetYEnd = failOffsetY;
+      }
+      return self;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "failOffsetX",
+    value: function failOffsetX(failOffsetX, items) {
+      const self = this;
+      if (Array.isArray(failOffsetX)) {
+        self.config.failOffsetXStart = failOffsetX[0];
+        self.config.failOffsetXEnd = failOffsetX[1];
+      } else if (failOffsetX < 0) {
+        self.config.failOffsetXStart = failOffsetX;
+      } else {
+        self.config.failOffsetXEnd = failOffsetX;
+      }
+      return self;
+    }
+  };
+  items[4] = {
     key: "minPointers",
     value: function minPointers(minPointers) {
       this.config.minPointers = minPointers;
       return this;
     }
   };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "numberOfTaps",
-    value: function numberOfTaps(numberOfTaps) {
-      this.config.numberOfTaps = numberOfTaps;
-      return this;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "maxDistance",
-    value: function maxDistance(maxDist) {
-      this.config.maxDist = maxDist;
-      return this;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "maxDuration",
-    value: function maxDuration(maxDurationMs) {
-      this.config.maxDurationMs = maxDurationMs;
-      return this;
-    }
-  };
-  items[4] = {
-    key: "maxDelay",
-    value: function maxDelay(maxDelayMs) {
-      this.config.maxDelayMs = maxDelayMs;
-      return this;
-    }
-  };
   items[5] = {
-    key: "maxDeltaX",
-    value: function maxDeltaX(maxDeltaX) {
-      this.config.maxDeltaX = maxDeltaX;
+    key: "maxPointers",
+    value: function maxPointers(maxPointers) {
+      this.config.maxPointers = maxPointers;
       return this;
     }
   };
   items[6] = {
-    key: "maxDeltaY",
-    value: function maxDeltaY(maxDeltaY) {
-      this.config.maxDeltaY = maxDeltaY;
+    key: "minDistance",
+    value: function minDistance(minDist) {
+      this.config.minDist = minDist;
       return this;
     }
   };
-  return callback(TapGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  items[7] = {
+    key: "minVelocity",
+    value: function minVelocity(minVelocity) {
+      this.config.minVelocity = minVelocity;
+      return this;
+    }
+  };
+  items[8] = {
+    key: "minVelocityX",
+    value: function minVelocityX(minVelocityX) {
+      this.config.minVelocityX = minVelocityX;
+      return this;
+    }
+  };
+  items[9] = {
+    key: "minVelocityY",
+    value: function minVelocityY(minVelocityY) {
+      this.config.minVelocityY = minVelocityY;
+      return this;
+    }
+  };
+  items[10] = {
+    key: "averageTouches",
+    value: function averageTouches(avgTouches) {
+      this.config.avgTouches = avgTouches;
+      return this;
+    }
+  };
+  items[11] = {
+    key: "enableTrackpadTwoFingerGesture",
+    value: function enableTrackpadTwoFingerGesture(enableTrackpadTwoFingerGesture) {
+      this.config.enableTrackpadTwoFingerGesture = enableTrackpadTwoFingerGesture;
+      return this;
+    }
+  };
+  items[12] = {
+    key: "activateAfterLongPress",
+    value: function activateAfterLongPress(activateAfterLongPress) {
+      this.config.activateAfterLongPress = activateAfterLongPress;
+      return this;
+    }
+  };
+  items[13] = {
+    key: "onChange",
+    value: function onChange(arg0) {
+      this.handlers.changeEventCalculator = closure_7;
+      const items = [arg0];
+      return function _superPropGet(PanGesture, onChange, arg2, arg3) {
+        let prototype = PanGesture;
+        if (1) {
+          prototype = PanGesture.prototype;
+        }
+        const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
+        let fn = tmpResult;
+        if (2) {
+          fn = tmpResult;
+          if ("function" === typeof tmpResult) {
+            fn = (arg0) => tmpResult.apply(arg2, arg0);
+          }
+        }
+        return fn;
+      }(PanGesture, "onChange", this, 3)(items);
+    }
+  };
+  return callback(PanGesture, items);
+}(arg1(dependencyMap[6]).ContinousBaseGesture);

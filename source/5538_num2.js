@@ -1,5 +1,5 @@
 // Module ID: 5538
-// Function ID: 47072
+// Function ID: 47080
 // Name: num2
 // Dependencies: []
 // Exports: default
@@ -13,10 +13,10 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ Animated: closure_5, I18nManager, Image: closure_6, StyleSheet, View: closure_7 } = tmp2);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, foreground: tmp2.Platform.Version >= 23 };
-obj = { container: Object.assign(obj, { 0: "Array", 0: "isArray" }), disabled: { opacity: 0.5 }, label: { 1934724501: true, 1377394953: true }, labelWrapper: {} };
+let obj = { 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, foreground: tmp2.Platform.Version >= 23 };
+obj = { container: Object.assign(obj, { "Bool(true)": "Array", "Bool(true)": "isArray" }), disabled: { opacity: 0.5 }, label: {}, labelWrapper: {} };
 obj = { minWidth: StyleSheet.hairlineWidth };
-const obj1 = {};
+const obj1 = { paddingVertical: 141754369, flexDirection: 335544320, alignItems: 335544320, position: 16777216 };
 const obj2 = {};
 let num2 = 1;
 if (I18nManager.getConstants().isRTL) {
@@ -27,9 +27,9 @@ const items = [obj2];
 obj1.transform = items;
 obj.icon = obj1;
 obj.iconWithLabel = {};
-obj.iconMaskContainer = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
-obj.iconMaskFillerRect = { "Bool(false)": null, "Bool(false)": null };
-const obj3 = { "Null": "e", "Null": "E", "Null": "e", "Null": "E", "Null": "e", "Null": "E" };
+obj.iconMaskContainer = { padding: null, Date: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", apply: true };
+obj.iconMaskFillerRect = {};
+const obj3 = { marginTop: null, display: null, alignItems: null, alignSelf: null, backgroundColor: null, marginTop: null };
 const obj4 = {};
 if (I18nManager.getConstants().isRTL) {
   num = -1;
@@ -88,7 +88,7 @@ export default function HeaderBackButton(accessibilityLabel) {
     }
     callback2(nativeEvent.nativeEvent.layout.x + nativeEvent.nativeEvent.layout.width);
   }
-  obj = { "Null": null, "Null": null, "Null": null, disabled, accessibilityLabel, testID };
+  obj = { "Null": "isArray", "Null": "isArray", "Null": "next", disabled, accessibilityLabel, testID };
   let handlePress;
   if (!disabled) {
     handlePress = function handlePress() {
@@ -111,7 +111,7 @@ export default function HeaderBackButton(accessibilityLabel) {
   items[1] = disabled;
   items[2] = style;
   obj.style = items;
-  obj.hitSlop = { label: "<string:137971085>", maxLength: "<string:706150401>", backgroundColor: "<string:1455226884>", padding: "<string:1503789057>" };
+  obj.hitSlop = {};
   obj = {};
   if (backImage) {
     const obj1 = { tintColor };

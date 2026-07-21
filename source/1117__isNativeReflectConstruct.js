@@ -1,5 +1,5 @@
 // Module ID: 1117
-// Function ID: 12695
+// Function ID: 12699
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: withErrorBoundary
@@ -21,7 +21,7 @@ let closure_5 = require(dependencyMap[3]);
 let closure_6 = require(dependencyMap[4]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const _module = require(dependencyMap[5]);
-let closure_8 = {};
+let closure_8 = { padding: false, justifyContent: false, alignItems: null };
 const tmp3 = (Component) => {
   class ErrorBoundary {
     constructor(arg0) {

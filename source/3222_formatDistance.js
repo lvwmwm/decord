@@ -1,11 +1,11 @@
 // Module ID: 3222
-// Function ID: 25853
+// Function ID: 25858
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3222 (formatDistance)
-let closure_0 = { lessThanXSeconds: { -9223372036854775808: false, 0: false }, xSeconds: { -9223372036854775808: "<string:30168064>", 0: "<string:70027008>" }, halfAMinute: "\u00E9t halvt minut", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: { -9223372036854775808: "<string:38447616>", 0: "<string:35149312>" }, aboutXHours: { -9223372036854775808: null, 0: null }, xHours: {}, xDays: {}, aboutXWeeks: { -9223372036854775808: false, 0: false }, xWeeks: { -9223372036854775808: "<string:30168064>", 0: "<string:70027008>" }, aboutXMonths: { -9223372036854775808: null, 0: null }, xMonths: {}, aboutXYears: { -9223372036854775808: "r", 0: "isArray" }, xYears: { -9223372036854775808: false, 0: false }, overXYears: { -9223372036854775808: "%TypeErrorPrototype%", 0: "searchable" }, almostXYears: { -9223372036854775808: "<string:1827405825>", 0: "<string:1293025282>" } };
+let closure_0 = { lessThanXSeconds: { "Bool(false)": true, "Bool(false)": true }, xSeconds: { "Bool(false)": "isArray", "Bool(false)": "__d" }, halfAMinute: "\u00E9t halvt minut", lessThanXMinutes: { "Bool(false)": 35176960, "Bool(false)": 35178496 }, xMinutes: { "Bool(false)": null, "Bool(false)": null }, aboutXHours: { "Bool(false)": 8, "Bool(false)": 32 }, xHours: {}, xDays: { "Bool(false)": 1268697785591056000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025330688161739 }, aboutXWeeks: { "Bool(false)": "midnat", "Bool(false)": "middag" }, xWeeks: { "Bool(false)": "<string:3436183554>", "Bool(false)": "<string:3436249089>" }, aboutXMonths: { "Bool(false)": "<string:70058240>", "Bool(false)": "<string:287265280>" }, xMonths: { "Bool(false)": true, "Bool(false)": null }, aboutXYears: { "Bool(false)": "onFocusCapture", "Bool(false)": "INTERACTIONS" }, xYears: {}, overXYears: {}, almostXYears: { "Bool(false)": "<string:3472884034>", "Bool(false)": "<string:1275068876>" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

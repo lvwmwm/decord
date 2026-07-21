@@ -1,12 +1,12 @@
 // Module ID: 9719
-// Function ID: 75539
+// Function ID: 75550
 // Name: PaginationItem
 // Dependencies: []
 // Exports: PaginationItem
 
 // Module 9719 (PaginationItem)
-let closure_3 = ["__h", "PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED", "ay", "headMetaSocial"];
-let closure_4 = ["__h", "PAYMENT_REQUEST_INITIALIZATION_MISCONFIGURED", "ay", "headMetaSocial"];
+let closure_3 = [];
+let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 importDefault(dependencyMap[2]);

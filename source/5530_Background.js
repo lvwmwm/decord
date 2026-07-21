@@ -1,11 +1,11 @@
 // Module ID: 5530
-// Function ID: 47056
+// Function ID: 47064
 // Name: Background
 // Dependencies: []
 // Exports: default
 
 // Module 5530 (Background)
-let closure_2 = ["GUILD_DELETE"];
+let closure_2 = [null];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

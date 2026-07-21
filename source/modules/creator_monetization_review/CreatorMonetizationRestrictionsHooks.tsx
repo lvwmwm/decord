@@ -1,5 +1,5 @@
 // Module ID: 5630
-// Function ID: 48019
+// Function ID: 48027
 // Name: useCreatorMonetizationRestrictions
 // Dependencies: []
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings

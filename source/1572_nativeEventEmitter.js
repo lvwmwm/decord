@@ -1,5 +1,5 @@
 // Module ID: 1572
-// Function ID: 17630
+// Function ID: 17635
 // Name: nativeEventEmitter
 // Dependencies: []
 // Exports: RCTKeyboardExtender

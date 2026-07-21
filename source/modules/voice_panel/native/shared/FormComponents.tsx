@@ -1,5 +1,5 @@
 // Module ID: 8857
-// Function ID: 69875
+// Function ID: 69886
 // Name: VoiceBadges
 // Dependencies: []
 // Exports: MemberRowItem, VoicePanelFormSection
@@ -42,7 +42,7 @@ obj.iconWrapper = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.icon = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.notConnectedAvatar = { opacity: 0.5 };
-obj.memberRow = { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null };
+obj.memberRow = { "Null": true, "Null": true, "Bool(false)": true };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
@@ -117,7 +117,7 @@ export const MemberRowItem = function MemberRowItem(user) {
         const intl = user(flag[19]).intl;
         intl.string(user(flag[19]).t.eXan7B);
       }
-      let formatResult = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null };
+      let formatResult = { <string:1643205302>: "<string:2682257408>", <string:1415816450>: null, <string:4283523744>: null };
       const intl2 = user(flag[19]).intl;
       formatResult = {};
       if (null == stateFromStores.details) {

@@ -1,20 +1,10 @@
 // Module ID: 4146
-// Function ID: 34974
+// Function ID: 34982
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4149, 653, 4152, 664, 4159, 587, 477]
+// Dependencies: []
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
 // Module 4146 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _callSuper from "_callSuper";
-import ME from "ME";
-import ApplicationTypes from "ApplicationTypes";
-import module_477 from "module_477";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,19 +14,27 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
+let closure_8 = importDefault(dependencyMap[6]);
+let closure_9 = importDefault(dependencyMap[7]);
 let tmp2 = (Store) => {
   class RunningGameStore {
     constructor() {
       self = this;
-      tmp = _classCallCheck(this, RunningGameStore);
-      obj = _getPrototypeOf(RunningGameStore);
-      tmp2 = _possibleConstructorReturn;
+      tmp = closure_2(this, RunningGameStore);
+      obj = closure_5(RunningGameStore);
+      tmp2 = closure_4;
       if (closure_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = _getPrototypeOf;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -261,10 +259,10 @@ let tmp2 = (Store) => {
     }
   };
   return callback(RunningGameStore, items);
-}(require("CachedEntriesMap").Store);
+}(importDefault(dependencyMap[9]).Store);
 tmp2.displayName = "RunningGameStore";
-tmp2 = new tmp2(require("Storage"), {});
-const result = module_477.fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
+tmp2 = new tmp2(importDefault(dependencyMap[10]), {});
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
 
 export default tmp2;
 export function gameKey() {
@@ -272,9 +270,10 @@ export function gameKey() {
 }
 export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
-    const items = [ME, ApplicationTypes, _callSuper];
+    const items = [closure_8, closure_9, closure_7];
   }
-  return { source: arg1(dependencyMap[8]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[8]).OverlayMethod.Disabled };
+  const obj = { placeholderCount: "<string:1866530817>", preferredCommand: "<string:1358955001>", GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: "<string:2168627938>", UAH: "<string:2164261120>", enableClips: "<string:1124073728>", source: arg1(dependencyMap[8]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[8]).OverlayMethod.Disabled };
+  return obj;
 };
 export function isDetectionEnabled(value) {
   return false;

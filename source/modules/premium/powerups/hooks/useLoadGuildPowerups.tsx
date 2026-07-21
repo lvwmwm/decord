@@ -1,5 +1,5 @@
 // Module ID: 11503
-// Function ID: 89622
+// Function ID: 89634
 // Name: useLoadGuildPowerups
 // Dependencies: []
 // Exports: default

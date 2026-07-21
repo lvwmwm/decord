@@ -1,5 +1,5 @@
 // Module ID: 3755
-// Function ID: 28674
+// Function ID: 28679
 // Name: createFavoritesChannelRecord
 // Dependencies: []
 // Exports: createFavoritesChannelRecord

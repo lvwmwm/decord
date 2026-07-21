@@ -1,10 +1,10 @@
-// Module ID: 15173
-// Function ID: 114430
+// Module ID: 15176
+// Function ID: 114464
 // Name: MembersFilterActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15173 (MembersFilterActionSheet)
+// Module 15176 (MembersFilterActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { remoteVideoSsrcs: "SERVER_GUIDE_CHANNEL_SELECTED", isPurchased: "PREMIUM_GUILD_PROMOTION_OPENED", isPartiallyOwnedBundle: "Array", borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.listView = obj;
 obj.roleDot = { marginEnd: 4 };
 obj.labelContainer = { flexDirection: "row" };

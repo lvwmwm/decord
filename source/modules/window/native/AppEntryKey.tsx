@@ -1,7 +1,7 @@
 // Module ID: 1570
-// Function ID: 17628
+// Function ID: 17633
 // Name: APP_ENTRY_KEYS
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1570 (APP_ENTRY_KEYS)
 const _module = require(dependencyMap[0]);

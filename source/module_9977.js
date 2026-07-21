@@ -1,8 +1,8 @@
 // Module ID: 9977
-// Function ID: 77168
+// Function ID: 77179
 // Dependencies: []
 
 // Module 9977
 const _module = require(dependencyMap[0]);
 
-export default _module.registerAsset({ scales: [] });
+export default _module.registerAsset({ scales: ["Set", "ml"] });

@@ -1,9 +1,9 @@
-// Module ID: 15359
-// Function ID: 116954
+// Module ID: 15362
+// Function ID: 116993
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 15359 (__INTERNAL_VIEW_CONFIG)
+// Module 15362 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "DCDVisualEffectViewTarget", validAttributes: {} };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DCDVisualEffectViewTarget", () => obj);

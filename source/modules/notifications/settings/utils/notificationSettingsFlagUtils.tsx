@@ -1,5 +1,5 @@
 // Module ID: 10275
-// Function ID: 79378
+// Function ID: 79389
 // Name: resetGuildUnreadFlags
 // Dependencies: []
 // Exports: withChannelUnreadFlags, withGuildUnreadFlags

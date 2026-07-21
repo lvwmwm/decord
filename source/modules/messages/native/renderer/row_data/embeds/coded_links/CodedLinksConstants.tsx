@@ -1,7 +1,7 @@
 // Module ID: 9471
-// Function ID: 73791
+// Function ID: 73802
 // Name: CodedLinkExtendedType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9471 (CodedLinkExtendedType)
 const _module = require(dependencyMap[0]);

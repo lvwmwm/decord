@@ -1,10 +1,10 @@
-// Module ID: 14164
-// Function ID: 107270
+// Module ID: 14167
+// Function ID: 107302
 // Name: ImageTextIcon
 // Dependencies: []
 // Exports: ImageTextIcon
 
-// Module 14164 (ImageTextIcon)
+// Module 14167 (ImageTextIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImageTextIcon.tsx");

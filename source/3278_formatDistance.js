@@ -1,11 +1,11 @@
 // Module ID: 3278
-// Function ID: 25998
+// Function ID: 26003
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3278 (formatDistance)
-let closure_0 = { lessThanXSeconds: { "Null": -0.000000000000000000000039704669406568334, "Null": -47414552962548800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000007110746142175845, "Null": -2925190990833130000000000000000000000000000000000 }, xSeconds: { -9223372036854775808: "a", 0: "isArray" }, halfAMinute: "30\u79D2", lessThanXMinutes: { "Null": null, "Null": null, "Null": null, "Null": null }, xMinutes: { -9223372036854775808: 58063872, 0: -186170880 }, aboutXHours: { -9223372036854775808: 58063616, 0: -188071424 }, xHours: { -9223372036854775808: 58059520, 0: -188136960 }, xDays: { -9223372036854775808: 58059264, 0: -187153920 }, aboutXWeeks: { -9223372036854775808: 58060544, 0: -187088384 }, xWeeks: { -9223372036854775808: 58060800, 0: -186826240 }, aboutXMonths: { -9223372036854775808: 58061056, 0: -186564096 }, xMonths: { -9223372036854775808: 58062848, 0: -186498560 }, aboutXYears: { -9223372036854775808: 58063104, 0: -188792320 }, xYears: { -9223372036854775808: 58057728, 0: -188726784 }, overXYears: { -9223372036854775808: 58057984, 0: 390939136 }, almostXYears: { -9223372036854775808: true, 0: true } };
+let closure_0 = { lessThanXSeconds: { "Null": 1296171011, "Null": 1627390709, "Null": 1107297142, "Null": 193840 }, xSeconds: {}, halfAMinute: "30\u79D2", lessThanXMinutes: { "Null": "1\uC2DC\uAC04", "Null": "{{count}}\uC2DC\uAC04", "Null": "1\uC77C", "Null": "{{count}}\uC77C" }, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: { "Bool(false)": ":", "Bool(false)": "BUTTON_BORDER_WIDTH" }, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, arg2) {
   let obj = arg2;

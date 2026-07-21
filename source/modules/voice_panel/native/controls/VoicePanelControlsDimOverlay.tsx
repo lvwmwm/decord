@@ -1,8 +1,8 @@
-// Module ID: 15748
-// Function ID: 120294
+// Module ID: 15757
+// Function ID: 120459
 // Dependencies: []
 
-// Module 15748
+// Module 15757
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).BACKDROP_OPAQUE_MAX_OPACITY;
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: closure_5, VoicePanelModes: closure_6 } = arg1(dependencyMap[2]));

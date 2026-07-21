@@ -1,5 +1,5 @@
 // Module ID: 6787
-// Function ID: 53599
+// Function ID: 53607
 // Name: CollectiblesCategoriesRecord
 // Dependencies: []
 

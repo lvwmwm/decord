@@ -1,9 +1,9 @@
-// Module ID: 15598
-// Function ID: 119001
+// Module ID: 15601
+// Function ID: 119040
 // Name: FrameView
 // Dependencies: []
 
-// Module 15598 (FrameView)
+// Module 15601 (FrameView)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

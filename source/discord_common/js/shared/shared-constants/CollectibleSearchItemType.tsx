@@ -1,7 +1,7 @@
 // Module ID: 657
-// Function ID: 8020
+// Function ID: 8024
 // Name: CollectibleSearchItemType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 657 (CollectibleSearchItemType)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 15162
-// Function ID: 114331
+// Module ID: 15165
+// Function ID: 114365
 // Name: replaceUsernameVariable
 // Dependencies: []
 // Exports: default
 
-// Module 15162 (replaceUsernameVariable)
+// Module 15165 (replaceUsernameVariable)
 function replaceUsernameVariable(message, str) {
   let diff;
   const parts = str.split(/\[@username\]/g);
@@ -39,17 +39,17 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { relativeContainer: { position: "relative" } };
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { 1602838410: null, -1956571157: 8, -766267823: "absolute", -722891834: "auto", 1302877167: -8, 1113732224: 10, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.welcomeContainer = obj;
-const obj1 = { 979595439: null, -1840161709: null, 1362846030: null, 1415674808: null, 1635498321: null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.welcomeContent = obj1;
 const tmp2 = arg1(dependencyMap[5]);
+obj.welcomeContent = { borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.avatarBackground = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj3 = { "Bool(true)": "03", "Bool(true)": "<string:1665208576>", "Bool(true)": "<string:1912603216>", "Bool(true)": "toString", "Bool(true)": "toString", "Bool(true)": "<string:3040559361>", borderRadius: importDefault(dependencyMap[7]).radii.round };
+obj.avatarBorder = obj3;
+obj.avatar = { <string:732569051>: -12654109819631137000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:2671951460>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312423307660342, <string:1374118387>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122671433504, <string:1851903837>: 53772979704301100000 };
+obj.adminUsernameContainer = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
 const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.avatarBorder = { borderRadius: importDefault(dependencyMap[7]).radii.round };
-obj.avatar = {};
-obj.adminUsernameContainer = { "Null": null, "Bool(true)": "1785b591bc534f1d0463ddef745bdb5c", "Bool(true)": "CalendarMinusIcon", "Bool(true)": "png", "Bool(true)": true };
-const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.adminUsername = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, paddingLeft: 8 };
 const obj4 = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, paddingLeft: 8 };
 obj.message = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };

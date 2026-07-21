@@ -1,9 +1,9 @@
-// Module ID: 15236
-// Function ID: 115024
+// Module ID: 15239
+// Function ID: 115058
 // Name: GuildChannelMessageRowHeader
 // Dependencies: []
 
-// Module 15236 (GuildChannelMessageRowHeader)
+// Module 15239 (GuildChannelMessageRowHeader)
 let Platform;
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
@@ -28,7 +28,7 @@ function GuildChannelMessageRowHeader(channel) {
   obj = { style: tmp.header };
   obj1 = { source: channelIcon, size: arg1(dependencyMap[14]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
   const items1 = [callback(arg1(dependencyMap[14]).Icon, obj1), , , , ];
-  const obj2 = { encodingConfig: "Array", showRemove: "isArray", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "Text", children: importDefault(dependencyMap[13])(channel) };
+  const obj2 = { "Null": true, "Null": true, "Null": true, children: importDefault(dependencyMap[13])(channel) };
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj2);
   if (muted) {
     const obj3 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
@@ -97,7 +97,7 @@ function PrivateChannelMessageRowLabel(message) {
   items2[2] = isSystemDMResult;
   obj.children = items2;
   const items3 = [closure_12(closure_4, obj), , , ];
-  const obj3 = { -9223372036854775808: true, 0: "friendRequestsViewAll", 0: "custom", style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
+  const obj3 = { <string:1643205302>: null, <string:1415816450>: "text-xs/medium", <string:4283523744>: 12, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj3);
   let tmp18 = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
@@ -149,7 +149,7 @@ function GuildChannelMessageRowLabel(arg0) {
       tmp19 = callback(arg1(dependencyMap[14]).RoleDot, obj2);
     }
     const items1 = [tmp19, ];
-    obj3 = { style: {} };
+    obj3 = { <string:1643205302>: 1626341378, <string:1415816450>: -1035927550, <string:4283523744>: 16777503, style: {} };
     let tmp27;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp27 = processColorStringsArray;
@@ -159,7 +159,7 @@ function GuildChannelMessageRowLabel(arg0) {
     items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
     obj1.children = items1;
     const items2 = [closure_12(closure_4, obj1), , , ];
-    obj4 = { style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
+    obj4 = { <string:1643205302>: 1961492483, <string:1415816450>: 1964048387, <string:4283523744>: -398262269, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
     items2[1] = callback(arg1(dependencyMap[15]).Text, obj4);
     let tmp32 = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
@@ -188,13 +188,13 @@ const MessageFlags = arg1(dependencyMap[7]).MessageFlags;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp3 = arg1(dependencyMap[8]);
-let obj = { channelIcon: { marginBottom: null, width: null } };
-obj = { ExistingUserAgeGateScreens: null, POPULARITY: null, tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+let obj = { channelIcon: { 1449338582: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", -865846725: "{0}, {1}" } };
+obj = { 9223372036854775807: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", 9223372036854775807: "{0}, {1}", tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelStatus = obj;
-obj.labelContainer = { alignItems: "custom", justifyContent: "showContactSyncCTA", skuId: "showContactSyncCTA", bannerAdjustment: "custom" };
-obj.authorRow = {};
+obj.labelContainer = { "Bool(true)": "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", "Bool(true)": "{0}, {1}", "Bool(true)": "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", "Bool(true)": "{0}, {1}" };
+obj.authorRow = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 obj.timestamp = { marginLeft: 8 };
-obj.header = { PREMIUM_TENURE_3_MONTH: null, parserState: null, onFinish: null };
+obj.header = {};
 obj.body = { alignItems: "flex-start" };
 obj.pollBadge = { marginLeft: 8 };
 obj.suppressNotificationsIcon = { marginLeft: 4 };

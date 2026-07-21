@@ -1,5 +1,5 @@
 // Module ID: 10348
-// Function ID: 79844
+// Function ID: 79855
 // Name: MessageNotificationDetachedContent
 // Dependencies: []
 // Exports: MessageNotificationDetachedContent
@@ -39,7 +39,7 @@ export const MessageNotificationDetachedContent = function MessageNotificationDe
     setActionTaken(true);
     setExpanded(false);
     setAutoDismissing(true);
-    const obj = { 0: false, 0: false };
+    const obj = { 1364511842: true, -1436417025: true };
     const intl = expandedSV(setExpanded[6]).intl;
     obj.message = intl.string(expandedSV(setExpanded[6]).t.b/4dOF);
     setConfirmation(obj);

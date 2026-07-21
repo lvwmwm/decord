@@ -1,12 +1,12 @@
 // Module ID: 11887
-// Function ID: 92005
+// Function ID: 92017
 // Name: ClearInputButton
 // Dependencies: []
 // Exports: default
 
 // Module 11887 (ClearInputButton)
 function ClearInputButton(onPress) {
-  let obj = { style: { "Null": true, "Null": true }, accessibilityRole: "button" };
+  let obj = { style: { "Bool(true)": true, "Bool(true)": true }, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[11]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[11]).t.VkKicb);
   obj.onPress = onPress.onPress;
@@ -319,11 +319,11 @@ const EmojiIntention = arg1(dependencyMap[6]).EmojiIntention;
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = { container: {}, statusSection: { rowGap: 8 } };
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[9]).radii.lg };
+obj = { Date: false, apply: false, end: false, apply: false, body: false, backgroundColor: importDefault(dependencyMap[9]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.statusInput = obj;
-obj.statusInputRow = {};
+obj.statusInputRow = { "Null": 7, "Null": 370 };
 obj.emoji = { marginRight: 8 };
-const obj1 = { "Bool(true)": "message", "Bool(true)": "row", "Bool(true)": 16, "Bool(true)": 24, "Bool(true)": "center", "Bool(true)": null, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
+const obj1 = { sku: "message", wishlistId: "row", analyticsLocations: 16, flexDirection: 24, alignItems: "center", justifyContent: null, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.status = obj1;
 const tmp3 = arg1(dependencyMap[7]);
 obj.statusText = { fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
@@ -334,7 +334,7 @@ obj.previewContainer = { alignItems: "center" };
 const obj3 = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 const obj4 = { alignItems: "center" };
 obj.closeIcon = { tintColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
-obj.statusSectionHeader = { padding: "Next", paddingBottom: null, flexDirection: null };
+obj.statusSectionHeader = { <string:1334598284>: 18058521, <string:3229045644>: 302139792, <string:2213734789>: 302191137 };
 let closure_14 = obj.createStyles(obj);
 const obj5 = { tintColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0 };
 const result = arg1(dependencyMap[43]).fileFinishedImporting("modules/custom_status/native/EditCustomStatusWithPreview.tsx");

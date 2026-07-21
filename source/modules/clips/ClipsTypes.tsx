@@ -1,7 +1,7 @@
 // Module ID: 4183
-// Function ID: 35994
+// Function ID: 36002
 // Name: getClipCropAspectRatio
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: getClipCropBounds
 
 // Module 4183 (getClipCropAspectRatio)

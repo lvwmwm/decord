@@ -1,5 +1,5 @@
 // Module ID: 9300
-// Function ID: 72620
+// Function ID: 72631
 // Name: ConversationFocusScreen
 // Dependencies: []
 // Exports: default
@@ -14,10 +14,10 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-const obj1 = { 2075753400: "isArray", 1003247203: "accessibilityRole", 1565604449: "value", paddingVertical: importDefault(dependencyMap[5]).space.PX_24, gap: importDefault(dependencyMap[5]).space.PX_32, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.pendingContent = obj1;
-let closure_9 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
+obj.pendingContent = { paddingVertical: importDefault(dependencyMap[5]).space.PX_24, gap: importDefault(dependencyMap[5]).space.PX_32, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+let closure_9 = obj.createStyles(obj);
+const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_24, gap: importDefault(dependencyMap[5]).space.PX_32, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
 
 export default function ConversationFocusScreen() {
@@ -73,7 +73,7 @@ export default function ConversationFocusScreen() {
     }
   }
   if (fullyHydrated) {
-    obj = { display: true, flexDirection: true, alignItems: true, contentContainerStyle: ChatPreview.container };
+    obj = { <string:1446656868>: true, <string:67064212>: true, <string:2857778020>: true, contentContainerStyle: ChatPreview.container };
     ChatPreview = arg1(dependencyMap[12]).ChatPreview;
     obj1 = { channelId, messages: stateFromStores, jumpTargetId: startMessageId, initialScrollToTop: true, allowReactions: true };
     obj.children = callback(ChatPreview, obj1);

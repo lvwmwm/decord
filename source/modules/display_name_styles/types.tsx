@@ -1,7 +1,7 @@
 // Module ID: 8507
-// Function ID: 67874
+// Function ID: 67885
 // Name: DisplayNameStyleColorPreset
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8507 (DisplayNameStyleColorPreset)
 const _module = require(dependencyMap[0]);

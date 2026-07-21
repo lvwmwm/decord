@@ -1,5 +1,5 @@
 // Module ID: 673
-// Function ID: 8273
+// Function ID: 8277
 // Name: setOriginWindow
 // Dependencies: []
 // Exports: requestSafeIdleCallback, setOriginWindow

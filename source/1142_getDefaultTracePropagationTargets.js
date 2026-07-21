@@ -1,5 +1,5 @@
 // Module ID: 1142
-// Function ID: 13008
+// Function ID: 13012
 // Name: getDefaultTracePropagationTargets
 // Dependencies: []
 // Exports: getCurrentReactNativeTracingIntegration, reactNativeTracingIntegration
@@ -16,7 +16,7 @@ function getReactNativeTracingIntegration(client) {
   return client.getIntegrationByName(closure_2);
 }
 let closure_2 = "ReactNativeTracing";
-const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+const obj = { <string:1011635180>: null, <string:1636459989>: null, <string:2898022715>: null };
 const _module = require(dependencyMap[0]);
 obj.traceFetch = _module.isWeb();
 

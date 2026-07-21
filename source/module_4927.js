@@ -1,9 +1,9 @@
 // Module ID: 4927
-// Function ID: 42241
+// Function ID: 42249
 // Dependencies: []
 
 // Module 4927
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "text-overlay-light", isInternetReachable: "text-xs/medium", details: null, reachabilityUrl: 48, reachabilityMethod: 8, reachabilityHeaders: "comp_0", reachabilityTest: "GLEAM", reachabilityShortTimeout: 30, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
+const obj = { "Bool(false)": 30, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "hidden", "Bool(false)": 1, "Bool(false)": 0, "Bool(false)": 9, "Bool(false)": 0, scales: [null] };
 
 export default _module.registerAsset(obj);

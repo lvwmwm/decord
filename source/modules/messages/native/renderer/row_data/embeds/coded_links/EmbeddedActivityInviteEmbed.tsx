@@ -1,5 +1,5 @@
 // Module ID: 12172
-// Function ID: 93593
+// Function ID: 93605
 // Name: createEmbeddedActivityInviteEmbed
 // Dependencies: []
 // Exports: createEmbeddedActivityInviteEmbed
@@ -18,7 +18,7 @@ let closure_12 = importDefault(dependencyMap[8]);
 let closure_13 = importDefault(dependencyMap[9]);
 const CodedLinkExtendedType = arg1(dependencyMap[10]).CodedLinkExtendedType;
 const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
-let closure_16 = ["SENTRY_BAGGAGE_KEY_PREFIX"];
+let closure_16 = ["RollOutRight"];
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
 
 export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivityInviteEmbed(inviteCode) {

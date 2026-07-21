@@ -1,7 +1,7 @@
 // Module ID: 11923
-// Function ID: 92241
+// Function ID: 92253
 // Name: TrendingType
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11923 (TrendingType)
 const _module = require(dependencyMap[0]);

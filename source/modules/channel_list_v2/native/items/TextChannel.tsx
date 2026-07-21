@@ -1,8 +1,8 @@
-// Module ID: 14921
-// Function ID: 112348
+// Module ID: 14924
+// Function ID: 112382
 // Dependencies: []
 
-// Module 14921
+// Module 14924
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -25,7 +25,7 @@ let closure_15 = arg1(dependencyMap[10]).createStyles((arg0, arg1) => {
   obj.container = obj;
   obj = { backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED };
   obj.selected = obj;
-  const obj1 = { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)", borderWidth: 1 };
+  const obj1 = { 0: "<string:408361903>", 9223372036854775807: "<string:2920093709>", -9223372036854775808: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266, borderWidth: 1 };
   let BORDER_MUTED;
   if (!flag) {
     BORDER_MUTED = importDefault(dependencyMap[11]).colors.BORDER_MUTED;
@@ -33,9 +33,9 @@ let closure_15 = arg1(dependencyMap[10]).createStyles((arg0, arg1) => {
   obj1.borderColor = BORDER_MUTED;
   obj1.borderRadius = importDefault(dependencyMap[11]).modules.mobile.CHANNEL_ITEM_RADIUS;
   obj.selectedBorder = obj1;
-  obj.row = {};
+  obj.row = { USER_VERIFICATION_MODAL_FLOW: false, gap: false, flexDirection: false };
   obj.rowWithSubtitle = {};
-  obj.channelLabel = { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+  obj.channelLabel = {};
   const obj2 = { "Null": 1, "Null": null, lineHeight: closure_12 };
   let num2 = 1;
   if (arg0) {
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo((channel) => {
   let obj9 = arg1(dependencyMap[15]);
   obj3 = { mode: channelMode, source: tmp14, IconComponent: BookCheckIcon };
   const BaseChannelIconResult = obj9.BaseChannelIcon(obj3);
-  const obj4 = { height: 10, width: 371, style: tmp.channelLabelText };
+  const obj4 = { NONE_MONTH: 16, contextualGuildId: 5, style: tmp.channelLabelText };
   const tmp19 = importDefault(dependencyMap[25])(channel);
   const merged = Object.assign(arg1(dependencyMap[15]).useChannelNameTextProps(channelMode));
   obj4["children"] = tmp19;
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo((channel) => {
   if (null != subtitle) {
     const obj11 = { style: tmp.channelLabel };
     const items10 = [tmp21, ];
-    const obj12 = { height: 10, width: 371 };
+    const obj12 = { NONE_MONTH: 16, contextualGuildId: 5 };
     const merged1 = Object.assign(arg1(dependencyMap[15]).getChannelSubtitleTextProps(channelMode));
     const obj22 = arg1(dependencyMap[15]);
     obj12["children"] = arg1(dependencyMap[31]).getChannelSubtitleData(subtitle).subtitle;

@@ -1,9 +1,9 @@
-// Module ID: 7148
-// Function ID: 57656
+// Module ID: 7149
+// Function ID: 57668
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7148 (_isNativeReflectConstruct)
+// Module 7149 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,19 +24,19 @@ let tmp2 = (MessageType) => {
     constructor() {
       self = this;
       tmp = closure_3(this, PlanSelectCardBanner$Type);
-      obj = { "Null": true, "Null": true, "Null": true };
+      obj = { 9223372036854775807: false, 9223372036854775807: false, 0: false };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
       items = [, , ];
       items[0] = obj;
-      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
+      items[1] = { 1347510942: "background_asset", 1678385745: "message", 1364379111: 0, 140698458: 50.06 };
       items[2] = {
         T() {
               return callback(closure_1[7]).LocalizedString;
             }
       };
-      items1 = [true];
+      items1 = [1956561808];
       items1[1] = items;
       obj2 = closure_6(PlanSelectCardBanner$Type);
       tmp2 = closure_5;

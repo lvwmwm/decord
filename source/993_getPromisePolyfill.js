@@ -1,7 +1,7 @@
 // Module ID: 993
-// Function ID: 10662
+// Function ID: 10666
 // Name: getPromisePolyfill
-// Dependencies: [5, 1004, 794, 1002, 6, 7, 15]
+// Dependencies: []
 
 // Module 993 (getPromisePolyfill)
 function getPromisePolyfill() {

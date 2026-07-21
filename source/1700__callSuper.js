@@ -1,9 +1,15 @@
 // Module ID: 1700
-// Function ID: 18763
+// Function ID: 18768
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 
 // Module 1700 (_callSuper)
+import result from "result";
+import closure_3 from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -26,16 +32,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = { code: "function pnpm_BounceTs1(){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{scale:delayFunction(delay,withSequence(withTiming(1.2,{duration:duration*0.55}),withTiming(0.9,{duration:duration*0.15}),withTiming(1.1,{duration:duration*0.15}),withTiming(1,{duration:duration*0.15})))}]},initialValues:{transform:[{scale:0}],...initialValues},callback:callback};}" };
 const tmp2 = (ComplexAnimationBuilder) => {
   class BounceIn {
     constructor() {
-      tmp = closure_2(this, BounceIn);
+      tmp = result(this, BounceIn);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -89,13 +90,13 @@ const tmp2 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceIn, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp2.presetName = "BounceIn";
 let closure_8 = { code: "function pnpm_BounceTs2(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateY:delayFunction(delay,withSequence(withTiming(-20,{duration:duration*0.55}),withTiming(10,{duration:duration*0.15}),withTiming(-10,{duration:duration*0.15}),withTiming(0,{duration:duration*0.15})))}]},initialValues:{transform:[{translateY:values.windowHeight}],...initialValues},callback:callback};}" };
 const tmp3 = (ComplexAnimationBuilder) => {
   class BounceInDown {
     constructor() {
-      tmp = closure_2(this, BounceInDown);
+      tmp = result(this, BounceInDown);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -149,13 +150,13 @@ const tmp3 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceInDown, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp3.presetName = "BounceInDown";
 let closure_9 = { code: "function pnpm_BounceTs3(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateY:delayFunction(delay,withSequence(withTiming(20,{duration:duration*0.55}),withTiming(-10,{duration:duration*0.15}),withTiming(10,{duration:duration*0.15}),withTiming(0,{duration:duration*0.15})))}]},initialValues:{transform:[{translateY:-values.windowHeight}],...initialValues},callback:callback};}" };
 const tmp4 = (ComplexAnimationBuilder) => {
   class BounceInUp {
     constructor() {
-      tmp = closure_2(this, BounceInUp);
+      tmp = result(this, BounceInUp);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -209,13 +210,13 @@ const tmp4 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceInUp, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp4.presetName = "BounceInUp";
 let closure_10 = { code: "function pnpm_BounceTs4(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateX:delayFunction(delay,withSequence(withTiming(20,{duration:duration*0.55}),withTiming(-10,{duration:duration*0.15}),withTiming(10,{duration:duration*0.15}),withTiming(0,{duration:duration*0.15})))}]},initialValues:{transform:[{translateX:-values.windowWidth}],...initialValues},callback:callback};}" };
 const tmp5 = (ComplexAnimationBuilder) => {
   class BounceInLeft {
     constructor() {
-      tmp = closure_2(this, BounceInLeft);
+      tmp = result(this, BounceInLeft);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -269,13 +270,13 @@ const tmp5 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceInLeft, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp5.presetName = "BounceInLeft";
 let closure_11 = { code: "function pnpm_BounceTs5(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateX:delayFunction(delay,withSequence(withTiming(-20,{duration:duration*0.55}),withTiming(10,{duration:duration*0.15}),withTiming(-10,{duration:duration*0.15}),withTiming(0,{duration:duration*0.15})))}]},initialValues:{transform:[{translateX:values.windowWidth}],...initialValues},callback:callback};}" };
 const tmp6 = (ComplexAnimationBuilder) => {
   class BounceInRight {
     constructor() {
-      tmp = closure_2(this, BounceInRight);
+      tmp = result(this, BounceInRight);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -329,13 +330,13 @@ const tmp6 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceInRight, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp6.presetName = "BounceInRight";
 let closure_12 = { code: "function pnpm_BounceTs6(){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{scale:delayFunction(delay,withSequence(withTiming(1.1,{duration:duration*0.15}),withTiming(0.9,{duration:duration*0.15}),withTiming(1.2,{duration:duration*0.15}),withTiming(0,{duration:duration*0.55})))}]},initialValues:{transform:[{scale:1}],...initialValues},callback:callback};}" };
 const tmp7 = (ComplexAnimationBuilder) => {
   class BounceOut {
     constructor() {
-      tmp = closure_2(this, BounceOut);
+      tmp = result(this, BounceOut);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -389,13 +390,13 @@ const tmp7 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceOut, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp7.presetName = "BounceOut";
 let closure_13 = { code: "function pnpm_BounceTs7(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateY:delayFunction(delay,withSequence(withTiming(-10,{duration:duration*0.15}),withTiming(10,{duration:duration*0.15}),withTiming(-20,{duration:duration*0.15}),withTiming(values.windowHeight,{duration:duration*0.55})))}]},initialValues:{transform:[{translateY:0}],...initialValues},callback:callback};}" };
 const tmp8 = (ComplexAnimationBuilder) => {
   class BounceOutDown {
     constructor() {
-      tmp = closure_2(this, BounceOutDown);
+      tmp = result(this, BounceOutDown);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -449,13 +450,13 @@ const tmp8 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceOutDown, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp8.presetName = "BounceOutDown";
 let closure_14 = { code: "function pnpm_BounceTs8(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateY:delayFunction(delay,withSequence(withTiming(10,{duration:duration*0.15}),withTiming(-10,{duration:duration*0.15}),withTiming(20,{duration:duration*0.15}),withTiming(-values.windowHeight,{duration:duration*0.55})))}]},initialValues:{transform:[{translateY:0}],...initialValues},callback:callback};}" };
 const tmp9 = (ComplexAnimationBuilder) => {
   class BounceOutUp {
     constructor() {
-      tmp = closure_2(this, BounceOutUp);
+      tmp = result(this, BounceOutUp);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -509,13 +510,13 @@ const tmp9 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceOutUp, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp9.presetName = "BounceOutUp";
 let closure_15 = { code: "function pnpm_BounceTs9(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateX:delayFunction(delay,withSequence(withTiming(10,{duration:duration*0.15}),withTiming(-10,{duration:duration*0.15}),withTiming(20,{duration:duration*0.15}),withTiming(-values.windowWidth,{duration:duration*0.55})))}]},initialValues:{transform:[{translateX:0}],...initialValues},callback:callback};}" };
 const tmp10 = (ComplexAnimationBuilder) => {
   class BounceOutLeft {
     constructor() {
-      tmp = closure_2(this, BounceOutLeft);
+      tmp = result(this, BounceOutLeft);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -569,13 +570,13 @@ const tmp10 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceOutLeft, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp10.presetName = "BounceOutLeft";
 let closure_16 = { code: "function pnpm_BounceTs10(values){const{delayFunction,delay,withSequence,withTiming,duration,initialValues,callback}=this.__closure;return{animations:{transform:[{translateX:delayFunction(delay,withSequence(withTiming(-10,{duration:duration*0.15}),withTiming(10,{duration:duration*0.15}),withTiming(-20,{duration:duration*0.15}),withTiming(values.windowWidth,{duration:duration*0.55})))}]},initialValues:{transform:[{translateX:0}],...initialValues},callback:callback};}" };
 const tmp11 = (ComplexAnimationBuilder) => {
   class BounceOutRight {
     constructor() {
-      tmp = closure_2(this, BounceOutRight);
+      tmp = result(this, BounceOutRight);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -629,7 +630,7 @@ const tmp11 = (ComplexAnimationBuilder) => {
     }
   ];
   return callback(BounceOutRight, items, items1);
-}(arg1(dependencyMap[6]).ComplexAnimationBuilder);
+}(require("result").ComplexAnimationBuilder);
 tmp11.presetName = "BounceOutRight";
 
 export const BounceIn = tmp2;

@@ -1,5 +1,5 @@
 // Module ID: 11355
-// Function ID: 88306
+// Function ID: 88318
 // Name: getChatInputPositionStyle
 // Dependencies: []
 // Exports: default

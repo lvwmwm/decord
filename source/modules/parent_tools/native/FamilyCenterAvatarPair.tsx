@@ -1,10 +1,10 @@
-// Module ID: 13702
-// Function ID: 103669
+// Module ID: 13704
+// Function ID: 103691
 // Name: FamilyCenterAvatarPair
 // Dependencies: []
 // Exports: default
 
-// Module 13702 (FamilyCenterAvatarPair)
+// Module 13704 (FamilyCenterAvatarPair)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.avatars = obj;
-obj.icon = { "Bool(false)": 1, "Bool(false)": 8, "Bool(false)": 16 };
+obj.icon = {};
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterAvatarPair.tsx");

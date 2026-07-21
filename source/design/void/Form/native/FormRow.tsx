@@ -1,5 +1,5 @@
 // Module ID: 5425
-// Function ID: 46494
+// Function ID: 46502
 // Name: renderCustom
 // Dependencies: []
 
@@ -34,9 +34,9 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
   obj = {};
   const merged = Object.assign(getPadding());
   obj.container = obj;
-  obj.label = { GUILD_ROOM_BACKGROUND_CONFIG: "RTC_CONNECTION_LOSS_RATE", id_hash: "handleJoinThreadVoice", columnGap: "toString" };
-  obj.leading = { -1604155421: 589823, 930566838: 1091633152 };
-  obj.trailing = { "Bool(false)": "soundboard_picker_collapsed_sections", "Bool(false)": "scalar", "Bool(false)": 2, "Bool(false)": 9 };
+  obj.label = {};
+  obj.leading = {};
+  obj.trailing = { <string:257031009>: "soundboard_picker_collapsed_sections", <string:3063964329>: "scalar", <string:3644247378>: 2, <string:1415340651>: 9 };
   obj.disabled = { opacity: 0.5 };
   obj = { borderColor: importDefault(dependencyMap[4]).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
   const merged1 = Object.assign(getPadding(-2));

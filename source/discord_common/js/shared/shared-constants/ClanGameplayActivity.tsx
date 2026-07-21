@@ -1,7 +1,7 @@
 // Module ID: 11864
-// Function ID: 91852
+// Function ID: 91864
 // Name: ClanGameplayActivity
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11864 (ClanGameplayActivity)
 const _module = require(dependencyMap[0]);

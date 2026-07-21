@@ -1,10 +1,10 @@
-// Module ID: 12733
-// Function ID: 97659
+// Module ID: 12735
+// Function ID: 97681
 // Name: urlPartToSettingsEnum
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
-// Module 12733 (urlPartToSettingsEnum)
+// Module 12735 (urlPartToSettingsEnum)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_settings/urlPartToSettingsEnum.tsx");
 

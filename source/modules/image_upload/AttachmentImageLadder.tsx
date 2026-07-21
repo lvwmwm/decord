@@ -1,7 +1,7 @@
 // Module ID: 1824
-// Function ID: 20002
+// Function ID: 20007
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: snapAttachmentDimensions
 
 // Module 1824 (_createForOfIteratorHelperLoose)
@@ -84,7 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const items = ["state", "size", "channel", "isArray", "content", "replace", "jsxs", "test", "isArray", "url", "skuId", "jsxs", "isArray", "transform"];
+const items = [true, true, true, true, true, true, true, true, true, true, true, true, true, true];
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/image_upload/AttachmentImageLadder.tsx");
 

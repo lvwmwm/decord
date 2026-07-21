@@ -1,11 +1,12 @@
-// Module ID: 15390
-// Function ID: 117399
+// Module ID: 15393
+// Function ID: 117438
 // Name: filterExperimental
 // Dependencies: [0, 0, 0, 0]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15390 (filterExperimental)
-import { Permissions } from "__exportStarResult1";
+// Module 15393 (filterExperimental)
+import { Permissions } from "result";
+import result from "result";
 
 function filterExperimental(permissions, showExperimental) {
   let flag = showExperimental;
@@ -533,7 +534,7 @@ function generateGuildAppsSection(arg0) {
   filterExperimental(obj);
   return obj;
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/permissions/PermissionUtils.tsx");
+result = result.fileFinishedImporting("modules/permissions/PermissionUtils.tsx");
 
 export { getGuildPermissionSpec };
 export const generateGuildPermissionSpec = function generateGuildPermissionSpec(showStageChannelPermissions) {

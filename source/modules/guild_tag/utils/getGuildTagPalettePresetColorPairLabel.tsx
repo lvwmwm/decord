@@ -1,10 +1,10 @@
-// Module ID: 16151
-// Function ID: 124485
+// Module ID: 16159
+// Function ID: 124546
 // Name: getGuildTagPalettePresetColorLabel
 // Dependencies: []
 // Exports: default
 
-// Module 16151 (getGuildTagPalettePresetColorLabel)
+// Module 16159 (getGuildTagPalettePresetColorLabel)
 function getGuildTagPalettePresetColorLabel(primary) {
   if (constants.HOT_PINK === primary) {
     const intl26 = require(dependencyMap[1]).intl;

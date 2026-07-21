@@ -1,7 +1,7 @@
 // Module ID: 10653
-// Function ID: 83128
+// Function ID: 83139
 // Name: RequestToSpeakParticipant
-// Dependencies: [31, 33, 689, 3831, 10665, 2, 31, 33, 689, 3831, 10667, 2, 1838, 3756, 4142, 482, 566, 4308, 2, 31, 33, 4961, 4955]
+// Dependencies: [31, 33, 689, 3831, 10665, 2, 31, 33, 689, 3831, 10667, 2, 1838, 3756, 4142, 482, 566, 4308, 2, 31, 33, 4960, 4954]
 // Exports: default
 
 // Module 10653 (RequestToSpeakParticipant)
@@ -55,7 +55,7 @@ function RequestToSpeakParticipant(participant) {
   obj3.numberOfLines = 1;
   obj3.children = participant.user.username;
   const items3 = [callback(arg1(dependencyMap[10]).LegacyText, obj3), ];
-  const obj5 = { children: arg1(dependencyMap[9]).participantMemberInfo(participant) };
+  const obj5 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: arg1(dependencyMap[9]).participantMemberInfo(participant) };
   items3[1] = callback(arg1(dependencyMap[11]).Text, obj5);
   obj2.children = items3;
   items1[1] = callback2(View, obj2);
@@ -91,14 +91,14 @@ function RequestToSpeakParticipant(participant) {
   return tmp2(tmp3, obj);
 }
 ({ jsx: closure_4, jsxs: closure_5 } = BaseIconImage);
-module_10665 = { container: {}, listContainer: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": 4 }, participantItemContainer: { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005656728111325089, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000004665176389013497, 9223372036854775807: 141317.775, 0: "<string:285213930>" }, touchableContainer: {}, participantAvatarContainer: { paddingLeft: 4 }, participantNameplateContainer: { -926844321: "Group 11", 1381477602: 2 } };
-module_10665 = { "Bool(true)": "<string:4131472781>", "Bool(true)": "<string:1895825675>", "Bool(true)": "%Int32ArrayPrototype%", "Bool(true)": "DownloadBarIllocon", fontFamily: require("_createForOfIteratorHelperLoose").Fonts.PRIMARY_SEMIBOLD, color: require("result2").colors.MOBILE_TEXT_HEADING_PRIMARY };
+module_10665 = { container: {}, listContainer: { <string:1171686958>: null, <string:498705183>: null, <string:3893946390>: 4 }, participantItemContainer: { 1655329890: -11572925419396017000000000000000000000000, -1135455284: 0.00000000000000000000000000000000000000000000000000000000000004665176389013497, 1702608251: 141317.775, -1437140064: "y" }, touchableContainer: {}, participantAvatarContainer: { paddingLeft: 4 }, participantNameplateContainer: { position: "Group 11", padding: 2 } };
+module_10665 = { paddingTop: "100%", paddingBottom: 360, height: 80, width: 80, fontFamily: require("_createForOfIteratorHelperLoose").Fonts.PRIMARY_SEMIBOLD, color: require("result2").colors.MOBILE_TEXT_HEADING_PRIMARY };
 module_10665.participantNameplateText = module_10665;
 module_10665.participantActionContainer = {};
 module_10665.participantActionIcon = { backgroundColor: require("result2").colors.BACKGROUND_BASE_LOW };
 module_10665.emptyContainer = {};
 module_10665.emptyParticipant = {};
-module_10665.emptyTitle = { <string:4221627596>: null, <string:1359674961>: 8, <string:4183987831>: "100%" };
+module_10665.emptyTitle = { 1101247569: null, 289681: "\u{1F450}\u{1F3FE}", 25454162: true };
 module_10665.emptyBody = { textAlign: "center" };
 module_10665 = module_10665.createStyles(module_10665);
 const result = sortKey.fileFinishedImporting("modules/stage_channels/native/components/RequestToSpeakParticipantList.tsx");
@@ -116,7 +116,7 @@ export default function RequestToSpeakParticipantList(channel) {
     obj = { style: tmp.emptyContainer };
     const obj1 = { source: importDefault(dependencyMap[20]) };
     const items = [callback(importDefault(dependencyMap[19]), obj1), , ];
-    const obj2 = { 1501064855: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008935732565137, -1267889981: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000043458473819206, -1145697943: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001126549808859, -1266241916: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005965658253026592, style: tmp.emptyTitle };
+    const obj2 = { Opened: 1627389952, marginVertical: 29249850, marginStart: -1876471551, marginEnd: 15473, style: tmp.emptyTitle };
     const intl = arg1(dependencyMap[13]).intl;
     obj2.children = intl.string(arg1(dependencyMap[13]).t.7R24mX);
     items[1] = callback(arg1(dependencyMap[11]).Text, obj2);

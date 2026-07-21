@@ -1,7 +1,7 @@
 // Module ID: 6744
-// Function ID: 52479
+// Function ID: 52487
 // Name: AutomodAlertActionType
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: parseAlertActionsExecution
 
 // Module 6744 (AutomodAlertActionType)

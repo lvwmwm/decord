@@ -1,5 +1,5 @@
 // Module ID: 6499
-// Function ID: 50662
+// Function ID: 50670
 // Name: SharingGemSpotIllustration
 // Dependencies: []
 // Exports: SharingGemSpotIllustration

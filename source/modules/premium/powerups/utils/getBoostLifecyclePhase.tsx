@@ -1,5 +1,5 @@
 // Module ID: 11604
-// Function ID: 90158
+// Function ID: 90170
 // Name: BOOST_EXPIRING_DISPLAY_WINDOW_DAYS
 // Dependencies: []
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp

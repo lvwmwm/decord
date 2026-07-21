@@ -1,10 +1,10 @@
-// Module ID: 7454
-// Function ID: 59802
+// Module ID: 7455
+// Function ID: 59814
 // Name: generateAcceptInviteOptions
 // Dependencies: []
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 7454 (generateAcceptInviteOptions)
+// Module 7455 (generateAcceptInviteOptions)
 function generateAcceptInviteOptions(target_type) {
   let target_application;
   let target_user;

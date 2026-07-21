@@ -1,10 +1,10 @@
-// Module ID: 15640
-// Function ID: 119438
+// Module ID: 15643
+// Function ID: 119477
 // Name: calculatePIPState
 // Dependencies: []
 // Exports: default
 
-// Module 15640 (calculatePIPState)
+// Module 15643 (calculatePIPState)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const VoicePanelModes = arg1(dependencyMap[2]).VoicePanelModes;

@@ -1,5 +1,5 @@
 // Module ID: 10948
-// Function ID: 85136
+// Function ID: 85147
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
 // Dependencies: [270270464, 266338304, 1441792]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial

@@ -1,5 +1,5 @@
 // Module ID: 12180
-// Function ID: 93623
+// Function ID: 93635
 // Name: buildBaseEmbedProps
 // Dependencies: []
 // Exports: createQuestsEmbed

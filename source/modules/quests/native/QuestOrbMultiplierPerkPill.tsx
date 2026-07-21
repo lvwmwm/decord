@@ -1,28 +1,28 @@
-// Module ID: 13936
-// Function ID: 105904
+// Module ID: 13939
+// Function ID: 105936
 // Name: QuestOrbMultiplierPerkPill
 // Dependencies: []
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 13936 (QuestOrbMultiplierPerkPill)
+// Module 13939 (QuestOrbMultiplierPerkPill)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = { max: -536870861, guildId: -299892737 };
+let closure_8 = {};
 let closure_9 = {};
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { style: null, pointerEvents: "80a1b67e775ddb8de80fde27e63a5302", accessibilityElementsHidden: "CircleQuestionIcon-secondary", importantForAccessibility: "png", borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.fullGradientContainer = obj;
 const obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj1["borderRadius"] = importDefault(dependencyMap[4]).radii.round;
 obj.fullGradient = obj1;
-const tmp3 = arg1(dependencyMap[2]);
-obj.fullGradientContent = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
+const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
+obj.fullGradientContent = obj2;
 let closure_10 = obj.createStyles(obj);
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
+const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkPill.tsx");
 
 export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(questId) {
@@ -71,7 +71,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp15 = !tmp10;
     let tmp16 = tmp15;
     if (!tmp10) {
-      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, { flex: false, flexGrow: null });
+      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, {});
     }
     const items2 = [tmp16, ];
     obj2 = { children: formatToPlainStringResult };

@@ -1,5 +1,5 @@
 // Module ID: 11432
-// Function ID: 88960
+// Function ID: 88972
 // Name: ApplicationCommandItem
 // Dependencies: []
 // Exports: default
@@ -13,13 +13,13 @@ const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[3]).AUTOCOMPLETE_ROW_HEIGHT;
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { userId: null, bottom: null, marginTop: null, flex: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { borderWidth: null, position: null, top: null, left: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandItem = obj;
   obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
   obj.highlightedApplicationCommandItem = obj;
   obj.applicationCommandIcon = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-  obj.applicationCommandDescriptionWrapper = { 996395015: true, 2001900630: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", 1370266028: null };
-  obj.applicationCommandSectionName = { "Bool(true)": "\u092A\u0942\u0930\u094D\u0935\u093E\u0939\u094D\u0928", "Bool(true)": "\u0905\u092A\u0930\u093E\u0939\u094D\u0928" };
+  obj.applicationCommandDescriptionWrapper = {};
+  obj.applicationCommandSectionName = { padding: 1799880706, borderRadius: 2097152571 };
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -87,11 +87,13 @@ export default function ApplicationCommandItem(highlighted) {
   }
   const items2 = [showIcon, , ];
   const obj3 = { style: tmp.applicationCommandDescriptionWrapper };
-  const obj4 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: `/ ${command.displayName}` };
-  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), callback(arg1(dependencyMap[13]).Text, { children: command.displayDescription })];
+  const obj4 = { "Null": true, "Null": 15.1, "Null": 253, children: `/ ${command.displayName}` };
+  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), ];
+  const obj5 = { "Null": null, "Null": null, "Null": null, children: command.displayDescription };
+  items3[1] = callback(arg1(dependencyMap[13]).Text, obj5);
   obj3.children = items3;
   items2[1] = callback2(View, obj3);
-  const obj6 = { "Null": true, "Null": true, "Null": true, style: tmp.applicationCommandSectionName, children: name };
+  const obj6 = { delete: false, dispatch: false, raw: false, style: tmp.applicationCommandSectionName, children: name };
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj6);
   obj.children = items2;
   return callback2(arg1(dependencyMap[10]).PressableOpacity, obj);

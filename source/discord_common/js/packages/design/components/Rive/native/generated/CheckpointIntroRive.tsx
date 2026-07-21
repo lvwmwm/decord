@@ -1,14 +1,14 @@
 // Module ID: 3919
-// Function ID: 32373
+// Function ID: 32378
 // Name: CheckpointIntroRive
 // Dependencies: []
 
 // Module 3919 (CheckpointIntroRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Checkpoint Intro Desktop: {}, Globe: {}, Globe Single Line: {}, Start Button: {} };
+let closure_7 = { Checkpoint Intro Desktop: { -1497314773: true, -397146015: true, 294857406: true, 24627571: true }, Globe: {}, Globe Single Line: {}, Start Button: { -1497314773: true, -397146015: true, 294857406: true, 24627571: true } };
 let closure_8 = { Checkpoint Intro Desktop: [], Globe: [], Globe Single Line: [], Start Button: [] };
 let closure_9 = {
   Checkpoint Intro Desktop: function CheckpointIntroDesktopBindings(reducedMotionEnabled) {

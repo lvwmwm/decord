@@ -1,25 +1,25 @@
-// Module ID: 15059
-// Function ID: 113374
+// Module ID: 15062
+// Function ID: 113408
 // Name: ItemDetailsActionSheet
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15059 (ItemDetailsActionSheet)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15062 (ItemDetailsActionSheet)
+import "result";
+import { View } from "result";
+import closure_4 from "result";
+import closure_5 from "result";
+import closure_6 from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { height: 1, backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.divider = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/icymi/native/ItemDetailsActionSheet.tsx");
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = result);
+result = {};
+result = { height: 1, backgroundColor: require("result").colors.BORDER_SUBTLE };
+result.divider = result;
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/icymi/native/ItemDetailsActionSheet.tsx");
 
 export default function ItemDetailsActionSheet(arg0) {
   ({ guildId: closure_0, channelId: closure_1, id: closure_2 } = arg0);
@@ -56,7 +56,7 @@ export default function ItemDetailsActionSheet(arg0) {
     let obj5 = arg1(dependencyMap[13]);
     result = obj5.isChannelCustomScoreEligible(stateFromStores);
   }
-  obj1 = { left: null, startAndEndHeight: null };
+  obj1 = { marginVertical: null, GUILDS_EMPTY_NUX: null };
   obj2 = { icon: tmp6, title: tmp3 };
   let name;
   if (null != stateFromStores1) {

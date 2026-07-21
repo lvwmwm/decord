@@ -1,7 +1,7 @@
 // Module ID: 9485
-// Function ID: 73904
+// Function ID: 73915
 // Name: removeAutomodMessageNotice
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: removeAutomodMessageNotice
 
 // Module 9485 (removeAutomodMessageNotice)

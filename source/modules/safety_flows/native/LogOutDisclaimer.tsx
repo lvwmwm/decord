@@ -1,10 +1,10 @@
-// Module ID: 16431
-// Function ID: 126939
+// Module ID: 16439
+// Function ID: 127000
 // Name: LogOutDisclaimer
 // Dependencies: []
 // Exports: default
 
-// Module 16431 (LogOutDisclaimer)
+// Module 16439 (LogOutDisclaimer)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");

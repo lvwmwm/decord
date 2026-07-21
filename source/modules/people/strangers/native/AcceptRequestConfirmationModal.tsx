@@ -1,5 +1,5 @@
 // Module ID: 9054
-// Function ID: 71089
+// Function ID: 71100
 // Name: AcceptRequestConfirmationModal
 // Dependencies: []
 // Exports: default
@@ -10,7 +10,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { IS_SPAM: null, IS_GUILD_RESOURCE_CHANNEL: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { notificationCenterAckedBeforeId: null, focusModeExpiresAtMs: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.bodyText = obj;
 obj.text = { textAlign: "center" };
 let closure_6 = obj.createStyles(obj);
@@ -35,7 +35,7 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   const intl3 = arg1(dependencyMap[6]).intl;
   obj.children = intl3.string(arg1(dependencyMap[6]).t.eJzSDT);
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  const obj1 = { style: tmp.text };
+  const obj1 = { hasMaxConnections: true, isBoostOnlySubscription: "md", style: tmp.text };
   const intl4 = arg1(dependencyMap[6]).intl;
   obj1.children = intl4.string(arg1(dependencyMap[6]).t.GB4jUw);
   items[1] = callback(arg1(dependencyMap[8]).Text, obj1);

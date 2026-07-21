@@ -1,5 +1,5 @@
 // Module ID: 928
-// Function ID: 10094
+// Function ID: 10098
 // Name: safeJoinConsoleArgs
 // Dependencies: []
 // Exports: createConsoleTemplateAttributes, formatConsoleArgs, hasConsoleSubstitutions

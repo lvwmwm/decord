@@ -1,10 +1,10 @@
-// Module ID: 14525
-// Function ID: 109382
+// Module ID: 14528
+// Function ID: 109414
 // Name: SmsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14525 (SmsScreen)
+// Module 14528 (SmsScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -86,7 +86,7 @@ export default function SmsScreen(mfaChallenge) {
   obj.headerText = intl2.string(arg1(closure_2[8]).t.o4JNrO);
   obj.subtitle = tmp8;
   obj = { style: screenStyles.inputContainer };
-  const obj1 = { 0: null, 0: null, 0: null, 0: null, 9223372036854775807: null, "Bool(true)": null, maxLength: arg1(closure_2[10]).SMS_CODE_LENGTH, onChange: handleChange };
+  const obj1 = { maxLength: arg1(closure_2[10]).SMS_CODE_LENGTH, onChange: handleChange };
   const intl3 = arg1(closure_2[8]).intl;
   obj1.label = intl3.string(arg1(closure_2[8]).t./sHnXc);
   const intl4 = arg1(closure_2[8]).intl;
@@ -95,7 +95,7 @@ export default function SmsScreen(mfaChallenge) {
   obj1.placeholder = intl5.string(arg1(closure_2[8]).t.tARzgo);
   obj1.errorMessage = tmp3[0];
   const items1 = [handleChange(arg1(closure_2[12]).TextInput, obj1), ];
-  const obj2 = { height: true, accessibilityRole: "yes", hasDiversityParent: "2026-04-collectibles-profile-frames-purchase" };
+  const obj2 = { _monthsRegex: 44, overflow: null, messageHasObscurableMedia: true };
   const intl6 = arg1(closure_2[8]).intl;
   obj2.text = intl6.string(arg1(closure_2[8]).t.WbaP3r);
   obj2.onPress = function handleResend() {

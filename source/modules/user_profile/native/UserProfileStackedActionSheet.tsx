@@ -1,5 +1,5 @@
 // Module ID: 11626
-// Function ID: 90266
+// Function ID: 90278
 // Name: UserProfileStackedActionSheet
 // Dependencies: []
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
@@ -26,7 +26,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   let children;
   let title;
   onBack = onBack.onBack;
-  let obj = { "Bool(false)": "spring", "Bool(false)": "linear", "Bool(false)": "easeInEaseOut" };
+  let obj = { 978544094: false, 1710970538: false, -1208246174: false };
   ({ title, children } = onBack);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onBack, obj);
@@ -55,7 +55,7 @@ export default function UserProfileStackedActionSheet(onBack) {
     tmp9 = callback(arg1(dependencyMap[10]).PressableOpacity, obj2);
   }
   const items1 = [tmp9, , ];
-  const obj4 = { 1655478700: 17, 72438626: "message_display_compact", 1446732292: "message", children: title };
+  const obj4 = { handleMessageFocus: 17, enableHome: "message_display_compact", afterMs: "message", children: title };
   items1[1] = callback(arg1(dependencyMap[13]).Text, obj4);
   if (tmp4) {
     const obj5 = { style: tmp3.headerSpacer };
@@ -71,7 +71,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
   data = data.data;
   const arg1 = data;
   const importDefault = data.renderItem;
-  let obj = { updateVideoStreamId: "spring", code: "linear", onPressClose: "easeInEaseOut" };
+  let obj = { hasHeaderBack: false, isChannelNSFWGated: false, countContainer: false };
   Object.setPrototypeOf(null);
   const merged = Object.assign(data, obj);
   const tmp3 = callback2();

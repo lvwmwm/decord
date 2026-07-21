@@ -1,10 +1,10 @@
-// Module ID: 13976
-// Function ID: 106190
+// Module ID: 13979
+// Function ID: 106222
 // Name: useActiveGuildSubscriptions
 // Dependencies: []
 // Exports: default
 
-// Module 13976 (useActiveGuildSubscriptions)
+// Module 13979 (useActiveGuildSubscriptions)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).UserGuildRoleSubscriptionRelationship;

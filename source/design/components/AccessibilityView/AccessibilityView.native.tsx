@@ -1,5 +1,5 @@
 // Module ID: 4521
-// Function ID: 39718
+// Function ID: 39726
 // Name: AccessibilityView
 // Dependencies: []
 
@@ -14,7 +14,7 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityVi
     flag = false;
   }
   ({ nativeID, onAccessibilityEscape } = accessibilityViewIsModal);
-  let obj = { -1346350803: null, 1383004514: 4, -1658610399: 4, -1789826719: "rgba(0, 0, 0, 0.75)" };
+  let obj = { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", "Bool(true)": "NOT_RESPONDER" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityViewIsModal, obj);
   if (flag) {

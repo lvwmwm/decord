@@ -1,5 +1,5 @@
 // Module ID: 3285
-// Function ID: 26014
+// Function ID: 26019
 // Dependencies: []
 
 // Module 3285
@@ -10,8 +10,8 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Null": null, "Null": null, "Null": null, "Null": null }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Bool(false)": "aria-valuemax", "Bool(false)": "hiddenActivities", "Bool(false)": "POPOUT_WINDOW", "Bool(false)": "google_sku_ids" }, defaultWidth: "full" });
 obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;

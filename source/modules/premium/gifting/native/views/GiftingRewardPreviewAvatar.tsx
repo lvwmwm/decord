@@ -1,5 +1,5 @@
 // Module ID: 9758
-// Function ID: 75900
+// Function ID: 75911
 // Name: GiftingRewardPreviewAvatar
 // Dependencies: []
 // Exports: default

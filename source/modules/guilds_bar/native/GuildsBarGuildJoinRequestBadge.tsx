@@ -1,10 +1,10 @@
-// Module ID: 14702
-// Function ID: 110935
+// Module ID: 14705
+// Function ID: 110969
 // Name: GuildsBarGuildJoinRequestBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14702 (GuildsBarGuildJoinRequestBadge)
+// Module 14705 (GuildsBarGuildJoinRequestBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,5 +1,5 @@
 // Module ID: 11799
-// Function ID: 91559
+// Function ID: 91571
 // Name: hideLaunchPad
 // Dependencies: []
 // Exports: default

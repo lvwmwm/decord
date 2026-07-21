@@ -1,5 +1,5 @@
 // Module ID: 6797
-// Function ID: 53648
+// Function ID: 53656
 // Name: CollectiblesMarketingTabTooltipRecord
 // Dependencies: []
 

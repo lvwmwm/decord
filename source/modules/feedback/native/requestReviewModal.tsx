@@ -1,10 +1,10 @@
-// Module ID: 12502
-// Function ID: 95802
+// Module ID: 12504
+// Function ID: 95824
 // Name: _showAndroidRatingRequest
 // Dependencies: []
 // Exports: default
 
-// Module 12502 (_showAndroidRatingRequest)
+// Module 12504 (_showAndroidRatingRequest)
 function _showAndroidRatingRequest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

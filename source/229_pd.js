@@ -34,7 +34,7 @@ function setCancelFlag(passiveListener) {
 class Event {
   constructor(arg0, arg1) {
     self = this;
-    obj = { "Bool(true)": 1, "Bool(true)": true, "Bool(true)": null, "Bool(true)": true, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+    obj = { oldFormErrors: null, rejectWithError: null, failImmediatelyWhenRateLimited: null, <string:1684270296>: 6, <string:979634301>: false, <string:1481878102>: "#ffa813", <string:792366638>: "absolute", <string:2117947928>: null };
     obj.eventTarget = global;
     obj.event = require;
     obj.currentTarget = global;
@@ -47,7 +47,7 @@ class Event {
     }
     obj.timeStamp = timeStamp;
     result = WeakMap.set(self, obj);
-    definePropertyResult = Object.defineProperty(self, "isTrusted", { FRIEND_REQUESTS: null, ForYouLoadMore: null });
+    definePropertyResult = Object.defineProperty(self, "isTrusted", {});
     keys = Object.keys(require);
     for (let num = 0; num < keys.length; num = num + 1) {
       tmp5 = keys[num];
@@ -76,9 +76,9 @@ function defineRedirectDescriptor(arg0) {
 function defineCallDescriptor(arg0) {
   const weakMap = arg0;
   const obj = {
-    1403228943: null,
-    830090965: null,
-    0: null,
+    "Bool(false)": null,
+    "Bool(false)": null,
+    "Bool(false)": null,
     value() {
       const event = callback(this).event;
       return event[closure_0](...arguments);
@@ -218,7 +218,7 @@ function defineEventAttribute(prototype, abort) {
           } while (null != iter);
         }
         if (null !== tmp3) {
-          obj = { display: -0.000000000000000000000000000000000000000000000000000000000000000003420251035322796, flexDirection: -0.0000000000000000000000000000000000000000000000000000000000000000001098640431092466, gap: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018858781351177015, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007416000777963161, paddingHorizontal: 14395982766705120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, listener: tmp3 };
+          obj = { LIGHT: false, st: false, displayName: false, httpServerLocation: false, name: false, listener: tmp3 };
           if (null === tmp6) {
             const result1 = obj.set(arg0, obj);
           } else {
@@ -450,7 +450,7 @@ if (tmp5) {
   class Event {
     constructor(arg0, arg1) {
       self = this;
-      obj = { "Bool(true)": 1, "Bool(true)": true, "Bool(true)": null, "Bool(true)": true, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+      obj = { oldFormErrors: null, rejectWithError: null, failImmediatelyWhenRateLimited: null, <string:1684270296>: 6, <string:979634301>: false, <string:1481878102>: "#ffa813", <string:792366638>: "absolute", <string:2117947928>: null };
       obj.eventTarget = global;
       obj.event = require;
       obj.currentTarget = global;
@@ -463,7 +463,7 @@ if (tmp5) {
       }
       obj.timeStamp = timeStamp;
       result = WeakMap.set(self, obj);
-      definePropertyResult = Object.defineProperty(self, "isTrusted", { FRIEND_REQUESTS: null, ForYouLoadMore: null });
+      definePropertyResult = Object.defineProperty(self, "isTrusted", {});
       keys = Object.keys(require);
       for (let num = 0; num < keys.length; num = num + 1) {
         tmp5 = keys[num];

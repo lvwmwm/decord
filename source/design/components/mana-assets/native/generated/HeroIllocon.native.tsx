@@ -1,5 +1,5 @@
 // Module ID: 6259
-// Function ID: 50302
+// Function ID: 50310
 // Name: HeroIllocon
 // Dependencies: []
 // Exports: HeroIllocon

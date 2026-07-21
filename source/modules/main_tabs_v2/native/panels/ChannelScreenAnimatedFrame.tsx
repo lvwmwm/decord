@@ -1,10 +1,10 @@
-// Module ID: 14668
-// Function ID: 110604
+// Module ID: 14671
+// Function ID: 110636
 // Name: ChannelScreenAnimatedFrame
 // Dependencies: []
 // Exports: default
 
-// Module 14668 (ChannelScreenAnimatedFrame)
+// Module 14671 (ChannelScreenAnimatedFrame)
 let HEADER_CORNER_RADIUS;
 let MIDNIGHT_BORDER_WIDTH;
 importAll(dependencyMap[0]);

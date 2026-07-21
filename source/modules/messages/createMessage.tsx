@@ -1,10 +1,10 @@
-// Module ID: 6989
-// Function ID: 55882
+// Module ID: 6990
+// Function ID: 55894
 // Name: userRecordToServer
 // Dependencies: []
 // Exports: createBotMessage, default
 
-// Module 6989 (userRecordToServer)
+// Module 6990 (userRecordToServer)
 function userRecordToServer(author) {
   return { id: author.id, username: author.username, avatar: author.avatar, discriminator: author.discriminator, bot: author.bot, global_name: author.globalName, primary_guild: author.primaryGuild };
 }
@@ -118,7 +118,7 @@ export const createBotMessage = function createBotMessage(arg0) {
   obj.flags = constants3.EPHEMERAL;
   obj.content = content;
   obj.channel_id = channelId;
-  obj = { ;: 49421056, \: 52988672, ,: 52988672, /: 49417984, n: 49417984, id: closure_9, discriminator: closure_10 };
+  obj = { u: 49447168, [: 53014784, i: 53014784, p: 49444096, l: 49444096, id: closure_9, discriminator: closure_10 };
   obj.author = obj;
   obj.attachments = [];
   if (null == embeds) {

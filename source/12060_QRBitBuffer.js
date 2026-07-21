@@ -1,5 +1,5 @@
 // Module ID: 12060
-// Function ID: 93117
+// Function ID: 93129
 // Name: QRBitBuffer
 // Dependencies: []
 

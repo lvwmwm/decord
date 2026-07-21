@@ -1,10 +1,10 @@
-// Module ID: 4617
-// Function ID: 40241
+// Module ID: 4616
+// Function ID: 40248
 // Name: isValidFormResponse
 // Dependencies: []
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 4617 (isValidFormResponse)
+// Module 4616 (isValidFormResponse)
 const _module = require(dependencyMap[0]);
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: closure_2, MANUAL_APPROVAL_FORM_FIELDS: closure_3 } = _module);
 const GuildFeatures = require(dependencyMap[1]).GuildFeatures;

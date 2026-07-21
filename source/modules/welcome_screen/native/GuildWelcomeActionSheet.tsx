@@ -1,5 +1,5 @@
 // Module ID: 11678
-// Function ID: 90594
+// Function ID: 90606
 // Name: WelcomeChannelRow
 // Dependencies: []
 // Exports: default
@@ -114,7 +114,7 @@ class WelcomeChannelRow {
         obj6.leading = tmp16;
         tmp28 = jsx;
         num8 = 22;
-        obj7 = {};
+        obj7 = { hasMaxConnections: 1626341378, isBoostOnlySubscription: -1035927550 };
         obj7.children = welcomeChannel.description;
         obj6.label = jsx(arg1(dependencyMap[22]).Text, obj7);
         tmp29 = null;
@@ -157,7 +157,7 @@ let obj = arg1(dependencyMap[12]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-const obj1 = { "Null": "22ff64f3c42212e7404d5af41f019eda", "Null": "mallow", "Null": "png", "Null": true, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+const obj1 = { paths: null, accessibilityRole: "343480e621e13dced5261af60d8976f8", create: "graggle", parent: "png", borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.guildIcon = obj1;
 const obj2 = {};
 const tmp4 = arg1(dependencyMap[11]);
@@ -173,7 +173,7 @@ obj.guildDescription = {};
 const importDefaultResult1 = importDefault(dependencyMap[14]);
 obj.welcomeChannel = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, marginTop: 8, borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.channelsTitle = { alignSelf: "flex-start" };
-obj.emoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.emoji = {};
 const obj4 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, marginTop: 8, borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.placeholderEmojiWrapper = { padding: 4, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 let closure_19 = obj.createStyles(obj);
@@ -270,7 +270,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       obj = { contentContainerStyle: tmp.container };
       obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: importDefault(dependencyMap[30]).Sizes.MEDIUM, textScale: 2 };
       const items9 = [callback(importDefault(dependencyMap[30]), obj1), , , , ];
-      const obj2 = { style: tmp.header };
+      const obj2 = { delete: "/assets/modules/contact_sync/native/images", dispatch: 215.5, raw: 135, style: tmp.header };
       const intl = arg1(dependencyMap[31]).intl;
       const obj3 = {
         guildName: stateFromStores.name,

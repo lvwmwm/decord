@@ -1,5 +1,5 @@
 // Module ID: 11174
-// Function ID: 86872
+// Function ID: 86884
 // Name: BotsBanner
 // Dependencies: []
 // Exports: default

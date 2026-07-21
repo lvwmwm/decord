@@ -1,29 +1,29 @@
 // Module ID: 10146
-// Function ID: 78465
+// Function ID: 78476
 // Name: SafetyToolsAboutScreen
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
 // Module 10146 (SafetyToolsAboutScreen)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { getSafetyToolsActionSheetKey as closure_6 } from "__exportStarResult1";
-import { HelpdeskArticles } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "result";
+import closure_4 from "result";
+import { View } from "result";
+import { getSafetyToolsActionSheetKey as closure_6 } from "result";
+import { HelpdeskArticles } from "result";
+import result from "result";
+import result from "result";
+import result from "result";
 
-({ jsx: closure_8, jsxs: closure_9 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { marginHorizontal: require("__exportStarResult1").space.PX_32 };
-__exportStarResult1.aboutContainer = __exportStarResult1;
-const obj1 = { "Bool(false)": null, "Bool(false)": null, marginBottom: require("__exportStarResult1").space.PX_24 };
-__exportStarResult1.description = obj1;
-const obj2 = { "Bool(false)": null, "Bool(false)": null, marginTop: require("__exportStarResult1").space.PX_8 };
-__exportStarResult1.reportFalsePositive = obj2;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsAboutActionSheet.tsx");
+({ jsx: closure_8, jsxs: closure_9 } = result);
+result = {};
+result = { marginHorizontal: require("result").space.PX_32 };
+result.aboutContainer = result;
+const obj1 = { body: null, ctaLabel: null, marginBottom: require("result").space.PX_24 };
+result.description = obj1;
+const obj2 = { body: null, ctaLabel: null, marginTop: require("result").space.PX_8 };
+result.reportFalsePositive = obj2;
+result = result.createStyles(result);
+result = result.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsAboutActionSheet.tsx");
 
 export default function SafetyToolsAboutScreen(channelId) {
   channelId = channelId.channelId;
@@ -38,7 +38,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   const first = tmp[0];
   const React = first;
   let closure_5 = tmp[1];
-  const tmp3 = __exportStarResult1();
+  const tmp3 = result();
   let obj = arg1(dependencyMap[8]);
   const tmp4 = null != obj.useSafetyToolsButtonTooltipForChannel(channelId);
   let closure_6 = tmp4;
@@ -92,7 +92,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   obj2.learnMoreLink = obj5.getArticleURL(constants.SAFETY_ALERTS);
   obj1.children = intl2.format(arg1(dependencyMap[13]).t.njJ/Cg, obj2);
   const items2 = [callback2(arg1(dependencyMap[16]).TextWithIOSLinkWorkaround, obj1), ];
-  const obj3 = { 9223372036854775807: false, -9223372036854775808: false, disabled: first };
+  const obj3 = { "Bool(true)": 1124139009, "Bool(true)": 153708, disabled: first };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj3.text = intl3.string(arg1(dependencyMap[13]).t.Xb2REN);
   obj3.onPress = callback;

@@ -1,10 +1,10 @@
-// Module ID: 13445
-// Function ID: 102099
+// Module ID: 13447
+// Function ID: 102121
 // Name: SuggestedColors
 // Dependencies: []
 // Exports: default
 
-// Module 13445 (SuggestedColors)
+// Module 13447 (SuggestedColors)
 function SuggestedColors(arg0) {
   let suggestedColors;
   ({ suggestedColors, onSelect: closure_0, color: closure_1 } = arg0);
@@ -43,9 +43,9 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const obj1 = { 9223372036854775807: "boolean", 0: "string", borderRadius: importDefault(dependencyMap[5]).radii.xs };
+const obj1 = { allowsInlineMediaPlayback: false, javaScriptEnabled: false, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.suggestedColor = obj1;
-obj.suggestedColorsContainer = {};
+obj.suggestedColorsContainer = { "Bool(false)": 7, "Bool(false)": 370 };
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");

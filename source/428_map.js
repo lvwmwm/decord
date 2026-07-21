@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 428 (map)
-const items = [["isArray", "p"], [], [], [], [], [], []];
+const items = [[true, true], [], [], [], [true, true], [], []];
 const map = new Map(items);
 arg5.default = {
   isBoldTextEnabled() {

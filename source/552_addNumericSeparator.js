@@ -130,7 +130,7 @@ function inspectString(slice, maxStringLength) {
 }
 function lowbyte(str) {
   str = str.charCodeAt(0);
-  const tmp = { 9223372036854775807: "Galaxy S5", -9223372036854775808: "SM-G900", -9223372036854775808: "Galaxy S6", 9223372036854775807: "SM-G920", -9223372036854775808: "Galaxy S6 Edge" }[str];
+  const tmp = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }[str];
   if (tmp) {
     let text = `\${tmp}`;
   } else {

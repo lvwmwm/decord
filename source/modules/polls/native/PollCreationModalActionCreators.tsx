@@ -1,5 +1,5 @@
 // Module ID: 11306
-// Function ID: 87957
+// Function ID: 87969
 // Name: openCreatePollModal
 // Dependencies: []
 // Exports: closeCreatePollModal, openCreatePollModal

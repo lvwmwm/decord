@@ -1,10 +1,10 @@
-// Module ID: 16069
-// Function ID: 123474
+// Module ID: 16077
+// Function ID: 123535
 // Name: Overview
 // Dependencies: []
 // Exports: default
 
-// Module 16069 (Overview)
+// Module 16077 (Overview)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -21,9 +21,9 @@ const tmp3 = arg1(dependencyMap[5]);
 obj.title = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const obj1 = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.body = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_400 };
-obj.blocks = { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000601517253400353, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867187757 };
+obj.blocks = {};
 obj.verificationType = { marginBottom: 20 };
-obj.button = {};
+obj.button = { mediaCapturePermissionGrantType: true, javaScriptEnabled: true, fontFamily: true };
 let closure_13 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_400 };
 const articleURL = importDefault(dependencyMap[8]).getArticleURL(tmp2.HelpdeskArticles.VERIFICATION_FAQ);
@@ -102,7 +102,7 @@ export default function Overview() {
       return tmp4;
     })
   }), items1);
-  obj1 = { style: tmp.title };
+  obj1 = { "Null": null, "Null": "be0ebbe0444cf9ea073becdc22f65ec9", "Null": "DenyIcon", style: tmp.title };
   const intl = arg1(dependencyMap[14]).intl;
   obj1.children = intl.string(arg1(dependencyMap[14]).t.Iz0kDg);
   const items2 = [callback(arg1(dependencyMap[18]).Text, obj1), , ];

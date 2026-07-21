@@ -1,5 +1,5 @@
 // Module ID: 9711
-// Function ID: 75508
+// Function ID: 75519
 // Name: ItemRenderer
 // Dependencies: []
 // Exports: ItemRenderer

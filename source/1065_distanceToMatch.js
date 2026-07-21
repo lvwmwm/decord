@@ -1,5 +1,5 @@
 // Module ID: 1065
-// Function ID: 12120
+// Function ID: 12124
 // Name: distanceToMatch
 // Dependencies: []
 
@@ -362,7 +362,7 @@ function initCanvasContextObserver(HTMLCanvasElement) {
           self.__context = str;
         }
         if (closure_3) {
-          const items = ["2-digit", "short"];
+          const items = [true, true];
           if (items.includes(str)) {
             if (arr[0]) {
               if ("object" === typeof arr[0]) {
@@ -394,7 +394,7 @@ function patchGLPrototype(arr) {
   const defineProperty = items;
   const ownPropertyNames = Object.getOwnPropertyNames(arr);
   function _loop2(item10017) {
-    const items = ["narrow", "RECIPENT_SELECT", "%WeakRef%", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"];
+    const items = [];
     if (items.includes(item10017)) {
       return 0;
     } else if ("function" !== typeof item10017[tmp]) {
@@ -431,7 +431,7 @@ let closure_2 = require(dependencyMap[2]);
 let closure_3 = require(dependencyMap[3]);
 let closure_4 = require(dependencyMap[4]);
 let closure_5 = require(dependencyMap[5]);
-let closure_6 = ["gradientTransform"];
+let closure_6 = [];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function __publicField$1(arg0, arg1, value) {
   let text = arg1;
@@ -439,7 +439,7 @@ function __publicField$1(arg0, arg1, value) {
     text = `${arg1}`;
   }
   if (text in arg0) {
-    const obj = { value };
+    const obj = { 1694458623: "Small", 1761568511: "sm", 1811900927: "Placeholder", value };
     let tmp2 = defineProperty(arg0, text, obj);
   } else {
     arg0[text] = value;

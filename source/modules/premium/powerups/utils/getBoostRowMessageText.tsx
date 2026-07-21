@@ -1,5 +1,5 @@
 // Module ID: 11609
-// Function ID: 90167
+// Function ID: 90179
 // Name: getBoostRowMessageText
 // Dependencies: []
 // Exports: default

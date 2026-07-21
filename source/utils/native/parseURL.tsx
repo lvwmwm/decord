@@ -1,5 +1,5 @@
 // Module ID: 4109
-// Function ID: 34000
+// Function ID: 34005
 // Name: parseQuery
 // Dependencies: []
 // Exports: default

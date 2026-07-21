@@ -1,11 +1,11 @@
-// Module ID: 7776
-// Function ID: 61744
+// Module ID: 7777
+// Function ID: 61756
 // Name: getExperimentVariantsForDevTools
-// Dependencies: [1929379870, 1962934302]
+// Dependencies: [1946157086, 1979711518, 2030043166]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 7776 (getExperimentVariantsForDevTools)
-const obj = { type: require(dependencyMap[0]).Variation_Type.OVERRIDE };
+// Module 7777 (getExperimentVariantsForDevTools)
+const obj = { ../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js: "y", 炖锅: "Text", <string:2538864640>: "__workletHash", type: require(dependencyMap[0]).Variation_Type.OVERRIDE };
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");
 

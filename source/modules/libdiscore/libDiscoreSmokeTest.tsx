@@ -1,10 +1,10 @@
-// Module ID: 16480
-// Function ID: 127276
+// Module ID: 16488
+// Function ID: 127337
 // Name: libDiscoreSmokeTest
 // Dependencies: []
 // Exports: default, libDiscoreSmokeTest
 
-// Module 16480 (libDiscoreSmokeTest)
+// Module 16488 (libDiscoreSmokeTest)
 function libDiscoreSmokeTest() {
   return _libDiscoreSmokeTest(...arguments);
 }

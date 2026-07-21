@@ -1,9 +1,9 @@
-// Module ID: 15226
-// Function ID: 114966
+// Module ID: 15229
+// Function ID: 115000
 // Name: GuildChannelLabel
 // Dependencies: []
 
-// Module 15226 (GuildChannelLabel)
+// Module 15229 (GuildChannelLabel)
 function GuildChannelLabel(channel) {
   channel = channel.channel;
   let obj = { style: callback().content };
@@ -18,8 +18,8 @@ const importAllResult = importAll(dependencyMap[0]);
 let closure_5 = arg1(dependencyMap[2]).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let obj = { container: { paddingVertical: 10 }, content: {}, iconContainer: { marginRight: 0 } };
-obj = { 0: null, 9223372036854775807: null, -9223372036854775808: null, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+let obj = { container: { paddingVertical: 10 }, content: { "Null": 7, "Null": 370 }, iconContainer: { marginRight: 0 } };
+obj = { tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.simpleIcon = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);
@@ -32,13 +32,13 @@ const memoResult = importAllResult.memo(function GuildChannelRow(channel) {
   let trailing;
   let voiceStates;
   channel = channel.channel;
-  let obj = { arrow: true, onPress: true, start: true, end: true, start: true, end: true };
+  let obj = { labelLineClamp: true, icon: true, arrow: true, onPress: true, start: true, end: true };
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   const tmp3 = callback();
   let obj1 = arg1(dependencyMap[9]);
-  obj = { body: null, icon: "2eaff20be2a75be7ccdd4c6f19f0eb36", accessibilityRole: "img_account_sync_youtube_white", channel, voiceStates };
+  obj = { "Bool(false)": null, "Bool(false)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(false)": "img_account_sync_youtube_white", channel, voiceStates };
   const channelAccessibilityProps = obj1.getChannelAccessibilityProps(obj);
   obj = {};
   obj1 = { style: tmp3.simpleIcon, source: arg1(dependencyMap[8]).getSimpleChannelIcon(channel) };

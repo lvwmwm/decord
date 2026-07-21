@@ -1,7 +1,7 @@
 // Module ID: 4261
-// Function ID: 37325
+// Function ID: 37333
 // Name: baseIsMap
-// Dependencies: [4294967295, 0]
+// Dependencies: []
 
 // Module 4261 (baseIsMap)
 

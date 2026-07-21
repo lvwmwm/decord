@@ -1,5 +1,5 @@
 // Module ID: 11885
-// Function ID: 91989
+// Function ID: 92001
 // Name: getClampedMaxLines
 // Dependencies: []
 
@@ -155,18 +155,19 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.borderColor = arg0 ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE;
   obj.borderWidth = 1;
   obj.bubble = obj;
-  obj = { <string:3164495994>: "rgba(255, 255, 255, 0.08)", <string:1731619777>: null, <string:3164495994>: null, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+  obj = { cix: 24, np: 24, channel_id: null, borderRadius: importDefault(dependencyMap[7]).radii.lg };
   const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
   obj["top"] = -14;
   obj.statusBubble = obj;
-  obj.statusBubbleMeasureable = {};
+  obj.statusBubbleMeasureable = { "Bool(false)": "<string:3082955202>", "Bool(false)": "<string:103629460>", "Bool(false)": "<string:3630497793>", "Bool(false)": "<string:961609729>" };
+  const obj1 = { flexDirection: "NewUserIcon", flexWrap: "png", gap: true, isEnabled: "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: importDefault(dependencyMap[7]).radii.round };
   const merged1 = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
-  obj.smallCircle = { borderRadius: importDefault(dependencyMap[7]).radii.round };
-  const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.smallCircle = obj1;
+  const obj2 = { includeFrecency: true, lastUsedCommandId: true, lastUsedTimeMs: true, alignItems: true, flexDirection: true, borderRadius: importDefault(dependencyMap[7]).radii.round };
   const merged2 = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
-  obj.largeCircle = { borderRadius: importDefault(dependencyMap[7]).radii.round };
-  const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
-  obj.largeCircleInner = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.round, borderTopRightRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.largeCircle = obj2;
+  const obj3 = { gap: true, isEnabled: true, isRoadblocksEnabled: true, position: true, top: true, right: true, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.round, borderTopRightRadius: importDefault(dependencyMap[7]).radii.round };
+  obj.largeCircleInner = obj3;
   obj.addStatusIconSpacer = { width: 6 };
   obj.statusBubbleLeftAligned = { alignItems: "flex-start" };
   return obj;

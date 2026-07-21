@@ -1,9 +1,9 @@
-// Module ID: 16399
-// Function ID: 126689
+// Module ID: 16407
+// Function ID: 126750
 // Name: AVErrorStreamViewHighPacketLossDefinition
 // Dependencies: []
 
-// Module 16399 (AVErrorStreamViewHighPacketLossDefinition)
+// Module 16407 (AVErrorStreamViewHighPacketLossDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,16 +1,15 @@
 // Module ID: 3483
-// Function ID: 26875
+// Function ID: 26880
 // Name: getMonth
-// Dependencies: [3366, 3370]
+// Dependencies: []
 // Exports: default
 
 // Module 3483 (getMonth)
-import startOfWeek from "startOfWeek";
-import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
-
+let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
+let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function getMonth(defaultResult1) {
-  getTimezoneOffsetInMilliseconds.default(1, arguments);
-  return startOfWeek.default(defaultResult1).getMonth();
+  closure_1.default(1, arguments);
+  return closure_0.default(defaultResult1).getMonth();
 };
 export default exports.default;

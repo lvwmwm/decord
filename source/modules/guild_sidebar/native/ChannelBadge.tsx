@@ -1,10 +1,10 @@
-// Module ID: 14925
-// Function ID: 112365
+// Module ID: 14928
+// Function ID: 112399
 // Name: ChannelBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14925 (ChannelBadge)
+// Module 14928 (ChannelBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -47,7 +47,7 @@ export default function ChannelBadge(arg0) {
           tmp3 = null;
           if (postsWithUnreadsCount > 0) {
             const obj2 = { style: tmp.channelInfoContainer };
-            let obj3 = {};
+            let obj3 = { hasMaxConnections: 15, isBoostOnlySubscription: "center" };
             obj3 = arg1(dependencyMap[9]);
             obj3.children = obj3.humanizeValue(postsWithUnreadsCount, stateFromStores);
             obj2.children = jsx(arg1(dependencyMap[8]).Text, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 4207
-// Function ID: 36561
+// Function ID: 36569
 // Name: toInteger
 // Dependencies: []
 

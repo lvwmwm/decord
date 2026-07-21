@@ -1,7 +1,7 @@
 // Module ID: 10388
-// Function ID: 80083
+// Function ID: 80094
 // Name: useChatViewPointerEventsAndroid
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: default
 
 // Module 10388 (useChatViewPointerEventsAndroid)

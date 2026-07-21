@@ -1,5 +1,5 @@
 // Module ID: 12269
-// Function ID: 94051
+// Function ID: 94063
 // Name: LargeCountDownPill
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const _module2 = require(dependencyMap[2]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[3]).radii.round };
 obj.largeCountdownPill = obj;
-const obj1 = { w: 3, __closure: 2, <string:1890922434>: "auto", <string:38486597>: 1, <string:44074451>: null, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
+const obj1 = { "Bool(true)": 3, "Bool(true)": 2, "Bool(true)": "auto", "Bool(true)": 1, "Bool(true)": null, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
 obj.largeCountdownPillText = obj1;
 obj.iconStyle = {};
 let closure_7 = _module2.createStyles(obj);

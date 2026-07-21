@@ -1,5 +1,5 @@
 // Module ID: 10398
-// Function ID: 80115
+// Function ID: 80126
 // Name: LikelyAtoWarningBanner
 // Dependencies: []
 
@@ -43,7 +43,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80120 = handleLearnMore.useCallback((cta) => {
+    f80131 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: constants2.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
@@ -86,7 +86,7 @@ class LikelyAtoWarningBanner {
         }
       };
       obj.actionItems = callback2(warningId(senderId[19]), obj);
-      const obj1 = {};
+      const obj1 = { hasMaxConnections: false, isBoostOnlySubscription: false };
       const intl2 = channelId(senderId[15]).intl;
       obj1.children = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
       obj.learnMore = callback2(channelId(senderId[20]).TextWithIOSLinkWorkaround, obj1);

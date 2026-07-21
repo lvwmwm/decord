@@ -1,5 +1,5 @@
 // Module ID: 11650
-// Function ID: 90370
+// Function ID: 90382
 // Name: ApplicationIconAndName
 // Dependencies: []
 // Exports: default

@@ -1,11 +1,11 @@
-// Module ID: 16099
-// Function ID: 124131
+// Module ID: 16107
+// Function ID: 124192
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: isDefaultRuleId
 
-// Module 16099 (set)
-const set = new Set([false]);
+// Module 16107 (set)
+const set = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_automod/SystemRulesUtils.tsx");
 

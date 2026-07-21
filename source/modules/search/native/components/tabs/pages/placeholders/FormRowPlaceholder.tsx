@@ -1,25 +1,25 @@
-// Module ID: 15240
-// Function ID: 115047
+// Module ID: 15243
+// Function ID: 115081
 // Name: FormRowPlaceholderItem
 // Dependencies: []
 // Exports: default
 
-// Module 15240 (FormRowPlaceholderItem)
+// Module 15243 (FormRowPlaceholderItem)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { itemContainer: obj };
-obj = { width: null, accessible: "07392a850e043822a5c8062588fbfbb4", message: "WaveformIcon", current: "png", flags: true, st: "/assets/design/components/Icon/native/redesign/generated/images", paddingVertical: arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING };
-const obj1 = { -1437189274: null, 1389932780: "b7eca7761481c5ff3cc170b16fbdff57", 96994568: "img_no_results", 1385486178: "png", borderRadius: importDefault(dependencyMap[5]).radii.xl, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { height: "isArray", width: "useStateFromStores", accessibilityRole: "textAlign", -1584035243: "r", 998828176: "isArray", 1402519447: "constructor", paddingVertical: arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING };
+const obj1 = { flexDirection: null, alignItems: "b7eca7761481c5ff3cc170b16fbdff57", justifyContent: "img_no_results", top: "png", borderRadius: importDefault(dependencyMap[5]).radii.xl, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.avatar = obj1;
-obj.innerContainer = {};
-const obj2 = { onBeforeGoBack: null, hueToGummyColor: null, ar-YE: null, zIndex: null, borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.innerContainer = { "Bool(true)": null, "Bool(false)": null };
+const obj2 = { bannerAdjustment: null, replayOnNavigationFocus: "fbbee3b1c0716eaa554a8f9a94badc67", minHeight: "asset_nitro_ticket", position: "png", borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.upperText = obj2;
-const tmp3 = arg1(dependencyMap[3]);
-obj.lowerText = { borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj3 = { minWidth: true, textAlign: true, fontSize: true, marginBottom: true, borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.lowerText = obj3;
 let closure_6 = obj.createStyles(obj);
-const obj3 = { borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/FormRowPlaceholder.tsx");
 
 export default function FormRowPlaceholderItem(style) {

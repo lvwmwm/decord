@@ -1,5 +1,5 @@
 // Module ID: 1078
-// Function ID: 12410
+// Function ID: 12414
 // Name: startProfileForSpan
 // Dependencies: []
 // Exports: startProfileForSpan

@@ -1,23 +1,23 @@
-// Module ID: 13595
-// Function ID: 103019
+// Module ID: 13597
+// Function ID: 103041
 // Name: items
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 4294967295]
 // Exports: default
 
-// Module 13595 (items)
-import closure_2 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13597 (items)
+import closure_2 from "result";
+import { View } from "result";
+import { jsx } from "result";
+import result from "result";
 
 let closure_4 = importDefault(dependencyMap[2]);
-__exportStarResult1 = {};
-__exportStarResult1 = { marginHorizontal: require("__exportStarResult1").space.PX_16, marginTop: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.noticeContainer = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+result = {};
+result = { marginHorizontal: require("result").space.PX_16, marginTop: require("result").space.PX_16 };
+result.noticeContainer = result;
+result = result.createStyles(result);
 const obj1 = {};
-const items = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }, , ];
-const obj2 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
+const items = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") }, , ];
+const obj2 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") };
 items[1] = {
   order: 300,
   predicate() {
@@ -28,7 +28,7 @@ items[1] = {
     }
     return false === nsfwAllowed;
   },
-  Component: require("__exportStarResult1").SensitiveContentFiltersTeenNotice
+  Component: require("result").SensitiveContentFiltersTeenNotice
 };
 const obj3 = {
   order: 300,
@@ -40,7 +40,7 @@ const obj3 = {
     }
     return false === nsfwAllowed;
   },
-  Component: require("__exportStarResult1").SensitiveContentFiltersTeenNotice
+  Component: require("result").SensitiveContentFiltersTeenNotice
 };
 items[2] = {
   order: 200,
@@ -52,7 +52,7 @@ items[2] = {
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("result")
 };
 obj1.SENSITIVE_CONTENT_FILTERS = items;
 const obj4 = {
@@ -65,10 +65,10 @@ const obj4 = {
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("result")
 };
-const items1 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }, ];
-const obj5 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
+const items1 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") }, ];
+const obj5 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") };
 items1[1] = {
   order: 200,
   predicate() {
@@ -79,7 +79,7 @@ items1[1] = {
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("result")
 };
 obj1.CONTENT_AND_SOCIAL = items1;
 const obj6 = {
@@ -92,12 +92,12 @@ const obj6 = {
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("result")
 };
-const items2 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }];
+const items2 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") }];
 obj1.DATA_AND_PRIVACY = items2;
-const obj7 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
+const obj7 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("result") };
+result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
 
 export default function SettingsScreenNotices(screen) {
   screen = screen.screen;

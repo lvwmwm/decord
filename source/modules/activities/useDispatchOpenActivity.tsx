@@ -1,5 +1,5 @@
 // Module ID: 10594
-// Function ID: 82644
+// Function ID: 82655
 // Name: useDispatchOpenActivity
 // Dependencies: []
 // Exports: default

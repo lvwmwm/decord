@@ -1,5 +1,5 @@
 // Module ID: 675
-// Function ID: 8282
+// Function ID: 8286
 // Name: expandLocation
 // Dependencies: []
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
@@ -109,8 +109,8 @@ function debugLogEvent(StringResult, result, logEventProperties) {
     report("Analytics", StringResult);
   }
 }
-let closure_4 = [];
-let closure_5 = ["LAUNCH_PAD_PULL_TAB_SCALE_FACTOR"];
+let closure_4 = [true];
+let closure_5 = [0.271];
 let closure_6 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ setDebugTrackedData: closure_7, getLocation: closure_8 } = arg1(dependencyMap[2]));
@@ -239,6 +239,15 @@ obj3 = {
   throttleKeys(arg0) {
     const items = [, ];
     ({ guild_id: arr[0], is_pending: arr[1] } = arg0);
+    return items;
+  }
+};
+const obj8 = {
+  <string:2307915780>: true,
+  <string:1838153732>: true,
+  <string:939393028>: true,
+  throttleKeys(application_id) {
+    const items = [application_id.application_id];
     return items;
   }
 };
@@ -609,12 +618,6 @@ const obj7 = {
   throttlePeriod: 900000,
   throttleKeys(server) {
     const items = [server.server];
-    return items;
-  }
-};
-const obj8 = {
-  throttleKeys(application_id) {
-    const items = [application_id.application_id];
     return items;
   }
 };

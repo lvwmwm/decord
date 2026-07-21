@@ -1,7 +1,7 @@
 // Module ID: 10466
-// Function ID: 81032
+// Function ID: 81043
 // Name: QuestConsoleStartError
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 10466 (QuestConsoleStartError)
 const _module = require(dependencyMap[0]);

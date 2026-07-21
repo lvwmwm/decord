@@ -1,5 +1,5 @@
 // Module ID: 8825
-// Function ID: 69557
+// Function ID: 69568
 // Name: useScaledSectionHeight
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 11166
-// Function ID: 86821
+// Function ID: 86833
 // Name: getStaffReleasePhase
 // Dependencies: []
 // Exports: default
@@ -143,7 +143,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   ({ activityItem, context, assetNames } = backgroundResolution);
   ({ locationObject, onActivityItemSelected, embeddedActivitiesManager } = backgroundResolution);
   if (assetNames === undefined) {
-    assetNames = ["SENTRY_BAGGAGE_KEY_PREFIX"];
+    assetNames = ["RollOutRight"];
   }
   let num = backgroundResolution.backgroundResolution;
   if (num === undefined) {

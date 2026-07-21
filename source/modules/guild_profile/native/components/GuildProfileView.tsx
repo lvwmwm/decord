@@ -1,5 +1,5 @@
 // Module ID: 8573
-// Function ID: 68100
+// Function ID: 68111
 // Name: getBackgroundForProfile
 // Dependencies: []
 // Exports: default
@@ -56,7 +56,7 @@ function GuildProfileGradient(guildProfile) {
 }
 function JoinForFullAccessCard() {
   let obj = { style: styles().joinForFullAccessCard };
-  obj = {};
+  obj = { hasMaxConnections: false, isBoostOnlySubscription: false };
   const intl = arg1(dependencyMap[20]).intl;
   obj.children = intl.string(arg1(dependencyMap[20]).t.us0bE8);
   const items = [callback(arg1(dependencyMap[19]).Text, obj), ];
@@ -77,18 +77,18 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.colorBanner = {};
-obj.imageBanner = {};
-obj.body = {};
-obj.error = { <string:3798027838>: 8, <string:1627573841>: null, <string:3151386190>: "\u270A\u{1F3FF}", <string:45572556>: true };
+obj.colorBanner = { y: "/assets/design/components/Icon/native/redesign/generated/images", isArray: 24 };
+obj.imageBanner = { crystal_ball: "/assets/design/components/Icon/native/redesign/generated/images", channels: 24, isStreamInfoOverlayEnabled: 24 };
+obj.body = { width: "accessibilityLabel", marginVertical: "r", borderRadius: "isArray" };
+obj.error = { <string:18940595>: 8, <string:24337135>: null, <string:332421729>: "\u270A\u{1F3FF}", <string:82118454>: true };
 obj.buttonContainer = { marginTop: 160 };
-obj.header = { flex: "SERVER_GUIDE_CHANNEL_SELECTED", flexDirection: "_gameProfileResults", gap: "r", overflow: "MERCH_STORE", flexDirection: "isArray" };
+obj.header = { "Bool(false)": null, "Bool(false)": "f1c8eb967129922c017ed22ec1b6aff1", "Bool(false)": "MinecraftNeutralIcon-secondary", "Bool(false)": "png", "Bool(false)": true };
 const tmp3 = arg1(dependencyMap[4]);
 obj.avatarBackground = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.restrictedAcronym = { fontSize: 24 };
 obj.joinForFullAccessCard = { gap: 4 };
 const styles = obj.createStyles(obj);
-const frozen = Object.freeze({ START: {}, END: { max: null, guildId: null } });
+const frozen = Object.freeze({ START: {}, END: {} });
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
 
@@ -132,7 +132,7 @@ export default function GuildProfileView(guildProfile) {
     tmp11 = guildProfile.description.length > 0;
   }
   if (tmp11) {
-    obj = { children: guildProfile.description };
+    obj = { hasMaxConnections: true, isBoostOnlySubscription: "md", children: guildProfile.description };
     tmp11 = callback(arg1(dependencyMap[19]).Text, obj);
   }
   const items2 = [tmp11, ];

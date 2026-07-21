@@ -1,5 +1,5 @@
 // Module ID: 9665
-// Function ID: 75259
+// Function ID: 75270
 // Name: FOOTER_HEIGHT
 // Dependencies: []
 
@@ -10,9 +10,9 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { html: true, json: "/assets/modules/premium/native/images/perks", xml: 300.5, padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { "Null": "r", "Null": 300.5, "Null": 175, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.label = { collapsable: 52881784.83212474, preventClipping: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.label = { value: 52881784.83212474, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_32, height: importDefault(dependencyMap[4]).space.PX_48 };
 obj.buttonWrapper = obj1;
 const tmp3 = arg1(dependencyMap[2]);
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
     obj.children = intl.string(arg1(dependencyMap[7]).t.mKSwAW);
     const items = [callback(arg1(dependencyMap[6]).Text, obj), , ];
     const obj1 = { style: tmp.buttonWrapper };
-    const obj2 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696, onPress: onViewAll };
+    const obj2 = { onPress: onViewAll };
     const intl2 = arg1(dependencyMap[7]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[7]).t.ZT24In);
     obj2.disabled = disabled;

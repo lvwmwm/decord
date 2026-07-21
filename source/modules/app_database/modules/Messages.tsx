@@ -1,5 +1,5 @@
 // Module ID: 6704
-// Function ID: 52009
+// Function ID: 52017
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
@@ -188,7 +188,7 @@ const tmp4 = () => {
 let tmp5 = () => {
   class Messages {
     constructor() {
-      f52052 = this;
+      f52060 = this;
       tmp = closure_5(this, Messages);
       this.actions = {
         CHANNEL_DELETE(arg0, arg1) {

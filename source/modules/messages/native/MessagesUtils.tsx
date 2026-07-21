@@ -1,5 +1,5 @@
 // Module ID: 9304
-// Function ID: 72690
+// Function ID: 72701
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
@@ -711,7 +711,8 @@ export const loadMoreAfter = function loadMoreAfter(channelId, hasMoreAfter) {
   }
 };
 export const clearRows = function clearRows(current, clear) {
-  arg4({ pendingUpdatesQueue: [] });
+  const obj = { display: null, flexDirection: null, alignItems: null, justifyContent: null, marginTop: null, icon: null, text: null, variant: null, size: null, grow: null, onPress: null, pendingUpdatesQueue: [] };
+  arg4(obj);
   clear.clear();
   callback2(arg2, arg3, false);
   importDefault(dependencyMap[42]).clearRows(current.current);

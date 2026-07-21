@@ -1,5 +1,5 @@
 // Module ID: 9668
-// Function ID: 75265
+// Function ID: 75276
 // Name: MediaKeyboardEmptyState
 // Dependencies: []
 // Exports: getMediaEmptyStateComponentOrNull
@@ -46,7 +46,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
     if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
       if (photosEmpty.photosEmpty) {
         if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
-          let obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, {}) };
+          let obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, { "Null": 12, "Null": 4 }) };
           const intl3 = arg1(dependencyMap[9]).intl;
           obj.actionLabel = intl3.string(arg1(dependencyMap[9]).t.JuXTi6);
           obj.actionPress = tmp2;
@@ -55,7 +55,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           obj.label = intl4.string(arg1(dependencyMap[9]).t.5g7NcN);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
-          obj = { actionIcon: callback(arg1(dependencyMap[11]).CameraIcon, {}) };
+          obj = { actionIcon: callback(arg1(dependencyMap[11]).CameraIcon, { "Null": 12, "Null": 4 }) };
           const intl = arg1(dependencyMap[9]).intl;
           obj.actionLabel = intl.string(arg1(dependencyMap[9]).t.tpoWUd);
           obj.actionPress = tmp;
@@ -67,7 +67,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
       }
     }
   }
-  obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, {}) };
+  obj = { actionIcon: callback(arg1(dependencyMap[8]).SettingsIcon, { "Null": 12, "Null": 4 }) };
   const intl5 = arg1(dependencyMap[9]).intl;
   obj.actionLabel = intl5.string(arg1(dependencyMap[9]).t.457oeG);
   obj.actionPress = photosEmpty.onPressPrivacySettings;

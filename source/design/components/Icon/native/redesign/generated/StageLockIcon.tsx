@@ -1,10 +1,10 @@
-// Module ID: 4650
-// Function ID: 40305
+// Module ID: 4649
+// Function ID: 40312
 // Name: StageLockIcon
 // Dependencies: []
 // Exports: StageLockIcon
 
-// Module 4650 (StageLockIcon)
+// Module 4649 (StageLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StageLockIcon.tsx");

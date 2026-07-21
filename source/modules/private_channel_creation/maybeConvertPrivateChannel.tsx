@@ -1,10 +1,10 @@
-// Module ID: 6991
-// Function ID: 55888
+// Module ID: 6992
+// Function ID: 55900
 // Name: maybeConvertPrivateChannel
 // Dependencies: []
 // Exports: default
 
-// Module 6991 (maybeConvertPrivateChannel)
+// Module 6992 (maybeConvertPrivateChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/private_channel_creation/maybeConvertPrivateChannel.tsx");
 

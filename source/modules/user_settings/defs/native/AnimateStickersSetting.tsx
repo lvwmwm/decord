@@ -1,20 +1,20 @@
-// Module ID: 14126
-// Function ID: 107213
+// Module ID: 14129
+// Function ID: 107245
 // Name: radio
 // Dependencies: [0, 0, 4294967295, 4294967295, 0, 0, 0]
 
-// Module 14126 (radio)
-import closure_2 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14129 (radio)
+import closure_2 from "result";
+import result from "result";
+import result from "result";
 
 const StickerAnimationSettings = arg1(dependencyMap[2]).StickerAnimationSettings;
-__exportStarResult1 = {
+result = {
   useTitle() {
     const intl = arg1(dependencyMap[4]).intl;
     return intl.string(arg1(dependencyMap[4]).t.R5nQkS);
   },
-  parent: require("__exportStarResult1").MobileSetting.ACCESSIBILITY,
+  parent: require("result").MobileSetting.ACCESSIBILITY,
   useValue: arg1(dependencyMap[3]).AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
     const AnimateStickers = arg1(dependencyMap[3]).AnimateStickers;
@@ -41,7 +41,7 @@ __exportStarResult1 = {
     }, []);
   }
 };
-__exportStarResult1 = __exportStarResult1.createRadio(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/AnimateStickersSetting.tsx");
+result = result.createRadio(result);
+result = result.fileFinishedImporting("modules/user_settings/defs/native/AnimateStickersSetting.tsx");
 
-export default __exportStarResult1;
+export default result;

@@ -1,5 +1,5 @@
 // Module ID: 11138
-// Function ID: 86628
+// Function ID: 86640
 // Name: useNativeForumPostContent
 // Dependencies: []
 // Exports: default
@@ -65,7 +65,7 @@ export default function useNativeForumPostContent(arg0) {
               tmp9 = isArray;
             }
             if (!messageLoaded) {
-              obj = {};
+              obj = { "Null": true, "Null": true, "Null": true };
               let tmp31 = messageContent;
               if (tmp9) {
                 tmp31 = null;

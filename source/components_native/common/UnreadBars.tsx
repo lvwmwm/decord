@@ -1,10 +1,10 @@
-// Module ID: 14757
-// Function ID: 111240
+// Module ID: 14760
+// Function ID: 111274
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 14757 (_isNativeReflectConstruct)
+// Module 14760 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -158,7 +158,7 @@ const tmp7 = (PureComponent) => {
         obj["opacity"] = self.animation;
         const obj1 = {};
         const animation = self.animation;
-        const obj2 = { inputRange: ["Text", "lc"] };
+        const obj2 = { inputRange: ["replace", "then"] };
         let num5 = -72;
         if (bottom) {
           num5 = 72;
@@ -231,7 +231,7 @@ export default function UnreadBars(contentInset) {
   }
   contentInset = contentInset.contentInset;
   if (contentInset === undefined) {
-    contentInset = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
+    contentInset = { emitDefaultValues: "ERROR", enumAsInteger: "ERROR", useProtoFieldName: "NOT_RESPONDER", prettySpaces: "NOT_RESPONDER" };
   }
   function handlePress(section) {
     callback({ section: section.section, item: section.row, animated: true });

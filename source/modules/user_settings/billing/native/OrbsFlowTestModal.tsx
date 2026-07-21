@@ -1,13 +1,13 @@
-// Module ID: 14541
-// Function ID: 109552
+// Module ID: 14544
+// Function ID: 109584
 // Name: BalanceWidgetMenuSection
 // Dependencies: []
 
-// Module 14541 (BalanceWidgetMenuSection)
+// Module 14544 (BalanceWidgetMenuSection)
 function BalanceWidgetMenuSection() {
   const tmp = callback5();
   let obj = { spacing: 16, style: tmp.container };
-  obj = { style: tmp.title };
+  obj = { EMPTY_SOUND_LIST: null, paddingTop: null, HAPPENING_NOW_PANELS_CONTAINER_PADDING: null, style: tmp.title };
   const items = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(importDefault(dependencyMap[12]), {})];
   obj.children = items;
   return callback4(arg1(dependencyMap[10]).Stack, obj);
@@ -57,14 +57,12 @@ function BalanceWidgetPillSection() {
     obj.openLazy(() => callback(paths[15])(paths[14], paths.paths).then((arg0) => arg0.default), "OrbsFlowTestModalBalanceWidgetMenuKey", obj);
   }, items1);
   let obj = { spacing: 16, style: tmp.container };
-  obj = { -9223372036854775808: "Array", 9223372036854775807: "isArray", 0: "Text", style: tmp.title };
-  const items2 = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(arg1(dependencyMap[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), , ];
-  obj = { "Bool(true)": null, "Bool(true)": null, onPress: callback1 };
-  items2[2] = callback3(arg1(dependencyMap[18]).Button, obj);
-  const obj1 = { style: tmp.balancePillContainer };
+  obj = { EMPTY_SOUND_LIST: "Disable collectibles shop cache", paddingTop: "shop_disable_cache", HAPPENING_NOW_PANELS_CONTAINER_PADDING: 1, style: tmp.title };
+  const items2 = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(arg1(dependencyMap[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), callback3(arg1(dependencyMap[18]).Button, { onPress: callback1 }), ];
+  obj = { style: tmp.balancePillContainer };
   const items3 = [callback3(arg1(dependencyMap[19]).BalanceWidgetPill, { balance: first }), callback3(arg1(dependencyMap[20]).BalanceWidgetPillButton, { balance: first, onPress: callback2 })];
-  obj1.children = items3;
-  items2[3] = callback4(closure_6, obj1);
+  obj.children = items3;
+  items2[3] = callback4(closure_6, obj);
   obj.children = items2;
   return callback4(arg1(dependencyMap[10]).Stack, obj);
 }
@@ -92,7 +90,7 @@ obj.wrap = obj;
 obj1 = { padding: importDefault(dependencyMap[9]).space.PX_16 };
 obj.container = obj1;
 obj.title = { marginBottom: 8 };
-obj2 = { marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj2 = { "Bool(false)": 7, "Bool(false)": 370, marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.balancePillContainer = obj2;
 let closure_10 = obj2.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

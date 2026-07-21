@@ -1,13 +1,13 @@
-// Module ID: 14428
-// Function ID: 108781
+// Module ID: 14431
+// Function ID: 108813
 // Name: toggle
 // Dependencies: [0, 4294967295, 0, 4294967295, 0]
 
-// Module 14428 (toggle)
-import closure_2 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14431 (toggle)
+import closure_2 from "result";
+import result from "result";
 
-__exportStarResult1 = {
+result = {
   useTitle() {
     const intl = arg1(dependencyMap[5]).intl;
     return intl.string(arg1(dependencyMap[5]).t.RAQUSN);
@@ -29,8 +29,8 @@ __exportStarResult1 = {
   },
   unsearchable: true
 };
-__exportStarResult1 = __exportStarResult1.createToggle(__exportStarResult1);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
+result = result.createToggle(result);
+result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
 
-export default __exportStarResult1;
-export const ParentalControlsDirectMessages = __exportStarResult1;
+export default result;
+export const ParentalControlsDirectMessages = result;

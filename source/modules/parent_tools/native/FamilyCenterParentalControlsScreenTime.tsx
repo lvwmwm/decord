@@ -1,10 +1,10 @@
-// Module ID: 13712
-// Function ID: 103728
+// Module ID: 13714
+// Function ID: 103750
 // Name: ScheduleRuleRow
 // Dependencies: []
 // Exports: default
 
-// Module 13712 (ScheduleRuleRow)
+// Module 13714 (ScheduleRuleRow)
 function ScheduleRuleRow(rule) {
   let readOnly;
   rule = rule.rule;
@@ -17,7 +17,7 @@ function ScheduleRuleRow(rule) {
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
   const obj2 = require(dependencyMap[5]);
   obj = { label: scheduleRuleDateRange, subLabel: require(dependencyMap[5]).formatDays(rule.days) };
-  obj = {};
+  obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl = require(dependencyMap[8]).intl;
   const string = intl.string;
   const tmp5 = importDefault(dependencyMap[9]);
@@ -87,7 +87,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   let tmp4 = null;
   if (null != id) {
     obj = { style: tmp.container };
-    obj = { style: tmp.header };
+    obj = { hasMaxConnections: true, isBoostOnlySubscription: true, style: tmp.header };
     const intl = require(dependencyMap[8]).intl;
     obj.children = intl.string(importDefault(dependencyMap[9]).72CmJd);
     const items = [callback(require(dependencyMap[7]).Text, obj), ];

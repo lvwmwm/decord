@@ -4,8 +4,8 @@
 // Dependencies: []
 
 // Module 112 (View)
-let closure_3 = [];
-let closure_4 = [301, 302, 303, 307, 308, "headers", "onBlur", "onFocus", null, null, null, null, null, null, null, null, true, true, true, "shamrock", true, true, true, true];
+let closure_3 = ["end", "text", "end", "id", "end", "children", "end", "accessible", "useStateFromStores", "Date", "parent", "w", "GET", "HEAD", "OPTIONS", "PATCH", "POST"];
+let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 const use = arg1(dependencyMap[2]).use;

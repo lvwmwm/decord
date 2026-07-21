@@ -1,5 +1,5 @@
 // Module ID: 8941
-// Function ID: 70445
+// Function ID: 70456
 // Name: XboxLinkDiscordConsent
 // Dependencies: []
 // Exports: default

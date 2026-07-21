@@ -1,5 +1,5 @@
 // Module ID: 11831
-// Function ID: 91704
+// Function ID: 91716
 // Name: useCanGiftProduct
 // Dependencies: []
 // Exports: useCanGiftProduct

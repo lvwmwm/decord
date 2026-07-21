@@ -1,5 +1,5 @@
 // Module ID: 11928
-// Function ID: 92251
+// Function ID: 92263
 // Name: isOnMetaHorizon
 // Dependencies: [1392, 3801, 2]
 // Exports: default

@@ -1,8 +1,8 @@
-// Module ID: 15169
-// Function ID: 114381
+// Module ID: 15172
+// Function ID: 114415
 // Dependencies: []
 
-// Module 15169
+// Module 15172
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ let obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.content = { flex: 1 };
-obj.tabContainer = { y: true, YWMtRe: true };
+obj.tabContainer = { "Null": false, "Null": false };
 let closure_10 = arg1(dependencyMap[6]).createStyles(obj);
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo((guildId) => {

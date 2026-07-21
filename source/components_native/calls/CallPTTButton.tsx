@@ -1,5 +1,5 @@
 // Module ID: 10373
-// Function ID: 79989
+// Function ID: 80000
 // Name: CallPTTButtonLooks
 // Dependencies: []
 
@@ -105,14 +105,14 @@ const memoResult = importAllResult.memo((look) => {
   const obj5 = arg1(dependencyMap[12]);
   class G {
     constructor() {
-      obj = sendCallback(f79992[15]);
+      obj = sendCallback(f80003[15]);
       tmp = obj.runOnJS(closure_6)(true);
-      obj2 = sendCallback(f79992[15]);
+      obj2 = sendCallback(f80003[15]);
       tmp2 = obj2.runOnJS(closure_4)(false);
       if (null != setIsSwipeToChatDisabled) {
         tmp3 = sendCallback;
-        tmp4 = f79992;
-        obj3 = sendCallback(f79992[15]);
+        tmp4 = f80003;
+        obj3 = sendCallback(f80003[15]);
         tmp5 = setIsSwipeToChatDisabled;
         tmp6 = obj3.runOnJS(setIsSwipeToChatDisabled)(false);
       }
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo((look) => {
   const PanResult = Gesture.Pan();
   class F {
     constructor() {
-      obj = sendCallback(f79992[15]);
+      obj = sendCallback(f80003[15]);
       tmp = obj.runOnJS(closure_6)(false);
       return;
     }

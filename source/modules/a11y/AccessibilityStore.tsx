@@ -1,5 +1,5 @@
 // Module ID: 4120
-// Function ID: 34191
+// Function ID: 34196
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -50,7 +50,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
   }
   return tmp;
 }
-let closure_3 = [];
+let closure_3 = [-2057830396];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

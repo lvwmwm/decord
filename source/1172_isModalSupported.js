@@ -1,5 +1,5 @@
 // Module ID: 1172
-// Function ID: 13334
+// Function ID: 13338
 // Name: isModalSupported
 // Dependencies: []
 // Exports: base64ToUint8Array, feedbackAlertDialog, isModalSupported, isNativeDriverSupportedForColorAnimations, isValidEmail

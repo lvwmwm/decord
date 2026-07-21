@@ -1,5 +1,5 @@
 // Module ID: 10762
-// Function ID: 83638
+// Function ID: 83649
 // Name: useActiveSpeakerPillScrollHandler
 // Dependencies: [357171200, 131072, 528089088, 452984832, 553648128, 503316480]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState

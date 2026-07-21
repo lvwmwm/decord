@@ -1,5 +1,5 @@
 // Module ID: 10336
-// Function ID: 79787
+// Function ID: 79798
 // Name: useFavoritesNotificationStore
 // Dependencies: []
 

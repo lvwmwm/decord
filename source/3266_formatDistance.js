@@ -1,13 +1,13 @@
 // Module ID: 3266
-// Function ID: 25965
+// Function ID: 25970
 // Name: formatDistance
 // Dependencies: []
 // Exports: default
 
 // Module 3266 (formatDistance)
-let closure_0 = { 1825112068: "r", 828899332: "isArray", 1826357252: "tag", 1827405828: "padding" };
-let closure_1 = {};
-let closure_2 = { xseconds: { "Null": null, "Null": null, "Null": null }, halfaminute: { "Null": "Array", "Null": "isArray", "Null": "surrogates" }, xminutes: { "Null": -0.00000000000000000000000000000000000000000000000000002088748164693829, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002255156497620204, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000072667494506026425 }, xhours: { "Null": "circa un anno", "Null": "circa {{count}} anni", "Null": "un anno" }, xdays: {}, xweeks: {}, xmonths: { "Null": "Array", "Null": "isIndexing", "Null": "Array" }, xyears: { "Null": true, "Null": true, "Null": true } };
+let closure_0 = {};
+let closure_1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+let closure_2 = { xseconds: { hasDiversity: null, PLATFORM_GITHUB: null, qwJHjo: null }, halfaminute: {}, xminutes: {}, xhours: { hasDiversity: "<string:1393623041>", PLATFORM_GITHUB: "<string:3896639490>", qwJHjo: "<string:301990219>" }, xdays: { hasDiversity: "r", PLATFORM_GITHUB: "label_type", qwJHjo: "lo" }, xweeks: { hasDiversity: "r", PLATFORM_GITHUB: "isArray", qwJHjo: "Icon" }, xmonths: { hasDiversity: null, PLATFORM_GITHUB: null, qwJHjo: null }, xyears: { hasDiversity: "una settimana", PLATFORM_GITHUB: "{{count}} settimane", qwJHjo: "circa un mese" } };
 
 export default function formatDistance(str, arg1, addSuffix) {
   const match = str.match(/about|over|almost|lessthan/i);

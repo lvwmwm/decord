@@ -1,11 +1,11 @@
-// Module ID: 6868
-// Function ID: 54311
+// Module ID: 6869
+// Function ID: 54323
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 6868 (set)
-const obj = { ALL: new Set([100, 1, 250, 2.5, 0, 0, 500, 5, 9001, 10, 25, 0.5, 50, 1, 100, 2, 250, 4, 500, 8, 1000]) };
-const set = new Set([100, 1, 250, 2.5, 0, 0, 500, 5, 9001, 10, 25, 0.5, 50, 1, 100, 2, 250, 4, 500, 8, 1000]);
+// Module 6869 (set)
+const obj = { ALL: new Set([1278558568, -682557436, 387011722, 1545675059, 290595124, 1384621079, -1965590635, 1914952017, 250, 1, 500, 2, 1000, 3, 9001, 4, 50, 0.5, null, 100, 1]) };
+const set = new Set([1278558568, -682557436, 387011722, 1545675059, 290595124, 1384621079, -1965590635, 1914952017, 250, 1, 500, 2, 1000, 3, 9001, 4, 50, 0.5, null, 100, 1]);
 obj.ADULT_THEMES = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingIGDBTheme.tsx");

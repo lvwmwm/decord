@@ -1,5 +1,5 @@
 // Module ID: 1911
-// Function ID: 21558
+// Function ID: 21563
 // Name: GuildRoleRecordTypeTag
 // Dependencies: []
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual

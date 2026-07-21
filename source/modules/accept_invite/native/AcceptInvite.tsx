@@ -1,5 +1,5 @@
 // Module ID: 11740
-// Function ID: 91186
+// Function ID: 91198
 // Name: getInviteState
 // Dependencies: []
 // Exports: default
@@ -98,9 +98,9 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { fontSize: false, marginLeft: false, textAlignVertical: false, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { EMPTY_SOUND_LIST: "number", alignContent: "number", containerSizeStyle: "mY3Y38", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.parentContainer = obj;
-obj.imageStyle = {};
+obj.imageStyle = { "Null": "confetti", "Null": "png" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.cardContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.cardContent = {};

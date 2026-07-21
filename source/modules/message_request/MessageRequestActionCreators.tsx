@@ -1,5 +1,5 @@
 // Module ID: 10129
-// Function ID: 78399
+// Function ID: 78410
 // Name: _acceptMessageRequest
 // Dependencies: []
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch

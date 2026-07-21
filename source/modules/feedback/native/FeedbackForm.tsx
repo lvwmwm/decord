@@ -1,5 +1,5 @@
 // Module ID: 9494
-// Function ID: 73965
+// Function ID: 73976
 // Name: FeedbackForm
 // Dependencies: []
 // Exports: FeedbackForm
@@ -10,13 +10,13 @@ let closure_4 = importAll(dependencyMap[1]);
 const FeedbackRating = arg1(dependencyMap[2]).FeedbackRating;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } };
+obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { 9223372036854775807: "usernameOnClick", 0: "headerBar", 0: "BOT_HTTP_INTERACTIONS" } };
 obj = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.reason = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.doNotShowAgainContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { MKTG_HYPESQUAD_FORM_SUBMITTED: "r", marginInlineEnd: "gift_info", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj.doNotShowAgainContainer = obj1;
 let closure_8 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/feedback/native/FeedbackForm.tsx");
 
 export const FeedbackForm = function FeedbackForm(otherKey) {

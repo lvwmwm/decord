@@ -1,5 +1,5 @@
 // Module ID: 11534
-// Function ID: 89824
+// Function ID: 89836
 // Name: getHasAllocateBoostPermission
 // Dependencies: []
 // Exports: default

@@ -1,7 +1,7 @@
 // Module ID: 8764
-// Function ID: 69279
+// Function ID: 69290
 // Name: MODE_CHANGE_PHYSICS
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8764 (MODE_CHANGE_PHYSICS)
 const _module = require(dependencyMap[0]);

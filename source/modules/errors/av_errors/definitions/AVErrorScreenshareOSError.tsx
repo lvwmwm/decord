@@ -1,9 +1,9 @@
-// Module ID: 16406
-// Function ID: 126716
+// Module ID: 16414
+// Function ID: 126777
 // Name: AVErrorScreenshareOSErrorDefinition
 // Dependencies: [31, 27, 33, 8849, 1212]
 
-// Module 16406 (AVErrorScreenshareOSErrorDefinition)
+// Module 16414 (AVErrorScreenshareOSErrorDefinition)
 import module_4294963475 from "module_4294963475";
 import getSystemLocale from "getSystemLocale";
 

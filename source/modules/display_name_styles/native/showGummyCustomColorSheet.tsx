@@ -1,10 +1,10 @@
-// Module ID: 14108
-// Function ID: 107121
+// Module ID: 14111
+// Function ID: 107153
 // Name: showGummyCustomColorSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14108 (showGummyCustomColorSheet)
+// Module 14111 (showGummyCustomColorSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/display_name_styles/native/showGummyCustomColorSheet.tsx");
 

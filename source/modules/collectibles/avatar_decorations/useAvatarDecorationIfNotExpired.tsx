@@ -1,10 +1,10 @@
-// Module ID: 7874
-// Function ID: 62686
+// Module ID: 7875
+// Function ID: 62699
 // Name: useAvatarDecorationIfNotExpired
 // Dependencies: []
 // Exports: default
 
-// Module 7874 (useAvatarDecorationIfNotExpired)
+// Module 7875 (useAvatarDecorationIfNotExpired)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const MAX_TIMEOUT_MS = arg1(dependencyMap[2]).MAX_TIMEOUT_MS;

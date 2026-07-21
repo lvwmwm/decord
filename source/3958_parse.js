@@ -1,5 +1,5 @@
 // Module ID: 3958
-// Function ID: 32776
+// Function ID: 32781
 // Name: parse
 // Dependencies: []
 
@@ -418,7 +418,7 @@ function pathToRegexp(source, items, id) {
       let num2 = 0;
       if (0 < match.length) {
         do {
-          obj = { 0: null, 0: null, 0: null, 9223372036854775807: null, 0: null, 0: null, 0: 191188, 0: -469765038, name: num2 };
+          obj = { name: num2 };
           let arr = items.push(obj);
           num2 = num2 + 1;
           length2 = match.length;
@@ -455,7 +455,7 @@ module.exports.compile = function compile(flag) {
 };
 module.exports.tokensToFunction = tokensToFunction;
 module.exports.tokensToRegExp = tokensToRegExp;
-const items = ["<string:3170631682>", "<string:1269366786>"];
+const items = [];
 const regExp = new RegExp(items.join("|"), "g");
 
 export default pathToRegexp;

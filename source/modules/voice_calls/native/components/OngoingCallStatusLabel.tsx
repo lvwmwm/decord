@@ -1,10 +1,10 @@
-// Module ID: 12604
-// Function ID: 96872
+// Module ID: 12606
+// Function ID: 96894
 // Name: OngoingCallStatusLabel
 // Dependencies: []
 // Exports: default
 
-// Module 12604 (OngoingCallStatusLabel)
+// Module 12606 (OngoingCallStatusLabel)
 importAll(dependencyMap[0]);
 let closure_2 = importDefault(dependencyMap[1]);
 let closure_3 = importDefault(dependencyMap[2]);

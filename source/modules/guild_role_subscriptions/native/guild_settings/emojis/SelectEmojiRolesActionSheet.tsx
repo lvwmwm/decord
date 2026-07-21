@@ -1,10 +1,10 @@
-// Module ID: 16343
-// Function ID: 126089
+// Module ID: 16351
+// Function ID: 126150
 // Name: SelectEmojiRolesActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16343 (SelectEmojiRolesActionSheet)
+// Module 16351 (SelectEmojiRolesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,7 +15,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.list = obj;
-obj.label = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
+obj.label = { "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Null": true };
 const obj1 = { flexShrink: 1 };
 const tmp2 = arg1(dependencyMap[5]);
 const merged = Object.assign(importDefault(dependencyMap[8])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE, 16));
@@ -61,7 +61,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   const callback = first;
   const React = tmp2[1];
   let obj = arg1(dependencyMap[9]);
-  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { INVALID_PARAMETER: null, HTML5_ERROR: null });
+  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { "Null": null, "Null": null });
   const View = subscriptionListingsForGuild;
   obj = {
     onPress() {
@@ -110,7 +110,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
       let archived = tmp.archived;
       if (archived) {
         const obj2 = { style: tmp.archivedBadge };
-        const obj3 = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.archivedBadgeText };
+        const obj3 = { delete: 369098752, dispatch: 16777216, raw: 882, style: tmp.archivedBadgeText };
         const intl = tmp(tmp[12]).intl;
         obj3.children = intl.string(tmp(tmp[12]).t.HRtfn9);
         obj2.children = callback2(tmp(tmp[17]).Text, obj3);

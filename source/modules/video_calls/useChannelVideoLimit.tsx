@@ -1,5 +1,5 @@
 // Module ID: 8834
-// Function ID: 69663
+// Function ID: 69674
 // Name: useChannelVideoLimit
 // Dependencies: []
 // Exports: default, getChannelVideoLimit
@@ -18,7 +18,7 @@ export default function useChannelVideoLimit(arg0) {
     const result = closure_3.countVoiceStatesForChannel(self.id);
     const guild = guild.getGuild(self.getGuildId());
     if (null == guild) {
-      let obj = { "Bool(true)": 1, "Bool(true)": "solid" };
+      let obj = { "Bool(false)": 1, "Bool(false)": "solid" };
     } else if (self.type === constants.GUILD_STAGE_VOICE) {
       obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
     } else {
@@ -31,7 +31,7 @@ export const getChannelVideoLimit = function getChannelVideoLimit(channel) {
   const result = closure_3.countVoiceStatesForChannel(channel.id);
   const guild = guild.getGuild(channel.getGuildId());
   if (null == guild) {
-    let obj = { "Bool(true)": 1, "Bool(true)": "solid" };
+    let obj = { "Bool(false)": 1, "Bool(false)": "solid" };
   } else if (channel.type === ChannelTypes.GUILD_STAGE_VOICE) {
     obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
   } else {

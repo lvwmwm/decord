@@ -1,17 +1,17 @@
-// Module ID: 15526
-// Function ID: 118514
+// Module ID: 15529
+// Function ID: 118553
 // Name: SimpleGuildContainer
 // Dependencies: []
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 15526 (SimpleGuildContainer)
+// Module 15529 (SimpleGuildContainer)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = { "Null": "accessibilityRole", "Null": "ip", "Null": "now", "Null": "x", "Null": "height" };
+let closure_9 = { crystal_ball: "accessibilityRole", dividerLine: "url", hasAnimatedGuildIcon: "left", partition: "x", GIFS_SEARCH: "TypeError" };
 const tmp3 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[3]).createStyles({ badgeWrapper: { 314033: null, 315680: null, 314067: null } });
+let closure_10 = arg1(dependencyMap[3]).createStyles({ badgeWrapper: { "Bool(false)": "rgb(144, 144, 251)", "Bool(false)": null, "Bool(false)": 0.6 } });
 let closure_11 = importAllResult.memo((backgroundColor) => {
   let badge;
   let unread;
@@ -123,7 +123,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     if (!selected) {
       return null;
     } else if (flag2) {
-      let obj = { "Null": 1045814270250125000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 14395982178675285000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184613633857, "Null": "center", 1376614150: "row", 1807699459: "center", -27990175: 8, style: {} };
+      let obj = { 1453996900: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011697693890125795, -1396944542: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000472610902674387, -1930638235: 170069507465109370000000, -1303207685: 8, 1368312326: "rgb(144, 144, 251)", 1415815282: null, 1751406139: 0.6, style: {} };
       let source;
       if (tmp != activityIndicatorState) {
         source = activityIndicatorState.source;
@@ -153,7 +153,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     } else {
       obj = {};
       obj = {};
-      const obj1 = { "Null": null, "Null": "\u{1F482}", "Null": true, "Null": 6, "Null": 85, "Null": null, borderRadius: borderRadius + 2, borderColor: token, width: 2 + 4, height: 2 + 4 };
+      const obj1 = { maxWidth: null, backgroundColor: "\u{1F482}", alignItems: true, justifyContent: 6, borderRadius: borderRadius + 2, padding: null, borderColor: token, width: 2 + 4, height: 2 + 4 };
       obj.style = obj1;
       const items = [flag2(backgroundColor, obj), ];
       const obj2 = {};
@@ -173,7 +173,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     let tmp = null;
     if (!flag2) {
       let obj = {};
-      obj = { call_count: "Masterpass tokenization is already in progress.", paidURL: null, borderColor: iconStroke.color, borderRadius, width: num, height: num };
+      obj = { "Bool(false)": "Masterpass tokenization is already in progress.", "Bool(false)": null, borderColor: iconStroke.color, borderRadius, width: num, height: num };
       obj.style = obj;
       tmp = flag2(backgroundColor, obj);
     }
@@ -257,7 +257,7 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   let obj3 = arg1(dependencyMap[10]);
   class H {
     constructor() {
-      obj = { <string:2924587579>: null, <string:4221592217>: 0.6, <string:1627731025>: 85, <string:3312210390>: "85px" };
+      obj = {};
       obj2 = selected(iconBackground[11]);
       obj.borderRadius = obj2.withSpring(closure_4.get(), closure_9);
       obj.backgroundColor = iconBackground.color;
@@ -272,10 +272,10 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   BRAND_500 = importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500;
   let obj5 = arg1(dependencyMap[10]);
   const fn2 = function j() {
-    const obj = { borderRadius: selected(iconBackground[11]).withSpring(derivedValue.get() + 2, closure_9) };
+    const obj = { EMPTY_SOUND_LIST: "<string:7471105>", placeholderCount: "isArray", DISCORD_RECRUITING_SCAMS: "<string:1107296256>", mutualGuildsContainer: "85px", useRequiredAppLauncherContext: "rgba(144, 144, 250, 0.41)", lastUsedCommandId: "constructor", "Bool(true)": "isArray", "Bool(true)": "<string:1899036928>", borderRadius: selected(iconBackground[11]).withSpring(derivedValue.get() + 2, closure_9) };
     const obj2 = selected(iconBackground[11]);
     const obj3 = selected(iconBackground[11]);
-    obj.borderWidth = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), ["Text", "lc"], []), closure_9);
+    obj.borderWidth = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), ["replace", "then"], []), closure_9);
     obj.borderColor = BRAND_500;
     return obj;
   };
@@ -286,12 +286,12 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   const obj1 = { withSpring: arg1(dependencyMap[11]).withSpring, toRadius: derivedValue, springConfig: closure_9, interpolate: arg1(dependencyMap[10]).interpolate, toStrokeWidth: derivedValue1, borderColor: BRAND_500, GUILD_SIZE: 48 };
   class M {
     constructor() {
-      obj = { alignItems: "r", flexDirection: "isArray", gap: "isArray", position: "state", padding: "Array", bottom: "isArray", left: "constructor", shrink: "isArray" };
+      obj = {};
       obj2 = selected(iconBackground[11]);
       obj.borderRadius = obj2.withSpring(closure_4.get(), closure_9);
       obj3 = selected(iconBackground[11]);
       obj4 = selected(iconBackground[10]);
-      obj.borderWidth = obj3.withSpring(obj4.interpolate(closure_5.get(), ["Text", "lc"], ["START_THREAD", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969]), closure_9);
+      obj.borderWidth = obj3.withSpring(obj4.interpolate(closure_5.get(), ["replace", "then"], ["COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969]), closure_9);
       obj.borderColor = backgroundColor;
       return obj;
     }

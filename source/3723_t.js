@@ -1,5 +1,5 @@
 // Module ID: 3723
-// Function ID: 28480
+// Function ID: 28485
 // Name: t
 // Dependencies: []
 
@@ -15,7 +15,7 @@ const fn = function t(moment) {
     weekdaysShort: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
     weekdaysMin: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
     longDateFormat: {},
-    calendar: { status: "type", padding: "a", opacity: "isArray", PX_8: "NavigationRoute", Symbol: "headMetaSocial", r: "L" },
+    calendar: { intl: "Array", flex: "isConnectingOrConnectedToConsole", getChannel: "r", PX_8: "TYPING_ENTERING", textAlign: "r", unicodeVersion: "removeAllConditionalListeners" },
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(일|월|주)/,
     ordinal(arg0, arg1) {

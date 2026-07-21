@@ -1,5 +1,5 @@
 // Module ID: 8512
-// Function ID: 67888
+// Function ID: 67899
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: []
 // Exports: default
@@ -31,8 +31,8 @@ export default function useDisplayNameStylesEffectDefaultColors() {
     HermesBuiltin.arraySpread(closure_6[0], 0);
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.PRISM] = items4;
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.TOON] = [];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.NEON] = [false];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.POP] = ["<string:1400569858>"];
+    obj[hex2intResult(closure_2[5]).DisplayNameEffect.NEON] = ["r"];
+    obj[hex2intResult(closure_2[5]).DisplayNameEffect.POP] = ["<string:1403715586>"];
     const items5 = [hex2intResult];
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_1] = items5;
     const items6 = [hex2intResult];

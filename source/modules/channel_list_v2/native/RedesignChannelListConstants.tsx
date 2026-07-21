@@ -1,5 +1,5 @@
 // Module ID: 10247
-// Function ID: 79208
+// Function ID: 79219
 // Name: hairlineWidth
 // Dependencies: []
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight

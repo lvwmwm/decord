@@ -1,5 +1,5 @@
 // Module ID: 8354
-// Function ID: 66540
+// Function ID: 66551
 // Name: useEventRsvpState
 // Dependencies: []
 // Exports: GuildEventCardGuildInfo, GuildEventCardHeader, GuildEventCardImageHeader, GuildEventCardMetaInfo, GuildEventCardSimpleGuildInfo, GuildEventIndicateInterestAction, GuildEventModeratorAction, GuildEventShareAction, GuildEventSimpleLocation
@@ -161,7 +161,8 @@ class GuildEventCardTitle {
     items[1] = style;
     obj.style = items;
     tmp4 = jsx;
-    obj = { style: textStyle };
+    obj = { hasMaxConnections: "Array", isBoostOnlySubscription: "isArray" };
+    obj.style = textStyle;
     num = undefined;
     if (condensed) {
       num = 1;
@@ -197,12 +198,12 @@ class GuildEventCardDescription {
             tmp6 = arg1;
             tmp7 = dependencyMap;
             num2 = 52;
-            obj = {};
+            obj = { hasMaxConnections: true, isBoostOnlySubscription: "md" };
             obj.style = textStyle;
             obj.lineClamp = numberOfLines;
             num3 = 54;
             obj3 = arg1(dependencyMap[54]);
-            obj1 = { "Bool(true)": true, "Null": true, "Null": true, "Null": true };
+            obj1 = { <string:3042166369>: true, <string:3069405614>: true, <string:2969391790>: true, <string:979491075>: true };
             obj1.guildId = event.guild_id;
             flag = true;
             obj.children = obj3.guildEventDetailsParser(description, true, obj1);
@@ -239,29 +240,29 @@ let obj1 = arg1(dependencyMap[15]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST };
 obj.imageHeaderContainer = obj;
-obj.imageHeaderBanner = {};
-obj.headerContainer = {};
+obj.imageHeaderBanner = { "Null": "errExpectingATEXT", "Null": "j" };
+obj.headerContainer = { "Null": 7, "Null": 370 };
 obj.dateContainer = {};
 obj1 = { marginRight: importDefault(dependencyMap[16]).space.PX_8 };
 obj.dateIcon = obj1;
-const obj2 = { "Bool(false)": 1716649986, "Bool(false)": 28824941, "Bool(false)": 1095374929, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BRAND };
+const obj2 = { FEATURE_NOT_SUPPORTED: false, restrictedGuildIds: false, defaultGuildsRestricted: "<string:1548877826>", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BRAND };
 obj.newBadge = obj2;
 const tmp6 = arg1(dependencyMap[14]);
 obj.topicContainer = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
 const obj3 = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
 obj.detailsContainer = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
+const obj5 = { "Null": 7, "Null": 370, paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
+obj.channelContainer = obj5;
 const obj4 = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
-obj.channelContainer = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
-const obj5 = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
 obj.channelIcon = { marginRight: importDefault(dependencyMap[16]).space.PX_8 };
+const obj7 = { -9223372036854775808: "r", 0: "CONTROL_RADIO_ICON_SIZE_DEFAULT", 0: "inviterUserId", 9223372036854775807: null, -9223372036854775808: null, fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
+obj.channelText = obj7;
+const obj8 = { "Null": 7, "Null": 370, paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
+obj.guildInfoContainer = obj8;
 const obj6 = { marginRight: importDefault(dependencyMap[16]).space.PX_8 };
-obj.channelText = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
-const obj7 = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
-obj.guildInfoContainer = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
-const obj8 = { paddingTop: importDefault(dependencyMap[16]).space.PX_8 };
 obj.guildIcon = { marginRight: importDefault(dependencyMap[16]).space.PX_8, borderRadius: importDefault(dependencyMap[16]).radii.sm };
 obj.guildInfo = { flexDirection: "column" };
-obj.guildInfoChannelContainer = {};
+obj.guildInfoChannelContainer = { "Null": 7, "Null": 370 };
 const obj9 = { marginRight: importDefault(dependencyMap[16]).space.PX_8, borderRadius: importDefault(dependencyMap[16]).radii.sm };
 obj.guildInfoChannelText = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE, fontSize: 12, lineHeight: 16 };
 const obj10 = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE, fontSize: 12, lineHeight: 16 };
@@ -303,7 +304,7 @@ const memoResult = importAllResult.memo(function GuildEventCardPrimaryAction(eve
   const items2 = [closure_13];
   const stateFromStores = obj1.useStateFromStores(items2, () => closure_13.can(constants2.CONNECT, closure_5));
   if (obj12.ENDED === tmp) {
-    obj = {};
+    obj = { startFrames: false, endFrames: false, alignItems: false, backgroundColor: false, flexDirection: false };
     const intl10 = arg1(dependencyMap[20]).intl;
     obj.text = intl10.string(arg1(dependencyMap[20]).t.Pj7Xrv);
     const intl11 = arg1(dependencyMap[20]).intl;
@@ -356,7 +357,7 @@ const memoResult = importAllResult.memo(function GuildEventCardPrimaryAction(eve
     obj3.grow = true;
     return callback5(importDefault(dependencyMap[31]), obj3);
   } else if (obj12.STARTED === tmp) {
-    const obj4 = {};
+    const obj4 = { startFrames: false, endFrames: false, alignItems: false, backgroundColor: false, flexDirection: false };
     const intl3 = arg1(dependencyMap[20]).intl;
     obj4.text = intl3.string(arg1(dependencyMap[20]).t.Yz0V6O);
     const intl4 = arg1(dependencyMap[20]).intl;
@@ -619,7 +620,7 @@ export const GuildEventCardHeader = function GuildEventCardHeader(event) {
     const obj3 = {
       start: text,
       startHook(children) {
-          let obj = {};
+          let obj = { hasMaxConnections: true, isBoostOnlySubscription: true };
           let tmp2 = shouldChangeTextColor;
           if (shouldChangeTextColor) {
             obj = { color };
@@ -645,7 +646,7 @@ export const GuildEventCardHeader = function GuildEventCardHeader(event) {
   const items4 = [tmp27Result, , , ];
   const obj7 = { style: tmp.dateContainer };
   if (tmp21) {
-    const obj8 = { children: formatResult };
+    const obj8 = { hasMaxConnections: "explicit_content_friend_dm", isBoostOnlySubscription: "enum", children: formatResult };
     let obj9 = obj8;
   } else {
     obj9 = { variant: "text-sm/semibold" };
@@ -858,7 +859,7 @@ export const GuildEventCardGuildInfo = function GuildEventCardGuildInfo(event) {
         tmp26 = callback5(arg1(dependencyMap[45]).Icon, obj5);
       }
       const items8 = [tmp26, ];
-      const obj6 = { style: tmp.guildInfoChannelText, children: tmp7 };
+      const obj6 = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.guildInfoChannelText, children: tmp7 };
       items8[1] = callback5(arg1(dependencyMap[52]).Text, obj6);
       obj3.children = items8;
       tmp18Result = closure_23(closure_6, obj3);

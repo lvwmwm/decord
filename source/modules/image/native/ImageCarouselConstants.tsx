@@ -1,7 +1,7 @@
 // Module ID: 9641
-// Function ID: 75079
+// Function ID: 75090
 // Name: IMAGE_CAROUSEL_TILE_HEIGHT
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 9641 (IMAGE_CAROUSEL_TILE_HEIGHT)
 const _module = require(dependencyMap[0]);

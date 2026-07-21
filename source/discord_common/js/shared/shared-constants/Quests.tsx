@@ -1,9 +1,9 @@
-// Module ID: 5249
-// Function ID: 44527
+// Module ID: 5248
+// Function ID: 44534
 // Name: Quests
-// Dependencies: [284214097]
+// Dependencies: []
 
-// Module 5249 (Quests)
+// Module 5248 (Quests)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/Quests.tsx");
 

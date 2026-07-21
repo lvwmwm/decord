@@ -1,12 +1,10 @@
-// Module ID: 12708
-// Function ID: 97565
+// Module ID: 12710
+// Function ID: 97587
 // Name: makeContextUserKey
-// Dependencies: [1953825491, 683]
+// Dependencies: []
 // Exports: drainPendingAudioSettings, getPendingAudioSettings, updatePendingSettings
 
-// Module 12708 (makeContextUserKey)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 12710 (makeContextUserKey)
 function makeContextUserKey(context, userId) {
   return "" + context + ":" + userId;
 }
@@ -17,7 +15,7 @@ function unpackContextUserKey(str) {
 }
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = {};
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/user_settings/voice/AudioSettingsPending.tsx");
+const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/user_settings/voice/AudioSettingsPending.tsx");
 
 export const getPendingAudioSettings = function getPendingAudioSettings(STREAM, STREAM) {
   return closure_1[closure_2(undefined, STREAM, STREAM)];

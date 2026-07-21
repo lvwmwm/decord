@@ -1,5 +1,5 @@
 // Module ID: 10877
-// Function ID: 84566
+// Function ID: 84577
 // Name: handleMessagesTapGameMention
 // Dependencies: []
 // Exports: handleMessagesTapGameMention

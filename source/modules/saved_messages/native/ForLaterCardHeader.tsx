@@ -1,5 +1,5 @@
 // Module ID: 9922
-// Function ID: 76734
+// Function ID: 76745
 // Name: HeaderIcon
 // Dependencies: []
 // Exports: ForLaterCardHeader
@@ -57,7 +57,7 @@ function ChannelName(channel) {
     tmp12 = callback(channelIconComponentWithGuild, obj1);
   }
   const items1 = [tmp12, ];
-  const obj2 = { <string:2195412908>: null, <string:1614302748>: null, <string:4055242192>: null, <string:3322189872>: null, style: tmp.channelName, children: formatToPlainStringResult };
+  const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, style: tmp.channelName, children: formatToPlainStringResult };
   items1[1] = callback(require(dependencyMap[14]).Text, obj2);
   obj.children = items1;
   return closure_6(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 7783
-// Function ID: 62102
+// Module ID: 7784
+// Function ID: 62115
 // Name: isContentInventoryFallbackEmbed
 // Dependencies: []
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 7783 (isContentInventoryFallbackEmbed)
+// Module 7784 (isContentInventoryFallbackEmbed)
 const MessageEmbedFlags = require(dependencyMap[0]).MessageEmbedFlags;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/interaction_components/content_inventory_entry/utils.tsx");

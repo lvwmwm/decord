@@ -1,5 +1,5 @@
 // Module ID: 11102
-// Function ID: 86363
+// Function ID: 86374
 // Name: useChatInputRefs
 // Dependencies: []
 // Exports: default
@@ -59,7 +59,7 @@ export default function useChatInputRefs(chatInputProps) {
     };
   }, items2);
   let closure_14 = React.useRef(importDefault(closure_2[10])(() => ({ text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldHeight: chatInputTextFieldHeight })));
-  closure_15 = React.useRef({ -2112069116: null, -414123676: null });
+  closure_15 = React.useRef({ ty: null, nm: null });
   const items3 = [tmp2];
   const memo = React.useMemo(() => {
     let obj = chatInputTextFieldHeight(closure_2[12]);
@@ -144,6 +144,12 @@ export default function useChatInputRefs(chatInputProps) {
       },
       focus() {
         lib2(closure_2[13]).focus(currentUser.current);
+      },
+      focusPhotosButton() {
+        const current = ref.current;
+        if (null != current) {
+          current.focusPhotosButton();
+        }
       },
       getApplicationCommandManager() {
         const current = ref2.current;

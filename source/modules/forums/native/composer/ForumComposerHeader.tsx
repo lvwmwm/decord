@@ -1,5 +1,5 @@
 // Module ID: 9553
-// Function ID: 74439
+// Function ID: 74450
 // Name: ForumComposerHeader
 // Dependencies: []
 // Exports: default
@@ -54,7 +54,9 @@ export default function ForumComposerHeader(height) {
     title = intl2.string(arg1(dependencyMap[7]).t.7EjFCk);
   }
   obj2.children = title;
-  const items2 = [callback(arg1(dependencyMap[10]).Text, obj2), callback(arg1(dependencyMap[10]).Text, { children: importDefault(dependencyMap[5])(channel) })];
+  const items2 = [callback(arg1(dependencyMap[10]).Text, obj2), ];
+  const obj3 = { hasMaxConnections: 1961492483, isBoostOnlySubscription: 1964048387, children: importDefault(dependencyMap[5])(channel) };
+  items2[1] = callback(arg1(dependencyMap[10]).Text, obj3);
   obj1.children = items2;
   items1[1] = closure_6(closure_4, obj1);
   obj.children = items1;
@@ -65,13 +67,13 @@ export default function ForumComposerHeader(height) {
   }
   let tmp9 = null;
   if (length > 0) {
-    const obj3 = { accessibilityRole: "button" };
+    const obj4 = { accessibilityRole: "button" };
     const intl3 = arg1(dependencyMap[7]).intl;
-    obj3.accessibilityLabel = intl3.string(arg1(dependencyMap[7]).t.yR6HwZ);
-    obj3.style = tmp.button;
-    obj3.onPress = onGuidelinesPress;
-    obj3.children = callback(arg1(dependencyMap[11]).BookCheckIcon, {});
-    tmp9 = callback(arg1(dependencyMap[6]).PressableOpacity, obj3);
+    obj4.accessibilityLabel = intl3.string(arg1(dependencyMap[7]).t.yR6HwZ);
+    obj4.style = tmp.button;
+    obj4.onPress = onGuidelinesPress;
+    obj4.children = callback(arg1(dependencyMap[11]).BookCheckIcon, {});
+    tmp9 = callback(arg1(dependencyMap[6]).PressableOpacity, obj4);
   }
   items[2] = tmp9;
   items[3] = callback(closure_4, { style: tmp.headerBarSeparator });

@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 118911
+// Module ID: 15588
+// Function ID: 118950
 // Name: QuestActivityButtonInner
 // Dependencies: []
 
-// Module 15585 (QuestActivityButtonInner)
+// Module 15588 (QuestActivityButtonInner)
 function QuestActivityButtonInner(quest) {
   let userStatus;
   quest = quest.quest;
@@ -174,14 +174,12 @@ function QuestActivityButtonInner(quest) {
   items6[1] = callback(View, obj2);
   obj4 = { pointerEvents: "none", style: tmp13.canvas };
   obj5 = { height: closure_11, width: closure_11 };
-  const obj6 = { -2064463865: null, 1532209761: null, 184875652: null, 1416126723: null, 259157590: null, -1550620699: null, stroke: importDefault(dependencyMap[10]).unsafe_rawColors.OPACITY_32, strokeDasharray: result };
+  const obj6 = { stroke: importDefault(dependencyMap[10]).unsafe_rawColors.OPACITY_32, strokeDasharray: result };
   obj5.children = callback(arg1(dependencyMap[8]).Circle, obj6);
   obj4.children = callback(arg1(dependencyMap[8]).Svg, obj5);
   items6[2] = callback(View, obj4);
   const obj7 = { pointerEvents: "none", style: tmp13.canvas };
-  const obj8 = { height: closure_11, width: closure_11 };
-  const obj9 = { -2064463865: null, 1532209761: null, 184875652: null, 1416126723: null, 259157590: null, -1550620699: null, stroke: tmp13.progressPath.color, strokeDasharray: result, animatedProps };
-  obj8.children = callback(closure_12, obj9);
+  const obj8 = { height: closure_11, width: closure_11, children: callback(closure_12, { stroke: tmp13.progressPath.color, strokeDasharray: result, animatedProps }) };
   obj7.children = callback(arg1(dependencyMap[8]).Svg, obj8);
   items6[3] = callback(View, obj7);
   obj.children = items6;
@@ -198,17 +196,18 @@ let closure_11 = 32;
 const tmp2 = arg1(dependencyMap[6]);
 let closure_12 = importDefault(dependencyMap[7]).createAnimatedComponent(arg1(dependencyMap[8]).Circle);
 const importDefaultResult = importDefault(dependencyMap[7]);
-let obj = { container: {}, completionGlow: { shadowOffset: { bhk: -536870861, bic: -299892737 } }, canvas: { position: "absolute", transform: items } };
+let obj = { container: { "Bool(false)": "isArray", "Bool(false)": "warn", "Bool(false)": "textAlign", "Bool(false)": "r", "Bool(false)": "isArray" }, completionGlow: obj, canvas: { position: "absolute", transform: items } };
+obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, shadowOffset: { "Null": -536870861, "Null": -299892737 } };
 const items = [{ rotate: "-90deg" }];
-obj = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
-obj.progressPath = obj;
-obj.buttonWrapper = { -1638733883: 4, -792839644: null, 1777431568: null };
+const obj3 = arg1(dependencyMap[9]);
+obj.progressPath = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
+obj.buttonWrapper = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001513553934550236, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011309568024553222, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000166880539428337 };
 obj.confetti = { position: "absolute" };
-let closure_13 = arg1(dependencyMap[9]).createStyles(obj);
+let closure_13 = obj3.createStyles(obj);
 let closure_14 = { code: "function QuestActivityButtonTsx1(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
 let closure_15 = { code: "function QuestActivityButtonTsx2(){const{circumference,animatedProgress}=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};}" };
 let closure_16 = "QUEST_ACTIVITY_UNENROLLED_MODAL_KEY";
-const obj3 = arg1(dependencyMap[9]);
+const obj1 = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
 const memoResult = importAllResult.memo(function QuestActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
   const arg1 = applicationId;

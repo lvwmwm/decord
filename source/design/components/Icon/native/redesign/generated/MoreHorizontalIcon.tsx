@@ -1,5 +1,5 @@
 // Module ID: 8960
-// Function ID: 70683
+// Function ID: 70694
 // Name: MoreHorizontalIcon
 // Dependencies: []
 // Exports: MoreHorizontalIcon

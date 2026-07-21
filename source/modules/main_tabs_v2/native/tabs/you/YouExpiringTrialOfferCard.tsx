@@ -1,10 +1,10 @@
-// Module ID: 15363
-// Function ID: 116993
+// Module ID: 15366
+// Function ID: 117032
 // Name: getNoticeCTAColor
 // Dependencies: []
 // Exports: default
 
-// Module 15363 (getNoticeCTAColor)
+// Module 15366 (getNoticeCTAColor)
 function getNoticeCTAColor(arg0) {
   if (closure_9.PREMIUM_TIER_0_TRIAL_ENDING === arg0) {
     return Gradients.PREMIUM_TIER_0;
@@ -47,10 +47,10 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
 let closure_15 = 10 * importDefault(dependencyMap[7]).Millis.SECOND;
 let obj = arg1(dependencyMap[8]);
-obj = { header: { body: null, position: null, padding: null, opacity: null }, closeButton: { "Null": false, "Null": 0, "Null": 0 } };
+obj = { header: { "Null": "isArray", "Null": "no", "Null": "content", "Null": "a" }, closeButton: { "Bool(false)": false, "Bool(false)": 0, "Bool(false)": 0 } };
 obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.closeIcon = obj;
-obj.linearGradient = {};
+obj.linearGradient = { "Null": false, "Null": false, "Null": false, "Null": false };
 const tmp3 = arg1(dependencyMap[6]);
 obj.primaryCTA = { borderRadius: importDefault(dependencyMap[9]).radii.round, gap: 4 };
 let closure_16 = obj.createStyles(obj);
@@ -109,7 +109,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj = {};
         obj = { style: tmp.header };
         const articleURL = importDefault(dependencyMap[18]).getArticleURL(PREMIUM_TRIAL);
-        obj1 = {};
+        obj1 = { hasMaxConnections: null, isBoostOnlySubscription: "153e24032a5a8790888aef41caaf4b2c" };
         const obj14 = importDefault(dependencyMap[18]);
         const tmp12 = closure_14;
         const tmp13 = closure_13;
@@ -134,7 +134,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj3 = { style: tmp.closeButton, accessibilityRole: "button" };
         const intl = arg1(dependencyMap[12]).intl;
         obj3.accessibilityLabel = intl.string(arg1(dependencyMap[12]).t.cpT0Cq);
-        obj3.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
+        obj3.hitSlop = {};
         obj3.onPress = function onPress() {
           if (null != stateFromStores) {
             let obj = callback(tmp[11]);
@@ -159,7 +159,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           navigateToPremium();
         };
         obj5.renderIcon = function renderIcon() {
-          return callback2(navigateToPremium(tmp[23]).NitroWheelIcon, {});
+          return callback2(navigateToPremium(tmp[23]).NitroWheelIcon, { "Null": 12, "Null": 4 });
         };
         obj5.renderLinearGradient = function renderLinearGradient() {
           const obj = { style: items, start: constants2.START, end: constants2.END };

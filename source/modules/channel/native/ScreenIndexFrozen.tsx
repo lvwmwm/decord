@@ -1,5 +1,5 @@
 // Module ID: 3988
-// Function ID: 33098
+// Function ID: 33103
 // Name: isScreenIndexFrozen
 // Dependencies: []
 // Exports: freezeScreenIndex, useIsScreenIndexFrozenSharedValue

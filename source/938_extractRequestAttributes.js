@@ -1,5 +1,5 @@
 // Module ID: 938
-// Function ID: 10153
+// Function ID: 10157
 // Name: extractRequestAttributes
 // Dependencies: []
 // Exports: instrumentOpenAiClient

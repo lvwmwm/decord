@@ -1,7 +1,7 @@
 // Module ID: 10570
-// Function ID: 82525
+// Function ID: 82536
 // Name: videoStreamTimedOut
-// Dependencies: []
+// Dependencies: [646840323, 899088385]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
 // Module 10570 (videoStreamTimedOut)

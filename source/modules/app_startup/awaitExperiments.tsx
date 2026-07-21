@@ -1,13 +1,15 @@
-// Module ID: 12989
-// Function ID: 98843
+// Module ID: 12991
+// Function ID: 98865
 // Name: future
 // Dependencies: [0, 0]
 // Exports: beginLoadedExperimentsTimeout, getPromise, onExperimentsLoaded
 
-// Module 12989 (future)
-const future = new require("__exportStarResult1").Future();
+// Module 12991 (future)
+import result from "result";
+
+const future = new require("result").Future();
 let closure_1 = null;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/app_startup/awaitExperiments.tsx");
+result = result.fileFinishedImporting("modules/app_startup/awaitExperiments.tsx");
 
 export const beginLoadedExperimentsTimeout = function beginLoadedExperimentsTimeout() {
   const timeout = setTimeout(() => {

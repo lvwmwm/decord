@@ -1,5 +1,5 @@
 // Module ID: 5731
-// Function ID: 49257
+// Function ID: 49265
 // Name: _startLurking
 // Dependencies: []
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
@@ -122,7 +122,7 @@ async function _getDiscoverableGuild(guild_ids, arg1) {
 }
 async function _fetchPublicDiscoveryGuild(arg0, arg1) {
   const HTTP = callback(closure_2[12]).HTTP;
-  let obj = { lc: null, type: null, end: null, url: closure_9.GUILD_DISCOVERY_SLUG(String(arg0)) };
+  let obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: closure_9.GUILD_DISCOVERY_SLUG(String(arg0)) };
   const body = yield HTTP.get(obj).body;
   let guild;
   if (null != body) {

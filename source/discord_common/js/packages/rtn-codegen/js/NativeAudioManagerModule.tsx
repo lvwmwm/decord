@@ -1,5 +1,5 @@
 // Module ID: 8833
-// Function ID: 69661
+// Function ID: 69672
 // Name: enforcing
 // Dependencies: []
 // Exports: getInvalidAndroidDevice
@@ -14,7 +14,7 @@ const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-
 export default enforcing;
 export const AudioDeviceType = obj;
 export const getInvalidAndroidDevice = function getInvalidAndroidDevice() {
-  const obj = { "Null": null, "Null": null, "Null": null, "Null": null };
+  const obj = { EXPIRING_PERK: null, borderColor: null, borderWidth: null, borderRadius: null };
   obj.simpleDeviceType = obj.INVALID;
   return obj;
 };

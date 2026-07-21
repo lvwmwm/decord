@@ -1,7 +1,7 @@
 // Module ID: 12018
-// Function ID: 92850
+// Function ID: 92862
 // Name: UserProfileOverflowMenu
-// Dependencies: [126746624, 348389376, 37093376, 251723776, 79429632, 488505344, 555483136, 768999424, 131072, 351272960, 57, 31, 27, 33, 4126, 689, 1273, 1212, 12022, 12023, 12019, 4124, 5226, 11626, 12024, 5449, 4963, 5767, 8476, 2, 8060, 6912, 3077120, 1785088, 8448, 3076864, 3004160, 1411328, 1055744, 310272, 1389568, 512, 451901440, 246218752, 78249984, 125632512, 246743040, 249102336, 37093376, 131072, 334495744]
+// Dependencies: [126746624, 348323840, 37093376, 251723776, 79429632, 488570880, 555483136, 768999424, 131072, 351272960, 57, 31, 27, 33, 4126, 689, 1273, 1212, 12022, 12023, 12019, 4124, 5225, 11626, 12024, 5449, 4962, 5767, 8476, 2, 8060, 6912, 3077120, 1785344, 8448, 3076864, 3004160, 1411328, 1055744, 310272, 1389568, 512, 451966976, 246218752, 78249984, 125632512, 246743040, 249102336, 37093376, 131072, 334495744]
 // Exports: default
 
 // Module 12018 (UserProfileOverflowMenu)
@@ -401,7 +401,7 @@ export default function UserProfileOverflowMenu(user) {
         trackUserProfileAction({ action: "COPY_USERNAME", analyticsLocations });
         const obj = { action: "COPY_USERNAME", analyticsLocations };
         const obj2 = user(channel[41]);
-        obj2.copy(displayProfile(channel[42]).getUserTag(user, {}));
+        obj2.copy(displayProfile(channel[42]).getUserTag(user, { allowSnowflake: true, gay-Latn-ID: true }));
         const obj3 = displayProfile(channel[42]);
         const result = user(channel[43]).presentUsernameCopied();
       };
@@ -424,7 +424,7 @@ export default function UserProfileOverflowMenu(user) {
             callback({ action: "COPY_USERNAME", analyticsLocations: closure_8 });
             const obj = { action: "COPY_USERNAME", analyticsLocations: closure_8 };
             const obj2 = bannerURL(closure_2[41]);
-            obj2.copy(lib(closure_2[42]).getUserTag(bannerURL, {}));
+            obj2.copy(lib(closure_2[42]).getUserTag(bannerURL, { allowSnowflake: true, gay-Latn-ID: true }));
             const obj3 = lib(closure_2[42]);
             const result = bannerURL(closure_2[43]).presentUsernameCopied();
           };
@@ -487,7 +487,7 @@ export default function UserProfileOverflowMenu(user) {
             }
           }
           let obj4 = user(channel[44]);
-          const obj3 = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, options: items };
+          const obj3 = { SEO_PAGE_VIEWED: 1665208787, stagger: 1912603216, getI18NCountryName: 24, playstationVersion: 24, customScoreGuild: 1412514049, options: items };
           obj4 = {};
           const intl5 = user(channel[24]).intl;
           obj4.title = intl5.string(user(channel[24]).t.QvQeLv);

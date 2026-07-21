@@ -1,5 +1,5 @@
 // Module ID: 8926
-// Function ID: 70385
+// Function ID: 70396
 // Name: useVoiceStateForRemoteSession
 // Dependencies: []
 // Exports: default

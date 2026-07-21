@@ -1,7 +1,7 @@
 // Module ID: 11234
-// Function ID: 87452
+// Function ID: 87464
 // Name: ApplicationCollectionItemFlags
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11234 (ApplicationCollectionItemFlags)
 const _module = require(dependencyMap[0]);

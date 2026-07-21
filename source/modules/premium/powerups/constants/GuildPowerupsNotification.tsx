@@ -1,7 +1,7 @@
 // Module ID: 11516
-// Function ID: 89741
+// Function ID: 89753
 // Name: GUILD_POWERUP_NOTIFICATION_COOLDOWN
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 11516 (GUILD_POWERUP_NOTIFICATION_COOLDOWN)
 const _module = require(dependencyMap[0]);

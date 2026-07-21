@@ -1,10 +1,10 @@
 // Module ID: 1358
-// Function ID: 16276
+// Function ID: 16281
 // Name: set
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 1358 (set)
-const obj = { ALL: new Set([true, true, true]) };
+const obj = { ALL: new Set([]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ForumLayout.tsx");
 

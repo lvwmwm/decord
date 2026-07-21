@@ -79,7 +79,7 @@ function useTextPressability(textPressabilityProps) {
     return items;
   }, items2);
 }
-let closure_3 = [];
+let closure_3 = ["<string:1373605457>", "<string:72539059>", "<string:1360215473>", "<string:290571663>", "<string:2120110604>", "<string:906643286>", "<string:452919297>", "<string:1698627585>", "<string:534315010>", "<string:3488415745>", "<string:2826174465>", "<string:3490054145>", "<string:2874277889>", "<string:2120217439>", "<string:2237170264>", "<string:2102953560>", "<string:2656605713>", "<string:3210257240>", "<string:2805553745>", "<string:2925046872>", "<string:3025711704>", "<string:2144435032>", "<string:233936340>", "<string:1822630865>", "<string:3235174725>", "<string:3020474451>", "<string:1384506467>", "<string:2261068378>", "<string:3459740754>", "<string:2857549921>", "<string:3914629274>", "<string:1337361324>"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);
@@ -419,7 +419,7 @@ function NativePressableText(ref) {
   [tmp2, tmp3] = callback(useTextPressability(ref.textPressabilityProps), 2);
   return jsx(arg1(dependencyMap[7]).NativeText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
 }
-let closure_12 = { accessibilityRole: true, View: true, a: true, bottom: true, paddingHorizontal: true };
-let closure_13 = { minWidth: "construct", minHeight: "isArray", borderRadius: "isArray", marginEnd: "isArray" };
+let closure_12 = { first: "sm", last: "Placeholder", backgroundColor: "Click", padding: false, borderRadius: false };
+let closure_13 = { <string:50352600>: "en-US", <string:1650218083>: 0, <string:1644429137>: null, <string:4182944342>: true };
 
 export default TextImpl;

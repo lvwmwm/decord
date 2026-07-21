@@ -1,11 +1,12 @@
 // Module ID: 1895
-// Function ID: 21217
+// Function ID: 21222
 // Name: GuildEntityDao
 // Dependencies: [0, 0, 0, 0, 0]
 
 // Module 1895 (GuildEntityDao)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import closure_2 from "result";
+import closure_3 from "result";
+import result from "result";
 
 const tmp2 = () => {
   class GuildEntityDao {
@@ -15,7 +16,7 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, GuildEntityDao);
+      tmp = closure_2(self, GuildEntityDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
@@ -199,7 +200,7 @@ const tmp2 = () => {
 const tmp3 = () => {
   class GuildEntityDaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, GuildEntityDaoTransaction);
+      tmp = closure_2(this, GuildEntityDaoTransaction);
       this.transaction = arg0;
       return;
     }
@@ -293,7 +294,7 @@ const tmp3 = () => {
   ];
   return callback(GuildEntityDaoTransaction, items, items1);
 }();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/GuildEntityDao.tsx");
+result = result.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/GuildEntityDao.tsx");
 
 export const GuildEntityDao = tmp2;
 export const GuildEntityDaoTransaction = tmp3;

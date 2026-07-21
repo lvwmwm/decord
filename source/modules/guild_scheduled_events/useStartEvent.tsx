@@ -1,5 +1,5 @@
 // Module ID: 8463
-// Function ID: 67501
+// Function ID: 67512
 // Name: useStartEvent
 // Dependencies: []
 // Exports: default

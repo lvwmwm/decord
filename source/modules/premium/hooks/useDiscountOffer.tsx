@@ -1,10 +1,10 @@
-// Module ID: 7122
-// Function ID: 57223
+// Module ID: 7123
+// Function ID: 57235
 // Name: useDiscountOffer
 // Dependencies: []
 // Exports: default
 
-// Module 7122 (useDiscountOffer)
+// Module 7123 (useDiscountOffer)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

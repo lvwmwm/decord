@@ -1,15 +1,15 @@
 // Module ID: 3927
-// Function ID: 32414
+// Function ID: 32419
 // Name: MicrophoneRive
 // Dependencies: []
 
 // Module 3927 (MicrophoneRive)
-let closure_3 = [true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Icon Microphone: { <string:1630330449>: null, <string:3237829017>: null, <string:1812237488>: null }, Animation Main: { <string:1630330449>: null, <string:3237829017>: null, <string:1812237488>: null } };
-let closure_8 = { Icon Microphone: ["Array", "isArray"], Animation Main: ["Array", "isArray"] };
+let closure_7 = { Icon Microphone: { "Bool(false)": "<string:2066808836>", "Bool(false)": "<string:3779571220>", "Bool(false)": "<string:1094716538>" }, Animation Main: { "Bool(false)": "<string:2066808836>", "Bool(false)": "<string:3779571220>", "Bool(false)": "<string:1094716538>" } };
+let closure_8 = { Icon Microphone: [], Animation Main: [] };
 let closure_9 = {
   Icon Microphone: function IconMicrophoneBindings(reducedMotionEnabled) {
     let dataBinding;

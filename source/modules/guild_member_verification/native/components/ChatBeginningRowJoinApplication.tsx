@@ -1,5 +1,5 @@
 // Module ID: 11653
-// Function ID: 90380
+// Function ID: 90392
 // Name: ChatBeginningRowJoinRequest
 // Dependencies: []
 // Exports: default
@@ -13,14 +13,14 @@ const Permissions = arg1(dependencyMap[4]).Permissions;
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { value: 12, fill: 4, next: 3, useMemo: 63, 0: null, 0: 1, 0: "#D11583", -9223372036854775808: 67, 0: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.container = obj;
 obj.guildInfoRow = {};
-const obj1 = { "Bool(true)": "r", "Bool(true)": "REACTION_BACKGROUND_DEFAULT", "Bool(true)": "AMEX_NETWORK_ERROR", "Bool(true)": "y", backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
-obj.divider = obj1;
+const tmp3 = arg1(dependencyMap[5]);
+obj.divider = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.formQuestion = { marginBottom: 4 };
 let closure_10 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
+const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_member_verification/native/components/ChatBeginningRowJoinApplication.tsx");
 
 export default function ChatBeginningRowJoinRequest(channelId) {
@@ -60,7 +60,7 @@ export default function ChatBeginningRowJoinRequest(channelId) {
         obj1 = { style: tmp.guildInfoRow };
         obj2 = { guild: joinRequestGuild, size: arg1(dependencyMap[11]).GuildIconSizes.XXSMALL };
         const items2 = [callback(importDefault(dependencyMap[11]), obj2), ];
-        const obj3 = { children: joinRequestGuild.name };
+        const obj3 = { hasMaxConnections: true, isBoostOnlySubscription: true, children: joinRequestGuild.name };
         items2[1] = callback(arg1(dependencyMap[12]).Text, obj3);
         obj1.children = items2;
         tmp10 = callback2(View, obj1);
@@ -69,7 +69,7 @@ export default function ChatBeginningRowJoinRequest(channelId) {
       const items3 = [tmp10, , ];
       let tmp18 = null != stateFromStores;
       if (tmp18) {
-        const obj4 = {};
+        const obj4 = { hasMaxConnections: false, isBoostOnlySubscription: false };
         const intl = arg1(dependencyMap[13]).intl;
         const obj5 = { username: stateFromStores.globalName };
         obj4.children = intl.format(arg1(dependencyMap[13]).t.jDV3i6, obj5);
@@ -86,9 +86,9 @@ export default function ChatBeginningRowJoinRequest(channelId) {
           let obj = {};
           obj = { style: null.divider };
           const items = [callback(closure_3, obj), , ];
-          obj = { "Null": null, "Null": 15, "Null": "center", style: null.formQuestion, children: field_type.label };
+          obj = { delete: null, dispatch: 15, raw: "center", style: null.formQuestion, children: field_type.label };
           items[1] = callback(null(joinRequestGuild[12]).Text, obj);
-          const obj1 = { children: response };
+          const obj1 = { hasMaxConnections: 0.184, isBoostOnlySubscription: 1, children: response };
           items[2] = callback(null(joinRequestGuild[12]).Text, obj1);
           obj.children = items;
           const _HermesInternal = HermesInternal;
@@ -102,8 +102,8 @@ export default function ChatBeginningRowJoinRequest(channelId) {
         stateFromStores1 = joinRequest.applicationStatus === arg1(dependencyMap[14]).GuildJoinRequestApplicationStatuses.SUBMITTED;
       }
       if (stateFromStores1) {
-        const obj6 = { messageId: null, options: 8 };
-        const obj7 = { onPress: approveRequest };
+        const obj6 = { "Bool(false)": null, "Bool(false)": 8 };
+        const obj7 = { "Null": "restricted_guild_ids", "Null": "scalar", "Null": 1, onPress: approveRequest };
         const intl2 = arg1(dependencyMap[13]).intl;
         obj7.text = intl2.string(arg1(dependencyMap[13]).t.BzjDQJ);
         const items5 = [callback(arg1(dependencyMap[16]).Button, obj7), ];

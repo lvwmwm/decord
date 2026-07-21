@@ -1,5 +1,5 @@
 // Module ID: 9420
-// Function ID: 73293
+// Function ID: 73304
 // Name: useReactors
 // Dependencies: []
 // Exports: MessageReactionsContent, MessageReactionsEmpty
@@ -385,7 +385,7 @@ function RemoveAllButton(channelId) {
   const tmp3 = importDefault(dependencyMap[38])(stateFromStores);
   class T {
     constructor() {
-      obj = { 0: "trackAverageRenderTimeForOffsetProjection", 0: "useActionBarPrimaryButton", 9223372036854775807: "<string:373772544>", 0: "AccountStatusIcon", maxAge: "<string:1166889472>" };
+      obj = {};
       if (useReducedMotion) {
         tmp5 = useSharedValue;
         value = useSharedValue.get();
@@ -441,7 +441,7 @@ function RemoveAllButton(channelId) {
     obj2.style = items4;
     const obj3 = { color: importDefault(dependencyMap[13]).unsafe_rawColors.WHITE, size: "sm" };
     const items5 = [callback2(arg1(dependencyMap[41]).TrashIcon, obj3), ];
-    obj4 = { "Null": "<string:44579137>", "Null": "<string:553728>", "Null": "<string:1048576>", style: animatedStyle1 };
+    obj4 = { delete: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750085073657767, dispatch: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002225073859025267, raw: 172541955090112670000000, style: animatedStyle1 };
     const intl = arg1(dependencyMap[33]).intl;
     obj4.children = intl.string(arg1(dependencyMap[33]).t.zx/e4P);
     items5[1] = callback2(closure_18, obj4);
@@ -475,7 +475,7 @@ function EmojiOptionsButton(channelId) {
     }, items2),
     style: callback4().emojiOptionsButton
   };
-  obj = {};
+  obj = { hasMaxConnections: "<string:1864193>", isBoostOnlySubscription: "<string:2621440>" };
   const intl = arg1(dependencyMap[33]).intl;
   obj.children = intl.string(arg1(dependencyMap[33]).t.pCaYID);
   const items3 = [callback2(arg1(dependencyMap[11]).Text, obj), ];
@@ -550,7 +550,7 @@ obj = { padding: 32, borderTopLeftRadius: importDefault(dependencyMap[13]).radii
 obj.containerEmpty = obj;
 obj1 = { height: 48, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.listRow = obj1;
-const obj2 = { <string:3532182032>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000408085805, <string:3450886856>: 0.000000000000000000000000000000000000000000000000000000000000000000000004096344710947961, <string:73869121>: 0.975, <string:873975808>: 0.0000000000000000000000000000000000000000000000000000000000000466726142804985, <string:3587222224>: 0.0000000000000000000000000000000000000000000000000000000000000000000000018378643793342527, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+const obj2 = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000003742054533171631, 0: 0.975, 0: 190359829595963920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: "channelId", 0: "transform", borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.tabContainer = obj2;
 const importDefaultResult = importDefault(dependencyMap[10]);
 obj.tabContainerSelected = { backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_SELECTED };
@@ -558,24 +558,24 @@ obj.tab = {};
 obj.tabSelected = { borderBottomColor: "transparent" };
 const obj3 = { backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_SELECTED };
 obj.tabActive = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
-obj.reactionTab = {};
+obj.reactionTab = { 979464370: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, 1637975633: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945 };
 obj.removeButtonContainer = {};
 const obj4 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.emojiOptionsButton = { marginRight: importDefault(dependencyMap[13]).space.PX_16 };
-const obj6 = { onTapDismissMediaPostSharePrompt: "1 zi", sm: "{{count}} zile", operation: "circa o s\u0103pt\u0103m\u00E2n\u0103", getLoadingTips: "circa {{count}} s\u0103pt\u0103m\u00E2ni", WIDGET_TITLES_BY_TYPE: "1 s\u0103pt\u0103m\u00E2n\u0103", beginner: "{{count}} s\u0103pt\u0103m\u00E2ni", guildIconBG: "circa 1 lun\u0103", binaryWriteOptions: "circa {{count}} luni", maxCanvasSize: "1 lun\u0103", totalNumItems: "{{count}} luni", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
+const obj6 = { "Null": 1361182719, "Null": 49907522, "Null": 50170624, "Null": 1506361856, "Null": 1665728515, "Null": 843186179, "Null": -1174404278, "Null": 16777979, "Null": 82326337, "Null": 1895895296, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
 obj.removeAllButton = obj6;
 const obj5 = { marginRight: importDefault(dependencyMap[13]).space.PX_16 };
 obj.reactionCountText = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj7 = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.reactionCountTextSelected = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.emoji = { marginRight: 8 };
-const obj9 = { "Bool(false)": 0, "Bool(false)": 53.614, "Bool(false)": 3, color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj9 = { paddingVertical: 0, paddingHorizontal: 53.614, flexGrow: 3, color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.emojiText = obj9;
 obj.emojiImage = {};
 obj.emojiTextIdentifier = { padding: 16 };
 obj.avatar = { marginRight: 10 };
-obj.buttonRow = { bottom: true, left: true, padding: true };
-obj.loadingSpinner = { backgroundColor: false, accessibilityRole: false };
+obj.buttonRow = { top: true, bottom: true, left: true };
+obj.loadingSpinner = { "Null": "<string:2118254593>", "Null": "<string:3192979458>" };
 let closure_19 = obj1.createStyles(obj);
 let closure_20 = { code: "function MessageReactionsContentTsx1(){const{useReducedMotion,buttonWidth,withTiming}=this.__closure;return{maxWidth:useReducedMotion?buttonWidth.get():withTiming(buttonWidth.get(),{duration:200})};}" };
 let closure_21 = { code: "function MessageReactionsContentTsx2(){const{useReducedMotion,textOpacity,withTiming}=this.__closure;return{opacity:useReducedMotion?textOpacity.get():withTiming(textOpacity.get(),{duration:125}),color:'white',fontSize:14,marginLeft:8,textAlignVertical:'center'};}" };

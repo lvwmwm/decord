@@ -1,9 +1,9 @@
-// Module ID: 5358
-// Function ID: 45871
+// Module ID: 5357
+// Function ID: 45878
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5358 (_isNativeReflectConstruct)
+// Module 5357 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +18,7 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
-let obj = { accessibilityRole: "isArray", kind: "ao", to: "title", body: "Array", done: "isArray", accessibilityRole: "jsx", bottom: "header", a: "Array", body: "isArray" };
+let obj = {};
 let closure_6 = {};
 let tmp2 = (DeviceSettingsStore) => {
   class DesignTogglesStore {

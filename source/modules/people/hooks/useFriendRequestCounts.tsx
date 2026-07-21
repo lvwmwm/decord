@@ -1,10 +1,10 @@
-// Module ID: 15308
-// Function ID: 116434
+// Module ID: 15311
+// Function ID: 116468
 // Name: getIncomingFriendRequestCount
 // Dependencies: []
 // Exports: getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15308 (getIncomingFriendRequestCount)
+// Module 15311 (getIncomingFriendRequestCount)
 function getIncomingFriendRequestCount(items) {
   const tmp = callback(items, 2);
   const first = tmp[0];

@@ -1,5 +1,5 @@
 // Module ID: 9426
-// Function ID: 73362
+// Function ID: 73373
 // Name: Tab
 // Dependencies: []
 // Exports: default
@@ -60,7 +60,7 @@ let closure_3 = importAll(dependencyMap[1]);
 const NOOP = arg1(dependencyMap[3]).NOOP;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { innerContainer: {}, tab: { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" } };
+obj = { innerContainer: { "Null": "NUX_REVEAL_DURATION_MS", "Null": "%MapPrototype%" }, tab: { "Bool(false)": -193749797, "Bool(false)": -184549377, "Bool(false)": 16777215, "Bool(false)": 16777216, "Bool(false)": 370, "Bool(false)": 256, "Bool(false)": 1457012992, "Bool(false)": -1034878974, "Bool(false)": 2650692, "Bool(false)": 3670016 }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" } };
 obj = { borderBottomColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_600 };
 obj.tabSelected = obj;
 obj.container = { flex: 0 };

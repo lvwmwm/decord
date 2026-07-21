@@ -1,5 +1,5 @@
 // Module ID: 12267
-// Function ID: 94047
+// Function ID: 94059
 // Name: roundFPCountdownUnits
 // Dependencies: []
 // Exports: default
@@ -36,9 +36,9 @@ function roundFPCountdownUnits(arg0) {
       hours = obj.hours;
     }
     if (hours > 11) {
-      obj = { 0: null, 0: null, 9223372036854775807: null, 0: null };
+      obj = {};
     } else {
-      obj = { hours };
+      obj = { 0: 180, width: null, position: 1, top: 0.5, hours };
     }
     return obj;
   } else if (obj.minutes > 0) {
@@ -57,7 +57,7 @@ function roundFPCountdownUnits(arg0) {
   } else {
     let obj2 = obj;
     if (obj.seconds > 0) {
-      obj2 = { 0: 324, 0: 187, 9223372036854775807: null, 0: "c300172c07e69fb8041898afe2aa282d" };
+      obj2 = { 0: 324, width: 187, position: null, top: "c300172c07e69fb8041898afe2aa282d" };
     }
     return obj2;
   }

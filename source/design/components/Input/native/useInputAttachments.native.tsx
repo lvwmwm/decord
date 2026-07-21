@@ -1,5 +1,5 @@
 // Module ID: 5774
-// Function ID: 49409
+// Function ID: 49417
 // Name: estimateAttachmentWidth
 // Dependencies: []
 // Exports: useInputAttachments
@@ -15,7 +15,7 @@ function estimateAttachmentWidth(arg0, arg1) {
 }
 function renderInputAttachment(leadingIcon, leadingText, text) {
   if (null != leadingIcon) {
-    let tmp = jsx(leadingIcon, {});
+    let tmp = jsx(leadingIcon, { accessibilityRole: "<string:979453122>", "": "<string:3678716498>" });
   } else {
     tmp = null;
     if (null != leadingText) {

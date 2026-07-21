@@ -1,10 +1,10 @@
-// Module ID: 7781
-// Function ID: 62095
+// Module ID: 7782
+// Function ID: 62108
 // Name: sanitizeMediaDimension
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: sanitizeMediaDimension
 
-// Module 7781 (sanitizeMediaDimension)
+// Module 7782 (sanitizeMediaDimension)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/sanitizeMediaDimension.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 1426
-// Function ID: 16672
+// Function ID: 16677
 // Name: isAttachmentLadderEnabled
 // Dependencies: []
 // Exports: getBestMediaProxySize, getImageSrc, getSizedImageSrc, isImageLoaded, loadImage
@@ -149,7 +149,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 ({ NOOP: closure_5, MEDIA_PROXY_MAX_TARGET_RESOLUTION: closure_6 } = arg1(dependencyMap[2]));
 let closure_7 = /\.webp($|\?|#)/i;
 let closure_8 = /\.avif($|\?|#)/i;
-let closure_9 = [];
+let closure_9 = ["emit", "14:00", "2", "2:00", "fjorten", "klokka", "klokken", "to", "action", "\u00E7a tourne", "clap", "film", "amusement", "park", "play", "playground", "playing", "slide", "sliding", "theme", "linking", "fallback", "documentTitle", "onReady", 2, 3, "0", "123456", "1234567890", "goBackGesture", "screensRefs"];
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult({ max: 1000 });
 const obj = { max: 1000 };

@@ -1,10 +1,10 @@
-// Module ID: 16247
-// Function ID: 125518
+// Module ID: 16255
+// Function ID: 125579
 // Name: _createCreatorMonetizationEnableRequest
 // Dependencies: []
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 16247 (_createCreatorMonetizationEnableRequest)
+// Module 16255 (_createCreatorMonetizationEnableRequest)
 function _createCreatorMonetizationEnableRequest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

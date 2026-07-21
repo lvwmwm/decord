@@ -1,11 +1,11 @@
 // Module ID: 5694
-// Function ID: 49028
+// Function ID: 49036
 // Name: MobileLurkerServerPreviewExperiment
 // Dependencies: []
 // Exports: getMobileLurkerServerPreview, useMobileLurkerServerPreview
 
 // Module 5694 (MobileLurkerServerPreviewExperiment)
-const obj = { 9223372036854775807: 7, 0: 6, defaultConfig: {}, variations: { [1]: {}, [2]: {} } };
+const obj = { 844175713: 7, 1387159956: 6, defaultConfig: { 314181: null, 314231: null }, variations: { [1]: { 314181: null, 314231: null }, [2]: { 314181: null, 314231: null } } };
 const tmp2 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/lurker_mode/experiments/MobileLurkerServerPreviewExperiment.tsx");
 

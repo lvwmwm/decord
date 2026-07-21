@@ -1,10 +1,10 @@
-// Module ID: 14875
-// Function ID: 112031
+// Module ID: 14878
+// Function ID: 112065
 // Name: GuildPowerupsBoostToUnlockCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14875 (GuildPowerupsBoostToUnlockCoachmark)
+// Module 14878 (GuildPowerupsBoostToUnlockCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostToUnlockCoachmark.tsx");
 

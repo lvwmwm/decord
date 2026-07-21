@@ -1,5 +1,5 @@
 // Module ID: 11542
-// Function ID: 89870
+// Function ID: 89882
 // Name: getGuildPowerupBannerImage
 // Dependencies: []
 // Exports: default

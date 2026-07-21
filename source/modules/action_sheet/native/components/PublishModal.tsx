@@ -1,5 +1,5 @@
 // Module ID: 9851
-// Function ID: 76252
+// Function ID: 76263
 // Name: PublishModal
 // Dependencies: []
 // Exports: default
@@ -10,8 +10,8 @@ importAll(dependencyMap[1]);
 ({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
-obj = { alertContainer: { paddingTop: 16 }, alertLoading: { bm: -16, cursor: -9 } };
-obj = { "Null": null, "Null": null, "Null": null, color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+obj = { alertContainer: { paddingTop: 16 }, alertLoading: { padding: "/assets/design/components/Icon/native/redesign/generated/images", HermesInternal: 24 } };
+obj = { -9223372036854775808: "onFocusCapture", 0: "INTERACTIONS", 0: "getLastRouteChangeSourceLocationStack", color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 obj.alertBodyText = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

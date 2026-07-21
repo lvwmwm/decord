@@ -1,10 +1,10 @@
-// Module ID: 8218
-// Function ID: 64943
+// Module ID: 8219
+// Function ID: 64956
 // Name: AvatarDecorationSampleV2
 // Dependencies: []
 // Exports: default
 
-// Module 8218 (AvatarDecorationSampleV2)
+// Module 8219 (AvatarDecorationSampleV2)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

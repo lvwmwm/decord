@@ -1,5 +1,5 @@
 // Module ID: 8743
-// Function ID: 69129
+// Function ID: 69140
 // Name: AvatarDecorationProductPreview
 // Dependencies: []
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 11426
-// Function ID: 88905
+// Function ID: 88917
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
@@ -145,7 +145,7 @@ export default function ApplicationCommandDiscovery(channel) {
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
-  obj1 = { "Null": null, "Bool(false)": null, "Bool(false)": null, limit: commandDiscoveryManager };
+  obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, limit: commandDiscoveryManager };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj2.useDiscovery(obj);
@@ -295,7 +295,7 @@ export default function ApplicationCommandDiscovery(channel) {
   const items7 = [channel.guild_id, callback, sectionDescriptors, first];
   const callback4 = React.useCallback((arg0, index) => {
     if (null == arg0) {
-      let obj = { "Bool(false)": -536870861, "Bool(false)": -299892737, index };
+      let obj = { "Null": -536870861, "Null": -299892737, index };
       return obj;
     } else {
       const ROW2 = constants.ROW;

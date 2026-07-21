@@ -1,8 +1,8 @@
-// Module ID: 13783
-// Function ID: 104183
+// Module ID: 13785
+// Function ID: 104205
 // Dependencies: []
 
-// Module 13783
+// Module 13785
 const importAllResult = importAll(dependencyMap[0]);
 const QuestsExperimentLocations = arg1(dependencyMap[1]).QuestsExperimentLocations;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -11,11 +11,10 @@ const memoResult = importAllResult.memo(function BountiesModal(bountyId) {
   const arg1 = bountyId;
   const sourceQuestContent = bountyId.sourceQuestContent;
   const importDefault = sourceQuestContent;
-  let obj = arg1(dependencyMap[3]);
-  const verticalScrollEnabled = obj.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE).verticalScrollEnabled;
+  const verticalScrollEnabled = arg1(dependencyMap[3]).useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE).verticalScrollEnabled;
   const dependencyMap = verticalScrollEnabled;
   const items = [bountyId, sourceQuestContent, verticalScrollEnabled];
-  const memo = importAllResult.useMemo(() => ({
+  const screens = importAllResult.useMemo(() => ({
     ["bounty_main"]: {
       fullscreen: true,
       headerLeft() {
@@ -35,8 +34,7 @@ const memoResult = importAllResult.memo(function BountiesModal(bountyId) {
     bountyId(verticalScrollEnabled[6]).lockOrientation("PORTRAIT", true);
     return bountyId(verticalScrollEnabled[6]).restoreDefaultOrientation;
   }, []);
-  obj = { "Bool(true)": null, "Bool(true)": null, screens: memo, viewStyle: { backgroundColor: "#000000" } };
-  return jsx(arg1(dependencyMap[7]).Modal, obj);
+  return jsx(arg1(dependencyMap[7]).Modal, { screens, viewStyle: { backgroundColor: "#000000" } });
 });
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModal.tsx");
 

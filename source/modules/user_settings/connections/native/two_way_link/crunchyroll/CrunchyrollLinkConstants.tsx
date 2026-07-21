@@ -1,7 +1,7 @@
 // Module ID: 8982
-// Function ID: 70765
+// Function ID: 70776
 // Name: CrunchyrollLinkModalScenes
-// Dependencies: [284214097]
+// Dependencies: []
 
 // Module 8982 (CrunchyrollLinkModalScenes)
 const _module = require(dependencyMap[0]);

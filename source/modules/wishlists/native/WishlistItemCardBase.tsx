@@ -1,5 +1,5 @@
 // Module ID: 8665
-// Function ID: 68560
+// Function ID: 68571
 // Name: SourceIcon
 // Dependencies: []
 // Exports: default
@@ -8,11 +8,11 @@
 function SourceIcon(toastText) {
   const arg1 = toastText.toastText;
   let obj = {
-    needSubscriptionToAccess: "hidden",
-    isSubscriptionGated: "flex-end",
-    717824595: "row",
-    -446570740: "center",
-    1660110929: 8,
+    "Null": "hidden",
+    "Null": "flex-end",
+    "Null": "row",
+    "Null": "center",
+    "Null": 8,
     style: callback2().sourceIcon,
     onPress() {
       let obj = callback(closure_2[5]);
@@ -105,7 +105,7 @@ export default function WishlistItemCardBase(username) {
   }
   items1[2] = tmp8;
   const found = items1.filter(arg1(dependencyMap[12]).isNotNullish);
-  obj2 = { "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, style: tmp.ownedOverlay };
+  obj2 = { -1884505006: "50%", -1436392532: 60, -1585032362: 60, -1501868495: true, style: tmp.ownedOverlay };
   const joined = found.join(", ");
   const obj3 = { color: importDefault(dependencyMap[4]).colors.WHITE, size: "custom", style: {} };
   obj2.children = callback(arg1(dependencyMap[13]).CheckmarkLargeBoldIcon, obj3);

@@ -1,5 +1,5 @@
 // Module ID: 9058
-// Function ID: 71106
+// Function ID: 71117
 // Name: getUserVoiceState
 // Dependencies: []
 // Exports: canViewUserVoiceChannel, default

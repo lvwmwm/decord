@@ -1,5 +1,5 @@
 // Module ID: 9591
-// Function ID: 74673
+// Function ID: 74684
 // Dependencies: []
 
 // Module 9591
@@ -12,14 +12,15 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ AnalyticEvents: closure_9, AnalyticsPages: closure_10, AnalyticsSections: closure_11, UpsellTypes: closure_12, ChatInputComponentViewedTypes: closure_13 } = arg1(dependencyMap[6]));
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
-const tmp4 = arg1(dependencyMap[7]);
+let obj1 = arg1(dependencyMap[8]);
 let obj = { container: { flex: 1 } };
 obj = { paddingVertical: importDefault(dependencyMap[9]).space.PX_8 };
 obj.header = obj;
-obj.loadingIndicator = { <string:1408689063>: "gr", <string:2880547457>: null, <string:2555685796>: "Group 3" };
-obj.emptyState = { marginTop: arg1(dependencyMap[5]).STICKER_SEARCH_HEADER_HEIGHT };
-let closure_16 = arg1(dependencyMap[8]).createStyles(obj);
-const obj2 = arg1(dependencyMap[8]);
+obj.loadingIndicator = { "Bool(true)": 1946157560, "Bool(true)": 4, "Bool(true)": 2 };
+obj1 = { "Null": "Group 3", "Null": 4, "Null": 2, "Null": 0, marginTop: arg1(dependencyMap[5]).STICKER_SEARCH_HEADER_HEIGHT };
+obj.emptyState = obj1;
+let closure_16 = obj1.createStyles(obj);
+const tmp4 = arg1(dependencyMap[7]);
 const memoResult = importAllResult.memo(function StickerPicker(channel) {
   let bottomSheetIndex;
   let bottomSheetRef;
@@ -165,7 +166,7 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
       const tmp23 = importDefault(dependencyMap[28]);
     }
   } else {
-    const obj5 = { style: tmp.loadingIndicator };
+    const obj5 = { font: 397, dx: 97, style: tmp.loadingIndicator };
     items5[1] = callback2(closure_6, obj5);
     const obj6 = { categories: stickerCategories, categoryIndex: tmp4[0], style: safeAreaStyle };
     items5[2] = callback2(importDefault(dependencyMap[29]), obj6);

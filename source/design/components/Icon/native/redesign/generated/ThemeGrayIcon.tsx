@@ -1,10 +1,10 @@
-// Module ID: 14976
-// Function ID: 112750
+// Module ID: 14979
+// Function ID: 112784
 // Name: ThemeGrayIcon
 // Dependencies: []
 // Exports: ThemeGrayIcon
 
-// Module 14976 (ThemeGrayIcon)
+// Module 14979 (ThemeGrayIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThemeGrayIcon.tsx");

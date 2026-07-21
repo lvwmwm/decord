@@ -1,5 +1,5 @@
 // Module ID: 941
-// Function ID: 10198
+// Function ID: 10202
 // Name: AsyncFromSyncIterator
 // Dependencies: []
 // Exports: instrumentStream
@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    lineClamp: "o",
-    accessibilityRole: "o",
+    "Bool(false)": "o",
+    "Bool(false)": "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -182,7 +182,7 @@ function processResponsesApiEvent(type, responsesApiToolCalls, arg2, setStatus) 
       if (type instanceof Error) {
         let obj = { code: require(dependencyMap[4]).SPAN_STATUS_ERROR, message: "internal_error" };
         setStatus.setStatus(obj);
-        obj = { mechanism: { onDrawerSlide: "FOCUS_CHANNEL_TEXT_AREA", onDrawerStateChanged: "ef" } };
+        obj = { mechanism: { id: null, gameId: null } };
         require(dependencyMap[5]).captureException(type, obj);
       } else if ("type" in type) {
         const RESPONSE_EVENT_TYPES = require(dependencyMap[6]).RESPONSE_EVENT_TYPES;
@@ -251,7 +251,7 @@ function processResponsesApiEvent(type, responsesApiToolCalls, arg2, setStatus) 
 }
 async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
   let obj2;
-  const obj = { "Bool(false)": null, "Bool(false)": "\u{1F9BB}\u{1F3FF}", "Bool(false)": true, "Bool(false)": null, variant: 12, color: null, eventTypes: [], responseTexts: [], finishReasons: [], promptTokens: undefined, completionTokens: undefined, totalTokens: undefined, chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+  const obj = { eventTypes: [], responseTexts: [], finishReasons: [], promptTokens: undefined, completionTokens: undefined, totalTokens: undefined, chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
   if ("undefined" !== typeof Symbol) {
     const _Symbol = Symbol;
     let str = Symbol.asyncIterator;

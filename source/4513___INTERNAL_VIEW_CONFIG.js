@@ -1,12 +1,12 @@
 // Module ID: 4513
-// Function ID: 39693
+// Function ID: 39701
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 4513 (__INTERNAL_VIEW_CONFIG)
 const codegenNativeComponent = require(dependencyMap[0]).codegenNativeComponent;
 let obj = { uiViewClassName: "RNSTabsHost", directEventTypes: { topNativeFocusChange: { registrationName: "onNativeFocusChange" } } };
-obj = { <string:1565636193>: "row", <string:1660641953>: "center", <string:1420597585>: "center", <string:3606007299>: "hidden", <string:1699272432>: 100, <string:4182856402>: 45, <string:1946706542>: null, <string:1388132689>: "text-sm/semibold" };
+obj = { 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, -9223372036854775808: false, 0: false };
 obj = { process: require(dependencyMap[1]).default };
 obj.nativeContainerBackgroundColor = obj;
 obj.tabBarBackgroundColor = { process: require(dependencyMap[1]).default };

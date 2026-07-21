@@ -1,5 +1,5 @@
 // Module ID: 11560
-// Function ID: 89936
+// Function ID: 89948
 // Name: useGuildBoostPurchaseHandler
 // Dependencies: []
 // Exports: default

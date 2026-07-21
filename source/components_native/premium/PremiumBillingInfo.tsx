@@ -1,10 +1,10 @@
-// Module ID: 7410
-// Function ID: 59552
+// Module ID: 7411
+// Function ID: 59564
 // Name: GoogleManagementLink
 // Dependencies: []
 // Exports: default
 
-// Module 7410 (GoogleManagementLink)
+// Module 7411 (GoogleManagementLink)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 class GoogleManagementLink {
   constructor(arg0) {
@@ -56,7 +56,7 @@ export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
   const tmp = callback4();
   let obj = arg1(dependencyMap[11]);
-  obj = { display: null, width: null, flexDirection: null, subscriptionId: subscription.id, analyticsLocations: importDefault(dependencyMap[12])(), analyticsLocation: importDefault(dependencyMap[13]).PREMIUM_BILLING_INFO };
+  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, subscriptionId: subscription.id, analyticsLocations: importDefault(dependencyMap[12])(), analyticsLocation: importDefault(dependencyMap[13]).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   arg1(dependencyMap[11]);
   if (null == first) {
@@ -66,7 +66,7 @@ export default function PremiumBillingInfo(subscription) {
     obj = { shouldAllowExternalManagement: true };
     const externalManagementMessage = obj3.getExternalManagementMessage(subscription, obj);
     const obj1 = { style: subscription.style };
-    const obj2 = { 1501064855: "SERVER_GUIDE_CHANNEL_SELECTED", -1267889981: "EAPLAY", -1145697943: "r", -1266241916: "FULL", style: tmp.title };
+    const obj2 = { Opened: -918482477, marginVertical: 1912603017, marginStart: 51, marginEnd: 36, style: tmp.title };
     const intl = arg1(dependencyMap[9]).intl;
     obj2.children = intl.string(arg1(dependencyMap[9]).t.Sb6wI1);
     const items = [callback2(arg1(dependencyMap[15]).Text, obj2), , ];

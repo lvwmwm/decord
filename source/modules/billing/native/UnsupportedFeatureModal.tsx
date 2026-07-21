@@ -1,5 +1,5 @@
 // Module ID: 8769
-// Function ID: 69293
+// Function ID: 69304
 // Name: UnsupportedFeatureModal
 // Dependencies: []
 // Exports: default
@@ -24,8 +24,8 @@ export default function UnsupportedFeatureModal(onDismiss) {
       }
     }),
     render() {
-      let obj = { style: { "Null": null, "Null": null, "Null": null, "Null": null } };
-      obj = {};
+      let obj = { style: {} };
+      obj = { hasMaxConnections: "gr", isBoostOnlySubscription: null };
       const intl = onDismiss(closure_2[7]).intl;
       obj.children = intl.string(onDismiss(closure_2[7]).t.I22zuX);
       obj.children = callback2(onDismiss(closure_2[6]).Text, obj);

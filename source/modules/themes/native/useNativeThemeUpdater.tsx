@@ -1,10 +1,10 @@
-// Module ID: 15510
-// Function ID: 118343
+// Module ID: 15513
+// Function ID: 118382
 // Name: useNativeThemeUpdater
 // Dependencies: []
 // Exports: default
 
-// Module 15510 (useNativeThemeUpdater)
+// Module 15513 (useNativeThemeUpdater)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");

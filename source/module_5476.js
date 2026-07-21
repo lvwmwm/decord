@@ -1,9 +1,9 @@
 // Module ID: 5476
-// Function ID: 46746
+// Function ID: 46754
 // Dependencies: []
 
 // Module 5476
 const _module = require(dependencyMap[0]);
-const obj = { isConnected: "<string:1832386564>", isInternetReachable: "<string:24182785>", details: "<string:16777216>", reachabilityUrl: "<string:22324034>", reachabilityMethod: "<string:17643264>", reachabilityHeaders: "bendrumas", reachabilityTest: "<string:1513160704>", reachabilityShortTimeout: "<string:1340029796>", scales: [] };
+const obj = { "Bool(false)": "text-sm/medium", "Bool(false)": "mobile-text-heading-primary", "Bool(false)": 1, "Bool(false)": null, "Bool(false)": "text-xs/normal", "Bool(false)": "text-muted", "Bool(false)": 1, "Bool(false)": 0.184, scales: ["Set", "ml"] };
 
 export default _module.registerAsset(obj);

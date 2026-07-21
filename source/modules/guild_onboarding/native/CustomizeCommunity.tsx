@@ -1,5 +1,5 @@
 // Module ID: 9962
-// Function ID: 76944
+// Function ID: 76955
 // Name: EmptyCustomizeCommunity
 // Dependencies: []
 // Exports: default
@@ -25,7 +25,7 @@ function EmptyCustomizeCommunity(setTab) {
   const intl = arg1(dependencyMap[21]).intl;
   obj1.children = intl.string(arg1(dependencyMap[21]).t.leKHQz);
   items1[1] = callback(arg1(dependencyMap[20]).LegacyText, obj1);
-  const obj2 = {};
+  const obj2 = { hasMaxConnections: true, isBoostOnlySubscription: true };
   const intl2 = arg1(dependencyMap[21]).intl;
   obj2.children = intl2.format(arg1(dependencyMap[21]).t.jH+ktB, {
     onBrowseChannels() {
@@ -41,11 +41,11 @@ function EmptyCustomizeCommunity(setTab) {
 function PromptTitle(item) {
   item = item.item;
   let obj = { style: callback3().titleContainer };
-  obj = {};
+  obj = { hasMaxConnections: null, isBoostOnlySubscription: "text-sm/semibold" };
   const items = [item.title, ];
   let tmp4 = null;
   if (item.required) {
-    obj = { children: [] };
+    obj = { children: [null, null] };
     tmp4 = callback2(arg1(dependencyMap[22]).Text, obj);
   }
   items[1] = tmp4;
@@ -104,7 +104,7 @@ function PromptHelpText(arg0) {
   const tmp = callback3();
   ({ helpText, helpTextAdditional } = importDefault(dependencyMap[24])(obj));
   if ("" !== helpText) {
-    obj = { style: tmp.helpText };
+    obj = { delete: "a", dispatch: "isArray", raw: "textAlign", style: tmp.helpText };
     const items3 = [helpText, " ", helpTextAdditional];
     obj.children = items3;
     let tmp7 = callback2(arg1(dependencyMap[22]).Text, obj);
@@ -122,11 +122,11 @@ function ConnectionsPrompt(guildId) {
   let tmp2 = null;
   if (0 !== stateFromStores.length) {
     obj = { style: tmp.connectionsPromptContainer };
-    obj = { "Null": null, "Null": null, "Null": null, style: tmp.connectionsTitle };
+    obj = { delete: null, dispatch: null, raw: null, style: tmp.connectionsTitle };
     const intl = arg1(dependencyMap[21]).intl;
     obj.children = intl.string(arg1(dependencyMap[21]).t.eDVMrA);
     const items1 = [callback(arg1(dependencyMap[22]).Text, obj), , ];
-    const obj1 = {};
+    const obj1 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
     const intl2 = arg1(dependencyMap[21]).intl;
     obj1.children = intl2.string(arg1(dependencyMap[21]).t.BozOXu);
     items1[1] = callback(arg1(dependencyMap[22]).Text, obj1);
@@ -306,7 +306,7 @@ function DropdownPrompt(guildId) {
   obj2 = { style: tmp.dropdownContainer, onPress: callback };
   let tmp10 = 0 === found.length;
   if (tmp10) {
-    const obj3 = { "Null": false, "Null": 400, "Null": 20, style: tmp.emptyDropdownText };
+    const obj3 = { style: tmp.emptyDropdownText };
     const intl2 = arg1(dependencyMap[21]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[21]).t.GmSvdA);
     tmp10 = callback(arg1(dependencyMap[22]).Text, obj3);
@@ -427,27 +427,27 @@ const tmp4 = arg1(dependencyMap[11]);
 obj.sheetTitle = { marginTop: importDefault(dependencyMap[13]).space.PX_16 };
 const obj1 = { marginTop: importDefault(dependencyMap[13]).space.PX_16 };
 obj.promptContainer = { position: "relative", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, marginTop: importDefault(dependencyMap[13]).space.PX_12, padding: importDefault(dependencyMap[13]).space.PX_12, borderRadius: importDefault(dependencyMap[13]).radii.md, borderWidth: 2, borderStyle: "solid" };
-const obj2 = { position: "relative", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, marginTop: importDefault(dependencyMap[13]).space.PX_12, padding: importDefault(dependencyMap[13]).space.PX_12, borderRadius: importDefault(dependencyMap[13]).radii.md, borderWidth: 2, borderStyle: "solid" };
-obj.titleContainer = { marginBottom: importDefault(dependencyMap[13]).space.PX_12 };
+const obj3 = { "Null": 7, "Null": 370, marginBottom: importDefault(dependencyMap[13]).space.PX_12 };
+obj.titleContainer = obj3;
 obj.badge = {};
 obj.badgeText = { fontWeight: "bold" };
-const obj3 = { marginBottom: importDefault(dependencyMap[13]).space.PX_12 };
+const obj2 = { position: "relative", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, marginTop: importDefault(dependencyMap[13]).space.PX_12, padding: importDefault(dependencyMap[13]).space.PX_12, borderRadius: importDefault(dependencyMap[13]).radii.md, borderWidth: 2, borderStyle: "solid" };
 obj.dropdownContainer = { borderRadius: importDefault(dependencyMap[13]).radii.lg, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, padding: importDefault(dependencyMap[13]).space.PX_8, paddingRight: importDefault(dependencyMap[13]).space.PX_32, minHeight: 48, marginBottom: importDefault(dependencyMap[13]).space.PX_12, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
 const obj4 = { borderRadius: importDefault(dependencyMap[13]).radii.lg, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, padding: importDefault(dependencyMap[13]).space.PX_8, paddingRight: importDefault(dependencyMap[13]).space.PX_32, minHeight: 48, marginBottom: importDefault(dependencyMap[13]).space.PX_12, display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", position: "relative" };
 obj.emptyDropdownText = { marginVertical: importDefault(dependencyMap[13]).space.PX_12, marginLeft: importDefault(dependencyMap[13]).space.PX_4 };
 const obj5 = { marginVertical: importDefault(dependencyMap[13]).space.PX_12, marginLeft: importDefault(dependencyMap[13]).space.PX_4 };
 obj.dropdownPill = { borderRadius: importDefault(dependencyMap[13]).radii.sm, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: importDefault(dependencyMap[13]).space.PX_8, marginTop: importDefault(dependencyMap[13]).space.PX_8, display: "flex", flexDirection: "row", alignItems: "center" };
-obj.emojiContainer = { -1861163602: true, -738052821: true };
+obj.emojiContainer = { <string:29557293>: true, <string:45941405>: true };
 const obj6 = { borderRadius: importDefault(dependencyMap[13]).radii.sm, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW, padding: 6, marginRight: importDefault(dependencyMap[13]).space.PX_8, marginTop: importDefault(dependencyMap[13]).space.PX_8, display: "flex", flexDirection: "row", alignItems: "center" };
 obj.dropdownIconContainer = { position: "absolute", right: importDefault(dependencyMap[13]).space.PX_4, top: importDefault(dependencyMap[13]).space.PX_12 };
-obj.dropdownIcon = { <string:1632221346>: "boolean", <string:2722977214>: "string" };
-obj.optionTextEmoji = {};
-obj.optionImageEmoji = { "Null": true, "Null": true, lv: true };
+obj.dropdownIcon = { y: false, isArray: false };
+obj.optionTextEmoji = { create: 4432600148405143000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 498062566744412800000, "Bool(false)": 15474262483324400000000000000 };
+obj.optionImageEmoji = {};
 const obj7 = { position: "absolute", right: importDefault(dependencyMap[13]).space.PX_4, top: importDefault(dependencyMap[13]).space.PX_12 };
 obj.helpText = { marginTop: importDefault(dependencyMap[13]).space.PX_4 };
 const obj8 = { marginTop: importDefault(dependencyMap[13]).space.PX_4 };
 obj.sectionSeparator = { marginTop: importDefault(dependencyMap[13]).space.PX_24, marginBottom: importDefault(dependencyMap[13]).space.PX_16, height: 1, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.emptyContainer = { "Bool(true)": "<string:2691825665>", "Bool(true)": "<string:2684354560>", "Bool(true)": "<string:16777216>", "Bool(true)": "<string:26684738>" };
+obj.emptyContainer = { "Bool(true)": "Array", "Bool(true)": "borderTopWidth", "Bool(true)": "isArray", "Bool(true)": "savePermissionUpdates" };
 const obj9 = { marginTop: importDefault(dependencyMap[13]).space.PX_24, marginBottom: importDefault(dependencyMap[13]).space.PX_16, height: 1, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 obj.emptyContainerImage = { marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
 const obj11 = {};
@@ -537,7 +537,7 @@ export default function CustomizeCommunity(guildId) {
     let tmp8 = newOnboardingPrompts.length > 0 || onboardingPromptsWithNewAnswers.length > 0;
     if (tmp8) {
       const obj4 = {};
-      const obj5 = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.sheetTitle };
+      const obj5 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.sheetTitle };
       const intl = arg1(dependencyMap[21]).intl;
       const obj6 = { count: newOnboardingPrompts.length + newAnswersCount };
       obj5.children = intl.format(arg1(dependencyMap[21]).t.iB5Gqe, obj6);
@@ -551,11 +551,11 @@ export default function CustomizeCommunity(guildId) {
     let tmp16 = onboardingPrompts.length > 0;
     if (tmp16) {
       const obj8 = {};
-      const obj9 = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.sheetTitle };
+      const obj9 = { delete: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, dispatch: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, raw: 0.158, style: tmp.sheetTitle };
       const intl2 = arg1(dependencyMap[21]).intl;
       obj9.children = intl2.string(arg1(dependencyMap[21]).t.BGkaer);
       const items7 = [callback(arg1(dependencyMap[22]).Text, obj9), , ];
-      const obj10 = {};
+      const obj10 = { hasMaxConnections: 0.0392156862745098, isBoostOnlySubscription: "OPACITY_44" };
       const intl3 = arg1(dependencyMap[21]).intl;
       obj10.children = intl3.string(arg1(dependencyMap[21]).t.r6Vm8T);
       items7[1] = callback(arg1(dependencyMap[22]).Text, obj10);

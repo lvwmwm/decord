@@ -1,10 +1,10 @@
-// Module ID: 14407
-// Function ID: 108683
+// Module ID: 14410
+// Function ID: 108715
 // Name: useUserSafetySettingsSelectedGuildId
 // Dependencies: []
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub
 
-// Module 14407 (useUserSafetySettingsSelectedGuildId)
+// Module 14410 (useUserSafetySettingsSelectedGuildId)
 function useUserSafetySettingsSelectedGuildId() {
   return callback2().selectedGuildId;
 }

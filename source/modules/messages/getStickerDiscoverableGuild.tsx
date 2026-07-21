@@ -1,5 +1,5 @@
 // Module ID: 9614
-// Function ID: 74886
+// Function ID: 74897
 // Name: getStickerDiscoverableGuild
 // Dependencies: []
 // Exports: default
@@ -11,7 +11,7 @@ const result = _module.fileFinishedImporting("modules/messages/getStickerDiscove
 
 export default function getStickerDiscoverableGuild(arg0) {
   const HTTP = require(dependencyMap[1]).HTTP;
-  const obj = { lc: null, type: null, end: null, url: Endpoints.STICKER_GUILD_DATA(arg0) };
+  const obj = { disabled: null, accessibilityHint: null, legacyCompat_selected: null, url: Endpoints.STICKER_GUILD_DATA(arg0) };
   const value = HTTP.get(obj);
   return value.then((body) => {
     body = undefined;

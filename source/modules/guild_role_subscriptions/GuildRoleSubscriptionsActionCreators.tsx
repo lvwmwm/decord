@@ -1,5 +1,5 @@
 // Module ID: 5632
-// Function ID: 48038
+// Function ID: 48046
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings

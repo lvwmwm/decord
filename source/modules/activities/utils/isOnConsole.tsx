@@ -1,5 +1,5 @@
 // Module ID: 11947
-// Function ID: 92354
+// Function ID: 92366
 // Name: isOnConsole
 // Dependencies: []
 // Exports: default

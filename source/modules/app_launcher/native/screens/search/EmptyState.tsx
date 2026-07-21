@@ -1,5 +1,5 @@
 // Module ID: 11218
-// Function ID: 87357
+// Function ID: 87369
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
@@ -8,7 +8,7 @@
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: {}, textContainer: { "Bool(false)": "percent", "Bool(false)": 0 }, text: { "Null": "center", "Null": "center" } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { 1879049349: true, "Null": true, "Null": true }, textContainer: {}, text: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_launcher/native/screens/search/EmptyState.tsx");
 

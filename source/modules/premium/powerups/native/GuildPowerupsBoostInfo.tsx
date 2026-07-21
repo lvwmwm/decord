@@ -1,5 +1,5 @@
 // Module ID: 11575
-// Function ID: 89989
+// Function ID: 90001
 // Name: GuildPowerupsBoostInfo
 // Dependencies: []
 // Exports: default
@@ -13,7 +13,7 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { paddingVertical: importDefault(dependencyMap[4]).space.PX_12 };
 obj.container = obj;
-obj.headerContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.headerContainer = { -914277116: 285278212, -2130001224: -1062486447, 1381392801: 48431396, -2073648762: 48443392 };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[8]);
 const result = _module2.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");
@@ -35,7 +35,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   obj1.color = TEXT_MUTED;
   const items = [callback(require(dependencyMap[6]).BoostGemIcon, obj1), ];
-  const obj2 = {};
+  const obj2 = { guildIconSize: "<string:16777594>", typeIconSize: "<string:39098947>", typeIconPadding: "<string:39098624>" };
   let str = "text-subtle";
   if (type === BoostInfoType.AVAILABLE) {
     str = "text-strong";

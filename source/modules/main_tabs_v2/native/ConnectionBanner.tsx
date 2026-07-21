@@ -1,10 +1,10 @@
-// Module ID: 14996
-// Function ID: 112931
+// Module ID: 14999
+// Function ID: 112965
 // Name: getBannerLabel
 // Dependencies: []
 // Exports: default
 
-// Module 14996 (getBannerLabel)
+// Module 14999 (getBannerLabel)
 function getBannerLabel(state) {
   if (constants.WAITING_FOR_NETWORK === state) {
     const intl3 = arg1(dependencyMap[9]).intl;
@@ -42,7 +42,7 @@ function ConnectionBannerContent(state) {
   state = state.state;
   let obj = { style: callback3().content };
   const items = [callback2(ConnectionBannerIcon, { state }), ];
-  obj = {};
+  obj = { 1448895712: null, -1135386053: "38485069fbc14bffd27bdd20bfea4ac1", 833392556: "pending-alert" };
   let str = "text-muted";
   if (state === constants.BACK_ONLINE) {
     str = "text-feedback-positive";
@@ -178,13 +178,13 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let closure_14 = [];
 let closure_15 = [97.646, 171.162, 0, 95.94];
-let closure_16 = { max: false, guildId: false };
-let closure_17 = { max: 3211264, guildId: 2042617856 };
+let closure_16 = {};
+let closure_17 = {};
 let closure_18 = [0.167, 0.167, 16.667, 59.6];
-let closure_19 = { max: -536870861, guildId: -299892737 };
+let closure_19 = {};
 let closure_20 = {};
 let obj = arg1(dependencyMap[7]);
-obj = { container: {}, glow: { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)" }, glowMaskGradient: { flex: 1 } };
+obj = { container: {}, glow: { 0: "<string:408361903>", 9223372036854775807: "<string:2920093709>", -9223372036854775808: "<string:1058778651>", 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007971358077182287, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022170280268213266 }, glowMaskGradient: { flex: 1 } };
 obj = { height: CONNECTION_BANNER_HEIGHT, gap: importDefault(dependencyMap[8]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12 };
 obj.content = obj;
 obj.leadingSlot = {};

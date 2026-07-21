@@ -1,5 +1,5 @@
 // Module ID: 4215
-// Function ID: 36731
+// Function ID: 36739
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -522,7 +522,7 @@ const tmp4 = (arg0) => {
               if ("soundshare_attach_requested" === type) {
                 const errorTimer2 = store.errorTimer;
                 errorTimer2.start(closure_23, () => {
-                  callback(closure_2[24]).dispatch({});
+                  callback(closure_2[24]).dispatch({ "Bool(false)": 35, "Bool(false)": 450 });
                 });
               } else if ("soundshare_recv_failed" === type) {
                 ({ reason, code, retry } = type);

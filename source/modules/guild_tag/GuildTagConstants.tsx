@@ -1,10 +1,10 @@
-// Module ID: 7625
-// Function ID: 61094
+// Module ID: 7626
+// Function ID: 61106
 // Name: items
 // Dependencies: []
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7625 (items)
+// Module 7626 (items)
 let GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES;
 let GUILD_TAGS_BADGE_PACK_FLEX;
 let GUILD_TAGS_BADGE_PACK_PETS;

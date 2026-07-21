@@ -1,10 +1,10 @@
-// Module ID: 5237
-// Function ID: 44238
+// Module ID: 5236
+// Function ID: 44245
 // Name: openApplyBoostModal
 // Dependencies: []
 // Exports: closeApplyBoostModal, openApplyBoostModal, openTransferModal
 
-// Module 5237 (openApplyBoostModal)
+// Module 5236 (openApplyBoostModal)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("actions/native/BoostingActionCreators.tsx");
 

@@ -1,5 +1,5 @@
 // Module ID: 11052
-// Function ID: 86057
+// Function ID: 86068
 // Name: RowGroup
 // Dependencies: []
 // Exports: default
@@ -8,7 +8,7 @@
 function RowGroup(rows) {
   rows = rows.rows;
   let obj = { spacing: 8 };
-  obj = { alignItems: "r", justifyContent: 320.5, backgroundColor: 175, children: rows.title };
+  obj = { USER_REGISTRATION: "r", borderColor: 320.5, borderWidth: 175, children: rows.title };
   const items = [callback(arg1(dependencyMap[3]).Text, obj), ];
   obj = {
     hasIcons: true,

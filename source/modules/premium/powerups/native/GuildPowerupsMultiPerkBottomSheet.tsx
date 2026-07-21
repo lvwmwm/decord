@@ -1,5 +1,5 @@
 // Module ID: 11569
-// Function ID: 89973
+// Function ID: 89985
 // Name: GuildPowerupsMultiPerkCard
 // Dependencies: []
 // Exports: default
@@ -134,8 +134,8 @@ let closure_6 = _module1.createStyles((arg0) => {
   obj.container = obj;
   obj = { gap: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
   obj.cardsContainer = obj;
-  obj.titleContainer = {};
-  obj.bodyContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  obj.titleContainer = { stiffness: false, damping: false };
+  obj.bodyContainer = { flex: "#2ECC71", flexDirection: 4, paddingHorizontal: "version" };
   const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid" };
   let str = "#ffffff";
   if (arg0) {
@@ -187,7 +187,7 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   const importDefault = tmp2;
   let tmp4Result = null;
   if (null != tmp2) {
-    let obj = { 1891290120: null, -475247768: null, onDismiss: guildId.onDismiss };
+    let obj = { ind: null, PX_8: null, onDismiss: guildId.onDismiss };
     obj = {};
     obj = { paddingBottom: importDefault(dependencyMap[23])().bottom };
     obj.contentContainerStyle = obj;

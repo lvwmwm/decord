@@ -1,5 +1,5 @@
 // Module ID: 5053
-// Function ID: 43127
+// Function ID: 43142
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,15 +18,26 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+let closure_6 = { code: "function changeEventCalculator_Pnpm_manualGestureTs1(current,_previous){return current;}" };
+let closure_7 = () => {
+  function changeEventCalculator(arg0, arg1) {
+    return arg0;
+  }
+  changeEventCalculator.__closure = {};
+  changeEventCalculator.__workletHash = 12945462865583;
+  changeEventCalculator.__initData = closure_6;
+  return changeEventCalculator;
+}();
 
-export const NativeGesture = (BaseGesture) => {
-  class NativeGesture {
+export const ManualGesture = (ContinousBaseGesture) => {
+  class ManualGesture {
     constructor() {
       self = this;
-      tmp = NativeGesture(this, NativeGesture);
-      obj = closure_3(NativeGesture);
+      tmp = ManualGesture(this, ManualGesture);
+      obj = closure_3(ManualGesture);
       tmp2 = closure_2;
-      if (closure_5()) {
+      if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -35,28 +46,35 @@ export const NativeGesture = (BaseGesture) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.config = {};
-      tmp2Result.handlerName = "NativeViewGestureHandler";
+      tmp2Result.handlerName = "ManualGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = NativeGesture;
-  callback2(NativeGesture, BaseGesture);
-  let obj = {
-    key: "shouldActivateOnStart",
-    value: function shouldActivateOnStart(shouldActivateOnStart) {
-      this.config.shouldActivateOnStart = shouldActivateOnStart;
-      return this;
+  let closure_0 = ManualGesture;
+  callback2(ManualGesture, ContinousBaseGesture);
+  const items = [
+    {
+      key: "onChange",
+      value: function onChange(arg0) {
+        this.handlers.changeEventCalculator = closure_7;
+        const items = [arg0];
+        return function _superPropGet(ManualGesture, onChange, arg2, arg3) {
+          let prototype = ManualGesture;
+          if (1) {
+            prototype = ManualGesture.prototype;
+          }
+          const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
+          let fn = tmpResult;
+          if (2) {
+            fn = tmpResult;
+            if ("function" === typeof tmpResult) {
+              fn = (arg0) => tmpResult.apply(arg2, arg0);
+            }
+          }
+          return fn;
+        }(ManualGesture, "onChange", this, 3)(items);
+      }
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "disallowInterruption",
-    value: function disallowInterruption(disallowInterruption) {
-      this.config.disallowInterruption = disallowInterruption;
-      return this;
-    }
-  };
-  items[1] = obj;
-  return callback(NativeGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  ];
+  return callback(ManualGesture, items);
+}(arg1(dependencyMap[6]).ContinousBaseGesture);

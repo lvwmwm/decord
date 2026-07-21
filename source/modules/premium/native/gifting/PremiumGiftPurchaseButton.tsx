@@ -1,5 +1,5 @@
 // Module ID: 9757
-// Function ID: 75887
+// Function ID: 75898
 // Name: RewardPreview
 // Dependencies: []
 // Exports: default
@@ -16,7 +16,7 @@ function RewardPreview(arg0) {
   if (isNameplateRecord(collectiblesItem)) {
     let obj = {};
     obj = { style: tmp.nameplateWrapper };
-    const obj1 = { "Null": null, "Null": null, "Null": null };
+    const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
     let obj8 = arg1(dependencyMap[13]);
     obj1.nameplate = obj8.getNameplateData(collectiblesItem);
     obj.children = callback(importDefault(dependencyMap[12]), obj1);
@@ -42,7 +42,7 @@ function RewardPreview(arg0) {
         num2 = gradientAngle;
       }
       obj5.angle = num2;
-      obj5.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
+      obj5.angleCenter = {};
       obj5.colors = gradientColors;
       const items1 = [callback(importDefault(dependencyMap[17]), obj5), , ];
       const obj6 = { style: tmp.singleAvatarContainer };
@@ -82,24 +82,24 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[10]).space.PX_12, paddingBottom: importDefault(dependencyMap[10]).space.PX_12 + arg0, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
   const merged = Object.assign(importDefault(dependencyMap[10]).shadows.SHADOW_TOP_HIGH);
   obj.container = obj;
-  obj.chooseRewardContainer = { "Bool(false)": 1, "Bool(false)": "tail", "Bool(false)": "text-md/semibold" };
+  obj.chooseRewardContainer = { width: 1, resizeMode: "tail", paddingRight: "text-md/semibold" };
   obj = {};
   const merged1 = Object.assign(closure_4.absoluteFillObject);
   obj["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
   obj["overflow"] = "hidden";
   obj.gradientBackdrop = obj;
   obj.chooseRewardText = { flex: 1, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
-  obj.backgroundImage = { 9223372036854775807: true, 9223372036854775807: "/assets/modules/stage_channels/native/images", 0: 25, -9223372036854775808: 24, 0: null, 9223372036854775807: "b252f7dc065300671ba9347414eb0bad" };
-  const obj2 = { bhk: "Who's that?", bic: "\u{1F4BF}", marginStart: importDefault(dependencyMap[10]).space.PX_8 };
+  obj.backgroundImage = { "Bool(false)": true, "Bool(false)": "/assets/modules/stage_channels/native/images", "Bool(false)": 25, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "b252f7dc065300671ba9347414eb0bad" };
+  const obj2 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017800590884751058, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009919227068175748, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
   obj.inAppFlowImage = obj2;
-  const obj3 = { bhk: null, bic: null };
+  const obj3 = { "Null": null, "Null": null };
   const items = [{ rotate: "-4deg" }, { translateY: -11 }];
   obj3.transform = items;
   obj.inAppFlowImageLargeTilted = obj3;
   obj.singleAvatarContainer = {};
-  const obj1 = { flex: 1, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
-  obj.selectedRewardRow = { gap: importDefault(dependencyMap[10]).space.PX_16 };
-  obj.selectedRewardBannerContainer = { flexDirection: 16777216, alignItems: 369, paddingHorizontal: 1170756096, borderRadius: -1220455602 };
+  const obj4 = { "Null": 7, "Null": 370, gap: importDefault(dependencyMap[10]).space.PX_16 };
+  obj.selectedRewardRow = obj4;
+  obj.selectedRewardBannerContainer = { accessibilityRole: 16777216, PX_8: 369, hash: 1157517824, accessibilityRole: -314486001 };
   const obj5 = {};
   const merged2 = Object.assign(closure_4.absoluteFillObject);
   obj5["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
@@ -110,8 +110,8 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj5["marginStart"] = importDefault(dependencyMap[10]).space.PX_12;
   obj.selectedRewardBannerGradient = obj5;
   obj.selectedRewardText = { flex: 1 };
-  const obj4 = { gap: importDefault(dependencyMap[10]).space.PX_16 };
-  obj.nameplateWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
+  const obj6 = { 1414937445: null, 710171746: null, -1884505083: null, 1632514476: null, -1072868960: null, 1549977185: null, 651579746: null, borderRadius: importDefault(dependencyMap[10]).radii.sm };
+  obj.nameplateWrapper = obj6;
   return obj;
 });
 const obj = arg1(dependencyMap[9]);
@@ -280,7 +280,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         num9 = angle;
       }
       obj2.angle = num9;
-      obj2.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
+      obj2.angleCenter = {};
       obj2.colors = colors;
       const items5 = [callback(importDefault(dependencyMap[17]), obj2), ];
       let tmp54 = null != themeAndReducedMotionAwareAssetUrl;
@@ -377,7 +377,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         const items9 = [callback(selectedGiftingPromotionReward, obj12), ];
         let tmp39 = !tmp8;
         if (!tmp8) {
-          const obj14 = { 9223372036854775807: 8817, -9223372036854775808: 1091633408 };
+          const obj14 = {};
           const obj15 = { size: "sm" };
           obj14.icon = callback(arg1(dependencyMap[34]).PencilIcon, obj15);
           const intl2 = arg1(dependencyMap[16]).intl;

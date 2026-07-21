@@ -1,7 +1,7 @@
 // Module ID: 4355
-// Function ID: 38625
+// Function ID: 38633
 // Name: ActionComponentState
-// Dependencies: [284214097]
+// Dependencies: []
 // Exports: asComponentId
 
 // Module 4355 (ActionComponentState)
